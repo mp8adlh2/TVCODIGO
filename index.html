@@ -1373,9 +1373,10 @@
         <span id="active-cookie-filename" style="overflow:hidden; text-overflow:ellipsis; max-width:320px;">
           COOKIE: carregando...
         </span>
-        <div style="display: flex; gap: 12px;">
-          <a onclick="event.stopPropagation(); openCookieModal();">[ 📁 ESCOLHER COOKIE ]</a>
-          <a onclick="event.stopPropagation(); cycleCookie();">[ 🔄 PRÓXIMO COOKIE ]</a>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <a onclick="event.stopPropagation(); openAdminModal();" style="color: #ffd700; font-weight: 800; cursor: pointer;">[ ➕ ADICIONAR COOKIES ]</a>
+          <a onclick="event.stopPropagation(); openCookieModal();" style="cursor: pointer;">[ 📁 ESCOLHER COOKIE ]</a>
+          <a onclick="event.stopPropagation(); cycleCookie();" style="cursor: pointer;">[ 🔄 PRÓXIMO COOKIE ]</a>
         </div>
       </div>
     </div>
@@ -1570,6 +1571,32 @@
 
       <div class="cookie-modal-list" id="modal-cookie-list">
         <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- 🔐 ADMIN COOKIE VAULT PASSWORD OVERLAY                   -->
+  <!-- ======================================================== -->
+  <div id="admin-auth-modal" onclick="event.stopPropagation();" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(4,2,6,0.95); backdrop-filter: blur(20px); z-index: 10003; display: none; align-items: center; justify-content: center; padding: 20px;">
+    <div class="login-card" style="border-color: #ffd700; box-shadow: 0 10px 60px rgba(255,215,0,0.35);">
+      <div class="login-icon-box" style="border-color: #ffd700; color: #ffd700; background: rgba(255,215,0,0.12);">🍪</div>
+      <div class="login-title" style="color: #ffd700;">COFRE DE COOKIES // ADMIN</div>
+      <div class="login-sub">ACESSO EXCLUSIVO // DIGITE A SENHA DO GERENCIADOR</div>
+
+      <div class="login-input-wrap">
+        <input type="password" id="admin-pass-input" class="login-input" placeholder="Senha do Gerenciador de Cookies..." onkeydown="if(event.key==='Enter') executeAdminUnlock();">
+        <button class="btn-eye" type="button" onclick="const inp=document.getElementById('admin-pass-input'); inp.type=(inp.type==='password'?'text':'password');">👁️</button>
+      </div>
+
+      <button class="btn-unlock" onclick="executeAdminUnlock()" style="background: linear-gradient(135deg, #ffd700 0%, #ff8800 100%); color: #000; font-weight: 900;">
+        DESBLOQUEAR COFRE 🔓
+      </button>
+
+      <div class="login-error" id="admin-auth-error-msg"></div>
+
+      <div style="margin-top: 14px; text-align: center;">
+        <a onclick="closeAdminAuthModal()" style="color: var(--text-dim); font-size: 11px; cursor: pointer; text-decoration: underline;">✖ Cancelar e Voltar</a>
       </div>
     </div>
   </div>
@@ -2507,12 +2534,73 @@
     // ========================================================
     let adminTargetService = 'netflix';
     let adminPendingFiles = [];
+    let adminCookieToken = sessionStorage.getItem('cyber_cookie_admin_token') || '';
+
+    function getAdminHeaders() {
+      const headers = getHeaders();
+      if (adminCookieToken) {
+        headers['X-Admin-Token'] = adminCookieToken;
+      }
+      return headers;
+    }
 
     function openAdminModal() {
       soundClick();
-      setAdminTarget(currentService === 'hbo' ? 'hbomax' : 'netflix');
-      document.getElementById('admin-modal').style.display = 'flex';
-      loadAdminStats();
+      if (!adminCookieToken) {
+        document.getElementById('admin-auth-modal').style.display = 'flex';
+        document.getElementById('admin-pass-input').value = '';
+        document.getElementById('admin-auth-error-msg').style.display = 'none';
+        setTimeout(() => document.getElementById('admin-pass-input').focus(), 100);
+      } else {
+        setAdminTarget(currentService === 'hbo' ? 'hbomax' : 'netflix');
+        document.getElementById('admin-modal').style.display = 'flex';
+        loadAdminStats();
+      }
+    }
+
+    function closeAdminAuthModal() {
+      soundClick();
+      document.getElementById('admin-auth-modal').style.display = 'none';
+    }
+
+    async function executeAdminUnlock() {
+      soundClick();
+      const pwd = document.getElementById('admin-pass-input').value.trim();
+      const errBox = document.getElementById('admin-auth-error-msg');
+      if (!pwd) {
+        errBox.innerText = 'Digite a senha do gerenciador de cookies.';
+        errBox.style.display = 'block';
+        soundError();
+        return;
+      }
+
+      errBox.style.display = 'none';
+
+      try {
+        const res = await fetch('/api/admin/verify-pass', {
+          method: 'POST',
+          headers: getHeaders(),
+          body: JSON.stringify({ password: pwd })
+        });
+        const data = await res.json();
+        if (data.success && data.admin_token) {
+          adminCookieToken = data.admin_token;
+          sessionStorage.setItem('cyber_cookie_admin_token', adminCookieToken);
+          soundSuccess();
+          closeAdminAuthModal();
+          setAdminTarget(currentService === 'hbo' ? 'hbomax' : 'netflix');
+          document.getElementById('admin-modal').style.display = 'flex';
+          loadAdminStats();
+        } else {
+          soundError();
+          errBox.innerText = data.message || 'Senha do cofre incorreta!';
+          errBox.style.display = 'block';
+        }
+      } catch (e) {
+        soundError();
+        errBox.innerText = 'Erro ao conectar ao servidor.';
+        errBox.style.display = 'block';
+      }
     }
 
     function closeAdminModal() {
@@ -2539,11 +2627,16 @@
 
     async function loadAdminStats() {
       try {
-        const res = await fetch('/api/admin/stats', { headers: getHeaders() });
+        const res = await fetch('/api/admin/stats', { headers: getAdminHeaders() });
         if (res.ok) {
           const data = await res.json();
           document.getElementById('stat-nf-count').innerText = data.netflix_verified || data.netflix_total || '0';
           document.getElementById('stat-hbo-count').innerText = data.hbo_verified || data.hbo_total || '0';
+        } else if (res.status === 401) {
+          adminCookieToken = '';
+          sessionStorage.removeItem('cyber_cookie_admin_token');
+          document.getElementById('admin-modal').style.display = 'none';
+          document.getElementById('admin-auth-modal').style.display = 'flex';
         }
       } catch (e) {}
     }
@@ -2590,7 +2683,7 @@
       try {
         const res = await fetch('/api/admin/upload-cookies', {
           method: 'POST',
-          headers: getHeaders(),
+          headers: getAdminHeaders(),
           body: JSON.stringify({
             service: adminTargetService,
             files: adminPendingFiles,
@@ -2638,7 +2731,7 @@
       try {
         const res = await fetch('/api/admin/reset-cache', {
           method: 'POST',
-          headers: getHeaders()
+          headers: getAdminHeaders()
         });
         const data = await res.json();
         if (data.success) {

@@ -706,9 +706,29 @@ def get_master_password() -> str:
             pass
     return "CYBER#ROOT@9821$MATRIX*SECURE!2026"
 
+def get_cookie_admin_password() -> str:
+    # 1. Variável de ambiente (Render)
+    env_pass = os.environ.get("COOKIE_ADMIN_PASSWORD")
+    if env_pass:
+        return env_pass.strip()
+    # 2. Arquivo SENHA_COOKIES.txt
+    senha_file = os.path.join(BASE_DIR, "SENHA_COOKIES.txt")
+    if os.path.exists(senha_file):
+        try:
+            with open(senha_file, "r", encoding="utf-8") as f:
+                for line in f.read().splitlines():
+                    line = line.strip()
+                    if line and not line.startswith("=") and not line.startswith("#") and not line.startswith("•") and not line.startswith("SENHA"):
+                        return line
+        except Exception:
+            pass
+    return "ADMIN#COOKIES@7739$VIP*VAULT!2026"
+
 MASTER_PASSWORD = get_master_password()
+COOKIE_ADMIN_PASSWORD = get_cookie_admin_password()
 TOKEN_TTL_SECONDS = int(os.environ.get("TOKEN_TTL_SECONDS", 86400)) # 24 Horas de validade por token
 ACTIVE_SESSIONS: Dict[str, float] = {} # token -> expiry_timestamp
+ACTIVE_ADMIN_SESSIONS: Dict[str, float] = {} # admin_token -> expiry_timestamp
 SESSION_CACHE_FILE = os.path.join(BASE_DIR, ".session_cache.json")
 
 def load_active_sessions():
@@ -792,6 +812,51 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     ACTIVE_SESSIONS.pop(token, None)
                     return False
             return False
+
+    def is_admin_authenticated(self):
+        admin_header = self.headers.get('X-Admin-Token', '') or self.headers.get('Authorization', '')
+        token = ''
+        if admin_header.startswith('Bearer '):
+            token = admin_header[7:].strip()
+        else:
+            token = admin_header.strip()
+        
+        if not token:
+            return False
+
+        now = time.time()
+        with LOGIN_LOCK:
+            if token in ACTIVE_ADMIN_SESSIONS:
+                if ACTIVE_ADMIN_SESSIONS[token] > now:
+                    return True
+                else:
+                    ACTIVE_ADMIN_SESSIONS.pop(token, None)
+                    return False
+            return False
+
+    def handle_api_verify_admin_pass(self):
+        content_length = int(self.headers.get('Content-Length', 0))
+        post_data = self.rfile.read(content_length)
+        req = json.loads(post_data.decode('utf-8')) if post_data else {}
+        password = req.get('password', '').strip()
+
+        is_valid = hmac.compare_digest(password, get_cookie_admin_password())
+
+        if is_valid:
+            now = time.time()
+            admin_token = secrets.token_hex(32)
+            with LOGIN_LOCK:
+                ACTIVE_ADMIN_SESSIONS[admin_token] = now + 43200 # 12 horas
+            return self.send_json_response({
+                "success": True,
+                "admin_token": admin_token,
+                "message": "Acesso administrativo aos cookies concedido!"
+            })
+        else:
+            return self.send_json_response({
+                "success": False,
+                "message": "Senha do gerenciador de cookies incorreta!"
+            }, 401)
 
     def handle_api_login(self):
         ip = self.get_client_ip()
@@ -916,8 +981,8 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
             self.handle_api_status()
         elif raw_path == '/api/admin/stats':
-            if not self.is_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
+            if not self.is_admin_authenticated():
+                return self.send_json_response({"authenticated": False, "message": "Senha do gerenciador de cookies requerida."}, 401)
             self.handle_api_admin_stats()
         elif raw_path == '/api/history':
             if not self.is_authenticated():
@@ -946,6 +1011,8 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             self.handle_api_logout()
         elif raw_path == '/api/verify-token':
             self.handle_api_verify_token()
+        elif raw_path == '/api/admin/verify-pass':
+            self.handle_api_verify_admin_pass()
         elif raw_path == '/api/activate':
             if not self.is_authenticated():
                 return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
@@ -965,12 +1032,12 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
             self.handle_api_filter_plan()
         elif raw_path == '/api/admin/upload-cookies':
-            if not self.is_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
+            if not self.is_admin_authenticated():
+                return self.send_json_response({"authenticated": False, "message": "Senha do gerenciador de cookies requerida."}, 401)
             self.handle_api_upload_cookies()
         elif raw_path == '/api/admin/reset-cache':
-            if not self.is_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
+            if not self.is_admin_authenticated():
+                return self.send_json_response({"authenticated": False, "message": "Senha do gerenciador de cookies requerida."}, 401)
             self.handle_api_reset_cache()
         else:
             self.send_error(404, "Endpoint not found")
