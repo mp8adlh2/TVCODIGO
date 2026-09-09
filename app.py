@@ -688,8 +688,25 @@ def select_hbo_cookie_by_filename(filename: str) -> Optional[dict]:
 # ═══════════════════════════════════════════════════════════════
 #  AUTENTICAÇÃO & SEGURANÇA REFORÇADA (HARDENED SECURITY)
 # ═══════════════════════════════════════════════════════════════
-# Senha Mestre Forte (Difícil de quebrar / Impossível força bruta)
-MASTER_PASSWORD = os.environ.get("MASTER_PASSWORD", "CYBER#ROOT@9821$MATRIX*SECURE!2026")
+def get_master_password() -> str:
+    # 1. Variável de ambiente (Render)
+    env_pass = os.environ.get("MASTER_PASSWORD")
+    if env_pass:
+        return env_pass.strip()
+    # 2. Arquivo SENHA_MESTRE.txt
+    senha_file = os.path.join(BASE_DIR, "SENHA_MESTRE.txt")
+    if os.path.exists(senha_file):
+        try:
+            with open(senha_file, "r", encoding="utf-8") as f:
+                for line in f.read().splitlines():
+                    line = line.strip()
+                    if line and not line.startswith("=") and not line.startswith("#") and not line.startswith("•") and not line.startswith("SENHA"):
+                        return line
+        except Exception:
+            pass
+    return "CYBER#ROOT@9821$MATRIX*SECURE!2026"
+
+MASTER_PASSWORD = get_master_password()
 TOKEN_TTL_SECONDS = int(os.environ.get("TOKEN_TTL_SECONDS", 86400)) # 24 Horas de validade por token
 ACTIVE_SESSIONS: Dict[str, float] = {} # token -> expiry_timestamp
 SESSION_CACHE_FILE = os.path.join(BASE_DIR, ".session_cache.json")

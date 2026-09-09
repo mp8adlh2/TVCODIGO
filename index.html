@@ -1517,10 +1517,6 @@
       </button>
 
       <div class="login-error" id="login-error-msg"></div>
-
-      <div class="login-hint" onclick="fillMasterPasswordHint()">
-        🔑 Copiar senha mestra do sistema (Clique aqui)
-      </div>
     </div>
   </div>
 
@@ -1807,13 +1803,6 @@
     function togglePasswordVisibility() {
       const inp = document.getElementById('login-password-input');
       inp.type = (inp.type === 'password') ? 'text' : 'password';
-    }
-
-    function fillMasterPasswordHint() {
-      const inp = document.getElementById('login-password-input');
-      inp.value = 'CYBER#ROOT@9821$MATRIX*SECURE!2026';
-      inp.type = 'text';
-      soundKeypress();
     }
 
     async function executeLogin() {
