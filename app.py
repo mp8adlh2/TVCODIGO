@@ -689,39 +689,15 @@ def select_hbo_cookie_by_filename(filename: str) -> Optional[dict]:
 #  AUTENTICAÇÃO & SEGURANÇA REFORÇADA (HARDENED SECURITY)
 # ═══════════════════════════════════════════════════════════════
 def get_master_password() -> str:
-    # 1. Variável de ambiente (Render)
     env_pass = os.environ.get("MASTER_PASSWORD")
     if env_pass:
         return env_pass.strip()
-    # 2. Arquivo SENHA_MESTRE.txt
-    senha_file = os.path.join(BASE_DIR, "SENHA_MESTRE.txt")
-    if os.path.exists(senha_file):
-        try:
-            with open(senha_file, "r", encoding="utf-8") as f:
-                for line in f.read().splitlines():
-                    line = line.strip()
-                    if line and not line.startswith("=") and not line.startswith("#") and not line.startswith("•") and not line.startswith("SENHA"):
-                        return line
-        except Exception:
-            pass
     return "CYBER#ROOT@9821$MATRIX*SECURE!2026"
 
 def get_cookie_admin_password() -> str:
-    # 1. Variável de ambiente (Render)
     env_pass = os.environ.get("COOKIE_ADMIN_PASSWORD")
     if env_pass:
         return env_pass.strip()
-    # 2. Arquivo SENHA_COOKIES.txt
-    senha_file = os.path.join(BASE_DIR, "SENHA_COOKIES.txt")
-    if os.path.exists(senha_file):
-        try:
-            with open(senha_file, "r", encoding="utf-8") as f:
-                for line in f.read().splitlines():
-                    line = line.strip()
-                    if line and not line.startswith("=") and not line.startswith("#") and not line.startswith("•") and not line.startswith("SENHA"):
-                        return line
-        except Exception:
-            pass
     return "ADMIN#COOKIES@7739$VIP*VAULT!2026"
 
 MASTER_PASSWORD = get_master_password()
@@ -877,7 +853,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         password = req.get('password', '').strip()
 
         # Comparação em tempo constante para evitar Timing Attacks
-        is_valid = hmac.compare_digest(password, MASTER_PASSWORD)
+        is_valid = hmac.compare_digest(password, get_master_password())
 
         with LOGIN_LOCK:
             if is_valid:
