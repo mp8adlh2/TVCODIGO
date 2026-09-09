@@ -22,28 +22,52 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Configurações de Pastas
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-NETFLIX_COOKIES_FOLDER = os.path.join(BASE_DIR, "cookies")
-HBO_COOKIES_FOLDER = os.path.join(BASE_DIR, "cookies 01")
+NETFLIX_COOKIES_FOLDER = os.path.join(BASE_DIR, "netflix")
+HBO_COOKIES_FOLDER = os.path.join(BASE_DIR, "hbomax")
 USED_REGISTRY_FILE = os.path.join(BASE_DIR, "used_cookies.json")
 COOKIES_BUNDLE_FILE = os.path.join(BASE_DIR, "cookies_bundle.json")
 PORT = int(os.environ.get("PORT", 5000))
 
 def sync_cookies_bundle():
-    """Garante que todos os cookies estejam salvos no arquivo único cookies_bundle.json e descompactados automaticamente no Render."""
+    """Garante suporte total às pastas netflix e hbomax (com retrocompatibilidade para cookies e cookies 01)."""
+    os.makedirs(NETFLIX_COOKIES_FOLDER, exist_ok=True)
+    os.makedirs(HBO_COOKIES_FOLDER, exist_ok=True)
+    
+    # Migra automaticamente arquivos antigos se existirem
+    old_netflix = os.path.join(BASE_DIR, "cookies")
+    old_hbo = os.path.join(BASE_DIR, "cookies 01")
+    if os.path.exists(old_netflix):
+        for f in glob.glob(os.path.join(old_netflix, "*.*")):
+            dest = os.path.join(NETFLIX_COOKIES_FOLDER, os.path.basename(f))
+            if not os.path.exists(dest):
+                try:
+                    with open(f, 'rb') as r_in, open(dest, 'wb') as r_out:
+                        r_out.write(r_in.read())
+                except Exception:
+                    pass
+
+    if os.path.exists(old_hbo):
+        for f in glob.glob(os.path.join(old_hbo, "*.*")):
+            dest = os.path.join(HBO_COOKIES_FOLDER, os.path.basename(f))
+            if not os.path.exists(dest):
+                try:
+                    with open(f, 'rb') as r_in, open(dest, 'wb') as r_out:
+                        r_out.write(r_in.read())
+                except Exception:
+                    pass
+
     # 1. Se o bundle existir, restaura as pastas no servidor
     if os.path.exists(COOKIES_BUNDLE_FILE):
         try:
             with open(COOKIES_BUNDLE_FILE, 'r', encoding='utf-8', errors='ignore') as f:
                 data = json.load(f)
             
-            os.makedirs(NETFLIX_COOKIES_FOLDER, exist_ok=True)
             for fname, content in data.get("netflix", {}).items():
                 dest = os.path.join(NETFLIX_COOKIES_FOLDER, fname)
                 if not os.path.exists(dest):
                     with open(dest, 'w', encoding='utf-8', errors='ignore') as out:
                         out.write(content)
                         
-            os.makedirs(HBO_COOKIES_FOLDER, exist_ok=True)
             for fname, content in data.get("hbo", {}).items():
                 dest = os.path.join(HBO_COOKIES_FOLDER, fname)
                 if not os.path.exists(dest):
@@ -54,20 +78,23 @@ def sync_cookies_bundle():
 
     # 2. Salva todos os cookies locais no arquivo único cookies_bundle.json
     bundle = {"netflix": {}, "hbo": {}}
-    if os.path.exists(NETFLIX_COOKIES_FOLDER):
-        for f in glob.glob(os.path.join(NETFLIX_COOKIES_FOLDER, "*.txt")):
-            try:
-                with open(f, 'r', encoding='utf-8', errors='ignore') as inf:
-                    bundle["netflix"][os.path.basename(f)] = inf.read()
-            except Exception:
-                pass
-    if os.path.exists(HBO_COOKIES_FOLDER):
-        for f in glob.glob(os.path.join(HBO_COOKIES_FOLDER, "*.txt")):
-            try:
-                with open(f, 'r', encoding='utf-8', errors='ignore') as inf:
-                    bundle["hbo"][os.path.basename(f)] = inf.read()
-            except Exception:
-                pass
+    for n_dir in [NETFLIX_COOKIES_FOLDER, old_netflix]:
+        if os.path.exists(n_dir):
+            for f in glob.glob(os.path.join(n_dir, "*.txt")) + glob.glob(os.path.join(n_dir, "*.json")):
+                try:
+                    with open(f, 'r', encoding='utf-8', errors='ignore') as inf:
+                        bundle["netflix"][os.path.basename(f)] = inf.read()
+                except Exception:
+                    pass
+
+    for h_dir in [HBO_COOKIES_FOLDER, old_hbo]:
+        if os.path.exists(h_dir):
+            for f in glob.glob(os.path.join(h_dir, "*.txt")) + glob.glob(os.path.join(h_dir, "*.json")):
+                try:
+                    with open(f, 'r', encoding='utf-8', errors='ignore') as inf:
+                        bundle["hbo"][os.path.basename(f)] = inf.read()
+                except Exception:
+                    pass
 
     if bundle["netflix"] or bundle["hbo"]:
         try:
@@ -414,8 +441,9 @@ def get_hbo_region_from_jwt(st_token: str) -> str:
 
 def get_hbo_files() -> List[str]:
     files = []
-    if os.path.exists(HBO_COOKIES_FOLDER):
-        files += glob.glob(os.path.join(HBO_COOKIES_FOLDER, "*.txt")) + glob.glob(os.path.join(HBO_COOKIES_FOLDER, "*.json"))
+    for h_dir in [HBO_COOKIES_FOLDER, os.path.join(BASE_DIR, "cookies 01")]:
+        if os.path.exists(h_dir):
+            files += glob.glob(os.path.join(h_dir, "*.txt")) + glob.glob(os.path.join(h_dir, "*.json"))
     
     unique_files = []
     seen = set()

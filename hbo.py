@@ -92,7 +92,7 @@ def run_with_spinner(message: str, func, *args, **kwargs):
 # ═══════════════════════════════════════════════════════════════
 #  CONFIGURACOES HBO MAX
 # ═══════════════════════════════════════════════════════════════
-COOKIES_FOLDER = "cookies 01" if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "cookies 01")) else "cookies"
+COOKIES_FOLDER = "hbomax" if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "hbomax")) else ("cookies 01" if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "cookies 01")) else "cookies")
 USED_COOKIES_FOLDER = os.path.join(COOKIES_FOLDER, "used")
 USED_REGISTRY_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "used_cookies.json")
 REQUEST_TIMEOUT = 15
@@ -221,12 +221,18 @@ def get_region_from_jwt(st_token: str) -> str:
     return 'amer'
 
 def get_cookie_files() -> List[str]:
-    if not os.path.exists(COOKIES_FOLDER):
-        return []
-    all_files = glob.glob(os.path.join(COOKIES_FOLDER, "**", "*.txt"), recursive=True) + \
-                glob.glob(os.path.join(COOKIES_FOLDER, "**", "*.json"), recursive=True)
-    valid_files = [f for f in all_files if os.path.isfile(f)]
-    return valid_files
+    base_d = os.path.dirname(os.path.abspath(__file__))
+    folders = [os.path.join(base_d, "hbomax"), os.path.join(base_d, "cookies 01"), "hbomax", "cookies 01", "cookies"]
+    all_files = []
+    seen = set()
+    for fold in folders:
+        if os.path.exists(fold):
+            for ext in ["*.txt", "*.json"]:
+                for f in glob.glob(os.path.join(fold, "**", ext), recursive=True):
+                    if os.path.isfile(f) and f not in seen:
+                        seen.add(f)
+                        all_files.append(f)
+    return all_files
 
 def get_all_available_cookies():
     files = get_cookie_files()

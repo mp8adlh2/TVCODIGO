@@ -105,7 +105,7 @@ def run_with_spinner(message: str, func, *args, **kwargs):
 # ═══════════════════════════════════════════════════════════════
 #  CONFIGURAÇÕES DE REDE & PROXY (DATAIMPULSE)
 # ═══════════════════════════════════════════════════════════════
-COOKIES_FOLDER = "cookies"
+COOKIES_FOLDER = "netflix" if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "netflix")) else "cookies"
 REQUEST_TIMEOUT = 5
 CHECK_TIMEOUT = 6
 
@@ -586,10 +586,18 @@ def load_used_cookies_registry():
 load_used_cookies_registry()
 
 def get_available_cookie_files() -> List[str]:
-    if not os.path.exists(COOKIES_FOLDER):
-        return []
-    all_files = glob.glob(os.path.join(COOKIES_FOLDER, "*.txt")) + glob.glob(os.path.join(COOKIES_FOLDER, "*.json"))
-    available = [f for f in all_files if f not in USED_COOKIES]
+    base_d = os.path.dirname(os.path.abspath(__file__))
+    folders = [os.path.join(base_d, "netflix"), os.path.join(base_d, "cookies"), "netflix", "cookies"]
+    all_files = []
+    seen = set()
+    for fold in folders:
+        if os.path.exists(fold):
+            for ext in ["*.txt", "*.json"]:
+                for f in glob.glob(os.path.join(fold, ext)):
+                    if f not in seen:
+                        seen.add(f)
+                        all_files.append(f)
+    available = [f for f in all_files if f not in USED_COOKIES and os.path.basename(f) not in USED_COOKIES]
     # Prioriza contas brasileiras [BR] que costumam estar mais ativas e locais
     br_files = [f for f in available if "[BR]" in os.path.basename(f).upper()]
     other_files = [f for f in available if "[BR]" not in os.path.basename(f).upper()]

@@ -20,13 +20,17 @@ if not exist ".git" (
     git init
 )
 
-:: 3. Adiciona todos os arquivos
+:: 3. Sincroniza bundle de cookies
+echo [+] Sincronizando cookies das pastas 'netflix' e 'hbomax'...
+python -c "import app; app.sync_cookies_bundle()" >nul 2>&1
+
+:: 4. Adiciona todos os arquivos
 echo [+] Preparando todos os arquivos e pastas de cookies...
 git add -A
 
-:: 4. Cria o commit inicial
+:: 5. Cria o commit
 echo [+] Criando commit...
-git commit -m "Deploy Painel Ativador Netflix e HBO Max"
+git commit -m "Atualizacao de cookies e configuracoes"
 
 :: 5. Define branch main
 git branch -M main
