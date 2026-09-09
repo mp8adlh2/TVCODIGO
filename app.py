@@ -886,10 +886,22 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         # Normalização do caminho (proteção contra path traversal como /../)
         raw_path = self.path.split('?')[0]
 
-        if raw_path == '/api/status':
+        if raw_path == '/api/ping':
+            # Keep-Alive endpoint público para evitar que a instância durma
+            return self.send_json_response({
+                "status": "alive",
+                "uptime": "24/7",
+                "timestamp": time.time(),
+                "service": "CYBER_DECK_KERNEL_ONLINE"
+            })
+        elif raw_path == '/api/status':
             if not self.is_authenticated():
                 return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
             self.handle_api_status()
+        elif raw_path == '/api/admin/stats':
+            if not self.is_authenticated():
+                return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
+            self.handle_api_admin_stats()
         elif raw_path == '/api/history':
             if not self.is_authenticated():
                 return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
@@ -935,6 +947,14 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             if not self.is_authenticated():
                 return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
             self.handle_api_filter_plan()
+        elif raw_path == '/api/admin/upload-cookies':
+            if not self.is_authenticated():
+                return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
+            self.handle_api_upload_cookies()
+        elif raw_path == '/api/admin/reset-cache':
+            if not self.is_authenticated():
+                return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
+            self.handle_api_reset_cache()
         else:
             self.send_error(404, "Endpoint not found")
 
@@ -1195,6 +1215,114 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         history = load_history()
         self.send_json_response({"history": history})
 
+    def handle_api_upload_cookies(self):
+        content_length = int(self.headers.get('Content-Length', 0))
+        post_data = self.rfile.read(content_length)
+        try:
+            req = json.loads(post_data.decode('utf-8'))
+        except Exception:
+            return self.send_json_response({"success": False, "message": "JSON inválido."}, 400)
+
+        service = req.get('service', 'netflix').lower()
+        files = req.get('files', []) # list of {"name": "...", "content": "..."}
+        raw_text = req.get('raw_text', '').strip()
+
+        target_dir = NETFLIX_COOKIES_FOLDER if service == 'netflix' else HBO_COOKIES_FOLDER
+        os.makedirs(target_dir, exist_ok=True)
+        saved_count = 0
+
+        # Processa arquivos enviados
+        for item in files:
+            fname = item.get('name', '').strip()
+            content = item.get('content', '').strip()
+            if fname and content:
+                clean_name = re.sub(r'[^a-zA-Z0-9_\-\.\[\]@]', '_', os.path.basename(fname))
+                if not clean_name.endswith('.txt') and not clean_name.endswith('.json'):
+                    clean_name += '.txt'
+                fpath = os.path.join(target_dir, clean_name)
+                try:
+                    with open(fpath, 'w', encoding='utf-8') as out_f:
+                        out_f.write(content)
+                    saved_count += 1
+                    if service == 'netflix':
+                        DEAD_NETFLIX_COOKIES.discard(fpath)
+                        tv2.USED_COOKIES.discard(fpath)
+                        tv2.USED_COOKIES.discard(clean_name)
+                    else:
+                        USED_HBO_COOKIES.discard(fpath)
+                        USED_HBO_COOKIES.discard(clean_name)
+                except Exception:
+                    pass
+
+        # Processa texto colado
+        if raw_text:
+            timestamp = int(time.time())
+            if raw_text.startswith('[') and raw_text.endswith(']'):
+                clean_name = f"web_import_{timestamp}.json"
+            else:
+                clean_name = f"web_import_{timestamp}.txt"
+            fpath = os.path.join(target_dir, clean_name)
+            try:
+                with open(fpath, 'w', encoding='utf-8') as out_f:
+                    out_f.write(raw_text)
+                saved_count += 1
+                if service == 'netflix':
+                    DEAD_NETFLIX_COOKIES.discard(fpath)
+                    tv2.USED_COOKIES.discard(fpath)
+                    tv2.USED_COOKIES.discard(clean_name)
+                else:
+                    USED_HBO_COOKIES.discard(fpath)
+                    USED_HBO_COOKIES.discard(clean_name)
+            except Exception:
+                pass
+
+        if saved_count > 0:
+            sync_cookies_bundle()
+            threading.Thread(target=self._prewarm_after_upload, args=(service,), daemon=True).start()
+            return self.send_json_response({
+                "success": True,
+                "saved_count": saved_count,
+                "message": f"🎉 {saved_count} cookie(s) de {service.upper()} importado(s) com sucesso!"
+            })
+        else:
+            return self.send_json_response({"success": False, "message": "Nenhum arquivo ou texto válido enviado."}, 400)
+
+    def _prewarm_after_upload(self, service: str):
+        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY
+        time.sleep(0.5)
+        if service == 'netflix':
+            CURRENT_NETFLIX_READY = find_netflix_fast_cookie()
+        else:
+            CURRENT_HBO_READY = find_hbo_valid_cookie()
+
+    def handle_api_reset_cache(self):
+        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY, DEAD_NETFLIX_COOKIES, USED_NETFLIX_COOKIES, USED_HBO_COOKIES
+        DEAD_NETFLIX_COOKIES.clear()
+        tv2.USED_COOKIES.clear()
+        USED_HBO_COOKIES.clear()
+        CURRENT_NETFLIX_READY = find_netflix_fast_cookie()
+        CURRENT_HBO_READY = find_hbo_valid_cookie()
+        return self.send_json_response({
+            "success": True,
+            "message": "Cache de cookies reinicializado! Todas as contas estão disponíveis para re-teste."
+        })
+
+    def handle_api_admin_stats(self):
+        nf_files = glob.glob(os.path.join(NETFLIX_COOKIES_FOLDER, "*.*"))
+        hbo_files = glob.glob(os.path.join(HBO_COOKIES_FOLDER, "*.*"))
+        verified_nf = get_verified_netflix_cookies(min_count=1)
+        verified_hbo = get_verified_hbo_cookies(min_count=1)
+        return self.send_json_response({
+            "netflix_total": len(nf_files),
+            "netflix_verified": len(verified_nf),
+            "netflix_dead": len(DEAD_NETFLIX_COOKIES),
+            "hbo_total": len(hbo_files),
+            "hbo_verified": len(verified_hbo),
+            "hbo_dead": len(USED_HBO_COOKIES),
+            "keep_alive": True,
+            "timestamp": time.time()
+        })
+
 
 def get_local_ip():
     try:
@@ -1219,9 +1347,32 @@ def background_verifier_loop():
             pass
         time.sleep(12)
 
+def keep_alive_worker():
+    """Anti-Sleep 24h: Mantém a instância do Render 100% acordada e instantânea."""
+    time.sleep(15) # Espera o servidor iniciar
+    while True:
+        try:
+            # 1. Ping interno local
+            requests.get(f"http://127.0.0.1:{PORT}/api/ping", timeout=4)
+        except Exception:
+            pass
+
+        try:
+            # 2. Ping externo se estiver na nuvem Render
+            render_url = os.environ.get("RENDER_EXTERNAL_URL", "https://tvcodigo-1.onrender.com")
+            if render_url:
+                target = f"{render_url.rstrip('/')}/api/ping"
+                requests.get(target, timeout=8)
+        except Exception:
+            pass
+
+        time.sleep(300) # Ping a cada 5 minutos
+
 def start_background_scanner():
-    t = threading.Thread(target=background_verifier_loop, daemon=True)
-    t.start()
+    t1 = threading.Thread(target=background_verifier_loop, daemon=True)
+    t1.start()
+    t2 = threading.Thread(target=keep_alive_worker, daemon=True)
+    t2.start()
 
 def run_server(port=PORT):
     os.chdir(BASE_DIR)
@@ -1230,6 +1381,7 @@ def run_server(port=PORT):
     with ThreadedTCPServer(("", port), AppRequestHandler) as httpd:
         print(f"\n=======================================================")
         print(f" 🚀 ATIVADOR NETFLIX & HBO MAX INICIADO COM SUCESSO!")
+        print(f" ⚡ Anti-Sleep 24h: ATIVADO (Render sempre acordado)")
         print(f" 💻 Acesse no PC:      http://localhost:{port}")
         print(f" 📱 Acesse no Celular: http://{local_ip}:{port}  (no mesmo Wi-Fi)")
         print(f"=======================================================\n")

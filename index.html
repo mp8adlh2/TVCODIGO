@@ -1146,6 +1146,140 @@
       padding-right: 4px;
     }
 
+    /* ======================================================== */
+    /* 🍪 COOKIE MANAGER & CLOUD UPLOAD MODAL                   */
+    /* ======================================================== */
+    #admin-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(4, 2, 6, 0.94);
+      backdrop-filter: blur(20px);
+      z-index: 10002;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .admin-modal-card {
+      width: 100%;
+      max-width: 540px;
+      background: var(--panel-bg);
+      border: 1.5px solid var(--accent-color);
+      border-radius: 28px;
+      padding: 24px 22px;
+      box-shadow: 0 10px 60px var(--accent-glow);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      max-height: 90vh;
+      overflow-y: auto;
+      animation: modalSlide 0.35s ease;
+    }
+
+    .admin-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .admin-stat-chip {
+      background: rgba(0, 0, 0, 0.5);
+      border: 1px solid var(--panel-border);
+      border-radius: 14px;
+      padding: 10px 6px;
+      text-align: center;
+    }
+
+    .admin-stat-chip-num {
+      font-family: var(--font-display);
+      font-size: 17px;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .admin-stat-chip-lbl {
+      font-size: 9.5px;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .admin-service-radios {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .admin-radio-btn {
+      flex: 1;
+      background: rgba(0, 0, 0, 0.45);
+      border: 1.5px solid var(--panel-border);
+      border-radius: 14px;
+      padding: 10px;
+      color: #fff;
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .admin-radio-btn.active-n {
+      background: rgba(229, 9, 20, 0.2);
+      border-color: #E50914;
+      color: #fff;
+      box-shadow: 0 0 12px rgba(229, 9, 20, 0.35);
+    }
+
+    .admin-radio-btn.active-h {
+      background: rgba(168, 85, 247, 0.2);
+      border-color: #A855F7;
+      color: #fff;
+      box-shadow: 0 0 12px rgba(168, 85, 247, 0.35);
+    }
+
+    .admin-dropzone {
+      border: 2px dashed var(--panel-border);
+      border-radius: 18px;
+      padding: 18px 12px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.35);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .admin-dropzone:hover, .admin-dropzone.dragover {
+      border-color: var(--accent-color);
+      background: var(--accent-glow-subtle);
+    }
+
+    .admin-textarea {
+      width: 100%;
+      min-height: 75px;
+      background: rgba(0, 0, 0, 0.55);
+      border: 1px solid var(--panel-border);
+      border-radius: 14px;
+      padding: 10px 14px;
+      color: #fff;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      outline: none;
+      resize: vertical;
+    }
+
+    .admin-textarea:focus {
+      border-color: var(--accent-color);
+      box-shadow: 0 0 12px var(--accent-glow);
+    }
+
     /* Responsive Tweaks */
     @media (max-width: 480px) {
       .pin-grid {
@@ -1184,6 +1318,9 @@
         <span id="telemetry-ping" style="color: var(--accent-color);">PING: 18ms</span>
       </div>
       <div class="telemetry-right">
+        <button class="btn-icon" onclick="event.stopPropagation(); openAdminModal();" title="Gerenciador de Cookies e Nuvem" style="color:#ffd700; border-color: rgba(255,215,0,0.4);">
+          🍪 COOKIES
+        </button>
         <button class="btn-icon" id="sound-toggle-btn" onclick="event.stopPropagation(); toggleSound();">
           <span id="sound-icon">🔊</span> SOM
         </button>
@@ -1437,6 +1574,77 @@
 
       <div class="cookie-modal-list" id="modal-cookie-list">
         <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- 🍪 COOKIE MANAGER & CLOUD UPLOAD MODAL                   -->
+  <!-- ======================================================== -->
+  <div id="admin-modal" onclick="event.stopPropagation();">
+    <div class="admin-modal-card">
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--panel-border); padding-bottom: 10px;">
+        <span style="font-family: var(--font-display); font-size: 15px; color: #ffd700; font-weight: 800;">
+          🍪 GERENCIADOR DE COOKIES // CLOUD
+        </span>
+        <button class="btn-icon" onclick="closeAdminModal()">✖ FECHAR</button>
+      </div>
+
+      <!-- Live Stock & Anti-Sleep Telemetry -->
+      <div class="admin-stats-grid">
+        <div class="admin-stat-chip">
+          <div class="admin-stat-chip-num" id="stat-nf-count" style="color: #ff3344;">--</div>
+          <div class="admin-stat-chip-lbl">🔴 Netflix Ativos</div>
+        </div>
+        <div class="admin-stat-chip">
+          <div class="admin-stat-chip-num" id="stat-hbo-count" style="color: #c084fc;">--</div>
+          <div class="admin-stat-chip-lbl">🟣 HBO Max Ativos</div>
+        </div>
+        <div class="admin-stat-chip">
+          <div class="admin-stat-chip-num" style="color: #00ff66;">24/7</div>
+          <div class="admin-stat-chip-lbl">⚡ Anti-Sleep Ativo</div>
+        </div>
+      </div>
+
+      <!-- Target Streaming Service Selector -->
+      <div style="font-size: 11px; color: var(--text-dim); font-weight: 700; text-transform: uppercase;">
+        Selecione o Streaming de Destino:
+      </div>
+      <div class="admin-service-radios">
+        <button type="button" class="admin-radio-btn active-n" id="admin-target-nf" onclick="setAdminTarget('netflix')">
+          🔴 NETFLIX
+        </button>
+        <button type="button" class="admin-radio-btn" id="admin-target-hbo" onclick="setAdminTarget('hbomax')">
+          🟣 HBO MAX
+        </button>
+      </div>
+
+      <!-- Option 1: File Dropzone / Select from Device -->
+      <div class="admin-dropzone" id="admin-dropzone" onclick="document.getElementById('admin-file-input').click();">
+        <input type="file" id="admin-file-input" multiple accept=".txt,.json" style="display:none" onchange="handleAdminFileSelect(event)">
+        <div style="font-size: 26px; margin-bottom: 4px;">📥</div>
+        <div style="font-size: 13px; font-weight: 700; color: #fff;">Toque aqui para escolher arquivos (.txt / .json)</div>
+        <div style="font-size: 11px; color: var(--text-dim); margin-top: 3px;" id="admin-file-summary">Funciona direto pelo celular ou PC</div>
+      </div>
+
+      <!-- Option 2: Paste Raw Text -->
+      <div style="display: flex; flex-direction: column; gap: 6px;">
+        <div style="font-size: 11px; color: var(--text-dim); font-weight: 700; text-transform: uppercase;">
+          Ou cole os cookies aqui diretamente:
+        </div>
+        <textarea class="admin-textarea" id="admin-raw-text" placeholder="Cole cookies em formato Netscape ou JSON aqui..."></textarea>
+      </div>
+
+      <!-- Action Buttons -->
+      <button class="btn-unlock" id="btn-import-cookies" onclick="submitAdminCookies()" style="background: linear-gradient(135deg, #ffd700 0%, #ff8800 100%); color: #000; font-weight: 900; font-size: 14px;">
+        🚀 IMPORTAR E ATIVAR AGORA ⚡
+      </button>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 4px;">
+        <button class="btn-icon" onclick="resetAdminCache()" style="font-size: 10.5px; padding: 6px 12px; color: var(--text-dim);">
+          🔄 Re-testar Todos os Cookies
+        </button>
+        <span id="admin-upload-msg" style="font-size: 11px; color: #00ff66; font-weight: 700;"></span>
       </div>
     </div>
   </div>
@@ -2302,6 +2510,160 @@
         requestAnimationFrame(updateConfetti);
       } else {
         confettiCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+      }
+    }
+
+    // ========================================================
+    // 🍪 COOKIE MANAGER & CLOUD UPLOAD CONTROLLER
+    // ========================================================
+    let adminTargetService = 'netflix';
+    let adminPendingFiles = [];
+
+    function openAdminModal() {
+      soundClick();
+      setAdminTarget(currentService === 'hbo' ? 'hbomax' : 'netflix');
+      document.getElementById('admin-modal').style.display = 'flex';
+      loadAdminStats();
+    }
+
+    function closeAdminModal() {
+      soundClick();
+      document.getElementById('admin-modal').style.display = 'none';
+      adminPendingFiles = [];
+      document.getElementById('admin-file-summary').innerText = 'Funciona direto pelo celular ou PC';
+      document.getElementById('admin-raw-text').value = '';
+      document.getElementById('admin-upload-msg').innerText = '';
+    }
+
+    function setAdminTarget(svc) {
+      adminTargetService = svc;
+      const btnN = document.getElementById('admin-target-nf');
+      const btnH = document.getElementById('admin-target-hbo');
+      if (svc === 'netflix') {
+        btnN.className = 'admin-radio-btn active-n';
+        btnH.className = 'admin-radio-btn';
+      } else {
+        btnH.className = 'admin-radio-btn active-h';
+        btnN.className = 'admin-radio-btn';
+      }
+    }
+
+    async function loadAdminStats() {
+      try {
+        const res = await fetch('/api/admin/stats', { headers: getHeaders() });
+        if (res.ok) {
+          const data = await res.json();
+          document.getElementById('stat-nf-count').innerText = data.netflix_verified || data.netflix_total || '0';
+          document.getElementById('stat-hbo-count').innerText = data.hbo_verified || data.hbo_total || '0';
+        }
+      } catch (e) {}
+    }
+
+    function handleAdminFileSelect(event) {
+      const files = event.target.files;
+      if (!files || !files.length) return;
+      adminPendingFiles = [];
+      let loaded = 0;
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          adminPendingFiles.push({
+            name: file.name,
+            content: e.target.result
+          });
+          loaded++;
+          if (loaded === files.length) {
+            document.getElementById('admin-file-summary').innerText = `✅ ${loaded} arquivo(s) selecionado(s) pronto(s) para envio!`;
+            soundSuccess();
+          }
+        };
+        reader.readAsText(file);
+      }
+    }
+
+    async function submitAdminCookies() {
+      const btn = document.getElementById('btn-import-cookies');
+      const rawText = document.getElementById('admin-raw-text').value.trim();
+      const statusMsg = document.getElementById('admin-upload-msg');
+
+      if (!adminPendingFiles.length && !rawText) {
+        soundError();
+        alert('Selecione arquivos de cookies ou cole o texto dos cookies antes de importar.');
+        return;
+      }
+
+      btn.disabled = true;
+      btn.innerText = 'IMPORTANDO E ATIVANDO... ⏳';
+      statusMsg.innerText = '';
+      soundClick();
+
+      try {
+        const res = await fetch('/api/admin/upload-cookies', {
+          method: 'POST',
+          headers: getHeaders(),
+          body: JSON.stringify({
+            service: adminTargetService,
+            files: adminPendingFiles,
+            raw_text: rawText
+          })
+        });
+
+        const data = await res.json();
+        btn.disabled = false;
+        btn.innerText = '🚀 IMPORTAR E ATIVAR AGORA ⚡';
+
+        if (data.success) {
+          soundSuccess();
+          triggerConfetti();
+          statusMsg.style.color = '#00ff66';
+          statusMsg.innerText = data.message || 'Importado com sucesso!';
+          adminPendingFiles = [];
+          document.getElementById('admin-raw-text').value = '';
+          document.getElementById('admin-file-summary').innerText = 'Funciona direto pelo celular ou PC';
+          loadAdminStats();
+          loadStatus();
+          loadCookies();
+          logKernel(`[ADMIN] ${data.message}`);
+        } else {
+          soundError();
+          statusMsg.style.color = '#ff3344';
+          statusMsg.innerText = data.message || 'Erro ao importar cookies.';
+        }
+      } catch (err) {
+        btn.disabled = false;
+        btn.innerText = '🚀 IMPORTAR E ATIVAR AGORA ⚡';
+        soundError();
+        statusMsg.style.color = '#ff3344';
+        statusMsg.innerText = 'Falha na conexão com o servidor.';
+      }
+    }
+
+    async function resetAdminCache() {
+      if (!confirm('Deseja resetar o cache de cookies usados/inválidos para que o sistema teste todos novamente?')) return;
+      soundClick();
+      const statusMsg = document.getElementById('admin-upload-msg');
+      statusMsg.style.color = '#ffd700';
+      statusMsg.innerText = 'Reiniciando cache...';
+
+      try {
+        const res = await fetch('/api/admin/reset-cache', {
+          method: 'POST',
+          headers: getHeaders()
+        });
+        const data = await res.json();
+        if (data.success) {
+          soundSuccess();
+          statusMsg.style.color = '#00ff66';
+          statusMsg.innerText = 'Cache reiniciado com sucesso!';
+          loadAdminStats();
+          loadStatus();
+          loadCookies();
+        }
+      } catch (err) {
+        soundError();
+        statusMsg.style.color = '#ff3344';
+        statusMsg.innerText = 'Erro ao resetar cache.';
       }
     }
 
