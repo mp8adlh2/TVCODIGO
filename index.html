@@ -799,7 +799,7 @@
     }
 
     /* ======================================================== */
-    /* 🔐 MASTER PASSWORD CYBER LOGIN OVERLAY - ROUNDED LOOK    */
+    /* 🔐 ROOT_SECURITY CYBER LOGIN OVERLAY - 1:1 MATCH         */
     /* ======================================================== */
     #login-overlay {
       position: fixed;
@@ -807,8 +807,8 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: rgba(6, 2, 8, 0.65);
-      backdrop-filter: blur(4px);
+      background: rgba(3, 8, 4, 0.72);
+      backdrop-filter: blur(3px);
       z-index: 10000;
       display: none;
       align-items: center;
@@ -819,67 +819,100 @@
     .login-card {
       width: 100%;
       max-width: 440px;
-      background: var(--panel-bg);
-      border: 1.5px solid var(--accent-color);
+      background: rgba(6, 16, 9, 0.90);
+      border: 1.8px solid #00ff66;
       border-radius: 28px;
-      padding: 34px 28px;
-      box-shadow: 0 10px 60px var(--accent-glow), inset 0 0 25px var(--accent-glow-subtle);
+      padding: 36px 30px;
+      box-shadow: 0 0 45px rgba(0, 255, 102, 0.35), inset 0 0 25px rgba(0, 255, 102, 0.1);
       text-align: center;
       position: relative;
       animation: modalSlide 0.35s ease;
     }
 
     .login-icon-box {
-      width: 74px;
-      height: 74px;
+      width: 76px;
+      height: 76px;
       border-radius: 50%;
-      background: var(--accent-glow-subtle);
-      border: 2px solid var(--accent-color);
+      background: rgba(0, 255, 102, 0.08);
+      border: 2px solid #00ff66;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 32px;
       margin: 0 auto 18px;
-      box-shadow: 0 0 25px var(--accent-glow);
+      box-shadow: 0 0 25px rgba(0, 255, 102, 0.45);
+    }
+
+    .login-icon-svg {
+      width: 34px;
+      height: 34px;
+      fill: none;
+      stroke: #00ff66;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      filter: drop-shadow(0 0 8px #00ff66);
     }
 
     .login-title {
-      font-family: var(--font-display);
-      font-size: 17px;
-      font-weight: 800;
-      color: var(--accent-color);
-      letter-spacing: 1px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 24px;
+      font-weight: 900;
+      color: #ffffff;
+      letter-spacing: 2px;
       margin-bottom: 6px;
+      text-shadow: 0 0 16px rgba(0, 255, 102, 0.8), 0 0 5px #00ff66;
     }
 
     .login-sub {
-      font-size: 11.5px;
-      color: var(--text-dim);
-      line-height: 1.5;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10.5px;
+      color: #00ff66;
+      font-weight: 700;
+      letter-spacing: 0.8px;
       margin-bottom: 24px;
+      opacity: 0.9;
     }
 
     .login-input-wrap {
       position: relative;
       margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+    }
+
+    .login-input-icon {
+      position: absolute;
+      left: 16px;
+      color: #00ff66;
+      font-size: 15px;
+      pointer-events: none;
+      z-index: 2;
     }
 
     .login-input {
       width: 100%;
-      background: rgba(0, 0, 0, 0.55);
-      border: 1.5px solid var(--panel-border);
-      border-radius: 18px;
-      padding: 14px 44px 14px 18px;
-      color: #fff;
-      font-family: var(--font-body);
-      font-size: 13px;
+      background: rgba(0, 0, 0, 0.75);
+      border: 1.5px solid rgba(0, 255, 102, 0.5);
+      border-radius: 25px;
+      padding: 14px 44px 14px 44px;
+      color: #ffffff;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12.5px;
+      letter-spacing: 1px;
       outline: none;
-      transition: all 0.2s ease;
+      transition: all 0.25s ease;
+    }
+
+    .login-input::placeholder {
+      color: rgba(0, 255, 102, 0.65);
+      letter-spacing: 1.5px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11.5px;
     }
 
     .login-input:focus {
-      border-color: var(--accent-color);
-      box-shadow: 0 0 18px var(--accent-glow);
+      border-color: #00ff66;
+      box-shadow: 0 0 20px rgba(0, 255, 102, 0.6);
     }
 
     .btn-eye {
@@ -889,67 +922,78 @@
       transform: translateY(-50%);
       background: transparent;
       border: none;
-      color: var(--text-dim);
+      color: #00ff66;
       cursor: pointer;
       font-size: 16px;
+      opacity: 0.8;
+      transition: opacity 0.2s ease;
     }
 
     .btn-eye:hover {
-      color: var(--accent-color);
+      opacity: 1;
     }
 
     .login-options {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
       font-size: 11.5px;
-      color: var(--text-dim);
       margin-bottom: 22px;
     }
 
     .login-checkbox-label {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
       cursor: pointer;
+      color: #a3e635;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 600;
     }
 
     .login-checkbox {
-      accent-color: var(--accent-color);
-      width: 15px;
-      height: 15px;
+      accent-color: #00ff66;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
     }
 
     .btn-unlock {
       width: 100%;
-      background: var(--accent-gradient);
-      color: #fff;
+      background: linear-gradient(135deg, #00ff66 0%, #00cc55 100%);
+      color: #000000;
       border: none;
-      border-radius: 30px;
-      padding: 15px;
-      font-family: var(--font-display);
+      border-radius: 35px;
+      padding: 16px;
+      font-family: 'JetBrains Mono', monospace;
       font-size: 14px;
-      font-weight: 800;
-      letter-spacing: 0.8px;
+      font-weight: 900;
+      letter-spacing: 1px;
       cursor: pointer;
-      box-shadow: 0 4px 20px var(--accent-glow);
+      box-shadow: 0 0 25px rgba(0, 255, 102, 0.5);
       transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
     }
 
     .btn-unlock:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 6px 28px var(--accent-glow);
+      transform: translateY(-2px);
+      box-shadow: 0 0 35px rgba(0, 255, 102, 0.7);
     }
 
     .login-error {
       display: none;
       color: #ff3344;
       font-size: 11.5px;
+      font-family: 'JetBrains Mono', monospace;
       margin-top: 14px;
       padding: 10px;
       border-radius: 12px;
-      background: rgba(255, 51, 68, 0.1);
-      border: 1px solid rgba(255, 51, 68, 0.3);
+      background: rgba(255, 51, 68, 0.15);
+      border: 1px solid rgba(255, 51, 68, 0.4);
     }
 
     .login-hint {
@@ -1545,21 +1589,26 @@
   <!-- ======================================================== -->
   <div id="login-overlay" onclick="event.stopPropagation();">
     <div class="login-card">
-      <div class="login-icon-box">🔐</div>
-      <div class="login-title">TERMINAL CYBER DECK</div>
-      <div class="login-sub">ACESSO RESTRITO // DIGITE A SENHA MESTRE</div>
+      <div class="login-icon-box">
+        <svg class="login-icon-svg" viewBox="0 0 24 24">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+        </svg>
+      </div>
+      <div class="login-title">ROOT_SECURITY</div>
+      <div class="login-sub">// ACESSO RESTRITO • PROTOCOLO CRIPTOGRÁFICO</div>
 
       <div class="login-input-wrap">
-        <input type="password" id="login-password-input" class="login-input" placeholder="Digite a Senha Mestre..." onkeydown="if(event.key==='Enter') executeLogin();">
+        <span class="login-input-icon">🔒</span>
+        <input type="password" id="login-password-input" class="login-input" placeholder="DIGITE A SENHA MESTRE..." onkeydown="if(event.key==='Enter') executeLogin();">
         <button class="btn-eye" type="button" onclick="togglePasswordVisibility()">👁️</button>
       </div>
 
       <div class="login-options">
         <label class="login-checkbox-label">
           <input type="checkbox" id="remember-me" class="login-checkbox" checked>
-          <span>Lembrar neste dispositivo</span>
+          <span>Lembrar neste dispositivo (Acesso rápido)</span>
         </label>
-        <span style="color: var(--accent-color); font-size: 11px; font-weight: 700;">DEFESA ATIVA</span>
       </div>
 
       <button class="btn-unlock" onclick="executeLogin()">
@@ -2496,9 +2545,24 @@
     }
 
     function drawMatrix() {
-      const isNetflix = (currentService === 'netflix');
+      const loginOverlay = document.getElementById('login-overlay');
+      const isLoginVisible = loginOverlay && (loginOverlay.style.display === 'flex' || window.getComputedStyle(loginOverlay).display === 'flex');
+      
+      let rainColor = '#00ff66';
+      let trailBg = 'rgba(2, 8, 4, 0.14)';
+      
+      if (!isLoginVisible) {
+        if (currentService === 'netflix') {
+          rainColor = '#e50914';
+          trailBg = 'rgba(8, 2, 5, 0.14)';
+        } else {
+          rainColor = '#a855f7';
+          trailBg = 'rgba(6, 2, 12, 0.14)';
+        }
+      }
+
       // Subtle transparent overlay for matrix stream trails
-      matrixCtx.fillStyle = isNetflix ? 'rgba(8, 2, 5, 0.14)' : 'rgba(6, 2, 12, 0.14)';
+      matrixCtx.fillStyle = trailBg;
       matrixCtx.fillRect(0, 0, matrixCanvas.width, matrixCanvas.height);
       
       matrixCtx.font = fontSize + 'px monospace';
@@ -2511,7 +2575,7 @@
         if (Math.random() > 0.88) {
           matrixCtx.fillStyle = '#ffffff';
         } else {
-          matrixCtx.fillStyle = isNetflix ? '#e50914' : '#a855f7';
+          matrixCtx.fillStyle = rainColor;
         }
 
         matrixCtx.fillText(text, i * fontSize, y);
