@@ -99,7 +99,7 @@
       height: 100vh;
       pointer-events: none;
       z-index: 0;
-      opacity: 0.55;
+      opacity: 0.95;
     }
 
     /* Confetti Canvas */
@@ -801,14 +801,13 @@
     /* ======================================================== */
     /* 🔐 ROOT_SECURITY CYBER LOGIN OVERLAY - 1:1 MATCH         */
     /* ======================================================== */
-    #login-overlay {
+    #login-overlay, #admin-auth-modal {
       position: fixed;
       top: 0;
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: rgba(3, 8, 4, 0.72);
-      backdrop-filter: blur(3px);
+      background: rgba(0, 0, 0, 0.85);
       z-index: 10000;
       display: none;
       align-items: center;
@@ -819,7 +818,7 @@
     .login-card {
       width: 100%;
       max-width: 440px;
-      background: rgba(6, 16, 9, 0.90);
+      background: rgba(6, 16, 9, 0.94);
       border: 1.8px solid #00ff66;
       border-radius: 28px;
       padding: 36px 30px;
@@ -994,6 +993,52 @@
       border-radius: 12px;
       background: rgba(255, 51, 68, 0.15);
       border: 1px solid rgba(255, 51, 68, 0.4);
+    }
+
+    /* 🔴 COOKIE SECURITY RED THEME (1:1 ROOT SECURITY) */
+    .admin-red-card {
+      background: rgba(20, 6, 8, 0.94) !important;
+      border: 1.8px solid #E50914 !important;
+      box-shadow: 0 0 45px rgba(229, 9, 20, 0.4), inset 0 0 25px rgba(229, 9, 20, 0.12) !important;
+    }
+    .admin-red-icon-box {
+      background: rgba(229, 9, 20, 0.08) !important;
+      border: 2px solid #E50914 !important;
+      box-shadow: 0 0 25px rgba(229, 9, 20, 0.45) !important;
+    }
+    .admin-red-icon-svg {
+      stroke: #E50914 !important;
+      filter: drop-shadow(0 0 8px #E50914) !important;
+    }
+    .admin-red-title {
+      text-shadow: 0 0 16px rgba(229, 9, 20, 0.8), 0 0 5px #E50914 !important;
+    }
+    .admin-red-sub {
+      color: #ff3344 !important;
+    }
+    .admin-red-input-icon {
+      color: #ff3344 !important;
+    }
+    .admin-red-input {
+      border: 1.5px solid rgba(229, 9, 20, 0.5) !important;
+    }
+    .admin-red-input::placeholder {
+      color: rgba(255, 77, 90, 0.65) !important;
+    }
+    .admin-red-input:focus {
+      border-color: #E50914 !important;
+      box-shadow: 0 0 20px rgba(229, 9, 20, 0.6) !important;
+    }
+    .admin-red-btn-eye {
+      color: #ff3344 !important;
+    }
+    .admin-red-btn-unlock {
+      background: linear-gradient(135deg, #E50914 0%, #a8050e 100%) !important;
+      color: #ffffff !important;
+      box-shadow: 0 0 25px rgba(229, 9, 20, 0.5) !important;
+    }
+    .admin-red-btn-unlock:hover {
+      box-shadow: 0 0 35px rgba(229, 9, 20, 0.8) !important;
     }
 
     .login-hint {
@@ -1674,27 +1719,33 @@
   </div>
 
   <!-- ======================================================== -->
-  <!-- 🔐 ADMIN COOKIE VAULT PASSWORD OVERLAY                   -->
+  <!-- 🔐 ADMIN COOKIE VAULT PASSWORD OVERLAY (RED THEME)       -->
   <!-- ======================================================== -->
-  <div id="admin-auth-modal" onclick="event.stopPropagation();" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(6, 2, 8, 0.70); backdrop-filter: blur(4px); z-index: 10003; display: none; align-items: center; justify-content: center; padding: 20px;">
-    <div class="login-card" style="border-color: #ffd700; box-shadow: 0 10px 60px rgba(255,215,0,0.35);">
-      <div class="login-icon-box" style="border-color: #ffd700; color: #ffd700; background: rgba(255,215,0,0.12);">🍪</div>
-      <div class="login-title" style="color: #ffd700;">COFRE DE COOKIES // ADMIN</div>
-      <div class="login-sub">ACESSO EXCLUSIVO // DIGITE A SENHA DO GERENCIADOR</div>
+  <div id="admin-auth-modal" onclick="event.stopPropagation();">
+    <div class="login-card admin-red-card">
+      <div class="login-icon-box admin-red-icon-box">
+        <svg class="login-icon-svg admin-red-icon-svg" viewBox="0 0 24 24">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+        </svg>
+      </div>
+      <div class="login-title admin-red-title" style="color: #ffffff;">COOKIE_SECURITY</div>
+      <div class="login-sub admin-red-sub">// COFRE DE COOKIES • PROTOCOLO CRIPTOGRÁFICO</div>
 
       <div class="login-input-wrap">
-        <input type="password" id="admin-pass-input" class="login-input" placeholder="Senha do Gerenciador de Cookies..." onkeydown="if(event.key==='Enter') executeAdminUnlock();">
-        <button class="btn-eye" type="button" onclick="const inp=document.getElementById('admin-pass-input'); inp.type=(inp.type==='password'?'text':'password');">👁️</button>
+        <span class="login-input-icon admin-red-input-icon">🔒</span>
+        <input type="password" id="admin-pass-input" class="login-input admin-red-input" placeholder="DIGITE A SENHA DO COFRE..." onkeydown="if(event.key==='Enter') executeAdminUnlock();">
+        <button class="btn-eye admin-red-btn-eye" type="button" onclick="const inp=document.getElementById('admin-pass-input'); inp.type=(inp.type==='password'?'text':'password');">👁️</button>
       </div>
 
-      <button class="btn-unlock" onclick="executeAdminUnlock()" style="background: linear-gradient(135deg, #ffd700 0%, #ff8800 100%); color: #000; font-weight: 900;">
+      <button class="btn-unlock admin-red-btn-unlock" onclick="executeAdminUnlock()">
         DESBLOQUEAR COFRE 🔓
       </button>
 
       <div class="login-error" id="admin-auth-error-msg"></div>
 
-      <div style="margin-top: 14px; text-align: center;">
-        <a onclick="closeAdminAuthModal()" style="color: var(--text-dim); font-size: 11px; cursor: pointer; text-decoration: underline;">✖ Cancelar e Voltar</a>
+      <div style="margin-top: 16px; text-align: center;">
+        <a onclick="closeAdminAuthModal()" style="color: #ff4d5a; font-family: 'JetBrains Mono', monospace; font-size: 11px; cursor: pointer; text-decoration: underline;">✖ Cancelar e Voltar</a>
       </div>
     </div>
   </div>
@@ -1913,6 +1964,8 @@
     }
 
     function showLoginOverlay() {
+      const deck = document.querySelector('.deck-container');
+      if (deck) deck.style.display = 'none';
       document.getElementById('login-overlay').style.display = 'flex';
       setTimeout(() => {
         document.getElementById('login-password-input').focus();
@@ -1920,6 +1973,8 @@
     }
 
     function hideLoginOverlay() {
+      const deck = document.querySelector('.deck-container');
+      if (deck) deck.style.display = 'flex';
       document.getElementById('login-overlay').style.display = 'none';
       document.getElementById('login-error-msg').style.display = 'none';
       document.getElementById('login-password-input').value = '';
@@ -2546,22 +2601,26 @@
 
     function drawMatrix() {
       const loginOverlay = document.getElementById('login-overlay');
+      const adminAuthModal = document.getElementById('admin-auth-modal');
       const isLoginVisible = loginOverlay && (loginOverlay.style.display === 'flex' || window.getComputedStyle(loginOverlay).display === 'flex');
+      const isAdminAuthVisible = adminAuthModal && (adminAuthModal.style.display === 'flex' || window.getComputedStyle(adminAuthModal).display === 'flex');
       
       let rainColor = '#00ff66';
-      let trailBg = 'rgba(2, 8, 4, 0.14)';
+      let trailBg = 'rgba(0, 0, 0, 0.16)';
       
-      if (!isLoginVisible) {
+      if (isAdminAuthVisible) {
+        rainColor = '#E50914';
+      } else if (isLoginVisible) {
+        rainColor = '#00ff66';
+      } else {
         if (currentService === 'netflix') {
-          rainColor = '#e50914';
-          trailBg = 'rgba(8, 2, 5, 0.14)';
+          rainColor = '#E50914';
         } else {
           rainColor = '#a855f7';
-          trailBg = 'rgba(6, 2, 12, 0.14)';
         }
       }
 
-      // Subtle transparent overlay for matrix stream trails
+      // Subtle transparent overlay for matrix stream trails on deep black
       matrixCtx.fillStyle = trailBg;
       matrixCtx.fillRect(0, 0, matrixCanvas.width, matrixCanvas.height);
       
@@ -2668,12 +2727,15 @@
 
     function openAdminModal() {
       soundClick();
+      const deck = document.querySelector('.deck-container');
       if (!adminCookieToken) {
+        if (deck) deck.style.display = 'none';
         document.getElementById('admin-auth-modal').style.display = 'flex';
         document.getElementById('admin-pass-input').value = '';
         document.getElementById('admin-auth-error-msg').style.display = 'none';
         setTimeout(() => document.getElementById('admin-pass-input').focus(), 100);
       } else {
+        if (deck) deck.style.display = 'none';
         setAdminTarget(currentService === 'hbo' ? 'hbomax' : 'netflix');
         document.getElementById('admin-modal').style.display = 'flex';
         loadAdminStats();
@@ -2682,6 +2744,8 @@
 
     function closeAdminAuthModal() {
       soundClick();
+      const deck = document.querySelector('.deck-container');
+      if (deck) deck.style.display = 'flex';
       document.getElementById('admin-auth-modal').style.display = 'none';
     }
 
@@ -2727,6 +2791,8 @@
 
     function closeAdminModal() {
       soundClick();
+      const deck = document.querySelector('.deck-container');
+      if (deck) deck.style.display = 'flex';
       document.getElementById('admin-modal').style.display = 'none';
       adminPendingFiles = [];
       document.getElementById('admin-file-summary').innerText = 'Funciona direto pelo celular ou PC';
