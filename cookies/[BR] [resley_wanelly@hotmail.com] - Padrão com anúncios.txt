@@ -1,0 +1,55 @@
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           Resley
+📧  Email:          resley_wanelly@hotmail.com
+🌍  Pais:           Brazil (BR)
+
+📋  Plano:          Padrão com anúncios
+💰  Preco:          R$ 20,90
+📅  Membro desde:   setembro de 2025
+🗓  Prox. cobranca: 26 de setembro de 2026
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      HD 720p
+📺  Max Streams:    2
+➕  Extra Slots:    0
+
+💳  Bandeira:       MASTERCARD
+🔢  Final Cartao:   6989
+💳  Metodo Pagto:   CC
+
+📞  Telefone:       (21) 96606-6018
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  Resley
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+Valid Cookie / Every day!
+https://russia34.com
+
+– Email: resley_wanelly@hotmail.com
+– Verified: false
+– Profile: Resley
+– Plan: Standard with ads
+– Next billing: 26 de setembro de 2026
+– Extra members: false
+– Country: BR
+– Payments: 1 | CC (MASTERCARD 6989)
+– Cookies: russia34link.com
+
+.netflix.com	TRUE	/	FALSE	1798605776	nfvdid	BQFmAAEBEEnTEkSLWdWYclRVbTsT7jRg332Xe2CcBS3V5qj9AQngqR0QgbWPvT6bRqw5BGKp4Yf4y528B0JP-HYrBBOm3AgwFJI7C9qi8sD6Bh-jXH5fbaWpKAAcf3u3jj183EvvDrp9qnkky386Ccd7E9KeiCWm
+.netflix.com	TRUE	/	FALSE	1804000155	OptanonAlertBoxClosed	2026-03-02T15:09:15.768Z
+.netflix.com	TRUE	/	TRUE	1790616505	gsid	889a266a-6bff-4ce6-bae2-c3dfe43e0a57
+.netflix.com	TRUE	/	TRUE	1818592341	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKaA1tgYH1OSX2syq3V3ctqcPvCbzS17YM8l8Pou2AnTATLN2Z6tqQnD8qbJMtAwY-fl6ZVfLEdsrhzLI1UfuaHkE7BC8dL6XBOozSPar9PSYyL1nYVG6I-4b79NOR1rGSwAwzgsSaJuNfS87wgRNpfWDpDzM0WHx3_akCnVt8hGy7ubVrZnJ3rNUdcTS1iLPMH_Qoqka8GZxN_O5QnQg55iERZuVvPl3TcMITYiqjJwrKmCG6e3UjffNpC5fRTX9TyRjJsfMbdccurPM7l8S5SGeBKKZNYhwNapnNV9EGWYevkJj2jiIVA6G0xCcgVaYkOi-QimY_2-qpwib7Pl_rUfcI560Y4mwdissfq7QO9ceFHA_z8iB5UnRvwoixsn4T2wacdDaBvwKGYTAXKZQH_Ej2zx1ymVtdlYnLJQqKZueAvxDdyeOT0V9LK5WfB2lMDaYMXsZfM2gXqfiE-OP3h1E1MfzdNkMxHho6b5nUEiWnlhDjroFMhMiKAd03fY8fH8jqEbC2JKhK08oR0NwhBxYzBwLZgUfssWsJ5GAYiDgoMQSsmL1i6MyIdbKmW%26pg%3D6BJ7MXPCYVDKDBWQGAH7QVKUBQ%26ch%3DAQEAEAABABT2-xEyALZ9IBENvsecCyCZzQsxLZBWtWg.
+.netflix.com	TRUE	/	FALSE	1818592343	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Aug+18+2026+09%3A32%3A23+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=c87a48cd-af34-4865-8607-41a0a939e79d&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=3&crTime=1772464156515&geolocation=BR%3BRJ&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1818592341	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSCwUQAbUKmJwIstXIbvI6A1tJla1FvEpE.%26dt%3D1787056341624
+.netflix.com	TRUE	/	TRUE	1821616345	nap	BgjvvevcAxJJbUaYXTBcQ5RzZtMGLxzXeQS_BTkWPB_SMUxhowjR5CX816lXGtlLotlr34uZTHCDv4Ycdp2ayMmArMXX1zrIDiujR3JqF9djIRgGIg4KDP0tXi7IWaj2l86lCQ..
+.netflix.com	TRUE	/	FALSE	1794832343	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794832343	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794832343	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	FALSE	1790616505	profilesNewSession	0
+======================================================================

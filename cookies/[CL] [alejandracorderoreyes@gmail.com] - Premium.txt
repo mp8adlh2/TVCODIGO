@@ -1,0 +1,53 @@
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           Mateo Tavali
+📧  Email:          alejandracorderoreyes@gmail.com
+🌍  Pais:           Chile (CL)
+
+📋  Plano:          Premium
+💰  Preco:          CLP 12,990
+📅  Membro desde:   February 2024
+🗓  Prox. cobranca: August 31, 2026
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      UHD 4K
+📺  Max Streams:    4
+➕  Extra Slots:    0
+
+💳  Bandeira:       MASTERCARD
+🔢  Final Cartao:   0519
+💳  Metodo Pagto:   CC
+
+📞  Telefone:       9 3390 5567
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  Andrea
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+Valid Cookie / Every day!
+https://russia34.com
+
+– Email: alejandracorderoreyes@gmail.com
+– Verified: false
+– Profile: Mateo\x20Tavali
+– Plan: Premium
+– Next billing: 31 de agosto de 2026
+– Extra members: false
+– Country: CL
+– Payments: 1 | CC (MASTERCARD 0519)
+– Cookies: Admin @logslead
+
+.netflix.com	TRUE	/	TRUE	1790616446	gsid	713af45b-c1ed-4e85-aa32-9c77139bb6f4
+.netflix.com	TRUE	/	FALSE	1797966589	nfvdid	BQFmAAEBEDU7fg6YTo9m3YNLq9q0gX5gZ12X5kpUTL_YX9PCVXzkRWL9f3K7WZxwK-YOp26hWlkWq7k6KNvfHpbGVyBIkUeUU_-prFaMz41N1QCBO4L070hoROY3I2liSecjcyDDRrs5R6-AFSStLDIRU79hit9i
+.netflix.com	TRUE	/	TRUE	1798050040	NetflixId	ct%3DBgjHlOvcAxK6A1cGEqoJ_5fqRZLGznL14gXzJBCG6Fe0_JhxtKzeYngALl4X_XQ8zNSqI0Oe5pIjjgv-GhDkWflnxUlLcHl7x6oTRDrMej30FftcVz38we5cKTM9TX5i7gKklDyuNWmnHFRLQj3NA8zJblral5tsm5SfZ7EIIygl1GcZbiDfXvk0PMCiBiWJr-45LV4qPi4V78912Fk7szWFL98vXGsZ1IJadh0iJBvmkPZ98_apGHnrhKq34zUBHjGQSRWAUxpdkv-zcmoiuH4akaYxMZ0R_J5dI-p12wQBtMgsVyHTbSuZe1shN5Z-cSS_W_d3dT2ctlWKfCcDsI1cqJB02W0hPuPxWdYTPwbDNuuII0dap-9cvUmuQ3VbvCONTzLoWazWYQLrvPKRFPkyB3YumkPCqMEAeLX5qXY68_WRnwecy6aTRLAVeXuxr0Nuhf2hzE-TE4fcFRg9ei8-sMDEC3qTW3V1ltjK0QPiKEHKnck-8dVhTMoaUrLItydPQjwwIawOeWyZz99uJUQp_yqA87A9eEW3nFDzv9SVq79K69wLleyQpIqv6J58aP58yfCj5QEAQJc-RtjjaYZB6h8YBiIOCgyiF_8cm0TiXE_3Yuo.%26ch%3DAQEAEAABABQPwkh85gHj3XQhFUI4Tc6-dt7rlw3bCQI.%26v%3D3%26pg%3D6L5CCJVSXBBGDN65P3GAP263BM
+.netflix.com	TRUE	/	TRUE	1798050040	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABT5t1DcoK2bxmkiB4xlRnGUKcJ-VE8cDvo.%26dt%3D1782498038869
+.netflix.com	TRUE	/	FALSE	1790616446	flwssn	7c3c7dee-bde1-4009-acca-daf35aa745b6
+.netflix.com	TRUE	/	FALSE	1790274038	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1790274038	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1790274038	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	FALSE	1790616446	profilesNewSession	0
+======================================================================

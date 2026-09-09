@@ -1,0 +1,53 @@
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           killua
+📧  Email:          alrizafirgiawan@gmail.com
+🌍  Pais:           Indonesia (ID)
+
+📋  Plano:          Basic
+💰  Preco:          IDR 65,000
+📅  Membro desde:   March 2026
+🗓  Prox. cobranca: 20 September 2026
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      HD720P
+📺  Max Streams:    1
+➕  Extra Slots:    0
+
+💳  Bandeira:       DANA
+🔢  Final Cartao:   62-882****6264
+💳  Metodo Pagto:   MOBILE_WALLET
+
+📞  Telefone:       0882-1877-6264
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  killua
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+Valid Cookie / Every day!
+https://russia34.com
+
+– Email: alrizafirgiawan@gmail.com
+– Verified: false
+– Profile: killua
+– Plan: Basic
+– Next billing: 20 September 2026
+– Extra members: false
+– Country: ID
+– Payments: 1 | MOBILE_WALLET (DANA 62-882****6264)
+– Cookies: Cloud WebSite russia34.com
+
+.netflix.com	TRUE	/	FALSE	1804415693	nfvdid	BQFmAAEBEHMBkb-dYshJULqcAOjzL4dgBlBdtyZB-x_-FYjwW2pDrHFTjpBo6blwaKX2VO7awEAjOdh2InP3Idn6gIMo3nDUJoELCfMjL5ee1zPXQ_Im_-lxMnI2GcIosE3oCktuE4LMpCzLllwFJOGU4Aix_qD7
+.netflix.com	TRUE	/	TRUE	1818673263	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKYA_wsmyVl5FlFIRY1bIz4gGThVBpDfWrcO-gfjEMn24c-L6s_Cvy0UcaPdil5_vjNhHIAxrKh51sQb8s7rBTn1nedMSceRe3iYoJI2XquYr0lLPKXACbGLDbOD3VC7tQAcCuo5CyMLrCFL9c8K3m6QvhS4caO44gwPsWUWNeJ3rghhpohY1ulFV8AFjS1pGJj84xziPlXpbi8no-HRC3StR4LOg64kzuB1MsXmKTX363xieYH-vp-X7cnW1WOQApiUzkzuGcfANtGKIF0MxcEu3tPM10oAiWdhKzXt_gNXzZnrjjTjqB3mbSa9Zz0JJOPtrBvW0wPJxL_FPVgsVrIS44etncK_zX0uJcuBOmJ34goJizjPE10_tsxE-UQtPaTIScI-gB0dhY7kOdpqzfqA-F1RGWb1r9T65fqWkgrTVcZsvn6FZRT9ADUaJ2fEflEelkt2Z4h7ECmQrqW2VJEHGJKVvSqDXx_EinMcC5uywTZ6GYAq1XUmN8zIVDG3i-Wkgc83yq9SsHbMhnK8jOnLwQMhQj1fhg5hBgGIg4KDOpKjdEtjwIBplTZpg..%26pg%3DOA2Y3HE7YZGNJMVPIDJZRQNZ6E%26ch%3DAQEAEAABABQESSv9ndOEgLB8W5kl5pLG43wV4fDVUDA.
+.netflix.com	TRUE	/	TRUE	1818673263	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQSqKH9nQFxYvMBD0ndUjoY0RbY6DEBe34.%26dt%3D1787137266425
+.netflix.com	TRUE	/	TRUE	1790616446	gsid	da916611-5eae-4fa2-b2c1-426dff8b89cf
+.netflix.com	TRUE	/	FALSE	1818678178	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Aug+19+2026+19%3A22%3A58+GMT%2B0700+(Western+Indonesia+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=cf5cfe73-7aef-40a9-a606-bf90e6dcd27d&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1772879692667&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	FALSE	1794918178	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794918178	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794918178	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	FALSE	1790616446	profilesNewSession	0
+======================================================================

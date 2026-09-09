@@ -1,0 +1,56 @@
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           AshenSaga
+📧  Email:          busador@gmail.com
+🌍  Pais:           Germany (DE)
+
+📋  Plano:          Standardni s reklamama
+💰  Preco:          N/A
+📅  Membro desde:   lipanj 2026.
+🗓  Prox. cobranca: N/A
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      HD 720p
+📺  Max Streams:    2
+➕  Extra Slots:    0
+
+💳  Bandeira:       N/A
+🔢  Final Cartao:   English
+💳  Metodo Pagto:   DT_GERMANY_BILLED
+
+📞  Telefone:       01516 1422628
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  AshenSaga
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+Valid Cookie / Every day!
+https://russia34.com
+
+– Email: busador@gmail.com
+– Verified: false
+– Profile: AshenSaga
+– Plan: Standard with ads
+– Next billing: 
+– Extra members: false
+– Country: DE
+– Payments: 1 | DT_GERMANY_BILLED ( )
+– Cookies: russia34link.com
+
+.netflix.com	TRUE	/	FALSE	1803821675	OptanonAlertBoxClosed	2026-02-28T13:34:35.930Z
+.netflix.com	TRUE	/	FALSE	1813345770	nfvdid	BQFmAAEBEJIuF3FQ1O1QkKaYRN2eaWlgkTxB9p1vYHGxGk8pNS0ANlPLv8DMOBs1434hJnEW9qdNadangwWUMr9yOVv74_KImUkRtTe8XYYL37qgcFDISUrye-CTAPjZVhodd2oa31XfOdsi605NKPOz2Q1LIx0F
+.netflix.com	TRUE	/	FALSE	1794822814	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794822814	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794822814	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	TRUE	1818695105	NetflixId	ct%3DBgjHlOvcAxL_A4IYTgzUEgXswUlL-NN8VOVHZOl1PkKJDKLfoe9q4CgT6Z9XEWcfv6XHqY_O3eNwilRIfk3__vYtb7Bakpu6bAluvJ2cakT7C6S_5ju7-BSHbvVmEUi6mDFxeiRtUDFwW8x9ZfQGFYPDG2Oro5INfuobNEzFdG4BhlC7V1ol2l0iyoUDJLMoETMOSAPirCvc8R9uUv47nlalZiYdX_h_ZtjkOcF-ZyD7UmNH32GsSHWeLKq6GmVWshxEgrrp1EM-fgYJR9978DoCeuoGPBt99gONbUUi2-U-SXou0ei10WppsHc3kF5zYkhCwBtZEGClNoZsI6Ia1_6SB5glteuXV-G3g5QJKTE8Cenu5j4lqGwQZ1b_GMmELX_GrX4OfxeuzZL-bc1aQwZ3og4vsliO1xNYKQHimnmc7hL40LiIUpPrtwFZbUgOwkk4X3ItGoYQhSlTUKFLH31xwmcV-hI6CwA219T5YcoP7PcRVicQwrGoG3m0YF-o8UOivywJi_MCmL8HUUOBuGFDzjqxSyxSXF-x3xW8XkYsbBRVcJM26dcVVuLMbWm6dYVmENd73eqQf3NLg57IBg4NHNO8doBvsANINuJkNV1SQ29IC_Xa3jRcMLYymsDQj9xpjuAapi9SrwMROjDHSQEj1X9XNtBejXwCD8SGuZ9EWNfMWQpGxn8YBiIOCgzv7T1CBgENUFDz_gU.%26ch%3DAQEAEAABABQD1nw1NV0-ptHp6f7hmUxNBhbri_1qJAY.%26v%3D3%26pg%3DENIK666IWVFJHIBPSNF2BZPFGU
+.netflix.com	TRUE	/	FALSE	1818695107	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Aug+19+2026+19%3A05%3A07+GMT%2B0200+(Mitteleurop%C3%A4ische+Sommerzeit)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=0ae2d8f9-813a-464e-89d0-a6888d1015e3&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1772285676367&AwaitingReconsent=false&intType=1&geolocation=DE%3BBB&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1818695105	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSRZestmrJYteL-McIwxYduRyMIWnfh_cs.%26dt%3D1787159129718
+.netflix.com	TRUE	/	TRUE	1821719107	dsca	true
+.netflix.com	TRUE	/	TRUE	1790616446	gsid	60d6f306-fed7-4dd8-a5ea-cb8c366f2100
+.netflix.com	TRUE	/	TRUE	1821719107	nap	BgjvvevcAxJJEyTu7gdQhSxEMCqGc_ig8e_Bc5jHB60-fIPIBKHARIVrrH4u31fpUMXnnNgqwmvSufZ7X1Zr-Uxuri-QBNidyTiuwwEDpKMl3BgGIg4KDKaxAqmrNfL5Ba3MTA..
+.netflix.com	TRUE	/	FALSE	1790616446	profilesNewSession	0
+======================================================================

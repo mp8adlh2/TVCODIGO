@@ -1,0 +1,52 @@
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           Gabriele
+📧  Email:          Patrizia.dosselli@live.it
+🌍  Pais:           Italy (IT)
+
+📋  Plano:          Standard con pubblicità
+💰  Preco:          N/A
+📅  Membro desde:   maggio 2022
+🗓  Prox. cobranca: N/A
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      HD 720p
+📺  Max Streams:    2
+➕  Extra Slots:    0
+
+💳  Bandeira:       N/A
+🔢  Final Cartao:   N/A
+💳  Metodo Pagto:   SKY_ITALY_PI_BILLED
+
+📞  Telefone:       338 161 9852
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  Patrizia
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+Valid Cookie / Every day!
+https://russia34.com
+
+– Email: Patrizia.dosselli@live.it
+– Verified: false
+– Profile: Gabriele
+– Plan: Standard with ads
+– Next billing: 
+– Extra members: false
+– Country: IT
+– Payments: 1 | SKY_ITALY_PI_BILLED ( )
+– Cookies: @logslead
+
+.netflix.com	TRUE	/	FALSE	1808087114	OptanonAlertBoxClosed	2026-04-18T22:25:14.114Z
+.netflix.com	TRUE	/	TRUE	1811111169	dsca	true
+.netflix.com	TRUE	/	FALSE	1808087168	nfvdid	BQFmAAEBEJQco2qtuQ9RkB4ppRwoHoZgjKOjOnqZ-UMWZqDN5hifekNtOd14K4A3wn5hGXue5cm19JRu2VFqcM9gPK-Burt-QaC3bX1b9QIohFnVR2a8upRrszUdCq87UGleBZc9IQC1SD9LF_rI5Ocbiw-I-2ga
+.netflix.com	TRUE	/	TRUE	1813602455	NetflixId	ct%3DBgjHlOvcAxLqA5dEglSwtD7gTRe9NRscQ_g8AUHrn1DHk59_JJx0QcGDXYsioPyeLC03VBcIut-baay149ztK4SO46mjw9HUnARunWvwwkkMRZW8zupYLLxBdUTw4kSvFrm_GjlkMV1A0YI5fSfJOUAxaYi0HaSYQker4PwC3JpCXHV4RH05-hcSyznx55-Deo6OPo1ChG_yATslRnrP7JubNSS_LCtpwCoshe9-KjtwA3pN8PHehDppuSIMSkoqzi0d7ItbzFUzGEGsysBNDzhoBS8qa5sBF8YeQ3FO8we2lr1sWVPIJU67KCsBNzfn2iOvWNX0bJoa6gMPiH6F-7apDdPGMfXhxIjdzejdMHI147cMZxsQ3-vqZGNGJXwoJSox8U8uPELDzCBYKs24S3qMw2F0fWi5j2m5LJwB7rD51_-kOL5-0Zmah3gcELl0KgitnGNR59hVz-ZCrRx6seBxtyJElPsb-M67qxR8k-hcQXtk4CKxl_Asi8Nzezl3kJoxASRAHUdNyQuCGpsA1_4liBDHkP3aygsq6Vh3QLEGw8T10jy5AuJBZZWlkp64RqE5kP3QydDVuoF5CRYZcvROtcUY97EL4-U0xpGzV-4Ttflx_mhJiRFavRICyR7jroksugBPs7RjYpGyv2xdGNK2vqUYBiIOCgxNG9pUr0cTyHZxhVw.%26ch%3DAQEAEAABABT3NWJ7cfcTMxDQIgtbzdM-pwZh-dYt5Ig.%26v%3D3%26pg%3DO6CGLHXW6ZBLZIXHNKCHLV5AGI
+.netflix.com	TRUE	/	TRUE	1813602455	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTbEe4ZPw8r0g08sslD9rYusTV9f0JZ0b4.%26dt%3D1782066455716
+.netflix.com	TRUE	/	FALSE	1813602498	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Jun+21+2026+20%3A28%3A18+GMT%2B0200+(Ora+legale+dell%E2%80%99Europa+centrale)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=ecfecb02-f2a6-412a-a5ca-d94c422c3d0b&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=1&crTime=1776551114450&geolocation=IT%3B25&isDntEnabled=0
+.netflix.com	TRUE	/	FALSE	1789842498	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1789842498	netflix-sans-normal-3-loaded	true
+======================================================================

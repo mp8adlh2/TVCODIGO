@@ -1,0 +1,52 @@
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           Zach
+📧  Email:          gilbertjohna@gmail.com
+🌍  Pais:           Canada (CA)
+
+📋  Plano:          Estándar
+💰  Preco:          18,99 CAD
+📅  Membro desde:   noviembre de 2013
+🗓  Prox. cobranca: 21 de septiembre de 2026
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      HD 720p
+📺  Max Streams:    2
+➕  Extra Slots:    0
+
+💳  Bandeira:       VISA
+🔢  Final Cartao:   8012
+💳  Metodo Pagto:   CC
+
+📞  Telefone:       (416) 625-7156
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  Bob Loblaw
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+Valid Cookie / Every day!
+https://russia34.com
+
+– Email: gilbertjohna@gmail.com
+– Verified: false
+– Profile: Zach
+– Plan: Standard
+– Next billing: September 21, 2026
+– Extra members: false
+– Country: CA
+– Payments: 1 | CC (VISA 8012)
+– Cookies: Admin @logslead
+
+.netflix.com	TRUE	/	FALSE	1817335798	flwssn	2da75671-ba9c-4c3a-a990-6ff562107cdb
+.netflix.com	TRUE	/	TRUE	1817335798	gsid	25c970f4-43e5-4a64-b2df-b61803f25c37
+.netflix.com	TRUE	/	FALSE	1809048067	OptanonAlertBoxClosed	2026-04-30T01:21:07.711Z
+.netflix.com	TRUE	/	FALSE	1809048059	nfvdid	BQFmAAEBEF__lu_3oxn2Y12NY7LP9aFgW78amNoaVpKoBX_881T_qHmNWuUrA73TZpbGjv_1amMDVdxlcCWmakHvcWm7X515R4pgI76Uc5byyo6-hNgicgzsquL1MroZCuHH4yFAjnM-e-XnsDf8Y_6dgeiLXIFI
+.netflix.com	TRUE	/	TRUE	1809048069	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKQA_J2uGwu0U9X0mMDVHyOz40HIXANxZb6Jgd3Z6snzLs4aV8kmvL1htCK-KZiV7xbtF6JpK_QCFvlChrYlnHvOuVGAvZqqoDMnWMWLVkdmNOv5c5KnbwhUqENDHyxSepM18z9r9VB1BB-jzUzLtpL81fgcwQqQmPTUK_NK0MrwttP7Cf9-FPN3XlFVJwf9zeEO_gAEYsxQLFLorrLa8EZY2yu8zQNgNQ2xGD-FJ4R-H-dU_Tt2p57aoW751Io2_SUhAQ9dxXxlzlVH9L4DcuJ-J356XVJ5K_2VHSPmIechugbMEE3n1ZaEtgn1loe3YfYxniT9TCAVjxT_ZfgFCp6K70bIszottu55a8cnFcEXpT5XlKkUjYJuy36vAAQFqSPC_C6Re_rNwdhIINCrl4u_22orUkKfsB9Q7DoYP02FOyk-nzkNpVqzCUfHDRPpvYtFEC3ZuF1YlufUfvaljuUv1U5NfAjUc_UF_VD0LHjn-UVyFs-ALGDrhvtd-SzeuXYafGTrOIMv-rCOwabDXKVWBQYBiIOCgwchaDU3EpaAX6SKcY.%26pg%3D5V7X7HPH7ZDDPNP75IQNRRQIIA%26ch%3DAQEAEAABABQmBNq82uI3OGS8gSTyGxfjJBLCCPggo2o.
+.netflix.com	TRUE	/	FALSE	1809048079	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Apr+29+2026+21%3A21%3A19+GMT-0400+(Eastern+Daylight+Time)&version=202604.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=ff1fb836-136d-4189-a555-5f360ec25b16&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1777512059609&AwaitingReconsent=false&intType=3&geolocation=CA%3BON
+.netflix.com	TRUE	/	TRUE	1809048069	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQ5d0R88XYWAUyEVY8b7on1u8a_NS7BNSg.%26dt%3D1777512070486
+.netflix.com	TRUE	/	FALSE	1817335798	profilesNewSession	0
+======================================================================

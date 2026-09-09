@@ -1,0 +1,52 @@
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           Vieri
+📧  Email:          starrantino-naomi@hotmail.it
+🌍  Pais:           Italy (IT)
+
+📋  Plano:          Standard with ads
+💰  Preco:          EUR 6.99
+📅  Membro desde:   October 2022
+🗓  Prox. cobranca: September 6, 2026
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      HD 720p
+📺  Max Streams:    2
+➕  Extra Slots:    0
+
+💳  Bandeira:       N/A
+🔢  Final Cartao:   st***@hotmail.it
+💳  Metodo Pagto:   PAYPAL
+
+📞  Telefone:       339 391 9448
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  Naomi
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+Valid Cookie / Every day!
+https://russia34.com
+
+– Email: starrantino-naomi@hotmail.it
+– Verified: false
+– Profile: Vieri
+– Plan: Standard with ads
+– Next billing: 6 settembre 2026
+– Extra members: false
+– Country: IT
+– Payments: 1 | PAYPAL ( st***@hotmail.it)
+– Cookies: Admin @logslead
+
+.netflix.com	TRUE	/	TRUE	1796243377	dsca	true
+.netflix.com	TRUE	/	FALSE	1796243377	nfvdid	BQFmAAEBEI7AXbgEr24dQLxPioecxXxgmpT653QJs5fw07KqZrsa_Bo5yIc2l0YYDF_FzDpN_BX8ltWexp9SPwjm8-hgzyNqn7cUxJXlz8s6as1nTuOkxC1DGIMj_YvaQO-40BuXCnBvyxvbIWVQx7kt643CFdAD
+.netflix.com	TRUE	/	TRUE	1790616505	gsid	7a15508e-daa2-44e4-afcb-2f05f0e402f4
+.netflix.com	TRUE	/	TRUE	1799174390	NetflixId	ct%3DBgjHlOvcAxKFBNMHyl5K_ez497_WJ6XE29A28RvnS_9yZcSbUGqMacW0YZ0dLjeNc97731ec3XnfW7mNAi5N3AsMQ4pYgK90-MbQ6uN4rL8TZiEpPoRs8mgpdDs5UVO9ndgxa03BLtzfMu01LABkQMwfisnSWCk2zq3jVykHojS8zjZH1xh_xxb8R2AuE4-8HKIThXNu4oJcA63tVCmxPQNl_up3HDX9d2YM3L06LcqI2HJh7Nk5HZKknI_DVgYQMP0CVSjCBzjfzGyHqDYhaE4aj_5ibvVoW_qFL_TfexZ7o5CQkWPwY1fNPiKzs-wv10Hjp6CSy4po1eltqohmvjK8JAbP2-MNbFP9cV1NJ-WucmuXyTJhawNAxAL7BgPs6LAoHS7W4sSNZoXjDw9RQrJ2vGJLsyh0oKqUJIy3Zm5LcupBh-EeyLQ777_xeqwZ9IIyiaQTG45e01fKx7gvJwnHLW1mAknNZudj2jL3u5E1Fv4HLO2XQQ2LWEqTr8N9lKK0Bc0gGVjSXQMemoV5VzChGkkrE10FW17uKfigICvcHtjfiQ0dj86Luliq06Zh3idEMnDWLnlBxO3f-qiH27W70iOKi_Gr-dflJRG3hAMCLFxRGGe0Wvs3b5s8mhkFP5BfeULz4HlEFQs8-o4vM96O9k3L7qMMu1pL-FywrySu2ylcXq0G24aYC8DsMrAYBiIOCgyeGdqVwvql8rp6hn8.%26ch%3DAQEAEAABABQZGwWpgpiyREBjz0O-iKCX4mzJoSnD5eI.%26v%3D3%26pg%3DF43YMDHUBFC5LJ32UTZ643Y3CQ
+.netflix.com	TRUE	/	TRUE	1799174390	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRuAmJ3-lZA0MFf0ttFAkYe64w_8GcEJ0s.%26dt%3D1783622390729
+.netflix.com	TRUE	/	FALSE	1791398390	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1791398390	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1791398390	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+======================================================================

@@ -1,0 +1,52 @@
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           jaunico862
+📧  Email:          jaunico862@gmail.com
+🌍  Pais:           Switzerland (CH)
+
+📋  Plano:          Basis
+💰  Preco:          CHF 14.90
+📅  Membro desde:   Juni 2026
+🗓  Prox. cobranca: 21. September 2026
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      HD720P
+📺  Max Streams:    1
+➕  Extra Slots:    0
+
+💳  Bandeira:       VISA
+🔢  Final Cartao:   3414
+💳  Metodo Pagto:   CC
+
+📞  Telefone:       077 291 52 42
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  jaunico862
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+Valid Cookie / Every day!
+https://russia34.com
+
+– Email: jaunico862@gmail.com
+– Verified: false
+– Profile: jaunico862
+– Plan: Basic
+– Next billing: 21. September 2026
+– Extra members: false
+– Country: CH
+– Payments: 1 | CC (VISA 3414)
+– Cookies: @logslead
+
+.netflix.com	TRUE	/	FALSE	1814993320	OptanonAlertBoxClosed	2026-07-07T20:48:40.003Z
+.netflix.com	TRUE	/	FALSE	1814993344	nfvdid	BQFmAAEBEAzqVDZhOxA7smroa_cde5FgfEao5C6y704Gfyz6TDNhjRZNwAN0O1QHPs6pdv5eAoVvegRT0LKaoyg39I1MvAeDRMCdr3vLoc8oOOo2vNf5TmAkPgdCfdBxitbVuLsDIqglXDM1Oz1-LnxXaq8OvI-3
+.netflix.com	TRUE	/	TRUE	1816013274	NetflixId	ct%3DBgjHlOvcAxLzAyyUW4nsI6EZBYB42Apmwnx12gEYtD_m3uF9es08Su8OamduU0PJAa0qzb9tk3pvcwgwbRBBqAWqH3qrvdrsT6ViZKzQk8p0_yxM1IGRer0ClRtoyOVSLTX_qu2JSfEbRCjoKR78pSnmYEK2eFSD_HkwPUcowi__4UOZTG8PKWo1YAICWpqBwsJCWfs3N954vSciJl8L1PlnRKzk_OHY3oORs2bFBJDIg42mmJTWfhuPddcR95vYiXSQFwKlEK5eVjFJqMnNnzwPeIx8CYK_lJIuJ-blMatCzzJ_vpJBZmm2t3k_BOJBi_NwsJceW9ml1mjoX29cKva8W1kzn6yrU84qfQO6d_U0XAGsGhfp89vIXs9SgLcf1ZFFU7o7TIUi8WS9nIBMK11zVyGAfLNc_06SM-WPyA3OfgGyfOp0d2KYtSBvVy8JOcW0UXmC2skpKunFnQDL-W6OUDA7rc3cCjh0exl_6rZpwuz6tcOVY9sCwnQqih6iSKQ9vuD-S95K35XGQ8OqH-dKGkQcWUx4R3FBg5oGo3sJYum0b09VlAFabOQt5nMu70fB-cf98aUgjgwI_JGUuNoMGIIcOHzJ7qnXYhN_-82N4vuJ8KJEFS9JlZhItLcKn1wVA9lEpbpQvDTbm3DEvcnV5RTx2zOLd7UkwuEYBiIOCgznvtyJduMZiOpR_84.%26ch%3DAQEAEAABABS_R8hBFuhjiubQPh1wlchcK-Tvx5gMOVE.%26v%3D3%26pg%3DEVMJ3HYM4VBLHMOUGWPWZDAI6E
+.netflix.com	TRUE	/	FALSE	1816013274	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Jul+19+2026+18%3A07%3A54+GMT%2B0200+(Mitteleurop%C3%A4ische+Sommerzeit)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=2738602c-0d30-4611-a8a1-7f5155847dc5&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&AwaitingReconsent=false&fclco=&intType=3&crTime=1783457320376&geolocation=CH%3BBE
+.netflix.com	TRUE	/	TRUE	1816013274	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQK7yuIoVydU48tSGGzHf9I11bravh26tA.%26dt%3D1784477273903
+.netflix.com	TRUE	/	FALSE	1792253275	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792253275	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792253275	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+======================================================================

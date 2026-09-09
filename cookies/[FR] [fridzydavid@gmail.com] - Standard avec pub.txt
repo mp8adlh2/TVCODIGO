@@ -1,0 +1,56 @@
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           fridel
+📧  Email:          fridzydavid@gmail.com
+🌍  Pais:           France (FR)
+
+📋  Plano:          Standard avec pub
+💰  Preco:          N/A
+📅  Membro desde:   mai 2026
+🗓  Prox. cobranca: N/A
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      HD 720p
+📺  Max Streams:    2
+➕  Extra Slots:    0
+
+💳  Bandeira:       N/A
+🔢  Final Cartao:   English
+💳  Metodo Pagto:   SFR_BILLED
+
+📞  Telefone:       07 72 07 44 86
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  fridel
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+Valid Cookie / Every day!
+https://russia34.com
+
+– Email: fridzydavid@gmail.com
+– Verified: false
+– Profile: fridel
+– Plan: Standard with ads
+– Next billing: 
+– Extra members: false
+– Country: FR
+– Payments: 1 | SFR_BILLED ( )
+– Cookies: @logslead
+
+.netflix.com	TRUE	/	TRUE	1790616446	gsid	fa05d5d7-2013-4263-bd0a-a8d826bb4a08
+.netflix.com	TRUE	/	FALSE	1818692065	OptanonAlertBoxClosed	2026-08-19T16:14:25.773Z
+.netflix.com	TRUE	/	FALSE	1790616446	flwssn	9076059b-52e9-47ed-b087-78c9b0a8ac48
+.netflix.com	TRUE	/	FALSE	1794932078	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794932078	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	TRUE	1818692158	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKjA_viXwhwVuwRbUwF7XIfGY4ULfKzrhlvH53lDbC8WSP-dFqoVg3bzWiSy-6F6eD4OXX_Go5z2cR9xJMDhoQsGBAD3aqR7ZzhnSSEwdFXetzgBrGCfcrMsRYBc-NSYa8fNdFjusoWJlRHChws1hLhDDjW-5TlFKP7jExM3UtLiz8X-1xP_dCeaqK8gK0XVX5-L38ONC5V6MrwttE_BHz2mU3OPNOZXTyecy1dSV2MlJLWGX8r6sLYCWlaaIDJjX7Hj5oi9eu1N5JLh0Lh8O-lZYLmnNxRawSzFYIwLhDLOa5NgKQ8mBG9OGFjFn_ezMm8Ip4TiCnO_oSEpPTAdoVumQ5igUt1r4lBJiUHMf-_eXzaFkkHzR_J3FlMoNN31Lrm1HmTkNRkg_AW9z5LA_PK4cc8P8JxY9uSfO1rxd2xk7XWbjwx00_O4Cte-LfVyS5sbpUheQ_SYgiDla6W3PAdoI9U1KPDgF0a_F6Bdi3iuY1sLIyxDQ-6bMfhggGUlo984c8Dkw78CuKbnv6bBUmRcBK8Epyd4dL1WdieCDbX2q_STL4FGAYiDgoMN-uE7EQxQdmzvutA%26pg%3DRZ3HDF2WBRDYLHBJGJ5JNHPRT4%26ch%3DAQEAEAABABQNd5JNBxSnAZSOqhDy6lPGooQEsKsqONc.
+.netflix.com	TRUE	/	TRUE	1818692158	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRIN4AxKclJq6o-TATSIUuYgGo0zrJI28o.%26dt%3D1787156157886
+.netflix.com	TRUE	/	FALSE	1818692158	nfvdid	BQFmAAEBEOc9k6rk7CRNLgtNlNM1jlpg7IaUFJjXTm96bXX2xkEoRhLnV4s3gSngAdXa89BTYNfAxSPcJVNaItnN-u_wM5L85D3kkeAhW207Z6ODoDVxF96NAaL5At1Ypoq2ioSVL6khuIAoSdehKqqNnutUm2sV
+.netflix.com	TRUE	/fr/title	TRUE	1821716190	dsca	true
+.netflix.com	TRUE	/	FALSE	1818692190	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Aug+19+2026+18%3A16%3A30+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=0b2a78fe-29c5-482a-b156-eada37333aa1&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1787156066100&fclco=&intType=1&geolocation=FR%3BGES&AwaitingReconsent=false
+.netflix.com	TRUE	/title	TRUE	1821716190	dsca	true
+.netflix.com	TRUE	/	FALSE	1790616446	profilesNewSession	0
+======================================================================

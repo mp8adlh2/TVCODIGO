@@ -1,0 +1,52 @@
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           Linda
+📧  Email:          dia.linda@icloud.com
+🌍  Pais:           CI (CI)
+
+📋  Plano:          Essentiel
+💰  Preco:          3,99 $US
+📅  Membro desde:   janvier 2026
+🗓  Prox. cobranca: 28 septembre 2026
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      HD720P
+📺  Max Streams:    1
+➕  Extra Slots:    0
+
+💳  Bandeira:       VISA
+🔢  Final Cartao:   1811
+💳  Metodo Pagto:   CC
+
+📞  Telefone:       07 68 68 0008
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  Linda
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+Valid Cookie / Every day!
+https://russia34.com
+
+– Email: dia.linda@icloud.com
+– Verified: false
+– Profile: Linda
+– Plan: Basic
+– Next billing: 28 septembre 2026
+– Extra members: false
+– Country: CI
+– Payments: 1 | CC (VISA 1811)
+– Cookies: russia34link.com
+
+.netflix.com	TRUE	/	FALSE	1813667762	nfvdid	BQFmAAEBEIsnE5JsvEoSOnetWcGVtD9gVvpjriwfZIslLIGGAehP2EDUtA2cFBdtjdQLmXVnGCdVlkTSr9tqzc-kPASunBoIfDH4acUEEw9uJPTVBOfIiGMkal6wjm2DU0wYnn2-QJcF_5igsVw2osO1l2LK2zdT
+.netflix.com	TRUE	/	TRUE	1790616446	gsid	1192b9ce-4bc8-48cf-9d4c-4d85afcb4b51
+.netflix.com	TRUE	/	TRUE	1814197378	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKVA5YQTyYoXoHJfEeAl1WWdhmmWupaDJM_4pUXZabtUVUHNbG5_QXCZqqFp8YGQTTolzENVyYFUz0uO5zsfmksENjoFSwEVsh76ROFtGYV39J2gjhxb4xuu6oMkc-nm9c4OAIXI9-MpIgPy0hc8YUwLCjsUKekIMbV3vvYhFX1pWq4sHu57tvLYNGEHfhEasSyceBMJVBhVPOQnNuPio4CgaDIBUWSxeY0YLPuOuCFHx-3ErhueafMv85UxKSzY3_HghKkd0DWh90Y_lnA8FY5TFHB8ZfFFBPMutN2JKxUtKyHGC8ACC5xwj4lOYh_0lt4V6GMrGkc--Pgk0aVczhtCESFHlbn5qMrvuE7-fGRFatZ1VLzPwABcfJYFBFv9szDZhmDbSGmbxXLWYErU4ZL2gcpvhGm0LKYyikmHm6UCqeyWW6zJx4es0ORNjOpQA8-WKDvnjJmHNyaIs5H6IAi9dRxnFQphyDOclUAf01l08kGtDTXb09OFPf3bheSc9MDydYVhyssX6sXbIx1W2cj4WzSwQ2IRRgGIg4KDJ92KHa-T4VG_TttKQ..%26pg%3D3V65O2G7IRGKFOW34LDVCTQTEA%26ch%3DAQEAEAABABSLJIVkTOfEEtWDg2Zv9dsAyB_RJdX_XcI.
+.netflix.com	TRUE	/	TRUE	1814197378	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTyUwMHpn0302XS89CYM-v25JCaXrWGLl4.%26dt%3D1782661378394
+.netflix.com	TRUE	/	FALSE	1814219673	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Jun+28+2026+21%3A54%3A33+GMT%2B0000+(heure+moyenne+de+Greenwich)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=1eb7426c-ee70-4948-9135-b83944f92d27&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1782126474436&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1790459673	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1790459673	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1790459673	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+======================================================================

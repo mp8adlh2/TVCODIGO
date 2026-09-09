@@ -1,0 +1,52 @@
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           Raphael Jakarasi
+📧  Email:          raphaeltatendajakarasi@gmail.com
+🌍  Pais:           United Kingdom (GB)
+
+📋  Plano:          Premium
+💰  Preco:          N/A
+📅  Membro desde:   November 2023
+🗓  Prox. cobranca: N/A
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      UHD 4K
+📺  Max Streams:    4
+➕  Extra Slots:    0
+
+💳  Bandeira:       N/A
+🔢  Final Cartao:   N/A
+💳  Metodo Pagto:   SKY_UK_IE_BILLED
+
+📞  Telefone:       N/A
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  Raphael Jakarasi
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+Valid Cookie / Every day!
+https://russia34.com
+
+– Email: raphaeltatendajakarasi@gmail.com
+– Verified: false
+– Profile: Raphael\x20Jakarasi
+– Plan: Standard
+– Next billing: 
+– Extra members: false
+– Country: GB
+– Payments: 2 | SKY_UK_IE_BILLED ( ) | GIFT ( )
+– Cookies: Cloud WebSite russia34.com
+
+.netflix.com	TRUE	/	FALSE	1790616446	OptanonAlertBoxClosed	2025-08-15T19:29:44.152Z
+.netflix.com	TRUE	/	FALSE	1790616446	nfvdid	BQFmAAEBEAQVoJfGH2IVlqM2E-EEAmZgX6oOUqvuImZvcit0dckYKM27Emd9rACtNNCaOiONeRc8du7RMSzmXK9z8yOET1yrX3VPgy5MMP5rIJkYYz8voc2qperIqvPXYzPjZvjnrlm_EDw0c1kAICDYpCJsDsGf
+.netflix.com	TRUE	/	FALSE	1813398186	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Jun+19+2026+10%3A43%3A06+GMT%2B0100+(British+Summer+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=802f36cd-f982-43a5-97fa-a1f3ba93f0de&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&intType=3&geolocation=GB%3BENG&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	FALSE	1789638186	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1789638186	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	TRUE	1813515426	NetflixId	ct%3DBgjHlOvcAxK1A_ey-AQ1f_qbsbIXlIPRLuXKTYZnhNWVlZI7EjO7LQCgPSQ5HB0UMcVnqXr6riC8SHxyD3gBGHOeQy6TgPfImBF3pm3h-OiP5vhLVFIEvBTG9EYp72pV8-1utaIFVB4jPaIX4TSu_2RhUYWCIH89-ShfPZELzyuiCRTVIxxli3-8yR9pmpfd3_Fh-osbJRcy63lFecDWK3mf5cWpg0O_be9bcSSZKB7DW-cFFf7ySIHIQzYrpdaObB7f7pC749Eaf-W9xunp2LRE2WsgAyJCW-8Rh1mBWD8r0QjbDmFu4T-Qbf-2romGyJJzYlCAkFNQr-QvIJn8eZJukBjmk237Bcy6EY9SAVJA3ne0IrIVnlGsPutbNj4n1s8o_4pLQsVMe3mNwIQadPIdCCjMw6buBSMJQ5M6B369llK_m30ouanXPTM-Ll1Oht3uVabFql6T6kL45NiJ9-jqyOo8-ZzCB6wTGbjwUGrWasbB1Hu18V0UTxNzos7bCFzxkloj-qKOhFa6xe7EiPo_VpLGNDidA7EsLytzwNft7wogagp-Rm6d12SwKTSoBMs5I30Cg7y0tLDHPyLkGAYiDgoMBOa3AslRAtSN7vk8%26ch%3DAQEAEAABABT-npRU6u28lwpdL3BP4i5orefc6E-giQA.%26v%3D3%26pg%3DDX6SZCJ5EFG5RNR5F7F774DU5E
+.netflix.com	TRUE	/	TRUE	1813515426	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQEjHzZfr9IH1YSO1XXQKJ-CEEl1WSMdAE.%26dt%3D1781979426232
+.netflix.com	TRUE	/	FALSE	1789761807	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+======================================================================

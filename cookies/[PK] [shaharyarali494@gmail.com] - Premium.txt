@@ -1,0 +1,51 @@
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           Adam
+📧  Email:          shaharyarali494@gmail.com
+🌍  Pais:           Pakistan (PK)
+
+📋  Plano:          Premium
+💰  Preco:          1.100 PKR
+📅  Membro desde:   febrero de 2025
+🗓  Prox. cobranca: 23 de septiembre de 2026
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      UHD 4K
+📺  Max Streams:    4
+➕  Extra Slots:    0
+
+💳  Bandeira:       MASTERCARD
+🔢  Final Cartao:   9129
+💳  Metodo Pagto:   CC
+
+📞  Telefone:       0303 4242881
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  Adam
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+Valid Cookie / Every day!
+https://russia34.com
+
+– Email: shaharyarali494@gmail.com
+– Verified: false
+– Profile: Sherry
+– Plan: Premium
+– Next billing: 23 September 2026
+– Extra members: false
+– Country: PK
+– Payments: 1 | CC (MASTERCARD 9129)
+– Cookies: russia34link.com
+
+.netflix.com	TRUE	/	FALSE	1805704605	nfvdid	BQFmAAEBEIHBMUj8CS0FYYhdntIDDf5gpu_uQI2rLZfymtEStOgvLbQoVo6DkxQchE_8LPz1bBZevQ1N8jD_-lEnLUj1o7Ik-lbZNL79qMmjObvk3mJxNvLt-FnU0SS0Eew72FGh3OmlTOjyVGyNfzH5cmcOGqo_
+.netflix.com	TRUE	/	FALSE	1809204266	OptanonAlertBoxClosed	2026-05-01T20:44:26.898Z
+.netflix.com	TRUE	/	FALSE	1811693794	OptanonConsent	isGpcEnabled=0&datestamp=Sat+May+30+2026+21%3A16%3A34+GMT%2B0500+(Pakistan+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=92b19cfd-426c-47f7-9fa2-07e9f2ca8a18&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0&intType=1&crTime=1777668271969&geolocation=RO%3BB
+.netflix.com	TRUE	/	TRUE	1812264464	NetflixId	ct%3DBgjHlOvcAxK0A59UoYDSEYFLPlvV-Qw0XdRdxAhtZtywY__YJI7_Q3kaCZS8wIz1VZiIEzPVVyU6rAg_wK5X0lpRdDhbxWRz2B9aC5PO11kadg18kb-pcXZg5VJx-ilKtbChBT1gTu8H_5jmbE-2IgLOKuubWksxCy6WhUbiZhX969hKv-KifIA71HD9PbydRde7c5Tvx__V845qoRdp4FgvL8X5vcFLPvBoBwAOareSKZk5XCBwMrozHKEUsZKn2x8Gf3qu78U72Nz0-E6b59kJuw6Ywt6DtSXv0mP3kUsuwM7YacgB4FMnP6MUcy3i_FY6OIgJ4rO2ilbINBjkUMNLoEgIK_hfwfa8BxXhv552ife07bbALpOOhPvmArF19H0Ra1fhf3MQAzyFEIiYB6qgyqAr76mm3ZmLaCkPIt_vewGVtXSjbRBGC5mRCSnoSpkD64M8kgQEj4rkCJ4uHSc4MiqkCpUlCZZ6l2csIFZe2KEfgqLHLuRsAsidUGlqUeWqugBduRnqOc9NrZNgnQZJQsMYueMTF2yOYyOKqz3lQ4arp5fPm_yDMd5ngjiq7rdYltuJVZGSWlbWpPUYBiIOCgzJKkrxLnRSEvDwJ2E.%26ch%3DAQEAEAABABTEbNvxj64QAn04USc5d1my_ws3LbeeuSA.%26v%3D3%26pg%3DBRE3NIFS5BFHFOXFN2E32LV5WE
+.netflix.com	TRUE	/	TRUE	1812264464	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTXi1dQO_TRD8za4eCQ62H4fDwHmYMH3o4.%26dt%3D1780728464240
+.netflix.com	TRUE	/	FALSE	1788505123	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1788505123	netflix-sans-normal-3-loaded	true
+======================================================================

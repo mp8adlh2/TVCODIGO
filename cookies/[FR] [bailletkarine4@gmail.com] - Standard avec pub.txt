@@ -1,0 +1,52 @@
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           Evan
+📧  Email:          bailletkarine4@gmail.com
+🌍  Pais:           France (FR)
+
+📋  Plano:          Standard avec pub
+💰  Preco:          7,99 €
+📅  Membro desde:   mars 2026
+🗓  Prox. cobranca: 8 septembre 2026
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      HD 720p
+📺  Max Streams:    2
+➕  Extra Slots:    0
+
+💳  Bandeira:       N/A
+🔢  Final Cartao:   N/A
+💳  Metodo Pagto:   FREE_ILIAD
+
+📞  Telefone:       N/A
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  karine
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+Valid Cookie / Every day!
+https://russia34.com
+
+– Email: bailletkarine4@gmail.com
+– Verified: false
+– Profile: Evan
+– Plan: Standard with ads
+– Next billing: 8 septembre 2026
+– Extra members: false
+– Country: FR
+– Payments: 1 | FREE_ILIAD ( )
+– Cookies: russia34.com
+
+.netflix.com	TRUE	/	FALSE	1814384135	OptanonAlertBoxClosed	2026-06-30T19:35:35.713Z
+.netflix.com	TRUE	/	FALSE	1814384329	nfvdid	BQFmAAEBENXmiFSNedBXu0SdEmz8wplgw-tqywgf2n6vhqncxYucNN9VVmnX-FM6mgHLtcktPM7LHdGXte_h31ilmRgrUZSogGDUwBBn5GsT8ACbVCL0JBIFlZMOcLPEGme-XaKBIyxVu1yT0InsErIEsnElRmHC
+.netflix.com	TRUE	/	TRUE	1818034400	NetflixId	ct%3DBgjHlOvcAxL-A4rCNHVma3so5vY_HcPqNAr5SqlEX5tZ01JAALzrFC-VPdFNUBF9akv1Bwhl4WUJQgx05icqiuF1GeBzd1ydtbPJb8NdK2RuXqu8B3Og2tRrsz123OGxGFDQmPY9dBJUcDNSN_-dqr99R2dW9fmDv2aSJTlsJjVBUINgWclJbYKH7H457o-WhpK78dhl6PYqsVFWdLLeItT4MjSlBdI6D27LK6y13tDP-hJg_hs6-Oy9mHQqQamnEgQkxlC7AJec5pX6G-RBj16m5oLqiiXfJH-I-3PFRIEDAw-1F6DzHPxwn7xBRIHXtaQZlsFR54Bix_z8AtImuVCS6y3q7ZZPjdDKKUoGlx_K8h20h3oIUKvOULtWEX8qyGJAp7anJnj_MLlIyo82hlufXAZ9LiIkvt3OBO0vsopjuI-q7bMFUNaZ3hYvQNrftbuiizkKF2NUTAQhv805IJZWExFtTA7afw1Z0Xn9S3GpcL20l1BTD97fLdX4jCnAxBEeblyouVPnzk1xpXDDY9qMpZ1VoygsvkjC1ZeMxWF142BgRziybRBKEbYb5OBEiTMbX2PdpB8IhQO0-jm9BCMeXbT4gZMMn3XmWGkLTsLeMrVJT81N1ofMxK_okrg4Cdgg9nOIvaUwDfSfvZy5lLB8jaIdU1BgEvtgczimCpZkx_iNfFejchgGIg4KDJhJyOxy0a8cxkwMbw..%26ch%3DAQEAEAABABSbasbX0RRB4uQzVy2Xq9LtDy0xbprLZvY.%26v%3D3%26pg%3DRURWBKX2ZFHCFAVKOD7GBLMVMY
+.netflix.com	TRUE	/	FALSE	1818034402	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Aug+12+2026+03%3A33%3A22+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=b381e093-0de4-4f17-b8fc-413b82e524c3&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&fclco=&intType=1&crTime=1782848136030&geolocation=FR%3BHDF
+.netflix.com	TRUE	/	TRUE	1818034400	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRJ9e269xp32CFaXG7vybaSHFKrdL_RmLY.%26dt%3D1786498446136
+.netflix.com	TRUE	/	FALSE	1794274402	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794274402	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794274402	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+======================================================================

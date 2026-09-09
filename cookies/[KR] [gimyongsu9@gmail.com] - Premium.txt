@@ -1,0 +1,51 @@
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           내꺼
+📧  Email:          gimyongsu9@gmail.com
+🌍  Pais:           South Korea (KR)
+
+📋  Plano:          Premium
+💰  Preco:          KRW 17,000
+📅  Membro desde:   March 2026
+🗓  Prox. cobranca: September 25, 2026
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      UHD 4K
+📺  Max Streams:    4
+➕  Extra Slots:    0
+
+💳  Bandeira:       N/A
+🔢  Final Cartao:   N/A
+💳  Metodo Pagto:   LG_UPLUS
+
+📞  Telefone:       010-5615-8411
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  내꺼
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+Valid Cookie / Every day!
+https://russia34.com
+
+– Email: gimyongsu9@gmail.com
+– Verified: false
+– Profile: 내꺼
+– Plan: Premium
+– Next billing: 25. September 2026
+– Extra members: false
+– Country: KR
+– Payments: 1 | LG_UPLUS ( )
+– Cookies: russia34.com
+
+.netflix.com	TRUE	/	FALSE	1811239378	nfvdid	BQFmAAEBEE8WR8EpXcuLhFiBWdUew69gCDoX9rEhAKO_nfCRrMWedB4gBspXTumjBkZ0IUjfm83alGlMvXzKOF4fHk7ozqGMwIkX3Q0QvitxmZ8lyTrtn4-UI9bhf4po542K5AcrHO5Gx9w5vgkrHGt00CRA1_Qt
+.netflix.com	TRUE	/	TRUE	1814705121	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQe7wsUx2tKR3C0xK9uD_CPZDBIV_o5Mgs.%26dt%3D1783169122298
+.netflix.com	TRUE	/	TRUE	1814705121	NetflixId	ct%3DBgjHlOvcAxK0A_rasXOwCggzNh88119KZxo-6i-_mu7YCBW6pjKS-4nPeMkLHtG5zSZYCVpRYhEZl8OB4A0JvZRzntfuBB9rgux_pc9p7PfplS3-UpbvcxGwqjHhvRBobSFs-bP3320X0rOESdm6vbQS62wuUKOFV8d9oFil3XyvLt3LwYG5jSfuHrL8PpzTy-xdnBQzCaEJSkLdVZ4YEVWRu7wt3LqL-qGp1HEMinnUE7NCBXrSWBJiUK3PW732pO0lpShi7gsoe8gW8e4RVkWmLPmA3oj-oTx-0nJ2-tNUFkIFW5tvrNQM9CnyEU0xFMQ0_rFGUHq0Kqvnz34lYzEFJPkESioSRR5HQBTTkaMiROciCeEjHgxPY6-b1w42AmaowrRn--rigd04bFCLwQy5Br1aLJvxY2ecu2zTx_P83TBrXrnSacNNdzVV6XRQvNwX2BoHDjzXNefP6cNJWpkCKXoZKSiUf8vf00JQ1gYD8FJjXWNjd4phtM-7tRBNA_aGIAAbMXj08mOxKmd4blsZOE_isI0A0dYi2Sqz_7QBhklPfdvU-Fm1q-9tvxdfdMz2_JbwYnfObbkts1oYBiIOCgxEYMbe43sM1ysA9ZI.%26ch%3DAQEAEAABABRYS0jD4IvdCj_PwJL8VS2PZi7D1wdVZbY.%26v%3D3%26pg%3DWX7Z6G525FCELNRWSM7PMM6UN4
+.netflix.com	TRUE	/	FALSE	1814705229	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Jul+04+2026+21%3A47%3A09+GMT%2B0900+(%ED%95%9C%EA%B5%AD+%ED%91%9C%EC%A4%80%EC%8B%9C)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=8cd7d96e-ddef-4c8c-91a1-21a02fac1220&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1779703433638&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1790945229	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1790945229	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1790945229	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+======================================================================

@@ -1,0 +1,52 @@
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           franata2021
+📧  Email:          franata2021@gmail.com
+🌍  Pais:           Indonesia (ID)
+
+📋  Plano:          Dasar
+💰  Preco:          Rp65.000
+📅  Membro desde:   Juni 2026
+🗓  Prox. cobranca: 28 Agustus 2026
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      HD720P
+📺  Max Streams:    1
+➕  Extra Slots:    0
+
+💳  Bandeira:       OVO
+🔢  Final Cartao:   ********2194
+💳  Metodo Pagto:   MOBILE_WALLET
+
+📞  Telefone:       0851-8312-2194
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  franata2021
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+Valid Cookie / Every day!
+https://russia34.com
+
+– Email: franata2021@gmail.com
+– Verified: false
+– Profile: franata2021
+– Plan: Basic
+– Next billing: 28 Agustus 2026
+– Extra members: false
+– Country: ID
+– Payments: 1 | MOBILE_WALLET (OVO ********2194)
+– Cookies: @logslead
+
+.netflix.com	FALSE	/	FALSE	1790616446	nfvdid	BQFmAAEBEMLBLeAojzvzDpq6zZGa7EFgPuvjfIaHdnOoHhVD545OV9ykwzOjC7XUEImk6zSl-7NnKyO3rJ8OIBmkFOZ3LhTdw54iy8MKfQIt0KMrOGWJ9SgkitGzQcIA8FUy8h7OUuFxzMF04jVgnNepKgu5hriA
+.netflix.com	FALSE	/	FALSE	1790616446	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Jul+31+2026+22%3A23%3A55+GMT%2B0800+(Central+Indonesia+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=88148ebb-363f-4740-9b05-93d965f45d61&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1772126283152&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	TRUE	1790616446	NetflixId	ct%3DBgjHlOvcAxKFBEJSVqz1ppsUKWp93G1x9pOIQmCe_xf-_OfnhZ8tsB0zHsw95ywS95i6mExqoFCs1HPT0s-2Yu4wib6PwxSaVTyp_3PUbRf2Za1Z1ImdttdwYCbybXFkyOUxkaJgdRvYw_H_kBH0y20EWnSmxT2VLtexuA2ELZ-bC46I5jfekPyKjKv21SQvbn_3FE8hfIl7D3OFBHKysab80zdvgruPQVB0adHmI8FVDpuBUDRCpMuGLqzXvkxvnpEAtdjH5qPTjLB9b5zsBLaxm6jm3QGHy6cs2BvUfay3396RuK4DlatFXKintZNWN-QHOp7_w3d0rJYml7lqgoQHtFTcoZ7yRD69hjsDeDA8jnC5XJwTZYj9_f2wXVFoUGQrB02Fh89PnMIXSVy6W1ekyp4gX3_waqoPxL74LzBh1pgKFq7R4ztQvlTMfQpHamgfRjkhAWCGocWXnzgQ4XoTKxTgZ44LaP3l7k3nevVTUnXi7FTOrz2_wodoqRdPqJl5j1a0dawtoNsF82AR_3VfMX5GjIdJU2gz-TSXDoy2vUlMfi5CIyy2HjyY4CaePURUmyoLx7ckvMxFtqY-T0rbyOR10DnPtVtDxn-s0aBTC-lxHaB0ljddfkxb97gkSwqztrcxrYYHuNpXwddVhos6QbJDip3EfHcpXhNKADOxAMEYKIYVnx476OKJPdcYBiIOCgwOueDbf9jWeBgq5r0.%26ch%3DAQEAEAABABSVs6Qe-13XkQNvQV5QcYa6H-TidO6rZs8.%26v%3D3%26pg%3D3NG3HAZG2RHG3AD7T7GIOSZTVI
+.netflix.com	FALSE	/	TRUE	1790616446	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRsWITaL3q6XcQ8Mg-u_InWK0FnwHdFGCw.%26dt%3D1786897180936
+.netflix.com	FALSE	/	TRUE	1790616446	gsid	e7b87ca9-0dff-4eb9-8eda-e1ce0c166b2d
+.netflix.com	FALSE	/	FALSE	1790616446	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1790616446	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1790616446	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+======================================================================

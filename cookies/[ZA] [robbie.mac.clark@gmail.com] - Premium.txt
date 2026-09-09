@@ -1,0 +1,51 @@
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           Leigh
+📧  Email:          robbie.mac.clark@gmail.com
+🌍  Pais:           South Africa (ZA)
+
+📋  Plano:          Premium
+💰  Preco:          R 229
+📅  Membro desde:   May 2024
+🗓  Prox. cobranca: 28 September 2026
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      UHD 4K
+📺  Max Streams:    4
+➕  Extra Slots:    0
+
+💳  Bandeira:       MASTERCARD
+🔢  Final Cartao:   0104
+💳  Metodo Pagto:   CC
+
+📞  Telefone:       079 247 8801
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  Robbie
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+Valid Cookie / Every day!
+https://russia34.com
+
+– Email: robbie.mac.clark@gmail.com
+– Verified: false
+– Profile: Leigh
+– Plan: Premium
+– Next billing: 28 September 2026
+– Extra members: false
+– Country: ZA
+– Payments: 1 | CC (MASTERCARD 0104)
+– Cookies: russia34link.com
+
+.netflix.com	TRUE	/	FALSE	1810916362	nfvdid	BQFmAAEBEJib-dOzughXlmxcFDP3jdVgtdZ3UqguO4pX_YyBIPfaeOMnIyiDBuY6btNF5r9syP-PIdicNGYVh-vGIS0bdIAhyCS1oMJBFn48TlC6nVW-_DDLThbU6hL4-BhWaNrhIqojQVn1o8RRAYfjifjf7Lyy
+.netflix.com	TRUE	/	TRUE	1815195729	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKUA9djiXbyNIxdn46U2AZkWl2NV2mzUEHJF7Ie-90Pu4wNlgb3LDXcpQsGoR9O1-qUVBziz0ZDMOd1AwGoeMkUXVeuimMy5al40wdsThFirX7VWDuHQ0ga5Kf1BSTFWj9OLy8KKG-6Syj1tqiXsOvqLRbgxckR-RxitYyeRHSkbi1OdqT5U-eUoPGoziyawhhkjz5z2_sVsWT5vJaVnKXZvfwxAUDTztXrFhbF0kvPTIRCOPM5UlA-4oSVXsCn1xU5To1jbJa2qpA42m9WI1e4aypw9jNdUqzvgwLhLv_UbPopCVC63r78NN2_-Wo1nSHj0i-G9gc3g2MDSYyqHU4_g8IaxNDybL_0fEXH8vPKppMl11uU_EieLXSN5mb3UHod_KQgHmkva5sLcQRaSY5AC5ObgKHlTzZWqkCzmo6ZRUJkR7bwAMOmLZx5vE41cU_Nty1MRVfxZt_M0VKqe92k2aCPETfeJ-_LZGg5Ty9uwfzokY1yc-yn1ErhrurkNWS3s4k8wtWFtg0akTwyRDWMdl8mgzxvGAYiDgoMBzDv_7GUDg-hgzNo%26pg%3D4UXMFIF2DBA3RKSU3MD2RUX3QY%26ch%3DAQEAEAABABQb8XLoPvKMPDAEEy5sAA5OaUvR0pO0baM.
+.netflix.com	TRUE	/	TRUE	1815195729	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRNrspL2huEF8_XnV_x6-msGroFp6Tr25A.%26dt%3D1783659734794
+.netflix.com	TRUE	/	FALSE	1815199868	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Jul+10+2026+08%3A11%3A08+GMT%2B0200+(South+Africa+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=bcb58e73-bd06-4d03-b822-d3063ae64856&interactionCount=0&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1791439868	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1791439868	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1791439868	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+======================================================================

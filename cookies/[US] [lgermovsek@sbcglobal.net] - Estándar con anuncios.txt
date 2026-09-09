@@ -1,0 +1,52 @@
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           Lindsey
+📧  Email:          lgermovsek@sbcglobal.net
+🌍  Pais:           United States (US)
+
+📋  Plano:          Estándar con anuncios
+💰  Preco:          N/A
+📅  Membro desde:   abril de 2023
+🗓  Prox. cobranca: N/A
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      HD 720p
+📺  Max Streams:    2
+➕  Extra Slots:    0
+
+💳  Bandeira:       N/A
+🔢  Final Cartao:   N/A
+💳  Metodo Pagto:   TMOBILE_US_BILLED
+
+📞  Telefone:       (216) 256-9720
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  Lindsey
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+Valid Cookie / Every day!
+https://russia34.com
+
+– Email: lgermovsek@sbcglobal.net
+– Verified: false
+– Profile: Lindsey
+– Plan: Standard with ads
+– Next billing: 
+– Extra members: false
+– Country: US
+– Payments: 1 | TMOBILE_US_BILLED ( )
+– Cookies: russia34link.com
+
+.netflix.com	TRUE	/	FALSE	1813703104	nfvdid	BQFmAAEBEDD1B60aNmoEXAECjNRvxvpgvhjB5ApqNMldbmQ4Zut4p-_cN3WrsmKfU0VlDIpYDnRMSN2IBY6zkEa3qm5nm1YrIOruxEayfZ3jsCgk76Nl-B-VfKIl0iJ305ZwXx-2bdsDreOczHnZp5_hbURQjvfX
+.netflix.com	TRUE	/	TRUE	1816110132	NetflixId	ct%3DBgjHlOvcAxLUAxudOYtQr8vwRWaG3bap3CbUApmK9gZT_ZX2rZiEepe_j3NyTEc513o2AhP8u0J4Ur5qSBCIrW8uiSjAq4SMAYExqcZmDUDkNVMa97d-bH8R2_vY6rKCU7y03VjiDabOmbRPkNPA8UMeL5I-D3RGI7vJwWTJHhvCUXyJKEG2z9-FJxuQBoJDVzB67sWAbncv9SHPcCrlP_THLXz8bMQC7s7zgBKcUplMLqjZB--XQqPop5YioeM2p9nKYOtLZKhWShigKtyRpew4I5BAv7js4LjAsWwCxWmhyX_86fulxEr-36s5IQjssG4E8T-Ea8krUzgVq3gMWvTElgztpB7sIC_rU2_rDbGz6iCVZQ9KhG5JmTW7U4pQb6S65_B5G01m7ak0wg6h0eKYuoXodbr_eedqp4ihFJAhH76HevhlolPyMdl1lC0ZUub0vkH4bupmGU4rhSjp37VhLPqbDvFoPfovTA6c-sTWaiBzvyEp9RMAtnRJMlSYVGpGPu2z35M3ZHQ9q0aiCGoVGUJ_UtN4d_iuPWVOklFE6V1tQOWAd7sQmkMMKKpn1prxDygfHpKD-Z2Ng4LRNVYz4ihsyxX8hF2OpVe8WBjYZff6bWoS1A_HMYtZ5RgGIg4KDA-i8K_JMItD0hjeBg..%26ch%3DAQEAEAABABSotfnxAKXQx_DPO9Us0ZEZOB79MkCUC1I.%26v%3D3%26pg%3DLRWFOKTJFBFMTH74CR7DVVTTXI
+.netflix.com	TRUE	/	FALSE	1816110136	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Jul+20+2026+15%3A02%3A16+GMT-0400+(Eastern+Daylight+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=f29c6688-31ff-4c97-aa5a-e2ad7ef85203&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1816110132	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABScAq007yIvvxAmURD95L2huX7-jklH5jg.%26dt%3D1784574132816
+.netflix.com	TRUE	/	TRUE	1790616446	gsid	bdf3449a-61dd-468c-bc4f-28415147d48d
+.netflix.com	TRUE	/	FALSE	1792350134	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792350134	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1790616446	profilesNewSession	0
+======================================================================

@@ -1,0 +1,52 @@
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           kunalsormare
+📧  Email:          kunalsormare@gmail.com
+🌍  Pais:           India (IN)
+
+📋  Plano:          Premium
+💰  Preco:          N/A
+📅  Membro desde:   December 2024
+🗓  Prox. cobranca: N/A
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      UHD 4K
+📺  Max Streams:    4
+➕  Extra Slots:    0
+
+💳  Bandeira:       N/A
+🔢  Final Cartao:   N/A
+💳  Metodo Pagto:   RELIANCE_JIO_PI_BILLED
+
+📞  Telefone:       088060 39274
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  kunalsormare
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+Valid Cookie / Every day!
+https://russia34.com
+
+– Email: kunalsormare@gmail.com
+– Verified: false
+– Profile: kunalsormare
+– Plan: Basic
+– Next billing: 
+– Extra members: false
+– Country: IN
+– Payments: 1 | RELIANCE_JIO_PI_BILLED ( )
+– Cookies: russia34.com
+
+.netflix.com	TRUE	/	FALSE	1792912120	nfvdid	BQFmAAEBEKs1yIYYkDBzDkF8f1o-7nRg1bl7PhKy7JogHOSAuNa4CMoFP4lyAJKXUsqhZGazSY2A4XPSE38rsgtI2qq2yxHh61xLUtvrtURbXfcLESNY0vlBD-UcIFSPdo0gj7KULi5qg5JJvqTXZw0gusEJxq4q
+.netflix.com	TRUE	/	FALSE	1818922728	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Aug+22+2026+01%3A18%3A48+GMT-0700+(Pacific+Daylight+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=1ba23831-5974-40ff-9820-5008a5b08d86&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	FALSE	1795279015	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1795279015	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1795279015	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	TRUE	/	TRUE	1819390030	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABR8g4mOVDTCDTkHJkDtXTckEn0k4zKONjU.%26dt%3D1787854030592
+.netflix.com	TRUE	/	TRUE	1819390030	NetflixId	ct%3DBgjHlOvcAxKKBKMEuZHNev0YaJxdpTq2glFgQkj6Rz0v8I9guinE3MalIwrMO3DyWSda3lu_jfflbIs4F7qOyLzTZNdRRXO1Okcu8zDeiyUbRSJ50N8rkeegX_5PW8LXejidmYb2QH8Ij8RtJHXBzDU0oMI47jay9DmYIVMKyvs1yeblkZFaCnkfmHA2YKlYqTcWoEHpN6uMHgdKmN_O5oe_Vjuupb6UPRCEL6DHXRIHZ9aYXxv-pz7BomY4SZZXQc360W30xtNP46_eiKRykNaqS5wbcn_X1B97OE0bwRj0eRUN6QshbhvYQItDGV1koYBADbnfRW5b_Tj3elm7LqfZfIKDIjZs6Xy-V4nkwtdq10w8fgHCBmDy1DzM8wsa9abDmY5Aj6R5FjFNnlfSQOy9JJ5iIygcME-55y7T85Khjie5p7OSo1opw9JSkBFB0yyzzG1az68BJ70MeA0hkWsbGz3dPrFC3RFbhyxxk8S58qODZIJWD_7nSoAfhX5qPnSqVFO0s1GGZcpq52UaDz59poDiKQ6yEJB8x5JTZk6yStV5PvddKonliubGwhIRF6ANAuvOPaByRRErrC7Tfq_tj8F4V5bGLNPcjFnIXQBY6vUT5KMfsTS1ecJjdbuoLJlenkL5DsRjog7DR3iJ-IwYtTb-KjfyOJHVhVufxm86zCjfSnlvSVPAE8fOQjnjmlRlNhgGIg4KDPNr15zSWT4bosTEcA..%26ch%3DAQEAEAABABQ30vXiC5UI3Fe_Qn_yedGZM8HEunDrCps.%26v%3D3%26pg%3DVPSP7633RRAKRN5KXRPGZ4HCHM
+.netflix.com	TRUE	/	FALSE	1790616446	profilesNewSession	0
+======================================================================

@@ -1,0 +1,56 @@
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           Chino
+📧  Email:          guillenignacio08@gmail.com
+🌍  Pais:           Mexico (MX)
+
+📋  Plano:          Estándar con anuncios
+💰  Preco:          $139
+📅  Membro desde:   febrero de 2025
+🗓  Prox. cobranca: 10 de septiembre de 2026
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      HD 720p
+📺  Max Streams:    2
+➕  Extra Slots:    0
+
+💳  Bandeira:       MASTERCARD
+🔢  Final Cartao:   0081
+💳  Metodo Pagto:   CC
+
+📞  Telefone:       56 4192 7454
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  Ignacio Guillen
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+Valid Cookie / Every day!
+https://russia34.com
+
+– Email: guillenignacio08@gmail.com
+– Verified: false
+– Profile: Chino
+– Plan: Standard with ads
+– Next billing: 10 de septiembre de 2026
+– Extra members: false
+– Country: MX
+– Payments: 1 | CC (MASTERCARD 0081)
+– Cookies: @logslead
+
+.netflix.com	TRUE	/	FALSE	1817339976	OptanonAlertBoxClosed	2026-08-04T00:39:36.431Z
+.netflix.com	TRUE	/	FALSE	1817998261	flwssn	1f28e9a0-3449-437d-8bf7-4b9f4d040623
+.netflix.com	TRUE	/	TRUE	1817998261	gsid	4f8c2a98-0da8-4635-8321-7c6dcf16690b
+.netflix.com	TRUE	/	TRUE	1817340031	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKZAxmyexae-BoPRW07lkVhecPjxOBvW-xhn3b0NKYZgo0lYcZ8EFfol_ghsZ75zBQOiMRG25p37fydMdzDE1U8TTJ3vtFugDgGsDSj6gEchp74SaZSNOi0vpfXgmjA77rC6lZG4j1VA4bRjids7_ubcLmT8nwoDVfDo4TGiumg2Dj7Fo7ElvWR0ErIjKhX56nrytuYjjmKKVNzZdnz7twDshX9eeUeWyQIoQ3ty5hagO4m3fM0c5ss_LfGQXAeh3JPF2zirIDL_uF2MMWYeEjUWq-vzPn1W3ZUvxIx1v9ap__DJGSBW_GLT5KhZpfc_VtZOHCN6Kjgvs1qj9OsScX6DLDku6nX-xfJbm5kcF5ETIee37qFi2qwW3zZeN09sVEqiVyuxpihvrlX5sRQggpabk3llkib4nft5cnLfLbN98y_ZafUlVFR26CW9IwN6Sxd-1Zh7_DLGb4mNy4zWA3Gxsrjh4BpiUsJYOFL_Xk8NYuNsnKVf0lPoDl5fOb4dyAsvJa7sc6pKYam2T418jFNH9TSSu8ODiBPLLAYBiIOCgzncau9s-MuhQDeML8.%26pg%3D2RXVGR7HNFBRPM6QOVXDHMMAKQ%26ch%3DAQEAEAABABRvJJnQkqT7y7aEBysPRQqa68OK-tzlMMU.
+.netflix.com	TRUE	/	FALSE	1817340033	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Aug+03+2026+18%3A40%3A33+GMT-0600+(hora+est%C3%A1ndar+central)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=1497d186-aa9b-4184-b6c0-3e85e81b7ccb&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=3&crTime=1785803976847&geolocation=MX%3BCMX&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1817340031	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTJRoXSu2uyeAjkP92PFIBKvAZmMqt4vkU.%26dt%3D1785804032617
+.netflix.com	TRUE	/	TRUE	1820364031	nap	BgjHvOvcAxJJUeXvDG8lJQ4fKjGLom5eEmaHf1dYHOB8HpkpAxjR-j8GADhqNBZ-bNIoQPG8pJp5YH74N5BQuTltKe9Y1PfmVn-essoG0sPL7RgGIg4KDPAiJslnQCCSwXJ3qg..
+.netflix.com	TRUE	/	FALSE	1793580033	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1793580033	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1817340027	nfvdid	BQFmAAEBEJUN8wPHH0bg1b2Qoa8UPVZgxER6k2q8ESs2lyIip8oF-HcQHFiWeoou_j197Y5oj8ge19G8vPf6L7qpfZK7sbghkeiC1Spn7ccpnLobRvzKR4NQc_x0IVmK1CdQTeT3voKxHMyJeIX0ASjgXE96dw3z
+.netflix.com	TRUE	/	FALSE	1793580119	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	FALSE	1817998261	profilesNewSession	0
+======================================================================

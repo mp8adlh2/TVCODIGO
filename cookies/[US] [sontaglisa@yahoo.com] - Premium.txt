@@ -1,0 +1,49 @@
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           Angie
+📧  Email:          sontaglisa@yahoo.com
+🌍  Pais:           United States (US)
+
+📋  Plano:          Premium
+💰  Preco:          N/A
+📅  Membro desde:   September 2025
+🗓  Prox. cobranca: N/A
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      UHD 4K
+📺  Max Streams:    4
+➕  Extra Slots:    0
+
+💳  Bandeira:       N/A
+🔢  Final Cartao:   N/A
+💳  Metodo Pagto:   VERIZON_PI_BILLED
+
+📞  Telefone:       (505) 469-5117
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  Mom
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+Valid Cookie / Every day!
+https://russia34.com
+
+– Email: sontaglisa@yahoo.com
+– Verified: false
+– Profile: Angie
+– Plan: Premium
+– Next billing: 
+– Extra members: false
+– Country: US
+– Payments: 1 | VERIZON_PI_BILLED ( )
+– Cookies: Cloud WebSite russia34.com
+
+.netflix.com	TRUE	/	FALSE	1813619172	nfvdid	BQFmAAEBECErd2ub0CPFJPfC3-9NzWlgzM42073_kWgNN_dgS2sbrsj9Xh9xp6GPen48ws9aCm_oHt-3h-wqfK30eud5ynmGmjfWxH3ex06zD752Q_dJhccecbp57ZmWrb5dY6SggIO1noDlnxrrBAHOCv6nZezQ
+.netflix.com	TRUE	/	FALSE	1817853982	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Aug+09+2026+17%3A26%3A22+GMT-0600+(Mountain+Daylight+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=69f11696-7725-4a19-af31-370c1c6c6c90&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	TRUE	1817853977	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTc5gEHAp9ntmcGCeokcWysAWr7umN0BtE.%26dt%3D1786317976601
+.netflix.com	TRUE	/	TRUE	1817853977	NetflixId	ct%3DBgjHlOvcAxKDBCCKOVAyPzDkzyopY-M0WzRPSeXzifFVCYS_DSFUZQW8yK250gb3D8uxuc572fETIgsZTii_mlUcNGpB_dgbYI6J6TuLB9MU-MlRd_50rhJExN7azs6Xg7iXAHEdr-XNPW5Z4VFX4B4yZvdRFpTuhqHSun2EGyR_lHxn9KvbL5iKWejcA6RcPUY5Adz69XEtf41qCGAR-D0fjsUpCbONZSFl8A-rf9UEibQ7hNRU-rnRotvyT_9SkFyzLMqUkmaHoxqApz2rtZtzUAW6iiNwrf8oQfF8pq5XVeCRb0R9Cd_vpkpiSuH06ZHLh4FC2R1KDJWC-H9XSiykyTSEZkgYEqkb6oEbd_1YJcCFFgHxNnJ0d3wbv-xOtnfZhZurpfvPI4fDdnyq0Petr_qbc727Ii5mG3SVtc2caU68SLogcDH2Qx2O1KZH-h6JbTEJcKjC2Ym3Q40TquRkTIDQ1o4-DOqxpw3LwEM301owKUc5nzuub4dG_s5MUROzu7IUEMqoC5sxswY5CqWZkdTynouyyJz1lCV3YO__OVr8XdHdlCEiUw9YgKf_FX_inSwNTz8y-y-4ooCR4FyEFr3q2CLn9wldHc9alkEg3ioEIoMB-TU2AvUN3EptNT-4QnyGidetyYghEa57fVUH5PXRbIKT26fQUmkw_t0Pk63rt_OXH1bNGo7jGAYiDgoMYGBnJU-GaOz1cb7F%26ch%3DAQEAEAABABTYN0kkuYnYOvM7GmOoF2UiKCx4J8L5S40.%26v%3D3%26pg%3DQVAAAXZURBBNPEEFKV7YLFCNAU
+.netflix.com	TRUE	/	FALSE	1794093980	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+======================================================================

@@ -1,0 +1,54 @@
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           trg_funny
+📧  Email:          trg_funny@mail.bg
+🌍  Pais:           Bulgaria (BG)
+
+📋  Plano:          Premium
+💰  Preco:          N/A
+📅  Membro desde:   November 2025
+🗓  Prox. cobranca: N/A
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      UHD 4K
+📺  Max Streams:    4
+➕  Extra Slots:    0
+
+💳  Bandeira:       N/A
+🔢  Final Cartao:   English
+💳  Metodo Pagto:   A1_BULGARIA_BILLED
+
+📞  Telefone:       089 858 4784
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  trg_funny
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+Valid Cookie / Every day!
+https://russia34.com
+
+– Email: trg_funny@mail.bg
+– Verified: false
+– Profile: trg_funny
+– Plan: Basic
+– Next billing: 
+– Extra members: false
+– Country: BG
+– Payments: 1 | A1_BULGARIA_BILLED ( )
+– Cookies: Cloud WebSite russia34.com
+
+.netflix.com	TRUE	/	FALSE	1814365134	OptanonAlertBoxClosed	2026-06-30T14:18:54.319Z
+.netflix.com	TRUE	/	FALSE	1814365239	nfvdid	BQFmAAEBEPkRH-SXsBgBnI0sNIoo5URghaYIt1Jrhlh7KkXzS0dQNYZw7gtfjsHPyRnJ6yBI22-P0Le-7PBv93OaUxvFDkio_JevRuSkeEvTRBjsQJbzbJtnhIuJlCBaYh4eoaxaNNyFkjjbLePs5G1I1vPVt6a4
+.netflix.com	TRUE	/	FALSE	1791290396	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1791290396	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	TRUE	1818070960	NetflixId	ct%3DBgjHlOvcAxKDBCu0Ayv8sPbLZgZ34Nux0Xfl3p8bwtkQjQ2NvfXxu08HLc-se4rsAV0syBGu_PBhGRbzsuhhvJMX828bv5RbfI6B3Re_6P9voyIZzhMTWKodhliEkh1L3V79zeUxgGpZQZxiTwKj2UDO2m7gFEa9aAJ3DNLPQL0-LT5B3FYK0b6Pq21TtWadfIUmKdBdZSiC9ZbzgPyPs6KSMYfDEJOJUtBghsPRFrK8eVD7E30VEqMshpKyQgicB2_oqS-TWOCVPzCM255Ny36adyZ5zMEozGXXqxqOmVJv_cewsiO1hycY1ZO_7AeAV4Ab3tTODc8TrYBfBqARegazfBH74L-VxHN9agk4AqgqYMyYHV5Z6A6AO2oG7eR1SdZ0fCouK56SmFrXipsdC6ruTHkzHGokhtEok4gxwMlfqWZBX3gms-ifwFC0bd4NTdL7J4eRMQJM5bS_RR3wyAWtZBTxpVK9466YBzUD7fxcgpQZBerGrwvQ3pdUbukxyBi7uIP_muMILdD86Iv4N3AokacKf2n_R35ZhDuWv8L98JMu5RCZv19ILLzsFLC3RaGyauLQXoILMLKIdNhJGZyn_YHYESp5MIYTpcM7DWJsapJYAgdSW0C5F5dlEnw8fagUFmdnQmrCGkiXIR0kuIPPY6O8d3w_lck-PhmDp8yE84BUsw30-nqN8pa0GAYiDgoMSh8SAaH_uay3yiPe%26ch%3DAQEAEAABABQzpeGSPTiNcFi464RbAJNXRIYS3Gl6j9I.%26v%3D3%26pg%3DRUFMJJHLLBEPVDUMQPJCYV2B6A
+.netflix.com	TRUE	/	FALSE	1818070929	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Aug+12+2026+14%3A42%3A09+GMT%2B0300+(Eastern+European+Summer+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=3109bee1-894d-4c31-8d8c-fecf831afc7e&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&crTime=1782829134851&AwaitingReconsent=false&fclco=&intType=3&geolocation=BG%3B22
+.netflix.com	TRUE	/	TRUE	1818070960	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQh5izAUtEr7LpjXtEj14krmQjgIFptgX4.%26dt%3D1786534960168
+.netflix.com	TRUE	/	TRUE	1821094929	dsca	true
+.netflix.com	TRUE	/	TRUE	1790616446	gsid	51fba671-1b58-4826-b19a-d3727438f30e
+.netflix.com	TRUE	/	FALSE	1790616446	profilesNewSession	0
+======================================================================
