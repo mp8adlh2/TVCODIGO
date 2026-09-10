@@ -232,52 +232,154 @@ def test_netflix_cookie_file(fpath: str, timeout: float = 4.0) -> Optional[dict]
         DEAD_NETFLIX_COOKIES.add(fpath)
         return None
 
-def get_verified_netflix_cookies(min_count: int = 3) -> List[dict]:
-    """Retorna cookies Netflix válidos usando verificação paralela ultrarrápida."""
-    with VALID_NETFLIX_LOCK:
-        alive = [e for e in VALID_NETFLIX_POOL if e["file"] not in DEAD_NETFLIX_COOKIES and e["file"] not in tv2.USED_COOKIES]
+def extract_netflix_file_info(fpath: str) -> Optional[dict]:
+    """Extrai informações do arquivo de cookie (email, plano, país) sem travar a requisição com rede."""
+    if not os.path.exists(fpath):
+        return None
+    bname = os.path.basename(fpath)
+    if fpath in tv2.USED_COOKIES or bname in tv2.USED_COOKIES or fpath in DEAD_NETFLIX_COOKIES:
+        return None
 
-    if len(alive) >= min_count:
-        return alive
+    try:
+        with open(fpath, 'r', encoding='utf-8', errors='ignore') as f:
+            raw = f.read()
 
+        parsed = tv2.load_cookies(raw)
+        if not parsed or "SecureNetflixId" not in parsed:
+            return None
+
+        email = ""
+        country = "BR"
+        plan = "PREMIUM"
+
+        # 1. Regex no nome do arquivo: [BR] [email@domain.com] - Plano.txt
+        fn_match = re.search(r'\[([A-Za-z]{2})\]\s*\[([^\]]+)\]\s*-\s*([^.]+)', bname)
+        if fn_match:
+            country = fn_match.group(1).upper()
+            email = fn_match.group(2).strip()
+            plan = fn_match.group(3).strip()
+
+        # 2. Regex no conteúdo do arquivo caso o nome não tenha
+        if not email:
+            em_match = re.search(r'(?:📧|\bEmail\b)[\s:]*([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)', raw, re.I)
+            if em_match:
+                email = em_match.group(1).strip()
+
+        if not email:
+            any_em = re.search(r'([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)', raw)
+            if any_em:
+                email = any_em.group(1).strip()
+            else:
+                email = bname.replace('.txt', '').replace('.json', '')
+
+        if country == "BR":
+            c_match = re.search(r'(?:🌍|\bPais\b)[\s:]*.*?\(([A-Z]{2})\)', raw, re.I)
+            if c_match:
+                country = c_match.group(1).upper()
+            else:
+                c2_match = re.search(r'Country:\s*([A-Z]{2})', raw, re.I)
+                if c2_match:
+                    country = c2_match.group(1).upper()
+
+        if plan == "PREMIUM" or not plan:
+            p_match = re.search(r'(?:📋|\bPlano\b)[\s:]*([^\r\n]+)', raw, re.I)
+            if p_match:
+                plan = p_match.group(1).strip()
+
+        cat = classify_plan(bname, plan)
+
+        return {
+            "file": fpath,
+            "parsed": parsed,
+            "info": {
+                "email": email,
+                "country": country,
+                "plan": plan,
+                "category": cat
+            },
+            "validated": False
+        }
+    except Exception:
+        return None
+
+def get_all_netflix_accounts() -> List[dict]:
+    """Retorna todas as contas Netflix disponíveis da pasta (deduplicadas), com metadados instantâneos."""
     files = get_netflix_files()
-    untested = [
-        f for f in files 
-        if f not in tv2.USED_COOKIES 
-        and os.path.basename(f) not in tv2.USED_COOKIES 
-        and f not in DEAD_NETFLIX_COOKIES 
-        and not any(e["file"] == f for e in alive)
-    ]
+    accounts = []
+    seen_names = set()
 
-    # Testa em paralelo com ThreadPoolExecutor para ser instantâneo
-    if untested:
-        batch = untested[:8]
-        with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
-            results = executor.map(lambda f: test_netflix_cookie_file(f, timeout=3.5), batch)
-            for res in results:
-                if res and res not in alive:
-                    alive.append(res)
+    for fpath in files:
+        bname = os.path.basename(fpath)
+        if bname in seen_names:
+            continue
+        seen_names.add(bname)
 
-    return alive
+        if fpath in tv2.USED_COOKIES or bname in tv2.USED_COOKIES or fpath in DEAD_NETFLIX_COOKIES:
+            continue
+
+        # Se já tiver validação ao vivo salva em cache
+        with VALID_NETFLIX_LOCK:
+            if fpath in VALID_NETFLIX_BY_FILE and fpath not in DEAD_NETFLIX_COOKIES:
+                accounts.append(VALID_NETFLIX_BY_FILE[fpath])
+                continue
+
+        # Extração instantânea de metadados
+        meta = extract_netflix_file_info(fpath)
+        if meta:
+            accounts.append(meta)
+
+    return accounts
+
+def start_background_netflix_validator():
+    """Valida em segundo plano os cookies restantes da pasta de forma suave."""
+    def _worker():
+        time.sleep(2)
+        while True:
+            files = get_netflix_files()
+            for f in files:
+                bname = os.path.basename(f)
+                if f in tv2.USED_COOKIES or bname in tv2.USED_COOKIES or f in DEAD_NETFLIX_COOKIES:
+                    continue
+                with VALID_NETFLIX_LOCK:
+                    if f in VALID_NETFLIX_BY_FILE:
+                        continue
+                try:
+                    test_netflix_cookie_file(f, timeout=4.0)
+                except Exception:
+                    pass
+                time.sleep(1.5)
+            time.sleep(60)
+
+    t = threading.Thread(target=_worker, daemon=True)
+    t.start()
+
+start_background_netflix_validator()
+
+def get_verified_netflix_cookies(min_count: int = 1) -> List[dict]:
+    """Retorna todas as contas Netflix disponíveis."""
+    return get_all_netflix_accounts()
 
 def find_netflix_valid_cookie(target_plan: str = "TODOS", exclude_file: str = "") -> Optional[dict]:
     """Retorna o primeiro cookie válido disponível e pronto para uso."""
-    verified = get_verified_netflix_cookies(min_count=1)
-    for entry in verified:
-        f = entry["file"]
-        bname = os.path.basename(f)
-        if f in tv2.USED_COOKIES or bname in tv2.USED_COOKIES or f in DEAD_NETFLIX_COOKIES or f == exclude_file or bname == exclude_file:
-            continue
-        return entry
+    # 1. Primeiro verifica os já validados no pool
+    with VALID_NETFLIX_LOCK:
+        for entry in VALID_NETFLIX_POOL:
+            f = entry["file"]
+            bname = os.path.basename(f)
+            if f in tv2.USED_COOKIES or bname in tv2.USED_COOKIES or f in DEAD_NETFLIX_COOKIES or f == exclude_file or bname == exclude_file:
+                continue
+            prewarm_netflix_cookie(entry)
+            return entry
 
-    # Fallback se a pool estiver vazia
+    # 2. Testa os arquivos disponíveis até achar o primeiro vivo
     files = get_netflix_files()
     for f in files:
         bname = os.path.basename(f)
         if f in tv2.USED_COOKIES or bname in tv2.USED_COOKIES or f in DEAD_NETFLIX_COOKIES or f == exclude_file or bname == exclude_file:
             continue
-        res = test_netflix_cookie_file(f, timeout=3.5)
+        res = test_netflix_cookie_file(f, timeout=4.0)
         if res:
+            prewarm_netflix_cookie(res)
             return res
 
     return None
@@ -441,17 +543,53 @@ def get_hbo_region_from_jwt(st_token: str) -> str:
 
 def get_hbo_files() -> List[str]:
     files = []
+    seen_names = set()
     for h_dir in [HBO_COOKIES_FOLDER, os.path.join(BASE_DIR, "cookies 01")]:
         if os.path.exists(h_dir):
-            files += glob.glob(os.path.join(h_dir, "*.txt")) + glob.glob(os.path.join(h_dir, "*.json"))
-    
-    unique_files = []
-    seen = set()
-    for f in files:
-        if f not in seen and f not in USED_HBO_COOKIES:
-            seen.add(f)
-            unique_files.append(f)
-    return unique_files
+            for ext in ["*.txt", "*.json"]:
+                for f in glob.glob(os.path.join(h_dir, ext)):
+                    bname = os.path.basename(f)
+                    if bname not in seen_names:
+                        seen_names.add(bname)
+                        files.append(os.path.abspath(f))
+    return [f for f in files if f not in USED_HBO_COOKIES and os.path.basename(f) not in USED_HBO_COOKIES]
+
+def extract_hbo_file_info(filename: str) -> Optional[dict]:
+    if not os.path.exists(filename):
+        return None
+    bname = os.path.basename(filename)
+    if filename in USED_HBO_COOKIES or bname in USED_HBO_COOKIES:
+        return None
+    try:
+        with open(filename, 'r', encoding='utf-8', errors='ignore') as f:
+            content = f.read()
+        st_token = extract_hbo_st_token(content)
+        if not st_token:
+            return None
+        decoded = decode_jwt(st_token)
+        if decoded:
+            exp = decoded.get('exp', 0)
+            if exp and datetime.fromtimestamp(exp) < datetime.now():
+                USED_HBO_COOKIES.add(filename)
+                return None
+        region = get_hbo_region_from_jwt(st_token)
+        email = bname.split('_')[0] if '_' in bname else bname
+        country = "BR" if "_br_" in bname.lower() else "LATAM"
+        plan = "HBO Max VIP"
+        return {
+            "file": filename,
+            "st_token": st_token,
+            "region": region,
+            "info": {
+                "email": email,
+                "plan": plan,
+                "country": country,
+                "region": region.upper()
+            },
+            "validated": False
+        }
+    except Exception:
+        return None
 
 def get_hbo_user_info(st_token: str, region: str) -> Optional[Dict]:
     url = f"https://default.beam-{region}.prd.api.hbomax.com/users/me"
@@ -488,19 +626,41 @@ def is_hbo_free(user_data: Dict) -> bool:
         return True
     return False
 
-def get_verified_hbo_cookies(min_count: int = 3) -> List[dict]:
-    """Retorna a lista de cookies HBO Max válidos e pré-testados."""
-    with VALID_HBO_LOCK:
-        alive = [e for e in VALID_HBO_POOL if e["file"] not in USED_HBO_COOKIES]
+def get_all_hbo_accounts() -> List[dict]:
+    """Retorna todas as contas HBO Max disponíveis da pasta, deduplicadas."""
+    files = get_hbo_files()
+    accounts = []
+    seen = set()
+    for filename in files:
+        bname = os.path.basename(filename)
+        if bname in seen:
+            continue
+        seen.add(bname)
+        if filename in USED_HBO_COOKIES or bname in USED_HBO_COOKIES:
+            continue
+        with VALID_HBO_LOCK:
+            if filename in VALID_HBO_BY_FILE:
+                accounts.append(VALID_HBO_BY_FILE[filename])
+                continue
+        meta = extract_hbo_file_info(filename)
+        if meta:
+            accounts.append(meta)
+    return accounts
 
-    if len(alive) >= min_count:
-        return alive
+def get_verified_hbo_cookies(min_count: int = 1) -> List[dict]:
+    """Retorna a lista de contas HBO Max disponíveis."""
+    return get_all_hbo_accounts()
+
+def find_hbo_valid_cookie() -> Optional[dict]:
+    with VALID_HBO_LOCK:
+        for entry in VALID_HBO_POOL:
+            f = entry["file"]
+            if f not in USED_HBO_COOKIES and os.path.basename(f) not in USED_HBO_COOKIES:
+                return entry
 
     files = get_hbo_files()
     for filename in files:
-        if len(alive) >= max(min_count, 8):
-            break
-        if filename in USED_HBO_COOKIES or any(e["file"] == filename for e in alive):
+        if filename in USED_HBO_COOKIES or os.path.basename(filename) in USED_HBO_COOKIES:
             continue
         try:
             with open(filename, 'r', encoding='utf-8', errors='ignore') as f:
@@ -516,7 +676,6 @@ def get_verified_hbo_cookies(min_count: int = 3) -> List[dict]:
                     USED_HBO_COOKIES.add(filename)
                     continue
             region = get_hbo_region_from_jwt(st_token)
-            
             user_data = get_hbo_user_info(st_token, region)
             if not user_data or is_hbo_free(user_data):
                 USED_HBO_COOKIES.add(filename)
@@ -540,22 +699,17 @@ def get_verified_hbo_cookies(min_count: int = 3) -> List[dict]:
                     "plan": plan,
                     "country": country,
                     "region": region.upper()
-                }
+                },
+                "validated": True
             }
             with VALID_HBO_LOCK:
                 VALID_HBO_BY_FILE[filename] = entry
                 if not any(e["file"] == filename for e in VALID_HBO_POOL):
                     VALID_HBO_POOL.append(entry)
-            alive.append(entry)
+            return entry
         except Exception:
             USED_HBO_COOKIES.add(filename)
             continue
-    return alive
-
-def find_hbo_valid_cookie() -> Optional[dict]:
-    verified = get_verified_hbo_cookies(min_count=1)
-    if verified:
-        return verified[0]
     return None
 
 def activate_hbo_tv(tv_code: str, cookie_data: dict) -> Tuple[bool, str, Optional[dict]]:
@@ -1052,47 +1206,53 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         if CURRENT_HBO_READY is None or (CURRENT_HBO_READY and CURRENT_HBO_READY.get("file") in USED_HBO_COOKIES):
             CURRENT_HBO_READY = find_hbo_valid_cookie()
 
-        verified_netflix = get_verified_netflix_cookies(min_count=3)
+        all_netflix = get_all_netflix_accounts()
         active_nf_file = CURRENT_NETFLIX_READY["file"] if CURRENT_NETFLIX_READY else ""
+        active_nf_bname = os.path.basename(active_nf_file) if active_nf_file else ""
+
         nf_queue = [
             {
                 "filename": os.path.basename(e["file"]),
                 "email": e["info"].get("email", os.path.basename(e["file"])),
                 "country": e["info"].get("country", "BR"),
                 "plan": e["info"].get("plan", "Premium VIP"),
-                "is_selected": (e["file"] == active_nf_file)
+                "is_selected": (os.path.basename(e["file"]) == active_nf_bname),
+                "is_verified": e.get("validated", False)
             }
-            for e in verified_netflix if e["file"] != active_nf_file
+            for e in all_netflix if os.path.basename(e["file"]) != active_nf_bname
         ]
 
-        verified_hbo = get_verified_hbo_cookies(min_count=2)
+        all_hbo = get_all_hbo_accounts()
         active_hbo_file = CURRENT_HBO_READY["file"] if CURRENT_HBO_READY else ""
+        active_hbo_bname = os.path.basename(active_hbo_file) if active_hbo_file else ""
+
         hbo_queue = [
             {
                 "filename": os.path.basename(e["file"]),
                 "email": e["info"].get("email", "HBO Max VIP"),
                 "country": e["info"].get("country", "BR"),
                 "plan": e["info"].get("plan", "HBO Max VIP"),
-                "is_selected": (e["file"] == active_hbo_file)
+                "is_selected": (os.path.basename(e["file"]) == active_hbo_bname),
+                "is_verified": e.get("validated", False)
             }
-            for e in verified_hbo if e["file"] != active_hbo_file
+            for e in all_hbo if os.path.basename(e["file"]) != active_hbo_bname
         ]
 
-        nf_all_files = glob.glob(os.path.join(NETFLIX_COOKIES_FOLDER, "*.*"))
-        hbo_all_files = glob.glob(os.path.join(HBO_COOKIES_FOLDER, "*.*"))
+        nf_count = len(all_netflix)
+        hbo_count = len(all_hbo)
 
         res = {
             "netflix": {
-                "total_in_vault": len(nf_all_files),
-                "available_count": len(verified_netflix),
+                "total_in_vault": nf_count,
+                "available_count": nf_count,
                 "has_account": CURRENT_NETFLIX_READY is not None,
                 "account": CURRENT_NETFLIX_READY["info"] if CURRENT_NETFLIX_READY else None,
                 "cookie_name": os.path.basename(CURRENT_NETFLIX_READY["file"]) if CURRENT_NETFLIX_READY else None,
                 "cookie_queue": nf_queue
             },
             "hbo": {
-                "total_in_vault": len(hbo_all_files),
-                "available_count": len(verified_hbo),
+                "total_in_vault": hbo_count,
+                "available_count": hbo_count,
                 "has_account": CURRENT_HBO_READY is not None,
                 "account": CURRENT_HBO_READY["info"] if CURRENT_HBO_READY else None,
                 "cookie_name": os.path.basename(CURRENT_HBO_READY["file"]) if CURRENT_HBO_READY else None,
@@ -1212,10 +1372,10 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             query_service = 'hbo'
 
         if query_service == 'netflix':
-            verified = get_verified_netflix_cookies(min_count=4)
+            all_accounts = get_all_netflix_accounts()
             active_file = os.path.basename(CURRENT_NETFLIX_READY["file"]) if CURRENT_NETFLIX_READY else ""
             items = []
-            for entry in verified:
+            for entry in all_accounts:
                 bname = os.path.basename(entry["file"])
                 acc = entry["info"]
                 items.append({
@@ -1224,16 +1384,16 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     "country": acc.get("country", "BR"),
                     "plan": acc.get("plan", "Premium VIP"),
                     "is_selected": (bname == active_file),
-                    "is_verified": True,
+                    "is_verified": entry.get("validated", False),
                     "is_dead": False
                 })
             # Selecionado no topo
             items.sort(key=lambda x: not x["is_selected"])
         else:
-            verified = get_verified_hbo_cookies(min_count=3)
+            all_accounts = get_all_hbo_accounts()
             active_file = os.path.basename(CURRENT_HBO_READY["file"]) if CURRENT_HBO_READY else ""
             items = []
-            for entry in verified:
+            for entry in all_accounts:
                 bname = os.path.basename(entry["file"])
                 acc = entry["info"]
                 items.append({
@@ -1242,7 +1402,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     "country": acc.get("country", "BR"),
                     "plan": acc.get("plan", "HBO Max VIP"),
                     "is_selected": (bname == active_file),
-                    "is_verified": True,
+                    "is_verified": entry.get("validated", False),
                     "is_dead": False
                 })
             items.sort(key=lambda x: not x["is_selected"])
@@ -1428,15 +1588,15 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         })
 
     def handle_api_admin_stats(self):
-        nf_files = glob.glob(os.path.join(NETFLIX_COOKIES_FOLDER, "*.*"))
-        hbo_files = glob.glob(os.path.join(HBO_COOKIES_FOLDER, "*.*"))
-        verified_nf = get_verified_netflix_cookies(min_count=1)
-        verified_hbo = get_verified_hbo_cookies(min_count=1)
+        all_nf = get_all_netflix_accounts()
+        all_hbo = get_all_hbo_accounts()
+        verified_nf = [a for a in all_nf if a.get("validated")]
+        verified_hbo = [a for a in all_hbo if a.get("validated")]
         return self.send_json_response({
-            "netflix_total": len(nf_files),
+            "netflix_total": len(all_nf),
             "netflix_verified": len(verified_nf),
             "netflix_dead": len(DEAD_NETFLIX_COOKIES),
-            "hbo_total": len(hbo_files),
+            "hbo_total": len(all_hbo),
             "hbo_verified": len(verified_hbo),
             "hbo_dead": len(USED_HBO_COOKIES),
             "keep_alive": True,

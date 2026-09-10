@@ -906,7 +906,7 @@
       display: flex;
       flex-direction: column;
       gap: 8px;
-      max-height: 220px;
+      max-height: 310px;
       overflow-y: auto;
       padding-right: 4px;
     }
@@ -2743,7 +2743,7 @@
           const totalInVault = servData.total_in_vault || 0;
           const availableCount = servData.available_count || 0;
           if (totalInVault > 0) {
-            stockElem.innerText = `${availableCount} ATIVOS (${totalInVault} NO ESTOQUE)`;
+            stockElem.innerText = `${availableCount} CONTAS PRONTAS NO ESTOQUE`;
           } else {
             stockElem.innerText = `${availableCount} DISPONÍVEIS`;
           }
@@ -2761,9 +2761,13 @@
 
     function renderQueuePreview(queue) {
       const container = document.getElementById('cookie-queue-list');
+      const tabBtn = document.getElementById('tab-btn-queue');
+      if (tabBtn) {
+        tabBtn.innerText = `🍪 PRÓXIMOS DA FILA (${queue.length})`;
+      }
 
       if (!queue.length) {
-        container.innerHTML = '<div style="color: var(--text-dim); text-align: center; padding: 16px;">🔍 Validando novos cookies em segundo plano...</div>';
+        container.innerHTML = '<div style="color: var(--text-dim); text-align: center; padding: 16px;">🔍 Nenhum outro cookie na fila. Importe novos cookies.</div>';
         return;
       }
 
@@ -2771,7 +2775,7 @@
         <div class="cookie-row ${c.is_selected ? 'selected' : ''}" onclick="selectSpecificCookie('${c.filename}')" title="Clique para ativar esta conta para pareamento">
           <div class="cookie-row-left">
             <span class="badge-country">${c.country || 'BR'}</span>
-            <span class="cookie-email">${c.email}</span>
+            <span class="cookie-email" title="${c.email}">${c.email}</span>
           </div>
           <div class="cookie-row-right">
             <span style="color: #ffd700; font-size: 11px; font-weight:700;">${c.plan || 'Plano VIP'}</span>
