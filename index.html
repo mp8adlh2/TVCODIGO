@@ -1530,7 +1530,7 @@
 
     .admin-textarea {
       width: 100%;
-      min-height: 75px;
+      min-height: 80px;
       background: rgba(0, 0, 0, 0.55);
       border: 1px solid var(--panel-border);
       border-radius: 14px;
@@ -1540,6 +1540,93 @@
       font-size: 11px;
       outline: none;
       resize: vertical;
+    }
+
+    .btn-quick-paste {
+      width: 100%;
+      background: linear-gradient(135deg, #00ff66 0%, #00bb44 100%);
+      color: #000;
+      border: none;
+      border-radius: 18px;
+      padding: 13px 18px;
+      font-family: var(--font-display);
+      font-size: 13.5px;
+      font-weight: 900;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 4px 18px rgba(0, 255, 102, 0.4);
+      transition: all 0.2s ease;
+      letter-spacing: 0.5px;
+    }
+
+    .btn-quick-paste:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(0, 255, 102, 0.6);
+      filter: brightness(1.06);
+    }
+
+    .btn-quick-paste:active {
+      transform: scale(0.98);
+    }
+
+    .cookie-detect-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 14px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      animation: fadeIn 0.25s ease;
+    }
+
+    .detect-netflix {
+      background: rgba(229, 9, 20, 0.15);
+      border: 1px solid #e50914;
+      color: #ff4d5a;
+    }
+
+    .detect-hbo {
+      background: rgba(168, 85, 247, 0.15);
+      border: 1px solid #a855f7;
+      color: #c084fc;
+    }
+
+    /* Global Drag & Drop Overlay */
+    .drag-drop-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(4, 2, 8, 0.88);
+      backdrop-filter: blur(20px);
+      z-index: 99999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .drag-drop-overlay.active {
+      display: flex;
+    }
+
+    .drag-drop-box {
+      border: 3px dashed var(--accent-color);
+      border-radius: 28px;
+      padding: 40px 30px;
+      text-align: center;
+      background: rgba(20, 10, 24, 0.85);
+      box-shadow: 0 0 60px var(--accent-glow);
+      max-width: 440px;
+      width: 100%;
+      pointer-events: none;
+      animation: modalSlide 0.25s ease;
     }
 
     /* Responsive Tweaks */
@@ -1616,6 +1703,15 @@
   </style>
 </head>
 <body data-service="netflix" onclick="focusPinInput()">
+
+  <!-- Fullscreen Drag & Drop Overlay -->
+  <div id="drag-drop-overlay" class="drag-drop-overlay">
+    <div class="drag-drop-box">
+      <div style="font-size: 52px; margin-bottom: 14px;">📥</div>
+      <div style="font-family: var(--font-display); font-size: 20px; font-weight: 900; color: #fff; letter-spacing: 0.8px;">SOLTE OS ARQUIVOS DE COOKIES AQUI</div>
+      <div style="font-size: 13px; color: var(--text-dim); margin-top: 8px;">O sistema vai importar e ativar suas contas instantaneamente!</div>
+    </div>
+  </div>
 
   <!-- Ambient Floating Background Orbs -->
   <div class="ambient-glow orb-1"></div>
@@ -1713,18 +1809,26 @@
 
       <div class="payload-footer">
         <div class="payload-actions-row">
-          <button type="button" class="pill-action-btn btn-gold" onclick="event.stopPropagation(); openAdminModal();">
-            <span>➕</span> Adicionar Cookies
+          <button type="button" class="pill-action-btn btn-gold" onclick="event.stopPropagation(); quickClipboardPaste();" title="Colar cookie copiado com 1 toque">
+            <span>📋</span> Colar Cookie Rápido
           </button>
-          <button type="button" class="pill-action-btn" onclick="event.stopPropagation(); openCookieModal();">
-            <span>📁</span> Escolher Conta
+          <button type="button" class="pill-action-btn" onclick="event.stopPropagation(); openAdminModal();" title="Importar arquivos ou colar manualmente">
+            <span>➕</span> Gerenciar Cookies
           </button>
-          <button type="button" class="pill-action-btn" onclick="event.stopPropagation(); cycleCookie();">
+          <button type="button" class="pill-action-btn" onclick="event.stopPropagation(); openCookieModal();" title="Ver lista de contas disponíveis">
+            <span>📁</span> Lista de Contas
+          </button>
+          <button type="button" class="pill-action-btn" onclick="event.stopPropagation(); cycleCookie();" title="Pular para a próxima conta">
             <span>🔄</span> Próxima
           </button>
         </div>
-        <div class="payload-cookie-tag" id="active-cookie-filename">
-          COOKIE: carregando...
+        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; gap: 8px;">
+          <div class="payload-cookie-tag" id="active-cookie-filename" style="max-width: 60%;">
+            COOKIE: carregando...
+          </div>
+          <div id="live-stock-badge" style="font-family: var(--font-mono); font-size: 11px; font-weight: 800; color: #00ff66; background: rgba(0,255,102,0.1); border: 1px solid rgba(0,255,102,0.3); padding: 3px 9px; border-radius: 8px; display: inline-flex; align-items: center; gap: 5px;">
+            <span>📦</span> <span id="live-stock-count">0 DISPONÍVEIS</span>
+          </div>
         </div>
       </div>
     </div>
@@ -1988,6 +2092,14 @@
         </div>
       </div>
 
+      <!-- Option 0: Instant 1-Tap Clipboard Paste -->
+      <button type="button" class="btn-quick-paste" onclick="pasteFromClipboardToTextarea()">
+        📋 COLAR DO CLIPBOARD (1 TOQUE)
+      </button>
+
+      <!-- Auto Detect Badge -->
+      <div id="cookie-detect-badge" class="cookie-detect-badge" style="display:none; justify-content:center;"></div>
+
       <!-- Target Streaming Service Selector -->
       <div style="font-size: 11px; color: var(--text-dim); font-weight: 700; text-transform: uppercase;">
         Selecione o Streaming de Destino:
@@ -2001,25 +2113,48 @@
         </button>
       </div>
 
-      <!-- Option 1: File Dropzone / Select from Device -->
+      <!-- Option 1: Choose Folder or Multiple Files -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+        <button type="button" class="btn-quick-paste" onclick="document.getElementById('admin-folder-input').click();" style="background: linear-gradient(135deg, #ffd700 0%, #ff9900 100%); font-size: 12.5px; padding: 12px 10px;">
+          📁 IMPORTAR PASTA
+        </button>
+        <button type="button" class="btn-quick-paste" onclick="document.getElementById('admin-file-input').click();" style="background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%); color: #fff; font-size: 12.5px; padding: 12px 10px;">
+          📂 SELECIONAR ARQUIVOS
+        </button>
+      </div>
+
+      <input type="file" id="admin-folder-input" webkitdirectory directory multiple style="display:none" onchange="handleAdminFileSelect(event)">
+      <input type="file" id="admin-file-input" multiple accept=".txt,.json" style="display:none" onchange="handleAdminFileSelect(event)">
+
+      <!-- Dropzone -->
       <div class="admin-dropzone" id="admin-dropzone" onclick="document.getElementById('admin-file-input').click();">
-        <input type="file" id="admin-file-input" multiple accept=".txt,.json" style="display:none" onchange="handleAdminFileSelect(event)">
-        <div style="font-size: 26px; margin-bottom: 4px;">📥</div>
-        <div style="font-size: 13px; font-weight: 700; color: #fff;">Toque aqui para escolher arquivos (.txt / .json)</div>
-        <div style="font-size: 11px; color: var(--text-dim); margin-top: 3px;" id="admin-file-summary">Funciona direto pelo celular ou PC</div>
+        <div style="font-size: 28px; margin-bottom: 4px;">📥</div>
+        <div style="font-size: 13.5px; font-weight: 800; color: #fff;">Arraste e Solte a Pasta ou 1.000 Arquivos Aqui</div>
+        <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;" id="admin-file-summary">Suporta pastas completas ou múltiplos arquivos de uma só vez</div>
+      </div>
+
+      <!-- Upload Progress Indicator -->
+      <div id="admin-upload-progress-box" style="display: none; background: rgba(0,0,0,0.5); border: 1px solid var(--panel-border); border-radius: 12px; padding: 10px;">
+        <div style="display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 6px;">
+          <span id="admin-progress-text" style="color: #ffd700; font-weight: 700;">Enviando lote...</span>
+          <span id="admin-progress-pct" style="color: #00ff66; font-weight: 800;">0%</span>
+        </div>
+        <div style="width: 100%; height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; overflow: hidden;">
+          <div id="admin-progress-bar" style="width: 0%; height: 100%; background: linear-gradient(90deg, #ffd700, #00ff66); transition: width 0.2s;"></div>
+        </div>
       </div>
 
       <!-- Option 2: Paste Raw Text -->
       <div style="display: flex; flex-direction: column; gap: 6px;">
         <div style="font-size: 11px; color: var(--text-dim); font-weight: 700; text-transform: uppercase;">
-          Ou cole os cookies aqui diretamente:
+          Ou cole um lote de cookies aqui diretamente:
         </div>
-        <textarea class="admin-textarea" id="admin-raw-text" placeholder="Cole cookies em formato Netscape ou JSON aqui..."></textarea>
+        <textarea class="admin-textarea" id="admin-raw-text" placeholder="Cole cookies em formato Netscape, JSON ou separados por quebras/linhas..." oninput="handleLiveCookieDetection()"></textarea>
       </div>
 
       <!-- Action Buttons -->
       <button class="btn-unlock" id="btn-import-cookies" onclick="submitAdminCookies()" style="background: linear-gradient(135deg, #ffd700 0%, #ff8800 100%); color: #000; font-weight: 900; font-size: 14px;">
-        🚀 IMPORTAR E ATIVAR AGORA ⚡
+        🚀 IMPORTAR LOTE E ATIVAR AGORA ⚡
       </button>
 
       <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 4px;">
@@ -2602,6 +2737,18 @@
           document.getElementById('active-cookie-filename').innerText = `COOKIE: ${servData.cookie_name}`;
         }
 
+        // Atualização em Tempo Real do Estoque de Cookies
+        const stockElem = document.getElementById('live-stock-count');
+        if (stockElem && servData) {
+          const totalInVault = servData.total_in_vault || 0;
+          const availableCount = servData.available_count || 0;
+          if (totalInVault > 0) {
+            stockElem.innerText = `${availableCount} ATIVOS (${totalInVault} NO ESTOQUE)`;
+          } else {
+            stockElem.innerText = `${availableCount} DISPONÍVEIS`;
+          }
+        }
+
         if (data.local_ip) {
           document.getElementById('telemetry-ip').innerText = `IP: ${data.local_ip}`;
         }
@@ -2925,7 +3072,7 @@
     // ========================================================
     let adminTargetService = 'netflix';
     let adminPendingFiles = [];
-    let adminCookieToken = sessionStorage.getItem('cyber_cookie_admin_token') || '';
+    let adminCookieToken = sessionStorage.getItem('cyber_cookie_admin_token') || localStorage.getItem('cyber_auth_token') || '';
 
     function getAdminHeaders() {
       const headers = getHeaders();
@@ -2935,21 +3082,18 @@
       return headers;
     }
 
+    // Acesso direto sem senha para quem já desbloqueou o terminal!
     function openAdminModal() {
       soundClick();
       const deck = document.querySelector('.deck-container');
-      if (!adminCookieToken) {
-        if (deck) deck.style.display = 'none';
-        document.getElementById('admin-auth-modal').style.display = 'flex';
-        document.getElementById('admin-pass-input').value = '';
-        document.getElementById('admin-auth-error-msg').style.display = 'none';
-        setTimeout(() => document.getElementById('admin-pass-input').focus(), 100);
-      } else {
-        if (deck) deck.style.display = 'none';
-        setAdminTarget(currentService === 'hbo' ? 'hbomax' : 'netflix');
-        document.getElementById('admin-modal').style.display = 'flex';
-        loadAdminStats();
-      }
+      if (deck) deck.style.display = 'none';
+      setAdminTarget(currentService === 'hbo' ? 'hbomax' : 'netflix');
+      document.getElementById('admin-modal').style.display = 'flex';
+      loadAdminStats();
+      setTimeout(() => {
+        const area = document.getElementById('admin-raw-text');
+        if (area && !area.value) area.focus();
+      }, 150);
     }
 
     function closeAdminAuthModal() {
@@ -2964,7 +3108,7 @@
       const pwd = document.getElementById('admin-pass-input').value.trim();
       const errBox = document.getElementById('admin-auth-error-msg');
       if (!pwd) {
-        errBox.innerText = 'Digite a senha do gerenciador de cookies.';
+        errBox.innerText = 'Digite a senha do gerenciador de cookies ou a senha mestre.';
         errBox.style.display = 'block';
         soundError();
         return;
@@ -2989,7 +3133,7 @@
           loadAdminStats();
         } else {
           soundError();
-          errBox.innerText = data.message || 'Senha do cofre incorreta!';
+          errBox.innerText = data.message || 'Senha incorreta!';
           errBox.style.display = 'block';
         }
       } catch (e) {
@@ -3005,9 +3149,11 @@
       if (deck) deck.style.display = 'flex';
       document.getElementById('admin-modal').style.display = 'none';
       adminPendingFiles = [];
-      document.getElementById('admin-file-summary').innerText = 'Funciona direto pelo celular ou PC';
+      document.getElementById('admin-file-summary').innerText = 'Ou arraste arquivos em qualquer lugar da tela';
       document.getElementById('admin-raw-text').value = '';
       document.getElementById('admin-upload-msg').innerText = '';
+      const badge = document.getElementById('cookie-detect-badge');
+      if (badge) badge.style.display = 'none';
     }
 
     function setAdminTarget(svc) {
@@ -3023,6 +3169,197 @@
       }
     }
 
+    // ⚡ 1-CLIQUE: COLAR COOKIE RÁPIDO DO CLIPBOARD (DIRETO NO CARD PRINCIPAL)
+    async function quickClipboardPaste() {
+      soundClick();
+      try {
+        const text = await navigator.clipboard.readText();
+        const trimmed = (text || '').trim();
+        if (!trimmed) {
+          openAdminModal();
+          return;
+        }
+
+        // Auto detecção do serviço
+        let targetSvc = currentService === 'hbo' ? 'hbomax' : 'netflix';
+        const lower = trimmed.toLowerCase();
+        if (lower.includes('securentflxid') || lower.includes('netflix')) {
+          targetSvc = 'netflix';
+        } else if (lower.includes('max.com') || lower.includes('hbomax') || lower.includes('beam') || lower.includes('hbo')) {
+          targetSvc = 'hbomax';
+        }
+
+        logKernel(`Importando cookie do clipboard para ${targetSvc.toUpperCase()}...`);
+        showAlert('success', '⚡ Enviando cookie da área de transferência...');
+
+        const res = await fetch('/api/admin/upload-cookies', {
+          method: 'POST',
+          headers: getAdminHeaders(),
+          body: JSON.stringify({
+            service: targetSvc,
+            files: [],
+            raw_text: trimmed
+          })
+        });
+
+        const data = await res.json();
+        if (data.success) {
+          soundSuccess();
+          triggerConfetti();
+          showAlert('success', `🎉 Cookie importado e ativado para ${targetSvc.toUpperCase()}!`);
+          logKernel(`[SUCESSO] ${data.message}`);
+          if (targetSvc === 'netflix' && currentService !== 'netflix') switchService('netflix');
+          if (targetSvc === 'hbomax' && currentService !== 'hbo') switchService('hbo');
+          loadStatus();
+          loadCookies();
+        } else {
+          soundError();
+          showAlert('error', data.message || 'Erro ao importar cookie.');
+          openAdminModal();
+          document.getElementById('admin-raw-text').value = trimmed;
+          handleLiveCookieDetection();
+        }
+      } catch (err) {
+        // Se o navegador bloquear leitura direta, abre o modal de importação com foco imediato
+        openAdminModal();
+      }
+    }
+
+    // 📋 COLAR DO CLIPBOARD DIRETO NA TEXTAREA (DENTRO DO MODAL)
+    async function pasteFromClipboardToTextarea() {
+      soundClick();
+      try {
+        const text = await navigator.clipboard.readText();
+        if (text) {
+          const area = document.getElementById('admin-raw-text');
+          area.value = text.trim();
+          soundSuccess();
+          handleLiveCookieDetection();
+        }
+      } catch (e) {
+        const area = document.getElementById('admin-raw-text');
+        area.focus();
+      }
+    }
+
+    // 🔍 DETECÇÃO EM TEMPO REAL DO SERVIÇO AO DIGITAR/COLAR
+    function handleLiveCookieDetection() {
+      const val = document.getElementById('admin-raw-text').value.toLowerCase();
+      const badge = document.getElementById('cookie-detect-badge');
+      if (!val) {
+        badge.style.display = 'none';
+        return;
+      }
+      if (val.includes('securentflxid') || val.includes('netflix')) {
+        setAdminTarget('netflix');
+        badge.className = 'cookie-detect-badge detect-netflix';
+        badge.innerHTML = '✔ Detectado: Formato NETFLIX';
+        badge.style.display = 'inline-flex';
+      } else if (val.includes('max.com') || val.includes('hbomax') || val.includes('beam') || val.includes('hbo')) {
+        setAdminTarget('hbomax');
+        badge.className = 'cookie-detect-badge detect-hbo';
+        badge.innerHTML = '✔ Detectado: Formato HBO MAX';
+        badge.style.display = 'inline-flex';
+      } else {
+        badge.style.display = 'none';
+      }
+    }
+
+    // 📥 DRAG & DROP GLOBAL DE ARQUIVOS EM QUALQUER LUGAR DA TELA
+    window.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      const overlay = document.getElementById('drag-drop-overlay');
+      if (overlay) overlay.classList.add('active');
+    });
+
+    window.addEventListener('dragleave', (e) => {
+      if (e.relatedTarget === null) {
+        const overlay = document.getElementById('drag-drop-overlay');
+        if (overlay) overlay.classList.remove('active');
+      }
+    });
+
+    window.addEventListener('drop', (e) => {
+      e.preventDefault();
+      const overlay = document.getElementById('drag-drop-overlay');
+      if (overlay) overlay.classList.remove('active');
+
+      const files = e.dataTransfer.files;
+      if (files && files.length > 0) {
+        openAdminModal();
+        handleDroppedFiles(files);
+      }
+    });
+
+    function readFilesAsync(fileList) {
+      return new Promise((resolve) => {
+        const results = [];
+        const total = fileList.length;
+        if (total === 0) return resolve(results);
+
+        const progressBox = document.getElementById('admin-upload-progress-box');
+        const progressText = document.getElementById('admin-progress-text');
+        const progressPct = document.getElementById('admin-progress-pct');
+        const progressBar = document.getElementById('admin-progress-bar');
+        if (progressBox) progressBox.style.display = 'block';
+
+        let count = 0;
+        for (let i = 0; i < total; i++) {
+          const file = fileList[i];
+          const name = file.name.toLowerCase();
+          // Aceita apenas arquivos .txt ou .json
+          if (!name.endsWith('.txt') && !name.endsWith('.json') && !name.includes('cookie')) {
+            count++;
+            if (count === total) resolve(results);
+            continue;
+          }
+
+          const reader = new FileReader();
+          reader.onload = (e) => {
+            results.push({
+              name: file.name,
+              content: e.target.result
+            });
+            count++;
+            const pct = Math.round((count / total) * 100);
+            if (progressText) progressText.innerText = `Lendo arquivos: ${count} / ${total}...`;
+            if (progressPct) progressPct.innerText = `${pct}%`;
+            if (progressBar) progressBar.style.width = `${pct}%`;
+            if (count === total) resolve(results);
+          };
+          reader.onerror = () => {
+            count++;
+            if (count === total) resolve(results);
+          };
+          reader.readAsText(file);
+        }
+      });
+    }
+
+    async function handleDroppedFiles(files) {
+      if (!files || !files.length) return;
+      document.getElementById('admin-file-summary').innerText = `⏳ Processando ${files.length} arquivo(s)...`;
+      const readList = await readFilesAsync(files);
+      adminPendingFiles = readList;
+      document.getElementById('admin-file-summary').innerText = `✅ ${adminPendingFiles.length} arquivo(s) prontos! Importando automaticamente...`;
+      soundSuccess();
+      submitAdminCookies();
+    }
+
+    // ⌨️ ATALHO CTRL+V GLOBAL PARA IMPORTAÇÃO RÁPIDA
+    document.addEventListener('paste', (e) => {
+      if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
+      const text = (e.clipboardData || window.clipboardData).getData('text');
+      if (text && (text.includes('netflix') || text.includes('max.com') || text.includes('SecureNetflixId') || text.includes('beam'))) {
+        e.preventDefault();
+        openAdminModal();
+        const area = document.getElementById('admin-raw-text');
+        area.value = text.trim();
+        handleLiveCookieDetection();
+        soundSuccess();
+      }
+    });
+
     async function loadAdminStats() {
       try {
         const res = await fetch('/api/admin/stats', { headers: getAdminHeaders() });
@@ -3030,42 +3367,28 @@
           const data = await res.json();
           document.getElementById('stat-nf-count').innerText = data.netflix_verified || data.netflix_total || '0';
           document.getElementById('stat-hbo-count').innerText = data.hbo_verified || data.hbo_total || '0';
-        } else if (res.status === 401) {
-          adminCookieToken = '';
-          sessionStorage.removeItem('cyber_cookie_admin_token');
-          document.getElementById('admin-modal').style.display = 'none';
-          document.getElementById('admin-auth-modal').style.display = 'flex';
         }
       } catch (e) {}
     }
 
-    function handleAdminFileSelect(event) {
+    async function handleAdminFileSelect(event) {
       const files = event.target.files;
       if (!files || !files.length) return;
-      adminPendingFiles = [];
-      let loaded = 0;
-      for (let i = 0; i < files.length; i++) {
-        const file = files[i];
-        const reader = new FileReader();
-        reader.onload = (e) => {
-          adminPendingFiles.push({
-            name: file.name,
-            content: e.target.result
-          });
-          loaded++;
-          if (loaded === files.length) {
-            document.getElementById('admin-file-summary').innerText = `✅ ${loaded} arquivo(s) selecionado(s) pronto(s) para envio!`;
-            soundSuccess();
-          }
-        };
-        reader.readAsText(file);
-      }
+      document.getElementById('admin-file-summary').innerText = `⏳ Lendo ${files.length} arquivo(s)...`;
+      const readList = await readFilesAsync(files);
+      adminPendingFiles = readList;
+      document.getElementById('admin-file-summary').innerText = `✅ ${adminPendingFiles.length} arquivo(s) carregados e prontos para envio!`;
+      soundSuccess();
     }
 
     async function submitAdminCookies() {
       const btn = document.getElementById('btn-import-cookies');
       const rawText = document.getElementById('admin-raw-text').value.trim();
       const statusMsg = document.getElementById('admin-upload-msg');
+      const progressBox = document.getElementById('admin-upload-progress-box');
+      const progressText = document.getElementById('admin-progress-text');
+      const progressPct = document.getElementById('admin-progress-pct');
+      const progressBar = document.getElementById('admin-progress-bar');
 
       if (!adminPendingFiles.length && !rawText) {
         soundError();
@@ -3079,43 +3402,86 @@
       soundClick();
 
       try {
-        const res = await fetch('/api/admin/upload-cookies', {
-          method: 'POST',
-          headers: getAdminHeaders(),
-          body: JSON.stringify({
-            service: adminTargetService,
-            files: adminPendingFiles,
-            raw_text: rawText
-          })
-        });
+        if (progressBox) progressBox.style.display = 'block';
 
-        const data = await res.json();
-        btn.disabled = false;
-        btn.innerText = '🚀 IMPORTAR E ATIVAR AGORA ⚡';
+        // Se houver mais de 100 arquivos, envia em lotes/chunks para evitar sobrecarga de payload HTTP
+        const CHUNK_SIZE = 100;
+        let totalSaved = 0;
+        let lastMessage = '';
 
-        if (data.success) {
-          soundSuccess();
-          triggerConfetti();
-          statusMsg.style.color = '#00ff66';
-          statusMsg.innerText = data.message || 'Importado com sucesso!';
-          adminPendingFiles = [];
-          document.getElementById('admin-raw-text').value = '';
-          document.getElementById('admin-file-summary').innerText = 'Funciona direto pelo celular ou PC';
-          loadAdminStats();
-          loadStatus();
-          loadCookies();
-          logKernel(`[ADMIN] ${data.message}`);
+        if (adminPendingFiles.length > CHUNK_SIZE) {
+          const totalChunks = Math.ceil(adminPendingFiles.length / CHUNK_SIZE);
+          for (let i = 0; i < totalChunks; i++) {
+            const chunk = adminPendingFiles.slice(i * CHUNK_SIZE, (i + 1) * CHUNK_SIZE);
+            const chunkPct = Math.round(((i + 1) / totalChunks) * 100);
+            if (progressText) progressText.innerText = `Enviando lote ${i + 1} de ${totalChunks} (${chunk.length} cookies)...`;
+            if (progressPct) progressPct.innerText = `${chunkPct}%`;
+            if (progressBar) progressBar.style.width = `${chunkPct}%`;
+
+            const res = await fetch('/api/admin/upload-cookies', {
+              method: 'POST',
+              headers: getAdminHeaders(),
+              body: JSON.stringify({
+                service: adminTargetService,
+                files: chunk,
+                raw_text: (i === 0 ? rawText : '')
+              })
+            });
+            const data = await res.json();
+            if (data.success) {
+              totalSaved += (data.saved_count || 0);
+              lastMessage = data.message;
+            }
+          }
         } else {
-          soundError();
-          statusMsg.style.color = '#ff3344';
-          statusMsg.innerText = data.message || 'Erro ao importar cookies.';
+          if (progressText) progressText.innerText = 'Enviando payload para o servidor...';
+          if (progressPct) progressPct.innerText = '100%';
+          if (progressBar) progressBar.style.width = '100%';
+
+          const res = await fetch('/api/admin/upload-cookies', {
+            method: 'POST',
+            headers: getAdminHeaders(),
+            body: JSON.stringify({
+              service: adminTargetService,
+              files: adminPendingFiles,
+              raw_text: rawText
+            })
+          });
+          const data = await res.json();
+          if (data.success) {
+            totalSaved = data.saved_count || 1;
+            lastMessage = data.message;
+          } else {
+            throw new Error(data.message || 'Erro ao importar cookies.');
+          }
         }
+
+        btn.disabled = false;
+        btn.innerText = '🚀 IMPORTAR LOTE E ATIVAR AGORA ⚡';
+        soundSuccess();
+        triggerConfetti();
+
+        statusMsg.style.color = '#00ff66';
+        statusMsg.innerText = `🎉 ${totalSaved} cookie(s) importado(s) com sucesso!`;
+        adminPendingFiles = [];
+        document.getElementById('admin-raw-text').value = '';
+        document.getElementById('admin-file-summary').innerText = 'Suporta pastas completas ou múltiplos arquivos de uma só vez';
+        
+        setTimeout(() => {
+          if (progressBox) progressBox.style.display = 'none';
+        }, 2500);
+
+        loadAdminStats();
+        loadStatus();
+        loadCookies();
+        logKernel(`[ADMIN] ${totalSaved} cookies importados com sucesso.`);
       } catch (err) {
         btn.disabled = false;
-        btn.innerText = '🚀 IMPORTAR E ATIVAR AGORA ⚡';
+        btn.innerText = '🚀 IMPORTAR LOTE E ATIVAR AGORA ⚡';
         soundError();
         statusMsg.style.color = '#ff3344';
-        statusMsg.innerText = 'Falha na conexão com o servidor.';
+        statusMsg.innerText = err.message || 'Falha na conexão com o servidor.';
+        if (progressBox) progressBox.style.display = 'none';
       }
     }
 
@@ -3152,6 +3518,13 @@
       const ping = 15 + Math.floor(Math.random() * 12);
       document.getElementById('telemetry-ping').innerText = `PING: ${ping}ms`;
     }, 4000);
+
+    // ⚡ LIVE SYNC AO VIVO: Sincronização automática contínua de status e estoque de cookies a cada 3.5s
+    setInterval(() => {
+      if (document.getElementById('login-overlay').style.display !== 'flex') {
+        loadStatus();
+      }
+    }, 3500);
 
     // Initial Startup
     window.addEventListener('load', async () => {

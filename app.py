@@ -790,6 +790,10 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             return False
 
     def is_admin_authenticated(self):
+        # 1. Se o usuário já autenticou com a senha mestre no terminal, concede acesso direto!
+        if self.is_authenticated():
+            return True
+
         admin_header = self.headers.get('X-Admin-Token', '') or self.headers.get('Authorization', '')
         token = ''
         if admin_header.startswith('Bearer '):
@@ -811,12 +815,25 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             return False
 
     def handle_api_verify_admin_pass(self):
+        # Se já estiver autenticado com token mestre, concede admin token imediatamente
+        if self.is_authenticated():
+            now = time.time()
+            admin_token = secrets.token_hex(32)
+            with LOGIN_LOCK:
+                ACTIVE_ADMIN_SESSIONS[admin_token] = now + 43200
+            return self.send_json_response({
+                "success": True,
+                "admin_token": admin_token,
+                "message": "Acesso administrativo aos cookies concedido!"
+            })
+
         content_length = int(self.headers.get('Content-Length', 0))
         post_data = self.rfile.read(content_length)
         req = json.loads(post_data.decode('utf-8')) if post_data else {}
         password = req.get('password', '').strip()
 
-        is_valid = hmac.compare_digest(password, get_cookie_admin_password())
+        # Aceita tanto a senha do cofre quanto a senha mestre para facilidade do usuário!
+        is_valid = hmac.compare_digest(password, get_cookie_admin_password()) or hmac.compare_digest(password, get_master_password())
 
         if is_valid:
             now = time.time()
@@ -1061,8 +1078,12 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             for e in verified_hbo if e["file"] != active_hbo_file
         ]
 
+        nf_all_files = glob.glob(os.path.join(NETFLIX_COOKIES_FOLDER, "*.*"))
+        hbo_all_files = glob.glob(os.path.join(HBO_COOKIES_FOLDER, "*.*"))
+
         res = {
             "netflix": {
+                "total_in_vault": len(nf_all_files),
                 "available_count": len(verified_netflix),
                 "has_account": CURRENT_NETFLIX_READY is not None,
                 "account": CURRENT_NETFLIX_READY["info"] if CURRENT_NETFLIX_READY else None,
@@ -1070,6 +1091,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 "cookie_queue": nf_queue
             },
             "hbo": {
+                "total_in_vault": len(hbo_all_files),
                 "available_count": len(verified_hbo),
                 "has_account": CURRENT_HBO_READY is not None,
                 "account": CURRENT_HBO_READY["info"] if CURRENT_HBO_READY else None,
@@ -1283,66 +1305,104 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         except Exception:
             return self.send_json_response({"success": False, "message": "JSON inválido."}, 400)
 
-        service = req.get('service', 'netflix').lower()
-        files = req.get('files', []) # list of {"name": "...", "content": "..."}
+        global_service = req.get('service', 'auto').lower()
+        files = req.get('files', [])  # list of {"name": "...", "content": "..."}
         raw_text = req.get('raw_text', '').strip()
 
-        target_dir = NETFLIX_COOKIES_FOLDER if service == 'netflix' else HBO_COOKIES_FOLDER
-        os.makedirs(target_dir, exist_ok=True)
-        saved_count = 0
+        saved_netflix = 0
+        saved_hbo = 0
 
-        # Processa arquivos enviados
-        for item in files:
-            fname = item.get('name', '').strip()
-            content = item.get('content', '').strip()
-            if fname and content:
-                clean_name = re.sub(r'[^a-zA-Z0-9_\-\.\[\]@]', '_', os.path.basename(fname))
-                if not clean_name.endswith('.txt') and not clean_name.endswith('.json'):
-                    clean_name += '.txt'
-                fpath = os.path.join(target_dir, clean_name)
-                try:
-                    with open(fpath, 'w', encoding='utf-8') as out_f:
-                        out_f.write(content)
-                    saved_count += 1
-                    if service == 'netflix':
-                        DEAD_NETFLIX_COOKIES.discard(fpath)
-                        tv2.USED_COOKIES.discard(fpath)
-                        tv2.USED_COOKIES.discard(clean_name)
-                    else:
-                        USED_HBO_COOKIES.discard(fpath)
-                        USED_HBO_COOKIES.discard(clean_name)
-                except Exception:
-                    pass
+        def detect_service_for_text(text: str, filename: str = "") -> str:
+            lower = (text + " " + filename).lower()
+            if 'securentflxid' in lower or 'netflix' in lower:
+                return 'netflix'
+            elif 'max.com' in lower or 'hbomax' in lower or 'beam' in lower or 'hbo' in lower:
+                return 'hbomax'
+            if global_service in ['hbo', 'hbomax', 'max']:
+                return 'hbomax'
+            return 'netflix'
 
-        # Processa texto colado
-        if raw_text:
-            timestamp = int(time.time())
-            if raw_text.startswith('[') and raw_text.endswith(']'):
-                clean_name = f"web_import_{timestamp}.json"
-            else:
-                clean_name = f"web_import_{timestamp}.txt"
+        def save_cookie_content(svc: str, fname: str, content: str) -> bool:
+            nonlocal saved_netflix, saved_hbo
+            target_dir = HBO_COOKIES_FOLDER if svc in ['hbo', 'hbomax', 'max'] else NETFLIX_COOKIES_FOLDER
+            os.makedirs(target_dir, exist_ok=True)
+            clean_name = re.sub(r'[^a-zA-Z0-9_\-\.\[\]@]', '_', os.path.basename(fname))
+            if not clean_name.endswith('.txt') and not clean_name.endswith('.json'):
+                clean_name += '.txt'
             fpath = os.path.join(target_dir, clean_name)
             try:
                 with open(fpath, 'w', encoding='utf-8') as out_f:
-                    out_f.write(raw_text)
-                saved_count += 1
-                if service == 'netflix':
+                    out_f.write(content)
+                if svc in ['hbo', 'hbomax', 'max']:
+                    saved_hbo += 1
+                    USED_HBO_COOKIES.discard(fpath)
+                    USED_HBO_COOKIES.discard(clean_name)
+                else:
+                    saved_netflix += 1
                     DEAD_NETFLIX_COOKIES.discard(fpath)
                     tv2.USED_COOKIES.discard(fpath)
                     tv2.USED_COOKIES.discard(clean_name)
-                else:
-                    USED_HBO_COOKIES.discard(fpath)
-                    USED_HBO_COOKIES.discard(clean_name)
+                return True
             except Exception:
-                pass
+                return False
 
-        if saved_count > 0:
+        # 1. Processa múltiplos arquivos (da pasta inteira arrastada ou selecionada)
+        for idx, item in enumerate(files):
+            fname = item.get('name', '').strip() or f"cookie_{idx + 1}.txt"
+            content = item.get('content', '').strip()
+            if not content:
+                continue
+
+            svc = global_service if global_service not in ['auto', ''] else detect_service_for_text(content, fname)
+            save_cookie_content(svc, fname, content)
+
+        # 2. Processa texto bruto (pode conter 1 cookie ou dezenas/centenas separados por quebras ou formato de lista)
+        if raw_text:
+            timestamp = int(time.time())
+            # Verifica se é um array JSON contendo vários cookies ou uma única lista
+            is_json = raw_text.startswith('[') or raw_text.startswith('{')
+            if is_json:
+                try:
+                    parsed_json = json.loads(raw_text)
+                    # Se for lista de objetos com 'name'/'value' (1 cookie único do EditThisCookie)
+                    if isinstance(parsed_json, list) and parsed_json and isinstance(parsed_json[0], dict) and 'name' in parsed_json[0]:
+                        svc = global_service if global_service not in ['auto', ''] else detect_service_for_text(raw_text, "")
+                        save_cookie_content(svc, f"import_json_{timestamp}.json", raw_text)
+                    # Se for lista de múltiplas contas
+                    elif isinstance(parsed_json, list) and parsed_json and (isinstance(parsed_json[0], list) or isinstance(parsed_json[0], dict)):
+                        for sub_idx, sub_item in enumerate(parsed_json):
+                            sub_content = json.dumps(sub_item, indent=2)
+                            svc = global_service if global_service not in ['auto', ''] else detect_service_for_text(sub_content, "")
+                            save_cookie_content(svc, f"import_batch_{timestamp}_{sub_idx + 1}.json", sub_content)
+                    else:
+                        svc = global_service if global_service not in ['auto', ''] else detect_service_for_text(raw_text, "")
+                        save_cookie_content(svc, f"import_json_{timestamp}.json", raw_text)
+                except Exception:
+                    svc = global_service if global_service not in ['auto', ''] else detect_service_for_text(raw_text, "")
+                    save_cookie_content(svc, f"import_raw_{timestamp}.txt", raw_text)
+            else:
+                # Verifica se há delimitadores comuns de lote (ex: =====, -----, ou blocos repetidos de netflix.com)
+                blocks = re.split(r'\n\s*[-=]{3,}\s*\n', raw_text)
+                if len(blocks) > 1:
+                    for b_idx, block in enumerate(blocks):
+                        block = block.strip()
+                        if block:
+                            svc = global_service if global_service not in ['auto', ''] else detect_service_for_text(block, "")
+                            save_cookie_content(svc, f"batch_split_{timestamp}_{b_idx + 1}.txt", block)
+                else:
+                    svc = global_service if global_service not in ['auto', ''] else detect_service_for_text(raw_text, "")
+                    save_cookie_content(svc, f"import_raw_{timestamp}.txt", raw_text)
+
+        total_saved = saved_netflix + saved_hbo
+        if total_saved > 0:
             sync_cookies_bundle()
-            threading.Thread(target=self._prewarm_after_upload, args=(service,), daemon=True).start()
+            threading.Thread(target=self._prewarm_after_upload, args=('netflix' if saved_netflix else 'hbomax',), daemon=True).start()
             return self.send_json_response({
                 "success": True,
-                "saved_count": saved_count,
-                "message": f"🎉 {saved_count} cookie(s) de {service.upper()} importado(s) com sucesso!"
+                "saved_count": total_saved,
+                "saved_netflix": saved_netflix,
+                "saved_hbo": saved_hbo,
+                "message": f"🎉 {total_saved} cookie(s) importado(s) com sucesso! ({saved_netflix} Netflix, {saved_hbo} HBO Max)"
             })
         else:
             return self.send_json_response({"success": False, "message": "Nenhum arquivo ou texto válido enviado."}, 400)
