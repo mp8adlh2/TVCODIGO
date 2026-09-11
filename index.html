@@ -1841,8 +1841,8 @@
         <span id="telemetry-ping" style="color: var(--accent-color); font-weight:700;">PING: 18ms</span>
       </div>
       <div class="telemetry-right">
-        <button class="btn-icon" onclick="event.stopPropagation(); openAdminModal();" title="Gerenciador de Cookies e Nuvem" style="color:#ffd700; border-color: rgba(255,215,0,0.4);">
-          🍪 COOKIES
+        <button class="btn-icon" id="header-admin-btn" onclick="event.stopPropagation(); openAdminModal();" title="Gerenciador de Cookies e Nuvem" style="color:#ffd700; border-color: rgba(255,215,0,0.4);">
+          <span id="header-admin-btn-text">🍪 COOKIES</span>
         </button>
         <button class="btn-icon" id="sound-toggle-btn" onclick="event.stopPropagation(); toggleSound();">
           <span id="sound-icon">🔊</span> SOM
@@ -2913,6 +2913,8 @@
       const title = document.getElementById('card-service-title');
       const hudTitle = document.getElementById('hud-section-title');
       const modalTitle = document.getElementById('cookie-modal-title');
+      const headerAdminBtnText = document.getElementById('header-admin-btn-text');
+      const queueTabBtn = document.getElementById('tab-btn-queue');
 
       tabN.classList.remove('active-netflix');
       tabH.classList.remove('active-hbo');
@@ -2928,6 +2930,12 @@
         if (modalTitle) modalTitle.innerText = '📁 SELECIONAR COOKIE NETFLIX';
         if (pillPaste) pillPaste.innerHTML = '<span>📋</span> Colar Cookie Rápido';
         if (pillManage) pillManage.innerHTML = '<span>➕</span> Gerenciar Cookies';
+        if (headerAdminBtnText) headerAdminBtnText.innerText = '🍪 COOKIES';
+        if (queueTabBtn) queueTabBtn.innerText = '🍪 PRÓXIMOS DA FILA';
+        document.getElementById('active-email-text').innerText = 'Carregando cookie...';
+        document.getElementById('active-account-country').innerText = 'BR';
+        document.getElementById('active-account-plan').innerText = 'Carregando...';
+        document.getElementById('active-cookie-filename').innerText = 'COOKIE: Carregando...';
       } else if (service === 'crunchyroll') {
         if (tabC) tabC.classList.add('active-crunchyroll');
         title.innerHTML = '<span>🟠 CONTA CRUNCHYROLL PRONTA PARA ATIVAÇÃO</span>';
@@ -2935,6 +2943,12 @@
         if (modalTitle) modalTitle.innerText = '📁 SELECIONAR CONTA CRUNCHYROLL';
         if (pillPaste) pillPaste.innerHTML = '<span>📋</span> Colar Conta Rápida';
         if (pillManage) pillManage.innerHTML = '<span>➕</span> Gerenciar Contas';
+        if (headerAdminBtnText) headerAdminBtnText.innerText = '🟠 CONTAS';
+        if (queueTabBtn) queueTabBtn.innerText = '🟠 PRÓXIMAS CONTAS';
+        document.getElementById('active-email-text').innerText = 'Carregando conta...';
+        document.getElementById('active-account-country').innerText = 'CR';
+        document.getElementById('active-account-plan').innerText = 'Carregando...';
+        document.getElementById('active-cookie-filename').innerText = 'CONTA: Carregando conta...';
       } else {
         tabH.classList.add('active-hbo');
         title.innerHTML = '<span>🟣 CONTA HBO MAX PRONTA PARA ATIVAÇÃO</span>';
@@ -2942,6 +2956,12 @@
         if (modalTitle) modalTitle.innerText = '📁 SELECIONAR COOKIE HBO MAX';
         if (pillPaste) pillPaste.innerHTML = '<span>📋</span> Colar Cookie Rápido';
         if (pillManage) pillManage.innerHTML = '<span>➕</span> Gerenciar Cookies';
+        if (headerAdminBtnText) headerAdminBtnText.innerText = '🍪 COOKIES';
+        if (queueTabBtn) queueTabBtn.innerText = '🍪 PRÓXIMOS DA FILA';
+        document.getElementById('active-email-text').innerText = 'Carregando cookie...';
+        document.getElementById('active-account-country').innerText = 'BR';
+        document.getElementById('active-account-plan').innerText = 'Carregando...';
+        document.getElementById('active-cookie-filename').innerText = 'COOKIE: Carregando...';
       }
 
       updateSoundUI();
@@ -2974,7 +2994,8 @@
 
     async function cycleCookie() {
       soundClick();
-      logKernel('Rotacionando para o próximo cookie da fila...');
+      const actionName = (currentService === 'crunchyroll') ? 'conta' : 'cookie';
+      logKernel(`Rotacionando para o próximo ${actionName} da fila...`);
       try {
         await fetch('/api/skip-cookie', {
           method: 'POST',
@@ -3000,26 +3021,33 @@
         const servData = data[currentService];
 
         if (servData && servData.account) {
+          const prefix = (currentService === 'crunchyroll') ? 'CONTA' : 'COOKIE';
           document.getElementById('active-email-text').innerText = servData.account.email || 'Conta pronta';
-          document.getElementById('active-account-country').innerText = servData.account.country || 'BR';
+          document.getElementById('active-account-country').innerText = (currentService === 'crunchyroll') ? (servData.account.country || 'CR') : (servData.account.country || 'BR');
           document.getElementById('active-account-plan').innerText = `⚡ ${servData.account.plan || 'Premium'}`;
+          document.getElementById('active-cookie-filename').innerText = `${prefix}: ${servData.cookie_name || servData.account.email}`;
         } else {
-          document.getElementById('active-email-text').innerText = 'Nenhum cookie ativo';
-          document.getElementById('active-account-plan').innerText = '--';
+          if (currentService === 'crunchyroll') {
+            document.getElementById('active-email-text').innerText = 'Nenhuma conta cadastrada';
+            document.getElementById('active-account-country').innerText = 'CR';
+            document.getElementById('active-account-plan').innerText = '--';
+            document.getElementById('active-cookie-filename').innerText = 'CONTA: Nenhuma conta pronta no momento';
+          } else {
+            document.getElementById('active-email-text').innerText = 'Nenhum cookie ativo';
+            document.getElementById('active-account-country').innerText = 'BR';
+            document.getElementById('active-account-plan').innerText = '--';
+            document.getElementById('active-cookie-filename').innerText = 'COOKIE: Nenhum cookie ativo';
+          }
         }
 
-        if (servData && servData.cookie_name) {
-          const prefix = currentService === 'crunchyroll' ? 'CONTA' : 'COOKIE';
-          document.getElementById('active-cookie-filename').innerText = `${prefix}: ${servData.cookie_name}`;
-        }
-
-        // Atualização em Tempo Real do Estoque de Cookies com feedback visual de sincronização
+        // Atualização em Tempo Real do Estoque com feedback visual de sincronização
         const stockElem = document.getElementById('live-stock-count');
         const stockBadge = document.getElementById('live-stock-badge');
         if (stockElem && servData) {
           const totalInVault = servData.total_in_vault || 0;
           const availableCount = servData.available_count || 0;
-          const newText = totalInVault > 0 ? `${availableCount} CONTAS PRONTAS NO ESTOQUE` : `${availableCount} DISPONÍVEIS`;
+          const unit = (currentService === 'crunchyroll') ? 'CONTAS' : 'COOKIES';
+          const newText = totalInVault > 0 ? `${availableCount} ${unit} NO ESTOQUE` : `${availableCount} DISPONÍVEIS`;
           if (stockElem.innerText !== newText) {
             stockElem.innerText = newText;
             if (stockBadge) {
@@ -3053,23 +3081,30 @@
       const container = document.getElementById('cookie-queue-list');
       const tabBtn = document.getElementById('tab-btn-queue');
       if (tabBtn) {
-        tabBtn.innerText = `🍪 PRÓXIMOS DA FILA (${queue.length})`;
+        if (currentService === 'crunchyroll') {
+          tabBtn.innerText = `🟠 PRÓXIMAS CONTAS (${queue.length})`;
+        } else {
+          tabBtn.innerText = `🍪 PRÓXIMOS DA FILA (${queue.length})`;
+        }
       }
 
       if (!queue.length) {
-        container.innerHTML = '<div style="color: var(--text-dim); text-align: center; padding: 16px;">🔍 Nenhum outro cookie na fila. Importe novos cookies.</div>';
+        const emptyMsg = (currentService === 'crunchyroll') 
+          ? '🔍 Nenhuma outra conta na fila. Adicione novas contas no botão "Gerenciar Contas".' 
+          : '🔍 Nenhum outro cookie na fila. Importe novos cookies.';
+        container.innerHTML = `<div style="color: var(--text-dim); text-align: center; padding: 16px;">${emptyMsg}</div>`;
         return;
       }
 
       container.innerHTML = queue.map((c, i) => `
-        <div class="cookie-row ${c.is_selected ? 'selected' : ''}" onclick="selectSpecificCookie('${c.filename}')" title="Clique para ativar esta conta para pareamento">
+        <div class="cookie-row ${c.is_selected ? 'selected' : ''}" onclick="selectSpecificCookie('${c.filename || c.email}')" title="Clique para ativar esta conta para pareamento">
           <div class="cookie-row-left">
-            <span class="badge-country">${c.country || 'BR'}</span>
+            <span class="badge-country">${c.country || (currentService === 'crunchyroll' ? 'CR' : 'BR')}</span>
             <span class="cookie-email" title="${c.email}">${c.email}</span>
           </div>
           <div class="cookie-row-right">
             <span style="color: #ffd700; font-size: 11px; font-weight:700;">${c.plan || 'Plano VIP'}</span>
-            <button class="btn-icon" style="padding: 3px 8px; font-size: 10px; margin-left: 4px;" onclick="event.stopPropagation(); selectSpecificCookie('${c.filename}');">
+            <button class="btn-icon" style="padding: 3px 8px; font-size: 10px; margin-left: 4px;" onclick="event.stopPropagation(); selectSpecificCookie('${c.filename || c.email}');">
               ⚡ USAR
             </button>
           </div>
@@ -3079,7 +3114,8 @@
 
     async function selectSpecificCookie(filename) {
       soundClick();
-      logKernel(`Selecionando cookie: ${filename}...`);
+      const actionName = (currentService === 'crunchyroll') ? 'conta' : 'cookie';
+      logKernel(`Selecionando ${actionName}: ${filename}...`);
       showAlert(null);
       
       try {
@@ -3092,14 +3128,16 @@
         
         if (data.success && data.account) {
           soundSuccess();
+          const prefix = (currentService === 'crunchyroll') ? 'CONTA' : 'COOKIE';
           // Atualiza o card principal imediatamente
           document.getElementById('active-email-text').innerText = data.account.email || 'Conta pronta';
-          document.getElementById('active-account-country').innerText = data.account.country || 'BR';
+          document.getElementById('active-account-country').innerText = (currentService === 'crunchyroll') ? (data.account.country || 'CR') : (data.account.country || 'BR');
           document.getElementById('active-account-plan').innerText = `⚡ ${data.account.plan || 'Premium'}`;
-          document.getElementById('active-cookie-filename').innerText = `COOKIE: ${data.cookie_name || filename}`;
+          document.getElementById('active-cookie-filename').innerText = `${prefix}: ${data.cookie_name || filename}`;
           
           closeCookieModal();
-          showAlert('success', `🟢 Conta ${data.account.email} selecionada com sucesso! Digite o código da TV.`);
+          const term = (currentService === 'crunchyroll') ? 'Conta' : 'Conta/Cookie';
+          showAlert('success', `🟢 ${term} ${data.account.email} selecionada com sucesso! Digite o código da TV.`);
           logKernel(`[SUCESSO] Conta ativada: ${data.account.email} (${data.account.plan})`);
           
           focusPinInput();
@@ -3107,8 +3145,8 @@
           loadCookies();
         } else {
           soundError();
-          showAlert('error', data.message || 'Este cookie não pôde ser ativado.');
-          logKernel(`[AVISO] ${data.message || 'Falha ao ativar cookie selecionado.'}`);
+          showAlert('error', data.message || 'Este item não pôde ser ativado.');
+          logKernel(`[AVISO] ${data.message || 'Falha ao ativar item selecionado.'}`);
         }
       } catch (e) {
         soundError();
@@ -3175,24 +3213,27 @@
     function renderModalCookies(list) {
       const container = document.getElementById('modal-cookie-list');
       if (!list.length) {
-        container.innerHTML = '<div style="color: var(--text-dim); text-align: center; padding: 25px;">🔍 Validando e testando cookies... aguarde alguns segundos.</div>';
+        const emptyText = (currentService === 'crunchyroll') 
+          ? '🔍 Nenhuma conta encontrada nos combos. Adicione contas em "Gerenciar Contas".' 
+          : '🔍 Validando e testando cookies... aguarde alguns segundos.';
+        container.innerHTML = `<div style="color: var(--text-dim); text-align: center; padding: 25px;">${emptyText}</div>`;
         return;
       }
 
       container.innerHTML = list.map(c => `
-        <div class="cookie-row ${c.is_selected ? 'selected' : ''}" onclick="selectSpecificCookie('${c.filename}')" style="cursor: pointer;">
+        <div class="cookie-row ${c.is_selected ? 'selected' : ''}" onclick="selectSpecificCookie('${c.filename || c.email}')" style="cursor: pointer;">
           <div class="cookie-row-left">
-            <span class="badge-country">${c.country || 'BR'}</span>
+            <span class="badge-country">${c.country || (currentService === 'crunchyroll' ? 'CR' : 'BR')}</span>
             <div style="display: flex; flex-direction: column;">
               <span class="cookie-email" style="font-size: 12.5px;">${c.email}</span>
-              <span style="font-size: 10px; color: var(--text-dim); font-family: var(--font-mono);">${c.filename}</span>
+              <span style="font-size: 10px; color: var(--text-dim); font-family: var(--font-mono);">${currentService === 'crunchyroll' ? ('Login: ' + c.email) : c.filename}</span>
             </div>
           </div>
           <div class="cookie-row-right">
             <span style="color: #ffd700; font-size: 11px; font-weight:700;">${c.plan || 'Premium'}</span>
             ${c.is_selected 
               ? '<span style="color: var(--accent-color); font-weight:800; font-size:11px; padding: 4px 8px; border: 1px solid var(--accent-color); border-radius: 12px;">✔ ATIVO</span>' 
-              : `<button class="btn-icon" style="padding: 5px 12px; font-size: 11px;" onclick="event.stopPropagation(); selectSpecificCookie('${c.filename}');">⚡ USAR</button>`}
+              : `<button class="btn-icon" style="padding: 5px 12px; font-size: 11px;" onclick="event.stopPropagation(); selectSpecificCookie('${c.filename || c.email}');">⚡ USAR</button>`}
           </div>
         </div>
       `).join('');

