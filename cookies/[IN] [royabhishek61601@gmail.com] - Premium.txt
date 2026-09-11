@@ -17,6 +17,66 @@
 ➕  Extra Slots:    0
 
 💳  Bandeira:       N/A
+🔢  Final Cartao:   Português
+💳  Metodo Pagto:   N/A
+
+📞  Telefone:       N/A
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  royabhishek61601
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           royabhishek61601
+📧  Email:          royabhishek61601@gmail.com
+🌍  Pais:           India (IN)
+
+📋  Plano:          Premium
+💰  Preco:          ₹649
+📅  Membro desde:   June 2026
+🗓  Prox. cobranca: 30 August 2026
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      UHD 4K
+📺  Max Streams:    4
+➕  Extra Slots:    0
+
+💳  Bandeira:       N/A
+🔢  Final Cartao:   Français
+💳  Metodo Pagto:   N/A
+
+📞  Telefone:       N/A
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  royabhishek61601
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           royabhishek61601
+📧  Email:          royabhishek61601@gmail.com
+🌍  Pais:           India (IN)
+
+📋  Plano:          Premium
+💰  Preco:          ₹649
+📅  Membro desde:   June 2026
+🗓  Prox. cobranca: 30 August 2026
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      UHD 4K
+📺  Max Streams:    4
+➕  Extra Slots:    0
+
+💳  Bandeira:       N/A
 🔢  Final Cartao:   English
 💳  Metodo Pagto:   N/A
 
@@ -77,6 +137,10 @@ https://russia34.com
 .netflix.com	TRUE	/	FALSE	1819005116	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Aug+23+2026+12%3A41%3A56+GMT%2B0530+(India+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=85736896-42fb-4c75-9304-f119361f45be&interactionCount=0&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
 .netflix.com	TRUE	/	FALSE	1795245115	netflix-sans-bold-3-loaded	true
 .netflix.com	TRUE	/	FALSE	1795245115	netflix-sans-normal-3-loaded	true
+======================================================================
+
+======================================================================
+
 ======================================================================
 
 ======================================================================

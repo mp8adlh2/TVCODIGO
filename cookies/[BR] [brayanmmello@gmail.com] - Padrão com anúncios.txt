@@ -6,6 +6,66 @@
 📧  Email:          brayanmmello@gmail.com
 🌍  Pais:           Brazil (BR)
 
+📋  Plano:          Padrão com anúncios
+💰  Preco:          R$ 20,90
+📅  Membro desde:   abril de 2025
+🗓  Prox. cobranca: 1 de outubro de 2026
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      HD 720p
+📺  Max Streams:    2
+➕  Extra Slots:    0
+
+💳  Bandeira:       MASTERCARD
+🔢  Final Cartao:   6252
+💳  Metodo Pagto:   DC
+
+📞  Telefone:       (11) 96526-5864
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  Brayan 2
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           Brayan 2
+📧  Email:          brayanmmello@gmail.com
+🌍  Pais:           Brazil (BR)
+
+📋  Plano:          Standard with ads
+💰  Preco:          BRL 20.90
+📅  Membro desde:   April 2025
+🗓  Prox. cobranca: October 1, 2026
+🎁  Free Trial:     Nao
+
+🎥  Qualidade:      HD 720p
+📺  Max Streams:    2
+➕  Extra Slots:    0
+
+💳  Bandeira:       MASTERCARD
+🔢  Final Cartao:   6252
+💳  Metodo Pagto:   DC
+
+📞  Telefone:       (11) 96526-5864
+✅  Tel Verificado: Nao
+
+👥  Perfis (1):  Brayan 2
+
+----------------------------------------------------------------------
+🍪  RAW COOKIE
+----------------------------------------------------------------------
+======================================================================
+              NETFLIX COOKIE CHECKER — HIT
+======================================================================
+
+👤  Nome:           Brayan 2
+📧  Email:          brayanmmello@gmail.com
+🌍  Pais:           Brazil (BR)
+
 📋  Plano:          Estándar con anuncios
 💰  Preco:          BRL 20.90
 📅  Membro desde:   abril de 2025
@@ -77,6 +137,10 @@ https://russia34.com
 .netflix.com	TRUE	/	FALSE	1796084360	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Nov+30+2025+21%3A19%3A20+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=f948232a-174f-4042-a165-15f9bbb3c2f3&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=3&geolocation=BR%3BSP
 .netflix.com	TRUE	/	TRUE	1796084360	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTe3osxAhCxPsrCx6-Wt4qf9X-tcnlGNhU.%26dt%3D1764548360826
 .netflix.com	TRUE	/	TRUE	1799108359	dsca	true
+======================================================================
+
+======================================================================
+
 ======================================================================
 
 ======================================================================
