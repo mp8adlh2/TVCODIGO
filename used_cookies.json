@@ -1,5 +1,23 @@
 [
   {
+    "service": "Crunchyroll",
+    "filename": "Novo Documento de Texto.txt",
+    "email": "luanrodrigo2000@live.com",
+    "tv_code": "RJ7AB6",
+    "plan": "Crunchyroll FAN",
+    "status": "Sucesso",
+    "used_at": "10/09/2026 20:43:24"
+  },
+  {
+    "service": "Netflix",
+    "filename": "[BR] [brayanmmello@gmail.com] - Estándar con anuncios.txt",
+    "email": "brayanmmello@gmail.com",
+    "tv_code": "30551637",
+    "plan": "Padrão com anúncios",
+    "status": "Sucesso",
+    "used_at": "10/09/2026 20:33:41"
+  },
+  {
     "service": "Netflix",
     "filename": "[ID] [EpifanioRussenberger9224@hotmail.com] - Premium.txt",
     "email": "EpifanioRussenberger9224@hotmail.com",

@@ -55,6 +55,26 @@
       --matrix-color: #a855f7;
     }
 
+    body[data-service="crunchyroll"] {
+      --accent-color: #F47521;
+      --accent-rgb: 244, 117, 33;
+      --accent-glow: rgba(244, 117, 33, 0.45);
+      --accent-glow-subtle: rgba(244, 117, 33, 0.12);
+      --accent-gradient: linear-gradient(135deg, #FF7B25 0%, #E05300 100%);
+      --accent-gradient-hover: linear-gradient(135deg, #FF9147 0%, #FA6200 100%);
+      
+      --bg-base: #080605;
+      --panel-bg: rgba(22, 12, 8, 0.78);
+      --panel-border: rgba(244, 117, 33, 0.22);
+      --panel-border-hover: rgba(244, 117, 33, 0.55);
+      --panel-border-glass: rgba(255, 255, 255, 0.08);
+      
+      --text-bright: #ffffff;
+      --text-dim: #d4a999;
+      --text-dark: #6e483b;
+      --matrix-color: #f47521;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -342,7 +362,7 @@
     /* ======================================================== */
     .service-switcher {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 8px;
       background: rgba(0, 0, 0, 0.5);
       border: 1px solid var(--panel-border-glass);
@@ -355,19 +375,20 @@
     .service-tab {
       background: transparent;
       border: 1px solid transparent;
-      padding: 11px 16px;
+      padding: 11px 12px;
       border-radius: 20px;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
+      gap: 6px;
       font-family: var(--font-display);
-      font-size: 13.5px;
+      font-size: 13px;
       font-weight: 800;
-      letter-spacing: 0.6px;
+      letter-spacing: 0.5px;
       color: var(--text-dim);
       transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      white-space: nowrap;
     }
 
     .service-tab:hover {
@@ -389,6 +410,61 @@
       color: #ffffff;
       box-shadow: 0 4px 20px rgba(168, 85, 247, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.35);
       transform: scale(1.02);
+    }
+
+    .service-tab.active-crunchyroll {
+      background: var(--accent-gradient);
+      border-color: rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      box-shadow: 0 4px 20px rgba(244, 117, 33, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+      transform: scale(1.02);
+    }
+
+    /* 🔒 LOCKED SERVICE TAB & PADLOCK STYLES */
+    .service-tab.tab-locked {
+      opacity: 0.52;
+      cursor: not-allowed !important;
+      border: 1px dashed rgba(255, 51, 68, 0.55) !important;
+      background: rgba(15, 15, 25, 0.6) !important;
+      box-shadow: none !important;
+      filter: grayscale(0.25);
+      position: relative;
+    }
+
+    .service-tab.tab-locked:hover {
+      opacity: 0.85;
+      border-color: #ff3344 !important;
+      box-shadow: 0 0 16px rgba(255, 51, 68, 0.45) !important;
+      transform: none !important;
+    }
+
+    .tab-lock-indicator {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      margin-left: 6px;
+      background: rgba(255, 51, 68, 0.25);
+      border: 1px solid rgba(255, 51, 68, 0.65);
+      border-radius: 6px;
+      padding: 1px 6px;
+      box-shadow: 0 0 10px rgba(255, 51, 68, 0.5);
+      animation: lockPulse 2s infinite ease-in-out;
+    }
+
+    @keyframes lockPulse {
+      0%, 100% { transform: scale(1); filter: brightness(1); }
+      50% { transform: scale(1.12); filter: brightness(1.35); }
+    }
+
+    @keyframes tabShake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-6px); }
+      40%, 80% { transform: translateX(6px); }
+    }
+
+    .tab-shake {
+      animation: tabShake 0.45s ease-in-out !important;
     }
 
     /* ======================================================== */
@@ -1449,7 +1525,7 @@
 
     .admin-stats-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 8px;
     }
 
@@ -1511,6 +1587,13 @@
       border-color: #A855F7;
       color: #fff;
       box-shadow: 0 0 12px rgba(168, 85, 247, 0.35);
+    }
+
+    .admin-radio-btn.active-cr {
+      background: rgba(244, 117, 33, 0.2);
+      border-color: #F47521;
+      color: #fff;
+      box-shadow: 0 0 12px rgba(244, 117, 33, 0.35);
     }
 
     .admin-dropzone {
@@ -1594,6 +1677,12 @@
       background: rgba(168, 85, 247, 0.15);
       border: 1px solid #a855f7;
       color: #c084fc;
+    }
+
+    .detect-crunchyroll {
+      background: rgba(244, 117, 33, 0.15);
+      border: 1px solid #f47521;
+      color: #ff9955;
     }
 
     /* Global Drag & Drop Overlay */
@@ -1736,7 +1825,7 @@
         </div>
         <div class="brand-info">
           <h1 class="brand-title">STREAM ACTIVATOR <span class="brand-title-badge">PRO</span></h1>
-          <p class="brand-subtitle">Smart TV Pairing Hub &bull; Netflix &bull; HBO Max</p>
+          <p class="brand-subtitle">Smart TV Pairing Hub &bull; Netflix &bull; HBO Max &bull; Crunchyroll</p>
         </div>
       </div>
     </header>
@@ -1758,19 +1847,25 @@
         <button class="btn-icon" id="sound-toggle-btn" onclick="event.stopPropagation(); toggleSound();">
           <span id="sound-icon">🔊</span> SOM
         </button>
-        <button class="btn-icon" onclick="event.stopPropagation(); lockTerminal();" title="Bloquear Terminal">
-          🔒 BLOQUEAR
+        <button class="btn-icon" onclick="event.stopPropagation(); lockTerminal();" title="Bloquear Terminal / Trocar Senha de Acesso" style="color: #ff4d5a; border-color: rgba(255, 77, 90, 0.4);">
+          🔒 BLOQUEAR / TROCAR SENHA
         </button>
       </div>
     </div>
 
-    <!-- Service Switcher (Netflix / HBO Max) -->
+    <!-- Service Switcher (Netflix / HBO Max / Crunchyroll) -->
     <div class="service-switcher">
       <div class="service-tab active-netflix" id="tab-netflix" onclick="event.stopPropagation(); switchService('netflix');">
-        🔴 NETFLIX
+        <span>🔴 NETFLIX</span>
+        <span class="tab-lock-indicator" id="lock-netflix" style="display:none;">🔒</span>
       </div>
       <div class="service-tab" id="tab-hbo" onclick="event.stopPropagation(); switchService('hbo');">
-        🟣 HBO MAX
+        <span>🟣 HBO MAX</span>
+        <span class="tab-lock-indicator" id="lock-hbo" style="display:none;">🔒</span>
+      </div>
+      <div class="service-tab" id="tab-crunchyroll" onclick="event.stopPropagation(); switchService('crunchyroll');">
+        <span>🟠 CRUNCHYROLL</span>
+        <span class="tab-lock-indicator" id="lock-crunchyroll" style="display:none;">🔒</span>
       </div>
     </div>
 
@@ -1809,13 +1904,13 @@
 
       <div class="payload-footer">
         <div class="payload-actions-row">
-          <button type="button" class="pill-action-btn btn-gold" onclick="event.stopPropagation(); quickClipboardPaste();" title="Colar cookie copiado com 1 toque">
+          <button type="button" class="pill-action-btn btn-gold" id="pill-btn-quick-paste" onclick="event.stopPropagation(); quickClipboardPaste();" title="Colar cookie ou conta copiada com 1 toque">
             <span>📋</span> Colar Cookie Rápido
           </button>
-          <button type="button" class="pill-action-btn" onclick="event.stopPropagation(); openAdminModal();" title="Importar arquivos ou colar manualmente">
+          <button type="button" class="pill-action-btn" id="pill-btn-manage" onclick="event.stopPropagation(); openAdminModal();" title="Importar arquivos ou colar manualmente">
             <span>➕</span> Gerenciar Cookies
           </button>
-          <button type="button" class="pill-action-btn" onclick="event.stopPropagation(); openCookieModal();" title="Ver lista de contas disponíveis">
+          <button type="button" class="pill-action-btn" id="pill-btn-list" onclick="event.stopPropagation(); openCookieModal();" title="Ver lista de contas disponíveis">
             <span>📁</span> Lista de Contas
           </button>
           <button type="button" class="pill-action-btn" onclick="event.stopPropagation(); cycleCookie();" title="Pular para a próxima conta">
@@ -1959,13 +2054,13 @@
 
       <div class="login-input-wrap">
         <span class="login-input-icon">🔒</span>
-        <input type="password" id="login-password-input" class="login-input" placeholder="DIGITE A SENHA MESTRE..." onkeydown="if(event.key==='Enter') executeLogin();">
+        <input type="password" id="login-password-input" class="login-input" placeholder="DIGITE SUA SENHA DE ACESSO..." onkeydown="if(event.key==='Enter') executeLogin();">
         <button class="btn-eye" type="button" onclick="togglePasswordVisibility()">👁️</button>
       </div>
 
       <div class="login-options">
         <label class="login-checkbox-label">
-          <input type="checkbox" id="remember-me" class="login-checkbox" checked>
+          <input type="checkbox" id="remember-me" class="login-checkbox">
           <span>Lembrar neste dispositivo (Acesso rápido)</span>
         </label>
       </div>
@@ -2070,7 +2165,7 @@
   <div id="admin-modal" onclick="event.stopPropagation();">
     <div class="admin-modal-card">
       <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--panel-border); padding-bottom: 10px;">
-        <span style="font-family: var(--font-display); font-size: 15px; color: #ffd700; font-weight: 800;">
+        <span id="admin-modal-main-title" style="font-family: var(--font-display); font-size: 15px; color: #ffd700; font-weight: 800;">
           🍪 GERENCIADOR DE COOKIES // CLOUD
         </span>
         <button class="btn-icon" onclick="closeAdminModal()">✖ FECHAR</button>
@@ -2080,29 +2175,25 @@
       <div class="admin-stats-grid">
         <div class="admin-stat-chip">
           <div class="admin-stat-chip-num" id="stat-nf-count" style="color: #ff3344;">--</div>
-          <div class="admin-stat-chip-lbl">🔴 Netflix Ativos</div>
+          <div class="admin-stat-chip-lbl">🔴 Netflix</div>
         </div>
         <div class="admin-stat-chip">
           <div class="admin-stat-chip-num" id="stat-hbo-count" style="color: #c084fc;">--</div>
-          <div class="admin-stat-chip-lbl">🟣 HBO Max Ativos</div>
+          <div class="admin-stat-chip-lbl">🟣 HBO Max</div>
+        </div>
+        <div class="admin-stat-chip">
+          <div class="admin-stat-chip-num" id="stat-cr-count" style="color: #f47521;">--</div>
+          <div class="admin-stat-chip-lbl">🟠 Crunchyroll</div>
         </div>
         <div class="admin-stat-chip">
           <div class="admin-stat-chip-num" style="color: #00ff66;">24/7</div>
-          <div class="admin-stat-chip-lbl">⚡ Anti-Sleep Ativo</div>
+          <div class="admin-stat-chip-lbl">⚡ Anti-Sleep</div>
         </div>
       </div>
 
-      <!-- Option 0: Instant 1-Tap Clipboard Paste -->
-      <button type="button" class="btn-quick-paste" onclick="pasteFromClipboardToTextarea()">
-        📋 COLAR DO CLIPBOARD (1 TOQUE)
-      </button>
-
-      <!-- Auto Detect Badge -->
-      <div id="cookie-detect-badge" class="cookie-detect-badge" style="display:none; justify-content:center;"></div>
-
       <!-- Target Streaming Service Selector -->
       <div style="font-size: 11px; color: var(--text-dim); font-weight: 700; text-transform: uppercase;">
-        Selecione o Streaming de Destino:
+        Selecione o Streaming para Adicionar Contas/Cookies:
       </div>
       <div class="admin-service-radios">
         <button type="button" class="admin-radio-btn active-n" id="admin-target-nf" onclick="setAdminTarget('netflix')">
@@ -2111,55 +2202,128 @@
         <button type="button" class="admin-radio-btn" id="admin-target-hbo" onclick="setAdminTarget('hbomax')">
           🟣 HBO MAX
         </button>
-      </div>
-
-      <!-- Option 1: Choose Folder or Multiple Files -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-        <button type="button" class="btn-quick-paste" onclick="document.getElementById('admin-folder-input').click();" style="background: linear-gradient(135deg, #ffd700 0%, #ff9900 100%); font-size: 12.5px; padding: 12px 10px;">
-          📁 IMPORTAR PASTA
-        </button>
-        <button type="button" class="btn-quick-paste" onclick="document.getElementById('admin-file-input').click();" style="background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%); color: #fff; font-size: 12.5px; padding: 12px 10px;">
-          📂 SELECIONAR ARQUIVOS
+        <button type="button" class="admin-radio-btn" id="admin-target-cr" onclick="setAdminTarget('crunchyroll')">
+          🟠 CRUNCHYROLL
         </button>
       </div>
 
-      <input type="file" id="admin-folder-input" webkitdirectory directory multiple style="display:none" onchange="handleAdminFileSelect(event)">
-      <input type="file" id="admin-file-input" multiple accept=".txt,.json" style="display:none" onchange="handleAdminFileSelect(event)">
+      <!-- Auto Detect Badge -->
+      <div id="cookie-detect-badge" class="cookie-detect-badge" style="display:none; justify-content:center;"></div>
 
-      <!-- Dropzone -->
-      <div class="admin-dropzone" id="admin-dropzone" onclick="document.getElementById('admin-file-input').click();">
-        <div style="font-size: 28px; margin-bottom: 4px;">📥</div>
-        <div style="font-size: 13.5px; font-weight: 800; color: #fff;">Arraste e Solte a Pasta ou 1.000 Arquivos Aqui</div>
-        <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;" id="admin-file-summary">Suporta pastas completas ou múltiplos arquivos de uma só vez</div>
+      <!-- ============================================== -->
+      <!-- 🍪 SEÇÃO DE COOKIES (NETFLIX & HBO MAX)        -->
+      <!-- ============================================== -->
+      <div id="admin-cookie-section" style="display: flex; flex-direction: column; gap: 10px;">
+        <!-- Option 0: Instant 1-Tap Clipboard Paste -->
+        <button type="button" class="btn-quick-paste" onclick="pasteFromClipboardToTextarea()">
+          📋 COLAR DO CLIPBOARD (1 TOQUE)
+        </button>
+
+        <!-- Option 1: Choose Folder or Multiple Files -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+          <button type="button" class="btn-quick-paste" onclick="document.getElementById('admin-folder-input').click();" style="background: linear-gradient(135deg, #ffd700 0%, #ff9900 100%); font-size: 12.5px; padding: 12px 10px;">
+            📁 IMPORTAR PASTA
+          </button>
+          <button type="button" class="btn-quick-paste" onclick="document.getElementById('admin-file-input').click();" style="background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%); color: #fff; font-size: 12.5px; padding: 12px 10px;">
+            📂 SELECIONAR ARQUIVOS
+          </button>
+        </div>
+
+        <input type="file" id="admin-folder-input" webkitdirectory directory multiple style="display:none" onchange="handleAdminFileSelect(event)">
+        <input type="file" id="admin-file-input" multiple accept=".txt,.json" style="display:none" onchange="handleAdminFileSelect(event)">
+
+        <!-- Dropzone -->
+        <div class="admin-dropzone" id="admin-dropzone" onclick="document.getElementById('admin-file-input').click();">
+          <div style="font-size: 28px; margin-bottom: 4px;">📥</div>
+          <div style="font-size: 13.5px; font-weight: 800; color: #fff;">Arraste e Solte a Pasta ou Arquivos Aqui</div>
+          <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;" id="admin-file-summary">Suporta pastas completas ou múltiplos arquivos de uma só vez</div>
+        </div>
+
+        <!-- Upload Progress Indicator -->
+        <div id="admin-upload-progress-box" style="display: none; background: rgba(0,0,0,0.5); border: 1px solid var(--panel-border); border-radius: 12px; padding: 10px;">
+          <div style="display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 6px;">
+            <span id="admin-progress-text" style="color: #ffd700; font-weight: 700;">Enviando lote...</span>
+            <span id="admin-progress-pct" style="color: #00ff66; font-weight: 800;">0%</span>
+          </div>
+          <div style="width: 100%; height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; overflow: hidden;">
+            <div id="admin-progress-bar" style="width: 0%; height: 100%; background: linear-gradient(90deg, #ffd700, #00ff66); transition: width 0.2s;"></div>
+          </div>
+        </div>
+
+        <!-- Option 2: Paste Raw Text -->
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <div style="font-size: 11px; color: var(--text-dim); font-weight: 700; text-transform: uppercase;">
+            Ou cole um lote de cookies aqui diretamente:
+          </div>
+          <textarea class="admin-textarea" id="admin-raw-text" placeholder="Cole cookies em formato Netscape, JSON ou separados por quebras/linhas..." oninput="handleLiveCookieDetection()"></textarea>
+        </div>
+
+        <!-- Action Buttons -->
+        <button class="btn-unlock" id="btn-import-cookies" onclick="submitAdminCookies()" style="background: linear-gradient(135deg, #ffd700 0%, #ff8800 100%); color: #000; font-weight: 900; font-size: 14px;">
+          🚀 IMPORTAR LOTE E ATIVAR AGORA ⚡
+        </button>
       </div>
 
-      <!-- Upload Progress Indicator -->
-      <div id="admin-upload-progress-box" style="display: none; background: rgba(0,0,0,0.5); border: 1px solid var(--panel-border); border-radius: 12px; padding: 10px;">
-        <div style="display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 6px;">
-          <span id="admin-progress-text" style="color: #ffd700; font-weight: 700;">Enviando lote...</span>
-          <span id="admin-progress-pct" style="color: #00ff66; font-weight: 800;">0%</span>
+      <!-- ============================================== -->
+      <!-- 🟠 SEÇÃO EXCLUSIVA DE CONTAS CRUNCHYROLL       -->
+      <!-- ============================================== -->
+      <div id="admin-crunchyroll-section" style="display: none; flex-direction: column; gap: 12px;">
+        <div style="background: rgba(244, 117, 33, 0.12); border: 1px solid rgba(244, 117, 33, 0.4); border-radius: 12px; padding: 10px 14px; display: flex; align-items: center; gap: 12px;">
+          <span style="font-size: 26px;">🟠</span>
+          <div>
+            <div style="font-weight: 800; color: #f47521; font-size: 13.5px; letter-spacing: 0.5px;">GERENCIADOR DE CONTAS CRUNCHYROLL</div>
+            <div style="font-size: 11px; color: var(--text-dim);">Insira conta direta (Login e Senha) ou cole uma lista de combos em lote.</div>
+          </div>
         </div>
-        <div style="width: 100%; height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; overflow: hidden;">
-          <div id="admin-progress-bar" style="width: 0%; height: 100%; background: linear-gradient(90deg, #ffd700, #00ff66); transition: width 0.2s;"></div>
+
+        <!-- Formulário 1: Conta Única -->
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--panel-border); border-radius: 12px; padding: 12px; display: flex; flex-direction: column; gap: 8px;">
+          <div style="font-size: 11px; color: #ffd700; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;">
+            ⚡ Adicionar 1 Conta Crunchyroll Rápida:
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+            <div>
+              <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 3px; font-weight:700;">📧 EMAIL CRUNCHYROLL:</div>
+              <input type="email" id="cr-single-email" placeholder="usuario@gmail.com" style="width: 100%; background: rgba(0,0,0,0.6); border: 1px solid var(--panel-border); border-radius: 8px; padding: 8px 10px; color: #fff; font-size: 12px; font-family: var(--font-sans);">
+            </div>
+            <div>
+              <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 3px; font-weight:700;">🔑 SENHA:</div>
+              <input type="text" id="cr-single-pass" placeholder="Senha da conta" style="width: 100%; background: rgba(0,0,0,0.6); border: 1px solid var(--panel-border); border-radius: 8px; padding: 8px 10px; color: #fff; font-size: 12px; font-family: var(--font-sans);">
+            </div>
+          </div>
+          <button type="button" class="btn-unlock" onclick="submitSingleCrunchyrollAccount()" style="background: linear-gradient(135deg, #f47521 0%, #ff8800 100%); color: #fff; font-weight: 900; font-size: 12.5px; padding: 10px; margin-top: 4px;">
+            ➕ SALVAR E ATIVAR ESTA CONTA ⚡
+          </button>
+        </div>
+
+        <!-- Formulário 2: Combos em Lote -->
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="font-size: 11px; color: var(--text-dim); font-weight: 700; text-transform: uppercase;">
+              Ou cole várias contas (email:senha por linha):
+            </div>
+            <button type="button" class="btn-icon" onclick="pasteFromClipboardToCrTextarea()" style="font-size: 10.5px; padding: 3px 8px; color: #f47521;">
+              📋 Colar do Clipboard
+            </button>
+          </div>
+          <textarea class="admin-textarea" id="cr-raw-combos" placeholder="usuario1@gmail.com:senha123&#10;usuario2@hotmail.com:senha456&#10;usuario3@outlook.com|senha789" style="height: 85px;"></textarea>
+          <button type="button" class="btn-unlock" onclick="submitCrunchyrollCombos()" style="background: linear-gradient(135deg, #f47521 0%, #ff5500 100%); color: #fff; font-weight: 900; font-size: 13px; padding: 11px;">
+            🚀 IMPORTAR LOTE DE CONTAS CRUNCHYROLL ⚡
+          </button>
+        </div>
+
+        <!-- Formulário 3: Selecionar Arquivo .txt com Combos -->
+        <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.02); border: 1px dashed var(--panel-border); border-radius: 10px; padding: 8px 12px;">
+          <span style="font-size: 11px; color: var(--text-dim);">Tem um arquivo .txt com contas?</span>
+          <button type="button" class="btn-icon" onclick="document.getElementById('admin-file-input').click();" style="font-size: 11px; padding: 5px 12px; color: #f47521; border-color: rgba(244,117,33,0.4);">
+            📂 Enviar Arquivo .txt
+          </button>
         </div>
       </div>
-
-      <!-- Option 2: Paste Raw Text -->
-      <div style="display: flex; flex-direction: column; gap: 6px;">
-        <div style="font-size: 11px; color: var(--text-dim); font-weight: 700; text-transform: uppercase;">
-          Ou cole um lote de cookies aqui diretamente:
-        </div>
-        <textarea class="admin-textarea" id="admin-raw-text" placeholder="Cole cookies em formato Netscape, JSON ou separados por quebras/linhas..." oninput="handleLiveCookieDetection()"></textarea>
-      </div>
-
-      <!-- Action Buttons -->
-      <button class="btn-unlock" id="btn-import-cookies" onclick="submitAdminCookies()" style="background: linear-gradient(135deg, #ffd700 0%, #ff8800 100%); color: #000; font-weight: 900; font-size: 14px;">
-        🚀 IMPORTAR LOTE E ATIVAR AGORA ⚡
-      </button>
 
       <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 4px;">
         <button class="btn-icon" onclick="resetAdminCache()" style="font-size: 10.5px; padding: 6px 12px; color: var(--text-dim);">
-          🔄 Re-testar Todos os Cookies
+          🔄 Re-testar Todas as Contas & Cookies
         </button>
         <span id="admin-upload-msg" style="font-size: 11px; color: #00ff66; font-weight: 700;"></span>
       </div>
@@ -2172,7 +2336,12 @@
     let currentService = 'netflix';
     let currentPlan = 'TODOS';
     let currentCode = '';
-    let authToken = localStorage.getItem('cyber_auth_token') || '';
+    let authToken = localStorage.getItem('cyber_auth_token') || sessionStorage.getItem('cyber_auth_token') || '';
+    let allowedServices = ['netflix', 'hbo', 'crunchyroll'];
+    try {
+      const savedAllowed = localStorage.getItem('cyber_allowed_services') || sessionStorage.getItem('cyber_allowed_services');
+      if (savedAllowed) allowedServices = JSON.parse(savedAllowed);
+    } catch(e) {}
     let soundEnabled = localStorage.getItem('cyber_sound_enabled') !== 'false';
     let audioCtx = null;
     let cachedCookiesList = [];
@@ -2294,15 +2463,32 @@
           method: 'POST',
           headers: getHeaders()
         });
+        if (!res.ok) {
+          authToken = '';
+          localStorage.removeItem('cyber_auth_token');
+          sessionStorage.removeItem('cyber_auth_token');
+          showLoginOverlay();
+          return false;
+        }
         const data = await res.json();
         if (data.authenticated) {
+          if (data.allowed_services && Array.isArray(data.allowed_services)) {
+            allowedServices = data.allowed_services;
+          }
+          applyAllowedServicesUI();
           hideLoginOverlay();
           return true;
         } else {
+          authToken = '';
+          localStorage.removeItem('cyber_auth_token');
+          sessionStorage.removeItem('cyber_auth_token');
           showLoginOverlay();
           return false;
         }
       } catch (e) {
+        authToken = '';
+        localStorage.removeItem('cyber_auth_token');
+        sessionStorage.removeItem('cyber_auth_token');
         showLoginOverlay();
         return false;
       }
@@ -2337,7 +2523,7 @@
       const errBox = document.getElementById('login-error-msg');
 
       if (!pwd) {
-        errBox.innerText = 'Por favor, digite a senha mestre.';
+        errBox.innerText = 'Por favor, digite sua senha de acesso.';
         errBox.style.display = 'block';
         soundError();
         return;
@@ -2355,14 +2541,20 @@
 
         if (data.success && data.token) {
           authToken = data.token;
+          if (data.allowed_services && Array.isArray(data.allowed_services)) {
+            allowedServices = data.allowed_services;
+          }
           if (remember) {
             localStorage.setItem('cyber_auth_token', authToken);
+            localStorage.setItem('cyber_allowed_services', JSON.stringify(allowedServices));
           } else {
             sessionStorage.setItem('cyber_auth_token', authToken);
+            sessionStorage.setItem('cyber_allowed_services', JSON.stringify(allowedServices));
           }
+          applyAllowedServicesUI();
           soundSuccess();
           hideLoginOverlay();
-          logKernel('Autenticação de terminal bem sucedida.');
+          logKernel(`Autenticação bem sucedida: ${data.role_name || 'Terminal Liberado'}`);
           loadStatus();
           loadCookies();
         } else {
@@ -2386,9 +2578,18 @@
         });
       } catch (e) {}
       authToken = '';
+      allowedServices = ['netflix', 'hbo', 'crunchyroll'];
       localStorage.removeItem('cyber_auth_token');
       sessionStorage.removeItem('cyber_auth_token');
+      localStorage.removeItem('cyber_allowed_services');
+      sessionStorage.removeItem('cyber_allowed_services');
+      showAlert(null);
       showLoginOverlay();
+      const pwdInput = document.getElementById('login-password-input');
+      if (pwdInput) {
+        pwdInput.value = '';
+        setTimeout(() => pwdInput.focus(), 150);
+      }
     }
 
     // ========================================================
@@ -2398,8 +2599,11 @@
 
     function focusPinInput() {
       if (document.getElementById('login-overlay').style.display === 'flex') return;
+      if (document.getElementById('admin-auth-modal').style.display === 'flex') return;
+      if (document.getElementById('admin-modal').style.display === 'flex') return;
       if (document.getElementById('success-modal').style.display === 'flex') return;
       if (document.getElementById('cookie-modal').style.display === 'flex') return;
+      if (document.activeElement && (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') && document.activeElement !== hiddenInput) return;
       hiddenInput.focus();
     }
 
@@ -2427,8 +2631,10 @@
 
     document.addEventListener('keydown', (e) => {
       if (document.getElementById('login-overlay').style.display === 'flex') return;
+      if (document.getElementById('admin-auth-modal').style.display === 'flex') return;
+      if (document.getElementById('admin-modal').style.display === 'flex') return;
       if (document.getElementById('cookie-modal').style.display === 'flex') return;
-      if (e.target.tagName === 'INPUT') return;
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
 
       const maxLen = (currentService === 'netflix') ? 8 : 6;
 
@@ -2534,9 +2740,11 @@
     // ⚡ INSTANT ACTIVATION TRANSMISSION
     // ========================================================
     async function transmitActivation() {
-      if (!currentCode || currentCode.length < 6) {
+      const reqLen = (currentService === 'netflix') ? 8 : 6;
+      if (!currentCode || currentCode.length < reqLen) {
         soundError();
-        showAlert('error', 'Digite o código completo da TV (6 a 8 dígitos).');
+        const sName = currentService === 'netflix' ? 'Netflix' : (currentService === 'crunchyroll' ? 'Crunchyroll' : 'HBO Max');
+        showAlert('error', `Digite o código completo da TV (${reqLen} dígitos para ${sName}).`);
         focusPinInput();
         return;
       }
@@ -2627,7 +2835,10 @@
     // 🏆 SUCCESS MODAL & CONFETTI
     // ========================================================
     function openSuccessModal(code, account) {
-      document.getElementById('modal-service-name').innerText = (currentService === 'netflix' ? 'NETFLIX' : 'HBO MAX');
+      let svcName = 'NETFLIX';
+      if (currentService === 'hbo') svcName = 'HBO MAX';
+      else if (currentService === 'crunchyroll') svcName = 'CRUNCHYROLL';
+      document.getElementById('modal-service-name').innerText = svcName;
       document.getElementById('modal-paired-code').innerText = code;
       document.getElementById('modal-account-email').innerText = account.email || 'Conta Autenticada';
       document.getElementById('modal-account-plan').innerText = account.plan || 'Plano Premium VIP';
@@ -2641,35 +2852,96 @@
     }
 
     // ========================================================
-    // 🔄 SERVICE SWITCHER (NETFLIX RED <-> HBO MAX PURPLE)
+    // 🔄 SERVICE SWITCHER & PADLOCK PERMISSION CONTROLLER
     // ========================================================
-    function switchService(service) {
+    function applyAllowedServicesUI() {
+      const allSvcs = ['netflix', 'hbo', 'crunchyroll'];
+      allSvcs.forEach(s => {
+        const tab = document.getElementById(`tab-${s}`);
+        const lock = document.getElementById(`lock-${s}`);
+        const isAllowed = allowedServices.includes(s);
+
+        if (tab) {
+          if (!isAllowed) {
+            tab.classList.add('tab-locked');
+            tab.title = "🔒 CONTEÚDO BLOQUEADO: Sua senha não tem acesso a este streaming";
+          } else {
+            tab.classList.remove('tab-locked');
+            tab.title = "";
+          }
+        }
+        if (lock) {
+          lock.style.display = isAllowed ? 'none' : 'inline-flex';
+        }
+      });
+
+      // Se o serviço ativo atual estiver bloqueado, muda automaticamente para o primeiro permitido!
+      if (!allowedServices.includes(currentService)) {
+        const firstAllowed = allowedServices[0];
+        if (firstAllowed) {
+          switchService(firstAllowed, true);
+        }
+      }
+    }
+
+    function switchService(service, silent = false) {
+      // 🔒 VERIFICA SE O TÓPICO/SERVIÇO ESTÁ LIBERADO PELA SENHA
+      if (!allowedServices.includes(service)) {
+        soundError();
+        const tab = document.getElementById(`tab-${service}`);
+        if (tab) {
+          tab.classList.add('tab-shake');
+          setTimeout(() => tab.classList.remove('tab-shake'), 450);
+        }
+        let sName = (service === 'crunchyroll' ? 'Crunchyroll' : (service === 'hbo' ? 'HBO Max' : 'Netflix'));
+        showAlert('error', `🔒 VOCÊ NÃO TEM ACESSO A ESSE CONTEÚDO! (${sName} bloqueado pela sua senha de login)`);
+        logKernel(`[ACESSO NEGADO] Tentativa de acessar streaming bloqueado: ${sName}`);
+        return;
+      }
+
       if (currentService === service) return;
       currentService = service;
       cachedCookiesList = [];
-      soundClick();
+      if (!silent) soundClick();
 
       // Update Body Theme
       document.body.setAttribute('data-service', service);
 
       const tabN = document.getElementById('tab-netflix');
       const tabH = document.getElementById('tab-hbo');
+      const tabC = document.getElementById('tab-crunchyroll');
       const title = document.getElementById('card-service-title');
       const hudTitle = document.getElementById('hud-section-title');
       const modalTitle = document.getElementById('cookie-modal-title');
 
+      tabN.classList.remove('active-netflix');
+      tabH.classList.remove('active-hbo');
+      if (tabC) tabC.classList.remove('active-crunchyroll');
+
+      const pillPaste = document.getElementById('pill-btn-quick-paste');
+      const pillManage = document.getElementById('pill-btn-manage');
+
       if (service === 'netflix') {
         tabN.classList.add('active-netflix');
-        tabH.classList.remove('active-hbo');
         title.innerHTML = '<span>🔴 CONTA NETFLIX PRONTA PARA ATIVAÇÃO</span>';
         hudTitle.innerText = '📺 SMART TV // NETFLIX PAIRING';
         if (modalTitle) modalTitle.innerText = '📁 SELECIONAR COOKIE NETFLIX';
+        if (pillPaste) pillPaste.innerHTML = '<span>📋</span> Colar Cookie Rápido';
+        if (pillManage) pillManage.innerHTML = '<span>➕</span> Gerenciar Cookies';
+      } else if (service === 'crunchyroll') {
+        if (tabC) tabC.classList.add('active-crunchyroll');
+        title.innerHTML = '<span>🟠 CONTA CRUNCHYROLL PRONTA PARA ATIVAÇÃO</span>';
+        hudTitle.innerText = '📺 SMART TV // CRUNCHYROLL PAIRING';
+        if (modalTitle) modalTitle.innerText = '📁 SELECIONAR CONTA CRUNCHYROLL';
+        if (pillPaste) pillPaste.innerHTML = '<span>📋</span> Colar Conta Rápida';
+        if (pillManage) pillManage.innerHTML = '<span>➕</span> Gerenciar Contas';
       } else {
         tabH.classList.add('active-hbo');
-        tabN.classList.remove('active-netflix');
         title.innerHTML = '<span>🟣 CONTA HBO MAX PRONTA PARA ATIVAÇÃO</span>';
         hudTitle.innerText = '📺 SMART TV // HBO MAX PAIRING';
         if (modalTitle) modalTitle.innerText = '📁 SELECIONAR COOKIE HBO MAX';
+        if (pillPaste) pillPaste.innerHTML = '<span>📋</span> Colar Cookie Rápido';
+        if (pillManage) pillManage.innerHTML = '<span>➕</span> Gerenciar Cookies';
       }
 
       updateSoundUI();
@@ -2716,7 +2988,10 @@
 
     async function loadStatus() {
       try {
-        const res = await fetch('/api/status', { headers: getHeaders() });
+        const res = await fetch(`/api/status?_t=${Date.now()}`, { 
+          headers: getHeaders(),
+          cache: 'no-store'
+        });
         if (res.status === 401) {
           showLoginOverlay();
           return;
@@ -2734,19 +3009,34 @@
         }
 
         if (servData && servData.cookie_name) {
-          document.getElementById('active-cookie-filename').innerText = `COOKIE: ${servData.cookie_name}`;
+          const prefix = currentService === 'crunchyroll' ? 'CONTA' : 'COOKIE';
+          document.getElementById('active-cookie-filename').innerText = `${prefix}: ${servData.cookie_name}`;
         }
 
-        // Atualização em Tempo Real do Estoque de Cookies
+        // Atualização em Tempo Real do Estoque de Cookies com feedback visual de sincronização
         const stockElem = document.getElementById('live-stock-count');
+        const stockBadge = document.getElementById('live-stock-badge');
         if (stockElem && servData) {
           const totalInVault = servData.total_in_vault || 0;
           const availableCount = servData.available_count || 0;
-          if (totalInVault > 0) {
-            stockElem.innerText = `${availableCount} CONTAS PRONTAS NO ESTOQUE`;
-          } else {
-            stockElem.innerText = `${availableCount} DISPONÍVEIS`;
+          const newText = totalInVault > 0 ? `${availableCount} CONTAS PRONTAS NO ESTOQUE` : `${availableCount} DISPONÍVEIS`;
+          if (stockElem.innerText !== newText) {
+            stockElem.innerText = newText;
+            if (stockBadge) {
+              stockBadge.style.transition = 'all 0.3s ease';
+              stockBadge.style.transform = 'scale(1.08)';
+              stockBadge.style.boxShadow = '0 0 15px rgba(0, 255, 102, 0.6)';
+              setTimeout(() => {
+                stockBadge.style.transform = 'scale(1)';
+                stockBadge.style.boxShadow = 'none';
+              }, 400);
+            }
           }
+        }
+
+        if (data.allowed_services && Array.isArray(data.allowed_services)) {
+          allowedServices = data.allowed_services;
+          applyAllowedServicesUI();
         }
 
         if (data.local_ip) {
@@ -2832,7 +3122,10 @@
     async function loadCookies() {
       try {
         const reqService = currentService;
-        const res = await fetch(`/api/cookies?service=${reqService}&_t=${Date.now()}`, { headers: getHeaders() });
+        const res = await fetch(`/api/cookies?service=${reqService}&_t=${Date.now()}`, { 
+          headers: getHeaders(),
+          cache: 'no-store'
+        });
         if (res.status === 401) return;
         const data = await res.json();
         
@@ -2854,7 +3147,7 @@
       if (modalTitle) {
         modalTitle.innerText = currentService === 'netflix' 
           ? '📁 SELECIONAR COOKIE NETFLIX' 
-          : '📁 SELECIONAR COOKIE HBO MAX';
+          : (currentService === 'crunchyroll' ? '📁 SELECIONAR CONTA CRUNCHYROLL' : '📁 SELECIONAR COOKIE HBO MAX');
       }
       
       document.getElementById('cookie-modal').style.display = 'flex';
@@ -2944,7 +3237,7 @@
     // ========================================================
     const matrixCanvas = document.getElementById('matrix-canvas');
     const matrixCtx = matrixCanvas.getContext('2d');
-    let characters = '0123456789ABCDEFNETFLIXHBOMAXCONNECTPAIRSTREAM9876543210ZXCVBNM';
+    let characters = '0123456789ABCDEFNETFLIXHBOMAXCRUNCHYROLLCONNECTPAIRSTREAM9876543210ZXCVBNM';
     characters = characters.split('');
     let fontSize = 15;
     let columns = 0;
@@ -2976,6 +3269,8 @@
       } else {
         if (currentService === 'netflix') {
           rainColor = '#E50914';
+        } else if (currentService === 'crunchyroll') {
+          rainColor = '#F47521';
         } else {
           rainColor = '#a855f7';
         }
@@ -3024,7 +3319,9 @@
       confettiParticles = [];
       const colors = (currentService === 'netflix') 
         ? ['#ff2a38', '#e50914', '#ffffff', '#ffd700', '#ff707a']
-        : ['#c084fc', '#a855f7', '#ffffff', '#ffd700', '#e9d5ff'];
+        : (currentService === 'crunchyroll'
+          ? ['#f47521', '#ff8438', '#ffffff', '#ffd700', '#ffa366']
+          : ['#c084fc', '#a855f7', '#ffffff', '#ffd700', '#e9d5ff']);
 
       for (let i = 0; i < 120; i++) {
         confettiParticles.push({
@@ -3091,7 +3388,10 @@
       soundClick();
       const deck = document.querySelector('.deck-container');
       if (deck) deck.style.display = 'none';
-      setAdminTarget(currentService === 'hbo' ? 'hbomax' : 'netflix');
+      let target = 'netflix';
+      if (currentService === 'hbo') target = 'hbomax';
+      else if (currentService === 'crunchyroll') target = 'crunchyroll';
+      setAdminTarget(target);
       document.getElementById('admin-modal').style.display = 'flex';
       loadAdminStats();
       setTimeout(() => {
@@ -3132,7 +3432,10 @@
           sessionStorage.setItem('cyber_cookie_admin_token', adminCookieToken);
           soundSuccess();
           closeAdminAuthModal();
-          setAdminTarget(currentService === 'hbo' ? 'hbomax' : 'netflix');
+          let target = 'netflix';
+          if (currentService === 'hbo') target = 'hbomax';
+          else if (currentService === 'crunchyroll') target = 'crunchyroll';
+          setAdminTarget(target);
           document.getElementById('admin-modal').style.display = 'flex';
           loadAdminStats();
         } else {
@@ -3155,6 +3458,12 @@
       adminPendingFiles = [];
       document.getElementById('admin-file-summary').innerText = 'Ou arraste arquivos em qualquer lugar da tela';
       document.getElementById('admin-raw-text').value = '';
+      const crArea = document.getElementById('cr-raw-combos');
+      if (crArea) crArea.value = '';
+      const crEmail = document.getElementById('cr-single-email');
+      if (crEmail) crEmail.value = '';
+      const crPass = document.getElementById('cr-single-pass');
+      if (crPass) crPass.value = '';
       document.getElementById('admin-upload-msg').innerText = '';
       const badge = document.getElementById('cookie-detect-badge');
       if (badge) badge.style.display = 'none';
@@ -3164,12 +3473,147 @@
       adminTargetService = svc;
       const btnN = document.getElementById('admin-target-nf');
       const btnH = document.getElementById('admin-target-hbo');
-      if (svc === 'netflix') {
-        btnN.className = 'admin-radio-btn active-n';
-        btnH.className = 'admin-radio-btn';
+      const btnC = document.getElementById('admin-target-cr');
+      if (btnN) btnN.className = (svc === 'netflix') ? 'admin-radio-btn active-n' : 'admin-radio-btn';
+      if (btnH) btnH.className = (svc === 'hbomax' || svc === 'hbo') ? 'admin-radio-btn active-h' : 'admin-radio-btn';
+      if (btnC) btnC.className = (svc === 'crunchyroll' || svc === 'cr') ? 'admin-radio-btn active-cr' : 'admin-radio-btn';
+
+      const cookieSec = document.getElementById('admin-cookie-section');
+      const crSec = document.getElementById('admin-crunchyroll-section');
+      const modalTitle = document.getElementById('admin-modal-main-title');
+
+      if (svc === 'crunchyroll' || svc === 'cr') {
+        if (cookieSec) cookieSec.style.display = 'none';
+        if (crSec) crSec.style.display = 'flex';
+        if (modalTitle) modalTitle.innerText = '🟠 GERENCIADOR DE CONTAS CRUNCHYROLL';
       } else {
-        btnH.className = 'admin-radio-btn active-h';
-        btnN.className = 'admin-radio-btn';
+        if (cookieSec) cookieSec.style.display = 'flex';
+        if (crSec) crSec.style.display = 'none';
+        if (modalTitle) modalTitle.innerText = '🍪 GERENCIADOR DE COOKIES // CLOUD';
+      }
+    }
+
+    // 🟠 GESTÃO EXCLUSIVA DE CONTAS CRUNCHYROLL (CONTA ÚNICA & LOTES)
+    async function submitSingleCrunchyrollAccount() {
+      soundClick();
+      const emailInput = document.getElementById('cr-single-email');
+      const passInput = document.getElementById('cr-single-pass');
+      const statusMsg = document.getElementById('admin-upload-msg');
+      const email = emailInput ? emailInput.value.trim() : '';
+      const password = passInput ? passInput.value.trim() : '';
+
+      if (!email || !password) {
+        soundError();
+        alert('Por favor, informe o e-mail e a senha da conta Crunchyroll.');
+        return;
+      }
+
+      if (!email.includes('@')) {
+        soundError();
+        alert('Por favor, informe um e-mail válido contendo @.');
+        return;
+      }
+
+      statusMsg.style.color = '#ffd700';
+      statusMsg.innerText = 'Salvando e ativando conta Crunchyroll... ⏳';
+
+      try {
+        const res = await fetch('/api/admin/upload-cookies', {
+          method: 'POST',
+          headers: getAdminHeaders(),
+          body: JSON.stringify({
+            service: 'crunchyroll',
+            email: email,
+            password: password
+          })
+        });
+
+        const data = await res.json();
+        if (data.success) {
+          soundSuccess();
+          triggerConfetti();
+          statusMsg.style.color = '#00ff66';
+          statusMsg.innerText = `🎉 Conta Crunchyroll adicionada e ativada com sucesso!`;
+          if (emailInput) emailInput.value = '';
+          if (passInput) passInput.value = '';
+          loadAdminStats();
+          loadStatus();
+          loadCookies();
+          logKernel(`[CRUNCHYROLL] Conta ${email} salva e ativada com sucesso.`);
+        } else {
+          soundError();
+          statusMsg.style.color = '#ff3344';
+          statusMsg.innerText = data.message || 'Erro ao adicionar conta.';
+        }
+      } catch (err) {
+        soundError();
+        statusMsg.style.color = '#ff3344';
+        statusMsg.innerText = 'Falha na conexão com o servidor local.';
+      }
+    }
+
+    async function submitCrunchyrollCombos() {
+      soundClick();
+      const textarea = document.getElementById('cr-raw-combos');
+      const statusMsg = document.getElementById('admin-upload-msg');
+      const rawText = textarea ? textarea.value.trim() : '';
+
+      if (!rawText) {
+        soundError();
+        alert('Por favor, cole ao menos uma conta (email:senha) antes de importar.');
+        return;
+      }
+
+      statusMsg.style.color = '#ffd700';
+      statusMsg.innerText = 'Importando lote de contas Crunchyroll... ⏳';
+
+      try {
+        const res = await fetch('/api/admin/upload-cookies', {
+          method: 'POST',
+          headers: getAdminHeaders(),
+          body: JSON.stringify({
+            service: 'crunchyroll',
+            raw_text: rawText
+          })
+        });
+
+        const data = await res.json();
+        if (data.success) {
+          soundSuccess();
+          triggerConfetti();
+          statusMsg.style.color = '#00ff66';
+          statusMsg.innerText = data.message || `🎉 Contas Crunchyroll importadas com sucesso!`;
+          if (textarea) textarea.value = '';
+          loadAdminStats();
+          loadStatus();
+          loadCookies();
+          logKernel(`[CRUNCHYROLL] Lote de contas importado com sucesso.`);
+        } else {
+          soundError();
+          statusMsg.style.color = '#ff3344';
+          statusMsg.innerText = data.message || 'Erro ao importar contas.';
+        }
+      } catch (err) {
+        soundError();
+        statusMsg.style.color = '#ff3344';
+        statusMsg.innerText = 'Falha na conexão com o servidor local.';
+      }
+    }
+
+    async function pasteFromClipboardToCrTextarea() {
+      soundClick();
+      try {
+        const text = await navigator.clipboard.readText();
+        if (text) {
+          const area = document.getElementById('cr-raw-combos');
+          if (area) {
+            area.value = text.trim();
+            soundSuccess();
+          }
+        }
+      } catch (e) {
+        const area = document.getElementById('cr-raw-combos');
+        if (area) area.focus();
       }
     }
 
@@ -3185,16 +3629,18 @@
         }
 
         // Auto detecção do serviço
-        let targetSvc = currentService === 'hbo' ? 'hbomax' : 'netflix';
+        let targetSvc = currentService === 'hbo' ? 'hbomax' : (currentService === 'crunchyroll' ? 'crunchyroll' : 'netflix');
         const lower = trimmed.toLowerCase();
-        if (lower.includes('securentflxid') || lower.includes('netflix')) {
+        if (lower.includes('crunchyroll') || (trimmed.includes('@') && trimmed.includes(':') && !lower.includes('securentflxid') && !lower.includes('max.com'))) {
+          targetSvc = 'crunchyroll';
+        } else if (lower.includes('securentflxid') || lower.includes('netflix')) {
           targetSvc = 'netflix';
         } else if (lower.includes('max.com') || lower.includes('hbomax') || lower.includes('beam') || lower.includes('hbo')) {
           targetSvc = 'hbomax';
         }
 
-        logKernel(`Importando cookie do clipboard para ${targetSvc.toUpperCase()}...`);
-        showAlert('success', '⚡ Enviando cookie da área de transferência...');
+        logKernel(`Importando credencial do clipboard para ${targetSvc.toUpperCase()}...`);
+        showAlert('success', '⚡ Enviando credencial da área de transferência...');
 
         const res = await fetch('/api/admin/upload-cookies', {
           method: 'POST',
@@ -3210,15 +3656,16 @@
         if (data.success) {
           soundSuccess();
           triggerConfetti();
-          showAlert('success', `🎉 Cookie importado e ativado para ${targetSvc.toUpperCase()}!`);
+          showAlert('success', `🎉 Credencial importada e ativada para ${targetSvc.toUpperCase()}!`);
           logKernel(`[SUCESSO] ${data.message}`);
           if (targetSvc === 'netflix' && currentService !== 'netflix') switchService('netflix');
           if (targetSvc === 'hbomax' && currentService !== 'hbo') switchService('hbo');
+          if (targetSvc === 'crunchyroll' && currentService !== 'crunchyroll') switchService('crunchyroll');
           loadStatus();
           loadCookies();
         } else {
           soundError();
-          showAlert('error', data.message || 'Erro ao importar cookie.');
+          showAlert('error', data.message || 'Erro ao importar credencial.');
           openAdminModal();
           document.getElementById('admin-raw-text').value = trimmed;
           handleLiveCookieDetection();
@@ -3263,6 +3710,11 @@
         setAdminTarget('hbomax');
         badge.className = 'cookie-detect-badge detect-hbo';
         badge.innerHTML = '✔ Detectado: Formato HBO MAX';
+        badge.style.display = 'inline-flex';
+      } else if (val.includes('crunchyroll') || val.includes('crunchy') || (val.includes('@') && val.includes(':'))) {
+        setAdminTarget('crunchyroll');
+        badge.className = 'cookie-detect-badge detect-crunchyroll';
+        badge.innerHTML = '✔ Detectado: Formato CRUNCHYROLL';
         badge.style.display = 'inline-flex';
       } else {
         badge.style.display = 'none';
@@ -3354,7 +3806,7 @@
     document.addEventListener('paste', (e) => {
       if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
       const text = (e.clipboardData || window.clipboardData).getData('text');
-      if (text && (text.includes('netflix') || text.includes('max.com') || text.includes('SecureNetflixId') || text.includes('beam'))) {
+      if (text && (text.includes('netflix') || text.includes('max.com') || text.includes('SecureNetflixId') || text.includes('beam') || text.includes('crunchyroll') || (text.includes('@') && text.includes(':')))) {
         e.preventDefault();
         openAdminModal();
         const area = document.getElementById('admin-raw-text');
@@ -3371,6 +3823,8 @@
           const data = await res.json();
           document.getElementById('stat-nf-count').innerText = data.netflix_verified || data.netflix_total || '0';
           document.getElementById('stat-hbo-count').innerText = data.hbo_verified || data.hbo_total || '0';
+          const statCr = document.getElementById('stat-cr-count');
+          if (statCr) statCr.innerText = data.crunchyroll_verified || data.crunchyroll_total || '0';
         }
       } catch (e) {}
     }
@@ -3523,12 +3977,35 @@
       document.getElementById('telemetry-ping').innerText = `PING: ${ping}ms`;
     }, 4000);
 
-    // ⚡ LIVE SYNC AO VIVO: Sincronização automática contínua de status e estoque de cookies a cada 3.5s
+    // ⚡ LIVE SYNC AO VIVO: Sincronização automática contínua de status e estoque de cookies a cada 2.5s
     setInterval(() => {
       if (document.getElementById('login-overlay').style.display !== 'flex') {
         loadStatus();
       }
-    }, 3500);
+    }, 2500);
+
+    // ⚡ SINCRONIZAÇÃO INSTANTÂNEA AO RETORNAR PARA O NAVEGADOR NO CELULAR
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden && authToken) {
+        loadStatus();
+        if (document.getElementById('cookie-modal').style.display === 'flex') {
+          loadCookies();
+        }
+      }
+    });
+
+    window.addEventListener('focus', () => {
+      if (authToken) {
+        loadStatus();
+      }
+    });
+
+    window.addEventListener('pageshow', () => {
+      if (authToken) {
+        loadStatus();
+        loadCookies();
+      }
+    });
 
     // Initial Startup
     window.addEventListener('load', async () => {

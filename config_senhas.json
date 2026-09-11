@@ -1,0 +1,70 @@
+{
+  "senhas": [
+    {
+      "senha": "ATIVADOR#MASTER@2026$STREAM*VIP!",
+      "nome": "Master Total (Tudo Liberado)",
+      "servicos": ["netflix", "hbo", "crunchyroll"],
+      "descricao": "Desbloqueia Netflix, HBO Max e Crunchyroll (TUDO LIBERADO)"
+    },
+    {
+      "senha": "VIP#ALL@STREAMING#MASTER*SECURE!2026",
+      "nome": "VIP Acesso Completo",
+      "servicos": ["netflix", "hbo", "crunchyroll"],
+      "descricao": "Desbloqueia Netflix, HBO Max e Crunchyroll (TUDO LIBERADO)"
+    },
+    {
+      "senha": "STREAM#DUO@4829$VIP*MATRIX!2026",
+      "nome": "Netflix + HBO Max",
+      "servicos": ["netflix", "hbo"],
+      "descricao": "Desbloqueia Netflix e HBO Max (Crunchyroll fica BLOQUEADA com cadeado 🔒)"
+    },
+    {
+      "senha": "NETFLIX#HBO#PASS@9921$STREAM*LOCK!2026",
+      "nome": "Netflix + HBO Max (Alternativa)",
+      "servicos": ["netflix", "hbo"],
+      "descricao": "Desbloqueia Netflix e HBO Max (Crunchyroll fica BLOQUEADA com cadeado 🔒)"
+    },
+    {
+      "senha": "NETFLIX#ONLY@7712$RED*CYBER!2026",
+      "nome": "Apenas Netflix",
+      "servicos": ["netflix"],
+      "descricao": "Desbloqueia apenas Netflix (HBO Max e Crunchyroll ficam BLOQUEADAS com cadeado 🔒)"
+    },
+    {
+      "senha": "HBOMAX#ONLY@5534$PURPLE*CYBER!2026",
+      "nome": "Apenas HBO Max",
+      "servicos": ["hbo"],
+      "descricao": "Desbloqueia apenas HBO Max (Netflix e Crunchyroll ficam BLOQUEADAS com cadeado 🔒)"
+    },
+    {
+      "senha": "CRUNCHY#ONLY@3391$ORANGE*CYBER!2026",
+      "nome": "Apenas Crunchyroll",
+      "servicos": ["crunchyroll"],
+      "descricao": "Desbloqueia apenas Crunchyroll (Netflix e HBO Max ficam BLOQUEADAS com cadeado 🔒)"
+    },
+    {
+      "senha": "PASS#STREAM",
+      "nome": "Netflix + HBO Max (Curta)",
+      "servicos": ["netflix", "hbo"],
+      "descricao": "Atalho rápido para testes: Netflix + HBO Max"
+    },
+    {
+      "senha": "PASS#NETFLIX",
+      "nome": "Apenas Netflix (Curta)",
+      "servicos": ["netflix"],
+      "descricao": "Atalho rápido para testes: Apenas Netflix"
+    },
+    {
+      "senha": "PASS#HBO",
+      "nome": "Apenas HBO Max (Curta)",
+      "servicos": ["hbo"],
+      "descricao": "Atalho rápido para testes: Apenas HBO Max"
+    },
+    {
+      "senha": "PASS#CRUNCHYROLL",
+      "nome": "Apenas Crunchyroll (Curta)",
+      "servicos": ["crunchyroll"],
+      "descricao": "Atalho rápido para testes: Apenas Crunchyroll"
+    }
+  ]
+}

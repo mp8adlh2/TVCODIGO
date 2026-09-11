@@ -20,8 +20,8 @@ if not exist ".git" (
     git init
 )
 
-:: 3. Sincroniza bundle de cookies
-echo [+] Sincronizando cookies das pastas 'netflix' e 'hbomax'...
+:: 3. Sincroniza bundle de cookies e contas
+echo [+] Sincronizando cookies e contas ('netflix', 'hbomax' e 'combo')...
 python -c "import app; app.sync_cookies_bundle()" >nul 2>&1
 
 :: 4. Adiciona todos os arquivos
@@ -30,7 +30,7 @@ git add -A
 
 :: 5. Cria o commit
 echo [+] Criando commit...
-git commit -m "Atualizacao de cookies e configuracoes"
+git commit -m "Atualizacao: Netflix, HBO Max, Crunchyroll, cadeados e nova senha mestre"
 
 :: 5. Define branch main
 git branch -M main

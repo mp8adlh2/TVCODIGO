@@ -1,9 +1,9 @@
 @echo off
-title Ativador Streaming - Netflix & HBO Max
+title Ativador Streaming - Netflix, HBO Max & Crunchyroll
 color 0C
 cls
 echo ===============================================================
-echo     INICIANDO PAINEL DE ATIVACAO: NETFLIX ^& HBO MAX
+echo     INICIANDO PAINEL: NETFLIX, HBO MAX ^& CRUNCHYROLL
 echo ===============================================================
 echo.
 echo  [+] Finalizando processos anteriores na porta 5000...
