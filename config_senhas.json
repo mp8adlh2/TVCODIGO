@@ -1,15 +1,3 @@
 {
-  "senhas": [
-    {
-      "senha": "VIP#MASTER@1444$4K*76!2026",
-      "nome": "Cliente VIP (Acesso Total 4K)",
-      "servicos": [
-        "netflix",
-        "hbo",
-        "crunchyroll",
-        "sky"
-      ],
-      "descricao": "Libera todos os 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+"
-    }
-  ]
+  "senhas": []
 }

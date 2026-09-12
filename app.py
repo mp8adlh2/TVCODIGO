@@ -1440,11 +1440,6 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         return service in services
 
     def is_admin_authenticated(self):
-        # 1. Se o usuário já autenticou com a senha mestre (todos os 4 serviços), concede acesso
-        session = self.get_session_info()
-        if session and len(session.get("services", [])) >= 4:
-            return True
-
         admin_header = self.headers.get('X-Admin-Token', '') or self.headers.get('Authorization', '')
         token = ''
         if admin_header.startswith('Bearer '):
@@ -1452,18 +1447,20 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         else:
             token = admin_header.strip()
         
-        if not token:
-            return False
-
         now = time.time()
         with LOGIN_LOCK:
-            if token in ACTIVE_ADMIN_SESSIONS:
+            if token and token in ACTIVE_ADMIN_SESSIONS:
                 if ACTIVE_ADMIN_SESSIONS[token] > now:
                     return True
                 else:
                     ACTIVE_ADMIN_SESSIONS.pop(token, None)
-                    return False
-            return False
+
+        # 2. Se o usuário autenticou no terminal com a senha mestre (todos os 4 serviços), também concede acesso admin
+        session = self.get_session_info()
+        if session and len(session.get("services", [])) >= 4:
+            return True
+
+        return False
 
     def handle_api_verify_admin_pass(self):
         # Se já estiver autenticado com token mestre (todos os 4 serviços), concede admin token imediatamente
@@ -2956,32 +2953,57 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         except Exception:
             return self.send_json_response({"success": False, "message": "JSON inválido."}, 400)
 
-        senha = (req.get("senha", "") or req.get("password", "")).strip()
-        if not senha:
-            return self.send_json_response({"success": False, "message": "Senha não informada."}, 400)
+        senha = str(req.get("senha", "") or req.get("password", "")).strip()
+        raw_idx = req.get("index")
 
         keys = load_access_keys()
-        new_keys = [k for k in keys if k.get("senha", "").strip() != senha]
+        target_idx = -1
+        target_item = None
 
-        if len(new_keys) == len(keys):
-            return self.send_json_response({"success": False, "message": "Senha não encontrada."}, 404)
+        # 1. Tenta encontrar pelo índice da lista enviado pelo frontend
+        if raw_idx is not None:
+            try:
+                idx = int(raw_idx)
+                if 0 <= idx < len(keys):
+                    target_idx = idx
+                    target_item = keys[idx]
+            except Exception:
+                pass
+
+        # 2. Se não encontrou por índice, busca pela string da senha com comparação segura e flexível
+        if target_idx == -1 and senha:
+            for idx, k in enumerate(keys):
+                k_pwd = str(k.get("senha", "")).strip()
+                if secure_str_compare(k_pwd, senha) or k_pwd == senha or k_pwd.lower() == senha.lower():
+                    target_idx = idx
+                    target_item = k
+                    break
+
+        if target_idx == -1 or target_item is None:
+            return self.send_json_response({"success": False, "message": "Senha não encontrada no sistema para exclusão."}, 404)
+
+        deleted_pwd = str(target_item.get("senha", "")).strip()
+        keys.pop(target_idx)
 
         try:
             with open(CONFIG_SENHAS_FILE, "w", encoding="utf-8") as f:
-                json.dump({"senhas": new_keys}, f, indent=2, ensure_ascii=False)
-            sync_passwords_text_file(new_keys)
+                json.dump({"senhas": keys}, f, indent=2, ensure_ascii=False)
+            sync_passwords_text_file(keys)
 
             # Invalida e desconecta imediatamente qualquer usuário ou celular que estava usando esta senha
             with LOGIN_LOCK:
-                to_purge = [t for t, s in ACTIVE_SESSIONS.items() if s.get("password", "").strip() == senha or not find_access_role(s.get("password", "").strip())]
+                to_purge = [
+                    t for t, s in ACTIVE_SESSIONS.items()
+                    if secure_str_compare(str(s.get("password", "")).strip(), deleted_pwd)
+                ]
                 for t in to_purge:
                     ACTIVE_SESSIONS.pop(t, None)
                 save_active_sessions()
 
             return self.send_json_response({
                 "success": True,
-                "message": "Senha removida com sucesso. Todas as sessões ativas com esta senha foram desconectadas imediatamente.",
-                "passwords": new_keys
+                "message": f"Senha '{deleted_pwd}' removida com sucesso. Dispositivos desconectados.",
+                "passwords": keys
             })
         except Exception as e:
             return self.send_json_response({"success": False, "message": f"Erro ao excluir: {str(e)}"}, 500)
