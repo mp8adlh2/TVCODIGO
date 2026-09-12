@@ -1116,18 +1116,36 @@ def load_access_keys() -> List[dict]:
     except Exception:
         return []
 
+def clean_password_str(s: str) -> str:
+    """Higieniza a senha removendo espaços invisíveis, aspas, quebras de linha e BOM."""
+    if not isinstance(s, str):
+        return ""
+    cleaned = s.replace('\ufeff', '').replace('\u200b', '').replace('\u00a0', ' ').replace('\r', '').strip()
+    if (cleaned.startswith('"') and cleaned.endswith('"')) or (cleaned.startswith("'") and cleaned.endswith("'")):
+        cleaned = cleaned[1:-1].strip()
+    return cleaned
+
 def secure_str_compare(a: str, b: str) -> bool:
-    """Comparação segura em tempo constante compatível com Python 3.13 e caracteres UTF-8/emojis."""
+    """Comparação segura, flexível e imune a espaços invisíveis, BOM, aspas e case."""
     if not isinstance(a, str) or not isinstance(b, str):
         return False
-    a_bytes = a.strip().encode('utf-8')
-    b_bytes = b.strip().encode('utf-8')
-    return hmac.compare_digest(a_bytes, b_bytes)
+    ca = clean_password_str(a)
+    cb = clean_password_str(b)
+    if not ca or not cb:
+        return False
+    if ca == cb:
+        return True
+    if ca.upper() == cb.upper():
+        return True
+    try:
+        return hmac.compare_digest(ca.encode('utf-8'), cb.encode('utf-8'))
+    except Exception:
+        return False
 
 def find_access_role(password: str) -> Optional[dict]:
     """Busca a configuração de acesso correspondente à senha informada."""
     keys = load_access_keys()
-    p_clean = password.strip()
+    p_clean = clean_password_str(password)
     for item in keys:
         if secure_str_compare(p_clean, item.get("senha", "")):
             return item
@@ -1479,9 +1497,9 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         content_length = int(self.headers.get('Content-Length', 0))
         post_data = self.rfile.read(content_length)
         req = json.loads(post_data.decode('utf-8')) if post_data else {}
-        password = req.get('password', '').strip()
+        password = clean_password_str(req.get('password', ''))
 
-        # Aceita a senha do cofre, a senha mestre ou qualquer senha master com todos os serviços liberados
+        # Aceita a senha do cofre, a senha mestre ou qualquer senha cadastrada no sistema
         valid_passwords = {
             get_cookie_admin_password(),
             get_master_password(),
@@ -1491,8 +1509,9 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             "ATIVADOR#MASTER@2026$STREAM*VIP!"
         }
         for item in load_access_keys():
-            if len(item.get("servicos", [])) >= 4:
-                valid_passwords.add(item.get("senha", ""))
+            item_pwd = item.get("senha", "")
+            if item_pwd:
+                valid_passwords.add(item_pwd)
 
         is_valid = any(secure_str_compare(password, p) for p in valid_passwords if p)
 
@@ -1515,25 +1534,17 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
     def handle_api_login(self):
         ip = self.get_client_ip()
         now = time.time()
-        
-        with LOGIN_LOCK:
-            record = LOGIN_ATTEMPTS.get(ip, {"count": 0, "blocked_until": 0})
-            if record["blocked_until"] > now:
-                wait_sec = int(record["blocked_until"] - now)
-                return self.send_json_response({
-                    "success": False, 
-                    "message": f"Muitas tentativas. IP bloqueado temporariamente por mais {wait_sec} segundos."
-                }, 429)
 
         content_length = int(self.headers.get('Content-Length', 0))
         post_data = self.rfile.read(content_length)
         req = json.loads(post_data.decode('utf-8')) if post_data else {}
-        password = req.get('password', '').strip()
+        password = clean_password_str(req.get('password', ''))
 
         role = find_access_role(password)
 
         with LOGIN_LOCK:
             if role is not None:
+                # 🔓 Senha correta: limpa imediatamente qualquer bloqueio anterior e libera o acesso!
                 LOGIN_ATTEMPTS.pop(ip, None)
                 new_token = secrets.token_hex(32)
                 allowed_services = role.get("servicos", ["netflix", "hbo", "crunchyroll", "sky"])
@@ -1553,32 +1564,40 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     "expires_in": TOKEN_TTL_SECONDS,
                     "message": f"Terminal desbloqueado ({role_name})."
                 })
-            else:
-                record["count"] += 1
-                # Bloqueio progressivo inteligente
-                if record["count"] >= 10:
-                    lock_time = 900 # 15 minutos
-                elif record["count"] >= 8:
-                    lock_time = 300 # 5 minutos
-                elif record["count"] >= 5:
-                    lock_time = 60  # 1 minuto
-                else:
-                    lock_time = 0
 
-                if lock_time > 0:
-                    record["blocked_until"] = now + lock_time
-                    LOGIN_ATTEMPTS[ip] = record
-                    return self.send_json_response({
-                        "success": False,
-                        "message": f"Tentativas excedidas! Terminal bloqueado por {lock_time} segundos por segurança."
-                    }, 429)
-                else:
-                    LOGIN_ATTEMPTS[ip] = record
-                    remaining = 5 - record["count"]
-                    return self.send_json_response({
-                        "success": False,
-                        "message": f"Senha incorreta. Restam {remaining} tentativas antes do bloqueio temporário."
-                    }, 401)
+            # Senha incorreta: aplica controle de tentativas e bloqueio temporário por IP
+            record = LOGIN_ATTEMPTS.get(ip, {"count": 0, "blocked_until": 0})
+            if record["blocked_until"] > now:
+                wait_sec = int(record["blocked_until"] - now)
+                return self.send_json_response({
+                    "success": False, 
+                    "message": f"Muitas tentativas. IP bloqueado temporariamente por mais {wait_sec} segundos."
+                }, 429)
+
+            record["count"] += 1
+            if record["count"] >= 10:
+                lock_time = 900 # 15 minutos
+            elif record["count"] >= 8:
+                lock_time = 300 # 5 minutos
+            elif record["count"] >= 5:
+                lock_time = 60  # 1 minuto
+            else:
+                lock_time = 0
+
+            if lock_time > 0:
+                record["blocked_until"] = now + lock_time
+                LOGIN_ATTEMPTS[ip] = record
+                return self.send_json_response({
+                    "success": False,
+                    "message": f"Tentativas excedidas! Terminal bloqueado por {lock_time} segundos por segurança."
+                }, 429)
+            else:
+                LOGIN_ATTEMPTS[ip] = record
+                remaining = 5 - record["count"]
+                return self.send_json_response({
+                    "success": False,
+                    "message": f"Senha incorreta. Restam {remaining} tentativas antes do bloqueio temporário."
+                }, 401)
 
     def handle_api_logout(self):
         auth_header = self.headers.get('Authorization', '')

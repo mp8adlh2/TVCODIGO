@@ -1,3 +1,26 @@
 {
-  "senhas": []
+  "senhas": [
+    {
+      "senha": "OMEGA#SECURITY@1360$BLINDADO*45!2026",
+      "nome": "Cliente VIP (Acesso Total 4K)",
+      "servicos": [
+        "netflix",
+        "hbo",
+        "crunchyroll",
+        "sky"
+      ],
+      "descricao": "Libera: netflix, hbo, crunchyroll, sky"
+    },
+    {
+      "senha": "VIP#MASTER@1444$4K*76!2026",
+      "nome": "VIP Master 4K",
+      "servicos": [
+        "netflix",
+        "hbo",
+        "crunchyroll",
+        "sky"
+      ],
+      "descricao": "Libera todos os 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+"
+    }
+  ]
 }
