@@ -1159,14 +1159,22 @@ def load_access_keys() -> List[dict]:
 
     return parse_senhas_txt_file()
 
+def secure_str_compare(a: str, b: str) -> bool:
+    """Comparação segura em tempo constante compatível com Python 3.13 e caracteres UTF-8/emojis."""
+    if not isinstance(a, str) or not isinstance(b, str):
+        return False
+    a_bytes = a.strip().encode('utf-8')
+    b_bytes = b.strip().encode('utf-8')
+    return hmac.compare_digest(a_bytes, b_bytes)
+
 def find_access_role(password: str) -> Optional[dict]:
     """Busca a configuração de acesso correspondente à senha informada."""
     keys = load_access_keys()
     p_clean = password.strip()
     for item in keys:
-        if hmac.compare_digest(p_clean, item.get("senha", "").strip()):
+        if secure_str_compare(p_clean, item.get("senha", "")):
             return item
-    if hmac.compare_digest(p_clean, get_master_password().strip()):
+    if secure_str_compare(p_clean, get_master_password()):
         return {
             "senha": get_master_password(),
             "nome": "Master Admin Titanium",
@@ -1530,7 +1538,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             if len(item.get("servicos", [])) >= 4:
                 valid_passwords.add(item.get("senha", ""))
 
-        is_valid = any(hmac.compare_digest(password, p) for p in valid_passwords if p)
+        is_valid = any(secure_str_compare(password, p) for p in valid_passwords if p)
 
         if is_valid:
             now = time.time()
