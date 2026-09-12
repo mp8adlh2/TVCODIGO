@@ -1250,7 +1250,8 @@ def ativar_tv_playwright(
                 "code": tv_code,
                 "status": 200 if ativado_sucesso else 400,
                 "screenshot": screenshot_path,
-                "tempo_segundos": tempo_total
+                "tempo_segundos": tempo_total,
+                "sso_token": jwt_token
             }
 
     except Exception as e:

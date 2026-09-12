@@ -1092,8 +1092,8 @@ def extract_passwords_from_text_files() -> List[dict]:
                     for line in f.read().splitlines():
                         line = line.strip()
                         # Linhas com a senha normalmente têm caracteres como #, @, $, * ou letras maiúsculas/dígitos
-                        if line and not line.startswith(('=', '-', '•', 'LIBERAÇÃO', 'SENHA', '💡', '🔍', '🎬', '🔴', '🟣', '🟠', '🔵', '🔐', '🍪')):
-                            if len(line) >= 6 and ('#' in line or '@' in line or '$' in line or len(line) > 10):
+                        if line and not line.startswith(('=', '-', '•', 'LIBERAÇÃO', 'SENHA', '💡', '🔍', '🎬', '🔴', '🟣', '🟠', '🔵', '🔐', '🍪', 'para', 'No ', 'Ao ', 'http')):
+                            if ' ' not in line and len(line) >= 6 and any(c in line for c in ['#', '@', '$', '*', '!']):
                                 extracted.append({
                                     "senha": line,
                                     "nome": role_label,

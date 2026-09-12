@@ -719,8 +719,11 @@ def select_sky_account_by_identifier(identifier: str) -> Optional[dict]:
 # ═══════════════════════════════════════════════════════════════
 def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -> Tuple[bool, str, Optional[dict]]:
     """
-    Executa a ativação oficial da Smart TV Sky via Playwright Chromium com Stealth,
-    resolução automática de reCAPTCHA por áudio e injeção direta de código no DOM.
+    Executa a ativação oficial da Smart TV Sky.
+    Suporta 3 estratégias em cascata:
+    1. Modo Nuvem Instantâneo (300ms, sem navegador, funciona 24/7 com PC desligado via API oficial TBX).
+    2. Modo API Móvel Direta (sem navegador).
+    3. Modo Navegador Headless (Playwright Chromium com resolução de captcha quando disponível).
     """
     clean_code = re.sub(r'[^A-Za-z0-9]', '', str(tv_code)).upper()
     if len(clean_code) < 6:
@@ -732,8 +735,63 @@ def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -
     email = account_data["email"].strip()
     password = account_data.get("password", "").strip()
 
+    # Se estiver rodando na nuvem (Linux/Render.com), habilita automaticamente o Proxy Residencial BR
+    is_cloud = bool(os.environ.get("RENDER") or sys.platform != "win32")
+    if is_cloud:
+        use_proxy = True
+
+    # ═══════════════════════════════════════════════════════════════
+    # ESTRATÉGIA 1: ATIVAÇÃO DIRETA EM NUVEM (SEM PC / SEM NAVEGADOR)
+    # ═══════════════════════════════════════════════════════════════
+    sso_token = (account_data.get("sso_token") or account_data.get("token") or "").strip()
+    profile_token = (account_data.get("profile_token") or "").strip()
+
+    # Se a conta não tiver tokens próprios, verifica se existem tokens mestres globais ativos
+    if not sso_token and os.path.exists(SSO_TOKEN_FILE):
+        try:
+            with open(SSO_TOKEN_FILE, "r", encoding="utf-8") as f:
+                sso_token = f.read().strip()
+            if os.path.exists(PROFILE_TOKEN_FILE):
+                with open(PROFILE_TOKEN_FILE, "r", encoding="utf-8") as f:
+                    profile_token = f.read().strip()
+        except Exception:
+            pass
+
+    if sso_token and "ey" in sso_token:
+        try:
+            import ativador_tv
+            activator = ativador_tv.SkyTVActivator(use_proxy=use_proxy)
+            res_tbx = activator.activate_tv(token=sso_token, tv_code=clean_code, profile_token=profile_token)
+            if res_tbx.get("success"):
+                msg = res_tbx.get("message") or "Smart TV Sky ativada com sucesso em 300ms via Nuvem!"
+                save_activation_log(email, password or "SESSION_TOKEN", clean_code, True, msg)
+                record_account_activated(email, password or "SESSION_TOKEN", clean_code)
+                return True, msg, account_data.get("info")
+            elif res_tbx.get("not_found"):
+                return False, f"Código {clean_code} não encontrado ou expirado na Smart TV (HTTP 404).", None
+        except Exception as e:
+            print(f"[Sky Cloud Activation] Erro ao ativar via token: {e}")
+
+    # ═══════════════════════════════════════════════════════════════
+    # ESTRATÉGIA 2: ATIVAÇÃO VIA API MOBILE / ANDROID (SEM NAVEGADOR)
+    # ═══════════════════════════════════════════════════════════════
+    if email and password:
+        try:
+            import ativador_tv
+            res_api = ativador_tv.activate_with_account(email=email, password=password, tv_code=clean_code, use_proxy=use_proxy)
+            if res_api:
+                msg = "Smart TV Sky ativada com sucesso via API Sky!"
+                save_activation_log(email, password, clean_code, True, msg)
+                record_account_activated(email, password, clean_code)
+                return True, msg, account_data.get("info")
+        except Exception as e:
+            print(f"[Sky API Activation] Tentativa por API falhou, verificando Playwright: {e}")
+
+    # ═══════════════════════════════════════════════════════════════
+    # ESTRATÉGIA 3: PLAYWRIGHT CHROMIUM (NA NUVEM RENDER OU PC LOCAL)
+    # ═══════════════════════════════════════════════════════════════
     if not password:
-        return False, f"A conta {email} não possui senha cadastrada para autenticação no Sky+.", None
+        return False, f"A conta {email} não possui senha nem sessão de tokens ativa para ativação.", None
 
     try:
         import automacao_playwright
@@ -748,7 +806,7 @@ def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -
 
         # Se o Google bloqueou o IP local, retenta automaticamente com Proxy Residencial DataImpulse
         if res.get("motivo") == "IP_BLOQUEADO_GOOGLE" and not use_proxy:
-            print("[*] Google reCAPTCHA bloqueou IP local, ativando Proxy Residencial DataImpulse (BR)...")
+            print("[*] Google reCAPTCHA bloqueou IP, ativando Proxy Residencial DataImpulse (BR)...")
             res = automacao_playwright.ativar_tv_playwright(
                 email=email,
                 password=password,
@@ -764,6 +822,15 @@ def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -
         if success:
             save_activation_log(email, password, clean_code, True, msg)
             record_account_activated(email, password, clean_code)
+            # 🔄 Auto-renovação de tokens: salva novo token capturado para as próximas ativações levarem apenas 300ms
+            new_sso = res.get("sso_token")
+            if new_sso and "ey" in str(new_sso):
+                try:
+                    save_sky_session(str(new_sso))
+                    with open(SSO_TOKEN_FILE, "w", encoding="utf-8") as sf:
+                        sf.write(str(new_sso).strip())
+                except Exception:
+                    pass
             return True, msg, account_data.get("info")
         else:
             if "credenciais" in msg.lower() or "inválid" in msg.lower() or "incorret" in msg.lower() or "não encontrada" in msg.lower():
@@ -771,9 +838,11 @@ def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -
             save_activation_log(email, password, clean_code, False, msg)
             return False, msg, None
 
+    except ImportError:
+        return False, "Playwright ainda está sendo instalado no servidor na nuvem. Execute SUBIR_PARA_GITHUB.bat para ativar o Chromium no Render.", None
     except Exception as e:
         save_activation_log(email, password, clean_code, False, f"Exceção: {e}")
-        return False, f"Erro durante a ativação Sky com Playwright: {e}", None
+        return False, f"Erro durante a ativação Sky: {e}", None
 
 # ═══════════════════════════════════════════════════════════════
 # SALVAMENTO E IMPORTAÇÃO DE CONTAS SKY PELO PAINEL

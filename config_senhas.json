@@ -1,6 +1,24 @@
 {
   "senhas": [
     {
+      "senha": "MATRIX#SECURITY@5621$4K*63!2026",
+      "nome": "Cliente VIP",
+      "servicos": [
+        "netflix",
+        "sky"
+      ],
+      "descricao": "Libera: netflix, sky"
+    },
+    {
+      "senha": "TITANIUM#VAULT@6470$VIP*43!2026",
+      "nome": "Cliente VIP",
+      "servicos": [
+        "netflix",
+        "hbo"
+      ],
+      "descricao": "Libera: netflix, hbo"
+    },
+    {
       "senha": "VIP#SECURITY@8929$VIP*24!2026",
       "nome": "Cliente VIP",
       "servicos": [
@@ -28,6 +46,56 @@
         "sky"
       ],
       "descricao": "Libera todos os 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+"
+    },
+    {
+      "senha": "NETFLIX#ONLY@9421$RED*VAULT#ULTRA*4K*HDR!2026",
+      "nome": "Senha Oficial Netflix (4K UHD)",
+      "servicos": [
+        "netflix"
+      ],
+      "descricao": "Libera: netflix"
+    },
+    {
+      "senha": "HBOMAX#ONLY@8153$PURPLE*WARNER#STREAM*4K!2026",
+      "nome": "Senha Oficial HBO Max",
+      "servicos": [
+        "hbo"
+      ],
+      "descricao": "Libera: hbo"
+    },
+    {
+      "senha": "SKYPLUS#ONLY@4918$BLUE*FIBRA#SUPER*HD*TV!2026",
+      "nome": "Senha Oficial Sky+ / Sky TV",
+      "servicos": [
+        "sky"
+      ],
+      "descricao": "Libera: sky"
+    },
+    {
+      "senha": "CRUNCHYROLL#ONLY@6274$ORANGE*ANIME#MEGA*FAN!2026",
+      "nome": "Senha Oficial Crunchyroll",
+      "servicos": [
+        "crunchyroll"
+      ],
+      "descricao": "Libera: crunchyroll"
+    },
+    {
+      "senha": "DUO#STREAM@8831$NETFLIX*HBOMAX#PREMIUM*VIP!2026",
+      "nome": "Senha Oficial Duo (Netflix + HBO)",
+      "servicos": [
+        "netflix",
+        "hbo"
+      ],
+      "descricao": "Libera: netflix, hbo"
+    },
+    {
+      "senha": "CINEMA#PASS@7742$FLIX*MAX#HIGH*DEFINITION!2026",
+      "nome": "Senha Oficial Duo (Netflix + HBO)",
+      "servicos": [
+        "netflix",
+        "hbo"
+      ],
+      "descricao": "Libera: netflix, hbo"
     }
   ]
 }

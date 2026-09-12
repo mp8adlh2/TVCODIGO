@@ -920,10 +920,12 @@
         if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.key === 'J' || e.key === 'j' || e.key === 'C' || e.key === 'c')) { e.preventDefault(); return false; }
       }, true);
       document.addEventListener('contextmenu', function (e) {
-        if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
-          e.preventDefault();
-          return false;
+        // Permite clique direito em todo o painel admin para facilitar cópia de senhas e dados
+        if (e.target.closest('#admin-main-container') || e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+          return true;
         }
+        e.preventDefault();
+        return false;
       }, false);
     })();
 
@@ -1672,10 +1674,10 @@
             <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap;">
               <span style="font-size: 13.5px; font-weight: 800; color: #ffd700;">👤 ${escapeHtml(role)} ${desc ? `<span style="font-size: 11px; color: var(--text-dim); font-weight: 400;">(${escapeHtml(desc)})</span>` : ''}</span>
               <div style="display: flex; gap: 6px;">
-                <button type="button" class="btn-icon" onclick="copyPasswordWhatsAppByIndex(${index})" style="font-size: 10px; padding: 3px 9px; color: #25D366; border-color: rgba(37,211,102,0.4); background: rgba(37,211,102,0.08);" title="Copiar texto formatado para enviar no WhatsApp">
+                <button type="button" class="btn-icon" id="btn-wa-${index}" onclick="copyPasswordWhatsAppByIndex(${index}, this)" style="font-size: 10px; padding: 3px 9px; color: #25D366; border-color: rgba(37,211,102,0.4); background: rgba(37,211,102,0.08);" title="Copiar texto formatado para enviar no WhatsApp">
                   📲 WhatsApp
                 </button>
-                <button type="button" class="btn-icon" onclick="copyPasswordByIndex(${index})" style="font-size: 10px; padding: 3px 8px; color: #00ff66; border-color: rgba(0,255,102,0.3);">
+                <button type="button" class="btn-icon" id="btn-copy-${index}" onclick="copyPasswordByIndex(${index}, this)" style="font-size: 10px; padding: 3px 8px; color: #00ff66; border-color: rgba(0,255,102,0.3);">
                   📋 Copiar Senha
                 </button>
                 <button type="button" class="btn-icon" id="btn-del-pwd-${index}" onclick="deletePasswordByIndex(${index})" style="font-size: 10px; padding: 3px 8px; color: #ff4d5a; border-color: rgba(255,77,90,0.3);">
@@ -1684,7 +1686,10 @@
               </div>
             </div>
             <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; background: rgba(0,0,0,0.4); border-radius: 8px; padding: 8px 12px; margin-top: 2px; flex-wrap: wrap;">
-              <div style="font-family: var(--font-mono); font-size: 12.5px; font-weight: 800; color: #00e5ff; word-break: break-all;">🔑 ${escapeHtml(pwd)}</div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 240px;">
+                <span style="font-size: 14px;">🔑</span>
+                <input type="text" readonly value="${escapeHtml(pwd)}" onclick="this.select(); copyPasswordDirect(this.value, this);" title="Clique para selecionar e copiar automaticamente" style="background: rgba(0,0,0,0.6); border: 1px solid rgba(0, 229, 255, 0.4); border-radius: 8px; padding: 6px 10px; color: #00e5ff; font-family: var(--font-mono); font-size: 12.5px; font-weight: 800; width: 100%; cursor: pointer;" />
+              </div>
               <div style="display: flex; gap: 4px; flex-wrap: wrap;">${badgeNf} ${badgeHbo} ${badgeCr} ${badgeSky}</div>
             </div>
           </div>
@@ -1702,19 +1707,85 @@
       } catch (e) {}
     }
 
-    async function copyPasswordByIndex(index) {
-      const item = currentAdminPasswordsList[index];
-      if (!item) return;
-      const pwd = item.senha || item.password || '';
-      try {
-        await navigator.clipboard.writeText(pwd);
-        alert(`🔑 Senha copiada com sucesso:\n\n${pwd}`);
-      } catch (e) {
-        prompt('Copie a senha:', pwd);
+    function showToast(msg, isSuccess = true) {
+      let toast = document.getElementById('admin-toast');
+      if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'admin-toast';
+        toast.style.cssText = 'position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 99999; padding: 12px 24px; border-radius: 12px; font-weight: 800; font-size: 13px; font-family: var(--font-sans); box-shadow: 0 10px 30px rgba(0,0,0,0.8); transition: all 0.3s ease; pointer-events: none; opacity: 0;';
+        document.body.appendChild(toast);
+      }
+      toast.style.background = isSuccess ? 'rgba(15, 23, 42, 0.95)' : 'rgba(255, 51, 68, 0.95)';
+      toast.style.border = isSuccess ? '1.5px solid #00ff66' : '1.5px solid #ff3344';
+      toast.style.color = isSuccess ? '#00ff66' : '#fff';
+      toast.style.boxShadow = isSuccess ? '0 0 25px rgba(0, 255, 102, 0.4)' : '0 0 25px rgba(255, 51, 68, 0.4)';
+      toast.innerText = msg;
+      toast.style.opacity = '1';
+      toast.style.transform = 'translateX(-50%) translateY(-5px)';
+      clearTimeout(toast._timer);
+      toast._timer = setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateX(-50%) translateY(0)';
+      }, 2800);
+    }
+
+    async function copyToClipboardRobust(text) {
+      let ok = false;
+      if (navigator.clipboard && window.isSecureContext) {
+        try {
+          await navigator.clipboard.writeText(text);
+          ok = true;
+        } catch (e) {}
+      }
+      if (!ok) {
+        try {
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.position = 'fixed';
+          ta.style.left = '-9999px';
+          ta.style.top = '-9999px';
+          ta.setAttribute('readonly', '');
+          document.body.appendChild(ta);
+          ta.focus();
+          ta.select();
+          ok = document.execCommand('copy');
+          document.body.removeChild(ta);
+        } catch (e) {}
+      }
+      return ok;
+    }
+
+    async function copyPasswordDirect(pwd, inputEl) {
+      if (!pwd) return;
+      await copyToClipboardRobust(pwd);
+      showToast(`🔑 Senha copiada: ${pwd}`);
+      if (inputEl) {
+        const origBorder = inputEl.style.borderColor;
+        inputEl.style.borderColor = '#00ff66';
+        setTimeout(() => { inputEl.style.borderColor = origBorder; }, 1500);
       }
     }
 
-    async function copyPasswordWhatsAppByIndex(index) {
+    async function copyPasswordByIndex(index, btnEl) {
+      const item = currentAdminPasswordsList[index];
+      if (!item) return;
+      const pwd = item.senha || item.password || '';
+      const ok = await copyToClipboardRobust(pwd);
+      if (btnEl) {
+        const origText = btnEl.innerText;
+        btnEl.innerText = '✅ Copiado!';
+        btnEl.style.borderColor = '#00ff66';
+        btnEl.style.color = '#00ff66';
+        setTimeout(() => {
+          btnEl.innerText = origText;
+          btnEl.style.borderColor = 'rgba(0,255,102,0.3)';
+          btnEl.style.color = '#00ff66';
+        }, 2200);
+      }
+      showToast(`🔑 Senha "${pwd}" copiada com sucesso!`);
+    }
+
+    async function copyPasswordWhatsAppByIndex(index, btnEl) {
       const item = currentAdminPasswordsList[index];
       if (!item) return;
       const pwd = item.senha || item.password || '';
@@ -1732,21 +1803,25 @@
       const siteUrl = window.location.origin ? `${window.location.origin}/index.html` : 'Acesse o site do Ativador';
       const msg = `⚡ *SEU ACESSO AO ATIVADOR DE SMART TV ESTÁ LIBERADO!* ⚡\n\n👤 *Cliente/Perfil:* ${role}\n🔑 *Sua Senha de Acesso:* ${pwd}\n📺 *Serviços Liberados:* ${streamingsStr}\n🔗 *Acessar Sistema:* ${siteUrl}\n\n_Basta digitar o código que aparece na sua Smart TV no site para ativar instantaneamente!_`;
 
-      try {
-        await navigator.clipboard.writeText(msg);
-        alert(`🎉 Mensagem para WhatsApp copiada com sucesso!\n\nAgora é só colar no chat do cliente:\n\n${msg}`);
-      } catch (e) {
-        prompt('Copie o texto para o WhatsApp:', msg);
+      await copyToClipboardRobust(msg);
+      if (btnEl) {
+        const origText = btnEl.innerText;
+        btnEl.innerText = '✅ Mensagem Copiada!';
+        btnEl.style.borderColor = '#25D366';
+        btnEl.style.color = '#25D366';
+        setTimeout(() => {
+          btnEl.innerText = origText;
+          btnEl.style.borderColor = 'rgba(37,211,102,0.4)';
+          btnEl.style.color = '#25D366';
+        }, 2200);
       }
+      showToast('🎉 Mensagem para WhatsApp copiada! Basta colar no chat.');
     }
 
     async function copyPassword(pwd) {
-      try {
-        await navigator.clipboard.writeText(pwd);
-        alert(`🔑 Senha copiada com sucesso:\n\n${pwd}`);
-      } catch (e) {
-        prompt('Copie a senha:', pwd);
-      }
+      if (!pwd) return;
+      await copyToClipboardRobust(pwd);
+      showToast(`🔑 Senha copiada: ${pwd}`);
     }
 
     async function savePassword() {
