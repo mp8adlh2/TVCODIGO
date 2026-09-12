@@ -1,13 +1,15 @@
 {
   "senhas": [
     {
-      "senha": "ULTRA#ACCESS@8905$HDR*75!2026",
-      "nome": "MASTERON (Netflix + HBO)",
+      "senha": "ULTRA#PASS@6106$HDR*99!2026",
+      "nome": "Cliente VIP",
       "servicos": [
         "netflix",
-        "hbo"
+        "hbo",
+        "crunchyroll",
+        "sky"
       ],
-      "descricao": "Libera apenas Netflix e HBO Max (Crunchyroll e Sky+ bloqueadas 🔒)"
+      "descricao": "Libera: netflix, hbo, crunchyroll, sky"
     },
     {
       "senha": "SHIELD#TOKEN@7971$PREMIUM*66!2026",

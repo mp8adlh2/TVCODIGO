@@ -1448,15 +1448,15 @@
             const badgeCr = (allowed.includes('crunchyroll') || allowed.includes('cr')) ? '<span style="background:rgba(244,117,33,0.2); color:#f47521; border:1px solid rgba(244,117,33,0.35); border-radius:6px; padding:1px 6px; font-size:10px; font-weight:800;">🟠 Crunchyroll</span>' : '';
             const badgeSky = allowed.includes('sky') ? '<span style="background:rgba(0,160,227,0.2); color:#00A0E3; border:1px solid rgba(0,160,227,0.35); border-radius:6px; padding:1px 6px; font-size:10px; font-weight:800;">🔵 Sky+</span>' : '';
 
-            const safePwd = pwd.replace(/"/g, '&quot;');
+            const encPwd = encodeURIComponent(pwd);
 
             return `
               <div class="pwd-item-card">
                 <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px;">
                   <span style="font-size: 13px; font-weight: 800; color: #ffd700;">👤 ${role} ${desc ? `<span style="font-size: 10.5px; color: var(--text-dim); font-weight: 400;">(${desc})</span>` : ''}</span>
                   <div style="display: flex; gap: 6px;">
-                    <button type="button" class="btn-icon" onclick="copyPassword('${safePwd}')" style="font-size: 10px; padding: 3px 8px; color: #00ff66; border-color: rgba(0,255,102,0.3);">📋 Copiar</button>
-                    <button type="button" class="btn-icon" onclick="deletePassword('${safePwd}')" style="font-size: 10px; padding: 3px 8px; color: #ff4d5a; border-color: rgba(255,77,90,0.3);">🗑️ Excluir</button>
+                    <button type="button" class="btn-icon" onclick="copyPassword(decodeURIComponent('${encPwd}'))" style="font-size: 10px; padding: 3px 8px; color: #00ff66; border-color: rgba(0,255,102,0.3);">📋 Copiar</button>
+                    <button type="button" class="btn-icon" onclick="deletePassword(decodeURIComponent('${encPwd}'))" style="font-size: 10px; padding: 3px 8px; color: #ff4d5a; border-color: rgba(255,77,90,0.3);">🗑️ Excluir</button>
                   </div>
                 </div>
                 <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; background: rgba(0,0,0,0.4); border-radius: 8px; padding: 6px 10px; margin-top: 2px;">

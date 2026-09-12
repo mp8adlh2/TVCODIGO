@@ -1111,12 +1111,14 @@ def load_active_sessions():
                 now = time.time()
                 clean = {}
                 for t, val in data.items():
-                    if isinstance(val, (int, float)):
-                        if val > now:
-                            clean[t] = {"exp": float(val), "services": ["netflix", "hbo", "crunchyroll", "sky"], "role_name": "Master Total"}
-                    elif isinstance(val, dict):
-                        if val.get("exp", 0) > now:
-                            clean[t] = val
+                    if isinstance(val, dict):
+                        pwd = val.get("password", "").strip()
+                        if pwd and val.get("exp", 0) > now:
+                            role = find_access_role(pwd)
+                            if role:
+                                val["services"] = role.get("servicos", val.get("services"))
+                                val["role_name"] = role.get("nome", val.get("role_name"))
+                                clean[t] = val
                 ACTIVE_SESSIONS = clean
         except Exception:
             pass
@@ -1334,6 +1336,24 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             if token in ACTIVE_SESSIONS:
                 s_data = ACTIVE_SESSIONS[token]
                 if s_data.get("exp", 0) > now:
+                    # Verifica dinamicamente se a senha utilizada ainda existe e é válida
+                    used_pwd = s_data.get("password", "").strip()
+                    if not used_pwd:
+                        # Sessões sem senha associada são imediatamente invalidadas por segurança
+                        ACTIVE_SESSIONS.pop(token, None)
+                        save_active_sessions()
+                        return None
+
+                    role = find_access_role(used_pwd)
+                    if not role:
+                        # Senha excluída: desconecta e bloqueia imediatamente no mesmo instante
+                        ACTIVE_SESSIONS.pop(token, None)
+                        save_active_sessions()
+                        return None
+
+                    # Atualiza dinamicamente as permissões caso tenham sido editadas no painel
+                    s_data["services"] = role.get("servicos", s_data.get("services"))
+                    s_data["role_name"] = role.get("nome", s_data.get("role_name"))
                     return s_data
                 else:
                     ACTIVE_SESSIONS.pop(token, None)
@@ -1453,7 +1473,8 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 ACTIVE_SESSIONS[new_token] = {
                     "exp": now + TOKEN_TTL_SECONDS,
                     "services": allowed_services,
-                    "role_name": role_name
+                    "role_name": role_name,
+                    "password": password
                 }
                 save_active_sessions()
                 return self.send_json_response({
@@ -2864,7 +2885,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         except Exception:
             return self.send_json_response({"success": False, "message": "JSON inválido."}, 400)
 
-        senha = req.get("senha", "").strip()
+        senha = (req.get("senha", "") or req.get("password", "")).strip()
         if not senha:
             return self.send_json_response({"success": False, "message": "Senha não informada."}, 400)
 
@@ -2878,9 +2899,17 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             with open(CONFIG_SENHAS_FILE, "w", encoding="utf-8") as f:
                 json.dump({"senhas": new_keys}, f, indent=2, ensure_ascii=False)
             sync_passwords_text_file(new_keys)
+
+            # Invalida e desconecta imediatamente qualquer usuário ou celular que estava usando esta senha
+            with LOGIN_LOCK:
+                to_purge = [t for t, s in ACTIVE_SESSIONS.items() if s.get("password", "").strip() == senha or not find_access_role(s.get("password", "").strip())]
+                for t in to_purge:
+                    ACTIVE_SESSIONS.pop(t, None)
+                save_active_sessions()
+
             return self.send_json_response({
                 "success": True,
-                "message": "Senha removida com sucesso.",
+                "message": "Senha removida com sucesso. Todas as sessões ativas com esta senha foram desconectadas imediatamente.",
                 "passwords": new_keys
             })
         except Exception as e:
