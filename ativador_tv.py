@@ -1317,6 +1317,16 @@ class SkyTVActivator:
         ]
 
         sessions = [("Proxy" if self.use_proxy else "Direto", self.session)]
+        if self.use_proxy:
+            # Fallback direto caso o proxy residencial tenha instabilidade ou timeout
+            try:
+                direct_session = cloudscraper.create_scraper(
+                    browser={"browser": "chrome", "platform": "android", "desktop": False},
+                    delay=1,
+                )
+                sessions.append(("Direto (Fallback)", direct_session))
+            except Exception:
+                pass
 
         last_error = ""
         for sess_name, sess in sessions:
@@ -1324,7 +1334,7 @@ class SkyTVActivator:
                 for var_name, extra in token_variants:
                     hdrs = {**base_headers, **extra}
                     try:
-                        resp = sess.post(ep, headers=hdrs, json=payload, timeout=20)
+                        resp = sess.post(ep, headers=hdrs, json=payload, timeout=12)
                     except Exception as e:
                         last_error = f"Erro de rede ({sess_name}): {e}"
                         continue
