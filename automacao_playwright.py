@@ -81,6 +81,36 @@ def verificar_playwright_instalado() -> Tuple[bool, str]:
     except Exception as e:
         return False, str(e)
 
+def garantir_navegador_instalado() -> bool:
+    """Garante que o binário do Chromium esteja baixado, instalando sob demanda caso falte."""
+    try:
+        from playwright.sync_api import sync_playwright
+        with sync_playwright() as p:
+            try:
+                exec_path = p.chromium.executable_path
+                if exec_path and os.path.exists(exec_path):
+                    return True
+            except Exception:
+                pass
+    except Exception:
+        pass
+
+    print("[*] [Playwright] Binário do Chromium não encontrado no servidor. Baixando automaticamente agora...")
+    try:
+        import subprocess
+        res = subprocess.run(
+            [sys.executable, "-m", "playwright", "install", "chromium"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            timeout=240,
+            text=True
+        )
+        print(f"[*] [Playwright] Download do Chromium finalizado com código {res.returncode}.")
+        return res.returncode == 0
+    except Exception as e:
+        print(f"[!] [Playwright] Erro ao baixar Chromium automaticamente: {e}")
+        return False
+
 
 # =============================================================================
 # CARREGAMENTO AUTOMÁTICO DE CONTAS DA PASTA HITS & ROTAÇÃO
@@ -837,17 +867,36 @@ def ativar_tv_playwright(
             if proxy_cfg:
                 print(f"[*] [Proxy] Conectando via Proxy DataImpulse ({PROXY_HOST}:{PROXY_PORT})...")
 
-            context = p.chromium.launch_persistent_context(
-                user_data_dir=conta_profile_dir,
-                headless=headless,
-                ignore_default_args=["--enable-automation"],
-                args=args,
-                proxy=proxy_cfg,
-                viewport={"width": 1280, "height": 850},
-                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-                locale="pt-BR",
-                timezone_id="America/Sao_Paulo"
-            )
+            try:
+                context = p.chromium.launch_persistent_context(
+                    user_data_dir=conta_profile_dir,
+                    headless=headless,
+                    ignore_default_args=["--enable-automation"],
+                    args=args,
+                    proxy=proxy_cfg,
+                    viewport={"width": 1280, "height": 850},
+                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                    locale="pt-BR",
+                    timezone_id="America/Sao_Paulo"
+                )
+            except Exception as e_launch:
+                err_msg = str(e_launch)
+                if "Executable doesn't exist" in err_msg or "playwright install" in err_msg or "executablePath" in err_msg:
+                    print("[!] [Playwright] Executável do Chromium ausente. Executando download automático no servidor...")
+                    garantir_navegador_instalado()
+                    context = p.chromium.launch_persistent_context(
+                        user_data_dir=conta_profile_dir,
+                        headless=headless,
+                        ignore_default_args=["--enable-automation"],
+                        args=args,
+                        proxy=proxy_cfg,
+                        viewport={"width": 1280, "height": 850},
+                        user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                        locale="pt-BR",
+                        timezone_id="America/Sao_Paulo"
+                    )
+                else:
+                    raise e_launch
 
             # Reutiliza cookies e localStorage da conta específica se existir e tiver sessão válida
             s_data = None

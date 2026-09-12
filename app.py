@@ -1012,10 +1012,17 @@ def activate_sky_tv(tv_code: str, account_data: dict) -> Tuple[bool, str, Option
     return sky_service.activate_sky_tv(tv_code, account_data)
 
 def start_background_sky_validator():
-    """Validador em background para manter contas Sky sempre aquecidas."""
+    """Validador em background para manter contas Sky sempre aquecidas e Chromium pronto na nuvem."""
     def _worker():
         global CURRENT_SKY_READY
-        time.sleep(3)
+        time.sleep(2)
+        # Garante que o navegador Chromium esteja baixado no servidor silenciosamente
+        try:
+            import automacao_playwright
+            automacao_playwright.garantir_navegador_instalado()
+        except Exception:
+            pass
+
         while True:
             try:
                 acc = find_sky_valid_account()
