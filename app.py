@@ -1476,6 +1476,9 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         # 2. Se o usuário autenticou no terminal com a senha mestre (todos os 4 serviços), também concede acesso admin
         session = self.get_session_info()
         if session and len(session.get("services", [])) >= 4:
+            if token:
+                with LOGIN_LOCK:
+                    ACTIVE_ADMIN_SESSIONS[token] = now + 43200
             return True
 
         return False
@@ -3010,10 +3013,14 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             sync_passwords_text_file(keys)
 
             # Invalida e desconecta imediatamente qualquer usuário ou celular que estava usando esta senha
+            # MAS preserva a sessão atual do administrador para que o painel nunca seja desconectado
+            admin_tok = self.get_auth_token_str()
             with LOGIN_LOCK:
+                if admin_tok:
+                    ACTIVE_ADMIN_SESSIONS[admin_tok] = time.time() + 43200
                 to_purge = [
                     t for t, s in ACTIVE_SESSIONS.items()
-                    if secure_str_compare(str(s.get("password", "")).strip(), deleted_pwd)
+                    if t != admin_tok and secure_str_compare(str(s.get("password", "")).strip(), deleted_pwd)
                 ]
                 for t in to_purge:
                     ACTIVE_SESSIONS.pop(t, None)

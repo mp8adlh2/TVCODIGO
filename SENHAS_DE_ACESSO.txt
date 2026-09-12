@@ -6,15 +6,7 @@ Todas as senhas abaixo possuem proteção avançada contra força bruta e contro
 a liberação dos serviços na tela do ativador em tempo real.
 
 ================================================================================
- 1. 🔑 CLIENTE VIP (ACESSO TOTAL 4K)
-================================================================================
- Libera: 🔴 Netflix | 🟣 HBO Max | 🟠 Crunchyroll | 🔵 Sky+
- Detalhes: Libera: netflix, hbo, crunchyroll, sky
- Senha:
- OMEGA#SECURITY@1360$BLINDADO*45!2026
-
-================================================================================
- 2. 🔑 VIP MASTER 4K
+ 1. 🔑 VIP MASTER 4K
 ================================================================================
  Libera: 🔴 Netflix | 🟣 HBO Max | 🟠 Crunchyroll | 🔵 Sky+
  Detalhes: Libera todos os 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+
@@ -24,4 +16,3 @@ a liberação dos serviços na tela do ativador em tempo real.
 ================================================================================
  💡 DICA: Você pode criar ou excluir senhas pelo Painel Admin com 1 clique!
 ================================================================================
-

@@ -1456,48 +1456,51 @@
         .replace(/'/g, '&#039;');
     }
 
-    async function loadPasswordsList() {
+    function renderPasswordsListUI(list) {
       const container = document.getElementById('pwd-list-container');
       if (!container) return;
+      currentAdminPasswordsList = Array.isArray(list) ? list : (list && typeof list === 'object' ? Object.keys(list).map(k => ({ senha: k, ...list[k] })) : []);
+
+      if (!currentAdminPasswordsList.length) {
+        container.innerHTML = '<div style="text-align: center; color: var(--text-dim); padding: 16px;">Nenhuma senha cadastrada no momento.</div>';
+        return;
+      }
+
+      container.innerHTML = currentAdminPasswordsList.map((item, index) => {
+        const pwd = item.senha || item.password || '';
+        const role = item.nome || item.role_name || 'Cliente VIP';
+        const allowed = item.servicos || item.allowed_services || ['netflix', 'hbo', 'crunchyroll', 'sky'];
+        const desc = item.descricao || item.description || '';
+
+        const badgeNf = allowed.includes('netflix') ? '<span style="background:rgba(229,9,20,0.2); color:#ff3344; border:1px solid rgba(229,9,20,0.35); border-radius:6px; padding:1px 6px; font-size:10px; font-weight:800;">🔴 Netflix</span>' : '';
+        const badgeHbo = (allowed.includes('hbo') || allowed.includes('hbomax')) ? '<span style="background:rgba(168,85,247,0.2); color:#c084fc; border:1px solid rgba(168,85,247,0.35); border-radius:6px; padding:1px 6px; font-size:10px; font-weight:800;">🟣 HBO Max</span>' : '';
+        const badgeCr = (allowed.includes('crunchyroll') || allowed.includes('cr')) ? '<span style="background:rgba(244,117,33,0.2); color:#f47521; border:1px solid rgba(244,117,33,0.35); border-radius:6px; padding:1px 6px; font-size:10px; font-weight:800;">🟠 Crunchyroll</span>' : '';
+        const badgeSky = allowed.includes('sky') ? '<span style="background:rgba(0,160,227,0.2); color:#00A0E3; border:1px solid rgba(0,160,227,0.35); border-radius:6px; padding:1px 6px; font-size:10px; font-weight:800;">🔵 Sky+</span>' : '';
+
+        return `
+          <div class="pwd-item-card" id="pwd-card-${index}">
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px;">
+              <span style="font-size: 13px; font-weight: 800; color: #ffd700;">👤 ${escapeHtml(role)} ${desc ? `<span style="font-size: 10.5px; color: var(--text-dim); font-weight: 400;">(${escapeHtml(desc)})</span>` : ''}</span>
+              <div style="display: flex; gap: 6px;">
+                <button type="button" class="btn-icon" onclick="copyPasswordByIndex(${index})" style="font-size: 10px; padding: 3px 8px; color: #00ff66; border-color: rgba(0,255,102,0.3);">📋 Copiar</button>
+                <button type="button" class="btn-icon" id="btn-del-pwd-${index}" onclick="deletePasswordByIndex(${index})" style="font-size: 10px; padding: 3px 8px; color: #ff4d5a; border-color: rgba(255,77,90,0.3);">🗑️ Excluir</button>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; background: rgba(0,0,0,0.4); border-radius: 8px; padding: 6px 10px; margin-top: 2px;">
+              <div style="font-family: var(--font-mono); font-size: 11.5px; font-weight: 800; color: #00e5ff; word-break: break-all;">🔑 ${escapeHtml(pwd)}</div>
+              <div style="display: flex; gap: 4px; flex-wrap: wrap;">${badgeNf} ${badgeHbo} ${badgeCr} ${badgeSky}</div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    async function loadPasswordsList() {
       try {
         const res = await fetch(`${API_BASE}/api/admin/passwords?_t=${Date.now()}`, { headers: getAdminHeaders() });
         if (res.ok) {
           const data = await res.json();
-          const list = Array.isArray(data.passwords) ? data.passwords : (Array.isArray(data) ? data : Object.keys(data.passwords || {}).map(k => ({ senha: k, ...data.passwords[k] })));
-          currentAdminPasswordsList = list;
-
-          if (!list.length) {
-            container.innerHTML = '<div style="text-align: center; color: var(--text-dim); padding: 16px;">Nenhuma senha cadastrada no momento.</div>';
-            return;
-          }
-
-          container.innerHTML = list.map((item, index) => {
-            const pwd = item.senha || item.password || '';
-            const role = item.nome || item.role_name || 'Cliente VIP';
-            const allowed = item.servicos || item.allowed_services || ['netflix', 'hbo', 'crunchyroll', 'sky'];
-            const desc = item.descricao || item.description || '';
-
-            const badgeNf = allowed.includes('netflix') ? '<span style="background:rgba(229,9,20,0.2); color:#ff3344; border:1px solid rgba(229,9,20,0.35); border-radius:6px; padding:1px 6px; font-size:10px; font-weight:800;">🔴 Netflix</span>' : '';
-            const badgeHbo = (allowed.includes('hbo') || allowed.includes('hbomax')) ? '<span style="background:rgba(168,85,247,0.2); color:#c084fc; border:1px solid rgba(168,85,247,0.35); border-radius:6px; padding:1px 6px; font-size:10px; font-weight:800;">🟣 HBO Max</span>' : '';
-            const badgeCr = (allowed.includes('crunchyroll') || allowed.includes('cr')) ? '<span style="background:rgba(244,117,33,0.2); color:#f47521; border:1px solid rgba(244,117,33,0.35); border-radius:6px; padding:1px 6px; font-size:10px; font-weight:800;">🟠 Crunchyroll</span>' : '';
-            const badgeSky = allowed.includes('sky') ? '<span style="background:rgba(0,160,227,0.2); color:#00A0E3; border:1px solid rgba(0,160,227,0.35); border-radius:6px; padding:1px 6px; font-size:10px; font-weight:800;">🔵 Sky+</span>' : '';
-
-            return `
-              <div class="pwd-item-card" id="pwd-card-${index}">
-                <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px;">
-                  <span style="font-size: 13px; font-weight: 800; color: #ffd700;">👤 ${escapeHtml(role)} ${desc ? `<span style="font-size: 10.5px; color: var(--text-dim); font-weight: 400;">(${escapeHtml(desc)})</span>` : ''}</span>
-                  <div style="display: flex; gap: 6px;">
-                    <button type="button" class="btn-icon" onclick="copyPasswordByIndex(${index})" style="font-size: 10px; padding: 3px 8px; color: #00ff66; border-color: rgba(0,255,102,0.3);">📋 Copiar</button>
-                    <button type="button" class="btn-icon" id="btn-del-pwd-${index}" onclick="deletePasswordByIndex(${index})" style="font-size: 10px; padding: 3px 8px; color: #ff4d5a; border-color: rgba(255,77,90,0.3);">🗑️ Excluir</button>
-                  </div>
-                </div>
-                <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; background: rgba(0,0,0,0.4); border-radius: 8px; padding: 6px 10px; margin-top: 2px;">
-                  <div style="font-family: var(--font-mono); font-size: 11.5px; font-weight: 800; color: #00e5ff; word-break: break-all;">🔑 ${escapeHtml(pwd)}</div>
-                  <div style="display: flex; gap: 4px; flex-wrap: wrap;">${badgeNf} ${badgeHbo} ${badgeCr} ${badgeSky}</div>
-                </div>
-              </div>
-            `;
-          }).join('');
+          renderPasswordsListUI(data.passwords);
         }
       } catch (e) {}
     }
@@ -1624,9 +1627,10 @@
         const data = await res.json();
         if (res.ok && data.success) {
           if (Array.isArray(data.passwords)) {
-            currentAdminPasswordsList = data.passwords;
+            renderPasswordsListUI(data.passwords);
+          } else {
+            loadPasswordsList();
           }
-          loadPasswordsList();
         } else {
           alert('Não foi possível excluir: ' + (data.message || 'Erro no servidor'));
           if (btn) {
@@ -1652,8 +1656,12 @@
           body: JSON.stringify({ senha: pwd, password: pwd })
         });
         const data = await res.json();
-        if (data.success) {
-          loadPasswordsList();
+        if (res.ok && data.success) {
+          if (Array.isArray(data.passwords)) {
+            renderPasswordsListUI(data.passwords);
+          } else {
+            loadPasswordsList();
+          }
         } else {
           alert(data.message || 'Erro ao excluir.');
         }
