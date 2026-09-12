@@ -1,7 +1,7 @@
 {
   "senhas": [
     {
-      "senha": "ULTRA#PASS@6106$HDR*99!2026",
+      "senha": "VIP#MASTER@1444$4K*76!2026",
       "nome": "Cliente VIP",
       "servicos": [
         "netflix",
@@ -10,15 +10,6 @@
         "sky"
       ],
       "descricao": "Libera: netflix, hbo, crunchyroll, sky"
-    },
-    {
-      "senha": "SHIELD#TOKEN@7971$PREMIUM*66!2026",
-      "nome": "Cliente VIP (Netflix + HBO)",
-      "servicos": [
-        "netflix",
-        "hbo"
-      ],
-      "descricao": "Libera apenas Netflix e HBO Max (Crunchyroll e Sky+ bloqueadas 🔒)"
     }
   ]
 }

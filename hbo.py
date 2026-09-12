@@ -243,8 +243,11 @@ def get_all_available_cookies():
 
     for filename in files:
         try:
-            with open(filename, 'r', encoding='utf-8', errors='ignore') as f:
-                content = f.read()
+            import gerenciador_seguranca
+            with open(filename, 'rb') as f:
+                raw_b = f.read()
+            plain_b = gerenciador_seguranca.decrypt_bytes(raw_b, gerenciador_seguranca.get_master_key())
+            content = plain_b.decode('utf-8', errors='ignore') if plain_b is not None else raw_b.decode('utf-8', errors='ignore')
             st_token = extract_st_token(content)
             if st_token:
                 decoded = decode_jwt(st_token)

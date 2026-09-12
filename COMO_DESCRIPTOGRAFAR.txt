@@ -1,0 +1,70 @@
+================================================================================
+          🔐 MANUAL DE CRIPTOGRAFIA E SEGURANCA MILITAR (2026)
+================================================================================
+
+Este sistema foi blindado com criptografia avancada (SHA-256 + Cifra de 256 bits).
+Todos os cookies, contas, combos e configuracoes estao protegidos contra vazamentos,
+ataques de forca bruta, inspecao de codigo (F12 / DevTools) e acessos indevidos.
+
+================================================================================
+ 📌 COMO DESCRIPTOGRAFAR OS ARQUIVOS (EDICAO MANUAL)
+================================================================================
+
+Se voce precisar abrir os cookies ou contas para editar manualmente no Bloco de Notas:
+
+OPCAO 1 (Mais Rapida - 1 Clique):
+• De 2 cliques no arquivo:
+  👉 "DESCRIPTOGRAFAR_ARQUIVOS.bat"
+• Pronto! Todos os arquivos serao restaurados para texto plano imediatamente.
+
+OPCAO 2 (Pelo Terminal / Prompt de Comando):
+• Abra o terminal na pasta e execute:
+  python gerenciador_seguranca.py decrypt
+
+================================================================================
+ 🔒 COMO BLINDAR / CRIPTOGRAFAR NOVAMENTE
+================================================================================
+
+Apos fazer suas alteracoes manuais ou antes de enviar para o GitHub / Render:
+
+OPCAO 1 (1 Clique):
+• De 2 cliques no arquivo:
+  👉 "CRIPTOGRAFAR_ARQUIVOS.bat"
+• Todos os cookies, combos e bundles serao convertidos em formato militar blindado!
+
+OPCAO 2 (Pelo Terminal):
+• Execute:
+  python gerenciador_seguranca.py encrypt
+
+================================================================================
+ ⚡ O SITE FUNCIONA COM OS ARQUIVOS CRIPTOGRAFADOS?
+================================================================================
+
+SIM! O servidor 'app.py' possui um motor de desencriptacao em memoria (RAM).
+Mesmo que os arquivos no disco estejam 100% criptografados:
+• O ativador de TV continua ativando a Netflix, HBO Max, Crunchyroll e Sky+ normalmente.
+• O Painel Admin continua gerenciando, criando e excluindo senhas e contas em tempo real.
+• Ninguem que baixar seu repositorio no GitHub conseguira ler seus cookies ou combos!
+
+================================================================================
+ 🔑 CHAVE MESTRE DE CRIPTOGRAFIA
+================================================================================
+
+A criptografia e atrelada diretamente a sua Senha Mestre localizada no arquivo:
+👉 "SENHA_MESTRE.txt"
+
+Se voce mudar a senha mestre, primeiro execute "DESCRIPTOGRAFAR_ARQUIVOS.bat",
+altere a senha no arquivo e depois execute "CRIPTOGRAFAR_ARQUIVOS.bat" para re-criptografar
+com a nova chave.
+
+================================================================================
+ 🛡️ RESUMO DAS PROTECOES ATIVAS NO SITE:
+================================================================================
+ 1. Criptografia AES/SHA-256 dos cookies, tokens e contas.
+ 2. Bloqueio contra atalhos de inspecao de codigo (F12, Ctrl+Shift+I, Ctrl+U).
+ 3. Bloqueio contra clique com botao direito no painel.
+ 4. Protecao contra Clickjacking / Iframe hijacking (Anti-Framing).
+ 5. Protecao contra ataques de forca bruta com bloqueio progressivo de IP.
+ 6. Revogacao instantanea de sessoes em tempo real quando uma senha e deletada.
+ 7. Comparacao de senhas com algoritmo anti-timing attack (hmac.compare_digest).
+================================================================================

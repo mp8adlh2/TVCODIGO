@@ -217,21 +217,25 @@ def load_combos(target_dir: str = COMBO_DIR) -> List[Tuple[str, str, str]]:
             continue
         filepath = os.path.join(target_dir, filename)
         try:
-            with open(filepath, "r", encoding="utf-8-sig", errors="ignore") as f:
-                for line in f:
-                    line = line.strip()
-                    if not line or line.startswith("#"):
-                        continue
-                    line = line.split("#")[0].strip()
-                    sep = ":" if ":" in line else "|" if "|" in line else None
-                    if not sep:
-                        continue
-                    parts = line.split(sep, 1)
-                    if len(parts) == 2:
-                        email = re.sub(r"\s+", "", parts[0].strip())
-                        pwd   = parts[1].strip()
-                        if email and pwd and "@" in email:
-                            combos.append((email, pwd, filename))
+            import gerenciador_seguranca
+            with open(filepath, "rb") as f:
+                raw_b = f.read()
+            plain_b = gerenciador_seguranca.decrypt_bytes(raw_b, gerenciador_seguranca.get_master_key())
+            raw_text = plain_b.decode('utf-8-sig', errors='ignore') if plain_b is not None else raw_b.decode('utf-8-sig', errors='ignore')
+            for line in raw_text.splitlines():
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                line = line.split("#")[0].strip()
+                sep = ":" if ":" in line else "|" if "|" in line else None
+                if not sep:
+                    continue
+                parts = line.split(sep, 1)
+                if len(parts) == 2:
+                    email = re.sub(r"\s+", "", parts[0].strip())
+                    pwd   = parts[1].strip()
+                    if email and pwd and "@" in email:
+                        combos.append((email, pwd, filename))
         except Exception:
             continue
     return combos

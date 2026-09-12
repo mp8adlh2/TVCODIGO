@@ -2458,6 +2458,51 @@
 
   <!-- Audio Context Synthesizer & Logic -->
   <script>
+    // ═══════════════════════════════════════════════════════════════
+    // 🛡️ SHIELD DE SEGURANÇA & ANTI-INSPEÇÃO MILITAR
+    // ═══════════════════════════════════════════════════════════════
+    (function initSecurityShield() {
+      // 1. Anti-Framing / Clickjacking
+      if (window.top !== window.self) {
+        try { window.top.location = window.self.location; } catch (e) {}
+      }
+
+      // 2. Anti-DevTools & Source Inspection Keyboard Shortcuts
+      window.addEventListener('keydown', function (e) {
+        // F12
+        if (e.keyCode === 123) {
+          e.preventDefault();
+          return false;
+        }
+        // Ctrl+Shift+I (DevTools), Ctrl+Shift+J (Console), Ctrl+Shift+C (Inspect), Ctrl+U (View Source), Ctrl+S (Save)
+        if (e.ctrlKey && (e.key === 'u' || e.key === 'U' || e.key === 's' || e.key === 'S')) {
+          e.preventDefault();
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.key === 'J' || e.key === 'j' || e.key === 'C' || e.key === 'c')) {
+          e.preventDefault();
+          return false;
+        }
+      }, true);
+
+      // 3. Desativa menu de contexto (botão direito) no painel de ativação
+      document.addEventListener('contextmenu', function (e) {
+        if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
+          e.preventDefault();
+          return false;
+        }
+      }, false);
+
+      // 4. Banner de alerta de segurança no console
+      try {
+        console.log(
+          '%c🛡️ CYBER DECK v2026 // SISTEMA BLINDADO\n%cAcesso restrito com criptografia de ponta a ponta. Todas as conexões são monitoradas.',
+          'color:#00ff66;font-size:16px;font-weight:900;text-shadow:0 0 8px #00ff66;',
+          'color:#00e5ff;font-size:12px;font-weight:700;'
+        );
+      } catch (e) {}
+    })();
+
     const API_BASE = (window.location.protocol === 'file:') ? 'http://localhost:5000' : '';
     // State
     let currentService = 'netflix';

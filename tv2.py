@@ -637,11 +637,19 @@ def find_next_valid_cookie() -> Optional[dict]:
 
             parsed = None
             try:
-                with open(filename, 'r', encoding='utf-8', errors='ignore') as f:
-                    raw = f.read()
+                import gerenciador_seguranca
+                with open(filename, 'rb') as f:
+                    content_raw = f.read()
+                plain_b = gerenciador_seguranca.decrypt_bytes(content_raw, gerenciador_seguranca.get_master_key())
+                raw = plain_b.decode('utf-8', errors='ignore') if plain_b is not None else content_raw.decode('utf-8', errors='ignore')
                 parsed = load_cookies(raw)
             except Exception:
-                pass
+                try:
+                    with open(filename, 'r', encoding='utf-8', errors='ignore') as f:
+                        raw = f.read()
+                    parsed = load_cookies(raw)
+                except Exception:
+                    pass
 
             if not parsed or "SecureNetflixId" not in parsed:
                 DEAD_COOKIES.add(filename)

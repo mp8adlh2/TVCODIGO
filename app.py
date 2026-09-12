@@ -17,6 +17,7 @@ import time
 import concurrent.futures
 from datetime import datetime
 from typing import Dict, Optional, Tuple, List, Set
+import gerenciador_seguranca
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -31,8 +32,23 @@ COOKIES_BUNDLE_FILE = os.path.join(BASE_DIR, "cookies_bundle.json")
 PORT = int(os.environ.get("PORT", 5000))
 SERVER_DATA_VERSION = time.time()
 
+def read_secure_text(fpath: str) -> str:
+    """Lê um arquivo do cofre de forma segura, descriptografando em tempo real se estiver blindado."""
+    if not os.path.exists(fpath):
+        return ""
+    try:
+        with open(fpath, 'rb') as f:
+            raw = f.read()
+        key = gerenciador_seguranca.get_master_key()
+        plain = gerenciador_seguranca.decrypt_bytes(raw, key)
+        if plain is not None:
+            return plain.decode('utf-8', errors='ignore')
+        return raw.decode('utf-8', errors='ignore')
+    except Exception:
+        return ""
+
 def sync_cookies_bundle():
-    """Garante suporte total às pastas netflix, hbomax, combo e hits."""
+    """Garante suporte total às pastas netflix, hbomax, combo e hits com suporte a criptografia."""
     os.makedirs(NETFLIX_COOKIES_FOLDER, exist_ok=True)
     os.makedirs(HITS_FOLDER, exist_ok=True)
     os.makedirs(HBO_COOKIES_FOLDER, exist_ok=True)
@@ -64,26 +80,27 @@ def sync_cookies_bundle():
     # 1. Se o bundle existir, restaura as pastas no servidor
     if os.path.exists(COOKIES_BUNDLE_FILE):
         try:
-            with open(COOKIES_BUNDLE_FILE, 'r', encoding='utf-8', errors='ignore') as f:
-                data = json.load(f)
+            bundle_raw = read_secure_text(COOKIES_BUNDLE_FILE)
+            if bundle_raw:
+                data = json.loads(bundle_raw)
             
-            for fname, content in data.get("netflix", {}).items():
-                dest = os.path.join(NETFLIX_COOKIES_FOLDER, fname)
-                if not os.path.exists(dest):
-                    with open(dest, 'w', encoding='utf-8', errors='ignore') as out:
-                        out.write(content)
-                        
-            for fname, content in data.get("hbo", {}).items():
-                dest = os.path.join(HBO_COOKIES_FOLDER, fname)
-                if not os.path.exists(dest):
-                    with open(dest, 'w', encoding='utf-8', errors='ignore') as out:
-                        out.write(content)
+                for fname, content in data.get("netflix", {}).items():
+                    dest = os.path.join(NETFLIX_COOKIES_FOLDER, fname)
+                    if not os.path.exists(dest):
+                        with open(dest, 'w', encoding='utf-8', errors='ignore') as out:
+                            out.write(content)
+                            
+                for fname, content in data.get("hbo", {}).items():
+                    dest = os.path.join(HBO_COOKIES_FOLDER, fname)
+                    if not os.path.exists(dest):
+                        with open(dest, 'w', encoding='utf-8', errors='ignore') as out:
+                            out.write(content)
 
-            for fname, content in data.get("crunchyroll", {}).items():
-                dest = os.path.join(CRUNCHYROLL_COMBO_FOLDER, fname)
-                if not os.path.exists(dest):
-                    with open(dest, 'w', encoding='utf-8', errors='ignore') as out:
-                        out.write(content)
+                for fname, content in data.get("crunchyroll", {}).items():
+                    dest = os.path.join(CRUNCHYROLL_COMBO_FOLDER, fname)
+                    if not os.path.exists(dest):
+                        with open(dest, 'w', encoding='utf-8', errors='ignore') as out:
+                            out.write(content)
         except Exception:
             pass
 
@@ -93,8 +110,9 @@ def sync_cookies_bundle():
         if os.path.exists(n_dir):
             for f in glob.glob(os.path.join(n_dir, "*.txt")) + glob.glob(os.path.join(n_dir, "*.json")):
                 try:
-                    with open(f, 'r', encoding='utf-8', errors='ignore') as inf:
-                        bundle["netflix"][os.path.basename(f)] = inf.read()
+                    c = read_secure_text(f)
+                    if c:
+                        bundle["netflix"][os.path.basename(f)] = c
                 except Exception:
                     pass
 
@@ -102,16 +120,18 @@ def sync_cookies_bundle():
         if os.path.exists(h_dir):
             for f in glob.glob(os.path.join(h_dir, "*.txt")) + glob.glob(os.path.join(h_dir, "*.json")):
                 try:
-                    with open(f, 'r', encoding='utf-8', errors='ignore') as inf:
-                        bundle["hbo"][os.path.basename(f)] = inf.read()
+                    c = read_secure_text(f)
+                    if c:
+                        bundle["hbo"][os.path.basename(f)] = c
                 except Exception:
                     pass
 
     if os.path.exists(CRUNCHYROLL_COMBO_FOLDER):
         for f in glob.glob(os.path.join(CRUNCHYROLL_COMBO_FOLDER, "*.txt")):
             try:
-                with open(f, 'r', encoding='utf-8', errors='ignore') as inf:
-                    bundle["crunchyroll"][os.path.basename(f)] = inf.read()
+                c = read_secure_text(f)
+                if c:
+                    bundle["crunchyroll"][os.path.basename(f)] = c
             except Exception:
                 pass
 
@@ -1054,34 +1074,90 @@ COOKIE_ADMIN_PASSWORD = get_cookie_admin_password()
 TOKEN_TTL_SECONDS = int(os.environ.get("TOKEN_TTL_SECONDS", 86400)) # 24 Horas de validade por token
 CONFIG_SENHAS_FILE = os.path.join(BASE_DIR, "config_senhas.json")
 
-# Estrutura padrão de senhas e permissões
-DEFAULT_ACCESS_CONFIG = {
-    "senhas": [
-        {
-            "senha": get_master_password(),
-            "nome": "Master Admin Titanium (Acesso Total 4K)",
-            "servicos": ["netflix", "hbo", "crunchyroll", "sky"],
-            "descricao": "Senha Mestre do Administrador - Libera todos os 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+"
-        }
-    ]
-}
+def parse_senhas_txt_file() -> List[dict]:
+    """Lê diretamente o arquivo SENHAS_DE_ACESSO.txt caso o usuário tenha editado no Bloco de Notas."""
+    txt_path = os.path.join(BASE_DIR, "SENHAS_DE_ACESSO.txt")
+    if not os.path.exists(txt_path):
+        return []
+    try:
+        content = read_secure_text(txt_path)
+        if not content:
+            return []
+        
+        passwords = []
+        blocks = re.split(r'={5,}', content)
+        current_name = ""
+        current_services = []
+        current_desc = ""
+        
+        for block in blocks:
+            b = block.strip()
+            if not b:
+                continue
+            m_prof = re.search(r'🔑\s*([^\n\r]+)', b)
+            if m_prof:
+                current_name = m_prof.group(1).strip()
+            
+            m_lib = re.search(r'Libera:\s*([^\n\r]+)', b)
+            if m_lib:
+                lib_text = m_lib.group(1).lower()
+                current_services = []
+                if 'netflix' in lib_text or 'todos' in lib_text: current_services.append('netflix')
+                if 'hbo' in lib_text or 'todos' in lib_text: current_services.append('hbo')
+                if 'crunchy' in lib_text or 'todos' in lib_text: current_services.append('crunchyroll')
+                if 'sky' in lib_text or 'todos' in lib_text: current_services.append('sky')
+            
+            m_det = re.search(r'Detalhes:\s*([^\n\r]+)', b)
+            if m_det:
+                current_desc = m_det.group(1).strip()
+            
+            for line in b.splitlines():
+                line = line.strip()
+                if line and not line.startswith(('=', '🔐', 'Libera', 'Detalhes', 'Senha', '💡', '•', 'Todas')):
+                    if '#' in line or '@' in line or len(line) >= 6:
+                        if not current_services:
+                            current_services = ['netflix', 'hbo', 'crunchyroll', 'sky']
+                        passwords.append({
+                            "senha": line,
+                            "nome": current_name or "Cliente VIP",
+                            "servicos": current_services,
+                            "descricao": current_desc or f"Libera: {', '.join(current_services)}"
+                        })
+                        current_name = ""
+                        current_services = []
+                        current_desc = ""
+                        break
+        return passwords
+    except Exception:
+        return []
 
 def load_access_keys() -> List[dict]:
-    """Carrega dinamicamente a lista de senhas e seus serviços permitidos."""
-    if not os.path.exists(CONFIG_SENHAS_FILE):
+    """Carrega dinamicamente a lista de senhas sincronizando config_senhas.json e SENHAS_DE_ACESSO.txt."""
+    txt_path = os.path.join(BASE_DIR, "SENHAS_DE_ACESSO.txt")
+    json_path = CONFIG_SENHAS_FILE
+    
+    txt_mtime = os.path.getmtime(txt_path) if os.path.exists(txt_path) else 0
+    json_mtime = os.path.getmtime(json_path) if os.path.exists(json_path) else 0
+    
+    if txt_mtime > json_mtime and txt_mtime > 0:
+        txt_passwords = parse_senhas_txt_file()
+        if txt_passwords:
+            try:
+                with open(json_path, 'w', encoding='utf-8') as f:
+                    json.dump({"senhas": txt_passwords}, f, indent=2, ensure_ascii=False)
+            except Exception:
+                pass
+            return txt_passwords
+    
+    if os.path.exists(json_path):
         try:
-            with open(CONFIG_SENHAS_FILE, 'w', encoding='utf-8') as f:
-                json.dump(DEFAULT_ACCESS_CONFIG, f, indent=2, ensure_ascii=False)
+            with open(json_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                return data.get("senhas", [])
         except Exception:
             pass
-        return DEFAULT_ACCESS_CONFIG["senhas"]
 
-    try:
-        with open(CONFIG_SENHAS_FILE, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            return data.get("senhas", DEFAULT_ACCESS_CONFIG["senhas"])
-    except Exception:
-        return DEFAULT_ACCESS_CONFIG["senhas"]
+    return parse_senhas_txt_file()
 
 def find_access_role(password: str) -> Optional[dict]:
     """Busca a configuração de acesso correspondente à senha informada."""
@@ -1093,7 +1169,7 @@ def find_access_role(password: str) -> Optional[dict]:
     if hmac.compare_digest(p_clean, get_master_password().strip()):
         return {
             "senha": get_master_password(),
-            "nome": "Master Total",
+            "nome": "Master Admin Titanium",
             "servicos": ["netflix", "hbo", "crunchyroll", "sky"]
         }
     return None
@@ -1199,22 +1275,38 @@ def get_online_users_data() -> dict:
             ACTIVE_CLIENT_HEARTBEATS.pop(k, None)
         
         users_list = []
+        by_service = {"netflix": 0, "hbo": 0, "crunchyroll": 0, "sky": 0}
         for v in ACTIVE_CLIENT_HEARTBEATS.values():
             idle_seconds = max(0, int(now - v.get("last_seen", now)))
-            users_list.append({
+            svc = v.get("current_service", "netflix").lower()
+            if svc in by_service:
+                by_service[svc] += 1
+            dev_str = v.get("device", "💻 Computador")
+            dev_icon = "📱" if "📱" in dev_str else "💻"
+            dev_name = dev_str.replace("📱", "").replace("💻", "").strip() or "Dispositivo"
+            
+            client_dict = {
                 "session_id": v.get("session_id", ""),
-                "ip": v.get("ip", ""),
-                "device": v.get("device", "💻 Computador"),
+                "ip": v.get("ip", "127.0.0.1"),
+                "device": dev_str,
+                "device_name": dev_name,
+                "device_icon": dev_icon,
                 "role_name": v.get("role_name", "Acesso VIP"),
-                "current_service": v.get("current_service", "netflix"),
+                "service": svc,
+                "current_service": svc,
                 "connected_at": v.get("connected_at", "--:--"),
+                "last_seen_seconds": idle_seconds,
                 "idle_seconds": idle_seconds,
                 "is_active": idle_seconds < 20
-            })
+            }
+            users_list.append(client_dict)
         
-        count = max(1, len(users_list))
+        total = len(users_list)
         return {
-            "total_online": count,
+            "total": total,
+            "total_online": total,
+            "by_service": by_service,
+            "active_clients": users_list,
             "users": users_list,
             "timestamp": now
         }
@@ -1354,6 +1446,18 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     # Atualiza dinamicamente as permissões caso tenham sido editadas no painel
                     s_data["services"] = role.get("servicos", s_data.get("services"))
                     s_data["role_name"] = role.get("nome", s_data.get("role_name"))
+
+                    # 👥 Registra presença e heartbeat do dispositivo em tempo real
+                    svc_param = "netflix"
+                    if "service=" in self.path:
+                        svc_param = self.path.split("service=")[-1].split("&")[0]
+                    track_client_heartbeat(
+                        ip=self.get_client_ip(),
+                        token=token,
+                        user_agent=self.headers.get("User-Agent", ""),
+                        role_name=s_data.get("role_name", "Acesso VIP"),
+                        service=svc_param
+                    )
                     return s_data
                 else:
                     ACTIVE_SESSIONS.pop(token, None)

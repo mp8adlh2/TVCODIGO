@@ -886,6 +886,26 @@
   </div>
 
   <script>
+    // ═══════════════════════════════════════════════════════════════
+    // 🛡️ SHIELD DE SEGURANÇA & ANTI-INSPEÇÃO MILITAR
+    // ═══════════════════════════════════════════════════════════════
+    (function initAdminSecurityShield() {
+      if (window.top !== window.self) {
+        try { window.top.location = window.self.location; } catch (e) {}
+      }
+      window.addEventListener('keydown', function (e) {
+        if (e.keyCode === 123) { e.preventDefault(); return false; }
+        if (e.ctrlKey && (e.key === 'u' || e.key === 'U' || e.key === 's' || e.key === 'S')) { e.preventDefault(); return false; }
+        if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.key === 'J' || e.key === 'j' || e.key === 'C' || e.key === 'c')) { e.preventDefault(); return false; }
+      }, true);
+      document.addEventListener('contextmenu', function (e) {
+        if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
+          e.preventDefault();
+          return false;
+        }
+      }, false);
+    })();
+
     const API_BASE = (window.location.protocol === 'file:') ? 'http://localhost:5000' : '';
     let adminToken = sessionStorage.getItem('cyber_cookie_admin_token') || localStorage.getItem('cyber_auth_token') || '';
     let currentTarget = 'netflix';

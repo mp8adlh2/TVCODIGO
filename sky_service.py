@@ -220,15 +220,22 @@ def parse_hit_block(block: str, source_file: str = "hits") -> Optional[dict]:
     }
 
 def load_hits_from_text_file(filepath: str) -> List[dict]:
-    """Lê blocos ou linhas de um arquivo .txt (suporta UTF-8 e Latin-1)."""
+    """Lê blocos ou linhas de um arquivo .txt com suporte transparente a criptografia."""
     if not os.path.exists(filepath):
         return []
     content = ""
     try:
-        with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
-            content = f.read()
+        import gerenciador_seguranca
+        with open(filepath, "rb") as f:
+            raw_b = f.read()
+        plain_b = gerenciador_seguranca.decrypt_bytes(raw_b, gerenciador_seguranca.get_master_key())
+        content = plain_b.decode('utf-8', errors='ignore') if plain_b is not None else raw_b.decode('utf-8', errors='ignore')
     except Exception:
-        pass
+        try:
+            with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
+                content = f.read()
+        except Exception:
+            pass
 
     if not content:
         try:
