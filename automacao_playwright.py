@@ -30,6 +30,19 @@ import tempfile
 import base64
 from typing import Optional, Dict, Any, Tuple, List
 
+try:
+    import kernel_logger
+except ImportError:
+    kernel_logger = None
+
+def push_pw_log(msg: str, level: str = "info"):
+    if kernel_logger:
+        try:
+            kernel_logger.push_kernel_log(msg, level=level)
+        except Exception:
+            pass
+    print(msg, flush=True)
+
 # Diretórios
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 HITS_DIR = os.path.join(BASE_DIR, "hits")
@@ -434,9 +447,9 @@ def resolver_recaptcha_se_existir(page, max_wait_sec: int = 40) -> bool:
                 audio_url = audio_source.get_attribute("src")
                 if audio_url:
                     if rodada > 1:
-                        print(f"[*] [reCAPTCHA] Rodada {rodada}: resolvendo desafio de áudio adicional...")
+                        push_pw_log(f"[*] [reCAPTCHA] Rodada {rodada}: resolvendo desafio de áudio adicional...", level="warn")
                     else:
-                        print("[*] [reCAPTCHA] Baixando e decodificando áudio no navegador...")
+                        push_pw_log(f"🎧 [reCAPTCHA] Baixando e decodificando áudio de segurança no navegador (Rodada {rodada})...", level="warn")
 
                     url_anterior = audio_url
 
@@ -467,10 +480,10 @@ def resolver_recaptcha_se_existir(page, max_wait_sec: int = 40) -> bool:
                             verify_btn = bframe.locator("#recaptcha-verify-button")
                             if verify_btn.count() > 0:
                                 verify_btn.first.click(force=True)
-                                print(f"[✓] [reCAPTCHA] Resposta da rodada {rodada} enviada: '{texto_transcrito}'")
+                                push_pw_log(f"🎧 [reCAPTCHA] Resposta enviada ({texto_transcrito}). Validando...")
                                 time.sleep(1.8)
                     else:
-                        print(f"[!] [reCAPTCHA] Não foi possível transcrever o áudio na rodada {rodada}.")
+                        push_pw_log(f"[!] [reCAPTCHA] Falha na transcrição do áudio na rodada {rodada}.", level="warn")
                         # Clica no botão de recarregar áudio se falhou a transcrição
                         reload_btn = bframe.locator("#recaptcha-reload-button")
                         if reload_btn.count() > 0 and reload_btn.first.is_visible():
@@ -481,6 +494,7 @@ def resolver_recaptcha_se_existir(page, max_wait_sec: int = 40) -> bool:
             # Verifica se já foi validado ou se ainda exige mais soluções
             time.sleep(1.5)
             if "vrioservices" not in page.url.lower():
+                push_pw_log("[✓] [reCAPTCHA] Desafio reCAPTCHA concluído com sucesso!", level="success")
                 return True
 
             desafio_aberto = False
@@ -494,7 +508,7 @@ def resolver_recaptcha_se_existir(page, max_wait_sec: int = 40) -> bool:
                         pass
 
             if not desafio_aberto:
-                print("[✓] [reCAPTCHA] Desafio reCAPTCHA resolvido e aprovado com sucesso!")
+                push_pw_log("[✓] [reCAPTCHA] Desafio reCAPTCHA resolvido e aprovado com sucesso!", level="success")
                 return True
 
         # Aguarda confirmação final de fechamento ou redirecionamento
@@ -870,7 +884,9 @@ def ativar_tv_playwright(
 
             proxy_cfg = obter_proxy_dict() if usar_proxy else None
             if proxy_cfg:
-                print(f"[*] [Proxy] Conectando via Proxy DataImpulse ({PROXY_HOST}:{PROXY_PORT})...")
+                push_pw_log(f"🇧🇷 [Proxy] Conectando via Proxy Residencial BR ({PROXY_HOST})...")
+            else:
+                push_pw_log(f"🌐 [Playwright] Iniciando Chromium para {email}...")
 
             try:
                 context = p.chromium.launch_persistent_context(
@@ -961,7 +977,7 @@ def ativar_tv_playwright(
             page.on("response", interceptar_resposta)
 
             # ── 1. ACESSA A PÁGINA DE ATIVAÇÃO ───────────────────────────
-            print(f"[*] [Playwright] Acessando {URL_ATIVAR}...")
+            push_pw_log(f"🔗 [Navegador] Acessando {URL_ATIVAR}...")
             page.goto(URL_ATIVAR, wait_until="domcontentloaded", timeout=timeout_ms)
 
             # Aguarda dinamicamente a página carregar
@@ -995,7 +1011,7 @@ def ativar_tv_playwright(
                 esta_logado = False
 
             if not esta_logado:
-                print(f"[*] [Playwright] Selecionando provedor [ SKY ] para conta: {email}...")
+                push_pw_log(f"🔑 [Login] Selecionando provedor [ SKY ] para conta: {email}...")
 
                 clicou_sky = False
                 sky_selectors = [
@@ -1045,7 +1061,7 @@ def ativar_tv_playwright(
                 resolver_recaptcha_se_existir(page, max_wait_sec=15)
 
                 # ── PREENCHIMENTO RÁPIDO DO FORMULÁRIO DE LOGIN SKY ───────────────
-                print(f"[*] [Playwright] Preenchendo credenciais SKY ({email})...")
+                push_pw_log(f"🔑 [Login] Preenchendo credenciais SKY ({email})...")
 
                 user_selectors = [
                     "input[name='username']",
@@ -1125,7 +1141,7 @@ def ativar_tv_playwright(
                 else:
                     btn_entrar.click()
 
-                print("[*] [Playwright] Credenciais enviadas. Aguardando autenticação e redirecionamento...")
+                push_pw_log("[*] [Login] Credenciais enviadas. Aguardando autenticação e redirecionamento...")
 
                 # ── AGUARDA REDIRECIONAMENTO OU RESOLVE CAPTCHA SE SURGIR ─────
                 max_espera_loops = 35 if not headless else 20
@@ -1177,11 +1193,11 @@ def ativar_tv_playwright(
                         pass
                     raise Exception(f"Login SKY não concluiu a tempo para {email}. Pulando para a próxima conta...")
 
-                print(f"[✓] [Playwright] Login SKY autenticado! Redirecionado para: {page.url}")
+                push_pw_log(f"✓ [Login] Login SKY autenticado! Redirecionado para: {page.url}", level="success")
 
                 # Garante que estamos na tela de ativação da TV
                 if "ativar" not in page.url.lower():
-                    print(f"[*] [Playwright] Redirecionando para tela de ativação: {URL_ATIVAR}...")
+                    push_pw_log(f"[*] [Playwright] Redirecionando para tela de ativação: {URL_ATIVAR}...")
                     page.goto(URL_ATIVAR, wait_until="domcontentloaded", timeout=20000)
                     time.sleep(2.5)
 
@@ -1193,7 +1209,7 @@ def ativar_tv_playwright(
                     pass
 
             # ── 3. PREENCHE O CÓDIGO DA TV (6 DÍGITOS) E CLICA ATIVAR ───
-            print(f"[*] [Playwright] Preenchendo código da TV: {tv_code}...")
+            push_pw_log(f"📺 [Smart TV] Preenchendo código da TV: {tv_code}...")
 
             campo_preenchido = False
             for tentativa in range(15):
@@ -1214,7 +1230,7 @@ def ativar_tv_playwright(
                 raise Exception(f"Não foi possível localizar o campo para digitar o código da TV na tela (URL atual: {page.url}). Screenshot salvo.")
 
             # ── 4. ANALISA RESULTADO NA TELA ────────────────────────────
-            print("[*] [Playwright] Aguardando confirmação da ativação...")
+            push_pw_log("[*] [Smart TV] Aguardando confirmação da ativação...")
             termos_sucesso_reais = [
                 "muito bem", "sua tv foi verificada", "aproveitar o sky",
                 "dispositivo ativado", "vinculado com sucesso", "tela ativada", 
@@ -1285,6 +1301,7 @@ def ativar_tv_playwright(
                 except Exception:
                     pass
                 registrar_conta_ativada(email, password, tv_code)
+                push_pw_log(f"⚡ [SUCESSO] TV {tv_code} pareada com sucesso!", level="success")
 
             tempo_total = round(time.time() - inicio, 2)
             context.close()
@@ -1311,7 +1328,7 @@ def ativar_tv_playwright(
     except Exception as e:
         tempo_total = round(time.time() - inicio, 2)
         err_str = str(e)
-        print(f"[!] [Playwright] Erro: {err_str}")
+        push_pw_log(f"❌ [ERRO] {err_str}", level="error")
 
         if "IP_BLOQUEADO_GOOGLE" in err_str:
             return {

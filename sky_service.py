@@ -7,6 +7,19 @@ import base64
 import threading
 from typing import Dict, Optional, Tuple, List, Set
 
+try:
+    import kernel_logger
+except ImportError:
+    kernel_logger = None
+
+def push_sky_log(msg: str, level: str = "info"):
+    if kernel_logger:
+        try:
+            kernel_logger.push_kernel_log(msg, level=level)
+        except Exception:
+            pass
+    print(f"[*] [Sky] {msg}", flush=True)
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 HITS_DIR = os.path.join(BASE_DIR, "hits")
 RAW_JSON_DIR = os.path.join(HITS_DIR, "raw_json")
@@ -491,6 +504,82 @@ def get_all_active_sso_sessions() -> List[dict]:
         except Exception:
             pass
 
+    # 3. 🌐 Varre hits/browser_sessions/*.json para extrair sessões autenticadas do Playwright
+    browser_sessions_dir = os.path.join(HITS_DIR, "browser_sessions")
+    if os.path.exists(browser_sessions_dir):
+        for sfile in glob.glob(os.path.join(browser_sessions_dir, "*.json")):
+            try:
+                if os.path.getsize(sfile) < 300:
+                    continue
+                with open(sfile, "r", encoding="utf-8", errors="ignore") as f:
+                    sdata = json.load(f)
+                sso_candidate = None
+                prof_candidate = None
+                em_candidate = None
+                for origin in sdata.get("origins", []):
+                    if "skymais.com.br" in origin.get("origin", ""):
+                        for item in origin.get("localStorage", []):
+                            k = item.get("name", "")
+                            v = item.get("value", "")
+                            if k == "sessionToken" and v and v.startswith("ey"):
+                                sso_candidate = v
+                            elif (k == "profileToken" or k == "profile" or k == "profiles") and v and not prof_candidate:
+                                if v.startswith("ey"):
+                                    prof_candidate = v
+                                elif "profileToken" in v:
+                                    try:
+                                        p_obj = json.loads(v)
+                                        if isinstance(p_obj, list) and p_obj and "profileToken" in p_obj[0]:
+                                            prof_candidate = p_obj[0]["profileToken"]
+                                        elif isinstance(p_obj, dict) and "profileToken" in p_obj:
+                                            prof_candidate = p_obj["profileToken"]
+                                    except Exception:
+                                        pass
+                            elif k == "user" and v and "email" in v and not em_candidate:
+                                try:
+                                    u_obj = json.loads(v)
+                                    em_candidate = u_obj.get("email", "")
+                                    if em_candidate.startswith("sky_"):
+                                        em_candidate = em_candidate[4:]
+                                except Exception:
+                                    pass
+
+                if sso_candidate:
+                    payload = parse_sso_jwt(sso_candidate)
+                    exp = payload.get("exp", 0)
+                    if not exp or exp > time.time():
+                        em_final = (em_candidate or payload.get("email") or payload.get("sub") or "").strip()
+                        if em_final.startswith("sky_"):
+                            em_final = em_final[4:]
+                        if em_final and em_final.lower() not in seen_emails:
+                            seen_emails.add(em_final.lower())
+                            given = payload.get("givenName", "")
+                            family = payload.get("familyName", "")
+                            client_name = f"{given} {family}".strip() or payload.get("name", "Assinante Sky+")
+                            dev_id = payload.get("deviceId", "226816ead4c3beb7cfd1489bdabc313bd9c43d96165a74ac9ec0f1b3acdab764")
+                            sessions.append({
+                                "email": em_final,
+                                "password": "",
+                                "sso_token": sso_candidate,
+                                "profile_token": prof_candidate or "",
+                                "is_session": True,
+                                "exp": exp,
+                                "device_id": dev_id,
+                                "file": os.path.basename(sfile),
+                                "info": {
+                                    "email": em_final,
+                                    "plan": "PAY-TV + FIBRA // SUPER HD II ⚡",
+                                    "country": payload.get("iso2Code", "BR"),
+                                    "client_name": client_name,
+                                    "cpf": payload.get("accountId", ""),
+                                    "adicionais": ["Ativação Instantânea (300ms)", "Sessão Browser Playwright"],
+                                    "source": "Sessão Browser",
+                                    "is_session": True
+                                }
+                            })
+            except Exception:
+                pass
+
     return sessions
 
 def get_active_sso_session() -> Optional[dict]:
@@ -734,8 +823,10 @@ def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -
 
     email = account_data["email"].strip()
     password = account_data.get("password", "").strip()
+    push_sky_log(f"📡 [Sky+] Transmitindo token para TV: {clean_code} (Conta: {email})...")
 
     # Se estiver rodando na nuvem (Linux/Render.com), habilita automaticamente o Proxy Residencial BR
+    import sys
     is_cloud = bool(os.environ.get("RENDER") or sys.platform != "win32")
     if is_cloud:
         use_proxy = True
@@ -746,7 +837,37 @@ def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -
     sso_token = (account_data.get("sso_token") or account_data.get("token") or "").strip()
     profile_token = (account_data.get("profile_token") or "").strip()
 
-    # Se a conta não tiver tokens próprios, verifica se existem tokens mestres globais ativos
+    # Se a conta não tiver tokens próprios, verifica se existe sessão salva em hits/browser_sessions/
+    if not sso_token:
+        sanitized_em = re.sub(r'[^a-zA-Z0-9_\-]', '_', email.lower())
+        b_sess_path = os.path.join(HITS_DIR, "browser_sessions", f"{sanitized_em}.json")
+        if os.path.exists(b_sess_path):
+            try:
+                with open(b_sess_path, "r", encoding="utf-8", errors="ignore") as bf:
+                    b_data = json.load(bf)
+                for origin in b_data.get("origins", []):
+                    if "skymais.com.br" in origin.get("origin", ""):
+                        for item in origin.get("localStorage", []):
+                            k = item.get("name", "")
+                            v = item.get("value", "")
+                            if k == "sessionToken" and v and v.startswith("ey"):
+                                sso_token = v
+                            elif (k == "profileToken" or k == "profile" or k == "profiles") and v and not profile_token:
+                                if v.startswith("ey"):
+                                    profile_token = v
+                                elif "profileToken" in v:
+                                    try:
+                                        p_obj = json.loads(v)
+                                        if isinstance(p_obj, list) and p_obj and "profileToken" in p_obj[0]:
+                                            profile_token = p_obj[0]["profileToken"]
+                                        elif isinstance(p_obj, dict) and "profileToken" in p_obj:
+                                            profile_token = p_obj["profileToken"]
+                                    except Exception:
+                                        pass
+            except Exception:
+                pass
+
+    # Se ainda não tiver tokens, verifica se existem tokens mestres globais ativos
     if not sso_token and os.path.exists(SSO_TOKEN_FILE):
         try:
             with open(SSO_TOKEN_FILE, "r", encoding="utf-8") as f:
@@ -758,41 +879,50 @@ def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -
             pass
 
     if sso_token and "ey" in sso_token:
+        push_sky_log(f"⚡ [Nuvem] Ativando instantaneamente via Token SSO na API Oficial TBX (300ms)...")
         try:
             import ativador_tv
             activator = ativador_tv.SkyTVActivator(use_proxy=use_proxy)
             res_tbx = activator.activate_tv(token=sso_token, tv_code=clean_code, profile_token=profile_token)
             if res_tbx.get("success"):
                 msg = res_tbx.get("message") or "Smart TV Sky ativada com sucesso em 300ms via Nuvem!"
+                push_sky_log(f"✅ [Nuvem] {msg}", level="success")
                 save_activation_log(email, password or "SESSION_TOKEN", clean_code, True, msg)
                 record_account_activated(email, password or "SESSION_TOKEN", clean_code)
                 return True, msg, account_data.get("info")
             elif res_tbx.get("not_found"):
+                push_sky_log(f"❌ [Nuvem] Código {clean_code} não encontrado ou expirado na Smart TV (HTTP 404).", level="error")
                 return False, f"Código {clean_code} não encontrado ou expirado na Smart TV (HTTP 404).", None
+            else:
+                push_sky_log(f"⚠️ [Nuvem] Sessão em nuvem anterior expirada. Acionando navegador Playwright...", level="warn")
         except Exception as e:
-            print(f"[Sky Cloud Activation] Erro ao ativar via token: {e}")
+            push_sky_log(f"⚠️ [Nuvem] Tentativa direta falhou ({e}), acionando navegador Playwright...", level="warn")
 
     # ═══════════════════════════════════════════════════════════════
     # ESTRATÉGIA 2: ATIVAÇÃO VIA API MOBILE / ANDROID (SEM NAVEGADOR)
     # ═══════════════════════════════════════════════════════════════
     if email and password:
+        push_sky_log(f"📱 [API Mobile] Tentando pareamento direto via API Sky...")
         try:
             import ativador_tv
             res_api = ativador_tv.activate_with_account(email=email, password=password, tv_code=clean_code, use_proxy=use_proxy)
             if res_api:
                 msg = "Smart TV Sky ativada com sucesso via API Sky!"
+                push_sky_log(f"✅ [API Mobile] {msg}", level="success")
                 save_activation_log(email, password, clean_code, True, msg)
                 record_account_activated(email, password, clean_code)
                 return True, msg, account_data.get("info")
         except Exception as e:
-            print(f"[Sky API Activation] Tentativa por API falhou, verificando Playwright: {e}")
+            push_sky_log(f"⚠️ [API Mobile] Tentativa API falhou, avançando para Playwright: {e}", level="warn")
 
     # ═══════════════════════════════════════════════════════════════
     # ESTRATÉGIA 3: PLAYWRIGHT CHROMIUM (NA NUVEM RENDER OU PC LOCAL)
     # ═══════════════════════════════════════════════════════════════
     if not password:
+        push_sky_log(f"❌ Conta {email} não possui senha nem sessão de tokens ativa.", level="error")
         return False, f"A conta {email} não possui senha nem sessão de tokens ativa para ativação.", None
 
+    push_sky_log(f"🌐 [Playwright] Abrindo navegador Chromium na nuvem para autenticar {email}...")
     try:
         import automacao_playwright
         res = automacao_playwright.ativar_tv_playwright(
@@ -806,7 +936,7 @@ def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -
 
         # Se o Google bloqueou o IP local, retenta automaticamente com Proxy Residencial DataImpulse
         if res.get("motivo") == "IP_BLOQUEADO_GOOGLE" and not use_proxy:
-            print("[*] Google reCAPTCHA bloqueou IP, ativando Proxy Residencial DataImpulse (BR)...")
+            push_sky_log("🇧🇷 [Proxy] Google reCAPTCHA bloqueou IP, ativando Proxy Residencial DataImpulse (BR)...", level="warn")
             res = automacao_playwright.ativar_tv_playwright(
                 email=email,
                 password=password,
