@@ -3321,7 +3321,9 @@
           // Se o monitor ao vivo estiver aberto no modal admin, atualiza em tempo real
           const usersView = document.getElementById('admin-view-users');
           if (usersView && usersView.style.display !== 'none') {
-            renderOnlineUsersData(data.online_users);
+            if (typeof renderOnlineUsersData === 'function') {
+              renderOnlineUsersData(data.online_users);
+            }
           }
         }
       } catch (e) {
@@ -3685,6 +3687,21 @@
         loadStatus();
       }
     }, 5000);
+
+    // 💓 Heartbeat contínuo em tempo real para monitor de dispositivos conectados no Painel Admin
+    async function sendHeartbeatPing() {
+      try {
+        const h = (typeof getHeaders === 'function') ? getHeaders() : { 'Content-Type': 'application/json' };
+        const svc = (typeof currentService !== 'undefined' && currentService) ? currentService : 'netflix';
+        await fetch(`${API_BASE}/api/heartbeat?service=${svc}&_t=${Date.now()}`, {
+          method: 'GET',
+          headers: h,
+          cache: 'no-store'
+        });
+      } catch (e) {}
+    }
+    sendHeartbeatPing();
+    setInterval(sendHeartbeatPing, 15000);
 
     // ⚡ SINCRONIZAÇÃO INSTANTÂNEA AO RETORNAR PARA O NAVEGADOR NO CELULAR
     document.addEventListener('visibilitychange', () => {

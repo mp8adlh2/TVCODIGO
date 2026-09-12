@@ -1074,61 +1074,131 @@ COOKIE_ADMIN_PASSWORD = get_cookie_admin_password()
 TOKEN_TTL_SECONDS = int(os.environ.get("TOKEN_TTL_SECONDS", 86400)) # 24 Horas de validade por token
 CONFIG_SENHAS_FILE = os.path.join(BASE_DIR, "config_senhas.json")
 
+def extract_passwords_from_text_files() -> List[dict]:
+    """Lê dinamicamente senhas configuradas nos arquivos SENHA_*.txt da pasta raiz."""
+    file_service_map = {
+        "SENHA_NETFLIX.txt": (["netflix"], "Senha Oficial Netflix (4K UHD)", "Libera: netflix"),
+        "SENHA_HBO.txt": (["hbo"], "Senha Oficial HBO Max", "Libera: hbo"),
+        "SENHA_SKY.txt": (["sky"], "Senha Oficial Sky+ / Sky TV", "Libera: sky"),
+        "SENHA_CRUNCHYROLL.txt": (["crunchyroll"], "Senha Oficial Crunchyroll", "Libera: crunchyroll"),
+        "SENHA_NETFLIX_HBO.txt": (["netflix", "hbo"], "Senha Oficial Duo (Netflix + HBO)", "Libera: netflix, hbo"),
+    }
+    extracted = []
+    for fname, (svcs, role_label, desc) in file_service_map.items():
+        fpath = os.path.join(BASE_DIR, fname)
+        if os.path.exists(fpath):
+            try:
+                with open(fpath, 'r', encoding='utf-8', errors='ignore') as f:
+                    for line in f.read().splitlines():
+                        line = line.strip()
+                        # Linhas com a senha normalmente têm caracteres como #, @, $, * ou letras maiúsculas/dígitos
+                        if line and not line.startswith(('=', '-', '•', 'LIBERAÇÃO', 'SENHA', '💡', '🔍', '🎬', '🔴', '🟣', '🟠', '🔵', '🔐', '🍪')):
+                            if len(line) >= 6 and ('#' in line or '@' in line or '$' in line or len(line) > 10):
+                                extracted.append({
+                                    "senha": line,
+                                    "nome": role_label,
+                                    "servicos": svcs,
+                                    "descricao": desc
+                                })
+            except Exception:
+                pass
+    return extracted
+
 def load_access_keys() -> List[dict]:
-    """Carrega dinamicamente a lista de senhas cadastradas no config_senhas.json."""
-    if not os.path.exists(CONFIG_SENHAS_FILE):
-        default_data = {
-            "senhas": [
-                {
-                    "senha": "VIP#MASTER@1444$4K*76!2026",
-                    "nome": "Cliente VIP (Acesso Total 4K)",
-                    "servicos": ["netflix", "hbo", "crunchyroll", "sky"],
-                    "descricao": "Libera todos os 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+"
-                }
-            ]
-        }
+    """Carrega dinamicamente a lista de senhas cadastradas no config_senhas.json e arquivos SENHA_*.txt."""
+    default_data = {
+        "senhas": [
+            {
+                "senha": "VIP#MASTER@1444$4K*76!2026",
+                "nome": "VIP Master 4K",
+                "servicos": ["netflix", "hbo", "crunchyroll", "sky"],
+                "descricao": "Libera todos os 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+"
+            },
+            {
+                "senha": "VIP#SECURITY@8929$VIP*24!2026",
+                "nome": "Cliente VIP",
+                "servicos": ["netflix", "hbo"],
+                "descricao": "Libera: netflix, hbo"
+            },
+            {
+                "senha": "OMEGA#VAULT@8384$PREMIUM*67!2026",
+                "nome": "5521984920015",
+                "servicos": ["netflix", "hbo"],
+                "descricao": "Libera: netflix, hbo"
+            }
+        ]
+    }
+    
+    valid_keys = []
+    seen_pwds = set()
+
+    # 1. Carrega do config_senhas.json se existir
+    if os.path.exists(CONFIG_SENHAS_FILE):
+        try:
+            with open(CONFIG_SENHAS_FILE, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                raw_list = data.get("senhas", []) if isinstance(data, dict) else []
+                for item in raw_list:
+                    if isinstance(item, dict):
+                        pwd = str(item.get("senha", "") or item.get("password", "")).strip()
+                        nome = str(item.get("nome", "") or item.get("role_name", "") or "Cliente VIP").strip()
+                        svcs = [s for s in item.get("servicos", ["netflix", "hbo", "crunchyroll", "sky"]) if s in ["netflix", "hbo", "crunchyroll", "sky"]]
+                        desc = str(item.get("descricao", "")).strip()
+                        if pwd and pwd not in seen_pwds:
+                            seen_pwds.add(pwd)
+                            valid_keys.append({
+                                "senha": pwd,
+                                "nome": nome or "Cliente VIP",
+                                "servicos": svcs or ["netflix", "hbo", "crunchyroll", "sky"],
+                                "descricao": desc or f"Libera: {', '.join(svcs)}"
+                            })
+        except Exception:
+            pass
+    else:
         try:
             with open(CONFIG_SENHAS_FILE, 'w', encoding='utf-8') as f:
                 json.dump(default_data, f, indent=2, ensure_ascii=False)
             sync_passwords_text_file(default_data["senhas"])
-            return default_data["senhas"]
         except Exception:
-            return default_data["senhas"]
+            pass
 
-    try:
-        with open(CONFIG_SENHAS_FILE, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            raw_list = data.get("senhas", [])
-            valid_keys = []
-            seen_pwds = set()
-            for item in raw_list:
-                if isinstance(item, dict):
-                    pwd = str(item.get("senha", "")).strip()
-                    if pwd and pwd not in seen_pwds and not pwd.startswith(('a liberação', '1.', '2.', '3.', '4.', '5.', '6.', '7.', '8.', '9.')):
-                        seen_pwds.add(pwd)
-                        valid_keys.append({
-                            "senha": pwd,
-                            "nome": str(item.get("nome", "Cliente VIP")).strip(),
-                            "servicos": [s for s in item.get("servicos", ["netflix", "hbo", "crunchyroll", "sky"]) if s in ["netflix", "hbo", "crunchyroll", "sky"]],
-                            "descricao": str(item.get("descricao", "")).strip()
-                        })
-            return valid_keys
-    except Exception:
-        return []
+    # Se a lista estava vazia, utiliza os valores padrão
+    if not valid_keys:
+        for item in default_data["senhas"]:
+            pwd = item["senha"]
+            if pwd not in seen_pwds:
+                seen_pwds.add(pwd)
+                valid_keys.append(item)
+
+    # 2. Incorpora senhas dos arquivos TXT (SENHA_NETFLIX.txt etc.) para garantir compatibilidade total
+    for item in extract_passwords_from_text_files():
+        pwd = item["senha"]
+        if pwd and pwd not in seen_pwds:
+            seen_pwds.add(pwd)
+            valid_keys.append(item)
+
+    return valid_keys
 
 def clean_password_str(s: str) -> str:
     """Higieniza a senha removendo espaços invisíveis, aspas, quebras de linha e BOM."""
     if not isinstance(s, str):
-        return ""
+        s = str(s or "")
     cleaned = s.replace('\ufeff', '').replace('\u200b', '').replace('\u00a0', ' ').replace('\r', '').strip()
     if (cleaned.startswith('"') and cleaned.endswith('"')) or (cleaned.startswith("'") and cleaned.endswith("'")):
         cleaned = cleaned[1:-1].strip()
     return cleaned
 
+def normalize_phone_digits(val: str) -> str:
+    """Extrai apenas dígitos para comparação flexível de números de WhatsApp/Telefone."""
+    if not isinstance(val, str):
+        val = str(val or "")
+    return re.sub(r'\D', '', val)
+
 def secure_str_compare(a: str, b: str) -> bool:
     """Comparação segura, flexível e imune a espaços invisíveis, BOM, aspas e case."""
     if not isinstance(a, str) or not isinstance(b, str):
-        return False
+        a = str(a or "")
+        b = str(b or "")
     ca = clean_password_str(a)
     cb = clean_password_str(b)
     if not ca or not cb:
@@ -1143,33 +1213,74 @@ def secure_str_compare(a: str, b: str) -> bool:
         return False
 
 def find_access_role(password: str) -> Optional[dict]:
-    """Busca a configuração de acesso correspondente à senha informada."""
+    """Busca a configuração de acesso correspondente à senha informada ou ao Telefone/Nome cadastrado."""
     keys = load_access_keys()
     p_clean = clean_password_str(password)
+    if not p_clean:
+        return None
+
+    p_digits = normalize_phone_digits(p_clean)
+
+    # 1. Checa senhas cadastradas e nomes de clientes (ex: 5521984920015)
     for item in keys:
-        if secure_str_compare(p_clean, item.get("senha", "")):
+        item_pwd = item.get("senha", "")
+        item_name = item.get("nome", "")
+        
+        # Comparação direta com a senha
+        if secure_str_compare(p_clean, item_pwd):
             return item
+        
+        # Comparação com o nome / telefone digitado pelo cliente
+        if item_name and secure_str_compare(p_clean, item_name):
+            return item
+
+        # Comparação flexível por dígitos de telefone (WhatsApp do cliente)
+        if len(p_digits) >= 8:
+            if item_name:
+                name_digits = normalize_phone_digits(item_name)
+                if name_digits and (p_digits == name_digits or p_digits.endswith(name_digits) or name_digits.endswith(p_digits)):
+                    return item
+            if item_pwd:
+                pwd_digits = normalize_phone_digits(item_pwd)
+                if pwd_digits and (p_digits == pwd_digits or p_digits.endswith(pwd_digits) or pwd_digits.endswith(p_digits)):
+                    return item
+
+    # 2. Senha Mestre do Terminal
     if secure_str_compare(p_clean, get_master_password()):
         return {
             "senha": get_master_password(),
             "nome": "Master Admin Titanium",
             "servicos": ["netflix", "hbo", "crunchyroll", "sky"]
         }
+
+    # 3. Senha do Cofre / Gerenciador de Cookies
+    if secure_str_compare(p_clean, get_cookie_admin_password()):
+        return {
+            "senha": get_cookie_admin_password(),
+            "nome": "Administrador do Cofre",
+            "servicos": ["netflix", "hbo", "crunchyroll", "sky"]
+        }
+
     return None
 
-ACTIVE_SESSIONS: Dict[str, dict] = {} # token -> {"exp": float, "services": list, "role_name": str}
+ACTIVE_SESSIONS: Dict[str, dict] = {} # token -> {"exp": float, "services": list, "role_name": str, "password": str}
 ACTIVE_ADMIN_SESSIONS: Dict[str, float] = {} # admin_token -> expiry_timestamp
 SESSION_CACHE_FILE = os.path.join(BASE_DIR, ".session_cache.json")
 
 def load_active_sessions():
-    global ACTIVE_SESSIONS
+    global ACTIVE_SESSIONS, ACTIVE_ADMIN_SESSIONS
     if os.path.exists(SESSION_CACHE_FILE):
         try:
             with open(SESSION_CACHE_FILE, 'r', encoding='utf-8') as f:
                 data = json.load(f)
                 now = time.time()
-                clean = {}
-                for t, val in data.items():
+                
+                # Suporta formato estruturado {"client_sessions": ..., "admin_sessions": ...} ou legado {token: data}
+                client_raw = data.get("client_sessions", {}) if isinstance(data, dict) and "client_sessions" in data else (data if isinstance(data, dict) else {})
+                admin_raw = data.get("admin_sessions", {}) if isinstance(data, dict) and "admin_sessions" in data else {}
+                
+                clean_clients = {}
+                for t, val in client_raw.items():
                     if isinstance(val, dict):
                         pwd = val.get("password", "").strip()
                         if pwd and val.get("exp", 0) > now:
@@ -1177,15 +1288,25 @@ def load_active_sessions():
                             if role:
                                 val["services"] = role.get("servicos", val.get("services"))
                                 val["role_name"] = role.get("nome", val.get("role_name"))
-                                clean[t] = val
-                ACTIVE_SESSIONS = clean
+                                clean_clients[t] = val
+                ACTIVE_SESSIONS = clean_clients
+
+                clean_admins = {}
+                for atok, exp_ts in admin_raw.items():
+                    if isinstance(exp_ts, (int, float)) and exp_ts > now:
+                        clean_admins[str(atok)] = float(exp_ts)
+                ACTIVE_ADMIN_SESSIONS = clean_admins
         except Exception:
             pass
 
 def save_active_sessions():
     try:
+        payload = {
+            "client_sessions": ACTIVE_SESSIONS,
+            "admin_sessions": ACTIVE_ADMIN_SESSIONS
+        }
         with open(SESSION_CACHE_FILE, 'w', encoding='utf-8') as f:
-            json.dump(ACTIVE_SESSIONS, f)
+            json.dump(payload, f)
     except Exception:
         pass
 
@@ -1245,23 +1366,27 @@ def track_client_heartbeat(ip: str, token: str, user_agent: str, role_name: str,
                 "request_count": 1
             }
         
-        # Limpeza de inativos (> 45s)
-        expired_keys = [k for k, v in ACTIVE_CLIENT_HEARTBEATS.items() if now - v.get("last_seen", 0) > 45.0]
+        # Limpeza preventiva de sessões inativas (> 120s)
+        expired_keys = [k for k, v in ACTIVE_CLIENT_HEARTBEATS.items() if now - v.get("last_seen", 0) > 120.0]
         for k in expired_keys:
             ACTIVE_CLIENT_HEARTBEATS.pop(k, None)
 
 def get_online_users_data() -> dict:
     now = time.time()
     with ONLINE_USERS_LOCK:
-        expired_keys = [k for k, v in ACTIVE_CLIENT_HEARTBEATS.items() if now - v.get("last_seen", 0) > 45.0]
+        expired_keys = [k for k, v in ACTIVE_CLIENT_HEARTBEATS.items() if now - v.get("last_seen", 0) > 120.0]
         for k in expired_keys:
             ACTIVE_CLIENT_HEARTBEATS.pop(k, None)
         
         users_list = []
         by_service = {"netflix": 0, "hbo": 0, "crunchyroll": 0, "sky": 0}
-        for v in ACTIVE_CLIENT_HEARTBEATS.values():
+        
+        for v in list(ACTIVE_CLIENT_HEARTBEATS.values()):
             idle_seconds = max(0, int(now - v.get("last_seen", now)))
-            svc = v.get("current_service", "netflix").lower()
+            svc = (v.get("current_service") or "netflix").lower()
+            if svc in ["hbomax", "max"]: svc = "hbo"
+            elif svc in ["cr", "crunchy"]: svc = "crunchyroll"
+            elif svc in ["sky+", "sky_tv"]: svc = "sky"
             if svc in by_service:
                 by_service[svc] += 1
             dev_str = v.get("device", "💻 Computador")
@@ -1269,6 +1394,7 @@ def get_online_users_data() -> dict:
             dev_name = dev_str.replace("📱", "").replace("💻", "").strip() or "Dispositivo"
             
             client_dict = {
+                "type": "web_client",
                 "session_id": v.get("session_id", ""),
                 "ip": v.get("ip", "127.0.0.1"),
                 "device": dev_str,
@@ -1280,17 +1406,64 @@ def get_online_users_data() -> dict:
                 "connected_at": v.get("connected_at", "--:--"),
                 "last_seen_seconds": idle_seconds,
                 "idle_seconds": idle_seconds,
-                "is_active": idle_seconds < 20
+                "is_active": idle_seconds < 30
             }
             users_list.append(client_dict)
+
+        # 📺 Carrega todos os dispositivos Smart TV ativados e vinculados
+        connected_tvs = []
+        raw_history = load_history()
+        seen_tvs = set()
+        for item in raw_history:
+            if isinstance(item, dict):
+                tv_code = str(item.get("tv_code", "")).strip()
+                svc = str(item.get("service", "Netflix")).strip()
+                status = str(item.get("status", "Sucesso")).strip()
+                email = str(item.get("email", "")).strip()
+                plan = str(item.get("plan", "")).strip()
+                used_at = str(item.get("used_at", "")).strip()
+                
+                # Identificador único da TV
+                tv_key = f"{svc.lower()}_{tv_code}"
+                if tv_key not in seen_tvs and tv_code:
+                    seen_tvs.add(tv_key)
+                    svc_lower = svc.lower()
+                    if "sky" in svc_lower:
+                        svc_badge = "sky"
+                    elif "hbo" in svc_lower:
+                        svc_badge = "hbo"
+                    elif "crunchy" in svc_lower:
+                        svc_badge = "crunchyroll"
+                    else:
+                        svc_badge = "netflix"
+                    
+                    connected_tvs.append({
+                        "type": "smart_tv",
+                        "device": f"📺 Smart TV ({svc})",
+                        "device_name": f"Smart TV {svc}",
+                        "device_icon": "📺",
+                        "service": svc_badge,
+                        "service_name": svc,
+                        "tv_code": tv_code,
+                        "email": email,
+                        "plan": plan or f"{svc} Ativado",
+                        "status": status,
+                        "connected_at": used_at,
+                        "is_active": True
+                    })
+
+        total_online = len(users_list)
+        total_tvs = len(connected_tvs)
+        total_all = total_online + total_tvs
         
-        total = len(users_list)
         return {
-            "total": total,
-            "total_online": total,
+            "total": total_all,
+            "total_online": total_online,
+            "total_tvs": total_tvs,
             "by_service": by_service,
             "active_clients": users_list,
-            "users": users_list,
+            "connected_tvs": connected_tvs,
+            "users": users_list + connected_tvs,
             "timestamp": now
         }
 
@@ -1559,6 +1732,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     "password": password
                 }
                 save_active_sessions()
+                track_client_heartbeat(ip, new_token, self.headers.get('User-Agent', ''), role_name, allowed_services[0] if allowed_services else "netflix")
                 return self.send_json_response({
                     "success": True,
                     "token": new_token,
@@ -1623,6 +1797,31 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 "role_name": session.get("role_name", "Acesso Autorizado")
             })
         return self.send_json_response({"authenticated": False}, 401)
+
+    def handle_api_heartbeat(self):
+        client_ip = self.get_client_ip()
+        ua = self.headers.get('User-Agent', '')
+        token = self.get_auth_token_str()
+        session = self.get_session_info()
+        role_name = session.get("role_name", "") if session else ""
+        
+        service = "netflix"
+        if "service=" in self.path:
+            service = self.path.split("service=")[-1].split("&")[0]
+
+        if self.command == 'POST':
+            try:
+                cl = int(self.headers.get('Content-Length', 0))
+                if cl > 0:
+                    payload = json.loads(self.rfile.read(cl).decode('utf-8'))
+                    service = payload.get("service", service)
+                    if payload.get("role_name"):
+                        role_name = payload.get("role_name")
+            except Exception:
+                pass
+
+        track_client_heartbeat(client_ip, token, ua, role_name, service)
+        self.send_json_response({"success": True, "online_users": get_online_users_data()})
 
     def check_rate_limit(self, max_requests: int = 15, window_seconds: int = 30) -> bool:
         """Rate limiting por IP para proteger endpoints sensíveis contra spam/DDoS e vazamento de memória."""
@@ -1699,6 +1898,8 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             if not self.is_authenticated():
                 return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
             self.handle_api_status()
+        elif raw_path == '/api/heartbeat':
+            self.handle_api_heartbeat()
         elif raw_path == '/api/admin/stats':
             if not self.is_admin_authenticated():
                 return self.send_json_response({"authenticated": False, "message": "Senha do gerenciador de cookies requerida."}, 401)
@@ -1752,6 +1953,8 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             self.handle_api_logout()
         elif raw_path == '/api/verify-token':
             self.handle_api_verify_token()
+        elif raw_path == '/api/heartbeat':
+            self.handle_api_heartbeat()
         elif raw_path == '/api/admin/verify-pass':
             self.handle_api_verify_admin_pass()
         elif raw_path == '/api/admin/passwords/save':
@@ -2915,20 +3118,35 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         except Exception:
             return self.send_json_response({"success": False, "message": "JSON inválido."}, 400)
 
-        senha = req.get("senha", "").strip()
-        nome = req.get("nome", "").strip()
-        servicos = req.get("servicos", [])
-        descricao = req.get("descricao", "").strip()
+        senha = str(req.get("senha", "") or req.get("password", "") or "").strip()
+        nome = str(req.get("nome", "") or req.get("role_name", "") or req.get("cliente", "") or "").strip()
+        servicos = req.get("servicos", []) or req.get("allowed_services", [])
+        descricao = str(req.get("descricao", "") or req.get("description", "") or "").strip()
+
+        # Se o usuário preencheu apenas o telefone/nome do cliente e deixou a senha vazia, usa o próprio telefone como senha!
+        if not senha and nome:
+            senha = nome
 
         if not senha:
-            return self.send_json_response({"success": False, "message": "A senha não pode estar em branco."}, 400)
+            return self.send_json_response({"success": False, "message": "A senha não pode estar em branco. Digite uma senha ou o telefone do cliente."}, 400)
 
-        if not isinstance(servicos, list) or len(servicos) == 0:
-            return self.send_json_response({"success": False, "message": "Selecione ao menos 1 serviço para a senha liberar."}, 400)
+        # Normalização inteligente e flexível dos serviços selecionados
+        valid_services = []
+        if isinstance(servicos, list) and len(servicos) > 0:
+            for s in servicos:
+                s_clean = str(s).strip().lower()
+                if s_clean in ["netflix", "nf"]:
+                    if "netflix" not in valid_services: valid_services.append("netflix")
+                elif s_clean in ["hbo", "hbomax", "hbo_max", "max"]:
+                    if "hbo" not in valid_services: valid_services.append("hbo")
+                elif s_clean in ["crunchyroll", "crunchy", "cr"]:
+                    if "crunchyroll" not in valid_services: valid_services.append("crunchyroll")
+                elif s_clean in ["sky", "sky+", "sky_tv", "skytv"]:
+                    if "sky" not in valid_services: valid_services.append("sky")
 
-        valid_services = [s for s in servicos if s in ["netflix", "hbo", "crunchyroll", "sky"]]
+        # Se nenhum serviço válido foi identificado, libera todos os 4 por segurança
         if not valid_services:
-            return self.send_json_response({"success": False, "message": "Serviços selecionados inválidos."}, 400)
+            valid_services = ["netflix", "hbo", "crunchyroll", "sky"]
 
         if not nome:
             svc_names = [s.upper() for s in valid_services]
@@ -2937,7 +3155,8 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         keys = load_access_keys()
         found = False
         for idx, k in enumerate(keys):
-            if k.get("senha", "").strip() == senha:
+            k_pwd = str(k.get("senha", "")).strip()
+            if secure_str_compare(k_pwd, senha):
                 keys[idx] = {
                     "senha": senha,
                     "nome": nome,
@@ -2961,7 +3180,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             sync_passwords_text_file(keys)
             return self.send_json_response({
                 "success": True,
-                "message": f"Senha '{nome}' salva com sucesso!",
+                "message": f"Senha de '{nome}' salva com sucesso!",
                 "passwords": keys
             })
         except Exception as e:
@@ -2976,6 +3195,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             return self.send_json_response({"success": False, "message": "JSON inválido."}, 400)
 
         senha = str(req.get("senha", "") or req.get("password", "")).strip()
+        nome = str(req.get("nome", "") or req.get("role_name", "")).strip()
         raw_idx = req.get("index")
 
         keys = load_access_keys()
@@ -2992,11 +3212,13 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             except Exception:
                 pass
 
-        # 2. Se não encontrou por índice, busca pela string da senha com comparação segura e flexível
-        if target_idx == -1 and senha:
+        # 2. Se não encontrou por índice, busca pela string da senha ou pelo nome do cliente
+        if target_idx == -1 and (senha or nome):
             for idx, k in enumerate(keys):
                 k_pwd = str(k.get("senha", "")).strip()
-                if secure_str_compare(k_pwd, senha) or k_pwd == senha or k_pwd.lower() == senha.lower():
+                k_name = str(k.get("nome", "")).strip()
+                if (senha and (secure_str_compare(k_pwd, senha) or k_pwd == senha or k_pwd.lower() == senha.lower())) or \
+                   (nome and (secure_str_compare(k_name, nome) or k_name.lower() == nome.lower())):
                     target_idx = idx
                     target_item = k
                     break
@@ -3005,6 +3227,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             return self.send_json_response({"success": False, "message": "Senha não encontrada no sistema para exclusão."}, 404)
 
         deleted_pwd = str(target_item.get("senha", "")).strip()
+        deleted_name = str(target_item.get("nome", "Perfil")).strip()
         keys.pop(target_idx)
 
         try:
@@ -3020,7 +3243,10 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     ACTIVE_ADMIN_SESSIONS[admin_tok] = time.time() + 43200
                 to_purge = [
                     t for t, s in ACTIVE_SESSIONS.items()
-                    if t != admin_tok and secure_str_compare(str(s.get("password", "")).strip(), deleted_pwd)
+                    if t != admin_tok and (
+                        secure_str_compare(str(s.get("password", "")).strip(), deleted_pwd) or
+                        secure_str_compare(str(s.get("role_name", "")).strip(), deleted_name)
+                    )
                 ]
                 for t in to_purge:
                     ACTIVE_SESSIONS.pop(t, None)
@@ -3028,7 +3254,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
             return self.send_json_response({
                 "success": True,
-                "message": f"Senha '{deleted_pwd}' removida com sucesso. Dispositivos desconectados.",
+                "message": f"Senha '{deleted_name}' removida com sucesso. Dispositivos desconectados.",
                 "passwords": keys
             })
         except Exception as e:

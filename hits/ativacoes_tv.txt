@@ -179,3 +179,18 @@ Criar conta
 [SUCESSO] 12/09/2026 12:08:17 | carlosparolineto@gmail.com:C4rl0s | Codigo: 213130 | TV ativada com sucesso! Confirmado na tela (muito bem).
 [SUCESSO] 12/09/2026 12:13:29 | mgambonis@gmail.com:Bisung@040592 | Codigo: 713132 | TV ativada com sucesso! Confirmado na plataforma Sky+.
 [SUCESSO] 12/09/2026 12:14:24 | jefb1951@gmail.com:Bl33415013 | Codigo: 461770 | TV ativada com sucesso! Confirmado na plataforma Sky+.
+[SUCESSO] 12/09/2026 17:26:32 | natasoares2014@gmail.com:Corajoso81 | Codigo: 221575 | TV ativada com sucesso! Confirmado na plataforma Sky+.
+[FALHA] 12/09/2026 17:32:36 | spawnsergio@gmail.com:R$ms509315 | Codigo: 571331 | Erro na automação: Credenciais inválidas SKY (spawnsergio@gmail.com): Entre com sua conta SKY
+
+Informe o celular ou e-mail que você cadastrou.
+
+Entrar sem senha
+
+Carregande...
+ Carregande...
+
+Se você ainda não tem a sua conta SKY, é só
+criar uma.
+
+Criar conta
+[SUCESSO] 12/09/2026 17:34:45 | juliocpmedina@gmail.com:Dora*001 | Codigo: 571331 | TV ativada com sucesso! Confirmado na plataforma Sky+.

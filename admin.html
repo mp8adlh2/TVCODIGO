@@ -778,34 +778,55 @@
         </button>
       </div>
 
-      <div class="online-users-stats-row">
+      <div class="online-users-stats-row" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 8px;">
         <div class="online-stat-card">
-          <span class="online-stat-val" id="users-total-val" style="color: #00ff66;">1</span>
-          <span class="online-stat-title">TOTAL ATIVOS</span>
+          <span class="online-stat-val" id="users-total-val" style="color: #00ff66;">0</span>
+          <span class="online-stat-title">TOTAL DISPOSITIVOS</span>
+        </div>
+        <div class="online-stat-card">
+          <span class="online-stat-val" id="tvs-total-val" style="color: #ffd700;">0</span>
+          <span class="online-stat-title">📺 SMART TVs</span>
+        </div>
+        <div class="online-stat-card">
+          <span class="online-stat-val" id="clients-live-val" style="color: #00e5ff;">0</span>
+          <span class="online-stat-title">🟢 AO VIVO</span>
         </div>
         <div class="online-stat-card">
           <span class="online-stat-val" id="users-nf-val" style="color: #ff3344;">0</span>
-          <span class="online-stat-title">EM NETFLIX</span>
+          <span class="online-stat-title">🔴 NETFLIX</span>
         </div>
         <div class="online-stat-card">
           <span class="online-stat-val" id="users-hbo-val" style="color: #c084fc;">0</span>
-          <span class="online-stat-title">EM HBO MAX</span>
+          <span class="online-stat-title">🟣 HBO MAX</span>
         </div>
         <div class="online-stat-card">
           <span class="online-stat-val" id="users-cr-val" style="color: #f47521;">0</span>
-          <span class="online-stat-title">EM CRUNCHYROLL</span>
+          <span class="online-stat-title">🟠 CRUNCHY</span>
         </div>
         <div class="online-stat-card">
           <span class="online-stat-val" id="users-sky-val" style="color: #00A0E3;">0</span>
-          <span class="online-stat-title">EM SKY+</span>
+          <span class="online-stat-title">🔵 SKY+</span>
         </div>
       </div>
 
-      <div style="font-size: 11px; color: var(--text-dim); font-weight: 700; text-transform: uppercase;">
-        Dispositivos e Clientes Navegando Agora:
+      <!-- Filtros de Dispositivos -->
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; margin-top: 4px;">
+        <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+          <button type="button" class="btn-icon" id="btn-filter-tvs" onclick="setDeviceFilter('tvs')" style="font-size: 11px; padding: 4px 10px; color: #ffd700; border-color: rgba(255,215,0,0.4); background: rgba(255,215,0,0.1);">
+            📺 Smart TVs Vinculadas (<span id="filter-count-tvs">0</span>)
+          </button>
+          <button type="button" class="btn-icon" id="btn-filter-online" onclick="setDeviceFilter('online')" style="font-size: 11px; padding: 4px 10px; color: #00ff66; border-color: rgba(0,255,102,0.3);">
+            🟢 Aparelhos Ao Vivo (<span id="filter-count-online">0</span>)
+          </button>
+          <button type="button" class="btn-icon" id="btn-filter-all" onclick="setDeviceFilter('all')" style="font-size: 11px; padding: 4px 10px; color: #00e5ff; border-color: rgba(0,229,255,0.3);">
+            🌐 Todos os Dispositivos (<span id="filter-count-all">0</span>)
+          </button>
+        </div>
+        <input type="text" id="device-search-input" placeholder="🔍 Filtrar por código da TV, IP ou conta..." oninput="filterRenderedDevices()" style="background: rgba(0,0,0,0.6); border: 1px solid var(--panel-border); border-radius: 8px; padding: 6px 10px; color: #fff; font-size: 11px; min-width: 200px;">
       </div>
-      <div id="users-list-container" class="users-list-container">
-        <div style="text-align: center; color: var(--text-dim); padding: 20px; font-size: 12px;">Carregando sessões ativas...</div>
+
+      <div id="users-list-container" class="users-list-container" style="max-height: 480px; overflow-y: auto;">
+        <div style="text-align: center; color: var(--text-dim); padding: 20px; font-size: 12px;">Carregando dispositivos conectados...</div>
       </div>
     </div>
 
@@ -1372,62 +1393,231 @@
       }
     }
 
-    /* 👥 Online Users */
-    async function loadOnlineUsers() {
+    /* 👥 Online Users & Connected Devices */
+    let currentDeviceFilter = 'tvs';
+    let rawDevicesData = { active_clients: [], connected_tvs: [] };
+
+    function setDeviceFilter(filter) {
+      currentDeviceFilter = filter;
+      const btnTvs = document.getElementById('btn-filter-tvs');
+      const btnOnline = document.getElementById('btn-filter-online');
+      const btnAll = document.getElementById('btn-filter-all');
+
+      if (btnTvs) {
+        btnTvs.style.background = (filter === 'tvs') ? 'rgba(255, 215, 0, 0.25)' : 'transparent';
+        btnTvs.style.borderColor = (filter === 'tvs') ? '#ffd700' : 'rgba(255, 215, 0, 0.3)';
+        btnTvs.style.boxShadow = (filter === 'tvs') ? '0 0 10px rgba(255, 215, 0, 0.25)' : 'none';
+      }
+      if (btnOnline) {
+        btnOnline.style.background = (filter === 'online') ? 'rgba(0, 255, 102, 0.25)' : 'transparent';
+        btnOnline.style.borderColor = (filter === 'online') ? '#00ff66' : 'rgba(0, 255, 102, 0.3)';
+        btnOnline.style.boxShadow = (filter === 'online') ? '0 0 10px rgba(0, 255, 102, 0.25)' : 'none';
+      }
+      if (btnAll) {
+        btnAll.style.background = (filter === 'all') ? 'rgba(0, 229, 255, 0.25)' : 'transparent';
+        btnAll.style.borderColor = (filter === 'all') ? '#00e5ff' : 'rgba(0, 229, 255, 0.3)';
+        btnAll.style.boxShadow = (filter === 'all') ? '0 0 10px rgba(0, 229, 255, 0.25)' : 'none';
+      }
+
+      filterRenderedDevices();
+    }
+
+    function filterRenderedDevices() {
       const container = document.getElementById('users-list-container');
+      if (!container) return;
+
+      const q = (document.getElementById('device-search-input')?.value || '').toLowerCase().trim();
+      const tvs = rawDevicesData.connected_tvs || [];
+      const clients = rawDevicesData.active_clients || [];
+
+      let list = [];
+      if (currentDeviceFilter === 'tvs') {
+        list = tvs;
+      } else if (currentDeviceFilter === 'online') {
+        list = clients;
+      } else {
+        list = [...clients, ...tvs];
+      }
+
+      if (q) {
+        list = list.filter(item => {
+          const text = [
+            item.tv_code || '',
+            item.email || '',
+            item.device || '',
+            item.device_name || '',
+            item.role_name || '',
+            item.service || '',
+            item.service_name || '',
+            item.plan || '',
+            item.ip || '',
+            item.status || ''
+          ].join(' ').toLowerCase();
+          return text.includes(q);
+        });
+      }
+
+      if (!list.length) {
+        const filterName = (currentDeviceFilter === 'tvs') ? 'Smart TVs ativadas' : (currentDeviceFilter === 'online' ? 'dispositivos ao vivo' : 'dispositivos');
+        container.innerHTML = `<div style="text-align: center; color: var(--text-dim); padding: 32px; font-size: 12.5px;">🔍 Nenhum(a) ${filterName} encontrado(a)${q ? ` para a busca "${escapeHtml(q)}"` : ''}.</div>`;
+        return;
+      }
+
+      container.innerHTML = list.map((item, idx) => {
+        const isTv = (item.type === 'smart_tv' || Boolean(item.tv_code));
+        const svc = (item.service || 'netflix').toLowerCase();
+
+        let svcBadge = '<span style="background:rgba(229,9,20,0.2); color:#ff3344; border:1px solid rgba(229,9,20,0.4); border-radius:6px; padding:2px 8px; font-size:10px; font-weight:800;">🔴 NETFLIX</span>';
+        if (svc === 'hbo' || svc === 'hbomax') svcBadge = '<span style="background:rgba(168,85,247,0.2); color:#c084fc; border:1px solid rgba(168,85,247,0.4); border-radius:6px; padding:2px 8px; font-size:10px; font-weight:800;">🟣 HBO MAX</span>';
+        else if (svc === 'crunchyroll' || svc === 'cr') svcBadge = '<span style="background:rgba(244,117,33,0.2); color:#f47521; border:1px solid rgba(244,117,33,0.4); border-radius:6px; padding:2px 8px; font-size:10px; font-weight:800;">🟠 CRUNCHYROLL</span>';
+        else if (svc === 'sky') svcBadge = '<span style="background:rgba(0,160,227,0.2); color:#00A0E3; border:1px solid rgba(0,160,227,0.4); border-radius:6px; padding:2px 8px; font-size:10px; font-weight:800;">🔵 SKY+</span>';
+
+        if (isTv) {
+          const tvCode = escapeHtml(item.tv_code || '------');
+          const email = escapeHtml(item.email || 'Conta Vinculada');
+          const plan = escapeHtml(item.plan || 'Plano Padrão');
+          const connectedAt = escapeHtml(item.connected_at || '--/--/----');
+
+          return `
+            <div class="user-card-item" style="border-left: 3px solid #ffd700;">
+              <div style="display: flex; align-items: center; gap: 12px; min-width: 0; flex: 1;">
+                <div style="font-size: 24px; width: 40px; height: 40px; border-radius: 10px; background: rgba(255,215,0,0.12); border: 1px solid rgba(255,215,0,0.3); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  📺
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 3px; min-width: 0; flex: 1;">
+                  <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                    <span style="font-size: 13.5px; font-weight: 800; color: #fff;">Smart TV #${idx + 1}</span>
+                    ${svcBadge}
+                    <span style="background: rgba(255,215,0,0.15); border: 1px solid rgba(255,215,0,0.4); color: #ffd700; border-radius: 6px; padding: 1px 7px; font-size: 11.5px; font-family: var(--font-mono); font-weight: 900;">
+                      CÓDIGO: ${tvCode}
+                    </span>
+                  </div>
+                  <div style="font-size: 11px; color: var(--text-dim); display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                    <span style="color: #f8fafc; font-weight: 600;">📧 ${email}</span>
+                    <span style="background: rgba(255,255,255,0.06); padding: 1px 6px; border-radius: 4px; font-size: 10px;">${plan}</span>
+                    <span style="font-family: var(--font-mono); font-size: 10.5px; color: #94a3b8;">⏱️ ${connectedAt}</span>
+                  </div>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 4px; flex-shrink: 0;">
+                <span style="background: rgba(0,255,102,0.15); color: #00ff66; border: 1px solid rgba(0,255,102,0.3); border-radius: 8px; padding: 2px 8px; font-size: 10.5px; font-weight: 800; display: inline-flex; align-items: center; gap: 4px;">
+                  <span style="width: 6px; height: 6px; border-radius: 50%; background: #00ff66;"></span> VINCULADA
+                </span>
+                <button type="button" class="btn-icon" onclick="copyTvInfo('${tvCode}', '${email}')" style="font-size: 9.5px; padding: 2px 6px; color: #ffd700;">
+                  📋 Copiar TV
+                </button>
+              </div>
+            </div>
+          `;
+        }
+
+        // Cliente Web (Navegador Ao Vivo)
+        const role = escapeHtml(item.role_name || 'Acesso VIP');
+        const devIcon = item.device_icon || '💻';
+        const devName = escapeHtml(item.device_name || 'Dispositivo');
+        const ip = escapeHtml(item.ip || '127.0.0.1');
+        const idleSec = (item.last_seen_seconds !== undefined) ? `${item.last_seen_seconds}s atrás` : 'agora';
+
+        return `
+          <div class="user-card-item" style="border-left: 3px solid #00ff66;">
+            <div style="display: flex; align-items: center; gap: 12px; min-width: 0; flex: 1;">
+              <div style="font-size: 22px; width: 40px; height: 40px; border-radius: 10px; background: rgba(0,255,102,0.1); border: 1px solid rgba(0,255,102,0.25); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                ${devIcon}
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 3px; min-width: 0; flex: 1;">
+                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                  <strong style="font-size: 13.5px; color: #fff;">${role}</strong>
+                  ${svcBadge}
+                </div>
+                <div style="font-size: 11px; color: var(--text-dim); display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                  <span>${devIcon} ${devName}</span>
+                  <span>🌐 IP: <strong style="color: #00e5ff; font-family: var(--font-mono);">${ip}</strong></span>
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 4px; flex-shrink: 0;">
+              <span class="user-live-badge"><span class="user-live-dot"></span> AO VIVO</span>
+              <span style="font-size: 10px; color: var(--text-dim); font-family: var(--font-mono);">${idleSec}</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    async function copyTvInfo(code, email) {
+      const text = `📺 SMART TV ATIVADA:\n• Código da TV: ${code}\n• Conta Vinculada: ${email}`;
+      try {
+        await navigator.clipboard.writeText(text);
+        alert(`Informações da TV copiadas:\n\n${text}`);
+      } catch (e) {
+        prompt('Copie as informações da TV:', text);
+      }
+    }
+
+    async function loadOnlineUsers() {
       try {
         const res = await fetch(`${API_BASE}/api/admin/users-online?_t=${Date.now()}`, { headers: getAdminHeaders() });
         if (res.ok) {
           const data = await res.json();
           const info = data.data || data;
-          const total = info.total || 0;
-          const byService = info.by_service || {};
+
           const clients = info.active_clients || [];
+          const tvs = info.connected_tvs || [];
+          const byService = info.by_service || {};
 
-          document.getElementById('users-total-val').innerText = total;
-          document.getElementById('badge-online-count').innerText = total;
-          document.getElementById('users-nf-val').innerText = byService.netflix || 0;
-          document.getElementById('users-hbo-val').innerText = byService.hbo || 0;
-          document.getElementById('users-cr-val').innerText = byService.crunchyroll || 0;
-          document.getElementById('users-sky-val').innerText = byService.sky || 0;
+          rawDevicesData = {
+            active_clients: clients,
+            connected_tvs: tvs
+          };
 
-          if (!clients.length) {
-            container.innerHTML = '<div style="text-align: center; color: var(--text-dim); padding: 24px;">🔍 Nenhum usuário conectado nos últimos 45s.</div>';
-            return;
-          }
+          const totalTvs = tvs.length;
+          const totalClients = clients.length;
+          const totalAll = totalTvs + totalClients;
 
-          container.innerHTML = clients.map(c => {
-            let svcBadge = '<span style="background:rgba(229,9,20,0.2); color:#ff3344; border:1px solid rgba(229,9,20,0.4); border-radius:6px; padding:2px 7px; font-size:10px; font-weight:800;">🔴 NETFLIX</span>';
-            if (c.service === 'hbo') svcBadge = '<span style="background:rgba(168,85,247,0.2); color:#c084fc; border:1px solid rgba(168,85,247,0.4); border-radius:6px; padding:2px 7px; font-size:10px; font-weight:800;">🟣 HBO MAX</span>';
-            else if (c.service === 'crunchyroll') svcBadge = '<span style="background:rgba(244,117,33,0.2); color:#f47521; border:1px solid rgba(244,117,33,0.4); border-radius:6px; padding:2px 7px; font-size:10px; font-weight:800;">🟠 CRUNCHYROLL</span>';
-            else if (c.service === 'sky') svcBadge = '<span style="background:rgba(0,160,227,0.2); color:#00A0E3; border:1px solid rgba(0,160,227,0.4); border-radius:6px; padding:2px 7px; font-size:10px; font-weight:800;">🔵 SKY+</span>';
+          // Atualiza chips de estatísticas
+          const elTotal = document.getElementById('users-total-val');
+          if (elTotal) elTotal.innerText = totalAll;
+          const elBadge = document.getElementById('badge-online-count');
+          if (elBadge) elBadge.innerText = totalAll;
 
-            return `
-              <div class="user-card-item">
-                <div style="display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1;">
-                  <div style="font-size: 22px; width: 34px; height: 34px; border-radius: 10px; background: rgba(0,255,102,0.1); border: 1px solid rgba(0,255,102,0.25); display: flex; align-items: center; justify-content: center;">
-                    ${c.device_icon || '💻'}
-                  </div>
-                  <div style="display: flex; flex-direction: column; min-width: 0; flex: 1;">
-                    <div style="display: flex; align-items: center; gap: 6px;">
-                      <strong style="font-size: 13px; color: #fff;">${c.role_name || 'VIP'}</strong>
-                      ${svcBadge}
-                    </div>
-                    <div style="font-size: 10.5px; color: var(--text-dim); margin-top: 2px; display: flex; gap: 8px;">
-                      <span>📱 ${c.device_name || 'Dispositivo'}</span>
-                      <span>🌐 IP: <strong style="color: #00e5ff;">${c.ip || '127.0.0.1'}</strong></span>
-                    </div>
-                  </div>
-                </div>
-                <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 3px;">
-                  <span class="user-live-badge"><span class="user-live-dot"></span> AO VIVO</span>
-                  <span style="font-size: 10px; color: var(--text-dim); font-family: var(--font-mono);">${c.last_seen_seconds !== undefined ? c.last_seen_seconds + 's atrás' : 'agora'}</span>
-                </div>
-              </div>
-            `;
-          }).join('');
+          const elTvs = document.getElementById('tvs-total-val');
+          if (elTvs) elTvs.innerText = totalTvs;
+
+          const elClients = document.getElementById('clients-live-val');
+          if (elClients) elClients.innerText = totalClients;
+
+          // Contagem de streamings com TVs + clientes
+          let nfCount = byService.netflix || 0;
+          let hboCount = byService.hbo || 0;
+          let crCount = byService.crunchyroll || 0;
+          let skyCount = byService.sky || 0;
+
+          tvs.forEach(tv => {
+            const s = (tv.service || '').toLowerCase();
+            if (s === 'netflix') nfCount++;
+            else if (s === 'hbo') hboCount++;
+            else if (s === 'crunchyroll') crCount++;
+            else if (s === 'sky') skyCount++;
+          });
+
+          if (document.getElementById('users-nf-val')) document.getElementById('users-nf-val').innerText = nfCount;
+          if (document.getElementById('users-hbo-val')) document.getElementById('users-hbo-val').innerText = hboCount;
+          if (document.getElementById('users-cr-val')) document.getElementById('users-cr-val').innerText = crCount;
+          if (document.getElementById('users-sky-val')) document.getElementById('users-sky-val').innerText = skyCount;
+
+          // Atualiza contadores dentro dos botões de filtro
+          const fTvs = document.getElementById('filter-count-tvs');
+          if (fTvs) fTvs.innerText = totalTvs;
+          const fOnline = document.getElementById('filter-count-online');
+          if (fOnline) fOnline.innerText = totalClients;
+          const fAll = document.getElementById('filter-count-all');
+          if (fAll) fAll.innerText = totalAll;
+
+          filterRenderedDevices();
         }
-      } catch (e) {}
+      } catch (e) {
+        console.warn('Erro ao carregar dispositivos online:', e);
+      }
     }
 
     /* 🔑 Password Manager */
@@ -1462,7 +1652,7 @@
       currentAdminPasswordsList = Array.isArray(list) ? list : (list && typeof list === 'object' ? Object.keys(list).map(k => ({ senha: k, ...list[k] })) : []);
 
       if (!currentAdminPasswordsList.length) {
-        container.innerHTML = '<div style="text-align: center; color: var(--text-dim); padding: 16px;">Nenhuma senha cadastrada no momento.</div>';
+        container.innerHTML = '<div style="text-align: center; color: var(--text-dim); padding: 24px; font-size: 12px;">Nenhuma senha cadastrada no momento. Crie sua primeira senha acima!</div>';
         return;
       }
 
@@ -1479,15 +1669,22 @@
 
         return `
           <div class="pwd-item-card" id="pwd-card-${index}">
-            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px;">
-              <span style="font-size: 13px; font-weight: 800; color: #ffd700;">👤 ${escapeHtml(role)} ${desc ? `<span style="font-size: 10.5px; color: var(--text-dim); font-weight: 400;">(${escapeHtml(desc)})</span>` : ''}</span>
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap;">
+              <span style="font-size: 13.5px; font-weight: 800; color: #ffd700;">👤 ${escapeHtml(role)} ${desc ? `<span style="font-size: 11px; color: var(--text-dim); font-weight: 400;">(${escapeHtml(desc)})</span>` : ''}</span>
               <div style="display: flex; gap: 6px;">
-                <button type="button" class="btn-icon" onclick="copyPasswordByIndex(${index})" style="font-size: 10px; padding: 3px 8px; color: #00ff66; border-color: rgba(0,255,102,0.3);">📋 Copiar</button>
-                <button type="button" class="btn-icon" id="btn-del-pwd-${index}" onclick="deletePasswordByIndex(${index})" style="font-size: 10px; padding: 3px 8px; color: #ff4d5a; border-color: rgba(255,77,90,0.3);">🗑️ Excluir</button>
+                <button type="button" class="btn-icon" onclick="copyPasswordWhatsAppByIndex(${index})" style="font-size: 10px; padding: 3px 9px; color: #25D366; border-color: rgba(37,211,102,0.4); background: rgba(37,211,102,0.08);" title="Copiar texto formatado para enviar no WhatsApp">
+                  📲 WhatsApp
+                </button>
+                <button type="button" class="btn-icon" onclick="copyPasswordByIndex(${index})" style="font-size: 10px; padding: 3px 8px; color: #00ff66; border-color: rgba(0,255,102,0.3);">
+                  📋 Copiar Senha
+                </button>
+                <button type="button" class="btn-icon" id="btn-del-pwd-${index}" onclick="deletePasswordByIndex(${index})" style="font-size: 10px; padding: 3px 8px; color: #ff4d5a; border-color: rgba(255,77,90,0.3);">
+                  🗑️ Excluir
+                </button>
               </div>
             </div>
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; background: rgba(0,0,0,0.4); border-radius: 8px; padding: 6px 10px; margin-top: 2px;">
-              <div style="font-family: var(--font-mono); font-size: 11.5px; font-weight: 800; color: #00e5ff; word-break: break-all;">🔑 ${escapeHtml(pwd)}</div>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; background: rgba(0,0,0,0.4); border-radius: 8px; padding: 8px 12px; margin-top: 2px; flex-wrap: wrap;">
+              <div style="font-family: var(--font-mono); font-size: 12.5px; font-weight: 800; color: #00e5ff; word-break: break-all;">🔑 ${escapeHtml(pwd)}</div>
               <div style="display: flex; gap: 4px; flex-wrap: wrap;">${badgeNf} ${badgeHbo} ${badgeCr} ${badgeSky}</div>
             </div>
           </div>
@@ -1517,6 +1714,32 @@
       }
     }
 
+    async function copyPasswordWhatsAppByIndex(index) {
+      const item = currentAdminPasswordsList[index];
+      if (!item) return;
+      const pwd = item.senha || item.password || '';
+      const role = item.nome || item.role_name || 'Cliente';
+      const allowed = item.servicos || item.allowed_services || ['netflix', 'hbo', 'crunchyroll', 'sky'];
+
+      const streamingsMap = {
+        'netflix': '🔴 Netflix',
+        'hbo': '🟣 HBO Max',
+        'crunchyroll': '🟠 Crunchyroll',
+        'sky': '🔵 Sky+'
+      };
+      const streamingsStr = allowed.map(s => streamingsMap[s.toLowerCase()] || s.toUpperCase()).join(', ');
+
+      const siteUrl = window.location.origin ? `${window.location.origin}/index.html` : 'Acesse o site do Ativador';
+      const msg = `⚡ *SEU ACESSO AO ATIVADOR DE SMART TV ESTÁ LIBERADO!* ⚡\n\n👤 *Cliente/Perfil:* ${role}\n🔑 *Sua Senha de Acesso:* ${pwd}\n📺 *Serviços Liberados:* ${streamingsStr}\n🔗 *Acessar Sistema:* ${siteUrl}\n\n_Basta digitar o código que aparece na sua Smart TV no site para ativar instantaneamente!_`;
+
+      try {
+        await navigator.clipboard.writeText(msg);
+        alert(`🎉 Mensagem para WhatsApp copiada com sucesso!\n\nAgora é só colar no chat do cliente:\n\n${msg}`);
+      } catch (e) {
+        prompt('Copie o texto para o WhatsApp:', msg);
+      }
+    }
+
     async function copyPassword(pwd) {
       try {
         await navigator.clipboard.writeText(pwd);
@@ -1532,14 +1755,20 @@
       const descEl = document.getElementById('new-pwd-desc');
       const msg = document.getElementById('pwd-save-msg');
 
-      const pwd = pwdEl ? pwdEl.value.trim() : '';
-      const role = roleEl ? roleEl.value.trim() : '';
+      let pwd = pwdEl ? pwdEl.value.trim() : '';
+      let role = roleEl ? roleEl.value.trim() : '';
       const desc = descEl ? descEl.value.trim() : '';
+
+      // Se a senha foi deixada em branco mas o nome/telefone do cliente foi preenchido, usa o próprio nome/telefone como senha!
+      if (!pwd && role) {
+        pwd = role;
+        if (pwdEl) pwdEl.value = pwd;
+      }
 
       if (!pwd) {
         if (msg) {
           msg.style.color = '#ff4d5a';
-          msg.innerText = 'Informe ou gere uma senha de acesso.';
+          msg.innerText = 'Informe uma senha de acesso ou o número do cliente.';
         }
         return;
       }
@@ -1560,7 +1789,7 @@
 
       if (msg) {
         msg.style.color = '#ffd700';
-        msg.innerText = 'Salvando senha...';
+        msg.innerText = 'Salvando e ativando senha no servidor... ⏳';
       }
 
       try {
