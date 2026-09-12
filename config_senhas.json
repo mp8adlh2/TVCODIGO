@@ -2,14 +2,12 @@
   "senhas": [
     {
       "senha": "ULTRA#ACCESS@8905$HDR*75!2026",
-      "nome": "MASTERON (Acesso Total)",
+      "nome": "MASTERON (Netflix + HBO)",
       "servicos": [
         "netflix",
-        "hbo",
-        "crunchyroll",
-        "sky"
+        "hbo"
       ],
-      "descricao": "Senha Mestre - Libera 100% dos 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+"
+      "descricao": "Libera apenas Netflix e HBO Max (Crunchyroll e Sky+ bloqueadas 🔒)"
     },
     {
       "senha": "SHIELD#TOKEN@7971$PREMIUM*66!2026",
@@ -18,7 +16,7 @@
         "netflix",
         "hbo"
       ],
-      "descricao": "Libera Netflix e HBO Max (Crunchyroll e Sky+ bloqueadas)"
+      "descricao": "Libera apenas Netflix e HBO Max (Crunchyroll e Sky+ bloqueadas 🔒)"
     }
   ]
 }

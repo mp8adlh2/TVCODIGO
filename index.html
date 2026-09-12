@@ -2095,7 +2095,7 @@
     }
   </style>
 </head>
-<body data-service="netflix" onclick="focusPinInput()">
+<body data-service="netflix">
 
   <!-- Ambient Floating Background Orbs -->
   <div class="ambient-glow orb-1"></div>
@@ -2227,7 +2227,7 @@
         </div>
 
         <!-- 8 PIN Slots with Native Floating Input for Mobile & Desktop -->
-        <div class="pin-grid-wrapper" onclick="focusPinInput()">
+        <div class="pin-grid-wrapper" onclick="focusPinInput(true)">
           <input type="text" id="hidden-code-input" class="pin-native-input" maxlength="8" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false" inputmode="text" placeholder="">
           <div class="pin-grid" id="pin-grid">
             <div class="pin-slot" id="slot-0"></div>
@@ -2725,11 +2725,14 @@
     // ========================================================
     const hiddenInput = document.getElementById('hidden-code-input');
 
-    function focusPinInput() {
+    function focusPinInput(force = false) {
       if (document.getElementById('login-overlay').style.display === 'flex') return;
       if (document.getElementById('success-modal').style.display === 'flex') return;
       if (document.getElementById('cookie-modal').style.display === 'flex') return;
       if (document.activeElement && (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') && document.activeElement !== hiddenInput) return;
+      
+      const isMobile = window.innerWidth <= 768 || ('ontouchstart' in window);
+      if (isMobile && !force) return;
       hiddenInput.focus();
     }
 
