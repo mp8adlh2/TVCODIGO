@@ -1093,6 +1093,12 @@ def ativar_tv_playwright(
 
                 campo_usuario.click()
                 campo_usuario.fill(email)
+                try:
+                    campo_usuario.dispatch_event("input")
+                    campo_usuario.dispatch_event("change")
+                    campo_usuario.dispatch_event("blur")
+                except Exception:
+                    pass
 
                 pass_selectors = [
                     "input[name='password']",
@@ -1117,6 +1123,15 @@ def ativar_tv_playwright(
 
                 campo_senha.click()
                 campo_senha.fill(password)
+                try:
+                    campo_senha.dispatch_event("input")
+                    campo_senha.dispatch_event("change")
+                    campo_senha.dispatch_event("blur")
+                except Exception:
+                    pass
+
+                # Resolve captcha preliminar se já estiver na tela para habilitar o botão
+                resolver_recaptcha_se_existir(page, max_wait_sec=12)
 
                 btn_entrar_selectors = [
                     "button[type='submit']",
@@ -1135,11 +1150,24 @@ def ativar_tv_playwright(
                     except Exception:
                         pass
 
-                # Submete o formulário
-                if not btn_entrar:
-                    campo_senha.press("Enter")
-                else:
-                    btn_entrar.click()
+                # Submete o formulário com timeout rápido e fallback para force ou Enter
+                clicou_entrar = False
+                if btn_entrar:
+                    try:
+                        btn_entrar.click(timeout=5000)
+                        clicou_entrar = True
+                    except Exception:
+                        try:
+                            btn_entrar.click(force=True, timeout=2000)
+                            clicou_entrar = True
+                        except Exception:
+                            pass
+
+                if not clicou_entrar:
+                    try:
+                        campo_senha.press("Enter")
+                    except Exception:
+                        page.keyboard.press("Enter")
 
                 push_pw_log("[*] [Login] Credenciais enviadas. Aguardando autenticação e redirecionamento...")
 

@@ -14,11 +14,16 @@ from typing import Optional, List, Tuple
 from colorama import Fore, Style, init
 
 # Mesmo solver usado pelo sky.py — ja funciona com reCAPTCHA
-from recaptcha_solver import (
-    update_payload_session_id,
-    get_recaptcha_token,       # Android (payload.b64)    — para emails
-    get_recaptcha_web_token,   # Web    (payload_web.b64) — para CPF/telefone
-)
+try:
+    from recaptcha_solver import (
+        update_payload_session_id,
+        get_recaptcha_token,       # Android (payload.b64)    — para emails
+        get_recaptcha_web_token,   # Web    (payload_web.b64) — para CPF/telefone
+    )
+except Exception as _err_solver:
+    update_payload_session_id = None
+    get_recaptcha_token = None
+    get_recaptcha_web_token = None
 
 # ============================================================
 # CONFIGURACAO DE TERMINAL WINDOWS

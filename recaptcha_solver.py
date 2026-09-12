@@ -5,9 +5,11 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 import base64
 import gzip
 import uuid
-import time
-import cloudscraper
-from blackboxprotobuf import decode_message, encode_message
+try:
+    from blackboxprotobuf import decode_message, encode_message
+except Exception as _err_bb:
+    decode_message = None
+    encode_message = None
 
 # ============================================================
 # Headers exatos capturados via Reqable do app Sky Android
