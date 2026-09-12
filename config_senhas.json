@@ -1,37 +1,15 @@
 {
   "senhas": [
     {
-      "senha": "a liberação dos serviços na tela do ativador em tempo real.",
-      "nome": "Cliente VIP",
-      "servicos": [
-        "netflix",
-        "hbo",
-        "crunchyroll",
-        "sky"
-      ],
-      "descricao": "Libera: netflix, hbo, crunchyroll, sky"
-    },
-    {
-      "senha": "1. 🔑 CLIENTE VIP",
-      "nome": "CLIENTE VIP",
-      "servicos": [
-        "netflix",
-        "hbo",
-        "crunchyroll",
-        "sky"
-      ],
-      "descricao": "Libera: netflix, hbo, crunchyroll, sky"
-    },
-    {
       "senha": "VIP#MASTER@1444$4K*76!2026",
-      "nome": "Cliente VIP",
+      "nome": "Cliente VIP (Acesso Total 4K)",
       "servicos": [
         "netflix",
         "hbo",
         "crunchyroll",
         "sky"
       ],
-      "descricao": "Libera: netflix, hbo, crunchyroll, sky"
+      "descricao": "Libera todos os 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+"
     }
   ]
 }

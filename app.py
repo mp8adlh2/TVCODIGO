@@ -1074,90 +1074,47 @@ COOKIE_ADMIN_PASSWORD = get_cookie_admin_password()
 TOKEN_TTL_SECONDS = int(os.environ.get("TOKEN_TTL_SECONDS", 86400)) # 24 Horas de validade por token
 CONFIG_SENHAS_FILE = os.path.join(BASE_DIR, "config_senhas.json")
 
-def parse_senhas_txt_file() -> List[dict]:
-    """Lê diretamente o arquivo SENHAS_DE_ACESSO.txt caso o usuário tenha editado no Bloco de Notas."""
-    txt_path = os.path.join(BASE_DIR, "SENHAS_DE_ACESSO.txt")
-    if not os.path.exists(txt_path):
-        return []
+def load_access_keys() -> List[dict]:
+    """Carrega dinamicamente a lista de senhas cadastradas no config_senhas.json."""
+    if not os.path.exists(CONFIG_SENHAS_FILE):
+        default_data = {
+            "senhas": [
+                {
+                    "senha": "VIP#MASTER@1444$4K*76!2026",
+                    "nome": "Cliente VIP (Acesso Total 4K)",
+                    "servicos": ["netflix", "hbo", "crunchyroll", "sky"],
+                    "descricao": "Libera todos os 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+"
+                }
+            ]
+        }
+        try:
+            with open(CONFIG_SENHAS_FILE, 'w', encoding='utf-8') as f:
+                json.dump(default_data, f, indent=2, ensure_ascii=False)
+            sync_passwords_text_file(default_data["senhas"])
+            return default_data["senhas"]
+        except Exception:
+            return default_data["senhas"]
+
     try:
-        content = read_secure_text(txt_path)
-        if not content:
-            return []
-        
-        passwords = []
-        blocks = re.split(r'={5,}', content)
-        current_name = ""
-        current_services = []
-        current_desc = ""
-        
-        for block in blocks:
-            b = block.strip()
-            if not b:
-                continue
-            m_prof = re.search(r'🔑\s*([^\n\r]+)', b)
-            if m_prof:
-                current_name = m_prof.group(1).strip()
-            
-            m_lib = re.search(r'Libera:\s*([^\n\r]+)', b)
-            if m_lib:
-                lib_text = m_lib.group(1).lower()
-                current_services = []
-                if 'netflix' in lib_text or 'todos' in lib_text: current_services.append('netflix')
-                if 'hbo' in lib_text or 'todos' in lib_text: current_services.append('hbo')
-                if 'crunchy' in lib_text or 'todos' in lib_text: current_services.append('crunchyroll')
-                if 'sky' in lib_text or 'todos' in lib_text: current_services.append('sky')
-            
-            m_det = re.search(r'Detalhes:\s*([^\n\r]+)', b)
-            if m_det:
-                current_desc = m_det.group(1).strip()
-            
-            for line in b.splitlines():
-                line = line.strip()
-                if line and not line.startswith(('=', '🔐', 'Libera', 'Detalhes', 'Senha', '💡', '•', 'Todas')):
-                    if '#' in line or '@' in line or len(line) >= 6:
-                        if not current_services:
-                            current_services = ['netflix', 'hbo', 'crunchyroll', 'sky']
-                        passwords.append({
-                            "senha": line,
-                            "nome": current_name or "Cliente VIP",
-                            "servicos": current_services,
-                            "descricao": current_desc or f"Libera: {', '.join(current_services)}"
+        with open(CONFIG_SENHAS_FILE, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            raw_list = data.get("senhas", [])
+            valid_keys = []
+            seen_pwds = set()
+            for item in raw_list:
+                if isinstance(item, dict):
+                    pwd = str(item.get("senha", "")).strip()
+                    if pwd and pwd not in seen_pwds and not pwd.startswith(('a liberação', '1.', '2.', '3.', '4.', '5.', '6.', '7.', '8.', '9.')):
+                        seen_pwds.add(pwd)
+                        valid_keys.append({
+                            "senha": pwd,
+                            "nome": str(item.get("nome", "Cliente VIP")).strip(),
+                            "servicos": [s for s in item.get("servicos", ["netflix", "hbo", "crunchyroll", "sky"]) if s in ["netflix", "hbo", "crunchyroll", "sky"]],
+                            "descricao": str(item.get("descricao", "")).strip()
                         })
-                        current_name = ""
-                        current_services = []
-                        current_desc = ""
-                        break
-        return passwords
+            return valid_keys
     except Exception:
         return []
-
-def load_access_keys() -> List[dict]:
-    """Carrega dinamicamente a lista de senhas sincronizando config_senhas.json e SENHAS_DE_ACESSO.txt."""
-    txt_path = os.path.join(BASE_DIR, "SENHAS_DE_ACESSO.txt")
-    json_path = CONFIG_SENHAS_FILE
-    
-    txt_mtime = os.path.getmtime(txt_path) if os.path.exists(txt_path) else 0
-    json_mtime = os.path.getmtime(json_path) if os.path.exists(json_path) else 0
-    
-    if txt_mtime > json_mtime and txt_mtime > 0:
-        txt_passwords = parse_senhas_txt_file()
-        if txt_passwords:
-            try:
-                with open(json_path, 'w', encoding='utf-8') as f:
-                    json.dump({"senhas": txt_passwords}, f, indent=2, ensure_ascii=False)
-            except Exception:
-                pass
-            return txt_passwords
-    
-    if os.path.exists(json_path):
-        try:
-            with open(json_path, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                return data.get("senhas", [])
-        except Exception:
-            pass
-
-    return parse_senhas_txt_file()
 
 def secure_str_compare(a: str, b: str) -> bool:
     """Comparação segura em tempo constante compatível com Python 3.13 e caracteres UTF-8/emojis."""
@@ -1483,8 +1440,9 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         return service in services
 
     def is_admin_authenticated(self):
-        # 1. Se o usuário já autenticou com a senha mestre no terminal, concede acesso direto!
-        if self.is_authenticated():
+        # 1. Se o usuário já autenticou com a senha mestre (todos os 4 serviços), concede acesso
+        session = self.get_session_info()
+        if session and len(session.get("services", [])) >= 4:
             return True
 
         admin_header = self.headers.get('X-Admin-Token', '') or self.headers.get('Authorization', '')
@@ -1508,8 +1466,9 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             return False
 
     def handle_api_verify_admin_pass(self):
-        # Se já estiver autenticado com token mestre, concede admin token imediatamente
-        if self.is_authenticated():
+        # Se já estiver autenticado com token mestre (todos os 4 serviços), concede admin token imediatamente
+        session = self.get_session_info()
+        if session and len(session.get("services", [])) >= 4:
             now = time.time()
             admin_token = secrets.token_hex(32)
             with LOGIN_LOCK:

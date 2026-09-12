@@ -1500,31 +1500,41 @@
     }
 
     async function savePassword() {
-      const pwd = document.getElementById('new-pwd-val').value.trim();
-      const role = document.getElementById('new-pwd-role').value.trim();
-      const desc = document.getElementById('new-pwd-desc').value.trim();
+      const pwdEl = document.getElementById('new-pwd-val');
+      const roleEl = document.getElementById('new-pwd-role');
+      const descEl = document.getElementById('new-pwd-desc');
       const msg = document.getElementById('pwd-save-msg');
 
+      const pwd = pwdEl ? pwdEl.value.trim() : '';
+      const role = roleEl ? roleEl.value.trim() : '';
+      const desc = descEl ? descEl.value.trim() : '';
+
       if (!pwd) {
-        msg.style.color = '#ff4d5a';
-        msg.innerText = 'Informe ou gere uma senha de acesso.';
+        if (msg) {
+          msg.style.color = '#ff4d5a';
+          msg.innerText = 'Informe ou gere uma senha de acesso.';
+        }
         return;
       }
 
       const allowed = [];
-      if (document.getElementById('chk-netflix').checked) allowed.push('netflix');
-      if (document.getElementById('chk-hbo').checked) allowed.push('hbo');
-      if (document.getElementById('chk-crunchyroll').checked) allowed.push('crunchyroll');
-      if (document.getElementById('chk-sky').checked) allowed.push('sky');
+      if (document.getElementById('chk-netflix')?.checked) allowed.push('netflix');
+      if (document.getElementById('chk-hbo')?.checked) allowed.push('hbo');
+      if (document.getElementById('chk-crunchyroll')?.checked) allowed.push('crunchyroll');
+      if (document.getElementById('chk-sky')?.checked) allowed.push('sky');
 
       if (!allowed.length) {
-        msg.style.color = '#ff4d5a';
-        msg.innerText = 'Selecione pelo menos um streaming para liberar.';
+        if (msg) {
+          msg.style.color = '#ff4d5a';
+          msg.innerText = 'Selecione pelo menos um streaming para liberar.';
+        }
         return;
       }
 
-      msg.style.color = '#ffd700';
-      msg.innerText = 'Salvando senha...';
+      if (msg) {
+        msg.style.color = '#ffd700';
+        msg.innerText = 'Salvando senha...';
+      }
 
       try {
         const res = await fetch(`${API_BASE}/api/admin/passwords/save`, {
@@ -1543,19 +1553,25 @@
         });
         const data = await res.json();
         if (data.success) {
-          msg.style.color = '#00ff66';
-          msg.innerText = `🎉 Senha "${pwd}" salva com sucesso!`;
-          document.getElementById('new-pwd-val').value = '';
-          document.getElementById('new-pwd-role').value = '';
-          document.getElementById('new-pwd-desc').value = '';
+          if (msg) {
+            msg.style.color = '#00ff66';
+            msg.innerText = `🎉 Senha "${pwd}" salva com sucesso!`;
+          }
+          if (pwdEl) pwdEl.value = '';
+          if (roleEl) roleEl.value = '';
+          if (descEl) descEl.value = '';
           loadPasswordsList();
         } else {
-          msg.style.color = '#ff4d5a';
-          msg.innerText = data.message || 'Erro ao salvar senha.';
+          if (msg) {
+            msg.style.color = '#ff4d5a';
+            msg.innerText = data.message || 'Erro ao salvar senha.';
+          }
         }
       } catch (e) {
-        msg.style.color = '#ff4d5a';
-        msg.innerText = 'Erro ao conectar ao servidor.';
+        if (msg) {
+          msg.style.color = '#ff4d5a';
+          msg.innerText = 'Erro ao conectar ao servidor.';
+        }
       }
     }
 
