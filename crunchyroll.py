@@ -213,6 +213,8 @@ def load_combos(target_dir: str = COMBO_DIR) -> List[Tuple[str, str, str]]:
     for filename in sorted(os.listdir(target_dir)):
         if not filename.endswith(".txt"):
             continue
+        if "sky" in filename.lower():
+            continue
         filepath = os.path.join(target_dir, filename)
         try:
             with open(filepath, "r", encoding="utf-8-sig", errors="ignore") as f:

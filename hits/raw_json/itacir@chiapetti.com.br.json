@@ -1,0 +1,342 @@
+{
+  "email": "itacir@chiapetti.com.br",
+  "password": "Chiapetti4822",
+  "access_token": "81d085e7-9a25-4a66-a368-4e3628f6d0f1",
+  "jwt_token": "9d071a85-3cf9-4c58-a0b1-9a5faad2c090",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "81d085e7-9a25-4a66-a368-4e3628f6d0f1",
+    "externalId": "3ee56611-d581-5e5e-ad16-17b6e8ab4697",
+    "username": "da761cf57b63938d1923cd342047a727",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "1530911795",
+    "protocol": "2026-150293163778",
+    "customer": {
+      "email": "itacir@chiapetti.com.br",
+      "billingProfileCode": "1-1HDZVG0R",
+      "name": "ITACIR",
+      "secondName": "MAXIMINO CHIAPETTI",
+      "birthday": "1953-02-27T00:00:00.000Z",
+      "ddd": 44,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5544999105718",
+      "id": "da761cf57b63938d1923cd342047a727",
+      "cpf": "24121029968"
+    },
+    "signatures": [
+      {
+        "id": "1530911795",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 999105718,
+          "dddMobilePhone": 44
+        },
+        "customerId": "da761cf57b63938d1923cd342047a727",
+        "status": 1,
+        "productName": "TOP HD II EXCLUSIVO 2025 - P",
+        "name": "ITACIR",
+        "secondName": "MAXIMINO CHIAPETTI",
+        "dna": "01000000000100000000000000000000100000000000000000000000000000000000010000000000000000100010000111110000000000000000000010000000011110000100000000000011111111111111111111111000000000000000000001000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001111111111110111111101111111111111111111111111110011111111111110111111111110011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Avenida Rotary",
+          "line1": "Avenida Rotary, 03200 - Jardim Dos Principes",
+          "line2": null,
+          "number": "03200",
+          "city": "Umuarama",
+          "state": "PR",
+          "country": "Brasil",
+          "postalCode": "87502370",
+          "referencePoint": null,
+          "addressType": "Avenida",
+          "resDdd": 44,
+          "resPhone": 999105718
+        },
+        "addressBilling": {
+          "linePublic": "Avenida Rotary",
+          "line1": "Avenida Rotary, 03200 - Jardim Dos Príncipes",
+          "line2": null,
+          "number": "03200",
+          "city": "Umuarama",
+          "state": "PR",
+          "country": "Brasil",
+          "postalCode": "87502370",
+          "referencePoint": null,
+          "addressType": "Avenida",
+          "resDdd": 44,
+          "resPhone": 988188850
+        },
+        "activation": "2022-07-29T00:00:00.000Z",
+        "email": "itacir@chiapetti.com.br",
+        "parentAccount": "1530911794",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001118005600",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A0125484987543"
+          },
+          {
+            "smartcard": "001153331770",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A0120791029807"
+          }
+        ]
+      },
+      {
+        "id": "1530911987",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 999105718,
+          "dddMobilePhone": 44
+        },
+        "customerId": "da761cf57b63938d1923cd342047a727",
+        "status": 1,
+        "productName": "FUN II SD 2021 - P",
+        "name": "ITACIR",
+        "secondName": "MAXIMINO CHIAPETTI",
+        "dna": "01000000000100000000000000000000100000000000000000000000000000000000010000000000000000100010000111110000000000000000000000000100011110000100000000000011111111111111111111111000000000000000000001000000000000111111111111111000000011111010111111110001000000000001101111111111111011101110001111111111110111111101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Avenida Rotary",
+          "line1": "Avenida Rotary, 03200 - Jardim Dos Principes",
+          "line2": null,
+          "number": "03200",
+          "city": "Umuarama",
+          "state": "PR",
+          "country": "Brasil",
+          "postalCode": "87502370",
+          "referencePoint": null,
+          "addressType": "Avenida",
+          "resDdd": 44,
+          "resPhone": 999105718
+        },
+        "addressBilling": {
+          "linePublic": "Avenida Rotary",
+          "line1": "Avenida Rotary, 03200 - Jardim Dos Príncipes",
+          "line2": null,
+          "number": "03200",
+          "city": "Umuarama",
+          "state": "PR",
+          "country": "Brasil",
+          "postalCode": "87502370",
+          "referencePoint": null,
+          "addressType": "Avenida",
+          "resDdd": 44,
+          "resPhone": 988188850
+        },
+        "activation": "2022-07-29T00:00:00.000Z",
+        "email": "itacir@chiapetti.com.br",
+        "parentAccount": "1530911986",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001153608037",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A0120800892197"
+          },
+          {
+            "smartcard": "001148309006",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A012557689529E"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "1530911795",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 999105718,
+        "dddMobilePhone": 44
+      },
+      "customerId": "da761cf57b63938d1923cd342047a727",
+      "status": 1,
+      "productName": "TOP HD II EXCLUSIVO 2025 - P",
+      "name": "ITACIR",
+      "secondName": "MAXIMINO CHIAPETTI",
+      "dna": "01000000000100000000000000000000100000000000000000000000000000000000010000000000000000100010000111110000000000000000000010000000011110000100000000000011111111111111111111111000000000000000000001000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001111111111110111111101111111111111111111111111110011111111111110111111111110011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Avenida Rotary",
+        "line1": "Avenida Rotary, 03200 - Jardim Dos Principes",
+        "line2": null,
+        "number": "03200",
+        "city": "Umuarama",
+        "state": "PR",
+        "country": "Brasil",
+        "postalCode": "87502370",
+        "referencePoint": null,
+        "addressType": "Avenida",
+        "resDdd": 44,
+        "resPhone": 999105718
+      },
+      "addressBilling": {
+        "linePublic": "Avenida Rotary",
+        "line1": "Avenida Rotary, 03200 - Jardim Dos Príncipes",
+        "line2": null,
+        "number": "03200",
+        "city": "Umuarama",
+        "state": "PR",
+        "country": "Brasil",
+        "postalCode": "87502370",
+        "referencePoint": null,
+        "addressType": "Avenida",
+        "resDdd": 44,
+        "resPhone": 988188850
+      },
+      "activation": "2022-07-29T00:00:00.000Z",
+      "email": "itacir@chiapetti.com.br",
+      "parentAccount": "1530911794",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "001118005600",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "670A0125484987543"
+        },
+        {
+          "smartcard": "001153331770",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "670A0120791029807"
+        }
+      ]
+    },
+    {
+      "id": "1530911987",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 999105718,
+        "dddMobilePhone": 44
+      },
+      "customerId": "da761cf57b63938d1923cd342047a727",
+      "status": 1,
+      "productName": "FUN II SD 2021 - P",
+      "name": "ITACIR",
+      "secondName": "MAXIMINO CHIAPETTI",
+      "dna": "01000000000100000000000000000000100000000000000000000000000000000000010000000000000000100010000111110000000000000000000000000100011110000100000000000011111111111111111111111000000000000000000001000000000000111111111111111000000011111010111111110001000000000001101111111111111011101110001111111111110111111101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Avenida Rotary",
+        "line1": "Avenida Rotary, 03200 - Jardim Dos Principes",
+        "line2": null,
+        "number": "03200",
+        "city": "Umuarama",
+        "state": "PR",
+        "country": "Brasil",
+        "postalCode": "87502370",
+        "referencePoint": null,
+        "addressType": "Avenida",
+        "resDdd": 44,
+        "resPhone": 999105718
+      },
+      "addressBilling": {
+        "linePublic": "Avenida Rotary",
+        "line1": "Avenida Rotary, 03200 - Jardim Dos Príncipes",
+        "line2": null,
+        "number": "03200",
+        "city": "Umuarama",
+        "state": "PR",
+        "country": "Brasil",
+        "postalCode": "87502370",
+        "referencePoint": null,
+        "addressType": "Avenida",
+        "resDdd": 44,
+        "resPhone": 988188850
+      },
+      "activation": "2022-07-29T00:00:00.000Z",
+      "email": "itacir@chiapetti.com.br",
+      "parentAccount": "1530911986",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "001153608037",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "670A0120800892197"
+        },
+        {
+          "smartcard": "001148309006",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "670A012557689529E"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "1530911795": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "ASSINATURAS DIGITAIS IX",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "20-08-2026",
+          "end_date": null,
+          "icon": "📺"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-21E06JZ",
+            "name": "ASSINATURAS DIGITAIS IX",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": null,
+            "price": "2.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "20-08-2026",
+            "startDate": "20-08-2026",
+            "endDate": null
+          }
+        ]
+      }
+    },
+    "1530911987": {
+      "included": [],
+      "additionals": []
+    }
+  }
+}

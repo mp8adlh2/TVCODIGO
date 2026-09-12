@@ -1,0 +1,278 @@
+{
+  "email": "italomirandajr@yahoo.com.br",
+  "password": "@Imjr1953",
+  "access_token": "c232ef48-5521-41eb-bf9a-78533b2ee2c0",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiYWFmNDZmMjQtYTYxMy00OGE3LThhMGUtZmYyM2I5N2ZhY2Q5IiwiYXRfaGFzaCI6Imx3djI1dEVpME9jUHRPWE5neGdxSVEiLCJkZXZpY2VJZCI6IjQ4Y2ZhYzRiODVlZTcwZjViYjkwNmM4YjMxZjhmY2Y5NGVlNjU3NjAiLCJhdWRpdFRyYWNraW5nSWQiOiI4YmI0LTViNGEtNDExZC04OGVhLThhOWMiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODgxNTcwODk5MiwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJiNTUzNTE4My1jZjk5LTQ1ZjQtOTJmMS1kYzZhNTk3ZTM2YjIiLCJzaWduYXR1cmVzIjpbIjYzMDc4OTgzIl0sImN1c3RvbWVySWQiOiI4ZWQ1ZjQ5ODc5MmEyMmZjZmY2Nzk1ZGQzOTY3ZDc0YyIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjYzMDc4OTgzIiwiZ2l2ZW5fbmFtZSI6IklUQUxPIiwidXNlcm5hbWUiOiJpdGFsb21pcmFuZGFqckB5YWhvby5jb20uYnIiLCJtYWlsIjoiaXRhbG9taXJhbmRhanJAeWFob28uY29tLmJyIiwicmVkZW1wdGlvbkxpbWl0IjpudWxsLCJpYXQiOjE3ODg4MTU3MDgsImV4cCI6MTc4ODkwMjEwOCwiaXNzIjoic20tc2t5LnZyaW9zZXJ2aWNlcy5jb20ifQ.DdUuA5u7z5qcxC0Bt_ANpE7GfCvsb5H-JtKnaPGbUlGRNXrAubHNXNtLiNRZI0kGQBG3l1cwb9_8MasgHRcT9HK1MRRjxo3NYQTMjNW4l2J_h1aO60bdJbh4xGVI1I9oWQkalEOgi4qcF9MDNuWx8OXmHYLCxKUrS4BiqmEpQiBs0pC_W67CsdpWuHkvLwKDnMEdjNiKlcpsCSoLzLsn62bOk_YikEoTk0LPor12yukziBLSsJ0jByQshQtGaLWJx6-KEe6_3I3I3SKRRfcqR-jxlfOTM4o08R1O7lPGJiEkRxLdJ3Ufy1lph5RXw3DsPK2P7dJckqSv_KFPERSfqw",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "c232ef48-5521-41eb-bf9a-78533b2ee2c0",
+    "externalId": "38b052dd-005c-54c5-bf28-0b88071613b0",
+    "username": "8ed5f498792a22fcff6795dd3967d74c",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "63078983",
+    "protocol": "2026-150291783664",
+    "customer": {
+      "email": "italomirandajr@yahoo.com.br",
+      "billingProfileCode": "1-8GQA-36463",
+      "name": "ITALO",
+      "secondName": "MIRANDA JUNIOR",
+      "birthday": "1953-02-15T00:00:00.000Z",
+      "ddd": 11,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5511999936465",
+      "id": "8ed5f498792a22fcff6795dd3967d74c",
+      "cpf": "68632142887"
+    },
+    "signatures": [
+      {
+        "id": "63078983",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 999936465,
+          "dddMobilePhone": 11,
+          "dddComPhone": 11,
+          "comPhone": 999160106
+        },
+        "customerId": "8ed5f498792a22fcff6795dd3967d74c",
+        "status": 1,
+        "productName": "TOP HD II 2022 - P",
+        "name": "ITALO",
+        "secondName": "MIRANDA JUNIOR",
+        "dna": "01000000000100001000001000000000100000000000000010000000000010000000010000000000000000011011000111110010000000000100000100000000011110010000100000100111111111111110011111111000000000000000000001100000000010111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111010011111101111111111111111111111111110011111111111110111111111100011111111111111111111111100111011100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Portugal",
+          "line1": "Rua Portugal, 110 - Condonio Santa Tereza",
+          "line2": "Cs 2",
+          "number": "110",
+          "city": "Itupeva",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "13299676",
+          "referencePoint": "Ponto De Ref:a Clt Mora No Cond Q Fica Antes Do Pedagio A Esquerda....",
+          "addressType": "Rua",
+          "resDdd": 11,
+          "resPhone": 29773174
+        },
+        "addressBilling": {
+          "linePublic": "Rua Portugal",
+          "line1": "Rua Portugal, 110 - Condonio Santa Tereza",
+          "line2": null,
+          "number": "110",
+          "city": "Itupeva",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "13295000",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2011-01-24T00:00:00.000Z",
+        "email": "italomirandajr@yahoo.com.br",
+        "parentAccount": "063078983",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000622664662",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH25",
+            "serialNumber": "CE0AA135357569490"
+          },
+          {
+            "smartcard": "000583385869",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "CE0AA63537865710F"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "63078983",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 999936465,
+        "dddMobilePhone": 11,
+        "dddComPhone": 11,
+        "comPhone": 999160106
+      },
+      "customerId": "8ed5f498792a22fcff6795dd3967d74c",
+      "status": 1,
+      "productName": "TOP HD II 2022 - P",
+      "name": "ITALO",
+      "secondName": "MIRANDA JUNIOR",
+      "dna": "01000000000100001000001000000000100000000000000010000000000010000000010000000000000000011011000111110010000000000100000100000000011110010000100000100111111111111110011111111000000000000000000001100000000010111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111010011111101111111111111111111111111110011111111111110111111111100011111111111111111111111100111011100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Portugal",
+        "line1": "Rua Portugal, 110 - Condonio Santa Tereza",
+        "line2": "Cs 2",
+        "number": "110",
+        "city": "Itupeva",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "13299676",
+        "referencePoint": "Ponto De Ref:a Clt Mora No Cond Q Fica Antes Do Pedagio A Esquerda....",
+        "addressType": "Rua",
+        "resDdd": 11,
+        "resPhone": 29773174
+      },
+      "addressBilling": {
+        "linePublic": "Rua Portugal",
+        "line1": "Rua Portugal, 110 - Condonio Santa Tereza",
+        "line2": null,
+        "number": "110",
+        "city": "Itupeva",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "13295000",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2011-01-24T00:00:00.000Z",
+      "email": "italomirandajr@yahoo.com.br",
+      "parentAccount": "063078983",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000622664662",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH25",
+          "serialNumber": "CE0AA135357569490"
+        },
+        {
+          "smartcard": "000583385869",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "CE0AA63537865710F"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "63078983": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "08-01-2023",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "TELECINE HD",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "08-01-2023",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "ASSINATURAS DIGITAIS III MIG - P",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "17-03-2025",
+          "end_date": null,
+          "icon": "📺"
+        },
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "05-05-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "09-11-2024",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "08-01-2023",
+            "startDate": "08-01-2023",
+            "endDate": null
+          },
+          {
+            "id": "1-20XEJQF",
+            "name": "TELECINE HD",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/TLCine%403x.png",
+            "price": "29.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "08-01-2023",
+            "startDate": "08-01-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "ASSINATURAS DIGITAIS III MIG - P",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "17-03-2025",
+            "startDate": "17-03-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "05-05-2026",
+            "startDate": "05-05-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-219IIMH",
+            "name": "DISNEY PLUS PREMIUM",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Disney%403x.png",
+            "price": "46.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "09-11-2024",
+            "startDate": "09-11-2024",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

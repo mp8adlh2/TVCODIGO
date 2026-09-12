@@ -1,0 +1,372 @@
+{
+  "email": "(92) 98105-5000",
+  "password": "Pedro026",
+  "access_token": "c1371748-4b4b-4656-89af-d6c88a1af794",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiOWE0MDM4MmUtYTE1ZS00MDU1LWFhOWItNjNlNzJiMGRlYjAwIiwiYXRfaGFzaCI6IkFLVWNPX1plZXJBN04wZVNiSDFOZFEiLCJkZXZpY2VJZCI6IjY5NGEzODE1YmUzODY4YWRiNGY2ZmFiZGVkMjIwNjA3OWU2M2U5YjEiLCJhdWRpdFRyYWNraW5nSWQiOiJlYTdkLTliMTgtNDQxYS1iOTE3LTg3YmYiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODgxNjM0NzgyNywidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiIyYTM5ZmFjOS01ZGU2LTQ2OWItOGJkZi01NDU1MDk2N2IzM2YiLCJzaWduYXR1cmVzIjpbIjQxNjUwNzI3Il0sImN1c3RvbWVySWQiOiJhNWMzZGFmZDQ1ZmE5ZWQxNDUwMDlkZDIyYzc5NjJiNyIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjQxNjUwNzI3IiwiZ2l2ZW5fbmFtZSI6IkZSQU5DSVNDTyBQRURSTyBWSUVJUkEiLCJ1c2VybmFtZSI6IjkyOTgxMDU1MDAwIiwidGVsZXBob25lTnVtYmVyIjoiOTI5ODEwNTUwMDAiLCJzaWQiOiI2OTRhMzgxNWJlMzg2OGFkYjRmNmZhYmRlZDIyMDYwNzllNjNlOWIxIiwic3VibmFtZSI6IjJhMzlmYWM5LTVkZTYtNDY5Yi04YmRmLTU0NTUwOTY3YjMzZiIsInJlZGVtcHRpb25MaW1pdCI6bnVsbCwiaWF0IjoxNzg4ODE2MzQ3LCJleHAiOjE3ODg5MDI3NDcsImlzcyI6InNtLXNreS52cmlvc2VydmljZXMuY29tIn0.aNE_E39TFs0U2eNuU3_41yfwV8zgG9DtcHzGOb_TvxRgp0nU_UCGeydzhvXTpIh4U7H0wVcOLXK9WpVMpaPhCxxRuOLRmPhK8zwCWLRO_0V-oMLeTnFu4mtEXKRLaCYQPRfsUH969RGzSaPKXBxwtV_BHdYyTuIw_ib8WUKdtSX5zCNTe4XGccV0oFQDRy5KVzr0xiYi2G8sEm34fgkoJjtGcaOl4w9-g-P62RXdJzvaTSSYFwv90rsZ_UUNak6XlajS-TofKsBAVf2TgVL6C8NfDQqsOAT3czeo9JTTFaJbNfPVJDL44TPA5HJWX3gABvoOUKmM7IkxotUcj-AHhQ",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "c1371748-4b4b-4656-89af-d6c88a1af794",
+    "externalId": "9b2a90e4-396f-5a23-9295-d80d366246ef",
+    "username": "a5c3dafd45fa9ed145009dd22c7962b7",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "41650727",
+    "protocol": "2026-150293465932",
+    "customer": {
+      "email": "saodomingos_cacaepesca@yahoo.com.br",
+      "billingProfileCode": "1-9MG7-36980",
+      "name": "FRANCISCO",
+      "secondName": "PEDRO VIEIRA MAGALHAES",
+      "birthday": "1955-07-24T00:00:00.000Z",
+      "ddd": 92,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5592981055000",
+      "id": "a5c3dafd45fa9ed145009dd22c7962b7",
+      "cpf": "02665964287"
+    },
+    "signatures": [
+      {
+        "id": "41650727",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 981055000,
+          "dddMobilePhone": 92
+        },
+        "customerId": "a5c3dafd45fa9ed145009dd22c7962b7",
+        "status": 1,
+        "productName": "MASTER II SD 2019/2021 - P",
+        "name": "FRANCISCO",
+        "secondName": "PEDRO VIEIRA MAGALHAES",
+        "dna": "01000000000100000100000100000000100000000000000000100000000000010000010000000000000000011010000111110000000000000001000000001000011110010001000000100111111111111100011111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111010011111101111111111111111111111111110011111111111110111111111101011111111011111111111111100111011100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100100111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Avenida Rio Madeira",
+          "line1": "Avenida Rio Madeira, 58 - Nossa Senhora Das Gracas",
+          "line2": "Cj Vieira Alves",
+          "number": "58",
+          "city": "Manaus",
+          "state": "AM",
+          "country": "Brasil",
+          "postalCode": "69053030",
+          "referencePoint": "Prox Ao Lava Jato Mania, Em Frente A Quadra De Esportes/muro Do Predio Verde Escuro",
+          "addressType": "Avenida"
+        },
+        "addressBilling": {
+          "linePublic": "Rua Rio Madeira",
+          "line1": "Rua Rio Madeira, 58 - Nossa Senhora Das Gracas",
+          "line2": "Cj Vieira Alves",
+          "number": "58",
+          "city": "Manaus",
+          "state": "AM",
+          "country": null,
+          "postalCode": "69053030",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 92,
+          "resPhone": 32339783
+        },
+        "activation": "2009-03-27T00:00:00.000Z",
+        "email": "saodomingos_cacaepesca@yahoo.com.br",
+        "parentAccount": "041650727",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000752276113",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "670A2036179688994"
+          },
+          {
+            "smartcard": "001129624167",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A012538829358B"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "41650727",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 981055000,
+        "dddMobilePhone": 92
+      },
+      "customerId": "a5c3dafd45fa9ed145009dd22c7962b7",
+      "status": 1,
+      "productName": "MASTER II SD 2019/2021 - P",
+      "name": "FRANCISCO",
+      "secondName": "PEDRO VIEIRA MAGALHAES",
+      "dna": "01000000000100000100000100000000100000000000000000100000000000010000010000000000000000011010000111110000000000000001000000001000011110010001000000100111111111111100011111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111010011111101111111111111111111111111110011111111111110111111111101011111111011111111111111100111011100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100100111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Avenida Rio Madeira",
+        "line1": "Avenida Rio Madeira, 58 - Nossa Senhora Das Gracas",
+        "line2": "Cj Vieira Alves",
+        "number": "58",
+        "city": "Manaus",
+        "state": "AM",
+        "country": "Brasil",
+        "postalCode": "69053030",
+        "referencePoint": "Prox Ao Lava Jato Mania, Em Frente A Quadra De Esportes/muro Do Predio Verde Escuro",
+        "addressType": "Avenida"
+      },
+      "addressBilling": {
+        "linePublic": "Rua Rio Madeira",
+        "line1": "Rua Rio Madeira, 58 - Nossa Senhora Das Gracas",
+        "line2": "Cj Vieira Alves",
+        "number": "58",
+        "city": "Manaus",
+        "state": "AM",
+        "country": null,
+        "postalCode": "69053030",
+        "referencePoint": null,
+        "addressType": "Rua",
+        "resDdd": 92,
+        "resPhone": 32339783
+      },
+      "activation": "2009-03-27T00:00:00.000Z",
+      "email": "saodomingos_cacaepesca@yahoo.com.br",
+      "parentAccount": "041650727",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000752276113",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "670A2036179688994"
+        },
+        {
+          "smartcard": "001129624167",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "670A012538829358B"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "41650727": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "27-12-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "11-05-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "07-01-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "TELECINE PROMO 2M 50% - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "17-04-2024",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "TELECINE HD",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "17-04-2024",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Premiere",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "17-04-2024",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "SexyHot",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "25-07-2023",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "SEXY HOT COM 1M 100% RENTAB - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "25-07-2023",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "SEGURO RESIDENCIAL PREMIUM - CASA ALVENARIA",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "25-07-2023",
+          "end_date": "25-07-2028",
+          "icon": "🛡️"
+        },
+        {
+          "name": "ASSISTENCIA PREMIUM SEGURO RESIDENCIAL",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "25-07-2023",
+          "end_date": "25-07-2028",
+          "icon": "🛡️"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "27-12-2025",
+            "startDate": "27-12-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-219IIMH",
+            "name": "DISNEY PLUS PREMIUM",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Disney%403x.png",
+            "price": "46.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "11-05-2025",
+            "startDate": "11-05-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "07-01-2025",
+            "startDate": "07-01-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TELECINE PROMO 2M 50% - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "17-04-2024",
+            "startDate": "17-04-2024",
+            "endDate": null
+          },
+          {
+            "id": "1-20XEJQF",
+            "name": "TELECINE HD",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/TLCine%403x.png",
+            "price": "29.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "17-04-2024",
+            "startDate": "17-04-2024",
+            "endDate": null
+          },
+          {
+            "id": "1-1XBHQIX",
+            "name": "Premiere",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Premiere%403x.png",
+            "price": "59.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "17-04-2024",
+            "startDate": "17-04-2024",
+            "endDate": null
+          },
+          {
+            "id": "1-1XRZM8Z",
+            "name": "SexyHot",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/8922233/SKY-Canais-Adicionais-SexyHot-Card+%282%29.png",
+            "price": "19.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "25-07-2023",
+            "startDate": "25-07-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "SEXY HOT COM 1M 100% RENTAB - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "null",
+            "isPartOfMainPackage": false,
+            "activationDate": "25-07-2023",
+            "startDate": "25-07-2023",
+            "endDate": null
+          },
+          {
+            "id": "1-1YRSUJI",
+            "name": "SEGURO RESIDENCIAL PREMIUM - CASA ALVENARIA",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": null,
+            "price": "29.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "25-07-2023",
+            "startDate": "25-07-2023",
+            "endDate": "25-07-2028"
+          },
+          {
+            "id": null,
+            "name": "ASSISTENCIA PREMIUM SEGURO RESIDENCIAL",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "null",
+            "isPartOfMainPackage": false,
+            "activationDate": "25-07-2023",
+            "startDate": "25-07-2023",
+            "endDate": "25-07-2028"
+          }
+        ]
+      }
+    }
+  }
+}

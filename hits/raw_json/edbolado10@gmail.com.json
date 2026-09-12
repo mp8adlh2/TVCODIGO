@@ -1,0 +1,332 @@
+{
+  "email": "edbolado10@gmail.com",
+  "password": "Rabugento76",
+  "access_token": "bf56f21a-140d-485b-9ac2-81b334019360",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiNWZlYzY1ZTEtMmMzNC00ZWViLWIzODgtZmI2ZWY3ZjQ0ZjBmIiwiYXRfaGFzaCI6Ik1YLWRuVFBLUXNMaE1BRWg2VmdlZmciLCJkZXZpY2VJZCI6ImIzOGU3ODEwZWE5NWQ1ZGU0MTBkNjU3NWYwMWQ4OWQ5NjliMWE3NWQiLCJhdWRpdFRyYWNraW5nSWQiOiJkYzBhLThhNDktNDE0YS1hYTU1LTAyYjgiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjc1MDM1MSwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiIyMGI4MDc5Ny0wNzQ5LTQzZDYtOWZlNC1mOTQxZTQ1NDRkMjYiLCJzaWduYXR1cmVzIjpbIjEzOTQ2NjkxMCJdLCJjdXN0b21lcklkIjoiODg0NDEyMDk5YTRiMTJkOWRkM2M5YmE0YzRhN2VhY2QiLCJyZWdpc3RyYXRpb25TaWduYXR1cmUiOiIxMzk0NjY5MTAiLCJnaXZlbl9uYW1lIjoiRURTT04iLCJ1c2VybmFtZSI6ImVkYm9sYWRvMTBAZ21haWwuY29tIiwibWFpbCI6ImVkYm9sYWRvMTBAZ21haWwuY29tIiwicmVkZW1wdGlvbkxpbWl0IjpudWxsLCJpYXQiOjE3ODgzMTI3NTAsImV4cCI6MTc4ODM5OTE1MCwiaXNzIjoic20tc2t5LnZyaW9zZXJ2aWNlcy5jb20ifQ.q3Hc8Qv8WfHyR8DwhE4jDwKd_gjNk1DYK1dRvkg4Sv3sWs1K451zbAXfumbmnl6ySiFhy1m5NtAtlY918bzcDhXrs4NIMNLqfI6CYbnHHG5ETnuPU9sSg_zc_0wKxdzjb3Z7-95fjYqzo3nAi1TKUNUtjAjuIHIRQY6G5Xt9TA4hO9LBygFfu7oIbamtMNp21AFmSvzJiqeI9pqj8QlcktnFnwbW31xp6Mc9ZekgCm5XYWmb90Ckv4W5K8Uom-J9MgcOUBcujK0rro9k5NUxStagtCr7asZ6mRMBUMB3xx3mRTOpt4k3CyfE8xg6pPBabXv3miQz85x-G1c6QaSNrw",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "bf56f21a-140d-485b-9ac2-81b334019360",
+    "externalId": "23f684b6-5f04-5ca7-b569-4991a8d136b0",
+    "username": "884412099a4b12d9dd3c9ba4c4a7eacd",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "139466910",
+    "protocol": "2026-150197465182",
+    "customer": {
+      "email": "edboladO10@gmail.com",
+      "billingProfileCode": "1-9VND-18334",
+      "name": "EDSON",
+      "secondName": "DAVID LOPES DA CRUZ",
+      "birthday": "1976-04-04T00:00:00.000Z",
+      "ddd": 21,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5521979708144",
+      "id": "884412099a4b12d9dd3c9ba4c4a7eacd",
+      "cpf": "04705540700"
+    },
+    "signatures": [
+      {
+        "id": "139466910",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 979708144,
+          "dddMobilePhone": 21,
+          "dddComPhone": 21,
+          "comPhone": 996989976
+        },
+        "customerId": "884412099a4b12d9dd3c9ba4c4a7eacd",
+        "status": 1,
+        "productName": "TOP HD PLUS III 2025 - P",
+        "name": "EDSON",
+        "secondName": "DAVID LOPES DA CRUZ",
+        "dna": "01000000000100100000000010000000100000000000000010000000000010000000001000000000000000001010000111110000000000000000100001000000011110100000010000100111111111111100111111111000000000000000000100100000000010111111111111100000000011111010111111110001000000000001101011111111101001101110001111111111110111111101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101000111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Maria Laura",
+          "line1": "Rua Maria Laura, 427 - Moqueta",
+          "line2": ".",
+          "number": "427",
+          "city": "Nova Iguacu",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "26285390",
+          "referencePoint": "Nova Imagem Douglas",
+          "addressType": "Rua"
+        },
+        "addressBilling": {
+          "linePublic": "Rua  Paulo Cezar",
+          "line1": "Rua  Paulo Cezar, 142 - Miguel Couto",
+          "line2": ".casa2",
+          "number": "142",
+          "city": "Nova Iguacu",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "26061830",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2013-06-11T00:00:00.000Z",
+        "email": "edboladO10@gmail.com",
+        "parentAccount": "0139466910",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000658358619",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "670A263411709404A"
+          },
+          {
+            "smartcard": "000611007790",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "CE0AA63613480725A"
+          },
+          {
+            "smartcard": "001132503010",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A0120773512796"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "139466910",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 979708144,
+        "dddMobilePhone": 21,
+        "dddComPhone": 21,
+        "comPhone": 996989976
+      },
+      "customerId": "884412099a4b12d9dd3c9ba4c4a7eacd",
+      "status": 1,
+      "productName": "TOP HD PLUS III 2025 - P",
+      "name": "EDSON",
+      "secondName": "DAVID LOPES DA CRUZ",
+      "dna": "01000000000100100000000010000000100000000000000010000000000010000000001000000000000000001010000111110000000000000000100001000000011110100000010000100111111111111100111111111000000000000000000100100000000010111111111111100000000011111010111111110001000000000001101011111111101001101110001111111111110111111101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101000111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Maria Laura",
+        "line1": "Rua Maria Laura, 427 - Moqueta",
+        "line2": ".",
+        "number": "427",
+        "city": "Nova Iguacu",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "26285390",
+        "referencePoint": "Nova Imagem Douglas",
+        "addressType": "Rua"
+      },
+      "addressBilling": {
+        "linePublic": "Rua  Paulo Cezar",
+        "line1": "Rua  Paulo Cezar, 142 - Miguel Couto",
+        "line2": ".casa2",
+        "number": "142",
+        "city": "Nova Iguacu",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "26061830",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2013-06-11T00:00:00.000Z",
+      "email": "edboladO10@gmail.com",
+      "parentAccount": "0139466910",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000658358619",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "670A263411709404A"
+        },
+        {
+          "smartcard": "000611007790",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "CE0AA63613480725A"
+        },
+        {
+          "smartcard": "001132503010",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A0120773512796"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "139466910": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "HBO com 50% por 1 mês",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "18-08-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "TELECINE HD",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "18-08-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "COMEEKS PLUS",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "18-08-2026",
+          "end_date": null,
+          "icon": "📺"
+        },
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "08-07-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "07-07-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "AMAZON PRIME",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "03-03-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "PREMIERE HD TOTAL 2021 - P",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "03-03-2026",
+          "end_date": null,
+          "icon": "⚽"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-21CU6HH",
+            "name": "HBO com 50% por 1 mês",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/HBO%403x_preto.png",
+            "price": "44.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "18-08-2026",
+            "startDate": "18-08-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-20XEJQF",
+            "name": "TELECINE HD",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/TLCine%403x.png",
+            "price": "29.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "18-08-2026",
+            "startDate": "18-08-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-218Z8AC",
+            "name": "COMEEKS PLUS",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://skycms.s3.amazonaws.com/images/37907079/comeeks_banner_1.png",
+            "price": "15.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "18-08-2026",
+            "startDate": "18-08-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "08-07-2026",
+            "startDate": "08-07-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-219IIMH",
+            "name": "DISNEY PLUS PREMIUM",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Disney%403x.png",
+            "price": "46.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "07-07-2026",
+            "startDate": "07-07-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-21ATHJR",
+            "name": "AMAZON PRIME",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Amazon%403x.png",
+            "urlDetail": "https://www.sky.com.br/amazon-prime",
+            "price": "5.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "03-03-2026",
+            "startDate": "03-03-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "PREMIERE HD TOTAL 2021 - P",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "03-03-2026",
+            "startDate": "03-03-2026",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

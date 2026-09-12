@@ -1,0 +1,627 @@
+{
+  "accessibility": {
+    "captions": {
+      "headless_caption_enabled": false
+    }
+  },
+  "account_tracker_service_last_update": "13433695627181078",
+  "apps": {
+    "shortcuts_arch": "",
+    "shortcuts_version": 1
+  },
+  "autocomplete": {
+    "retention_policy_last_version": 149
+  },
+  "autofill": {
+    "last_version_deduped": 149,
+    "upload_encoding_seed": "80856815AB5335F2629C9F0F006F20F8",
+    "profile_enabled": false,
+    "credit_card_enabled": false
+  },
+  "bookmark": {
+    "storage_computation_last_update": "13433695627080629"
+  },
+  "browser": {
+    "window_placement": {
+      "bottom": 930,
+      "left": 10,
+      "maximized": false,
+      "right": 1306,
+      "top": 10,
+      "work_area_bottom": 860,
+      "work_area_left": 0,
+      "work_area_right": 1600,
+      "work_area_top": 0
+    }
+  },
+  "commerce_daily_metrics_last_update_time": "13433695627080699",
+  "countryid_at_install": 16978,
+  "domain_diversity": {
+    "last_reporting_timestamp": "13433695627183421",
+    "last_reporting_timestamp_v4": "13433695627183427"
+  },
+  "enterprise_profile_guid": "b2e73779-1c77-4279-8891-cd748dce83b0",
+  "extensions": {
+    "alerts": {
+      "initialized": true
+    },
+    "chrome_url_overrides": {},
+    "last_chrome_version": "149.0.7827.55"
+  },
+  "gaia_cookie": {
+    "changed_time": 1789222029.426359,
+    "hash": "2jmj7l5rSw0yVb/vlWAYkK/YBwk=",
+    "last_list_accounts_binary_data": "",
+    "periodic_report_time_2": "13433695626927540"
+  },
+  "gcm": {
+    "product_category_for_subtypes": "com.googlechromefortesting.windows"
+  },
+  "google": {
+    "services": {
+      "signin_scoped_device_id": "46cbe4e4-a1fa-4266-9dac-f03aee9dcf58"
+    }
+  },
+  "https_upgrade_navigations": {
+    "2026-09-12": 10
+  },
+  "in_product_help": {
+    "recent_session_enabled_time": "13433695626935391",
+    "recent_session_start_times": [
+      "13433695626935391"
+    ],
+    "session_last_active_time": "13433696076242129",
+    "session_number": 2,
+    "session_start_time": "13433695626935391"
+  },
+  "intl": {
+    "selected_languages": "pt-BR,pt,en-US,en"
+  },
+  "invalidation": {
+    "per_sender_registered_for_invalidation": {
+      "1013309121859": {},
+      "947318989803": {}
+    }
+  },
+  "login_detection": {
+    "oauth_signed_in_origins": {
+      "https://skymais.com.br": "13433695834568892"
+    }
+  },
+  "media": {
+    "engagement": {
+      "schema_version": 5
+    }
+  },
+  "media_router": {
+    "receiver_id_hash_token": "sPXafb4NZLC3YXgixm1EH25XftBL6IAHs2ccHXavkwUfaS1Iyiyx89R9IFkVMXOaWIjUcz+39nOwr8Gc09bkjA=="
+  },
+  "ntp": {
+    "num_personal_suggestions": 8
+  },
+  "optimization_guide": {
+    "hintsfetcher": {
+      "hosts_successfully_fetched": {}
+    },
+    "previously_registered_optimization_types": {
+      "ABOUT_THIS_SITE": true,
+      "AUTOFILL_ACTOR_IFRAME_ORIGIN_ALLOWLIST": true,
+      "DIGITAL_CREDENTIALS_LOW_FRICTION": true,
+      "GLIC_ACTION_PAGE_BLOCK": true,
+      "HISTORY_CLUSTERS": true,
+      "LENS_OVERLAY_EDU_ACTION_CHIP_ALLOWLIST": true,
+      "LENS_OVERLAY_EDU_ACTION_CHIP_BLOCKLIST": true,
+      "LOADING_PREDICTOR": true,
+      "MERCHANT_TRUST_SIGNALS_V2": true,
+      "PAGE_ENTITIES": true,
+      "PRICE_TRACKING": true,
+      "SALIENT_IMAGE": true,
+      "SAVED_TAB_GROUP": true,
+      "V8_COMPILE_HINTS": true
+    }
+  },
+  "password_manager": {
+    "account_store_backup_password_cleaning_last_timestamp": "13433695866883515",
+    "account_store_migrated_to_os_crypt_async": true,
+    "profile_store_backup_password_cleaning_last_timestamp": "13433695866883764",
+    "profile_store_migrated_to_os_crypt_async": true,
+    "leak_detection": false,
+    "leak_detection_enabled": false,
+    "enabled": false,
+    "profile_store_date_last_compromised_credentials_leak_checked": 0
+  },
+  "privacy_sandbox": {
+    "first_party_sets_data_access_allowed_initialized": true
+  },
+  "profile": {
+    "avatar_index": 26,
+    "background_password_check": {
+      "check_fri_weight": 9,
+      "check_interval": "2592000000000",
+      "check_mon_weight": 6,
+      "check_sat_weight": 6,
+      "check_sun_weight": 6,
+      "check_thu_weight": 9,
+      "check_tue_weight": 9,
+      "check_wed_weight": 9,
+      "next_check_time": "13435200640919387"
+    },
+    "content_settings": {
+      "exceptions": {
+        "abusive_notification_permissions": {},
+        "access_to_get_all_screens_media_in_session": {},
+        "anti_abuse": {},
+        "app_banner": {
+          "https://sm-sky-ui.vrioservices.com:443,*": {
+            "last_modified": "13433695819411147",
+            "setting": {
+              "https://sm-sky-ui.vrioservices.com/": {
+                "next_install_text_animation": {
+                  "delay": "86400000000",
+                  "last_shown": "13433695819409969"
+                }
+              },
+              "https://sm-sky-ui.vrioservices.com/?homescreen=1": {
+                "couldShowBannerEvents": 1.34336958194111e+16
+              }
+            }
+          }
+        },
+        "ar": {},
+        "are_suspicious_notifications_allowlisted_by_user": {},
+        "auto_picture_in_picture": {},
+        "auto_select_certificate": {},
+        "automatic_downloads": {},
+        "automatic_fullscreen": {},
+        "autoplay": {},
+        "background_sync": {},
+        "bluetooth_chooser_data": {},
+        "bluetooth_guard": {},
+        "bluetooth_scanning": {},
+        "camera_pan_tilt_zoom": {},
+        "captured_surface_control": {},
+        "client_hints": {},
+        "clipboard": {},
+        "controlled_frame": {},
+        "cookie_controls_metadata": {
+          "https://[*.]criteo.com,*": {
+            "last_modified": "13433695835824356",
+            "setting": {}
+          },
+          "https://[*.]doubleclick.net,*": {
+            "last_modified": "13433695837078514",
+            "setting": {}
+          },
+          "https://[*.]facebook.com,*": {
+            "last_modified": "13433696089200177",
+            "setting": {}
+          },
+          "https://[*.]google.com,*": {
+            "last_modified": "13433696089114462",
+            "setting": {}
+          },
+          "https://[*.]skymais.com.br,*": {
+            "last_modified": "13433696080566645",
+            "setting": {}
+          },
+          "https://[*.]vrioservices.com,*": {
+            "last_modified": "13433695837463173",
+            "setting": {}
+          }
+        },
+        "cookies": {},
+        "direct_sockets": {},
+        "direct_sockets_private_network_access": {},
+        "display_media_system_audio": {},
+        "disruptive_notification_permissions": {},
+        "durable_storage": {},
+        "fedcm_idp_registration": {},
+        "fedcm_idp_signin": {
+          "https://accounts.google.com:443,*": {
+            "last_modified": "13433695629426613",
+            "setting": {
+              "chosen-objects": [
+                {
+                  "idp-origin": "https://accounts.google.com",
+                  "idp-signin-status": false
+                }
+              ]
+            }
+          }
+        },
+        "fedcm_share": {},
+        "file_system_access_chooser_data": {},
+        "file_system_access_extended_permission": {},
+        "file_system_access_restore_permission": {},
+        "file_system_last_picked_directory": {},
+        "file_system_read_guard": {},
+        "file_system_write_guard": {},
+        "formfill_metadata": {},
+        "geolocation": {},
+        "geolocation_with_options": {},
+        "hand_tracking": {},
+        "has_migrated_local_network_access": true,
+        "hid_chooser_data": {},
+        "hid_guard": {},
+        "http_allowed": {},
+        "https_enforced": {},
+        "idle_detection": {},
+        "images": {},
+        "important_site_info": {},
+        "initialized_translations": {},
+        "intent_picker_auto_display": {},
+        "javascript": {},
+        "javascript_jit": {},
+        "javascript_optimizer": {},
+        "keyboard_lock": {},
+        "legacy_cookie_access": {},
+        "legacy_cookie_scope": {},
+        "local_fonts": {},
+        "local_network": {},
+        "local_network_access": {},
+        "loopback_network": {},
+        "media_engagement": {
+          "https://10996825.fls.doubleclick.net:443,*": {
+            "expiration": "13441471836768594",
+            "last_modified": "13433695836768597",
+            "lifetime": "7776000000000",
+            "setting": {
+              "hasHighScore": false,
+              "lastMediaPlaybackTime": 0.0,
+              "mediaPlaybacks": 0,
+              "visits": 1
+            }
+          },
+          "https://15978676.fls.doubleclick.net:443,*": {
+            "expiration": "13441471836123036",
+            "last_modified": "13433695836123039",
+            "lifetime": "7776000000000",
+            "setting": {
+              "hasHighScore": false,
+              "lastMediaPlaybackTime": 0.0,
+              "mediaPlaybacks": 0,
+              "visits": 1
+            }
+          },
+          "https://9330654.fls.doubleclick.net:443,*": {
+            "expiration": "13441471837463493",
+            "last_modified": "13433695837463496",
+            "lifetime": "7776000000000",
+            "setting": {
+              "hasHighScore": false,
+              "lastMediaPlaybackTime": 0.0,
+              "mediaPlaybacks": 0,
+              "visits": 1
+            }
+          },
+          "https://gum.criteo.com:443,*": {
+            "expiration": "13441471835920668",
+            "last_modified": "13433695835920671",
+            "lifetime": "7776000000000",
+            "setting": {
+              "hasHighScore": false,
+              "lastMediaPlaybackTime": 0.0,
+              "mediaPlaybacks": 0,
+              "visits": 1
+            }
+          },
+          "https://sm-sky-ui.vrioservices.com:443,*": {
+            "expiration": "13441471837497250",
+            "last_modified": "13433695837497256",
+            "lifetime": "7776000000000",
+            "setting": {
+              "hasHighScore": false,
+              "lastMediaPlaybackTime": 0.0,
+              "mediaPlaybacks": 0,
+              "visits": 2
+            }
+          },
+          "https://sst.skymais.com.br:443,*": {
+            "expiration": "13441471835824691",
+            "last_modified": "13433695835824694",
+            "lifetime": "7776000000000",
+            "setting": {
+              "hasHighScore": false,
+              "lastMediaPlaybackTime": 0.0,
+              "mediaPlaybacks": 0,
+              "visits": 1
+            }
+          },
+          "https://www.facebook.com:443,*": {
+            "expiration": "13441472089234337",
+            "last_modified": "13433696089234341",
+            "lifetime": "7776000000000",
+            "setting": {
+              "hasHighScore": false,
+              "lastMediaPlaybackTime": 0.0,
+              "mediaPlaybacks": 0,
+              "visits": 2
+            }
+          },
+          "https://www.google.com:443,*": {
+            "expiration": "13441472089200794",
+            "last_modified": "13433696089200797",
+            "lifetime": "7776000000000",
+            "setting": {
+              "hasHighScore": false,
+              "lastMediaPlaybackTime": 0.0,
+              "mediaPlaybacks": 0,
+              "visits": 2
+            }
+          },
+          "https://www.skymais.com.br:443,*": {
+            "expiration": "13441472089259591",
+            "last_modified": "13433696089259595",
+            "lifetime": "7776000000000",
+            "setting": {
+              "hasHighScore": false,
+              "lastMediaPlaybackTime": 0.0,
+              "mediaPlaybacks": 0,
+              "visits": 4
+            }
+          }
+        },
+        "media_stream_camera": {},
+        "media_stream_mic": {},
+        "midi_sysex": {},
+        "mixed_script": {},
+        "nfc_devices": {},
+        "notification_interactions": {},
+        "notification_permission_review": {},
+        "notifications": {},
+        "ondevice_languages_downloaded": {},
+        "password_protection": {},
+        "payment_handler": {},
+        "permission_actions_history": {},
+        "permission_autoblocking_data": {},
+        "permission_autorevocation_data": {},
+        "pointer_lock": {},
+        "popups": {},
+        "protected_media_identifier": {},
+        "protocol_handler": {},
+        "reduced_accept_language": {},
+        "safe_browsing_url_check_data": {},
+        "sensors": {},
+        "serial_chooser_data": {},
+        "serial_guard": {},
+        "site_engagement": {
+          "https://10996825.fls.doubleclick.net:443,*": {
+            "last_modified": "13433695836320615",
+            "setting": {
+              "lastEngagementTime": 1.3433695836320612e+16,
+              "lastShortcutLaunchTime": 0.0,
+              "pointsAddedToday": 3.0,
+              "rawScore": 3.0
+            }
+          },
+          "https://15978676.fls.doubleclick.net:443,*": {
+            "last_modified": "13433695835921083",
+            "setting": {
+              "lastEngagementTime": 1.343369583592108e+16,
+              "lastShortcutLaunchTime": 0.0,
+              "pointsAddedToday": 3.0,
+              "rawScore": 3.0
+            }
+          },
+          "https://9330654.fls.doubleclick.net:443,*": {
+            "last_modified": "13433695837079269",
+            "setting": {
+              "lastEngagementTime": 1.3433695837079264e+16,
+              "lastShortcutLaunchTime": 0.0,
+              "pointsAddedToday": 3.0,
+              "rawScore": 3.0
+            }
+          },
+          "https://gum.criteo.com:443,*": {
+            "last_modified": "13433695835825213",
+            "setting": {
+              "lastEngagementTime": 1.343369583582521e+16,
+              "lastShortcutLaunchTime": 0.0,
+              "pointsAddedToday": 3.0,
+              "rawScore": 3.0
+            }
+          },
+          "https://sm-sky-ui.vrioservices.com:443,*": {
+            "last_modified": "13433695837463926",
+            "setting": {
+              "lastEngagementTime": 1.3433695837463904e+16,
+              "lastShortcutLaunchTime": 0.0,
+              "pointsAddedToday": 3.6,
+              "rawScore": 3.6
+            }
+          },
+          "https://sst.skymais.com.br:443,*": {
+            "last_modified": "13433695835711536",
+            "setting": {
+              "lastEngagementTime": 1.3433695835711532e+16,
+              "lastShortcutLaunchTime": 0.0,
+              "pointsAddedToday": 3.0,
+              "rawScore": 3.0
+            }
+          },
+          "https://www.facebook.com:443,*": {
+            "last_modified": "13433696089201278",
+            "setting": {
+              "lastEngagementTime": 1.3433696089201268e+16,
+              "lastShortcutLaunchTime": 0.0,
+              "pointsAddedToday": 4.5,
+              "rawScore": 4.5
+            }
+          },
+          "https://www.google.com:443,*": {
+            "last_modified": "13433696089115548",
+            "setting": {
+              "lastEngagementTime": 1.3433696089115536e+16,
+              "lastShortcutLaunchTime": 0.0,
+              "pointsAddedToday": 4.5,
+              "rawScore": 4.5
+            }
+          },
+          "https://www.skymais.com.br:443,*": {
+            "last_modified": "13433696077701823",
+            "setting": {
+              "lastEngagementTime": 1.343369607770181e+16,
+              "lastShortcutLaunchTime": 0.0,
+              "pointsAddedToday": 7.8,
+              "rawScore": 7.8
+            }
+          }
+        },
+        "sound": {},
+        "speaker_selection": {},
+        "ssl_cert_decisions": {},
+        "storage_access": {},
+        "storage_access_header_origin_trial": {},
+        "subresource_filter": {},
+        "subresource_filter_data": {},
+        "suspicious_notification_ids": {},
+        "suspicious_notification_show_original": {},
+        "top_level_storage_access": {},
+        "unused_site_permissions": {},
+        "usb_chooser_data": {},
+        "usb_guard": {},
+        "vr": {},
+        "web_app_installation": {},
+        "webid_api": {},
+        "webid_auto_reauthn": {},
+        "window_placement": {}
+      },
+      "pref_version": 1
+    },
+    "created_by_version": "149.0.7827.55",
+    "creation_time": "13433695626890282",
+    "default_content_setting_values": {
+      "has_migrated_local_network_access": true
+    },
+    "exit_type": "Normal",
+    "family_member_role": "not_in_family",
+    "last_engagement_time": "13433696089201268",
+    "last_time_obsolete_http_credentials_removed": 1789222266.883597,
+    "last_time_password_store_metrics_reported": 1789222236.894757,
+    "managed": {
+      "locally_parent_approved_extensions": {},
+      "locally_parent_approved_extensions_migration_state": 1
+    },
+    "managed_user_id": "",
+    "name": "Seu Chromium",
+    "password_hash_data_list": [],
+    "were_old_google_logins_removed": true,
+    "password_manager_enabled": false,
+    "password_manager_leak_detection": false,
+    "leak_detection_enabled": false
+  },
+  "safebrowsing": {
+    "event_timestamps": {},
+    "metrics_last_log_time": "13433695626",
+    "scout_reporting_enabled_when_deprecated": false
+  },
+  "safety_hub": {
+    "unused_site_permissions_revocation": {
+      "migration_completed": true
+    }
+  },
+  "saved_tab_groups": {
+    "did_enable_shared_tab_groups_in_last_session": false,
+    "specifics_to_data_migration": true
+  },
+  "segmentation_platform": {
+    "client_result_prefs": "ClIKDXNob3BwaW5nX3VzZXISQQo2DQAAAAAQkte2gYC87hcaJAocChoNAAAAPxIMU2hvcHBpbmdVc2VyGgVPdGhlchIEEAIYBCADELjXtoGAvO4X",
+    "device_switcher_util": {
+      "result": {
+        "labels": [
+          "NotSynced"
+        ]
+      }
+    },
+    "last_db_compaction_time": "13433558399000000",
+    "uma_in_sql_start_time": "13433695626930563"
+  },
+  "sessions": {
+    "event_log": [
+      {
+        "crashed": false,
+        "time": "13433695626929826",
+        "type": 0
+      },
+      {
+        "did_schedule_command": true,
+        "first_session_service": true,
+        "tab_count": 1,
+        "time": "13433695654254161",
+        "type": 2,
+        "window_count": 1
+      },
+      {
+        "crashed": false,
+        "time": "13433695806884984",
+        "type": 0
+      },
+      {
+        "did_schedule_command": true,
+        "first_session_service": true,
+        "tab_count": 1,
+        "time": "13433695868916869",
+        "type": 2,
+        "window_count": 1
+      },
+      {
+        "crashed": false,
+        "time": "13433696076237195",
+        "type": 0
+      },
+      {
+        "did_schedule_command": true,
+        "first_session_service": true,
+        "tab_count": 1,
+        "time": "13433696089252950",
+        "type": 2,
+        "window_count": 1
+      }
+    ],
+    "session_data_status": 5
+  },
+  "settings": {
+    "force_google_safesearch": false
+  },
+  "signin": {
+    "accounts_metadata_dict": {},
+    "allowed": true
+  },
+  "site_search_settings": {
+    "overridden_keywords": []
+  },
+  "spellcheck": {
+    "dictionaries": [
+      "pt-BR"
+    ]
+  },
+  "syncing_theme_prefs_migrated_to_non_syncing": true,
+  "tab_search": {
+    "pinned_to_tabstrip_migration_complete_2": true
+  },
+  "toolbar": {
+    "pinned_cast_migration_complete": true,
+    "pinned_chrome_labs_migration_complete": true
+  },
+  "total_passwords_available_for_account": 0,
+  "total_passwords_available_for_profile": 0,
+  "translate_ignored_count_for_language": {
+    "es": 1
+  },
+  "web_apps": {
+    "did_migrate_default_chrome_apps": [
+      "MigrateDefaultChromeAppToWebAppsGSuite",
+      "MigrateDefaultChromeAppToWebAppsNonGSuite"
+    ],
+    "last_preinstall_synchronize_version": "149"
+  },
+  "credentials_enable_service": false,
+  "translate": {
+    "enabled": false
+  },
+  "translate_blocked_languages": [
+    "es",
+    "en",
+    "pt"
+  ]
+}

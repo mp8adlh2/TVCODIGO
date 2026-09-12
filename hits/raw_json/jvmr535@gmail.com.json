@@ -1,0 +1,314 @@
+{
+  "email": "jvmr535@gmail.com",
+  "password": "JoaoV535.,",
+  "access_token": "9f8b683a-e1e5-4fc2-aa6a-c01468a0be84",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiMmNhYTM5ZjItYTczMS00NGUwLTlhMDYtZTc3ZDE2NjI0NWE5IiwiYXRfaGFzaCI6Iml4aGFvQThQXy1JRTE1alZENTlRT0EiLCJkZXZpY2VJZCI6ImZmMDJlNTI1YjY3NzZlMWU5MTkwNTMzZjViNzgzZTc4NDYxMjRjMDgiLCJhdWRpdFRyYWNraW5nSWQiOiJjY2E4LTQ0MGItNGU4YS1hOGYzLThjNmQiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjcxNjQ0NiwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJRNWpNdVRUaVJiVU9jSktINXpzUFJBIiwic2lnbmF0dXJlcyI6WyIxMjAzMTQ1MjQiXSwiY3VzdG9tZXJJZCI6IjVjNDk5OWMxMzljNTczYWE0MjEyOTQ0NDU0ZGY3NTBlIiwicmVnaXN0cmF0aW9uU2lnbmF0dXJlIjoiMTIwMzE0NTI0IiwiZ2l2ZW5fbmFtZSI6IlNPTklBIiwiZmFtaWx5X25hbWUiOiJza3kiLCJ1c2VybmFtZSI6Imp2bXI1MzVAZ21haWwuY29tIiwibWFpbCI6Imp2bXI1MzVAZ21haWwuY29tIiwicmVkZW1wdGlvbkxpbWl0IjpudWxsLCJpYXQiOjE3ODgzMTI3MTYsImV4cCI6MTc4ODM5OTExNiwiaXNzIjoic20tc2t5LnZyaW9zZXJ2aWNlcy5jb20ifQ.fiOLbeCTRwlITNgR16nSomP8JcVInMwl4e72YoEsMCDDR_C0HG_OR5tgsUY38E9S3P_jZDX_MgwAAxoqFDCououHvk_N67uzmdu5HRJ9E9Mgf2PTXNail5GHU1lEOAOMfX9g2-Nq5hDuNosjSs3rqE_qxQROYkYIf1OI6Ok7vRbXACewhc9UilHRpy_BF7gU6mTnfKo6FaY_4wkSWUlQvSZstgjRZREXFMAv8wDqBsjtlSSNT7UAzwULyG6xk746wqS6-CRF7fLM9gsTc_9Qx7McWtrM9bE0ZbTukuxVWBQVE2gLfIDFjRlJFwJtbvGO47-EsElLPOL_wY_MQV5fnQ",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "9f8b683a-e1e5-4fc2-aa6a-c01468a0be84",
+    "externalId": "899c1abb-5163-5884-a8d0-bc42b34d3426",
+    "username": "5c4999c139c573aa4212944454df750e",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "120314524",
+    "protocol": "2026-150197465170",
+    "customer": {
+      "email": "jvmr535@gmail.com",
+      "billingProfileCode": "1-9473-6644",
+      "name": "SONIA",
+      "secondName": "AUXILIADORA DE MOURA",
+      "birthday": "1964-06-15T00:00:00.000Z",
+      "ddd": 31,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5531981219468",
+      "id": "5c4999c139c573aa4212944454df750e",
+      "cpf": "51876213604"
+    },
+    "signatures": [
+      {
+        "id": "120314524",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 981219468,
+          "dddMobilePhone": 31
+        },
+        "customerId": "5c4999c139c573aa4212944454df750e",
+        "status": 1,
+        "productName": "COMBO FULL PREMIERE TOTAL HD 2018/2021 - P",
+        "name": "SONIA",
+        "secondName": "AUXILIADORA DE MOURA",
+        "dna": "01000000000100010000001000000000100000000000000000100000001000000000001000000000000000011011000111110000000000100000000100000000011110010000010000010111111111111111111111111000000000000000000001100000000010111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111010011111111111111111111111111111111110011111111111110111111111101011111111111111111111111100111011100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Luiz Nigre Do Carmo",
+          "line1": "Rua Luiz Nigre Do Carmo, 47 - Vila Sao Geraldo",
+          "line2": ".",
+          "number": "47",
+          "city": "Moeda",
+          "state": "MG",
+          "country": "Brasil",
+          "postalCode": "35470000",
+          "referencePoint": "Prox Ao Bar Do Vandin, Perguntar Pela Sonia Professora.",
+          "addressType": "Rua",
+          "resDdd": 31,
+          "resPhone": 35751157
+        },
+        "addressBilling": {
+          "linePublic": "Rua Luiz Nigre Do Carmo",
+          "line1": "Rua Luiz Nigre Do Carmo, 47 - Vila Sao Geraldo",
+          "line2": ".",
+          "number": "47",
+          "city": "Moeda",
+          "state": "MG",
+          "country": "Brasil",
+          "postalCode": "35470000",
+          "referencePoint": "Prox Ao Bar Do Vandin, Perguntar Pela Sonia Professora.",
+          "addressType": "Rua",
+          "resDdd": 31,
+          "resPhone": 35751157
+        },
+        "activation": "2012-11-23T00:00:00.000Z",
+        "email": "jvmr535@gmail.com",
+        "parentAccount": "0120314524",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000521964379",
+            "isRecordable": false,
+            "technology": "SD",
+            "subcategory": "PayTV",
+            "serialCode": "DSR3421",
+            "serialNumber": "CE0A4500950430811"
+          },
+          {
+            "smartcard": "000510778798",
+            "isRecordable": false,
+            "technology": "SD",
+            "subcategory": "PayTV",
+            "serialCode": "DSR3421",
+            "serialNumber": "CE0A4501930114112"
+          },
+          {
+            "smartcard": "000639891779",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "670AA635373627962"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "120314524",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 981219468,
+        "dddMobilePhone": 31
+      },
+      "customerId": "5c4999c139c573aa4212944454df750e",
+      "status": 1,
+      "productName": "COMBO FULL PREMIERE TOTAL HD 2018/2021 - P",
+      "name": "SONIA",
+      "secondName": "AUXILIADORA DE MOURA",
+      "dna": "01000000000100010000001000000000100000000000000000100000001000000000001000000000000000011011000111110000000000100000000100000000011110010000010000010111111111111111111111111000000000000000000001100000000010111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111010011111111111111111111111111111111110011111111111110111111111101011111111111111111111111100111011100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Luiz Nigre Do Carmo",
+        "line1": "Rua Luiz Nigre Do Carmo, 47 - Vila Sao Geraldo",
+        "line2": ".",
+        "number": "47",
+        "city": "Moeda",
+        "state": "MG",
+        "country": "Brasil",
+        "postalCode": "35470000",
+        "referencePoint": "Prox Ao Bar Do Vandin, Perguntar Pela Sonia Professora.",
+        "addressType": "Rua",
+        "resDdd": 31,
+        "resPhone": 35751157
+      },
+      "addressBilling": {
+        "linePublic": "Rua Luiz Nigre Do Carmo",
+        "line1": "Rua Luiz Nigre Do Carmo, 47 - Vila Sao Geraldo",
+        "line2": ".",
+        "number": "47",
+        "city": "Moeda",
+        "state": "MG",
+        "country": "Brasil",
+        "postalCode": "35470000",
+        "referencePoint": "Prox Ao Bar Do Vandin, Perguntar Pela Sonia Professora.",
+        "addressType": "Rua",
+        "resDdd": 31,
+        "resPhone": 35751157
+      },
+      "activation": "2012-11-23T00:00:00.000Z",
+      "email": "jvmr535@gmail.com",
+      "parentAccount": "0120314524",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000521964379",
+          "isRecordable": false,
+          "technology": "SD",
+          "subcategory": "PayTV",
+          "serialCode": "DSR3421",
+          "serialNumber": "CE0A4500950430811"
+        },
+        {
+          "smartcard": "000510778798",
+          "isRecordable": false,
+          "technology": "SD",
+          "subcategory": "PayTV",
+          "serialCode": "DSR3421",
+          "serialNumber": "CE0A4501930114112"
+        },
+        {
+          "smartcard": "000639891779",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "670AA635373627962"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "120314524": {
+      "included": [
+        {
+          "name": "ESR HD",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "23-08-2021",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "PREMIERE TOTAL HD - P",
+          "category": "A La Carte",
+          "subcategory": "Futebol",
+          "start_date": "23-08-2021",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "TAXA ASSISTENCIA PREMIUM - P",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "23-08-2021",
+          "end_date": null,
+          "icon": "🛡️"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "DISNEY PLUS PREMIUM",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "29-07-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky Sex Prive HD - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "23-08-2021",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "Sky RAI International",
+          "category": "A La Carte",
+          "subcategory": "Internacional",
+          "start_date": "23-08-2021",
+          "end_date": null,
+          "icon": "🌍"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-219IIMH",
+            "name": "DISNEY PLUS PREMIUM",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Disney%403x.png",
+            "price": "46.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "29-07-2026",
+            "startDate": "29-07-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-1LRKSTR",
+            "name": "ESR HD",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/8849176/SKY-Canais-Adicionais-ESR-Cards.png",
+            "price": "7.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "09-04-2019",
+            "startDate": "23-08-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "PREMIERE TOTAL HD - P",
+            "category": "A La Carte",
+            "subcategory": "Futebol",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "09-04-2019",
+            "startDate": "23-08-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive HD - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "09-04-2019",
+            "startDate": "23-08-2021",
+            "endDate": null
+          },
+          {
+            "id": "1-2T0LKG",
+            "name": "Sky RAI International",
+            "category": "A La Carte",
+            "subcategory": "Internacional",
+            "logo": "https://skycms.s3.amazonaws.com/images/37907079/Logo.Internacionais.RAI.png",
+            "price": "16.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "09-04-2019",
+            "startDate": "23-08-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TAXA ASSISTENCIA PREMIUM - P",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "09-04-2019",
+            "startDate": "23-08-2021",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

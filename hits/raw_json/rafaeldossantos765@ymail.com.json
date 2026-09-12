@@ -1,0 +1,200 @@
+{
+  "email": "rafaeldossantos765@ymail.com",
+  "password": "Rafa8224",
+  "access_token": "36ce7a73-9788-4e80-8691-71723b829c27",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiMGZjZjFhZWYtNWIzNS00ZTVlLWFjMTYtMDczYWEwYTk0ZGNlIiwiYXRfaGFzaCI6IkYzeU45Tk00UDVhRnpKcXZjazF2YkEiLCJkZXZpY2VJZCI6Ijk0NDliYmQxODM3NDc5MGYwODAxMTdiODAxZTFlZDkzOTgxNzAzNjkiLCJhdWRpdFRyYWNraW5nSWQiOiI0NzExLTIyMTgtNGM5My05ODQ3LTViMTMiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODY1MTE0MjU5NCwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiI4NzU4YThiYS0wYTkyLTQ5ZjctOTc5Mi02ZjkwMDgxNDY0MDAiLCJzaWduYXR1cmVzIjpbIjE1MDY1MDEwNDYiXSwiY3VzdG9tZXJJZCI6IjI3OWYyMDQ1MTM5YjYyYjJjY2I3MDdiY2M1ZjQ3ZDJlIiwicmVnaXN0cmF0aW9uU2lnbmF0dXJlIjoiMTUwNjUwMTA0NiIsImdpdmVuX25hbWUiOiJSQUZBRUwiLCJ1c2VybmFtZSI6InJhZmFlbGRvc3NhbnRvczc2NUB5bWFpbC5jb20iLCJtYWlsIjoicmFmYWVsZG9zc2FudG9zNzY1QHltYWlsLmNvbSIsInJlZGVtcHRpb25MaW1pdCI6bnVsbCwiaWF0IjoxNzg4NjUxMTQyLCJleHAiOjE3ODg3Mzc1NDIsImlzcyI6InNtLXNreS52cmlvc2VydmljZXMuY29tIn0.dAYlbSmR0FkJSJhG9k4z1llFWwVWL23pgOhEXHOAJrSWshdtJTvxoELFE3psHRY16qDDiUHRQLdgFTtkM4S3vQEpKyc6Sx57mISD5B6L5DJyMdv8JryDSNK22HXxgR7fYptvb1qb89RcgCEpXXA4RtIwhkneFFhVEkjHlm5dPUQW67_Nb2i_zouAWL6fmGDQmDK2gy5oAPHaN2YJjt3Ztv9i7MPIR5pVZMYOIyFHnWWUSfPDb07L-oCBEJf9N2NrmQBRbQNi4ml-ZwLfPOeku_QQAy3wtC6TLxNFMhZ0f3tfilqyb9V36I5ppLfMuN80093x5njU7W-GTfIs4amZjw",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "36ce7a73-9788-4e80-8691-71723b829c27",
+    "externalId": "29a5ce64-43da-5f3d-9768-fadcfe987cc4",
+    "username": "279f2045139b62b2ccb707bcc5f47d2e",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "1506501046",
+    "protocol": "2026-150264761204",
+    "customer": {
+      "email": "rafaeldossantos765@ymail.com",
+      "billingProfileCode": "1-GMAXEFL",
+      "name": "RAFAEL",
+      "secondName": "DOS SANTOS",
+      "birthday": "1993-02-07T00:00:00.000Z",
+      "ddd": 21,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5521975434877",
+      "id": "279f2045139b62b2ccb707bcc5f47d2e",
+      "cpf": "06140686733"
+    },
+    "signatures": [
+      {
+        "id": "1506501046",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 975434877,
+          "dddMobilePhone": 21
+        },
+        "customerId": "279f2045139b62b2ccb707bcc5f47d2e",
+        "status": 1,
+        "productName": "TOP HD EXCLUSIVO 2025 - P",
+        "name": "RAFAEL",
+        "secondName": "DOS SANTOS",
+        "dna": "01000000000100001000000100000000010000000000000000000000000000000000000000000000000000100010000111110000000000010000000010000000011110000100000000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111111111111101111111111111111111111111111111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111101101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111110001111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Estrada Caxambu",
+          "line1": "Estrada Caxambu, Sn - Tres Corregos",
+          "line2": null,
+          "number": "SN",
+          "city": "Teresopolis",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "25980080",
+          "referencePoint": "Bar Da Sonia",
+          "addressType": "Estrada",
+          "resDdd": 21,
+          "resPhone": 975434877
+        },
+        "addressBilling": {
+          "linePublic": "Rua G",
+          "line1": "Rua G, 71 - Parada Modelo",
+          "line2": null,
+          "number": "71",
+          "city": "Guapimirim",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "25943596",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2017-05-22T00:00:00.000Z",
+        "email": "rafaeldossantos765@ymail.com",
+        "parentAccount": "1506501027",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001130109216",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A012538846513B"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "1506501046",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 975434877,
+        "dddMobilePhone": 21
+      },
+      "customerId": "279f2045139b62b2ccb707bcc5f47d2e",
+      "status": 1,
+      "productName": "TOP HD EXCLUSIVO 2025 - P",
+      "name": "RAFAEL",
+      "secondName": "DOS SANTOS",
+      "dna": "01000000000100001000000100000000010000000000000000000000000000000000000000000000000000100010000111110000000000010000000010000000011110000100000000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111111111111101111111111111111111111111111111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111101101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111110001111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Estrada Caxambu",
+        "line1": "Estrada Caxambu, Sn - Tres Corregos",
+        "line2": null,
+        "number": "SN",
+        "city": "Teresopolis",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "25980080",
+        "referencePoint": "Bar Da Sonia",
+        "addressType": "Estrada",
+        "resDdd": 21,
+        "resPhone": 975434877
+      },
+      "addressBilling": {
+        "linePublic": "Rua G",
+        "line1": "Rua G, 71 - Parada Modelo",
+        "line2": null,
+        "number": "71",
+        "city": "Guapimirim",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "25943596",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2017-05-22T00:00:00.000Z",
+      "email": "rafaeldossantos765@ymail.com",
+      "parentAccount": "1506501027",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "001130109216",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A012538846513B"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "1506501046": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "22-08-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "18-08-2026",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "22-08-2026",
+            "startDate": "22-08-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-219IIMH",
+            "name": "DISNEY PLUS PREMIUM",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Disney%403x.png",
+            "price": "46.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "18-08-2026",
+            "startDate": "18-08-2026",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

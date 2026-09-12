@@ -1,13 +1,13 @@
-==============================================================
-  🍪 SENHA EXCLUSIVA DO GERENCIADOR DE COOKIES (COFRE ADMIN)
-==============================================================
+================================================================================
+     🍪 SENHA EXCLUSIVA DO COFRE DE COOKIES ADMIN (ROOT RED VAULT)
+================================================================================
 
-  SENHA DO GERENCIADOR DE COOKIES:
-  
-  ADMIN#COOKIES@7739$VIP*VAULT!2026
+SENHA DO COFRE DE COOKIES:
 
-==============================================================
-  • Use esta senha para acessar o painel de ADICIONAR COOKIES.
-  • É uma senha DIFERENTE da senha principal da tela de ativação.
-  • Você pode alterar esta senha quando quiser aqui neste arquivo.
-==============================================================
+ADMIN#VAULT@2026$COOKIE*BLINDADO#PROTECT*ROOT!VIP
+
+================================================================================
+• Use esta senha quando clicar no botão "COOKIES" ou "Gerenciar / Importar".
+• Senha de segurança independente da senha principal do ativador.
+• Mantém os arquivos de cookies e tokens 100% protegidos contra edições não autorizadas.
+================================================================================

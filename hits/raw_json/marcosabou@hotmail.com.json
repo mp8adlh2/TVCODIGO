@@ -1,0 +1,847 @@
+{
+  "email": "marcosabou@hotmail.com",
+  "password": "Mg967481",
+  "access_token": "247c075a-fa65-4b0d-9fd9-2d7d7031005a",
+  "jwt_token": "5214f049-f697-4c7c-a68a-f009417a8146",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "247c075a-fa65-4b0d-9fd9-2d7d7031005a",
+    "externalId": "88acc320-6fa7-5f43-a860-bba2051f4d01",
+    "username": "f3c03ca896766f4861714c82c65d91c2",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "51925569",
+    "protocol": "2026-150293465928",
+    "customer": {
+      "email": "marcosabou@gmail.com",
+      "billingProfileCode": "1-HBIS-3256",
+      "name": "BERENICE",
+      "secondName": "DA COSTA",
+      "birthday": "1966-03-06T00:00:00.000Z",
+      "ddd": 51,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5551999757755",
+      "id": "f3c03ca896766f4861714c82c65d91c2",
+      "cpf": "45895740049"
+    },
+    "signatures": [
+      {
+        "id": "31172576",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 999757755,
+          "dddMobilePhone": 51,
+          "dddComPhone": 51,
+          "comPhone": 30970660
+        },
+        "customerId": "f3c03ca896766f4861714c82c65d91c2",
+        "status": 1,
+        "productName": "PLUS TOTAL EXPERIENCE IV 2022 - P",
+        "name": "BERENICE",
+        "secondName": "DA COSTA",
+        "dna": "01000000000101000000001000000000100000000000000000000000000000000000000001000000000000100011000111110000000000000010000100000000011110000100000000010111111111111111011111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Irlanda",
+          "line1": "Rua Irlanda, 93 - Rincao",
+          "line2": ".",
+          "number": "93",
+          "city": "Novo Hamburgo",
+          "state": "RS",
+          "country": "Brasil",
+          "postalCode": "93348540",
+          "referencePoint": "Ginasio Augustinho",
+          "addressType": "Rua",
+          "resDdd": 51,
+          "resPhone": 35879321
+        },
+        "addressBilling": {
+          "linePublic": "Rua Irlanda",
+          "line1": "Rua Irlanda, 93 - Rincao",
+          "line2": ".",
+          "number": "93",
+          "city": "Novo Hamburgo",
+          "state": "RS",
+          "country": "Brasil",
+          "postalCode": "93348540",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2007-10-12T00:00:00.000Z",
+        "email": "marcosaboumg@hotmail.com",
+        "parentAccount": "031172576",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000905329983",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "CE0AA63613717965B"
+          },
+          {
+            "smartcard": "000616286597",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "670A263424531540F"
+          },
+          {
+            "smartcard": "000762404093",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH10",
+            "serialNumber": "670AAC25384771411"
+          },
+          {
+            "smartcard": "000687636852",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "CE0A142254434563E"
+          },
+          {
+            "smartcard": "000600085054",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "010A2634245114282"
+          },
+          {
+            "smartcard": "000653067843",
+            "isRecordable": false,
+            "technology": "SD",
+            "subcategory": "PayTV",
+            "serialCode": "S14",
+            "serialNumber": "670AA635376188817"
+          }
+        ]
+      },
+      {
+        "id": "50157371",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 999757755,
+          "dddMobilePhone": 51
+        },
+        "customerId": "f3c03ca896766f4861714c82c65d91c2",
+        "status": 1,
+        "productName": "TOP HD PLUS IV 2022 - P",
+        "name": "BERENICE",
+        "secondName": "DA COSTA",
+        "dna": "11000000000100001000000000000000100000000000000000000000000000000000000010000000000000100011000111110000000000000100000100000000011110000100000000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111101111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Avenida Tiradentes",
+          "line1": "Avenida Tiradentes, 493 - Floresta",
+          "line2": ".",
+          "number": "493",
+          "city": "Estancia Velha",
+          "state": "RS",
+          "country": "Brasil",
+          "postalCode": "93600740",
+          "referencePoint": "Proximo A Apaee",
+          "addressType": "Avenida"
+        },
+        "addressBilling": {
+          "linePublic": "Avenida Tiradentes",
+          "line1": "Avenida Tiradentes, 493 - Floresta",
+          "line2": ".",
+          "number": "493",
+          "city": "Estancia Velha",
+          "state": "RS",
+          "country": "Brasil",
+          "postalCode": "93600000",
+          "referencePoint": "Proximo A Apaee",
+          "addressType": "Avenida"
+        },
+        "activation": "2010-04-08T00:00:00.000Z",
+        "email": "marcosabou@gmail.com",
+        "parentAccount": "050157371",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000805344397",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "010A2634121635242"
+          },
+          {
+            "smartcard": "000611581992",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH25",
+            "serialNumber": "CE0AA13535098914D"
+          },
+          {
+            "smartcard": "001208255693",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A0125502417496"
+          },
+          {
+            "smartcard": "000652189077",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "CE0AA635361113126"
+          },
+          {
+            "smartcard": "001211393952",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A0125513454726"
+          }
+        ]
+      },
+      {
+        "id": "51925569",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 999757755,
+          "dddMobilePhone": 51
+        },
+        "customerId": "f3c03ca896766f4861714c82c65d91c2",
+        "status": 1,
+        "productName": "PLUS TOTAL EXPERIENCE IV 2022 - P",
+        "name": "BERENICE",
+        "secondName": "DA COSTA",
+        "dna": "11000000000100100000001000000000100000000000000000000000000000000000000010000000000000001011000111110000000000000100000100000000011110100000000000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111101111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Joventino Joaquim Da Rosa",
+          "line1": "Rua Joventino Joaquim Da Rosa, 193 - Roselandia",
+          "line2": ".",
+          "number": "193",
+          "city": "Novo Hamburgo",
+          "state": "RS",
+          "country": "Brasil",
+          "postalCode": "93351090",
+          "referencePoint": "Proximo Ao Posto Sapatao.",
+          "addressType": "Rua"
+        },
+        "addressBilling": {
+          "linePublic": "Rua Joventino Joaquim Da Rosa",
+          "line1": "Rua Joventino Joaquim Da Rosa, 193 - Roselandia",
+          "line2": ".",
+          "number": "193",
+          "city": "Novo Hamburgo",
+          "state": "RS",
+          "country": "Brasil",
+          "postalCode": "93351090",
+          "referencePoint": ".",
+          "addressType": "Rua",
+          "resDdd": 51,
+          "resPhone": 35879321
+        },
+        "activation": "2010-05-29T00:00:00.000Z",
+        "email": "marcosabou@hotmail.com",
+        "parentAccount": "051925569",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000646894030",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "CE0AA63613209897F"
+          },
+          {
+            "smartcard": "000669861114",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "670AA63537098391A"
+          },
+          {
+            "smartcard": "000649780863",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "670AA63613343286F"
+          },
+          {
+            "smartcard": "000800564296",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "010A263417281947E"
+          },
+          {
+            "smartcard": "000654934694",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "CE0AA635319296067"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "31172576",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 999757755,
+        "dddMobilePhone": 51,
+        "dddComPhone": 51,
+        "comPhone": 30970660
+      },
+      "customerId": "f3c03ca896766f4861714c82c65d91c2",
+      "status": 1,
+      "productName": "PLUS TOTAL EXPERIENCE IV 2022 - P",
+      "name": "BERENICE",
+      "secondName": "DA COSTA",
+      "dna": "01000000000101000000001000000000100000000000000000000000000000000000000001000000000000100011000111110000000000000010000100000000011110000100000000010111111111111111011111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Irlanda",
+        "line1": "Rua Irlanda, 93 - Rincao",
+        "line2": ".",
+        "number": "93",
+        "city": "Novo Hamburgo",
+        "state": "RS",
+        "country": "Brasil",
+        "postalCode": "93348540",
+        "referencePoint": "Ginasio Augustinho",
+        "addressType": "Rua",
+        "resDdd": 51,
+        "resPhone": 35879321
+      },
+      "addressBilling": {
+        "linePublic": "Rua Irlanda",
+        "line1": "Rua Irlanda, 93 - Rincao",
+        "line2": ".",
+        "number": "93",
+        "city": "Novo Hamburgo",
+        "state": "RS",
+        "country": "Brasil",
+        "postalCode": "93348540",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2007-10-12T00:00:00.000Z",
+      "email": "marcosaboumg@hotmail.com",
+      "parentAccount": "031172576",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000905329983",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "CE0AA63613717965B"
+        },
+        {
+          "smartcard": "000616286597",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "670A263424531540F"
+        },
+        {
+          "smartcard": "000762404093",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH10",
+          "serialNumber": "670AAC25384771411"
+        },
+        {
+          "smartcard": "000687636852",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "CE0A142254434563E"
+        },
+        {
+          "smartcard": "000600085054",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "010A2634245114282"
+        },
+        {
+          "smartcard": "000653067843",
+          "isRecordable": false,
+          "technology": "SD",
+          "subcategory": "PayTV",
+          "serialCode": "S14",
+          "serialNumber": "670AA635376188817"
+        }
+      ]
+    },
+    {
+      "id": "50157371",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 999757755,
+        "dddMobilePhone": 51
+      },
+      "customerId": "f3c03ca896766f4861714c82c65d91c2",
+      "status": 1,
+      "productName": "TOP HD PLUS IV 2022 - P",
+      "name": "BERENICE",
+      "secondName": "DA COSTA",
+      "dna": "11000000000100001000000000000000100000000000000000000000000000000000000010000000000000100011000111110000000000000100000100000000011110000100000000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111101111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Avenida Tiradentes",
+        "line1": "Avenida Tiradentes, 493 - Floresta",
+        "line2": ".",
+        "number": "493",
+        "city": "Estancia Velha",
+        "state": "RS",
+        "country": "Brasil",
+        "postalCode": "93600740",
+        "referencePoint": "Proximo A Apaee",
+        "addressType": "Avenida"
+      },
+      "addressBilling": {
+        "linePublic": "Avenida Tiradentes",
+        "line1": "Avenida Tiradentes, 493 - Floresta",
+        "line2": ".",
+        "number": "493",
+        "city": "Estancia Velha",
+        "state": "RS",
+        "country": "Brasil",
+        "postalCode": "93600000",
+        "referencePoint": "Proximo A Apaee",
+        "addressType": "Avenida"
+      },
+      "activation": "2010-04-08T00:00:00.000Z",
+      "email": "marcosabou@gmail.com",
+      "parentAccount": "050157371",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000805344397",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "010A2634121635242"
+        },
+        {
+          "smartcard": "000611581992",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH25",
+          "serialNumber": "CE0AA13535098914D"
+        },
+        {
+          "smartcard": "001208255693",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A0125502417496"
+        },
+        {
+          "smartcard": "000652189077",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "CE0AA635361113126"
+        },
+        {
+          "smartcard": "001211393952",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A0125513454726"
+        }
+      ]
+    },
+    {
+      "id": "51925569",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 999757755,
+        "dddMobilePhone": 51
+      },
+      "customerId": "f3c03ca896766f4861714c82c65d91c2",
+      "status": 1,
+      "productName": "PLUS TOTAL EXPERIENCE IV 2022 - P",
+      "name": "BERENICE",
+      "secondName": "DA COSTA",
+      "dna": "11000000000100100000001000000000100000000000000000000000000000000000000010000000000000001011000111110000000000000100000100000000011110100000000000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111101111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Joventino Joaquim Da Rosa",
+        "line1": "Rua Joventino Joaquim Da Rosa, 193 - Roselandia",
+        "line2": ".",
+        "number": "193",
+        "city": "Novo Hamburgo",
+        "state": "RS",
+        "country": "Brasil",
+        "postalCode": "93351090",
+        "referencePoint": "Proximo Ao Posto Sapatao.",
+        "addressType": "Rua"
+      },
+      "addressBilling": {
+        "linePublic": "Rua Joventino Joaquim Da Rosa",
+        "line1": "Rua Joventino Joaquim Da Rosa, 193 - Roselandia",
+        "line2": ".",
+        "number": "193",
+        "city": "Novo Hamburgo",
+        "state": "RS",
+        "country": "Brasil",
+        "postalCode": "93351090",
+        "referencePoint": ".",
+        "addressType": "Rua",
+        "resDdd": 51,
+        "resPhone": 35879321
+      },
+      "activation": "2010-05-29T00:00:00.000Z",
+      "email": "marcosabou@hotmail.com",
+      "parentAccount": "051925569",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000646894030",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "CE0AA63613209897F"
+        },
+        {
+          "smartcard": "000669861114",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "670AA63537098391A"
+        },
+        {
+          "smartcard": "000649780863",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "670AA63613343286F"
+        },
+        {
+          "smartcard": "000800564296",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "010A263417281947E"
+        },
+        {
+          "smartcard": "000654934694",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "CE0AA635319296067"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "31172576": {
+      "included": [
+        {
+          "name": "ESR HD CB",
+          "category": "A La Carte",
+          "subcategory": "Esportes",
+          "start_date": "14-07-2023",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "TELECINE HD CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "14-07-2023",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Premiere",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "14-07-2023",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "PARAMOUNT PLUS CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "14-07-2023",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "SEGURO RESIDENCIAL PARA CASA DE ALVENARIA - BASICO",
+          "category": "A La Carte",
+          "subcategory": "Premium",
+          "start_date": "14-07-2023",
+          "end_date": "14-07-2028",
+          "icon": "🌍"
+        },
+        {
+          "name": "ESPN 6 HD CB 2021",
+          "category": "A La Carte",
+          "subcategory": "Esportes",
+          "start_date": "14-07-2023",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "14-07-2023",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "FATURA PROTEGIDA SKY 1200",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "09-04-2026",
+          "end_date": "09-04-2031",
+          "icon": "📺"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "24-08-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky Sex Prive - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "14-07-2023",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "Sky Sex Prive HD - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "14-07-2023",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "ASSISTENCIA PREMIUM SEGURO RESIDENCIAL",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "14-07-2023",
+          "end_date": "14-07-2028",
+          "icon": "🛡️"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-1VZY244",
+            "name": "FATURA PROTEGIDA SKY 1200",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": null,
+            "price": "15.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "09-04-2026",
+            "startDate": "09-04-2026",
+            "endDate": "09-04-2031"
+          },
+          {
+            "id": "1-219IIMH",
+            "name": "DISNEY PLUS PREMIUM",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Disney%403x.png",
+            "price": "46.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "24-08-2025",
+            "startDate": "24-08-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-1QKJGWB",
+            "name": "ESR HD CB",
+            "category": "A La Carte",
+            "subcategory": "Esportes",
+            "logo": "https://skycms.s3.amazonaws.com/images/42693528/ESR_logo.jpg",
+            "price": "6.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "14-07-2023",
+            "startDate": "14-07-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TELECINE HD CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "14-07-2023",
+            "startDate": "14-07-2023",
+            "endDate": null
+          },
+          {
+            "id": "1-1XBHQIX",
+            "name": "Premiere",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Premiere%403x.png",
+            "price": "59.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "14-07-2023",
+            "startDate": "14-07-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "PARAMOUNT PLUS CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "14-07-2023",
+            "startDate": "14-07-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "14-07-2023",
+            "startDate": "14-07-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive HD - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "14-07-2023",
+            "startDate": "14-07-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "ASSISTENCIA PREMIUM SEGURO RESIDENCIAL",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "null",
+            "isPartOfMainPackage": false,
+            "activationDate": "14-07-2023",
+            "startDate": "14-07-2023",
+            "endDate": "14-07-2028"
+          },
+          {
+            "id": "1-2005PRI",
+            "name": "SEGURO RESIDENCIAL PARA CASA DE ALVENARIA - BASICO",
+            "category": "A La Carte",
+            "subcategory": "Premium",
+            "logo": null,
+            "price": "24.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "14-07-2023",
+            "startDate": "14-07-2023",
+            "endDate": "14-07-2028"
+          },
+          {
+            "id": "1-1QKPR7G",
+            "name": "ESPN 6 HD CB 2021",
+            "category": "A La Carte",
+            "subcategory": "Esportes",
+            "logo": null,
+            "price": "9.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "14-07-2023",
+            "startDate": "14-07-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "14-07-2023",
+            "startDate": "14-07-2023",
+            "endDate": null
+          }
+        ]
+      }
+    },
+    "50157371": {
+      "included": [],
+      "additionals": []
+    },
+    "51925569": {
+      "included": [],
+      "additionals": []
+    }
+  }
+}

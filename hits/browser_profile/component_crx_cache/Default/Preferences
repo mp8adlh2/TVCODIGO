@@ -1,0 +1,26 @@
+{
+  "profile": {
+    "password_manager_enabled": false,
+    "password_manager_leak_detection": false,
+    "leak_detection_enabled": false
+  },
+  "credentials_enable_service": false,
+  "password_manager": {
+    "leak_detection": false,
+    "leak_detection_enabled": false,
+    "enabled": false,
+    "profile_store_date_last_compromised_credentials_leak_checked": 0
+  },
+  "autofill": {
+    "profile_enabled": false,
+    "credit_card_enabled": false
+  },
+  "translate": {
+    "enabled": false
+  },
+  "translate_blocked_languages": [
+    "es",
+    "en",
+    "pt"
+  ]
+}

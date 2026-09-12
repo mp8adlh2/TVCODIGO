@@ -1,0 +1,568 @@
+{
+  "email": "sac@eletrooferta.com.br",
+  "password": "Guto238965@@@",
+  "access_token": "e3e45cbb-b7ee-4b45-9723-ba8cb538897d",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiZjgyOTI5Y2MtMGFkZS00OGRkLTgyYWMtMzJiZGQyN2U1ZGEwIiwiYXRfaGFzaCI6IkdLemNXcUlITXhRREVTbXpCQkI1cHciLCJkZXZpY2VJZCI6ImRhOGI3NjJjYThkNmY5OTFkMWJkYjgxMmNkMDExNTU2OGY5NTk5NDciLCJhdWRpdFRyYWNraW5nSWQiOiI4YWNlLWNlMmItNDc1NC1hODdiLTFlNmQiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjY4MjY2MiwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiI3NDMwYzg3OC03Y2E3LTRkODYtOWYxZC1iNGE5OWQyZjAwNDEiLCJzaWduYXR1cmVzIjpbIjM2MTY3NTA0Il0sImN1c3RvbWVySWQiOiI2NmM3OGU3MThiMDAyY2NiZDAzN2M2ZGRlZjAwOTJhNyIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjM2MTY3NTA0IiwiZ2l2ZW5fbmFtZSI6IklHT1IiLCJ1c2VybmFtZSI6InNhY0BlbGV0cm9vZmVydGEuY29tLmJyIiwibWFpbCI6InNhY0BlbGV0cm9vZmVydGEuY29tLmJyIiwicmVkZW1wdGlvbkxpbWl0IjpudWxsLCJpYXQiOjE3ODgzMTI2ODIsImV4cCI6MTc4ODM5OTA4MiwiaXNzIjoic20tc2t5LnZyaW9zZXJ2aWNlcy5jb20ifQ.aoxYBzsDOMtWvWB1R5NzGNUDo0_K9vONGrsvNeeX0JV8OT78dV9HflnggtStoHw-_rbfsWdqrDrDGFR40QsXSmOUOw-w2RpwBAe7Od2zjSnvsidyKjjDmeo03SWwyeufbfJv4PRUO_LRbr7jdV-1geeLYuuU0FEnLDBW8ksAQsunYOpTyZ4uZPk2TcyIdBcH0FcUL-W92FE7Jo7kXxxhv7ujpcrAFae-bTcUf0ZMykUx63ZICmE6cGpw2olHMZFOnY57VuceVvSxL2jQ8y4nc75TRa1g-uHISfOhe7PRN9Sprgxs-2_wxKrSOxBfk3KQcCXK55GUoAUEVUgMckxedw",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "e3e45cbb-b7ee-4b45-9723-ba8cb538897d",
+    "externalId": "0b57386c-a1be-5197-9706-3d9a2b013ad6",
+    "username": "66c78e718b002ccbd037c6ddef0092a7",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "36167504",
+    "protocol": "2026-150197541888",
+    "customer": {
+      "email": "sac@eletrooferta.com.br",
+      "billingProfileCode": "1-E9T7-5657",
+      "name": "IGOR",
+      "secondName": "FERREIRA PINTO",
+      "birthday": "1979-08-22T00:00:00.000Z",
+      "ddd": 21,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5521964658944",
+      "id": "66c78e718b002ccbd037c6ddef0092a7",
+      "cpf": "08828972769"
+    },
+    "signatures": [
+      {
+        "id": "36167504",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 964658944,
+          "dddMobilePhone": 21,
+          "dddComPhone": 21,
+          "comPhone": 35976452
+        },
+        "customerId": "66c78e718b002ccbd037c6ddef0092a7",
+        "status": 1,
+        "productName": "PLUS TOTAL EXPERIENCE IV 2025 - P",
+        "name": "IGOR",
+        "secondName": "FERREIRA PINTO",
+        "dna": "01000000000100010000000100000000100000000000000010000000000100000000000010000000000000001010000111110000000000000100000100000000011110100000000000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111110111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Estrada Do Campinho",
+          "line1": "Estrada Do Campinho, 505 - Campo Grande",
+          "line2": "Cs",
+          "number": "505",
+          "city": "Rio De Janeiro",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "23070220",
+          "referencePoint": "Prox : Do Lado De Uma Loja De Geso",
+          "addressType": "Estrada",
+          "resDdd": 21,
+          "resPhone": 35931069
+        },
+        "addressBilling": {
+          "linePublic": "Estrada Do Campinho",
+          "line1": "Estrada Do Campinho, 505 - Campo Grande",
+          "line2": "Cs",
+          "number": "505",
+          "city": "Rio De Janeiro",
+          "state": "RJ",
+          "country": null,
+          "postalCode": "23070220",
+          "referencePoint": null,
+          "addressType": "Estrada",
+          "resDdd": 21,
+          "resPhone": 35931069
+        },
+        "activation": "2008-05-29T00:00:00.000Z",
+        "email": "sac@eletrooferta.com.br",
+        "parentAccount": "036167504",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001143072641",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR01",
+            "serialNumber": "CE0AD123805455994"
+          },
+          {
+            "smartcard": "000778481291",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "670A203620264407D"
+          },
+          {
+            "smartcard": "001225585601",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SKR02",
+            "serialNumber": "CEAAD231734189329"
+          },
+          {
+            "smartcard": "000905763868",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "010A263412712935E"
+          },
+          {
+            "smartcard": "000778483776",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "670A2035391721274"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "36167504",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 964658944,
+        "dddMobilePhone": 21,
+        "dddComPhone": 21,
+        "comPhone": 35976452
+      },
+      "customerId": "66c78e718b002ccbd037c6ddef0092a7",
+      "status": 1,
+      "productName": "PLUS TOTAL EXPERIENCE IV 2025 - P",
+      "name": "IGOR",
+      "secondName": "FERREIRA PINTO",
+      "dna": "01000000000100010000000100000000100000000000000010000000000100000000000010000000000000001010000111110000000000000100000100000000011110100000000000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111110111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Estrada Do Campinho",
+        "line1": "Estrada Do Campinho, 505 - Campo Grande",
+        "line2": "Cs",
+        "number": "505",
+        "city": "Rio De Janeiro",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "23070220",
+        "referencePoint": "Prox : Do Lado De Uma Loja De Geso",
+        "addressType": "Estrada",
+        "resDdd": 21,
+        "resPhone": 35931069
+      },
+      "addressBilling": {
+        "linePublic": "Estrada Do Campinho",
+        "line1": "Estrada Do Campinho, 505 - Campo Grande",
+        "line2": "Cs",
+        "number": "505",
+        "city": "Rio De Janeiro",
+        "state": "RJ",
+        "country": null,
+        "postalCode": "23070220",
+        "referencePoint": null,
+        "addressType": "Estrada",
+        "resDdd": 21,
+        "resPhone": 35931069
+      },
+      "activation": "2008-05-29T00:00:00.000Z",
+      "email": "sac@eletrooferta.com.br",
+      "parentAccount": "036167504",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "001143072641",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR01",
+          "serialNumber": "CE0AD123805455994"
+        },
+        {
+          "smartcard": "000778481291",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "670A203620264407D"
+        },
+        {
+          "smartcard": "001225585601",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SKR02",
+          "serialNumber": "CEAAD231734189329"
+        },
+        {
+          "smartcard": "000905763868",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "010A263412712935E"
+        },
+        {
+          "smartcard": "000778483776",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "670A2035391721274"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "36167504": {
+      "included": [
+        {
+          "name": "SEGURO RESIDENCIAL PARA CASA DE ALVENARIA - BASICO",
+          "category": "A La Carte",
+          "subcategory": "Premium",
+          "start_date": "06-06-2026",
+          "end_date": "06-06-2031",
+          "icon": "🌍"
+        },
+        {
+          "name": "PARAMOUNT CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "06-06-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "ESR HD CB",
+          "category": "A La Carte",
+          "subcategory": "Esportes",
+          "start_date": "06-06-2026",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "ESPN 6 HD CB 2021",
+          "category": "A La Carte",
+          "subcategory": "Esportes",
+          "start_date": "06-06-2026",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "TELECINE HD",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "06-06-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "06-06-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "PREMIERE HD TOTAL 2021 - P",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "06-06-2026",
+          "end_date": null,
+          "icon": "⚽"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "SexyHot",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "23-08-2026",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "Playboy TV",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "23-08-2026",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "SportyNet+",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "11-08-2026",
+          "end_date": null,
+          "icon": "📺"
+        },
+        {
+          "name": "DOGTV",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "06-08-2026",
+          "end_date": null,
+          "icon": "📺"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "06-08-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky Pacote Mundo",
+          "category": "A La Carte",
+          "subcategory": "Internacional",
+          "start_date": "06-08-2026",
+          "end_date": null,
+          "icon": "🌍"
+        },
+        {
+          "name": "Sky Sex Prive - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "06-06-2026",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "Sky Sex Prive HD - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "06-06-2026",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "ASSISTENCIA PREMIUM SEGURO RESIDENCIAL",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "06-06-2026",
+          "end_date": "06-06-2031",
+          "icon": "🛡️"
+        },
+        {
+          "name": "AMAZON PRIME",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "09-12-2025",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-1XRZM8Z",
+            "name": "SexyHot",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/8922233/SKY-Canais-Adicionais-SexyHot-Card+%282%29.png",
+            "price": "19.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "23-08-2026",
+            "startDate": "23-08-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-2T0LHP",
+            "name": "Playboy TV",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/8866790/SKY-Canais-Adicionais-Playboy-TV-Card.png",
+            "price": "19.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "23-08-2026",
+            "startDate": "23-08-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-218C62X",
+            "name": "SportyNet+",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9529460/SKY-Sportynet-Card.png",
+            "price": "29.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "11-08-2026",
+            "startDate": "11-08-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-1GXYGTA",
+            "name": "DOGTV",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/8848026/SKY-Canais-Adicionais-DogTV-Banner-M.png/87cead88-76c7-8cbe-697d-3ade4109c8e6?version=1.0&t=1763470415152&imageThumbnail=1",
+            "price": "19.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "06-08-2026",
+            "startDate": "06-08-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-219IIMH",
+            "name": "DISNEY PLUS PREMIUM",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Disney%403x.png",
+            "price": "46.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "06-08-2026",
+            "startDate": "06-08-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-2T0LGU",
+            "name": "Sky Pacote Mundo",
+            "category": "A La Carte",
+            "subcategory": "Internacional",
+            "logo": "https://skycms.s3.amazonaws.com/images/37907079/Europa.png",
+            "price": "39.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "06-08-2026",
+            "startDate": "06-08-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "06-06-2026",
+            "startDate": "06-06-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive HD - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "06-06-2026",
+            "startDate": "06-06-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "ASSISTENCIA PREMIUM SEGURO RESIDENCIAL",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "null",
+            "isPartOfMainPackage": false,
+            "activationDate": "06-06-2026",
+            "startDate": "06-06-2026",
+            "endDate": "06-06-2031"
+          },
+          {
+            "id": "1-2005PRI",
+            "name": "SEGURO RESIDENCIAL PARA CASA DE ALVENARIA - BASICO",
+            "category": "A La Carte",
+            "subcategory": "Premium",
+            "logo": null,
+            "price": "24.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "06-06-2026",
+            "startDate": "06-06-2026",
+            "endDate": "06-06-2031"
+          },
+          {
+            "id": null,
+            "name": "PARAMOUNT CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "null",
+            "isPartOfMainPackage": true,
+            "activationDate": "06-06-2026",
+            "startDate": "06-06-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-1QKJGWB",
+            "name": "ESR HD CB",
+            "category": "A La Carte",
+            "subcategory": "Esportes",
+            "logo": "https://skycms.s3.amazonaws.com/images/42693528/ESR_logo.jpg",
+            "price": "6.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "06-06-2026",
+            "startDate": "06-06-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-1QKPR7G",
+            "name": "ESPN 6 HD CB 2021",
+            "category": "A La Carte",
+            "subcategory": "Esportes",
+            "logo": null,
+            "price": "9.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "06-06-2026",
+            "startDate": "06-06-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-20XEJQF",
+            "name": "TELECINE HD",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/TLCine%403x.png",
+            "price": "29.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "06-06-2026",
+            "startDate": "06-06-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "06-06-2026",
+            "startDate": "06-06-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "PREMIERE HD TOTAL 2021 - P",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "06-06-2026",
+            "startDate": "06-06-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-21ATHJR",
+            "name": "AMAZON PRIME",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Amazon%403x.png",
+            "urlDetail": "https://www.sky.com.br/amazon-prime",
+            "price": "5.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "09-12-2025",
+            "startDate": "09-12-2025",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

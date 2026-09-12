@@ -1,0 +1,273 @@
+{
+  "email": "evascontim@outlook.com",
+  "password": "Ep251571@",
+  "access_token": "8fbd5c06-534f-417f-b299-f78d1297ee93",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiZTY5ZjNiZTMtNzU3Mi00NjE5LWI3ZGEtMmQ0MTIwNGY4OTAzIiwiYXRfaGFzaCI6IlhWRjFPaldRY3RLNjlHeW5NMFVnVHciLCJkZXZpY2VJZCI6IjdhODZjMjljMDkwMDliMzEwODM0ZjBlZDY3MDYxZTIzODk0NGQ3NTgiLCJhdWRpdFRyYWNraW5nSWQiOiIwNzZmLWY2N2EtNDM0NS04OWQyLTMzNmEiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODY2MTY5MTgxOSwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiIxNGFiMzNmOC0zNWI5LTQ3NmYtYTg1NC1mNDVkNDNjZjZjZTMiLCJzaWduYXR1cmVzIjpbIjE2MzM2MDExMCJdLCJjdXN0b21lcklkIjoiMDA5YzlkNTM1ZGNlY2M0ZGM1Y2UzN2JhY2MzZmYzOGMiLCJyZWdpc3RyYXRpb25TaWduYXR1cmUiOiIxNjMzNjAxMTAiLCJnaXZlbl9uYW1lIjoiRURJVkFMRE8gUElBQ0VOVEUiLCJ1c2VybmFtZSI6ImV2YXNjb250aW1Ab3V0bG9vay5jb20iLCJtYWlsIjoiZXZhc2NvbnRpbUBvdXRsb29rLmNvbSIsInJlZGVtcHRpb25MaW1pdCI6bnVsbCwiaWF0IjoxNzg4NjYxNjkxLCJleHAiOjE3ODg3NDgwOTEsImlzcyI6InNtLXNreS52cmlvc2VydmljZXMuY29tIn0.l1zh5Y5zWlzxjF7aowvWg0BTa9UmXbnL9hfDcW3crt4qHCurZbBp5TYdzFCmCgErsK_XHr0Wr9wjiNO05n2jlljdpwE-U8dCg2RLq1SGj1zZGv4iNOwlsd9ekarmT38_Pc9P96YZaRJr9XSfn3DN8vx7MRgKfVoEPgMjGRDkzKWgjj5v8QGnBHPNHGlkeKsZ5qddPocyPanJwJHQbQEVUGyCOk3Fwf37ZXjR0aPo2r8nCYHQoPiMvpPbwQkRqW_H1S93mLZennXV4e-DuWoNA_S7LMwORTgb2bGLiYh_0cGnysc-1ORkfirjbGvciWVZ3HlU1KeM5mink5Q5thzSOw",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "8fbd5c06-534f-417f-b299-f78d1297ee93",
+    "externalId": "bb7fc635-e20f-5cfa-9745-6f32bad48f90",
+    "username": "009c9d535dcecc4dc5ce37bacc3ff38c",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "163360110",
+    "protocol": "2026-150266291986",
+    "customer": {
+      "email": "evascontim@outlook.com",
+      "billingProfileCode": "1-9JOA-9399",
+      "name": "EDIVALDO",
+      "secondName": "PIACENTE VASCONTIM",
+      "birthday": "1967-03-07T00:00:00.000Z",
+      "ddd": 11,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5511991974369",
+      "id": "009c9d535dcecc4dc5ce37bacc3ff38c",
+      "cpf": "12948947812"
+    },
+    "signatures": [
+      {
+        "id": "163360110",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 991974369,
+          "dddMobilePhone": 11,
+          "dddComPhone": 11,
+          "comPhone": 38866503
+        },
+        "customerId": "009c9d535dcecc4dc5ce37bacc3ff38c",
+        "status": 1,
+        "productName": "COMBO PLUS HBO HD 2018/2021 - P",
+        "name": "EDIVALDO",
+        "secondName": "PIACENTE VASCONTIM",
+        "dna": "01000000000100010000001000000000100000000000000010000000000010000000010000000000000000100011000111110000000000100000000100000000011110000101000000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111010011111111111111111111111111111111110011111111111110111111111101011111111111111111111111100111011100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100101111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Antao Leme Da Silva",
+          "line1": "Rua Antao Leme Da Silva, 28 - Cidade Lider",
+          "line2": ".",
+          "number": "28",
+          "city": "Sao Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "08280280",
+          "referencePoint": ".",
+          "addressType": "Rua"
+        },
+        "addressBilling": {
+          "linePublic": "Rua Antao Leme Da Silva",
+          "line1": "Rua Antao Leme Da Silva, 28 - Cidade Lider",
+          "line2": "Casa",
+          "number": "28",
+          "city": "Sao Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "08280280",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2014-04-26T00:00:00.000Z",
+        "email": "evascontim@outlook.com",
+        "parentAccount": "0163360110",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000775246978",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "670A2036199913261"
+          },
+          {
+            "smartcard": "000766248884",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "670A2035392014980"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "163360110",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 991974369,
+        "dddMobilePhone": 11,
+        "dddComPhone": 11,
+        "comPhone": 38866503
+      },
+      "customerId": "009c9d535dcecc4dc5ce37bacc3ff38c",
+      "status": 1,
+      "productName": "COMBO PLUS HBO HD 2018/2021 - P",
+      "name": "EDIVALDO",
+      "secondName": "PIACENTE VASCONTIM",
+      "dna": "01000000000100010000001000000000100000000000000010000000000010000000010000000000000000100011000111110000000000100000000100000000011110000101000000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111010011111111111111111111111111111111110011111111111110111111111101011111111111111111111111100111011100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100101111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Antao Leme Da Silva",
+        "line1": "Rua Antao Leme Da Silva, 28 - Cidade Lider",
+        "line2": ".",
+        "number": "28",
+        "city": "Sao Paulo",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "08280280",
+        "referencePoint": ".",
+        "addressType": "Rua"
+      },
+      "addressBilling": {
+        "linePublic": "Rua Antao Leme Da Silva",
+        "line1": "Rua Antao Leme Da Silva, 28 - Cidade Lider",
+        "line2": "Casa",
+        "number": "28",
+        "city": "Sao Paulo",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "08280280",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2014-04-26T00:00:00.000Z",
+      "email": "evascontim@outlook.com",
+      "parentAccount": "0163360110",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000775246978",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "670A2036199913261"
+        },
+        {
+          "smartcard": "000766248884",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "670A2035392014980"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "163360110": {
+      "included": [
+        {
+          "name": "Sky HBO HD - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "01-08-2021",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "ASSISTENCIA PREMIUM MENSAL - P",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "01-08-2021",
+          "end_date": null,
+          "icon": "🛡️"
+        },
+        {
+          "name": "Sky HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "01-08-2021",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "24-05-2024",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM 2024 CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "27-04-2024",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "24-05-2024",
+            "startDate": "24-05-2024",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "DISNEY PLUS PREMIUM 2024 CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "27-04-2024",
+            "startDate": "27-04-2024",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky HBO HD - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "27-09-2018",
+            "startDate": "01-08-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "ASSISTENCIA PREMIUM MENSAL - P",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "27-09-2018",
+            "startDate": "01-08-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "27-09-2018",
+            "startDate": "01-08-2021",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

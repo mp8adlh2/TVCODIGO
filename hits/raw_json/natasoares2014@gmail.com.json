@@ -1,0 +1,258 @@
+{
+  "email": "natasoares2014@gmail.com",
+  "password": "Corajoso81",
+  "access_token": "d78a4555-92e5-43c2-884b-7e416b40c02a",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiZTU4ZjA3MDYtZTU4OS00YTkwLWFhZTQtOTcwMDgwZTc0NGQ2IiwiYXRfaGFzaCI6IkowUUJvTE9KN3luV2hCc2o1aWgyUnciLCJkZXZpY2VJZCI6IjRhZDEyYzdkZWMwMmZmNDRhMjAwYWViMjkwMGIyZjY4NzcxNGNmMjQiLCJhdWRpdFRyYWNraW5nSWQiOiJmZWRmLWM4OGEtNDk2Mi1iODAzLTczYmIiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjYzMDM0NSwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJiYTFmZTFjMi05NjNiLTQ0MWEtOTM5Ny1lM2MxYTk0NmZiNmUiLCJzaWduYXR1cmVzIjpbIjE1MzQzNDE2MjUiXSwiY3VzdG9tZXJJZCI6ImM0NDIzOWEyZDkwN2NiODM1NDY2ZDcxZjEzOGI3YmVjIiwicmVnaXN0cmF0aW9uU2lnbmF0dXJlIjoiMTUzNDM0MTYyNSIsImdpdmVuX25hbWUiOiJSRU5BVEEiLCJ1c2VybmFtZSI6Im5hdGFzb2FyZXMyMDE0QGdtYWlsLmNvbSIsIm1haWwiOiJuYXRhc29hcmVzMjAxNEBnbWFpbC5jb20iLCJyZWRlbXB0aW9uTGltaXQiOm51bGwsImlhdCI6MTc4ODMxMjYzMCwiZXhwIjoxNzg4Mzk5MDMwLCJpc3MiOiJzbS1za3kudnJpb3NlcnZpY2VzLmNvbSJ9.gN_mJ82BLfPzeKAB1AtTQW1Zt3hq1t1F4TImRaKjT9RwF-ZxH7QN70f_5G3kgMdVetRuYlLK_EOjOzww2XZ7LlzkUQrzRc4PUU-Owl5BhSPwXnSeXTVPs_oiPyD7BXVNe9UDSSHKRoO1EVy7D60FwLiWbvcdyuEYnW7wrVpjvdUjhGlpa98xskAj7B0RwZtpHf4Ksp5uOZ7Z30XZBQ0ToBECdKN-9yXqdUFuffMRPa4qecWjcUr_ov19HtXGsyt4xVCtr4NMLah55yNcKphdq-tePaajEa2q_8NZ8vbbmNowPFD8eymxkMgYLsWhoN-bdIlnGaWdiQkXVW2XP5tA3w",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "d78a4555-92e5-43c2-884b-7e416b40c02a",
+    "externalId": "b748775b-8954-54aa-98f5-c4cdd6c6f7bc",
+    "username": "c44239a2d907cb835466d71f138b7bec",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "1534341625",
+    "protocol": "2026-150197246753",
+    "customer": {
+      "email": "natasoares2014@gmail.com",
+      "billingProfileCode": "1-1JMYEXON",
+      "name": "RENATA",
+      "secondName": "SOARES DOSSANTOS",
+      "birthday": "1981-09-21T00:00:00.000Z",
+      "ddd": 13,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5513974208307",
+      "id": "c44239a2d907cb835466d71f138b7bec",
+      "cpf": "29947004848"
+    },
+    "signatures": [
+      {
+        "id": "1534341625",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 974208307,
+          "dddMobilePhone": 13
+        },
+        "customerId": "c44239a2d907cb835466d71f138b7bec",
+        "status": 1,
+        "productName": "TOP HD PLUS II 2022 - P",
+        "name": "RENATA",
+        "secondName": "SOARES DOSSANTOS",
+        "dna": "01000000000100000000000000000000100000000000000000000000000000000000010000000000000000100011000111110000000000000000000001000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001110000111110111101111111111111111111111111111110011111111111110111111111110011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100101111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Indaiatuba Casa",
+          "line1": "Rua Indaiatuba Casa, 77 - Vila Aurea",
+          "line2": "Casa",
+          "number": "77",
+          "city": "Guaruja",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "11454230",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 13,
+          "resPhone": 974208307
+        },
+        "addressBilling": {
+          "linePublic": "Rua Indaiatuba",
+          "line1": "Rua Indaiatuba, 77 - Vila Aurea",
+          "line2": "Casa",
+          "number": "77",
+          "city": "Guaruja",
+          "state": "SP",
+          "country": null,
+          "postalCode": "11454230",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 13,
+          "resPhone": 33525614
+        },
+        "activation": "2022-12-21T00:00:00.000Z",
+        "email": "natasoares2014@gmail.com",
+        "parentAccount": "1534341620",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000801195041",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH25",
+            "serialNumber": "CE0AA135281367259"
+          },
+          {
+            "smartcard": "001218430443",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A012553285857F"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "1534341625",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 974208307,
+        "dddMobilePhone": 13
+      },
+      "customerId": "c44239a2d907cb835466d71f138b7bec",
+      "status": 1,
+      "productName": "TOP HD PLUS II 2022 - P",
+      "name": "RENATA",
+      "secondName": "SOARES DOSSANTOS",
+      "dna": "01000000000100000000000000000000100000000000000000000000000000000000010000000000000000100011000111110000000000000000000001000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001110000111110111101111111111111111111111111111110011111111111110111111111110011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100101111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Indaiatuba Casa",
+        "line1": "Rua Indaiatuba Casa, 77 - Vila Aurea",
+        "line2": "Casa",
+        "number": "77",
+        "city": "Guaruja",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "11454230",
+        "referencePoint": null,
+        "addressType": "Rua",
+        "resDdd": 13,
+        "resPhone": 974208307
+      },
+      "addressBilling": {
+        "linePublic": "Rua Indaiatuba",
+        "line1": "Rua Indaiatuba, 77 - Vila Aurea",
+        "line2": "Casa",
+        "number": "77",
+        "city": "Guaruja",
+        "state": "SP",
+        "country": null,
+        "postalCode": "11454230",
+        "referencePoint": null,
+        "addressType": "Rua",
+        "resDdd": 13,
+        "resPhone": 33525614
+      },
+      "activation": "2022-12-21T00:00:00.000Z",
+      "email": "natasoares2014@gmail.com",
+      "parentAccount": "1534341620",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000801195041",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH25",
+          "serialNumber": "CE0AA135281367259"
+        },
+        {
+          "smartcard": "001218430443",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A012553285857F"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "1534341625": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "11-05-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO com 50% por 1 mês",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "23-04-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PREMIUM R$ 9,90 POR 2M - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "08-04-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "ASSISTENCIA PREMIUM MENSAL - P",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "11-04-2023",
+          "end_date": null,
+          "icon": "🛡️"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "11-05-2026",
+            "startDate": "11-05-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-21CU6HH",
+            "name": "HBO com 50% por 1 mês",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/HBO%403x_preto.png",
+            "price": "44.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "23-04-2026",
+            "startDate": "23-04-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "DISNEY PREMIUM R$ 9,90 POR 2M - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "08-04-2026",
+            "startDate": "08-04-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "ASSISTENCIA PREMIUM MENSAL - P",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "11-04-2023",
+            "startDate": "11-04-2023",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

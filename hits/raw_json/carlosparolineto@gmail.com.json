@@ -1,0 +1,408 @@
+{
+  "email": "carlosparolineto@gmail.com",
+  "password": "C4rl0s",
+  "access_token": "d07a4279-773a-4c81-9a3b-7a60ee5960d5",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiNjhhNmRkOTMtOTIyOS00NmIxLWFhZjQtMzVjZWMwNzhiN2M3IiwiYXRfaGFzaCI6IkZ3YzRtX1lycjhTcWtWam9MZlRXc0EiLCJkZXZpY2VJZCI6IjQ1YTkzY2VlNjVmOGJlZWNlY2Q1MDhlYTBlZjFkYjJkY2I1N2FiNTEiLCJhdWRpdFRyYWNraW5nSWQiOiI5MDFlLTFmOTgtNDA0MS05OTZmLTk3Y2YiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODgxNjE2MzkxNywidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiI4YzY1M2VlNi0yYjZmLTRjODgtYjBiOS1kMzdjMGYzNWYxOGQiLCJzaWduYXR1cmVzIjpbIjk5ODU0NTQ2IiwiMTUzNzE5Njk2MyJdLCJjdXN0b21lcklkIjoiMWI0ZTA3ZjBlZmY4YWJmZTNkZGE5NzRmNmNkYmY2ODUiLCJyZWdpc3RyYXRpb25TaWduYXR1cmUiOiI5OTg1NDU0NiIsImdpdmVuX25hbWUiOiJDQVJMT1MgUEFST0xJIiwidXNlcm5hbWUiOiJjYXJsb3NwYXJvbGluZXRvQGdtYWlsLmNvbSIsIm1haWwiOiJjYXJsb3NwYXJvbGluZXRvQGdtYWlsLmNvbSIsInJlZGVtcHRpb25MaW1pdCI6bnVsbCwiaWF0IjoxNzg4ODE2MTYzLCJleHAiOjE3ODg5MDI1NjMsImlzcyI6InNtLXNreS52cmlvc2VydmljZXMuY29tIn0.PW2bFlMhuQkcv-FtrO8yK3vF6GX92stV6D0cMd4_hq8LmGugrTBWa-PdngQZ0Mq0Azzc0DNyx1rCUSnVvWfSTossvLUKX2-lZlNFmTtBp3xMShkrhBxjF8eLAwATQs_6r-qnL3DdTy2FIPoxq5sNn2npzpAkFBzJON0aksSkHQ8Kx29LhL1Jcgxb5GVayz67Bzva31_JzIZEkDXChmFzrxomkIEIaGsPjualy_YPF769vcn9agVZPzMUCvgqr6CADsMf-QPr5shmEyhaLnvUY7Ljr1lLByWoDdQ75V21iys1I-FpDA3bmMBcLZmyaHTpPDy8wRAyxnSprH6d115UNw",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "d07a4279-773a-4c81-9a3b-7a60ee5960d5",
+    "externalId": "2de3be75-c27b-500c-942c-cc1ed19e11f7",
+    "username": "1b4e07f0eff8abfe3dda974f6cdbf685",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "99854546",
+    "protocol": "2026-150293434542",
+    "customer": {
+      "email": "carlosparolineto@gmail.com",
+      "billingProfileCode": "1-AJWL-13223",
+      "name": "CARLOS",
+      "secondName": "PAROLI NETO",
+      "birthday": "1955-12-10T00:00:00.000Z",
+      "ddd": 21,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5521976091942",
+      "id": "1b4e07f0eff8abfe3dda974f6cdbf685",
+      "cpf": "40178714704"
+    },
+    "signatures": [
+      {
+        "id": "99854546",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 991810265,
+          "dddMobilePhone": 21,
+          "dddComPhone": 21,
+          "comPhone": 993886978
+        },
+        "customerId": "1b4e07f0eff8abfe3dda974f6cdbf685",
+        "status": 1,
+        "productName": "DUETO ADVANCED II TELECINE HD 2019/2021 - P",
+        "name": "CARLOS",
+        "secondName": "PAROLI NETO",
+        "dna": "01000000000100010000001000000000100000000000000010000000001000000000000100000000000000011011000111110000000000100000000100000000011110010000100000010111111111111110011111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101011111111111001101110001111111111110111111101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001101111111111111111111111111111111111111111111111111111111111111111111111111101111111111100000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Iriquitia",
+          "line1": "Rua Iriquitia, 405 - Taquara",
+          "line2": ".",
+          "number": "405",
+          "city": "Rio De Janeiro",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "22730150",
+          "referencePoint": "Hospital Das Clinicas De Jacare Pagua",
+          "addressType": "Rua",
+          "resDdd": 21,
+          "resPhone": 24232804
+        },
+        "addressBilling": {
+          "linePublic": "Rua Iriquitia",
+          "line1": "Rua Iriquitia, 405 - Taquara",
+          "line2": null,
+          "number": "405",
+          "city": "Rio De Janeiro",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "22730150",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2012-04-14T00:00:00.000Z",
+        "email": "carlosparolineto@gmail.com",
+        "parentAccount": "099854546",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001126705274",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A012543884297B"
+          },
+          {
+            "smartcard": "000777076555",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2036147538239"
+          },
+          {
+            "smartcard": "000761640127",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2036155635569"
+          },
+          {
+            "smartcard": "000758866552",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A203614740421D"
+          }
+        ]
+      },
+      {
+        "id": "1537196963",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 976091942,
+          "dddMobilePhone": 21
+        },
+        "customerId": "1b4e07f0eff8abfe3dda974f6cdbf685",
+        "status": 2,
+        "productName": "SKY BANDA LARGA FIBRA 400 MB 2022 - P",
+        "name": "CARLOS",
+        "secondName": "PAROLI NETO",
+        "dna": "00000100000100000000000000000000000000000000000000000000000000000000000000000000000000100000000111110000000000000000000000000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110100000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Banda Larga",
+        "addressInstallation": {
+          "linePublic": "Rua Iriquitia",
+          "line1": "Rua Iriquitia, 405 - Taquara",
+          "line2": null,
+          "number": "405",
+          "city": "Rio De Janeiro",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "22730150",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "addressBilling": {
+          "linePublic": "Rua Iriquitia",
+          "line1": "Rua Iriquitia, 405 - Taquara",
+          "line2": null,
+          "number": "405",
+          "city": "Rio De Janeiro",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "22730150",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2024-04-26T00:00:00.000Z",
+        "email": "carlosparolineto@gmail.com",
+        "parentAccount": "1537196962",
+        "productStatus": "C",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "permissions": {
+          "modalWinbackGatinho": true,
+          "modalWinbackCobranca": false,
+          "chatWinbackReativacao": false,
+          "chatWinbackWebview": false,
+          "chatWinbackCobranca": false,
+          "chatWinbackTelevendas": true,
+          "featureVerTelaCompras": true,
+          "featureSkyPlay": true,
+          "featureGuia": true,
+          "featureFatura": true,
+          "featureComprovantes": true,
+          "featureMeusDados": true,
+          "featureMinhasVisitas": true,
+          "featureAtendimento": true,
+          "featureAtendimentoChatReativacao": true,
+          "featureAssistenteVirtual": true,
+          "featureQuiz": true,
+          "featureControleRemoto": true,
+          "featureRealizarCompra": false,
+          "featureEnvioSinal": false,
+          "featureTurbinarPacote": false,
+          "additionalData": {
+            "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=a62fa19a4dd3bc9edf260a69ed6464c7b2d14f084d4a4cf672f42d8e0ab8391a24c84b09cbe025dfdaa58826187ff265cbb2dd57982c19a49ba8df5cdbc660850a6ee6e2eca99d481eb91b11d11989273fdf54e7c62d6738477f47a6df79532ae5500b303bf16e33161958e8ab6ea0e4e1bd499bd633e2e361d7f8a1c44a5e82a62e05b46e9458f24e11c973686f4bb9c9876f96894cae550ffd1275bbd21f445fafd7993524c63cb606b44d8a50a974648a804f42c70104bc67d53200f976a4e2f93fb3cc1c65126982b9795694459d97b9f266dd821d561287f10d381b67babcd784d3f8fa1862c06cc3877b22b14e07b3efef825bd6363b9d&id1=6ef71fa2a8fcabc323f7e6f7333760fb6997f859abc4765efc45973cde92d23302480f0b72b796a6a1c79faf9ffed3242f57c7224d30e188bee326b75968b36117cab74c57f741f90a523d6bc1121346174311890bc1db227f080941823278dda981fcf5d8a8c022f4ed830048647303d7fab09ce534a650164929163ea2aa6ceef4650d75306d654204eabdeef39b15e92a0fab2d00824c31ee3e6ac38221e59ce5c78c9918b469405b39645d4cf0247ed60b0f16caa7ce3a93709bd6f3d0b3b198c753a28a87af4ce97dd7f507a68e90ab38621879543edeb11b7cea54c81984e16ec5f2168061e23da1c2c42e1551012ad0f0d32d08e7be9c&id2=c2406d90b3d4dcfc58681deb&id3=",
+            "chatParams": {
+              "subject": "Cancelamento",
+              "dateNowFormatted": "2026-09-07 13:29:26",
+              "chatExpirationDate": 1788798866271
+            }
+          }
+        },
+        "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=a62fa19a4dd3bc9edf260a69ed6464c7b2d14f084d4a4cf672f42d8e0ab8391a24c84b09cbe025dfdaa58826187ff265cbb2dd57982c19a49ba8df5cdbc660850a6ee6e2eca99d481eb91b11d11989273fdf54e7c62d6738477f47a6df79532ae5500b303bf16e33161958e8ab6ea0e4e1bd499bd633e2e361d7f8a1c44a5e82a62e05b46e9458f24e11c973686f4bb9c9876f96894cae550ffd1275bbd21f445fafd7993524c63cb606b44d8a50a974648a804f42c70104bc67d53200f976a4e2f93fb3cc1c65126982b9795694459d97b9f266dd821d561287f10d381b67babcd784d3f8fa1862c06cc3877b22b14e07b3efef825bd6363b9d&id1=6ef71fa2a8fcabc323f7e6f7333760fb6997f859abc4765efc45973cde92d23302480f0b72b796a6a1c79faf9ffed3242f57c7224d30e188bee326b75968b36117cab74c57f741f90a523d6bc1121346174311890bc1db227f080941823278dda981fcf5d8a8c022f4ed830048647303d7fab09ce534a650164929163ea2aa6ceef4650d75306d654204eabdeef39b15e92a0fab2d00824c31ee3e6ac38221e59ce5c78c9918b469405b39645d4cf0247ed60b0f16caa7ce3a93709bd6f3d0b3b198c753a28a87af4ce97dd7f507a68e90ab38621879543edeb11b7cea54c81984e16ec5f2168061e23da1c2c42e1551012ad0f0d32d08e7be9c&id2=c2406d90b3d4dcfc58681deb&id3="
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "99854546",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 991810265,
+        "dddMobilePhone": 21,
+        "dddComPhone": 21,
+        "comPhone": 993886978
+      },
+      "customerId": "1b4e07f0eff8abfe3dda974f6cdbf685",
+      "status": 1,
+      "productName": "DUETO ADVANCED II TELECINE HD 2019/2021 - P",
+      "name": "CARLOS",
+      "secondName": "PAROLI NETO",
+      "dna": "01000000000100010000001000000000100000000000000010000000001000000000000100000000000000011011000111110000000000100000000100000000011110010000100000010111111111111110011111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101011111111111001101110001111111111110111111101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001101111111111111111111111111111111111111111111111111111111111111111111111111101111111111100000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Iriquitia",
+        "line1": "Rua Iriquitia, 405 - Taquara",
+        "line2": ".",
+        "number": "405",
+        "city": "Rio De Janeiro",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "22730150",
+        "referencePoint": "Hospital Das Clinicas De Jacare Pagua",
+        "addressType": "Rua",
+        "resDdd": 21,
+        "resPhone": 24232804
+      },
+      "addressBilling": {
+        "linePublic": "Rua Iriquitia",
+        "line1": "Rua Iriquitia, 405 - Taquara",
+        "line2": null,
+        "number": "405",
+        "city": "Rio De Janeiro",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "22730150",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2012-04-14T00:00:00.000Z",
+      "email": "carlosparolineto@gmail.com",
+      "parentAccount": "099854546",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "001126705274",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A012543884297B"
+        },
+        {
+          "smartcard": "000777076555",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2036147538239"
+        },
+        {
+          "smartcard": "000761640127",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2036155635569"
+        },
+        {
+          "smartcard": "000758866552",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A203614740421D"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "99854546": {
+      "included": [
+        {
+          "name": "Sky Telecine HD - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "26-10-2021",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky Telecine - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "26-10-2021",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "TELECINE HD CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "23-10-2021",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "HBO 6M 50% - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "29-07-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "29-07-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "28-07-2026",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": null,
+            "name": "Sky Telecine HD - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "26-10-2021",
+            "startDate": "26-10-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Telecine - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "26-10-2021",
+            "startDate": "26-10-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TELECINE HD CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "null",
+            "isPartOfMainPackage": true,
+            "activationDate": "23-10-2021",
+            "startDate": "23-10-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO 6M 50% - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "29-07-2026",
+            "startDate": "29-07-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "29-07-2026",
+            "startDate": "29-07-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-219IIMH",
+            "name": "DISNEY PLUS PREMIUM",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Disney%403x.png",
+            "price": "46.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "28-07-2026",
+            "startDate": "28-07-2026",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

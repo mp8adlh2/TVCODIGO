@@ -1,0 +1,323 @@
+{
+  "email": "rbneto1@uol.com.br",
+  "password": "1Qaz2wsx",
+  "access_token": "b4490dd4-c7c3-4c24-9d66-e8dcbc79b914",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiNjc2MmU4NzctNTBmMy00ZjY4LTlmY2UtYjRkMjE3ODE3NTEyIiwiYXRfaGFzaCI6ImRkZDNLcWhGMDVwcFRfblM0cC9YQ1EiLCJkZXZpY2VJZCI6ImM5Mzg2ODNmZTVjNzQzNWJhZGM5YmIwNDk0MDNhYTZjMTZmYzJlMWYiLCJhdWRpdFRyYWNraW5nSWQiOiIxZWJkLTk0OWEtNDFlYS1iYjZlLTUyNDEiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODQ2ODc1OTQ3MywidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiI1NGMxNDEwMi1jNjNjLTQ4MWYtYTU3Zi02ZGNmOTZjZWI0NzMiLCJzaWduYXR1cmVzIjpbIjI2NzA2MjUwIl0sImN1c3RvbWVySWQiOiIzMWJjZTY1ZjFhZjlhNWIwOTE0NDg4YjNlZDJmZjc0MCIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjI2NzA2MjUwIiwiZ2l2ZW5fbmFtZSI6Ik5PUk1BIiwidXNlcm5hbWUiOiJyYm5ldG8xQHVvbC5jb20uYnIiLCJtYWlsIjoicmJuZXRvMUB1b2wuY29tLmJyIiwicmVkZW1wdGlvbkxpbWl0IjpudWxsLCJpYXQiOjE3ODg0Njg3NTksImV4cCI6MTc4ODU1NTE1OSwiaXNzIjoic20tc2t5LnZyaW9zZXJ2aWNlcy5jb20ifQ.TwHZeUCQHz_Wdl2WtzTb0Hkv2qf29fT6qN0kb2BPNm2a2OPldP-Vtdi2KbQh-47X_jJ_WWfRW7J6oWfhZsukmKIXRgxrWkigix3EXUbqfReBRWQAuhZuB4r_HoC3hwkxdWfqB7JNiOx6dfQ5Agv3YR4GH4hnTnIaXs15V0RcbRGzEMmKHlaIyEK0eTUpmbMUhc0OWhuJY-JDe9gVibzxM-rRME-4hIb-jNI2ylfPCksAT9AqDXN7gHZZajutRcPqJWMiNj3UDCnwaPfsm0SWORxyt4O-WmuwQ8cS-awsAQn4vyGgfj-MMUHh02ya-X1sHvz7BolGZI9Fpb3x4vnTew",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "b4490dd4-c7c3-4c24-9d66-e8dcbc79b914",
+    "externalId": "cde89733-1aa6-5436-a83d-aa452515ab3f",
+    "username": "31bce65f1af9a5b0914488b3ed2ff740",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "26706250",
+    "protocol": "2026-150227334699",
+    "customer": {
+      "email": "rbneto1@uol.com.br",
+      "billingProfileCode": "1-8E87-14532",
+      "name": "NORMA",
+      "secondName": "BARROS",
+      "birthday": "1937-02-11T00:00:00.000Z",
+      "ddd": 21,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5521971276719",
+      "id": "31bce65f1af9a5b0914488b3ed2ff740",
+      "cpf": "04304547755"
+    },
+    "signatures": [
+      {
+        "id": "26706250",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 971276719,
+          "dddMobilePhone": 21
+        },
+        "customerId": "31bce65f1af9a5b0914488b3ed2ff740",
+        "status": 1,
+        "productName": "COMBO PLUS HBO HD 2018/2021 - P",
+        "name": "NORMA",
+        "secondName": "BARROS",
+        "dna": "01000000000100100000001000000000100000000000000010000000001000000000000010000000000000011011010111110010000001000000000100000000011110010000010000010111111111111110011111111000000000000000000001100000000010111111111111010000000011111010111111110001000000000001101111111111110001101110001111111111110111111111111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Null De Jacarepagua",
+          "line1": "Null De Jacarepagua, 3145 - Jacarepagua",
+          "line2": "Bloco 8",
+          "number": "3145",
+          "city": "Rio De Janeiro",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "22753212",
+          "referencePoint": "Próximo Ao Castelo Das Pedras",
+          "addressType": null
+        },
+        "addressBilling": {
+          "linePublic": "Estrada Estrada De Jacarepagua",
+          "line1": "Estrada Estrada De Jacarepagua, 3145 - Jacarepagua",
+          "line2": "Bloco 8 Apto.: 1108",
+          "number": "3145",
+          "city": "Rio De Janeiro",
+          "state": "RJ",
+          "country": null,
+          "postalCode": "22753212",
+          "referencePoint": null,
+          "addressType": "Estrada",
+          "resDdd": 21,
+          "resPhone": 36348907
+        },
+        "activation": "1998-04-03T00:00:00.000Z",
+        "email": "rbneto1@uol.com.br",
+        "parentAccount": "026706250",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000370632747",
+            "isRecordable": false,
+            "technology": "SD",
+            "subcategory": "PayTV",
+            "serialCode": "DSR3421",
+            "serialNumber": "AB0A5501764482781"
+          },
+          {
+            "smartcard": "000693341505",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "010A263417105862A"
+          },
+          {
+            "smartcard": "000609692611",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH25",
+            "serialNumber": "670AA135350254919"
+          },
+          {
+            "smartcard": "001116108745",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2035404728039"
+          },
+          {
+            "smartcard": "001204279291",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A0125495186107"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "26706250",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 971276719,
+        "dddMobilePhone": 21
+      },
+      "customerId": "31bce65f1af9a5b0914488b3ed2ff740",
+      "status": 1,
+      "productName": "COMBO PLUS HBO HD 2018/2021 - P",
+      "name": "NORMA",
+      "secondName": "BARROS",
+      "dna": "01000000000100100000001000000000100000000000000010000000001000000000000010000000000000011011010111110010000001000000000100000000011110010000010000010111111111111110011111111000000000000000000001100000000010111111111111010000000011111010111111110001000000000001101111111111110001101110001111111111110111111111111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Null De Jacarepagua",
+        "line1": "Null De Jacarepagua, 3145 - Jacarepagua",
+        "line2": "Bloco 8",
+        "number": "3145",
+        "city": "Rio De Janeiro",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "22753212",
+        "referencePoint": "Próximo Ao Castelo Das Pedras",
+        "addressType": null
+      },
+      "addressBilling": {
+        "linePublic": "Estrada Estrada De Jacarepagua",
+        "line1": "Estrada Estrada De Jacarepagua, 3145 - Jacarepagua",
+        "line2": "Bloco 8 Apto.: 1108",
+        "number": "3145",
+        "city": "Rio De Janeiro",
+        "state": "RJ",
+        "country": null,
+        "postalCode": "22753212",
+        "referencePoint": null,
+        "addressType": "Estrada",
+        "resDdd": 21,
+        "resPhone": 36348907
+      },
+      "activation": "1998-04-03T00:00:00.000Z",
+      "email": "rbneto1@uol.com.br",
+      "parentAccount": "026706250",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000370632747",
+          "isRecordable": false,
+          "technology": "SD",
+          "subcategory": "PayTV",
+          "serialCode": "DSR3421",
+          "serialNumber": "AB0A5501764482781"
+        },
+        {
+          "smartcard": "000693341505",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "010A263417105862A"
+        },
+        {
+          "smartcard": "000609692611",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH25",
+          "serialNumber": "670AA135350254919"
+        },
+        {
+          "smartcard": "001116108745",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2035404728039"
+        },
+        {
+          "smartcard": "001204279291",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A0125495186107"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "26706250": {
+      "included": [
+        {
+          "name": "Sky HBO HD - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "24-08-2021",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "ASSISTENCIA PREMIUM MENSAL - P",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "24-08-2021",
+          "end_date": null,
+          "icon": "🛡️"
+        },
+        {
+          "name": "Sky HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "24-08-2021",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "12-06-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "AMAZON PRIME PROMO 2",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "03-06-2026",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "12-06-2026",
+            "startDate": "12-06-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-21BSJ1A",
+            "name": "AMAZON PRIME PROMO 2",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Amazon%403x.png",
+            "urlDetail": "https://www.sky.com.br/amazon-prime",
+            "price": "0.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "03-06-2026",
+            "startDate": "03-06-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky HBO HD - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "24-08-2021",
+            "startDate": "24-08-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "ASSISTENCIA PREMIUM MENSAL - P",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "24-08-2021",
+            "startDate": "24-08-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "24-08-2021",
+            "startDate": "24-08-2021",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

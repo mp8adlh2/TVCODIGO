@@ -520,7 +520,7 @@ def activate_tv_code(session, tv_code: str, auth_url: str) -> Tuple[bool, str]:
         except Exception:
             pass
 
-    # 1. Se a URL final redirecionou para a página de login da conta (não a tela de pareamento tvlogin/tv2)
+    # 1. Se a URL final redirecionou para a página de login da conta (não a tela de pareamento)
     is_real_login_page = (
         ('/login' in final_url and 'tvlogin' not in final_url and 'tv2' not in final_url)
         or ('/signin' in final_url and 'tvlogin' not in final_url)
@@ -530,60 +530,72 @@ def activate_tv_code(session, tv_code: str, auth_url: str) -> Tuple[bool, str]:
     if is_real_login_page:
         return False, "expired_cookie"
 
-    # 2. Indicadores reais de confirmação de pareamento da TV (Prioridade Máxima)
-    success_indicators = [
-        '/browse', '/manageprofiles', '/watch', 'device connected',
-        'dispositivo conectado', 'conectado com sucesso', 'pronto para assistir',
-        'tv conectada', 'rendezvous successful', 'success', 'your device is now connected',
-        'tudo pronto', 'assistir agora', 'account', 'youraccount'
-    ]
-    for ind in success_indicators:
-        if ind in final_url or ind in html:
-            return True, "success"
-
-    # Se houve redirecionamento saindo de /tv2 sem erro e sem login
-    if getattr(r, 'history', None) and not is_real_login_page:
-        return True, "success"
-
-    # 3. Padrões explícitos de erro da Netflix
+    # 2. Padrões explícitos de erro da Netflix (Verificação Obrigatória em Primeiro Lugar)
     error_patterns = {
-        'invalid_code': ['código inválido', 'code is invalid', 'incorrect code', 'wrong code', 'inválido', 'código não é válido', 'enter a valid code', 'não conseguimos encontrar esse código', 'that code didn\'t work', 'invalid code', 'esse código não funcionou'],
-        'expired_code': ['código expirou', 'code has expired', 'no longer valid', 'expired code'],
-        'already_used': ['already used', 'já utilizado', 'already linked', 'already activated', 'já foi usado'],
-        'rate_limit': ['too many', 'muitas tentativas', 'rate limit', 'try again later'],
+        'invalid_code': [
+            'código inválido', 'code is invalid', 'incorrect code', 'wrong code',
+            'código não é válido', 'enter a valid code', 'não conseguimos encontrar esse código',
+            "that code didn't work", 'invalid code', 'esse código não funcionou',
+            'não foi possível validar', 'verifique o código', 'check your code'
+        ],
+        'expired_code': [
+            'código expirou', 'code has expired', 'no longer valid', 'expired code',
+            'expirado', 'gerar novo código'
+        ],
+        'already_used': [
+            'already used', 'já utilizado', 'already linked', 'already activated',
+            'já foi usado'
+        ],
+        'rate_limit': [
+            'too many requests', 'muitas tentativas', 'rate limit', 'try again later',
+            'tente novamente mais tarde', 'tente mais tarde'
+        ],
     }
     for err_type, keywords in error_patterns.items():
         for kw in keywords:
             if kw in html:
                 return False, err_type
 
-    # 4. Se a resposta foi HTTP 200/302 sem códigos de erro e sem a caixa de digitar código
-    if r.status_code in (200, 302) and not is_real_login_page and 'tvloginrendezvouscode' not in html:
+    # 3. Se a página ainda exibe o campo para digitar código, a Netflix RECUSOU o código
+    tem_campo_codigo = (
+        'name="tvloginrendezvouscode"' in html
+        or 'name=\'tvloginrendezvouscode\'' in html
+        or 'id="tvloginrendezvouscode"' in html
+        or 'placeholder="código"' in html
+        or 'placeholder="codigo"' in html
+        or 'placeholder="code"' in html
+    )
+    if tem_campo_codigo and '/browse' not in final_url and '/watch' not in final_url:
+        return False, "invalid_code"
+
+    # 4. Indicadores reais e seguros de confirmação de pareamento da TV
+    success_indicators = [
+        '/browse', '/manageprofiles', '/watch', 'device connected',
+        'dispositivo conectado', 'aparelho conectado', 'conectado com sucesso',
+        'pronto para assistir', 'tv conectada', 'rendezvous successful',
+        'your device is now connected', 'tudo pronto para assistir',
+        'assistir à netflix na tv', 'tela conectada'
+    ]
+    for ind in success_indicators:
+        if ind in final_url or ind in html:
+            return True, "success"
+
+    # 5. Redirecionamento bem sucedido saindo de /tv2 sem erro e sem campo de código
+    if getattr(r, 'history', None) and not is_real_login_page and not tem_campo_codigo:
         return True, "success"
 
     return False, "unknown_error"
 
 # ═══════════════════════════════════════════════════════════════
-#  BUSCA SILENCIOSA & SEM POLUIÇÃO
+#  BUSCA SILENCIOSA & SEM POLUIÇÃO COM ROTAÇÃO CONTÍNUA (ROUND-ROBIN)
 # ═══════════════════════════════════════════════════════════════
-USED_COOKIES: Set[str] = set()
+LAST_USED_AT: Dict[str, float] = {}
+DEAD_COOKIES: Set[str] = set()
+USED_COOKIES: Set[str] = set()  # Mantido para retrocompatibilidade
 
 def load_used_cookies_registry():
-    global USED_COOKIES
-    reg_file = os.path.join(os.path.dirname(__file__), "used_cookies.json")
-    if os.path.exists(reg_file):
-        try:
-            with open(reg_file, "r", encoding="utf-8") as f:
-                data = json.load(f)
-                for item in data:
-                    fn = item.get("filename", "")
-                    if fn:
-                        USED_COOKIES.add(fn)
-                        USED_COOKIES.add(os.path.join(COOKIES_FOLDER, fn))
-        except Exception:
-            pass
-
-load_used_cookies_registry()
+    """Lê registros históricos sem bloquear o reuso futuro das contas (rotação circular)."""
+    pass
 
 def get_available_cookie_files() -> List[str]:
     base_d = os.path.dirname(os.path.abspath(__file__))
@@ -598,11 +610,17 @@ def get_available_cookie_files() -> List[str]:
                     if bname not in seen_names:
                         seen_names.add(bname)
                         all_files.append(os.path.abspath(f))
-    available = [f for f in all_files if f not in USED_COOKIES and os.path.basename(f) not in USED_COOKIES]
-    # Prioriza contas brasileiras [BR] que costumam estar mais ativas e locais
-    br_files = [f for f in available if "[BR]" in os.path.basename(f).upper()]
-    other_files = [f for f in available if "[BR]" not in os.path.basename(f).upper()]
-    return br_files + other_files
+
+    # Exclui apenas arquivos com sessão comprovadamente morta
+    available = [f for f in all_files if f not in DEAD_COOKIES and os.path.basename(f) not in DEAD_COOKIES]
+
+    # Ordenação Inteligente por Rotação LRU (Menos recentemente usado primeiro)
+    # Mantém contas brasileiras [BR] no topo da fila
+    available.sort(key=lambda f: (
+        0 if "[BR]" in os.path.basename(f).upper() else 1,
+        LAST_USED_AT.get(f, LAST_USED_AT.get(os.path.basename(f), 0.0))
+    ))
+    return available
 
 def find_next_valid_cookie() -> Optional[dict]:
     available = get_available_cookie_files()
@@ -626,7 +644,8 @@ def find_next_valid_cookie() -> Optional[dict]:
                 pass
 
             if not parsed or "SecureNetflixId" not in parsed:
-                USED_COOKIES.add(filename)
+                DEAD_COOKIES.add(filename)
+                DEAD_COOKIES.add(os.path.basename(filename))
                 continue
 
             acc_info = check_account(parsed, timeout=CHECK_TIMEOUT)
@@ -637,12 +656,13 @@ def find_next_valid_cookie() -> Optional[dict]:
                     "info": acc_info
                 }
             else:
-                USED_COOKIES.add(filename)
+                DEAD_COOKIES.add(filename)
+                DEAD_COOKIES.add(os.path.basename(filename))
 
     return None
 
 def activate_with_cookie(cookie_data: dict, tv_code: str) -> Tuple[bool, str, Optional[dict]]:
-    """Executa exatamente o mesmo fluxo comprovado de ativação da TV."""
+    """Executa exatamente o fluxo comprovado de ativação da TV com rotação de cookies."""
     if not cookie_data:
         return False, "Nenhum cookie disponível no momento.", None
 
@@ -659,7 +679,8 @@ def activate_with_cookie(cookie_data: dict, tv_code: str) -> Tuple[bool, str, Op
 
     auth_url = extract_auth_url(session)
     if not auth_url:
-        USED_COOKIES.add(filename)
+        DEAD_COOKIES.add(filename)
+        DEAD_COOKIES.add(os.path.basename(filename))
         console.print("  [bold #FF0033]❌ Falha: Não foi possível obter autorização da Netflix.[/bold #FF0033]")
         return False, "Não foi possível obter autorização da Netflix. Próximo cookie carregado!", None
 
@@ -667,7 +688,9 @@ def activate_with_cookie(cookie_data: dict, tv_code: str) -> Tuple[bool, str, Op
     success, status_msg = activate_tv_code(session, clean_code, auth_url)
 
     if success:
-        USED_COOKIES.add(filename)
+        now_ts = time.time()
+        LAST_USED_AT[filename] = now_ts
+        LAST_USED_AT[os.path.basename(filename)] = now_ts
         console.print(f"  [bold #00FF66]✅ SUCESSO! TV pareada e ativada com sucesso ({clean_code})![/bold #00FF66]\n")
         return True, "TV pareada e ativada com sucesso!", acc_info
 
@@ -684,7 +707,8 @@ def activate_with_cookie(cookie_data: dict, tv_code: str) -> Tuple[bool, str, Op
         console.print(f"  [bold #FFD700]⚠ Rate-limit atingido na Netflix. Aguarde 2 minutos.[/bold #FFD700]")
         return False, "Muitas tentativas na Netflix. Aguarde 2 minutos.", None
     else:
-        USED_COOKIES.add(filename)
+        DEAD_COOKIES.add(filename)
+        DEAD_COOKIES.add(os.path.basename(filename))
         console.print(f"  [bold #FF0033]❌ Pareamento não concluído ({status_msg}). Alternando cookie...[/bold #FF0033]")
         return False, "A Netflix não concluiu o pareamento com este cookie. Próximo cookie carregado!", None
 

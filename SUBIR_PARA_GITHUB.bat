@@ -1,9 +1,9 @@
 @echo off
-title Enviar Projeto para o GitHub - TVCODIGO
+title Enviar Atualizacoes para o GitHub - TVCODIGO
 color 0B
 cls
 echo ===============================================================
-echo        ENVIANDO ARQUIVOS PARA O GITHUB (TVCODIGO)
+echo        ENVIANDO ATUALIZACOES PARA O GITHUB (TVCODIGO)
 echo ===============================================================
 echo.
 
@@ -21,39 +21,43 @@ if not exist ".git" (
 )
 
 :: 3. Sincroniza bundle de cookies e contas
-echo [+] Sincronizando cookies e contas ('netflix', 'hbomax' e 'combo')...
+echo [+] Sincronizando cookies, combos e configuracoes de senhas...
 python -c "import app; app.sync_cookies_bundle()" >nul 2>&1
 
 :: 4. Adiciona todos os arquivos
-echo [+] Preparando todos os arquivos e pastas de cookies...
+echo [+] Preparando todos os arquivos, painel admin e scripts...
 git add -A
 
-:: 5. Cria o commit
-echo [+] Criando commit...
-git commit -m "Correcao Crunchyroll: contas email e senha diretas, remocao de cookies residuais e pareamento de TV"
+:: 5. Cria o commit com data e hora
+set DATA_HORA=%date% %time%
+echo [+] Criando commit das atualizacoes (%DATA_HORA%)...
+git commit -m "Atualizacao: Painel Admin, exclusao de contas por topico, senhas personalizadas e correcoes (%DATA_HORA%)"
 
-:: 5. Define branch main
+:: 6. Define branch main
 git branch -M main
 
-:: 6. Conecta ao repositorio
-echo [+] Conectando ao repositorio https://github.com/mp8adlh2/TVCODIGO.git ...
+:: 7. Conecta ao repositorio oficial
+echo [+] Configurando repositorio https://github.com/mp8adlh2/TVCODIGO.git ...
 git remote remove origin >nul 2>&1
 git remote add origin https://github.com/mp8adlh2/TVCODIGO.git
 
-:: 7. Envia para o GitHub
-echo [+] Enviando tudo para o GitHub...
+:: 8. Envia para o GitHub
+echo [+] Enviando atualizacoes para o GitHub...
 git push -u origin main --force
 
 if %errorlevel% equ 0 (
     echo.
     echo ===============================================================
-    echo  SUCESSO! Todos os arquivos e cookies estao no GitHub!
+    echo  SUCESSO! Todos os arquivos foram atualizados no GitHub!
     echo ===============================================================
     echo.
-    echo Agora va no https://render.com e clique em 'Manual Deploy' ou crie o Web Service!
+    echo Se voce usa o Render.com, as alteracoes serao aplicadas
+    echo automaticamente (ou clique em 'Manual Deploy').
 ) else (
     echo.
-    echo [!] Se abrir uma janela do GitHub no navegador, clique em 'Authorize/Sign in'.
+    echo ===============================================================
+    echo  [!] Atencao: Se abriu uma janela do GitHub, faca o login.
+    echo ===============================================================
 )
 
 echo.

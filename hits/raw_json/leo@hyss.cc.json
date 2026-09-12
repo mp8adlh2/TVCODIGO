@@ -1,0 +1,503 @@
+{
+  "email": "leo@hyss.cc",
+  "password": "Sky54265426",
+  "access_token": "a55901a3-3076-41c5-8ff0-44973c6ca685",
+  "jwt_token": "762478aa-b466-4e29-b6a7-d1caf2cb429f",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "a55901a3-3076-41c5-8ff0-44973c6ca685",
+    "externalId": "3993211e-e321-50e4-99f4-6aa75f33d791",
+    "username": "7ed4258bceba84556d5d9194694ce985",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "182705677",
+    "protocol": "2026-150273266622",
+    "customer": {
+      "email": "ken@stkm.com.br",
+      "billingProfileCode": "1-6DZ1-3051",
+      "name": "LEONARDO",
+      "secondName": "KEN HAYASHI",
+      "birthday": "1972-12-14T00:00:00.000Z",
+      "ddd": 11,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5511944444330",
+      "id": "7ed4258bceba84556d5d9194694ce985",
+      "cpf": "15439411844"
+    },
+    "signatures": [
+      {
+        "id": "67530782",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 996315567,
+          "dddMobilePhone": 11
+        },
+        "customerId": "7ed4258bceba84556d5d9194694ce985",
+        "status": 2,
+        "productName": "SKY FIT 2012",
+        "name": "LEONARDO",
+        "secondName": "KEN HAYASHI",
+        "dna": "00000100000100000001000100000000000000000000000010000000001000000000000000000000000000100000000111110000000000010000000001000000011110000110000000010111111111111111111111111000000000000000000000100000010010111111111111010000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Jose Pereira Cardoso",
+          "line1": "Rua Jose Pereira Cardoso, 444 - Jardim Casa Branca",
+          "line2": "Casa 9",
+          "number": "444",
+          "city": "Suzano",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "08663070",
+          "referencePoint": ".",
+          "addressType": "Rua",
+          "resDdd": 11,
+          "resPhone": 47433091
+        },
+        "addressBilling": {
+          "linePublic": "Rua Afonso Jose Pessoa",
+          "line1": "Rua Afonso Jose Pessoa, 129 - Parque Do Colegio",
+          "line2": null,
+          "number": "129",
+          "city": "Suzano",
+          "state": "SP",
+          "country": null,
+          "postalCode": "08665200",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2011-04-06T00:00:00.000Z",
+        "email": "ken@stkm.com.br",
+        "parentAccount": "067530782",
+        "productStatus": "C",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [],
+        "permissions": {
+          "modalWinbackGatinho": true,
+          "modalWinbackCobranca": false,
+          "chatWinbackReativacao": false,
+          "chatWinbackWebview": false,
+          "chatWinbackCobranca": false,
+          "chatWinbackTelevendas": true,
+          "featureVerTelaCompras": true,
+          "featureSkyPlay": true,
+          "featureGuia": true,
+          "featureFatura": true,
+          "featureComprovantes": true,
+          "featureMeusDados": true,
+          "featureMinhasVisitas": true,
+          "featureAtendimento": true,
+          "featureAtendimentoChatReativacao": true,
+          "featureAssistenteVirtual": true,
+          "featureQuiz": true,
+          "featureControleRemoto": true,
+          "featureRealizarCompra": false,
+          "featureEnvioSinal": false,
+          "featureTurbinarPacote": false,
+          "additionalData": {
+            "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=72a10500a4826c7920e5fc22947f0d45ec88d23429caed004522f1488c654fa5d3d102496cee54ee54f11aa169d1606033b3eec7fbc2bce47bf00fc00965959740d7f01fce510df009c3caed0fd0b0e2a80c6b4523db2c1484148b98634d3bd9caebaa7cf05e7667b0237168f6f5358633a75b9061b0277cc2b8ece5b04596913b4b88649d464d1947ce191bca284e05259bc76b6b9289dc10fb72e58b8acb3b3406374a0ea576207eb6b366263dc99465276512bf8c78caeee604c439a34b1b707e86a8ea5770793ec95eb92bd2e77655ad64575389f7bd730b720a5f370e4e85f4c3f619e1b34814de5f8ebbfd5baf217def627e8c6fd73c94&id1=8422302948ded66173cb9d2f1a72ba50d949382400e6211f47397eaf0bdfa3bdc9c41297941100034c8123a95114874ad960d561ebc5d4661ba1975a882e2fe01b19623fe3faa065ce2f7013111ac054e201000e6f2d50b81b17504c78c5e066d0a496d2f5159545462e34831c336cec5e303d3707963fcb37c5e978693b4dbbd2a1af77e4562fb1245022883848b7e44ded90c90e934459d0ff7c9738a78b65830cf1a3a99a26bff7175e29f003500837ec0a4687376db6ce930ae5a035051ce1ff61083147a827bc397c1bd8c32362e22e05895c4e8185e355d703b03200c0c667250c6540a8e8cf7c2c675f8cfef2ef61aa7f55fd06600618&id2=4d67f1dfd5dbfd7af6b2b268&id3=",
+            "chatParams": {
+              "subject": "Cancelamento",
+              "dateNowFormatted": "2026-09-06 12:34:12",
+              "chatExpirationDate": 1788709152178
+            }
+          }
+        },
+        "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=72a10500a4826c7920e5fc22947f0d45ec88d23429caed004522f1488c654fa5d3d102496cee54ee54f11aa169d1606033b3eec7fbc2bce47bf00fc00965959740d7f01fce510df009c3caed0fd0b0e2a80c6b4523db2c1484148b98634d3bd9caebaa7cf05e7667b0237168f6f5358633a75b9061b0277cc2b8ece5b04596913b4b88649d464d1947ce191bca284e05259bc76b6b9289dc10fb72e58b8acb3b3406374a0ea576207eb6b366263dc99465276512bf8c78caeee604c439a34b1b707e86a8ea5770793ec95eb92bd2e77655ad64575389f7bd730b720a5f370e4e85f4c3f619e1b34814de5f8ebbfd5baf217def627e8c6fd73c94&id1=8422302948ded66173cb9d2f1a72ba50d949382400e6211f47397eaf0bdfa3bdc9c41297941100034c8123a95114874ad960d561ebc5d4661ba1975a882e2fe01b19623fe3faa065ce2f7013111ac054e201000e6f2d50b81b17504c78c5e066d0a496d2f5159545462e34831c336cec5e303d3707963fcb37c5e978693b4dbbd2a1af77e4562fb1245022883848b7e44ded90c90e934459d0ff7c9738a78b65830cf1a3a99a26bff7175e29f003500837ec0a4687376db6ce930ae5a035051ce1ff61083147a827bc397c1bd8c32362e22e05895c4e8185e355d703b03200c0c667250c6540a8e8cf7c2c675f8cfef2ef61aa7f55fd06600618&id2=4d67f1dfd5dbfd7af6b2b268&id3="
+      },
+      {
+        "id": "182705677",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 944444330,
+          "dddMobilePhone": 11
+        },
+        "customerId": "7ed4258bceba84556d5d9194694ce985",
+        "status": 1,
+        "productName": "DUETO MASTER II HBO SD 2019/2021 - P",
+        "name": "LEONARDO",
+        "secondName": "KEN HAYASHI",
+        "dna": "01000000000100000100001000000000100000000000000010000000000010000000010000000000000000100010000111110000000000100000000000001000011110000100000000010111111111111111111111111000000000000000000001100000000010111111111111010000000011111010111111110001000000000001101011111111111001101110001111111111010011111101111111111111111111111111110011111111111110111111111101011111111111111111111111100111011100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Do Tani",
+          "line1": "Rua Do Tani, 2800 - Ipelandia",
+          "line2": "Sitio Tkm",
+          "number": "2800",
+          "city": "Suzano",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "08620080",
+          "referencePoint": "Proximo Ao Asilo",
+          "addressType": "Rua",
+          "resDdd": 11,
+          "resPhone": 47466237
+        },
+        "addressBilling": {
+          "linePublic": "Rua Do Tani",
+          "line1": "Rua Do Tani, 2800 - Ipelandia",
+          "line2": "Sitio Tkm",
+          "number": "2800",
+          "city": "Suzano",
+          "state": "SP",
+          "country": null,
+          "postalCode": "08620080",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 11,
+          "resPhone": 47433091
+        },
+        "activation": "2015-01-16T00:00:00.000Z",
+        "email": "leo@hyss.cc",
+        "parentAccount": "0182705677",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000568026314",
+            "isRecordable": false,
+            "technology": "SD",
+            "subcategory": "PayTV",
+            "serialCode": "DSR3421",
+            "serialNumber": "CE0A460384339114D"
+          },
+          {
+            "smartcard": "000761368299",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "670A2036159509969"
+          }
+        ]
+      },
+      {
+        "id": "1527023691",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 944444330,
+          "dddMobilePhone": 11
+        },
+        "customerId": "7ed4258bceba84556d5d9194694ce985",
+        "status": 1,
+        "productName": "EASY II HD 2021 - P",
+        "name": "LEONARDO",
+        "secondName": "KEN HAYASHI",
+        "dna": "01000000000100000000000000000000100000000000000000000000000000000000010000000000000000100010000111110000000000000000000000001000011110000100000000000011111111111111111111111000000000000000000001000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001111111111110111111101111111111111111111111111110111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Affonso Jose Pessoa",
+          "line1": "Rua Affonso Jose Pessoa, 129 - Parque Do Colegio",
+          "line2": null,
+          "number": "129",
+          "city": "Suzano",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "08665200",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 11,
+          "resPhone": 944444330
+        },
+        "addressBilling": {
+          "linePublic": "Rua Affonso Jose Pessoa",
+          "line1": "Rua Affonso Jose Pessoa, 129 - Parque Do Colegio",
+          "line2": null,
+          "number": "129",
+          "city": "Suzano",
+          "state": "SP",
+          "country": null,
+          "postalCode": "08665200",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 11,
+          "resPhone": 944444330
+        },
+        "activation": "2021-07-21T00:00:00.000Z",
+        "email": "leo@hyss.cc",
+        "parentAccount": "1527023690",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000781015888",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2035400612318"
+          },
+          {
+            "smartcard": "000753133024",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2036143484290"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "182705677",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 944444330,
+        "dddMobilePhone": 11
+      },
+      "customerId": "7ed4258bceba84556d5d9194694ce985",
+      "status": 1,
+      "productName": "DUETO MASTER II HBO SD 2019/2021 - P",
+      "name": "LEONARDO",
+      "secondName": "KEN HAYASHI",
+      "dna": "01000000000100000100001000000000100000000000000010000000000010000000010000000000000000100010000111110000000000100000000000001000011110000100000000010111111111111111111111111000000000000000000001100000000010111111111111010000000011111010111111110001000000000001101011111111111001101110001111111111010011111101111111111111111111111111110011111111111110111111111101011111111111111111111111100111011100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Do Tani",
+        "line1": "Rua Do Tani, 2800 - Ipelandia",
+        "line2": "Sitio Tkm",
+        "number": "2800",
+        "city": "Suzano",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "08620080",
+        "referencePoint": "Proximo Ao Asilo",
+        "addressType": "Rua",
+        "resDdd": 11,
+        "resPhone": 47466237
+      },
+      "addressBilling": {
+        "linePublic": "Rua Do Tani",
+        "line1": "Rua Do Tani, 2800 - Ipelandia",
+        "line2": "Sitio Tkm",
+        "number": "2800",
+        "city": "Suzano",
+        "state": "SP",
+        "country": null,
+        "postalCode": "08620080",
+        "referencePoint": null,
+        "addressType": "Rua",
+        "resDdd": 11,
+        "resPhone": 47433091
+      },
+      "activation": "2015-01-16T00:00:00.000Z",
+      "email": "leo@hyss.cc",
+      "parentAccount": "0182705677",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000568026314",
+          "isRecordable": false,
+          "technology": "SD",
+          "subcategory": "PayTV",
+          "serialCode": "DSR3421",
+          "serialNumber": "CE0A460384339114D"
+        },
+        {
+          "smartcard": "000761368299",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "670A2036159509969"
+        }
+      ]
+    },
+    {
+      "id": "1527023691",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 944444330,
+        "dddMobilePhone": 11
+      },
+      "customerId": "7ed4258bceba84556d5d9194694ce985",
+      "status": 1,
+      "productName": "EASY II HD 2021 - P",
+      "name": "LEONARDO",
+      "secondName": "KEN HAYASHI",
+      "dna": "01000000000100000000000000000000100000000000000000000000000000000000010000000000000000100010000111110000000000000000000000001000011110000100000000000011111111111111111111111000000000000000000001000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001111111111110111111101111111111111111111111111110111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Affonso Jose Pessoa",
+        "line1": "Rua Affonso Jose Pessoa, 129 - Parque Do Colegio",
+        "line2": null,
+        "number": "129",
+        "city": "Suzano",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "08665200",
+        "referencePoint": null,
+        "addressType": "Rua",
+        "resDdd": 11,
+        "resPhone": 944444330
+      },
+      "addressBilling": {
+        "linePublic": "Rua Affonso Jose Pessoa",
+        "line1": "Rua Affonso Jose Pessoa, 129 - Parque Do Colegio",
+        "line2": null,
+        "number": "129",
+        "city": "Suzano",
+        "state": "SP",
+        "country": null,
+        "postalCode": "08665200",
+        "referencePoint": null,
+        "addressType": "Rua",
+        "resDdd": 11,
+        "resPhone": 944444330
+      },
+      "activation": "2021-07-21T00:00:00.000Z",
+      "email": "leo@hyss.cc",
+      "parentAccount": "1527023690",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000781015888",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2035400612318"
+        },
+        {
+          "smartcard": "000753133024",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2036143484290"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "182705677": {
+      "included": [
+        {
+          "name": "Sky HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "07-07-2019",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky HBO HD - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "07-07-2019",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "20-02-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "20-02-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky Canal NHK",
+          "category": "A La Carte",
+          "subcategory": "Internacional",
+          "start_date": "06-08-2015",
+          "end_date": null,
+          "icon": "🌍"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": null,
+            "name": "Sky HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "07-07-2019",
+            "startDate": "07-07-2019",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky HBO HD - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "07-07-2019",
+            "startDate": "07-07-2019",
+            "endDate": null
+          },
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "20-02-2026",
+            "startDate": "20-02-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-219IIMH",
+            "name": "DISNEY PLUS PREMIUM",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Disney%403x.png",
+            "price": "46.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "20-02-2026",
+            "startDate": "20-02-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-2T0LA7",
+            "name": "Sky Canal NHK",
+            "category": "A La Carte",
+            "subcategory": "Internacional",
+            "logo": "https://skycms.s3.amazonaws.com/images/37907079/Logo.Internacionais.NHK.png",
+            "price": "25.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "06-08-2015",
+            "startDate": "06-08-2015",
+            "endDate": null
+          }
+        ]
+      }
+    },
+    "1527023691": {
+      "included": [],
+      "additionals": []
+    }
+  }
+}

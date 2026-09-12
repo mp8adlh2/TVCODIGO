@@ -1,0 +1,499 @@
+{
+  "email": "flavioapodi@hotmail.com",
+  "password": "Bairro13",
+  "access_token": "01249176-de10-40d3-a108-5c598e4be9b6",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiMDgxZTM5NzgtMzAwZC00Y2ZmLWIyZGMtOTYwYWIwMGI4ZTY1IiwiYXRfaGFzaCI6Ijd1NDMwVU8zRmQ2YVU0cHZOblBIS3ciLCJkZXZpY2VJZCI6Ijc0ZThiYzVhZjcyM2M2YmNkYWUyZTQ3ZGI4NjMzYjM1OTJiYzhkYzYiLCJhdWRpdFRyYWNraW5nSWQiOiI0YTcyLWM2ZGItNDdlNC1iOTZlLWVlMTUiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjcwODI1NiwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJlMjVhMzljMi0wNDUyLTQ5M2UtYTA3MS1iMDBiYjNkOTY2NzUiLCJzaWduYXR1cmVzIjpbIjE3MDc2MTc5MCJdLCJjdXN0b21lcklkIjoiM2Y2OWU2OWI5NmYyOTdiYWFkZmNlZTk1YzAwMzAxMzYiLCJyZWdpc3RyYXRpb25TaWduYXR1cmUiOiIxNzA3NjE3OTAiLCJnaXZlbl9uYW1lIjoiRlJBTkNJU0NPIEZMQVZJTyIsInVzZXJuYW1lIjoiZmxhdmlvYXBvZGlAaG90bWFpbC5jb20iLCJtYWlsIjoiZmxhdmlvYXBvZGlAaG90bWFpbC5jb20iLCJyZWRlbXB0aW9uTGltaXQiOm51bGwsImlhdCI6MTc4ODMxMjcwOCwiZXhwIjoxNzg4Mzk5MTA4LCJpc3MiOiJzbS1za3kudnJpb3NlcnZpY2VzLmNvbSJ9.CDaMNvoxyU2XHOoFIm0jzAYo3GUmtq26dIv7kKYEtQE3lnavyvUT5QnipeLiZlQXRw5ym44PUm1otPV1Nn8Wy0JhwDaIQmKbD-cKgjN1IAXh_iMeesg7q2HqN8ut3XRpN_77AoU4gLsSPZGRVjFU7S8stgmPpvMBux0ITj99tOjCLFVQ6w9upmD6YnrJPqOHs_cZdIlyfv9-GrslUdypDb8rvgM0jaENON92i6LHrIBQNSh4w6KLmwOr8MHfxYvMFUfdEG1bZjhvzpT2sSl2S_Pl2kCfawYheGYNy_JmiTTmlBnt8bisiSMKQEiA9oIXifxOoKvvwRQ0yDExzGJ2Jw",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "01249176-de10-40d3-a108-5c598e4be9b6",
+    "externalId": "fc37d235-201d-5a7a-8756-3dec8e35b207",
+    "username": "3f69e69b96f297baadfcee95c0030136",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "170761790",
+    "protocol": "2026-150197363419",
+    "customer": {
+      "email": "flavioapodi@hotmail.com",
+      "billingProfileCode": "1-B3UT-12704",
+      "name": "FRANCISCO",
+      "secondName": "FLAVIO DE CARVALHO",
+      "birthday": "1974-12-13T00:00:00.000Z",
+      "ddd": 84,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5584996284897",
+      "id": "3f69e69b96f297baadfcee95c0030136",
+      "cpf": "96847182415"
+    },
+    "signatures": [
+      {
+        "id": "170761790",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 996284897,
+          "dddMobilePhone": 84
+        },
+        "customerId": "3f69e69b96f297baadfcee95c0030136",
+        "status": 1,
+        "productName": "PLUS TOTAL EXPERIENCE IV 2025 - P",
+        "name": "FRANCISCO",
+        "secondName": "FLAVIO DE CARVALHO",
+        "dna": "01000000000100010000000000001000100000000000000000000000000000000000000001000000000000001010000111110000000000000000100010000000011110100000000000100111111111111111111111111000000000000000000001010000000010111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111110111111101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111110111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100101111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Nossa Senhora Da Conceiao",
+          "line1": "Rua Nossa Senhora Da Conceiao, 177 - Centro",
+          "line2": ".",
+          "number": "177",
+          "city": "Apodi",
+          "state": "RN",
+          "country": "Brasil",
+          "postalCode": "59700000",
+          "referencePoint": "Proximo A Igreja Matriz",
+          "addressType": "Rua",
+          "resDdd": 84,
+          "resPhone": 33332604
+        },
+        "addressBilling": {
+          "linePublic": "Rua Nossa Senhora Da Conceiao",
+          "line1": "Rua Nossa Senhora Da Conceiao, 177 - Centro",
+          "line2": ".",
+          "number": "177",
+          "city": "Apodi",
+          "state": "RN",
+          "country": null,
+          "postalCode": "59700000",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 84,
+          "resPhone": 996284797
+        },
+        "activation": "2014-07-18T00:00:00.000Z",
+        "email": "flavioapodi@hotmail.com",
+        "parentAccount": "0170761790",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001111773907",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2036227047741"
+          },
+          {
+            "smartcard": "000801175233",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "010A263417164391A"
+          },
+          {
+            "smartcard": "000766674824",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2036178128975"
+          },
+          {
+            "smartcard": "000611116120",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH25",
+            "serialNumber": "CE0AA135350802799"
+          },
+          {
+            "smartcard": "000571801257",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH25",
+            "serialNumber": "670AA135273572435"
+          },
+          {
+            "smartcard": "000766674832",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2036164172268"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "170761790",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 996284897,
+        "dddMobilePhone": 84
+      },
+      "customerId": "3f69e69b96f297baadfcee95c0030136",
+      "status": 1,
+      "productName": "PLUS TOTAL EXPERIENCE IV 2025 - P",
+      "name": "FRANCISCO",
+      "secondName": "FLAVIO DE CARVALHO",
+      "dna": "01000000000100010000000000001000100000000000000000000000000000000000000001000000000000001010000111110000000000000000100010000000011110100000000000100111111111111111111111111000000000000000000001010000000010111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111110111111101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111110111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100101111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Nossa Senhora Da Conceiao",
+        "line1": "Rua Nossa Senhora Da Conceiao, 177 - Centro",
+        "line2": ".",
+        "number": "177",
+        "city": "Apodi",
+        "state": "RN",
+        "country": "Brasil",
+        "postalCode": "59700000",
+        "referencePoint": "Proximo A Igreja Matriz",
+        "addressType": "Rua",
+        "resDdd": 84,
+        "resPhone": 33332604
+      },
+      "addressBilling": {
+        "linePublic": "Rua Nossa Senhora Da Conceiao",
+        "line1": "Rua Nossa Senhora Da Conceiao, 177 - Centro",
+        "line2": ".",
+        "number": "177",
+        "city": "Apodi",
+        "state": "RN",
+        "country": null,
+        "postalCode": "59700000",
+        "referencePoint": null,
+        "addressType": "Rua",
+        "resDdd": 84,
+        "resPhone": 996284797
+      },
+      "activation": "2014-07-18T00:00:00.000Z",
+      "email": "flavioapodi@hotmail.com",
+      "parentAccount": "0170761790",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "001111773907",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2036227047741"
+        },
+        {
+          "smartcard": "000801175233",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "010A263417164391A"
+        },
+        {
+          "smartcard": "000766674824",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2036178128975"
+        },
+        {
+          "smartcard": "000611116120",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH25",
+          "serialNumber": "CE0AA135350802799"
+        },
+        {
+          "smartcard": "000571801257",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH25",
+          "serialNumber": "670AA135273572435"
+        },
+        {
+          "smartcard": "000766674832",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2036164172268"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "170761790": {
+      "included": [
+        {
+          "name": "ESR HD CB",
+          "category": "A La Carte",
+          "subcategory": "Esportes",
+          "start_date": "01-04-2025",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "ESPN 6 HD CB 2021",
+          "category": "A La Carte",
+          "subcategory": "Esportes",
+          "start_date": "01-04-2025",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "TELECINE HD",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "01-04-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "PREMIERE HD TOTAL 2021 - P",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "01-04-2025",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "01-04-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "SEGURO RESIDENCIAL PARA CASA DE ALVENARIA - BASICO",
+          "category": "A La Carte",
+          "subcategory": "Premium",
+          "start_date": "01-04-2025",
+          "end_date": "01-04-2030",
+          "icon": "🌍"
+        },
+        {
+          "name": "PARAMOUNT CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "01-04-2025",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "FATURA PROTEGIDA SKY 1200",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "01-04-2025",
+          "end_date": "01-04-2030",
+          "icon": "📺"
+        },
+        {
+          "name": "AMAZON PRIME",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "01-04-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM - CB",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "01-04-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky Sex Prive - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "01-04-2025",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "Sky Sex Prive HD - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "01-04-2025",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "ASSISTENCIA PREMIUM SEGURO RESIDENCIAL",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "01-04-2025",
+          "end_date": "01-04-2030",
+          "icon": "🛡️"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-1VZY244",
+            "name": "FATURA PROTEGIDA SKY 1200",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": null,
+            "price": "15.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "01-04-2025",
+            "startDate": "01-04-2025",
+            "endDate": "01-04-2030"
+          },
+          {
+            "id": "1-21ATHJR",
+            "name": "AMAZON PRIME",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Amazon%403x.png",
+            "urlDetail": "https://www.sky.com.br/amazon-prime",
+            "price": "5.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "01-04-2025",
+            "startDate": "01-04-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "DISNEY PLUS PREMIUM - CB",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "null",
+            "isPartOfMainPackage": false,
+            "activationDate": "01-04-2025",
+            "startDate": "01-04-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "01-04-2025",
+            "startDate": "01-04-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-1QKJGWB",
+            "name": "ESR HD CB",
+            "category": "A La Carte",
+            "subcategory": "Esportes",
+            "logo": "https://skycms.s3.amazonaws.com/images/42693528/ESR_logo.jpg",
+            "price": "6.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "01-04-2025",
+            "startDate": "01-04-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive HD - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "01-04-2025",
+            "startDate": "01-04-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-1QKPR7G",
+            "name": "ESPN 6 HD CB 2021",
+            "category": "A La Carte",
+            "subcategory": "Esportes",
+            "logo": null,
+            "price": "9.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "01-04-2025",
+            "startDate": "01-04-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-20XEJQF",
+            "name": "TELECINE HD",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/TLCine%403x.png",
+            "price": "29.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "01-04-2025",
+            "startDate": "01-04-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "PREMIERE HD TOTAL 2021 - P",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "01-04-2025",
+            "startDate": "01-04-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "ASSISTENCIA PREMIUM SEGURO RESIDENCIAL",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "null",
+            "isPartOfMainPackage": false,
+            "activationDate": "01-04-2025",
+            "startDate": "01-04-2025",
+            "endDate": "01-04-2030"
+          },
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "01-04-2025",
+            "startDate": "01-04-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-2005PRI",
+            "name": "SEGURO RESIDENCIAL PARA CASA DE ALVENARIA - BASICO",
+            "category": "A La Carte",
+            "subcategory": "Premium",
+            "logo": null,
+            "price": "24.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "01-04-2025",
+            "startDate": "01-04-2025",
+            "endDate": "01-04-2030"
+          },
+          {
+            "id": null,
+            "name": "PARAMOUNT CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "null",
+            "isPartOfMainPackage": true,
+            "activationDate": "01-04-2025",
+            "startDate": "01-04-2025",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

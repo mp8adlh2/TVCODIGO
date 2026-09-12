@@ -1,0 +1,592 @@
+{
+  "email": "luisfabianomaltao@gmail.com",
+  "password": "Lu250880",
+  "access_token": "8dda62df-191d-4bdc-b02b-dfa00856020b",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiMTM5OTJmNGQtMjI3OS00ZTE1LWJiOWEtNjcyM2Y3MzFjMjQ5IiwiYXRfaGFzaCI6IjlkOWdiTDZPc2VPZFNMcElmQkN0bEEiLCJkZXZpY2VJZCI6IjcwYmNhYjQwZjk5YmJjMDczYWQ0OTQ3ZWQ5OGVmNmFjN2QwMWE1YTYiLCJhdWRpdFRyYWNraW5nSWQiOiIxN2UyLWZkZDgtNDQwYy1hOTg4LWFkNTciLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjc2MDA2NywidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJDUGZQTF9QdEVZa3BVQjBKbWMvdndBIiwic2lnbmF0dXJlcyI6WyIxNTA2NDAxNTYwIiwiMTUzNzUxMzI3NCIsIjE1MzY3MDM1NzkiLCIxNTM3NTEzMjc2Il0sImN1c3RvbWVySWQiOiIzYTBkMzM1ODVjM2QyMzg5OTYwODE5YThiYWRlYmZkMiIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjE1MzY3MDM1NzkiLCJnaXZlbl9uYW1lIjoiTFVJUyIsImZhbWlseV9uYW1lIjoic2t5IiwidXNlcm5hbWUiOiJsdWlzZmFiaWFub21hbHRhb0BnbWFpbC5jb20iLCJtYWlsIjoibHVpc2ZhYmlhbm9tYWx0YW9AZ21haWwuY29tIiwicmVkZW1wdGlvbkxpbWl0IjpudWxsLCJpYXQiOjE3ODgzMTI3NjAsImV4cCI6MTc4ODM5OTE2MCwiaXNzIjoic20tc2t5LnZyaW9zZXJ2aWNlcy5jb20ifQ.AQ76rIAh7jtpFO1fOOb26lIbFgLacaDWwImoeVB-qvMxe7y8nYyTE7i0NqYA8CsFMYnDT4_b2BpRzk566a-BOeo2kxnh5K0-PrhQVGI-OjOtS5XO1nfeqCt-2tSG7DDR8Rl52OQApoqHzNTJzdKTr-aN3Kl2inNDve-O22BafaxOr-f2F72iUCBMy-3Tinhi0QpTfhndjunHG3iGyx5TPQYPESS0rn2jJ5TilV6jwLU9OEyOEUDrkLwybJtnQa1WNOAVlyKADSIw4kM5Q8MJyZuRJMUx1TdJQJwGBgdSZAskGANBZraIFQnxC0zigF8D_68lWGoZG3tykI_70NVonw",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "8dda62df-191d-4bdc-b02b-dfa00856020b",
+    "externalId": "5ca6855a-9f54-5c24-8af8-6ae9149e5aa0",
+    "username": "3a0d33585c3d2389960819a8badebfd2",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "1536703579",
+    "protocol": "2026-150197363461",
+    "customer": {
+      "email": "thierryoliveira142@gmail.com",
+      "billingProfileCode": "1-GETRY8W",
+      "name": "LUIS",
+      "secondName": "FABIANO MALTA OLIVEIRA",
+      "birthday": "1980-08-25T00:00:00.000Z",
+      "ddd": 69,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5569992443250",
+      "id": "3a0d33585c3d2389960819a8badebfd2",
+      "cpf": "68687540272"
+    },
+    "signatures": [
+      {
+        "id": "1506401560",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 993692190,
+          "dddMobilePhone": 69,
+          "dddComPhone": 69,
+          "comPhone": 93692190
+        },
+        "customerId": "3a0d33585c3d2389960819a8badebfd2",
+        "status": 2,
+        "productName": "NEW COMBO FULL TOP HD 2018/2021 - P",
+        "name": "LUIS",
+        "secondName": "FABIANO MALTA OLIVEIRA",
+        "dna": "10000100000100010000000000000001100000000000000000000000000000000000000001000000000000100011000111110000000000000000010000100000011110000100000000100111111111111111111111111000000000000000000100001000000001111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Amelia Farias",
+          "line1": "Rua Amelia Farias, 3773 - Tancredo Neves",
+          "line2": null,
+          "number": "3773",
+          "city": "Porto Velho",
+          "state": "RO",
+          "country": "Brasil",
+          "postalCode": "76829532",
+          "referencePoint": "Entre Alexandre E Rio De Janeiro  //  Tel: 69 992657098",
+          "addressType": "Rua"
+        },
+        "addressBilling": {
+          "linePublic": "Rua  Amelia Farias",
+          "line1": "Rua  Amelia Farias, 3773 - Tancredo Neves",
+          "line2": null,
+          "number": "3773",
+          "city": "Porto Velho",
+          "state": "RO",
+          "country": null,
+          "postalCode": "76829532",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2017-05-12T00:00:00.000Z",
+        "email": "thierryoliveira142@gmail.com",
+        "parentAccount": "1506401559",
+        "productStatus": "C",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000904742038",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "010A2634127471847"
+          },
+          {
+            "smartcard": "001125512416",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A0125387615407"
+          },
+          {
+            "smartcard": "001125509214",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A012538753013E"
+          },
+          {
+            "smartcard": "001125954006",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A0125387673347"
+          },
+          {
+            "smartcard": "001125950731",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A012538739312F"
+          },
+          {
+            "smartcard": "001125953875",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A0125387679396"
+          }
+        ],
+        "permissions": {
+          "interruptionModal": true,
+          "additionalData": {
+            "interruptionModal": {
+              "dnaPosition": "509",
+              "imageUrl": "https://digitalapi.sky.com.br/media/auth/billing.png",
+              "title": "Poxa! Você precisa ter uma assinatura disponível",
+              "subtitle": "Assinatura: 1506401560 (cancelada)",
+              "moreInfo": "Para saber mais, ligue no 0800 728 7160 (segunda a sexta, das 8h às 18h, exceto feriados)."
+            }
+          }
+        }
+      },
+      {
+        "id": "1537513274",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 992443250,
+          "dddMobilePhone": 69
+        },
+        "customerId": "3a0d33585c3d2389960819a8badebfd2",
+        "status": 1,
+        "productName": "PAY-TV + FIBRA 600 MB - P",
+        "name": "LUIS",
+        "secondName": "FABIANO MALTA OLIVEIRA",
+        "dna": "01000000000100000000000000000000000000000000000000000000000000000000000000000000000000100001000111110000000000000000000000000000011110000100000000000011111111111010111111111000000000000000000000000000000000111111111111111000000011111010111111110100000000000001101111111111111001101110001110010111111111101111111111111111111111111111110011111111111110011111111111001111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Banda Larga",
+        "addressInstallation": {
+          "linePublic": "Rua Amelia Farias",
+          "line1": "Rua Amelia Farias, 3773 - Tancredo Neves",
+          "line2": null,
+          "number": "3773",
+          "city": "Porto Velho",
+          "state": "RO",
+          "country": "Brasil",
+          "postalCode": "76829548",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 69,
+          "resPhone": 992443250
+        },
+        "addressBilling": {
+          "linePublic": "Rua Amélia Farias",
+          "line1": "Rua Amélia Farias, 3773 - Tancredo Neves",
+          "line2": null,
+          "number": "3773",
+          "city": "Porto Velho",
+          "state": "RO",
+          "country": "Brasil",
+          "postalCode": "76829548",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 69,
+          "resPhone": 992846652
+        },
+        "activation": "2024-06-17T00:00:00.000Z",
+        "email": "luisfabianomaltao@gmail.com",
+        "parentAccount": "1537513275",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [
+          {
+            "id": "1536703579",
+            "organizationType": 0,
+            "phones": {
+              "mobilePhone": 992846652,
+              "dddMobilePhone": 69
+            },
+            "customerId": "3a0d33585c3d2389960819a8badebfd2",
+            "status": 1,
+            "productName": "TOP HD II - P",
+            "name": "LUIS",
+            "secondName": "FABIANO MALTA OLIVEIRA",
+            "dna": "01000000000100000000000000000000100000000000000000000000000000000000010000000000000000100011000111110000000000000000000000010000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111110001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+            "type": "Pós-Pago Antecipado",
+            "addressInstallation": {
+              "linePublic": "Rua Amélia Farias",
+              "line1": "Rua Amélia Farias, 3773 - Tancredo Neves",
+              "line2": null,
+              "number": "3773",
+              "city": "Porto Velho",
+              "state": "RO",
+              "country": "Brasil",
+              "postalCode": "76829548",
+              "referencePoint": null,
+              "addressType": "Rua",
+              "resDdd": 69,
+              "resPhone": 992846652
+            },
+            "addressBilling": {
+              "linePublic": "Rua Amélia Farias",
+              "line1": "Rua Amélia Farias, 3773 - Tancredo Neves",
+              "line2": null,
+              "number": "3773",
+              "city": "Porto Velho",
+              "state": "RO",
+              "country": "Brasil",
+              "postalCode": "76829548",
+              "referencePoint": null,
+              "addressType": "Rua",
+              "resDdd": 69,
+              "resPhone": 992846652
+            },
+            "activation": "2024-02-07T00:00:00.000Z",
+            "email": "luisfabianomaltao@gmail.com",
+            "parentAccount": "1536703578",
+            "productStatus": "A",
+            "isPrimary": false,
+            "childrenSignatures": [],
+            "chargeStatus": 1,
+            "dunnLevel": "Serie de cobranca passo 1",
+            "equipments": [
+              {
+                "smartcard": "001125511608",
+                "isRecordable": false,
+                "technology": "HD",
+                "subcategory": "PayTV",
+                "serialCode": "SH01",
+                "serialNumber": "670A012543369391B"
+              },
+              {
+                "smartcard": "001143665626",
+                "isRecordable": false,
+                "technology": "HD",
+                "subcategory": "PayTV",
+                "serialCode": "SH01",
+                "serialNumber": "CE0A012079612112F"
+              }
+            ]
+          },
+          {
+            "id": "1537513276",
+            "organizationType": 0,
+            "phones": {
+              "mobilePhone": 992443250,
+              "dddMobilePhone": 69
+            },
+            "customerId": "3a0d33585c3d2389960819a8badebfd2",
+            "status": 2,
+            "productName": "SKY BANDA LARGA FIBRA 200 MB PROMOCIONAL - P",
+            "name": "LUIS",
+            "secondName": "FABIANO MALTA OLIVEIRA",
+            "dna": "00000100000100000000000000000000000000000000000000000000000000000000000000000000000000100001000111110000000000000000000000000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110100000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+            "type": "Banda Larga",
+            "addressInstallation": {
+              "linePublic": "Rua Amélia Farias",
+              "line1": "Rua Amélia Farias, 3773 - Tancredo Neves",
+              "line2": null,
+              "number": "3773",
+              "city": "Porto Velho",
+              "state": "RO",
+              "country": "Brasil",
+              "postalCode": "76829548",
+              "referencePoint": null,
+              "addressType": "Rua",
+              "resDdd": 69,
+              "resPhone": 992846652
+            },
+            "addressBilling": {
+              "linePublic": "Rua Amélia Farias",
+              "line1": "Rua Amélia Farias, 3773 - Tancredo Neves",
+              "line2": null,
+              "number": "3773",
+              "city": "Porto Velho",
+              "state": "RO",
+              "country": "Brasil",
+              "postalCode": "76829548",
+              "referencePoint": null,
+              "addressType": "Rua",
+              "resDdd": 69,
+              "resPhone": 992846652
+            },
+            "activation": "2024-06-17T00:00:00.000Z",
+            "email": "luisfabianomaltao@gmail.com",
+            "parentAccount": "1537513277",
+            "productStatus": "C",
+            "isPrimary": false,
+            "childrenSignatures": [],
+            "chargeStatus": 1,
+            "dunnLevel": "Serie de cobranca passo 1",
+            "permissions": {
+              "modalWinbackGatinho": true,
+              "modalWinbackCobranca": false,
+              "chatWinbackReativacao": false,
+              "chatWinbackWebview": false,
+              "chatWinbackCobranca": false,
+              "chatWinbackTelevendas": true,
+              "featureVerTelaCompras": true,
+              "featureSkyPlay": true,
+              "featureGuia": true,
+              "featureFatura": true,
+              "featureComprovantes": true,
+              "featureMeusDados": true,
+              "featureMinhasVisitas": true,
+              "featureAtendimento": true,
+              "featureAtendimentoChatReativacao": true,
+              "featureAssistenteVirtual": true,
+              "featureQuiz": true,
+              "featureControleRemoto": true,
+              "featureRealizarCompra": false,
+              "featureEnvioSinal": false,
+              "featureTurbinarPacote": false,
+              "additionalData": {
+                "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=ab3b6f1edbef1b673d5e40086a14208950917b53c64dc902fa280eaf389df1fe5713b4e6217d6c6d2fba1594d6816b298bd8c4271475f0f68d0141cac1f44292259fdffe0734c288808179db73e54d0c545c08cec9811938c6e2e0a7e33e943453a84c67701460fa59ced719459fa54473b4762ab525b8e284d3c16e404451e05c5f1aded912b25613022c4757f027b31c5bcae1d659530720fca88128259fd7e4cdcf9513a469002f78c239a3ed4def8adcdfc7770e38c4b47e0f0c71e0d9b51e8cb431cd250ee20f4a9e436ad6064495677c56c23c5e6945c87188f55197fc47f7ab2530c546b1192e5c26902e5423c7e5c525b92ac7188673&id1=14d6486a277f6be67e8d88150111663c32115795237aec735cb229507c74388f6cee7422a7ab64c4972698cc0e7a3a386f6fe96d01493fe18f28dd67221297b2723c55391058c4141c02e206b3a8cbd07673c9d19e0d3b7c422faddc684767dd610b661510caaf603e9d261a618f83089e975306ad059fbc5dea54b8315e48cd9e6315ff70d5b09aebf521d39823e42847753aeb55e05bdbf57791d30e15053f550e9aa2fcb4b15ece1caec7d7f55c26da9339b89317698d01c084b3c15428c687a6fdf9cd5b5ddf307c219c50ceaa7cb30c2874d9806b4976df7805bb787db21d5d0698e8f52bc5ec09f20952d29b835b9e29d22ac1fd14a11b&id2=a0dea231a39798b15cf60ff4&id3=",
+                "chatParams": {
+                  "subject": "Cancelamento",
+                  "dateNowFormatted": "2026-09-01 22:32:29",
+                  "chatExpirationDate": 1788313049446
+                }
+              }
+            },
+            "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=ab3b6f1edbef1b673d5e40086a14208950917b53c64dc902fa280eaf389df1fe5713b4e6217d6c6d2fba1594d6816b298bd8c4271475f0f68d0141cac1f44292259fdffe0734c288808179db73e54d0c545c08cec9811938c6e2e0a7e33e943453a84c67701460fa59ced719459fa54473b4762ab525b8e284d3c16e404451e05c5f1aded912b25613022c4757f027b31c5bcae1d659530720fca88128259fd7e4cdcf9513a469002f78c239a3ed4def8adcdfc7770e38c4b47e0f0c71e0d9b51e8cb431cd250ee20f4a9e436ad6064495677c56c23c5e6945c87188f55197fc47f7ab2530c546b1192e5c26902e5423c7e5c525b92ac7188673&id1=14d6486a277f6be67e8d88150111663c32115795237aec735cb229507c74388f6cee7422a7ab64c4972698cc0e7a3a386f6fe96d01493fe18f28dd67221297b2723c55391058c4141c02e206b3a8cbd07673c9d19e0d3b7c422faddc684767dd610b661510caaf603e9d261a618f83089e975306ad059fbc5dea54b8315e48cd9e6315ff70d5b09aebf521d39823e42847753aeb55e05bdbf57791d30e15053f550e9aa2fcb4b15ece1caec7d7f55c26da9339b89317698d01c084b3c15428c687a6fdf9cd5b5ddf307c219c50ceaa7cb30c2874d9806b4976df7805bb787db21d5d0698e8f52bc5ec09f20952d29b835b9e29d22ac1fd14a11b&id2=a0dea231a39798b15cf60ff4&id3="
+          }
+        ],
+        "chargeStatus": 1,
+        "dunnLevel": "Serie de cobranca passo 1",
+        "equipments": [
+          {
+            "smartcard": "001125511608",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A012543369391B"
+          },
+          {
+            "smartcard": "001143665626",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A012079612112F"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "1537513274",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 992443250,
+        "dddMobilePhone": 69
+      },
+      "customerId": "3a0d33585c3d2389960819a8badebfd2",
+      "status": 1,
+      "productName": "PAY-TV + FIBRA 600 MB - P",
+      "name": "LUIS",
+      "secondName": "FABIANO MALTA OLIVEIRA",
+      "dna": "01000000000100000000000000000000000000000000000000000000000000000000000000000000000000100001000111110000000000000000000000000000011110000100000000000011111111111010111111111000000000000000000000000000000000111111111111111000000011111010111111110100000000000001101111111111111001101110001110010111111111101111111111111111111111111111110011111111111110011111111111001111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Banda Larga",
+      "addressInstallation": {
+        "linePublic": "Rua Amelia Farias",
+        "line1": "Rua Amelia Farias, 3773 - Tancredo Neves",
+        "line2": null,
+        "number": "3773",
+        "city": "Porto Velho",
+        "state": "RO",
+        "country": "Brasil",
+        "postalCode": "76829548",
+        "referencePoint": null,
+        "addressType": "Rua",
+        "resDdd": 69,
+        "resPhone": 992443250
+      },
+      "addressBilling": {
+        "linePublic": "Rua Amélia Farias",
+        "line1": "Rua Amélia Farias, 3773 - Tancredo Neves",
+        "line2": null,
+        "number": "3773",
+        "city": "Porto Velho",
+        "state": "RO",
+        "country": "Brasil",
+        "postalCode": "76829548",
+        "referencePoint": null,
+        "addressType": "Rua",
+        "resDdd": 69,
+        "resPhone": 992846652
+      },
+      "activation": "2024-06-17T00:00:00.000Z",
+      "email": "luisfabianomaltao@gmail.com",
+      "parentAccount": "1537513275",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [
+        {
+          "id": "1536703579",
+          "organizationType": 0,
+          "phones": {
+            "mobilePhone": 992846652,
+            "dddMobilePhone": 69
+          },
+          "customerId": "3a0d33585c3d2389960819a8badebfd2",
+          "status": 1,
+          "productName": "TOP HD II - P",
+          "name": "LUIS",
+          "secondName": "FABIANO MALTA OLIVEIRA",
+          "dna": "01000000000100000000000000000000100000000000000000000000000000000000010000000000000000100011000111110000000000000000000000010000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111110001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+          "type": "Pós-Pago Antecipado",
+          "addressInstallation": {
+            "linePublic": "Rua Amélia Farias",
+            "line1": "Rua Amélia Farias, 3773 - Tancredo Neves",
+            "line2": null,
+            "number": "3773",
+            "city": "Porto Velho",
+            "state": "RO",
+            "country": "Brasil",
+            "postalCode": "76829548",
+            "referencePoint": null,
+            "addressType": "Rua",
+            "resDdd": 69,
+            "resPhone": 992846652
+          },
+          "addressBilling": {
+            "linePublic": "Rua Amélia Farias",
+            "line1": "Rua Amélia Farias, 3773 - Tancredo Neves",
+            "line2": null,
+            "number": "3773",
+            "city": "Porto Velho",
+            "state": "RO",
+            "country": "Brasil",
+            "postalCode": "76829548",
+            "referencePoint": null,
+            "addressType": "Rua",
+            "resDdd": 69,
+            "resPhone": 992846652
+          },
+          "activation": "2024-02-07T00:00:00.000Z",
+          "email": "luisfabianomaltao@gmail.com",
+          "parentAccount": "1536703578",
+          "productStatus": "A",
+          "isPrimary": false,
+          "childrenSignatures": [],
+          "chargeStatus": 1,
+          "dunnLevel": "Serie de cobranca passo 1",
+          "equipments": [
+            {
+              "smartcard": "001125511608",
+              "isRecordable": false,
+              "technology": "HD",
+              "subcategory": "PayTV",
+              "serialCode": "SH01",
+              "serialNumber": "670A012543369391B"
+            },
+            {
+              "smartcard": "001143665626",
+              "isRecordable": false,
+              "technology": "HD",
+              "subcategory": "PayTV",
+              "serialCode": "SH01",
+              "serialNumber": "CE0A012079612112F"
+            }
+          ]
+        },
+        {
+          "id": "1537513276",
+          "organizationType": 0,
+          "phones": {
+            "mobilePhone": 992443250,
+            "dddMobilePhone": 69
+          },
+          "customerId": "3a0d33585c3d2389960819a8badebfd2",
+          "status": 2,
+          "productName": "SKY BANDA LARGA FIBRA 200 MB PROMOCIONAL - P",
+          "name": "LUIS",
+          "secondName": "FABIANO MALTA OLIVEIRA",
+          "dna": "00000100000100000000000000000000000000000000000000000000000000000000000000000000000000100001000111110000000000000000000000000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110100000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+          "type": "Banda Larga",
+          "addressInstallation": {
+            "linePublic": "Rua Amélia Farias",
+            "line1": "Rua Amélia Farias, 3773 - Tancredo Neves",
+            "line2": null,
+            "number": "3773",
+            "city": "Porto Velho",
+            "state": "RO",
+            "country": "Brasil",
+            "postalCode": "76829548",
+            "referencePoint": null,
+            "addressType": "Rua",
+            "resDdd": 69,
+            "resPhone": 992846652
+          },
+          "addressBilling": {
+            "linePublic": "Rua Amélia Farias",
+            "line1": "Rua Amélia Farias, 3773 - Tancredo Neves",
+            "line2": null,
+            "number": "3773",
+            "city": "Porto Velho",
+            "state": "RO",
+            "country": "Brasil",
+            "postalCode": "76829548",
+            "referencePoint": null,
+            "addressType": "Rua",
+            "resDdd": 69,
+            "resPhone": 992846652
+          },
+          "activation": "2024-06-17T00:00:00.000Z",
+          "email": "luisfabianomaltao@gmail.com",
+          "parentAccount": "1537513277",
+          "productStatus": "C",
+          "isPrimary": false,
+          "childrenSignatures": [],
+          "chargeStatus": 1,
+          "dunnLevel": "Serie de cobranca passo 1",
+          "permissions": {
+            "modalWinbackGatinho": true,
+            "modalWinbackCobranca": false,
+            "chatWinbackReativacao": false,
+            "chatWinbackWebview": false,
+            "chatWinbackCobranca": false,
+            "chatWinbackTelevendas": true,
+            "featureVerTelaCompras": true,
+            "featureSkyPlay": true,
+            "featureGuia": true,
+            "featureFatura": true,
+            "featureComprovantes": true,
+            "featureMeusDados": true,
+            "featureMinhasVisitas": true,
+            "featureAtendimento": true,
+            "featureAtendimentoChatReativacao": true,
+            "featureAssistenteVirtual": true,
+            "featureQuiz": true,
+            "featureControleRemoto": true,
+            "featureRealizarCompra": false,
+            "featureEnvioSinal": false,
+            "featureTurbinarPacote": false,
+            "additionalData": {
+              "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=ab3b6f1edbef1b673d5e40086a14208950917b53c64dc902fa280eaf389df1fe5713b4e6217d6c6d2fba1594d6816b298bd8c4271475f0f68d0141cac1f44292259fdffe0734c288808179db73e54d0c545c08cec9811938c6e2e0a7e33e943453a84c67701460fa59ced719459fa54473b4762ab525b8e284d3c16e404451e05c5f1aded912b25613022c4757f027b31c5bcae1d659530720fca88128259fd7e4cdcf9513a469002f78c239a3ed4def8adcdfc7770e38c4b47e0f0c71e0d9b51e8cb431cd250ee20f4a9e436ad6064495677c56c23c5e6945c87188f55197fc47f7ab2530c546b1192e5c26902e5423c7e5c525b92ac7188673&id1=14d6486a277f6be67e8d88150111663c32115795237aec735cb229507c74388f6cee7422a7ab64c4972698cc0e7a3a386f6fe96d01493fe18f28dd67221297b2723c55391058c4141c02e206b3a8cbd07673c9d19e0d3b7c422faddc684767dd610b661510caaf603e9d261a618f83089e975306ad059fbc5dea54b8315e48cd9e6315ff70d5b09aebf521d39823e42847753aeb55e05bdbf57791d30e15053f550e9aa2fcb4b15ece1caec7d7f55c26da9339b89317698d01c084b3c15428c687a6fdf9cd5b5ddf307c219c50ceaa7cb30c2874d9806b4976df7805bb787db21d5d0698e8f52bc5ec09f20952d29b835b9e29d22ac1fd14a11b&id2=a0dea231a39798b15cf60ff4&id3=",
+              "chatParams": {
+                "subject": "Cancelamento",
+                "dateNowFormatted": "2026-09-01 22:32:29",
+                "chatExpirationDate": 1788313049446
+              }
+            }
+          },
+          "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=ab3b6f1edbef1b673d5e40086a14208950917b53c64dc902fa280eaf389df1fe5713b4e6217d6c6d2fba1594d6816b298bd8c4271475f0f68d0141cac1f44292259fdffe0734c288808179db73e54d0c545c08cec9811938c6e2e0a7e33e943453a84c67701460fa59ced719459fa54473b4762ab525b8e284d3c16e404451e05c5f1aded912b25613022c4757f027b31c5bcae1d659530720fca88128259fd7e4cdcf9513a469002f78c239a3ed4def8adcdfc7770e38c4b47e0f0c71e0d9b51e8cb431cd250ee20f4a9e436ad6064495677c56c23c5e6945c87188f55197fc47f7ab2530c546b1192e5c26902e5423c7e5c525b92ac7188673&id1=14d6486a277f6be67e8d88150111663c32115795237aec735cb229507c74388f6cee7422a7ab64c4972698cc0e7a3a386f6fe96d01493fe18f28dd67221297b2723c55391058c4141c02e206b3a8cbd07673c9d19e0d3b7c422faddc684767dd610b661510caaf603e9d261a618f83089e975306ad059fbc5dea54b8315e48cd9e6315ff70d5b09aebf521d39823e42847753aeb55e05bdbf57791d30e15053f550e9aa2fcb4b15ece1caec7d7f55c26da9339b89317698d01c084b3c15428c687a6fdf9cd5b5ddf307c219c50ceaa7cb30c2874d9806b4976df7805bb787db21d5d0698e8f52bc5ec09f20952d29b835b9e29d22ac1fd14a11b&id2=a0dea231a39798b15cf60ff4&id3="
+        }
+      ],
+      "chargeStatus": 1,
+      "dunnLevel": "Serie de cobranca passo 1",
+      "equipments": [
+        {
+          "smartcard": "001125511608",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "670A012543369391B"
+        },
+        {
+          "smartcard": "001143665626",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A012079612112F"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "1537513274": {
+      "included": [],
+      "additionals": []
+    }
+  }
+}

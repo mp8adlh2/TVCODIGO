@@ -1,0 +1,393 @@
+{
+  "email": "allamilstein@gmail.com",
+  "password": "Alla1935",
+  "access_token": "f946d4ac-60e8-4b33-92f9-52b580278f8a",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiN2NjZjM2MjAtNmRjOC00NDk5LWE1MWQtZTBlOGI0NGUwMWZiIiwiYXRfaGFzaCI6ImNNd3ZfRnNGN3FST2xiYjBrcEtXL0EiLCJkZXZpY2VJZCI6IjhhMGM4Njc5NWIzZDQ5N2Y4MWZkYmExZGE5NjZhNjU2MjRjODNlNmUiLCJhdWRpdFRyYWNraW5nSWQiOiJjZjAwLTczZmItNDQ4ZC04OWNhLTQwMWIiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODY1NjIyNjk4MSwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiI4YmNiNzk2ZC00OWMwLTQxY2UtODJjMS04YzY5MTQ1NGY1MTQiLCJzaWduYXR1cmVzIjpbIjcxMTY5ODQ2Il0sImN1c3RvbWVySWQiOiJkODAyODk0YmM3MTljYmM3OWM4ZjJlYTlkYjMwMDM3MiIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjcxMTY5ODQ2IiwiZ2l2ZW5fbmFtZSI6IkFMTEEiLCJ1c2VybmFtZSI6ImFsbGFtaWxzdGVpbkBnbWFpbC5jb20iLCJtYWlsIjoiYWxsYW1pbHN0ZWluQGdtYWlsLmNvbSIsInJlZGVtcHRpb25MaW1pdCI6bnVsbCwiaWF0IjoxNzg4NjU2MjI2LCJleHAiOjE3ODg3NDI2MjYsImlzcyI6InNtLXNreS52cmlvc2VydmljZXMuY29tIn0.WFiTcBW-L3o1OTn3FGgY5GaegoeOk3m05IitkkKhmBlBGq3cUyi3yfu52Oy61U3WDZ-ymOcu1rvhBeNBDKxkcLhwq4bUENibmwQrGxeLsATTyPSFa7vGLuWiaEtMMSYHlmJh-fygLLltKiDbiP19MpNsumhi_HXezXM7frzcWTCMUJM32Jw5ro2lsXe28liiF6LF1CRbPsD35ExUYCvMIrgCBh-TSC8YUZos2CYEmO1ThyqYtULvW7FoVoGKKAlM3eo_9zgCjWOCF34giA-60rzPb-EapirtVRXcsodBatRO-HuMS-tku2_rD-JEmcTWvtjdAC02kfqfEAOztPqy6Q",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "f946d4ac-60e8-4b33-92f9-52b580278f8a",
+    "externalId": "9780e02b-5c5e-5a4b-b3e3-05d6cbb8251b",
+    "username": "d802894bc719cbc79c8f2ea9db300372",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "71169846",
+    "protocol": "2026-150265511467",
+    "customer": {
+      "email": "daniel.dmg1966@gmail.com",
+      "billingProfileCode": "1-8LV1-23861",
+      "name": "ALLA",
+      "secondName": "MILSTEIN GONCALVES",
+      "birthday": "1935-09-09T00:00:00.000Z",
+      "ddd": 16,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5516981577951",
+      "id": "d802894bc719cbc79c8f2ea9db300372",
+      "cpf": "03873986868"
+    },
+    "signatures": [
+      {
+        "id": "71169846",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 981577951,
+          "dddMobilePhone": 16
+        },
+        "customerId": "d802894bc719cbc79c8f2ea9db300372",
+        "status": 1,
+        "productName": "COMBO ADVANCED II CINEMA + MUNDO HD 2019/2021 - P",
+        "name": "ALLA",
+        "secondName": "MILSTEIN GONCALVES",
+        "dna": "01000000000100010000001000000000100000000000000001000000001000000000010000000000000000000111000111111000000001000000000100000000011110001000100000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111010011111101111111111111111111111111110011111111111110111111111101011111111111111111111111100111011100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Manoel De Gois",
+          "line1": "Rua Manoel De Gois, 294 - Jardim Guedala",
+          "line2": ".",
+          "number": "294",
+          "city": "Sao Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "05604000",
+          "referencePoint": "Fim Da Avenida Cidade Jardim, Joquei Club",
+          "addressType": "Rua",
+          "resDdd": 11,
+          "resPhone": 30340033
+        },
+        "addressBilling": {
+          "linePublic": "Rua Manuel De Gois",
+          "line1": "Rua Manuel De Gois, 294 - Jardim Guedala",
+          "line2": ".",
+          "number": "294",
+          "city": "Sao Paulo",
+          "state": "SP",
+          "country": null,
+          "postalCode": "05604000",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 16,
+          "resPhone": 981577951
+        },
+        "activation": "2011-05-21T00:00:00.000Z",
+        "email": "daniel.dmg1966@gmail.com",
+        "parentAccount": "071169846",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000692024706",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH25",
+            "serialNumber": "670AA13527849844D"
+          },
+          {
+            "smartcard": "000602547606",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH25",
+            "serialNumber": "CE0AA135297253599"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "71169846",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 981577951,
+        "dddMobilePhone": 16
+      },
+      "customerId": "d802894bc719cbc79c8f2ea9db300372",
+      "status": 1,
+      "productName": "COMBO ADVANCED II CINEMA + MUNDO HD 2019/2021 - P",
+      "name": "ALLA",
+      "secondName": "MILSTEIN GONCALVES",
+      "dna": "01000000000100010000001000000000100000000000000001000000001000000000010000000000000000000111000111111000000001000000000100000000011110001000100000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111010011111101111111111111111111111111110011111111111110111111111101011111111111111111111111100111011100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Manoel De Gois",
+        "line1": "Rua Manoel De Gois, 294 - Jardim Guedala",
+        "line2": ".",
+        "number": "294",
+        "city": "Sao Paulo",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "05604000",
+        "referencePoint": "Fim Da Avenida Cidade Jardim, Joquei Club",
+        "addressType": "Rua",
+        "resDdd": 11,
+        "resPhone": 30340033
+      },
+      "addressBilling": {
+        "linePublic": "Rua Manuel De Gois",
+        "line1": "Rua Manuel De Gois, 294 - Jardim Guedala",
+        "line2": ".",
+        "number": "294",
+        "city": "Sao Paulo",
+        "state": "SP",
+        "country": null,
+        "postalCode": "05604000",
+        "referencePoint": null,
+        "addressType": "Rua",
+        "resDdd": 16,
+        "resPhone": 981577951
+      },
+      "activation": "2011-05-21T00:00:00.000Z",
+      "email": "daniel.dmg1966@gmail.com",
+      "parentAccount": "071169846",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000692024706",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH25",
+          "serialNumber": "670AA13527849844D"
+        },
+        {
+          "smartcard": "000602547606",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH25",
+          "serialNumber": "CE0AA135297253599"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "71169846": {
+      "included": [
+        {
+          "name": "TAXA ASSISTENCIA PREMIUM - P",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "30-08-2021",
+          "end_date": null,
+          "icon": "🛡️"
+        },
+        {
+          "name": "Sky Pacote Mundo",
+          "category": "A La Carte",
+          "subcategory": "Internacional",
+          "start_date": "30-08-2021",
+          "end_date": null,
+          "icon": "🌍"
+        },
+        {
+          "name": "Sky HBO HD - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "30-08-2021",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "TELECINE HD CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "29-06-2022",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "30-08-2021",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "Sky Sex Prive - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "31-08-2021",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "Sky Sex Prive HD - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "30-08-2021",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "11-02-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "02-10-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO COM 3M DESC 50% - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "29-06-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "29-06-2025",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": null,
+            "name": "Sky Sex Prive - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "null",
+            "isPartOfMainPackage": false,
+            "activationDate": "31-08-2021",
+            "startDate": "31-08-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TAXA ASSISTENCIA PREMIUM - P",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "30-08-2021",
+            "startDate": "30-08-2021",
+            "endDate": null
+          },
+          {
+            "id": "1-2T0LGU",
+            "name": "Sky Pacote Mundo",
+            "category": "A La Carte",
+            "subcategory": "Internacional",
+            "logo": "https://skycms.s3.amazonaws.com/images/37907079/Europa.png",
+            "price": "39.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "30-08-2021",
+            "startDate": "30-08-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive HD - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "30-08-2021",
+            "startDate": "30-08-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky HBO HD - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "30-08-2021",
+            "startDate": "30-08-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TELECINE HD CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "null",
+            "isPartOfMainPackage": true,
+            "activationDate": "29-06-2022",
+            "startDate": "29-06-2022",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "30-08-2021",
+            "startDate": "30-08-2021",
+            "endDate": null
+          },
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "11-02-2026",
+            "startDate": "11-02-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-219IIMH",
+            "name": "DISNEY PLUS PREMIUM",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Disney%403x.png",
+            "price": "46.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "02-10-2025",
+            "startDate": "02-10-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO COM 3M DESC 50% - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "29-06-2025",
+            "startDate": "29-06-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "29-06-2025",
+            "startDate": "29-06-2025",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

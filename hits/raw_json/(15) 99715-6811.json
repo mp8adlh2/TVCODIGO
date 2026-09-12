@@ -1,0 +1,294 @@
+{
+  "email": "(15) 99715-6811",
+  "password": "P@i241043",
+  "access_token": "038d8989-69f4-4aba-bd76-eb804917ce53",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiODVjMDQ2NTQtODc2OS00MThkLTkzMDUtMDViMmYyMzc4OTI3IiwiYXRfaGFzaCI6IkVDYTZuOE5KWThIbkhlQy1sX0ZPQmciLCJkZXZpY2VJZCI6Ijg1MDQ0NzFlMmJiN2YyZDQ0YzI0NGI0YTYxNDcwMmI1ZmVmOWVkYmIiLCJhdWRpdFRyYWNraW5nSWQiOiIwMGUyLTU2YmItNDI2YS1iYTU3LTY1MDAiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODgxNTg5MjAyMSwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJnZVE1aV9xaFRXaU52LTNZeFNScXNnIiwic2lnbmF0dXJlcyI6WyIxNTM4Njg1NTI3Il0sImN1c3RvbWVySWQiOiJlOGMzZjhmZmZjMjMxNjBmYWQxMGMzZDI0ZWFhMzMxNiIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjE1Mzg2ODU1MjciLCJnaXZlbl9uYW1lIjoiVklUT1IiLCJmYW1pbHlfbmFtZSI6InNreSIsInVzZXJuYW1lIjoiMTU5OTcxNTY4MTEiLCJ0ZWxlcGhvbmVOdW1iZXIiOiIxNTk5NzE1NjgxMSIsInNpZCI6Ijg1MDQ0NzFlMmJiN2YyZDQ0YzI0NGI0YTYxNDcwMmI1ZmVmOWVkYmIiLCJzdWJuYW1lIjoiZ2VRNWlfcWhUV2lOdi0zWXhTUnFzZyIsInJlZGVtcHRpb25MaW1pdCI6bnVsbCwiaWF0IjoxNzg4ODE1ODkyLCJleHAiOjE3ODg5MDIyOTIsImlzcyI6InNtLXNreS52cmlvc2VydmljZXMuY29tIn0.sogyNBmy4OKK8QuFeDT_BD1HN9sB7E_9XHlnIl8P51tCDWsZdpkyxwxYbYO5RjI9KW4qbabXB3yFSCPrZ9rdKYD0_GAqX8juY3ihDn9ZlcKAfwccrFuzSg5xME_iOK_HyKq8SPUPLvjbWok_lZVbUGnb-D-b1__at2JZU79zS32NpmTOAvFCZzlCaoT62PLnxhzhAh3oWNbP90Qf7TSww0IO4kIWb9rDGDrKIToxkblfw2sJhBnENeLyE3oVNqp32aRcvGtM4ZYu6tfJJ7rvaZz6GqnpPUn9fRg9Mg1fUoeh2muiVrzJN7h8LEKfU0bOf7t0MrEMyqUcUAd6wIvAXw",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "038d8989-69f4-4aba-bd76-eb804917ce53",
+    "externalId": "3c68fbbc-91d0-5b66-ba29-cd50b460c4d1",
+    "username": "e8c3f8fffc23160fad10c3d24eaa3316",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "1538685527",
+    "protocol": "2026-150293329388",
+    "customer": {
+      "email": "sawyervslc@gmail.com",
+      "billingProfileCode": "1-1RVIJWNW",
+      "name": "VITOR",
+      "secondName": "SOUZA LEAO DA COSTA",
+      "birthday": "1989-09-26T00:00:00.000Z",
+      "ddd": 15,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5515997156811",
+      "id": "e8c3f8fffc23160fad10c3d24eaa3316",
+      "cpf": "13949097724"
+    },
+    "signatures": [
+      {
+        "id": "1538685527",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 997156811,
+          "dddMobilePhone": 15,
+          "dddComPhone": 15,
+          "comPhone": 991591276
+        },
+        "customerId": "e8c3f8fffc23160fad10c3d24eaa3316",
+        "status": 1,
+        "productName": "TOP HD III PLUS 2024 - P",
+        "name": "VITOR",
+        "secondName": "SOUZA LEAO DA COSTA",
+        "dna": "01000000001000000000000000000000100000000000000000000000000000000000001000000000000000100011000111110000000000000000000010000000011110000100000000000011111111111111111111111000000000000000000001000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001110001111110111101101111111111111111111111111110011111111111110111111111110001111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Alameda Iguape 77 Bloco 1 Condominio Morada Morales",
+          "line1": "Alameda Iguape 77 Bloco 1 Condominio Morada Morales, 193 - Vila Nova Sorocaba",
+          "line2": "Bloco 1 - Condominio Morada Morales",
+          "number": "193",
+          "city": "Sorocaba",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "18070819",
+          "referencePoint": "Próximo Ao Supermercado Raiz",
+          "addressType": "Alameda",
+          "resDdd": 15,
+          "resPhone": 997156811
+        },
+        "addressBilling": {
+          "linePublic": "Alameda Iguapé",
+          "line1": "Alameda Iguapé, 193 - Vila Nova Sorocaba",
+          "line2": "Bloco 1 - Condominio Morada Morales",
+          "number": "193",
+          "city": "Sorocaba",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "18070819",
+          "referencePoint": "Próximo Ao Supermercado Raiz",
+          "addressType": "Alameda"
+        },
+        "activation": "2024-12-24T00:00:00.000Z",
+        "email": "sawyervslc@gmail.com",
+        "parentAccount": "1538685526",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001209244944",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A0125508109997"
+          },
+          {
+            "smartcard": "000808937981",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "010A2634122528913"
+          },
+          {
+            "smartcard": "001209240900",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A0125508109827"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "1538685527",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 997156811,
+        "dddMobilePhone": 15,
+        "dddComPhone": 15,
+        "comPhone": 991591276
+      },
+      "customerId": "e8c3f8fffc23160fad10c3d24eaa3316",
+      "status": 1,
+      "productName": "TOP HD III PLUS 2024 - P",
+      "name": "VITOR",
+      "secondName": "SOUZA LEAO DA COSTA",
+      "dna": "01000000001000000000000000000000100000000000000000000000000000000000001000000000000000100011000111110000000000000000000010000000011110000100000000000011111111111111111111111000000000000000000001000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001110001111110111101101111111111111111111111111110011111111111110111111111110001111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Alameda Iguape 77 Bloco 1 Condominio Morada Morales",
+        "line1": "Alameda Iguape 77 Bloco 1 Condominio Morada Morales, 193 - Vila Nova Sorocaba",
+        "line2": "Bloco 1 - Condominio Morada Morales",
+        "number": "193",
+        "city": "Sorocaba",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "18070819",
+        "referencePoint": "Próximo Ao Supermercado Raiz",
+        "addressType": "Alameda",
+        "resDdd": 15,
+        "resPhone": 997156811
+      },
+      "addressBilling": {
+        "linePublic": "Alameda Iguapé",
+        "line1": "Alameda Iguapé, 193 - Vila Nova Sorocaba",
+        "line2": "Bloco 1 - Condominio Morada Morales",
+        "number": "193",
+        "city": "Sorocaba",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "18070819",
+        "referencePoint": "Próximo Ao Supermercado Raiz",
+        "addressType": "Alameda"
+      },
+      "activation": "2024-12-24T00:00:00.000Z",
+      "email": "sawyervslc@gmail.com",
+      "parentAccount": "1538685526",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "001209244944",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "670A0125508109997"
+        },
+        {
+          "smartcard": "000808937981",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "010A2634122528913"
+        },
+        {
+          "smartcard": "001209240900",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "670A0125508109827"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "1538685527": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "Premiere com Fidelidade",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "14-01-2026",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "HBO COM 3M DESC 50% - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "16-01-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "16-01-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "TELECINE HD",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "24-12-2024",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "ASSINATURAS DIGITAIS V",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "24-12-2024",
+          "end_date": null,
+          "icon": "📺"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-1XBHQMD",
+            "name": "Premiere com Fidelidade",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Premiere%403x.png",
+            "price": "49.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "14-01-2026",
+            "startDate": "14-01-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO COM 3M DESC 50% - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "16-01-2025",
+            "startDate": "16-01-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "16-01-2025",
+            "startDate": "16-01-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-20XEJQF",
+            "name": "TELECINE HD",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/TLCine%403x.png",
+            "price": "29.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "24-12-2024",
+            "startDate": "24-12-2024",
+            "endDate": null
+          },
+          {
+            "id": "1-218ZAE1",
+            "name": "ASSINATURAS DIGITAIS V",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": null,
+            "price": "22.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "24-12-2024",
+            "startDate": "24-12-2024",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

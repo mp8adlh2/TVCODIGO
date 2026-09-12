@@ -1,57 +1,26 @@
-==============================================================
-  🔐 GERENCIADOR DE SENHAS FORTES & NÍVEIS DE ACESSO
-==============================================================
+================================================================================
+          🔐 CENTRAL DE SENHAS MASTER & NÍVEIS DE ACESSO (2026)
+================================================================================
 
-Cada senha abaixo libera tópicos específicos. Os tópicos que
-a senha NÃO tiver permissão ficarão com um CADEADO 🔒 no topo
-e mostrarão o aviso: "VOCÊ NÃO TEM ACESSO A ESSE CONTEÚDO!".
+Todas as senhas abaixo possuem proteção avançada contra força bruta e controlam
+a liberação dos serviços na tela do ativador em tempo real.
 
---------------------------------------------------------------
-🔑 SENHAS FORTES E GRANDES (Copie e cole):
---------------------------------------------------------------
+================================================================================
+ 1. 🔑 MASTERON (ACESSO TOTAL 4K)
+================================================================================
+ Libera: 🔴 Netflix | 🟣 HBO Max | 🟠 Crunchyroll | 🔵 Sky+
+ Detalhes: Senha Mestre - Libera 100% dos 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+
+ Senha:
+ ULTRA#ACCESS@8905$HDR*75!2026
 
-1. 🌟 ACESSO TOTAL (TUDO LIBERADO):
-   🔴 Netflix + 🟣 HBO Max + 🟠 Crunchyroll
-   Senha:
-   ATIVADOR#MASTER@2026$STREAM*VIP!
-   -ou-:
-   VIP#ALL@STREAMING#MASTER*SECURE!2026
+================================================================================
+ 2. 🔑 CLIENTE VIP (DUO)
+================================================================================
+ Libera: 🔴 Netflix | 🟣 HBO Max
+ Detalhes: Libera apenas Netflix e HBO Max (Crunchyroll e Sky+ ficam com cadeado 🔒)
+ Senha:
+ SHIELD#TOKEN@7971$PREMIUM*66!2026
 
-
-2. 🎬 NETFLIX + HBO MAX (CRUNCHYROLL COM CADEADO 🔒):
-   Libera: 🔴 Netflix e 🟣 HBO Max
-   Bloqueia: 🔒 Crunchyroll
-   Senha:
-   STREAM#DUO@4829$VIP*MATRIX!2026
-   -ou-:
-   NETFLIX#HBO#PASS@9921$STREAM*LOCK!2026
-
-
-3. 🔴 APENAS NETFLIX (DEMAIS COM CADEADO 🔒):
-   Libera: 🔴 Netflix
-   Bloqueia: 🔒 HBO Max e 🔒 Crunchyroll
-   Senha:
-   NETFLIX#ONLY@7712$RED*CYBER!2026
-
-
-4. 🟣 APENAS HBO MAX (DEMAIS COM CADEADO 🔒):
-   Libera: 🟣 HBO Max
-   Bloqueia: 🔒 Netflix e 🔒 Crunchyroll
-   Senha:
-   HBOMAX#ONLY@5534$PURPLE*CYBER!2026
-
-
-5. 🟠 APENAS CRUNCHYROLL (DEMAIS COM CADEADO 🔒):
-   Libera: 🟠 Crunchyroll
-   Bloqueia: 🔒 Netflix e 🔒 HBO Max
-   Senha:
-   CRUNCHY#ONLY@3391$ORANGE*CYBER!2026
-
-
---------------------------------------------------------------
-⚙️ COMO EDITAR OU CRIAR NOVAS SENHAS:
---------------------------------------------------------------
-Abra o arquivo "config_senhas.json" no Bloco de Notas para
-adicionar quantas senhas grandes quiser. As mudanças entram
-na hora no sistema!
-==============================================================
+================================================================================
+ 💡 DICA: Você pode criar ou excluir senhas pelo Painel Admin com 1 clique!
+================================================================================

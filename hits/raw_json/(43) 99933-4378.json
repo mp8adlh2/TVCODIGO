@@ -1,0 +1,325 @@
+{
+  "email": "(43) 99933-4378",
+  "password": "nIKITA94",
+  "access_token": "7e0b2366-aea4-487b-b423-a61431300bb2",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiZGRjNGQwMjktOTk4My00OTAzLTg1ZmEtY2E2N2I3NTZhYjdkIiwiYXRfaGFzaCI6IlpELXdyRmxxbWxNTm5qNGM2V1NSQmciLCJkZXZpY2VJZCI6ImEwMDY0Y2FhZWMyZGIzZDAyMDQ1YzFiOGY4MzQ0YjgyYzM0ZDE3NTEiLCJhdWRpdFRyYWNraW5nSWQiOiIyNmU2LWE2NzgtNDRkMi05OWY4LThjODciLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODgxNjA0MTc5NCwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiI2MDViNDU2OC0yYzFlLTQ4NjYtYWQyZC1iNjQ3MmJkOTY2YjgiLCJzaWduYXR1cmVzIjpbIjI3NDU3MzUzIl0sImN1c3RvbWVySWQiOiJlOWYwZWZjMDZjNDFkMTVkN2M3NzQ4ZmZkZWYyNjI1MiIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjI3NDU3MzUzIiwiZ2l2ZW5fbmFtZSI6IkFEQVVUTyIsInVzZXJuYW1lIjoiNDM5OTkzMzQzNzgiLCJ0ZWxlcGhvbmVOdW1iZXIiOiI0Mzk5OTMzNDM3OCIsInNpZCI6ImEwMDY0Y2FhZWMyZGIzZDAyMDQ1YzFiOGY4MzQ0YjgyYzM0ZDE3NTEiLCJzdWJuYW1lIjoiNjA1YjQ1NjgtMmMxZS00ODY2LWFkMmQtYjY0NzJiZDk2NmI4IiwicmVkZW1wdGlvbkxpbWl0IjpudWxsLCJpYXQiOjE3ODg4MTYwNDEsImV4cCI6MTc4ODkwMjQ0MSwiaXNzIjoic20tc2t5LnZyaW9zZXJ2aWNlcy5jb20ifQ.ATy0FivIM7hwmhhuDNOG86ztg2JOPkCW_D73slUHy3xHCKHcLbU9-ey7KJUDF1SN5M4aWZtfeopS8hXRpJbpV_SvlVlMYsTfeafBGm-bPeQgwGkNzuiybpeMfCr8Z0QPwkUr2HNOkQppFqOAKa3bF3BLtw6Sq3mp4M4Uz4pQakYHVFBwUVx72PSyvaYU9Fa_4kyUe54n8NCKqJXmO3rhRpv7yPJUQ94n6eQ0qKx9FVoM-dPT4gtgdvU17cKSslYeoMlLJMr6d6eyWajoueZZe99eAzBCKsQMyLYxmPcnc58JKOkwsIcwt9ojBi6dRQ2z7LZghNZxLoB-RVd8-zVsfQ",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "7e0b2366-aea4-487b-b423-a61431300bb2",
+    "externalId": "5a03f02c-0233-51ba-bf5e-7cc681959d1b",
+    "username": "e9f0efc06c41d15d7c7748ffdef26252",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "27457353",
+    "protocol": "2026-150293340979",
+    "customer": {
+      "email": "adautomatheus@hotmail.com",
+      "billingProfileCode": "1-E9RN-14896",
+      "name": "ADAUTO",
+      "secondName": "FRANCISCO MATHEUS",
+      "birthday": "1947-03-30T00:00:00.000Z",
+      "ddd": 43,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5543999334378",
+      "id": "e9f0efc06c41d15d7c7748ffdef26252",
+      "cpf": "07467621949"
+    },
+    "signatures": [
+      {
+        "id": "27457353",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 999334378,
+          "dddMobilePhone": 43
+        },
+        "customerId": "e9f0efc06c41d15d7c7748ffdef26252",
+        "status": 1,
+        "productName": "COMBO ADVANCED III CINEMA + MUNDO HD 2019/2021 - P",
+        "name": "ADAUTO",
+        "secondName": "FRANCISCO MATHEUS",
+        "dna": "01000000000100100000000000100000100000000000000010000000000100000000000100000000000000001011000111110000000000100000000001000000011110100000000000010111111111111100011111111000000000000000000000100000000010111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111110111111101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100100111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Beijamim Caetano Zambao",
+          "line1": "Rua Beijamim Caetano Zambao, 296 - Centro",
+          "line2": "Cx Pst 111",
+          "number": "296",
+          "city": "Bandeirantes",
+          "state": "PR",
+          "country": "Brasil",
+          "postalCode": "86360000",
+          "referencePoint": "Prox A Escola.",
+          "addressType": "Rua",
+          "resDdd": 43,
+          "resPhone": 35422032
+        },
+        "addressBilling": {
+          "linePublic": "Rua Beijamim Caetano Zambao",
+          "line1": "Rua Beijamim Caetano Zambao, 296 - Centro",
+          "line2": "Cx Pst 111",
+          "number": "296",
+          "city": "Bandeirantes",
+          "state": "PR",
+          "country": "Brasil",
+          "postalCode": "86360000",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "1998-04-30T00:00:00.000Z",
+        "email": "adautomatheus@hotmail.com",
+        "parentAccount": "027457353",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000905804365",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "010A263412746110F"
+          },
+          {
+            "smartcard": "001126967965",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A012543976502E"
+          },
+          {
+            "smartcard": "000582653788",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "670A2634245021117"
+          },
+          {
+            "smartcard": "000904256641",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "010A263412641686A"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "27457353",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 999334378,
+        "dddMobilePhone": 43
+      },
+      "customerId": "e9f0efc06c41d15d7c7748ffdef26252",
+      "status": 1,
+      "productName": "COMBO ADVANCED III CINEMA + MUNDO HD 2019/2021 - P",
+      "name": "ADAUTO",
+      "secondName": "FRANCISCO MATHEUS",
+      "dna": "01000000000100100000000000100000100000000000000010000000000100000000000100000000000000001011000111110000000000100000000001000000011110100000000000010111111111111100011111111000000000000000000000100000000010111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111110111111101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100100111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Beijamim Caetano Zambao",
+        "line1": "Rua Beijamim Caetano Zambao, 296 - Centro",
+        "line2": "Cx Pst 111",
+        "number": "296",
+        "city": "Bandeirantes",
+        "state": "PR",
+        "country": "Brasil",
+        "postalCode": "86360000",
+        "referencePoint": "Prox A Escola.",
+        "addressType": "Rua",
+        "resDdd": 43,
+        "resPhone": 35422032
+      },
+      "addressBilling": {
+        "linePublic": "Rua Beijamim Caetano Zambao",
+        "line1": "Rua Beijamim Caetano Zambao, 296 - Centro",
+        "line2": "Cx Pst 111",
+        "number": "296",
+        "city": "Bandeirantes",
+        "state": "PR",
+        "country": "Brasil",
+        "postalCode": "86360000",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "1998-04-30T00:00:00.000Z",
+      "email": "adautomatheus@hotmail.com",
+      "parentAccount": "027457353",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000905804365",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "010A263412746110F"
+        },
+        {
+          "smartcard": "001126967965",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A012543976502E"
+        },
+        {
+          "smartcard": "000582653788",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "670A2634245021117"
+        },
+        {
+          "smartcard": "000904256641",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "010A263412641686A"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "27457353": {
+      "included": [
+        {
+          "name": "TELECINE HD CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "18-05-2022",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky Pacote Mundo",
+          "category": "A La Carte",
+          "subcategory": "Internacional",
+          "start_date": "22-11-2021",
+          "end_date": null,
+          "icon": "🌍"
+        },
+        {
+          "name": "Sky HBO HD - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "22-11-2021",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "TAXA ASSISTENCIA PREMIUM - P",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "22-11-2021",
+          "end_date": null,
+          "icon": "🛡️"
+        },
+        {
+          "name": "Sky HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "22-11-2021",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "Premiere",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "16-03-2022",
+          "end_date": null,
+          "icon": "⚽"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": null,
+            "name": "TELECINE HD CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "null",
+            "isPartOfMainPackage": true,
+            "activationDate": "18-05-2022",
+            "startDate": "18-05-2022",
+            "endDate": null
+          },
+          {
+            "id": "1-1XBHQIX",
+            "name": "Premiere",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Premiere%403x.png",
+            "price": "59.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "16-03-2022",
+            "startDate": "16-03-2022",
+            "endDate": null
+          },
+          {
+            "id": "1-2T0LGU",
+            "name": "Sky Pacote Mundo",
+            "category": "A La Carte",
+            "subcategory": "Internacional",
+            "logo": "https://skycms.s3.amazonaws.com/images/37907079/Europa.png",
+            "price": "39.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "09-11-2019",
+            "startDate": "22-11-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky HBO HD - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "09-11-2019",
+            "startDate": "22-11-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TAXA ASSISTENCIA PREMIUM - P",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "09-11-2019",
+            "startDate": "22-11-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "09-11-2019",
+            "startDate": "22-11-2021",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

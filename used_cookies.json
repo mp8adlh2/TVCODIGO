@@ -3,6 +3,132 @@
     "service": "Crunchyroll",
     "filename": "Novo Documento de Texto.txt",
     "email": "luanrodrigo2000@live.com",
+    "tv_code": "FT68FE",
+    "plan": "Crunchyroll FAN",
+    "status": "Sucesso",
+    "used_at": "12/09/2026 12:34:09"
+  },
+  {
+    "service": "Netflix",
+    "filename": "[BR]_[ketellyn2018k@gmail.com]_-_Premium.txt",
+    "email": "ketellyn2018k@gmail.com",
+    "tv_code": "69167175",
+    "plan": "Premium",
+    "status": "Sucesso",
+    "used_at": "12/09/2026 12:31:29"
+  },
+  {
+    "service": "Netflix",
+    "filename": "[BR]_[brayanmmello@gmail.com]_-_Standard_with_ads.txt",
+    "email": "brayanmmello@gmail.com",
+    "tv_code": "10170669",
+    "plan": "Standard with ads",
+    "status": "Sucesso",
+    "used_at": "12/09/2026 12:29:40"
+  },
+  {
+    "service": "Netflix",
+    "filename": "[BR]_[brayanmmello@gmail.com]_-_Padr_o_com_an_ncios.txt",
+    "email": "brayanmmello@gmail.com",
+    "tv_code": "30524729",
+    "plan": "Standard with ads",
+    "status": "Sucesso",
+    "used_at": "12/09/2026 12:27:53"
+  },
+  {
+    "service": "Netflix",
+    "filename": "[BR] [vitorpqf@gmail.com] - Estándar con anuncios.txt",
+    "email": "vitorpqf@gmail.com",
+    "tv_code": "79608972",
+    "plan": "Padrão com anúncios",
+    "status": "Sucesso",
+    "used_at": "12/09/2026 12:26:14"
+  },
+  {
+    "service": "Netflix",
+    "filename": "[BR] [ketellyn2018k@gmail.com] - Premium.txt",
+    "email": "ketellyn2018k@gmail.com",
+    "tv_code": "76608972",
+    "plan": "Premium",
+    "status": "Sucesso",
+    "used_at": "12/09/2026 12:23:04"
+  },
+  {
+    "service": "Sky",
+    "filename": "skycontas.txt",
+    "email": "jefb1951@gmail.com",
+    "tv_code": "461770",
+    "plan": "TOP HD III PLUS 2024",
+    "status": "Sucesso",
+    "used_at": "12/09/2026 12:14:24"
+  },
+  {
+    "service": "Sky",
+    "filename": "skycontas.txt",
+    "email": "mgambonis@gmail.com",
+    "tv_code": "713132",
+    "plan": "COMBO FULL CINEMA HD 2019/2021",
+    "status": "Sucesso",
+    "used_at": "12/09/2026 12:13:29"
+  },
+  {
+    "service": "Sky",
+    "filename": "skycontas.txt",
+    "email": "carlosparolineto@gmail.com",
+    "tv_code": "213130",
+    "plan": "DUETO ADVANCED II TELECINE HD 2019/2021",
+    "status": "Sucesso",
+    "used_at": "12/09/2026 12:08:17"
+  },
+  {
+    "service": "Sky",
+    "filename": "skycontas.txt",
+    "email": "diego.dromer@hotmail.com",
+    "tv_code": "342920",
+    "plan": "MEGA PLUS HD II 2021",
+    "status": "Sucesso",
+    "used_at": "12/09/2026 12:06:41"
+  },
+  {
+    "service": "Sky",
+    "filename": "skycontas.txt",
+    "email": "evascontim@outlook.com",
+    "tv_code": "576291",
+    "plan": "COMBO PLUS HBO HD 2018/2021",
+    "status": "Sucesso",
+    "used_at": "12/09/2026 11:42:28"
+  },
+  {
+    "service": "Sky",
+    "filename": "skycontas.txt",
+    "email": "escritorio_dico@hotmail.com",
+    "tv_code": "125659",
+    "plan": "SUPER HD II EXCLUSIVO 2025",
+    "status": "Sucesso",
+    "used_at": "12/09/2026 11:36:59"
+  },
+  {
+    "service": "Sky",
+    "filename": "sso_token.txt",
+    "email": "rsgencadernacoes@yahoo.com.br",
+    "tv_code": "292180",
+    "plan": "PAY-TV + FIBRA 400 MB",
+    "status": "Sucesso",
+    "used_at": "12/09/2026 00:01:52"
+  },
+  {
+    "service": "Sky",
+    "filename": "sso_token.txt",
+    "email": "rsgencadernacoes@yahoo.com.br",
+    "tv_code": "126386",
+    "plan": "PAY-TV + FIBRA 400 MB",
+    "status": "Sucesso",
+    "used_at": "11/09/2026 23:50:26"
+  },
+  {
+    "service": "Crunchyroll",
+    "filename": "Novo Documento de Texto.txt",
+    "email": "luanrodrigo2000@live.com",
     "tv_code": "RJ7AB6",
     "plan": "Crunchyroll FAN",
     "status": "Sucesso",

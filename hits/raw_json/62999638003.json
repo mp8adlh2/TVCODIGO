@@ -1,0 +1,629 @@
+{
+  "email": "62999638003",
+  "password": "Wpx@1948",
+  "access_token": "d879caa0-d3ed-4fd0-a4e9-df1791fc3692",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiYmI3MjBiMWEtNmYzYi00YTJiLTlmYTAtNzZhOTc2NjMwMTc2IiwiYXRfaGFzaCI6IkJnNDQ3VHNnV2RoNEdlY3hKaDB3dkEiLCJkZXZpY2VJZCI6ImM5M2EzNzUwMzBkN2NmZWI3NTdmYzdlZTljNTJmOTc2OTEzNjUzMjEiLCJhdWRpdFRyYWNraW5nSWQiOiJmNmFjLWJjMWEtNDQ3Mi04ODNjLTkwMGMiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODc5MzEwMDY4MywidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiIzMTVkNDhlMi0zZWRiLTQ5NDctYjBlYS1jYmEwNTNkYTc1ZjEiLCJzaWduYXR1cmVzIjpbIjI4MTEyMzc4IiwiMTUxNTIwNDEzNyIsIjI4NDYxODQ2IiwiMTUyMzI1NzUyOCJdLCJjdXN0b21lcklkIjoiMTE3ZGViOThmYTllNDMzNTIyNjFjNmJlM2JhZDhmMTciLCJyZWdpc3RyYXRpb25TaWduYXR1cmUiOiIxNTE1MjA0MTM3IiwiZ2l2ZW5fbmFtZSI6IldBTERPIiwidXNlcm5hbWUiOiI2Mjk5OTYzODAwMyIsInRlbGVwaG9uZU51bWJlciI6IjYyOTk5NjM4MDAzIiwic2lkIjoiYzkzYTM3NTAzMGQ3Y2ZlYjc1N2ZjN2VlOWM1MmY5NzY5MTM2NTMyMSIsInN1Ym5hbWUiOiIzMTVkNDhlMi0zZWRiLTQ5NDctYjBlYS1jYmEwNTNkYTc1ZjEiLCJyZWRlbXB0aW9uTGltaXQiOm51bGwsImlhdCI6MTc4ODc5MzEwMCwiZXhwIjoxNzg4ODc5NTAwLCJpc3MiOiJzbS1za3kudnJpb3NlcnZpY2VzLmNvbSJ9.UyFv9_ztA4RP0xA79NuzPG3hAhBYtpc5orMc8ezkXJk4MDam36baSy6Pmmut-k1VPsOe3cEFot9A4U6cSVQrCiBoxu8bTI5Ohstx4cKHL0Tj0ADCdH3nhm_-4w5R7gZC83pdqKg_b731Vsw-5zjUoX3RJ65llnO2b3E6vLCA1Tns7viA0FyHXmNhp5_QTIPE--yovTihqd9bCY6TvX95dv5uc2gk-XPEsG6d5dbcH7bBD35wVGV9HJiaOKFAOBnu9gUFOaSqhAkTp8LU3orYVu-iLnPeIhhNEWV2AsVfgoI7iMZqHNC98E0appRTjU2-1ZfDDJe9fQgflDDQyV9CoA",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "d879caa0-d3ed-4fd0-a4e9-df1791fc3692",
+    "externalId": "1eaa3ffb-66b4-50cb-be80-1a5f339ad72a",
+    "username": "117deb98fa9e43352261c6be3bad8f17",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "1515204137",
+    "protocol": "2026-150287975337",
+    "customer": {
+      "email": "grazielly.vale@grupowph.com.br",
+      "billingProfileCode": "1-T2MVIUQ",
+      "name": "WALDO",
+      "secondName": "PALMERSTON XAVIER",
+      "birthday": "1948-02-22T00:00:00.000Z",
+      "ddd": 62,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5562999799116",
+      "id": "117deb98fa9e43352261c6be3bad8f17",
+      "cpf": "03010236115"
+    },
+    "signatures": [
+      {
+        "id": "28112378",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 982687273,
+          "dddMobilePhone": 62,
+          "dddComPhone": 62,
+          "comPhone": 982680000
+        },
+        "customerId": "117deb98fa9e43352261c6be3bad8f17",
+        "status": 1,
+        "productName": "TOP HD PLUS IV 2022 - P",
+        "name": "WALDO",
+        "secondName": "PALMERSTON XAVIER",
+        "dna": "01000000000100010000001000000000100000000000000010000000001000000000000001000000000000001011000111110000000001000000000100000000011110100000010000010111111111111111011111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001100111111111111001101110001111111111110111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101001111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Das Tulipas",
+          "line1": "Rua Das Tulipas, Sn - Jardins Milao",
+          "line2": "Quadra 06 Lote 07",
+          "number": "SN",
+          "city": "Goiania",
+          "state": "GO",
+          "country": "Brasil",
+          "postalCode": "74885715",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "addressBilling": {
+          "linePublic": "Rua Caoba",
+          "line1": "Rua Caoba, 0 - Res Alphaville Flamboyant",
+          "line2": null,
+          "number": "0",
+          "city": "Goiania",
+          "state": "GO",
+          "country": "Brasil",
+          "postalCode": "74884560",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2005-08-10T00:00:00.000Z",
+        "email": "grazielly.vale@grupowph.com.br",
+        "parentAccount": "028112378",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000769442328",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2035389923960"
+          },
+          {
+            "smartcard": "000583344361",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "670AA63612925095A"
+          },
+          {
+            "smartcard": "001147433807",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A0120813271142"
+          },
+          {
+            "smartcard": "000768628067",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2036183433591"
+          },
+          {
+            "smartcard": "000903664712",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "010A263412564649F"
+          },
+          {
+            "smartcard": "000769385592",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2036193720644"
+          }
+        ]
+      },
+      {
+        "id": "1515204137",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 999799116,
+          "dddMobilePhone": 62,
+          "dddComPhone": 62,
+          "comPhone": 999799116
+        },
+        "customerId": "117deb98fa9e43352261c6be3bad8f17",
+        "status": 2,
+        "productName": "COMBO PLUS PREMIERE HD 2020/2021 - P",
+        "name": "WALDO",
+        "secondName": "PALMERSTON XAVIER",
+        "dna": "10000100000100100000000000000000000000000000000000000000000000000000000000000000000000100011000111110000000000010000000100000000011110000100000000010111111111111111111111111000000000000000000001100000000010111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101001111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rodovia Go 431 Km 5",
+          "line1": "Rodovia Go 431 Km 5, Sn - Fazenda Bom Jesus",
+          "line2": "Lote 5 | Dentro Da Vila Do Comendador |",
+          "number": "sn",
+          "city": "Pirenopolis",
+          "state": "GO",
+          "country": "Brasil",
+          "postalCode": "72980000",
+          "referencePoint": "Dentro Da Vila Do Comendador |",
+          "addressType": "Rodovia",
+          "resDdd": 62,
+          "resPhone": 32526522
+        },
+        "addressBilling": {
+          "linePublic": "Rodovia Go 431 Km 5",
+          "line1": "Rodovia Go 431 Km 5, Sn - Fazenda Bom Jesus",
+          "line2": "Lote 5",
+          "number": "sn",
+          "city": "Pirenopolis",
+          "state": "GO",
+          "country": null,
+          "postalCode": "72980000",
+          "referencePoint": null,
+          "addressType": "Rodovia",
+          "resDdd": 62,
+          "resPhone": 32526522
+        },
+        "activation": "2006-12-22T00:00:00.000Z",
+        "email": "grazielly.vale@grupowph.com.br",
+        "parentAccount": "1530674660",
+        "productStatus": "C",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [],
+        "permissions": {
+          "modalWinbackGatinho": true,
+          "modalWinbackCobranca": false,
+          "chatWinbackReativacao": false,
+          "chatWinbackWebview": false,
+          "chatWinbackCobranca": false,
+          "chatWinbackTelevendas": true,
+          "featureVerTelaCompras": true,
+          "featureSkyPlay": true,
+          "featureGuia": true,
+          "featureFatura": true,
+          "featureComprovantes": true,
+          "featureMeusDados": true,
+          "featureMinhasVisitas": true,
+          "featureAtendimento": true,
+          "featureAtendimentoChatReativacao": true,
+          "featureAssistenteVirtual": true,
+          "featureQuiz": true,
+          "featureControleRemoto": true,
+          "featureRealizarCompra": false,
+          "featureEnvioSinal": false,
+          "featureTurbinarPacote": false,
+          "additionalData": {
+            "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=48ca298094310faac87e0f93c05eab420d7a4082a669d93726d3ce959539639168fee5d102480ecb3ea00560e89df4a50c2858030afb672a1e5969416e69d41638b3197d72a9aa94ce877814419520ea7223d34225f325bf0c2d997b3efed59f228a0ce87c6b1a851f714bb4844e05a2c45f9aaa000b4d6bfc94bd80ce6831ab519e7368c2eb3792fba046d30a1630022dba06e947e7010acd64a20eac0c37646d7a0591dc91d0994fcaed16df8d492428c88d6ff25b31455596401842f7cdf84c877b5391fa780743486ceb746b8b616cbec299513c2929239f04cfe7bf1f5da65f4af682335b17d24f1aed3b00cd878e07dd614c9a43d094fb&id1=9508b35af13dfadb20f7b84ee8b7dc18073dc2f814bef088fcfe71026e1c8c49ec2391b5a3b094629d431e60e30e78ab0e3bd5824fa71cc67136660385cae3afaef2245744176dd077b0cff0630ead627c04114edfab91391f52d0f447bdb2314f4225f412c44e400068e092a9cd3efcbd25c9fcc3510d355bbd47bb004496c9e6e13aadb0e0f31b790dc427a404484d1c0e5e874842cfab4a328f00ed47fee8b5da9fd61a80440739ce8b910cd94f05eff13cd219a8106a257791def9af1d787c01dad3496955d02678d893d4a08e8a7741812e263ceec36ac055c30eeb13435d469d68b12413293dcbdadf31c62eb80fa6b1b50b1707288310&id2=110db61f821a7d2da7e004c2&id3=",
+            "chatParams": {
+              "subject": "Cancelamento",
+              "dateNowFormatted": "2026-09-07 11:58:16",
+              "chatExpirationDate": 1788793396627
+            }
+          }
+        },
+        "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=48ca298094310faac87e0f93c05eab420d7a4082a669d93726d3ce959539639168fee5d102480ecb3ea00560e89df4a50c2858030afb672a1e5969416e69d41638b3197d72a9aa94ce877814419520ea7223d34225f325bf0c2d997b3efed59f228a0ce87c6b1a851f714bb4844e05a2c45f9aaa000b4d6bfc94bd80ce6831ab519e7368c2eb3792fba046d30a1630022dba06e947e7010acd64a20eac0c37646d7a0591dc91d0994fcaed16df8d492428c88d6ff25b31455596401842f7cdf84c877b5391fa780743486ceb746b8b616cbec299513c2929239f04cfe7bf1f5da65f4af682335b17d24f1aed3b00cd878e07dd614c9a43d094fb&id1=9508b35af13dfadb20f7b84ee8b7dc18073dc2f814bef088fcfe71026e1c8c49ec2391b5a3b094629d431e60e30e78ab0e3bd5824fa71cc67136660385cae3afaef2245744176dd077b0cff0630ead627c04114edfab91391f52d0f447bdb2314f4225f412c44e400068e092a9cd3efcbd25c9fcc3510d355bbd47bb004496c9e6e13aadb0e0f31b790dc427a404484d1c0e5e874842cfab4a328f00ed47fee8b5da9fd61a80440739ce8b910cd94f05eff13cd219a8106a257791def9af1d787c01dad3496955d02678d893d4a08e8a7741812e263ceec36ac055c30eeb13435d469d68b12413293dcbdadf31c62eb80fa6b1b50b1707288310&id2=110db61f821a7d2da7e004c2&id3="
+      },
+      {
+        "id": "28461846",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 999799116,
+          "dddMobilePhone": 62,
+          "dddComPhone": 62,
+          "comPhone": 999799116
+        },
+        "customerId": "117deb98fa9e43352261c6be3bad8f17",
+        "status": 2,
+        "productName": "TOP HD II 2022 - P",
+        "name": "WALDO",
+        "secondName": "PALMERSTON XAVIER",
+        "dna": "00000100000100010000001000000000000000000000000010000000001000000000000000000000000000001011010111110000000001000000000100000000011110100000010000010111111111111111111111111000000000000000000001100000000010111111111111001000000011111010111111110001000000000001100111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101001111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua 15",
+          "line1": "Rua 15, 0 - Do Turista 2  Etapa",
+          "line2": "Lote 6-r",
+          "number": "0",
+          "city": "Caldas Novas",
+          "state": "GO",
+          "country": "Brasil",
+          "postalCode": "75696139",
+          "referencePoint": "Ao Lado Do Edificio Alto Vista",
+          "addressType": "Rua",
+          "resDdd": 64,
+          "resPhone": 99693800
+        },
+        "addressBilling": {
+          "linePublic": "Rua 15 Qd 60 Lote 6r",
+          "line1": "Rua 15 Qd 60 Lote 6r, 0 - Turista Ii",
+          "line2": null,
+          "number": "0",
+          "city": "Caldas Novas",
+          "state": "GO",
+          "country": null,
+          "postalCode": "75690000",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 64,
+          "resPhone": 99693800
+        },
+        "activation": "2006-12-22T00:00:00.000Z",
+        "email": "grazielly.vale@grupowph.com.br",
+        "parentAccount": "028461846",
+        "productStatus": "C",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [],
+        "permissions": {
+          "modalWinbackGatinho": true,
+          "modalWinbackCobranca": false,
+          "chatWinbackReativacao": false,
+          "chatWinbackWebview": false,
+          "chatWinbackCobranca": false,
+          "chatWinbackTelevendas": true,
+          "featureVerTelaCompras": true,
+          "featureSkyPlay": true,
+          "featureGuia": true,
+          "featureFatura": true,
+          "featureComprovantes": true,
+          "featureMeusDados": true,
+          "featureMinhasVisitas": true,
+          "featureAtendimento": true,
+          "featureAtendimentoChatReativacao": true,
+          "featureAssistenteVirtual": true,
+          "featureQuiz": true,
+          "featureControleRemoto": true,
+          "featureRealizarCompra": false,
+          "featureEnvioSinal": false,
+          "featureTurbinarPacote": false,
+          "additionalData": {
+            "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=6543c480bdbdffda433292d54d8c0be406cf8679b0f754334a00c99a3e0a4e54e020f51c5658c65eae6f926ea6c80dea1e337bfc44b130c230a30c69d04926e503bbb720390825f47850ffd8b766843924477a1532bc2dedebf96c752e1516224a10da3433949afa5b9b8a4fab2baebe86a2276a80104be0dca46f552b590003617de71b62884edb872a337e30b11a346f5f998aa658248a84bfccbd9762cf27a6edd1fb81e42a1b1880554d0ac7d08af9ac668855aba89b8e8f616358c94721823b9136c5fe4a3d6a3373c243da886bc64e39e8407e25ba828c9ab266a6927f74b3dfdff03e6af63e7892057a92b264ddc2142c371b2594ca4b&id1=9c550b98db774f13c5b2454373a04c511a94431a5d580d78bbdb328e5907c6d9bfd9a1f404319ba9095304fc9c3c853dcf27f077c17730963e178983dcbeced2a090ecbac07b846f39f1b4f9d4f88fa05d3d352877e470de2c597e22a847c6538a1e815c1deb31fa7c9ee2fcf4ea663494b498e5d970d801fb7a3f1f30cfba6373f5c1fa9c930fff5d51b1a4652f4da13f6c83f1553235bb7bf9072b874eac3657d78e586d9f6dbe738361d303178d7e8c984ae2c30b32a2ac8dd0404bb57a02e324bead487ccfe791df13c5dfdcc6717bdd98525729f613109d89b71f584ede6dc052fb91a72f417f9588b3ba0be87e4809ea32c23221ef4ab1&id2=c4fc7615239fe9f337ffdd95&id3=",
+            "chatParams": {
+              "subject": "Cancelamento",
+              "dateNowFormatted": "2026-09-07 11:58:16",
+              "chatExpirationDate": 1788793396620
+            }
+          }
+        },
+        "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=6543c480bdbdffda433292d54d8c0be406cf8679b0f754334a00c99a3e0a4e54e020f51c5658c65eae6f926ea6c80dea1e337bfc44b130c230a30c69d04926e503bbb720390825f47850ffd8b766843924477a1532bc2dedebf96c752e1516224a10da3433949afa5b9b8a4fab2baebe86a2276a80104be0dca46f552b590003617de71b62884edb872a337e30b11a346f5f998aa658248a84bfccbd9762cf27a6edd1fb81e42a1b1880554d0ac7d08af9ac668855aba89b8e8f616358c94721823b9136c5fe4a3d6a3373c243da886bc64e39e8407e25ba828c9ab266a6927f74b3dfdff03e6af63e7892057a92b264ddc2142c371b2594ca4b&id1=9c550b98db774f13c5b2454373a04c511a94431a5d580d78bbdb328e5907c6d9bfd9a1f404319ba9095304fc9c3c853dcf27f077c17730963e178983dcbeced2a090ecbac07b846f39f1b4f9d4f88fa05d3d352877e470de2c597e22a847c6538a1e815c1deb31fa7c9ee2fcf4ea663494b498e5d970d801fb7a3f1f30cfba6373f5c1fa9c930fff5d51b1a4652f4da13f6c83f1553235bb7bf9072b874eac3657d78e586d9f6dbe738361d303178d7e8c984ae2c30b32a2ac8dd0404bb57a02e324bead487ccfe791df13c5dfdcc6717bdd98525729f613109d89b71f584ede6dc052fb91a72f417f9588b3ba0be87e4809ea32c23221ef4ab1&id2=c4fc7615239fe9f337ffdd95&id3="
+      },
+      {
+        "id": "1523257528",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 999887732,
+          "dddMobilePhone": 62
+        },
+        "customerId": "117deb98fa9e43352261c6be3bad8f17",
+        "status": 2,
+        "productName": "COMBO FULL ESPECIAL + DISNEY PLUS PREMIUM 2023 - P",
+        "name": "WALDO",
+        "secondName": "PALMERSTON XAVIER",
+        "dna": "00000100000100100000000000100000000000000000000000000000000000000000000000000000000000100011000111110000000000000000000100000000011110000100000000000011111111111111111111111000000000000000000001010000000000111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101001111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rodovia Go 173",
+          "line1": "Rodovia Go 173, Sn - Zona Rural",
+          "line2": "Fazenda Pontal 2",
+          "number": "SN",
+          "city": "Santa Fe De Goias",
+          "state": "GO",
+          "country": "Brasil",
+          "postalCode": "76265000",
+          "referencePoint": "Direita 17 Km  Santa Fé  / Britania Km15",
+          "addressType": "Rodovia"
+        },
+        "addressBilling": {
+          "linePublic": "Fazenda Fazenda Pontal",
+          "line1": "Fazenda Fazenda Pontal, 0 - Rural",
+          "line2": "Km 3",
+          "number": "0",
+          "city": "Santa Fé De Goiás",
+          "state": "GO",
+          "country": "Brasil",
+          "postalCode": "76265000",
+          "referencePoint": null,
+          "addressType": "Fazenda"
+        },
+        "activation": "2020-07-30T00:00:00.000Z",
+        "email": "grazielly.vale@grupowph.com.br",
+        "parentAccount": "1523257511",
+        "productStatus": "C",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [],
+        "permissions": {
+          "modalWinbackGatinho": true,
+          "modalWinbackCobranca": false,
+          "chatWinbackReativacao": false,
+          "chatWinbackWebview": false,
+          "chatWinbackCobranca": false,
+          "chatWinbackTelevendas": true,
+          "featureVerTelaCompras": true,
+          "featureSkyPlay": true,
+          "featureGuia": true,
+          "featureFatura": true,
+          "featureComprovantes": true,
+          "featureMeusDados": true,
+          "featureMinhasVisitas": true,
+          "featureAtendimento": true,
+          "featureAtendimentoChatReativacao": true,
+          "featureAssistenteVirtual": true,
+          "featureQuiz": true,
+          "featureControleRemoto": true,
+          "featureRealizarCompra": false,
+          "featureEnvioSinal": false,
+          "featureTurbinarPacote": false,
+          "additionalData": {
+            "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=35d73b28de8ce1cb76226d06528daf0e89846c7f36ec3632213b312995ca4ce275c90e769dff47c5937de75a20437fca0c2795d67004ce34ea135af5fd14f751dcb15934ac2b7807f77817d6797964a8791d17c2a433e4c48e0a7960acc1d935086265bee355f4380995f0a7162490d5a8f441e4f447eba8a62cef8003c4379426a6b219542201cec7557486b4151a7735a9acf5329227e7286be01c17e7627926651b6f6dfe6ddcb281b33f6ede82dacd98feefaa64371d7f9257f44b982bca5983bee1329ea69f30a6c20a52f1fecb8ae407360940ec2d2f1f9807acd6d28e6cc8eb1655aae50dcd5e12dea1ad2c595407d1ceec371ac7e6ca&id1=78fcc452d359aec9e2991fa6804c60c1f3f2c836dc2eeaf871990a641674f81db6fab101c26cd9240f22dc6a3f5ac5f40cb523ffe125c0c339d3595c4482abeb791b728bbf50a6d1e9f1dfe43f273d4da04ca75a2149cbf1a72b36f458904f84f93cc28a0f89f594cecf1068f17155fc33c3a6ab748471a6ae75ca57a6b7cb72847da8511be3768903c9c43c143bcec388c0316a3b52f71849803ad0050cc9046d95b1625042aa0a4f19eaee73a5e694522cc304739943edfb4df6b2b2519d80b39f60863964fba1a859a58682f800f69479b9ac103140f2e77e85914bde881e67d24d392796a0307492ddf6e88c447f8c80df9522b966aaf012&id2=4979aa100af524de290efd9f&id3=",
+            "chatParams": {
+              "subject": "Cancelamento",
+              "dateNowFormatted": "2026-09-07 11:58:16",
+              "chatExpirationDate": 1788793396634
+            }
+          }
+        },
+        "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=35d73b28de8ce1cb76226d06528daf0e89846c7f36ec3632213b312995ca4ce275c90e769dff47c5937de75a20437fca0c2795d67004ce34ea135af5fd14f751dcb15934ac2b7807f77817d6797964a8791d17c2a433e4c48e0a7960acc1d935086265bee355f4380995f0a7162490d5a8f441e4f447eba8a62cef8003c4379426a6b219542201cec7557486b4151a7735a9acf5329227e7286be01c17e7627926651b6f6dfe6ddcb281b33f6ede82dacd98feefaa64371d7f9257f44b982bca5983bee1329ea69f30a6c20a52f1fecb8ae407360940ec2d2f1f9807acd6d28e6cc8eb1655aae50dcd5e12dea1ad2c595407d1ceec371ac7e6ca&id1=78fcc452d359aec9e2991fa6804c60c1f3f2c836dc2eeaf871990a641674f81db6fab101c26cd9240f22dc6a3f5ac5f40cb523ffe125c0c339d3595c4482abeb791b728bbf50a6d1e9f1dfe43f273d4da04ca75a2149cbf1a72b36f458904f84f93cc28a0f89f594cecf1068f17155fc33c3a6ab748471a6ae75ca57a6b7cb72847da8511be3768903c9c43c143bcec388c0316a3b52f71849803ad0050cc9046d95b1625042aa0a4f19eaee73a5e694522cc304739943edfb4df6b2b2519d80b39f60863964fba1a859a58682f800f69479b9ac103140f2e77e85914bde881e67d24d392796a0307492ddf6e88c447f8c80df9522b966aaf012&id2=4979aa100af524de290efd9f&id3="
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "28112378",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 982687273,
+        "dddMobilePhone": 62,
+        "dddComPhone": 62,
+        "comPhone": 982680000
+      },
+      "customerId": "117deb98fa9e43352261c6be3bad8f17",
+      "status": 1,
+      "productName": "TOP HD PLUS IV 2022 - P",
+      "name": "WALDO",
+      "secondName": "PALMERSTON XAVIER",
+      "dna": "01000000000100010000001000000000100000000000000010000000001000000000000001000000000000001011000111110000000001000000000100000000011110100000010000010111111111111111011111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001100111111111111001101110001111111111110111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101001111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Das Tulipas",
+        "line1": "Rua Das Tulipas, Sn - Jardins Milao",
+        "line2": "Quadra 06 Lote 07",
+        "number": "SN",
+        "city": "Goiania",
+        "state": "GO",
+        "country": "Brasil",
+        "postalCode": "74885715",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "addressBilling": {
+        "linePublic": "Rua Caoba",
+        "line1": "Rua Caoba, 0 - Res Alphaville Flamboyant",
+        "line2": null,
+        "number": "0",
+        "city": "Goiania",
+        "state": "GO",
+        "country": "Brasil",
+        "postalCode": "74884560",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2005-08-10T00:00:00.000Z",
+      "email": "grazielly.vale@grupowph.com.br",
+      "parentAccount": "028112378",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000769442328",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2035389923960"
+        },
+        {
+          "smartcard": "000583344361",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "670AA63612925095A"
+        },
+        {
+          "smartcard": "001147433807",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A0120813271142"
+        },
+        {
+          "smartcard": "000768628067",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2036183433591"
+        },
+        {
+          "smartcard": "000903664712",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "010A263412564649F"
+        },
+        {
+          "smartcard": "000769385592",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2036193720644"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "28112378": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "26-12-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "ASSISTENCIA PREMIUM MENSAL - P",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "12-08-2024",
+          "end_date": null,
+          "icon": "🛡️"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "29-07-2024",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "10-01-2024",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Premiere",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "10-01-2024",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "TELECINE HD",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "10-01-2024",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky Sexy Hot - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "16-08-2021",
+          "end_date": null,
+          "icon": "🔞"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "26-12-2025",
+            "startDate": "26-12-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "ASSISTENCIA PREMIUM MENSAL - P",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "12-08-2024",
+            "startDate": "12-08-2024",
+            "endDate": null
+          },
+          {
+            "id": "1-219IIMH",
+            "name": "DISNEY PLUS PREMIUM",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Disney%403x.png",
+            "price": "46.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "29-07-2024",
+            "startDate": "29-07-2024",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "10-01-2024",
+            "startDate": "10-01-2024",
+            "endDate": null
+          },
+          {
+            "id": "1-1XBHQIX",
+            "name": "Premiere",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Premiere%403x.png",
+            "price": "59.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "10-01-2024",
+            "startDate": "10-01-2024",
+            "endDate": null
+          },
+          {
+            "id": "1-20XEJQF",
+            "name": "TELECINE HD",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/TLCine%403x.png",
+            "price": "29.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "10-01-2024",
+            "startDate": "10-01-2024",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sexy Hot - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "13-10-2015",
+            "startDate": "16-08-2021",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

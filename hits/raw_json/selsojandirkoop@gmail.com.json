@@ -1,0 +1,495 @@
+{
+  "email": "selsojandirkoop@gmail.com",
+  "password": "#Se10530420",
+  "access_token": "3669eb9c-153a-4074-ac37-2eb4fb371952",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiZDU3NzJhNGMtMGExZC00OWYyLWEyZWQtMjY2MGM0ZmE3YTM0IiwiYXRfaGFzaCI6IjZKWVBha1NWYXRDWVNHdUFCZlN4SlEiLCJkZXZpY2VJZCI6ImJjOTA2Mjg5MDY1OWJlNzBlZGRkM2RmZTBlYWY0NDE2NTRmMDM0MWEiLCJhdWRpdFRyYWNraW5nSWQiOiJjNDAwLTk5YjgtNDM1NC05YmI1LWNmODEiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjczMzQ2NywidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJzcFFLYVZHUUVNMk5DS3ZUZ3VWcEJnIiwic2lnbmF0dXJlcyI6WyIxMDQxOTY0NTUiXSwiY3VzdG9tZXJJZCI6IjIzYjkzMDM5MjU0ZGMzZGVlNTU4Y2U5M2Y0ZmEzZmZjIiwicmVnaXN0cmF0aW9uU2lnbmF0dXJlIjoiMTA0MTk2NDU1IiwiZ2l2ZW5fbmFtZSI6IlNFTFNPIiwiZmFtaWx5X25hbWUiOiJza3kiLCJ1c2VybmFtZSI6InNlbHNvamFuZGlya29vcEBnbWFpbC5jb20iLCJtYWlsIjoic2Vsc29qYW5kaXJrb29wQGdtYWlsLmNvbSIsInJlZGVtcHRpb25MaW1pdCI6bnVsbCwiaWF0IjoxNzg4MzEyNzMzLCJleHAiOjE3ODgzOTkxMzMsImlzcyI6InNtLXNreS52cmlvc2VydmljZXMuY29tIn0.jyvwSPF74_ifyqaUxmaq5MIIW6IpFAz3yhhyjT0CGVLz0Nh0SKDfN_YkmDpSwfVcAdRZhdRL7iP4NV5KMYrBYUTXQrwnITZoFGfhmdFtid2lliJCp8Fp-nPt_J64pOs-4HbCngjU6t9teSOcxkTpJnBKvTAW-_ZU3grnXNrrPhTqleXsqK39xn_ayg7GZAJvUi-6Y-7VjV_SnxWtvGUU6XEl7xXSR3hKxmv7ZKQwtWXtl--qdLPQgcqCcKVRPQEmqv0xkHlZDw079HM0WlqxaJeDY-5zbTXJj8bzxPktXByvrRuGlff0BmpipXhAaTCt6OvQri-K5ZeTxgGe9WZGGA",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "3669eb9c-153a-4074-ac37-2eb4fb371952",
+    "externalId": "7bb297bf-a676-535d-a258-4fef4a681561",
+    "username": "23b93039254dc3dee558ce93f4fa3ffc",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "104196455",
+    "protocol": "2026-150196856682",
+    "customer": {
+      "email": "selsojandirkoop@gmail.com",
+      "billingProfileCode": "1-B2BX-3735",
+      "name": "SELSO",
+      "secondName": "JANDIR KOOP",
+      "birthday": "1969-03-04T00:00:00.000Z",
+      "ddd": 16,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5516997302513",
+      "id": "23b93039254dc3dee558ce93f4fa3ffc",
+      "cpf": "53870190000"
+    },
+    "signatures": [
+      {
+        "id": "104196455",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 997302513,
+          "dddMobilePhone": 16,
+          "dddComPhone": 16,
+          "comPhone": 991616930
+        },
+        "customerId": "23b93039254dc3dee558ce93f4fa3ffc",
+        "status": 1,
+        "productName": "SKY CONNECT TOTAL EXPERIENCE 2025 - P",
+        "name": "SELSO",
+        "secondName": "JANDIR KOOP",
+        "dna": "01000000000101000000001000000000100000000000000000000000000000000000000001000000000000001010000111110000000000100000000100000000011110100000000000010111111111111111111111111000000000000000000001100000000010111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111110111111101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Null Juca Quito",
+          "line1": "Null Juca Quito, 987 - Centro",
+          "line2": "Cs",
+          "number": "987",
+          "city": "Jaboticabal",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "14870710",
+          "referencePoint": "Em Frente Ao Olhos Da Alma",
+          "addressType": null
+        },
+        "addressBilling": {
+          "linePublic": "Rua Juca Quito",
+          "line1": "Rua Juca Quito, 987 - Centro",
+          "line2": "Casa",
+          "number": "987",
+          "city": "Jaboticabal",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "14870710",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2012-05-30T00:00:00.000Z",
+        "email": "selsojandirkoop@gmail.com",
+        "parentAccount": "0104196455",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001116694090",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2036230914559"
+          },
+          {
+            "smartcard": "001116839109",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A203540521862D"
+          },
+          {
+            "smartcard": "000647665843",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "670A263412676887B"
+          },
+          {
+            "smartcard": "001226232229",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SKR02",
+            "serialNumber": "CEAAD23173510801C"
+          },
+          {
+            "smartcard": "000615350683",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH25",
+            "serialNumber": "CE0AA135305209680"
+          },
+          {
+            "smartcard": "000615350691",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH25",
+            "serialNumber": "CE0AA13530550793D"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "104196455",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 997302513,
+        "dddMobilePhone": 16,
+        "dddComPhone": 16,
+        "comPhone": 991616930
+      },
+      "customerId": "23b93039254dc3dee558ce93f4fa3ffc",
+      "status": 1,
+      "productName": "SKY CONNECT TOTAL EXPERIENCE 2025 - P",
+      "name": "SELSO",
+      "secondName": "JANDIR KOOP",
+      "dna": "01000000000101000000001000000000100000000000000000000000000000000000000001000000000000001010000111110000000000100000000100000000011110100000000000010111111111111111111111111000000000000000000001100000000010111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111110111111101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Null Juca Quito",
+        "line1": "Null Juca Quito, 987 - Centro",
+        "line2": "Cs",
+        "number": "987",
+        "city": "Jaboticabal",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "14870710",
+        "referencePoint": "Em Frente Ao Olhos Da Alma",
+        "addressType": null
+      },
+      "addressBilling": {
+        "linePublic": "Rua Juca Quito",
+        "line1": "Rua Juca Quito, 987 - Centro",
+        "line2": "Casa",
+        "number": "987",
+        "city": "Jaboticabal",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "14870710",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2012-05-30T00:00:00.000Z",
+      "email": "selsojandirkoop@gmail.com",
+      "parentAccount": "0104196455",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "001116694090",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2036230914559"
+        },
+        {
+          "smartcard": "001116839109",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A203540521862D"
+        },
+        {
+          "smartcard": "000647665843",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "670A263412676887B"
+        },
+        {
+          "smartcard": "001226232229",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SKR02",
+          "serialNumber": "CEAAD23173510801C"
+        },
+        {
+          "smartcard": "000615350683",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH25",
+          "serialNumber": "CE0AA135305209680"
+        },
+        {
+          "smartcard": "000615350691",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH25",
+          "serialNumber": "CE0AA13530550793D"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "104196455": {
+      "included": [
+        {
+          "name": "PREMIERE HD TOTAL 2021 - P",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "10-10-2025",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "PARAMOUNT CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "10-10-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "ESR HD CB",
+          "category": "A La Carte",
+          "subcategory": "Esportes",
+          "start_date": "10-10-2025",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "TELECINE HD",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "10-10-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "ESPN 6 HD CB 2021",
+          "category": "A La Carte",
+          "subcategory": "Esportes",
+          "start_date": "10-10-2025",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM - CB",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "10-10-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "10-10-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "SEGURO RESIDENCIAL PARA CASA DE ALVENARIA - BASICO",
+          "category": "A La Carte",
+          "subcategory": "Premium",
+          "start_date": "10-10-2025",
+          "end_date": "10-10-2030",
+          "icon": "🌍"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "ASSISTENCIA PREMIUM SEGURO RESIDENCIAL",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "10-10-2025",
+          "end_date": "10-10-2030",
+          "icon": "🛡️"
+        },
+        {
+          "name": "ASSINATURAS DIGITAIS V",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "10-10-2025",
+          "end_date": null,
+          "icon": "📺"
+        },
+        {
+          "name": "Sky Sex Prive - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "10-10-2025",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "Sky Sex Prive HD - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "10-10-2025",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "AMAZON PRIME",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "22-07-2025",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": null,
+            "name": "PREMIERE HD TOTAL 2021 - P",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "10-10-2025",
+            "startDate": "10-10-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "PARAMOUNT CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "null",
+            "isPartOfMainPackage": true,
+            "activationDate": "10-10-2025",
+            "startDate": "10-10-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-1QKJGWB",
+            "name": "ESR HD CB",
+            "category": "A La Carte",
+            "subcategory": "Esportes",
+            "logo": "https://skycms.s3.amazonaws.com/images/42693528/ESR_logo.jpg",
+            "price": "6.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "10-10-2025",
+            "startDate": "10-10-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-20XEJQF",
+            "name": "TELECINE HD",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/TLCine%403x.png",
+            "price": "29.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "10-10-2025",
+            "startDate": "10-10-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-1QKPR7G",
+            "name": "ESPN 6 HD CB 2021",
+            "category": "A La Carte",
+            "subcategory": "Esportes",
+            "logo": null,
+            "price": "9.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "10-10-2025",
+            "startDate": "10-10-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "DISNEY PLUS PREMIUM - CB",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "null",
+            "isPartOfMainPackage": true,
+            "activationDate": "10-10-2025",
+            "startDate": "10-10-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "10-10-2025",
+            "startDate": "10-10-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "ASSISTENCIA PREMIUM SEGURO RESIDENCIAL",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "null",
+            "isPartOfMainPackage": false,
+            "activationDate": "10-10-2025",
+            "startDate": "10-10-2025",
+            "endDate": "10-10-2030"
+          },
+          {
+            "id": "1-2005PRI",
+            "name": "SEGURO RESIDENCIAL PARA CASA DE ALVENARIA - BASICO",
+            "category": "A La Carte",
+            "subcategory": "Premium",
+            "logo": null,
+            "price": "24.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "10-10-2025",
+            "startDate": "10-10-2025",
+            "endDate": "10-10-2030"
+          },
+          {
+            "id": "1-218ZAE1",
+            "name": "ASSINATURAS DIGITAIS V",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": null,
+            "price": "22.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "10-10-2025",
+            "startDate": "10-10-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "10-10-2025",
+            "startDate": "10-10-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive HD - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "10-10-2025",
+            "startDate": "10-10-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-21ATHJR",
+            "name": "AMAZON PRIME",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Amazon%403x.png",
+            "urlDetail": "https://www.sky.com.br/amazon-prime",
+            "price": "5.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "22-07-2025",
+            "startDate": "22-07-2025",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

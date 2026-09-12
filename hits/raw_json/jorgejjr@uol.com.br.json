@@ -1,0 +1,344 @@
+{
+  "email": "jorgejjr@uol.com.br",
+  "password": "Jorge304060$",
+  "access_token": "c88014c3-254b-4413-9c80-86dae1cc1d8e",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiMWI3ZmVmMDUtM2MyZS00NTI4LTkxYjMtZGVkMzE0MThiNTkzIiwiYXRfaGFzaCI6IkIyZThmYnQ4dm90bUZIUzVWSDNOLVEiLCJkZXZpY2VJZCI6IjdjNGExZGViYjVlOWNlOGY3MGFlN2UwYTUyZjA0YWUzYmNiN2FkZWEiLCJhdWRpdFRyYWNraW5nSWQiOiI4NGI0LTQ3NTgtNDFhYy1iYTYyLTE4ZWYiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjcyMTcxMSwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiI4MjMwMjc0Ni1lMGYyLTQ3NjktYjE3NS1mZTg2OWI5OTNiMzEiLCJzaWduYXR1cmVzIjpbIjI3NDY5OTIzIl0sImN1c3RvbWVySWQiOiJiNjFmNWZlY2FjNTNlNDkwOTZmYzRiOGNjYzlhODRiOCIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjI3NDY5OTIzIiwiZ2l2ZW5fbmFtZSI6IkpPUkdFIiwidXNlcm5hbWUiOiJqb3JnZWpqckB1b2wuY29tLmJyIiwibWFpbCI6ImpvcmdlampyQHVvbC5jb20uYnIiLCJyZWRlbXB0aW9uTGltaXQiOm51bGwsImlhdCI6MTc4ODMxMjcyMSwiZXhwIjoxNzg4Mzk5MTIxLCJpc3MiOiJzbS1za3kudnJpb3NlcnZpY2VzLmNvbSJ9.EJ209MIlpZ_XRrYQwlgN_08yqVmTnU9cbFEWtWWUzI5w3IjCF3He0QDCueOklJ3B754cO4Hp0Tc9YWABzOF6yBjEamddBjvcbSPYkSxIIZpBn8sMX1gufQEHR0aAO5FDzPDWki0GcAYrSS_4Ej5g02SsRGpEmAyWSx82ac5F_ELtAneCcOlggiGuja28rx4U_2J9mWFsUL5ZMtgnzmf86NIKA0GJ4OXegAXFIDGOT8flV6uEDmOcyK--hS3eE5VboVHhL5ys2ePaYD-BNtKtKnJkzT7qGsCxrimiC940SAOPQ9ntJBoZa1EXcSp3pBjgH8iJuRc2sOZJ0-DJHb_-jg",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "c88014c3-254b-4413-9c80-86dae1cc1d8e",
+    "externalId": "98002a47-2769-5e6a-9d7a-141690d28635",
+    "username": "b61f5fecac53e49096fc4b8ccc9a84b8",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "27469923",
+    "protocol": "2026-150197300638",
+    "customer": {
+      "email": "jorgejjr@uol.com.br",
+      "billingProfileCode": "1-B7I4-380",
+      "name": "JORGE",
+      "secondName": "JOAQUIM DOS REIS",
+      "ddd": 79,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5579988399819",
+      "id": "b61f5fecac53e49096fc4b8ccc9a84b8",
+      "cpf": "75950820720"
+    },
+    "signatures": [
+      {
+        "id": "27469923",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 988399819,
+          "dddMobilePhone": 79
+        },
+        "customerId": "b61f5fecac53e49096fc4b8ccc9a84b8",
+        "status": 1,
+        "productName": "COMBO SKY HDTV FULL CINEMA 2013/2021 - P",
+        "name": "JORGE",
+        "secondName": "JOAQUIM DOS REIS",
+        "dna": "01000000000100001000001000000000100000000000000000000000000000000000001000000000000000001011000111110000000000100000000100000000011110100000000000010111111111111110011111111000000000000100000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111010011111111111111111111111111111111110011111111111110111111111101011111111111111111111111100111011100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001101111111111111111111111111111111111111111111111111111111111111111111111111101111111111101000111111111111111111111110011111111111011111111111111111111111111111111111111111111111011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Conego Jose Felix De Oliveira",
+          "line1": "Rua Conego Jose Felix De Oliveira, 150 - Coroa Do Meio",
+          "line2": ".",
+          "number": "150",
+          "city": "Aracaju",
+          "state": "SE",
+          "country": "Brasil",
+          "postalCode": "49035170",
+          "referencePoint": "Referencia: Perto Oceanario. Melhor Trl Contato: 79-88439820. Jorge Vai Receber Tecnico",
+          "addressType": "Rua",
+          "resDdd": 79,
+          "resPhone": 32551998
+        },
+        "addressBilling": {
+          "linePublic": "Rua Conego Jose Felix De Oliveira",
+          "line1": "Rua Conego Jose Felix De Oliveira, 150 - Coroa Do Meio",
+          "line2": null,
+          "number": "150",
+          "city": "Aracaju",
+          "state": "SE",
+          "country": "Brasil",
+          "postalCode": "49035170",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "1998-06-25T00:00:00.000Z",
+        "email": "jorgejjr@uol.com.br",
+        "parentAccount": "027469923",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001213096363",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "670A2036151760588"
+          },
+          {
+            "smartcard": "000538901109",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "010A263412416172E"
+          },
+          {
+            "smartcard": "000681612149",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "CE0AA63614996936F"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "27469923",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 988399819,
+        "dddMobilePhone": 79
+      },
+      "customerId": "b61f5fecac53e49096fc4b8ccc9a84b8",
+      "status": 1,
+      "productName": "COMBO SKY HDTV FULL CINEMA 2013/2021 - P",
+      "name": "JORGE",
+      "secondName": "JOAQUIM DOS REIS",
+      "dna": "01000000000100001000001000000000100000000000000000000000000000000000001000000000000000001011000111110000000000100000000100000000011110100000000000010111111111111110011111111000000000000100000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111010011111111111111111111111111111111110011111111111110111111111101011111111111111111111111100111011100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001101111111111111111111111111111111111111111111111111111111111111111111111111101111111111101000111111111111111111111110011111111111011111111111111111111111111111111111111111111111011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Conego Jose Felix De Oliveira",
+        "line1": "Rua Conego Jose Felix De Oliveira, 150 - Coroa Do Meio",
+        "line2": ".",
+        "number": "150",
+        "city": "Aracaju",
+        "state": "SE",
+        "country": "Brasil",
+        "postalCode": "49035170",
+        "referencePoint": "Referencia: Perto Oceanario. Melhor Trl Contato: 79-88439820. Jorge Vai Receber Tecnico",
+        "addressType": "Rua",
+        "resDdd": 79,
+        "resPhone": 32551998
+      },
+      "addressBilling": {
+        "linePublic": "Rua Conego Jose Felix De Oliveira",
+        "line1": "Rua Conego Jose Felix De Oliveira, 150 - Coroa Do Meio",
+        "line2": null,
+        "number": "150",
+        "city": "Aracaju",
+        "state": "SE",
+        "country": "Brasil",
+        "postalCode": "49035170",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "1998-06-25T00:00:00.000Z",
+      "email": "jorgejjr@uol.com.br",
+      "parentAccount": "027469923",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "001213096363",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "670A2036151760588"
+        },
+        {
+          "smartcard": "000538901109",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "010A263412416172E"
+        },
+        {
+          "smartcard": "000681612149",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "CE0AA63614996936F"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "27469923": {
+      "included": [
+        {
+          "name": "Sky SERVIÇO DE GRAVAÇÃO EXTERNA - P",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "09-08-2021",
+          "end_date": null,
+          "icon": "🛡️"
+        },
+        {
+          "name": "Sky HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "09-08-2021",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky HBO HD - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "09-08-2021",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky Telecine HD - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "09-08-2021",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Pacote HDTV FULL - P",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "09-08-2021",
+          "end_date": null,
+          "icon": "📺"
+        },
+        {
+          "name": "Sky Prime 24H - P",
+          "category": "Serviços",
+          "subcategory": "Prime",
+          "start_date": "09-08-2021",
+          "end_date": null,
+          "icon": "🛡️"
+        },
+        {
+          "name": "Sky Telecine - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "09-08-2021",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "Sky Sex Prive HD - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "09-08-2021",
+          "end_date": null,
+          "icon": "🔞"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": null,
+            "name": "Sky Sex Prive HD - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "25-06-1998",
+            "startDate": "09-08-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky SERVIÇO DE GRAVAÇÃO EXTERNA - P",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "25-06-1998",
+            "startDate": "09-08-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "25-06-1998",
+            "startDate": "09-08-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky HBO HD - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "25-06-1998",
+            "startDate": "09-08-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Telecine HD - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "25-06-1998",
+            "startDate": "09-08-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Pacote HDTV FULL - P",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "25-06-1998",
+            "startDate": "09-08-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Prime 24H - P",
+            "category": "Serviços",
+            "subcategory": "Prime",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "25-06-1998",
+            "startDate": "09-08-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Telecine - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "25-06-1998",
+            "startDate": "09-08-2021",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

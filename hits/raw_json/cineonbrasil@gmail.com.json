@@ -1,0 +1,293 @@
+{
+  "email": "cineonbrasil@gmail.com",
+  "password": "Eug@2024*666!",
+  "access_token": "1bc9e9ad-1074-4937-a488-b884300b7090",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiNzQwMjc3NjItNmUyYy00ZThlLTk0MmQtMGY3YjhkZWQzZGRjIiwiYXRfaGFzaCI6IlJ0SEY2eUhGV29uQThSZWR5X3pQc1EiLCJkZXZpY2VJZCI6IjhkMzFiZWY4MzJmNGE4MWY4YzQ1ZDY4NjIxZGJmMmQyYTVmN2M3NTQiLCJhdWRpdFRyYWNraW5nSWQiOiJmOWJhLTU0OTgtNGMzYi1hOGU2LTlmOGQiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODgxNjE2MDIzMCwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJkM2U1MjYwYi01OTc2LTRkMmItYTQ4Zi1hZDNhOGExMWY4MGEiLCJzaWduYXR1cmVzIjpbIjE0MDY1NTEwIl0sImN1c3RvbWVySWQiOiI4Nzc1M2Y1MzMzMjMzYWZiZTg1NjY5MGFmNjE4OGRhNCIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjE0MDY1NTEwIiwiZ2l2ZW5fbmFtZSI6IkVVR0VOSU8gVE9TVElMSVMgTUFSU0lHTElBIiwidXNlcm5hbWUiOiJjaW5lb25icmFzaWxAZ21haWwuY29tIiwibWFpbCI6ImNpbmVvbmJyYXNpbEBnbWFpbC5jb20iLCJyZWRlbXB0aW9uTGltaXQiOm51bGwsImlhdCI6MTc4ODgxNjE2MCwiZXhwIjoxNzg4OTAyNTYwLCJpc3MiOiJzbS1za3kudnJpb3NlcnZpY2VzLmNvbSJ9.rlhH6MVgTo9WTfUTDl1KVo6EFpP9bHF4l5NibbTVgruJn0RanBUsOOLh2J5e3OARH6q30aw4Nb8N48lBUdWkmNiRfKbOFQi0wJbdX1miCr8A3UF1e6JuxvJmMtvOmIVIPPeKmeKb_KvxbEcQ25-4zjPKLJ7i9Dt_W5B9W77Cu6y2Q0QzKt5M1-2gGBU8WiSIGc72rtB8fYLcCzJJ60NiB4mJNJoqJCPx0HZ-wFyHvWlZKuMlH0djv0WPIz5ciwVBuwizKPjUZ2zCvbcoa4nulI5tvJBu_TOFByRiTB9PYEwuIy2VxKFv1ClHoo7kkPfW6uZdYha02NFxEHMJGBusgQ",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "1bc9e9ad-1074-4937-a488-b884300b7090",
+    "externalId": "c53ca926-07ea-5416-a71e-8e45fa318276",
+    "username": "87753f5333233afbe856690af6188da4",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "14065510",
+    "protocol": "2026-150292804687",
+    "customer": {
+      "email": "eugeniogambarra@uol.com.br",
+      "billingProfileCode": "1-8KOZ-5784",
+      "name": "EUGENIO",
+      "secondName": "TOSTILIS MARSIGLIA GAMBARRA",
+      "birthday": "1959-12-31T00:00:00.000Z",
+      "ddd": 21,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5521998702526",
+      "id": "87753f5333233afbe856690af6188da4",
+      "cpf": "62002945772"
+    },
+    "signatures": [
+      {
+        "id": "14065510",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 998702526,
+          "dddMobilePhone": 21,
+          "dddComPhone": 21,
+          "comPhone": 38052112
+        },
+        "customerId": "87753f5333233afbe856690af6188da4",
+        "status": 1,
+        "productName": "NEW COMBO FULL HBO HD 2018/2021 - P",
+        "name": "EUGENIO",
+        "secondName": "TOSTILIS MARSIGLIA GAMBARRA",
+        "dna": "01000000000100100000000100000000100000000000000010000000000100000000001000000000000000001011000111110100000000100000000100000000011110100000010000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101011111111111001101110001111111111110111111111111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Luiz Palmier",
+          "line1": "Rua Luiz Palmier, 446 - Barreto",
+          "line2": "Bl 2",
+          "number": "446",
+          "city": "Niteroi",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "24110310",
+          "referencePoint": "Antiga Fabrica De Serveja Antartica",
+          "addressType": "Rua",
+          "resDdd": 21,
+          "resPhone": 27207186
+        },
+        "addressBilling": {
+          "linePublic": "Rua Luiz Palmier",
+          "line1": "Rua Luiz Palmier, 446 - Barreto",
+          "line2": "Bloco 2, Apto 304",
+          "number": "446",
+          "city": "Niteroi",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "24110310",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2004-04-17T00:00:00.000Z",
+        "email": "eugeniogambarra@uol.com.br",
+        "parentAccount": "014065510",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000698370657",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "CE0AA635388248592"
+          },
+          {
+            "smartcard": "001211157282",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR01",
+            "serialNumber": "CE0AD123808672094"
+          },
+          {
+            "smartcard": "001145746937",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A012079789051B"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "14065510",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 998702526,
+        "dddMobilePhone": 21,
+        "dddComPhone": 21,
+        "comPhone": 38052112
+      },
+      "customerId": "87753f5333233afbe856690af6188da4",
+      "status": 1,
+      "productName": "NEW COMBO FULL HBO HD 2018/2021 - P",
+      "name": "EUGENIO",
+      "secondName": "TOSTILIS MARSIGLIA GAMBARRA",
+      "dna": "01000000000100100000000100000000100000000000000010000000000100000000001000000000000000001011000111110100000000100000000100000000011110100000010000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101011111111111001101110001111111111110111111111111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Luiz Palmier",
+        "line1": "Rua Luiz Palmier, 446 - Barreto",
+        "line2": "Bl 2",
+        "number": "446",
+        "city": "Niteroi",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "24110310",
+        "referencePoint": "Antiga Fabrica De Serveja Antartica",
+        "addressType": "Rua",
+        "resDdd": 21,
+        "resPhone": 27207186
+      },
+      "addressBilling": {
+        "linePublic": "Rua Luiz Palmier",
+        "line1": "Rua Luiz Palmier, 446 - Barreto",
+        "line2": "Bloco 2, Apto 304",
+        "number": "446",
+        "city": "Niteroi",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "24110310",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2004-04-17T00:00:00.000Z",
+      "email": "eugeniogambarra@uol.com.br",
+      "parentAccount": "014065510",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000698370657",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "CE0AA635388248592"
+        },
+        {
+          "smartcard": "001211157282",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR01",
+          "serialNumber": "CE0AD123808672094"
+        },
+        {
+          "smartcard": "001145746937",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A012079789051B"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "14065510": {
+      "included": [
+        {
+          "name": "ASSISTENCIA PREMIUM MENSAL - P",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "08-11-2021",
+          "end_date": null,
+          "icon": "🛡️"
+        },
+        {
+          "name": "HBO SD + HD - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "08-11-2021",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "DISNEY PREMIUM R$ 14,90 POR 2M - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "16-06-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "04-06-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky Sex Prive HD - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "08-11-2021",
+          "end_date": null,
+          "icon": "🔞"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": null,
+            "name": "DISNEY PREMIUM R$ 14,90 POR 2M - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "16-06-2026",
+            "startDate": "16-06-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "04-06-2026",
+            "startDate": "04-06-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "ASSISTENCIA PREMIUM MENSAL - P",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "13-02-2019",
+            "startDate": "08-11-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO SD + HD - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "13-02-2019",
+            "startDate": "08-11-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive HD - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "13-02-2019",
+            "startDate": "08-11-2021",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

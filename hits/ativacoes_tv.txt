@@ -1,0 +1,181 @@
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 248389 | Login falhou: Login falhou (404): Not Found
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 248389 | Login falhou: Login falhou (404): Not Found
+[FALHA] diego.dromer@hotmail.com:123Algde10 | Codigo: 248389 | Login falhou: Login falhou (404): Not Found
+[FALHA] carlosparolineto@gmail.com:C4rl0s | Codigo: 248389 | Login falhou: Login falhou (404): Not Found
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 105913 | Ativacao: Falha na ativacao (401): Invalid token
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 105913 | Login: Credenciais invalidas (401): user or password invalid
+[FALHA] diego.dromer@hotmail.com:123Algde10 | Codigo: 105913 | Ativacao: Falha na ativacao (401): Invalid token
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 365967 | Login: Falha (400): INVALID_CAPTCHA
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 365967 | Login: Falha (400): INVALID_CAPTCHA
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 365967 | Login: Falha (400): INVALID_CAPTCHA
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 365967 | Login: Falha (400): INVALID_CAPTCHA
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 294296 | Login: Falha (400): INVALID_CAPTCHA
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 234296 | Login: Falha (400): INVALID_CAPTCHA
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 234296 | Login: Falha (400): INVALID_CAPTCHA
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 138207 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 138207 | Login: Credenciais invalidas: user or password invalid
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 334487 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 334487 | Login: Credenciais invalidas: user or password invalid
+[FALHA] diego.dromer@hotmail.com:123Algde10 | Codigo: 334487 | Login: Esgotaram as tentativas de login
+[FALHA] carlosparolineto@gmail.com:C4rl0s | Codigo: 334487 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] mgambonis@gmail.com:Bisung@040592 | Codigo: 334487 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] jefb1951@gmail.com:Bl33415013 | Codigo: 334487 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] natasoares2014@gmail.com:Corajoso81 | Codigo: 334487 | Login: Esgotaram as tentativas de login
+[FALHA] juliocpmedina@gmail.com:Dora*001 | Codigo: 334487 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] marcogabriell@ig.com.br:Tvsky300 | Codigo: 334487 | Login: Esgotaram as tentativas de login
+[FALHA] psrconde@yahoo.com.br:z12sp0r2TLMC | Codigo: 334487 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] spawnsergio@gmail.com:R$ms509315 | Codigo: 334487 | Login: Credenciais invalidas: user or password invalid
+[FALHA] videassisjw@gmail.com:Daniel244 | Codigo: 334487 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] dah_ma@hotmail.com:231264Dani | Codigo: 334487 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] renatoluindoayres@gmail.com:290982Re | Codigo: 334487 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] telefonia@arquidiocesebh.org.br:Kl308616 | Codigo: 334487 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] wellersonfake2@gmail.com:Mauro@14 | Codigo: 334487 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] isabellasouzaagio@bol.com.br:Isabella2018 | Codigo: 334487 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] leo@hyss.cc:Sky54265426 | Codigo: 334487 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] bissolir@hotmail.com:Maravilhosa10 | Codigo: 334487 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] westin.ivan@gmail.com:Ianwp1602 | Codigo: 334487 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] marloncavalcante56@gmail.com:@msC2001 | Codigo: 334487 | Login: Esgotaram as tentativas de login
+[FALHA] sac@eletrooferta.com.br:Guto238965@@@ | Codigo: 334487 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] flavio.elis.math@gmail.com:Matheus1801 | Codigo: 334487 | Login: Esgotaram as tentativas de login
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 222170 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] humbertomouse@hotmail.com:Humberto01 | Codigo: 334487 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 222170 | Login: Credenciais invalidas: user or password invalid
+[FALHA] rbneto1@uol.com.br:1Qaz2wsx | Codigo: 334487 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] liliancpessin@gmail.com:99788816mA | Codigo: 334487 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] cineonbrasil@gmail.com:Eug@2024*666! | Codigo: 334487 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] flavioapodi@hotmail.com:Bairro13 | Codigo: 334487 | Ativacao: Falha na ativacao (401): ssoToken required
+[FALHA] jvmr535@gmail.com:JoaoV535., | Codigo: 334487 | Login: Esgotaram as tentativas de login
+[FALHA] leadsbr01@gmail.com:Si425511 | Codigo: 334487 | Login: Credenciais invalidas: user or password invalid
+[FALHA] jorgejjr@uol.com.br:Jorge304060$ | Codigo: 334487 | Login: Esgotaram as tentativas de login
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 318071 | Todos os tokens falharam
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 318071 | Login: Credenciais invalidas: user or password invalid
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 192498 | Todos os tokens falharam
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 192498 | Todos os tokens falharam
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 192498 | Login: Credenciais invalidas: user or password invalid
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 586550 | Login: Esgotaram as tentativas de login
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 586550 | Login: Credenciais invalidas: user or password invalid
+[FALHA] diego.dromer@hotmail.com:123Algde10 | Codigo: 586550 | Todos os tokens falharam
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 586550 | Login: Esgotaram as tentativas de login
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 586550 | Login: Esgotaram as tentativas de login
+[FALHA] diego.dromer@hotmail.com:123Algde10 | Codigo: 586550 | Login: Erro de rede: HTTPSConnectionPool(host='www.recaptcha.net', port=443): Max retries exceeded with url: /recaptcha/api3/mri (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+[FALHA] carlosparolineto@gmail.com:C4rl0s | Codigo: 586550 | Todos os tokens falharam
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 729914 | Todos os tokens falharam
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 729914 | Login: Credenciais invalidas: user or password invalid
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 123456 | Login: Esgotaram as tentativas de login
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 123456 | Login: Esgotaram as tentativas de login
+[FALHA] diego.dromer@hotmail.com:123Algde10 | Codigo: 123456 | Todos os tokens falharam
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 234123 | Todos os tokens falharam
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 123123 | Login: Esgotaram as tentativas de login
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 123123 | Login: Credenciais invalidas: user or password invalid
+[FALHA] diego.dromer@hotmail.com:123Algde10 | Codigo: 123123 | Todos os tokens falharam
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 123457 | Todos os tokens falharam
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 123457 | Login: Credenciais invalidas: user or password invalid
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 123987 | Login: Esgotaram as tentativas de login
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 123987 | Login: Esgotaram as tentativas de login
+[FALHA] diego.dromer@hotmail.com:123Algde10 | Codigo: 123987 | Todos os tokens falharam
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 123123 | Todos os tokens falharam
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 123123 | Login: Esgotaram as tentativas de login
+[FALHA] diego.dromer@hotmail.com:123Algde10 | Codigo: 123123 | Todos os tokens falharam
+[FALHA] carlosparolineto@gmail.com:C4rl0s | Codigo: 123123 | Todos os tokens falharam
+[FALHA] mgambonis@gmail.com:Bisung@040592 | Codigo: 123123 | Login: Esgotaram as tentativas de login
+[FALHA] jefb1951@gmail.com:Bl33415013 | Codigo: 123123 | Todos os tokens falharam
+[FALHA] natasoares2014@gmail.com:Corajoso81 | Codigo: 123123 | Todos os tokens falharam
+[FALHA] juliocpmedina@gmail.com:Dora*001 | Codigo: 123123 | Todos os tokens falharam
+[FALHA] marcogabriell@ig.com.br:Tvsky300 | Codigo: 123123 | Todos os tokens falharam
+[FALHA] psrconde@yahoo.com.br:z12sp0r2TLMC | Codigo: 123123 | Todos os tokens falharam
+[FALHA] spawnsergio@gmail.com:R$ms509315 | Codigo: 123123 | Login: Credenciais invalidas: user or password invalid
+[FALHA] videassisjw@gmail.com:Daniel244 | Codigo: 123123 | Todos os tokens falharam
+[FALHA] dah_ma@hotmail.com:231264Dani | Codigo: 123123 | Todos os tokens falharam
+[FALHA] renatoluindoayres@gmail.com:290982Re | Codigo: 123123 | Todos os tokens falharam
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 098765 | Todos os tokens falharam
+[FALHA] telefonia@arquidiocesebh.org.br:Kl308616 | Codigo: 123123 | Login: Esgotaram as tentativas de login
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 098765 | Login: Esgotaram as tentativas de login
+[FALHA] wellersonfake2@gmail.com:Mauro@14 | Codigo: 123123 | Todos os tokens falharam
+[FALHA] isabellasouzaagio@bol.com.br:Isabella2018 | Codigo: 123123 | Todos os tokens falharam
+[FALHA] leo@hyss.cc:Sky54265426 | Codigo: 123123 | Todos os tokens falharam
+[FALHA] bissolir@hotmail.com:Maravilhosa10 | Codigo: 123123 | Todos os tokens falharam
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 123456 | Todos os tokens falharam
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 123456 | Login: Esgotaram as tentativas de login
+[FALHA] westin.ivan@gmail.com:Ianwp1602 | Codigo: 123123 | Todos os tokens falharam
+[FALHA] diego.dromer@hotmail.com:123Algde10 | Codigo: 123456 | Todos os tokens falharam
+[FALHA] marloncavalcante56@gmail.com:@msC2001 | Codigo: 123123 | Todos os tokens falharam
+[FALHA] carlosparolineto@gmail.com:C4rl0s | Codigo: 123456 | Todos os tokens falharam
+[FALHA] mgambonis@gmail.com:Bisung@040592 | Codigo: 123456 | Login: Esgotaram as tentativas de login
+[FALHA] sac@eletrooferta.com.br:Guto238965@@@ | Codigo: 123123 | Todos os tokens falharam
+[FALHA] jefb1951@gmail.com:Bl33415013 | Codigo: 123456 | Todos os tokens falharam
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 123456 | HTTP 404: {'name': 'Error', 'status': 404, 'message': 'There is no method to handle POST /tv/activation', 'statusCode': 404}
+[FALHA] flavio.elis.math@gmail.com:Matheus1801 | Codigo: 123123 | Todos os tokens falharam
+[FALHA] natasoares2014@gmail.com:Corajoso81 | Codigo: 123456 | Todos os tokens falharam
+[FALHA] humbertomouse@hotmail.com:Humberto01 | Codigo: 123123 | Login: Esgotaram as tentativas de login
+[FALHA] juliocpmedina@gmail.com:Dora*001 | Codigo: 123456 | Login: Esgotaram as tentativas de login
+[FALHA] marcogabriell@ig.com.br:Tvsky300 | Codigo: 123456 | Login: Esgotaram as tentativas de login
+[FALHA] rbneto1@uol.com.br:1Qaz2wsx | Codigo: 123123 | Todos os tokens falharam
+[FALHA] psrconde@yahoo.com.br:z12sp0r2TLMC | Codigo: 123456 | Login: Esgotaram as tentativas de login
+[FALHA] spawnsergio@gmail.com:R$ms509315 | Codigo: 123456 | Login: Credenciais invalidas: user or password invalid
+[FALHA] liliancpessin@gmail.com:99788816mA | Codigo: 123123 | Todos os tokens falharam
+[FALHA] videassisjw@gmail.com:Daniel244 | Codigo: 123456 | Login: Esgotaram as tentativas de login
+[FALHA] dah_ma@hotmail.com:231264Dani | Codigo: 123456 | Todos os tokens falharam
+[FALHA] cineonbrasil@gmail.com:Eug@2024*666! | Codigo: 123123 | Todos os tokens falharam
+[FALHA] flavioapodi@hotmail.com:Bairro13 | Codigo: 123123 | Login: Esgotaram as tentativas de login
+[FALHA] renatoluindoayres@gmail.com:290982Re | Codigo: 123456 | Todos os tokens falharam
+[FALHA] jvmr535@gmail.com:JoaoV535., | Codigo: 123123 | Todos os tokens falharam
+[FALHA] telefonia@arquidiocesebh.org.br:Kl308616 | Codigo: 123456 | Todos os tokens falharam
+[FALHA] leadsbr01@gmail.com:Si425511 | Codigo: 123123 | Login: Esgotaram as tentativas de login
+[FALHA] jorgejjr@uol.com.br:Jorge304060$ | Codigo: 123123 | Login: Esgotaram as tentativas de login
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 261450 | Todos os tokens falharam
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 261450 | Login: Erro de rede: HTTPSConnectionPool(host='www.recaptcha.net', port=443): Max retries exceeded with url: /recaptcha/api3/mri (Caused by SSLError(SSLError(1, '[SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:1032)')))
+[FALHA] wellersonfake2@gmail.com:Mauro@14 | Codigo: 123456 | Todos os tokens falharam
+[FALHA] yusukerox@gmail.com:Carrovoador18 | Codigo: 123123 | Todos os tokens falharam
+[FALHA] nelsonsabreu@yahoo.com.br:Simpatia1 | Codigo: 123123 | Todos os tokens falharam
+[FALHA] isabellasouzaagio@bol.com.br:Isabella2018 | Codigo: 123456 | Todos os tokens falharam
+[FALHA] diego.dromer@hotmail.com:123Algde10 | Codigo: 261450 | Todos os tokens falharam
+[FALHA] selsojandirkoop@gmail.com:#Se10530420 | Codigo: 123123 | Login: Esgotaram as tentativas de login
+[FALHA] leo@hyss.cc:Sky54265426 | Codigo: 123456 | Login: Esgotaram as tentativas de login
+[FALHA] carlosparolineto@gmail.com:C4rl0s | Codigo: 261450 | Todos os tokens falharam
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 311350 | Todos os tokens falharam
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 311350 | Login: Esgotaram as tentativas de login
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 311350 | Login: Esgotaram as tentativas de login
+[FALHA] diego.dromer@hotmail.com:123Algde10 | Codigo: 311350 | Todos os tokens falharam
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 335786 | Todos os tokens falharam
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 335786 | Login: Credenciais invalidas: user or password invalid
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 335786 | Todos os tokens falharam
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 335786 | Login: Credenciais invalidas: user or password invalid
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 156680 | HTTP 404: {'name': 'Error', 'status': 404, 'message': 'There is no method to handle POST /tv/activation', 'statusCode': 404}
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 156680 | Login: Credenciais invalidas: user or password invalid
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 156680 | Todos os tokens falharam
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 156680 | Login: Credenciais invalidas: user or password invalid
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 755604 | Todos os tokens falharam
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 755604 | Login: Credenciais invalidas: user or password invalid
+[FALHA] escritorio_dico@hotmail.com:sessao_ativa | Codigo: 123421 | HTTP 401: Invalid token
+[FALHA] escritorio_dico@hotmail.com:sessao_ativa | Codigo: 133816 | HTTP 401: Invalid token
+[SUCESSO] escritorio_dico@hotmail.com:sessao_ativa | Codigo: 253514 | TV ativada com sucesso!
+[FALHA] escritorio_dico@hotmail.com:sessao_ativa | Codigo: 200616 | HTTP 401: ssoToken required
+[FALHA] escritorio_dico@hotmail.com:sessao_ativa | Codigo: 200616 | HTTP 401: ssoToken required
+[FALHA] rsgencadernacoes@yahoo.com.br:88Me02li | Codigo: 302326 | Todos os tokens falharam
+[FALHA] rsgencadernacoes@yahoo.com.br:88Me02li | Codigo: 403397 | Todos os tokens falharam
+[FALHA] rsgencadernacoes@yahoo.com.br:88Me02li | Codigo: 403397 | Todos os tokens falharam
+[SUCESSO] rsgencadernacoes@yahoo.com.br | Codigo: 169439 | TV ativada com sucesso!
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 262352 | Todos os tokens falharam
+[SUCESSO] rsgencadernacoes@yahoo.com.br | Codigo: 405175 | TV ativada com sucesso!
+[FALHA] evascontim@outlook.com:Ep251571@ | Codigo: 343422 | Todos os tokens falharam
+[FALHA] dbellaguarda@gmail.com:Db$1175 | Codigo: 343422 | Login: Credenciais invalidas: user or password invalid
+[SUCESSO] 12/09/2026 11:36:59 | escritorio_dico@hotmail.com:17Carol95 | Codigo: 125659 | TV ativada com sucesso! Confirmado na tela (muito bem).
+[FALHA] 12/09/2026 11:41:09 | dbellaguarda@gmail.com:Db$1175 | Codigo: 576291 | Erro na automação: Credenciais inválidas SKY (dbellaguarda@gmail.com): Digite o e-mail ou celular valido pra continuar.
+[SUCESSO] 12/09/2026 11:42:28 | evascontim@outlook.com:Ep251571@ | Codigo: 576291 | TV ativada com sucesso! Confirmado na tela (muito bem).
+[FALHA] 12/09/2026 12:02:26 | espeditohermenegildo2@gmail.com:Esp53963569 | Codigo: 892441 | Erro na automação: Credenciais inválidas SKY (espeditohermenegildo2@gmail.com): Entre com sua conta SKY
+
+Informe o celular ou e-mail que você cadastrou.
+
+Entrar sem senha
+
+Carregande...
+ Carregande...
+
+Se você ainda não tem a sua conta SKY, é só
+criar uma.
+
+Criar conta
+[SUCESSO] 12/09/2026 12:06:41 | diego.dromer@hotmail.com:123Algde10 | Codigo: 342920 | TV ativada com sucesso! Confirmado na tela (muito bem).
+[SUCESSO] 12/09/2026 12:08:17 | carlosparolineto@gmail.com:C4rl0s | Codigo: 213130 | TV ativada com sucesso! Confirmado na tela (muito bem).
+[SUCESSO] 12/09/2026 12:13:29 | mgambonis@gmail.com:Bisung@040592 | Codigo: 713132 | TV ativada com sucesso! Confirmado na plataforma Sky+.
+[SUCESSO] 12/09/2026 12:14:24 | jefb1951@gmail.com:Bl33415013 | Codigo: 461770 | TV ativada com sucesso! Confirmado na plataforma Sky+.

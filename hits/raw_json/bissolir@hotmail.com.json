@@ -1,0 +1,467 @@
+{
+  "email": "bissolir@hotmail.com",
+  "password": "Maravilhosa10",
+  "access_token": "72449f27-374b-40d6-844a-d8ee193acefa",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiMjA2NjFjYjgtMzE4NS00ZDg0LWJhOWItMjgwNzVjMjcyYmUzIiwiYXRfaGFzaCI6IkVFM214ZVluZDJubk1vS2RTTmpYcGciLCJkZXZpY2VJZCI6IjA1MGJiYzE4NDc5YTEyYjRmMmU0NmI4NjQyOWU2MTQxNWMzZGVkMzEiLCJhdWRpdFRyYWNraW5nSWQiOiIyYmEzLWYyMzgtNGNhZC04OTU0LWViNWQiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjY3Mzc5NywidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJmMmEyNDQ5Ny1mMDFiLTRmMzUtYTEwZS1hNjU2ZDlkOGJkOGQiLCJzaWduYXR1cmVzIjpbIjI1MDQ2OTIxIiwiMTUyNDczMjEwNCJdLCJjdXN0b21lcklkIjoiMWU0ZTA3NTcyODBmNWQwODhiZDVkOTA1ZTIwZDdmOTUiLCJyZWdpc3RyYXRpb25TaWduYXR1cmUiOiIyNTA0NjkyMSIsImdpdmVuX25hbWUiOiJST1NBTkdFTEEiLCJ1c2VybmFtZSI6ImJpc3NvbGlyQGhvdG1haWwuY29tIiwibWFpbCI6ImJpc3NvbGlyQGhvdG1haWwuY29tIiwicmVkZW1wdGlvbkxpbWl0IjpudWxsLCJpYXQiOjE3ODgzMTI2NzMsImV4cCI6MTc4ODM5OTA3MywiaXNzIjoic20tc2t5LnZyaW9zZXJ2aWNlcy5jb20ifQ.OXgkl6dVprSOvbPLe26_x4gona3hWnzg6qRqWjHVyg055sXIBgCRJN95QdBfonaAKIRUdqn8w0N2PvduAo8Xo6qWy5Vj0nGA07lu17NBZw7jrDHuFRpv9YKEjOunpTZcVmcwKQQiKsEoQlpfZzx4lccj20tC5E-9tAc3xk_NRfhN5LkFIR9LC0wJOyJt5Ai3SITIT1k1-Wb41wE9gF0jQ03XBlT_rtLtTR1GAS_cSnHnuk1QxQSM_gUO5WA5Ka0c2pPdn1PPZxT6X8jHagmB4i4k30Kos2UCj45bjpvEI4BTXmeNt_BHUy5D9ADCYN9aqPwpE0vVDpyCJ6lPczVRiA",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "72449f27-374b-40d6-844a-d8ee193acefa",
+    "externalId": "5fa915de-471a-5f50-95e4-8cfef73dfec4",
+    "username": "1e4e0757280f5d088bd5d905e20d7f95",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "25046921",
+    "protocol": "2026-150197439299",
+    "customer": {
+      "email": "bissolir@hotmail.com",
+      "billingProfileCode": "1-16K44B1L",
+      "name": "ROSANGELA",
+      "secondName": "BISSOLI ONOFRE",
+      "birthday": "1961-09-21T00:00:00.000Z",
+      "ddd": 27,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5527999614237",
+      "id": "1e4e0757280f5d088bd5d905e20d7f95",
+      "cpf": "71141740710"
+    },
+    "signatures": [
+      {
+        "id": "25046921",
+        "organizationType": 0,
+        "phones": {},
+        "customerId": "1e4e0757280f5d088bd5d905e20d7f95",
+        "status": 2,
+        "productName": "COMBO FULL TOP HD 2018 - A",
+        "name": "ROSANGELA",
+        "secondName": "BISSOLI ONOFRE",
+        "dna": "00000100000100001000001000000000000000000000000010000000000100000000000000000000000000001011010111110000000000100000000100000000011110100000010000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Jorge Majestade",
+          "line1": "Rua Jorge Majestade, 254 - N Mexico",
+          "line2": ".",
+          "number": "254",
+          "city": "Vila Velha",
+          "state": "ES",
+          "country": "Brasil",
+          "postalCode": "29104060",
+          "referencePoint": ".",
+          "addressType": "Rua",
+          "resDdd": 27,
+          "resPhone": 33997741
+        },
+        "addressBilling": {
+          "linePublic": "Rua Jorge Majestade",
+          "line1": "Rua Jorge Majestade, 254 - Novo Mexico",
+          "line2": ".",
+          "number": "254",
+          "city": "Vila Velha",
+          "state": "ES",
+          "country": "Brasil",
+          "postalCode": "29104060",
+          "referencePoint": ".",
+          "addressType": "Rua",
+          "resDdd": 27,
+          "resPhone": 33997741
+        },
+        "activation": "1997-11-02T00:00:00.000Z",
+        "email": "bissolir@hotmail.com",
+        "parentAccount": "025046921",
+        "productStatus": "C",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [],
+        "permissions": {
+          "modalWinbackGatinho": true,
+          "modalWinbackCobranca": false,
+          "chatWinbackReativacao": false,
+          "chatWinbackWebview": false,
+          "chatWinbackCobranca": false,
+          "chatWinbackTelevendas": true,
+          "featureVerTelaCompras": true,
+          "featureSkyPlay": true,
+          "featureGuia": true,
+          "featureFatura": true,
+          "featureComprovantes": true,
+          "featureMeusDados": true,
+          "featureMinhasVisitas": true,
+          "featureAtendimento": true,
+          "featureAtendimentoChatReativacao": true,
+          "featureAssistenteVirtual": true,
+          "featureQuiz": true,
+          "featureControleRemoto": true,
+          "featureRealizarCompra": false,
+          "featureEnvioSinal": false,
+          "featureTurbinarPacote": false,
+          "additionalData": {
+            "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=81341c9d84dfecd608f009961d6ca73b62b0740e6be7cb040d2233afe0f91122ec2053834aca12b50eeb8f3b04c9d79c9cecf6d86702e7b3a7211a2d238f1cd4538f5e13a2b29452ba0efa5ca1e17d6f1936822d5f724381f1b9bf696203aa53c6d957619c93aab34d3c3b2daf9c6bcb30127388f780e3fc242b1fa214261bfe7f37166f576ac8e8322a3d2237819e27a362ab7c17613163712714d87a5d1119305a51725f23b98b6ad9cc7b6b980e40f2823fdfd7f588654640aa5fdde6c6e923bf3ca23fd1833c1d45ca0ef1d1edf2f0b9464bf42ed07f4e2c0ebea9bb0c13524847fb772c798fb1fa6ccc167afd83ab7fdeaab740d647d09c&id1=2c34bfa9ec621779b2af414cd184daee22bfed1c8fb46b3c7d8d003df23da93f9676ba57bcd265ab2eaed6d08416f97e191bdf31efef70a1f1965cb33839e154d9ad242a307894a7466f064464ac544523581ebff445305c3397e1db80631621f26444c424e13d76e8e0bda649d63764e2dd0dfac9b75f9a493cb4db2d9362606e519712cf3723365c8ffe57802cd4deca1a319d5ca484e8a92e9dac94cbb12a1f99598f1dd1ac515caba99122730916737df996d87591b6def66c5b61590ee899818a3222c1f9671de8077388b0cd03ba857d8b08bf3c17dce1c90b15596733e9eaf6ef4da50d5b0b8a6087f2b82c495c1165d370b848811540&id2=1b42676d8d90f66790565bcb&id3=",
+            "chatParams": {
+              "subject": "Cancelamento",
+              "dateNowFormatted": "2026-09-01 22:31:04",
+              "chatExpirationDate": 1788312964737
+            }
+          }
+        },
+        "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=81341c9d84dfecd608f009961d6ca73b62b0740e6be7cb040d2233afe0f91122ec2053834aca12b50eeb8f3b04c9d79c9cecf6d86702e7b3a7211a2d238f1cd4538f5e13a2b29452ba0efa5ca1e17d6f1936822d5f724381f1b9bf696203aa53c6d957619c93aab34d3c3b2daf9c6bcb30127388f780e3fc242b1fa214261bfe7f37166f576ac8e8322a3d2237819e27a362ab7c17613163712714d87a5d1119305a51725f23b98b6ad9cc7b6b980e40f2823fdfd7f588654640aa5fdde6c6e923bf3ca23fd1833c1d45ca0ef1d1edf2f0b9464bf42ed07f4e2c0ebea9bb0c13524847fb772c798fb1fa6ccc167afd83ab7fdeaab740d647d09c&id1=2c34bfa9ec621779b2af414cd184daee22bfed1c8fb46b3c7d8d003df23da93f9676ba57bcd265ab2eaed6d08416f97e191bdf31efef70a1f1965cb33839e154d9ad242a307894a7466f064464ac544523581ebff445305c3397e1db80631621f26444c424e13d76e8e0bda649d63764e2dd0dfac9b75f9a493cb4db2d9362606e519712cf3723365c8ffe57802cd4deca1a319d5ca484e8a92e9dac94cbb12a1f99598f1dd1ac515caba99122730916737df996d87591b6def66c5b61590ee899818a3222c1f9671de8077388b0cd03ba857d8b08bf3c17dce1c90b15596733e9eaf6ef4da50d5b0b8a6087f2b82c495c1165d370b848811540&id2=1b42676d8d90f66790565bcb&id3="
+      },
+      {
+        "id": "1524732104",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 999614237,
+          "dddMobilePhone": 27,
+          "dddComPhone": 27,
+          "comPhone": 999070605
+        },
+        "customerId": "1e4e0757280f5d088bd5d905e20d7f95",
+        "status": 1,
+        "productName": "COMBO MEDIA CENTER TOP HD + DISNEY PLUS PREMIUM 2022 - P",
+        "name": "ROSANGELA",
+        "secondName": "BISSOLI ONOFRE",
+        "dna": "01000000000100000000000000000000100000000000000000000000000000000000000100000000000000100011000111110000000000000000000100000000011110000100000000000011111111111111111111111000000000000000000001000000000000111111111111111000000011111010111111110000000000000001101111111111111001101110001111111111110111111111111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Jorge Majestade",
+          "line1": "Rua Jorge Majestade, 254 - Novo Mexico",
+          "line2": null,
+          "number": "254",
+          "city": "Vila Velha",
+          "state": "ES",
+          "country": "Brasil",
+          "postalCode": "29104060",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 27,
+          "resPhone": 999614237
+        },
+        "addressBilling": {
+          "linePublic": "Rua Jorge Majestade",
+          "line1": "Rua Jorge Majestade, 254 - Novo México",
+          "line2": null,
+          "number": "254",
+          "city": "Vila Velha",
+          "state": "ES",
+          "country": "Brasil",
+          "postalCode": "29104060",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2020-11-05T00:00:00.000Z",
+        "email": "bissolir@hotmail.com",
+        "parentAccount": "1524732103",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000900425331",
+            "isRecordable": true,
+            "technology": "MC",
+            "subcategory": "PayTV",
+            "serialCode": "SHR44",
+            "serialNumber": "010A4423737074265"
+          },
+          {
+            "smartcard": "000511694770",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "670AA63618186592E"
+          },
+          {
+            "smartcard": "009001273300",
+            "isRecordable": false,
+            "technology": "MN",
+            "subcategory": "PayTV",
+            "serialCode": "SC51",
+            "serialNumber": "CE0A513000127330D"
+          },
+          {
+            "smartcard": "009001329557",
+            "isRecordable": false,
+            "technology": "MN",
+            "subcategory": "PayTV",
+            "serialCode": "SC51",
+            "serialNumber": "CE0A5130001329558"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "1524732104",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 999614237,
+        "dddMobilePhone": 27,
+        "dddComPhone": 27,
+        "comPhone": 999070605
+      },
+      "customerId": "1e4e0757280f5d088bd5d905e20d7f95",
+      "status": 1,
+      "productName": "COMBO MEDIA CENTER TOP HD + DISNEY PLUS PREMIUM 2022 - P",
+      "name": "ROSANGELA",
+      "secondName": "BISSOLI ONOFRE",
+      "dna": "01000000000100000000000000000000100000000000000000000000000000000000000100000000000000100011000111110000000000000000000100000000011110000100000000000011111111111111111111111000000000000000000001000000000000111111111111111000000011111010111111110000000000000001101111111111111001101110001111111111110111111111111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Jorge Majestade",
+        "line1": "Rua Jorge Majestade, 254 - Novo Mexico",
+        "line2": null,
+        "number": "254",
+        "city": "Vila Velha",
+        "state": "ES",
+        "country": "Brasil",
+        "postalCode": "29104060",
+        "referencePoint": null,
+        "addressType": "Rua",
+        "resDdd": 27,
+        "resPhone": 999614237
+      },
+      "addressBilling": {
+        "linePublic": "Rua Jorge Majestade",
+        "line1": "Rua Jorge Majestade, 254 - Novo México",
+        "line2": null,
+        "number": "254",
+        "city": "Vila Velha",
+        "state": "ES",
+        "country": "Brasil",
+        "postalCode": "29104060",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2020-11-05T00:00:00.000Z",
+      "email": "bissolir@hotmail.com",
+      "parentAccount": "1524732103",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000900425331",
+          "isRecordable": true,
+          "technology": "MC",
+          "subcategory": "PayTV",
+          "serialCode": "SHR44",
+          "serialNumber": "010A4423737074265"
+        },
+        {
+          "smartcard": "000511694770",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "670AA63618186592E"
+        },
+        {
+          "smartcard": "009001273300",
+          "isRecordable": false,
+          "technology": "MN",
+          "subcategory": "PayTV",
+          "serialCode": "SC51",
+          "serialNumber": "CE0A513000127330D"
+        },
+        {
+          "smartcard": "009001329557",
+          "isRecordable": false,
+          "technology": "MN",
+          "subcategory": "PayTV",
+          "serialCode": "SC51",
+          "serialNumber": "CE0A5130001329558"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "1524732104": {
+      "included": [
+        {
+          "name": "TELECINE HD CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "08-11-2021",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM 2024 PROMO CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "08-11-2021",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO HD CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "08-11-2021",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "ESR HD",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "08-11-2021",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "TAXA ASSISTENCIA PREMIUM - P",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "08-11-2021",
+          "end_date": null,
+          "icon": "🛡️"
+        },
+        {
+          "name": "PREMIERE TOTAL HD CB - P",
+          "category": "A La Carte",
+          "subcategory": "Futebol",
+          "start_date": "08-11-2021",
+          "end_date": null,
+          "icon": "⚽"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "17-02-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky Sex Prive HD - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "08-11-2021",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "Sky Sex Prive - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "08-11-2021",
+          "end_date": null,
+          "icon": "🔞"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "17-02-2026",
+            "startDate": "17-02-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TELECINE HD CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "05-11-2020",
+            "startDate": "08-11-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "DISNEY PLUS PREMIUM 2024 PROMO CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "05-11-2020",
+            "startDate": "08-11-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO HD CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "05-11-2020",
+            "startDate": "08-11-2021",
+            "endDate": null
+          },
+          {
+            "id": "1-1LRKSTR",
+            "name": "ESR HD",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/8849176/SKY-Canais-Adicionais-ESR-Cards.png",
+            "price": "7.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "05-11-2020",
+            "startDate": "08-11-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TAXA ASSISTENCIA PREMIUM - P",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "05-11-2020",
+            "startDate": "08-11-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive HD - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "05-11-2020",
+            "startDate": "08-11-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "PREMIERE TOTAL HD CB - P",
+            "category": "A La Carte",
+            "subcategory": "Futebol",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "05-11-2020",
+            "startDate": "08-11-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "05-11-2020",
+            "startDate": "08-11-2021",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

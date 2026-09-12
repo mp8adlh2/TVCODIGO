@@ -1,0 +1,445 @@
+{
+  "email": "(22)98813-4948",
+  "password": "Vi250687",
+  "access_token": "80cfcbb5-b0dd-4732-a23e-06fbf5e3e357",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiM2U5YWMzODktYzFhMy00ZGIzLWE3OWUtYzllZmE0NThlYjRmIiwiYXRfaGFzaCI6ImJpNjNVNG1yWVdOWG1vRXlFLXhXclEiLCJkZXZpY2VJZCI6IjM0NWEyNjFiN2E1Yjc3NzljZGU1MWM1NzljY2E2ZjA5MGY2NDU2NDUiLCJhdWRpdFRyYWNraW5nSWQiOiI2YzhlLWJjY2EtNDMyNi04YjY3LWIxYWYiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODgxNzA3NDMxNCwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJnNEU5eWNZWlVDeUpBVnoxdE9TWHBRIiwic2lnbmF0dXJlcyI6WyIzODYyNjE4NSIsIjE0OTY3MTQwMSJdLCJjdXN0b21lcklkIjoiZDljYjQ4YTBkNTRmMTZjNzFjODgxNzQwZGUxNDEwZTkiLCJyZWdpc3RyYXRpb25TaWduYXR1cmUiOiIzODYyNjE4NSIsImdpdmVuX25hbWUiOiJWSVRPUiIsImZhbWlseV9uYW1lIjoic2t5IiwidXNlcm5hbWUiOiIyMjk4ODEzNDk0OCIsInRlbGVwaG9uZU51bWJlciI6IjIyOTg4MTM0OTQ4Iiwic2lkIjoiMzQ1YTI2MWI3YTViNzc3OWNkZTUxYzU3OWNjYTZmMDkwZjY0NTY0NSIsInN1Ym5hbWUiOiJnNEU5eWNZWlVDeUpBVnoxdE9TWHBRIiwicmVkZW1wdGlvbkxpbWl0IjpudWxsLCJpYXQiOjE3ODg4MTcwNzQsImV4cCI6MTc4ODkwMzQ3NCwiaXNzIjoic20tc2t5LnZyaW9zZXJ2aWNlcy5jb20ifQ.d18NYTlrhu35fJmaBeDV-qsGefIMD4LUQo07ya0XJJAYnnnPXsfJyYBFVKkHWI9f8TUrbE2e-Iiky1dwRA_8SKsKcspZcItu3gUv-qPJxHOkiAIB5QER6S0lQFH1cBErzqYNBCA0eWJwrS99Yg0joPtVDCKvJpJIBsMhOn7smQi56FASXlQr1ELg95p1Nw1verfokCsxRf7kiogK6WLQ1hMa_YsEyi_IQhGDIzSd3xdaQJcOKlAYsoxWWAetgB1vp35ui9P09pmLYaShEMX9xlcAht4K6qvFzxp3rUuH7Cbnd6k6yVtE6n86mVdD9E89AGzwGT0KNJBYfIAS7ybijQ",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "80cfcbb5-b0dd-4732-a23e-06fbf5e3e357",
+    "externalId": "d905ef25-2766-5fa2-af8a-9c2e1bdd90ba",
+    "username": "d9cb48a0d54f16c71c881740de1410e9",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "38626185",
+    "protocol": "2026-150293543432",
+    "customer": {
+      "email": "VITORSTUTZ@YAHOO.COM.BR",
+      "billingProfileCode": "1-AM0B-9904",
+      "name": "VITOR",
+      "secondName": "STUTZ PINTO",
+      "birthday": "1981-12-09T00:00:00.000Z",
+      "ddd": 22,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5522988134948",
+      "id": "d9cb48a0d54f16c71c881740de1410e9",
+      "cpf": "09365067766"
+    },
+    "signatures": [
+      {
+        "id": "38626185",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 988134948,
+          "dddMobilePhone": 22
+        },
+        "customerId": "d9cb48a0d54f16c71c881740de1410e9",
+        "status": 2,
+        "productName": "COMBO NEW SKY MIX TELECINE 11",
+        "name": "VITOR",
+        "secondName": "STUTZ PINTO",
+        "dna": "00000100000100100000001000000000000000000000000001000000001000000000000000000000000000011000010111110000000000100000000100000000011110010000100000010111111111111111111111111000000000000000100001100000010010111111111111010000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Avenida Dos Bandeirantes",
+          "line1": "Avenida Dos Bandeirantes, 243 - Industrial",
+          "line2": ".",
+          "number": "243",
+          "city": "Casimiro De Abreu",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "28860000",
+          "referencePoint": "Pousa Stutis",
+          "addressType": "Avenida",
+          "resDdd": 22,
+          "resPhone": 27781120
+        },
+        "addressBilling": {
+          "linePublic": "Avenida Dos Bandeirantes",
+          "line1": "Avenida Dos Bandeirantes, 243 - Industrial",
+          "line2": ".",
+          "number": "243",
+          "city": "Casimiro De Abreu",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "28860000",
+          "referencePoint": "Pousa Stutis",
+          "addressType": "Avenida",
+          "resDdd": 22,
+          "resPhone": 27781120
+        },
+        "activation": "2008-10-13T00:00:00.000Z",
+        "email": "vitorstutz@yahoo.com.br",
+        "parentAccount": "038626185",
+        "productStatus": "C",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [],
+        "permissions": {
+          "modalWinbackGatinho": true,
+          "modalWinbackCobranca": false,
+          "chatWinbackReativacao": false,
+          "chatWinbackWebview": false,
+          "chatWinbackCobranca": false,
+          "chatWinbackTelevendas": true,
+          "featureVerTelaCompras": true,
+          "featureSkyPlay": true,
+          "featureGuia": true,
+          "featureFatura": true,
+          "featureComprovantes": true,
+          "featureMeusDados": true,
+          "featureMinhasVisitas": true,
+          "featureAtendimento": true,
+          "featureAtendimentoChatReativacao": true,
+          "featureAssistenteVirtual": true,
+          "featureQuiz": true,
+          "featureControleRemoto": true,
+          "featureRealizarCompra": false,
+          "featureEnvioSinal": false,
+          "featureTurbinarPacote": false,
+          "additionalData": {
+            "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=68c0598568fa80a9946271300ffdef6fd749aed36606b7ddb6aa7261eb70da26e58604e197e1d875d04c9cc833d85a0cd9624e2ed0bcaf677952c0cc527e47569ee985d7b8143b051a5c2f8d00a7ebf5456c5fc9139a8fcbf034a6598409fa4bd929b553d817e33598e2b3121f9df9d492978a4d53c5dc3315e0c774960b10023ca31c401494a6871374d7e97a1f2db1285109a2e692b19cc99b0dc2fdc532f2f1dd3bb6cb1cf93872f3d36937cf2940410efe656d99a75a4baa0eb43da96f585d382c170c67df1014eaf1c117f70e6a702744740ebdb5dcec239a0b6ca20ef268d06a2a12269a11fde3debd77d4ff0d4789da39c65ea716ee31&id1=360eb6ace6cbbf59dd85c51126190661f95c4fb7b1cdaec2b222470e185e7de98e4769ee02c4d38e12ca035c2512fe72abe9c5911f8a925957b61a8ff9ffbbd4ca57ced146c241d701214566366f606d304b23a2384e10cf536561e62ec13468ea1f09e9aadf35fd4a3540192a1192e23b791fbd6361e46e2cd8ead7c6958e54eaa313dd4d1aba099459050ac7506f10c00044089176073d50724477b292c8e89e16b86f922280b98a28dc5f894821f7554a7dc47fb1569dc5d2de317612299aed53df5659dd95de738aa15411281454d8ddf2c98a9ff69f5647ddedaf7936fa257c6ab9d1cdf2925572c8d6b5c4d7cfffde75718efa8a5b216f&id2=7eddfa3f1cb0c08f9b3141fe&id3=",
+            "chatParams": {
+              "subject": "Cancelamento",
+              "dateNowFormatted": "2026-09-07 18:37:52",
+              "chatExpirationDate": 1788817372116
+            }
+          }
+        },
+        "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=68c0598568fa80a9946271300ffdef6fd749aed36606b7ddb6aa7261eb70da26e58604e197e1d875d04c9cc833d85a0cd9624e2ed0bcaf677952c0cc527e47569ee985d7b8143b051a5c2f8d00a7ebf5456c5fc9139a8fcbf034a6598409fa4bd929b553d817e33598e2b3121f9df9d492978a4d53c5dc3315e0c774960b10023ca31c401494a6871374d7e97a1f2db1285109a2e692b19cc99b0dc2fdc532f2f1dd3bb6cb1cf93872f3d36937cf2940410efe656d99a75a4baa0eb43da96f585d382c170c67df1014eaf1c117f70e6a702744740ebdb5dcec239a0b6ca20ef268d06a2a12269a11fde3debd77d4ff0d4789da39c65ea716ee31&id1=360eb6ace6cbbf59dd85c51126190661f95c4fb7b1cdaec2b222470e185e7de98e4769ee02c4d38e12ca035c2512fe72abe9c5911f8a925957b61a8ff9ffbbd4ca57ced146c241d701214566366f606d304b23a2384e10cf536561e62ec13468ea1f09e9aadf35fd4a3540192a1192e23b791fbd6361e46e2cd8ead7c6958e54eaa313dd4d1aba099459050ac7506f10c00044089176073d50724477b292c8e89e16b86f922280b98a28dc5f894821f7554a7dc47fb1569dc5d2de317612299aed53df5659dd95de738aa15411281454d8ddf2c98a9ff69f5647ddedaf7936fa257c6ab9d1cdf2925572c8d6b5c4d7cfffde75718efa8a5b216f&id2=7eddfa3f1cb0c08f9b3141fe&id3="
+      },
+      {
+        "id": "149671401",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 988134948,
+          "dddMobilePhone": 22,
+          "dddComPhone": 22,
+          "comPhone": 998938357
+        },
+        "customerId": "d9cb48a0d54f16c71c881740de1410e9",
+        "status": 1,
+        "productName": "COMBO FULL CINEMA HD 2020/2021 - P",
+        "name": "VITOR",
+        "secondName": "STUTZ PINTO",
+        "dna": "01000000000100010000000100000000100000000000000010000000000100000000000010000000000000001011000111110000000000000010000000100000011110100000010000100111111111111111111111111000000000000000000000100000000010111111111111100000000011111010111111110001000000000001101111111111111011101110001111111111010011111111111111111111111111111111110011111111111110111111111101011111111111111111111111100111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Rua Hotelim Da Silva Pedreira",
+          "line1": "Rua Rua Hotelim Da Silva Pedreira, 21 - Mirante Do Poeta",
+          "line2": null,
+          "number": "21",
+          "city": "Casimiro De Abreu",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "28860000",
+          "referencePoint": "Em Frente A Boracharria Do Adriana",
+          "addressType": "Rua"
+        },
+        "addressBilling": {
+          "linePublic": "Rua De Piraquara",
+          "line1": "Rua De Piraquara, 800 - Padre Miguel",
+          "line2": "Cs 4",
+          "number": "800",
+          "city": "Rio De Janeiro",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "21715241",
+          "referencePoint": "Proximo Ao Hortifruti",
+          "addressType": "Rua"
+        },
+        "activation": "2013-10-19T00:00:00.000Z",
+        "email": "VITORSTUTZ@YAHOO.COM.BR",
+        "parentAccount": "0149671401",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000685230021",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "CE0AA635385309422"
+          },
+          {
+            "smartcard": "001145478309",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A0120804867503"
+          },
+          {
+            "smartcard": "000675677967",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "010A263412823777E"
+          },
+          {
+            "smartcard": "000753523414",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2036144539100"
+          },
+          {
+            "smartcard": "000686272055",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "670AA635379824586"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "149671401",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 988134948,
+        "dddMobilePhone": 22,
+        "dddComPhone": 22,
+        "comPhone": 998938357
+      },
+      "customerId": "d9cb48a0d54f16c71c881740de1410e9",
+      "status": 1,
+      "productName": "COMBO FULL CINEMA HD 2020/2021 - P",
+      "name": "VITOR",
+      "secondName": "STUTZ PINTO",
+      "dna": "01000000000100010000000100000000100000000000000010000000000100000000000010000000000000001011000111110000000000000010000000100000011110100000010000100111111111111111111111111000000000000000000000100000000010111111111111100000000011111010111111110001000000000001101111111111111011101110001111111111010011111111111111111111111111111111110011111111111110111111111101011111111111111111111111100111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Rua Hotelim Da Silva Pedreira",
+        "line1": "Rua Rua Hotelim Da Silva Pedreira, 21 - Mirante Do Poeta",
+        "line2": null,
+        "number": "21",
+        "city": "Casimiro De Abreu",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "28860000",
+        "referencePoint": "Em Frente A Boracharria Do Adriana",
+        "addressType": "Rua"
+      },
+      "addressBilling": {
+        "linePublic": "Rua De Piraquara",
+        "line1": "Rua De Piraquara, 800 - Padre Miguel",
+        "line2": "Cs 4",
+        "number": "800",
+        "city": "Rio De Janeiro",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "21715241",
+        "referencePoint": "Proximo Ao Hortifruti",
+        "addressType": "Rua"
+      },
+      "activation": "2013-10-19T00:00:00.000Z",
+      "email": "VITORSTUTZ@YAHOO.COM.BR",
+      "parentAccount": "0149671401",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000685230021",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "CE0AA635385309422"
+        },
+        {
+          "smartcard": "001145478309",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A0120804867503"
+        },
+        {
+          "smartcard": "000675677967",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "010A263412823777E"
+        },
+        {
+          "smartcard": "000753523414",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2036144539100"
+        },
+        {
+          "smartcard": "000686272055",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "670AA635379824586"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "149671401": {
+      "included": [
+        {
+          "name": "ESR HD",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "29-09-2021",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "HBO HD CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "29-09-2021",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "TELECINE HD CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "29-09-2021",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "TAXA ASSISTENCIA PREMIUM - P",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "29-09-2021",
+          "end_date": null,
+          "icon": "🛡️"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "DISNEY PLUS PREMIUM",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "10-12-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Premiere",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "30-09-2021",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "Sky Sex Prive - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "29-09-2021",
+          "end_date": null,
+          "icon": "🔞"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-219IIMH",
+            "name": "DISNEY PLUS PREMIUM",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Disney%403x.png",
+            "price": "46.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "10-12-2025",
+            "startDate": "10-12-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-1XBHQIX",
+            "name": "Premiere",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Premiere%403x.png",
+            "price": "59.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "30-09-2021",
+            "startDate": "30-09-2021",
+            "endDate": null
+          },
+          {
+            "id": "1-1LRKSTR",
+            "name": "ESR HD",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/8849176/SKY-Canais-Adicionais-ESR-Cards.png",
+            "price": "7.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "29-09-2021",
+            "startDate": "29-09-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO HD CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "29-09-2021",
+            "startDate": "29-09-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "29-09-2021",
+            "startDate": "29-09-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TELECINE HD CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "29-09-2021",
+            "startDate": "29-09-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TAXA ASSISTENCIA PREMIUM - P",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "29-09-2021",
+            "startDate": "29-09-2021",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

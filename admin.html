@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>PAINEL DE CONTROLE ADMIN // STREAM ACTIVATOR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700;800&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-base: #030712;
+      --panel-bg: rgba(15, 23, 42, 0.78);
+      --panel-border: rgba(255, 255, 255, 0.12);
+      --accent-color: #ffd700;
+      --accent-glow: rgba(255, 215, 0, 0.4);
+      --text-main: #f8fafc;
+      --text-dim: #94a3b8;
+      --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --font-display: 'Chakra Petch', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 14px 40px;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    #matrix-canvas, #confetti-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .ambient-glow {
+      position: fixed;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      filter: blur(140px);
+      opacity: 0.18;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .orb-1 { top: -100px; left: -100px; background: #ffd700; }
+    .orb-2 { bottom: -100px; right: -100px; background: #00ff66; }
+
+    .admin-container {
+      width: 100%;
+      max-width: 900px;
+      position: relative;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* Top Bar */
+    .admin-header {
+      background: var(--panel-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--panel-border);
+      border-radius: 18px;
+      padding: 16px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .brand-title {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      color: #ffd700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .badge-admin {
+      background: linear-gradient(135deg, #ffd700, #ff8800);
+      color: #000;
+      font-size: 10px;
+      font-weight: 900;
+      padding: 2px 7px;
+      border-radius: 6px;
+    }
+
+    .btn-icon {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--panel-border);
+      border-radius: 10px;
+      padding: 7px 14px;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+      text-decoration: none;
+    }
+    .btn-icon:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 215, 0, 0.4);
+      transform: translateY(-1px);
+    }
+
+    /* Tabs Bar */
+    .admin-nav-tabs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      background: rgba(0, 0, 0, 0.45);
+      padding: 6px;
+      border-radius: 16px;
+      border: 1px solid var(--panel-border);
+    }
+
+    .admin-nav-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-dim);
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 800;
+      padding: 12px 10px;
+      border-radius: 12px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      letter-spacing: 0.5px;
+    }
+    .admin-nav-btn:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.04);
+    }
+    .admin-nav-btn.active {
+      background: linear-gradient(135deg, rgba(255, 215, 0, 0.22) 0%, rgba(255, 136, 0, 0.15) 100%);
+      color: #ffd700;
+      border: 1px solid rgba(255, 215, 0, 0.45);
+      box-shadow: 0 0 16px rgba(255, 215, 0, 0.2);
+    }
+
+    /* Content Cards */
+    .admin-card {
+      background: var(--panel-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--panel-border);
+      border-radius: 20px;
+      padding: 22px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* Stats Grid */
+    .admin-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+    }
+    .admin-stat-chip {
+      background: rgba(0, 0, 0, 0.5);
+      border: 1px solid var(--panel-border);
+      border-radius: 12px;
+      padding: 10px 8px;
+      text-align: center;
+    }
+    .admin-stat-chip-num {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 800;
+    }
+    .admin-stat-chip-lbl {
+      font-size: 10.5px;
+      color: var(--text-dim);
+      font-weight: 700;
+      margin-top: 2px;
+    }
+
+    /* Service Selector */
+    .admin-service-radios {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+    .admin-radio-btn {
+      background: rgba(0, 0, 0, 0.4);
+      border: 1.5px solid var(--panel-border);
+      border-radius: 12px;
+      padding: 10px 6px;
+      color: var(--text-dim);
+      font-family: var(--font-display);
+      font-size: 11.5px;
+      font-weight: 800;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    .admin-radio-btn:hover {
+      border-color: rgba(255, 255, 255, 0.3);
+      color: #fff;
+    }
+    .admin-radio-btn.active-n { border-color: #ff3344; background: rgba(255, 51, 68, 0.15); color: #fff; }
+    .admin-radio-btn.active-h { border-color: #c084fc; background: rgba(192, 132, 252, 0.15); color: #fff; }
+    .admin-radio-btn.active-cr { border-color: #f47521; background: rgba(244, 117, 33, 0.15); color: #fff; }
+    .admin-radio-btn.active-sky { border-color: #00A0E3; background: rgba(0, 160, 227, 0.15); color: #fff; }
+
+    /* Dropzone & Textareas */
+    .admin-dropzone {
+      background: rgba(0, 0, 0, 0.4);
+      border: 2px dashed rgba(255, 215, 0, 0.35);
+      border-radius: 14px;
+      padding: 24px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .admin-dropzone:hover {
+      background: rgba(255, 215, 0, 0.05);
+      border-color: #ffd700;
+    }
+
+    .admin-textarea {
+      width: 100%;
+      height: 100px;
+      background: rgba(0, 0, 0, 0.6);
+      border: 1px solid var(--panel-border);
+      border-radius: 10px;
+      padding: 10px;
+      color: #fff;
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      resize: vertical;
+    }
+    .admin-textarea:focus {
+      outline: none;
+      border-color: #ffd700;
+    }
+
+    .btn-quick-paste {
+      background: rgba(255, 215, 0, 0.1);
+      border: 1px solid rgba(255, 215, 0, 0.4);
+      border-radius: 10px;
+      padding: 10px;
+      color: #ffd700;
+      font-family: var(--font-display);
+      font-size: 12.5px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-quick-paste:hover {
+      background: rgba(255, 215, 0, 0.2);
+    }
+
+    .btn-unlock {
+      background: linear-gradient(135deg, #ffd700 0%, #ff8800 100%);
+      border: none;
+      border-radius: 12px;
+      padding: 13px;
+      color: #000;
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-unlock:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+    }
+
+    /* 👥 Online Users Stats & List */
+    .online-users-stats-row {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+    }
+    .online-stat-card {
+      background: rgba(0, 0, 0, 0.45);
+      border: 1px solid rgba(0, 255, 102, 0.2);
+      border-radius: 12px;
+      padding: 10px 8px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .online-stat-val {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 800;
+    }
+    .online-stat-title {
+      font-size: 9.5px;
+      color: var(--text-dim);
+      font-weight: 700;
+    }
+
+    .users-list-container {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: 380px;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+
+    .user-card-item {
+      background: rgba(0, 0, 0, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .user-card-item:hover {
+      border-color: rgba(0, 255, 102, 0.4);
+      background: rgba(0, 255, 102, 0.04);
+    }
+
+    .user-live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(0, 255, 102, 0.15);
+      color: #00ff66;
+      border: 1px solid rgba(0, 255, 102, 0.35);
+      border-radius: 10px;
+      padding: 2px 8px;
+      font-size: 10px;
+      font-weight: 800;
+    }
+    .user-live-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #00ff66;
+      box-shadow: 0 0 6px #00ff66;
+      animation: pulseDot 1.4s infinite;
+    }
+    @keyframes pulseDot {
+      0% { opacity: 0.4; }
+      50% { opacity: 1; }
+      100% { opacity: 0.4; }
+    }
+
+    /* 🔑 Password Manager */
+    .pwd-checkboxes-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+    .pwd-checkbox-pill {
+      background: rgba(0, 0, 0, 0.4);
+      border: 1.5px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 9px 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #94a3b8;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+    .pwd-checkbox-pill input:checked + span {
+      color: #ffffff;
+      font-weight: 800;
+    }
+    .pwd-checkbox-pill:hover {
+      border-color: rgba(255, 215, 0, 0.4);
+    }
+
+    .pwd-list-container {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: 380px;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+    .pwd-item-card {
+      background: rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .pwd-item-card:hover {
+      border-color: rgba(255, 215, 0, 0.35);
+      background: rgba(255, 215, 0, 0.03);
+    }
+
+    /* 🗑️ Topic Accounts Card & Delete Button */
+    .acc-item-card {
+      background: rgba(0, 0, 0, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 9px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      transition: all 0.2s ease;
+    }
+    .acc-item-card:hover {
+      border-color: rgba(255, 51, 68, 0.4);
+      background: rgba(255, 51, 68, 0.03);
+    }
+    .btn-delete-acc {
+      background: rgba(255, 51, 68, 0.12);
+      border: 1px solid rgba(255, 51, 68, 0.4);
+      color: #ff4d5a;
+      border-radius: 8px;
+      padding: 5px 10px;
+      font-size: 11px;
+      font-weight: 800;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.2s;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .btn-delete-acc:hover {
+      background: #ff3344;
+      color: #fff;
+      transform: scale(1.03);
+      box-shadow: 0 0 10px rgba(255, 51, 68, 0.5);
+    }
+
+    /* 🔐 Login Overlay for Admin */
+    #admin-login-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(3, 7, 18, 0.95);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 20px;
+    }
+    .admin-login-card {
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(255, 215, 0, 0.35);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.8), 0 0 30px rgba(255, 215, 0, 0.15);
+      border-radius: 20px;
+      padding: 28px;
+      width: 100%;
+      max-width: 440px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    @media (max-width: 640px) {
+      .admin-stats-grid, .online-users-stats-row {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .admin-service-radios {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .pwd-checkboxes-grid {
+        grid-template-columns: 1fr;
+      }
+      .admin-nav-btn {
+        font-size: 11px;
+        padding: 10px 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ambient-glow orb-1"></div>
+  <div class="ambient-glow orb-2"></div>
+  <canvas id="matrix-canvas"></canvas>
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- 🔐 ADMIN LOGIN LOCK OVERLAY -->
+  <div id="admin-login-overlay">
+    <div class="admin-login-card">
+      <div style="text-align: center;">
+        <div style="font-size: 42px; margin-bottom: 8px;">🛡️</div>
+        <h2 style="font-family: var(--font-display); font-size: 20px; color: #ffd700; font-weight: 800; letter-spacing: 0.8px;">
+          COFRE MASTER // AUTENTICAÇÃO
+        </h2>
+        <p style="font-size: 12px; color: var(--text-dim); margin-top: 4px;">
+          Digite a Senha Mestre ou a Senha do Cofre para gerenciar cookies, usuários e senhas.
+        </p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 6px;">
+        <div style="font-size: 10.5px; color: var(--text-dim); font-weight: 700;">SENHA DE DESBLOQUEIO:</div>
+        <div style="position: relative;">
+          <input type="password" id="admin-auth-input" placeholder="Cole a senha do cofre aqui..." style="width: 100%; background: rgba(0,0,0,0.7); border: 1.5px solid var(--panel-border); border-radius: 10px; padding: 12px 42px 12px 14px; color: #fff; font-size: 13px; font-family: var(--font-mono);" onkeydown="if(event.key==='Enter') executeAdminUnlock();">
+          <button type="button" onclick="const i=document.getElementById('admin-auth-input'); i.type=(i.type==='password'?'text':'password');" style="position: absolute; right: 10px; top: 11px; background: none; border: none; font-size: 16px; cursor: pointer; color: var(--text-dim);">👁️</button>
+        </div>
+      </div>
+
+      <button class="btn-unlock" onclick="executeAdminUnlock()">
+        DESBLOQUEAR PAINEL ADMIN 🔓
+      </button>
+
+      <div id="admin-auth-error-msg" style="display: none; color: #ff4d5a; font-size: 11.5px; text-align: center; font-weight: 700;"></div>
+
+      <div style="text-align: center; margin-top: 4px;">
+        <a href="index.html" style="color: var(--text-dim); font-size: 11.5px; text-decoration: underline;">Voltar para o site principal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🚀 STANDALONE ADMIN CONTAINER -->
+  <div class="admin-container" id="admin-main-container" style="display: none;">
+    <!-- Top Header -->
+    <header class="admin-header">
+      <div class="brand-title">
+        <span>⚡ STREAM ACTIVATOR</span>
+        <span class="badge-admin">ADMIN CONTROL</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <a href="index.html" class="btn-icon" title="Acessar o terminal dos clientes">
+          📺 Ir para o Site
+        </a>
+        <button class="btn-icon" onclick="lockAdminSession()" style="color: #ff4d5a; border-color: rgba(255,77,90,0.4);">
+          🔒 Bloquear
+        </button>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <div class="admin-nav-tabs">
+      <button type="button" class="admin-nav-btn active" id="tab-btn-vault" onclick="switchTab('vault')">
+        📁 COFRE & CONTAS
+      </button>
+      <button type="button" class="admin-nav-btn" id="tab-btn-users" onclick="switchTab('users')">
+        👥 USUÁRIOS ONLINE <span id="badge-online-count" style="background: #00ff66; color: #000; font-size: 10px; font-weight: 900; border-radius: 10px; padding: 1px 7px; margin-left: 4px;">1</span>
+      </button>
+      <button type="button" class="admin-nav-btn" id="tab-btn-passwords" onclick="switchTab('passwords')">
+        🔑 CRIAR & GERENCIAR SENHAS
+      </button>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- TAB 1: 📁 COFRE & GESTÃO DE CONTAS / COOKIES   -->
+    <!-- ============================================== -->
+    <div class="admin-card" id="view-vault">
+      <!-- Live Stock Grid -->
+      <div class="admin-stats-grid">
+        <div class="admin-stat-chip">
+          <div class="admin-stat-chip-num" id="stat-nf-count" style="color: #ff3344;">--</div>
+          <div class="admin-stat-chip-lbl">🔴 Netflix</div>
+        </div>
+        <div class="admin-stat-chip">
+          <div class="admin-stat-chip-num" id="stat-hbo-count" style="color: #c084fc;">--</div>
+          <div class="admin-stat-chip-lbl">🟣 HBO Max</div>
+        </div>
+        <div class="admin-stat-chip">
+          <div class="admin-stat-chip-num" id="stat-cr-count" style="color: #f47521;">--</div>
+          <div class="admin-stat-chip-lbl">🟠 Crunchyroll</div>
+        </div>
+        <div class="admin-stat-chip">
+          <div class="admin-stat-chip-num" id="stat-sky-count" style="color: #00A0E3;">--</div>
+          <div class="admin-stat-chip-lbl">🔵 Sky+</div>
+        </div>
+        <div class="admin-stat-chip">
+          <div class="admin-stat-chip-num" style="color: #00ff66;">24/7</div>
+          <div class="admin-stat-chip-lbl">⚡ Anti-Sleep</div>
+        </div>
+      </div>
+
+      <!-- Service Radios -->
+      <div style="font-size: 11px; color: var(--text-dim); font-weight: 700; text-transform: uppercase;">
+        Selecione o Streaming para Adicionar Contas/Cookies:
+      </div>
+      <div class="admin-service-radios">
+        <button type="button" class="admin-radio-btn active-n" id="target-nf" onclick="setTarget('netflix')">
+          🔴 NETFLIX
+        </button>
+        <button type="button" class="admin-radio-btn" id="target-hbo" onclick="setTarget('hbomax')">
+          🟣 HBO MAX
+        </button>
+        <button type="button" class="admin-radio-btn" id="target-cr" onclick="setTarget('crunchyroll')">
+          🟠 CRUNCHYROLL
+        </button>
+        <button type="button" class="admin-radio-btn" id="target-sky" onclick="setTarget('sky')">
+          🔵 SKY+ / SKY TV
+        </button>
+      </div>
+
+      <!-- 🍪 COOKIES SECTION (NETFLIX & HBO) -->
+      <div id="section-cookies" style="display: flex; flex-direction: column; gap: 10px;">
+        <button type="button" class="btn-quick-paste" onclick="pasteFromClipboard()">
+          📋 COLAR DO CLIPBOARD (1 TOQUE)
+        </button>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+          <button type="button" class="btn-quick-paste" onclick="document.getElementById('folder-input').click();" style="background: linear-gradient(135deg, #ffd700 0%, #ff9900 100%); color: #000; font-size: 12.5px; padding: 12px 10px;">
+            📁 IMPORTAR PASTA
+          </button>
+          <button type="button" class="btn-quick-paste" onclick="document.getElementById('file-input').click();" style="background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%); color: #fff; font-size: 12.5px; padding: 12px 10px;">
+            📂 SELECIONAR ARQUIVOS
+          </button>
+        </div>
+
+        <input type="file" id="folder-input" webkitdirectory directory multiple style="display:none" onchange="handleFileSelect(event)">
+        <input type="file" id="file-input" multiple accept=".txt,.json" style="display:none" onchange="handleFileSelect(event)">
+
+        <div class="admin-dropzone" onclick="document.getElementById('file-input').click();">
+          <div style="font-size: 28px; margin-bottom: 4px;">📥</div>
+          <div style="font-size: 13.5px; font-weight: 800; color: #fff;">Arraste e Solte a Pasta ou Arquivos de Cookies Aqui</div>
+          <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;" id="file-summary">Suporta pastas completas ou múltiplos arquivos .txt/.json</div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <div style="font-size: 11px; color: var(--text-dim); font-weight: 700; text-transform: uppercase;">
+            Ou cole cookies em formato Netscape / JSON / quebras de linha:
+          </div>
+          <textarea class="admin-textarea" id="raw-cookie-text" placeholder="Cole cookies aqui..."></textarea>
+        </div>
+
+        <button class="btn-unlock" onclick="submitCookies()">
+          🚀 IMPORTAR LOTE E ATIVAR AGORA ⚡
+        </button>
+      </div>
+
+      <!-- 🟠 CRUNCHYROLL SECTION -->
+      <div id="section-crunchyroll" style="display: none; flex-direction: column; gap: 12px;">
+        <div style="background: rgba(244, 117, 33, 0.12); border: 1px solid rgba(244, 117, 33, 0.4); border-radius: 12px; padding: 10px 14px;">
+          <div style="font-weight: 800; color: #f47521; font-size: 13.5px;">GERENCIADOR DE CONTAS CRUNCHYROLL</div>
+          <div style="font-size: 11px; color: var(--text-dim);">Adicione contas individuais ou cole combos em lote (email:senha).</div>
+        </div>
+
+        <div style="background: rgba(0,0,0,0.4); border: 1px solid var(--panel-border); border-radius: 12px; padding: 12px; display: flex; flex-direction: column; gap: 8px;">
+          <div style="font-size: 11px; color: #ffd700; font-weight: 800;">⚡ Adicionar 1 Conta Crunchyroll Rápida:</div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+            <input type="email" id="cr-email" placeholder="usuario@gmail.com" style="background: rgba(0,0,0,0.6); border: 1px solid var(--panel-border); border-radius: 8px; padding: 8px 10px; color: #fff; font-size: 12px;">
+            <input type="text" id="cr-pass" placeholder="Senha da conta" style="background: rgba(0,0,0,0.6); border: 1px solid var(--panel-border); border-radius: 8px; padding: 8px 10px; color: #fff; font-size: 12px;">
+          </div>
+          <button type="button" class="btn-unlock" onclick="submitSingleCr()" style="background: linear-gradient(135deg, #f47521, #ff8800); color: #fff; padding: 10px; font-size: 12.5px;">
+            ➕ SALVAR E ATIVAR ESTA CONTA ⚡
+          </button>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <div style="font-size: 11px; color: var(--text-dim); font-weight: 700;">Ou cole várias contas (email:senha):</div>
+          <textarea class="admin-textarea" id="cr-combos" placeholder="usuario1@gmail.com:senha123&#10;usuario2@hotmail.com:senha456"></textarea>
+          <button type="button" class="btn-unlock" onclick="submitCrCombos()" style="background: linear-gradient(135deg, #f47521, #ff5500); color: #fff; padding: 11px;">
+            🚀 IMPORTAR LOTE CRUNCHYROLL ⚡
+          </button>
+        </div>
+      </div>
+
+      <!-- 🔵 SKY+ SECTION -->
+      <div id="section-sky" style="display: none; flex-direction: column; gap: 12px;">
+        <div style="background: rgba(0, 160, 227, 0.12); border: 1px solid rgba(0, 160, 227, 0.4); border-radius: 12px; padding: 10px 14px;">
+          <div style="font-weight: 800; color: #00A0E3; font-size: 13.5px;">GERENCIADOR DE CONTAS SKY+ // SKY TV</div>
+          <div style="font-size: 11px; color: var(--text-dim);">Tokens oficiais da sessão ativa e importador de combos/hits.</div>
+        </div>
+
+        <!-- Sky Tokens Card -->
+        <div style="background: rgba(0, 160, 227, 0.07); border: 1px solid rgba(0, 160, 227, 0.35); border-radius: 12px; padding: 12px; display: flex; flex-direction: column; gap: 8px;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="font-size: 11px; color: #00A0E3; font-weight: 800;">⚡ SESSÃO ATIVA OFICIAL (PAREAMENTO 300MS):</div>
+            <button type="button" class="btn-icon" onclick="loadSkyTokens()" style="font-size: 10px; padding: 2px 8px; color: #00A0E3;">🔄 Atualizar</button>
+          </div>
+          <div id="sky-token-info" style="background: rgba(0,0,0,0.5); border-radius: 8px; padding: 8px 10px; font-size: 11px; line-height: 1.6;">
+            <div>Assinante: <strong id="sky-token-email" style="color: #fff;">Carregando...</strong></div>
+            <div>Expiração: <strong id="sky-token-exp" style="color: #00ff66;">--</strong></div>
+          </div>
+          <details style="font-size: 11px; color: var(--text-dim);">
+            <summary style="cursor: pointer; color: #00A0E3; font-weight: 700; padding: 3px 0;">✏️ Inserir Novos Tokens SSO / Profile</summary>
+            <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 6px;">
+              <textarea id="sky-sso" placeholder="Cole SSO Token (eyJhbGciOiJSUzI1NiJ9...)" style="height: 50px; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 6px; padding: 6px; color: #fff; font-size: 10px; font-family: monospace;"></textarea>
+              <textarea id="sky-prof" placeholder="Cole Profile Token (eyJhbGciOiJSU0EtT0FFUC...)" style="height: 50px; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 6px; padding: 6px; color: #fff; font-size: 10px; font-family: monospace;"></textarea>
+              <button type="button" class="btn-unlock" onclick="saveSkyTokens()" style="background: linear-gradient(135deg, #00A0E3, #0055aa); color: #fff; padding: 8px; font-size: 11.5px;">
+                💾 SALVAR NOVOS TOKENS SKY+
+              </button>
+            </div>
+          </details>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <div style="font-size: 11px; color: var(--text-dim); font-weight: 700;">Ou cole hits / combos Sky:</div>
+          <textarea class="admin-textarea" id="sky-combos" placeholder="usuario1@gmail.com:senha123&#10;ou cole blocos completos de hits..."></textarea>
+          <button type="button" class="btn-unlock" onclick="submitSkyCombos()" style="background: linear-gradient(135deg, #00A0E3, #0055aa); color: #fff; padding: 11px;">
+            🚀 IMPORTAR LOTE DE CONTAS SKY+ ⚡
+          </button>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 4px;">
+        <button class="btn-icon" onclick="resetCache()" style="font-size: 10.5px; padding: 6px 12px; color: var(--text-dim);">
+          🔄 Re-testar Todas as Contas & Cookies
+        </button>
+        <span id="upload-msg" style="font-size: 11px; color: #00ff66; font-weight: 700;"></span>
+      </div>
+
+      <!-- 📋 LISTA DE CONTAS DO TÓPICO ATUAL COM OPÇÃO DE REMOVER -->
+      <div style="margin-top: 10px; border-top: 1px dashed rgba(255,255,255,0.12); padding-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div style="font-size: 11.5px; font-weight: 800; color: #ffd700; text-transform: uppercase;">
+            📋 Contas & Cookies Cadastrados (<span id="accounts-topic-title">Netflix</span>): <span id="accounts-count-badge" style="color:#00ff66; font-weight: 900;">0</span>
+          </div>
+          <button type="button" class="btn-icon" onclick="loadTopicAccounts()" style="font-size: 10px; padding: 2px 8px; color: #ffd700;">
+            🔄 Atualizar Lista
+          </button>
+        </div>
+
+        <input type="text" id="account-filter-input" placeholder="🔍 Filtrar contas por email, nome ou país..." oninput="filterTopicAccounts()" style="background: rgba(0,0,0,0.6); border: 1px solid var(--panel-border); border-radius: 8px; padding: 7px 10px; color: #fff; font-size: 11px; width: 100%;">
+
+        <div id="topic-accounts-container" class="users-list-container" style="max-height: 280px; overflow-y: auto;">
+          <div style="text-align: center; color: var(--text-dim); padding: 14px; font-size: 11.5px;">Carregando contas cadastradas...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- TAB 2: 👥 USUÁRIOS ONLINE AO VIVO              -->
+    <!-- ============================================== -->
+    <div class="admin-card" id="view-users" style="display: none;">
+      <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(0, 255, 102, 0.08); border: 1px solid rgba(0, 255, 102, 0.3); border-radius: 12px; padding: 10px 14px;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span style="font-size: 24px;">👥</span>
+          <div>
+            <div style="font-weight: 800; color: #00ff66; font-size: 13.5px;">MONITOR DE USUÁRIOS CONECTADOS AO VIVO</div>
+            <div style="font-size: 11px; color: var(--text-dim);">Sessões ativas com heartbeat contínuo em tempo real.</div>
+          </div>
+        </div>
+        <button type="button" class="btn-icon" onclick="loadOnlineUsers()" style="color: #00ff66; border-color: rgba(0,255,102,0.4); font-size: 11px;">
+          🔄 Atualizar Agora
+        </button>
+      </div>
+
+      <div class="online-users-stats-row">
+        <div class="online-stat-card">
+          <span class="online-stat-val" id="users-total-val" style="color: #00ff66;">1</span>
+          <span class="online-stat-title">TOTAL ATIVOS</span>
+        </div>
+        <div class="online-stat-card">
+          <span class="online-stat-val" id="users-nf-val" style="color: #ff3344;">0</span>
+          <span class="online-stat-title">EM NETFLIX</span>
+        </div>
+        <div class="online-stat-card">
+          <span class="online-stat-val" id="users-hbo-val" style="color: #c084fc;">0</span>
+          <span class="online-stat-title">EM HBO MAX</span>
+        </div>
+        <div class="online-stat-card">
+          <span class="online-stat-val" id="users-cr-val" style="color: #f47521;">0</span>
+          <span class="online-stat-title">EM CRUNCHYROLL</span>
+        </div>
+        <div class="online-stat-card">
+          <span class="online-stat-val" id="users-sky-val" style="color: #00A0E3;">0</span>
+          <span class="online-stat-title">EM SKY+</span>
+        </div>
+      </div>
+
+      <div style="font-size: 11px; color: var(--text-dim); font-weight: 700; text-transform: uppercase;">
+        Dispositivos e Clientes Navegando Agora:
+      </div>
+      <div id="users-list-container" class="users-list-container">
+        <div style="text-align: center; color: var(--text-dim); padding: 20px; font-size: 12px;">Carregando sessões ativas...</div>
+      </div>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- TAB 3: 🔑 CRIAR & GERENCIAR SENHAS             -->
+    <!-- ============================================== -->
+    <div class="admin-card" id="view-passwords" style="display: none;">
+      <!-- Card Criar Nova Senha -->
+      <div style="background: rgba(255, 215, 0, 0.05); border: 1px solid rgba(255, 215, 0, 0.35); border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 10px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div style="font-size: 12px; color: #ffd700; font-weight: 800; text-transform: uppercase;">
+            ⚡ CRIAR NOVA SENHA COM PERMISSÕES PERSONALIZADAS
+          </div>
+          <button type="button" class="btn-icon" onclick="generateStrongPassword()" style="font-size: 11px; color: #ffd700; border-color: rgba(255,215,0,0.4); padding: 4px 10px;">
+            🎲 GERAR SENHA FORTE
+          </button>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 10px;">
+          <div>
+            <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 3px; font-weight: 700;">🔑 SENHA DE ACESSO:</div>
+            <input type="text" id="new-pwd-val" placeholder="Ex: CYBER-VIP-NETFLIX-9921" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 8px; padding: 9px 12px; color: #00ff66; font-family: var(--font-mono); font-weight: 800; font-size: 12px;">
+          </div>
+          <div>
+            <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 3px; font-weight: 700;">👤 NOME DO PERFIL / CLIENTE:</div>
+            <input type="text" id="new-pwd-role" placeholder="Ex: Cliente VIP Carlos" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 8px; padding: 9px 12px; color: #fff; font-size: 12px;">
+          </div>
+        </div>
+
+        <div>
+          <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 6px; font-weight: 700;">🎯 QUAIS STREAMINGS ESTA SENHA LIBERA?</div>
+          <div class="pwd-checkboxes-grid">
+            <label class="pwd-checkbox-pill">
+              <input type="checkbox" id="chk-netflix" checked style="accent-color: #ff3344; width: 16px; height: 16px;">
+              <span>🔴 NETFLIX</span>
+            </label>
+            <label class="pwd-checkbox-pill">
+              <input type="checkbox" id="chk-hbo" checked style="accent-color: #c084fc; width: 16px; height: 16px;">
+              <span>🟣 HBO MAX</span>
+            </label>
+            <label class="pwd-checkbox-pill">
+              <input type="checkbox" id="chk-crunchyroll" checked style="accent-color: #f47521; width: 16px; height: 16px;">
+              <span>🟠 CRUNCHYROLL</span>
+            </label>
+            <label class="pwd-checkbox-pill">
+              <input type="checkbox" id="chk-sky" checked style="accent-color: #00A0E3; width: 16px; height: 16px;">
+              <span>🔵 SKY+ / SKY TV</span>
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 3px; font-weight: 700;">📝 DESCRIÇÃO / OBSERVAÇÃO (OPCIONAL):</div>
+          <input type="text" id="new-pwd-desc" placeholder="Ex: Pacote Duo até 30/12" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 8px; padding: 8px 12px; color: #fff; font-size: 11.5px;">
+        </div>
+
+        <button type="button" class="btn-unlock" onclick="savePassword()" style="padding: 11px; font-size: 13px;">
+          💾 SALVAR SENHA E ATIVAR PERMISSÕES ⚡
+        </button>
+        <div id="pwd-save-msg" style="font-size: 11px; text-align: center; font-weight: 700;"></div>
+      </div>
+
+      <!-- Saved Passwords List -->
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div style="font-size: 11px; color: var(--text-dim); font-weight: 700; text-transform: uppercase;">
+          📋 Senhas Ativas no Sistema (Configuradas):
+        </div>
+        <button type="button" class="btn-icon" onclick="loadPasswordsList()" style="font-size: 10px; padding: 2px 8px; color: #ffd700;">
+          🔄 Atualizar Lista
+        </button>
+      </div>
+
+      <div id="pwd-list-container" class="pwd-list-container">
+        <div style="text-align: center; color: var(--text-dim); padding: 16px; font-size: 12px;">Carregando senhas configuradas...</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const API_BASE = (window.location.protocol === 'file:') ? 'http://localhost:5000' : '';
+    let adminToken = sessionStorage.getItem('cyber_cookie_admin_token') || localStorage.getItem('cyber_auth_token') || '';
+    let currentTarget = 'netflix';
+    let pendingFiles = [];
+
+    function getAdminHeaders() {
+      const h = { 'Content-Type': 'application/json' };
+      if (adminToken) {
+        h['X-Admin-Token'] = adminToken;
+        h['Authorization'] = 'Bearer ' + adminToken;
+        h['X-Auth-Token'] = adminToken;
+      }
+      return h;
+    }
+
+    async function checkAdminAuth() {
+      if (!adminToken) {
+        document.getElementById('admin-login-overlay').style.display = 'flex';
+        document.getElementById('admin-main-container').style.display = 'none';
+        return;
+      }
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/stats`, { headers: getAdminHeaders() });
+        if (res.ok) {
+          document.getElementById('admin-login-overlay').style.display = 'none';
+          document.getElementById('admin-main-container').style.display = 'flex';
+          loadStats();
+          loadTopicAccounts();
+          loadOnlineUsers();
+          loadPasswordsList();
+        } else {
+          adminToken = '';
+          sessionStorage.removeItem('cyber_cookie_admin_token');
+          document.getElementById('admin-login-overlay').style.display = 'flex';
+          document.getElementById('admin-main-container').style.display = 'none';
+        }
+      } catch (e) {
+        document.getElementById('admin-login-overlay').style.display = 'flex';
+        document.getElementById('admin-main-container').style.display = 'none';
+      }
+    }
+
+    async function executeAdminUnlock() {
+      const pwd = document.getElementById('admin-auth-input').value.trim();
+      const errBox = document.getElementById('admin-auth-error-msg');
+      if (!pwd) {
+        errBox.innerText = 'Digite a senha do cofre.';
+        errBox.style.display = 'block';
+        return;
+      }
+      errBox.style.display = 'none';
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/verify-pass`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ password: pwd })
+        });
+        const data = await res.json();
+        if (data.success && data.admin_token) {
+          adminToken = data.admin_token;
+          sessionStorage.setItem('cyber_cookie_admin_token', adminToken);
+          document.getElementById('admin-login-overlay').style.display = 'none';
+          document.getElementById('admin-main-container').style.display = 'flex';
+          loadStats();
+          loadTopicAccounts();
+          loadOnlineUsers();
+          loadPasswordsList();
+        } else {
+          errBox.innerText = data.message || 'Senha incorreta!';
+          errBox.style.display = 'block';
+        }
+      } catch (e) {
+        errBox.innerText = 'Erro ao conectar ao servidor. Certifique-se de que o app.py está em execução.';
+        errBox.style.display = 'block';
+      }
+    }
+
+    function lockAdminSession() {
+      adminToken = '';
+      sessionStorage.removeItem('cyber_cookie_admin_token');
+      document.getElementById('admin-auth-input').value = '';
+      document.getElementById('admin-login-overlay').style.display = 'flex';
+      document.getElementById('admin-main-container').style.display = 'none';
+    }
+
+    function switchTab(tab) {
+      document.getElementById('tab-btn-vault').classList.toggle('active', tab === 'vault');
+      document.getElementById('tab-btn-users').classList.toggle('active', tab === 'users');
+      document.getElementById('tab-btn-passwords').classList.toggle('active', tab === 'passwords');
+
+      document.getElementById('view-vault').style.display = (tab === 'vault') ? 'flex' : 'none';
+      document.getElementById('view-users').style.display = (tab === 'users') ? 'flex' : 'none';
+      document.getElementById('view-passwords').style.display = (tab === 'passwords') ? 'flex' : 'none';
+
+      if (tab === 'vault') {
+        loadStats();
+        loadTopicAccounts();
+      } else if (tab === 'users') {
+        loadOnlineUsers();
+      } else if (tab === 'passwords') {
+        loadPasswordsList();
+      }
+    }
+
+    function setTarget(svc) {
+      currentTarget = svc;
+      document.getElementById('target-nf').className = (svc === 'netflix') ? 'admin-radio-btn active-n' : 'admin-radio-btn';
+      document.getElementById('target-hbo').className = (svc === 'hbomax' || svc === 'hbo') ? 'admin-radio-btn active-h' : 'admin-radio-btn';
+      document.getElementById('target-cr').className = (svc === 'crunchyroll' || svc === 'cr') ? 'admin-radio-btn active-cr' : 'admin-radio-btn';
+      document.getElementById('target-sky').className = (svc === 'sky') ? 'admin-radio-btn active-sky' : 'admin-radio-btn';
+
+      document.getElementById('section-cookies').style.display = (svc === 'netflix' || svc === 'hbomax' || svc === 'hbo') ? 'flex' : 'none';
+      document.getElementById('section-crunchyroll').style.display = (svc === 'crunchyroll' || svc === 'cr') ? 'flex' : 'none';
+      document.getElementById('section-sky').style.display = (svc === 'sky') ? 'flex' : 'none';
+
+      if (svc === 'sky') loadSkyTokens();
+      loadTopicAccounts();
+    }
+
+    async function loadStats() {
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/stats`, { headers: getAdminHeaders() });
+        if (res.ok) {
+          const data = await res.json();
+          document.getElementById('stat-nf-count').innerText = data.netflix_verified || data.netflix_total || '0';
+          document.getElementById('stat-hbo-count').innerText = data.hbo_verified || data.hbo_total || '0';
+          document.getElementById('stat-cr-count').innerText = data.crunchyroll_verified || data.crunchyroll_total || '0';
+          document.getElementById('stat-sky-count').innerText = data.sky_verified || data.sky_total || '0';
+        }
+      } catch (e) {}
+    }
+
+    // ═══════════════════════════════════════════════════════════════
+    //  GERENCIAMENTO & EXCLUSÃO DE CONTAS POR TÓPICO
+    // ═══════════════════════════════════════════════════════════════
+    let rawTopicAccounts = [];
+
+    async function loadTopicAccounts() {
+      const container = document.getElementById('topic-accounts-container');
+      const titleEl = document.getElementById('accounts-topic-title');
+      const badgeEl = document.getElementById('accounts-count-badge');
+      if (!container) return;
+
+      const svcLabels = {
+        'netflix': '🔴 Netflix',
+        'hbomax': '🟣 HBO Max',
+        'hbo': '🟣 HBO Max',
+        'crunchyroll': '🟠 Crunchyroll',
+        'cr': '🟠 Crunchyroll',
+        'sky': '🔵 Sky+ / Sky TV'
+      };
+      titleEl.innerText = svcLabels[currentTarget] || currentTarget.toUpperCase();
+
+      container.innerHTML = '<div style="text-align: center; color: var(--text-dim); padding: 12px; font-size: 11px;">Carregando contas...</div>';
+
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/accounts?service=${currentTarget}`, { headers: getAdminHeaders() });
+        if (res.ok) {
+          const data = await res.json();
+          rawTopicAccounts = data.accounts || [];
+          badgeEl.innerText = rawTopicAccounts.length;
+          filterTopicAccounts();
+        } else {
+          container.innerHTML = '<div style="text-align: center; color: #ff4d5a; padding: 10px; font-size: 11px;">Erro ao carregar contas.</div>';
+        }
+      } catch (e) {
+        container.innerHTML = '<div style="text-align: center; color: #ff4d5a; padding: 10px; font-size: 11px;">Falha de comunicação com a API.</div>';
+      }
+    }
+
+    function filterTopicAccounts() {
+      const q = (document.getElementById('account-filter-input')?.value || '').toLowerCase().trim();
+      let filtered = rawTopicAccounts;
+      if (q) {
+        filtered = rawTopicAccounts.filter(acc => {
+          const text = `${acc.email || ''} ${acc.filename || ''} ${acc.plan || ''} ${acc.country || ''} ${acc.client_name || ''}`.toLowerCase();
+          return text.includes(q);
+        });
+      }
+      renderTopicAccounts(filtered);
+    }
+
+    function renderTopicAccounts(list) {
+      const container = document.getElementById('topic-accounts-container');
+      if (!container) return;
+
+      if (!list || list.length === 0) {
+        container.innerHTML = '<div style="text-align: center; color: var(--text-dim); padding: 16px; font-size: 11px;">Nenhuma conta encontrada para este tópico. Adicione novas contas acima!</div>';
+        return;
+      }
+
+      container.innerHTML = list.map((acc, idx) => {
+        const email = acc.email || acc.filename || `Conta #${idx+1}`;
+        const plan = acc.plan || 'Plano Padrão';
+        const country = acc.country || 'BR';
+        const isReady = acc.is_ready;
+        const idSafe = encodeURIComponent(acc.id || acc.filename || acc.email);
+        const emailSafe = encodeURIComponent(acc.email || '');
+
+        return `
+          <div class="acc-item-card">
+            <div style="display: flex; align-items: center; gap: 8px; min-width: 0; flex: 1;">
+              <span style="font-size: 14px;">${isReady ? '⚡' : '📁'}</span>
+              <div style="min-width: 0; display: flex; flex-direction: column; gap: 2px;">
+                <div style="font-weight: 800; color: #fff; font-size: 11.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                  ${email}
+                </div>
+                <div style="font-size: 10px; color: var(--text-dim); display: flex; gap: 6px; align-items: center;">
+                  <span style="background: rgba(255,255,255,0.08); padding: 1px 5px; border-radius: 4px; font-weight: 700; color: #ffd700;">${country}</span>
+                  <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${plan}</span>
+                  ${isReady ? '<span style="color: #00ff66; font-weight: 800;">● Pronta</span>' : ''}
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn-delete-acc" onclick="deleteTopicAccount('${currentTarget}', decodeURIComponent('${idSafe}'), decodeURIComponent('${emailSafe}'))">
+              🗑️ Remover
+            </button>
+          </div>
+        `;
+      }).join('');
+    }
+
+    async function deleteTopicAccount(service, id, email) {
+      const displayName = email || id;
+      if (!confirm(`Deseja realmente remover esta conta/cookie do tópico ${service.toUpperCase()}?\n\n• Identificador: ${displayName}\n\nEsta ação excluirá o arquivo/registro do servidor imediatamente.`)) {
+        return;
+      }
+
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/accounts/delete`, {
+          method: 'POST',
+          headers: getAdminHeaders(),
+          body: JSON.stringify({ service: service, id: id, email: email })
+        });
+        const data = await res.json();
+        if (data.success) {
+          loadStats();
+          loadTopicAccounts();
+        } else {
+          alert('Erro ao excluir: ' + (data.message || 'Falha na requisição.'));
+        }
+      } catch (e) {
+        alert('Erro ao comunicar com o servidor: ' + e.message);
+      }
+    }
+
+    async function pasteFromClipboard() {
+      try {
+        const text = await navigator.clipboard.readText();
+        if (text) {
+          document.getElementById('raw-cookie-text').value = text.trim();
+        }
+      } catch (e) {
+        document.getElementById('raw-cookie-text').focus();
+      }
+    }
+
+    function handleFileSelect(event) {
+      const files = event.target.files;
+      if (!files || !files.length) return;
+      document.getElementById('file-summary').innerText = `⏳ Processando ${files.length} arquivo(s)...`;
+      
+      const results = [];
+      let count = 0;
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          results.push({ name: file.name, content: e.target.result });
+          count++;
+          if (count === files.length) {
+            pendingFiles = results;
+            document.getElementById('file-summary').innerText = `✅ ${pendingFiles.length} arquivo(s) carregados e prontos para envio!`;
+          }
+        };
+        reader.readAsText(file);
+      }
+    }
+
+    async function submitCookies() {
+      const rawText = document.getElementById('raw-cookie-text').value.trim();
+      const msg = document.getElementById('upload-msg');
+      if (!pendingFiles.length && !rawText) {
+        alert('Selecione arquivos ou cole o texto dos cookies antes de importar.');
+        return;
+      }
+      msg.style.color = '#ffd700';
+      msg.innerText = 'Importando cookies... ⏳';
+
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/upload-cookies`, {
+          method: 'POST',
+          headers: getAdminHeaders(),
+          body: JSON.stringify({ service: currentTarget, files: pendingFiles, raw_text: rawText })
+        });
+        const data = await res.json();
+        if (data.success) {
+          msg.style.color = '#00ff66';
+          msg.innerText = data.message || '🎉 Cookies importados com sucesso!';
+          pendingFiles = [];
+          document.getElementById('raw-cookie-text').value = '';
+          document.getElementById('file-summary').innerText = 'Suporta pastas completas ou múltiplos arquivos .txt/.json';
+          loadStats();
+          loadTopicAccounts();
+        } else {
+          msg.style.color = '#ff4d5a';
+          msg.innerText = data.message || 'Erro ao importar cookies.';
+        }
+      } catch (e) {
+        msg.style.color = '#ff4d5a';
+        msg.innerText = 'Erro ao conectar ao servidor.';
+      }
+    }
+
+    async function submitSingleCr() {
+      const email = document.getElementById('cr-email').value.trim();
+      const pass = document.getElementById('cr-pass').value.trim();
+      const msg = document.getElementById('upload-msg');
+      if (!email || !pass) {
+        alert('Preencha email e senha da Crunchyroll.');
+        return;
+      }
+      msg.style.color = '#ffd700';
+      msg.innerText = 'Salvando conta Crunchyroll...';
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/upload-cookies`, {
+          method: 'POST',
+          headers: getAdminHeaders(),
+          body: JSON.stringify({ service: 'crunchyroll', email: email, password: pass })
+        });
+        const data = await res.json();
+        if (data.success) {
+          msg.style.color = '#00ff66';
+          msg.innerText = '🎉 Conta Crunchyroll adicionada!';
+          document.getElementById('cr-email').value = '';
+          document.getElementById('cr-pass').value = '';
+          loadStats();
+          loadTopicAccounts();
+        } else {
+          msg.style.color = '#ff4d5a';
+          msg.innerText = data.message || 'Erro ao salvar conta.';
+        }
+      } catch (e) {
+        msg.style.color = '#ff4d5a';
+        msg.innerText = 'Erro de conexão.';
+      }
+    }
+
+    async function submitCrCombos() {
+      const rawText = document.getElementById('cr-combos').value.trim();
+      const msg = document.getElementById('upload-msg');
+      if (!rawText) return;
+      msg.style.color = '#ffd700';
+      msg.innerText = 'Importando combos Crunchyroll...';
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/upload-cookies`, {
+          method: 'POST',
+          headers: getAdminHeaders(),
+          body: JSON.stringify({ service: 'crunchyroll', raw_text: rawText })
+        });
+        const data = await res.json();
+        if (data.success) {
+          msg.style.color = '#00ff66';
+          msg.innerText = data.message || '🎉 Combos importados com sucesso!';
+          document.getElementById('cr-combos').value = '';
+          loadStats();
+          loadTopicAccounts();
+        } else {
+          msg.style.color = '#ff4d5a';
+          msg.innerText = data.message || 'Erro ao importar.';
+        }
+      } catch (e) {
+        msg.style.color = '#ff4d5a';
+        msg.innerText = 'Erro de conexão.';
+      }
+    }
+
+    async function loadSkyTokens() {
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/sky-tokens`, { headers: getAdminHeaders() });
+        if (res.ok) {
+          const data = await res.json();
+          const t = data.tokens || {};
+          document.getElementById('sky-token-email').innerText = t.email ? `${t.email} (${t.client_name || 'Assinante Ativo'})` : (t.sso_exists ? 'Sessão Ativa Detectada' : 'Nenhum token detectado');
+          document.getElementById('sky-token-exp').innerText = (t.is_valid && t.expires_in_hours !== null) ? `Ativo (~${t.expires_in_hours}h restantes)` : (t.sso_exists ? 'Expirado' : 'Token ausente');
+        }
+      } catch (e) {}
+    }
+
+    async function saveSkyTokens() {
+      const sso = document.getElementById('sky-sso').value.trim();
+      const prof = document.getElementById('sky-prof').value.trim();
+      const msg = document.getElementById('upload-msg');
+      if (!sso && !prof) return;
+      msg.style.color = '#ffd700';
+      msg.innerText = 'Gravando novos tokens da Sky...';
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/sky-tokens`, {
+          method: 'POST',
+          headers: getAdminHeaders(),
+          body: JSON.stringify({ sso_token: sso, profile_token: prof })
+        });
+        const data = await res.json();
+        if (data.success) {
+          msg.style.color = '#00ff66';
+          msg.innerText = '🎉 Tokens Sky+ atualizados com sucesso!';
+          document.getElementById('sky-sso').value = '';
+          document.getElementById('sky-prof').value = '';
+          loadSkyTokens();
+          loadStats();
+          loadTopicAccounts();
+        } else {
+          msg.style.color = '#ff4d5a';
+          msg.innerText = data.message || 'Erro ao salvar tokens.';
+        }
+      } catch (e) {
+        msg.style.color = '#ff4d5a';
+        msg.innerText = 'Erro de conexão.';
+      }
+    }
+
+    async function submitSkyCombos() {
+      const rawText = document.getElementById('sky-combos').value.trim();
+      const msg = document.getElementById('upload-msg');
+      if (!rawText) return;
+      msg.style.color = '#ffd700';
+      msg.innerText = 'Importando contas Sky+...';
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/upload-cookies`, {
+          method: 'POST',
+          headers: getAdminHeaders(),
+          body: JSON.stringify({ service: 'sky', raw_text: rawText })
+        });
+        const data = await res.json();
+        if (data.success) {
+          msg.style.color = '#00ff66';
+          msg.innerText = data.message || '🎉 Contas Sky+ importadas!';
+          document.getElementById('sky-combos').value = '';
+          loadStats();
+          loadTopicAccounts();
+        } else {
+          msg.style.color = '#ff4d5a';
+          msg.innerText = data.message || 'Erro ao importar.';
+        }
+      } catch (e) {
+        msg.style.color = '#ff4d5a';
+        msg.innerText = 'Erro de conexão.';
+      }
+    }
+
+    async function resetCache() {
+      if (!confirm('Deseja resetar o cache para re-testar todas as contas e cookies?')) return;
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/reset-cache`, { method: 'POST', headers: getAdminHeaders() });
+        const data = await res.json();
+        if (data.success) {
+          alert('Cache resetado com sucesso!');
+          loadStats();
+          loadTopicAccounts();
+        }
+      } catch (e) {
+        alert('Erro ao resetar cache.');
+      }
+    }
+
+    /* 👥 Online Users */
+    async function loadOnlineUsers() {
+      const container = document.getElementById('users-list-container');
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/users-online?_t=${Date.now()}`, { headers: getAdminHeaders() });
+        if (res.ok) {
+          const data = await res.json();
+          const info = data.data || data;
+          const total = info.total || 0;
+          const byService = info.by_service || {};
+          const clients = info.active_clients || [];
+
+          document.getElementById('users-total-val').innerText = total;
+          document.getElementById('badge-online-count').innerText = total;
+          document.getElementById('users-nf-val').innerText = byService.netflix || 0;
+          document.getElementById('users-hbo-val').innerText = byService.hbo || 0;
+          document.getElementById('users-cr-val').innerText = byService.crunchyroll || 0;
+          document.getElementById('users-sky-val').innerText = byService.sky || 0;
+
+          if (!clients.length) {
+            container.innerHTML = '<div style="text-align: center; color: var(--text-dim); padding: 24px;">🔍 Nenhum usuário conectado nos últimos 45s.</div>';
+            return;
+          }
+
+          container.innerHTML = clients.map(c => {
+            let svcBadge = '<span style="background:rgba(229,9,20,0.2); color:#ff3344; border:1px solid rgba(229,9,20,0.4); border-radius:6px; padding:2px 7px; font-size:10px; font-weight:800;">🔴 NETFLIX</span>';
+            if (c.service === 'hbo') svcBadge = '<span style="background:rgba(168,85,247,0.2); color:#c084fc; border:1px solid rgba(168,85,247,0.4); border-radius:6px; padding:2px 7px; font-size:10px; font-weight:800;">🟣 HBO MAX</span>';
+            else if (c.service === 'crunchyroll') svcBadge = '<span style="background:rgba(244,117,33,0.2); color:#f47521; border:1px solid rgba(244,117,33,0.4); border-radius:6px; padding:2px 7px; font-size:10px; font-weight:800;">🟠 CRUNCHYROLL</span>';
+            else if (c.service === 'sky') svcBadge = '<span style="background:rgba(0,160,227,0.2); color:#00A0E3; border:1px solid rgba(0,160,227,0.4); border-radius:6px; padding:2px 7px; font-size:10px; font-weight:800;">🔵 SKY+</span>';
+
+            return `
+              <div class="user-card-item">
+                <div style="display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1;">
+                  <div style="font-size: 22px; width: 34px; height: 34px; border-radius: 10px; background: rgba(0,255,102,0.1); border: 1px solid rgba(0,255,102,0.25); display: flex; align-items: center; justify-content: center;">
+                    ${c.device_icon || '💻'}
+                  </div>
+                  <div style="display: flex; flex-direction: column; min-width: 0; flex: 1;">
+                    <div style="display: flex; align-items: center; gap: 6px;">
+                      <strong style="font-size: 13px; color: #fff;">${c.role_name || 'VIP'}</strong>
+                      ${svcBadge}
+                    </div>
+                    <div style="font-size: 10.5px; color: var(--text-dim); margin-top: 2px; display: flex; gap: 8px;">
+                      <span>📱 ${c.device_name || 'Dispositivo'}</span>
+                      <span>🌐 IP: <strong style="color: #00e5ff;">${c.ip || '127.0.0.1'}</strong></span>
+                    </div>
+                  </div>
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 3px;">
+                  <span class="user-live-badge"><span class="user-live-dot"></span> AO VIVO</span>
+                  <span style="font-size: 10px; color: var(--text-dim); font-family: var(--font-mono);">${c.last_seen_seconds !== undefined ? c.last_seen_seconds + 's atrás' : 'agora'}</span>
+                </div>
+              </div>
+            `;
+          }).join('');
+        }
+      } catch (e) {}
+    }
+
+    /* 🔑 Password Manager */
+    async function generateStrongPassword() {
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/passwords/generate`, { headers: getAdminHeaders() });
+        if (res.ok) {
+          const data = await res.json();
+          if (data.password) {
+            document.getElementById('new-pwd-val').value = data.password;
+            document.getElementById('new-pwd-val').focus();
+          }
+        }
+      } catch (e) {}
+    }
+
+    async function loadPasswordsList() {
+      const container = document.getElementById('pwd-list-container');
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/passwords?_t=${Date.now()}`, { headers: getAdminHeaders() });
+        if (res.ok) {
+          const data = await res.json();
+          const list = Array.isArray(data.passwords) ? data.passwords : (Array.isArray(data) ? data : Object.keys(data.passwords || {}).map(k => ({ senha: k, ...data.passwords[k] })));
+
+          if (!list.length) {
+            container.innerHTML = '<div style="text-align: center; color: var(--text-dim); padding: 16px;">Nenhuma senha cadastrada.</div>';
+            return;
+          }
+
+          container.innerHTML = list.map(item => {
+            const pwd = item.senha || item.password || '';
+            const role = item.nome || item.role_name || 'Cliente VIP';
+            const allowed = item.servicos || item.allowed_services || ['netflix', 'hbo', 'crunchyroll', 'sky'];
+            const desc = item.descricao || item.description || '';
+
+            const badgeNf = allowed.includes('netflix') ? '<span style="background:rgba(229,9,20,0.2); color:#ff3344; border:1px solid rgba(229,9,20,0.35); border-radius:6px; padding:1px 6px; font-size:10px; font-weight:800;">🔴 Netflix</span>' : '';
+            const badgeHbo = (allowed.includes('hbo') || allowed.includes('hbomax')) ? '<span style="background:rgba(168,85,247,0.2); color:#c084fc; border:1px solid rgba(168,85,247,0.35); border-radius:6px; padding:1px 6px; font-size:10px; font-weight:800;">🟣 HBO Max</span>' : '';
+            const badgeCr = (allowed.includes('crunchyroll') || allowed.includes('cr')) ? '<span style="background:rgba(244,117,33,0.2); color:#f47521; border:1px solid rgba(244,117,33,0.35); border-radius:6px; padding:1px 6px; font-size:10px; font-weight:800;">🟠 Crunchyroll</span>' : '';
+            const badgeSky = allowed.includes('sky') ? '<span style="background:rgba(0,160,227,0.2); color:#00A0E3; border:1px solid rgba(0,160,227,0.35); border-radius:6px; padding:1px 6px; font-size:10px; font-weight:800;">🔵 Sky+</span>' : '';
+
+            const safePwd = pwd.replace(/"/g, '&quot;');
+
+            return `
+              <div class="pwd-item-card">
+                <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px;">
+                  <span style="font-size: 13px; font-weight: 800; color: #ffd700;">👤 ${role} ${desc ? `<span style="font-size: 10.5px; color: var(--text-dim); font-weight: 400;">(${desc})</span>` : ''}</span>
+                  <div style="display: flex; gap: 6px;">
+                    <button type="button" class="btn-icon" onclick="copyPassword('${safePwd}')" style="font-size: 10px; padding: 3px 8px; color: #00ff66; border-color: rgba(0,255,102,0.3);">📋 Copiar</button>
+                    <button type="button" class="btn-icon" onclick="deletePassword('${safePwd}')" style="font-size: 10px; padding: 3px 8px; color: #ff4d5a; border-color: rgba(255,77,90,0.3);">🗑️ Excluir</button>
+                  </div>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; background: rgba(0,0,0,0.4); border-radius: 8px; padding: 6px 10px; margin-top: 2px;">
+                  <div style="font-family: var(--font-mono); font-size: 11.5px; font-weight: 800; color: #00e5ff; word-break: break-all;">🔑 ${pwd}</div>
+                  <div style="display: flex; gap: 4px; flex-wrap: wrap;">${badgeNf} ${badgeHbo} ${badgeCr} ${badgeSky}</div>
+                </div>
+              </div>
+            `;
+          }).join('');
+        }
+      } catch (e) {}
+    }
+
+    async function copyPassword(pwd) {
+      try {
+        await navigator.clipboard.writeText(pwd);
+        alert(`🔑 Senha copiada com sucesso:\n\n${pwd}`);
+      } catch (e) {
+        prompt('Copie a senha:', pwd);
+      }
+    }
+
+    async function savePassword() {
+      const pwd = document.getElementById('new-pwd-val').value.trim();
+      const role = document.getElementById('new-pwd-role').value.trim();
+      const desc = document.getElementById('new-pwd-desc').value.trim();
+      const msg = document.getElementById('pwd-save-msg');
+
+      if (!pwd) {
+        msg.style.color = '#ff4d5a';
+        msg.innerText = 'Informe ou gere uma senha de acesso.';
+        return;
+      }
+
+      const allowed = [];
+      if (document.getElementById('chk-netflix').checked) allowed.push('netflix');
+      if (document.getElementById('chk-hbo').checked) allowed.push('hbo');
+      if (document.getElementById('chk-crunchyroll').checked) allowed.push('crunchyroll');
+      if (document.getElementById('chk-sky').checked) allowed.push('sky');
+
+      if (!allowed.length) {
+        msg.style.color = '#ff4d5a';
+        msg.innerText = 'Selecione pelo menos um streaming para liberar.';
+        return;
+      }
+
+      msg.style.color = '#ffd700';
+      msg.innerText = 'Salvando senha...';
+
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/passwords/save`, {
+          method: 'POST',
+          headers: getAdminHeaders(),
+          body: JSON.stringify({
+            senha: pwd,
+            password: pwd,
+            nome: role || 'Cliente VIP',
+            role_name: role || 'Cliente VIP',
+            servicos: allowed,
+            allowed_services: allowed,
+            descricao: desc,
+            description: desc
+          })
+        });
+        const data = await res.json();
+        if (data.success) {
+          msg.style.color = '#00ff66';
+          msg.innerText = `🎉 Senha "${pwd}" salva com sucesso!`;
+          document.getElementById('new-pwd-val').value = '';
+          document.getElementById('new-pwd-role').value = '';
+          document.getElementById('new-pwd-desc').value = '';
+          loadPasswordsList();
+        } else {
+          msg.style.color = '#ff4d5a';
+          msg.innerText = data.message || 'Erro ao salvar senha.';
+        }
+      } catch (e) {
+        msg.style.color = '#ff4d5a';
+        msg.innerText = 'Erro ao conectar ao servidor.';
+      }
+    }
+
+    async function deletePassword(pwd) {
+      if (!confirm(`Excluir permanentemente a senha:\n\n${pwd}?`)) return;
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/passwords/delete`, {
+          method: 'POST',
+          headers: getAdminHeaders(),
+          body: JSON.stringify({ senha: pwd, password: pwd })
+        });
+        const data = await res.json();
+        if (data.success) {
+          loadPasswordsList();
+        } else {
+          alert(data.message || 'Erro ao excluir.');
+        }
+      } catch (e) {
+        alert('Erro ao conectar.');
+      }
+    }
+
+    // Auto Refresh Loop
+    setInterval(() => {
+      if (adminToken) {
+        loadStats();
+        if (document.getElementById('view-users').style.display !== 'none') {
+          loadOnlineUsers();
+        }
+      }
+    }, 5000);
+
+    window.addEventListener('load', () => {
+      checkAdminAuth();
+    });
+  </script>
+</body>
+</html>

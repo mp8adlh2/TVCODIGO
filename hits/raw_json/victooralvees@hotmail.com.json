@@ -1,0 +1,257 @@
+{
+  "email": "victooralvees@hotmail.com",
+  "password": "Victor@123",
+  "access_token": "d96b660a-d491-4509-8484-0a02738a815b",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiNTQwMWYyNjUtN2FiMi00YmNkLWE1NGUtNDJlN2EyODVhNTVlIiwiYXRfaGFzaCI6Im16bDhWcDhYWU80RFA5RHV0NDl5V1EiLCJkZXZpY2VJZCI6IjJlNTI0NzJhM2MyZTJkZTNkOTMxZWQzZWI0NGExMjI2NDJlZGQyM2QiLCJhdWRpdFRyYWNraW5nSWQiOiI5ZDE5LTdmZWEtNGRiOS1hOGZlLTI1NGQiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjc2ODI5MSwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJ2TUUzWXpha1lGdXI1aWxNNGZDUkJnIiwic2lnbmF0dXJlcyI6WyIxNTM4MTk5Njk4Il0sImN1c3RvbWVySWQiOiI3ZmM4ZTM1MDVkMThkZmFlNTgxN2U1ZThlMDAyNmM5NiIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjE1MzgxOTk2OTgiLCJnaXZlbl9uYW1lIjoiVklDVE9SIiwiZmFtaWx5X25hbWUiOiJza3kiLCJ1c2VybmFtZSI6InZpY3Rvb3JhbHZlZXNAaG90bWFpbC5jb20iLCJtYWlsIjoidmljdG9vcmFsdmVlc0Bob3RtYWlsLmNvbSIsInJlZGVtcHRpb25MaW1pdCI6bnVsbCwiaWF0IjoxNzg4MzEyNzY4LCJleHAiOjE3ODgzOTkxNjgsImlzcyI6InNtLXNreS52cmlvc2VydmljZXMuY29tIn0.J4NxyxJO_mWFA9At7np7dYvEUkM57IptTjNQhYK1gA7f6xCpCcSqI22kQeLZTDcHOCOXaQkKyeGO2XWiMjy1odguTb5Ca1zcbJQCpG1GNoySOT1OJhUCGf6dU1EkNlMFX3lEWJIAYtssMZNDlCdg_ZSJOvoh7bXm-a3U_7LvQGk4VFup8Sni-9-TFHxaznX1kS1CGG6oZW1emP_i5l8YdxpP3KVdrqh5leQRVR--iJnitC4H0VUpuMasB9yqILqMnLfEdun4TcW7Lxr-ngs7PxCQtzHktdgVsiuquPuAisM4BgBgVgaUKcDaH3rY405-Vu6ULbWR9oufC2EFPdkdyg",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "d96b660a-d491-4509-8484-0a02738a815b",
+    "externalId": "ca440e9d-a836-5b8f-913a-923a49150c4d",
+    "username": "7fc8e3505d18dfae5817e5e8e0026c96",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "1538199698",
+    "protocol": "2026-150197549802",
+    "customer": {
+      "email": "victooralvees@hotmail.com",
+      "billingProfileCode": "1-1R38GY39",
+      "name": "VICTOR",
+      "secondName": "HUGO DA SILVA ALVES",
+      "birthday": "1998-11-12T00:00:00.000Z",
+      "ddd": 11,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5511972008347",
+      "id": "7fc8e3505d18dfae5817e5e8e0026c96",
+      "cpf": "46315383840"
+    },
+    "signatures": [
+      {
+        "id": "1538199698",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 972008347,
+          "dddMobilePhone": 11
+        },
+        "customerId": "7fc8e3505d18dfae5817e5e8e0026c96",
+        "status": 1,
+        "productName": "SUPER HD EXCLUSIVO 2025 - P",
+        "name": "VICTOR",
+        "secondName": "HUGO DA SILVA ALVES",
+        "dna": "01000000001000000000000000000000100000000000000000000000000000000000010000000000000000100010000111110000000000000000000000000001011110000100000000000011111111111000111111111000000000000000000100000000000000111111111111111000000011111010111111110001000000000001101111111111101011101110001110000111110111101101111111111111111111111111110011111111111110111111111110011111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Brilhante",
+          "line1": "Rua Brilhante, 121 - Jardim Dos Camargos",
+          "line2": null,
+          "number": "121",
+          "city": "Barueri",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "06410100",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 11,
+          "resPhone": 972008347
+        },
+        "addressBilling": {
+          "linePublic": "Rua Brilhante",
+          "line1": "Rua Brilhante, 121 - Jardim Dos Camargos",
+          "line2": "Casa",
+          "number": "121",
+          "city": "Barueri",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "06410100",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2024-10-05T00:00:00.000Z",
+        "email": "victooralvees@hotmail.com",
+        "parentAccount": "1538199697",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000533648481",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "670AA63536744172F"
+          },
+          {
+            "smartcard": "000588950600",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH25",
+            "serialNumber": "CE0AA135308510349"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "1538199698",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 972008347,
+        "dddMobilePhone": 11
+      },
+      "customerId": "7fc8e3505d18dfae5817e5e8e0026c96",
+      "status": 1,
+      "productName": "SUPER HD EXCLUSIVO 2025 - P",
+      "name": "VICTOR",
+      "secondName": "HUGO DA SILVA ALVES",
+      "dna": "01000000001000000000000000000000100000000000000000000000000000000000010000000000000000100010000111110000000000000000000000000001011110000100000000000011111111111000111111111000000000000000000100000000000000111111111111111000000011111010111111110001000000000001101111111111101011101110001110000111110111101101111111111111111111111111110011111111111110111111111110011111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Brilhante",
+        "line1": "Rua Brilhante, 121 - Jardim Dos Camargos",
+        "line2": null,
+        "number": "121",
+        "city": "Barueri",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "06410100",
+        "referencePoint": null,
+        "addressType": "Rua",
+        "resDdd": 11,
+        "resPhone": 972008347
+      },
+      "addressBilling": {
+        "linePublic": "Rua Brilhante",
+        "line1": "Rua Brilhante, 121 - Jardim Dos Camargos",
+        "line2": "Casa",
+        "number": "121",
+        "city": "Barueri",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "06410100",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2024-10-05T00:00:00.000Z",
+      "email": "victooralvees@hotmail.com",
+      "parentAccount": "1538199697",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000533648481",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "670AA63536744172F"
+        },
+        {
+          "smartcard": "000588950600",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH25",
+          "serialNumber": "CE0AA135308510349"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "1538199698": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "AMAZON PRIME",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "10-04-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "ASSINATURAS DIGITAIS VI",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "28-08-2026",
+          "end_date": null,
+          "icon": "📺"
+        },
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "27-08-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "22-05-2026",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-21ATHJR",
+            "name": "AMAZON PRIME",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Amazon%403x.png",
+            "urlDetail": "https://www.sky.com.br/amazon-prime",
+            "price": "5.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "10-04-2025",
+            "startDate": "10-04-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-21E065E",
+            "name": "ASSINATURAS DIGITAIS VI",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": null,
+            "price": "2.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "28-08-2026",
+            "startDate": "28-08-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "27-08-2026",
+            "startDate": "27-08-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-219IIMH",
+            "name": "DISNEY PLUS PREMIUM",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Disney%403x.png",
+            "price": "46.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "22-05-2026",
+            "startDate": "22-05-2026",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

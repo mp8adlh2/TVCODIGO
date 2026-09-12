@@ -1,0 +1,405 @@
+{
+  "email": "videassisjw@gmail.com",
+  "password": "Daniel244",
+  "access_token": "5818fefc-1073-48d5-b442-01ac313d8f48",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiMDc3NTAzY2QtZDZmNS00N2FlLTg5OTgtY2RiYWU1NDUzZWRmIiwiYXRfaGFzaCI6IkZ6elJMQUM4TTJZMXF6akU0U0JwdnciLCJkZXZpY2VJZCI6ImM2NzY1MjlhOTRiOTVhZTMwOGYyYmE1MzMwYjM0OTk3MDZjZjBlNTIiLCJhdWRpdFRyYWNraW5nSWQiOiJiMmIzLTY4NWItNDQ2Yy1iOWJmLTRiYmYiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjY0Njg0NywidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJiNjE2YzVmMC03OGQxLTRjMTYtYmVhMi02Y2E4NjM3NDY3NGYiLCJzaWduYXR1cmVzIjpbIjE1MDI5OTIyMjMiLCIxNTA0MTI0OTIyIl0sImN1c3RvbWVySWQiOiJlNzYzYmUwMmE2ODc2NGQyZDY4ZjkxNGIyYWNhYzk4OSIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjE1MDQxMjQ5MjIiLCJnaXZlbl9uYW1lIjoiVklOSUNJVVMiLCJ1c2VybmFtZSI6InZpZGVhc3Npc2p3QGdtYWlsLmNvbSIsIm1haWwiOiJ2aWRlYXNzaXNqd0BnbWFpbC5jb20iLCJyZWRlbXB0aW9uTGltaXQiOm51bGwsImlhdCI6MTc4ODMxMjY0NiwiZXhwIjoxNzg4Mzk5MDQ2LCJpc3MiOiJzbS1za3kudnJpb3NlcnZpY2VzLmNvbSJ9.UuWvyZV2yEu48e5Fns8YKcGfqbIMJX0x7HqrvqT5ok-h0AM5VHpv246uVUf7Dz-s-lApBlkUesdE-TWNaCNP5KGVaf0SxVcSorjGll5leSQLd0MrG1-IB4lyj-HkIpVA1j_ECruf0ns0ftJM0rXn4BlEl0N2_XPfUE2Sv9NwNwarGPEfjYEC6SiByqGpE9pTa8CC4CjkrTHjYtsxPjn31p5HqleuxuynmAu9NPPqcp2rZMiAt3K4NRG6Ws7qavyEE291evBFCB4pU8w0v-OAkwESlLWcJgOfeWhBvcbH8_4zkCb4V-O57FGG9u3ouHbzp8OpNLUSwqs6I1F4MHMnaQ",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "5818fefc-1073-48d5-b442-01ac313d8f48",
+    "externalId": "77144b09-3585-5a72-a14d-9802c3d5263e",
+    "username": "e763be02a68764d2d68f914b2acac989",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "1504124922",
+    "protocol": "2026-150197399439",
+    "customer": {
+      "email": "videassisjw@gmail.com",
+      "billingProfileCode": "1-9JNL916",
+      "name": "VINICIUS",
+      "secondName": "SILVA DE ASSIS",
+      "ddd": 31,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5531993588247",
+      "id": "e763be02a68764d2d68f914b2acac989",
+      "cpf": "12905707798"
+    },
+    "signatures": [
+      {
+        "id": "1502992223",
+        "organizationType": 0,
+        "phones": {},
+        "customerId": "e763be02a68764d2d68f914b2acac989",
+        "status": 1,
+        "productName": "SKY PRÉ PAGO FLEX",
+        "name": "VINICIUS",
+        "secondName": "SILVA DE ASSIS",
+        "dna": "01000000000100000000000000000000010000000000000000000000000000000000000000000000000000100000010111110000000000000000000000000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111010000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111101111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pré-Pago",
+        "addressInstallation": {
+          "linePublic": "Rua 20",
+          "line1": "Rua 20, 191 - Jardim Brasilia",
+          "line2": null,
+          "number": "191",
+          "city": "Betim",
+          "state": "MG",
+          "country": "Brasil",
+          "postalCode": "32671550",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 31,
+          "resPhone": 93588247
+        },
+        "addressBilling": {
+          "linePublic": "Rua 20",
+          "line1": "Rua 20, 191 - Jardim Brasilia",
+          "line2": null,
+          "number": "191",
+          "city": "Betim",
+          "state": "MG",
+          "country": "Brasil",
+          "postalCode": "32671550",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 31,
+          "resPhone": 93588257
+        },
+        "activation": "2016-06-30T00:00:00.000Z",
+        "email": "videassisjw@gmail.com",
+        "parentAccount": "1502992222",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000641057211",
+            "isRecordable": false,
+            "technology": "SD",
+            "subcategory": "PayTV",
+            "serialCode": "S14",
+            "serialNumber": "010A142254921059E"
+          }
+        ]
+      },
+      {
+        "id": "1504124922",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 993588247,
+          "dddMobilePhone": 31
+        },
+        "customerId": "e763be02a68764d2d68f914b2acac989",
+        "status": 1,
+        "productName": "TOP HD PLUS IV 2022 - P",
+        "name": "VINICIUS",
+        "secondName": "SILVA DE ASSIS",
+        "dna": "01000000000100100000001000000000100000000000000000000000000000000000000001000000000000100011000111110000000000001000000100000000011110000100000000010111111111111111011111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111110111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Achiles Do Pinho Angelo",
+          "line1": "Rua Achiles Do Pinho Angelo, 275 - Cj Habitacional Bueno Franco",
+          "line2": "Bloco D",
+          "number": "275",
+          "city": "Betim",
+          "state": "MG",
+          "country": "Brasil",
+          "postalCode": "32671748",
+          "referencePoint": ".",
+          "addressType": "Rua"
+        },
+        "addressBilling": {
+          "linePublic": "Rua Achiles Do Pinho Angelo",
+          "line1": "Rua Achiles Do Pinho Angelo, 275 - Cj Habitacional Bueno Franco",
+          "line2": "Bloco D/202",
+          "number": "275",
+          "city": "Betim",
+          "state": "MG",
+          "country": "Brasil",
+          "postalCode": "32671748",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2016-10-08T00:00:00.000Z",
+        "email": "videassisjw@gmail.com",
+        "parentAccount": "1504124974",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000616933743",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "010A263412422068F"
+          },
+          {
+            "smartcard": "000777046772",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2035386022479"
+          },
+          {
+            "smartcard": "001157723030",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A0125491698606"
+          },
+          {
+            "smartcard": "001110413729",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2036227363230"
+          },
+          {
+            "smartcard": "000579207655",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH25",
+            "serialNumber": "CE0AA135335449308"
+          },
+          {
+            "smartcard": "001113545246",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2035403955578"
+          },
+          {
+            "smartcard": "001113545238",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2036229133411"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "1504124922",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 993588247,
+        "dddMobilePhone": 31
+      },
+      "customerId": "e763be02a68764d2d68f914b2acac989",
+      "status": 1,
+      "productName": "TOP HD PLUS IV 2022 - P",
+      "name": "VINICIUS",
+      "secondName": "SILVA DE ASSIS",
+      "dna": "01000000000100100000001000000000100000000000000000000000000000000000000001000000000000100011000111110000000000001000000100000000011110000100000000010111111111111111011111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111110111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Achiles Do Pinho Angelo",
+        "line1": "Rua Achiles Do Pinho Angelo, 275 - Cj Habitacional Bueno Franco",
+        "line2": "Bloco D",
+        "number": "275",
+        "city": "Betim",
+        "state": "MG",
+        "country": "Brasil",
+        "postalCode": "32671748",
+        "referencePoint": ".",
+        "addressType": "Rua"
+      },
+      "addressBilling": {
+        "linePublic": "Rua Achiles Do Pinho Angelo",
+        "line1": "Rua Achiles Do Pinho Angelo, 275 - Cj Habitacional Bueno Franco",
+        "line2": "Bloco D/202",
+        "number": "275",
+        "city": "Betim",
+        "state": "MG",
+        "country": "Brasil",
+        "postalCode": "32671748",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2016-10-08T00:00:00.000Z",
+      "email": "videassisjw@gmail.com",
+      "parentAccount": "1504124974",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000616933743",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "010A263412422068F"
+        },
+        {
+          "smartcard": "000777046772",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2035386022479"
+        },
+        {
+          "smartcard": "001157723030",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "670A0125491698606"
+        },
+        {
+          "smartcard": "001110413729",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2036227363230"
+        },
+        {
+          "smartcard": "000579207655",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH25",
+          "serialNumber": "CE0AA135335449308"
+        },
+        {
+          "smartcard": "001113545246",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2035403955578"
+        },
+        {
+          "smartcard": "001113545238",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2036229133411"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "1504124922": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "PREMIERE HD TOTAL 2021 - P",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "21-02-2025",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "TELECINE HD",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "21-02-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "21-02-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO COM 3M DESC 50% - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "21-02-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "ASSISTENCIA PREMIUM MENSAL - P",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "21-02-2025",
+          "end_date": null,
+          "icon": "🛡️"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": null,
+            "name": "PREMIERE HD TOTAL 2021 - P",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "21-02-2025",
+            "startDate": "21-02-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-20XEJQF",
+            "name": "TELECINE HD",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/TLCine%403x.png",
+            "price": "29.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "21-02-2025",
+            "startDate": "21-02-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "21-02-2025",
+            "startDate": "21-02-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO COM 3M DESC 50% - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "21-02-2025",
+            "startDate": "21-02-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "ASSISTENCIA PREMIUM MENSAL - P",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "21-02-2025",
+            "startDate": "21-02-2025",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

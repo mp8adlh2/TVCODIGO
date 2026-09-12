@@ -1,0 +1,387 @@
+{
+  "email": "cristianecfranco@gmail.com",
+  "password": "Mandacaru10",
+  "access_token": "4f8a10d6-28fd-4a1e-9023-c4c6352b9ea5",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiOWQ3N2NjZDYtZjEzYi00ZDQ2LThhMjQtMWViNjdjOTI3NmQzIiwiYXRfaGFzaCI6ImIwQlIxTW1MQjZ6UG9jdE5Rd2dWT3ciLCJkZXZpY2VJZCI6ImQ3OWVmZTU2NmZjMzNjZjdiNTcxZmNiM2Q2OTdiYjA4MTQ3ZmJiNTkiLCJhdWRpdFRyYWNraW5nSWQiOiIzZGRiLTY5YjktNGZlYy04YjRhLTMwNjEiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODgxNjI2ODk0MiwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJmOWIzNTFhYy1lZGExLTRhN2EtOTA3YS0xNTVlMDAwMzQ5NmIiLCJzaWduYXR1cmVzIjpbIjc4MDA2ODc0Il0sImN1c3RvbWVySWQiOiJjOTg0NjgzNDA5NDUxZmIwODA3YmMzNjNjMWE1ZmRiYyIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6Ijc4MDA2ODc0IiwiZ2l2ZW5fbmFtZSI6IkNSSVNUSUFORSBBUEFSRUNJREEgTU9SRUlSQSBEQSIsInVzZXJuYW1lIjoiY3Jpc3RpYW5lY2ZyYW5jb0BnbWFpbC5jb20iLCJtYWlsIjoiY3Jpc3RpYW5lY2ZyYW5jb0BnbWFpbC5jb20iLCJyZWRlbXB0aW9uTGltaXQiOm51bGwsImlhdCI6MTc4ODgxNjI2OCwiZXhwIjoxNzg4OTAyNjY4LCJpc3MiOiJzbS1za3kudnJpb3NlcnZpY2VzLmNvbSJ9.WrWZ1FIPkKHdYCT8caBKH_lwMx7eDS1r2kZP2tjqgjYFxYHig4mMPJrXVZkX2sTiX_WpRLG6dp7tw83iJzwvwl9BX6wp-_JnS6kmCmlpn59z2iKzOTNXsTMRGySYAFy11MHluDfcTANIriGoPQUVO_KmAkYER_NygLjskgKBo-jk9_QTxUATu_ge0OFjxLFxQiei7Jdq5naUcVjF8zUM9ePnyhRoYdNkQlDUgxa-JF_ZMaYer7ALb98Svic6blBcZz_GTeN9PY_Jpt9qGuzB50gIK3oFsYYsRdn00pBQfLDkLB8fFGFMWtyAU1dgdi2KU_zjz-47CcYXO0YOWlaL2g",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "4f8a10d6-28fd-4a1e-9023-c4c6352b9ea5",
+    "externalId": "8c9c452a-85e1-5f45-9a2f-499c5ddcfaa8",
+    "username": "c984683409451fb0807bc363c1a5fdbc",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "78006874",
+    "protocol": "2026-150293454593",
+    "customer": {
+      "email": "cristianecfranco@gmail.com",
+      "billingProfileCode": "1-A6JF-23998",
+      "name": "CRISTIANE",
+      "secondName": "APARECIDA MOREIRA DA COSTA FRANCO",
+      "birthday": "1973-06-26T00:00:00.000Z",
+      "ddd": 64,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5564981233725",
+      "id": "c984683409451fb0807bc363c1a5fdbc",
+      "cpf": "59153717104"
+    },
+    "signatures": [
+      {
+        "id": "78006874",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 981233725,
+          "dddMobilePhone": 64,
+          "dddComPhone": 64,
+          "comPhone": 981807253
+        },
+        "customerId": "c984683409451fb0807bc363c1a5fdbc",
+        "status": 1,
+        "productName": "COMBO MEGA PLUS TOP X 2021 HD - P",
+        "name": "CRISTIANE",
+        "secondName": "APARECIDA MOREIRA DA COSTA FRANCO",
+        "dna": "01000000000100100000000100000000100000000000000010000000000000100000000010000000000000001010000111110000000000000000100001000000011110100000010000100111111111111100111111111000000000000000000000100000000010111111111111001000000011111010111111110001000000000001101111111111111011101110001111111111110111111111111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Fazenda Boa Vista.",
+          "line1": "Fazenda Boa Vista., 1 - Zona Rural",
+          "line2": "Fazenda,.",
+          "number": "1",
+          "city": "Cezarina",
+          "state": "GO",
+          "country": "Brasil",
+          "postalCode": "76195000",
+          "referencePoint": "Aa_rubens, No Final Da Avenida Principal Perguntar No Posto Moura Pela Fazenda De Jose Cezar Ou Cristiane.",
+          "addressType": "Fazenda",
+          "resDdd": 0,
+          "resPhone": 0
+        },
+        "addressBilling": {
+          "linePublic": "Fazenda Boa Vista",
+          "line1": "Fazenda Boa Vista, 1 - Zona Rural",
+          "line2": "Faz",
+          "number": "1",
+          "city": "Cezarina",
+          "state": "GO",
+          "country": "Brasil",
+          "postalCode": "76195000",
+          "referencePoint": "Aa_rubens, No Final Da Avenida Principal Perguntar No Posto Moura Pela Fazenda De Jose Cezar Ou Cristiane.",
+          "addressType": "Fazenda",
+          "resDdd": 64,
+          "resPhone": 35431373
+        },
+        "activation": "2011-08-17T00:00:00.000Z",
+        "email": "cristianecfranco@gmail.com",
+        "parentAccount": "078006874",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000571309772",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "670A263412605765E"
+          },
+          {
+            "smartcard": "001219348966",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A0125551281626"
+          },
+          {
+            "smartcard": "000773995592",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2036197173461"
+          },
+          {
+            "smartcard": "001201429535",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR01",
+            "serialNumber": "CE0AD12380684545C"
+          },
+          {
+            "smartcard": "000612231779",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH25",
+            "serialNumber": "CE0AA13530426868C"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "78006874",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 981233725,
+        "dddMobilePhone": 64,
+        "dddComPhone": 64,
+        "comPhone": 981807253
+      },
+      "customerId": "c984683409451fb0807bc363c1a5fdbc",
+      "status": 1,
+      "productName": "COMBO MEGA PLUS TOP X 2021 HD - P",
+      "name": "CRISTIANE",
+      "secondName": "APARECIDA MOREIRA DA COSTA FRANCO",
+      "dna": "01000000000100100000000100000000100000000000000010000000000000100000000010000000000000001010000111110000000000000000100001000000011110100000010000100111111111111100111111111000000000000000000000100000000010111111111111001000000011111010111111110001000000000001101111111111111011101110001111111111110111111111111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Fazenda Boa Vista.",
+        "line1": "Fazenda Boa Vista., 1 - Zona Rural",
+        "line2": "Fazenda,.",
+        "number": "1",
+        "city": "Cezarina",
+        "state": "GO",
+        "country": "Brasil",
+        "postalCode": "76195000",
+        "referencePoint": "Aa_rubens, No Final Da Avenida Principal Perguntar No Posto Moura Pela Fazenda De Jose Cezar Ou Cristiane.",
+        "addressType": "Fazenda",
+        "resDdd": 0,
+        "resPhone": 0
+      },
+      "addressBilling": {
+        "linePublic": "Fazenda Boa Vista",
+        "line1": "Fazenda Boa Vista, 1 - Zona Rural",
+        "line2": "Faz",
+        "number": "1",
+        "city": "Cezarina",
+        "state": "GO",
+        "country": "Brasil",
+        "postalCode": "76195000",
+        "referencePoint": "Aa_rubens, No Final Da Avenida Principal Perguntar No Posto Moura Pela Fazenda De Jose Cezar Ou Cristiane.",
+        "addressType": "Fazenda",
+        "resDdd": 64,
+        "resPhone": 35431373
+      },
+      "activation": "2011-08-17T00:00:00.000Z",
+      "email": "cristianecfranco@gmail.com",
+      "parentAccount": "078006874",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000571309772",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "670A263412605765E"
+        },
+        {
+          "smartcard": "001219348966",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A0125551281626"
+        },
+        {
+          "smartcard": "000773995592",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2036197173461"
+        },
+        {
+          "smartcard": "001201429535",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR01",
+          "serialNumber": "CE0AD12380684545C"
+        },
+        {
+          "smartcard": "000612231779",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH25",
+          "serialNumber": "CE0AA13530426868C"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "78006874": {
+      "included": [
+        {
+          "name": "PREMIERE TOTAL HD CB - P",
+          "category": "A La Carte",
+          "subcategory": "Futebol",
+          "start_date": "25-10-2021",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "TELECINE HD CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "25-10-2021",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "25-10-2021",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "TAXA ASSISTENCIA PREMIUM - P",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "25-10-2021",
+          "end_date": null,
+          "icon": "🛡️"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "06-08-2024",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "06-07-2024",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky Sex Prive - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "25-10-2021",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "Sky Sex Prive HD - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "25-10-2021",
+          "end_date": null,
+          "icon": "🔞"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "06-08-2024",
+            "startDate": "06-08-2024",
+            "endDate": null
+          },
+          {
+            "id": "1-219IIMH",
+            "name": "DISNEY PLUS PREMIUM",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Disney%403x.png",
+            "price": "46.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "06-07-2024",
+            "startDate": "06-07-2024",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "17-08-2011",
+            "startDate": "25-10-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "PREMIERE TOTAL HD CB - P",
+            "category": "A La Carte",
+            "subcategory": "Futebol",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "17-08-2011",
+            "startDate": "25-10-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TELECINE HD CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "17-08-2011",
+            "startDate": "25-10-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "17-08-2011",
+            "startDate": "25-10-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TAXA ASSISTENCIA PREMIUM - P",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "17-08-2011",
+            "startDate": "25-10-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive HD - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "17-08-2011",
+            "startDate": "25-10-2021",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

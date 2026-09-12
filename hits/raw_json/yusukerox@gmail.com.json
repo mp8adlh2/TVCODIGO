@@ -1,0 +1,343 @@
+{
+  "email": "yusukerox@gmail.com",
+  "password": "Carrovoador18",
+  "access_token": "db7e1daa-5a9f-418c-883e-16cc76694a71",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiOWFmY2U0NjAtYmQ2NS00NTc5LThmYzUtN2QyNzdkYTNmZWZkIiwiYXRfaGFzaCI6IjlLYUJfTjFkSHJQSHc0NUU0blVjc3ciLCJkZXZpY2VJZCI6ImM1NzlkMWE3NWE5MjU5YjUxOTIzNzEyNDdjMmEyYTJlOGUzMDVlN2MiLCJhdWRpdFRyYWNraW5nSWQiOiJjYjNlLTQxYTgtNGVmYS1iYjgzLTU2NDUiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjcyMzE3MywidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiIyMWRkZGU4My0wNTRlLTRkODktYjAyOC02M2NjMzYyNjUwMGYiLCJzaWduYXR1cmVzIjpbIjE1OTA1NjIwNSJdLCJjdXN0b21lcklkIjoiYWQ3NzM2NWY0MzVhMTUyMWU1ZTdjMGM4YjU4OGIzMjkiLCJyZWdpc3RyYXRpb25TaWduYXR1cmUiOiIxNTkwNTYyMDUiLCJnaXZlbl9uYW1lIjoiR1VJTEhFUk1FIiwidXNlcm5hbWUiOiJ5dXN1a2Vyb3hAZ21haWwuY29tIiwibWFpbCI6Inl1c3VrZXJveEBnbWFpbC5jb20iLCJyZWRlbXB0aW9uTGltaXQiOm51bGwsImlhdCI6MTc4ODMxMjcyMywiZXhwIjoxNzg4Mzk5MTIzLCJpc3MiOiJzbS1za3kudnJpb3NlcnZpY2VzLmNvbSJ9.GSfaR6Zw0dJJqrpspq3pVfkc7D-o8RdlMx7Nf1jAVv5p_Gn95WlfbjnD6ypiEv5_UPUd2jHpoxWMYqnRC-qE3MQMgfQYsqGmoAta-TSTg154RWkZiZieXWy3wYBpyWjNEZCVGRmxai3s8j6HZyVK-QIyrZujBxdTHmLbqeBZxWV88RnpEJDEnfZPT9Ajv9qBe1IS43WljHd5_mqRIYFg8tDZWKciiRzB-kk9L4LF7Q23DKIyV6KpeKSiSnDZmEEUnY-dyCtRNgjKaEH9bWP7_VNpl2XoJgOSw6kqWMfWjWUQKUHrWKEQZ_8q3hQp3BNdpiuo9CbHWNhW9cF9aUF2Tw",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "db7e1daa-5a9f-418c-883e-16cc76694a71",
+    "externalId": "54720019-b4ec-5f7e-a447-b1a07b0575c5",
+    "username": "ad77365f435a1521e5e7c0c8b588b329",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "159056205",
+    "protocol": "2026-150197109574",
+    "customer": {
+      "email": "Walace_mauricio@yahoo.com.br",
+      "billingProfileCode": "1-8QBV-6276",
+      "name": "GUILHERME",
+      "secondName": "MAURICIO DA SILVA",
+      "birthday": "1984-11-12T00:00:00.000Z",
+      "ddd": 21,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5521975418046",
+      "id": "ad77365f435a1521e5e7c0c8b588b329",
+      "cpf": "11376172763"
+    },
+    "signatures": [
+      {
+        "id": "159056205",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 975418046,
+          "dddMobilePhone": 21
+        },
+        "customerId": "ad77365f435a1521e5e7c0c8b588b329",
+        "status": 1,
+        "productName": "DUETO MASTER II HBO SD 2019/2021 - P",
+        "name": "GUILHERME",
+        "secondName": "MAURICIO DA SILVA",
+        "dna": "01000000000100010000001000000000100000000000000010000000000100000000001000000000000000100010000111110000000000100000000000001000011110000101000000010111111111111111111111111000000000000000000101100000000010111111111111100000000011111010111111110001000000000001101011111111111001101110001111111111010011111101111111111111111111111111110011111111111110111111111101011111111111111111111111100111011100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100101111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua  Nossa Senhora Aparecida",
+          "line1": "Rua  Nossa Senhora Aparecida, 18b - Itanhanga",
+          "line2": "18 B",
+          "number": "18b",
+          "city": "Rio De Janeiro",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "22641220",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "addressBilling": {
+          "linePublic": "Rua Nossa Senhora Aparecida",
+          "line1": "Rua Nossa Senhora Aparecida, 18 - Itanhnaga",
+          "line2": "B",
+          "number": "18",
+          "city": "Rio De Janeiro",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "22641190",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2014-02-26T00:00:00.000Z",
+        "email": "Walace_mauricio@yahoo.com.br",
+        "parentAccount": "0159056205",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000688934041",
+            "isRecordable": false,
+            "technology": "SD",
+            "subcategory": "PayTV",
+            "serialCode": "S14",
+            "serialNumber": "670A1422568757216"
+          },
+          {
+            "smartcard": "000614024123",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH25",
+            "serialNumber": "CE0AA135310393359"
+          },
+          {
+            "smartcard": "000688936129",
+            "isRecordable": false,
+            "technology": "SD",
+            "subcategory": "PayTV",
+            "serialCode": "S14",
+            "serialNumber": "670A1422574450212"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "159056205",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 975418046,
+        "dddMobilePhone": 21
+      },
+      "customerId": "ad77365f435a1521e5e7c0c8b588b329",
+      "status": 1,
+      "productName": "DUETO MASTER II HBO SD 2019/2021 - P",
+      "name": "GUILHERME",
+      "secondName": "MAURICIO DA SILVA",
+      "dna": "01000000000100010000001000000000100000000000000010000000000100000000001000000000000000100010000111110000000000100000000000001000011110000101000000010111111111111111111111111000000000000000000101100000000010111111111111100000000011111010111111110001000000000001101011111111111001101110001111111111010011111101111111111111111111111111110011111111111110111111111101011111111111111111111111100111011100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100101111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua  Nossa Senhora Aparecida",
+        "line1": "Rua  Nossa Senhora Aparecida, 18b - Itanhanga",
+        "line2": "18 B",
+        "number": "18b",
+        "city": "Rio De Janeiro",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "22641220",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "addressBilling": {
+        "linePublic": "Rua Nossa Senhora Aparecida",
+        "line1": "Rua Nossa Senhora Aparecida, 18 - Itanhnaga",
+        "line2": "B",
+        "number": "18",
+        "city": "Rio De Janeiro",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "22641190",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2014-02-26T00:00:00.000Z",
+      "email": "Walace_mauricio@yahoo.com.br",
+      "parentAccount": "0159056205",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000688934041",
+          "isRecordable": false,
+          "technology": "SD",
+          "subcategory": "PayTV",
+          "serialCode": "S14",
+          "serialNumber": "670A1422568757216"
+        },
+        {
+          "smartcard": "000614024123",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH25",
+          "serialNumber": "CE0AA135310393359"
+        },
+        {
+          "smartcard": "000688936129",
+          "isRecordable": false,
+          "technology": "SD",
+          "subcategory": "PayTV",
+          "serialCode": "S14",
+          "serialNumber": "670A1422574450212"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "159056205": {
+      "included": [
+        {
+          "name": "Sky HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "30-08-2021",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky HBO HD - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "30-08-2021",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "SportyNet+",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "02-08-2025",
+          "end_date": null,
+          "icon": "📺"
+        },
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "15-06-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO COM 3M DESC 50% - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "15-06-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PREMIUM R$ 19,90 POR 4M  - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "05-04-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "24-05-2024",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "PREMIERE HD TOTAL 2021 - P",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "13-10-2023",
+          "end_date": null,
+          "icon": "⚽"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": null,
+            "name": "Sky HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "30-08-2021",
+            "startDate": "30-08-2021",
+            "endDate": null
+          },
+          {
+            "id": "1-218C62X",
+            "name": "SportyNet+",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9529460/SKY-Sportynet-Card.png",
+            "price": "29.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "02-08-2025",
+            "startDate": "02-08-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "15-06-2025",
+            "startDate": "15-06-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO COM 3M DESC 50% - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "15-06-2025",
+            "startDate": "15-06-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "DISNEY PREMIUM R$ 19,90 POR 4M  - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "05-04-2025",
+            "startDate": "05-04-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "24-05-2024",
+            "startDate": "24-05-2024",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "PREMIERE HD TOTAL 2021 - P",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "13-10-2023",
+            "startDate": "13-10-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky HBO HD - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "30-08-2021",
+            "startDate": "30-08-2021",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "email": "isabellasouzaagio@bol.com.br",
+  "password": "Isabella2018",
+  "access_token": "2a760d54-ee7b-4f31-8ca5-88ed0f2d91cc",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiMmFlYzZjZGEtYTBmNS00ZGM1LWFhOGYtMDZiMmI5NDQzOGUzIiwiYXRfaGFzaCI6Im5lRC1Ub3VoYjFNRTZRbzBTb3haT1EiLCJkZXZpY2VJZCI6ImM3MGVmOWJlNjc5MWY0ODMxY2VhYTVkYTBkZTk5N2Y3ZTE4N2UzNmIiLCJhdWRpdFRyYWNraW5nSWQiOiI4ZWMxLTYyNGItNDkwNy1hOWJhLWEwODkiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODgxNzE0Njc3MSwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiI3M2Q0NjdkYS0yNWM5LTQxNjctOWJjZi0wYWI3NWFkMGNmZmIiLCJzaWduYXR1cmVzIjpbIjE1MDg3ODYzMCIsIjE1MDA4MDYyMjIiLCIxNTEwODMyNzczIl0sImN1c3RvbWVySWQiOiI3OWZmMzhjNzFhNDY5YzM2N2JmMzlmOWQzOTM0ZTQzNCIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjE1MTA4MzI3NzMiLCJnaXZlbl9uYW1lIjoiSEVSTUVTIEhBUk9MRE8iLCJ1c2VybmFtZSI6ImlzYWJlbGxhc291emFhZ2lvQGJvbC5jb20uYnIiLCJtYWlsIjoiaXNhYmVsbGFzb3V6YWFnaW9AYm9sLmNvbS5iciIsInJlZGVtcHRpb25MaW1pdCI6bnVsbCwiaWF0IjoxNzg4ODE3MTQ2LCJleHAiOjE3ODg5MDM1NDYsImlzcyI6InNtLXNreS52cmlvc2VydmljZXMuY29tIn0.ePFPvEKuj1HXkqaeta_IJMb5TV57up79cYJ5po5-a8hmGLK17bL0bFs7z2aprM7n5piALEwW8Muxwa1R8i_y3OQQElmKnrwlAcZCOYnyUmW4jjOsMU4mQljPFAjUkqgoOQ4xsRvI1Dpz4knOihPtWCZskvmFhRTyowhMDD27ZGtEEk08MUMLxAFOK4NOkO_zKcl9XDTThHpCm9pjoGKkMiwL99JWQ1JXGvaNql6ceSAkgRhtvxeymbLRrd4Er3mmYuGyc3SbaOqdmtxj2eqZZ4CEFM9kCnNOzV7fLINjLwouAq-g2rqtW1Q03sneBr3uQEOIi-x9omKD42fLe5a3lQ",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "2a760d54-ee7b-4f31-8ca5-88ed0f2d91cc",
+    "externalId": "1ef8f9bd-b54b-5fb2-bae5-0db8fcc0425f",
+    "username": "79ff38c71a469c367bf39f9d3934e434",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "1510832773",
+    "protocol": "2026-150293430568",
+    "customer": {
+      "email": "isabellasouzaagio@bol.com.br",
+      "billingProfileCode": "1-4QGW-2281",
+      "name": "HERMES",
+      "secondName": "HAROLDO AGIO",
+      "birthday": "1959-11-15T00:00:00.000Z",
+      "ddd": 11,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+551144881326",
+      "id": "79ff38c71a469c367bf39f9d3934e434",
+      "cpf": "00614592836"
+    },
+    "signatures": [
+      {
+        "id": "150878630",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 44881326,
+          "dddMobilePhone": 11
+        },
+        "customerId": "79ff38c71a469c367bf39f9d3934e434",
+        "status": 1,
+        "productName": "SKY PRÉ PAGO FLEX",
+        "name": "HERMES",
+        "secondName": "HAROLDO AGIO",
+        "dna": "01000000000100000000000000000000010000000000000000000000000000000000000000000000000000001000011111110000000000000000000000000000011110100000000000000011111111111111111111111000000000000000000000000000000000111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111101111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pré-Pago",
+        "addressInstallation": {
+          "linePublic": "Rua Julia Gomes De Melo",
+          "line1": "Rua Julia Gomes De Melo, 102 - Jardim Vassouras I",
+          "line2": ".",
+          "number": "102",
+          "city": "Francisco Morato",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "07957120",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 11,
+          "resPhone": 46081830
+        },
+        "addressBilling": {
+          "linePublic": "Rua Julia Gomes De Melo",
+          "line1": "Rua Julia Gomes De Melo, 102 - Jardim Vassouras I",
+          "line2": ".",
+          "number": "102",
+          "city": "Francisco Morato",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "07957120",
+          "referencePoint": ".",
+          "addressType": "Rua",
+          "resDdd": 11,
+          "resPhone": 44881326
+        },
+        "activation": "2013-11-07T00:00:00.000Z",
+        "email": "isabellasouzaagio@bol.com.br",
+        "parentAccount": "1532755278",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000518872833",
+            "isRecordable": false,
+            "technology": "SD",
+            "subcategory": "PayTV",
+            "serialCode": "DSR3421",
+            "serialNumber": "010A5403606333114"
+          }
+        ]
+      },
+      {
+        "id": "1500806222",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 44881326,
+          "dddMobilePhone": 11
+        },
+        "customerId": "79ff38c71a469c367bf39f9d3934e434",
+        "status": 1,
+        "productName": "SKY FIT PRÉ PAGO 12M",
+        "name": "HERMES",
+        "secondName": "HAROLDO AGIO",
+        "dna": "01000000000100000000000000000000010000000000000000000000000000000000000000000000000000001000010111110000000000000000000000000000011110100000000000000011111111111111111111111000000000000000000000000000000000111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111101111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pré-Pago",
+        "addressInstallation": {
+          "linePublic": "Rua Julia Gomes De Melo",
+          "line1": "Rua Julia Gomes De Melo, 102 - Jardim Vassouras",
+          "line2": null,
+          "number": "102",
+          "city": "Francisco Morato",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "07957120",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "addressBilling": {
+          "linePublic": "Rua Julia Gomes De Melo",
+          "line1": "Rua Julia Gomes De Melo, 102 - Jardim Vassouras",
+          "line2": null,
+          "number": "102",
+          "city": "Francisco Morato",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "07957120",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2013-11-07T00:00:00.000Z",
+        "email": "isabellasouzaagio@bol.com.br",
+        "parentAccount": "1532755279",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000615356359",
+            "isRecordable": false,
+            "technology": "SD",
+            "subcategory": "PayTV",
+            "serialCode": "DSR3421",
+            "serialNumber": "CE0A4603843053915"
+          }
+        ]
+      },
+      {
+        "id": "1510832773",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 964497788,
+          "dddMobilePhone": 11,
+          "dddComPhone": 11,
+          "comPhone": 964497788
+        },
+        "customerId": "79ff38c71a469c367bf39f9d3934e434",
+        "status": 1,
+        "productName": "TOP HD EXCLUSIVO 2025 - P",
+        "name": "HERMES",
+        "secondName": "HAROLDO AGIO",
+        "dna": "01000000000100000100000010000000010000000000000000000000000000000000000000000000000000100010000111110000000000010000000100000000011110000100000000010111111111111111111111111000000000000000000001100000000010111111111111001000000011111010111111110001000000000001101111111111110001101110001111111111010011111101111111111111111111111111110011111111111110111111111101011111111111111111111111100111011100011111111111111111100011111111111111111111111101111111111111110111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011111011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Julia Gomes De Melo Cs",
+          "line1": "Rua Julia Gomes De Melo Cs, 102 - Vassouras I",
+          "line2": "Cs",
+          "number": "102",
+          "city": "Francisco Morato",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "07945120",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 11,
+          "resPhone": 964497788
+        },
+        "addressBilling": {
+          "linePublic": "Rua Julia Gomes De Melo",
+          "line1": "Rua Julia Gomes De Melo, 102 - Vassouras I",
+          "line2": "Cs",
+          "number": "102",
+          "city": "Francisco Morato",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "07945120",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2018-03-20T00:00:00.000Z",
+        "email": "isabellasouzaagio@bol.com.br",
+        "parentAccount": "0150878630",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001144491543",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A012080233660F"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "1510832773",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 964497788,
+        "dddMobilePhone": 11,
+        "dddComPhone": 11,
+        "comPhone": 964497788
+      },
+      "customerId": "79ff38c71a469c367bf39f9d3934e434",
+      "status": 1,
+      "productName": "TOP HD EXCLUSIVO 2025 - P",
+      "name": "HERMES",
+      "secondName": "HAROLDO AGIO",
+      "dna": "01000000000100000100000010000000010000000000000000000000000000000000000000000000000000100010000111110000000000010000000100000000011110000100000000010111111111111111111111111000000000000000000001100000000010111111111111001000000011111010111111110001000000000001101111111111110001101110001111111111010011111101111111111111111111111111110011111111111110111111111101011111111111111111111111100111011100011111111111111111100011111111111111111111111101111111111111110111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011111011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Julia Gomes De Melo Cs",
+        "line1": "Rua Julia Gomes De Melo Cs, 102 - Vassouras I",
+        "line2": "Cs",
+        "number": "102",
+        "city": "Francisco Morato",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "07945120",
+        "referencePoint": null,
+        "addressType": "Rua",
+        "resDdd": 11,
+        "resPhone": 964497788
+      },
+      "addressBilling": {
+        "linePublic": "Rua Julia Gomes De Melo",
+        "line1": "Rua Julia Gomes De Melo, 102 - Vassouras I",
+        "line2": "Cs",
+        "number": "102",
+        "city": "Francisco Morato",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "07945120",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2018-03-20T00:00:00.000Z",
+      "email": "isabellasouzaagio@bol.com.br",
+      "parentAccount": "0150878630",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "001144491543",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A012080233660F"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "1510832773": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "14-03-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "16-07-2023",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "TELECINE HD",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "06-06-2023",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "ASSINATURAS DIGITAIS VIII",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "24-08-2026",
+          "end_date": null,
+          "icon": "📺"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM MIG 2 - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "17-08-2023",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "14-03-2026",
+            "startDate": "14-03-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "16-07-2023",
+            "startDate": "16-07-2023",
+            "endDate": null
+          },
+          {
+            "id": "1-20XEJQF",
+            "name": "TELECINE HD",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/TLCine%403x.png",
+            "price": "29.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "06-06-2023",
+            "startDate": "06-06-2023",
+            "endDate": null
+          },
+          {
+            "id": "1-21E06GS",
+            "name": "ASSINATURAS DIGITAIS VIII",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": null,
+            "price": "2.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "24-08-2026",
+            "startDate": "24-08-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "DISNEY PLUS PREMIUM MIG 2 - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "17-08-2023",
+            "startDate": "17-08-2023",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

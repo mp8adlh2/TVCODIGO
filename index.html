@@ -75,6 +75,26 @@
       --matrix-color: #f47521;
     }
 
+    body[data-service="sky"] {
+      --accent-color: #00A0E3;
+      --accent-rgb: 0, 160, 227;
+      --accent-glow: rgba(0, 160, 227, 0.45);
+      --accent-glow-subtle: rgba(0, 160, 227, 0.12);
+      --accent-gradient: linear-gradient(135deg, #00A0E3 0%, #0066CC 100%);
+      --accent-gradient-hover: linear-gradient(135deg, #1AC1FF 0%, #007CEE 100%);
+      
+      --bg-base: #030810;
+      --panel-bg: rgba(6, 17, 34, 0.78);
+      --panel-border: rgba(0, 160, 227, 0.22);
+      --panel-border-hover: rgba(0, 160, 227, 0.55);
+      --panel-border-glass: rgba(255, 255, 255, 0.08);
+      
+      --text-bright: #ffffff;
+      --text-dim: #99cbee;
+      --text-dark: #3a5c78;
+      --matrix-color: #00a0e3;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -362,7 +382,7 @@
     /* ======================================================== */
     .service-switcher {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(4, 1fr);
       gap: 8px;
       background: rgba(0, 0, 0, 0.5);
       border: 1px solid var(--panel-border-glass);
@@ -417,6 +437,14 @@
       border-color: rgba(255, 255, 255, 0.2);
       color: #ffffff;
       box-shadow: 0 4px 20px rgba(244, 117, 33, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+      transform: scale(1.02);
+    }
+
+    .service-tab.active-sky {
+      background: var(--accent-gradient);
+      border-color: rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      box-shadow: 0 4px 20px rgba(0, 160, 227, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.35);
       transform: scale(1.02);
     }
 
@@ -1069,76 +1097,251 @@
     /* ======================================================== */
     /* 🔐 MODALS: ROOT SECURITY & COOKIE VAULT                  */
     /* ======================================================== */
+    /* ======================================================== */
+    /* 🔐 ULTRA-LUXURY CYBER LOGIN OVERLAY SYSTEM               */
+    /* ======================================================== */
     #login-overlay, #admin-auth-modal {
       position: fixed;
       top: 0;
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: rgba(0, 0, 0, 0.88);
-      backdrop-filter: blur(20px);
+      background: radial-gradient(circle at 50% 30%, rgba(15, 23, 42, 0.94) 0%, rgba(2, 4, 10, 0.98) 100%);
+      backdrop-filter: blur(40px);
+      -webkit-backdrop-filter: blur(40px);
       z-index: 10000;
       display: none;
       align-items: center;
       justify-content: center;
       padding: 20px;
+      overflow: hidden;
+    }
+
+    /* Ambient animated multi-color neon glow orbs */
+    #login-overlay::before, #login-overlay::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(90px);
+      opacity: 0.35;
+      pointer-events: none;
+      animation: floatAura 10s ease-in-out infinite alternate;
+    }
+
+    #login-overlay::before {
+      width: 480px;
+      height: 480px;
+      background: radial-gradient(circle, #00E5FF 0%, #7928CA 60%, transparent 80%);
+      top: 10%;
+      left: 20%;
+    }
+
+    #login-overlay::after {
+      width: 450px;
+      height: 450px;
+      background: radial-gradient(circle, #E50914 0%, #FF6B00 50%, transparent 80%);
+      bottom: 10%;
+      right: 20%;
+      animation-delay: -5s;
+    }
+
+    @keyframes floatAura {
+      0% { transform: translate(0px, 0px) scale(1); }
+      50% { transform: translate(30px, -25px) scale(1.1); }
+      100% { transform: translate(-20px, 20px) scale(0.95); }
     }
 
     .login-card {
       width: 100%;
-      max-width: 440px;
-      background: rgba(6, 16, 9, 0.94);
-      border: 1.8px solid #00ff66;
-      border-radius: 28px;
-      padding: 36px 30px;
-      box-shadow: 0 0 45px rgba(0, 255, 102, 0.35), inset 0 0 25px rgba(0, 255, 102, 0.1);
+      max-width: 470px;
+      background: linear-gradient(170deg, rgba(20, 27, 45, 0.88) 0%, rgba(8, 12, 22, 0.95) 100%);
+      border: 1px solid rgba(0, 229, 255, 0.25);
+      border-radius: 32px;
+      padding: 38px 32px 30px;
+      box-shadow: 0 30px 90px rgba(0, 0, 0, 0.9), 
+                  0 0 60px rgba(0, 229, 255, 0.15), 
+                  inset 0 1px 0 rgba(255, 255, 255, 0.15),
+                  inset 0 0 30px rgba(0, 229, 255, 0.05);
       text-align: center;
       position: relative;
-      animation: modalSlide 0.35s ease;
+      animation: modalCyberSlide 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      overflow: hidden;
+      z-index: 1;
     }
 
-    .login-icon-box {
-      width: 76px;
-      height: 76px;
-      border-radius: 50%;
-      background: rgba(0, 255, 102, 0.08);
-      border: 2px solid #00ff66;
+    @keyframes modalCyberSlide {
+      from { opacity: 0; transform: translateY(30px) scale(0.96); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    /* Top luminous accent bar */
+    .login-card-topline {
+      position: absolute;
+      top: 0;
+      left: 15%;
+      width: 70%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #00E5FF, #a855f7, #ff3344, transparent);
+      box-shadow: 0 0 15px #00E5FF;
+    }
+
+    /* Holographic brand chips */
+    .login-brand-chips {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 22px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .login-chip {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 6px 12px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      letter-spacing: 0.6px;
+      background: rgba(4, 8, 18, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      user-select: none;
+    }
+
+    .login-chip:hover {
+      transform: translateY(-2px) scale(1.04);
+    }
+
+    .login-chip.nf { color: #ff4d5a; border-color: rgba(229, 9, 20, 0.4); box-shadow: 0 0 12px rgba(229, 9, 20, 0.2); }
+    .login-chip.hbo { color: #c084fc; border-color: rgba(168, 85, 247, 0.4); box-shadow: 0 0 12px rgba(168, 85, 247, 0.2); }
+    .login-chip.cr { color: #fb923c; border-color: rgba(244, 117, 33, 0.4); box-shadow: 0 0 12px rgba(244, 117, 33, 0.2); }
+    .login-chip.sky { color: #38bdf8; border-color: rgba(0, 160, 227, 0.4); box-shadow: 0 0 12px rgba(0, 160, 227, 0.2); }
+
+    /* Orbital Holographic Shield Badge */
+    .login-orbital-wrap {
+      position: relative;
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 16px;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0 auto 18px;
-      box-shadow: 0 0 25px rgba(0, 255, 102, 0.45);
+    }
+
+    .login-orbital-ring {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 1.5px dashed rgba(0, 229, 255, 0.45);
+      animation: spinOrbit 12s linear infinite;
+    }
+
+    .login-orbital-ring-inner {
+      position: absolute;
+      inset: 6px;
+      border-radius: 50%;
+      border: 1px dotted rgba(168, 85, 247, 0.6);
+      animation: spinOrbitReverse 8s linear infinite;
+    }
+
+    @keyframes spinOrbit {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes spinOrbitReverse {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(0deg); }
+    }
+
+    .login-icon-box {
+      width: 66px;
+      height: 66px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(0, 229, 255, 0.2) 0%, rgba(126, 34, 206, 0.25) 100%);
+      border: 1.8px solid #00E5FF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 35px rgba(0, 229, 255, 0.5), inset 0 0 18px rgba(0, 229, 255, 0.3);
+      position: relative;
+      z-index: 2;
     }
 
     .login-icon-svg {
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
       fill: none;
-      stroke: #00ff66;
+      stroke: #00E5FF;
       stroke-width: 2.2;
       stroke-linecap: round;
       stroke-linejoin: round;
-      filter: drop-shadow(0 0 8px #00ff66);
+      filter: drop-shadow(0 0 12px #00E5FF);
     }
 
     .login-title {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 24px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 26px;
       font-weight: 900;
       color: #ffffff;
-      letter-spacing: 2px;
-      margin-bottom: 6px;
-      text-shadow: 0 0 16px rgba(0, 255, 102, 0.8), 0 0 5px #00ff66;
+      letter-spacing: 1.8px;
+      margin-bottom: 4px;
+      position: relative;
+      z-index: 2;
+      background: linear-gradient(135deg, #ffffff 0%, #a5f3fc 50%, #38bdf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 20px rgba(0, 229, 255, 0.4));
     }
 
     .login-sub {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 11.5px;
+      color: #94a3b8;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 2;
+    }
+
+    .login-status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(0, 255, 102, 0.08);
+      border: 1px solid rgba(0, 255, 102, 0.3);
+      border-radius: 20px;
+      padding: 6px 16px;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 10.5px;
-      color: #00ff66;
+      font-size: 10px;
       font-weight: 700;
-      letter-spacing: 0.8px;
-      margin-bottom: 24px;
-      opacity: 0.9;
+      color: #00ff66;
+      letter-spacing: 0.6px;
+      margin-bottom: 22px;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 0 20px rgba(0, 255, 102, 0.2);
+    }
+
+    .login-pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #00ff66;
+      box-shadow: 0 0 10px #00ff66;
+      animation: pulseGreen 1.8s infinite;
+    }
+
+    @keyframes pulseGreen {
+      0%, 100% { transform: scale(1); opacity: 1; box-shadow: 0 0 10px #00ff66; }
+      50% { transform: scale(1.3); opacity: 0.7; box-shadow: 0 0 18px #00ff66; }
     }
 
     .login-input-wrap {
@@ -1146,122 +1349,213 @@
       margin-bottom: 16px;
       display: flex;
       align-items: center;
+      z-index: 2;
     }
 
     .login-input-icon {
       position: absolute;
-      left: 16px;
-      color: #00ff66;
-      font-size: 15px;
+      left: 18px;
+      color: #00E5FF;
+      font-size: 17px;
       pointer-events: none;
-      z-index: 2;
+      z-index: 3;
+      filter: drop-shadow(0 0 6px rgba(0, 229, 255, 0.6));
     }
 
     .login-input {
       width: 100%;
-      background: rgba(0, 0, 0, 0.75);
-      border: 1.5px solid rgba(0, 255, 102, 0.5);
-      border-radius: 25px;
-      padding: 14px 44px 14px 44px;
+      background: rgba(5, 10, 20, 0.85);
+      border: 1.6px solid rgba(0, 229, 255, 0.35);
+      border-radius: 20px;
+      padding: 16px 50px 16px 50px;
       color: #ffffff;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 12.5px;
-      letter-spacing: 1px;
+      font-size: 14px;
+      letter-spacing: 1.5px;
       outline: none;
-      transition: all 0.25s ease;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.7);
     }
 
     .login-input::placeholder {
-      color: rgba(0, 255, 102, 0.65);
-      letter-spacing: 1.5px;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 11.5px;
+      color: rgba(148, 163, 184, 0.55);
+      letter-spacing: 0.5px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 12.5px;
+      font-weight: 500;
     }
 
     .login-input:focus {
-      border-color: #00ff66;
-      box-shadow: 0 0 20px rgba(0, 255, 102, 0.6);
+      border-color: #00E5FF;
+      box-shadow: 0 0 30px rgba(0, 229, 255, 0.5), inset 0 1px 4px rgba(0, 0, 0, 0.9);
+      background: rgba(8, 16, 32, 0.95);
     }
 
     .btn-eye {
       position: absolute;
-      right: 14px;
+      right: 16px;
       top: 50%;
       transform: translateY(-50%);
       background: transparent;
       border: none;
-      color: #00ff66;
+      color: #00E5FF;
       cursor: pointer;
-      font-size: 16px;
-      opacity: 0.8;
-      transition: opacity 0.2s ease;
+      font-size: 17px;
+      opacity: 0.85;
+      transition: all 0.2s ease;
+      padding: 5px;
+      z-index: 3;
     }
 
     .btn-eye:hover {
       opacity: 1;
+      transform: translateY(-50%) scale(1.2);
     }
 
     .login-options {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      font-size: 11.5px;
       margin-bottom: 22px;
+      z-index: 2;
+      position: relative;
     }
 
     .login-checkbox-label {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
       cursor: pointer;
-      color: #a3e635;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 11px;
+      color: #94a3b8;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 12px;
       font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    .login-checkbox-label:hover {
+      color: #f1f5f9;
     }
 
     .login-checkbox {
-      accent-color: #00ff66;
-      width: 16px;
-      height: 16px;
+      accent-color: #00E5FF;
+      width: 17px;
+      height: 17px;
       cursor: pointer;
+      border-radius: 4px;
     }
 
     .btn-unlock {
       width: 100%;
-      background: linear-gradient(135deg, #00ff66 0%, #00cc55 100%);
-      color: #000000;
+      background: linear-gradient(135deg, #00E5FF 0%, #007CEE 40%, #7E22CE 80%, #EC4899 100%);
+      background-size: 200% 200%;
+      animation: cyberGradient 6s ease infinite;
+      color: #ffffff;
       border: none;
-      border-radius: 35px;
+      border-radius: 20px;
       padding: 16px;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 14px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
       font-weight: 900;
-      letter-spacing: 1px;
+      letter-spacing: 1.2px;
       cursor: pointer;
-      box-shadow: 0 0 25px rgba(0, 255, 102, 0.5);
-      transition: all 0.2s ease;
+      box-shadow: 0 6px 35px rgba(0, 160, 227, 0.5), 0 0 20px rgba(126, 34, 206, 0.3);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
+      gap: 10px;
+      position: relative;
+      overflow: hidden;
+      z-index: 2;
+    }
+
+    @keyframes cyberGradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .btn-unlock::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -60%;
+      width: 40%;
+      height: 200%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+      transform: rotate(25deg);
+      animation: sweepLight 4s infinite;
+    }
+
+    @keyframes sweepLight {
+      0% { left: -60%; }
+      25% { left: 130%; }
+      100% { left: 130%; }
     }
 
     .btn-unlock:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 0 35px rgba(0, 255, 102, 0.7);
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 10px 45px rgba(0, 229, 255, 0.7), 0 0 30px rgba(126, 34, 206, 0.5);
+    }
+
+    .btn-unlock:active {
+      transform: translateY(1px) scale(0.99);
+    }
+
+    .login-badges-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .login-mini-badge {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 8px 4px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9.5px;
+      font-weight: 700;
+      color: #94a3b8;
+      letter-spacing: 0.3px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+      transition: all 0.2s;
+    }
+
+    .login-mini-badge:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(0, 229, 255, 0.3);
+      color: #00E5FF;
     }
 
     .login-error {
       display: none;
-      color: #ff3344;
-      font-size: 11.5px;
-      font-family: 'JetBrains Mono', monospace;
-      margin-top: 14px;
-      padding: 10px;
-      border-radius: 12px;
-      background: rgba(255, 51, 68, 0.15);
+      color: #ff4d5a;
+      font-size: 12px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      margin-top: 16px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: rgba(255, 51, 68, 0.12);
       border: 1px solid rgba(255, 51, 68, 0.4);
+      box-shadow: 0 0 20px rgba(255, 51, 68, 0.15);
+      z-index: 2;
+      position: relative;
+      animation: shakeLogin 0.4s ease-in-out;
+    }
+
+    @keyframes shakeLogin {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-6px); }
+      40%, 80% { transform: translateX(6px); }
     }
 
     /* 🔴 COOKIE SECURITY RED THEME */
@@ -1596,6 +1890,13 @@
       box-shadow: 0 0 12px rgba(244, 117, 33, 0.35);
     }
 
+    .admin-radio-btn.active-sky {
+      background: rgba(0, 160, 227, 0.2);
+      border-color: #00A0E3;
+      color: #fff;
+      box-shadow: 0 0 12px rgba(0, 160, 227, 0.35);
+    }
+
     .admin-dropzone {
       border: 2px dashed var(--panel-border);
       border-radius: 18px;
@@ -1685,6 +1986,12 @@
       color: #ff9955;
     }
 
+    .detect-sky {
+      background: rgba(0, 160, 227, 0.15);
+      border: 1px solid #00a0e3;
+      color: #33b5e5;
+    }
+
     /* Global Drag & Drop Overlay */
     .drag-drop-overlay {
       position: fixed;
@@ -1754,6 +2061,7 @@
         white-space: nowrap;
       }
       .service-switcher {
+        grid-template-columns: repeat(2, 1fr);
         gap: 6px;
       }
       .service-tab {
@@ -1784,23 +2092,10 @@
         padding: 26px 18px;
         border-radius: 22px;
       }
-      .cookie-modal-card, .admin-modal-card {
-        padding: 18px 14px;
-        border-radius: 20px;
-      }
     }
   </style>
 </head>
 <body data-service="netflix" onclick="focusPinInput()">
-
-  <!-- Fullscreen Drag & Drop Overlay -->
-  <div id="drag-drop-overlay" class="drag-drop-overlay">
-    <div class="drag-drop-box">
-      <div style="font-size: 52px; margin-bottom: 14px;">📥</div>
-      <div style="font-family: var(--font-display); font-size: 20px; font-weight: 900; color: #fff; letter-spacing: 0.8px;">SOLTE OS ARQUIVOS DE COOKIES AQUI</div>
-      <div style="font-size: 13px; color: var(--text-dim); margin-top: 8px;">O sistema vai importar e ativar suas contas instantaneamente!</div>
-    </div>
-  </div>
 
   <!-- Ambient Floating Background Orbs -->
   <div class="ambient-glow orb-1"></div>
@@ -1825,7 +2120,7 @@
         </div>
         <div class="brand-info">
           <h1 class="brand-title">STREAM ACTIVATOR <span class="brand-title-badge">PRO</span></h1>
-          <p class="brand-subtitle">Smart TV Pairing Hub &bull; Netflix &bull; HBO Max &bull; Crunchyroll</p>
+          <p class="brand-subtitle">Smart TV Pairing Hub &bull; Netflix &bull; HBO Max &bull; Crunchyroll &bull; Sky+</p>
         </div>
       </div>
     </header>
@@ -1841,9 +2136,6 @@
         <span id="telemetry-ping" style="color: var(--accent-color); font-weight:700;">PING: 18ms</span>
       </div>
       <div class="telemetry-right">
-        <button class="btn-icon" id="header-admin-btn" onclick="event.stopPropagation(); openAdminModal();" title="Gerenciador de Cookies e Nuvem" style="color:#ffd700; border-color: rgba(255,215,0,0.4);">
-          <span id="header-admin-btn-text">🍪 COOKIES</span>
-        </button>
         <button class="btn-icon" id="sound-toggle-btn" onclick="event.stopPropagation(); toggleSound();">
           <span id="sound-icon">🔊</span> SOM
         </button>
@@ -1853,7 +2145,7 @@
       </div>
     </div>
 
-    <!-- Service Switcher (Netflix / HBO Max / Crunchyroll) -->
+    <!-- Service Switcher (Netflix / HBO Max / Crunchyroll / Sky+) -->
     <div class="service-switcher">
       <div class="service-tab active-netflix" id="tab-netflix" onclick="event.stopPropagation(); switchService('netflix');">
         <span>🔴 NETFLIX</span>
@@ -1866,6 +2158,10 @@
       <div class="service-tab" id="tab-crunchyroll" onclick="event.stopPropagation(); switchService('crunchyroll');">
         <span>🟠 CRUNCHYROLL</span>
         <span class="tab-lock-indicator" id="lock-crunchyroll" style="display:none;">🔒</span>
+      </div>
+      <div class="service-tab" id="tab-sky" onclick="event.stopPropagation(); switchService('sky');">
+        <span>🔵 SKY+ / SKY TV</span>
+        <span class="tab-lock-indicator" id="lock-sky" style="display:none;">🔒</span>
       </div>
     </div>
 
@@ -1904,12 +2200,6 @@
 
       <div class="payload-footer">
         <div class="payload-actions-row">
-          <button type="button" class="pill-action-btn btn-gold" id="pill-btn-quick-paste" onclick="event.stopPropagation(); quickClipboardPaste();" title="Colar cookie ou conta copiada com 1 toque">
-            <span>📋</span> Colar Cookie Rápido
-          </button>
-          <button type="button" class="pill-action-btn" id="pill-btn-manage" onclick="event.stopPropagation(); openAdminModal();" title="Importar arquivos ou colar manualmente">
-            <span>➕</span> Gerenciar Cookies
-          </button>
           <button type="button" class="pill-action-btn" id="pill-btn-list" onclick="event.stopPropagation(); openCookieModal();" title="Ver lista de contas disponíveis">
             <span>📁</span> Lista de Contas
           </button>
@@ -2043,33 +2333,72 @@
   <!-- ======================================================== -->
   <div id="login-overlay" onclick="event.stopPropagation();">
     <div class="login-card">
-      <div class="login-icon-box">
-        <svg class="login-icon-svg" viewBox="0 0 24 24">
-          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-          <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-        </svg>
+      <div class="login-card-topline"></div>
+      
+      <!-- Multi-streaming brand chips -->
+      <div class="login-brand-chips">
+        <span class="login-chip nf">🔴 NETFLIX</span>
+        <span class="login-chip hbo">🟣 HBO MAX</span>
+        <span class="login-chip cr">🟠 CRUNCHYROLL</span>
+        <span class="login-chip sky">🔵 SKY+</span>
       </div>
-      <div class="login-title">ROOT_SECURITY</div>
-      <div class="login-sub">// ACESSO RESTRITO • PROTOCOLO CRIPTOGRÁFICO</div>
+
+      <!-- Holographic Dual Orbital Shield Icon -->
+      <div class="login-orbital-wrap">
+        <div class="login-orbital-ring"></div>
+        <div class="login-orbital-ring-inner"></div>
+        <div class="login-icon-box">
+          <svg class="login-icon-svg" viewBox="0 0 24 24">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            <path d="M12 8v4"></path>
+            <circle cx="12" cy="15" r="1"></circle>
+          </svg>
+        </div>
+      </div>
+
+      <div class="login-title">CYBER DECK ⚡</div>
+      <div class="login-sub">Central de Ativação Smart TV // Acesso VIP</div>
+
+      <div class="login-status-badge">
+        <span class="login-pulse-dot"></span>
+        <span>SISTEMA 100% OPERACIONAL // PROTEÇÃO 24/7</span>
+      </div>
 
       <div class="login-input-wrap">
-        <span class="login-input-icon">🔒</span>
-        <input type="password" id="login-password-input" class="login-input" placeholder="DIGITE SUA SENHA DE ACESSO..." onkeydown="if(event.key==='Enter') executeLogin();">
-        <button class="btn-eye" type="button" onclick="togglePasswordVisibility()">👁️</button>
+        <span class="login-input-icon">🔑</span>
+        <input type="password" id="login-password-input" class="login-input" placeholder="Digite sua senha de acesso mestre..." onkeydown="if(event.key==='Enter') executeLogin();">
+        <button class="btn-eye" type="button" onclick="togglePasswordVisibility()" title="Mostrar/Ocultar Senha">👁️</button>
       </div>
 
       <div class="login-options">
         <label class="login-checkbox-label">
-          <input type="checkbox" id="remember-me" class="login-checkbox">
-          <span>Lembrar neste dispositivo (Acesso rápido)</span>
+          <input type="checkbox" id="remember-me" class="login-checkbox" checked>
+          <span>Lembrar meu acesso neste dispositivo</span>
         </label>
       </div>
 
       <button class="btn-unlock" onclick="executeLogin()">
-        DESBLOQUEAR TERMINAL 🔓
+        <span>ACESSAR TERMINAL DE ATIVAÇÕES</span>
+        <span style="font-size: 18px; filter: drop-shadow(0 0 6px rgba(255,255,255,0.8));">🚀</span>
       </button>
 
       <div class="login-error" id="login-error-msg"></div>
+
+      <!-- High-tech telemetry & security badges -->
+      <div class="login-badges-row">
+        <div class="login-mini-badge">
+          <span>🔒 CRIPTO</span>
+          <span style="color: #00E5FF; font-size: 8.5px;">TLS 256-BIT</span>
+        </div>
+        <div class="login-mini-badge">
+          <span>⚡ VELOCIDADE</span>
+          <span style="color: #00ff66; font-size: 8.5px;">&lt; 3 SEG</span>
+        </div>
+        <div class="login-mini-badge">
+          <span>🛡️ BLINDAGEM</span>
+          <span style="color: #c084fc; font-size: 8.5px;">ANTI-QUEDA</span>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -2127,217 +2456,15 @@
     </div>
   </div>
 
-  <!-- ======================================================== -->
-  <!-- 🔐 ADMIN COOKIE VAULT PASSWORD OVERLAY (RED THEME)       -->
-  <!-- ======================================================== -->
-  <div id="admin-auth-modal" onclick="event.stopPropagation();">
-    <div class="login-card admin-red-card">
-      <div class="login-icon-box admin-red-icon-box">
-        <svg class="login-icon-svg admin-red-icon-svg" viewBox="0 0 24 24">
-          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-          <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-        </svg>
-      </div>
-      <div class="login-title admin-red-title" style="color: #ffffff;">COOKIE_SECURITY</div>
-      <div class="login-sub admin-red-sub">// COFRE DE COOKIES • PROTOCOLO CRIPTOGRÁFICO</div>
-
-      <div class="login-input-wrap">
-        <span class="login-input-icon admin-red-input-icon">🔒</span>
-        <input type="password" id="admin-pass-input" class="login-input admin-red-input" placeholder="DIGITE A SENHA DO COFRE..." onkeydown="if(event.key==='Enter') executeAdminUnlock();">
-        <button class="btn-eye admin-red-btn-eye" type="button" onclick="const inp=document.getElementById('admin-pass-input'); inp.type=(inp.type==='password'?'text':'password');">👁️</button>
-      </div>
-
-      <button class="btn-unlock admin-red-btn-unlock" onclick="executeAdminUnlock()">
-        DESBLOQUEAR COFRE 🔓
-      </button>
-
-      <div class="login-error" id="admin-auth-error-msg"></div>
-
-      <div style="margin-top: 16px; text-align: center;">
-        <a onclick="closeAdminAuthModal()" style="color: #ff4d5a; font-family: 'JetBrains Mono', monospace; font-size: 11px; cursor: pointer; text-decoration: underline;">✖ Cancelar e Voltar</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- ======================================================== -->
-  <!-- 🍪 COOKIE MANAGER & CLOUD UPLOAD MODAL                   -->
-  <!-- ======================================================== -->
-  <div id="admin-modal" onclick="event.stopPropagation();">
-    <div class="admin-modal-card">
-      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--panel-border); padding-bottom: 10px;">
-        <span id="admin-modal-main-title" style="font-family: var(--font-display); font-size: 15px; color: #ffd700; font-weight: 800;">
-          🍪 GERENCIADOR DE COOKIES // CLOUD
-        </span>
-        <button class="btn-icon" onclick="closeAdminModal()">✖ FECHAR</button>
-      </div>
-
-      <!-- Live Stock & Anti-Sleep Telemetry -->
-      <div class="admin-stats-grid">
-        <div class="admin-stat-chip">
-          <div class="admin-stat-chip-num" id="stat-nf-count" style="color: #ff3344;">--</div>
-          <div class="admin-stat-chip-lbl">🔴 Netflix</div>
-        </div>
-        <div class="admin-stat-chip">
-          <div class="admin-stat-chip-num" id="stat-hbo-count" style="color: #c084fc;">--</div>
-          <div class="admin-stat-chip-lbl">🟣 HBO Max</div>
-        </div>
-        <div class="admin-stat-chip">
-          <div class="admin-stat-chip-num" id="stat-cr-count" style="color: #f47521;">--</div>
-          <div class="admin-stat-chip-lbl">🟠 Crunchyroll</div>
-        </div>
-        <div class="admin-stat-chip">
-          <div class="admin-stat-chip-num" style="color: #00ff66;">24/7</div>
-          <div class="admin-stat-chip-lbl">⚡ Anti-Sleep</div>
-        </div>
-      </div>
-
-      <!-- Target Streaming Service Selector -->
-      <div style="font-size: 11px; color: var(--text-dim); font-weight: 700; text-transform: uppercase;">
-        Selecione o Streaming para Adicionar Contas/Cookies:
-      </div>
-      <div class="admin-service-radios">
-        <button type="button" class="admin-radio-btn active-n" id="admin-target-nf" onclick="setAdminTarget('netflix')">
-          🔴 NETFLIX
-        </button>
-        <button type="button" class="admin-radio-btn" id="admin-target-hbo" onclick="setAdminTarget('hbomax')">
-          🟣 HBO MAX
-        </button>
-        <button type="button" class="admin-radio-btn" id="admin-target-cr" onclick="setAdminTarget('crunchyroll')">
-          🟠 CRUNCHYROLL
-        </button>
-      </div>
-
-      <!-- Auto Detect Badge -->
-      <div id="cookie-detect-badge" class="cookie-detect-badge" style="display:none; justify-content:center;"></div>
-
-      <!-- ============================================== -->
-      <!-- 🍪 SEÇÃO DE COOKIES (NETFLIX & HBO MAX)        -->
-      <!-- ============================================== -->
-      <div id="admin-cookie-section" style="display: flex; flex-direction: column; gap: 10px;">
-        <!-- Option 0: Instant 1-Tap Clipboard Paste -->
-        <button type="button" class="btn-quick-paste" onclick="pasteFromClipboardToTextarea()">
-          📋 COLAR DO CLIPBOARD (1 TOQUE)
-        </button>
-
-        <!-- Option 1: Choose Folder or Multiple Files -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-          <button type="button" class="btn-quick-paste" onclick="document.getElementById('admin-folder-input').click();" style="background: linear-gradient(135deg, #ffd700 0%, #ff9900 100%); font-size: 12.5px; padding: 12px 10px;">
-            📁 IMPORTAR PASTA
-          </button>
-          <button type="button" class="btn-quick-paste" onclick="document.getElementById('admin-file-input').click();" style="background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%); color: #fff; font-size: 12.5px; padding: 12px 10px;">
-            📂 SELECIONAR ARQUIVOS
-          </button>
-        </div>
-
-        <input type="file" id="admin-folder-input" webkitdirectory directory multiple style="display:none" onchange="handleAdminFileSelect(event)">
-        <input type="file" id="admin-file-input" multiple accept=".txt,.json" style="display:none" onchange="handleAdminFileSelect(event)">
-
-        <!-- Dropzone -->
-        <div class="admin-dropzone" id="admin-dropzone" onclick="document.getElementById('admin-file-input').click();">
-          <div style="font-size: 28px; margin-bottom: 4px;">📥</div>
-          <div style="font-size: 13.5px; font-weight: 800; color: #fff;">Arraste e Solte a Pasta ou Arquivos Aqui</div>
-          <div style="font-size: 11px; color: var(--text-dim); margin-top: 4px;" id="admin-file-summary">Suporta pastas completas ou múltiplos arquivos de uma só vez</div>
-        </div>
-
-        <!-- Upload Progress Indicator -->
-        <div id="admin-upload-progress-box" style="display: none; background: rgba(0,0,0,0.5); border: 1px solid var(--panel-border); border-radius: 12px; padding: 10px;">
-          <div style="display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 6px;">
-            <span id="admin-progress-text" style="color: #ffd700; font-weight: 700;">Enviando lote...</span>
-            <span id="admin-progress-pct" style="color: #00ff66; font-weight: 800;">0%</span>
-          </div>
-          <div style="width: 100%; height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; overflow: hidden;">
-            <div id="admin-progress-bar" style="width: 0%; height: 100%; background: linear-gradient(90deg, #ffd700, #00ff66); transition: width 0.2s;"></div>
-          </div>
-        </div>
-
-        <!-- Option 2: Paste Raw Text -->
-        <div style="display: flex; flex-direction: column; gap: 6px;">
-          <div style="font-size: 11px; color: var(--text-dim); font-weight: 700; text-transform: uppercase;">
-            Ou cole um lote de cookies aqui diretamente:
-          </div>
-          <textarea class="admin-textarea" id="admin-raw-text" placeholder="Cole cookies em formato Netscape, JSON ou separados por quebras/linhas..." oninput="handleLiveCookieDetection()"></textarea>
-        </div>
-
-        <!-- Action Buttons -->
-        <button class="btn-unlock" id="btn-import-cookies" onclick="submitAdminCookies()" style="background: linear-gradient(135deg, #ffd700 0%, #ff8800 100%); color: #000; font-weight: 900; font-size: 14px;">
-          🚀 IMPORTAR LOTE E ATIVAR AGORA ⚡
-        </button>
-      </div>
-
-      <!-- ============================================== -->
-      <!-- 🟠 SEÇÃO EXCLUSIVA DE CONTAS CRUNCHYROLL       -->
-      <!-- ============================================== -->
-      <div id="admin-crunchyroll-section" style="display: none; flex-direction: column; gap: 12px;">
-        <div style="background: rgba(244, 117, 33, 0.12); border: 1px solid rgba(244, 117, 33, 0.4); border-radius: 12px; padding: 10px 14px; display: flex; align-items: center; gap: 12px;">
-          <span style="font-size: 26px;">🟠</span>
-          <div>
-            <div style="font-weight: 800; color: #f47521; font-size: 13.5px; letter-spacing: 0.5px;">GERENCIADOR DE CONTAS CRUNCHYROLL</div>
-            <div style="font-size: 11px; color: var(--text-dim);">Insira conta direta (Login e Senha) ou cole uma lista de combos em lote.</div>
-          </div>
-        </div>
-
-        <!-- Formulário 1: Conta Única -->
-        <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--panel-border); border-radius: 12px; padding: 12px; display: flex; flex-direction: column; gap: 8px;">
-          <div style="font-size: 11px; color: #ffd700; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;">
-            ⚡ Adicionar 1 Conta Crunchyroll Rápida:
-          </div>
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-            <div>
-              <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 3px; font-weight:700;">📧 EMAIL CRUNCHYROLL:</div>
-              <input type="email" id="cr-single-email" placeholder="usuario@gmail.com" style="width: 100%; background: rgba(0,0,0,0.6); border: 1px solid var(--panel-border); border-radius: 8px; padding: 8px 10px; color: #fff; font-size: 12px; font-family: var(--font-sans);">
-            </div>
-            <div>
-              <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 3px; font-weight:700;">🔑 SENHA:</div>
-              <input type="text" id="cr-single-pass" placeholder="Senha da conta" style="width: 100%; background: rgba(0,0,0,0.6); border: 1px solid var(--panel-border); border-radius: 8px; padding: 8px 10px; color: #fff; font-size: 12px; font-family: var(--font-sans);">
-            </div>
-          </div>
-          <button type="button" class="btn-unlock" onclick="submitSingleCrunchyrollAccount()" style="background: linear-gradient(135deg, #f47521 0%, #ff8800 100%); color: #fff; font-weight: 900; font-size: 12.5px; padding: 10px; margin-top: 4px;">
-            ➕ SALVAR E ATIVAR ESTA CONTA ⚡
-          </button>
-        </div>
-
-        <!-- Formulário 2: Combos em Lote -->
-        <div style="display: flex; flex-direction: column; gap: 6px;">
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div style="font-size: 11px; color: var(--text-dim); font-weight: 700; text-transform: uppercase;">
-              Ou cole várias contas (email:senha por linha):
-            </div>
-            <button type="button" class="btn-icon" onclick="pasteFromClipboardToCrTextarea()" style="font-size: 10.5px; padding: 3px 8px; color: #f47521;">
-              📋 Colar do Clipboard
-            </button>
-          </div>
-          <textarea class="admin-textarea" id="cr-raw-combos" placeholder="usuario1@gmail.com:senha123&#10;usuario2@hotmail.com:senha456&#10;usuario3@outlook.com|senha789" style="height: 85px;"></textarea>
-          <button type="button" class="btn-unlock" onclick="submitCrunchyrollCombos()" style="background: linear-gradient(135deg, #f47521 0%, #ff5500 100%); color: #fff; font-weight: 900; font-size: 13px; padding: 11px;">
-            🚀 IMPORTAR LOTE DE CONTAS CRUNCHYROLL ⚡
-          </button>
-        </div>
-
-        <!-- Formulário 3: Selecionar Arquivo .txt com Combos -->
-        <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.02); border: 1px dashed var(--panel-border); border-radius: 10px; padding: 8px 12px;">
-          <span style="font-size: 11px; color: var(--text-dim);">Tem um arquivo .txt com contas?</span>
-          <button type="button" class="btn-icon" onclick="document.getElementById('admin-file-input').click();" style="font-size: 11px; padding: 5px 12px; color: #f47521; border-color: rgba(244,117,33,0.4);">
-            📂 Enviar Arquivo .txt
-          </button>
-        </div>
-      </div>
-
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 4px;">
-        <button class="btn-icon" onclick="resetAdminCache()" style="font-size: 10.5px; padding: 6px 12px; color: var(--text-dim);">
-          🔄 Re-testar Todas as Contas & Cookies
-        </button>
-        <span id="admin-upload-msg" style="font-size: 11px; color: #00ff66; font-weight: 700;"></span>
-      </div>
-    </div>
-  </div>
-
   <!-- Audio Context Synthesizer & Logic -->
   <script>
+    const API_BASE = (window.location.protocol === 'file:') ? 'http://localhost:5000' : '';
     // State
     let currentService = 'netflix';
     let currentPlan = 'TODOS';
     let currentCode = '';
     let authToken = localStorage.getItem('cyber_auth_token') || sessionStorage.getItem('cyber_auth_token') || '';
-    let allowedServices = ['netflix', 'hbo', 'crunchyroll'];
+    let allowedServices = ['netflix', 'hbo', 'crunchyroll', 'sky'];
     try {
       const savedAllowed = localStorage.getItem('cyber_allowed_services') || sessionStorage.getItem('cyber_allowed_services');
       if (savedAllowed) allowedServices = JSON.parse(savedAllowed);
@@ -2345,6 +2472,7 @@
     let soundEnabled = localStorage.getItem('cyber_sound_enabled') !== 'false';
     let audioCtx = null;
     let cachedCookiesList = [];
+    let cachedStatusData = null;
 
     // ========================================================
     // 🔊 AUDIO SYNTHESIZER (Web Audio API)
@@ -2459,7 +2587,7 @@
         return false;
       }
       try {
-        const res = await fetch('/api/verify-token', {
+        const res = await fetch(`${API_BASE}/api/verify-token`, {
           method: 'POST',
           headers: getHeaders()
         });
@@ -2532,7 +2660,7 @@
       errBox.style.display = 'none';
 
       try {
-        const res = await fetch('/api/login', {
+        const res = await fetch(`${API_BASE}/api/login`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ password: pwd })
@@ -2564,7 +2692,7 @@
         }
       } catch (err) {
         soundError();
-        errBox.innerText = 'Falha na conexão com o servidor local.';
+        errBox.innerText = 'Falha na conexão com o servidor local. Certifique-se de que o app.py está em execução.';
         errBox.style.display = 'block';
       }
     }
@@ -2572,13 +2700,13 @@
     async function lockTerminal() {
       soundClick();
       try {
-        await fetch('/api/logout', {
+        await fetch(`${API_BASE}/api/logout`, {
           method: 'POST',
           headers: getHeaders()
         });
       } catch (e) {}
       authToken = '';
-      allowedServices = ['netflix', 'hbo', 'crunchyroll'];
+      allowedServices = ['netflix', 'hbo', 'crunchyroll', 'sky'];
       localStorage.removeItem('cyber_auth_token');
       sessionStorage.removeItem('cyber_auth_token');
       localStorage.removeItem('cyber_allowed_services');
@@ -2599,8 +2727,6 @@
 
     function focusPinInput() {
       if (document.getElementById('login-overlay').style.display === 'flex') return;
-      if (document.getElementById('admin-auth-modal').style.display === 'flex') return;
-      if (document.getElementById('admin-modal').style.display === 'flex') return;
       if (document.getElementById('success-modal').style.display === 'flex') return;
       if (document.getElementById('cookie-modal').style.display === 'flex') return;
       if (document.activeElement && (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') && document.activeElement !== hiddenInput) return;
@@ -2631,8 +2757,6 @@
 
     document.addEventListener('keydown', (e) => {
       if (document.getElementById('login-overlay').style.display === 'flex') return;
-      if (document.getElementById('admin-auth-modal').style.display === 'flex') return;
-      if (document.getElementById('admin-modal').style.display === 'flex') return;
       if (document.getElementById('cookie-modal').style.display === 'flex') return;
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
 
@@ -2743,7 +2867,7 @@
       const reqLen = (currentService === 'netflix') ? 8 : 6;
       if (!currentCode || currentCode.length < reqLen) {
         soundError();
-        const sName = currentService === 'netflix' ? 'Netflix' : (currentService === 'crunchyroll' ? 'Crunchyroll' : 'HBO Max');
+        const sName = currentService === 'netflix' ? 'Netflix' : (currentService === 'crunchyroll' ? 'Crunchyroll' : (currentService === 'sky' ? 'Sky+' : 'HBO Max'));
         showAlert('error', `Digite o código completo da TV (${reqLen} dígitos para ${sName}).`);
         focusPinInput();
         return;
@@ -2762,11 +2886,14 @@
       logKernel(`Iniciando transmissão de token para TV: ${currentCode}...`);
 
       const startTime = performance.now();
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 180000);
 
       try {
-        const res = await fetch('/api/activate', {
+        const res = await fetch(`${API_BASE}/api/activate`, {
           method: 'POST',
           headers: getHeaders(),
+          signal: controller.signal,
           body: JSON.stringify({
             service: currentService,
             code: currentCode,
@@ -2777,19 +2904,11 @@
         const elapsed = Math.round(performance.now() - startTime);
 
         if (res.status === 401) {
-          btn.disabled = false;
-          btn.classList.remove('loading');
-          btnText.innerText = 'EXECUTAR INJEÇÃO DE TOKEN ⚡';
           showLoginOverlay();
           return;
         }
 
         const data = await res.json();
-
-        // INSTANTLY RESET BUTTON STATE
-        btn.disabled = false;
-        btn.classList.remove('loading');
-        btnText.innerText = 'EXECUTAR INJEÇÃO DE TOKEN ⚡';
 
         if (data.success) {
           soundSuccess();
@@ -2806,12 +2925,17 @@
           loadStatus();
         }
       } catch (err) {
+        soundError();
+        const msg = (err && err.name === 'AbortError') 
+          ? 'Tempo limite excedido na ativação. O servidor demorou para responder. Tente novamente ou avance para a próxima conta.' 
+          : 'Erro de comunicação de rede com o servidor local.';
+        showAlert('error', msg);
+        logKernel(`[ERRO] ${msg}`);
+      } finally {
+        clearTimeout(timeoutId);
         btn.disabled = false;
         btn.classList.remove('loading');
         btnText.innerText = 'EXECUTAR INJEÇÃO DE TOKEN ⚡';
-        soundError();
-        showAlert('error', 'Erro de comunicação de rede com o servidor local.');
-        logKernel('[ERRO] Falha de conexão de rede.');
       }
     }
 
@@ -2838,6 +2962,7 @@
       let svcName = 'NETFLIX';
       if (currentService === 'hbo') svcName = 'HBO MAX';
       else if (currentService === 'crunchyroll') svcName = 'CRUNCHYROLL';
+      else if (currentService === 'sky') svcName = 'SKY+ / SKY TV';
       document.getElementById('modal-service-name').innerText = svcName;
       document.getElementById('modal-paired-code').innerText = code;
       document.getElementById('modal-account-email').innerText = account.email || 'Conta Autenticada';
@@ -2855,7 +2980,7 @@
     // 🔄 SERVICE SWITCHER & PADLOCK PERMISSION CONTROLLER
     // ========================================================
     function applyAllowedServicesUI() {
-      const allSvcs = ['netflix', 'hbo', 'crunchyroll'];
+      const allSvcs = ['netflix', 'hbo', 'crunchyroll', 'sky'];
       allSvcs.forEach(s => {
         const tab = document.getElementById(`tab-${s}`);
         const lock = document.getElementById(`lock-${s}`);
@@ -2888,86 +3013,190 @@
       // 🔒 VERIFICA SE O TÓPICO/SERVIÇO ESTÁ LIBERADO PELA SENHA
       if (!allowedServices.includes(service)) {
         soundError();
-        const tab = document.getElementById(`tab-${service}`);
-        if (tab) {
-          tab.classList.add('tab-shake');
-          setTimeout(() => tab.classList.remove('tab-shake'), 450);
-        }
-        let sName = (service === 'crunchyroll' ? 'Crunchyroll' : (service === 'hbo' ? 'HBO Max' : 'Netflix'));
-        showAlert('error', `🔒 VOCÊ NÃO TEM ACESSO A ESSE CONTEÚDO! (${sName} bloqueado pela sua senha de login)`);
-        logKernel(`[ACESSO NEGADO] Tentativa de acessar streaming bloqueado: ${sName}`);
+        showAlert('error', '🔒 VOCÊ NÃO TEM ACESSO A ESSE CONTEÚDO! Desbloqueie com uma senha VIP MASTER.');
         return;
       }
 
-      if (currentService === service) return;
-      currentService = service;
-      cachedCookiesList = [];
       if (!silent) soundClick();
-
-      // Update Body Theme
+      currentService = service;
+      
+      const isNf = (service === 'netflix');
+      const isCr = (service === 'crunchyroll');
+      const isSky = (service === 'sky');
+      const isHbo = (service === 'hbo');
+      
+      // 🎨 Aplica tema e variáveis CSS
       document.body.setAttribute('data-service', service);
+      document.documentElement.setAttribute('data-theme', service);
 
-      const tabN = document.getElementById('tab-netflix');
-      const tabH = document.getElementById('tab-hbo');
-      const tabC = document.getElementById('tab-crunchyroll');
-      const title = document.getElementById('card-service-title');
-      const hudTitle = document.getElementById('hud-section-title');
-      const modalTitle = document.getElementById('cookie-modal-title');
-      const headerAdminBtnText = document.getElementById('header-admin-btn-text');
-      const queueTabBtn = document.getElementById('tab-btn-queue');
+      // 🔘 Atualiza abas do switcher com suas respectivas classes ativas
+      ['netflix', 'hbo', 'crunchyroll', 'sky'].forEach(s => {
+        const tab = document.getElementById(`tab-${s}`);
+        if (tab) {
+          tab.classList.remove('active-netflix', 'active-hbo', 'active-crunchyroll', 'active-sky', 'active');
+          if (s === service) {
+            tab.classList.add(`active-${s}`);
+          }
+        }
+      });
 
-      tabN.classList.remove('active-netflix');
-      tabH.classList.remove('active-hbo');
-      if (tabC) tabC.classList.remove('active-crunchyroll');
-
-      const pillPaste = document.getElementById('pill-btn-quick-paste');
-      const pillManage = document.getElementById('pill-btn-manage');
-
-      if (service === 'netflix') {
-        tabN.classList.add('active-netflix');
-        title.innerHTML = '<span>🔴 CONTA NETFLIX PRONTA PARA ATIVAÇÃO</span>';
-        hudTitle.innerText = '📺 SMART TV // NETFLIX PAIRING';
-        if (modalTitle) modalTitle.innerText = '📁 SELECIONAR COOKIE NETFLIX';
-        if (pillPaste) pillPaste.innerHTML = '<span>📋</span> Colar Cookie Rápido';
-        if (pillManage) pillManage.innerHTML = '<span>➕</span> Gerenciar Cookies';
-        if (headerAdminBtnText) headerAdminBtnText.innerText = '🍪 COOKIES';
-        if (queueTabBtn) queueTabBtn.innerText = '🍪 PRÓXIMOS DA FILA';
-        document.getElementById('active-email-text').innerText = 'Carregando cookie...';
-        document.getElementById('active-account-country').innerText = 'BR';
-        document.getElementById('active-account-plan').innerText = 'Carregando...';
-        document.getElementById('active-cookie-filename').innerText = 'COOKIE: Carregando...';
-      } else if (service === 'crunchyroll') {
-        if (tabC) tabC.classList.add('active-crunchyroll');
-        title.innerHTML = '<span>🟠 CONTA CRUNCHYROLL PRONTA PARA ATIVAÇÃO</span>';
-        hudTitle.innerText = '📺 SMART TV // CRUNCHYROLL PAIRING';
-        if (modalTitle) modalTitle.innerText = '📁 SELECIONAR CONTA CRUNCHYROLL';
-        if (pillPaste) pillPaste.innerHTML = '<span>📋</span> Colar Conta Rápida';
-        if (pillManage) pillManage.innerHTML = '<span>➕</span> Gerenciar Contas';
-        if (headerAdminBtnText) headerAdminBtnText.innerText = '🟠 CONTAS';
-        if (queueTabBtn) queueTabBtn.innerText = '🟠 PRÓXIMAS CONTAS';
-        document.getElementById('active-email-text').innerText = 'Carregando conta...';
-        document.getElementById('active-account-country').innerText = 'CR';
-        document.getElementById('active-account-plan').innerText = 'Carregando...';
-        document.getElementById('active-cookie-filename').innerText = 'CONTA: Carregando conta...';
-      } else {
-        tabH.classList.add('active-hbo');
-        title.innerHTML = '<span>🟣 CONTA HBO MAX PRONTA PARA ATIVAÇÃO</span>';
-        hudTitle.innerText = '📺 SMART TV // HBO MAX PAIRING';
-        if (modalTitle) modalTitle.innerText = '📁 SELECIONAR COOKIE HBO MAX';
-        if (pillPaste) pillPaste.innerHTML = '<span>📋</span> Colar Cookie Rápido';
-        if (pillManage) pillManage.innerHTML = '<span>➕</span> Gerenciar Cookies';
-        if (headerAdminBtnText) headerAdminBtnText.innerText = '🍪 COOKIES';
-        if (queueTabBtn) queueTabBtn.innerText = '🍪 PRÓXIMOS DA FILA';
-        document.getElementById('active-email-text').innerText = 'Carregando cookie...';
-        document.getElementById('active-account-country').innerText = 'BR';
-        document.getElementById('active-account-plan').innerText = 'Carregando...';
-        document.getElementById('active-cookie-filename').innerText = 'COOKIE: Carregando...';
+      // 🏷️ Atualiza título do Card Principal
+      const titleElem = document.getElementById('card-service-title');
+      if (titleElem) {
+        if (isNf) titleElem.innerHTML = '<span>🔴 CONTA NETFLIX PRONTA PARA ATIVAÇÃO</span>';
+        else if (isCr) titleElem.innerHTML = '<span>🟠 CONTA CRUNCHYROLL PRONTA PARA ATIVAÇÃO</span>';
+        else if (isSky) titleElem.innerHTML = '<span>🔵 CONTA SKY+ PRONTA PARA ATIVAÇÃO</span>';
+        else titleElem.innerHTML = '<span>🟣 CONTA HBO MAX PRONTA PARA ATIVAÇÃO</span>';
       }
 
-      updateSoundUI();
-      updatePinDisplay();
+      // 📺 Atualiza título da seção PIN da Smart TV
+      const tvSectionTitle = document.getElementById('hud-section-title');
+      if (tvSectionTitle) {
+        if (isNf) tvSectionTitle.innerText = '📺 SMART TV // NETFLIX PAIRING';
+        else if (isCr) tvSectionTitle.innerText = '📺 SMART TV // CRUNCHYROLL PAIRING';
+        else if (isSky) tvSectionTitle.innerText = '📺 SMART TV // SKY+ PAIRING';
+        else tvSectionTitle.innerText = '📺 SMART TV // HBO MAX PAIRING';
+      }
+
+      // 🔢 Atualiza contador de dígitos (8 para Netflix, 6 para HBO/Crunchyroll/Sky)
+      const maxLen = isNf ? 8 : 6;
+      const pinCounter = document.getElementById('digit-counter');
+      if (pinCounter) {
+        pinCounter.innerText = `${currentCode.length} / ${maxLen} DÍGITOS`;
+      }
+
+      // Mostra/Oculta slots 7 e 8
+      const slot6 = document.getElementById('slot-6');
+      const slot7 = document.getElementById('slot-7');
+      if (slot6 && slot7) {
+        if (isNf) {
+          slot6.style.display = 'flex';
+          slot7.style.display = 'flex';
+        } else {
+          slot6.style.display = 'none';
+          slot7.style.display = 'none';
+        }
+      }
+
+      // Oculta filtros manuais para Netflix (sistema 100% automático por motor tv2.py)
+      const pillsContainer = document.getElementById('plan-pills-container');
+      if (pillsContainer) {
+        pillsContainer.style.display = 'none';
+      }
+
+      // Atualiza botões de ação do card (Pills)
+      const pillPaste = document.getElementById('pill-btn-quick-paste');
+      const pillManage = document.getElementById('pill-btn-manage');
+      const pillList = document.getElementById('pill-btn-list');
+
+      if (isNf) {
+        // Netflix: modo 100% automático (sem dor de cabeça de escolher cookies manualmente)
+        if (pillPaste) pillPaste.innerHTML = '<span>📋</span> Colar Cookie Rápido';
+        if (pillManage) pillManage.innerHTML = '<span>➕</span> Importar Novos Cookies';
+        if (pillList) pillList.style.display = 'none';
+      } else if (isCr || isSky) {
+        if (pillPaste) pillPaste.innerHTML = '<span>📋</span> Colar Conta Rápido';
+        if (pillManage) pillManage.innerHTML = '<span>➕</span> Gerenciar Contas';
+        if (pillList) {
+          pillList.innerHTML = '<span>📁</span> Lista de Contas';
+          pillList.style.display = 'inline-flex';
+        }
+      } else {
+        if (pillPaste) pillPaste.innerHTML = '<span>📋</span> Colar Cookie Rápido';
+        if (pillManage) pillManage.innerHTML = '<span>➕</span> Gerenciar Cookies';
+        if (pillList) {
+          pillList.innerHTML = '<span>📁</span> Lista de Cookies';
+          pillList.style.display = 'inline-flex';
+        }
+      }
+
+      clearCode();
+      showAlert(null);
+      cachedCookiesList = [];
+      
+      if (cachedStatusData) {
+        const sData = cachedStatusData[service];
+        if (sData) updateCardWithServiceData(sData, service);
+      }
+      
       loadStatus();
       loadCookies();
+    }
+
+    function updateCardWithServiceData(servData, service) {
+      if (!servData) return;
+
+      const isCr = (service === 'crunchyroll');
+      const isSky = (service === 'sky');
+      const isAccountType = isCr || isSky;
+      const unit = isAccountType ? 'CONTAS' : 'COOKIES';
+
+      if (servData.account) {
+        const isSession = isSky && (servData.account.is_session || (servData.account.source && servData.account.source.includes('Sessão')));
+        const prefix = isSession ? '⚡ SESSÃO ATIVA' : (isAccountType ? 'CONTA' : 'COOKIE');
+        
+        const emailElem = document.getElementById('active-email-text');
+        if (emailElem) emailElem.innerText = servData.account.email || 'Conta pronta';
+
+        const countryElem = document.getElementById('active-account-country');
+        if (countryElem) countryElem.innerText = isCr ? (servData.account.country || 'CR') : (servData.account.country || 'BR');
+        
+        const planElem = document.getElementById('active-account-plan');
+        if (planElem) {
+          let planText = servData.account.plan || (isAccountType ? 'Sky TV VIP' : 'Premium VIP');
+          if (isSession) {
+            planText = `⚡ ${servData.account.plan || 'Sessão Ativa (300ms)'}`;
+          } else if (!planText.startsWith('⚡') && !planText.startsWith('👑')) {
+            planText = `⚡ ${planText}`;
+          }
+          planElem.innerText = planText;
+        }
+
+        const cookieElem = document.getElementById('active-cookie-filename');
+        if (cookieElem) {
+          const cookieLabel = servData.cookie_name || servData.account.email;
+          cookieElem.innerText = `${prefix}: ${cookieLabel}`;
+        }
+      } else {
+        const emailElem = document.getElementById('active-email-text');
+        if (emailElem) emailElem.innerText = isAccountType ? 'Nenhuma conta cadastrada' : 'Nenhum cookie ativo';
+
+        const countryElem = document.getElementById('active-account-country');
+        if (countryElem) countryElem.innerText = isCr ? 'CR' : 'BR';
+
+        const planElem = document.getElementById('active-account-plan');
+        if (planElem) planElem.innerText = '--';
+
+        const cookieElem = document.getElementById('active-cookie-filename');
+        if (cookieElem) {
+          cookieElem.innerText = isAccountType ? 'CONTA: Nenhuma conta pronta no momento' : 'COOKIE: Nenhum cookie ativo';
+        }
+      }
+
+      // Atualização em Tempo Real do Estoque
+      const stockElem = document.getElementById('live-stock-count');
+      const stockBadge = document.getElementById('live-stock-badge');
+      if (stockElem) {
+        const totalInVault = servData.total_in_vault || 0;
+        const availableCount = servData.available_count || 0;
+        const newText = totalInVault > 0 ? `${availableCount} ${unit} NO ESTOQUE` : `${availableCount} DISPONÍVEIS`;
+        if (stockElem.innerText !== newText) {
+          stockElem.innerText = newText;
+          if (stockBadge) {
+            stockBadge.style.transition = 'all 0.3s ease';
+            stockBadge.style.transform = 'scale(1.08)';
+            stockBadge.style.boxShadow = '0 0 15px rgba(0, 255, 102, 0.6)';
+            setTimeout(() => {
+              stockBadge.style.transform = 'scale(1)';
+              stockBadge.style.boxShadow = 'none';
+            }, 400);
+          }
+        }
+      }
+
+      if (servData.cookie_queue) {
+        renderQueuePreview(servData.cookie_queue);
+      }
     }
 
     async function filterPlan(plan) {
@@ -2979,7 +3208,7 @@
       if (activeBtn) activeBtn.classList.add('active');
 
       try {
-        const res = await fetch('/api/filter-plan', {
+        const res = await fetch(`${API_BASE}/api/filter-plan`, {
           method: 'POST',
           headers: getHeaders(),
           body: JSON.stringify({ service: currentService, plan: plan })
@@ -2994,10 +3223,10 @@
 
     async function cycleCookie() {
       soundClick();
-      const actionName = (currentService === 'crunchyroll') ? 'conta' : 'cookie';
+      const actionName = (currentService === 'crunchyroll' || currentService === 'sky') ? 'conta' : 'cookie';
       logKernel(`Rotacionando para o próximo ${actionName} da fila...`);
       try {
-        await fetch('/api/skip-cookie', {
+        await fetch(`${API_BASE}/api/skip-cookie`, {
           method: 'POST',
           headers: getHeaders(),
           body: JSON.stringify({ service: currentService })
@@ -3009,7 +3238,7 @@
 
     async function loadStatus() {
       try {
-        const res = await fetch(`/api/status?_t=${Date.now()}`, { 
+        const res = await fetch(`${API_BASE}/api/status?_t=${Date.now()}`, { 
           headers: getHeaders(),
           cache: 'no-store'
         });
@@ -3018,48 +3247,10 @@
           return;
         }
         const data = await res.json();
+        cachedStatusData = data;
         const servData = data[currentService];
-
-        if (servData && servData.account) {
-          const prefix = (currentService === 'crunchyroll') ? 'CONTA' : 'COOKIE';
-          document.getElementById('active-email-text').innerText = servData.account.email || 'Conta pronta';
-          document.getElementById('active-account-country').innerText = (currentService === 'crunchyroll') ? (servData.account.country || 'CR') : (servData.account.country || 'BR');
-          document.getElementById('active-account-plan').innerText = `⚡ ${servData.account.plan || 'Premium'}`;
-          document.getElementById('active-cookie-filename').innerText = `${prefix}: ${servData.cookie_name || servData.account.email}`;
-        } else {
-          if (currentService === 'crunchyroll') {
-            document.getElementById('active-email-text').innerText = 'Nenhuma conta cadastrada';
-            document.getElementById('active-account-country').innerText = 'CR';
-            document.getElementById('active-account-plan').innerText = '--';
-            document.getElementById('active-cookie-filename').innerText = 'CONTA: Nenhuma conta pronta no momento';
-          } else {
-            document.getElementById('active-email-text').innerText = 'Nenhum cookie ativo';
-            document.getElementById('active-account-country').innerText = 'BR';
-            document.getElementById('active-account-plan').innerText = '--';
-            document.getElementById('active-cookie-filename').innerText = 'COOKIE: Nenhum cookie ativo';
-          }
-        }
-
-        // Atualização em Tempo Real do Estoque com feedback visual de sincronização
-        const stockElem = document.getElementById('live-stock-count');
-        const stockBadge = document.getElementById('live-stock-badge');
-        if (stockElem && servData) {
-          const totalInVault = servData.total_in_vault || 0;
-          const availableCount = servData.available_count || 0;
-          const unit = (currentService === 'crunchyroll') ? 'CONTAS' : 'COOKIES';
-          const newText = totalInVault > 0 ? `${availableCount} ${unit} NO ESTOQUE` : `${availableCount} DISPONÍVEIS`;
-          if (stockElem.innerText !== newText) {
-            stockElem.innerText = newText;
-            if (stockBadge) {
-              stockBadge.style.transition = 'all 0.3s ease';
-              stockBadge.style.transform = 'scale(1.08)';
-              stockBadge.style.boxShadow = '0 0 15px rgba(0, 255, 102, 0.6)';
-              setTimeout(() => {
-                stockBadge.style.transform = 'scale(1)';
-                stockBadge.style.boxShadow = 'none';
-              }, 400);
-            }
-          }
+        if (servData) {
+          updateCardWithServiceData(servData, currentService);
         }
 
         if (data.allowed_services && Array.isArray(data.allowed_services)) {
@@ -3071,10 +3262,23 @@
           document.getElementById('telemetry-ip').innerText = `IP: ${data.local_ip}`;
         }
 
-        if (servData && servData.cookie_queue) {
-          renderQueuePreview(servData.cookie_queue);
+        // 👥 Live Online Users Telemetry Sync
+        if (data.online_users) {
+          const totalOnline = data.online_users.total || 1;
+          const badgeEl = document.getElementById('users-online-count-badge');
+          if (badgeEl) badgeEl.innerText = `${totalOnline} ONLINE`;
+          const modalBadge = document.getElementById('admin-users-online-count');
+          if (modalBadge) modalBadge.innerText = `${totalOnline}`;
+          
+          // Se o monitor ao vivo estiver aberto no modal admin, atualiza em tempo real
+          const usersView = document.getElementById('admin-view-users');
+          if (usersView && usersView.style.display !== 'none') {
+            renderOnlineUsersData(data.online_users);
+          }
         }
-      } catch (e) {}
+      } catch (e) {
+        console.warn('[STATUS SYNC]', e);
+      }
     }
 
     function renderQueuePreview(queue) {
@@ -3083,13 +3287,15 @@
       if (tabBtn) {
         if (currentService === 'crunchyroll') {
           tabBtn.innerText = `🟠 PRÓXIMAS CONTAS (${queue.length})`;
+        } else if (currentService === 'sky') {
+          tabBtn.innerText = `🔵 PRÓXIMAS CONTAS (${queue.length})`;
         } else {
           tabBtn.innerText = `🍪 PRÓXIMOS DA FILA (${queue.length})`;
         }
       }
 
       if (!queue.length) {
-        const emptyMsg = (currentService === 'crunchyroll') 
+        const emptyMsg = (currentService === 'crunchyroll' || currentService === 'sky') 
           ? '🔍 Nenhuma outra conta na fila. Adicione novas contas no botão "Gerenciar Contas".' 
           : '🔍 Nenhum outro cookie na fila. Importe novos cookies.';
         container.innerHTML = `<div style="color: var(--text-dim); text-align: center; padding: 16px;">${emptyMsg}</div>`;
@@ -3098,13 +3304,15 @@
 
       container.innerHTML = queue.map((c, i) => `
         <div class="cookie-row ${c.is_selected ? 'selected' : ''}" onclick="selectSpecificCookie('${c.filename || c.email}')" title="Clique para ativar esta conta para pareamento">
-          <div class="cookie-row-left">
+          <div class="cookie-row-left" style="display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1;">
             <span class="badge-country">${c.country || (currentService === 'crunchyroll' ? 'CR' : 'BR')}</span>
-            <span class="cookie-email" title="${c.email}">${c.email}</span>
+            <div style="display: flex; flex-direction: column; min-width: 0; flex: 1;">
+              <span class="cookie-email" title="${c.email}" style="font-size: 12.5px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${c.email}</span>
+              <span style="font-size: 10.5px; color: #ffd700; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${c.plan || 'Plano VIP'}</span>
+            </div>
           </div>
           <div class="cookie-row-right">
-            <span style="color: #ffd700; font-size: 11px; font-weight:700;">${c.plan || 'Plano VIP'}</span>
-            <button class="btn-icon" style="padding: 3px 8px; font-size: 10px; margin-left: 4px;" onclick="event.stopPropagation(); selectSpecificCookie('${c.filename || c.email}');">
+            <button class="btn-icon" style="padding: 5px 12px; font-size: 11px;" onclick="event.stopPropagation(); selectSpecificCookie('${c.filename || c.email}');">
               ⚡ USAR
             </button>
           </div>
@@ -3114,12 +3322,12 @@
 
     async function selectSpecificCookie(filename) {
       soundClick();
-      const actionName = (currentService === 'crunchyroll') ? 'conta' : 'cookie';
+      const actionName = (currentService === 'crunchyroll' || currentService === 'sky') ? 'conta' : 'cookie';
       logKernel(`Selecionando ${actionName}: ${filename}...`);
       showAlert(null);
       
       try {
-        const res = await fetch('/api/select-cookie', {
+        const res = await fetch(`${API_BASE}/api/select-cookie`, {
           method: 'POST',
           headers: getHeaders(),
           body: JSON.stringify({ service: currentService, filename: filename })
@@ -3128,7 +3336,7 @@
         
         if (data.success && data.account) {
           soundSuccess();
-          const prefix = (currentService === 'crunchyroll') ? 'CONTA' : 'COOKIE';
+          const prefix = (currentService === 'crunchyroll' || currentService === 'sky') ? 'CONTA' : 'COOKIE';
           // Atualiza o card principal imediatamente
           document.getElementById('active-email-text').innerText = data.account.email || 'Conta pronta';
           document.getElementById('active-account-country').innerText = (currentService === 'crunchyroll') ? (data.account.country || 'CR') : (data.account.country || 'BR');
@@ -3136,7 +3344,7 @@
           document.getElementById('active-cookie-filename').innerText = `${prefix}: ${data.cookie_name || filename}`;
           
           closeCookieModal();
-          const term = (currentService === 'crunchyroll') ? 'Conta' : 'Conta/Cookie';
+          const term = (currentService === 'crunchyroll' || currentService === 'sky') ? 'Conta' : 'Conta/Cookie';
           showAlert('success', `🟢 ${term} ${data.account.email} selecionada com sucesso! Digite o código da TV.`);
           logKernel(`[SUCESSO] Conta ativada: ${data.account.email} (${data.account.plan})`);
           
@@ -3160,7 +3368,7 @@
     async function loadCookies() {
       try {
         const reqService = currentService;
-        const res = await fetch(`/api/cookies?service=${reqService}&_t=${Date.now()}`, { 
+        const res = await fetch(`${API_BASE}/api/cookies?service=${reqService}&_t=${Date.now()}`, { 
           headers: getHeaders(),
           cache: 'no-store'
         });
@@ -3185,7 +3393,7 @@
       if (modalTitle) {
         modalTitle.innerText = currentService === 'netflix' 
           ? '📁 SELECIONAR COOKIE NETFLIX' 
-          : (currentService === 'crunchyroll' ? '📁 SELECIONAR CONTA CRUNCHYROLL' : '📁 SELECIONAR COOKIE HBO MAX');
+          : (currentService === 'crunchyroll' ? '📁 SELECIONAR CONTA CRUNCHYROLL' : (currentService === 'sky' ? '📁 SELECIONAR CONTA SKY+' : '📁 SELECIONAR COOKIE HBO MAX'));
       }
       
       document.getElementById('cookie-modal').style.display = 'flex';
@@ -3296,22 +3504,20 @@
 
     function drawMatrix() {
       const loginOverlay = document.getElementById('login-overlay');
-      const adminAuthModal = document.getElementById('admin-auth-modal');
       const isLoginVisible = loginOverlay && (loginOverlay.style.display === 'flex' || window.getComputedStyle(loginOverlay).display === 'flex');
-      const isAdminAuthVisible = adminAuthModal && (adminAuthModal.style.display === 'flex' || window.getComputedStyle(adminAuthModal).display === 'flex');
       
       let rainColor = '#00ff66';
       let trailBg = 'rgba(0, 0, 0, 0.16)';
       
-      if (isAdminAuthVisible) {
-        rainColor = '#E50914';
-      } else if (isLoginVisible) {
+      if (isLoginVisible) {
         rainColor = '#00ff66';
       } else {
         if (currentService === 'netflix') {
           rainColor = '#E50914';
         } else if (currentService === 'crunchyroll') {
           rainColor = '#F47521';
+        } else if (currentService === 'sky') {
+          rainColor = '#00A0E3';
         } else {
           rainColor = '#a855f7';
         }
@@ -3362,7 +3568,9 @@
         ? ['#ff2a38', '#e50914', '#ffffff', '#ffd700', '#ff707a']
         : (currentService === 'crunchyroll'
           ? ['#f47521', '#ff8438', '#ffffff', '#ffd700', '#ffa366']
-          : ['#c084fc', '#a855f7', '#ffffff', '#ffd700', '#e9d5ff']);
+          : (currentService === 'sky'
+            ? ['#00A0E3', '#0066CC', '#ffffff', '#ffd700', '#33b5e5']
+            : ['#c084fc', '#a855f7', '#ffffff', '#ffd700', '#e9d5ff']));
 
       for (let i = 0; i < 120; i++) {
         confettiParticles.push({
@@ -3409,608 +3617,13 @@
       }
     }
 
-    // ========================================================
-    // 🍪 COOKIE MANAGER & CLOUD UPLOAD CONTROLLER
-    // ========================================================
-    let adminTargetService = 'netflix';
-    let adminPendingFiles = [];
-    let adminCookieToken = sessionStorage.getItem('cyber_cookie_admin_token') || localStorage.getItem('cyber_auth_token') || '';
 
-    function getAdminHeaders() {
-      const headers = getHeaders();
-      if (adminCookieToken) {
-        headers['X-Admin-Token'] = adminCookieToken;
-      }
-      return headers;
-    }
 
-    // Acesso direto sem senha para quem já desbloqueou o terminal!
-    function openAdminModal() {
-      soundClick();
-      const deck = document.querySelector('.deck-container');
-      if (deck) deck.style.display = 'none';
-      let target = 'netflix';
-      if (currentService === 'hbo') target = 'hbomax';
-      else if (currentService === 'crunchyroll') target = 'crunchyroll';
-      setAdminTarget(target);
-      document.getElementById('admin-modal').style.display = 'flex';
-      loadAdminStats();
-      setTimeout(() => {
-        const area = document.getElementById('admin-raw-text');
-        if (area && !area.value) area.focus();
-      }, 150);
-    }
 
-    function closeAdminAuthModal() {
-      soundClick();
-      const deck = document.querySelector('.deck-container');
-      if (deck) deck.style.display = 'flex';
-      document.getElementById('admin-auth-modal').style.display = 'none';
-    }
 
-    async function executeAdminUnlock() {
-      soundClick();
-      const pwd = document.getElementById('admin-pass-input').value.trim();
-      const errBox = document.getElementById('admin-auth-error-msg');
-      if (!pwd) {
-        errBox.innerText = 'Digite a senha do gerenciador de cookies ou a senha mestre.';
-        errBox.style.display = 'block';
-        soundError();
-        return;
-      }
 
-      errBox.style.display = 'none';
 
-      try {
-        const res = await fetch('/api/admin/verify-pass', {
-          method: 'POST',
-          headers: getHeaders(),
-          body: JSON.stringify({ password: pwd })
-        });
-        const data = await res.json();
-        if (data.success && data.admin_token) {
-          adminCookieToken = data.admin_token;
-          sessionStorage.setItem('cyber_cookie_admin_token', adminCookieToken);
-          soundSuccess();
-          closeAdminAuthModal();
-          let target = 'netflix';
-          if (currentService === 'hbo') target = 'hbomax';
-          else if (currentService === 'crunchyroll') target = 'crunchyroll';
-          setAdminTarget(target);
-          document.getElementById('admin-modal').style.display = 'flex';
-          loadAdminStats();
-        } else {
-          soundError();
-          errBox.innerText = data.message || 'Senha incorreta!';
-          errBox.style.display = 'block';
-        }
-      } catch (e) {
-        soundError();
-        errBox.innerText = 'Erro ao conectar ao servidor.';
-        errBox.style.display = 'block';
-      }
-    }
 
-    function closeAdminModal() {
-      soundClick();
-      const deck = document.querySelector('.deck-container');
-      if (deck) deck.style.display = 'flex';
-      document.getElementById('admin-modal').style.display = 'none';
-      adminPendingFiles = [];
-      document.getElementById('admin-file-summary').innerText = 'Ou arraste arquivos em qualquer lugar da tela';
-      document.getElementById('admin-raw-text').value = '';
-      const crArea = document.getElementById('cr-raw-combos');
-      if (crArea) crArea.value = '';
-      const crEmail = document.getElementById('cr-single-email');
-      if (crEmail) crEmail.value = '';
-      const crPass = document.getElementById('cr-single-pass');
-      if (crPass) crPass.value = '';
-      document.getElementById('admin-upload-msg').innerText = '';
-      const badge = document.getElementById('cookie-detect-badge');
-      if (badge) badge.style.display = 'none';
-    }
-
-    function setAdminTarget(svc) {
-      adminTargetService = svc;
-      const btnN = document.getElementById('admin-target-nf');
-      const btnH = document.getElementById('admin-target-hbo');
-      const btnC = document.getElementById('admin-target-cr');
-      if (btnN) btnN.className = (svc === 'netflix') ? 'admin-radio-btn active-n' : 'admin-radio-btn';
-      if (btnH) btnH.className = (svc === 'hbomax' || svc === 'hbo') ? 'admin-radio-btn active-h' : 'admin-radio-btn';
-      if (btnC) btnC.className = (svc === 'crunchyroll' || svc === 'cr') ? 'admin-radio-btn active-cr' : 'admin-radio-btn';
-
-      const cookieSec = document.getElementById('admin-cookie-section');
-      const crSec = document.getElementById('admin-crunchyroll-section');
-      const modalTitle = document.getElementById('admin-modal-main-title');
-
-      if (svc === 'crunchyroll' || svc === 'cr') {
-        if (cookieSec) cookieSec.style.display = 'none';
-        if (crSec) crSec.style.display = 'flex';
-        if (modalTitle) modalTitle.innerText = '🟠 GERENCIADOR DE CONTAS CRUNCHYROLL';
-      } else {
-        if (cookieSec) cookieSec.style.display = 'flex';
-        if (crSec) crSec.style.display = 'none';
-        if (modalTitle) modalTitle.innerText = '🍪 GERENCIADOR DE COOKIES // CLOUD';
-      }
-    }
-
-    // 🟠 GESTÃO EXCLUSIVA DE CONTAS CRUNCHYROLL (CONTA ÚNICA & LOTES)
-    async function submitSingleCrunchyrollAccount() {
-      soundClick();
-      const emailInput = document.getElementById('cr-single-email');
-      const passInput = document.getElementById('cr-single-pass');
-      const statusMsg = document.getElementById('admin-upload-msg');
-      const email = emailInput ? emailInput.value.trim() : '';
-      const password = passInput ? passInput.value.trim() : '';
-
-      if (!email || !password) {
-        soundError();
-        alert('Por favor, informe o e-mail e a senha da conta Crunchyroll.');
-        return;
-      }
-
-      if (!email.includes('@')) {
-        soundError();
-        alert('Por favor, informe um e-mail válido contendo @.');
-        return;
-      }
-
-      statusMsg.style.color = '#ffd700';
-      statusMsg.innerText = 'Salvando e ativando conta Crunchyroll... ⏳';
-
-      try {
-        const res = await fetch('/api/admin/upload-cookies', {
-          method: 'POST',
-          headers: getAdminHeaders(),
-          body: JSON.stringify({
-            service: 'crunchyroll',
-            email: email,
-            password: password
-          })
-        });
-
-        const data = await res.json();
-        if (data.success) {
-          soundSuccess();
-          triggerConfetti();
-          statusMsg.style.color = '#00ff66';
-          statusMsg.innerText = `🎉 Conta Crunchyroll adicionada e ativada com sucesso!`;
-          if (emailInput) emailInput.value = '';
-          if (passInput) passInput.value = '';
-          loadAdminStats();
-          loadStatus();
-          loadCookies();
-          logKernel(`[CRUNCHYROLL] Conta ${email} salva e ativada com sucesso.`);
-        } else {
-          soundError();
-          statusMsg.style.color = '#ff3344';
-          statusMsg.innerText = data.message || 'Erro ao adicionar conta.';
-        }
-      } catch (err) {
-        soundError();
-        statusMsg.style.color = '#ff3344';
-        statusMsg.innerText = 'Falha na conexão com o servidor local.';
-      }
-    }
-
-    async function submitCrunchyrollCombos() {
-      soundClick();
-      const textarea = document.getElementById('cr-raw-combos');
-      const statusMsg = document.getElementById('admin-upload-msg');
-      const rawText = textarea ? textarea.value.trim() : '';
-
-      if (!rawText) {
-        soundError();
-        alert('Por favor, cole ao menos uma conta (email:senha) antes de importar.');
-        return;
-      }
-
-      statusMsg.style.color = '#ffd700';
-      statusMsg.innerText = 'Importando lote de contas Crunchyroll... ⏳';
-
-      try {
-        const res = await fetch('/api/admin/upload-cookies', {
-          method: 'POST',
-          headers: getAdminHeaders(),
-          body: JSON.stringify({
-            service: 'crunchyroll',
-            raw_text: rawText
-          })
-        });
-
-        const data = await res.json();
-        if (data.success) {
-          soundSuccess();
-          triggerConfetti();
-          statusMsg.style.color = '#00ff66';
-          statusMsg.innerText = data.message || `🎉 Contas Crunchyroll importadas com sucesso!`;
-          if (textarea) textarea.value = '';
-          loadAdminStats();
-          loadStatus();
-          loadCookies();
-          logKernel(`[CRUNCHYROLL] Lote de contas importado com sucesso.`);
-        } else {
-          soundError();
-          statusMsg.style.color = '#ff3344';
-          statusMsg.innerText = data.message || 'Erro ao importar contas.';
-        }
-      } catch (err) {
-        soundError();
-        statusMsg.style.color = '#ff3344';
-        statusMsg.innerText = 'Falha na conexão com o servidor local.';
-      }
-    }
-
-    async function pasteFromClipboardToCrTextarea() {
-      soundClick();
-      try {
-        const text = await navigator.clipboard.readText();
-        if (text) {
-          const area = document.getElementById('cr-raw-combos');
-          if (area) {
-            area.value = text.trim();
-            soundSuccess();
-          }
-        }
-      } catch (e) {
-        const area = document.getElementById('cr-raw-combos');
-        if (area) area.focus();
-      }
-    }
-
-    // ⚡ 1-CLIQUE: COLAR COOKIE RÁPIDO DO CLIPBOARD (DIRETO NO CARD PRINCIPAL)
-    async function quickClipboardPaste() {
-      soundClick();
-      try {
-        const text = await navigator.clipboard.readText();
-        const trimmed = (text || '').trim();
-        if (!trimmed) {
-          openAdminModal();
-          return;
-        }
-
-        // Auto detecção do serviço
-        let targetSvc = currentService === 'hbo' ? 'hbomax' : (currentService === 'crunchyroll' ? 'crunchyroll' : 'netflix');
-        const lower = trimmed.toLowerCase();
-        if (lower.includes('crunchyroll') || (trimmed.includes('@') && trimmed.includes(':') && !lower.includes('securentflxid') && !lower.includes('max.com'))) {
-          targetSvc = 'crunchyroll';
-        } else if (lower.includes('securentflxid') || lower.includes('netflix')) {
-          targetSvc = 'netflix';
-        } else if (lower.includes('max.com') || lower.includes('hbomax') || lower.includes('beam') || lower.includes('hbo')) {
-          targetSvc = 'hbomax';
-        }
-
-        logKernel(`Importando credencial do clipboard para ${targetSvc.toUpperCase()}...`);
-        showAlert('success', '⚡ Enviando credencial da área de transferência...');
-
-        const res = await fetch('/api/admin/upload-cookies', {
-          method: 'POST',
-          headers: getAdminHeaders(),
-          body: JSON.stringify({
-            service: targetSvc,
-            files: [],
-            raw_text: trimmed
-          })
-        });
-
-        const data = await res.json();
-        if (data.success) {
-          soundSuccess();
-          triggerConfetti();
-          showAlert('success', `🎉 Credencial importada e ativada para ${targetSvc.toUpperCase()}!`);
-          logKernel(`[SUCESSO] ${data.message}`);
-          if (targetSvc === 'netflix' && currentService !== 'netflix') switchService('netflix');
-          if (targetSvc === 'hbomax' && currentService !== 'hbo') switchService('hbo');
-          if (targetSvc === 'crunchyroll' && currentService !== 'crunchyroll') switchService('crunchyroll');
-          loadStatus();
-          loadCookies();
-        } else {
-          soundError();
-          showAlert('error', data.message || 'Erro ao importar credencial.');
-          openAdminModal();
-          document.getElementById('admin-raw-text').value = trimmed;
-          handleLiveCookieDetection();
-        }
-      } catch (err) {
-        // Se o navegador bloquear leitura direta, abre o modal de importação com foco imediato
-        openAdminModal();
-      }
-    }
-
-    // 📋 COLAR DO CLIPBOARD DIRETO NA TEXTAREA (DENTRO DO MODAL)
-    async function pasteFromClipboardToTextarea() {
-      soundClick();
-      try {
-        const text = await navigator.clipboard.readText();
-        if (text) {
-          const area = document.getElementById('admin-raw-text');
-          area.value = text.trim();
-          soundSuccess();
-          handleLiveCookieDetection();
-        }
-      } catch (e) {
-        const area = document.getElementById('admin-raw-text');
-        area.focus();
-      }
-    }
-
-    // 🔍 DETECÇÃO EM TEMPO REAL DO SERVIÇO AO DIGITAR/COLAR
-    function handleLiveCookieDetection() {
-      const val = document.getElementById('admin-raw-text').value.toLowerCase();
-      const badge = document.getElementById('cookie-detect-badge');
-      if (!val) {
-        badge.style.display = 'none';
-        return;
-      }
-      if (val.includes('securentflxid') || val.includes('netflix')) {
-        setAdminTarget('netflix');
-        badge.className = 'cookie-detect-badge detect-netflix';
-        badge.innerHTML = '✔ Detectado: Formato NETFLIX';
-        badge.style.display = 'inline-flex';
-      } else if (val.includes('max.com') || val.includes('hbomax') || val.includes('beam') || val.includes('hbo')) {
-        setAdminTarget('hbomax');
-        badge.className = 'cookie-detect-badge detect-hbo';
-        badge.innerHTML = '✔ Detectado: Formato HBO MAX';
-        badge.style.display = 'inline-flex';
-      } else if (val.includes('crunchyroll') || val.includes('crunchy') || (val.includes('@') && val.includes(':'))) {
-        setAdminTarget('crunchyroll');
-        badge.className = 'cookie-detect-badge detect-crunchyroll';
-        badge.innerHTML = '✔ Detectado: Formato CRUNCHYROLL';
-        badge.style.display = 'inline-flex';
-      } else {
-        badge.style.display = 'none';
-      }
-    }
-
-    // 📥 DRAG & DROP GLOBAL DE ARQUIVOS EM QUALQUER LUGAR DA TELA
-    window.addEventListener('dragover', (e) => {
-      e.preventDefault();
-      const overlay = document.getElementById('drag-drop-overlay');
-      if (overlay) overlay.classList.add('active');
-    });
-
-    window.addEventListener('dragleave', (e) => {
-      if (e.relatedTarget === null) {
-        const overlay = document.getElementById('drag-drop-overlay');
-        if (overlay) overlay.classList.remove('active');
-      }
-    });
-
-    window.addEventListener('drop', (e) => {
-      e.preventDefault();
-      const overlay = document.getElementById('drag-drop-overlay');
-      if (overlay) overlay.classList.remove('active');
-
-      const files = e.dataTransfer.files;
-      if (files && files.length > 0) {
-        openAdminModal();
-        handleDroppedFiles(files);
-      }
-    });
-
-    function readFilesAsync(fileList) {
-      return new Promise((resolve) => {
-        const results = [];
-        const total = fileList.length;
-        if (total === 0) return resolve(results);
-
-        const progressBox = document.getElementById('admin-upload-progress-box');
-        const progressText = document.getElementById('admin-progress-text');
-        const progressPct = document.getElementById('admin-progress-pct');
-        const progressBar = document.getElementById('admin-progress-bar');
-        if (progressBox) progressBox.style.display = 'block';
-
-        let count = 0;
-        for (let i = 0; i < total; i++) {
-          const file = fileList[i];
-          const name = file.name.toLowerCase();
-          // Aceita apenas arquivos .txt ou .json
-          if (!name.endsWith('.txt') && !name.endsWith('.json') && !name.includes('cookie')) {
-            count++;
-            if (count === total) resolve(results);
-            continue;
-          }
-
-          const reader = new FileReader();
-          reader.onload = (e) => {
-            results.push({
-              name: file.name,
-              content: e.target.result
-            });
-            count++;
-            const pct = Math.round((count / total) * 100);
-            if (progressText) progressText.innerText = `Lendo arquivos: ${count} / ${total}...`;
-            if (progressPct) progressPct.innerText = `${pct}%`;
-            if (progressBar) progressBar.style.width = `${pct}%`;
-            if (count === total) resolve(results);
-          };
-          reader.onerror = () => {
-            count++;
-            if (count === total) resolve(results);
-          };
-          reader.readAsText(file);
-        }
-      });
-    }
-
-    async function handleDroppedFiles(files) {
-      if (!files || !files.length) return;
-      document.getElementById('admin-file-summary').innerText = `⏳ Processando ${files.length} arquivo(s)...`;
-      const readList = await readFilesAsync(files);
-      adminPendingFiles = readList;
-      document.getElementById('admin-file-summary').innerText = `✅ ${adminPendingFiles.length} arquivo(s) prontos! Importando automaticamente...`;
-      soundSuccess();
-      submitAdminCookies();
-    }
-
-    // ⌨️ ATALHO CTRL+V GLOBAL PARA IMPORTAÇÃO RÁPIDA
-    document.addEventListener('paste', (e) => {
-      if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
-      const text = (e.clipboardData || window.clipboardData).getData('text');
-      if (text && (text.includes('netflix') || text.includes('max.com') || text.includes('SecureNetflixId') || text.includes('beam') || text.includes('crunchyroll') || (text.includes('@') && text.includes(':')))) {
-        e.preventDefault();
-        openAdminModal();
-        const area = document.getElementById('admin-raw-text');
-        area.value = text.trim();
-        handleLiveCookieDetection();
-        soundSuccess();
-      }
-    });
-
-    async function loadAdminStats() {
-      try {
-        const res = await fetch('/api/admin/stats', { headers: getAdminHeaders() });
-        if (res.ok) {
-          const data = await res.json();
-          document.getElementById('stat-nf-count').innerText = data.netflix_verified || data.netflix_total || '0';
-          document.getElementById('stat-hbo-count').innerText = data.hbo_verified || data.hbo_total || '0';
-          const statCr = document.getElementById('stat-cr-count');
-          if (statCr) statCr.innerText = data.crunchyroll_verified || data.crunchyroll_total || '0';
-        }
-      } catch (e) {}
-    }
-
-    async function handleAdminFileSelect(event) {
-      const files = event.target.files;
-      if (!files || !files.length) return;
-      document.getElementById('admin-file-summary').innerText = `⏳ Lendo ${files.length} arquivo(s)...`;
-      const readList = await readFilesAsync(files);
-      adminPendingFiles = readList;
-      document.getElementById('admin-file-summary').innerText = `✅ ${adminPendingFiles.length} arquivo(s) carregados e prontos para envio!`;
-      soundSuccess();
-    }
-
-    async function submitAdminCookies() {
-      const btn = document.getElementById('btn-import-cookies');
-      const rawText = document.getElementById('admin-raw-text').value.trim();
-      const statusMsg = document.getElementById('admin-upload-msg');
-      const progressBox = document.getElementById('admin-upload-progress-box');
-      const progressText = document.getElementById('admin-progress-text');
-      const progressPct = document.getElementById('admin-progress-pct');
-      const progressBar = document.getElementById('admin-progress-bar');
-
-      if (!adminPendingFiles.length && !rawText) {
-        soundError();
-        alert('Selecione arquivos de cookies ou cole o texto dos cookies antes de importar.');
-        return;
-      }
-
-      btn.disabled = true;
-      btn.innerText = 'IMPORTANDO E ATIVANDO... ⏳';
-      statusMsg.innerText = '';
-      soundClick();
-
-      try {
-        if (progressBox) progressBox.style.display = 'block';
-
-        // Se houver mais de 100 arquivos, envia em lotes/chunks para evitar sobrecarga de payload HTTP
-        const CHUNK_SIZE = 100;
-        let totalSaved = 0;
-        let lastMessage = '';
-
-        if (adminPendingFiles.length > CHUNK_SIZE) {
-          const totalChunks = Math.ceil(adminPendingFiles.length / CHUNK_SIZE);
-          for (let i = 0; i < totalChunks; i++) {
-            const chunk = adminPendingFiles.slice(i * CHUNK_SIZE, (i + 1) * CHUNK_SIZE);
-            const chunkPct = Math.round(((i + 1) / totalChunks) * 100);
-            if (progressText) progressText.innerText = `Enviando lote ${i + 1} de ${totalChunks} (${chunk.length} cookies)...`;
-            if (progressPct) progressPct.innerText = `${chunkPct}%`;
-            if (progressBar) progressBar.style.width = `${chunkPct}%`;
-
-            const res = await fetch('/api/admin/upload-cookies', {
-              method: 'POST',
-              headers: getAdminHeaders(),
-              body: JSON.stringify({
-                service: adminTargetService,
-                files: chunk,
-                raw_text: (i === 0 ? rawText : '')
-              })
-            });
-            const data = await res.json();
-            if (data.success) {
-              totalSaved += (data.saved_count || 0);
-              lastMessage = data.message;
-            }
-          }
-        } else {
-          if (progressText) progressText.innerText = 'Enviando payload para o servidor...';
-          if (progressPct) progressPct.innerText = '100%';
-          if (progressBar) progressBar.style.width = '100%';
-
-          const res = await fetch('/api/admin/upload-cookies', {
-            method: 'POST',
-            headers: getAdminHeaders(),
-            body: JSON.stringify({
-              service: adminTargetService,
-              files: adminPendingFiles,
-              raw_text: rawText
-            })
-          });
-          const data = await res.json();
-          if (data.success) {
-            totalSaved = data.saved_count || 1;
-            lastMessage = data.message;
-          } else {
-            throw new Error(data.message || 'Erro ao importar cookies.');
-          }
-        }
-
-        btn.disabled = false;
-        btn.innerText = '🚀 IMPORTAR LOTE E ATIVAR AGORA ⚡';
-        soundSuccess();
-        triggerConfetti();
-
-        statusMsg.style.color = '#00ff66';
-        statusMsg.innerText = `🎉 ${totalSaved} cookie(s) importado(s) com sucesso!`;
-        adminPendingFiles = [];
-        document.getElementById('admin-raw-text').value = '';
-        document.getElementById('admin-file-summary').innerText = 'Suporta pastas completas ou múltiplos arquivos de uma só vez';
-        
-        setTimeout(() => {
-          if (progressBox) progressBox.style.display = 'none';
-        }, 2500);
-
-        loadAdminStats();
-        loadStatus();
-        loadCookies();
-        logKernel(`[ADMIN] ${totalSaved} cookies importados com sucesso.`);
-      } catch (err) {
-        btn.disabled = false;
-        btn.innerText = '🚀 IMPORTAR LOTE E ATIVAR AGORA ⚡';
-        soundError();
-        statusMsg.style.color = '#ff3344';
-        statusMsg.innerText = err.message || 'Falha na conexão com o servidor.';
-        if (progressBox) progressBox.style.display = 'none';
-      }
-    }
-
-    async function resetAdminCache() {
-      if (!confirm('Deseja resetar o cache de cookies usados/inválidos para que o sistema teste todos novamente?')) return;
-      soundClick();
-      const statusMsg = document.getElementById('admin-upload-msg');
-      statusMsg.style.color = '#ffd700';
-      statusMsg.innerText = 'Reiniciando cache...';
-
-      try {
-        const res = await fetch('/api/admin/reset-cache', {
-          method: 'POST',
-          headers: getAdminHeaders()
-        });
-        const data = await res.json();
-        if (data.success) {
-          soundSuccess();
-          statusMsg.style.color = '#00ff66';
-          statusMsg.innerText = 'Cache reiniciado com sucesso!';
-          loadAdminStats();
-          loadStatus();
-          loadCookies();
-        }
-      } catch (err) {
-        soundError();
-        statusMsg.style.color = '#ff3344';
-        statusMsg.innerText = 'Erro ao resetar cache.';
-      }
-    }
 
     // Ping update loop
     setInterval(() => {
@@ -4018,12 +3631,12 @@
       document.getElementById('telemetry-ping').innerText = `PING: ${ping}ms`;
     }, 4000);
 
-    // ⚡ LIVE SYNC AO VIVO: Sincronização automática contínua de status e estoque de cookies a cada 2.5s
+    // ⚡ LIVE SYNC AO VIVO: Sincronização automática contínua de status e estoque a cada 5s
     setInterval(() => {
       if (document.getElementById('login-overlay').style.display !== 'flex') {
         loadStatus();
       }
-    }, 2500);
+    }, 5000);
 
     // ⚡ SINCRONIZAÇÃO INSTANTÂNEA AO RETORNAR PARA O NAVEGADOR NO CELULAR
     document.addEventListener('visibilitychange', () => {
@@ -4050,7 +3663,7 @@
 
     // Initial Startup
     window.addEventListener('load', async () => {
-      document.body.setAttribute('data-service', 'netflix');
+      switchService('netflix', true);
       updateSoundUI();
       updatePinDisplay();
       const ok = await checkAuth();
