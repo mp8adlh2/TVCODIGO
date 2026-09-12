@@ -1,6 +1,24 @@
 {
   "senhas": [
     {
+      "senha": "VIP#SECURITY@8929$VIP*24!2026",
+      "nome": "Cliente VIP",
+      "servicos": [
+        "netflix",
+        "hbo"
+      ],
+      "descricao": "Libera: netflix, hbo"
+    },
+    {
+      "senha": "OMEGA#VAULT@8384$PREMIUM*67!2026",
+      "nome": "5521984920015",
+      "servicos": [
+        "netflix",
+        "hbo"
+      ],
+      "descricao": "Libera: netflix, hbo"
+    },
+    {
       "senha": "VIP#MASTER@1444$4K*76!2026",
       "nome": "VIP Master 4K",
       "servicos": [
