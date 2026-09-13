@@ -567,46 +567,126 @@ def esta_na_tela_de_login(page) -> bool:
     if "vrioservices" in url or "auth.sky" in url or "minha-sky" in url:
         return True
     try:
-        if page.locator("input[type='password']").count() > 0:
-            for i in range(page.locator("input[type='password']").count()):
-                if page.locator("input[type='password']").nth(i).is_visible():
+        # Se houver campo visível de senha, é tela de login
+        pw_inputs = page.locator("input[type='password']")
+        if pw_inputs.count() > 0:
+            for i in range(pw_inputs.count()):
+                if pw_inputs.nth(i).is_visible():
                     return True
-        conteudo = page.content().lower()
-        if "entre com sua conta sky" in conteudo:
-            return True
-        if "se você é cliente sky" in conteudo:
+        # Se houver formulário de credenciais visível com botão Entrar/Acessar
+        login_btn = page.locator("button:has-text('Entrar'), button:has-text('Fazer Login'), button:has-text('Acessar')")
+        user_input = page.locator("input[name='username'], input#username, input[name='login'], input#login")
+        if user_input.count() > 0 and user_input.first.is_visible() and login_btn.count() > 0 and login_btn.first.is_visible():
             return True
     except Exception:
         pass
     return False
 
 
+def abrir_tela_codigo_se_necessario(page):
+    """Clica em botões precursores para exibir o campo de digitação do código se necessário."""
+    trigger_selectors = [
+        "button:has-text('Ativar TV')",
+        "button:has-text('Ativar Smart TV')",
+        "button:has-text('Ativar dispositivo')",
+        "button:has-text('Ativar Dispositivo')",
+        "button:has-text('Conectar TV')",
+        "button:has-text('Parear TV')",
+        "button:has-text('Inserir código')",
+        "button:has-text('Inserir Código')",
+        "button:has-text('Digitar código')",
+        "button:has-text('Digitar Código')",
+        "a:has-text('Ativar TV')",
+        "a:has-text('Ativar Smart TV')",
+        "[role='button']:has-text('Ativar TV')",
+        "[role='button']:has-text('Ativar Smart TV')",
+        "[role='button']:has-text('Conectar TV')"
+    ]
+    for sel in trigger_selectors:
+        try:
+            loc = page.locator(sel)
+            if loc.count() > 0 and loc.first.is_visible():
+                print(f"[*] [Playwright] Clicando no botão para abrir campo de ativação ({sel})...")
+                loc.first.click(timeout=1500)
+                time.sleep(0.5)
+                break
+        except Exception:
+            pass
+
+
 def clicar_botao_ativar(target) -> bool:
-    """Clica no botão de confirmação da ativação (PRONTO!, Ativar, etc)."""
+    """Clica no botão de confirmação da ativação (PRONTO!, Ativar, Continuar, Conectar, etc)."""
     btn_selectors = [
         "button:has-text('PRONTO')",
         "button:has-text('Pronto')",
         "button:text-is('PRONTO!')",
         "button:text-is('PRONTO')",
         "button:has-text('Ativar')",
-        "button:has-text('Confirmar')",
+        "button:has-text('ATIVAR')",
+        "button:has-text('Ativar TV')",
         "button:has-text('Continuar')",
+        "button:has-text('CONTINUAR')",
+        "button:has-text('Conectar')",
+        "button:has-text('CONECTAR')",
+        "button:has-text('Confirmar')",
+        "button:has-text('CONFIRMAR')",
         "button:has-text('Vincular')",
+        "button:has-text('VINCULAR')",
+        "button:has-text('Parear')",
+        "button:has-text('PAREAR')",
+        "button:has-text('Avançar')",
+        "button:has-text('AVANÇAR')",
+        "button:has-text('Validar')",
+        "button:has-text('VALIDAR')",
         "button:has-text('Enviar')",
         "button[type='submit']",
+        "[role='button']:has-text('Ativar')",
+        "[role='button']:has-text('PRONTO')",
+        "[role='button']:has-text('Continuar')",
+        "[role='button']:has-text('Conectar')",
+        "[role='button']:has-text('Confirmar')",
+        "input[type='submit']",
         "button.btn-primary",
         "button.primary"
     ]
+
+    # 1. Tenta acionar via JavaScript no DOM removendo disabled
+    try:
+        target.evaluate("""() => {
+            const btns = Array.from(document.querySelectorAll("button, [role='button'], input[type='submit'], a.btn"));
+            const targetBtn = btns.find(b => {
+                const txt = (b.innerText || b.value || b.getAttribute('aria-label') || '').toUpperCase().trim();
+                return txt.includes('PRONTO') || txt.includes('ATIVAR') || txt.includes('CONTINUAR') || 
+                       txt.includes('CONECTAR') || txt.includes('CONFIRMAR') || txt.includes('VINCULAR') || 
+                       txt.includes('PAREAR') || txt.includes('AVANÇAR') || txt.includes('VALIDAR') || txt.includes('ENVIAR');
+            }) || document.querySelector("button[type='submit']");
+            if (targetBtn) {
+                targetBtn.removeAttribute('disabled');
+                targetBtn.removeAttribute('aria-disabled');
+                targetBtn.disabled = false;
+                targetBtn.click();
+                return true;
+            }
+            return false;
+        }""")
+    except Exception:
+        pass
+
+    # 2. Varredura com Playwright nativo
     for sel in btn_selectors:
         try:
             btn = target.locator(sel)
             if btn.count() > 0 and btn.first.is_visible():
                 print(f"[*] [Playwright] Clicando no botão de ativação ({sel})...")
-                for _ in range(8):
+                try:
+                    btn.first.evaluate("el => { el.removeAttribute('disabled'); el.removeAttribute('aria-disabled'); el.disabled = false; }")
+                except Exception:
+                    pass
+                for _ in range(5):
                     if btn.first.is_enabled():
                         break
-                    time.sleep(0.2)
-                btn.first.click(force=True, timeout=3000)
+                    time.sleep(0.1)
+                btn.first.click(force=True, timeout=2500)
                 return True
         except Exception:
             pass
@@ -621,29 +701,12 @@ def clicar_botao_ativar(target) -> bool:
 
 
 def fechar_popups_bloqueantes(page):
-    """Fecha avisos e popups do navegador ou da página que possam cobrir o campo da TV."""
+    """Fecha avisos e popups de cookies ou bloqueios, sem fechar modais de ativação."""
     try:
-        page.keyboard.press("Escape")
-        time.sleep(0.1)
-
-        # Procura qualquer botão OK ou Entendi na tela (ex: 'Mude sua senha')
-        botoes_ok = page.locator("button:has-text('OK'), button:has-text('Ok'), button:text-is('OK'), button:has-text('Entendi'), button:has-text('Fechar'), [role='dialog'] button")
-        if botoes_ok.count() > 0:
-            for idx in range(botoes_ok.count()):
-                try:
-                    if botoes_ok.nth(idx).is_visible():
-                        botoes_ok.nth(idx).click(force=True, timeout=1000)
-                        time.sleep(0.2)
-                except Exception:
-                    pass
-
-        # Remove qualquer backdrop ou modal cinza/branco via script
-        page.evaluate("""() => {
-            document.querySelectorAll('[role="dialog"], .modal, .popup, .overlay, [class*="dialog"]').forEach(el => {
-                const btn = el.querySelector('button');
-                if (btn) btn.click();
-            });
-        }""")
+        # Apenas aceita cookies se houver banner cobrindo a tela
+        cookie_btn = page.locator("button:has-text('Aceitar'), button:has-text('Concordar'), button:has-text('Entendi'), #onetrust-accept-btn-handler")
+        if cookie_btn.count() > 0 and cookie_btn.first.is_visible():
+            cookie_btn.first.click(timeout=1000)
     except Exception:
         pass
 
@@ -684,18 +747,18 @@ def desativar_gerenciador_senhas_perfil(profile_dir: str):
 def preencher_codigo_tv(page, tv_code: str) -> bool:
     """
     Localiza o campo para digitar o código de 6 dígitos da TV na tela oficial,
-    preenche o código com eventos reais de teclado e clica no botão PRONTO!.
+    preenche o código com eventos reais de teclado e clica no botão de ativação.
     """
     tv_code = str(tv_code).strip().upper()
 
-    # Fecha popups que possam estar cobrindo o campo (ex: 'Mude sua senha')
     fechar_popups_bloqueantes(page)
+    abrir_tela_codigo_se_necessario(page)
 
-    # NUNCA preencher em tela de login
+    # NUNCA preencher em tela de login real
     if esta_na_tela_de_login(page):
         return False
 
-    # 0. Preenchimento e clique direto no DOM via JavaScript (imune a qualquer popup flutuante do Chrome)
+    # 0. Preenchimento e clique direto no DOM via JavaScript (imune a layouts dinâmicos e React)
     try:
         js_injector = """
         (code) => {
@@ -704,22 +767,60 @@ def preencher_codigo_tv(page, tv_code: str) -> bool:
                 "input[placeholder*='ativacao' i]",
                 "input[placeholder*='código' i]",
                 "input[placeholder*='codigo' i]",
+                "input[placeholder*='digite' i]",
+                "input[placeholder*='insira' i]",
+                "input[placeholder*='tv' i]",
                 "input[maxlength='6']",
+                "input[name*='code' i]",
+                "input[name*='codigo' i]",
+                "input[name*='userCode' i]",
+                "input[id*='code' i]",
+                "input[id*='codigo' i]",
+                "input[id*='userCode' i]",
+                "input[aria-label*='código' i]",
+                "input[aria-label*='codigo' i]",
+                "[data-testid*='code' i]",
+                "[data-testid*='pin' i]",
+                "[data-testid*='activate' i]",
                 ".activation-code-input",
-                "input.code-input",
-                "input[type='text']",
-                "input"
+                "input.code-input"
             ];
             let input = null;
             for (const s of sels) {
-                const el = document.querySelector(s);
-                if (el && el.offsetParent !== null) {
-                    input = el;
-                    break;
+                const els = document.querySelectorAll(s);
+                for (const el of els) {
+                    if (el && el.offsetParent !== null) {
+                        const name = (el.getAttribute('name') || '').toLowerCase();
+                        const type = (el.getAttribute('type') || '').toLowerCase();
+                        const ph = (el.getAttribute('placeholder') || '').toLowerCase();
+                        if (name.includes('search') || name.includes('q') || ph.includes('buscar') || ph.includes('pesquisar')) continue;
+                        if (type === 'password' || type === 'email') continue;
+                        input = el;
+                        break;
+                    }
+                }
+                if (input) break;
+            }
+
+            // Fallback para qualquer campo de texto na página que não seja busca nem credenciais
+            if (!input) {
+                const allInputs = Array.from(document.querySelectorAll("input[type='text'], input[type='tel'], input[type='number'], input:not([type])"));
+                for (const el of allInputs) {
+                    if (el && el.offsetParent !== null) {
+                        const name = (el.getAttribute('name') || '').toLowerCase();
+                        const type = (el.getAttribute('type') || '').toLowerCase();
+                        const ph = (el.getAttribute('placeholder') || '').toLowerCase();
+                        if (name.includes('search') || name.includes('q') || ph.includes('buscar') || ph.includes('pesquisar')) continue;
+                        if (type === 'password' || type === 'email') continue;
+                        input = el;
+                        break;
+                    }
                 }
             }
+
             if (input) {
                 input.focus();
+                input.value = '';
                 const nativeSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, "value")?.set;
                 if (nativeSetter) {
                     nativeSetter.call(input, code);
@@ -729,25 +830,44 @@ def preencher_codigo_tv(page, tv_code: str) -> bool:
                 input.dispatchEvent(new Event('input', { bubbles: true }));
                 input.dispatchEvent(new Event('change', { bubbles: true }));
                 input.dispatchEvent(new KeyboardEvent('keyup', { bubbles: true }));
+                input.dispatchEvent(new Event('blur', { bubbles: true }));
 
-                const btns = Array.from(document.querySelectorAll("button"));
-                const btnPronto = btns.find(b => b.innerText && (
-                    b.innerText.toUpperCase().includes("PRONTO") || 
-                    b.innerText.toUpperCase().includes("ATIVAR") || 
-                    b.innerText.toUpperCase().includes("CONFIRMAR")
-                ));
+                // Busca o botão de ativar e clica
+                const btns = Array.from(document.querySelectorAll("button, [role='button'], input[type='submit'], a.btn"));
+                const btnPronto = btns.find(b => {
+                    const txt = (b.innerText || b.value || b.getAttribute('aria-label') || '').toUpperCase().trim();
+                    return txt.includes("PRONTO") || 
+                           txt.includes("ATIVAR") || 
+                           txt.includes("CONTINUAR") || 
+                           txt.includes("CONECTAR") || 
+                           txt.includes("CONFIRMAR") || 
+                           txt.includes("VINCULAR") || 
+                           txt.includes("PAREAR") || 
+                           txt.includes("AVANÇAR") || 
+                           txt.includes("VALIDAR") || 
+                           txt.includes("ENVIAR");
+                }) || document.querySelector("button[type='submit']");
+
                 if (btnPronto) {
                     btnPronto.removeAttribute("disabled");
+                    btnPronto.removeAttribute("aria-disabled");
+                    btnPronto.disabled = false;
                     btnPronto.click();
-                    return true;
                 }
+
+                if (input.form) {
+                    try { input.form.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true })); } catch(e) {}
+                }
+
+                return true;
             }
             return false;
         }
         """
         if page.evaluate(js_injector, tv_code):
-            print("[*] [Playwright] Código preenchido e botão PRONTO! acionado via DOM!")
-            time.sleep(0.4)
+            print("[*] [Playwright] Código preenchido e botão de ativação acionado via DOM!")
+            time.sleep(0.3)
+            clicar_botao_ativar(page)
             page.keyboard.press("Enter")
             return True
     except Exception:
@@ -774,15 +894,21 @@ def preencher_codigo_tv(page, tv_code: str) -> bool:
         "input[maxlength='6']",
         "input[name*='code' i]",
         "input[name*='codigo' i]",
+        "input[name*='userCode' i]",
         "input[id*='code' i]",
         "input[id*='codigo' i]",
+        "input[id*='userCode' i]",
         "input[aria-label*='código' i]",
         "input[aria-label*='codigo' i]",
         "[data-testid*='code' i]",
+        "[data-testid*='pin' i]",
+        "[data-testid*='activate' i]",
         "input[placeholder*='ex:' i]",
         "input[placeholder*='insira o código' i]",
         "input[placeholder*='digite o código' i]",
         "input[placeholder*='digite o codigo' i]",
+        "input[placeholder*='digite' i]",
+        "input[placeholder*='insira' i]",
         ".activation-code-input",
         "input.code-input"
     ]
@@ -801,7 +927,6 @@ def preencher_codigo_tv(page, tv_code: str) -> bool:
                 print(f"[*] [Playwright] Campo de código da TV localizado via: {sel}")
                 loc.first.click()
                 loc.first.fill("")
-                # Digitação com delay dispara eventos reais de input do React
                 loc.first.type(tv_code, delay=35)
                 time.sleep(0.3)
                 try:
@@ -1247,6 +1372,9 @@ def ativar_tv_playwright(
 
                 push_pw_log(f"✓ [Login] Login SKY autenticado! Redirecionado para: {page.url}", level="success")
 
+                # Aguarda estabilização do redirecionamento e montagem dos componentes React
+                time.sleep(2.0)
+
                 # Garante que estamos na tela de ativação da TV
                 if "ativar" not in page.url.lower():
                     push_pw_log(f"[*] [Playwright] Redirecionando para tela de ativação: {URL_ATIVAR}...")
@@ -1260,18 +1388,48 @@ def ativar_tv_playwright(
                 except Exception:
                     pass
 
+                # ⚡ ATIVAÇÃO PARALELA ULTRA-RÁPIDA VIA TBX COM O TOKEN DE SESSÃO DO NAVEGADOR
+                try:
+                    tokens_ls = page.evaluate("""() => {
+                        let sso = localStorage.getItem('sessionToken') || localStorage.getItem('ssoToken') || '';
+                        let prof = localStorage.getItem('profileToken') || localStorage.getItem('profile') || '';
+                        if (!sso) {
+                            for (let i = 0; i < localStorage.length; i++) {
+                                let k = localStorage.key(i);
+                                let v = localStorage.getItem(k);
+                                if (v && v.startsWith('ey') && (k.toLowerCase().includes('token') || k.toLowerCase().includes('jwt') || k.toLowerCase().includes('session'))) {
+                                    sso = v;
+                                    break;
+                                }
+                            }
+                        }
+                        return { sso: sso, prof: prof };
+                    }""")
+                    sess_sso = (tokens_ls.get("sso") if tokens_ls else "") or tokens_capturados.get("ssoToken") or tokens_capturados.get("idToken")
+                    if sess_sso and "ey" in sess_sso:
+                        tokens_capturados["ssoToken"] = sess_sso
+                        import ativador_tv
+                        activator = ativador_tv.SkyTVActivator(use_proxy=usar_proxy)
+                        res_direct = activator.activate_tv(token=sess_sso, tv_code=tv_code, profile_token=tokens_ls.get("prof") if tokens_ls else None)
+                        if res_direct.get("success"):
+                            push_pw_log("⚡ [Sucesso Imediato] Smart TV pareada com sucesso via API TBX!", level="success")
+                            ativacao_confirmada_via_api[0] = True
+                except Exception as e_tbx:
+                    pass
+
             # ── 3. PREENCHE O CÓDIGO DA TV (6 DÍGITOS) E CLICA ATIVAR ───
             push_pw_log(f"📺 [Smart TV] Preenchendo código da TV: {tv_code}...")
 
-            campo_preenchido = False
-            for tentativa in range(15):
-                fechar_popups_bloqueantes(page)
-                campo_preenchido = preencher_codigo_tv(page, tv_code)
-                if campo_preenchido:
-                    break
-                time.sleep(0.5)
-
+            campo_preenchido = ativacao_confirmada_via_api[0]
             if not campo_preenchido:
+                for tentativa in range(25):
+                    fechar_popups_bloqueantes(page)
+                    campo_preenchido = preencher_codigo_tv(page, tv_code)
+                    if campo_preenchido:
+                        break
+                    time.sleep(0.5)
+
+            if not campo_preenchido and not ativacao_confirmada_via_api[0]:
                 stamp = int(time.time())
                 screenshot_path = os.path.join(SCREENSHOTS_DIR, f"tela_sem_campo_{tv_code}_{stamp}.png")
                 try:
@@ -1326,15 +1484,9 @@ def ativar_tv_playwright(
                 if mensagem_final:
                     break
 
-                # Se o botão PRONTO! ainda estiver visível, clica novamente a cada 600ms
+                # Se o botão de confirmação ainda estiver visível, clica novamente a cada 600ms
                 if tentativa_espera > 0 and tentativa_espera % 6 == 0:
-                    btn_pronto = page.locator("button:has-text('PRONTO'), button:text-is('PRONTO!'), button:has-text('Pronto'), button[type='submit']")
-                    if btn_pronto.count() > 0 and btn_pronto.first.is_visible():
-                        try:
-                            btn_pronto.first.click(force=True, timeout=500)
-                            page.keyboard.press("Enter")
-                        except Exception:
-                            pass
+                    clicar_botao_ativar(page)
 
             stamp = int(time.time())
             screenshot_path = os.path.join(SCREENSHOTS_DIR, f"resultado_{tv_code}_{stamp}.png")
