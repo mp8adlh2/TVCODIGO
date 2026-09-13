@@ -826,8 +826,8 @@ def find_sky_valid_account(used_accounts: Set[str], dead_accounts: Set[str], las
             has_own_session = 0 if _has_valid_account_session(acc) else 1
             plan = str(acc.get("info", {}).get("plan", "")).upper()
             has_fibra = 0 if ("FIBRA" in plan or "PLUS TOTAL" in plan or "SUPER HD" in plan) else 1
-            # Prioriza: menor contagem de ativações, nunca usada recentemente, sessão própria, plano premium
-            return (cnt, last_ts, has_own_session, has_fibra)
+            # Prioriza: sessão própria pronta (ativação em 300ms), menor contagem de ativações, nunca usada recentemente, plano premium
+            return (has_own_session, cnt, last_ts, has_fibra)
 
         candidates.sort(key=_score)
         return candidates[0][0]
@@ -839,9 +839,9 @@ def find_sky_valid_account(used_accounts: Set[str], dead_accounts: Set[str], las
     ]
     if valid_alive:
         valid_alive.sort(key=lambda a: (
+            0 if _has_valid_account_session(a) else 1,
             act_counts.get(a.get("email", "").strip().lower(), 0),
-            last_used_map.get(a.get("email", "").strip().lower(), 0.0),
-            0 if _has_valid_account_session(a) else 1
+            last_used_map.get(a.get("email", "").strip().lower(), 0.0)
         ))
         return valid_alive[0]
 

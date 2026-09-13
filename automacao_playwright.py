@@ -1019,7 +1019,15 @@ def ativar_tv_playwright(
                 "--disable-gpu",
                 "--disable-software-rasterizer",
                 "--disable-extensions",
-                "--disable-background-networking"
+                "--disable-background-networking",
+                "--disable-background-timer-throttling",
+                "--disable-backgrounding-occluded-windows",
+                "--disable-breakpad",
+                "--disable-component-update",
+                "--disable-domain-reliability",
+                "--disable-ipc-flooding-protection",
+                "--disable-renderer-backgrounding",
+                "--blink-settings=imagesEnabled=false"
             ]
 
             proxy_cfg = obter_proxy_dict() if usar_proxy else None
@@ -1069,6 +1077,38 @@ def ativar_tv_playwright(
             page = context.new_page()
             page.set_default_timeout(timeout_ms)
             aplicar_stealth(page)
+
+            # ⚡ ACELERAÇÃO ULTRA-RÁPIDA: Bloqueia imagens, vídeos, fontes e rastreadores no Render
+            def interceptar_rota_pesada(route):
+                try:
+                    req = route.request
+                    res_type = req.resource_type
+                    url = req.url.lower()
+                    if res_type in ["image", "media", "font"]:
+                        if "recaptcha" in url or "audio" in url:
+                            route.continue_()
+                            return
+                        route.abort()
+                        return
+                    if any(t in url for t in [
+                        "google-analytics", "analytics", "googletagmanager", "gtm.js",
+                        "facebook.net", "fbevents.js", "hotjar", "newrelic", "segment.io",
+                        "doubleclick", "onetrust", "cookie-script", "clarity.ms", "amplitude"
+                    ]):
+                        route.abort()
+                        return
+                    route.continue_()
+                except Exception:
+                    try:
+                        route.continue_()
+                    except Exception:
+                        pass
+
+            try:
+                page.route("**/*", interceptar_rota_pesada)
+            except Exception:
+                pass
+
             push_pw_log("🌐 [Playwright] Navegador pronto! Acessando tela de ativação...")
 
             ativacao_confirmada_via_api = [False]
@@ -1340,16 +1380,7 @@ def ativar_tv_playwright(
 
                 push_pw_log(f"✓ [Login] Login SKY autenticado! Redirecionado para: {page.url}", level="success")
 
-                # Aguarda estabilização do redirecionamento e montagem dos componentes React
-                time.sleep(2.0)
-
-                # Garante que estamos na tela de ativação da TV
-                if "ativar" not in page.url.lower():
-                    push_pw_log(f"[*] [Playwright] Redirecionando para tela de ativação: {URL_ATIVAR}...")
-                    page.goto(URL_ATIVAR, wait_until="domcontentloaded", timeout=20000)
-                    time.sleep(2.5)
-
-                # Salva sessão autenticada
+                # Salva sessão autenticada IMEDIATAMENTE
                 try:
                     context.storage_state(path=session_file)
                     print(f"[✓] [Playwright] Sessão SKY salva com sucesso em {session_file}")
@@ -1384,6 +1415,13 @@ def ativar_tv_playwright(
                             ativacao_confirmada_via_api[0] = True
                 except Exception as e_tbx:
                     pass
+
+                if not ativacao_confirmada_via_api[0]:
+                    # Garante que estamos na tela de ativação da TV
+                    if "ativar" not in page.url.lower():
+                        push_pw_log(f"[*] [Playwright] Redirecionando para tela de ativação: {URL_ATIVAR}...")
+                        page.goto(URL_ATIVAR, wait_until="domcontentloaded", timeout=15000)
+                        time.sleep(1.0)
 
             # ── 3. PREENCHE O CÓDIGO DA TV (6 DÍGITOS) E CLICA ATIVAR ───
             push_pw_log(f"📺 [Smart TV] Preenchendo código da TV: {tv_code}...")
