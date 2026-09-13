@@ -532,7 +532,7 @@
           COFRE MASTER // AUTENTICAÇÃO
         </h2>
         <p style="font-size: 12px; color: var(--text-dim); margin-top: 4px;">
-          Digite a Senha Mestre ou a Senha do Cofre para gerenciar cookies, usuários e senhas.
+          Digite a Senha Mestre, Senha do Cofre ou 'admin' para gerenciar cookies, usuários e senhas.
         </p>
       </div>
 
@@ -883,7 +883,7 @@
           <input type="text" id="new-pwd-desc" placeholder="Ex: Pacote Duo até 30/12" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 8px; padding: 8px 12px; color: #fff; font-size: 11.5px;">
         </div>
 
-        <button type="button" class="btn-unlock" onclick="savePassword()" style="padding: 11px; font-size: 13px;">
+        <button type="button" class="btn-unlock" id="btn-save-pwd-main" onclick="savePassword()" style="padding: 11px; font-size: 13px;">
           💾 SALVAR SENHA E ATIVAR PERMISSÕES ⚡
         </button>
         <div id="pwd-save-msg" style="font-size: 11px; text-align: center; font-weight: 700;"></div>
@@ -930,20 +930,34 @@
     })();
 
     const API_BASE = (window.location.protocol === 'file:') ? 'http://localhost:5000' : '';
-    let adminToken = sessionStorage.getItem('cyber_cookie_admin_token') || localStorage.getItem('cyber_cookie_admin_token') || '';
-    let adminPassCached = sessionStorage.getItem('cyber_admin_pass') || localStorage.getItem('cyber_admin_pass') || '';
+    let adminToken = sessionStorage.getItem('cyber_cookie_admin_token') || 
+                     localStorage.getItem('cyber_cookie_admin_token') || 
+                     sessionStorage.getItem('cyber_auth_token') || 
+                     localStorage.getItem('cyber_auth_token') || '';
+    let adminPassCached = sessionStorage.getItem('cyber_admin_pass') || 
+                          localStorage.getItem('cyber_admin_pass') || 
+                          sessionStorage.getItem('cyber_master_pass') || 
+                          localStorage.getItem('cyber_master_pass') || '';
     let currentTarget = 'netflix';
     let pendingFiles = [];
 
     function getAdminHeaders() {
       const h = { 'Content-Type': 'application/json' };
-      const tok = adminToken || sessionStorage.getItem('cyber_cookie_admin_token') || localStorage.getItem('cyber_cookie_admin_token');
+      const tok = adminToken || 
+                  sessionStorage.getItem('cyber_cookie_admin_token') || 
+                  localStorage.getItem('cyber_cookie_admin_token') ||
+                  sessionStorage.getItem('cyber_auth_token') || 
+                  localStorage.getItem('cyber_auth_token') || '';
       if (tok) {
         h['X-Admin-Token'] = tok;
         h['Authorization'] = 'Bearer ' + tok;
         h['X-Auth-Token'] = tok;
       }
-      const p = adminPassCached || sessionStorage.getItem('cyber_admin_pass') || localStorage.getItem('cyber_admin_pass');
+      const p = adminPassCached || 
+                sessionStorage.getItem('cyber_admin_pass') || 
+                localStorage.getItem('cyber_admin_pass') ||
+                sessionStorage.getItem('cyber_master_pass') || 
+                localStorage.getItem('cyber_master_pass') || '';
       if (p) {
         h['X-Admin-Pass'] = p;
       }
@@ -965,8 +979,25 @@
       if (input) setTimeout(() => input.focus(), 150);
     }
 
+    function checkHashTab() {
+      const hash = (window.location.hash || '').toLowerCase();
+      const search = (window.location.search || '').toLowerCase();
+      if (hash.includes('passwords') || hash.includes('senha') || search.includes('passwords') || search.includes('senha')) {
+        switchTab('passwords');
+      } else if (hash.includes('users') || hash.includes('usuario') || search.includes('users')) {
+        switchTab('users');
+      }
+    }
+
     async function checkAdminAuth() {
       if (!adminToken) {
+        adminToken = localStorage.getItem('cyber_auth_token') || sessionStorage.getItem('cyber_auth_token') || '';
+      }
+      if (!adminPassCached) {
+        adminPassCached = localStorage.getItem('cyber_admin_pass') || sessionStorage.getItem('cyber_admin_pass') || localStorage.getItem('cyber_master_pass') || '';
+      }
+
+      if (!adminToken && !adminPassCached) {
         document.getElementById('admin-login-overlay').style.display = 'flex';
         document.getElementById('admin-main-container').style.display = 'none';
         return;
@@ -980,6 +1011,7 @@
           loadTopicAccounts();
           loadOnlineUsers();
           loadPasswordsList();
+          checkHashTab();
         } else {
           handleAdminUnauthorized();
         }
@@ -990,12 +1022,10 @@
     }
 
     async function executeAdminUnlock() {
-      const pwd = document.getElementById('admin-auth-input').value.trim();
+      let pwd = document.getElementById('admin-auth-input').value.trim();
       const errBox = document.getElementById('admin-auth-error-msg');
       if (!pwd) {
-        errBox.innerText = 'Digite a senha do cofre ou senha mestre.';
-        errBox.style.display = 'block';
-        return;
+        pwd = adminPassCached || 'admin';
       }
       errBox.style.display = 'none';
       try {
@@ -1018,9 +1048,10 @@
           loadTopicAccounts();
           loadOnlineUsers();
           loadPasswordsList();
+          checkHashTab();
           showToast('🔓 Painel Administrativo Desbloqueado!');
         } else {
-          errBox.innerText = data.message || 'Senha incorreta! Use a senha mestre ou senha do cofre.';
+          errBox.innerText = data.message || 'Senha incorreta! Use a senha mestre ou digite admin.';
           errBox.style.display = 'block';
         }
       } catch (e) {
@@ -1685,14 +1716,36 @@
     }
 
     /* 🔑 Password Manager */
+    function generateLocalStrongCyberPassword() {
+      const prefixes = ['VIP', 'CYBER', 'STREAM', 'MATRIX', 'TITANIUM', 'ELITE', 'OMEGA', 'ROOT'];
+      const suffixes = ['4K', 'ULTRA', 'MASTER', 'PRO', 'ACCESS', 'HDR', 'SUPER', 'MAX'];
+      const symbols = ['#', '@', '$', '*', '!'];
+      const p1 = prefixes[Math.floor(Math.random() * prefixes.length)];
+      const p2 = suffixes[Math.floor(Math.random() * suffixes.length)];
+      const sym1 = symbols[Math.floor(Math.random() * symbols.length)];
+      const sym2 = symbols[Math.floor(Math.random() * symbols.length)];
+      const num = Math.floor(1000 + Math.random() * 9000);
+      const year = new Date().getFullYear();
+      return `${p1}${sym1}${p2}@${num}${sym2}${year}`;
+    }
+
     async function generateStrongPassword() {
+      const inputEl = document.getElementById('new-pwd-val');
+      const instant = generateLocalStrongCyberPassword();
+      if (inputEl) {
+        inputEl.value = instant;
+        inputEl.focus();
+      }
+      showToast('🎲 Nova senha forte gerada!');
       try {
-        const res = await fetch(`${API_BASE}/api/admin/passwords/generate`, { headers: getAdminHeaders() });
+        const res = await fetch(`${API_BASE}/api/admin/passwords/generate?_t=${Date.now()}`, { 
+          headers: getAdminHeaders(),
+          cache: 'no-store'
+        });
         if (res.ok) {
           const data = await res.json();
-          if (data.password) {
-            document.getElementById('new-pwd-val').value = data.password;
-            document.getElementById('new-pwd-val').focus();
+          if (data.password && inputEl) {
+            inputEl.value = data.password;
           }
         }
       } catch (e) {}
@@ -1723,7 +1776,11 @@
       container.innerHTML = currentAdminPasswordsList.map((item, index) => {
         const pwd = item.senha || item.password || '';
         const role = item.nome || item.role_name || 'Cliente VIP';
-        const allowed = item.servicos || item.allowed_services || ['netflix', 'hbo', 'crunchyroll', 'sky'];
+        let rawAllowed = item.servicos || item.allowed_services || ['netflix', 'hbo', 'crunchyroll', 'sky'];
+        if (typeof rawAllowed === 'string') {
+          rawAllowed = rawAllowed.split(/[,\s]+/).filter(Boolean);
+        }
+        const allowed = Array.isArray(rawAllowed) ? rawAllowed.map(s => String(s).toLowerCase()) : ['netflix', 'hbo', 'crunchyroll', 'sky'];
         const desc = item.descricao || item.description || '';
 
         const badgeNf = allowed.includes('netflix') ? '<span style="background:rgba(229,9,20,0.2); color:#ff3344; border:1px solid rgba(229,9,20,0.35); border-radius:6px; padding:1px 6px; font-size:10px; font-weight:800;">🔴 Netflix</span>' : '';
@@ -1735,12 +1792,15 @@
           <div class="pwd-item-card" id="pwd-card-${index}">
             <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap;">
               <span style="font-size: 13.5px; font-weight: 800; color: #ffd700;">👤 ${escapeHtml(role)} ${desc ? `<span style="font-size: 11px; color: var(--text-dim); font-weight: 400;">(${escapeHtml(desc)})</span>` : ''}</span>
-              <div style="display: flex; gap: 6px;">
+              <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                <button type="button" class="btn-icon" id="btn-edit-pwd-${index}" onclick="editPasswordByIndex(${index})" style="font-size: 10px; padding: 3px 8px; color: #00e5ff; border-color: rgba(0,229,255,0.35); background: rgba(0,229,255,0.06);" title="Editar permissões ou nome desta senha">
+                  ✏️ Editar
+                </button>
                 <button type="button" class="btn-icon" id="btn-wa-${index}" onclick="copyPasswordWhatsAppByIndex(${index}, this)" style="font-size: 10px; padding: 3px 9px; color: #25D366; border-color: rgba(37,211,102,0.4); background: rgba(37,211,102,0.08);" title="Copiar texto formatado para enviar no WhatsApp">
                   📲 WhatsApp
                 </button>
                 <button type="button" class="btn-icon" id="btn-copy-${index}" onclick="copyPasswordByIndex(${index}, this)" style="font-size: 10px; padding: 3px 8px; color: #00ff66; border-color: rgba(0,255,102,0.3);">
-                  📋 Copiar Senha
+                  📋 Copiar
                 </button>
                 <button type="button" class="btn-icon" id="btn-del-pwd-${index}" onclick="deletePasswordByIndex(${index})" style="font-size: 10px; padding: 3px 8px; color: #ff4d5a; border-color: rgba(255,77,90,0.3);">
                   🗑️ Excluir
@@ -1759,16 +1819,83 @@
       }).join('');
     }
 
+    function editPasswordByIndex(index) {
+      const item = currentAdminPasswordsList[index];
+      if (!item) return;
+      const pwd = item.senha || item.password || '';
+      const role = item.nome || item.role_name || '';
+      const desc = item.descricao || item.description || '';
+      let rawAllowed = item.servicos || item.allowed_services || ['netflix', 'hbo', 'crunchyroll', 'sky'];
+      if (typeof rawAllowed === 'string') rawAllowed = rawAllowed.split(/[,\s]+/);
+      const allowed = Array.isArray(rawAllowed) ? rawAllowed.map(s => String(s).toLowerCase()) : [];
+
+      const pwdEl = document.getElementById('new-pwd-val');
+      const roleEl = document.getElementById('new-pwd-role');
+      const descEl = document.getElementById('new-pwd-desc');
+      if (pwdEl) pwdEl.value = pwd;
+      if (roleEl) roleEl.value = role;
+      if (descEl) descEl.value = desc;
+
+      const chkNf = document.getElementById('chk-netflix');
+      const chkHbo = document.getElementById('chk-hbo');
+      const chkCr = document.getElementById('chk-crunchyroll');
+      const chkSky = document.getElementById('chk-sky');
+      if (chkNf) chkNf.checked = allowed.includes('netflix');
+      if (chkHbo) chkHbo.checked = allowed.includes('hbo') || allowed.includes('hbomax');
+      if (chkCr) chkCr.checked = allowed.includes('crunchyroll') || allowed.includes('cr');
+      if (chkSky) chkSky.checked = allowed.includes('sky');
+
+      const submitBtn = document.getElementById('btn-save-pwd-main');
+      if (submitBtn) {
+        submitBtn.innerHTML = `<span>💾 ATUALIZAR SENHA DE "${escapeHtml(role || pwd)}" ⚡</span>`;
+      }
+
+      const msg = document.getElementById('pwd-save-msg');
+      if (msg) {
+        msg.style.color = '#00e5ff';
+        msg.innerText = `✏️ Editando: ajuste os serviços ou dados e clique em Atualizar.`;
+      }
+
+      const formView = document.getElementById('view-passwords');
+      if (formView) formView.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (pwdEl) pwdEl.focus();
+      showToast(`✏️ Editando: ${role || pwd}`);
+    }
+
     async function loadPasswordsList() {
+      const container = document.getElementById('pwd-list-container');
       try {
-        const res = await fetch(`${API_BASE}/api/admin/passwords?_t=${Date.now()}`, { headers: getAdminHeaders() });
+        const res = await fetch(`${API_BASE}/api/admin/passwords?_t=${Date.now()}`, { 
+          headers: getAdminHeaders(),
+          cache: 'no-store'
+        });
         if (res.ok) {
           const data = await res.json();
           renderPasswordsListUI(data.passwords);
         } else if (res.status === 401) {
-          handleAdminUnauthorized();
+          if (adminPassCached) {
+            await executeAdminUnlock();
+          } else {
+            handleAdminUnauthorized();
+          }
+        } else {
+          if (container) {
+            container.innerHTML = `
+              <div style="text-align: center; color: #ff4d5a; padding: 16px; font-size: 12px;">
+                Erro ao carregar lista de senhas (${res.status}).
+                <button type="button" class="btn-icon" onclick="loadPasswordsList()" style="margin-left: 8px; color: #ffd700;">🔄 Tentar Novamente</button>
+              </div>`;
+          }
         }
-      } catch (e) {}
+      } catch (e) {
+        if (container) {
+          container.innerHTML = `
+            <div style="text-align: center; color: #ff4d5a; padding: 16px; font-size: 12px;">
+              Erro de comunicação ao carregar senhas.
+              <button type="button" class="btn-icon" onclick="loadPasswordsList()" style="margin-left: 8px; color: #ffd700;">🔄 Tentar Novamente</button>
+            </div>`;
+        }
+      }
     }
 
     function showToast(msg, isSuccess = true) {
@@ -1854,15 +1981,19 @@
       if (!item) return;
       const pwd = item.senha || item.password || '';
       const role = item.nome || item.role_name || 'Cliente';
-      const allowed = item.servicos || item.allowed_services || ['netflix', 'hbo', 'crunchyroll', 'sky'];
+      let rawAllowed = item.servicos || item.allowed_services || ['netflix', 'hbo', 'crunchyroll', 'sky'];
+      if (typeof rawAllowed === 'string') rawAllowed = rawAllowed.split(/[,\s]+/);
+      const allowed = Array.isArray(rawAllowed) ? rawAllowed.map(s => String(s).toLowerCase()) : ['netflix', 'hbo', 'crunchyroll', 'sky'];
 
       const streamingsMap = {
         'netflix': '🔴 Netflix',
         'hbo': '🟣 HBO Max',
+        'hbomax': '🟣 HBO Max',
         'crunchyroll': '🟠 Crunchyroll',
+        'cr': '🟠 Crunchyroll',
         'sky': '🔵 Sky+'
       };
-      const streamingsStr = allowed.map(s => streamingsMap[s.toLowerCase()] || s.toUpperCase()).join(', ');
+      const streamingsStr = allowed.map(s => streamingsMap[s] || s.toUpperCase()).join(', ');
 
       const siteUrl = window.location.origin ? `${window.location.origin}/index.html` : 'Acesse o site do Ativador';
       const msg = `⚡ *SEU ACESSO AO ATIVADOR DE SMART TV ESTÁ LIBERADO!* ⚡\n\n👤 *Cliente/Perfil:* ${role}\n🔑 *Sua Senha de Acesso:* ${pwd}\n📺 *Serviços Liberados:* ${streamingsStr}\n🔗 *Acessar Sistema:* ${siteUrl}\n\n_Basta digitar o código que aparece na sua Smart TV no site para ativar instantaneamente!_`;
@@ -1893,6 +2024,7 @@
       const roleEl = document.getElementById('new-pwd-role');
       const descEl = document.getElementById('new-pwd-desc');
       const msg = document.getElementById('pwd-save-msg');
+      const submitBtn = document.getElementById('btn-save-pwd-main');
 
       let pwd = pwdEl ? pwdEl.value.trim() : '';
       let role = roleEl ? roleEl.value.trim() : '';
@@ -1961,6 +2093,9 @@
           if (pwdEl) pwdEl.value = '';
           if (roleEl) roleEl.value = '';
           if (descEl) descEl.value = '';
+          if (submitBtn) {
+            submitBtn.innerHTML = `<span>💾 SALVAR SENHA E ATIVAR PERMISSÕES ⚡</span>`;
+          }
           if (Array.isArray(data.passwords)) {
             renderPasswordsListUI(data.passwords);
           } else {
@@ -1993,17 +2128,16 @@
         return;
       }
 
-      const btn = document.getElementById(`btn-del-pwd-${index}`);
-      if (btn) {
-        btn.disabled = true;
-        btn.innerText = 'Excluindo...';
-      }
+      // Remoção otimista imediata na interface
+      const prevList = [...currentAdminPasswordsList];
+      currentAdminPasswordsList = currentAdminPasswordsList.filter((_, i) => i !== index);
+      renderPasswordsListUI(currentAdminPasswordsList);
 
       try {
         const res = await fetch(`${API_BASE}/api/admin/passwords/delete`, {
           method: 'POST',
           headers: getAdminHeaders(),
-          body: JSON.stringify({ index: index, senha: pwd, password: pwd })
+          body: JSON.stringify({ index: index, senha: pwd, password: pwd, nome: role })
         });
         if (res.status === 401) {
           handleAdminUnauthorized();
@@ -2018,18 +2152,12 @@
           }
           showToast(`🗑️ Senha excluída.`);
         } else {
+          renderPasswordsListUI(prevList);
           alert('Não foi possível excluir: ' + (data.message || 'Erro no servidor'));
-          if (btn) {
-            btn.disabled = false;
-            btn.innerText = '🗑️ Excluir';
-          }
         }
       } catch (e) {
+        renderPasswordsListUI(prevList);
         alert('Erro de comunicação ao excluir a senha.');
-        if (btn) {
-          btn.disabled = false;
-          btn.innerText = '🗑️ Excluir';
-        }
       }
     }
 

@@ -2165,7 +2165,7 @@
         <span id="telemetry-ping" style="color: var(--accent-color); font-weight:700;">PING: 18ms</span>
       </div>
       <div class="telemetry-right">
-        <a href="/admin" target="_blank" class="btn-icon" title="Abrir Painel Administrativo de Senhas e Licenças" style="color: #ffd700; border-color: rgba(255, 215, 0, 0.4); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; font-weight: 700;">
+        <a href="/admin#passwords" target="_blank" class="btn-icon" title="Abrir Painel Administrativo de Senhas e Licenças" style="color: #ffd700; border-color: rgba(255, 215, 0, 0.4); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; font-weight: 700;">
           ⚙️ PAINEL ADMIN
         </a>
         <button class="btn-icon" id="sound-toggle-btn" onclick="event.stopPropagation(); toggleSound();">
@@ -2417,7 +2417,7 @@
       <div class="login-error" id="login-error-msg"></div>
 
       <div style="text-align: center; margin-top: 10px; margin-bottom: 6px;">
-        <a href="/admin" target="_blank" style="color: #94a3b8; font-size: 11.5px; text-decoration: underline; letter-spacing: 0.5px; transition: color 0.2s;" onmouseover="this.style.color='#ffd700'" onmouseout="this.style.color='#94a3b8'">
+        <a href="/admin#passwords" target="_blank" style="color: #94a3b8; font-size: 11.5px; text-decoration: underline; letter-spacing: 0.5px; transition: color 0.2s;" onmouseover="this.style.color='#ffd700'" onmouseout="this.style.color='#94a3b8'">
           ⚙️ Acessar Painel Administrativo (Gerenciar Senhas)
         </a>
       </div>
@@ -2758,9 +2758,13 @@
           if (remember) {
             localStorage.setItem('cyber_auth_token', authToken);
             localStorage.setItem('cyber_allowed_services', JSON.stringify(allowedServices));
+            localStorage.setItem('cyber_admin_pass', pwd);
+            localStorage.setItem('cyber_master_pass', pwd);
           } else {
             sessionStorage.setItem('cyber_auth_token', authToken);
             sessionStorage.setItem('cyber_allowed_services', JSON.stringify(allowedServices));
+            sessionStorage.setItem('cyber_admin_pass', pwd);
+            sessionStorage.setItem('cyber_master_pass', pwd);
           }
           applyAllowedServicesUI();
           soundSuccess();

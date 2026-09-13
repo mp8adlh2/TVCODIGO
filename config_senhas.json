@@ -1,13 +1,15 @@
 {
   "senhas": [
     {
-      "senha": "CYBER#ACCESS@2531$ELITE*15!2026",
+      "senha": "MATRIX#TOKEN@5463$ELITE*90!2026",
       "nome": "Cliente VIP",
       "servicos": [
         "netflix",
-        "hbo"
+        "hbo",
+        "crunchyroll",
+        "sky"
       ],
-      "descricao": "Libera: netflix, hbo"
+      "descricao": "Libera: netflix, hbo, crunchyroll, sky"
     },
     {
       "senha": "MATRIX#SECURITY@5621$4K*63!2026",
@@ -17,33 +19,6 @@
         "sky"
       ],
       "descricao": "Libera: netflix, sky"
-    },
-    {
-      "senha": "TITANIUM#VAULT@6470$VIP*43!2026",
-      "nome": "Cliente VIP",
-      "servicos": [
-        "netflix",
-        "hbo"
-      ],
-      "descricao": "Libera: netflix, hbo"
-    },
-    {
-      "senha": "VIP#SECURITY@8929$VIP*24!2026",
-      "nome": "Cliente VIP",
-      "servicos": [
-        "netflix",
-        "hbo"
-      ],
-      "descricao": "Libera: netflix, hbo"
-    },
-    {
-      "senha": "OMEGA#VAULT@8384$PREMIUM*67!2026",
-      "nome": "5521984920015",
-      "servicos": [
-        "netflix",
-        "hbo"
-      ],
-      "descricao": "Libera: netflix, hbo"
     },
     {
       "senha": "VIP#MASTER@1444$4K*76!2026",
@@ -90,15 +65,6 @@
     },
     {
       "senha": "DUO#STREAM@8831$NETFLIX*HBOMAX#PREMIUM*VIP!2026",
-      "nome": "Senha Oficial Duo (Netflix + HBO)",
-      "servicos": [
-        "netflix",
-        "hbo"
-      ],
-      "descricao": "Libera: netflix, hbo"
-    },
-    {
-      "senha": "CINEMA#PASS@7742$FLIX*MAX#HIGH*DEFINITION!2026",
       "nome": "Senha Oficial Duo (Netflix + HBO)",
       "servicos": [
         "netflix",
