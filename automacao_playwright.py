@@ -1349,23 +1349,14 @@ def ativar_tv_playwright(
                     if tem_captcha:
                         resolver_recaptcha_se_existir(page, max_wait_sec=30 if not headless else 15)
 
-                    # Detecção imediata de mensagem de erro de login/senha
-                    erro_loc = page.locator(".error-message, [role='alert'], .feedback-error, .alert-danger, [class*='feedback'], [class*='error'], [class*='alert'], span:has-text('inválid'), span:has-text('invalid'), span:has-text('incorret'), span:has-text('valido'), span:has-text('válido'), p:has-text('incorret'), p:has-text('valido'), p:has-text('válido'), p:has-text('não encontramos'), div:has-text('incorret'), div:has-text('valido')")
+                    # Detecção precisa de mensagem real de erro de credenciais (sem falsos-positivos)
+                    erro_loc = page.locator(".error-message, [role='alert'], .feedback-error, .alert-danger, p.error, span.error")
                     if erro_loc.count() > 0 and erro_loc.first.is_visible():
                         msg_err = erro_loc.first.inner_text().strip()
-                        if len(msg_err) > 3:
+                        msg_lower = msg_err.lower()
+                        if any(k in msg_lower for k in ["senha incorreta", "usuário incorreto", "credenciais incorretas", "não encontramos uma conta"]):
                             registrar_conta_invalida(email, msg_err)
                             raise Exception(f"Credenciais inválidas SKY ({email}): {msg_err}")
-
-                    try:
-                        content_txt = page.content().lower()
-                        for err_key in ["digite o e-mail ou celular", "credenciais incorretas", "usuário ou senha", "senha incorreta", "não encontramos uma conta"]:
-                            if err_key in content_txt:
-                                registrar_conta_invalida(email, err_key)
-                                raise Exception(f"Credenciais inválidas SKY ({email}): {err_key}")
-                    except Exception as ex:
-                        if "Credenciais inválidas" in str(ex):
-                            raise ex
 
                     time.sleep(0.5)
 

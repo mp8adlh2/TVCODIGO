@@ -371,12 +371,19 @@ def load_raw_json_accounts() -> List[dict]:
                     if isinstance(addr, dict):
                         state = addr.get("state") or "BR"
 
+                jwt = data.get("jwt_token")
+                sso_val = None
+                if jwt and "ey" in jwt:
+                    payload = parse_sso_jwt(jwt)
+                    if payload.get("exp", 0) > time.time():
+                        sso_val = jwt
+
                 accounts.append({
                     "file": f"raw_json/{fname}",
                     "email": em,
                     "password": pw,
-                    "jwt_token": data.get("jwt_token"),
-                    "sso_token": data.get("jwt_token") or data.get("sso_token"),
+                    "jwt_token": jwt,
+                    "sso_token": sso_val,
                     "access_token": data.get("access_token"),
                     "info": {
                         "email": em,
@@ -387,7 +394,7 @@ def load_raw_json_accounts() -> List[dict]:
                         "adicionais": [],
                         "source": "raw_json"
                     },
-                    "validated": bool(data.get("jwt_token"))
+                    "validated": bool(sso_val)
                 })
             except Exception:
                 pass
@@ -702,8 +709,9 @@ def load_all_sky_accounts(force_reload: bool = False) -> List[dict]:
                         if existing.get("email", "").strip().lower() == em:
                             if raw_acc.get("jwt_token"):
                                 existing["jwt_token"] = raw_acc["jwt_token"]
-                                existing["sso_token"] = raw_acc["jwt_token"]
-                                existing["validated"] = True
+                                if raw_acc.get("sso_token"):
+                                    existing["sso_token"] = raw_acc["sso_token"]
+                                    existing["validated"] = True
                             if raw_acc.get("info") and isinstance(raw_acc["info"], dict):
                                 if raw_acc["info"].get("client_name") and not existing["info"].get("client_name"):
                                     existing["info"]["client_name"] = raw_acc["info"]["client_name"]
