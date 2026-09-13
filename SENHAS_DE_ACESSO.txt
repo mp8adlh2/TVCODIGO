@@ -54,15 +54,7 @@ a liberação dos serviços na tela do ativador em tempo real.
  NETFLIX#ONLY@9421$RED*VAULT#ULTRA*4K*HDR!2026
 
 ================================================================================
- 7. 🔑 SENHA OFICIAL NETFLIX (4K UHD)
-================================================================================
- Libera: 🔴 Netflix
- Detalhes: Libera: netflix
- Senha:
- para manter a sessão salva e não precisar digitar novamente.
-
-================================================================================
- 8. 🔑 SENHA OFICIAL HBO MAX
+ 7. 🔑 SENHA OFICIAL HBO MAX
 ================================================================================
  Libera: 🟣 HBO Max
  Detalhes: Libera: hbo
@@ -70,7 +62,7 @@ a liberação dos serviços na tela do ativador em tempo real.
  HBOMAX#ONLY@8153$PURPLE*WARNER#STREAM*4K!2026
 
 ================================================================================
- 9. 🔑 SENHA OFICIAL SKY+ / SKY TV
+ 8. 🔑 SENHA OFICIAL SKY+ / SKY TV
 ================================================================================
  Libera: 🔵 Sky+
  Detalhes: Libera: sky
@@ -78,7 +70,7 @@ a liberação dos serviços na tela do ativador em tempo real.
  SKYPLUS#ONLY@4918$BLUE*FIBRA#SUPER*HD*TV!2026
 
 ================================================================================
- 10. 🔑 SENHA OFICIAL CRUNCHYROLL
+ 9. 🔑 SENHA OFICIAL CRUNCHYROLL
 ================================================================================
  Libera: 🟠 Crunchyroll
  Detalhes: Libera: crunchyroll
@@ -86,7 +78,7 @@ a liberação dos serviços na tela do ativador em tempo real.
  CRUNCHYROLL#ONLY@6274$ORANGE*ANIME#MEGA*FAN!2026
 
 ================================================================================
- 11. 🔑 SENHA OFICIAL DUO (NETFLIX + HBO)
+ 10. 🔑 SENHA OFICIAL DUO (NETFLIX + HBO)
 ================================================================================
  Libera: 🔴 Netflix | 🟣 HBO Max
  Detalhes: Libera: netflix, hbo
@@ -94,7 +86,7 @@ a liberação dos serviços na tela do ativador em tempo real.
  DUO#STREAM@8831$NETFLIX*HBOMAX#PREMIUM*VIP!2026
 
 ================================================================================
- 12. 🔑 SENHA OFICIAL DUO (NETFLIX + HBO)
+ 11. 🔑 SENHA OFICIAL DUO (NETFLIX + HBO)
 ================================================================================
  Libera: 🔴 Netflix | 🟣 HBO Max
  Detalhes: Libera: netflix, hbo

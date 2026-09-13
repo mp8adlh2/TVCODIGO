@@ -930,18 +930,39 @@
     })();
 
     const API_BASE = (window.location.protocol === 'file:') ? 'http://localhost:5000' : '';
-    let adminToken = sessionStorage.getItem('cyber_cookie_admin_token') || localStorage.getItem('cyber_auth_token') || '';
+    let adminToken = sessionStorage.getItem('cyber_cookie_admin_token') || localStorage.getItem('cyber_cookie_admin_token') || '';
+    let adminPassCached = sessionStorage.getItem('cyber_admin_pass') || localStorage.getItem('cyber_admin_pass') || '';
     let currentTarget = 'netflix';
     let pendingFiles = [];
 
     function getAdminHeaders() {
       const h = { 'Content-Type': 'application/json' };
-      if (adminToken) {
-        h['X-Admin-Token'] = adminToken;
-        h['Authorization'] = 'Bearer ' + adminToken;
-        h['X-Auth-Token'] = adminToken;
+      const tok = adminToken || sessionStorage.getItem('cyber_cookie_admin_token') || localStorage.getItem('cyber_cookie_admin_token');
+      if (tok) {
+        h['X-Admin-Token'] = tok;
+        h['Authorization'] = 'Bearer ' + tok;
+        h['X-Auth-Token'] = tok;
+      }
+      const p = adminPassCached || sessionStorage.getItem('cyber_admin_pass') || localStorage.getItem('cyber_admin_pass');
+      if (p) {
+        h['X-Admin-Pass'] = p;
       }
       return h;
+    }
+
+    function handleAdminUnauthorized(msg = 'Sua sessão administrativa expirou. Desbloqueie o painel novamente.') {
+      adminToken = '';
+      sessionStorage.removeItem('cyber_cookie_admin_token');
+      localStorage.removeItem('cyber_cookie_admin_token');
+      const errBox = document.getElementById('admin-auth-error-msg');
+      if (errBox) {
+        errBox.innerText = msg;
+        errBox.style.display = 'block';
+      }
+      document.getElementById('admin-login-overlay').style.display = 'flex';
+      document.getElementById('admin-main-container').style.display = 'none';
+      const input = document.getElementById('admin-auth-input');
+      if (input) setTimeout(() => input.focus(), 150);
     }
 
     async function checkAdminAuth() {
@@ -960,10 +981,7 @@
           loadOnlineUsers();
           loadPasswordsList();
         } else {
-          adminToken = '';
-          sessionStorage.removeItem('cyber_cookie_admin_token');
-          document.getElementById('admin-login-overlay').style.display = 'flex';
-          document.getElementById('admin-main-container').style.display = 'none';
+          handleAdminUnauthorized();
         }
       } catch (e) {
         document.getElementById('admin-login-overlay').style.display = 'flex';
@@ -975,7 +993,7 @@
       const pwd = document.getElementById('admin-auth-input').value.trim();
       const errBox = document.getElementById('admin-auth-error-msg');
       if (!pwd) {
-        errBox.innerText = 'Digite a senha do cofre.';
+        errBox.innerText = 'Digite a senha do cofre ou senha mestre.';
         errBox.style.display = 'block';
         return;
       }
@@ -989,29 +1007,39 @@
         const data = await res.json();
         if (data.success && data.admin_token) {
           adminToken = data.admin_token;
+          adminPassCached = pwd;
           sessionStorage.setItem('cyber_cookie_admin_token', adminToken);
+          localStorage.setItem('cyber_cookie_admin_token', adminToken);
+          sessionStorage.setItem('cyber_admin_pass', pwd);
+          localStorage.setItem('cyber_admin_pass', pwd);
           document.getElementById('admin-login-overlay').style.display = 'none';
           document.getElementById('admin-main-container').style.display = 'flex';
           loadStats();
           loadTopicAccounts();
           loadOnlineUsers();
           loadPasswordsList();
+          showToast('🔓 Painel Administrativo Desbloqueado!');
         } else {
-          errBox.innerText = data.message || 'Senha incorreta!';
+          errBox.innerText = data.message || 'Senha incorreta! Use a senha mestre ou senha do cofre.';
           errBox.style.display = 'block';
         }
       } catch (e) {
-        errBox.innerText = 'Erro ao conectar ao servidor. Certifique-se de que o app.py está em execução.';
+        errBox.innerText = 'Erro ao conectar ao servidor. Certifique-se de que o ativador está em execução.';
         errBox.style.display = 'block';
       }
     }
 
     function lockAdminSession() {
       adminToken = '';
+      adminPassCached = '';
       sessionStorage.removeItem('cyber_cookie_admin_token');
+      localStorage.removeItem('cyber_cookie_admin_token');
+      sessionStorage.removeItem('cyber_admin_pass');
+      localStorage.removeItem('cyber_admin_pass');
       document.getElementById('admin-auth-input').value = '';
       document.getElementById('admin-login-overlay').style.display = 'flex';
       document.getElementById('admin-main-container').style.display = 'none';
+      showToast('🔒 Painel Bloqueado');
     }
 
     function switchTab(tab) {
@@ -1703,6 +1731,8 @@
         if (res.ok) {
           const data = await res.json();
           renderPasswordsListUI(data.passwords);
+        } else if (res.status === 401) {
+          handleAdminUnauthorized();
         }
       } catch (e) {}
     }
@@ -1882,27 +1912,40 @@
             description: desc
           })
         });
+
+        if (res.status === 401) {
+          handleAdminUnauthorized('Sessão expirada para salvar senha. Por favor, desbloqueie novamente.');
+          return;
+        }
+
         const data = await res.json();
         if (data.success) {
           if (msg) {
             msg.style.color = '#00ff66';
-            msg.innerText = `🎉 Senha "${pwd}" salva com sucesso!`;
+            msg.innerText = `🎉 Senha "${pwd}" salva e ativada com sucesso!`;
           }
           if (pwdEl) pwdEl.value = '';
           if (roleEl) roleEl.value = '';
           if (descEl) descEl.value = '';
-          loadPasswordsList();
+          if (Array.isArray(data.passwords)) {
+            renderPasswordsListUI(data.passwords);
+          } else {
+            loadPasswordsList();
+          }
+          showToast(`🎉 Senha "${pwd}" cadastrada com sucesso!`);
         } else {
           if (msg) {
             msg.style.color = '#ff4d5a';
             msg.innerText = data.message || 'Erro ao salvar senha.';
           }
+          showToast(data.message || 'Erro ao salvar senha.', false);
         }
       } catch (e) {
         if (msg) {
           msg.style.color = '#ff4d5a';
           msg.innerText = 'Erro ao conectar ao servidor.';
         }
+        showToast('Erro de conexão ao salvar senha.', false);
       }
     }
 
@@ -1928,6 +1971,10 @@
           headers: getAdminHeaders(),
           body: JSON.stringify({ index: index, senha: pwd, password: pwd })
         });
+        if (res.status === 401) {
+          handleAdminUnauthorized();
+          return;
+        }
         const data = await res.json();
         if (res.ok && data.success) {
           if (Array.isArray(data.passwords)) {
@@ -1935,6 +1982,7 @@
           } else {
             loadPasswordsList();
           }
+          showToast(`🗑️ Senha excluída.`);
         } else {
           alert('Não foi possível excluir: ' + (data.message || 'Erro no servidor'));
           if (btn) {
