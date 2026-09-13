@@ -1019,89 +1019,57 @@ def ativar_tv_playwright(
                 "--disable-gpu",
                 "--disable-software-rasterizer",
                 "--disable-extensions",
-                "--disable-background-networking",
-                "--js-flags=--max-old-space-size=128",
-                "--password-store=basic",
-                "--disable-features=PasswordLeakDetection,AutofillServerCommunication,PasswordGeneration,SavePasswordBubble,PasswordManagerUI,PasswordCheck,Translate",
-                "--disable-save-password-bubble",
-                "--disable-translate"
+                "--disable-background-networking"
             ]
-
-            conta_profile_dir = os.path.join(PROFILE_DIR, sanitizar_nome_arquivo(email))
-            os.makedirs(conta_profile_dir, exist_ok=True)
-            desativar_gerenciador_senhas_perfil(conta_profile_dir)
 
             proxy_cfg = obter_proxy_dict() if usar_proxy else None
             if proxy_cfg:
                 push_pw_log(f"🇧🇷 [Proxy] Conectando via Proxy Residencial BR ({PROXY_HOST})...")
             else:
-                push_pw_log(f"🌐 [Playwright] Iniciando Chromium para {email}...")
+                push_pw_log(f"🌐 [Playwright] Iniciando Chromium direto para {email}...")
 
+            browser = None
             try:
-                context = p.chromium.launch_persistent_context(
-                    user_data_dir=conta_profile_dir,
+                browser = p.chromium.launch(
                     headless=headless,
-                    ignore_default_args=["--enable-automation"],
                     args=args,
-                    proxy=proxy_cfg,
-                    viewport={"width": 1280, "height": 850},
-                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-                    locale="pt-BR",
-                    timezone_id="America/Sao_Paulo"
+                    proxy=proxy_cfg
                 )
             except Exception as e_launch:
                 err_msg = str(e_launch)
                 if "Executable doesn't exist" in err_msg or "playwright install" in err_msg or "executablePath" in err_msg:
                     print("[!] [Playwright] Executável do Chromium ausente. Executando download automático no servidor...")
                     garantir_navegador_instalado()
-                    context = p.chromium.launch_persistent_context(
-                        user_data_dir=conta_profile_dir,
+                    browser = p.chromium.launch(
                         headless=headless,
-                        ignore_default_args=["--enable-automation"],
                         args=args,
-                        proxy=proxy_cfg,
-                        viewport={"width": 1280, "height": 850},
-                        user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-                        locale="pt-BR",
-                        timezone_id="America/Sao_Paulo"
+                        proxy=proxy_cfg
                     )
                 else:
                     raise e_launch
 
-            # Reutiliza cookies e localStorage da conta específica se existir e tiver sessão válida
-            s_data = None
-            if os.path.exists(session_file) and os.path.getsize(session_file) > 100:
-                try:
-                    with open(session_file, "r", encoding="utf-8") as sf:
-                        s_data = json.load(sf)
-                        cookies = s_data.get("cookies", [])
-                        if cookies:
-                            context.add_cookies(cookies)
-                            print(f"[*] [Playwright] {len(cookies)} cookies restaurados para {email}")
-                except Exception:
-                    pass
+            # Restaura sessão anterior via storage_state nativo (rápido, sem locks nem conflitos de pasta)
+            storage_path = session_file if (os.path.exists(session_file) and os.path.getsize(session_file) > 100) else None
+            try:
+                context = browser.new_context(
+                    viewport={"width": 1280, "height": 850},
+                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                    locale="pt-BR",
+                    timezone_id="America/Sao_Paulo",
+                    storage_state=storage_path
+                )
+            except Exception:
+                context = browser.new_context(
+                    viewport={"width": 1280, "height": 850},
+                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                    locale="pt-BR",
+                    timezone_id="America/Sao_Paulo"
+                )
 
-            page = context.pages[0] if context.pages else context.new_page()
+            page = context.new_page()
             page.set_default_timeout(timeout_ms)
             aplicar_stealth(page)
-
-            # Restaura localStorage de SkyMais antes do carregamento da página
-            if s_data and "origins" in s_data:
-                for origin in s_data["origins"]:
-                    if "skymais.com.br" in origin.get("origin", ""):
-                        ls_items = origin.get("localStorage", [])
-                        if ls_items:
-                            setters = []
-                            for item in ls_items:
-                                k_json = json.dumps(item["name"])
-                                v_json = json.dumps(item["value"])
-                                setters.append(f"try {{ localStorage.setItem({k_json}, {v_json}); }} catch(e) {{}}")
-                            script_str = "() => {\n  " + "\n  ".join(setters) + "\n}"
-                            try:
-                                page.add_init_script(script_str)
-                                print(f"[*] [Playwright] {len(ls_items)} itens de sessão restaurados no localStorage.")
-                            except Exception:
-                                pass
+            push_pw_log("🌐 [Playwright] Navegador pronto! Acessando tela de ativação...")
 
             ativacao_confirmada_via_api = [False]
 
@@ -1508,7 +1476,15 @@ def ativar_tv_playwright(
                 push_pw_log(f"⚡ [SUCESSO] TV {tv_code} pareada com sucesso!", level="success")
 
             tempo_total = round(time.time() - inicio, 2)
-            context.close()
+            try:
+                context.close()
+            except Exception:
+                pass
+            try:
+                if browser:
+                    browser.close()
+            except Exception:
+                pass
 
             jwt_token = tokens_capturados.get("ssoToken") or tokens_capturados.get("idToken")
             if jwt_token:
@@ -1553,6 +1529,17 @@ def ativar_tv_playwright(
                 page.screenshot(path=screenshot_path)
         except Exception:
             screenshot_path = None
+
+        try:
+            if 'context' in locals() and context:
+                context.close()
+        except Exception:
+            pass
+        try:
+            if 'browser' in locals() and browser:
+                browser.close()
+        except Exception:
+            pass
 
         return {
             "success": False,
