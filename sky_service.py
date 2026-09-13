@@ -879,11 +879,9 @@ def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -
     password = account_data.get("password", "").strip()
     push_sky_log(f"📡 [Sky+] Transmitindo token para TV: {clean_code} (Conta: {email})...")
 
-    # Se estiver rodando na nuvem (Linux/Render.com), habilita automaticamente o Proxy Residencial BR
-    import sys
-    is_cloud = bool(os.environ.get("RENDER") or sys.platform != "win32")
-    if is_cloud:
-        use_proxy = True
+    # Inicia SEMPRE com conexão direta rápida (sem proxy para velocidade máxima).
+    # O proxy residencial é ativado apenas se houver bloqueio real de IP.
+    use_proxy = False
 
     # ═══════════════════════════════════════════════════════════════
     # ESTRATÉGIA 1: ATIVAÇÃO DIRETA EM NUVEM (SEM PC / SEM NAVEGADOR)
@@ -997,9 +995,13 @@ def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -
             usar_proxy=use_proxy
         )
 
-        # Se o Google bloqueou o IP local, retenta automaticamente com Proxy Residencial DataImpulse
-        if res.get("motivo") == "IP_BLOQUEADO_GOOGLE" and not use_proxy:
-            push_sky_log("🇧🇷 [Proxy] Google reCAPTCHA bloqueou IP, ativando Proxy Residencial DataImpulse (BR)...", level="warn")
+        # Se o Google bloqueou o IP local ou houve bloqueio de rede, retenta automaticamente com Proxy Residencial DataImpulse
+        houve_bloqueio = (
+            res.get("motivo") in ["IP_BLOQUEADO_GOOGLE", "IP_BLOQUEADO"] or
+            any(k in str(res.get("message", "")).lower() for k in ["bloque", "blocked", "403", "forbidden", "rate limit", "recaptcha bloqueou"])
+        )
+        if houve_bloqueio and not use_proxy:
+            push_sky_log("🇧🇷 [Proxy Fallback] Bloqueio de IP detectado, ativando Proxy Residencial DataImpulse (BR)...", level="warn")
             res = automacao_playwright.ativar_tv_playwright(
                 email=email,
                 password=password,

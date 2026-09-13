@@ -1431,7 +1431,7 @@ def save_activation_log(email: str, password: str, tv_code: str, success: bool, 
 # ============================================================
 def activate_with_account(
     email: str, password: str, tv_code: str,
-    use_proxy: bool = True,
+    use_proxy: bool = False,
     payload_android: Optional[str] = None,
     payload_web: Optional[str] = None,
     stop_event: Optional[threading.Event] = None,

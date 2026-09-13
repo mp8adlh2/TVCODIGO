@@ -454,9 +454,9 @@ def resolver_recaptcha_se_existir(page, max_wait_sec: int = 40) -> bool:
             erro_audio = bframe.locator(".rc-doscaptcha-body-text, .rc-audiochallenge-error-message")
             if erro_audio.count() > 0 and erro_audio.first.is_visible():
                 txt_erro = erro_audio.first.inner_text().strip()
-                if "bloque" in txt_erro.lower() or "tente mais tarde" in txt_erro.lower():
+                if "bloque" in txt_erro.lower() or "tente mais tarde" in txt_erro.lower() or "automated queries" in txt_erro.lower():
                     print(f"[!] [reCAPTCHA] Google bloqueou desafio de áudio: '{txt_erro}'")
-                    break
+                    raise Exception("IP_BLOQUEADO_GOOGLE")
 
             audio_source = bframe.locator("#audio-source")
             if audio_source.count() == 0 or not audio_source.first.is_visible():
