@@ -1,6 +1,15 @@
 {
   "senhas": [
     {
+      "senha": "CYBER#ACCESS@2531$ELITE*15!2026",
+      "nome": "Cliente VIP",
+      "servicos": [
+        "netflix",
+        "hbo"
+      ],
+      "descricao": "Libera: netflix, hbo"
+    },
+    {
       "senha": "MATRIX#SECURITY@5621$4K*63!2026",
       "nome": "Cliente VIP",
       "servicos": [

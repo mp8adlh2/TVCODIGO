@@ -972,7 +972,7 @@
         return;
       }
       try {
-        const res = await fetch(`${API_BASE}/api/admin/stats`, { headers: getAdminHeaders() });
+        const res = await fetch(`${API_BASE}/api/admin/stats?_t=${Date.now()}`, { headers: getAdminHeaders(), cache: 'no-store' });
         if (res.ok) {
           document.getElementById('admin-login-overlay').style.display = 'none';
           document.getElementById('admin-main-container').style.display = 'flex';
@@ -1078,7 +1078,7 @@
 
     async function loadStats() {
       try {
-        const res = await fetch(`${API_BASE}/api/admin/stats`, { headers: getAdminHeaders() });
+        const res = await fetch(`${API_BASE}/api/admin/stats?_t=${Date.now()}`, { headers: getAdminHeaders(), cache: 'no-store' });
         if (res.ok) {
           const data = await res.json();
           document.getElementById('stat-nf-count').innerText = data.netflix_verified || data.netflix_total || '0';
@@ -1113,7 +1113,7 @@
       container.innerHTML = '<div style="text-align: center; color: var(--text-dim); padding: 12px; font-size: 11px;">Carregando contas...</div>';
 
       try {
-        const res = await fetch(`${API_BASE}/api/admin/accounts?service=${currentTarget}`, { headers: getAdminHeaders() });
+        const res = await fetch(`${API_BASE}/api/admin/accounts?service=${currentTarget}&_t=${Date.now()}`, { headers: getAdminHeaders(), cache: 'no-store' });
         if (res.ok) {
           const data = await res.json();
           rawTopicAccounts = data.accounts || [];
@@ -1139,9 +1139,13 @@
       renderTopicAccounts(filtered);
     }
 
+    let currentRenderedAccounts = [];
+
     function renderTopicAccounts(list) {
       const container = document.getElementById('topic-accounts-container');
       if (!container) return;
+
+      currentRenderedAccounts = list || [];
 
       if (!list || list.length === 0) {
         container.innerHTML = '<div style="text-align: center; color: var(--text-dim); padding: 16px; font-size: 11px;">Nenhuma conta encontrada para este tópico. Adicione novas contas acima!</div>';
@@ -1153,8 +1157,6 @@
         const plan = acc.plan || 'Plano Padrão';
         const country = acc.country || 'BR';
         const isReady = acc.is_ready;
-        const idSafe = encodeURIComponent(acc.id || acc.filename || acc.email);
-        const emailSafe = encodeURIComponent(acc.email || '');
 
         return `
           <div class="acc-item-card">
@@ -1172,7 +1174,7 @@
               </div>
             </div>
 
-            <button type="button" class="btn-delete-acc" onclick="deleteTopicAccount('${currentTarget}', decodeURIComponent('${idSafe}'), decodeURIComponent('${emailSafe}'))">
+            <button type="button" class="btn-delete-acc" onclick="deleteAccountByIndex(${idx})">
               🗑️ Remover
             </button>
           </div>
@@ -1180,26 +1182,58 @@
       }).join('');
     }
 
+    function deleteAccountByIndex(idx) {
+      const acc = currentRenderedAccounts[idx];
+      if (!acc) return;
+      deleteTopicAccount(currentTarget, acc.id || acc.filename, acc.email);
+    }
+
     async function deleteTopicAccount(service, id, email) {
       const displayName = email || id;
-      if (!confirm(`Deseja realmente remover esta conta/cookie do tópico ${service.toUpperCase()}?\n\n• Identificador: ${displayName}\n\nEsta ação excluirá o arquivo/registro do servidor imediatamente.`)) {
+      if (!confirm(`Deseja realmente remover esta conta/cookie do tópico ${service.toUpperCase()}?\n\n• Identificador: ${displayName}\n\nEsta ação excluirá o arquivo/registro do servidor permanentemente.`)) {
         return;
       }
+
+      // Remoção otimista imediata na interface
+      const prevAccounts = [...rawTopicAccounts];
+      const tId = (id || '').toLowerCase();
+      const tEmail = (email || '').toLowerCase();
+      rawTopicAccounts = rawTopicAccounts.filter(acc => {
+        const aId = (acc.id || acc.filename || '').toLowerCase();
+        const aEmail = (acc.email || '').toLowerCase();
+        if (tId && (aId === tId || aId.includes(tId) || tId.includes(aId))) return false;
+        if (tEmail && (aEmail === tEmail || aId.includes(tEmail))) return false;
+        return true;
+      });
+      const badgeEl = document.getElementById('accounts-count-badge');
+      if (badgeEl) badgeEl.innerText = rawTopicAccounts.length;
+      filterTopicAccounts();
 
       try {
         const res = await fetch(`${API_BASE}/api/admin/accounts/delete`, {
           method: 'POST',
-          headers: getAdminHeaders(),
+          headers: { ...getAdminHeaders(), 'Content-Type': 'application/json' },
+          cache: 'no-store',
           body: JSON.stringify({ service: service, id: id, email: email })
         });
         const data = await res.json();
         if (data.success) {
-          loadStats();
-          loadTopicAccounts();
+          if (typeof showToast === 'function') {
+            showToast(`🗑️ ${displayName} removido com sucesso.`);
+          }
+          await loadStats();
+          await loadTopicAccounts();
         } else {
+          // Reverte se a exclusão falhar
+          rawTopicAccounts = prevAccounts;
+          if (badgeEl) badgeEl.innerText = rawTopicAccounts.length;
+          filterTopicAccounts();
           alert('Erro ao excluir: ' + (data.message || 'Falha na requisição.'));
         }
       } catch (e) {
+        rawTopicAccounts = prevAccounts;
+        if (badgeEl) badgeEl.innerText = rawTopicAccounts.length;
+        filterTopicAccounts();
         alert('Erro ao comunicar com o servidor: ' + e.message);
       }
     }

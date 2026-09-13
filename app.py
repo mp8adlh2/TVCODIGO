@@ -50,16 +50,17 @@ def read_secure_text(fpath: str) -> str:
         return ""
 
 def sync_cookies_bundle():
-    """Garante suporte total às pastas netflix, hbomax, combo e hits com suporte a criptografia."""
+    """Garante suporte total às pastas netflix, hbomax, combo e hits sem ressuscitar arquivos excluídos."""
     os.makedirs(NETFLIX_COOKIES_FOLDER, exist_ok=True)
     os.makedirs(HITS_FOLDER, exist_ok=True)
     os.makedirs(HBO_COOKIES_FOLDER, exist_ok=True)
     os.makedirs(CRUNCHYROLL_COMBO_FOLDER, exist_ok=True)
     
-    # Migra automaticamente arquivos antigos se existirem
     old_netflix = os.path.join(BASE_DIR, "cookies")
     old_hbo = os.path.join(BASE_DIR, "cookies 01")
-    if os.path.exists(old_netflix):
+    
+    nf_existing = glob.glob(os.path.join(NETFLIX_COOKIES_FOLDER, "*.txt")) + glob.glob(os.path.join(NETFLIX_COOKIES_FOLDER, "*.json"))
+    if not nf_existing and os.path.exists(old_netflix):
         for f in glob.glob(os.path.join(old_netflix, "*.*")):
             dest = os.path.join(NETFLIX_COOKIES_FOLDER, os.path.basename(f))
             if not os.path.exists(dest):
@@ -69,7 +70,8 @@ def sync_cookies_bundle():
                 except Exception:
                     pass
 
-    if os.path.exists(old_hbo):
+    hbo_existing = glob.glob(os.path.join(HBO_COOKIES_FOLDER, "*.txt")) + glob.glob(os.path.join(HBO_COOKIES_FOLDER, "*.json"))
+    if not hbo_existing and os.path.exists(old_hbo):
         for f in glob.glob(os.path.join(old_hbo, "*.*")):
             dest = os.path.join(HBO_COOKIES_FOLDER, os.path.basename(f))
             if not os.path.exists(dest):
@@ -79,54 +81,58 @@ def sync_cookies_bundle():
                 except Exception:
                     pass
 
-    # 1. Se o bundle existir, restaura as pastas no servidor
+    # 1. Se o bundle existir, restaura as pastas no servidor APENAS se estiverem vazias (ex: deploy frio)
     if os.path.exists(COOKIES_BUNDLE_FILE):
         try:
             bundle_raw = read_secure_text(COOKIES_BUNDLE_FILE)
             if bundle_raw:
                 data = json.loads(bundle_raw)
             
-                for fname, content in data.get("netflix", {}).items():
-                    dest = os.path.join(NETFLIX_COOKIES_FOLDER, fname)
-                    if not os.path.exists(dest):
-                        with open(dest, 'w', encoding='utf-8', errors='ignore') as out:
-                            out.write(content)
+                current_nf = glob.glob(os.path.join(NETFLIX_COOKIES_FOLDER, "*.txt")) + glob.glob(os.path.join(NETFLIX_COOKIES_FOLDER, "*.json"))
+                if not current_nf:
+                    for fname, content in data.get("netflix", {}).items():
+                        dest = os.path.join(NETFLIX_COOKIES_FOLDER, fname)
+                        if not os.path.exists(dest):
+                            with open(dest, 'w', encoding='utf-8', errors='ignore') as out:
+                                out.write(content)
                             
-                for fname, content in data.get("hbo", {}).items():
-                    dest = os.path.join(HBO_COOKIES_FOLDER, fname)
-                    if not os.path.exists(dest):
-                        with open(dest, 'w', encoding='utf-8', errors='ignore') as out:
-                            out.write(content)
+                current_hbo = glob.glob(os.path.join(HBO_COOKIES_FOLDER, "*.txt")) + glob.glob(os.path.join(HBO_COOKIES_FOLDER, "*.json"))
+                if not current_hbo:
+                    for fname, content in data.get("hbo", {}).items():
+                        dest = os.path.join(HBO_COOKIES_FOLDER, fname)
+                        if not os.path.exists(dest):
+                            with open(dest, 'w', encoding='utf-8', errors='ignore') as out:
+                                out.write(content)
 
-                for fname, content in data.get("crunchyroll", {}).items():
-                    dest = os.path.join(CRUNCHYROLL_COMBO_FOLDER, fname)
-                    if not os.path.exists(dest):
-                        with open(dest, 'w', encoding='utf-8', errors='ignore') as out:
-                            out.write(content)
+                current_cr = glob.glob(os.path.join(CRUNCHYROLL_COMBO_FOLDER, "*.txt"))
+                if not current_cr:
+                    for fname, content in data.get("crunchyroll", {}).items():
+                        dest = os.path.join(CRUNCHYROLL_COMBO_FOLDER, fname)
+                        if not os.path.exists(dest):
+                            with open(dest, 'w', encoding='utf-8', errors='ignore') as out:
+                                out.write(content)
         except Exception:
             pass
 
-    # 2. Salva todos os cookies locais no arquivo único cookies_bundle.json
+    # 2. Salva todos os cookies locais atuais no arquivo único cookies_bundle.json
     bundle = {"netflix": {}, "hbo": {}, "crunchyroll": {}}
-    for n_dir in [NETFLIX_COOKIES_FOLDER, old_netflix]:
-        if os.path.exists(n_dir):
-            for f in glob.glob(os.path.join(n_dir, "*.txt")) + glob.glob(os.path.join(n_dir, "*.json")):
-                try:
-                    c = read_secure_text(f)
-                    if c:
-                        bundle["netflix"][os.path.basename(f)] = c
-                except Exception:
-                    pass
+    if os.path.exists(NETFLIX_COOKIES_FOLDER):
+        for f in glob.glob(os.path.join(NETFLIX_COOKIES_FOLDER, "*.txt")) + glob.glob(os.path.join(NETFLIX_COOKIES_FOLDER, "*.json")):
+            try:
+                c = read_secure_text(f)
+                if c:
+                    bundle["netflix"][os.path.basename(f)] = c
+            except Exception:
+                pass
 
-    for h_dir in [HBO_COOKIES_FOLDER, old_hbo]:
-        if os.path.exists(h_dir):
-            for f in glob.glob(os.path.join(h_dir, "*.txt")) + glob.glob(os.path.join(h_dir, "*.json")):
-                try:
-                    c = read_secure_text(f)
-                    if c:
-                        bundle["hbo"][os.path.basename(f)] = c
-                except Exception:
-                    pass
+    if os.path.exists(HBO_COOKIES_FOLDER):
+        for f in glob.glob(os.path.join(HBO_COOKIES_FOLDER, "*.txt")) + glob.glob(os.path.join(HBO_COOKIES_FOLDER, "*.json")):
+            try:
+                c = read_secure_text(f)
+                if c:
+                    bundle["hbo"][os.path.basename(f)] = c
+            except Exception:
+                pass
 
     if os.path.exists(CRUNCHYROLL_COMBO_FOLDER):
         for f in glob.glob(os.path.join(CRUNCHYROLL_COMBO_FOLDER, "*.txt")):
@@ -137,12 +143,11 @@ def sync_cookies_bundle():
             except Exception:
                 pass
 
-    if bundle["netflix"] or bundle["hbo"] or bundle["crunchyroll"]:
-        try:
-            with open(COOKIES_BUNDLE_FILE, 'w', encoding='utf-8', errors='ignore') as outf:
-                json.dump(bundle, outf)
-        except Exception:
-            pass
+    try:
+        with open(COOKIES_BUNDLE_FILE, 'w', encoding='utf-8', errors='ignore') as outf:
+            json.dump(bundle, outf)
+    except Exception:
+        pass
 
 sync_cookies_bundle()
 
@@ -410,14 +415,14 @@ def get_verified_netflix_cookies(min_count: int = 1) -> List[dict]:
     """Retorna todas as contas Netflix disponíveis."""
     return get_all_netflix_accounts()
 
-def find_netflix_valid_cookie(target_plan: str = "TODOS", exclude_file: str = "") -> Optional[dict]:
-    """Retorna o próximo cookie Netflix 100% verificado contra os servidores da Netflix usando rotação circular de tv2.py."""
+def find_netflix_valid_cookie(target_plan: str = "TODOS", exclude_file: str = "", exclude_email: str = "") -> Optional[dict]:
+    """Retorna o próximo cookie Netflix 100% verificado usando seleção aleatória e anti-repetição de tv2.py."""
     if exclude_file:
-        now_ts = time.time()
-        tv2.LAST_USED_AT[exclude_file] = now_ts
-        tv2.LAST_USED_AT[os.path.basename(exclude_file)] = now_ts
+        tv2.mark_cookie_used(exclude_file, exclude_email)
+    elif exclude_email:
+        tv2.LAST_USED_AT[exclude_email.lower()] = time.time()
 
-    cookie_data = tv2.find_next_valid_cookie()
+    cookie_data = tv2.find_next_valid_cookie(exclude_file=exclude_file, exclude_email=exclude_email)
     if cookie_data:
         f = cookie_data.get("file", "")
         with VALID_NETFLIX_LOCK:
@@ -429,8 +434,19 @@ def find_netflix_valid_cookie(target_plan: str = "TODOS", exclude_file: str = ""
 find_netflix_fast_cookie = find_netflix_valid_cookie
 
 def select_netflix_cookie_by_filename(filename: str) -> Optional[dict]:
-    """Compatibilidade para seleção de cookie."""
-    return find_netflix_valid_cookie()
+    """Seleciona e valida especificamente o arquivo de cookie indicado."""
+    if not filename:
+        return find_netflix_valid_cookie()
+    bname = os.path.basename(filename).strip().lower()
+    for f in get_netflix_files():
+        if os.path.basename(f).lower() == bname or f.lower() == filename.lower():
+            tested = test_netflix_cookie_file(f, timeout=5.0)
+            if tested:
+                return tested
+            meta = extract_netflix_file_info(f)
+            if meta:
+                return meta
+    return None
 
 def activate_netflix_tv(tv_code: str, cookie_data: dict) -> Tuple[bool, str, Optional[dict]]:
     """Executa a ativação da Smart TV Netflix utilizando o fluxo comprovado de tv2.py com rotação circular."""
@@ -640,7 +656,7 @@ def find_hbo_valid_cookie() -> Optional[dict]:
     all_hbo = get_all_hbo_accounts()
     if not all_hbo:
         return None
-    return all_hbo[0]
+    return random.choice(all_hbo)
 
 def activate_hbo_tv(tv_code: str, cookie_data: dict) -> Tuple[bool, str, Optional[dict]]:
     clean_code = re.sub(r'[^0-9]', '', tv_code)
@@ -2059,6 +2075,9 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             self.send_response(status_code)
             self.send_header('Content-Type', 'application/json; charset=utf-8')
             self.send_header('Content-Length', str(len(body)))
+            self.send_header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0')
+            self.send_header('Pragma', 'no-cache')
+            self.send_header('Expires', '0')
             self.end_headers()
             self.wfile.write(body)
         except (ConnectionResetError, ConnectionAbortedError, BrokenPipeError):
@@ -2094,10 +2113,10 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             if CURRENT_NETFLIX_READY is None or (CURRENT_NETFLIX_READY and (CURRENT_NETFLIX_READY.get("file") in DEAD_NETFLIX_COOKIES or CURRENT_NETFLIX_READY.get("file") in tv2.DEAD_COOKIES)):
                 CURRENT_NETFLIX_READY = find_netflix_valid_cookie()
             if CURRENT_NETFLIX_READY is None and all_netflix:
-                CURRENT_NETFLIX_READY = all_netflix[0]
+                CURRENT_NETFLIX_READY = random.choice(all_netflix)
         except Exception:
             if all_netflix:
-                CURRENT_NETFLIX_READY = all_netflix[0]
+                CURRENT_NETFLIX_READY = random.choice(all_netflix)
 
         try:
             if CURRENT_HBO_READY is None or (CURRENT_HBO_READY and (CURRENT_HBO_READY.get("file") in DEAD_HBO_COOKIES or os.path.basename(CURRENT_HBO_READY.get("file", "")) in DEAD_HBO_COOKIES)):
@@ -2256,11 +2275,14 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
         now_ts = time.time()
         if service == 'netflix':
-            if CURRENT_NETFLIX_READY and CURRENT_NETFLIX_READY.get("file"):
-                f = CURRENT_NETFLIX_READY["file"]
-                tv2.LAST_USED_AT[f] = now_ts
-                tv2.LAST_USED_AT[os.path.basename(f)] = now_ts
-            CURRENT_NETFLIX_READY = find_netflix_fast_cookie()
+            cur_file = ""
+            cur_email = ""
+            if CURRENT_NETFLIX_READY:
+                cur_file = CURRENT_NETFLIX_READY.get("file", "")
+                cur_email = CURRENT_NETFLIX_READY.get("info", {}).get("email", "")
+                if cur_file:
+                    tv2.mark_cookie_used(cur_file, cur_email)
+            CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=cur_file, exclude_email=cur_email)
         elif service == 'crunchyroll':
             if CURRENT_CRUNCHYROLL_READY and CURRENT_CRUNCHYROLL_READY.get("email"):
                 CR_LAST_USED_AT[CURRENT_CRUNCHYROLL_READY["email"]] = now_ts
@@ -2311,32 +2333,42 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
         if service == 'netflix':
             kernel_logger.push_kernel_log(f"🍿 [Netflix] Iniciando pareamento de TV com código {clean_code}...")
+            
+            # Seleção forçada de cookie apenas se explicitamente solicitada (ex: depuração ou escolha pontual)
+            req_cookie = req.get('force_cookie') or req.get('cookie_choice')
+            specific_account = None
+            if req_cookie and isinstance(req_cookie, str) and req_cookie.strip() and not req_cookie.strip().startswith('COOKIE:'):
+                specific_account = select_netflix_cookie_by_filename(req_cookie.strip())
+
             last_msg = ""
             for _attempt in range(3):
-                if CURRENT_NETFLIX_READY is None or (CURRENT_NETFLIX_READY and (CURRENT_NETFLIX_READY.get("file") in DEAD_NETFLIX_COOKIES or CURRENT_NETFLIX_READY.get("file") in tv2.DEAD_COOKIES)):
-                    CURRENT_NETFLIX_READY = find_netflix_valid_cookie()
+                if specific_account:
+                    used_account = specific_account
+                else:
+                    # Sorteia aleatoriamente um cookie válido do estoque
+                    used_account = find_netflix_valid_cookie()
+                    if not used_account and CURRENT_NETFLIX_READY:
+                        used_account = CURRENT_NETFLIX_READY
 
-                if not CURRENT_NETFLIX_READY:
+                if not used_account:
                     kernel_logger.push_kernel_log("❌ [Netflix] Nenhum cookie válido disponível no cofre.", level="error")
                     return self.send_json_response({
                         "success": False,
                         "message": "Nenhum cookie Netflix válido disponível no momento."
                     }, 404)
 
-                used_account = CURRENT_NETFLIX_READY
+                CURRENT_NETFLIX_READY = used_account
                 used_file = used_account.get("file", "")
                 account_info = used_account.get("info", {})
-                kernel_logger.push_kernel_log(f"🍪 [Netflix] Injetando cookie: {account_info.get('email', os.path.basename(used_file))}...")
+                kernel_logger.push_kernel_log(f"🍪 [Netflix] Injetando cookie aleatório: {account_info.get('email', os.path.basename(used_file))} (Tentativa {_attempt+1}/3)...")
                 success, msg, info = activate_netflix_tv(clean_code, used_account)
                 account_info = info or used_account.get("info", {})
                 last_msg = msg
 
                 if success:
-                    now_ts = time.time()
-                    tv2.LAST_USED_AT[used_file] = now_ts
-                    tv2.LAST_USED_AT[os.path.basename(used_file)] = now_ts
+                    tv2.mark_cookie_used(used_file, account_info.get("email", ""))
                     record_history_entry("Netflix", used_file, account_info.get("email", ""), clean_code, account_info.get("plan", "Netflix"), "Sucesso")
-                    CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=used_file)
+                    CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=used_file, exclude_email=account_info.get("email", ""))
                     kernel_logger.push_kernel_log(f"⚡ [Netflix] [SUCESSO] TV {clean_code} vinculada com sucesso!", level="success")
                     return self.send_json_response({
                         "success": True,
@@ -2345,17 +2377,22 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     })
                 else:
                     kernel_logger.push_kernel_log(f"⚠️ [Netflix] Tentativa falhou: {msg}", level="warn")
-                    # Se for código de TV inválido ou expirado, encerra sem queimar o cookie
+                    # Se for código de TV inválido ou expirado, encerra e rotaciona para a próxima conta aleatória
                     if any(k in msg.lower() for k in ["código", "codigo", "expirou", "inválido", "invalido", "recusado", "já utilizado"]):
+                        tv2.mark_cookie_used(used_file, account_info.get("email", ""))
+                        CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=used_file, exclude_email=account_info.get("email", ""))
                         return self.send_json_response({
                             "success": False,
                             "message": msg
                         })
 
-                    # Erro de sessão do cookie: descarta cookie morto e tenta a próxima conta válida
+                    # Erro de sessão do cookie: descarta cookie morto e tenta a próxima conta válida aleatória
                     DEAD_NETFLIX_COOKIES.add(used_file)
+                    DEAD_NETFLIX_COOKIES.add(os.path.basename(used_file))
                     tv2.DEAD_COOKIES.add(used_file)
-                    CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=used_file)
+                    tv2.DEAD_COOKIES.add(os.path.basename(used_file))
+                    CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=used_file, exclude_email=account_info.get("email", ""))
+                    specific_account = None
 
             return self.send_json_response({
                 "success": False,
@@ -3121,7 +3158,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         })
 
     def handle_api_admin_delete_account(self):
-        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY, CURRENT_CRUNCHYROLL_READY, CURRENT_SKY_READY
+        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY, CURRENT_CRUNCHYROLL_READY, CURRENT_SKY_READY, VALID_NETFLIX_POOL, VALID_HBO_POOL, SERVER_DATA_VERSION
         content_length = int(self.headers.get('Content-Length', 0))
         post_data = self.rfile.read(content_length)
         try:
@@ -3131,40 +3168,141 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
         service = req.get("service", "netflix").lower()
         target_id = req.get("id", "").strip() or req.get("filename", "").strip() or req.get("email", "").strip()
+        target_email = req.get("email", "").strip().lower()
 
-        if not target_id:
+        if not target_id and not target_email:
             return self.send_json_response({"success": False, "message": "Identificador da conta ausente."}, 400)
 
         deleted = False
+        target_id_lower = target_id.lower()
+        target_id_clean = os.path.basename(target_id).lower()
+        
+        # Extrai emails potenciais tanto do target_email quanto de target_id
+        target_emails = set()
+        if target_email:
+            target_emails.add(target_email)
+        for em in re.findall(r'[\w\.\-+]+@[\w\.\-]+\.\w+', target_id_lower):
+            target_emails.add(em.lower())
+
+        # Versão sem pontuação para comparações flexíveis
+        target_norm = re.sub(r'[^a-z0-9]', '', target_id_lower)
+
+        def matches_target(bname: str, full_path: str = "", content: str = "") -> bool:
+            b_low = bname.lower()
+            b_norm = re.sub(r'[^a-z0-9]', '', b_low)
+
+            # 1. Correspondência direta por id / nome de arquivo
+            if target_id_lower and (b_low == target_id_lower or target_id_clean == b_low or target_id_clean in b_low or b_low in target_id_clean):
+                return True
+
+            # 2. Correspondência normalizada (ignora traços, sublinhados, espaços e acentos convertidos)
+            if target_norm and len(target_norm) >= 6:
+                if target_norm in b_norm or b_norm in target_norm:
+                    return True
+
+            # 3. Correspondência por email no nome do arquivo ou caminho
+            for em in target_emails:
+                if em and (em in b_low or re.sub(r'[^a-z0-9]', '', em) in b_norm):
+                    return True
+
+            # 4. Correspondência por email dentro do conteúdo do cookie/arquivo
+            file_text = content
+            if not file_text and full_path and os.path.exists(full_path):
+                try:
+                    file_text = read_secure_text(full_path)
+                except Exception:
+                    file_text = ""
+            if file_text:
+                file_low = file_text.lower()
+                for em in target_emails:
+                    if em and em in file_low:
+                        return True
+
+            return False
 
         if service in ["netflix", "nf"]:
+            deleted_files = []
             for fold in [NETFLIX_COOKIES_FOLDER, os.path.join(BASE_DIR, "cookies")]:
                 if os.path.exists(fold):
                     for f in glob.glob(os.path.join(fold, "*")):
-                        if os.path.basename(f) == target_id or target_id in os.path.basename(f):
+                        bname = os.path.basename(f)
+                        if matches_target(bname, f):
                             try:
+                                import stat
+                                os.chmod(f, stat.S_IWRITE | stat.S_IREAD)
                                 os.remove(f)
                                 deleted = True
-                            except Exception:
-                                pass
-                            VALID_NETFLIX_BY_FILE.pop(f, None)
+                                deleted_files.append(bname)
+                            except Exception as e:
+                                logger.error(f"Erro ao remover arquivo {f}: {e}")
+                            with VALID_NETFLIX_LOCK:
+                                VALID_NETFLIX_BY_FILE.pop(f, None)
+                                VALID_NETFLIX_BY_FILE.pop(bname, None)
                             tv2.DEAD_COOKIES.discard(f)
+                            tv2.DEAD_COOKIES.discard(bname)
                             DEAD_NETFLIX_COOKIES.discard(f)
+                            DEAD_NETFLIX_COOKIES.discard(bname)
+                            tv2.LAST_USED_AT.pop(f, None)
+                            tv2.LAST_USED_AT.pop(bname, None)
+
+            with VALID_NETFLIX_LOCK:
+                VALID_NETFLIX_POOL = [e for e in VALID_NETFLIX_POOL if os.path.basename(e.get("file", "")) not in deleted_files]
+                for k in list(VALID_NETFLIX_BY_FILE.keys()):
+                    if matches_target(os.path.basename(k), k):
+                        VALID_NETFLIX_BY_FILE.pop(k, None)
+
+            for em in target_emails:
+                tv2.LAST_USED_AT.pop(em, None)
+
+            # Se a conta ativa foi a excluída, reseta e busca uma nova imediatamente
+            if CURRENT_NETFLIX_READY:
+                act_file = os.path.basename(CURRENT_NETFLIX_READY.get("file", ""))
+                act_email = CURRENT_NETFLIX_READY.get("info", {}).get("email", "").lower()
+                if act_file in deleted_files or matches_target(act_file, CURRENT_NETFLIX_READY.get("file", "")) or (act_email and act_email in target_emails):
+                    CURRENT_NETFLIX_READY = None
+
             CURRENT_NETFLIX_READY = find_netflix_valid_cookie()
 
         elif service in ["hbo", "hbomax", "max"]:
+            deleted_files = []
             for fold in [HBO_COOKIES_FOLDER, os.path.join(BASE_DIR, "cookies 01")]:
                 if os.path.exists(fold):
                     for f in glob.glob(os.path.join(fold, "*")):
-                        if os.path.basename(f) == target_id or target_id in os.path.basename(f):
+                        bname = os.path.basename(f)
+                        if matches_target(bname, f):
                             try:
+                                import stat
+                                os.chmod(f, stat.S_IWRITE | stat.S_IREAD)
                                 os.remove(f)
                                 deleted = True
-                            except Exception:
-                                pass
-                            VALID_HBO_BY_FILE.pop(f, None)
+                                deleted_files.append(bname)
+                            except Exception as e:
+                                logger.error(f"Erro ao remover arquivo {f}: {e}")
+                            with VALID_HBO_LOCK:
+                                VALID_HBO_BY_FILE.pop(f, None)
+                                VALID_HBO_BY_FILE.pop(bname, None)
                             DEAD_HBO_COOKIES.discard(f)
+                            DEAD_HBO_COOKIES.discard(bname)
                             USED_HBO_COOKIES.discard(f)
+                            USED_HBO_COOKIES.discard(bname)
+                            HBO_LAST_USED_AT.pop(f, None)
+                            HBO_LAST_USED_AT.pop(bname, None)
+
+            with VALID_HBO_LOCK:
+                VALID_HBO_POOL = [e for e in VALID_HBO_POOL if os.path.basename(e.get("file", "")) not in deleted_files]
+                for k in list(VALID_HBO_BY_FILE.keys()):
+                    if matches_target(os.path.basename(k), k):
+                        VALID_HBO_BY_FILE.pop(k, None)
+
+            for em in target_emails:
+                HBO_LAST_USED_AT.pop(em, None)
+
+            if CURRENT_HBO_READY:
+                act_file = os.path.basename(CURRENT_HBO_READY.get("file", ""))
+                act_email = CURRENT_HBO_READY.get("info", {}).get("email", "").lower()
+                if act_file in deleted_files or matches_target(act_file, CURRENT_HBO_READY.get("file", "")) or (act_email and act_email in target_emails):
+                    CURRENT_HBO_READY = None
+
             CURRENT_HBO_READY = find_hbo_valid_cookie()
 
         elif service in ["crunchyroll", "cr"]:
@@ -3173,38 +3311,78 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     try:
                         with open(f, "r", encoding="utf-8", errors="ignore") as in_f:
                             lines = in_f.readlines()
-                        new_lines = [l for l in lines if target_id.lower() not in l.lower()]
+                        new_lines = []
+                        for l in lines:
+                            l_low = l.lower()
+                            if any(em in l_low for em in target_emails if em):
+                                continue
+                            if target_id_clean and target_id_clean in l_low:
+                                continue
+                            new_lines.append(l)
                         if len(new_lines) != len(lines):
                             with open(f, "w", encoding="utf-8") as out_f:
                                 out_f.writelines(new_lines)
                             deleted = True
-                    except Exception:
-                        pass
+                    except Exception as e:
+                        logger.error(f"Erro ao remover conta CR do combo {f}: {e}")
             DEAD_CRUNCHYROLL_ACCOUNTS.discard(target_id)
             USED_CRUNCHYROLL_ACCOUNTS.discard(target_id)
+            for em in target_emails:
+                DEAD_CRUNCHYROLL_ACCOUNTS.discard(em)
+                USED_CRUNCHYROLL_ACCOUNTS.discard(em)
+            with VALID_CRUNCHYROLL_LOCK:
+                for em in target_emails:
+                    VALID_CRUNCHYROLL_BY_EMAIL.pop(em, None)
+                VALID_CRUNCHYROLL_BY_EMAIL.pop(target_id, None)
             CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account()
 
         elif service in ["sky", "skymais"]:
             deleted = sky_service.remove_sky_account(target_id)
+            for em in target_emails:
+                if sky_service.remove_sky_account(em):
+                    deleted = True
             DEAD_SKY_ACCOUNTS.discard(target_id)
             USED_SKY_ACCOUNTS.discard(target_id)
+            for em in target_emails:
+                DEAD_SKY_ACCOUNTS.discard(em)
+                USED_SKY_ACCOUNTS.discard(em)
             CURRENT_SKY_READY = find_sky_valid_account()
 
+        # Atualiza o arquivo único cookies_bundle.json removendo a conta permanentemente
         try:
-            sync_cookies_bundle()
-        except Exception:
-            pass
+            if os.path.exists(COOKIES_BUNDLE_FILE):
+                bundle_raw = read_secure_text(COOKIES_BUNDLE_FILE)
+                if bundle_raw:
+                    bundle_data = json.loads(bundle_raw)
+                    bundle_modified = False
+                    for svc_key in ["netflix", "hbo", "crunchyroll", "sky"]:
+                        if svc_key in bundle_data and isinstance(bundle_data[svc_key], dict):
+                            if (svc_key == "netflix" and service in ["netflix", "nf"]) or \
+                               (svc_key == "hbo" and service in ["hbo", "hbomax", "max"]) or \
+                               (svc_key == "crunchyroll" and service in ["crunchyroll", "cr"]) or \
+                               (svc_key == "sky" and service in ["sky", "skymais"]):
+                                to_del = []
+                                for k, val_content in bundle_data[svc_key].items():
+                                    val_str = str(val_content) if val_content else ""
+                                    if matches_target(k, content=val_str):
+                                        to_del.append(k)
+                                for k in to_del:
+                                    bundle_data[svc_key].pop(k, None)
+                                    bundle_modified = True
+                                    deleted = True
 
-        if deleted:
-            return self.send_json_response({
-                "success": True,
-                "message": f"Conta / Cookie '{target_id}' removido com sucesso!"
-            })
-        else:
-            return self.send_json_response({
-                "success": False,
-                "message": f"Não foi possível localizar o arquivo ou conta '{target_id}' para exclusão."
-            }, 404)
+                    if bundle_modified:
+                        with open(COOKIES_BUNDLE_FILE, 'w', encoding='utf-8', errors='ignore') as outf:
+                            json.dump(bundle_data, outf)
+        except Exception as e:
+            logger.error(f"Erro ao sincronizar cookies_bundle.json na exclusão: {e}")
+
+        SERVER_DATA_VERSION = time.time()
+        return self.send_json_response({
+            "success": True,
+            "server_version": SERVER_DATA_VERSION,
+            "message": f"Conta / Cookie '{target_email or target_id}' removido permanentemente com sucesso!"
+        })
 
     def handle_api_get_online_users(self):
         data = get_online_users_data()

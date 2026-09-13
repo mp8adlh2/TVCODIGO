@@ -597,6 +597,24 @@ def load_used_cookies_registry():
     """Lê registros históricos sem bloquear o reuso futuro das contas (rotação circular)."""
     pass
 
+def extract_email_from_cookie_name(name: str) -> str:
+    m = re.search(r'[\w\.\+\-]+@[\w\.\-]+\.\w+', name)
+    return m.group(0).lower() if m else ""
+
+def mark_cookie_used(filename: str, email: str = ""):
+    now_ts = time.time()
+    bname = os.path.basename(filename)
+    LAST_USED_AT[filename] = now_ts
+    LAST_USED_AT[bname] = now_ts
+    em = (email or extract_email_from_cookie_name(bname)).strip().lower()
+    if em:
+        LAST_USED_AT[em] = now_ts
+        # Também marca qualquer arquivo alternativo que pertença a este mesmo email
+        for f in get_available_cookie_files():
+            if em in os.path.basename(f).lower():
+                LAST_USED_AT[f] = now_ts
+                LAST_USED_AT[os.path.basename(f)] = now_ts
+
 def get_available_cookie_files() -> List[str]:
     base_d = os.path.dirname(os.path.abspath(__file__))
     folders = [os.path.join(base_d, "netflix"), os.path.join(base_d, "cookies")]
@@ -612,28 +630,75 @@ def get_available_cookie_files() -> List[str]:
                         all_files.append(os.path.abspath(f))
 
     # Exclui apenas arquivos com sessão comprovadamente morta
-    available = [f for f in all_files if f not in DEAD_COOKIES and os.path.basename(f) not in DEAD_COOKIES]
+    return [f for f in all_files if f not in DEAD_COOKIES and os.path.basename(f) not in DEAD_COOKIES]
 
-    # Ordenação Inteligente por Rotação LRU (Menos recentemente usado primeiro)
-    # Mantém contas brasileiras [BR] no topo da fila
-    available.sort(key=lambda f: (
-        0 if "[BR]" in os.path.basename(f).upper() else 1,
-        LAST_USED_AT.get(f, LAST_USED_AT.get(os.path.basename(f), 0.0))
-    ))
-    return available
-
-def find_next_valid_cookie() -> Optional[dict]:
+def get_randomized_cookie_candidates(exclude_file: str = "", exclude_email: str = "") -> List[str]:
+    """Retorna lista de candidatos a cookies com rotação 100% aleatória, sem viés regional e com anti-repetição por email."""
     available = get_available_cookie_files()
-    total = len(available)
+    if not available:
+        return []
+
+    ex_file_names = {os.path.basename(exclude_file).lower(), exclude_file.lower()} if exclude_file else set()
+    ex_email_clean = exclude_email.strip().lower() if exclude_email else ""
+
+    now = time.time()
+    COOLDOWN_SECONDS = 1800  # 30 minutos de cooldown anti-repetição
+
+    # Embaralha todos os arquivos disponíveis para garantir aleatoriedade total
+    all_shuffled = list(available)
+    random.shuffle(all_shuffled)
+
+    fresh_candidates = []
+    used_candidates = []
+    seen_fresh_emails = set()
+
+    for f in all_shuffled:
+        bname = os.path.basename(f)
+        f_lower = f.lower()
+        b_lower = bname.lower()
+        em = extract_email_from_cookie_name(bname)
+
+        is_excluded = (f_lower in ex_file_names or b_lower in ex_file_names or (ex_email_clean and em == ex_email_clean))
+        last_ts = max(LAST_USED_AT.get(f, 0.0), LAST_USED_AT.get(bname, 0.0), LAST_USED_AT.get(em, 0.0) if em else 0.0)
+        is_fresh = (now - last_ts > COOLDOWN_SECONDS) and not is_excluded
+
+        if is_fresh:
+            # Deduplica por email na rodada de frescos para não repetir o mesmo email com nomes de arquivos diferentes
+            if em and em in seen_fresh_emails:
+                continue
+            if em:
+                seen_fresh_emails.add(em)
+            fresh_candidates.append(f)
+        else:
+            used_candidates.append((last_ts, random.random(), f))
+
+    # Embaralha completamente todos os candidatos frescos de todas as regiões/países
+    random.shuffle(fresh_candidates)
+
+    # Ordena os já utilizados pelo menos recentemente usado (LRU) com desempate aleatório
+    used_candidates.sort(key=lambda x: (x[0], x[1]))
+    used_files = [x[2] for x in used_candidates if x[2] not in fresh_candidates]
+
+    ordered = fresh_candidates + used_files
+
+    if not ordered:
+        ordered = list(available)
+        random.shuffle(ordered)
+
+    return ordered
+
+def find_next_valid_cookie(exclude_file: str = "", exclude_email: str = "") -> Optional[dict]:
+    candidates = get_randomized_cookie_candidates(exclude_file=exclude_file, exclude_email=exclude_email)
+    total = len(candidates)
 
     if total == 0:
         return None
 
     with console.status("  [bold #FF0033]⚡[/bold #FF0033] [bold white]Buscando cookie válido na pasta...[/bold white]", spinner="dots") as status_bar:
-        for idx, filename in enumerate(available, 1):
+        for idx, filename in enumerate(candidates, 1):
             cookie_name = os.path.basename(filename)
             disp_name = cookie_name if len(cookie_name) <= 25 else (cookie_name[:22] + "...")
-            status_bar.update(f"  [bold #FF0033]⚡[/bold #FF0033] [bold white]Buscando cookie válido...[/bold white] [#888888](Testando {idx}/{total}: {disp_name})[/#888888]")
+            status_bar.update(f"  [bold #FF0033]⚡[/bold #FF0033] [bold white]Buscando cookie válido (Aleatório)...[/bold white] [#888888](Testando {idx}/{total}: {disp_name})[/#888888]")
 
             parsed = None
             try:
@@ -696,9 +761,7 @@ def activate_with_cookie(cookie_data: dict, tv_code: str) -> Tuple[bool, str, Op
     success, status_msg = activate_tv_code(session, clean_code, auth_url)
 
     if success:
-        now_ts = time.time()
-        LAST_USED_AT[filename] = now_ts
-        LAST_USED_AT[os.path.basename(filename)] = now_ts
+        mark_cookie_used(filename, acc_info.get("email", ""))
         console.print(f"  [bold #00FF66]✅ SUCESSO! TV pareada e ativada com sucesso ({clean_code})![/bold #00FF66]\n")
         return True, "TV pareada e ativada com sucesso!", acc_info
 
