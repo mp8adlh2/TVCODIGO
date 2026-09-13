@@ -147,9 +147,13 @@ def obter_contas_invalidas() -> set:
 
 def registrar_conta_invalida(email: str, motivo: str = "Credenciais incorretas"):
     """Registra conta com falha de credenciais para nunca mais tentar e acelerar as próximas ativações."""
+    email_clean = email.strip().lower()
+    if not email_clean or "@" not in email_clean:
+        return
     import datetime
     now_str = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-    line = f"{email} | {motivo} | {now_str}\n"
+    clean_motivo = re.sub(r'[\r\n]+', ' ', str(motivo)).strip()[:100]
+    line = f"{email_clean} | {clean_motivo} | {now_str}\n"
     try:
         with open(INVALID_FILE, "a", encoding="utf-8", errors="replace") as f:
             f.write(line)
@@ -157,26 +161,46 @@ def registrar_conta_invalida(email: str, motivo: str = "Credenciais incorretas")
         pass
 
 def obter_contagem_ativacoes() -> Dict[str, int]:
-    """Retorna dict {email_lower: quantidade_de_ativacoes} lendo contas_ativadas.txt."""
+    """Retorna dict {email_lower: quantidade_de_ativacoes} lendo contas_ativadas.txt sem contar duplicatas."""
     counts = {}
+    seen_events = set()
     if os.path.exists(ACTIVATED_FILE):
         try:
             with open(ACTIVATED_FILE, "r", encoding="utf-8", errors="ignore") as f:
                 for line in f:
                     line = line.strip()
-                    if ":" in line and "|" in line:
+                    if "|" in line:
                         acc = line.split("|")[0].strip()
                         em = acc.split(":")[0].strip().lower()
-                        counts[em] = counts.get(em, 0) + 1
+                        tv = ""
+                        m = re.search(r'TV:\s*([A-Za-z0-9]+)', line)
+                        if m:
+                            tv = m.group(1).upper()
+                        if em and "@" in em:
+                            event_key = (em, tv or line)
+                            if event_key not in seen_events:
+                                seen_events.add(event_key)
+                                counts[em] = counts.get(em, 0) + 1
         except Exception:
             pass
     return counts
 
 def registrar_conta_ativada(email: str, password: str, tv_code: str):
-    """Registra conta utilizada com sucesso no histórico."""
+    """Registra conta utilizada com sucesso no histórico sem duplicatas."""
+    email_clean = email.strip().lower()
+    clean_code = re.sub(r'[^A-Za-z0-9]', '', str(tv_code)).upper()
+    if os.path.exists(ACTIVATED_FILE):
+        try:
+            with open(ACTIVATED_FILE, "r", encoding="utf-8", errors="ignore") as f:
+                for line in f:
+                    if email_clean in line.lower() and f"TV: {clean_code}" in line:
+                        return
+        except Exception:
+            pass
+
     import datetime
     now_str = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-    line = f"{email}:{password} | TV: {tv_code} | {now_str}\n"
+    line = f"{email}:{password} | TV: {clean_code} | {now_str}\n"
     try:
         with open(ACTIVATED_FILE, "a", encoding="utf-8", errors="replace") as f:
             f.write(line)

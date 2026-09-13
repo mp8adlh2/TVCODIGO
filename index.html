@@ -2969,6 +2969,8 @@
       const timeoutId = setTimeout(() => controller.abort(), 180000);
 
       try {
+        const activeAcc = (cachedStatusData && cachedStatusData[currentService] && (cachedStatusData[currentService].cookie_name || (cachedStatusData[currentService].account && cachedStatusData[currentService].account.email))) || '';
+
         const res = await fetch(`${API_BASE}/api/activate`, {
           method: 'POST',
           headers: getHeaders(),
@@ -2976,7 +2978,8 @@
           body: JSON.stringify({
             service: currentService,
             code: currentCode,
-            plan: currentPlan
+            plan: currentPlan,
+            account: activeAcc
           })
         });
 

@@ -38,8 +38,8 @@ os.makedirs(HITS_DIR, exist_ok=True)
 # Lock de concorrência para leitura/escrita
 SKY_LOCK = threading.Lock()
 
-# Limite máximo de ativações por conta Sky
-MAX_SKY_ACTIVATIONS = 2
+# Limite máximo de ativações por conta Sky (1 TV por conta para rotação estrita)
+MAX_SKY_ACTIVATIONS = 1
 
 # Cache em memória
 CACHED_SKY_ACCOUNTS: List[dict] = []
@@ -77,7 +77,7 @@ def record_invalid_sky_account(email: str, reason: str = ""):
         pass
 
 # ═══════════════════════════════════════════════════════════════
-# LEITURA DE CONTAGEM DE ATIVAÇÕES (MÁXIMO 2 TVs POR CONTA)
+# LEITURA DE CONTAGEM DE ATIVAÇÕES (MÁXIMO 1 TV POR CONTA)
 # ═══════════════════════════════════════════════════════════════
 def get_activation_counts() -> Dict[str, int]:
     """Retorna dict {email_lower: quantidade_de_ativacoes} lendo hits/contas_ativadas.txt e used_cookies.json de forma consistente."""
@@ -89,14 +89,14 @@ def get_activation_counts() -> Dict[str, int]:
             with open(ACTIVATED_ACCOUNTS_FILE, "r", encoding="utf-8", errors="ignore") as f:
                 for line in f:
                     line = line.strip()
-                    if ":" in line and "|" in line:
+                    if "|" in line:
                         acc = line.split("|")[0].strip()
                         em = acc.split(":")[0].strip().lower()
                         tv = ""
                         m = re.search(r'TV:\s*([A-Za-z0-9]+)', line)
                         if m:
                             tv = m.group(1).upper()
-                        if em:
+                        if em and "@" in em:
                             event_key = (em, tv or line)
                             if event_key not in seen_events:
                                 seen_events.add(event_key)
@@ -129,14 +129,26 @@ def record_account_activated(email: str, password: str, tv_code: str):
     os.makedirs(HITS_DIR, exist_ok=True)
     import datetime
     now_str = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-    line = f"{email}:{password} | TV: {tv_code} | {now_str}\n"
+    clean_code = re.sub(r'[^A-Za-z0-9]', '', str(tv_code)).upper()
+    email_clean = email.strip().lower()
+
+    # Evita gravar duplicatas exatas para a mesma TV na mesma conta
+    if os.path.exists(ACTIVATED_ACCOUNTS_FILE):
+        try:
+            with open(ACTIVATED_ACCOUNTS_FILE, "r", encoding="utf-8", errors="ignore") as f:
+                for line in f:
+                    if email_clean in line.lower() and f"TV: {clean_code}" in line:
+                        CACHED_SKY_TIMESTAMP = 0.0
+                        return
+        except Exception:
+            pass
+
+    line = f"{email}:{password} | TV: {clean_code} | {now_str}\n"
     try:
         with open(ACTIVATED_ACCOUNTS_FILE, "a", encoding="utf-8", errors="replace") as f:
             f.write(line)
     except Exception:
         pass
-    # Invalida cache imediatamente para que a próxima chamada de find_sky_valid_account()
-    # veja os contadores atualizados sem esperar o timeout de 15 segundos
     CACHED_SKY_TIMESTAMP = 0.0
 
 def save_activation_log(email: str, password: str, tv_code: str, success: bool, message: str):
@@ -719,16 +731,14 @@ def load_all_sky_accounts(force_reload: bool = False) -> List[dict]:
                 acc["info"]["activations"] = cnt
                 acc["info"]["max_activations"] = MAX_SKY_ACTIVATIONS
                 if cnt >= MAX_SKY_ACTIVATIONS:
-                    acc["info"]["status_badge"] = f"Esgotada ({cnt}/{MAX_SKY_ACTIVATIONS} TVs)"
-                elif cnt == 1:
-                    acc["info"]["status_badge"] = f"1/{MAX_SKY_ACTIVATIONS} TV (Ativa mais 1 TV)"
+                    acc["info"]["status_badge"] = f"Utilizada ({cnt}/{MAX_SKY_ACTIVATIONS} TV)"
                 else:
-                    acc["info"]["status_badge"] = f"0/{MAX_SKY_ACTIVATIONS} TVs (Pronta)"
+                    acc["info"]["status_badge"] = f"0/{MAX_SKY_ACTIVATIONS} TV (Pronta)"
 
             all_accounts.sort(key=lambda a: (
                 1 if a.get("info", {}).get("activations", 0) >= MAX_SKY_ACTIVATIONS else 0,
-                0 if a.get("is_session") or a.get("sso_token") else 1,
-                a.get("info", {}).get("activations", 0)
+                a.get("info", {}).get("activations", 0),
+                0 if a.get("is_session") or a.get("sso_token") else 1
             ))
         except Exception:
             pass
@@ -741,23 +751,65 @@ def get_all_sky_accounts() -> List[dict]:
     """Retorna todas as contas Sky formatadas para a fila e modal da interface."""
     return load_all_sky_accounts()
 
-def find_sky_valid_account(used_accounts: Set[str], dead_accounts: Set[str]) -> Optional[dict]:
-    """Retorna a melhor conta Sky disponível para o próximo pareamento (máximo 2 TVs por conta)."""
+def _has_valid_account_session(acc: dict) -> bool:
+    """Verifica se a conta possui uma sessão/token SSO válido e não expirado que pertença a ela."""
+    if not isinstance(acc, dict):
+        return False
+    em = acc.get("email", "").strip().lower()
+    if not em:
+        return False
+
+    # 1. Verifica se já possui sso_token direto no dicionário
+    sso = (acc.get("sso_token") or acc.get("token") or "").strip()
+    if sso and "ey" in sso:
+        payload = parse_sso_jwt(sso)
+        token_em = (payload.get("email") or payload.get("sub") or "").strip().lower()
+        if token_em.startswith("sky_"):
+            token_em = token_em[4:]
+        token_exp = payload.get("exp", 0)
+        if (not token_em or em in token_em or token_em in em) and (not token_exp or token_exp > time.time()):
+            return True
+
+    # 2. Verifica se existe arquivo de sessão em hits/browser_sessions/
+    sanitized_em = re.sub(r'[^a-zA-Z0-9_\-]', '_', em)
+    b_sess_path = os.path.join(HITS_DIR, "browser_sessions", f"{sanitized_em}.json")
+    if os.path.exists(b_sess_path):
+        try:
+            with open(b_sess_path, "r", encoding="utf-8", errors="ignore") as bf:
+                b_data = json.load(bf)
+            for origin in b_data.get("origins", []):
+                if "skymais.com.br" in origin.get("origin", ""):
+                    for item in origin.get("localStorage", []):
+                        if item.get("name") == "sessionToken" and item.get("value", "").startswith("ey"):
+                            payload = parse_sso_jwt(item["value"])
+                            exp = payload.get("exp", 0)
+                            if not exp or exp > time.time():
+                                return True
+        except Exception:
+            pass
+
+    return False
+
+def find_sky_valid_account(used_accounts: Set[str], dead_accounts: Set[str], last_used_map: Optional[Dict[str, float]] = None) -> Optional[dict]:
+    """Retorna a melhor conta Sky disponível para o próximo pareamento (1 TV por conta, rotação estrita e sequencial)."""
     accounts = load_all_sky_accounts()
     if not accounts:
         return None
+
+    if last_used_map is None:
+        last_used_map = {}
 
     act_counts = get_activation_counts()
     normalized_dead = {str(d).strip().lower() for d in dead_accounts if d}
     normalized_dead.update(get_invalid_sky_accounts())
     normalized_used = {str(u).strip().lower() for u in used_accounts if u}
 
-    # Contas que já atingiram o limite de 2 TVs são consideradas usadas/esgotadas
+    # Contas que já atingiram o limite de 1 TV são consideradas usadas/esgotadas
     for em, cnt in act_counts.items():
         if cnt >= MAX_SKY_ACTIVATIONS:
             normalized_used.add(em)
 
-    # 1. Prioridade: Contas vivas que ainda têm vaga (< 2 ativações)
+    # 1. Prioridade: Contas vivas que ainda têm vaga (0 ativações) e NÃO foram usadas nesta sessão
     candidates = []
     for acc in accounts:
         em = acc.get("email", "").strip().lower()
@@ -769,17 +821,18 @@ def find_sky_valid_account(used_accounts: Set[str], dead_accounts: Set[str]) -> 
     if candidates:
         def _score(item):
             acc, cnt = item
-            is_sess = 0 if (acc.get("is_session") or acc.get("sso_token")) else 1
+            em = acc.get("email", "").strip().lower()
+            last_ts = last_used_map.get(em, 0.0)
+            has_own_session = 0 if _has_valid_account_session(acc) else 1
             plan = str(acc.get("info", {}).get("plan", "")).upper()
             has_fibra = 0 if ("FIBRA" in plan or "PLUS TOTAL" in plan or "SUPER HD" in plan) else 1
-            # Se já tem 1 ativação (< 2), prioriza para completar a 2ª TV antes de passar para outra
-            fill_batch = -1 if cnt == 1 else 0
-            return (is_sess, fill_batch, has_fibra, cnt)
+            # Prioriza: menor contagem de ativações, nunca usada recentemente, sessão própria, plano premium
+            return (cnt, last_ts, has_own_session, has_fibra)
 
         candidates.sort(key=_score)
         return candidates[0][0]
 
-    # 2. Se todas as contas atingiram o limite, rotaciona pegando a com menor contagem
+    # 2. Se todas as contas vivas já atingiram o limite ou foram usadas, rotaciona pegando a menos recentemente usada
     valid_alive = [
         a for a in accounts
         if a.get("email", "").strip().lower() and a.get("email", "").strip().lower() not in normalized_dead
@@ -787,7 +840,8 @@ def find_sky_valid_account(used_accounts: Set[str], dead_accounts: Set[str]) -> 
     if valid_alive:
         valid_alive.sort(key=lambda a: (
             act_counts.get(a.get("email", "").strip().lower(), 0),
-            0 if a.get("is_session") or a.get("sso_token") else 1
+            last_used_map.get(a.get("email", "").strip().lower(), 0.0),
+            0 if _has_valid_account_session(a) else 1
         ))
         return valid_alive[0]
 
@@ -837,7 +891,7 @@ def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -
     sso_token = (account_data.get("sso_token") or account_data.get("token") or "").strip()
     profile_token = (account_data.get("profile_token") or "").strip()
 
-    # Se a conta não tiver tokens próprios, verifica se existe sessão salva em hits/browser_sessions/
+    # Se a conta não tiver tokens próprios, verifica se existe sessão salva em hits/browser_sessions/ para ESTA CONTA
     if not sso_token:
         sanitized_em = re.sub(r'[^a-zA-Z0-9_\-]', '_', email.lower())
         b_sess_path = os.path.join(HITS_DIR, "browser_sessions", f"{sanitized_em}.json")
@@ -867,25 +921,34 @@ def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -
             except Exception:
                 pass
 
-    # Se ainda não tiver tokens, verifica se existem tokens mestres globais ativos
-    if not sso_token and os.path.exists(SSO_TOKEN_FILE):
-        try:
-            with open(SSO_TOKEN_FILE, "r", encoding="utf-8") as f:
-                sso_token = f.read().strip()
-            if os.path.exists(PROFILE_TOKEN_FILE):
-                with open(PROFILE_TOKEN_FILE, "r", encoding="utf-8") as f:
-                    profile_token = f.read().strip()
-        except Exception:
-            pass
+    # 🛡️ PROTEÇÃO TOTAL CONTRA VAZAMENTO DE CONTA:
+    # O token SSO DEVE pertencer EXCLUSIVAMENTE a este e-mail e estar válido/não-expirado.
+    # NUNCA utilizar sso_token.txt de outra conta!
+    if sso_token:
+        payload = parse_sso_jwt(sso_token)
+        token_em = (payload.get("email") or payload.get("sub") or "").strip().lower()
+        if token_em.startswith("sky_"):
+            token_em = token_em[4:]
+        token_exp = payload.get("exp", 0)
+        
+        # Validação de titularidade: o email do token deve coincidir com a conta que está sendo ativada
+        if token_em and (email.lower() not in token_em and token_em not in email.lower()):
+            push_sky_log(f"⚠️ [Sky+] Token SSO em cache ({token_em}) não pertence a {email}. Descartando token...", level="warn")
+            sso_token = ""
+            profile_token = ""
+        elif token_exp and token_exp < time.time():
+            push_sky_log(f"⚠️ [Sky+] Token SSO de {email} expirou ({token_exp} < {int(time.time())}). Renovando autenticação...", level="warn")
+            sso_token = ""
+            profile_token = ""
 
     if sso_token and "ey" in sso_token:
-        push_sky_log(f"⚡ [Nuvem] Ativando instantaneamente via Token SSO na API Oficial TBX (300ms)...")
+        push_sky_log(f"⚡ [Nuvem] Ativando instantaneamente via Token SSO oficial de {email} na API TBX (300ms)...")
         try:
             import ativador_tv
             activator = ativador_tv.SkyTVActivator(use_proxy=use_proxy)
             res_tbx = activator.activate_tv(token=sso_token, tv_code=clean_code, profile_token=profile_token)
             if res_tbx.get("success"):
-                msg = res_tbx.get("message") or "Smart TV Sky ativada com sucesso em 300ms via Nuvem!"
+                msg = res_tbx.get("message") or f"Smart TV Sky ativada com sucesso em 300ms via Nuvem ({email})!"
                 push_sky_log(f"✅ [Nuvem] {msg}", level="success")
                 save_activation_log(email, password or "SESSION_TOKEN", clean_code, True, msg)
                 record_account_activated(email, password or "SESSION_TOKEN", clean_code)
@@ -894,9 +957,9 @@ def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -
                 push_sky_log(f"❌ [Nuvem] Código {clean_code} não encontrado ou expirado na Smart TV (HTTP 404).", level="error")
                 return False, f"Código {clean_code} não encontrado ou expirado na Smart TV (HTTP 404).", None
             else:
-                push_sky_log(f"⚠️ [Nuvem] Sessão em nuvem anterior expirada. Acionando navegador Playwright...", level="warn")
+                push_sky_log(f"⚠️ [Nuvem] Sessão em nuvem de {email} expirou no servidor Sky. Acionando navegador...", level="warn")
         except Exception as e:
-            push_sky_log(f"⚠️ [Nuvem] Tentativa direta falhou ({e}), acionando navegador Playwright...", level="warn")
+            push_sky_log(f"⚠️ [Nuvem] Tentativa direta falhou ({e}), acionando navegador...", level="warn")
 
     # ═══════════════════════════════════════════════════════════════
     # ESTRATÉGIA 2: ATIVAÇÃO VIA API MOBILE / ANDROID (SEM NAVEGADOR)

@@ -983,7 +983,7 @@ VALID_SKY_LOCK = threading.Lock()
 DEAD_SKY_ACCOUNTS: Set[str] = set()
 
 def load_used_sky_accounts() -> Set[str]:
-    """Carrega lista de contas Sky que já atingiram o limite máximo de 2 ativações."""
+    """Carrega lista de contas Sky que já atingiram o limite máximo de 1 ativação."""
     used: Set[str] = set()
     try:
         act_counts = sky_service.get_activation_counts()
@@ -996,6 +996,7 @@ def load_used_sky_accounts() -> Set[str]:
 
 USED_SKY_ACCOUNTS: Set[str] = load_used_sky_accounts()
 CURRENT_SKY_READY: Optional[dict] = None
+SKY_LAST_USED_AT: Dict[str, float] = {}
 
 def get_all_sky_accounts() -> List[dict]:
     """Retorna todas as contas Sky da pasta hits/ e skycontas.txt com metadados completos."""
@@ -1003,7 +1004,7 @@ def get_all_sky_accounts() -> List[dict]:
 
 def find_sky_valid_account() -> Optional[dict]:
     """Retorna a melhor conta Sky disponível no estoque para pareamento."""
-    return sky_service.find_sky_valid_account(USED_SKY_ACCOUNTS, DEAD_SKY_ACCOUNTS)
+    return sky_service.find_sky_valid_account(USED_SKY_ACCOUNTS, DEAD_SKY_ACCOUNTS, SKY_LAST_USED_AT)
 
 def select_sky_account_by_identifier(identifier: str) -> Optional[dict]:
     """Seleciona conta Sky específica pelo email ou login."""
@@ -1538,7 +1539,6 @@ def sync_passwords_text_file(passwords_list: List[dict]):
 CURRENT_NETFLIX_READY: Optional[dict] = None
 CURRENT_HBO_READY: Optional[dict] = None
 CURRENT_CRUNCHYROLL_READY: Optional[dict] = None
-CURRENT_SKY_READY: Optional[dict] = None
 
 class AppRequestHandler(SimpleHTTPRequestHandler):
     def send_security_headers(self):
@@ -2079,7 +2079,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
         try:
             curr_sky_em = CURRENT_SKY_READY.get("email", "").strip().lower() if CURRENT_SKY_READY else ""
-            if CURRENT_SKY_READY is None or (curr_sky_em and curr_sky_em in DEAD_SKY_ACCOUNTS):
+            if CURRENT_SKY_READY is None or (curr_sky_em and (curr_sky_em in DEAD_SKY_ACCOUNTS or curr_sky_em in USED_SKY_ACCOUNTS)):
                 CURRENT_SKY_READY = find_sky_valid_account()
             if CURRENT_SKY_READY is None and all_sky:
                 CURRENT_SKY_READY = all_sky[0]
@@ -2230,6 +2230,8 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 em = CURRENT_SKY_READY.get("email", "").strip().lower()
                 if em:
                     sky_service.record_account_activated(em, "", "SKIP")
+                    USED_SKY_ACCOUNTS.add(em)
+                    SKY_LAST_USED_AT[em] = now_ts
             sky_service.load_all_sky_accounts(force_reload=True)
             CURRENT_SKY_READY = find_sky_valid_account()
         else:
@@ -2399,9 +2401,18 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
         elif service == 'sky':
             kernel_logger.push_kernel_log(f"📡 [Sky+] Transmissão iniciada para TV {clean_code}...")
+
+            # 🎯 Se o frontend solicitou uma conta específica exibida na tela ou selecionada
+            req_account_id = req.get('account') or req.get('email') or req.get('cookie_name')
+            if req_account_id and isinstance(req_account_id, str) and req_account_id.strip():
+                specific_acc = select_sky_account_by_identifier(req_account_id.strip())
+                if specific_acc:
+                    CURRENT_SKY_READY = specific_acc
+
             last_msg = ""
             for _attempt in range(2):
-                if CURRENT_SKY_READY is None:
+                curr_sky_em = CURRENT_SKY_READY.get("email", "").strip().lower() if CURRENT_SKY_READY else ""
+                if CURRENT_SKY_READY is None or (curr_sky_em and curr_sky_em in USED_SKY_ACCOUNTS and len(USED_SKY_ACCOUNTS) < len(get_all_sky_accounts())):
                     CURRENT_SKY_READY = find_sky_valid_account()
 
                 if not CURRENT_SKY_READY:
@@ -2410,6 +2421,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
                 used_account = CURRENT_SKY_READY
                 acc_email = used_account.get("email", "").strip()
+                acc_email_clean = acc_email.lower()
                 kernel_logger.push_kernel_log(f"🔑 [Sky+] Selecionada conta do assinante: {acc_email} (Tentativa {_attempt+1}/2)...")
                 success, msg, info = activate_sky_tv(clean_code, used_account)
                 account_info = info or used_account.get("info", {})
@@ -2417,7 +2429,9 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
                 if success:
                     kernel_logger.push_kernel_log(f"⚡ [Sky+] [SUCESSO] TV {clean_code} ativada com sucesso!", level="success")
-                    acc_email_clean = acc_email.lower()
+                    now_ts = time.time()
+                    SKY_LAST_USED_AT[acc_email_clean] = now_ts
+                    USED_SKY_ACCOUNTS.add(acc_email_clean)
                     record_history_entry("Sky", used_account.get("file", "hits"), account_info.get("email", ""), clean_code, account_info.get("plan", "Sky TV VIP"), "Sucesso")
                     sky_service.record_account_activated(used_account.get("email", ""), used_account.get("password", ""), clean_code)
                     sky_service.load_all_sky_accounts(force_reload=True)
@@ -2438,8 +2452,9 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
                     # A conta falhou (ex: sem streaming Sky+, senha inválida etc.)
                     # Marca como indisponível e tenta IMEDIATAMENTE a próxima conta da fila!
-                    acc_email_clean = acc_email.lower()
+                    now_ts = time.time()
                     if acc_email_clean:
+                        SKY_LAST_USED_AT[acc_email_clean] = now_ts
                         DEAD_SKY_ACCOUNTS.add(acc_email_clean)
                     sky_service.load_all_sky_accounts(force_reload=True)
                     CURRENT_SKY_READY = find_sky_valid_account()
@@ -2893,6 +2908,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         USED_CRUNCHYROLL_ACCOUNTS.clear()
         DEAD_SKY_ACCOUNTS.clear()
         USED_SKY_ACCOUNTS.clear()
+        SKY_LAST_USED_AT.clear()
         SERVER_DATA_VERSION = time.time()
         CURRENT_NETFLIX_READY = find_netflix_fast_cookie()
         CURRENT_HBO_READY = find_hbo_valid_cookie()
