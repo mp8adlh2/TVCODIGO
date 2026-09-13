@@ -2081,6 +2081,10 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             curr_sky_em = CURRENT_SKY_READY.get("email", "").strip().lower() if CURRENT_SKY_READY else ""
             if CURRENT_SKY_READY is None or (curr_sky_em and (curr_sky_em in DEAD_SKY_ACCOUNTS or curr_sky_em in USED_SKY_ACCOUNTS)):
                 CURRENT_SKY_READY = find_sky_valid_account()
+            if CURRENT_SKY_READY and not sky_service._has_valid_account_session(CURRENT_SKY_READY):
+                best_with_session = find_sky_valid_account()
+                if best_with_session and sky_service._has_valid_account_session(best_with_session):
+                    CURRENT_SKY_READY = best_with_session
             if CURRENT_SKY_READY is None and all_sky:
                 CURRENT_SKY_READY = all_sky[0]
         except Exception:
@@ -2404,10 +2408,18 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
             # 🎯 Se o frontend solicitou uma conta específica exibida na tela ou selecionada
             req_account_id = req.get('account') or req.get('email') or req.get('cookie_name')
+            chosen_acc = None
             if req_account_id and isinstance(req_account_id, str) and req_account_id.strip():
                 specific_acc = select_sky_account_by_identifier(req_account_id.strip())
-                if specific_acc:
-                    CURRENT_SKY_READY = specific_acc
+                if specific_acc and sky_service._has_valid_account_session(specific_acc):
+                    chosen_acc = specific_acc
+
+            # Se a conta pedida não tem sessão instantânea pronta, seleciona automaticamente a melhor conta do estoque com sessão ativa (ativação em 300ms)
+            if not chosen_acc:
+                chosen_acc = find_sky_valid_account()
+
+            if chosen_acc:
+                CURRENT_SKY_READY = chosen_acc
 
             last_msg = ""
             for _attempt in range(2):

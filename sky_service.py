@@ -376,6 +376,7 @@ def load_raw_json_accounts() -> List[dict]:
                     "email": em,
                     "password": pw,
                     "jwt_token": data.get("jwt_token"),
+                    "sso_token": data.get("jwt_token") or data.get("sso_token"),
                     "access_token": data.get("access_token"),
                     "info": {
                         "email": em,
@@ -701,6 +702,7 @@ def load_all_sky_accounts(force_reload: bool = False) -> List[dict]:
                         if existing.get("email", "").strip().lower() == em:
                             if raw_acc.get("jwt_token"):
                                 existing["jwt_token"] = raw_acc["jwt_token"]
+                                existing["sso_token"] = raw_acc["jwt_token"]
                                 existing["validated"] = True
                             if raw_acc.get("info") and isinstance(raw_acc["info"], dict):
                                 if raw_acc["info"].get("client_name") and not existing["info"].get("client_name"):
@@ -737,8 +739,8 @@ def load_all_sky_accounts(force_reload: bool = False) -> List[dict]:
 
             all_accounts.sort(key=lambda a: (
                 1 if a.get("info", {}).get("activations", 0) >= MAX_SKY_ACTIVATIONS else 0,
-                a.get("info", {}).get("activations", 0),
-                0 if a.get("is_session") or a.get("sso_token") else 1
+                0 if a.get("is_session") or a.get("sso_token") or a.get("jwt_token") or _has_valid_account_session(a) else 1,
+                a.get("info", {}).get("activations", 0)
             ))
         except Exception:
             pass
@@ -759,8 +761,8 @@ def _has_valid_account_session(acc: dict) -> bool:
     if not em:
         return False
 
-    # 1. Verifica se já possui sso_token direto no dicionário
-    sso = (acc.get("sso_token") or acc.get("token") or "").strip()
+    # 1. Verifica se já possui sso_token ou jwt_token direto no dicionário
+    sso = (acc.get("sso_token") or acc.get("token") or acc.get("jwt_token") or "").strip()
     if sso and "ey" in sso:
         payload = parse_sso_jwt(sso)
         token_em = (payload.get("email") or payload.get("sub") or "").strip().lower()
@@ -886,7 +888,7 @@ def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -
     # ═══════════════════════════════════════════════════════════════
     # ESTRATÉGIA 1: ATIVAÇÃO DIRETA EM NUVEM (SEM PC / SEM NAVEGADOR)
     # ═══════════════════════════════════════════════════════════════
-    sso_token = (account_data.get("sso_token") or account_data.get("token") or "").strip()
+    sso_token = (account_data.get("sso_token") or account_data.get("token") or account_data.get("jwt_token") or "").strip()
     profile_token = (account_data.get("profile_token") or "").strip()
 
     # Se a conta não tiver tokens próprios, verifica se existe sessão salva em hits/browser_sessions/ para ESTA CONTA
