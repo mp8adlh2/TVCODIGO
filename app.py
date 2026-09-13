@@ -983,16 +983,8 @@ VALID_SKY_LOCK = threading.Lock()
 DEAD_SKY_ACCOUNTS: Set[str] = set()
 
 def load_used_sky_accounts() -> Set[str]:
-    """Carrega lista de contas Sky que já atingiram o limite máximo de 1 ativação."""
-    used: Set[str] = set()
-    try:
-        act_counts = sky_service.get_activation_counts()
-        for em, count in act_counts.items():
-            if count >= sky_service.MAX_SKY_ACTIVATIONS:
-                used.add(em)
-    except Exception:
-        pass
-    return used
+    """Carrega lista de contas Sky para rotação circular sem bloquear sessões ativas prontas."""
+    return set()
 
 USED_SKY_ACCOUNTS: Set[str] = load_used_sky_accounts()
 CURRENT_SKY_READY: Optional[dict] = None
@@ -1015,7 +1007,7 @@ def activate_sky_tv(tv_code: str, account_data: dict) -> Tuple[bool, str, Option
     return sky_service.activate_sky_tv(tv_code, account_data)
 
 def start_background_sky_validator():
-    """Validador em background para manter contas Sky sempre aquecidas e Chromium pronto na nuvem."""
+    """Validador em background para manter contas Sky sempre aquecidas e prontas para ativação em 300ms."""
     def _worker():
         global CURRENT_SKY_READY
         time.sleep(2)
@@ -1029,11 +1021,12 @@ def start_background_sky_validator():
         while True:
             try:
                 acc = find_sky_valid_account()
-                if acc and CURRENT_SKY_READY is None:
-                    CURRENT_SKY_READY = acc
+                if acc:
+                    if CURRENT_SKY_READY is None or not sky_service._has_valid_account_session(CURRENT_SKY_READY):
+                        CURRENT_SKY_READY = acc
             except Exception:
                 pass
-            time.sleep(45)
+            time.sleep(25)
 
     t = threading.Thread(target=_worker, daemon=True)
     t.start()
@@ -2079,12 +2072,8 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
         try:
             curr_sky_em = CURRENT_SKY_READY.get("email", "").strip().lower() if CURRENT_SKY_READY else ""
-            if CURRENT_SKY_READY is None or (curr_sky_em and (curr_sky_em in DEAD_SKY_ACCOUNTS or curr_sky_em in USED_SKY_ACCOUNTS)):
+            if CURRENT_SKY_READY is None or (curr_sky_em and curr_sky_em in DEAD_SKY_ACCOUNTS) or not sky_service._has_valid_account_session(CURRENT_SKY_READY):
                 CURRENT_SKY_READY = find_sky_valid_account()
-            if CURRENT_SKY_READY and not sky_service._has_valid_account_session(CURRENT_SKY_READY):
-                best_with_session = find_sky_valid_account()
-                if best_with_session and sky_service._has_valid_account_session(best_with_session):
-                    CURRENT_SKY_READY = best_with_session
             if CURRENT_SKY_READY is None and all_sky:
                 CURRENT_SKY_READY = all_sky[0]
         except Exception:
@@ -2424,7 +2413,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             last_msg = ""
             for _attempt in range(2):
                 curr_sky_em = CURRENT_SKY_READY.get("email", "").strip().lower() if CURRENT_SKY_READY else ""
-                if CURRENT_SKY_READY is None or (curr_sky_em and curr_sky_em in USED_SKY_ACCOUNTS and len(USED_SKY_ACCOUNTS) < len(get_all_sky_accounts())):
+                if CURRENT_SKY_READY is None or (curr_sky_em and curr_sky_em in DEAD_SKY_ACCOUNTS):
                     CURRENT_SKY_READY = find_sky_valid_account()
 
                 if not CURRENT_SKY_READY:

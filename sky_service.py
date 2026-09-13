@@ -38,8 +38,8 @@ os.makedirs(HITS_DIR, exist_ok=True)
 # Lock de concorrência para leitura/escrita
 SKY_LOCK = threading.Lock()
 
-# Limite máximo de ativações por conta Sky (1 TV por conta para rotação estrita)
-MAX_SKY_ACTIVATIONS = 1
+# Limite de ativações e rotação suave por conta Sky
+MAX_SKY_ACTIVATIONS = 2
 
 # Cache em memória
 CACHED_SKY_ACCOUNTS: List[dict] = []
@@ -600,6 +600,24 @@ def get_all_active_sso_sessions() -> List[dict]:
             except Exception:
                 pass
 
+        # 🔄 Auto-sincroniza sessões ativas coletadas para hits/sky_sessions.json
+        if sessions:
+            try:
+                sync_list = []
+                for s in sessions:
+                    sync_list.append({
+                        "email": s.get("email"),
+                        "sso_token": s.get("sso_token"),
+                        "profile_token": s.get("profile_token", ""),
+                        "plan": s.get("info", {}).get("plan", "PAY-TV + FIBRA // SUPER HD II ⚡"),
+                        "client_name": s.get("info", {}).get("client_name", "Assinante Sky+"),
+                        "created_at": time.strftime("%d/%m/%Y")
+                    })
+                with open(SKY_SESSIONS_FILE, "w", encoding="utf-8") as sf:
+                    json.dump(sync_list, sf, indent=2, ensure_ascii=False)
+            except Exception:
+                pass
+
     return sessions
 
 def get_active_sso_session() -> Optional[dict]:
@@ -657,7 +675,16 @@ def load_all_sky_accounts(force_reload: bool = False) -> List[dict]:
         if os.path.exists(SKY_CONTAS_FILE):
             try:
                 for acc in load_hits_from_text_file(SKY_CONTAS_FILE):
-                    add_acc(acc)
+                    em = acc.get("email", "").strip().lower()
+                    if em in seen_keys:
+                        # Enriquece sessão já existente com a senha de skycontas.txt
+                        for existing in all_accounts:
+                            if existing.get("email", "").strip().lower() == em:
+                                if acc.get("password") and not existing.get("password"):
+                                    existing["password"] = acc["password"]
+                                break
+                    else:
+                        add_acc(acc)
             except Exception:
                 pass
 
@@ -740,15 +767,19 @@ def load_all_sky_accounts(force_reload: bool = False) -> List[dict]:
                 cnt = act_counts.get(em, 0)
                 acc["info"]["activations"] = cnt
                 acc["info"]["max_activations"] = MAX_SKY_ACTIVATIONS
-                if cnt >= MAX_SKY_ACTIVATIONS:
+                has_sess = _has_valid_account_session(acc)
+                if has_sess:
+                    acc["info"]["status_badge"] = "⚡ Sessão Pronta (300ms)"
+                    acc["validated"] = True
+                elif cnt >= MAX_SKY_ACTIVATIONS:
                     acc["info"]["status_badge"] = f"Utilizada ({cnt}/{MAX_SKY_ACTIVATIONS} TV)"
                 else:
-                    acc["info"]["status_badge"] = f"0/{MAX_SKY_ACTIVATIONS} TV (Pronta)"
+                    acc["info"]["status_badge"] = f"Pronta ({cnt}/{MAX_SKY_ACTIVATIONS} TV)"
 
             all_accounts.sort(key=lambda a: (
-                1 if a.get("info", {}).get("activations", 0) >= MAX_SKY_ACTIVATIONS else 0,
-                0 if a.get("is_session") or a.get("sso_token") or a.get("jwt_token") or _has_valid_account_session(a) else 1,
-                a.get("info", {}).get("activations", 0)
+                0 if _has_valid_account_session(a) else 1,
+                a.get("info", {}).get("activations", 0),
+                a.get("email", "").lower()
             ))
         except Exception:
             pass
@@ -800,60 +831,63 @@ def _has_valid_account_session(acc: dict) -> bool:
 
     return False
 
-def find_sky_valid_account(used_accounts: Set[str], dead_accounts: Set[str], last_used_map: Optional[Dict[str, float]] = None) -> Optional[dict]:
-    """Retorna a melhor conta Sky disponível para o próximo pareamento (1 TV por conta, rotação estrita e sequencial)."""
+def find_sky_valid_account(used_accounts: Optional[Set[str]] = None, dead_accounts: Optional[Set[str]] = None, last_used_map: Optional[Dict[str, float]] = None) -> Optional[dict]:
+    """
+    Retorna a melhor conta Sky disponível com foco em velocidade máxima (300ms).
+    ⚡ TIER 1 (MÁXIMA VELOCIDADE - 300ms):
+       Prioriza SEMPRE contas com sessão/token SSO oficial ativo e não-expirado.
+       Executa rotação circular perfeita (menos recentemente usada primeiro via last_used_map).
+    🛡️ TIER 2 (FALLBACK):
+       Se não houver nenhuma sessão ativa pronta, escolhe a melhor conta do estoque para autenticar.
+    """
     accounts = load_all_sky_accounts()
     if not accounts:
         return None
 
     if last_used_map is None:
         last_used_map = {}
+    if dead_accounts is None:
+        dead_accounts = set()
+    if used_accounts is None:
+        used_accounts = set()
 
     act_counts = get_activation_counts()
     normalized_dead = {str(d).strip().lower() for d in dead_accounts if d}
     normalized_dead.update(get_invalid_sky_accounts())
-    normalized_used = {str(u).strip().lower() for u in used_accounts if u}
 
-    # Contas que já atingiram o limite de 1 TV são consideradas usadas/esgotadas
-    for em, cnt in act_counts.items():
-        if cnt >= MAX_SKY_ACTIVATIONS:
-            normalized_used.add(em)
+    # ═══════════════════════════════════════════════════════════════
+    # ⚡ TIER 1: CONTAS COM SESSÃO ATIVA PRONTA (ATIVAÇÃO EM 300ms)
+    # ═══════════════════════════════════════════════════════════════
+    active_session_accounts = [
+        acc for acc in accounts
+        if acc.get("email", "").strip().lower()
+        and acc.get("email", "").strip().lower() not in normalized_dead
+        and _has_valid_account_session(acc)
+    ]
 
-    # 1. Prioridade: Contas vivas que ainda têm vaga (0 ativações) e NÃO foram usadas nesta sessão
-    candidates = []
-    for acc in accounts:
-        em = acc.get("email", "").strip().lower()
-        if not em or em in normalized_dead or em in normalized_used:
-            continue
-        cnt = act_counts.get(em, 0)
-        candidates.append((acc, cnt))
+    if active_session_accounts:
+        # Rotação circular: prioriza a menos recentemente usada
+        active_session_accounts.sort(key=lambda a: (
+            last_used_map.get(a.get("email", "").strip().lower(), 0.0),
+            act_counts.get(a.get("email", "").strip().lower(), 0)
+        ))
+        return active_session_accounts[0]
+
+    # ═══════════════════════════════════════════════════════════════
+    # 🛡️ TIER 2: FALLBACK (QUANDO TODAS AS SESSÕES EXPIRARAM OU FORAM ESGOTADAS)
+    # ═══════════════════════════════════════════════════════════════
+    candidates = [
+        acc for acc in accounts
+        if acc.get("email", "").strip().lower()
+        and acc.get("email", "").strip().lower() not in normalized_dead
+    ]
 
     if candidates:
-        def _score(item):
-            acc, cnt = item
-            em = acc.get("email", "").strip().lower()
-            last_ts = last_used_map.get(em, 0.0)
-            has_own_session = 0 if _has_valid_account_session(acc) else 1
-            plan = str(acc.get("info", {}).get("plan", "")).upper()
-            has_fibra = 0 if ("FIBRA" in plan or "PLUS TOTAL" in plan or "SUPER HD" in plan) else 1
-            # Prioriza: sessão própria pronta (ativação em 300ms), menor contagem de ativações, nunca usada recentemente, plano premium
-            return (has_own_session, cnt, last_ts, has_fibra)
-
-        candidates.sort(key=_score)
-        return candidates[0][0]
-
-    # 2. Se todas as contas vivas já atingiram o limite ou foram usadas, rotaciona pegando a menos recentemente usada
-    valid_alive = [
-        a for a in accounts
-        if a.get("email", "").strip().lower() and a.get("email", "").strip().lower() not in normalized_dead
-    ]
-    if valid_alive:
-        valid_alive.sort(key=lambda a: (
-            0 if _has_valid_account_session(a) else 1,
+        candidates.sort(key=lambda a: (
             act_counts.get(a.get("email", "").strip().lower(), 0),
             last_used_map.get(a.get("email", "").strip().lower(), 0.0)
         ))
-        return valid_alive[0]
+        return candidates[0]
 
     return accounts[0]
 
@@ -975,8 +1009,30 @@ def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -
     if email and password:
         push_sky_log(f"📱 [API Mobile] Tentando pareamento direto via API Sky...")
         try:
+            payload_android = None
+            payload_web = None
+            if os.path.exists(PAYLOAD_ANDROID_FILE):
+                try:
+                    with open(PAYLOAD_ANDROID_FILE, "r", encoding="utf-8", errors="ignore") as pf:
+                        payload_android = pf.read().strip()
+                except Exception:
+                    pass
+            if os.path.exists(PAYLOAD_WEB_FILE):
+                try:
+                    with open(PAYLOAD_WEB_FILE, "r", encoding="utf-8", errors="ignore") as pwf:
+                        payload_web = pwf.read().strip()
+                except Exception:
+                    pass
+
             import ativador_tv
-            res_api = ativador_tv.activate_with_account(email=email, password=password, tv_code=clean_code, use_proxy=use_proxy)
+            res_api = ativador_tv.activate_with_account(
+                email=email,
+                password=password,
+                tv_code=clean_code,
+                use_proxy=use_proxy,
+                payload_android=payload_android,
+                payload_web=payload_web
+            )
             if res_api:
                 msg = "Smart TV Sky ativada com sucesso via API Sky!"
                 push_sky_log(f"✅ [API Mobile] {msg}", level="success")
@@ -1001,7 +1057,7 @@ def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -
             password=password,
             tv_code=clean_code,
             headless=True,
-            timeout_ms=55000,
+            timeout_ms=30000,
             usar_proxy=use_proxy
         )
 

@@ -975,7 +975,7 @@ def ativar_tv_playwright(
     password: str,
     tv_code: str,
     headless: bool = True,
-    timeout_ms: int = 55000,
+    timeout_ms: int = 30000,
     usar_proxy: bool = False
 ) -> Dict[str, Any]:
     """
@@ -1398,6 +1398,11 @@ def ativar_tv_playwright(
                     sess_sso = (tokens_ls.get("sso") if tokens_ls else "") or tokens_capturados.get("ssoToken") or tokens_capturados.get("idToken")
                     if sess_sso and "ey" in sess_sso:
                         tokens_capturados["ssoToken"] = sess_sso
+                        try:
+                            import sky_service
+                            sky_service.save_sky_session(sso_token=sess_sso, profile_token=tokens_ls.get("prof", "") if tokens_ls else "")
+                        except Exception:
+                            pass
                         import ativador_tv
                         activator = ativador_tv.SkyTVActivator(use_proxy=usar_proxy)
                         res_direct = activator.activate_tv(token=sess_sso, tv_code=tv_code, profile_token=tokens_ls.get("prof") if tokens_ls else None)
