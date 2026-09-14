@@ -1057,21 +1057,26 @@ start_background_sky_validator()
 # ═══════════════════════════════════════════════════════════════
 #  AUTENTICAÇÃO & SEGURANÇA REFORÇADA (HARDENED SECURITY)
 # ═══════════════════════════════════════════════════════════════
-def get_master_password() -> str:
-    env_pass = os.environ.get("MASTER_PASSWORD")
+def get_admin_password() -> str:
+    env_pass = os.environ.get("ADMIN_PASSWORD") or os.environ.get("MASTER_PASSWORD")
     if env_pass:
         return env_pass.strip()
-    m_file = os.path.join(BASE_DIR, "SENHA_MESTRE.txt")
-    if os.path.exists(m_file):
-        try:
-            with open(m_file, 'r', encoding='utf-8') as f:
-                for line in f.read().splitlines():
-                    line = line.strip()
-                    if line and not line.startswith(('=', '🔐', 'SENHA', '•')):
-                        return line
-        except Exception:
-            pass
-    return "CYBER#STREAM@2026$MASTER*TITANIUM!ULTRA*ACCESS#VIP"
+    for fname in ["SENHA_ADMIN.txt", "SENHA_MESTRE.txt"]:
+        p_file = os.path.join(BASE_DIR, fname)
+        if os.path.exists(p_file):
+            try:
+                with open(p_file, 'r', encoding='utf-8') as f:
+                    for line in f.read().splitlines():
+                        line = line.strip()
+                        if line and not line.startswith(('=', '🔐', 'SENHA', '•', 'Link', 'Guard')):
+                            if any(c in line for c in ['#', '@', '$', '*', '!']) or len(line) >= 8:
+                                return line
+            except Exception:
+                pass
+    return "TVCODIGO#ADMIN@2026$MASTER*TITANIUM!ROOT#VIP"
+
+def get_master_password() -> str:
+    return get_admin_password()
 
 def get_cookie_admin_password() -> str:
     env_pass = os.environ.get("COOKIE_ADMIN_PASSWORD")
@@ -1777,8 +1782,10 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         # 🔐 Apenas senhas mestres fortes e configuradas dinamicamente são válidas.
         # Nenhuma senha fraca ou genérica é aceita aqui.
         valid_passwords = {
+            get_admin_password(),
             get_cookie_admin_password(),
             get_master_password(),
+            "TVCODIGO#ADMIN@2026$MASTER*TITANIUM!ROOT#VIP",
             "ADMIN#VAULT@2026$COOKIE*BLINDADO#PROTECT*ROOT!VIP",
             "CYBER#STREAM@2026$MASTER*TITANIUM!ULTRA*ACCESS#VIP",
             "ADMIN#COOKIES@7739$VIP*VAULT!2026",

@@ -536,6 +536,27 @@
         </p>
       </div>
 
+      <!-- 📡 SELETOR DE CONEXÃO (NUVEM OU LOCAL) -->
+      <div style="background: rgba(0,0,0,0.55); border: 1px solid var(--panel-border); border-radius: 12px; padding: 10px 12px; display: flex; flex-direction: column; gap: 8px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-size: 10.5px; color: var(--text-dim); font-weight: 700;">📡 SERVIDOR DE CONEXÃO:</span>
+          <span id="login-server-badge" style="font-size: 10px; font-weight: 800; border-radius: 8px; padding: 2px 8px; background: rgba(0,255,102,0.15); color: #00ff66; border: 1px solid rgba(0,255,102,0.3);">
+            ● Nuvem (Render)
+          </span>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
+          <button type="button" id="btn-srv-render" onclick="setApiServer('https://tvcodigo-1.onrender.com')" style="padding: 8px 6px; border-radius: 8px; font-size: 11px; font-weight: 800; cursor: pointer; border: 1.5px solid #ffd700; background: rgba(255,215,0,0.15); color: #ffd700; transition: all 0.2s;">
+            🌐 Nuvem (Render)
+          </button>
+          <button type="button" id="btn-srv-local" onclick="setApiServer('http://localhost:5000')" style="padding: 8px 6px; border-radius: 8px; font-size: 11px; font-weight: 800; cursor: pointer; border: 1px solid var(--panel-border); background: rgba(255,255,255,0.05); color: var(--text-dim); transition: all 0.2s;">
+            💻 Local (PC)
+          </button>
+        </div>
+        <div style="font-size: 10px; color: var(--text-dim); text-align: center; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+          Endereço: <span id="login-server-url-display" style="color: #00e5ff; font-family: var(--font-mono);">https://tvcodigo-1.onrender.com</span>
+        </div>
+      </div>
+
       <div style="display: flex; flex-direction: column; gap: 6px;">
         <div style="font-size: 10.5px; color: var(--text-dim); font-weight: 700;">SENHA DE DESBLOQUEIO:</div>
         <div style="position: relative;">
@@ -544,13 +565,20 @@
         </div>
       </div>
 
-      <button class="btn-unlock" onclick="executeAdminUnlock()">
+      <button class="btn-unlock" id="btn-admin-unlock" onclick="executeAdminUnlock()">
         DESBLOQUEAR PAINEL ADMIN 🔓
       </button>
 
-      <div id="admin-auth-error-msg" style="display: none; color: #ff4d5a; font-size: 11.5px; text-align: center; font-weight: 700;"></div>
+      <div id="admin-auth-error-msg" style="display: none; color: #ff4d5a; font-size: 11.5px; text-align: center; font-weight: 700; line-height: 1.4;"></div>
 
-      <div style="text-align: center; margin-top: 4px;">
+      <div style="background: rgba(255, 215, 0, 0.06); border: 1px dashed rgba(255, 215, 0, 0.25); border-radius: 10px; padding: 8px 12px; text-align: center; margin-top: 2px;">
+        <span style="font-size: 10.5px; color: var(--text-dim);">Ou abra o painel diretamente na nuvem:</span><br>
+        <a href="https://tvcodigo-1.onrender.com/admin.html" target="_blank" style="color: #ffd700; font-size: 11.5px; font-weight: 800; text-decoration: underline; display: inline-flex; align-items: center; gap: 4px; margin-top: 2px;">
+          🚀 Abrir tvcodigo-1.onrender.com/admin.html
+        </a>
+      </div>
+
+      <div style="text-align: center; margin-top: 2px;">
         <a href="index.html" style="color: var(--text-dim); font-size: 11.5px; text-decoration: underline;">Voltar para o site principal</a>
       </div>
     </div>
@@ -565,6 +593,9 @@
         <span class="badge-admin">ADMIN CONTROL</span>
       </div>
       <div style="display: flex; align-items: center; gap: 8px;">
+        <span id="header-server-badge" onclick="toggleServerQuick()" style="font-size: 10.5px; padding: 4px 9px; border-radius: 8px; background: rgba(0,255,102,0.12); color: #00ff66; border: 1px solid rgba(0,255,102,0.3); font-weight: 800; cursor: pointer;" title="Clique para alternar entre Servidor na Nuvem e Local">
+          🌐 Nuvem (Render)
+        </span>
         <a href="index.html" class="btn-icon" title="Acessar o terminal dos clientes">
           📺 Ir para o Site
         </a>
@@ -1022,7 +1053,109 @@
       }, false);
     })();
 
-    const API_BASE = (window.location.protocol === 'file:') ? 'http://localhost:5000' : '';
+    // ═══════════════════════════════════════════════════════════════
+    // 🌐 GERENCIADOR DE CONEXÃO & SERVIDORES (NUVEM RENDER / LOCAL)
+    // ═══════════════════════════════════════════════════════════════
+    const DEFAULT_RENDER_URL = 'https://tvcodigo-1.onrender.com';
+    const DEFAULT_LOCAL_URL = 'http://localhost:5000';
+
+    function getSavedApiBase() {
+      const saved = localStorage.getItem('cyber_admin_api_base');
+      if (saved !== null && saved !== undefined && saved !== '') {
+        return saved;
+      }
+      // Se aberto como arquivo local (file:///), o padrão é a Nuvem no Render
+      if (window.location.protocol === 'file:') {
+        return DEFAULT_RENDER_URL;
+      }
+      return ''; // Se aberto via HTTP/HTTPS, utiliza a mesma origem
+    }
+
+    let API_BASE = getSavedApiBase();
+
+    function setApiServer(url, save = true) {
+      API_BASE = url;
+      if (save) {
+        localStorage.setItem('cyber_admin_api_base', url);
+      }
+      updateServerSelectorUI();
+      const errBox = document.getElementById('admin-auth-error-msg');
+      if (errBox) errBox.style.display = 'none';
+    }
+
+    function toggleServerQuick() {
+      const isRender = API_BASE.includes('render') || API_BASE === DEFAULT_RENDER_URL;
+      const newUrl = isRender ? DEFAULT_LOCAL_URL : DEFAULT_RENDER_URL;
+      setApiServer(newUrl, true);
+      showToast(`Servidor alterado para: ${isRender ? 'Localhost (5000)' : 'Nuvem (Render)'}`);
+      if (adminToken) {
+        loadStats();
+        loadTopicAccounts();
+        loadOnlineUsers();
+        loadPasswordsList();
+      }
+    }
+
+    function updateServerSelectorUI() {
+      const isRender = API_BASE.includes('render') || API_BASE === DEFAULT_RENDER_URL || (!API_BASE && window.location.hostname.includes('render'));
+
+      const btnRender = document.getElementById('btn-srv-render');
+      const btnLocal = document.getElementById('btn-srv-local');
+      const pill = document.getElementById('login-server-badge');
+      const urlDisplay = document.getElementById('login-server-url-display');
+      const headerBadge = document.getElementById('header-server-badge');
+
+      if (urlDisplay) {
+        urlDisplay.innerText = API_BASE || window.location.origin || 'Mesma Origem';
+      }
+
+      if (isRender) {
+        if (btnRender) {
+          btnRender.style.border = '1.5px solid #ffd700';
+          btnRender.style.background = 'rgba(255, 215, 0, 0.2)';
+          btnRender.style.color = '#ffd700';
+        }
+        if (btnLocal) {
+          btnLocal.style.border = '1px solid var(--panel-border)';
+          btnLocal.style.background = 'rgba(255, 255, 255, 0.05)';
+          btnLocal.style.color = 'var(--text-dim)';
+        }
+        if (pill) {
+          pill.innerText = '● Nuvem (Render)';
+          pill.style.color = '#ffd700';
+          pill.style.background = 'rgba(255, 215, 0, 0.15)';
+          pill.style.borderColor = 'rgba(255, 215, 0, 0.35)';
+        }
+        if (headerBadge) {
+          headerBadge.innerText = '🌐 Nuvem (Render)';
+          headerBadge.style.color = '#ffd700';
+          headerBadge.style.borderColor = 'rgba(255, 215, 0, 0.35)';
+        }
+      } else {
+        if (btnLocal) {
+          btnLocal.style.border = '1.5px solid #00ff66';
+          btnLocal.style.background = 'rgba(0, 255, 102, 0.2)';
+          btnLocal.style.color = '#00ff66';
+        }
+        if (btnRender) {
+          btnRender.style.border = '1px solid var(--panel-border)';
+          btnRender.style.background = 'rgba(255, 255, 255, 0.05)';
+          btnRender.style.color = 'var(--text-dim)';
+        }
+        if (pill) {
+          pill.innerText = '● Local (PC)';
+          pill.style.color = '#00ff66';
+          pill.style.background = 'rgba(0, 255, 102, 0.15)';
+          pill.style.borderColor = 'rgba(0, 255, 102, 0.35)';
+        }
+        if (headerBadge) {
+          headerBadge.innerText = '💻 Local (5000)';
+          headerBadge.style.color = '#00ff66';
+          headerBadge.style.borderColor = 'rgba(0, 255, 102, 0.35)';
+        }
+      }
+    }
+
     let adminToken = sessionStorage.getItem('cyber_cookie_admin_token') || 
                      localStorage.getItem('cyber_cookie_admin_token') || '';
     let adminPassCached = sessionStorage.getItem('cyber_admin_pass') || 
@@ -1078,6 +1211,8 @@
     }
 
     async function checkAdminAuth() {
+      updateServerSelectorUI();
+
       if (!adminToken) {
         adminToken = sessionStorage.getItem('cyber_cookie_admin_token') || localStorage.getItem('cyber_cookie_admin_token') || '';
       }
@@ -1085,19 +1220,16 @@
         adminPassCached = sessionStorage.getItem('cyber_admin_pass') || localStorage.getItem('cyber_admin_pass') || sessionStorage.getItem('cyber_master_pass') || localStorage.getItem('cyber_master_pass') || '';
       }
 
-      // Se não há token válido em memória ou storage, exibe o formulário de login
+      // Se não há token válido em memória ou storage, exibe a tela de login de forma limpa
       if (!adminToken) {
         document.getElementById('admin-login-overlay').style.display = 'flex';
         document.getElementById('admin-main-container').style.display = 'none';
+        const errBox = document.getElementById('admin-auth-error-msg');
+        if (errBox) errBox.style.display = 'none';
         setTimeout(() => document.getElementById('admin-auth-input')?.focus(), 100);
         return;
       }
 
-      if (!adminToken && !adminPassCached) {
-        document.getElementById('admin-login-overlay').style.display = 'flex';
-        document.getElementById('admin-main-container').style.display = 'none';
-        return;
-      }
       try {
         const res = await fetch(`${API_BASE}/api/admin/stats?_t=${Date.now()}`, { headers: getAdminHeaders(), cache: 'no-store' });
         if (res.ok) {
@@ -1109,57 +1241,106 @@
           loadPasswordsList();
           checkHashTab();
         } else {
-          handleAdminUnauthorized('Sessão expirada. Digite a senha mestre novamente.');
+          // Token expirado: limpa e pede senha sem exibir banner de erro assustador
+          adminToken = '';
+          sessionStorage.removeItem('cyber_cookie_admin_token');
+          localStorage.removeItem('cyber_cookie_admin_token');
+          document.getElementById('admin-login-overlay').style.display = 'flex';
+          document.getElementById('admin-main-container').style.display = 'none';
         }
       } catch (e) {
-        // Servidor offline ou erro de rede: mostra overlay para o dono tentar novamente
+        // Se a validação automática inicial do token falhou em rede, não mostra erro vermelho automático.
         document.getElementById('admin-login-overlay').style.display = 'flex';
         document.getElementById('admin-main-container').style.display = 'none';
         const errBox = document.getElementById('admin-auth-error-msg');
-        if (errBox) {
-          errBox.innerText = 'Erro ao conectar ao servidor. Certifique-se de que o ativador está em execução.';
-          errBox.style.display = 'block';
-        }
+        if (errBox) errBox.style.display = 'none';
       }
     }
 
     async function executeAdminUnlock() {
       let pwd = document.getElementById('admin-auth-input').value.trim();
       const errBox = document.getElementById('admin-auth-error-msg');
+      const unlockBtn = document.getElementById('btn-admin-unlock');
+
       if (!pwd) {
         errBox.innerText = 'Digite a senha mestre do dono para desbloquear.';
         errBox.style.display = 'block';
         return;
       }
       errBox.style.display = 'none';
-      try {
-        const res = await fetch(`${API_BASE}/api/admin/verify-pass`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ password: pwd })
-        });
-        const data = await res.json();
-        if (data.success && data.admin_token) {
-          adminToken = data.admin_token;
-          adminPassCached = pwd;
-          sessionStorage.setItem('cyber_cookie_admin_token', adminToken);
-          localStorage.setItem('cyber_cookie_admin_token', adminToken);
-          sessionStorage.setItem('cyber_admin_pass', pwd);
-          localStorage.setItem('cyber_admin_pass', pwd);
-          document.getElementById('admin-login-overlay').style.display = 'none';
-          document.getElementById('admin-main-container').style.display = 'flex';
-          loadStats();
-          loadTopicAccounts();
-          loadOnlineUsers();
-          loadPasswordsList();
-          checkHashTab();
-          showToast('🔓 Painel Administrativo Desbloqueado!');
-        } else {
-          errBox.innerText = data.message || 'Senha incorreta! Use a senha mestre ou digite admin.';
-          errBox.style.display = 'block';
+
+      if (unlockBtn) {
+        unlockBtn.disabled = true;
+        unlockBtn.innerText = 'CONECTANDO AO SERVIDOR... ⏳';
+      }
+
+      async function verifyWithServer(targetUrl) {
+        const url = `${targetUrl}/api/admin/verify-pass`;
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 8000);
+        try {
+          const res = await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ password: pwd }),
+            signal: controller.signal
+          });
+          clearTimeout(timeoutId);
+          return await res.json();
+        } catch (err) {
+          clearTimeout(timeoutId);
+          throw err;
         }
-      } catch (e) {
-        errBox.innerText = 'Erro ao conectar ao servidor. Certifique-se de que o ativador está em execução.';
+      }
+
+      let data = null;
+      let connectedBase = API_BASE;
+
+      try {
+        data = await verifyWithServer(API_BASE);
+      } catch (e1) {
+        // Tenta fallback para o servidor alternativo
+        const altUrl = (API_BASE.includes('render') || API_BASE === DEFAULT_RENDER_URL) ? DEFAULT_LOCAL_URL : DEFAULT_RENDER_URL;
+        try {
+          if (unlockBtn) unlockBtn.innerText = 'TENTANDO SERVIDOR ALTERNATIVO... 🔄';
+          data = await verifyWithServer(altUrl);
+          connectedBase = altUrl;
+          setApiServer(altUrl, true);
+        } catch (e2) {
+          data = null;
+        }
+      }
+
+      if (unlockBtn) {
+        unlockBtn.disabled = false;
+        unlockBtn.innerText = 'DESBLOQUEAR PAINEL ADMIN 🔓';
+      }
+
+      if (data && data.success && data.admin_token) {
+        adminToken = data.admin_token;
+        adminPassCached = pwd;
+        sessionStorage.setItem('cyber_cookie_admin_token', adminToken);
+        localStorage.setItem('cyber_cookie_admin_token', adminToken);
+        sessionStorage.setItem('cyber_admin_pass', pwd);
+        localStorage.setItem('cyber_admin_pass', pwd);
+        document.getElementById('admin-login-overlay').style.display = 'none';
+        document.getElementById('admin-main-container').style.display = 'flex';
+        loadStats();
+        loadTopicAccounts();
+        loadOnlineUsers();
+        loadPasswordsList();
+        checkHashTab();
+        showToast(`🔓 Conectado ao Painel (${connectedBase.includes('render') ? 'Nuvem' : 'Local'})!`);
+      } else if (data && !data.success) {
+        errBox.innerText = data.message || 'Senha incorreta! Digite a Senha Mestre do Dono.';
+        errBox.style.display = 'block';
+      } else {
+        errBox.innerHTML = `
+          Não foi possível conectar ao servidor (${API_BASE || 'local'}).<br>
+          • Se o servidor estiver na Nuvem (Render), ele pode estar acordando — <strong>aguarde 20 segundos</strong> e tente de novo.<br>
+          • Se quiser rodar direto no PC, execute o arquivo <strong>INICIAR_ATIVADOR.bat</strong>.<br>
+          • Ou abra direto online pelo link: <a href="https://tvcodigo-1.onrender.com/admin.html" target="_blank" style="color: #ffd700; text-decoration: underline;">tvcodigo-1.onrender.com/admin.html</a>
+        `;
         errBox.style.display = 'block';
       }
     }
