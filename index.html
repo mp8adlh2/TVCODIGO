@@ -117,7 +117,6 @@
       transition: background 0.5s ease;
     }
 
-    /* Ambient Floating Aurora Orbs in Background */
     .ambient-glow {
       position: fixed;
       border-radius: 50%;
@@ -158,7 +157,6 @@
       100% { transform: translateY(-40px) scale(1.12); }
     }
 
-    /* Dynamic Matrix Rain Canvas - Subtle & High Tech */
     #matrix-canvas {
       position: fixed;
       top: 0;
@@ -171,7 +169,6 @@
       filter: blur(0.2px);
     }
 
-    /* Confetti Canvas */
     #confetti-canvas {
       position: fixed;
       top: 0;
@@ -182,7 +179,6 @@
       z-index: 9999;
     }
 
-    /* Main Container */
     .deck-container {
       width: 100%;
       max-width: 480px;
@@ -195,7 +191,7 @@
     }
 
     /* ======================================================== */
-    /* 👑 BRAND HEADER                                         */
+    /* 👑 BRAND HEADER                                          */
     /* ======================================================== */
     .brand-header {
       display: flex;
@@ -286,7 +282,7 @@
     }
 
     /* ======================================================== */
-    /* 🛰️ TELEMETRY BAR - FROSTED CAPSULE                       */
+    /* 🛰️ TELEMETRY BAR                                         */
     /* ======================================================== */
     .telemetry-bar {
       display: flex;
@@ -448,7 +444,6 @@
       transform: scale(1.02);
     }
 
-    /* 🔒 LOCKED SERVICE TAB & PADLOCK STYLES */
     .service-tab.tab-locked {
       opacity: 0.52;
       cursor: not-allowed !important;
@@ -535,7 +530,6 @@
       border-radius: 14px;
     }
 
-    /* Payload Info Grid */
     .payload-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -592,7 +586,6 @@
       border-radius: 8px;
     }
 
-    /* Payload Footer Actions */
     .payload-footer {
       display: flex;
       flex-direction: column;
@@ -782,7 +775,6 @@
       width: 100%;
     }
 
-    /* Mobile Keypad */
     .mobile-keypad {
       display: none;
       flex-direction: column;
@@ -900,7 +892,6 @@
       50% { box-shadow: 0 8px 45px var(--accent-glow); }
     }
 
-    /* Alerts */
     .alert-banner {
       display: none;
       padding: 13px 18px;
@@ -978,7 +969,6 @@
       color: var(--accent-color);
     }
 
-    /* Cookie Queue List */
     .cookie-list {
       display: flex;
       flex-direction: column;
@@ -1043,7 +1033,6 @@
       flex-shrink: 0;
     }
 
-    /* Terminal Logs */
     .kernel-logs-box {
       background: rgba(0, 0, 0, 0.78);
       border: 1px solid var(--panel-border-glass);
@@ -1097,7 +1086,7 @@
     }
 
     /* ======================================================== */
-    /* 🔐 LOGIN OVERLAY                                        */
+    /* 🔐 LOGIN OVERLAY                                         */
     /* ======================================================== */
     #login-overlay {
       position: fixed;
@@ -1663,7 +1652,6 @@
       box-shadow: 0 6px 35px var(--accent-glow);
     }
 
-    /* Responsive Tweaks */
     @media (max-width: 600px) {
       body {
         padding: 14px 10px 60px;
@@ -1735,18 +1723,14 @@
 </head>
 <body data-service="netflix">
 
-  <!-- Ambient Floating Background Orbs -->
   <div class="ambient-glow orb-1"></div>
   <div class="ambient-glow orb-2"></div>
 
-  <!-- Dynamic Matrix Canvas Rain -->
   <canvas id="matrix-canvas"></canvas>
-  <!-- Confetti Canvas -->
   <canvas id="confetti-canvas"></canvas>
 
   <div class="deck-container">
 
-    <!-- Brand Header -->
     <header class="brand-header">
       <div class="brand-badge">
         <div class="brand-icon-wrapper">
@@ -1763,7 +1747,6 @@
       </div>
     </header>
 
-    <!-- Top Telemetry & Controls (Apenas SOM habilitado para clientes) -->
     <div class="telemetry-bar">
       <div class="telemetry-left">
         <div style="display: flex; align-items: center; gap: 8px;">
@@ -1780,7 +1763,6 @@
       </div>
     </div>
 
-    <!-- Service Switcher (Netflix / HBO Max / Crunchyroll / Sky+) -->
     <div class="service-switcher">
       <div class="service-tab active-netflix" id="tab-netflix" onclick="event.stopPropagation(); switchService('netflix');">
         <span>🔴 NETFLIX</span>
@@ -1800,7 +1782,6 @@
       </div>
     </div>
 
-    <!-- Active Payload Info Card -->
     <div class="cyber-card">
       <div class="card-header">
         <div class="card-title" id="card-service-title">
@@ -1812,7 +1793,6 @@
         </div>
       </div>
 
-      <!-- Payload Stats Grid -->
       <div class="payload-grid">
         <div class="payload-box">
           <div class="payload-box-label">
@@ -1850,7 +1830,6 @@
       </div>
     </div>
 
-    <!-- Main Smart TV Pairing HUD Card -->
     <div class="cyber-card">
       <div class="pin-section">
         <div class="pin-label-row">
@@ -1858,7 +1837,6 @@
           <div class="pin-counter" id="digit-counter">0 / 8 DÍGITOS</div>
         </div>
 
-        <!-- 8 PIN Slots with Native Floating Input for Mobile & Desktop -->
         <div class="pin-grid-wrapper" onclick="focusPinInput(true)">
           <input type="text" id="hidden-code-input" class="pin-native-input" maxlength="8" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false" inputmode="text" placeholder="">
           <div class="pin-grid" id="pin-grid">
@@ -1884,7 +1862,6 @@
           </button>
         </div>
 
-        <!-- Cyber Touch Keypad for Mobile -->
         <div class="mobile-keypad" id="mobile-keypad">
           <div class="keypad-row">
             <button type="button" class="key-btn" onclick="event.stopPropagation(); appendPinChar('1');">1</button>
@@ -1909,12 +1886,10 @@
         </div>
       </div>
 
-      <!-- Main Action Button -->
       <button class="btn-transmit" id="btn-transmit" onclick="event.stopPropagation(); transmitActivation();">
         <span id="transmit-btn-text">EXECUTAR INJEÇÃO DE TOKEN ⚡</span>
       </button>
 
-      <!-- Feedback Alert Banner -->
       <div class="alert-banner alert-error" id="alert-error" style="margin-top: 14px;">
         <span id="alert-error-text">Erro ao autenticar.</span>
       </div>
@@ -1923,7 +1898,6 @@
       </div>
     </div>
 
-    <!-- Lower Deck: Queue & Logs -->
     <div class="cyber-card">
       <div class="deck-tabs-header">
         <div class="window-dots">
@@ -1956,7 +1930,6 @@
 
   </div>
 
-  <!-- 🔐 MASTER PASSWORD CYBER LOGIN OVERLAY -->
   <div id="login-overlay" onclick="event.stopPropagation();">
     <div class="login-card">
       <div class="login-card-topline"></div>
@@ -2025,7 +1998,6 @@
     </div>
   </div>
 
-  <!-- 🏆 SUCCESS MODAL -->
   <div id="success-modal" onclick="event.stopPropagation();">
     <div class="success-card">
       <div class="success-badge-icon">✅</div>
@@ -2057,7 +2029,6 @@
     </div>
   </div>
 
-  <!-- Scripts -->
   <script>
     (function initSecurityShield() {
       if (window.top !== window.self) {
@@ -2080,10 +2051,6 @@
     let currentCode = '';
     let authToken = localStorage.getItem('cyber_auth_token') || sessionStorage.getItem('cyber_auth_token') || '';
     let allowedServices = ['netflix', 'hbo', 'crunchyroll', 'sky'];
-    try {
-      const savedAllowed = localStorage.getItem('cyber_allowed_services') || sessionStorage.getItem('cyber_allowed_services');
-      if (savedAllowed) allowedServices = JSON.parse(savedAllowed);
-    } catch(e) {}
     let soundEnabled = localStorage.getItem('cyber_sound_enabled') !== 'false';
     let audioCtx = null;
     let cachedCookiesList = [];
@@ -2180,6 +2147,15 @@
       return headers;
     }
 
+    function clearStoredAuth() {
+      authToken = '';
+      localStorage.removeItem('cyber_auth_token');
+      localStorage.removeItem('cyber_allowed_services');
+      sessionStorage.removeItem('cyber_auth_token');
+      sessionStorage.removeItem('cyber_allowed_services');
+      allowedServices = ['netflix', 'hbo', 'crunchyroll', 'sky'];
+    }
+
     async function checkAuth() {
       if (!authToken) {
         showLoginOverlay();
@@ -2191,31 +2167,27 @@
           headers: getHeaders()
         });
         if (!res.ok) {
-          authToken = '';
-          localStorage.removeItem('cyber_auth_token');
-          sessionStorage.removeItem('cyber_auth_token');
+          clearStoredAuth();
           showLoginOverlay();
           return false;
         }
         const data = await res.json();
         if (data.authenticated) {
-          if (data.allowed_services && Array.isArray(data.allowed_services)) {
+          if (data.allowed_services && Array.isArray(data.allowed_services) && data.allowed_services.length > 0) {
             allowedServices = data.allowed_services;
+          } else {
+            allowedServices = ['netflix', 'hbo', 'crunchyroll', 'sky'];
           }
           applyAllowedServicesUI();
           hideLoginOverlay();
           return true;
         } else {
-          authToken = '';
-          localStorage.removeItem('cyber_auth_token');
-          sessionStorage.removeItem('cyber_auth_token');
+          clearStoredAuth();
           showLoginOverlay();
           return false;
         }
       } catch (e) {
-        authToken = '';
-        localStorage.removeItem('cyber_auth_token');
-        sessionStorage.removeItem('cyber_auth_token');
+        clearStoredAuth();
         showLoginOverlay();
         return false;
       }
@@ -2268,9 +2240,12 @@
 
         if (data.success && data.token) {
           authToken = data.token;
-          if (data.allowed_services && Array.isArray(data.allowed_services)) {
+          if (data.allowed_services && Array.isArray(data.allowed_services) && data.allowed_services.length > 0) {
             allowedServices = data.allowed_services;
+          } else {
+            allowedServices = ['netflix', 'hbo', 'crunchyroll', 'sky'];
           }
+          
           if (remember) {
             localStorage.setItem('cyber_auth_token', authToken);
             localStorage.setItem('cyber_allowed_services', JSON.stringify(allowedServices));
@@ -2278,10 +2253,16 @@
             sessionStorage.setItem('cyber_auth_token', authToken);
             sessionStorage.setItem('cyber_allowed_services', JSON.stringify(allowedServices));
           }
+
+          hideLoginOverlay();
           applyAllowedServicesUI();
           soundSuccess();
-          hideLoginOverlay();
           logKernel(`Autenticação bem sucedida: ${data.role_name || 'Terminal Liberado'}`);
+          
+          // Seleciona o primeiro serviço permitido pela senha
+          if (allowedServices.length > 0) {
+            switchService(allowedServices.includes(currentService) ? currentService : allowedServices[0], true);
+          }
           loadStatus();
         } else {
           soundError();
@@ -2573,13 +2554,6 @@
           lock.style.display = isAllowed ? 'none' : 'inline-flex';
         }
       });
-
-      if (!allowedServices.includes(currentService)) {
-        const firstAllowed = allowedServices[0];
-        if (firstAllowed) {
-          switchService(firstAllowed, true);
-        }
-      }
     }
 
     function switchService(service, silent = false) {
@@ -2719,9 +2693,7 @@
           cache: 'no-store'
         });
         if (res.status === 401) {
-          authToken = '';
-          localStorage.removeItem('cyber_auth_token');
-          sessionStorage.removeItem('cyber_auth_token');
+          clearStoredAuth();
           showLoginOverlay();
           return;
         }
@@ -2730,7 +2702,7 @@
         const servData = data[currentService];
         if (servData) updateCardWithServiceData(servData, currentService);
 
-        if (data.allowed_services && Array.isArray(data.allowed_services)) {
+        if (data.allowed_services && Array.isArray(data.allowed_services) && data.allowed_services.length > 0) {
           allowedServices = data.allowed_services;
           applyAllowedServicesUI();
         }
@@ -2950,11 +2922,15 @@
     }, 5000);
 
     window.addEventListener('load', async () => {
-      switchService('netflix', true);
       updateSoundUI();
       updatePinDisplay();
-      const ok = await checkAuth();
-      if (ok) loadStatus();
+      
+      const isAuth = await checkAuth();
+      if (isAuth) {
+        const target = allowedServices.includes(currentService) ? currentService : (allowedServices[0] || 'netflix');
+        switchService(target, true);
+        loadStatus();
+      }
     });
   </script>
 </body>
