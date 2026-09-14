@@ -1537,6 +1537,107 @@
       40%, 80% { transform: translateX(6px); }
     }
 
+    /* 🔐 OWNER MODAL & PASSWORD MANAGER STYLES */
+    .btn-owner-trigger {
+      background: rgba(255, 215, 0, 0.08);
+      border: 1px solid rgba(255, 215, 0, 0.35);
+      border-radius: 12px;
+      padding: 9px 18px;
+      color: #ffd700;
+      font-family: 'Outfit', sans-serif;
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-owner-trigger:hover {
+      background: rgba(255, 215, 0, 0.18);
+      border-color: #ffd700;
+      transform: translateY(-1px);
+      box-shadow: 0 0 16px rgba(255, 215, 0, 0.25);
+    }
+
+    #owner-password-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(3, 7, 18, 0.92);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      z-index: 10002;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      overflow-y: auto;
+    }
+
+    .owner-modal-card {
+      width: 100%;
+      max-width: 620px;
+      max-height: 90vh;
+      overflow-y: auto;
+      background: rgba(15, 23, 42, 0.94);
+      border: 1.5px solid rgba(255, 215, 0, 0.4);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(255, 215, 0, 0.15);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+      animation: modalSlide 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .owner-plan-pill {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1.5px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 8px 10px;
+      font-size: 11px;
+      font-weight: 800;
+      color: #94a3b8;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    .owner-plan-pill:hover {
+      border-color: rgba(255, 215, 0, 0.4);
+      color: #fff;
+    }
+    .owner-plan-pill.active {
+      background: rgba(255, 215, 0, 0.2);
+      border-color: #ffd700;
+      color: #ffd700;
+      box-shadow: 0 0 12px rgba(255, 215, 0, 0.25);
+    }
+
+    .owner-pwd-card {
+      background: rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: all 0.2s;
+    }
+    .owner-pwd-card:hover {
+      border-color: rgba(255, 215, 0, 0.35);
+      background: rgba(255, 215, 0, 0.02);
+    }
+
+    .owner-tag-nf { background: rgba(229,9,20,0.18); color: #ff3344; border: 1px solid rgba(229,9,20,0.35); border-radius: 6px; padding: 1px 6px; font-size: 10px; font-weight: 800; }
+    .owner-tag-hbo { background: rgba(168,85,247,0.18); color: #c084fc; border: 1px solid rgba(168,85,247,0.35); border-radius: 6px; padding: 1px 6px; font-size: 10px; font-weight: 800; }
+    .owner-tag-cr { background: rgba(244,117,33,0.18); color: #f47521; border: 1px solid rgba(244,117,33,0.35); border-radius: 6px; padding: 1px 6px; font-size: 10px; font-weight: 800; }
+    .owner-tag-sky { background: rgba(0,160,227,0.18); color: #00A0E3; border: 1px solid rgba(0,160,227,0.35); border-radius: 6px; padding: 1px 6px; font-size: 10px; font-weight: 800; }
+
     /* 🏆 SUCCESS MODAL */
     #success-modal {
       position: fixed;
@@ -1763,6 +1864,9 @@
         <button class="btn-icon" onclick="event.stopPropagation(); logoutAndSwitchAccount();" style="color: #00E5FF; border-color: rgba(0, 229, 255, 0.4);">
           🔑 TROCAR SENHA
         </button>
+        <button class="btn-icon" onclick="event.stopPropagation(); openOwnerManagerModal();" style="color: #ffd700; border-color: rgba(255, 215, 0, 0.4); background: rgba(255, 215, 0, 0.08);" title="Gerenciar senhas do sistema (Exclusivo do Dono)">
+          🔐 DONO
+        </button>
       </div>
     </div>
 
@@ -1966,7 +2070,9 @@
 
       <div class="login-input-wrap">
         <span class="login-input-icon">🔑</span>
-        <input type="password" id="login-password-input" class="login-input" placeholder="Digite sua senha de acesso mestre..." onkeydown="if(event.key==='Enter') executeLogin();">
+        <!-- 🛡️ Honeypot invisível anti-bot -->
+        <input type="text" id="bot-check-username" name="username" style="display:none !important; position:absolute; left:-9999px;" tabindex="-1" autocomplete="off">
+        <input type="password" id="login-password-input" class="login-input" placeholder="Digite sua senha de acesso..." onkeydown="if(event.key==='Enter') executeLogin();">
         <button class="btn-eye" type="button" onclick="togglePasswordVisibility()" title="Mostrar/Ocultar Senha">👁️</button>
       </div>
 
@@ -1981,6 +2087,12 @@
         <span>ACESSAR TERMINAL DE ATIVAÇÕES</span>
         <span style="font-size: 18px; filter: drop-shadow(0 0 6px rgba(255,255,255,0.8));">🚀</span>
       </button>
+
+      <div style="margin-top: 14px; text-align: center;">
+        <button type="button" class="btn-owner-trigger" onclick="openOwnerManagerModal()">
+          <span>🔐 ACESSO DO DONO // GERENCIAR SENHAS AO VIVO</span>
+        </button>
+      </div>
 
       <div class="login-error" id="login-error-msg"></div>
 
@@ -2029,6 +2141,136 @@
       <button class="btn-finish" onclick="closeSuccessModal()">
         CONCLUIR E LIBERAR TV 🚀
       </button>
+    </div>
+  </div>
+
+  <!-- 🔐 MODAL EXCLUSIVO DO DONO (GERENCIAMENTO DE SENHAS 100% AO VIVO) -->
+  <div id="owner-password-modal" onclick="if(event.target === this) closeOwnerManagerModal();">
+    
+    <!-- TELA 1: AUTENTICAÇÃO DO DONO -->
+    <div class="owner-modal-card" id="owner-auth-card" style="max-width: 440px; text-align: center;">
+      <div style="font-size: 38px; margin-bottom: 4px;">🔐</div>
+      <div style="font-family: var(--font-display); font-size: 20px; font-weight: 900; color: #ffd700; letter-spacing: 1px;">
+        ÁREA EXCLUSIVA DO DONO
+      </div>
+      <div style="font-size: 12px; color: #94a3b8; line-height: 1.5; margin-top: 4px;">
+        Apenas o administrador possui permissão para criar e excluir senhas. Digite a <strong>Senha Mestre</strong> para prosseguir:
+      </div>
+
+      <div style="position: relative; margin-top: 10px;">
+        <input type="password" id="owner-master-input" placeholder="Digite a Senha Mestre de Dono..." style="width: 100%; background: rgba(0,0,0,0.7); border: 1.5px solid rgba(255,215,0,0.4); border-radius: 12px; padding: 12px 14px; color: #fff; font-family: var(--font-mono); font-size: 13px;" onkeydown="if(event.key==='Enter') verifyOwnerAccess();">
+      </div>
+
+      <div id="owner-auth-error" style="display: none; color: #ff4d5a; font-size: 12px; font-weight: 700; margin-top: 6px;"></div>
+
+      <div style="display: flex; gap: 8px; margin-top: 10px;">
+        <button type="button" class="btn-unlock" onclick="verifyOwnerAccess()" style="flex: 1; padding: 13px; font-size: 13px; background: linear-gradient(135deg, #ffd700 0%, #ff8800 100%); color: #000; font-weight: 900;">
+          DESBLOQUEAR PAINEL ⚡
+        </button>
+        <button type="button" class="btn-icon" onclick="closeOwnerManagerModal()" style="padding: 12px 16px;">
+          ✕ Fechar
+        </button>
+      </div>
+    </div>
+
+    <!-- TELA 2: GERENCIADOR DE SENHAS AO VIVO DO DONO -->
+    <div class="owner-modal-card" id="owner-manager-card" style="display: none;">
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 12px;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span style="font-size: 24px;">⚡</span>
+          <div>
+            <div style="font-family: var(--font-display); font-size: 16px; font-weight: 900; color: #ffd700; letter-spacing: 0.5px;">
+              GERENCIADOR DE SENHAS // 100% AO VIVO
+            </div>
+            <div style="font-size: 10.5px; color: #00ff66; font-weight: 700;">
+              ● CONECTADO COMO DONO DO SISTEMA
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn-icon" onclick="closeOwnerManagerModal()" style="font-size: 13px; padding: 4px 10px;">
+          ✕
+        </button>
+      </div>
+
+      <!-- SEÇÃO: CRIAR SENHA AO VIVO -->
+      <div style="background: rgba(0,0,0,0.45); border: 1.5px solid rgba(255,215,0,0.3); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 10px;">
+        <div style="font-size: 11.5px; font-weight: 800; color: #ffd700; text-transform: uppercase;">
+          ⚡ Criar Nova Senha com 1 Clique:
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 6px;" id="owner-plan-selector">
+          <button type="button" class="owner-plan-pill active" data-plan="all" onclick="selectOwnerPlan('all', this)">🌟 TODOS OS 4</button>
+          <button type="button" class="owner-plan-pill" data-plan="netflix" onclick="selectOwnerPlan('netflix', this)">🔴 NETFLIX</button>
+          <button type="button" class="owner-plan-pill" data-plan="hbo" onclick="selectOwnerPlan('hbo', this)">🟣 HBO MAX</button>
+          <button type="button" class="owner-plan-pill" data-plan="crunchyroll" onclick="selectOwnerPlan('crunchyroll', this)">🟠 CRUNCHY</button>
+          <button type="button" class="owner-plan-pill" data-plan="sky" onclick="selectOwnerPlan('sky', this)">🔵 SKY+</button>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+          <div>
+            <div style="font-size: 10px; color: #94a3b8; margin-bottom: 2px; font-weight: 700;">NOME / WHATSAPP:</div>
+            <input type="text" id="owner-input-client" placeholder="Ex: Carlos VIP" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; padding: 8px 10px; color: #fff; font-size: 11.5px;">
+          </div>
+          <div>
+            <div style="font-size: 10px; color: #94a3b8; margin-bottom: 2px; font-weight: 700;">SENHA (OPCIONAL):</div>
+            <input type="text" id="owner-input-custom-pwd" placeholder="Vazio = Gera forte" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; padding: 8px 10px; color: #00ff66; font-family: var(--font-mono); font-size: 11.5px;">
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 8px; margin-top: 4px;">
+          <button type="button" class="btn-unlock" id="btn-owner-create-and-login" onclick="executeOwnerCreateAndLogin()" style="padding: 11px; font-size: 12.5px; font-weight: 900; background: linear-gradient(135deg, #00ff66 0%, #00cc88 100%); color: #000; box-shadow: 0 0 20px rgba(0,255,102,0.4);">
+            ⚡ CRIAR & JÁ ENTRAR NO SITE 🚀
+          </button>
+          <button type="button" class="btn-unlock" id="btn-owner-create-only" onclick="executeOwnerCreateOnly()" style="padding: 11px; font-size: 12px; font-weight: 800; background: linear-gradient(135deg, #ffd700 0%, #ff8800 100%); color: #000;">
+            ➕ Apenas Salvar Senha
+          </button>
+        </div>
+
+        <!-- Banner com a Senha Recém-Gerada -->
+        <div id="owner-new-pwd-banner" style="display: none; background: rgba(0, 255, 102, 0.12); border: 1px solid #00ff66; border-radius: 10px; padding: 10px; flex-direction: column; gap: 6px;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 11px; color: #00ff66; font-weight: 800;">🎉 SENHA CRIADA NO SERVIDOR!</span>
+            <span style="font-size: 10px; color: #94a3b8;">Pronta para uso</span>
+          </div>
+          <div style="display: flex; gap: 6px; align-items: center;">
+            <input type="text" id="owner-banner-pwd-val" readonly style="flex: 1; background: rgba(0,0,0,0.8); border: 1px solid #00ff66; border-radius: 6px; padding: 6px 8px; color: #00ff66; font-family: var(--font-mono); font-size: 12px; font-weight: 800;">
+            <button type="button" class="btn-icon" onclick="loginWithPasswordDirect(document.getElementById('owner-banner-pwd-val').value)" style="background: #00ff66; color: #000; font-size: 10.5px; font-weight: 800; padding: 5px 8px;">
+              🚀 Entrar
+            </button>
+            <button type="button" class="btn-icon" onclick="copyPasswordDirect(document.getElementById('owner-banner-pwd-val').value, this)" style="color: #00ff66; border-color: #00ff66; font-size: 10.5px; padding: 5px 8px;">
+              📋 Copiar
+            </button>
+            <button type="button" class="btn-icon" id="btn-owner-banner-wa" onclick="copyOwnerBannerWhatsApp(this)" style="color: #25D366; border-color: #25D366; font-size: 10.5px; padding: 5px 8px;">
+              📲 WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEÇÃO: SENHAS ATIVAS NO SERVIDOR -->
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div style="font-size: 11.5px; font-weight: 800; color: #fff; text-transform: uppercase;">
+            📋 Senhas Cadastradas (<span id="owner-active-count" style="color: #00ff66;">0</span>):
+          </div>
+          <button type="button" class="btn-icon" onclick="loadOwnerPasswordsList()" style="font-size: 10px; padding: 3px 8px; color: #ffd700;">
+            🔄 Atualizar
+          </button>
+        </div>
+
+        <input type="text" id="owner-search-filter" placeholder="🔍 Filtrar por nome do cliente ou senha..." oninput="filterOwnerPasswordsList()" style="background: rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; padding: 6px 10px; color: #fff; font-size: 11px;">
+
+        <div id="owner-pwds-container" style="display: flex; flex-direction: column; gap: 6px; max-height: 250px; overflow-y: auto; padding-right: 4px;">
+          <div style="text-align: center; color: var(--text-dim); padding: 16px; font-size: 11.5px;">Carregando senhas ativas...</div>
+        </div>
+      </div>
+
+      <!-- LINK PARA O PAINEL COMPLETO -->
+      <div style="text-align: center; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 10px;">
+        <a href="admin.html" style="color: #ffd700; font-size: 11px; font-weight: 700; text-decoration: underline;">
+          ⚙️ Ir para o Painel Administrativo Completo (Cofre & Contas) &rarr;
+        </a>
+      </div>
     </div>
   </div>
 

@@ -1764,11 +1764,18 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         return service in services
 
     def _verify_admin_password_str(self, password: str) -> bool:
-        """Verifica de forma flexível e robusta se uma senha informada concede acesso ao painel admin."""
+        """Verifica de forma estrita e segura se uma senha informada concede acesso ao painel do dono.
+        
+        🛡️ BLINDAGEM: Apenas senhas mestres COMPLEXAS são aceitas.
+        Senhas fracas ('admin', 'root', '123456', etc.) foram removidas definitivamente.
+        Senhas normais de clientes JAMAIS concedem privilégios administrativos.
+        """
         p_clean = clean_password_str(password)
         if not p_clean:
             return False
         
+        # 🔐 Apenas senhas mestres fortes e configuradas dinamicamente são válidas.
+        # Nenhuma senha fraca ou genérica é aceita aqui.
         valid_passwords = {
             get_cookie_admin_password(),
             get_master_password(),
@@ -1776,37 +1783,13 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             "CYBER#STREAM@2026$MASTER*TITANIUM!ULTRA*ACCESS#VIP",
             "ADMIN#COOKIES@7739$VIP*VAULT!2026",
             "ATIVADOR#MASTER@2026$STREAM*VIP!",
-            "admin",
-            "admin123",
-            "master",
-            "root",
-            "123456",
-            "cyber2026",
-            "admin2026",
-            "senha"
         }
         
-        for item in load_access_keys():
-            item_pwd = item.get("senha", "")
-            if item_pwd:
-                valid_passwords.add(item_pwd)
-            item_name = item.get("nome", "")
-            if item_name:
-                valid_passwords.add(item_name)
-        
+        # 🛡️ SEGURANÇA ESTRITA: Apenas senhas mestres/administrativas autorizadas!
+        # Senhas normais de clientes jamais concedem privilégios de administração.
         if any(secure_str_compare(p_clean, p) for p in valid_passwords if p):
             return True
             
-        p_digits = normalize_phone_digits(p_clean)
-        if len(p_digits) >= 8:
-            for item in load_access_keys():
-                item_name = item.get("nome", "")
-                if item_name and p_digits == normalize_phone_digits(item_name):
-                    return True
-                item_pwd = item.get("senha", "")
-                if item_pwd and p_digits == normalize_phone_digits(item_pwd):
-                    return True
-
         return False
 
     def is_admin_authenticated(self):
@@ -1821,16 +1804,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         
         now = time.time()
 
-        # 0. Localhost Super-Admin Resilience:
-        # Se a requisição vem de localhost (127.0.0.1, ::1 ou localhost), concede acesso irrestrito ao operador do sistema
-        if client_ip in ['127.0.0.1', '::1', 'localhost']:
-            if token:
-                with LOGIN_LOCK:
-                    ACTIVE_ADMIN_SESSIONS[token] = now + 86400 * 30
-                    save_active_sessions()
-            return True
-
-        # 1. Checa se o token está em ACTIVE_ADMIN_SESSIONS
+        # 1. Checa se o token administrativo está em ACTIVE_ADMIN_SESSIONS
         with LOGIN_LOCK:
             if token and token in ACTIVE_ADMIN_SESSIONS:
                 if ACTIVE_ADMIN_SESSIONS[token] > now:
@@ -1840,13 +1814,13 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     ACTIVE_ADMIN_SESSIONS.pop(token, None)
                     save_active_sessions()
 
-        # 2. Fallback de alta resiliência: checa se foi fornecida a senha de admin no header X-Admin-Pass ou token
+        # 2. Fallback resiliente: checa senha no header X-Admin-Pass ou token direto
+        # Apenas candidatos com estrutura de senha mestre complexa (contendo # ou @) são testados.
         test_passwords = []
         if admin_pass:
             test_passwords.append(admin_pass)
-        if token and len(token) < 120 and ('#' in token or '@' in token or token.lower() in ['admin', 'admin123', 'master', 'root', '123456']):
+        if token and len(token) < 120 and ('#' in token or '@' in token):
             test_passwords.append(token)
-
         for candidate in test_passwords:
             if self._verify_admin_password_str(candidate):
                 if token:
@@ -1855,9 +1829,14 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                         save_active_sessions()
                 return True
 
-        # 3. Se o usuário autenticou no terminal com a senha mestre (todos os 4 serviços), também concede acesso admin
-        session = self.get_session_info()
-        if session and len(session.get("services", [])) >= 4:
+        # 3. [REMOVIDO] Elevação de privilégio via sessão de cliente foi desabilitada.
+        # Anteriormente, se um cliente fizesse login com uma senha que coincidisse
+        # com uma senha admin (ex: 'admin'), ele ganhava acesso de dono automaticamente.
+        # Agora o acesso admin EXIGE token administrativo válido ou senha mestre explícita.
+        # Essa separação estrita garante que cliente e dono são papéis completamente distintos.
+
+        # 4. Operador direto via Localhost (resiliência de desenvolvimento na própria máquina)
+        if client_ip in ['127.0.0.1', '::1', 'localhost']:
             if token:
                 with LOGIN_LOCK:
                     ACTIVE_ADMIN_SESSIONS[token] = now + 86400 * 30
@@ -1870,21 +1849,23 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         client_ip = self.get_client_ip()
         now = time.time()
 
-        # Se já estiver autenticado com token mestre (todos os 4 serviços), concede admin token imediatamente
+        # Se já estiver autenticado com sessão de Dono/Mestre, concede token administrativo na hora
         session = self.get_session_info()
-        if session and len(session.get("services", [])) >= 4:
-            admin_token = secrets.token_hex(32)
-            with LOGIN_LOCK:
-                ACTIVE_ADMIN_SESSIONS[admin_token] = now + 86400 * 30
-                save_active_sessions()
-            return self.send_json_response({
-                "success": True,
-                "admin_token": admin_token,
-                "message": "Acesso administrativo concedido!"
-            })
+        if session:
+            s_pwd = session.get("password", "")
+            if s_pwd and self._verify_admin_password_str(s_pwd):
+                admin_token = secrets.token_hex(32)
+                with LOGIN_LOCK:
+                    ACTIVE_ADMIN_SESSIONS[admin_token] = now + 86400 * 30
+                    save_active_sessions()
+                return self.send_json_response({
+                    "success": True,
+                    "admin_token": admin_token,
+                    "message": "Acesso administrativo concedido!"
+                })
 
         content_length = int(self.headers.get('Content-Length', 0))
-        post_data = self.rfile.read(content_length)
+        post_data = self.rfile.read(content_length) if content_length > 0 else b'{}'
         req = json.loads(post_data.decode('utf-8')) if post_data else {}
         password = clean_password_str(req.get('password', ''))
 
@@ -1899,25 +1880,79 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 "message": "Acesso administrativo concedido com sucesso!"
             })
         else:
+            time.sleep(0.3)
             return self.send_json_response({
                 "success": False,
-                "message": "Senha incorreta! Use a senha mestre, senha do cofre ou 'admin'."
+                "message": "Senha administrativa incorreta! Apenas o Dono pode acessar."
             }, 401)
 
     def handle_api_login(self):
         ip = self.get_client_ip()
         now = time.time()
+        ua = self.headers.get('User-Agent', '')
 
+        # 🛡️ 1. Proteção contra scanners maliciosos conhecidos e bots vazios
+        ua_lower = ua.lower()
+        blocked_scanners = ['sqlmap', 'nikto', 'nmap', 'masscan', 'havij', 'dirbuster', 'gobuster', 'wpscan']
+        if any(b in ua_lower for b in blocked_scanners):
+            return self.send_json_response({"success": False, "message": "Acesso rejeitado pelo firewall de segurança."}, 403)
+
+        # 🛡️ 2. Proteção de Payload (limite de tamanho para evitar DoS, overflow e ReDoS)
         content_length = int(self.headers.get('Content-Length', 0))
-        post_data = self.rfile.read(content_length)
-        req = json.loads(post_data.decode('utf-8')) if post_data else {}
-        password = clean_password_str(req.get('password', ''))
+        if content_length > 4096:
+            return self.send_json_response({"success": False, "message": "Payload excede o limite permitido."}, 400)
 
+        post_data = self.rfile.read(content_length) if content_length > 0 else b'{}'
+        try:
+            req = json.loads(post_data.decode('utf-8')) if post_data else {}
+        except Exception:
+            return self.send_json_response({"success": False, "message": "JSON inválido."}, 400)
+
+        # 🛡️ 3. Honeypot Anti-Bot (se bot preencher campos armadilha invisíveis, rejeita no ato)
+        if req.get("username") or req.get("email") or req.get("website") or req.get("token_check"):
+            time.sleep(0.5)
+            return self.send_json_response({"success": False, "message": "Falha na verificação de integridade."}, 403)
+
+        password = clean_password_str(req.get('password', ''))
+        if len(password) > 256:
+            return self.send_json_response({"success": False, "message": "Senha muito longa. Máximo 256 caracteres."}, 400)
+
+        if not password:
+            return self.send_json_response({"success": False, "message": "Por favor, informe a senha de acesso."}, 400)
+
+        # 🛡️ 4. Verificação Prévia de Bloqueio de IP (Anti-Força Bruta e Anti-Flood)
+        with LOGIN_LOCK:
+            record = LOGIN_ATTEMPTS.get(ip, {"count": 0, "blocked_until": 0, "last_req": 0})
+            
+            # Anti-Flood: Intervalo mínimo de 1.5s entre requisições de login do mesmo IP
+            # (1.5s bloqueia scripts automáticos com delay de 1.1s que passavam no limite anterior de 1.0s)
+            last_req = record.get("last_req", 0)
+            if now - last_req < 1.5:
+                record["last_req"] = now
+                LOGIN_ATTEMPTS[ip] = record
+                return self.send_json_response({
+                    "success": False,
+                    "message": "Muitas requisições em alta velocidade. Aguarde 1.5 segundos entre tentativas."
+                }, 429)
+
+            record["last_req"] = now
+
+            # Se o IP já estiver bloqueado, rejeita IMEDIATAMENTE antes de testar qualquer senha
+            if record.get("blocked_until", 0) > now:
+                wait_sec = int(record["blocked_until"] - now)
+                LOGIN_ATTEMPTS[ip] = record
+                return self.send_json_response({
+                    "success": False,
+                    "message": f"IP temporariamente bloqueado por excesso de tentativas. Aguarde mais {wait_sec} segundos."
+                }, 429)
+
+        # 🛡️ 5. Comparação e Validação de Senha
         role = find_access_role(password)
 
         with LOGIN_LOCK:
+            record = LOGIN_ATTEMPTS.get(ip, {"count": 0, "blocked_until": 0, "last_req": now})
             if role is not None:
-                # 🔓 Senha correta: limpa imediatamente qualquer bloqueio anterior e libera o acesso!
+                # 🔓 Senha correta: limpa bloqueios anteriores e libera o terminal
                 LOGIN_ATTEMPTS.pop(ip, None)
                 new_token = secrets.token_hex(32)
                 allowed_services = role.get("servicos", ["netflix", "hbo", "crunchyroll", "sky"])
@@ -1929,7 +1964,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     "password": password
                 }
                 save_active_sessions()
-                track_client_heartbeat(ip, new_token, self.headers.get('User-Agent', ''), role_name, allowed_services[0] if allowed_services else "netflix")
+                track_client_heartbeat(ip, new_token, ua, role_name, allowed_services[0] if allowed_services else "netflix")
                 return self.send_json_response({
                     "success": True,
                     "token": new_token,
@@ -1939,22 +1974,20 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     "message": f"Terminal desbloqueado ({role_name})."
                 })
 
-            # Senha incorreta: aplica controle de tentativas e bloqueio temporário por IP
-            record = LOGIN_ATTEMPTS.get(ip, {"count": 0, "blocked_until": 0})
-            if record["blocked_until"] > now:
-                wait_sec = int(record["blocked_until"] - now)
-                return self.send_json_response({
-                    "success": False, 
-                    "message": f"Muitas tentativas. IP bloqueado temporariamente por mais {wait_sec} segundos."
-                }, 429)
+            # 🛑 Senha incorreta: delay anti-timing para impedir scripts automatizados de alta frequência
+            time.sleep(0.3)
+            record["count"] = record.get("count", 0) + 1
+            count = record["count"]
 
-            record["count"] += 1
-            if record["count"] >= 10:
-                lock_time = 900 # 15 minutos
-            elif record["count"] >= 8:
-                lock_time = 300 # 5 minutos
-            elif record["count"] >= 5:
-                lock_time = 60  # 1 minuto
+            # Bloqueio progressivo rigoroso
+            if count >= 15:
+                lock_time = 3600  # 1 hora
+            elif count >= 10:
+                lock_time = 900   # 15 minutos
+            elif count >= 8:
+                lock_time = 300   # 5 minutos
+            elif count >= 5:
+                lock_time = 60    # 1 minuto
             else:
                 lock_time = 0
 
@@ -1963,11 +1996,11 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 LOGIN_ATTEMPTS[ip] = record
                 return self.send_json_response({
                     "success": False,
-                    "message": f"Tentativas excedidas! Terminal bloqueado por {lock_time} segundos por segurança."
+                    "message": f"Tentativas incorretas excedidas! IP bloqueado por {lock_time} segundos por segurança."
                 }, 429)
             else:
                 LOGIN_ATTEMPTS[ip] = record
-                remaining = 5 - record["count"]
+                remaining = 5 - count
                 return self.send_json_response({
                     "success": False,
                     "message": f"Senha incorreta. Restam {remaining} tentativas antes do bloqueio temporário."
@@ -3625,7 +3658,21 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         global SERVER_DATA_VERSION
         SERVER_DATA_VERSION = time.time()
 
-        return self.send_json_response({
+        # Suporte a auto-login imediato (Criar e já entrar no site na hora)
+        new_token = None
+        if req.get("auto_login") or req.get("login_now"):
+            new_token = secrets.token_hex(32)
+            with LOGIN_LOCK:
+                ACTIVE_SESSIONS[new_token] = {
+                    "exp": time.time() + TOKEN_TTL_SECONDS,
+                    "services": servicos,
+                    "role_name": nome,
+                    "password": new_pwd
+                }
+                save_active_sessions()
+            track_client_heartbeat(self.get_client_ip(), new_token, self.headers.get('User-Agent', ''), nome, servicos[0] if servicos else "netflix")
+
+        res_payload = {
             "success": True,
             "password": new_pwd,
             "role_name": nome,
@@ -3634,7 +3681,13 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             "whatsapp_message": whatsapp_msg,
             "passwords": keys,
             "message": f"🎉 Senha '{new_pwd}' gerada e ativada com sucesso ao vivo!"
-        })
+        }
+        if new_token:
+            res_payload["token"] = new_token
+            res_payload["allowed_services"] = servicos
+            res_payload["expires_in"] = TOKEN_TTL_SECONDS
+
+        return self.send_json_response(res_payload)
 
     def handle_api_save_password(self):
         content_length = int(self.headers.get('Content-Length', 0))
@@ -3715,11 +3768,34 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
         global SERVER_DATA_VERSION
         SERVER_DATA_VERSION = time.time()
-        return self.send_json_response({
+
+        # Suporte a auto-login imediato ao salvar
+        new_token = None
+        if req.get("auto_login") or req.get("login_now"):
+            new_token = secrets.token_hex(32)
+            with LOGIN_LOCK:
+                ACTIVE_SESSIONS[new_token] = {
+                    "exp": time.time() + TOKEN_TTL_SECONDS,
+                    "services": valid_services,
+                    "role_name": nome,
+                    "password": senha
+                }
+                save_active_sessions()
+            track_client_heartbeat(self.get_client_ip(), new_token, self.headers.get('User-Agent', ''), nome, valid_services[0] if valid_services else "netflix")
+
+        res_payload = {
             "success": True,
             "message": f"Senha de '{nome}' salva e ativada com sucesso!",
             "passwords": keys
-        })
+        }
+        if new_token:
+            res_payload["token"] = new_token
+            res_payload["allowed_services"] = valid_services
+            res_payload["role_name"] = nome
+            res_payload["password"] = senha
+            res_payload["expires_in"] = TOKEN_TTL_SECONDS
+
+        return self.send_json_response(res_payload)
 
     def handle_api_delete_password(self):
         global SERVER_DATA_VERSION
