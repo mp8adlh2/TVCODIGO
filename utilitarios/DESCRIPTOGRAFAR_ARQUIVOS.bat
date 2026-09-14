@@ -2,6 +2,7 @@
 title Descriptografar Arquivos para Edicao - TVCODIGO
 color 0E
 cls
+cd /d "%~dp0.."
 echo ===============================================================
 echo        DESCRIPTOGRAFANDO ARQUIVOS PARA EDICAO MANUAL
 echo ===============================================================

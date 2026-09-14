@@ -1856,6 +1856,9 @@
         </div>
         <span id="telemetry-ip" style="color: var(--text-dim);">IP: 127.0.0.1</span>
         <span id="telemetry-ping" style="color: var(--accent-color); font-weight:700;">PING: 18ms</span>
+        <span id="telemetry-validity" style="display: none; align-items: center; gap: 5px; font-size: 10.5px; font-weight: 700; color: #00ff66; padding: 2px 8px; border-radius: 8px; background: rgba(0,255,102,0.1); border: 1px solid rgba(0,255,102,0.3);">
+          📅 <span id="telemetry-validity-text">Vitalício</span>
+        </span>
       </div>
       <div class="telemetry-right">
         <button class="btn-icon" id="sound-toggle-btn" onclick="event.stopPropagation(); toggleSound();">
@@ -2227,9 +2230,48 @@
       allowedServices = ['netflix', 'hbo', 'crunchyroll', 'sky'];
     }
 
+    function updateTelemetryValidity(daysRemaining, expDate) {
+      const badge = document.getElementById('telemetry-validity');
+      const text = document.getElementById('telemetry-validity-text');
+      if (!badge || !text) return;
+      if (daysRemaining !== undefined && daysRemaining !== null) {
+        const days = parseInt(daysRemaining, 10);
+        if (days <= 0) {
+          badge.style.display = 'inline-flex';
+          badge.style.color = '#ff4d5a';
+          badge.style.background = 'rgba(255,51,68,0.15)';
+          badge.style.borderColor = 'rgba(255,51,68,0.4)';
+          text.innerText = `EXPIRADO (${expDate || ''})`;
+        } else if (days <= 3) {
+          badge.style.display = 'inline-flex';
+          badge.style.color = '#ffaa00';
+          badge.style.background = 'rgba(255,170,0,0.15)';
+          badge.style.borderColor = 'rgba(255,170,0,0.4)';
+          text.innerText = `${days}d rest.`;
+          badge.title = `Expira em ${expDate || ''}`;
+        } else {
+          badge.style.display = 'inline-flex';
+          badge.style.color = '#00ff66';
+          badge.style.background = 'rgba(0,255,102,0.1)';
+          badge.style.borderColor = 'rgba(0,255,102,0.3)';
+          text.innerText = `${days}d rest.`;
+          badge.title = `Válido até ${expDate || ''}`;
+        }
+      } else {
+        badge.style.display = 'inline-flex';
+        badge.style.color = '#00e5ff';
+        badge.style.background = 'rgba(0,229,255,0.1)';
+        badge.style.borderColor = 'rgba(0,229,255,0.3)';
+        text.innerText = 'Permanente';
+        badge.title = 'Acesso sem limite de expiração';
+      }
+    }
+
     function logoutAndSwitchAccount() {
       soundClick();
       clearStoredAuth();
+      const valEl = document.getElementById('telemetry-validity');
+      if (valEl) valEl.style.display = 'none';
       const pwdInput = document.getElementById('login-password-input');
       if (pwdInput) pwdInput.value = '';
       const errBox = document.getElementById('login-error-msg');
@@ -2248,6 +2290,25 @@
           headers: getHeaders()
         });
         if (!res.ok) {
+          try {
+            const errData = await res.json();
+            if (errData.expired) {
+              clearStoredAuth();
+              showLoginOverlay();
+              const errBox = document.getElementById('login-error-msg');
+              if (errBox) {
+                errBox.innerHTML = `
+                  <div style="text-align: center; display: flex; flex-direction: column; gap: 4px;">
+                    <span style="color: #ff3344; font-size: 13px; font-weight: 900;">⚠️ SEU ACESSO EXPIROU!</span>
+                    <span style="color: #ffd700; font-size: 11.5px;">Venceu em: <b>${errData.expiration_date || ''}</b></span>
+                    <span style="color: #94a3b8; font-size: 11px; margin-top: 4px;">Entre em contato com o suporte para renovar seu plano.</span>
+                  </div>
+                `;
+                errBox.style.display = 'block';
+              }
+              return false;
+            }
+          } catch(e) {}
           clearStoredAuth();
           showLoginOverlay();
           return false;
@@ -2260,6 +2321,7 @@
             allowedServices = ['netflix', 'hbo', 'crunchyroll', 'sky'];
           }
           applyAllowedServicesUI();
+          updateTelemetryValidity(data.days_remaining, data.expiration_date);
           hideLoginOverlay();
           return true;
         } else {
@@ -2319,6 +2381,20 @@
         });
         const data = await res.json();
 
+        // 🛑 Bloqueio se a senha estiver expirada
+        if (res.status === 403 || data.expired) {
+          soundError();
+          errBox.innerHTML = `
+            <div style="text-align: center; display: flex; flex-direction: column; gap: 4px;">
+              <span style="color: #ff3344; font-size: 13.5px; font-weight: 900;">⚠️ SEU ACESSO EXPIROU!</span>
+              <span style="color: #ffd700; font-size: 11.5px;">Vencido em: <b>${data.expiration_date || 'data recente'}</b></span>
+              <span style="color: #cbd5e1; font-size: 11px; margin-top: 4px;">Entre em contato com o suporte para renovar seu plano.</span>
+            </div>
+          `;
+          errBox.style.display = 'block';
+          return;
+        }
+
         if (data.success && data.token) {
           authToken = data.token;
           if (data.allowed_services && Array.isArray(data.allowed_services) && data.allowed_services.length > 0) {
@@ -2337,6 +2413,7 @@
 
           hideLoginOverlay();
           applyAllowedServicesUI();
+          updateTelemetryValidity(data.days_remaining, data.expiration_date);
           soundSuccess();
           logKernel(`Autenticação bem sucedida: ${data.role_name || 'Terminal Liberado'}`);
           

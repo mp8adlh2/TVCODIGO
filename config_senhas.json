@@ -7,7 +7,11 @@
         "netflix",
         "hbo"
       ],
-      "descricao": "Libera: netflix, hbo"
+      "descricao": "Libera: netflix, hbo",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
     },
     {
       "senha": "MATRIX#SECURITY@5621$4K*63!2026",
@@ -16,7 +20,11 @@
         "netflix",
         "sky"
       ],
-      "descricao": "Libera: netflix, sky"
+      "descricao": "Libera: netflix, sky",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
     },
     {
       "senha": "VIP#MASTER@1444$4K*76!2026",
@@ -27,7 +35,11 @@
         "crunchyroll",
         "sky"
       ],
-      "descricao": "Libera todos os 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+"
+      "descricao": "Libera todos os 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
     },
     {
       "senha": "NETFLIX#ONLY@9421$RED*VAULT#ULTRA*4K*HDR!2026",
@@ -35,7 +47,11 @@
       "servicos": [
         "netflix"
       ],
-      "descricao": "Libera: netflix"
+      "descricao": "Libera: netflix",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
     },
     {
       "senha": "HBOMAX#ONLY@8153$PURPLE*WARNER#STREAM*4K!2026",
@@ -43,7 +59,11 @@
       "servicos": [
         "hbo"
       ],
-      "descricao": "Libera: hbo"
+      "descricao": "Libera: hbo",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
     },
     {
       "senha": "SKYPLUS#ONLY@4918$BLUE*FIBRA#SUPER*HD*TV!2026",
@@ -51,7 +71,11 @@
       "servicos": [
         "sky"
       ],
-      "descricao": "Libera: sky"
+      "descricao": "Libera: sky",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
     },
     {
       "senha": "CRUNCHYROLL#ONLY@6274$ORANGE*ANIME#MEGA*FAN!2026",
@@ -59,7 +83,11 @@
       "servicos": [
         "crunchyroll"
       ],
-      "descricao": "Libera: crunchyroll"
+      "descricao": "Libera: crunchyroll",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
     }
   ]
 }

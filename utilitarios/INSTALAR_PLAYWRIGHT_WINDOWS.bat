@@ -2,6 +2,7 @@
 title Instalar Playwright Chromium no Windows
 color 0A
 cls
+cd /d "%~dp0.."
 echo ===============================================================
 echo      INSTALANDO PLAYWRIGHT CHROMIUM NO SEU WINDOWS
 echo ===============================================================

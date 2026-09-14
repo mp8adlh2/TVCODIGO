@@ -1062,17 +1062,18 @@ def get_admin_password() -> str:
     if env_pass:
         return env_pass.strip()
     for fname in ["SENHA_ADMIN.txt", "SENHA_MESTRE.txt"]:
-        p_file = os.path.join(BASE_DIR, fname)
-        if os.path.exists(p_file):
-            try:
-                with open(p_file, 'r', encoding='utf-8') as f:
-                    for line in f.read().splitlines():
-                        line = line.strip()
-                        if line and not line.startswith(('=', '🔐', 'SENHA', '•', 'Link', 'Guard')):
-                            if any(c in line for c in ['#', '@', '$', '*', '!']) or len(line) >= 8:
-                                return line
-            except Exception:
-                pass
+        for cdir in [BASE_DIR, os.path.join(BASE_DIR, "senhas")]:
+            p_file = os.path.join(cdir, fname)
+            if os.path.exists(p_file):
+                try:
+                    with open(p_file, 'r', encoding='utf-8') as f:
+                        for line in f.read().splitlines():
+                            line = line.strip()
+                            if line and not line.startswith(('=', '🔐', 'SENHA', '•', 'Link', 'Guard')):
+                                if any(c in line for c in ['#', '@', '$', '*', '!']) or len(line) >= 8:
+                                    return line
+                except Exception:
+                    pass
     return "TVCODIGO#ADMIN@2026$MASTER*TITANIUM!ROOT#VIP"
 
 def get_master_password() -> str:
@@ -1082,16 +1083,17 @@ def get_cookie_admin_password() -> str:
     env_pass = os.environ.get("COOKIE_ADMIN_PASSWORD")
     if env_pass:
         return env_pass.strip()
-    c_file = os.path.join(BASE_DIR, "SENHA_COOKIES.txt")
-    if os.path.exists(c_file):
-        try:
-            with open(c_file, 'r', encoding='utf-8') as f:
-                for line in f.read().splitlines():
-                    line = line.strip()
-                    if line and not line.startswith(('=', '🍪', 'SENHA', '•')):
-                        return line
-        except Exception:
-            pass
+    for cdir in [BASE_DIR, os.path.join(BASE_DIR, "senhas")]:
+        c_file = os.path.join(cdir, "SENHA_COOKIES.txt")
+        if os.path.exists(c_file):
+            try:
+                with open(c_file, 'r', encoding='utf-8') as f:
+                    for line in f.read().splitlines():
+                        line = line.strip()
+                        if line and not line.startswith(('=', '🍪', 'SENHA', '•')):
+                            return line
+            except Exception:
+                pass
     return "ADMIN#VAULT@2026$COOKIE*BLINDADO#PROTECT*ROOT!VIP"
 
 MASTER_PASSWORD = get_master_password()
@@ -1185,10 +1187,15 @@ def sync_passwords_text_file(passwords_list: List[dict]):
             
             libera_str = " | ".join(svc_tags) if svc_tags else "Nenhum"
             
+            exp_fmt = item.get("expira_em_formatado")
+            dias = item.get("dias_validade")
+            val_str = f"{dias} dias (Até {exp_fmt})" if exp_fmt else "Permanente ♾️"
+
             lines.append("================================================================================")
             lines.append(f" {idx}. 🔑 {nome.upper()}")
             lines.append("================================================================================")
-            lines.append(f" Libera: {libera_str}")
+            lines.append(f" Libera:   {libera_str}")
+            lines.append(f" Validade: {val_str}")
             if descricao:
                 lines.append(f" Detalhes: {descricao}")
             lines.append(f" Senha:")
@@ -1252,23 +1259,25 @@ def extract_passwords_from_text_files() -> List[dict]:
     extracted = []
     blacklisted = load_blacklisted_passwords()
     for fname, (svcs, role_label, desc) in file_service_map.items():
-        fpath = os.path.join(BASE_DIR, fname)
-        if os.path.exists(fpath):
-            try:
-                with open(fpath, 'r', encoding='utf-8', errors='ignore') as f:
-                    for line in f.read().splitlines():
-                        line = line.strip()
-                        if line and not line.startswith(('=', '-', '•', 'LIBERAÇÃO', 'SENHA', '💡', '🔍', '🎬', '🔴', '🟣', '🟠', '🔵', '🔐', '🍪', 'para', 'No ', 'Ao ', 'http')):
-                            if ' ' not in line and len(line) >= 6 and any(c in line for c in ['#', '@', '$', '*', '!']):
-                                if not any(secure_str_compare(line, b) for b in blacklisted):
-                                    extracted.append({
-                                        "senha": line,
-                                        "nome": role_label,
-                                        "servicos": svcs,
-                                        "descricao": desc
-                                    })
-            except Exception:
-                pass
+        for cdir in [BASE_DIR, os.path.join(BASE_DIR, "senhas")]:
+            fpath = os.path.join(cdir, fname)
+            if os.path.exists(fpath):
+                try:
+                    with open(fpath, 'r', encoding='utf-8', errors='ignore') as f:
+                        for line in f.read().splitlines():
+                            line = line.strip()
+                            if line and not line.startswith(('=', '-', '•', 'LIBERAÇÃO', 'SENHA', '💡', '🔍', '🎬', '🔴', '🟣', '🟠', '🔵', '🔐', '🍪', 'para', 'No ', 'Ao ', 'http')):
+                                if ' ' not in line and len(line) >= 6 and any(c in line for c in ['#', '@', '$', '*', '!']):
+                                    if not any(secure_str_compare(line, b) for b in blacklisted):
+                                        extracted.append({
+                                            "senha": line,
+                                            "nome": role_label,
+                                            "servicos": svcs,
+                                            "descricao": desc
+                                        })
+                    break
+                except Exception:
+                    pass
     return extracted
 
 def load_access_keys() -> List[dict]:
@@ -1328,7 +1337,11 @@ def load_access_keys() -> List[dict]:
                                 "senha": pwd,
                                 "nome": nome or "Cliente VIP",
                                 "servicos": svcs or ["netflix", "hbo", "crunchyroll", "sky"],
-                                "descricao": desc or f"Libera: {', '.join(svcs)}"
+                                "descricao": desc or f"Libera: {', '.join(svcs)}",
+                                "dias_validade": item.get("dias_validade"),
+                                "criado_em": item.get("criado_em"),
+                                "expira_em": item.get("expira_em"),
+                                "expira_em_formatado": item.get("expira_em_formatado")
                             })
                 # Se o arquivo existe (mesmo vazio), respeita a lista atual sem ressuscitar senhas excluídas
                 return valid_keys
@@ -1393,6 +1406,37 @@ def secure_str_compare(a: str, b: str) -> bool:
     except Exception:
         return False
 
+def check_item_expiration(item: dict) -> dict:
+    """Verifica se uma senha cadastrada possui data de expiração e se está vencida."""
+    now = time.time()
+    exp = item.get("expira_em")
+    if exp and isinstance(exp, (int, float)) and exp > 0:
+        dt_str = item.get("expira_em_formatado") or datetime.fromtimestamp(exp).strftime('%d/%m/%Y às %H:%M')
+        if now > exp:
+            return {
+                **item,
+                "expired": True,
+                "expira_em": exp,
+                "expira_em_formatado": dt_str,
+                "days_remaining": 0
+            }
+        else:
+            days_left = max(0, int((exp - now) / 86400) + 1)
+            return {
+                **item,
+                "expired": False,
+                "expira_em": exp,
+                "expira_em_formatado": dt_str,
+                "days_remaining": days_left
+            }
+    return {
+        **item,
+        "expired": False,
+        "is_permanent": True,
+        "expira_em": None,
+        "days_remaining": None
+    }
+
 def find_access_role(password: str) -> Optional[dict]:
     """Busca a configuração de acesso correspondente à senha informada ou ao Telefone/Nome cadastrado."""
     keys = load_access_keys()
@@ -1409,22 +1453,22 @@ def find_access_role(password: str) -> Optional[dict]:
         
         # Comparação direta com a senha
         if secure_str_compare(p_clean, item_pwd):
-            return item
+            return check_item_expiration(item)
         
         # Comparação com o nome / telefone digitado pelo cliente
         if item_name and secure_str_compare(p_clean, item_name):
-            return item
+            return check_item_expiration(item)
 
         # Comparação flexível por dígitos de telefone (WhatsApp do cliente)
         if len(p_digits) >= 8:
             if item_name:
                 name_digits = normalize_phone_digits(item_name)
                 if name_digits and (p_digits == name_digits or p_digits.endswith(name_digits) or name_digits.endswith(p_digits)):
-                    return item
+                    return check_item_expiration(item)
             if item_pwd:
                 pwd_digits = normalize_phone_digits(item_pwd)
                 if pwd_digits and (p_digits == pwd_digits or p_digits.endswith(pwd_digits) or pwd_digits.endswith(p_digits)):
-                    return item
+                    return check_item_expiration(item)
 
     # 2. Senha Mestre do Terminal
     if secure_str_compare(p_clean, get_master_password()):
@@ -1731,8 +1775,8 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                         return None
 
                     role = find_access_role(used_pwd)
-                    if not role:
-                        # Senha excluída: desconecta e bloqueia imediatamente no mesmo instante
+                    if not role or role.get("expired"):
+                        # Senha excluída ou expirada: desconecta e bloqueia imediatamente no mesmo instante
                         ACTIVE_SESSIONS.pop(token, None)
                         save_active_sessions()
                         return None
@@ -1959,16 +2003,32 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         with LOGIN_LOCK:
             record = LOGIN_ATTEMPTS.get(ip, {"count": 0, "blocked_until": 0, "last_req": now})
             if role is not None:
+                if role.get("expired"):
+                    exp_date = role.get("expira_em_formatado") or "Data limite"
+                    return self.send_json_response({
+                        "success": False,
+                        "expired": True,
+                        "expiration_date": exp_date,
+                        "message": f"⚠️ SEU ACESSO EXPIROU EM {exp_date}! Entre em contato com o administrador para renovar sua assinatura."
+                    }, 403)
+
                 # 🔓 Senha correta: limpa bloqueios anteriores e libera o terminal
                 LOGIN_ATTEMPTS.pop(ip, None)
                 new_token = secrets.token_hex(32)
                 allowed_services = role.get("servicos", ["netflix", "hbo", "crunchyroll", "sky"])
                 role_name = role.get("nome", "Acesso Autorizado")
+                days_rem = role.get("days_remaining")
+                exp_ts = role.get("expira_em")
+                exp_fmt = role.get("expira_em_formatado")
+
                 ACTIVE_SESSIONS[new_token] = {
                     "exp": now + TOKEN_TTL_SECONDS,
                     "services": allowed_services,
                     "role_name": role_name,
-                    "password": password
+                    "password": password,
+                    "expires_at": exp_ts,
+                    "days_remaining": days_rem,
+                    "expiration_date": exp_fmt
                 }
                 save_active_sessions()
                 track_client_heartbeat(ip, new_token, ua, role_name, allowed_services[0] if allowed_services else "netflix")
@@ -1978,6 +2038,9 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     "allowed_services": allowed_services,
                     "role_name": role_name,
                     "expires_in": TOKEN_TTL_SECONDS,
+                    "expires_at": exp_ts,
+                    "days_remaining": days_rem,
+                    "expiration_date": exp_fmt,
                     "message": f"Terminal desbloqueado ({role_name})."
                 })
 
@@ -2028,10 +2091,25 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
     def handle_api_verify_token(self):
         session = self.get_session_info()
         if session:
+            # Revalida se a senha associada à sessão expirou enquanto o cliente estava online
+            pwd = session.get("password", "")
+            if pwd:
+                role = find_access_role(pwd)
+                if role and role.get("expired"):
+                    exp_date = role.get("expira_em_formatado") or "Data limite"
+                    return self.send_json_response({
+                        "authenticated": False,
+                        "expired": True,
+                        "expiration_date": exp_date,
+                        "message": f"⚠️ Acesso expirado em {exp_date}. Renove com o administrador."
+                    }, 403)
             return self.send_json_response({
                 "authenticated": True,
                 "allowed_services": session.get("services", ["netflix", "hbo", "crunchyroll", "sky"]),
-                "role_name": session.get("role_name", "Acesso Autorizado")
+                "role_name": session.get("role_name", "Acesso Autorizado"),
+                "expires_at": session.get("expires_at"),
+                "days_remaining": session.get("days_remaining"),
+                "expiration_date": session.get("expiration_date")
             })
         return self.send_json_response({"authenticated": False, "kicked": True, "message": "Sessão inválida ou revogada."}, 401)
 
@@ -2232,6 +2310,10 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             if not self.is_admin_authenticated():
                 return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
             self.handle_api_delete_password()
+        elif raw_path == '/api/admin/passwords/renew':
+            if not self.is_admin_authenticated():
+                return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
+            self.handle_api_renew_password()
         elif raw_path == '/api/admin/accounts/delete':
             if not self.is_admin_authenticated():
                 return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
@@ -3656,6 +3738,24 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         nome = cliente if cliente else f"Cliente ({plan_label})"
         descricao = f"Libera: {', '.join(servicos)}"
 
+        # ⏱️ Cálculo da duração e data de expiração
+        dias_val = req.get("dias") if req.get("dias") is not None else req.get("duration_days", req.get("days"))
+        try:
+            dias = int(dias_val) if dias_val is not None else 30
+        except Exception:
+            dias = 30
+
+        now = time.time()
+        if dias > 0:
+            expira_em = now + (dias * 86400)
+            expira_formatado = datetime.fromtimestamp(expira_em).strftime('%d/%m/%Y às %H:%M')
+            expira_data_apenas = datetime.fromtimestamp(expira_em).strftime('%d/%m/%Y')
+            validade_label = f"{dias} dias (Válida até {expira_data_apenas})"
+        else:
+            expira_em = None
+            expira_formatado = None
+            validade_label = "Acesso Permanente (Sem Expiração) ♾️"
+
         with SENHAS_LOCK:
             keys = load_access_keys()
             # Remove ocorrência anterior se houver para atualizar
@@ -3664,7 +3764,11 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 "senha": new_pwd,
                 "nome": nome,
                 "servicos": servicos,
-                "descricao": descricao
+                "descricao": descricao,
+                "dias_validade": dias,
+                "criado_em": now,
+                "expira_em": expira_em,
+                "expira_em_formatado": expira_formatado
             }
             keys.insert(0, new_item)
             atomic_save_config_senhas(keys)
@@ -3677,6 +3781,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             f"👤 *Cliente:* {nome}\n"
             f"🔑 *Sua Senha de Acesso:* {new_pwd}\n"
             f"📺 *Serviços Liberados:* {services_text}\n"
+            f"📅 *Validade:* {validade_label}\n"
             f"🔗 *Acessar Sistema:* {site_url}\n\n"
             f"_Basta abrir o link no celular ou computador e digitar o código que aparece na sua Smart TV!_"
         )
@@ -3693,7 +3798,10 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     "exp": time.time() + TOKEN_TTL_SECONDS,
                     "services": servicos,
                     "role_name": nome,
-                    "password": new_pwd
+                    "password": new_pwd,
+                    "expires_at": expira_em,
+                    "days_remaining": dias if dias > 0 else None,
+                    "expiration_date": expira_formatado
                 }
                 save_active_sessions()
             track_client_heartbeat(self.get_client_ip(), new_token, self.headers.get('User-Agent', ''), nome, servicos[0] if servicos else "netflix")
@@ -3704,9 +3812,13 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             "role_name": nome,
             "services": servicos,
             "plan_label": plan_label,
+            "dias_validade": dias,
+            "expira_em": expira_em,
+            "expira_em_formatado": expira_formatado,
+            "validade_label": validade_label,
             "whatsapp_message": whatsapp_msg,
             "passwords": keys,
-            "message": f"🎉 Senha '{new_pwd}' gerada e ativada com sucesso ao vivo!"
+            "message": f"🎉 Senha '{new_pwd}' gerada com validade de {validade_label}!"
         }
         if new_token:
             res_payload["token"] = new_token
@@ -3757,6 +3869,21 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             svc_names = [s.upper() for s in valid_services]
             nome = f"Perfil {' + '.join(svc_names)}"
 
+        # ⏱️ Validade e Duração
+        dias_val = req.get("dias") if req.get("dias") is not None else req.get("duration_days", req.get("dias_validade"))
+        try:
+            dias = int(dias_val) if dias_val is not None else 30
+        except Exception:
+            dias = 30
+
+        now = time.time()
+        if dias > 0:
+            expira_em = now + (dias * 86400)
+            expira_formatado = datetime.fromtimestamp(expira_em).strftime('%d/%m/%Y às %H:%M')
+        else:
+            expira_em = None
+            expira_formatado = None
+
         with SENHAS_LOCK:
             keys = load_access_keys()
             found = False
@@ -3767,7 +3894,11 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                         "senha": senha,
                         "nome": nome,
                         "servicos": valid_services,
-                        "descricao": descricao or f"Libera: {', '.join(valid_services)}"
+                        "descricao": descricao or f"Libera: {', '.join(valid_services)}",
+                        "dias_validade": dias,
+                        "criado_em": k.get("criado_em", now),
+                        "expira_em": expira_em,
+                        "expira_em_formatado": expira_formatado
                     }
                     found = True
                     break
@@ -3777,7 +3908,11 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     "senha": senha,
                     "nome": nome,
                     "servicos": valid_services,
-                    "descricao": descricao or f"Libera: {', '.join(valid_services)}"
+                    "descricao": descricao or f"Libera: {', '.join(valid_services)}",
+                    "dias_validade": dias,
+                    "criado_em": now,
+                    "expira_em": expira_em,
+                    "expira_em_formatado": expira_formatado
                 })
 
             atomic_save_config_senhas(keys)
@@ -3790,6 +3925,9 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     if secure_str_compare(tok_pwd, senha) or tok_pwd == senha:
                         s_info["services"] = valid_services
                         s_info["role_name"] = nome
+                        s_info["expires_at"] = expira_em
+                        s_info["days_remaining"] = dias if dias > 0 else None
+                        s_info["expiration_date"] = expira_formatado
                 save_active_sessions()
 
         global SERVER_DATA_VERSION
@@ -3804,14 +3942,17 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     "exp": time.time() + TOKEN_TTL_SECONDS,
                     "services": valid_services,
                     "role_name": nome,
-                    "password": senha
+                    "password": senha,
+                    "expires_at": expira_em,
+                    "days_remaining": dias if dias > 0 else None,
+                    "expiration_date": expira_formatado
                 }
                 save_active_sessions()
             track_client_heartbeat(self.get_client_ip(), new_token, self.headers.get('User-Agent', ''), nome, valid_services[0] if valid_services else "netflix")
 
         res_payload = {
             "success": True,
-            "message": f"Senha de '{nome}' salva e ativada com sucesso!",
+            "message": f"Senha de '{nome}' salva com validade de {dias} dias!",
             "passwords": keys
         }
         if new_token:
@@ -3822,6 +3963,52 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             res_payload["expires_in"] = TOKEN_TTL_SECONDS
 
         return self.send_json_response(res_payload)
+
+    def handle_api_renew_password(self):
+        """Renova ou adiciona dias de validade a uma senha existente com 1 clique."""
+        content_length = int(self.headers.get('Content-Length', 0))
+        post_data = self.rfile.read(content_length) if content_length > 0 else b'{}'
+        try:
+            req = json.loads(post_data.decode('utf-8')) if post_data else {}
+        except Exception:
+            return self.send_json_response({"success": False, "message": "JSON inválido."}, 400)
+
+        target_pwd = str(req.get("senha", "") or req.get("password", "")).strip()
+        add_days_val = req.get("add_days") if req.get("add_days") is not None else req.get("dias", 30)
+        try:
+            add_days = int(add_days_val)
+        except Exception:
+            add_days = 30
+
+        if not target_pwd:
+            return self.send_json_response({"success": False, "message": "Senha não informada."}, 400)
+
+        now = time.time()
+        updated = False
+        with SENHAS_LOCK:
+            keys = load_access_keys()
+            for item in keys:
+                if secure_str_compare(item.get("senha", ""), target_pwd):
+                    curr_exp = item.get("expira_em")
+                    if not curr_exp or curr_exp < now:
+                        new_exp = now + (add_days * 86400)
+                    else:
+                        new_exp = curr_exp + (add_days * 86400)
+                    item["expira_em"] = new_exp
+                    item["expira_em_formatado"] = datetime.fromtimestamp(new_exp).strftime('%d/%m/%Y às %H:%M')
+                    item["dias_validade"] = (item.get("dias_validade") or 0) + add_days
+                    updated = True
+                    break
+            if updated:
+                atomic_save_config_senhas(keys)
+                global SERVER_DATA_VERSION
+                SERVER_DATA_VERSION = time.time()
+                return self.send_json_response({
+                    "success": True,
+                    "message": f"🎉 Senha renovada com sucesso! +{add_days} dias adicionados.",
+                    "passwords": keys
+                })
+        return self.send_json_response({"success": False, "message": "Senha não encontrada no cadastro."}, 404)
 
     def handle_api_delete_password(self):
         global SERVER_DATA_VERSION

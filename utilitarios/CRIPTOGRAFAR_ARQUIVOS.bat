@@ -2,6 +2,7 @@
 title Blindar e Criptografar Arquivos - TVCODIGO
 color 0A
 cls
+cd /d "%~dp0.."
 echo ===============================================================
 echo        PROTECAO MILITAR: CRIPTOGRAFANDO ARQUIVOS SENSIVEIS
 echo ===============================================================

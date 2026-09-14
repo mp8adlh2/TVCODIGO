@@ -51,11 +51,7 @@ Mesmo que os arquivos no disco estejam 100% criptografados:
 ================================================================================
 
 A criptografia e atrelada diretamente a sua Senha Mestre localizada no arquivo:
-👉 "SENHA_MESTRE.txt"
-
-Se voce mudar a senha mestre, primeiro execute "DESCRIPTOGRAFAR_ARQUIVOS.bat",
-altere a senha no arquivo e depois execute "CRIPTOGRAFAR_ARQUIVOS.bat" para re-criptografar
-com a nova chave.
+👉 "SENHA_ADMIN.txt" ou "SENHA_MESTRE.txt"
 
 ================================================================================
  🛡️ RESUMO DAS PROTECOES ATIVAS NO SITE:
