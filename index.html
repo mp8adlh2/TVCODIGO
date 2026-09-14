@@ -3175,6 +3175,421 @@
       if (document.getElementById('login-overlay').style.display !== 'flex') loadStatus();
     }, 5000);
 
+    // ═════════════════════════════════════════════════════════════════════
+    // 🔐 ÁREA EXCLUSIVA DO DONO — GERENCIAMENTO 100% AO VIVO
+    // ═════════════════════════════════════════════════════════════════════
+    let ownerAdminToken = sessionStorage.getItem('cyber_cookie_admin_token') || localStorage.getItem('cyber_cookie_admin_token') || '';
+    let ownerSelectedPlan = 'all';
+    let ownerCachedPasswords = [];
+    let lastOwnerWhatsAppMsg = '';
+
+    function getOwnerHeaders() {
+      const tok = ownerAdminToken || sessionStorage.getItem('cyber_cookie_admin_token') || localStorage.getItem('cyber_cookie_admin_token') || '';
+      return {
+        'Content-Type': 'application/json',
+        'X-Admin-Token': tok,
+        'Authorization': 'Bearer ' + tok
+      };
+    }
+
+    function openOwnerManagerModal() {
+      soundClick();
+      const modal = document.getElementById('owner-password-modal');
+      const authCard = document.getElementById('owner-auth-card');
+      const mgrCard = document.getElementById('owner-manager-card');
+      const errBox = document.getElementById('owner-auth-error');
+
+      if (errBox) errBox.style.display = 'none';
+
+      // Se já temos token de dono salvo, abre direto o gerenciador
+      if (ownerAdminToken) {
+        authCard.style.display = 'none';
+        mgrCard.style.display = 'flex';
+        modal.style.display = 'flex';
+        loadOwnerPasswordsList();
+      } else {
+        authCard.style.display = 'block';
+        mgrCard.style.display = 'none';
+        modal.style.display = 'flex';
+        setTimeout(() => {
+          const inp = document.getElementById('owner-master-input');
+          if (inp) {
+            inp.value = '';
+            inp.focus();
+          }
+        }, 150);
+      }
+    }
+
+    function closeOwnerManagerModal() {
+      soundClick();
+      const modal = document.getElementById('owner-password-modal');
+      if (modal) modal.style.display = 'none';
+    }
+
+    async function verifyOwnerAccess() {
+      soundClick();
+      const inp = document.getElementById('owner-master-input');
+      const errBox = document.getElementById('owner-auth-error');
+      const pwd = inp ? inp.value.trim() : '';
+
+      if (!pwd) {
+        if (errBox) {
+          errBox.innerText = 'Por favor, digite a Senha Mestre do Dono.';
+          errBox.style.display = 'block';
+        }
+        soundError();
+        return;
+      }
+
+      if (errBox) errBox.style.display = 'none';
+
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/verify-pass`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ password: pwd })
+        });
+        const data = await res.json();
+
+        if (res.ok && data.success && data.admin_token) {
+          ownerAdminToken = data.admin_token;
+          sessionStorage.setItem('cyber_cookie_admin_token', ownerAdminToken);
+          localStorage.setItem('cyber_cookie_admin_token', ownerAdminToken);
+
+          document.getElementById('owner-auth-card').style.display = 'none';
+          document.getElementById('owner-manager-card').style.display = 'flex';
+          soundSuccess();
+          loadOwnerPasswordsList();
+        } else {
+          soundError();
+          if (errBox) {
+            errBox.innerText = data.message || 'Senha Mestre incorreta! Apenas o Dono pode gerenciar.';
+            errBox.style.display = 'block';
+          }
+        }
+      } catch (e) {
+        soundError();
+        if (errBox) {
+          errBox.innerText = 'Erro ao conectar ao servidor. Certifique-se de que o ativador está em execução.';
+          errBox.style.display = 'block';
+        }
+      }
+    }
+
+    function selectOwnerPlan(plan, btn) {
+      soundClick();
+      ownerSelectedPlan = plan;
+      const pills = document.querySelectorAll('#owner-plan-selector .owner-plan-pill');
+      pills.forEach(p => p.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+    }
+
+    async function executeOwnerCreateAndLogin() {
+      soundClick();
+      const btn = document.getElementById('btn-owner-create-and-login');
+      const clientInp = document.getElementById('owner-input-client');
+      const customPwdInp = document.getElementById('owner-input-custom-pwd');
+      const clientName = clientInp ? clientInp.value.trim() : '';
+      const customPwd = customPwdInp ? customPwdInp.value.trim() : '';
+
+      if (btn) {
+        btn.disabled = true;
+        btn.innerText = '⚡ CRIANDO & ENTRANDO...';
+      }
+
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/passwords/quick-create`, {
+          method: 'POST',
+          headers: getOwnerHeaders(),
+          body: JSON.stringify({
+            plan: ownerSelectedPlan,
+            nome: clientName,
+            senha: customPwd,
+            auto_login: true
+          })
+        });
+
+        const data = await res.json();
+
+        if (res.ok && data.success && data.token) {
+          authToken = data.token;
+          allowedServices = data.allowed_services || ['netflix', 'hbo', 'crunchyroll', 'sky'];
+
+          localStorage.setItem('cyber_auth_token', authToken);
+          localStorage.setItem('cyber_allowed_services', JSON.stringify(allowedServices));
+          sessionStorage.setItem('cyber_auth_token', authToken);
+          sessionStorage.setItem('cyber_allowed_services', JSON.stringify(allowedServices));
+
+          if (navigator.clipboard && data.password) {
+            try { await navigator.clipboard.writeText(data.password); } catch(e) {}
+          }
+
+          closeOwnerManagerModal();
+          hideLoginOverlay();
+          applyAllowedServicesUI();
+          soundSuccess();
+          triggerConfetti();
+
+          const target = allowedServices.includes(currentService) ? currentService : (allowedServices[0] || 'netflix');
+          switchService(target, true);
+          loadStatus();
+          logKernel(`[DONO] Acesso instantâneo ativado com senha: ${data.password}`);
+        } else if (res.status === 401) {
+          ownerAdminToken = '';
+          sessionStorage.removeItem('cyber_cookie_admin_token');
+          openOwnerManagerModal();
+          alert('Sessão do Dono expirada. Digite a senha mestre novamente.');
+        } else {
+          soundError();
+          alert('Erro ao criar senha: ' + (data.message || 'Falha no servidor'));
+        }
+      } catch (e) {
+        soundError();
+        alert('Erro de conexão com o servidor ao criar senha.');
+      } finally {
+        if (btn) {
+          btn.disabled = false;
+          btn.innerText = '⚡ CRIAR & JÁ ENTRAR NO SITE 🚀';
+        }
+      }
+    }
+
+    async function executeOwnerCreateOnly() {
+      soundClick();
+      const btn = document.getElementById('btn-owner-create-only');
+      const clientInp = document.getElementById('owner-input-client');
+      const customPwdInp = document.getElementById('owner-input-custom-pwd');
+      const clientName = clientInp ? clientInp.value.trim() : '';
+      const customPwd = customPwdInp ? customPwdInp.value.trim() : '';
+
+      if (btn) {
+        btn.disabled = true;
+        btn.innerText = '➕ SALVANDO...';
+      }
+
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/passwords/quick-create`, {
+          method: 'POST',
+          headers: getOwnerHeaders(),
+          body: JSON.stringify({
+            plan: ownerSelectedPlan,
+            nome: clientName,
+            senha: customPwd
+          })
+        });
+
+        const data = await res.json();
+
+        if (res.ok && data.success && data.password) {
+          soundSuccess();
+          const pwd = data.password;
+          lastOwnerWhatsAppMsg = data.whatsapp_message || `⚡ Acesso Liberado!\n🔑 Senha: ${pwd}`;
+
+          const banner = document.getElementById('owner-new-pwd-banner');
+          const valInp = document.getElementById('owner-banner-pwd-val');
+          if (valInp) valInp.value = pwd;
+          if (banner) banner.style.display = 'flex';
+
+          if (navigator.clipboard) {
+            try { await navigator.clipboard.writeText(pwd); } catch(e) {}
+          }
+
+          if (clientInp) clientInp.value = '';
+          if (customPwdInp) customPwdInp.value = '';
+
+          if (Array.isArray(data.passwords)) {
+            ownerCachedPasswords = data.passwords;
+            renderOwnerPasswords(ownerCachedPasswords);
+          } else {
+            loadOwnerPasswordsList();
+          }
+        } else if (res.status === 401) {
+          ownerAdminToken = '';
+          sessionStorage.removeItem('cyber_cookie_admin_token');
+          openOwnerManagerModal();
+          alert('Sessão do Dono expirada. Digite a senha mestre novamente.');
+        } else {
+          soundError();
+          alert('Erro ao salvar senha: ' + (data.message || 'Falha no servidor'));
+        }
+      } catch (e) {
+        soundError();
+        alert('Erro de conexão ao salvar senha.');
+      } finally {
+        if (btn) {
+          btn.disabled = false;
+          btn.innerText = '➕ Apenas Salvar Senha';
+        }
+      }
+    }
+
+    async function loginWithPasswordDirect(pwd) {
+      if (!pwd) return;
+      soundClick();
+      closeOwnerManagerModal();
+      const pwdInput = document.getElementById('login-password-input');
+      if (pwdInput) pwdInput.value = pwd;
+      await executeLogin();
+    }
+
+    async function copyPasswordDirect(pwd, btn) {
+      if (!pwd) return;
+      soundClick();
+      try {
+        await navigator.clipboard.writeText(pwd);
+        if (btn) {
+          const old = btn.innerHTML;
+          btn.innerHTML = '✓ Copiado!';
+          setTimeout(() => { btn.innerHTML = old; }, 1500);
+        }
+      } catch(e) {
+        prompt('Copie a senha:', pwd);
+      }
+    }
+
+    async function copyOwnerBannerWhatsApp(btn) {
+      soundClick();
+      const msg = lastOwnerWhatsAppMsg || 'Acesso liberado!';
+      try {
+        await navigator.clipboard.writeText(msg);
+        if (btn) {
+          const old = btn.innerHTML;
+          btn.innerHTML = '✓ Copiado!';
+          setTimeout(() => { btn.innerHTML = old; }, 1500);
+        }
+      } catch(e) {
+        prompt('Copie a mensagem de WhatsApp:', msg);
+      }
+    }
+
+    async function loadOwnerPasswordsList() {
+      const container = document.getElementById('owner-pwds-container');
+      const countElem = document.getElementById('owner-active-count');
+
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/passwords`, {
+          headers: getOwnerHeaders()
+        });
+
+        if (res.status === 401) {
+          ownerAdminToken = '';
+          sessionStorage.removeItem('cyber_cookie_admin_token');
+          document.getElementById('owner-auth-card').style.display = 'block';
+          document.getElementById('owner-manager-card').style.display = 'none';
+          return;
+        }
+
+        const data = await res.json();
+        if (res.ok && Array.isArray(data.passwords)) {
+          ownerCachedPasswords = data.passwords;
+          renderOwnerPasswords(ownerCachedPasswords);
+        } else {
+          if (container) container.innerHTML = `<div style="text-align: center; color: #ff4d5a; padding: 12px; font-size: 11px;">Erro ao carregar lista.</div>`;
+        }
+      } catch (e) {
+        if (container) container.innerHTML = `<div style="text-align: center; color: var(--text-dim); padding: 12px; font-size: 11px;">Servidor offline.</div>`;
+      }
+    }
+
+    function renderOwnerPasswords(list) {
+      const container = document.getElementById('owner-pwds-container');
+      const countElem = document.getElementById('owner-active-count');
+      if (!container) return;
+
+      if (countElem) countElem.innerText = list.length;
+
+      if (!list || list.length === 0) {
+        container.innerHTML = `<div style="text-align: center; color: var(--text-dim); padding: 16px; font-size: 11.5px;">Nenhuma senha ativa cadastrada. Crie uma acima!</div>`;
+        return;
+      }
+
+      container.innerHTML = list.map(item => {
+        const svcs = item.servicos || ['netflix', 'hbo', 'crunchyroll', 'sky'];
+        const isNf = svcs.includes('netflix');
+        const isHbo = svcs.includes('hbo');
+        const isCr = svcs.includes('crunchyroll');
+        const isSky = svcs.includes('sky');
+
+        const tags = [
+          isNf ? `<span class="owner-tag-nf">NF</span>` : '',
+          isHbo ? `<span class="owner-tag-hbo">HBO</span>` : '',
+          isCr ? `<span class="owner-tag-cr">CR</span>` : '',
+          isSky ? `<span class="owner-tag-sky">SKY</span>` : ''
+        ].filter(Boolean).join(' ');
+
+        const safePwd = (item.senha || '').replace(/'/g, "\\'");
+
+        return `
+          <div class="owner-pwd-card">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div style="font-size: 12px; font-weight: 800; color: #fff;">
+                👤 ${item.nome || 'Cliente VIP'}
+              </div>
+              <div style="display: flex; gap: 4px;">
+                ${tags}
+              </div>
+            </div>
+            <div style="display: flex; gap: 6px; align-items: center;">
+              <input type="text" readonly value="${item.senha}" style="flex: 1; background: rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; padding: 5px 8px; color: #00ff66; font-family: var(--font-mono); font-size: 11.5px; font-weight: 700;">
+              <button type="button" class="btn-icon" onclick="loginWithPasswordDirect('${safePwd}')" title="Entrar no site agora com esta senha" style="background: #00ff66; color: #000; font-size: 10px; font-weight: 800; padding: 4px 7px;">
+                🚀 Entrar
+              </button>
+              <button type="button" class="btn-icon" onclick="copyPasswordDirect('${safePwd}', this)" title="Copiar Senha" style="font-size: 10px; padding: 4px 7px;">
+                📋 Copiar
+              </button>
+              <button type="button" class="btn-icon" onclick="deleteOwnerPassword('${safePwd}')" title="Excluir Senha Permanentemente" style="color: #ff4d5a; border-color: rgba(255,77,90,0.4); font-size: 10px; padding: 4px 7px;">
+                🗑️
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function filterOwnerPasswordsList() {
+      const q = (document.getElementById('owner-search-filter')?.value || '').toLowerCase().trim();
+      if (!q) {
+        renderOwnerPasswords(ownerCachedPasswords);
+        return;
+      }
+      const filtered = ownerCachedPasswords.filter(p => {
+        const n = (p.nome || '').toLowerCase();
+        const s = (p.senha || '').toLowerCase();
+        return n.includes(q) || s.includes(q);
+      });
+      renderOwnerPasswords(filtered);
+    }
+
+    async function deleteOwnerPassword(pwd) {
+      if (!confirm(`Tem certeza que deseja excluir e cancelar a senha "${pwd}"? O cliente perderá acesso na hora.`)) return;
+      soundClick();
+
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/passwords/delete`, {
+          method: 'POST',
+          headers: getOwnerHeaders(),
+          body: JSON.stringify({ password: pwd })
+        });
+        const data = await res.json();
+        if (res.ok && data.success) {
+          soundSuccess();
+          if (Array.isArray(data.passwords)) {
+            ownerCachedPasswords = data.passwords;
+            renderOwnerPasswords(ownerCachedPasswords);
+          } else {
+            loadOwnerPasswordsList();
+          }
+        } else {
+          soundError();
+          alert('Erro ao excluir: ' + (data.message || 'Falha no servidor'));
+        }
+      } catch (e) {
+        soundError();
+        alert('Erro de conexão ao excluir senha.');
+      }
+    }
+
     window.addEventListener('load', async () => {
       updateSoundUI();
       updatePinDisplay();

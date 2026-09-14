@@ -532,7 +532,7 @@
           COFRE MASTER // AUTENTICAÇÃO
         </h2>
         <p style="font-size: 12px; color: var(--text-dim); margin-top: 4px;">
-          Digite a Senha Mestre, Senha do Cofre ou 'admin' para gerenciar cookies, usuários e senhas.
+          Digite a Senha Mestre do Dono para acessar o painel de controle total.
         </p>
       </div>
 
@@ -998,9 +998,7 @@
 
     const API_BASE = (window.location.protocol === 'file:') ? 'http://localhost:5000' : '';
     let adminToken = sessionStorage.getItem('cyber_cookie_admin_token') || 
-                     localStorage.getItem('cyber_cookie_admin_token') || 
-                     sessionStorage.getItem('cyber_auth_token') || 
-                     localStorage.getItem('cyber_auth_token') || '';
+                     localStorage.getItem('cyber_cookie_admin_token') || '';
     let adminPassCached = sessionStorage.getItem('cyber_admin_pass') || 
                           localStorage.getItem('cyber_admin_pass') || 
                           sessionStorage.getItem('cyber_master_pass') || 
@@ -1012,13 +1010,10 @@
       const h = { 'Content-Type': 'application/json' };
       const tok = adminToken || 
                   sessionStorage.getItem('cyber_cookie_admin_token') || 
-                  localStorage.getItem('cyber_cookie_admin_token') ||
-                  sessionStorage.getItem('cyber_auth_token') || 
-                  localStorage.getItem('cyber_auth_token') || '';
+                  localStorage.getItem('cyber_cookie_admin_token') || '';
       if (tok) {
         h['X-Admin-Token'] = tok;
         h['Authorization'] = 'Bearer ' + tok;
-        h['X-Auth-Token'] = tok;
       }
       const p = adminPassCached || 
                 sessionStorage.getItem('cyber_admin_pass') || 
@@ -1058,16 +1053,17 @@
 
     async function checkAdminAuth() {
       if (!adminToken) {
-        adminToken = localStorage.getItem('cyber_cookie_admin_token') || sessionStorage.getItem('cyber_cookie_admin_token') || localStorage.getItem('cyber_auth_token') || sessionStorage.getItem('cyber_auth_token') || '';
+        adminToken = sessionStorage.getItem('cyber_cookie_admin_token') || localStorage.getItem('cyber_cookie_admin_token') || '';
       }
       if (!adminPassCached) {
-        adminPassCached = localStorage.getItem('cyber_admin_pass') || sessionStorage.getItem('cyber_admin_pass') || localStorage.getItem('cyber_master_pass') || 'admin';
+        adminPassCached = sessionStorage.getItem('cyber_admin_pass') || localStorage.getItem('cyber_admin_pass') || sessionStorage.getItem('cyber_master_pass') || localStorage.getItem('cyber_master_pass') || '';
       }
 
-      // 🛡️ Super-Admin Localhost: Em localhost nunca deixa o operador travado no overlay
-      const isLocalhost = ['localhost', '127.0.0.1', '::1', ''].includes(window.location.hostname);
-      if (isLocalhost && !adminToken) {
-        await executeAdminUnlock();
+      // Se não há token válido em memória ou storage, exibe o formulário de login
+      if (!adminToken) {
+        document.getElementById('admin-login-overlay').style.display = 'flex';
+        document.getElementById('admin-main-container').style.display = 'none';
+        setTimeout(() => document.getElementById('admin-auth-input')?.focus(), 100);
         return;
       }
 
@@ -1086,17 +1082,17 @@
           loadOnlineUsers();
           loadPasswordsList();
           checkHashTab();
-        } else if (isLocalhost) {
-          await executeAdminUnlock();
         } else {
-          handleAdminUnauthorized();
+          handleAdminUnauthorized('Sessão expirada. Digite a senha mestre novamente.');
         }
       } catch (e) {
-        if (isLocalhost) {
-          await executeAdminUnlock();
-        } else {
-          document.getElementById('admin-login-overlay').style.display = 'flex';
-          document.getElementById('admin-main-container').style.display = 'none';
+        // Servidor offline ou erro de rede: mostra overlay para o dono tentar novamente
+        document.getElementById('admin-login-overlay').style.display = 'flex';
+        document.getElementById('admin-main-container').style.display = 'none';
+        const errBox = document.getElementById('admin-auth-error-msg');
+        if (errBox) {
+          errBox.innerText = 'Erro ao conectar ao servidor. Certifique-se de que o ativador está em execução.';
+          errBox.style.display = 'block';
         }
       }
     }
@@ -1105,7 +1101,9 @@
       let pwd = document.getElementById('admin-auth-input').value.trim();
       const errBox = document.getElementById('admin-auth-error-msg');
       if (!pwd) {
-        pwd = adminPassCached || 'admin';
+        errBox.innerText = 'Digite a senha mestre do dono para desbloquear.';
+        errBox.style.display = 'block';
+        return;
       }
       errBox.style.display = 'none';
       try {
