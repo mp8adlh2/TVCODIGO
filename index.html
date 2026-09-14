@@ -2594,7 +2594,15 @@
 
       const startTime = performance.now();
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 300000);
+      const timeoutId = setTimeout(() => controller.abort(), 35000);
+
+      let timerSeconds = 0;
+      const progressTimer = setInterval(() => {
+        timerSeconds++;
+        if (btn && btn.disabled) {
+          btnText.innerText = `TRANSMITINDO PAYLOAD... ⏳ (${timerSeconds}s)`;
+        }
+      }, 1000);
 
       try {
         const res = await fetch(`${API_BASE}/api/activate`, {
@@ -2646,10 +2654,13 @@
         }
       } catch (err) {
         soundError();
-        const msg = 'Erro de rede ou servidor reiniciando. Tente novamente.';
+        const msg = (err && err.name === 'AbortError')
+          ? 'Tempo limite de resposta excedido. Gere um novo código na TV e tente novamente.'
+          : 'Erro de rede ou servidor reiniciando. Tente novamente.';
         showAlert('error', msg);
         logKernel(`[ERRO] ${msg}`);
       } finally {
+        clearInterval(progressTimer);
         clearTimeout(timeoutId);
         stopKernelLogStream();
         btn.disabled = false;

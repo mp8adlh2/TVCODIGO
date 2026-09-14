@@ -1057,25 +1057,9 @@ def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -
             password=password,
             tv_code=clean_code,
             headless=True,
-            timeout_ms=30000,
+            timeout_ms=16000,
             usar_proxy=use_proxy
         )
-
-        # Se o Google bloqueou o IP local ou houve bloqueio de rede, retenta automaticamente com Proxy Residencial DataImpulse
-        houve_bloqueio = (
-            res.get("motivo") in ["IP_BLOQUEADO_GOOGLE", "IP_BLOQUEADO"] or
-            any(k in str(res.get("message", "")).lower() for k in ["bloque", "blocked", "403", "forbidden", "rate limit", "recaptcha bloqueou"])
-        )
-        if houve_bloqueio and not use_proxy:
-            push_sky_log("🇧🇷 [Proxy Fallback] Bloqueio de IP detectado, ativando Proxy Residencial DataImpulse (BR)...", level="warn")
-            res = automacao_playwright.ativar_tv_playwright(
-                email=email,
-                password=password,
-                tv_code=clean_code,
-                headless=True,
-                timeout_ms=55000,
-                usar_proxy=True
-            )
 
         success = res.get("success", False)
         msg = res.get("message", "TV verificada")

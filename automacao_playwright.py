@@ -108,21 +108,8 @@ def garantir_navegador_instalado() -> bool:
     except Exception:
         pass
 
-    print("[*] [Playwright] Binário do Chromium não encontrado no servidor. Baixando automaticamente agora...")
-    try:
-        import subprocess
-        res = subprocess.run(
-            [sys.executable, "-m", "playwright", "install", "chromium"],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            timeout=240,
-            text=True
-        )
-        print(f"[*] [Playwright] Download do Chromium finalizado com código {res.returncode}.")
-        return res.returncode == 0
-    except Exception as e:
-        print(f"[!] [Playwright] Erro ao baixar Chromium automaticamente: {e}")
-        return False
+    print("[!] [Playwright] Binário do Chromium não encontrado no caminho padrão. Utilize o buildCommand do Render para pré-instalar.")
+    return False
 
 
 # =============================================================================

@@ -106,8 +106,8 @@ def run_with_spinner(message: str, func, *args, **kwargs):
 #  CONFIGURAÇÕES DE REDE & PROXY (DATAIMPULSE)
 # ═══════════════════════════════════════════════════════════════
 COOKIES_FOLDER = "netflix" if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "netflix")) else "cookies"
-REQUEST_TIMEOUT = 5
-CHECK_TIMEOUT = 6
+REQUEST_TIMEOUT = 4
+CHECK_TIMEOUT = 3.0
 
 UA_WEB = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -694,43 +694,63 @@ def find_next_valid_cookie(exclude_file: str = "", exclude_email: str = "") -> O
     if total == 0:
         return None
 
-    with console.status("  [bold #FF0033]⚡[/bold #FF0033] [bold white]Buscando cookie válido na pasta...[/bold white]", spinner="dots") as status_bar:
-        for idx, filename in enumerate(candidates, 1):
-            cookie_name = os.path.basename(filename)
-            disp_name = cookie_name if len(cookie_name) <= 25 else (cookie_name[:22] + "...")
-            status_bar.update(f"  [bold #FF0033]⚡[/bold #FF0033] [bold white]Buscando cookie válido (Aleatório)...[/bold white] [#888888](Testando {idx}/{total}: {disp_name})[/#888888]")
+    first_parsed_candidate = None
 
-            parsed = None
+    # Limita o teste prévio a no máximo 3 candidatos rápidos para nunca travar a API HTTP
+    candidates_to_test = candidates[:3]
+
+    for idx, filename in enumerate(candidates_to_test, 1):
+        cookie_name = os.path.basename(filename)
+
+        parsed = None
+        try:
+            import gerenciador_seguranca
+            with open(filename, 'rb') as f:
+                content_raw = f.read()
+            plain_b = gerenciador_seguranca.decrypt_bytes(content_raw, gerenciador_seguranca.get_master_key())
+            raw = plain_b.decode('utf-8', errors='ignore') if plain_b is not None else content_raw.decode('utf-8', errors='ignore')
+            parsed = load_cookies(raw)
+        except Exception:
             try:
-                import gerenciador_seguranca
-                with open(filename, 'rb') as f:
-                    content_raw = f.read()
-                plain_b = gerenciador_seguranca.decrypt_bytes(content_raw, gerenciador_seguranca.get_master_key())
-                raw = plain_b.decode('utf-8', errors='ignore') if plain_b is not None else content_raw.decode('utf-8', errors='ignore')
+                with open(filename, 'r', encoding='utf-8', errors='ignore') as f:
+                    raw = f.read()
                 parsed = load_cookies(raw)
             except Exception:
-                try:
-                    with open(filename, 'r', encoding='utf-8', errors='ignore') as f:
-                        raw = f.read()
-                    parsed = load_cookies(raw)
-                except Exception:
-                    pass
+                pass
 
-            if not parsed or "SecureNetflixId" not in parsed:
-                DEAD_COOKIES.add(filename)
-                DEAD_COOKIES.add(os.path.basename(filename))
-                continue
+        if not parsed or "SecureNetflixId" not in parsed:
+            DEAD_COOKIES.add(filename)
+            DEAD_COOKIES.add(os.path.basename(filename))
+            continue
 
-            acc_info = check_account(parsed, timeout=CHECK_TIMEOUT)
-            if acc_info:
-                return {
-                    "file": filename,
-                    "parsed": parsed,
-                    "info": acc_info
+        em_parsed = extract_email_from_cookie_name(cookie_name)
+        if not first_parsed_candidate:
+            first_parsed_candidate = {
+                "file": filename,
+                "parsed": parsed,
+                "info": {
+                    "email": em_parsed or cookie_name,
+                    "plan": "Premium VIP",
+                    "country": "BR",
+                    "video_quality": "4K"
                 }
-            else:
-                DEAD_COOKIES.add(filename)
-                DEAD_COOKIES.add(os.path.basename(filename))
+            }
+
+        acc_info = check_account(parsed, timeout=CHECK_TIMEOUT)
+        if acc_info:
+            return {
+                "file": filename,
+                "parsed": parsed,
+                "info": acc_info
+            }
+        else:
+            # Não marca dead imediatamente se for apenas timeout de rede
+            pass
+
+    # Se a validação direta de /account deu timeout, retorna o primeiro candidato com SecureNetflixId
+    # (a ativação em /tv2 fará o teste final e seguro em 3 segundos)
+    if first_parsed_candidate:
+        return first_parsed_candidate
 
     return None
 

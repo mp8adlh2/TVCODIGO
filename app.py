@@ -713,9 +713,9 @@ def activate_hbo_tv(tv_code: str, cookie_data: dict) -> Tuple[bool, str, Optiona
     try:
         val_url = HBO_ENDPOINTS[region]["validate"]
         con_url = HBO_ENDPOINTS[region]["connect"]
-        r1 = requests.post(val_url, headers=headers, json=payload, timeout=15, verify=False)
+        r1 = requests.post(val_url, headers=headers, json=payload, timeout=6, verify=False)
         if r1.status_code in [200, 204]:
-            r2 = requests.post(con_url, headers=headers, json=payload, timeout=15, verify=False)
+            r2 = requests.post(con_url, headers=headers, json=payload, timeout=6, verify=False)
             if r2.status_code in [200, 204]:
                 now_ts = time.time()
                 HBO_LAST_USED_AT[filename] = now_ts
@@ -2670,69 +2670,85 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             if req_cookie and isinstance(req_cookie, str) and req_cookie.strip() and not req_cookie.strip().startswith('COOKIE:'):
                 specific_account = select_netflix_cookie_by_filename(req_cookie.strip())
 
-            last_msg = ""
-            for _attempt in range(3):
-                if specific_account:
-                    used_account = specific_account
-                else:
-                    # Sorteia aleatoriamente um cookie válido do estoque
-                    used_account = find_netflix_valid_cookie()
-                    if not used_account and CURRENT_NETFLIX_READY:
-                        used_account = CURRENT_NETFLIX_READY
+            used_account = specific_account or CURRENT_NETFLIX_READY or find_netflix_valid_cookie()
+            if not used_account:
+                all_nf = get_all_netflix_accounts()
+                if all_nf:
+                    used_account = random.choice(all_nf)
 
-                if not used_account:
-                    kernel_logger.push_kernel_log("❌ [Netflix] Nenhum cookie válido disponível no cofre.", level="error")
+            if not used_account:
+                kernel_logger.push_kernel_log("❌ [Netflix] Nenhum cookie válido disponível no cofre.", level="error")
+                return self.send_json_response({
+                    "success": False,
+                    "message": "Nenhum cookie Netflix válido disponível no momento."
+                }, 404)
+
+            CURRENT_NETFLIX_READY = used_account
+            used_file = used_account.get("file", "")
+            account_info = used_account.get("info", {})
+            kernel_logger.push_kernel_log(f"🍪 [Netflix] Injetando cookie: {account_info.get('email', os.path.basename(used_file))}...")
+            success, msg, info = activate_netflix_tv(clean_code, used_account)
+            account_info = info or used_account.get("info", {})
+
+            if success:
+                tv2.mark_cookie_used(used_file, account_info.get("email", ""))
+                record_history_entry("Netflix", used_file, account_info.get("email", ""), clean_code, account_info.get("plan", "Netflix"), "Sucesso")
+                CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=used_file, exclude_email=account_info.get("email", ""))
+                kernel_logger.push_kernel_log(f"⚡ [Netflix] [SUCESSO] TV {clean_code} vinculada com sucesso!", level="success")
+                return self.send_json_response({
+                    "success": True,
+                    "message": msg or "TV pareada e ativada com sucesso!",
+                    "account": account_info
+                })
+            else:
+                kernel_logger.push_kernel_log(f"⚠️ [Netflix] Tentativa inicial falhou: {msg}", level="warn")
+                # Se for código de TV inválido ou expirado, encerra IMEDIATAMENTE sem re-tentar outro cookie
+                if any(k in msg.lower() for k in ["código", "codigo", "expirou", "inválido", "invalido", "recusado", "já utilizado"]):
+                    tv2.mark_cookie_used(used_file, account_info.get("email", ""))
+                    CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=used_file, exclude_email=account_info.get("email", ""))
                     return self.send_json_response({
                         "success": False,
-                        "message": "Nenhum cookie Netflix válido disponível no momento."
-                    }, 404)
-
-                CURRENT_NETFLIX_READY = used_account
-                used_file = used_account.get("file", "")
-                account_info = used_account.get("info", {})
-                kernel_logger.push_kernel_log(f"🍪 [Netflix] Injetando cookie aleatório: {account_info.get('email', os.path.basename(used_file))} (Tentativa {_attempt+1}/3)...")
-                success, msg, info = activate_netflix_tv(clean_code, used_account)
-                account_info = info or used_account.get("info", {})
-                last_msg = msg
-
-                if success:
-                    tv2.mark_cookie_used(used_file, account_info.get("email", ""))
-                    record_history_entry("Netflix", used_file, account_info.get("email", ""), clean_code, account_info.get("plan", "Netflix"), "Sucesso")
-                    CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=used_file, exclude_email=account_info.get("email", ""))
-                    kernel_logger.push_kernel_log(f"⚡ [Netflix] [SUCESSO] TV {clean_code} vinculada com sucesso!", level="success")
-                    return self.send_json_response({
-                        "success": True,
-                        "message": msg or "TV pareada e ativada com sucesso!",
-                        "account": account_info
+                        "message": msg
                     })
-                else:
-                    kernel_logger.push_kernel_log(f"⚠️ [Netflix] Tentativa falhou: {msg}", level="warn")
-                    # Se for código de TV inválido ou expirado, encerra e rotaciona para a próxima conta aleatória
-                    if any(k in msg.lower() for k in ["código", "codigo", "expirou", "inválido", "invalido", "recusado", "já utilizado"]):
-                        tv2.mark_cookie_used(used_file, account_info.get("email", ""))
-                        CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=used_file, exclude_email=account_info.get("email", ""))
+
+                # Se falhou por motivo de sessão do cookie, tenta no máximo 1 conta alternativa
+                DEAD_NETFLIX_COOKIES.add(used_file)
+                DEAD_NETFLIX_COOKIES.add(os.path.basename(used_file))
+                tv2.DEAD_COOKIES.add(used_file)
+                tv2.DEAD_COOKIES.add(os.path.basename(used_file))
+                alt_account = find_netflix_fast_cookie(exclude_file=used_file, exclude_email=account_info.get("email", ""))
+                if alt_account:
+                    CURRENT_NETFLIX_READY = alt_account
+                    alt_file = alt_account.get("file", "")
+                    alt_info = alt_account.get("info", {})
+                    kernel_logger.push_kernel_log(f"🍪 [Netflix] Tentando cookie alternativo: {alt_info.get('email', os.path.basename(alt_file))}...")
+                    succ2, msg2, info2 = activate_netflix_tv(clean_code, alt_account)
+                    if succ2:
+                        tv2.mark_cookie_used(alt_file, alt_info.get("email", ""))
+                        record_history_entry("Netflix", alt_file, alt_info.get("email", ""), clean_code, account_info.get("plan", "Netflix"), "Sucesso")
+                        CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=alt_file, exclude_email=alt_info.get("email", ""))
                         return self.send_json_response({
-                            "success": False,
-                            "message": msg
+                            "success": True,
+                            "message": msg2 or "TV pareada e ativada com sucesso!",
+                            "account": info2 or alt_info
                         })
+                    else:
+                        msg = msg2
 
-                    # Erro de sessão do cookie: descarta cookie morto e tenta a próxima conta válida aleatória
-                    DEAD_NETFLIX_COOKIES.add(used_file)
-                    DEAD_NETFLIX_COOKIES.add(os.path.basename(used_file))
-                    tv2.DEAD_COOKIES.add(used_file)
-                    tv2.DEAD_COOKIES.add(os.path.basename(used_file))
-                    CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=used_file, exclude_email=account_info.get("email", ""))
-                    specific_account = None
-
-            return self.send_json_response({
-                "success": False,
-                "message": last_msg or "Falha ao parear com a TV."
-            })
+                return self.send_json_response({
+                    "success": False,
+                    "message": msg or "Falha ao parear com a TV. Verifique o código digitado."
+                })
 
         elif service == 'hbo':
             kernel_logger.push_kernel_log(f"🟣 [HBO Max] Iniciando pareamento de TV com código {clean_code}...")
             if CURRENT_HBO_READY is None:
                 CURRENT_HBO_READY = find_hbo_valid_cookie()
+
+            if not CURRENT_HBO_READY:
+                all_hbo = get_all_hbo_accounts()
+                if all_hbo:
+                    CURRENT_HBO_READY = all_hbo[0]
 
             if not CURRENT_HBO_READY:
                 kernel_logger.push_kernel_log("❌ [HBO Max] Nenhum cookie ativo disponível.", level="error")
@@ -2761,11 +2777,12 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 })
             else:
                 kernel_logger.push_kernel_log(f"⚠️ [HBO Max] Falha: {msg}", level="warn")
-                if "expirou" in msg.lower() or "sessão" in msg.lower():
-                    CURRENT_HBO_READY = find_hbo_valid_cookie()
+                DEAD_HBO_COOKIES.add(used_file)
+                DEAD_HBO_COOKIES.add(os.path.basename(used_file))
+                CURRENT_HBO_READY = find_hbo_valid_cookie()
                 return self.send_json_response({
                     "success": False,
-                    "message": msg
+                    "message": msg or "Falha ao parear com a TV HBO Max. Verifique o código de 6 dígitos."
                 })
 
         elif service == 'crunchyroll':
