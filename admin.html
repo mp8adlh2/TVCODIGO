@@ -799,13 +799,18 @@
 
       <!-- 📋 LISTA DE CONTAS DO TÓPICO ATUAL COM OPÇÃO DE REMOVER -->
       <div style="margin-top: 10px; border-top: 1px dashed rgba(255,255,255,0.12); padding-top: 12px; display: flex; flex-direction: column; gap: 8px;">
-        <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px;">
           <div style="font-size: 11.5px; font-weight: 800; color: #ffd700; text-transform: uppercase;">
             📋 Contas & Cookies Cadastrados (<span id="accounts-topic-title">Netflix</span>): <span id="accounts-count-badge" style="color:#00ff66; font-weight: 900;">0</span>
           </div>
-          <button type="button" class="btn-icon" onclick="loadTopicAccounts()" style="font-size: 10px; padding: 2px 8px; color: #ffd700;">
-            🔄 Atualizar Lista
-          </button>
+          <div style="display: flex; gap: 6px; align-items: center; flex-wrap: wrap;">
+            <button type="button" class="btn-icon" id="btn-clear-all-cookies" onclick="clearCurrentServiceCookies()" style="font-size: 10.5px; padding: 4px 10px; color: #ff4d5a; border-color: rgba(255,77,90,0.5); background: rgba(255,77,90,0.12); font-weight: 800;" title="Apagar todos os cookies deste streaming para colocar novos">
+              🗑️ Limpar Todos os Cookies
+            </button>
+            <button type="button" class="btn-icon" onclick="loadTopicAccounts()" style="font-size: 10px; padding: 3px 8px; color: #ffd700;">
+              🔄 Atualizar Lista
+            </button>
+          </div>
         </div>
 
         <input type="text" id="account-filter-input" placeholder="🔍 Filtrar contas por email, nome ou país..." oninput="filterTopicAccounts()" style="background: rgba(0,0,0,0.6); border: 1px solid var(--panel-border); border-radius: 8px; padding: 7px 10px; color: #fff; font-size: 11px; width: 100%;">
@@ -1606,6 +1611,45 @@
         if (badgeEl) badgeEl.innerText = rawTopicAccounts.length;
         filterTopicAccounts();
         alert('Erro ao comunicar com o servidor: ' + e.message);
+      }
+    }
+
+    async function clearCurrentServiceCookies() {
+      const svc = currentTarget || 'netflix';
+      const svcNames = {
+        'netflix': 'NETFLIX',
+        'hbo': 'HBO MAX',
+        'hbomax': 'HBO MAX',
+        'crunchyroll': 'CRUNCHYROLL',
+        'sky': 'SKY+'
+      };
+      const label = svcNames[svc] || svc.toUpperCase();
+
+      const conf = confirm(`⚠️ ATENÇÃO: Deseja realmente APAGAR TODOS OS COOKIES DE ${label}?\n\n• Todos os cookies antigos de ${label} serão removidos do servidor.\n• A pasta ficará totalmente limpa para você colocar os novos cookies.\n\n🔒 IMPORTANTE: As senhas dos seus clientes NÃO serão apagadas!`);
+      if (!conf) return;
+
+      showToast(`🗑️ Apagando todos os cookies de ${label}...`);
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/cookies/clear-all`, {
+          method: 'POST',
+          headers: { ...getAdminHeaders(), 'Content-Type': 'application/json' },
+          cache: 'no-store',
+          body: JSON.stringify({ service: svc })
+        });
+        const data = await res.json();
+        if (res.ok && data.success) {
+          showToast(data.message || `🎉 Cookies de ${label} limpos com sucesso!`);
+          rawTopicAccounts = [];
+          const badgeEl = document.getElementById('accounts-count-badge');
+          if (badgeEl) badgeEl.innerText = '0';
+          filterTopicAccounts();
+          await loadStats();
+          await loadTopicAccounts();
+        } else {
+          alert('Erro ao limpar cookies: ' + (data.message || 'Falha na requisição'));
+        }
+      } catch (e) {
+        alert('Erro de conexão ao limpar cookies: ' + e.message);
       }
     }
 

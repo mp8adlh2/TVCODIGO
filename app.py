@@ -2318,6 +2318,10 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             if not self.is_admin_authenticated():
                 return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
             self.handle_api_admin_delete_account()
+        elif raw_path == '/api/admin/cookies/clear-all':
+            if not self.is_admin_authenticated():
+                return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
+            self.handle_api_admin_clear_all_cookies()
         elif raw_path == '/api/activate':
             if not self.is_authenticated():
                 return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
@@ -3668,6 +3672,137 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             "server_version": SERVER_DATA_VERSION,
             "message": f"Conta / Cookie '{target_email or target_id}' removido permanentemente com sucesso!"
         })
+
+    def handle_api_admin_clear_all_cookies(self):
+        """Remove todos os cookies de um streaming selecionado (ex: Netflix) sem tocar em senhas de clientes."""
+        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY, CURRENT_CRUNCHYROLL_READY, CURRENT_SKY_READY, VALID_NETFLIX_POOL, VALID_HBO_POOL, SERVER_DATA_VERSION
+        content_length = int(self.headers.get('Content-Length', 0))
+        post_data = self.rfile.read(content_length) if content_length > 0 else b'{}'
+        try:
+            req = json.loads(post_data.decode('utf-8')) if post_data else {}
+        except Exception:
+            return self.send_json_response({"success": False, "message": "JSON inválido."}, 400)
+
+        service = str(req.get("service", "netflix")).lower()
+        deleted_count = 0
+
+        if service in ["netflix", "nf"]:
+            # 1. Remove todos os arquivos da pasta netflix e da antiga pasta cookies
+            for fold in [NETFLIX_COOKIES_FOLDER, os.path.join(BASE_DIR, "cookies")]:
+                if os.path.exists(fold):
+                    for f in glob.glob(os.path.join(fold, "*")):
+                        try:
+                            import stat
+                            os.chmod(f, stat.S_IWRITE | stat.S_IREAD)
+                            os.remove(f)
+                            deleted_count += 1
+                        except Exception as e:
+                            logger.error(f"Erro ao remover cookie netflix {f}: {e}")
+
+            # 2. Esvazia a seção netflix do bundle para não ressuscitar nada
+            if os.path.exists(COOKIES_BUNDLE_FILE):
+                try:
+                    with open(COOKIES_BUNDLE_FILE, 'r', encoding='utf-8', errors='ignore') as bf:
+                        b_data = json.load(bf)
+                    if isinstance(b_data, dict):
+                        b_data["netflix"] = {}
+                        with open(COOKIES_BUNDLE_FILE, 'w', encoding='utf-8', errors='ignore') as bf:
+                            json.dump(b_data, bf)
+                except Exception as e:
+                    logger.error(f"Erro ao limpar netflix no cookies_bundle: {e}")
+
+            # 3. Limpa todas as estruturas em memória da Netflix
+            with VALID_NETFLIX_LOCK:
+                VALID_NETFLIX_POOL.clear()
+                VALID_NETFLIX_BY_FILE.clear()
+            DEAD_NETFLIX_COOKIES.clear()
+            tv2.DEAD_COOKIES.clear()
+            tv2.USED_COOKIES.clear()
+            tv2.LAST_USED_AT.clear()
+            COOKIE_FAIL_COUNTS.clear()
+            CURRENT_NETFLIX_READY = None
+
+            SERVER_DATA_VERSION = time.time()
+            return self.send_json_response({
+                "success": True,
+                "deleted_count": deleted_count,
+                "message": f"🎉 Todos os {deleted_count} cookies da Netflix foram removidos com sucesso! A pasta está 100% limpa para receber os novos cookies."
+            })
+
+        elif service in ["hbo", "hbomax", "max"]:
+            for fold in [HBO_COOKIES_FOLDER, os.path.join(BASE_DIR, "cookies 01")]:
+                if os.path.exists(fold):
+                    for f in glob.glob(os.path.join(fold, "*")):
+                        try:
+                            import stat
+                            os.chmod(f, stat.S_IWRITE | stat.S_IREAD)
+                            os.remove(f)
+                            deleted_count += 1
+                        except Exception:
+                            pass
+
+            if os.path.exists(COOKIES_BUNDLE_FILE):
+                try:
+                    with open(COOKIES_BUNDLE_FILE, 'r', encoding='utf-8', errors='ignore') as bf:
+                        b_data = json.load(bf)
+                    if isinstance(b_data, dict):
+                        b_data["hbo"] = {}
+                        with open(COOKIES_BUNDLE_FILE, 'w', encoding='utf-8', errors='ignore') as bf:
+                            json.dump(b_data, bf)
+                except Exception:
+                    pass
+
+            with VALID_HBO_LOCK:
+                VALID_HBO_POOL.clear()
+                VALID_HBO_BY_FILE.clear()
+            DEAD_HBO_COOKIES.clear()
+            USED_HBO_COOKIES.clear()
+            HBO_LAST_USED_AT.clear()
+            CURRENT_HBO_READY = None
+
+            SERVER_DATA_VERSION = time.time()
+            return self.send_json_response({
+                "success": True,
+                "deleted_count": deleted_count,
+                "message": f"🎉 Todos os {deleted_count} cookies da HBO Max foram removidos com sucesso!"
+            })
+
+        elif service in ["crunchyroll", "cr"]:
+            if os.path.exists(CRUNCHYROLL_COMBO_FOLDER):
+                for f in glob.glob(os.path.join(CRUNCHYROLL_COMBO_FOLDER, "*")):
+                    try:
+                        import stat
+                        os.chmod(f, stat.S_IWRITE | stat.S_IREAD)
+                        os.remove(f)
+                        deleted_count += 1
+                    except Exception:
+                        pass
+
+            if os.path.exists(COOKIES_BUNDLE_FILE):
+                try:
+                    with open(COOKIES_BUNDLE_FILE, 'r', encoding='utf-8', errors='ignore') as bf:
+                        b_data = json.load(bf)
+                    if isinstance(b_data, dict):
+                        b_data["crunchyroll"] = {}
+                        with open(COOKIES_BUNDLE_FILE, 'w', encoding='utf-8', errors='ignore') as bf:
+                            json.dump(b_data, bf)
+                except Exception:
+                    pass
+
+            with VALID_CRUNCHYROLL_LOCK:
+                VALID_CRUNCHYROLL_BY_EMAIL.clear()
+            DEAD_CRUNCHYROLL_ACCOUNTS.clear()
+            USED_CRUNCHYROLL_ACCOUNTS.clear()
+            CURRENT_CRUNCHYROLL_READY = None
+
+            SERVER_DATA_VERSION = time.time()
+            return self.send_json_response({
+                "success": True,
+                "deleted_count": deleted_count,
+                "message": f"🎉 Todos os {deleted_count} arquivos da Crunchyroll foram removidos com sucesso!"
+            })
+
+        return self.send_json_response({"success": False, "message": "Serviço não suportado para limpeza total."}, 400)
 
     def handle_api_get_online_users(self):
         data = get_online_users_data()
