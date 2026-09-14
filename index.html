@@ -1940,7 +1940,7 @@
         </div>
 
         <div class="pin-grid-wrapper" onclick="focusPinInput(true)">
-          <input type="text" id="hidden-code-input" class="pin-native-input" maxlength="8" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false" inputmode="text" placeholder="">
+          <input type="text" id="hidden-code-input" class="pin-native-input" name="tv_code_input_field" maxlength="8" autocomplete="new-password" autocorrect="off" autocapitalize="characters" spellcheck="false" inputmode="text" placeholder="" data-lpignore="true">
           <div class="pin-grid" id="pin-grid">
             <div class="pin-slot" id="slot-0"></div>
             <div class="pin-slot" id="slot-1"></div>
@@ -2444,14 +2444,27 @@
       hiddenInput.focus();
     }
 
-    function checkAndAutoSubmit() {
-      const targetLen = (currentService === 'netflix') ? 8 : 6;
-      if (currentCode.length >= targetLen) {
-        setTimeout(() => {
-          if (currentCode.length >= targetLen) {
-            transmitActivation();
-          }
-        }, 100);
+    let activeActivationController = null;
+    let activeProgressTimer = null;
+
+    function resetTransmitButton() {
+      if (activeActivationController) {
+        try { activeActivationController.abort(); } catch(e) {}
+        activeActivationController = null;
+      }
+      if (activeProgressTimer) {
+        clearInterval(activeProgressTimer);
+        activeProgressTimer = null;
+      }
+      stopKernelLogStream();
+      const btn = document.getElementById('btn-transmit');
+      const btnText = document.getElementById('transmit-btn-text');
+      if (btn) {
+        btn.disabled = false;
+        btn.classList.remove('loading');
+      }
+      if (btnText) {
+        btnText.innerText = 'EXECUTAR INJEÇÃO DE TOKEN ⚡';
       }
     }
 
@@ -2462,7 +2475,6 @@
         currentCode = val;
         soundKeypress();
         updatePinDisplay();
-        checkAndAutoSubmit();
       }
     });
 
@@ -2483,17 +2495,17 @@
         hiddenInput.value = currentCode;
         soundKeypress();
         updatePinDisplay();
-        checkAndAutoSubmit();
       }
     });
 
     function updatePinDisplay() {
       const maxLen = (currentService === 'netflix') ? 8 : 6;
       const counter = document.getElementById('digit-counter');
-      counter.innerText = `${currentCode.length} / ${maxLen} DÍGITOS`;
+      if (counter) counter.innerText = `${currentCode.length} / ${maxLen} DÍGITOS`;
 
       for (let i = 0; i < 8; i++) {
         const slot = document.getElementById(`slot-${i}`);
+        if (!slot) continue;
         if (i >= maxLen) {
           slot.style.display = 'none';
           continue;
@@ -2524,7 +2536,6 @@
         currentCode += c.toUpperCase();
         hiddenInput.value = currentCode;
         updatePinDisplay();
-        checkAndAutoSubmit();
       }
     }
 
@@ -2540,6 +2551,7 @@
       currentCode = '';
       hiddenInput.value = '';
       updatePinDisplay();
+      resetTransmitButton();
       focusPinInput();
     }
 
@@ -2555,7 +2567,6 @@
           updatePinDisplay();
           soundSuccess();
           focusPinInput();
-          checkAndAutoSubmit();
         }
       } catch (err) {
         const manual = prompt("Cole o código da Smart TV aqui:");
@@ -2564,7 +2575,6 @@
           hiddenInput.value = currentCode;
           updatePinDisplay();
           focusPinInput();
-          checkAndAutoSubmit();
         }
       }
     }
@@ -2593,11 +2603,24 @@
       logKernel(`Iniciando transmissão de token para TV: ${currentCode}...`);
 
       const startTime = performance.now();
+
+      if (activeActivationController) {
+        try { activeActivationController.abort(); } catch(e) {}
+        activeActivationController = null;
+      }
+      if (activeProgressTimer) {
+        clearInterval(activeProgressTimer);
+        activeProgressTimer = null;
+      }
+
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 35000);
+      activeActivationController = controller;
+      const timeoutId = setTimeout(() => {
+        try { controller.abort(); } catch(e) {}
+      }, 35000);
 
       let timerSeconds = 0;
-      const progressTimer = setInterval(() => {
+      activeProgressTimer = setInterval(() => {
         timerSeconds++;
         if (btn && btn.disabled) {
           btnText.innerText = `TRANSMITINDO PAYLOAD... ⏳ (${timerSeconds}s)`;
@@ -2660,12 +2683,8 @@
         showAlert('error', msg);
         logKernel(`[ERRO] ${msg}`);
       } finally {
-        clearInterval(progressTimer);
         clearTimeout(timeoutId);
-        stopKernelLogStream();
-        btn.disabled = false;
-        btn.classList.remove('loading');
-        btnText.innerText = 'EXECUTAR INJEÇÃO DE TOKEN ⚡';
+        resetTransmitButton();
       }
     }
 
@@ -3090,6 +3109,8 @@
     }, 5000);
 
     window.addEventListener('load', async () => {
+      resetTransmitButton();
+      clearCode();
       updateSoundUI();
       updatePinDisplay();
       
