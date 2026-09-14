@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <style>
     /* ======================================================== */
-    /* 🎨 ULTRA-LUXURY CYBER THEME: NETFLIX & HBO MAX (2026)    */
+    /* 🎨 ULTRA-LUXURY CYBER THEME: NETFLIX & HBO MAX           */
     /* ======================================================== */
     :root, body[data-service="netflix"] {
       --accent-color: #E50914;
@@ -1760,6 +1760,9 @@
         <button class="btn-icon" id="sound-toggle-btn" onclick="event.stopPropagation(); toggleSound();">
           <span id="sound-icon">🔊</span> SOM
         </button>
+        <button class="btn-icon" onclick="event.stopPropagation(); logoutAndSwitchAccount();" style="color: #00E5FF; border-color: rgba(0, 229, 255, 0.4);">
+          🔑 TROCAR SENHA
+        </button>
       </div>
     </div>
 
@@ -2156,6 +2159,16 @@
       allowedServices = ['netflix', 'hbo', 'crunchyroll', 'sky'];
     }
 
+    function logoutAndSwitchAccount() {
+      soundClick();
+      clearStoredAuth();
+      const pwdInput = document.getElementById('login-password-input');
+      if (pwdInput) pwdInput.value = '';
+      const errBox = document.getElementById('login-error-msg');
+      if (errBox) errBox.style.display = 'none';
+      showLoginOverlay();
+    }
+
     async function checkAuth() {
       if (!authToken) {
         showLoginOverlay();
@@ -2259,7 +2272,6 @@
           soundSuccess();
           logKernel(`Autenticação bem sucedida: ${data.role_name || 'Terminal Liberado'}`);
           
-          // Seleciona o primeiro serviço permitido pela senha
           if (allowedServices.length > 0) {
             switchService(allowedServices.includes(currentService) ? currentService : allowedServices[0], true);
           }
