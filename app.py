@@ -1100,6 +1100,7 @@ MASTER_PASSWORD = get_master_password()
 COOKIE_ADMIN_PASSWORD = get_cookie_admin_password()
 TOKEN_TTL_SECONDS = int(os.environ.get("TOKEN_TTL_SECONDS", 86400)) # 24 Horas de validade por token
 CONFIG_SENHAS_FILE = os.path.join(BASE_DIR, "config_senhas.json")
+CONFIG_SENHAS_BACKUP_FILE = os.path.join(BASE_DIR, "config_senhas_backup.json")
 BLACKLISTED_SENHAS_FILE = os.path.join(BASE_DIR, "senhas_excluidas.json")
 SENHAS_LOCK = threading.Lock()
 
@@ -1234,6 +1235,11 @@ def atomic_save_config_senhas(keys: List[dict]) -> bool:
             os.fsync(f.fileno())
         os.replace(tmp_file, CONFIG_SENHAS_FILE)
         sync_passwords_text_file(keys)
+        try:
+            with open(CONFIG_SENHAS_BACKUP_FILE, "w", encoding="utf-8") as f_bk:
+                json.dump({"senhas": keys}, f_bk, indent=2, ensure_ascii=False)
+        except Exception:
+            pass
         SERVER_DATA_VERSION = time.time()
         return True
     except Exception as e:
@@ -1242,6 +1248,11 @@ def atomic_save_config_senhas(keys: List[dict]) -> bool:
             with open(CONFIG_SENHAS_FILE, "w", encoding="utf-8") as f:
                 json.dump({"senhas": keys}, f, indent=2, ensure_ascii=False)
             sync_passwords_text_file(keys)
+            try:
+                with open(CONFIG_SENHAS_BACKUP_FILE, "w", encoding="utf-8") as f_bk:
+                    json.dump({"senhas": keys}, f_bk, indent=2, ensure_ascii=False)
+            except Exception:
+                pass
             SERVER_DATA_VERSION = time.time()
             return True
         except Exception:
@@ -1370,6 +1381,28 @@ def load_access_keys() -> List[dict]:
                 if pwd and pwd not in seen_pwds:
                     seen_pwds.add(pwd)
                     valid_keys.append(item)
+
+    # 🛡️ PROTEÇÃO CONTRA PERDA NO RENDER: Se houver backup com senhas adicionais, restaura
+    if os.path.exists(CONFIG_SENHAS_BACKUP_FILE):
+        try:
+            with open(CONFIG_SENHAS_BACKUP_FILE, 'r', encoding='utf-8') as bk_f:
+                bk_data = json.load(bk_f)
+                bk_list = bk_data.get("senhas", []) if isinstance(bk_data, dict) else []
+                if len(bk_list) > len(valid_keys):
+                    for item in bk_list:
+                        if isinstance(item, dict):
+                            pwd = str(item.get("senha", "") or item.get("password", "")).strip()
+                            if pwd and pwd not in seen_pwds and not any(secure_str_compare(pwd, b) for b in blacklisted):
+                                seen_pwds.add(pwd)
+                                valid_keys.append(item)
+                    try:
+                        with open(CONFIG_SENHAS_FILE, 'w', encoding='utf-8') as sf:
+                            json.dump({"senhas": valid_keys}, sf, indent=2, ensure_ascii=False)
+                        sync_passwords_text_file(valid_keys)
+                    except Exception:
+                        pass
+        except Exception:
+            pass
 
     return valid_keys
 
@@ -2245,6 +2278,10 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             if not self.is_admin_authenticated():
                 return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
             self.handle_api_get_passwords()
+        elif raw_path == '/api/admin/passwords/backup':
+            if not self.is_admin_authenticated():
+                return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
+            self.handle_api_backup_passwords()
         elif raw_path in ['/api/admin/passwords/generate', '/api/admin/passwords/quick-create']:
             if not self.is_admin_authenticated():
                 return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
@@ -2314,6 +2351,10 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             if not self.is_admin_authenticated():
                 return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
             self.handle_api_renew_password()
+        elif raw_path == '/api/admin/passwords/sync-all':
+            if not self.is_admin_authenticated():
+                return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
+            self.handle_api_sync_all_passwords()
         elif raw_path == '/api/admin/accounts/delete':
             if not self.is_admin_authenticated():
                 return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
@@ -4144,6 +4185,100 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     "passwords": keys
                 })
         return self.send_json_response({"success": False, "message": "Senha não encontrada no cadastro."}, 404)
+
+    def handle_api_backup_passwords(self):
+        """Permite download direto do arquivo de backup de senhas."""
+        with SENHAS_LOCK:
+            keys = load_access_keys()
+        payload = json.dumps({"senhas": keys}, indent=2, ensure_ascii=False).encode('utf-8')
+        self.send_response(200)
+        self.send_header('Content-Type', 'application/json; charset=utf-8')
+        self.send_header('Content-Disposition', 'attachment; filename="config_senhas.json"')
+        self.send_header('Content-Length', str(len(payload)))
+        self.end_headers()
+        self.wfile.write(payload)
+
+    def handle_api_sync_all_passwords(self):
+        """Sincroniza um lote completo de senhas (ex: restaurando do localStorage ou arquivo importado) sem perdas."""
+        content_length = int(self.headers.get('Content-Length', 0))
+        post_data = self.rfile.read(content_length) if content_length > 0 else b'{}'
+        try:
+            req = json.loads(post_data.decode('utf-8')) if post_data else {}
+        except Exception:
+            return self.send_json_response({"success": False, "message": "JSON inválido."}, 400)
+
+        incoming_list = []
+        if isinstance(req, list):
+            incoming_list = req
+        elif isinstance(req, dict):
+            incoming_list = req.get("senhas", req.get("passwords", []))
+
+        if not isinstance(incoming_list, list) or not incoming_list:
+            return self.send_json_response({"success": False, "message": "Nenhuma senha fornecida para sincronização."}, 400)
+
+        now = time.time()
+        blacklisted = load_blacklisted_passwords()
+
+        with SENHAS_LOCK:
+            current_keys = load_access_keys()
+            merged_dict = {}
+            for k in current_keys:
+                p = str(k.get("senha", "")).strip()
+                if p:
+                    merged_dict[p] = k
+
+            added_count = 0
+            for item in incoming_list:
+                if not isinstance(item, dict):
+                    continue
+                pwd = str(item.get("senha", "") or item.get("password", "")).strip()
+                if not pwd:
+                    continue
+                if any(secure_str_compare(pwd, b) for b in blacklisted):
+                    continue
+
+                nome = str(item.get("nome", "") or item.get("role_name", "") or "Cliente VIP").strip()
+                raw_svcs = item.get("servicos", ["netflix", "hbo", "crunchyroll", "sky"])
+                if isinstance(raw_svcs, str):
+                    raw_svcs = [s.strip() for s in raw_svcs.split(",") if s.strip()]
+                elif not isinstance(raw_svcs, list):
+                    raw_svcs = ["netflix", "hbo", "crunchyroll", "sky"]
+                svcs = [s for s in raw_svcs if s in ["netflix", "hbo", "crunchyroll", "sky"]]
+                desc = str(item.get("descricao", "")).strip()
+
+                if pwd not in merged_dict:
+                    merged_dict[pwd] = {
+                        "senha": pwd,
+                        "nome": nome or "Cliente VIP",
+                        "servicos": svcs or ["netflix", "hbo", "crunchyroll", "sky"],
+                        "descricao": desc or f"Libera: {', '.join(svcs)}",
+                        "dias_validade": item.get("dias_validade"),
+                        "criado_em": item.get("criado_em", now),
+                        "expira_em": item.get("expira_em"),
+                        "expira_em_formatado": item.get("expira_em_formatado")
+                    }
+                    added_count += 1
+                else:
+                    existing = merged_dict[pwd]
+                    if item.get("expira_em") and not existing.get("expira_em"):
+                        existing["expira_em"] = item.get("expira_em")
+                        existing["expira_em_formatado"] = item.get("expira_em_formatado")
+                        existing["dias_validade"] = item.get("dias_validade")
+                    if item.get("nome") and existing.get("nome") in ["Cliente VIP", "Perfil"]:
+                        existing["nome"] = item.get("nome")
+
+            final_keys = list(merged_dict.values())
+            atomic_save_config_senhas(final_keys)
+
+            global SERVER_DATA_VERSION
+            SERVER_DATA_VERSION = time.time()
+
+        return self.send_json_response({
+            "success": True,
+            "message": f"🎉 {len(final_keys)} senhas sincronizadas com sucesso (+{added_count} novas adicionadas)!",
+            "total": len(final_keys),
+            "passwords": final_keys
+        })
 
     def handle_api_delete_password(self):
         global SERVER_DATA_VERSION

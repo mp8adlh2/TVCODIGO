@@ -1073,14 +1073,44 @@
         </div>
       </details>
 
-      <!-- Saved Passwords List -->
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <div style="font-size: 11px; color: var(--text-dim); font-weight: 700; text-transform: uppercase;">
-          📋 Senhas Ativas no Sistema (Configuradas):
+      <!-- Banner de Alerta de Recuperação de Senhas (Auto-Detecta reinício do Render) -->
+      <div id="pwd-restore-banner" style="display: none; background: rgba(255, 215, 0, 0.12); border: 1.5px solid #ffd700; border-radius: 12px; padding: 12px 16px; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span style="font-size: 20px;">🛡️</span>
+          <div>
+            <div style="font-weight: 800; color: #ffd700; font-size: 12px;">BACKUP DE SEGURANÇA DETECTADO NO SEU NAVEGADOR!</div>
+            <div style="font-size: 11px; color: var(--text-dim);" id="pwd-restore-desc">O servidor possui menos senhas do que o seu cofre local (o Render pode ter reiniciado).</div>
+          </div>
         </div>
-        <button type="button" class="btn-icon" onclick="loadPasswordsList()" style="font-size: 10px; padding: 2px 8px; color: #ffd700;">
-          🔄 Atualizar Lista
+        <button type="button" class="btn-icon" onclick="restorePasswordsFromVault()" style="background: #ffd700; color: #000; border-color: #ffd700; font-weight: 900; font-size: 11.5px; padding: 6px 14px; cursor: pointer;">
+          ⚡ RESTAURAR TODAS AS SENHAS NO SERVIDOR
         </button>
+      </div>
+
+      <!-- Saved Passwords List Toolbar -->
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <div style="font-size: 11px; color: var(--text-dim); font-weight: 700; text-transform: uppercase;">
+            📋 Senhas Ativas no Sistema (Configuradas):
+          </div>
+          <span id="pwd-count-badge" style="background: rgba(255, 215, 0, 0.2); color: #ffd700; border: 1px solid rgba(255, 215, 0, 0.4); border-radius: 10px; padding: 1px 7px; font-size: 10.5px; font-weight: 800;">0</span>
+        </div>
+
+        <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+          <button type="button" class="btn-icon" onclick="downloadPasswordsBackup()" style="font-size: 10.5px; padding: 3px 10px; color: #00e5ff; border-color: rgba(0, 229, 255, 0.4); background: rgba(0, 229, 255, 0.08);" title="Baixar arquivo config_senhas.json com todas as senhas para salvar no seu computador">
+            📥 Baixar Backup (.json)
+          </button>
+          <label class="btn-icon" style="font-size: 10.5px; padding: 3px 10px; color: #00ff66; border-color: rgba(0, 255, 102, 0.4); background: rgba(0, 255, 102, 0.08); cursor: pointer;" title="Importar arquivo config_senhas.json do seu computador">
+            📤 Importar Backup
+            <input type="file" id="file-import-passwords" accept=".json" onchange="importPasswordsBackupFile(event)" style="display: none;">
+          </label>
+          <button type="button" class="btn-icon" onclick="syncVaultToServer()" style="font-size: 10.5px; padding: 3px 10px; color: #ffd700; border-color: rgba(255, 215, 0, 0.4); background: rgba(255, 215, 0, 0.08);" title="Sincronizar cofre do navegador com o servidor">
+            🔄 Sincronizar Tudo
+          </button>
+          <button type="button" class="btn-icon" onclick="loadPasswordsList()" style="font-size: 10px; padding: 2px 8px; color: #ffd700;" title="Atualizar a lista agora">
+            🔄 Atualizar Lista
+          </button>
+        </div>
       </div>
 
       <div id="pwd-list-container" class="pwd-list-container">
@@ -2383,6 +2413,16 @@
       if (!container) return;
       currentAdminPasswordsList = Array.isArray(list) ? list : (list && typeof list === 'object' ? Object.keys(list).map(k => ({ senha: k, ...list[k] })) : []);
 
+      // Atualiza badge de contagem
+      const badge = document.getElementById('pwd-count-badge');
+      if (badge) badge.innerText = currentAdminPasswordsList.length;
+
+      // Espelha no cofre perpétuo do navegador
+      if (currentAdminPasswordsList.length > 0) {
+        saveToLocalVault(currentAdminPasswordsList);
+      }
+      checkLocalVaultDiscrepancy(currentAdminPasswordsList);
+
       if (!currentAdminPasswordsList.length) {
         container.innerHTML = '<div style="text-align: center; color: var(--text-dim); padding: 24px; font-size: 12px;">Nenhuma senha cadastrada no momento. Crie sua primeira senha acima!</div>';
         return;
@@ -2542,6 +2582,166 @@
       showToast(`✏️ Editando: ${role || pwd}`);
     }
 
+    /* 🛡️ COFRE PERPÉTUO DO NAVEGADOR (PROTEÇÃO CONTRA DEPLOY / REINÍCIO DO RENDER) */
+    const LOCAL_VAULT_KEY = 'cyber_admin_passwords_vault';
+
+    function getLocalVaultPasswords() {
+      try {
+        const raw = localStorage.getItem(LOCAL_VAULT_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (Array.isArray(parsed)) return parsed;
+        }
+      } catch (e) {}
+      return [];
+    }
+
+    function saveToLocalVault(list) {
+      if (!Array.isArray(list)) return;
+      try {
+        const currentVault = getLocalVaultPasswords();
+        const map = {};
+        currentVault.forEach(item => {
+          const p = (item.senha || item.password || '').trim();
+          if (p) map[p] = item;
+        });
+        list.forEach(item => {
+          const p = (item.senha || item.password || '').trim();
+          if (p) map[p] = item;
+        });
+        localStorage.setItem(LOCAL_VAULT_KEY, JSON.stringify(Object.values(map)));
+      } catch (e) {}
+    }
+
+    function removeFromLocalVault(pwd) {
+      if (!pwd) return;
+      try {
+        const currentVault = getLocalVaultPasswords();
+        const cleanP = String(pwd).trim().toLowerCase();
+        const filtered = currentVault.filter(item => {
+          const p = (item.senha || item.password || '').trim().toLowerCase();
+          return p !== cleanP;
+        });
+        localStorage.setItem(LOCAL_VAULT_KEY, JSON.stringify(filtered));
+      } catch (e) {}
+    }
+
+    function checkLocalVaultDiscrepancy(serverList) {
+      const banner = document.getElementById('pwd-restore-banner');
+      const desc = document.getElementById('pwd-restore-desc');
+      if (!banner) return;
+
+      const vault = getLocalVaultPasswords();
+      if (!vault.length) {
+        banner.style.display = 'none';
+        return;
+      }
+
+      const serverPwds = new Set((serverList || []).map(k => (k.senha || k.password || '').trim().toLowerCase()));
+      const missingInServer = vault.filter(k => {
+        const p = (k.senha || k.password || '').trim().toLowerCase();
+        return p && !serverPwds.has(p);
+      });
+
+      if (missingInServer.length > 0) {
+        if (desc) {
+          desc.innerHTML = `Detectamos <b>${missingInServer.length} senha(s) salva(s) no seu navegador</b> que não estão no servidor (o Render pode ter reiniciado ou atualizado). Clique ao lado para restaurar tudo no servidor!`;
+        }
+        banner.style.display = 'flex';
+      } else {
+        banner.style.display = 'none';
+      }
+    }
+
+    async function restorePasswordsFromVault() {
+      const vault = getLocalVaultPasswords();
+      if (!vault.length) {
+        alert('Nenhuma senha salva no cofre do navegador.');
+        return;
+      }
+      showToast(`⏳ Restaurando ${vault.length} senhas no servidor...`);
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/passwords/sync-all`, {
+          method: 'POST',
+          headers: { ...getAdminHeaders(), 'Content-Type': 'application/json' },
+          body: JSON.stringify({ senhas: vault })
+        });
+        const data = await res.json();
+        if (res.ok && data.success) {
+          showToast(data.message || `🎉 Senhas restauradas com sucesso!`);
+          document.getElementById('pwd-restore-banner').style.display = 'none';
+          if (Array.isArray(data.passwords)) {
+            renderPasswordsListUI(data.passwords);
+          } else {
+            loadPasswordsList();
+          }
+        } else {
+          alert('Erro ao restaurar senhas: ' + (data.message || 'Falha no servidor'));
+        }
+      } catch (e) {
+        alert('Erro de conexão ao restaurar senhas: ' + e.message);
+      }
+    }
+
+    async function syncVaultToServer() {
+      await restorePasswordsFromVault();
+    }
+
+    function downloadPasswordsBackup() {
+      const list = currentAdminPasswordsList.length ? currentAdminPasswordsList : getLocalVaultPasswords();
+      const jsonStr = JSON.stringify({ senhas: list }, null, 2);
+      const blob = new Blob([jsonStr], { type: 'application/json;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `config_senhas.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast('📥 Arquivo config_senhas.json baixado com sucesso!');
+    }
+
+    function importPasswordsBackupFile(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = async (e) => {
+        try {
+          const parsed = JSON.parse(e.target.result);
+          const list = Array.isArray(parsed) ? parsed : (parsed.senhas || parsed.passwords || []);
+          if (!list || !list.length) {
+            alert('O arquivo selecionado não contém senhas válidas no formato esperado.');
+            return;
+          }
+          if (confirm(`Deseja importar e ativar ${list.length} senhas contidas neste arquivo no servidor?`)) {
+            showToast(`⏳ Importando ${list.length} senhas...`);
+            const res = await fetch(`${API_BASE}/api/admin/passwords/sync-all`, {
+              method: 'POST',
+              headers: { ...getAdminHeaders(), 'Content-Type': 'application/json' },
+              body: JSON.stringify({ senhas: list })
+            });
+            const data = await res.json();
+            if (res.ok && data.success) {
+              showToast(data.message || '🎉 Senhas importadas com sucesso!');
+              saveToLocalVault(list);
+              if (Array.isArray(data.passwords)) {
+                renderPasswordsListUI(data.passwords);
+              } else {
+                loadPasswordsList();
+              }
+            } else {
+              alert('Erro ao importar senhas: ' + (data.message || 'Falha na requisição'));
+            }
+          }
+        } catch (err) {
+          alert('Erro ao ler arquivo JSON: ' + err.message);
+        }
+      };
+      reader.readAsText(file);
+      event.target.value = '';
+    }
+
     async function loadPasswordsList() {
       const container = document.getElementById('pwd-list-container');
       try {
@@ -2559,7 +2759,11 @@
             handleAdminUnauthorized();
           }
         } else {
-          if (container) {
+          // Fallback gracioso para o cofre do navegador
+          const vault = getLocalVaultPasswords();
+          if (vault.length > 0) {
+            renderPasswordsListUI(vault);
+          } else if (container) {
             container.innerHTML = `
               <div style="text-align: center; color: #ff4d5a; padding: 16px; font-size: 12px;">
                 Erro ao carregar lista de senhas (${res.status}).
@@ -2568,7 +2772,11 @@
           }
         }
       } catch (e) {
-        if (container) {
+        // Fallback gracioso para o cofre do navegador em caso de erro de conexão
+        const vault = getLocalVaultPasswords();
+        if (vault.length > 0) {
+          renderPasswordsListUI(vault);
+        } else if (container) {
           container.innerHTML = `
             <div style="text-align: center; color: #ff4d5a; padding: 16px; font-size: 12px;">
               Erro de comunicação ao carregar senhas.
@@ -2837,6 +3045,7 @@
         }
         const data = await res.json();
         if (res.ok && data.success) {
+          removeFromLocalVault(pwd);
           if (Array.isArray(data.passwords)) {
             renderPasswordsListUI(data.passwords);
           } else {
@@ -2863,6 +3072,7 @@
         });
         const data = await res.json();
         if (res.ok && data.success) {
+          removeFromLocalVault(pwd);
           if (Array.isArray(data.passwords)) {
             renderPasswordsListUI(data.passwords);
           } else {
