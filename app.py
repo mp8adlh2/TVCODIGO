@@ -1093,6 +1093,147 @@ MASTER_PASSWORD = get_master_password()
 COOKIE_ADMIN_PASSWORD = get_cookie_admin_password()
 TOKEN_TTL_SECONDS = int(os.environ.get("TOKEN_TTL_SECONDS", 86400)) # 24 Horas de validade por token
 CONFIG_SENHAS_FILE = os.path.join(BASE_DIR, "config_senhas.json")
+BLACKLISTED_SENHAS_FILE = os.path.join(BASE_DIR, "senhas_excluidas.json")
+SENHAS_LOCK = threading.Lock()
+
+def load_blacklisted_passwords() -> Set[str]:
+    """Carrega lista negra de senhas que foram excluídas permanentemente pelo administrador."""
+    if os.path.exists(BLACKLISTED_SENHAS_FILE):
+        try:
+            with open(BLACKLISTED_SENHAS_FILE, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                if isinstance(data, list):
+                    return set(str(p).strip() for p in data if p)
+        except Exception:
+            pass
+    return set()
+
+def add_blacklisted_password(pwd: str):
+    """Adiciona senha à lista negra permanente para nunca mais ressuscitar."""
+    if not pwd:
+        return
+    pwd_clean = str(pwd).strip()
+    bl = load_blacklisted_passwords()
+    bl.add(pwd_clean)
+    try:
+        tmp_f = BLACKLISTED_SENHAS_FILE + ".tmp"
+        with open(tmp_f, 'w', encoding='utf-8') as f:
+            json.dump(list(bl), f, indent=2, ensure_ascii=False)
+        os.replace(tmp_f, BLACKLISTED_SENHAS_FILE)
+    except Exception:
+        pass
+
+def remove_blacklisted_password(pwd: str):
+    """Remove senha da lista negra caso ela seja recriada deliberadamente."""
+    if not pwd:
+        return
+    pwd_clean = str(pwd).strip()
+    bl = load_blacklisted_passwords()
+    to_rem = [p for p in bl if secure_str_compare(p, pwd_clean) or p == pwd_clean]
+    if to_rem:
+        for p in to_rem:
+            bl.discard(p)
+        try:
+            tmp_f = BLACKLISTED_SENHAS_FILE + ".tmp"
+            with open(tmp_f, 'w', encoding='utf-8') as f:
+                json.dump(list(bl), f, indent=2, ensure_ascii=False)
+            os.replace(tmp_f, BLACKLISTED_SENHAS_FILE)
+        except Exception:
+            pass
+
+def generate_strong_cyber_password() -> str:
+    prefixes = ["CYBER", "STREAM", "VIP", "MATRIX", "TITANIUM", "ULTRA", "OMEGA", "SHIELD", "NEXUS", "HYPER"]
+    cores = ["PASS", "MASTER", "KEY", "TOKEN", "ACCESS", "VAULT", "SECURITY", "STREAMING"]
+    suffixes = ["PREMIUM", "VIP", "4K", "PRO", "BLINDADO", "ACTIVE", "HDR", "ELITE"]
+    
+    p1 = random.choice(prefixes)
+    p2 = random.choice(cores)
+    p3 = random.choice(suffixes)
+    num1 = random.randint(1000, 9999)
+    num2 = random.randint(10, 99)
+    return f"{p1}#{p2}@{num1}${p3}*{num2}!2026"
+
+def sync_passwords_text_file(passwords_list: List[dict]):
+    """Atualiza automaticamente o arquivo SENHAS_DE_ACESSO.txt com as senhas cadastradas."""
+    try:
+        lines = [
+            "================================================================================",
+            "          🔐 CENTRAL DE SENHAS MASTER & NÍVEIS DE ACESSO (2026)",
+            "================================================================================",
+            "",
+            "Todas as senhas abaixo possuem proteção avançada contra força bruta e controlam",
+            "a liberação dos serviços na tela do ativador em tempo real.",
+            ""
+        ]
+        
+        for idx, item in enumerate(passwords_list, 1):
+            senha = item.get("senha", "")
+            nome = item.get("nome", f"Perfil #{idx}")
+            servicos = item.get("servicos", [])
+            descricao = item.get("descricao", "")
+            
+            svc_tags = []
+            if "netflix" in servicos: svc_tags.append("🔴 Netflix")
+            if "hbo" in servicos: svc_tags.append("🟣 HBO Max")
+            if "crunchyroll" in servicos: svc_tags.append("🟠 Crunchyroll")
+            if "sky" in servicos: svc_tags.append("🔵 Sky+")
+            
+            libera_str = " | ".join(svc_tags) if svc_tags else "Nenhum"
+            
+            lines.append("================================================================================")
+            lines.append(f" {idx}. 🔑 {nome.upper()}")
+            lines.append("================================================================================")
+            lines.append(f" Libera: {libera_str}")
+            if descricao:
+                lines.append(f" Detalhes: {descricao}")
+            lines.append(f" Senha:")
+            lines.append(f" {senha}")
+            lines.append("")
+        
+        lines.append("================================================================================")
+        lines.append(" 💡 DICA: Você pode criar ou excluir senhas pelo Painel Admin com 1 clique!")
+        lines.append("================================================================================")
+        lines.append("")
+        
+        txt_path = os.path.join(BASE_DIR, "SENHAS_DE_ACESSO.txt")
+        if os.path.exists(txt_path):
+            try:
+                os.chmod(txt_path, stat.S_IWRITE | stat.S_IREAD)
+            except Exception:
+                pass
+        with open(txt_path, "w", encoding="utf-8") as f:
+            f.write("\n".join(lines))
+    except Exception as e:
+        print(f"[Password Sync] Erro ao salvar SENHAS_DE_ACESSO.txt: {e}")
+
+def atomic_save_config_senhas(keys: List[dict]) -> bool:
+    """Gravação atômica e thread-safe de senhas protegendo contra corrupção e concorrência."""
+    global SERVER_DATA_VERSION
+    try:
+        tmp_file = CONFIG_SENHAS_FILE + ".tmp"
+        if os.path.exists(CONFIG_SENHAS_FILE):
+            try:
+                os.chmod(CONFIG_SENHAS_FILE, stat.S_IWRITE | stat.S_IREAD)
+            except Exception:
+                pass
+        with open(tmp_file, "w", encoding="utf-8") as f:
+            json.dump({"senhas": keys}, f, indent=2, ensure_ascii=False)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp_file, CONFIG_SENHAS_FILE)
+        sync_passwords_text_file(keys)
+        SERVER_DATA_VERSION = time.time()
+        return True
+    except Exception as e:
+        print(f"[-] Erro na gravação atômica de senhas: {e}")
+        try:
+            with open(CONFIG_SENHAS_FILE, "w", encoding="utf-8") as f:
+                json.dump({"senhas": keys}, f, indent=2, ensure_ascii=False)
+            sync_passwords_text_file(keys)
+            SERVER_DATA_VERSION = time.time()
+            return True
+        except Exception:
+            return False
 
 def extract_passwords_from_text_files() -> List[dict]:
     """Lê dinamicamente senhas configuradas nos arquivos SENHA_*.txt da pasta raiz."""
@@ -1104,6 +1245,7 @@ def extract_passwords_from_text_files() -> List[dict]:
         "SENHA_NETFLIX_HBO.txt": (["netflix", "hbo"], "Senha Oficial Duo (Netflix + HBO)", "Libera: netflix, hbo"),
     }
     extracted = []
+    blacklisted = load_blacklisted_passwords()
     for fname, (svcs, role_label, desc) in file_service_map.items():
         fpath = os.path.join(BASE_DIR, fname)
         if os.path.exists(fpath):
@@ -1111,15 +1253,15 @@ def extract_passwords_from_text_files() -> List[dict]:
                 with open(fpath, 'r', encoding='utf-8', errors='ignore') as f:
                     for line in f.read().splitlines():
                         line = line.strip()
-                        # Linhas com a senha normalmente têm caracteres como #, @, $, * ou letras maiúsculas/dígitos
                         if line and not line.startswith(('=', '-', '•', 'LIBERAÇÃO', 'SENHA', '💡', '🔍', '🎬', '🔴', '🟣', '🟠', '🔵', '🔐', '🍪', 'para', 'No ', 'Ao ', 'http')):
                             if ' ' not in line and len(line) >= 6 and any(c in line for c in ['#', '@', '$', '*', '!']):
-                                extracted.append({
-                                    "senha": line,
-                                    "nome": role_label,
-                                    "servicos": svcs,
-                                    "descricao": desc
-                                })
+                                if not any(secure_str_compare(line, b) for b in blacklisted):
+                                    extracted.append({
+                                        "senha": line,
+                                        "nome": role_label,
+                                        "servicos": svcs,
+                                        "descricao": desc
+                                    })
             except Exception:
                 pass
     return extracted
@@ -1151,6 +1293,7 @@ def load_access_keys() -> List[dict]:
     
     valid_keys = []
     seen_pwds = set()
+    blacklisted = load_blacklisted_passwords()
 
     # 1. Carrega do config_senhas.json se existir (fonte prioritária de verdade)
     if os.path.exists(CONFIG_SENHAS_FILE):
@@ -1169,6 +1312,11 @@ def load_access_keys() -> List[dict]:
                             raw_svcs = ["netflix", "hbo", "crunchyroll", "sky"]
                         svcs = [s for s in raw_svcs if s in ["netflix", "hbo", "crunchyroll", "sky"]]
                         desc = str(item.get("descricao", "")).strip()
+
+                        # Se a senha estiver na lista negra de excluídos, ignora
+                        if any(secure_str_compare(pwd, b) for b in blacklisted):
+                            continue
+
                         if pwd and pwd not in seen_pwds:
                             seen_pwds.add(pwd)
                             valid_keys.append({
@@ -1194,14 +1342,16 @@ def load_access_keys() -> List[dict]:
     if not valid_keys:
         for item in default_data["senhas"]:
             pwd = item["senha"]
-            if pwd not in seen_pwds:
-                seen_pwds.add(pwd)
-                valid_keys.append(item)
+            if not any(secure_str_compare(pwd, b) for b in blacklisted):
+                if pwd not in seen_pwds:
+                    seen_pwds.add(pwd)
+                    valid_keys.append(item)
         for item in extract_passwords_from_text_files():
             pwd = item["senha"]
-            if pwd and pwd not in seen_pwds:
-                seen_pwds.add(pwd)
-                valid_keys.append(item)
+            if not any(secure_str_compare(pwd, b) for b in blacklisted):
+                if pwd and pwd not in seen_pwds:
+                    seen_pwds.add(pwd)
+                    valid_keys.append(item)
 
     return valid_keys
 
@@ -1508,70 +1658,7 @@ def get_online_users_data() -> dict:
             "timestamp": now
         }
 
-def generate_strong_cyber_password() -> str:
-    prefixes = ["CYBER", "STREAM", "VIP", "MATRIX", "TITANIUM", "ULTRA", "OMEGA", "SHIELD", "NEXUS", "HYPER"]
-    cores = ["PASS", "MASTER", "KEY", "TOKEN", "ACCESS", "VAULT", "SECURITY", "STREAMING"]
-    suffixes = ["PREMIUM", "VIP", "4K", "PRO", "BLINDADO", "ACTIVE", "HDR", "ELITE"]
-    
-    p1 = random.choice(prefixes)
-    p2 = random.choice(cores)
-    p3 = random.choice(suffixes)
-    num1 = random.randint(1000, 9999)
-    num2 = random.randint(10, 99)
-    return f"{p1}#{p2}@{num1}${p3}*{num2}!2026"
-
-def sync_passwords_text_file(passwords_list: List[dict]):
-    """Atualiza automaticamente o arquivo SENHAS_DE_ACESSO.txt com as senhas cadastradas."""
-    try:
-        lines = [
-            "================================================================================",
-            "          🔐 CENTRAL DE SENHAS MASTER & NÍVEIS DE ACESSO (2026)",
-            "================================================================================",
-            "",
-            "Todas as senhas abaixo possuem proteção avançada contra força bruta e controlam",
-            "a liberação dos serviços na tela do ativador em tempo real.",
-            ""
-        ]
-        
-        for idx, item in enumerate(passwords_list, 1):
-            senha = item.get("senha", "")
-            nome = item.get("nome", f"Perfil #{idx}")
-            servicos = item.get("servicos", [])
-            descricao = item.get("descricao", "")
-            
-            svc_tags = []
-            if "netflix" in servicos: svc_tags.append("🔴 Netflix")
-            if "hbo" in servicos: svc_tags.append("🟣 HBO Max")
-            if "crunchyroll" in servicos: svc_tags.append("🟠 Crunchyroll")
-            if "sky" in servicos: svc_tags.append("🔵 Sky+")
-            
-            libera_str = " | ".join(svc_tags) if svc_tags else "Nenhum"
-            
-            lines.append("================================================================================")
-            lines.append(f" {idx}. 🔑 {nome.upper()}")
-            lines.append("================================================================================")
-            lines.append(f" Libera: {libera_str}")
-            if descricao:
-                lines.append(f" Detalhes: {descricao}")
-            lines.append(f" Senha:")
-            lines.append(f" {senha}")
-            lines.append("")
-        
-        lines.append("================================================================================")
-        lines.append(" 💡 DICA: Você pode criar ou excluir senhas pelo Painel Admin com 1 clique!")
-        lines.append("================================================================================")
-        lines.append("")
-        
-        txt_path = os.path.join(BASE_DIR, "SENHAS_DE_ACESSO.txt")
-        if os.path.exists(txt_path):
-            try:
-                os.chmod(txt_path, stat.S_IWRITE | stat.S_IREAD)
-            except Exception:
-                pass
-        with open(txt_path, "w", encoding="utf-8") as f:
-            f.write("\n".join(lines))
-    except Exception as e:
-        print(f"[Password Sync] Erro ao salvar SENHAS_DE_ACESSO.txt: {e}")
+# (Funções generate_strong_cyber_password, sync_passwords_text_file e atomic_save_config_senhas estão consolidadas no topo)
 
 CURRENT_NETFLIX_READY: Optional[dict] = None
 CURRENT_HBO_READY: Optional[dict] = None
@@ -1906,13 +1993,23 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 "allowed_services": session.get("services", ["netflix", "hbo", "crunchyroll", "sky"]),
                 "role_name": session.get("role_name", "Acesso Autorizado")
             })
-        return self.send_json_response({"authenticated": False}, 401)
+        return self.send_json_response({"authenticated": False, "kicked": True, "message": "Sessão inválida ou revogada."}, 401)
 
     def handle_api_heartbeat(self):
         client_ip = self.get_client_ip()
         ua = self.headers.get('User-Agent', '')
         token = self.get_auth_token_str()
         session = self.get_session_info()
+
+        # ⚡ LIVE KICK: Se o cliente forneceu token mas a senha foi excluída pelo admin, desconecta imediatamente!
+        if token and not session:
+            return self.send_json_response({
+                "success": False,
+                "authenticated": False,
+                "kicked": True,
+                "message": "Acesso revogado ou cancelado pelo administrador."
+            }, 401)
+
         role_name = session.get("role_name", "") if session else ""
         
         service = "netflix"
@@ -1930,7 +2027,9 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             except Exception:
                 pass
 
-        track_client_heartbeat(client_ip, token, ua, role_name, service)
+        if token and session:
+            track_client_heartbeat(client_ip, token, ua, role_name, service)
+
         self.send_json_response({"success": True, "online_users": get_online_users_data()})
 
     def check_rate_limit(self, max_requests: int = 15, window_seconds: int = 30) -> bool:
@@ -2028,10 +2127,13 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             if not self.is_admin_authenticated():
                 return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
             self.handle_api_get_passwords()
-        elif raw_path == '/api/admin/passwords/generate':
+        elif raw_path in ['/api/admin/passwords/generate', '/api/admin/passwords/quick-create']:
             if not self.is_admin_authenticated():
                 return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
-            self.handle_api_generate_password()
+            if raw_path == '/api/admin/passwords/quick-create':
+                self.handle_api_quick_create_password()
+            else:
+                self.handle_api_generate_password()
         elif raw_path == '/api/admin/sky-tokens':
             if not self.is_admin_authenticated():
                 return self.send_json_response({"authenticated": False, "message": "Senha do gerenciador de cookies requerida."}, 401)
@@ -2056,6 +2158,15 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             # NUNCA serve arquivos como cookies/, SENHA_MESTRE.txt, app.py, tv2.py, used_cookies.json etc.
             self.send_error(403, "Acesso Proibido: Recurso confidencial e protegido.")
 
+    def do_OPTIONS(self):
+        """Tratamento de preflight CORS para navegação transparente entre portas, origens e localhost."""
+        self.send_response(200)
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, DELETE, PUT')
+        self.send_header('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Admin-Token, X-Admin-Pass, X-Auth-Token, Cache-Control, Pragma')
+        self.send_header('Access-Control-Max-Age', '86400')
+        self.end_headers()
+
     def do_POST(self):
         raw_path = self.path.split('?')[0]
 
@@ -2069,6 +2180,10 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             self.handle_api_heartbeat()
         elif raw_path == '/api/admin/verify-pass':
             self.handle_api_verify_admin_pass()
+        elif raw_path == '/api/admin/passwords/quick-create':
+            if not self.is_admin_authenticated():
+                return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
+            self.handle_api_quick_create_password()
         elif raw_path == '/api/admin/passwords/save':
             if not self.is_admin_authenticated():
                 return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
@@ -2120,6 +2235,9 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             self.send_response(status_code)
             self.send_header('Content-Type', 'application/json; charset=utf-8')
             self.send_header('Content-Length', str(len(body)))
+            self.send_header('Access-Control-Allow-Origin', '*')
+            self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, DELETE, PUT')
+            self.send_header('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Admin-Token, X-Admin-Pass, X-Auth-Token, Cache-Control, Pragma')
             self.send_header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0')
             self.send_header('Pragma', 'no-cache')
             self.send_header('Expires', '0')
@@ -3434,12 +3552,89 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         self.send_json_response({"success": True, "data": data})
 
     def handle_api_get_passwords(self):
-        keys = load_access_keys()
+        with SENHAS_LOCK:
+            keys = load_access_keys()
         self.send_json_response({"success": True, "passwords": keys})
 
     def handle_api_generate_password(self):
         new_pwd = generate_strong_cyber_password()
         self.send_json_response({"success": True, "password": new_pwd})
+
+    def handle_api_quick_create_password(self):
+        """Cria e ativa instantaneamente uma nova senha no servidor com 1 clique (Ao Vivo)."""
+        content_length = int(self.headers.get('Content-Length', 0))
+        post_data = self.rfile.read(content_length) if content_length > 0 else b'{}'
+        try:
+            req = json.loads(post_data.decode('utf-8')) if post_data else {}
+        except Exception:
+            req = {}
+
+        plan = str(req.get("plan", "all") or "all").lower().strip()
+        cliente = str(req.get("nome", "") or req.get("cliente", "") or req.get("role_name", "") or "").strip()
+        custom_pwd = str(req.get("senha", "") or req.get("password", "") or "").strip()
+
+        # Define os serviços liberados com base no plano escolhido
+        if plan in ["netflix", "nf"]:
+            servicos = ["netflix"]
+            plan_label = "Netflix 4K UHD"
+        elif plan in ["hbo", "hbomax", "max"]:
+            servicos = ["hbo"]
+            plan_label = "HBO Max"
+        elif plan in ["crunchyroll", "cr"]:
+            servicos = ["crunchyroll"]
+            plan_label = "Crunchyroll"
+        elif plan in ["sky", "skytv"]:
+            servicos = ["sky"]
+            plan_label = "Sky+ / Sky TV"
+        elif plan in ["combo_nf_hbo", "duo"]:
+            servicos = ["netflix", "hbo"]
+            plan_label = "Duo (Netflix + HBO)"
+        else:
+            servicos = ["netflix", "hbo", "crunchyroll", "sky"]
+            plan_label = "VIP Master (Todos os 4)"
+
+        new_pwd = custom_pwd if custom_pwd else generate_strong_cyber_password()
+        nome = cliente if cliente else f"Cliente {plan_label}"
+        descricao = f"Libera: {', '.join(servicos)}"
+
+        with SENHAS_LOCK:
+            keys = load_access_keys()
+            # Remove ocorrência anterior se houver para atualizar
+            keys = [k for k in keys if not secure_str_compare(k.get("senha", ""), new_pwd)]
+            new_item = {
+                "senha": new_pwd,
+                "nome": nome,
+                "servicos": servicos,
+                "descricao": descricao
+            }
+            keys.insert(0, new_item)
+            atomic_save_config_senhas(keys)
+            remove_blacklisted_password(new_pwd)
+
+        site_url = f"http://{self.headers.get('Host', 'localhost:5000')}"
+        services_text = ", ".join([s.upper() for s in servicos])
+        whatsapp_msg = (
+            f"⚡ *SEU ACESSO AO ATIVADOR SMART TV ESTÁ LIBERADO!* ⚡\n\n"
+            f"👤 *Cliente:* {nome}\n"
+            f"🔑 *Sua Senha de Acesso:* {new_pwd}\n"
+            f"📺 *Serviços Liberados:* {services_text}\n"
+            f"🔗 *Acessar Sistema:* {site_url}\n\n"
+            f"_Basta abrir o link no celular ou computador e digitar o código que aparece na sua Smart TV!_"
+        )
+
+        global SERVER_DATA_VERSION
+        SERVER_DATA_VERSION = time.time()
+
+        return self.send_json_response({
+            "success": True,
+            "password": new_pwd,
+            "role_name": nome,
+            "services": servicos,
+            "plan_label": plan_label,
+            "whatsapp_message": whatsapp_msg,
+            "passwords": keys,
+            "message": f"🎉 Senha '{new_pwd}' gerada e ativada com sucesso ao vivo!"
+        })
 
     def handle_api_save_password(self):
         content_length = int(self.headers.get('Content-Length', 0))
@@ -3483,38 +3678,31 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             svc_names = [s.upper() for s in valid_services]
             nome = f"Perfil {' + '.join(svc_names)}"
 
-        keys = load_access_keys()
-        found = False
-        for idx, k in enumerate(keys):
-            k_pwd = str(k.get("senha", "")).strip()
-            if secure_str_compare(k_pwd, senha):
-                keys[idx] = {
+        with SENHAS_LOCK:
+            keys = load_access_keys()
+            found = False
+            for idx, k in enumerate(keys):
+                k_pwd = str(k.get("senha", "")).strip()
+                if secure_str_compare(k_pwd, senha):
+                    keys[idx] = {
+                        "senha": senha,
+                        "nome": nome,
+                        "servicos": valid_services,
+                        "descricao": descricao or f"Libera: {', '.join(valid_services)}"
+                    }
+                    found = True
+                    break
+            
+            if not found:
+                keys.insert(0, {
                     "senha": senha,
                     "nome": nome,
                     "servicos": valid_services,
                     "descricao": descricao or f"Libera: {', '.join(valid_services)}"
-                }
-                found = True
-                break
-        
-        if not found:
-            keys.insert(0, {
-                "senha": senha,
-                "nome": nome,
-                "servicos": valid_services,
-                "descricao": descricao or f"Libera: {', '.join(valid_services)}"
-            })
+                })
 
-        global SERVER_DATA_VERSION
-        try:
-            if os.path.exists(CONFIG_SENHAS_FILE):
-                try:
-                    os.chmod(CONFIG_SENHAS_FILE, stat.S_IWRITE | stat.S_IREAD)
-                except Exception:
-                    pass
-            with open(CONFIG_SENHAS_FILE, "w", encoding="utf-8") as f:
-                json.dump({"senhas": keys}, f, indent=2, ensure_ascii=False)
-            sync_passwords_text_file(keys)
+            atomic_save_config_senhas(keys)
+            remove_blacklisted_password(senha)
 
             # Atualiza dinamicamente as permissões em sessões ativas com esta senha
             with LOGIN_LOCK:
@@ -3525,14 +3713,13 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                         s_info["role_name"] = nome
                 save_active_sessions()
 
-            SERVER_DATA_VERSION = time.time()
-            return self.send_json_response({
-                "success": True,
-                "message": f"Senha de '{nome}' salva com sucesso!",
-                "passwords": keys
-            })
-        except Exception as e:
-            return self.send_json_response({"success": False, "message": f"Erro ao salvar: {str(e)}"}, 500)
+        global SERVER_DATA_VERSION
+        SERVER_DATA_VERSION = time.time()
+        return self.send_json_response({
+            "success": True,
+            "message": f"Senha de '{nome}' salva e ativada com sucesso!",
+            "passwords": keys
+        })
 
     def handle_api_delete_password(self):
         global SERVER_DATA_VERSION
@@ -3547,57 +3734,51 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         nome = str(req.get("nome", "") or req.get("role_name", "")).strip()
         raw_idx = req.get("index")
 
-        keys = load_access_keys()
-        target_idx = -1
-        target_item = None
+        with SENHAS_LOCK:
+            keys = load_access_keys()
+            target_idx = -1
+            target_item = None
 
-        # 1. Prioridade máxima: busca pela string exata da senha
-        if senha:
-            for idx, k in enumerate(keys):
-                k_pwd = str(k.get("senha", "")).strip()
-                if secure_str_compare(k_pwd, senha) or k_pwd == senha or k_pwd.lower() == senha.lower():
-                    target_idx = idx
-                    target_item = k
-                    break
+            # 1. Prioridade máxima: busca pela string exata da senha
+            if senha:
+                for idx, k in enumerate(keys):
+                    k_pwd = str(k.get("senha", "")).strip()
+                    if secure_str_compare(k_pwd, senha) or k_pwd == senha or k_pwd.lower() == senha.lower():
+                        target_idx = idx
+                        target_item = k
+                        break
 
-        # 2. Se não encontrou por senha, busca pelo nome do cliente/perfil
-        if target_idx == -1 and nome:
-            for idx, k in enumerate(keys):
-                k_name = str(k.get("nome", "")).strip()
-                if secure_str_compare(k_name, nome) or k_name.lower() == nome.lower():
-                    target_idx = idx
-                    target_item = k
-                    break
+            # 2. Se não encontrou por senha, busca pelo nome do cliente/perfil
+            if target_idx == -1 and nome:
+                for idx, k in enumerate(keys):
+                    k_name = str(k.get("nome", "")).strip()
+                    if secure_str_compare(k_name, nome) or k_name.lower() == nome.lower():
+                        target_idx = idx
+                        target_item = k
+                        break
 
-        # 3. Se não encontrou por senha nem nome, tenta pelo índice da lista
-        if target_idx == -1 and raw_idx is not None:
-            try:
-                idx = int(raw_idx)
-                if 0 <= idx < len(keys):
-                    target_idx = idx
-                    target_item = keys[idx]
-            except Exception:
-                pass
-
-        if target_idx == -1 or target_item is None:
-            return self.send_json_response({"success": False, "message": "Senha não encontrada no sistema para exclusão."}, 404)
-
-        deleted_pwd = str(target_item.get("senha", "")).strip()
-        deleted_name = str(target_item.get("nome", "Perfil")).strip()
-        keys.pop(target_idx)
-
-        try:
-            if os.path.exists(CONFIG_SENHAS_FILE):
+            # 3. Se não encontrou por senha nem nome, tenta pelo índice da lista
+            if target_idx == -1 and raw_idx is not None:
                 try:
-                    os.chmod(CONFIG_SENHAS_FILE, stat.S_IWRITE | stat.S_IREAD)
+                    idx = int(raw_idx)
+                    if 0 <= idx < len(keys):
+                        target_idx = idx
+                        target_item = keys[idx]
                 except Exception:
                     pass
-            with open(CONFIG_SENHAS_FILE, "w", encoding="utf-8") as f:
-                json.dump({"senhas": keys}, f, indent=2, ensure_ascii=False)
-            sync_passwords_text_file(keys)
+
+            if target_idx == -1 or target_item is None:
+                return self.send_json_response({"success": False, "message": "Senha não encontrada no sistema para exclusão."}, 404)
+
+            deleted_pwd = str(target_item.get("senha", "")).strip()
+            deleted_name = str(target_item.get("nome", "Perfil")).strip()
+            keys.pop(target_idx)
+
+            # Salva no arquivo e adiciona à lista negra permanente
+            atomic_save_config_senhas(keys)
+            add_blacklisted_password(deleted_pwd)
 
             # Invalida e desconecta imediatamente qualquer usuário ou celular que estava usando esta senha
-            # MAS preserva a sessão atual do administrador para que o painel nunca seja desconectado
             admin_tok = self.get_auth_token_str()
             with LOGIN_LOCK:
                 if admin_tok:
@@ -3613,14 +3794,21 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     ACTIVE_SESSIONS.pop(t, None)
                 save_active_sessions()
 
+            # Limpa dos usuários online ao vivo
+            with ONLINE_USERS_LOCK:
+                to_purge_hb = [
+                    k for k, v in ACTIVE_CLIENT_HEARTBEATS.items()
+                    if secure_str_compare(v.get("role_name", ""), deleted_name)
+                ]
+                for k in to_purge_hb:
+                    ACTIVE_CLIENT_HEARTBEATS.pop(k, None)
+
             SERVER_DATA_VERSION = time.time()
             return self.send_json_response({
                 "success": True,
-                "message": f"Senha '{deleted_name}' removida com sucesso. Dispositivos desconectados.",
+                "message": f"Senha '{deleted_name}' removida permanentemente. Dispositivos desconectados ao vivo!",
                 "passwords": keys
             })
-        except Exception as e:
-            return self.send_json_response({"success": False, "message": f"Erro ao excluir: {str(e)}"}, 500)
 
 
 def get_local_ip():

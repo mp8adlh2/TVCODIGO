@@ -8,10 +8,10 @@ a liberação dos serviços na tela do ativador em tempo real.
 ================================================================================
  1. 🔑 CLIENTE VIP
 ================================================================================
- Libera: 🔴 Netflix | 🟣 HBO Max | 🟠 Crunchyroll | 🔵 Sky+
- Detalhes: Libera: netflix, hbo, crunchyroll, sky
+ Libera: 🔴 Netflix | 🟣 HBO Max
+ Detalhes: Libera: netflix, hbo
  Senha:
- MATRIX#TOKEN@5463$ELITE*90!2026
+ MATRIX#ACCESS@7055$PREMIUM*20!2026
 
 ================================================================================
  2. 🔑 CLIENTE VIP
@@ -60,14 +60,6 @@ a liberação dos serviços na tela do ativador em tempo real.
  Detalhes: Libera: crunchyroll
  Senha:
  CRUNCHYROLL#ONLY@6274$ORANGE*ANIME#MEGA*FAN!2026
-
-================================================================================
- 8. 🔑 SENHA OFICIAL DUO (NETFLIX + HBO)
-================================================================================
- Libera: 🔴 Netflix | 🟣 HBO Max
- Detalhes: Libera: netflix, hbo
- Senha:
- DUO#STREAM@8831$NETFLIX*HBOMAX#PREMIUM*VIP!2026
 
 ================================================================================
  💡 DICA: Você pode criar ou excluir senhas pelo Painel Admin com 1 clique!

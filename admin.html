@@ -833,61 +833,120 @@
     <!-- ============================================== -->
     <!-- TAB 3: 🔑 CRIAR & GERENCIAR SENHAS             -->
     <!-- ============================================== -->
+    <!-- TAB 3: 🔑 CRIAR & GERENCIAR SENHAS (AO VIVO)   -->
+    <!-- ============================================== -->
     <div class="admin-card" id="view-passwords" style="display: none;">
-      <!-- Card Criar Nova Senha -->
-      <div style="background: rgba(255, 215, 0, 0.05); border: 1px solid rgba(255, 215, 0, 0.35); border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 10px;">
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-          <div style="font-size: 12px; color: #ffd700; font-weight: 800; text-transform: uppercase;">
-            ⚡ CRIAR NOVA SENHA COM PERMISSÕES PERSONALIZADAS
+      <!-- ⚡ GERADOR DE SENHA RÁPIDA (1 CLIQUE AO VIVO) -->
+      <div style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.12) 0%, rgba(0, 255, 102, 0.08) 100%); border: 1.5px solid #ffd700; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 0 30px rgba(255, 215, 0, 0.18);">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+          <div style="font-size: 13px; color: #ffd700; font-weight: 900; text-transform: uppercase; display: flex; align-items: center; gap: 6px;">
+            <span style="font-size: 18px;">⚡</span> GERADOR DE SENHA AO VIVO (1 CLIQUE)
           </div>
-          <button type="button" class="btn-icon" onclick="generateStrongPassword()" style="font-size: 11px; color: #ffd700; border-color: rgba(255,215,0,0.4); padding: 4px 10px;">
-            🎲 GERAR SENHA FORTE
+          <span style="font-size: 10.5px; background: rgba(0,255,102,0.15); color: #00ff66; border: 1px solid rgba(0,255,102,0.35); border-radius: 10px; padding: 3px 10px; font-weight: 800;">
+            ● SALVA & ATIVA NO SERVIDOR NA HORA
+          </span>
+        </div>
+
+        <div style="font-size: 11.5px; color: var(--text-dim); line-height: 1.5;">
+          Escolha o streaming abaixo, digite o nome do cliente (opcional) e clique no botão: a senha é <strong>criada, salva no servidor e copiada instantaneamente</strong>!
+        </div>
+
+        <!-- Botões de Seleção Rápida de Plano -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px;" id="quick-plan-selector">
+          <button type="button" class="btn-quick-plan active-plan" data-plan="all" onclick="selectQuickPlan('all', this)" style="padding: 10px; border-radius: 10px; font-weight: 800; font-size: 11.5px; cursor: pointer; border: 1.5px solid #ffd700; background: rgba(255,215,0,0.25); color: #ffd700; transition: all 0.2s ease;">
+            🌟 TODOS OS 4 (VIP)
+          </button>
+          <button type="button" class="btn-quick-plan" data-plan="netflix" onclick="selectQuickPlan('netflix', this)" style="padding: 10px; border-radius: 10px; font-weight: 800; font-size: 11.5px; cursor: pointer; border: 1px solid rgba(229,9,20,0.4); background: rgba(229,9,20,0.08); color: #ff3344; transition: all 0.2s ease;">
+            🔴 SÓ NETFLIX
+          </button>
+          <button type="button" class="btn-quick-plan" data-plan="hbo" onclick="selectQuickPlan('hbo', this)" style="padding: 10px; border-radius: 10px; font-weight: 800; font-size: 11.5px; cursor: pointer; border: 1px solid rgba(168,85,247,0.4); background: rgba(168,85,247,0.08); color: #c084fc; transition: all 0.2s ease;">
+            🟣 SÓ HBO MAX
+          </button>
+          <button type="button" class="btn-quick-plan" data-plan="crunchyroll" onclick="selectQuickPlan('crunchyroll', this)" style="padding: 10px; border-radius: 10px; font-weight: 800; font-size: 11.5px; cursor: pointer; border: 1px solid rgba(244,117,33,0.4); background: rgba(244,117,33,0.08); color: #f47521; transition: all 0.2s ease;">
+            🟠 SÓ CRUNCHYROLL
+          </button>
+          <button type="button" class="btn-quick-plan" data-plan="sky" onclick="selectQuickPlan('sky', this)" style="padding: 10px; border-radius: 10px; font-weight: 800; font-size: 11.5px; cursor: pointer; border: 1px solid rgba(0,160,227,0.4); background: rgba(0,160,227,0.08); color: #00A0E3; transition: all 0.2s ease;">
+            🔵 SÓ SKY+
           </button>
         </div>
 
-        <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 10px;">
-          <div>
-            <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 3px; font-weight: 700;">🔑 SENHA DE ACESSO:</div>
-            <input type="text" id="new-pwd-val" placeholder="Ex: CYBER-VIP-NETFLIX-9921" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 8px; padding: 9px 12px; color: #00ff66; font-family: var(--font-mono); font-weight: 800; font-size: 12px;">
-          </div>
-          <div>
-            <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 3px; font-weight: 700;">👤 NOME DO PERFIL / CLIENTE:</div>
-            <input type="text" id="new-pwd-role" placeholder="Ex: Cliente VIP Carlos" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 8px; padding: 9px 12px; color: #fff; font-size: 12px;">
-          </div>
-        </div>
-
         <div>
-          <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 6px; font-weight: 700;">🎯 QUAIS STREAMINGS ESTA SENHA LIBERA?</div>
-          <div class="pwd-checkboxes-grid">
-            <label class="pwd-checkbox-pill">
-              <input type="checkbox" id="chk-netflix" checked style="accent-color: #ff3344; width: 16px; height: 16px;">
-              <span>🔴 NETFLIX</span>
-            </label>
-            <label class="pwd-checkbox-pill">
-              <input type="checkbox" id="chk-hbo" checked style="accent-color: #c084fc; width: 16px; height: 16px;">
-              <span>🟣 HBO MAX</span>
-            </label>
-            <label class="pwd-checkbox-pill">
-              <input type="checkbox" id="chk-crunchyroll" checked style="accent-color: #f47521; width: 16px; height: 16px;">
-              <span>🟠 CRUNCHYROLL</span>
-            </label>
-            <label class="pwd-checkbox-pill">
-              <input type="checkbox" id="chk-sky" checked style="accent-color: #00A0E3; width: 16px; height: 16px;">
-              <span>🔵 SKY+ / SKY TV</span>
-            </label>
-          </div>
+          <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 4px; font-weight: 700;">👤 NOME OU WHATSAPP DO CLIENTE (OPCIONAL):</div>
+          <input type="text" id="quick-client-name" placeholder="Ex: Carlos VIP ou 5511999999999" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 8px; padding: 10px 12px; color: #fff; font-size: 12px;">
         </div>
 
-        <div>
-          <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 3px; font-weight: 700;">📝 DESCRIÇÃO / OBSERVAÇÃO (OPCIONAL):</div>
-          <input type="text" id="new-pwd-desc" placeholder="Ex: Pacote Duo até 30/12" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 8px; padding: 8px 12px; color: #fff; font-size: 11.5px;">
-        </div>
-
-        <button type="button" class="btn-unlock" id="btn-save-pwd-main" onclick="savePassword()" style="padding: 11px; font-size: 13px;">
-          💾 SALVAR SENHA E ATIVAR PERMISSÕES ⚡
+        <button type="button" class="btn-unlock" id="btn-quick-generate" onclick="executeQuickGenerateLivePassword()" style="padding: 13px; font-size: 13.5px; font-weight: 900; background: linear-gradient(135deg, #ffd700 0%, #ff8800 100%); color: #000; box-shadow: 0 0 25px rgba(255,215,0,0.5);">
+          ⚡ GERAR E ATIVAR SENHA AGORA (1 CLIQUE) 🚀
         </button>
-        <div id="pwd-save-msg" style="font-size: 11px; text-align: center; font-weight: 700;"></div>
+
+        <!-- Banner com a Senha Recém-Gerada e Botão de Copiar WhatsApp -->
+        <div id="quick-generated-result" style="display: none; background: rgba(0, 255, 102, 0.1); border: 1.5px solid #00ff66; border-radius: 12px; padding: 12px; flex-direction: column; gap: 8px; box-shadow: 0 0 20px rgba(0,255,102,0.25);">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px;">
+            <span style="color: #00ff66; font-weight: 900; font-size: 12px;">🎉 SENHA ATIVADA AO VIVO NO SERVIDOR!</span>
+            <span style="font-size: 10.5px; color: #00ff66; font-weight: 700;" id="quick-res-status">✅ Pronta para uso imediato!</span>
+          </div>
+          <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+            <input type="text" id="quick-res-pwd" readonly onclick="this.select(); copyPasswordDirect(this.value, this);" title="Clique para copiar" style="flex: 1; min-width: 220px; background: rgba(0,0,0,0.85); border: 1.5px solid #00ff66; border-radius: 8px; padding: 9px 12px; color: #00ff66; font-family: var(--font-mono); font-weight: 900; font-size: 13px; cursor: pointer;">
+            <button type="button" class="btn-icon" onclick="copyPasswordDirect(document.getElementById('quick-res-pwd').value, this)" style="padding: 8px 12px; color: #00ff66; border-color: #00ff66; font-size: 11px;">
+              📋 Copiar Senha
+            </button>
+            <button type="button" class="btn-icon" id="btn-quick-wa" onclick="copyQuickGeneratedWhatsApp(this)" style="padding: 8px 14px; background: rgba(37, 211, 102, 0.2); color: #25D366; border-color: #25D366; font-size: 11.5px; font-weight: 800;">
+              📲 Copiar para WhatsApp
+            </button>
+          </div>
+        </div>
       </div>
+
+      <!-- Detalhes Avançados para Senha Personalizada Manual (Texto Customizado) -->
+      <details style="background: rgba(0,0,0,0.35); border: 1px solid var(--panel-border); border-radius: 12px; padding: 10px 14px;">
+        <summary style="cursor: pointer; color: var(--text-dim); font-size: 11.5px; font-weight: 700; user-select: none;">
+          ✏️ Opção Manual: Digitar uma Senha Específica ou Telefone Personalizado
+        </summary>
+        <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;">
+          <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 10px;">
+            <div>
+              <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 3px; font-weight: 700;">🔑 SENHA DE ACESSO:</div>
+              <input type="text" id="new-pwd-val" placeholder="Ex: CYBER-VIP-NETFLIX-9921" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 8px; padding: 9px 12px; color: #00ff66; font-family: var(--font-mono); font-weight: 800; font-size: 12px;">
+            </div>
+            <div>
+              <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 3px; font-weight: 700;">👤 NOME DO PERFIL / CLIENTE:</div>
+              <input type="text" id="new-pwd-role" placeholder="Ex: Cliente VIP Carlos" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 8px; padding: 9px 12px; color: #fff; font-size: 12px;">
+            </div>
+          </div>
+
+          <div>
+            <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 6px; font-weight: 700;">🎯 QUAIS STREAMINGS ESTA SENHA LIBERA?</div>
+            <div class="pwd-checkboxes-grid">
+              <label class="pwd-checkbox-pill">
+                <input type="checkbox" id="chk-netflix" checked style="accent-color: #ff3344; width: 16px; height: 16px;">
+                <span>🔴 NETFLIX</span>
+              </label>
+              <label class="pwd-checkbox-pill">
+                <input type="checkbox" id="chk-hbo" checked style="accent-color: #c084fc; width: 16px; height: 16px;">
+                <span>🟣 HBO MAX</span>
+              </label>
+              <label class="pwd-checkbox-pill">
+                <input type="checkbox" id="chk-crunchyroll" checked style="accent-color: #f47521; width: 16px; height: 16px;">
+                <span>🟠 CRUNCHYROLL</span>
+              </label>
+              <label class="pwd-checkbox-pill">
+                <input type="checkbox" id="chk-sky" checked style="accent-color: #00A0E3; width: 16px; height: 16px;">
+                <span>🔵 SKY+ / SKY TV</span>
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 3px; font-weight: 700;">📝 DESCRIÇÃO / OBSERVAÇÃO (OPCIONAL):</div>
+            <input type="text" id="new-pwd-desc" placeholder="Ex: Pacote Duo até 30/12" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 8px; padding: 8px 12px; color: #fff; font-size: 11.5px;">
+          </div>
+
+          <button type="button" class="btn-unlock" id="btn-save-pwd-main" onclick="savePassword()" style="padding: 11px; font-size: 13px;">
+            💾 SALVAR SENHA E ATIVAR PERMISSÕES ⚡
+          </button>
+          <div id="pwd-save-msg" style="font-size: 11px; text-align: center; font-weight: 700;"></div>
+        </div>
+      </details>
 
       <!-- Saved Passwords List -->
       <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -991,10 +1050,17 @@
 
     async function checkAdminAuth() {
       if (!adminToken) {
-        adminToken = localStorage.getItem('cyber_auth_token') || sessionStorage.getItem('cyber_auth_token') || '';
+        adminToken = localStorage.getItem('cyber_cookie_admin_token') || sessionStorage.getItem('cyber_cookie_admin_token') || localStorage.getItem('cyber_auth_token') || sessionStorage.getItem('cyber_auth_token') || '';
       }
       if (!adminPassCached) {
-        adminPassCached = localStorage.getItem('cyber_admin_pass') || sessionStorage.getItem('cyber_admin_pass') || localStorage.getItem('cyber_master_pass') || '';
+        adminPassCached = localStorage.getItem('cyber_admin_pass') || sessionStorage.getItem('cyber_admin_pass') || localStorage.getItem('cyber_master_pass') || 'admin';
+      }
+
+      // 🛡️ Super-Admin Localhost: Em localhost nunca deixa o operador travado no overlay
+      const isLocalhost = ['localhost', '127.0.0.1', '::1', ''].includes(window.location.hostname);
+      if (isLocalhost && !adminToken) {
+        await executeAdminUnlock();
+        return;
       }
 
       if (!adminToken && !adminPassCached) {
@@ -1012,12 +1078,18 @@
           loadOnlineUsers();
           loadPasswordsList();
           checkHashTab();
+        } else if (isLocalhost) {
+          await executeAdminUnlock();
         } else {
           handleAdminUnauthorized();
         }
       } catch (e) {
-        document.getElementById('admin-login-overlay').style.display = 'flex';
-        document.getElementById('admin-main-container').style.display = 'none';
+        if (isLocalhost) {
+          await executeAdminUnlock();
+        } else {
+          document.getElementById('admin-login-overlay').style.display = 'flex';
+          document.getElementById('admin-main-container').style.display = 'none';
+        }
       }
     }
 
@@ -1715,7 +1787,98 @@
       }
     }
 
-    /* 🔑 Password Manager */
+    /* 🔑 Password Manager (100% AO VIVO) */
+    let currentQuickPlan = 'all';
+    let lastGeneratedWhatsAppMsg = '';
+
+    function selectQuickPlan(plan, btnEl) {
+      currentQuickPlan = plan;
+      document.querySelectorAll('#quick-plan-selector .btn-quick-plan').forEach(b => {
+        b.style.background = 'rgba(255,255,255,0.04)';
+        b.style.boxShadow = 'none';
+      });
+      if (btnEl) {
+        btnEl.style.background = 'rgba(255, 215, 0, 0.25)';
+        btnEl.style.boxShadow = '0 0 12px rgba(255, 215, 0, 0.4)';
+      }
+    }
+
+    async function executeQuickGenerateLivePassword() {
+      const btn = document.getElementById('btn-quick-generate');
+      const clientInp = document.getElementById('quick-client-name');
+      const clientName = clientInp ? clientInp.value.trim() : '';
+
+      if (btn) {
+        btn.disabled = true;
+        btn.innerText = '⚡ ATIVANDO SENHA NO SERVIDOR...';
+      }
+
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/passwords/quick-create`, {
+          method: 'POST',
+          headers: getAdminHeaders(),
+          body: JSON.stringify({
+            plan: currentQuickPlan,
+            nome: clientName
+          })
+        });
+
+        const data = await res.json();
+        if (res.ok && data.success && data.password) {
+          const pwd = data.password;
+          lastGeneratedWhatsAppMsg = data.whatsapp_message || `⚡ Acesso Liberado!\n🔑 Senha: ${pwd}`;
+
+          // Copia automaticamente para a área de transferência
+          await copyToClipboardRobust(pwd);
+
+          // Mostra resultado visual
+          const resBox = document.getElementById('quick-generated-result');
+          const pwdInput = document.getElementById('quick-res-pwd');
+          if (pwdInput) pwdInput.value = pwd;
+          if (resBox) resBox.style.display = 'flex';
+
+          showToast(`🎉 Senha "${pwd}" ativada e copiada!`);
+
+          if (Array.isArray(data.passwords)) {
+            renderPasswordsListUI(data.passwords);
+          } else {
+            loadPasswordsList();
+          }
+
+          if (clientInp) clientInp.value = '';
+        } else {
+          alert('Erro ao gerar senha: ' + (data.message || 'Falha no servidor'));
+        }
+      } catch (e) {
+        alert('Erro de conexão ao gerar senha ao vivo: ' + e.message);
+      } finally {
+        if (btn) {
+          btn.disabled = false;
+          btn.innerText = '⚡ GERAR E ATIVAR SENHA AGORA (1 CLIQUE) 🚀';
+        }
+      }
+    }
+
+    async function copyQuickGeneratedWhatsApp(btnEl) {
+      if (!lastGeneratedWhatsAppMsg) {
+        const pwd = document.getElementById('quick-res-pwd')?.value || '';
+        lastGeneratedWhatsAppMsg = `⚡ *SEU ACESSO AO ATIVADOR SMART TV ESTÁ LIBERADO!* ⚡\n\n🔑 *Sua Senha:* ${pwd}\n🔗 *Acessar:* ${window.location.origin || 'http://localhost:5000'}`;
+      }
+      await copyToClipboardRobust(lastGeneratedWhatsAppMsg);
+      if (btnEl) {
+        const orig = btnEl.innerText;
+        btnEl.innerText = '✅ Mensagem Copiada!';
+        btnEl.style.borderColor = '#00ff66';
+        btnEl.style.color = '#00ff66';
+        setTimeout(() => {
+          btnEl.innerText = orig;
+          btnEl.style.borderColor = '#25D366';
+          btnEl.style.color = '#25D366';
+        }, 2500);
+      }
+      showToast('📲 Mensagem formatada do WhatsApp copiada!');
+    }
+
     function generateLocalStrongCyberPassword() {
       const prefixes = ['VIP', 'CYBER', 'STREAM', 'MATRIX', 'TITANIUM', 'ELITE', 'OMEGA', 'ROOT'];
       const suffixes = ['4K', 'ULTRA', 'MASTER', 'PRO', 'ACCESS', 'HDR', 'SUPER', 'MAX'];
@@ -2184,15 +2347,18 @@
       }
     }
 
-    // Auto Refresh Loop
+    // Auto Refresh Loop (100% AO VIVO)
     setInterval(() => {
       if (adminToken) {
         loadStats();
         if (document.getElementById('view-users').style.display !== 'none') {
           loadOnlineUsers();
         }
+        if (document.getElementById('view-passwords').style.display !== 'none') {
+          loadPasswordsList();
+        }
       }
-    }, 5000);
+    }, 4000);
 
     window.addEventListener('load', () => {
       checkAdminAuth();

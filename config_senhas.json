@@ -1,15 +1,13 @@
 {
   "senhas": [
     {
-      "senha": "MATRIX#TOKEN@5463$ELITE*90!2026",
+      "senha": "MATRIX#ACCESS@7055$PREMIUM*20!2026",
       "nome": "Cliente VIP",
       "servicos": [
         "netflix",
-        "hbo",
-        "crunchyroll",
-        "sky"
+        "hbo"
       ],
-      "descricao": "Libera: netflix, hbo, crunchyroll, sky"
+      "descricao": "Libera: netflix, hbo"
     },
     {
       "senha": "MATRIX#SECURITY@5621$4K*63!2026",
@@ -62,15 +60,6 @@
         "crunchyroll"
       ],
       "descricao": "Libera: crunchyroll"
-    },
-    {
-      "senha": "DUO#STREAM@8831$NETFLIX*HBOMAX#PREMIUM*VIP!2026",
-      "nome": "Senha Oficial Duo (Netflix + HBO)",
-      "servicos": [
-        "netflix",
-        "hbo"
-      ],
-      "descricao": "Libera: netflix, hbo"
     }
   ]
 }
