@@ -3606,28 +3606,47 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         cliente = str(req.get("nome", "") or req.get("cliente", "") or req.get("role_name", "") or "").strip()
         custom_pwd = str(req.get("senha", "") or req.get("password", "") or "").strip()
 
-        # Define os serviços liberados com base no plano escolhido
-        if plan in ["netflix", "nf"]:
-            servicos = ["netflix"]
-            plan_label = "Netflix 4K UHD"
-        elif plan in ["hbo", "hbomax", "max"]:
-            servicos = ["hbo"]
-            plan_label = "HBO Max"
-        elif plan in ["crunchyroll", "cr"]:
-            servicos = ["crunchyroll"]
-            plan_label = "Crunchyroll"
-        elif plan in ["sky", "skytv"]:
-            servicos = ["sky"]
-            plan_label = "Sky+ / Sky TV"
-        elif plan in ["combo_nf_hbo", "duo"]:
-            servicos = ["netflix", "hbo"]
-            plan_label = "Duo (Netflix + HBO)"
+        # 🎯 Suporte direto a seleção personalizada múltipla (ex: Netflix + HBO Max + Sky)
+        req_services = req.get("servicos") or req.get("services")
+        servicos = []
+        if isinstance(req_services, list) and len(req_services) > 0:
+            for s in req_services:
+                s_clean = str(s).strip().lower()
+                if s_clean in ["netflix", "nf"] and "netflix" not in servicos:
+                    servicos.append("netflix")
+                elif s_clean in ["hbo", "hbomax", "hbo_max", "max"] and "hbo" not in servicos:
+                    servicos.append("hbo")
+                elif s_clean in ["crunchyroll", "crunchy", "cr"] and "crunchyroll" not in servicos:
+                    servicos.append("crunchyroll")
+                elif s_clean in ["sky", "skytv", "sky+", "sky_tv"] and "sky" not in servicos:
+                    servicos.append("sky")
+
+        if not servicos:
+            # Fallback para string de plano pré-definido
+            if plan in ["netflix", "nf"]:
+                servicos = ["netflix"]
+                plan_label = "Netflix 4K UHD"
+            elif plan in ["hbo", "hbomax", "max"]:
+                servicos = ["hbo"]
+                plan_label = "HBO Max"
+            elif plan in ["crunchyroll", "cr"]:
+                servicos = ["crunchyroll"]
+                plan_label = "Crunchyroll"
+            elif plan in ["sky", "skytv"]:
+                servicos = ["sky"]
+                plan_label = "Sky+ / Sky TV"
+            elif plan in ["combo_nf_hbo", "duo"]:
+                servicos = ["netflix", "hbo"]
+                plan_label = "Duo (Netflix + HBO)"
+            else:
+                servicos = ["netflix", "hbo", "crunchyroll", "sky"]
+                plan_label = "VIP Master (Todos os 4)"
         else:
-            servicos = ["netflix", "hbo", "crunchyroll", "sky"]
-            plan_label = "VIP Master (Todos os 4)"
+            names_map = {"netflix": "Netflix", "hbo": "HBO Max", "crunchyroll": "Crunchyroll", "sky": "Sky+"}
+            plan_label = " + ".join([names_map.get(s, s.upper()) for s in servicos])
 
         new_pwd = custom_pwd if custom_pwd else generate_strong_cyber_password()
-        nome = cliente if cliente else f"Cliente {plan_label}"
+        nome = cliente if cliente else f"Cliente ({plan_label})"
         descricao = f"Libera: {', '.join(servicos)}"
 
         with SENHAS_LOCK:

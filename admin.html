@@ -851,28 +851,54 @@
           Escolha o streaming abaixo, digite o nome do cliente (opcional) e clique no botão: a senha é <strong>criada, salva no servidor e copiada instantaneamente</strong>!
         </div>
 
-        <!-- Botões de Seleção Rápida de Plano -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px;" id="quick-plan-selector">
-          <button type="button" class="btn-quick-plan active-plan" data-plan="all" onclick="selectQuickPlan('all', this)" style="padding: 10px; border-radius: 10px; font-weight: 800; font-size: 11.5px; cursor: pointer; border: 1.5px solid #ffd700; background: rgba(255,215,0,0.25); color: #ffd700; transition: all 0.2s ease;">
-            🌟 TODOS OS 4 (VIP)
-          </button>
-          <button type="button" class="btn-quick-plan" data-plan="netflix" onclick="selectQuickPlan('netflix', this)" style="padding: 10px; border-radius: 10px; font-weight: 800; font-size: 11.5px; cursor: pointer; border: 1px solid rgba(229,9,20,0.4); background: rgba(229,9,20,0.08); color: #ff3344; transition: all 0.2s ease;">
-            🔴 SÓ NETFLIX
-          </button>
-          <button type="button" class="btn-quick-plan" data-plan="hbo" onclick="selectQuickPlan('hbo', this)" style="padding: 10px; border-radius: 10px; font-weight: 800; font-size: 11.5px; cursor: pointer; border: 1px solid rgba(168,85,247,0.4); background: rgba(168,85,247,0.08); color: #c084fc; transition: all 0.2s ease;">
-            🟣 SÓ HBO MAX
-          </button>
-          <button type="button" class="btn-quick-plan" data-plan="crunchyroll" onclick="selectQuickPlan('crunchyroll', this)" style="padding: 10px; border-radius: 10px; font-weight: 800; font-size: 11.5px; cursor: pointer; border: 1px solid rgba(244,117,33,0.4); background: rgba(244,117,33,0.08); color: #f47521; transition: all 0.2s ease;">
-            🟠 SÓ CRUNCHYROLL
-          </button>
-          <button type="button" class="btn-quick-plan" data-plan="sky" onclick="selectQuickPlan('sky', this)" style="padding: 10px; border-radius: 10px; font-weight: 800; font-size: 11.5px; cursor: pointer; border: 1px solid rgba(0,160,227,0.4); background: rgba(0,160,227,0.08); color: #00A0E3; transition: all 0.2s ease;">
-            🔵 SÓ SKY+
-          </button>
+        <!-- Seleção Personalizada de Apps/Streamings com Checkboxes Independentes -->
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 6px;">
+            <div style="font-size: 11.5px; color: #ffd700; font-weight: 800; text-transform: uppercase; display: flex; align-items: center; gap: 6px;">
+              <span>🎯</span> QUAIS APPS O CLIENTE PODERÁ USAR?
+            </div>
+            <div style="display: flex; gap: 6px;">
+              <button type="button" class="btn-icon" onclick="setQuickAppsAll(true)" style="padding: 3px 9px; font-size: 10px; color: #00ff66; border-color: rgba(0,255,102,0.4); background: rgba(0,255,102,0.08);">
+                ✓ Marcar Todos
+              </button>
+              <button type="button" class="btn-icon" onclick="setQuickAppsAll(false)" style="padding: 3px 9px; font-size: 10px; color: var(--text-dim);">
+                ✕ Desmarcar
+              </button>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: 8px;" id="quick-app-selector">
+            <label class="quick-app-label" style="display: flex; align-items: center; gap: 8px; background: rgba(229,9,20,0.12); border: 1.5px solid rgba(229,9,20,0.45); border-radius: 10px; padding: 10px 12px; cursor: pointer; user-select: none;">
+              <input type="checkbox" id="quick-app-netflix" checked style="accent-color: #ff3344; width: 18px; height: 18px; cursor: pointer;">
+              <span style="color: #ff3344; font-weight: 800; font-size: 12px;">🔴 NETFLIX</span>
+            </label>
+
+            <label class="quick-app-label" style="display: flex; align-items: center; gap: 8px; background: rgba(168,85,247,0.12); border: 1.5px solid rgba(168,85,247,0.45); border-radius: 10px; padding: 10px 12px; cursor: pointer; user-select: none;">
+              <input type="checkbox" id="quick-app-hbo" checked style="accent-color: #c084fc; width: 18px; height: 18px; cursor: pointer;">
+              <span style="color: #c084fc; font-weight: 800; font-size: 12px;">🟣 HBO MAX</span>
+            </label>
+
+            <label class="quick-app-label" style="display: flex; align-items: center; gap: 8px; background: rgba(244,117,33,0.12); border: 1.5px solid rgba(244,117,33,0.45); border-radius: 10px; padding: 10px 12px; cursor: pointer; user-select: none;">
+              <input type="checkbox" id="quick-app-crunchyroll" style="accent-color: #f47521; width: 18px; height: 18px; cursor: pointer;">
+              <span style="color: #f47521; font-weight: 800; font-size: 12px;">🟠 CRUNCHY</span>
+            </label>
+
+            <label class="quick-app-label" style="display: flex; align-items: center; gap: 8px; background: rgba(0,160,227,0.12); border: 1.5px solid rgba(0,160,227,0.45); border-radius: 10px; padding: 10px 12px; cursor: pointer; user-select: none;">
+              <input type="checkbox" id="quick-app-sky" checked style="accent-color: #00A0E3; width: 18px; height: 18px; cursor: pointer;">
+              <span style="color: #00A0E3; font-weight: 800; font-size: 12px;">🔵 SKY+</span>
+            </label>
+          </div>
         </div>
 
-        <div>
-          <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 4px; font-weight: 700;">👤 NOME OU WHATSAPP DO CLIENTE (OPCIONAL):</div>
-          <input type="text" id="quick-client-name" placeholder="Ex: Carlos VIP ou 5511999999999" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 8px; padding: 10px 12px; color: #fff; font-size: 12px;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+          <div>
+            <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 4px; font-weight: 700;">👤 NOME OU WHATSAPP DO CLIENTE:</div>
+            <input type="text" id="quick-client-name" placeholder="Ex: Carlos VIP ou 5511999999999" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 8px; padding: 10px 12px; color: #fff; font-size: 12px;">
+          </div>
+          <div>
+            <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 4px; font-weight: 700;">🔑 SENHA PERSONALIZADA (OPCIONAL):</div>
+            <input type="text" id="quick-custom-pwd" placeholder="Vazio = Gera senha forte automática" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 8px; padding: 10px 12px; color: #00ff66; font-family: var(--font-mono); font-size: 12px;">
+          </div>
         </div>
 
         <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 10px;">
@@ -1793,18 +1819,25 @@
       }
     }
 
-    /* 🔑 Password Manager (100% AO VIVO) */
-    let currentQuickPlan = 'all';
+    /* 🔑 Password Manager (100% AO VIVO com Seleção de Apps por Checkbox) */
     let lastGeneratedWhatsAppMsg = '';
 
-    function selectQuickPlan(plan, btnEl) {
-      currentQuickPlan = plan;
-      document.querySelectorAll('#quick-plan-selector .btn-quick-plan').forEach(b => {
-        b.style.background = 'rgba(255,255,255,0.04)';
-        b.style.boxShadow = 'none';
+    function getSelectedQuickServices() {
+      const svcs = [];
+      if (document.getElementById('quick-app-netflix')?.checked) svcs.push('netflix');
+      if (document.getElementById('quick-app-hbo')?.checked) svcs.push('hbo');
+      if (document.getElementById('quick-app-crunchyroll')?.checked) svcs.push('crunchyroll');
+      if (document.getElementById('quick-app-sky')?.checked) svcs.push('sky');
+      return svcs;
+    }
+
+    function setQuickAppsAll(state) {
+      ['quick-app-netflix', 'quick-app-hbo', 'quick-app-crunchyroll', 'quick-app-sky'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.checked = state;
       });
-      if (btnEl) {
-        btnEl.style.background = 'rgba(255, 215, 0, 0.25)';
+    }
+
     async function loginWithPasswordDirect(pwd) {
       if (!pwd) return;
       showToast(`🔑 Conectando ao terminal com a senha...`);
@@ -1835,9 +1868,17 @@
     }
 
     async function executeQuickGenerateAndLoginLive() {
+      const svcs = getSelectedQuickServices();
+      if (svcs.length === 0) {
+        alert('Selecione pelo menos 1 app de streaming para o cliente!');
+        return;
+      }
+
       const btn = document.getElementById('btn-quick-generate-login');
       const clientInp = document.getElementById('quick-client-name');
+      const customPwdInp = document.getElementById('quick-custom-pwd');
       const clientName = clientInp ? clientInp.value.trim() : '';
+      const customPwd = customPwdInp ? customPwdInp.value.trim() : '';
 
       if (btn) {
         btn.disabled = true;
@@ -1849,8 +1890,9 @@
           method: 'POST',
           headers: getAdminHeaders(),
           body: JSON.stringify({
-            plan: currentQuickPlan,
+            servicos: svcs,
             nome: clientName,
+            senha: customPwd,
             auto_login: true
           })
         });
@@ -1882,9 +1924,17 @@
     }
 
     async function executeQuickGenerateLivePassword() {
+      const svcs = getSelectedQuickServices();
+      if (svcs.length === 0) {
+        alert('Selecione pelo menos 1 app de streaming para o cliente!');
+        return;
+      }
+
       const btn = document.getElementById('btn-quick-generate');
       const clientInp = document.getElementById('quick-client-name');
+      const customPwdInp = document.getElementById('quick-custom-pwd');
       const clientName = clientInp ? clientInp.value.trim() : '';
+      const customPwd = customPwdInp ? customPwdInp.value.trim() : '';
 
       if (btn) {
         btn.disabled = true;
@@ -1896,8 +1946,9 @@
           method: 'POST',
           headers: getAdminHeaders(),
           body: JSON.stringify({
-            plan: currentQuickPlan,
-            nome: clientName
+            servicos: svcs,
+            nome: clientName,
+            senha: customPwd
           })
         });
 
@@ -1923,7 +1974,7 @@
             loadPasswordsList();
           }
 
-          if (clientInp) clientInp.value = '';
+          if (customPwdInp) customPwdInp.value = '';
         } else {
           alert('Erro ao gerar senha: ' + (data.message || 'Falha no servidor'));
         }
@@ -1932,7 +1983,7 @@
       } finally {
         if (btn) {
           btn.disabled = false;
-          btn.innerText = '⚡ GERAR E ATIVAR SENHA AGORA (1 CLIQUE) 🚀';
+          btn.innerText = '➕ Apenas Salvar Senha';
         }
       }
     }
