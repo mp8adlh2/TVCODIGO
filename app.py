@@ -2625,7 +2625,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             if CURRENT_SKY_READY:
                 em = CURRENT_SKY_READY.get("email", "").strip().lower()
                 if em:
-                    sky_service.record_account_activated(em, "", "SKIP")
+                    sky_service.record_sky_account_used(em)
                     USED_SKY_ACCOUNTS.add(em)
                     SKY_LAST_USED_AT[em] = now_ts
             sky_service.load_all_sky_accounts(force_reload=True)
@@ -2830,15 +2830,15 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         elif service == 'sky':
             kernel_logger.push_kernel_log(f"📡 [Sky+] Transmissão iniciada para TV {clean_code}...")
 
-            # 🎯 Se o frontend solicitou uma conta específica exibida na tela ou selecionada
+            # 🎯 Se o frontend solicitou uma conta específica selecionada
             req_account_id = req.get('account') or req.get('email') or req.get('cookie_name')
             chosen_acc = None
             if req_account_id and isinstance(req_account_id, str) and req_account_id.strip():
                 specific_acc = select_sky_account_by_identifier(req_account_id.strip())
-                if specific_acc and sky_service._has_valid_account_session(specific_acc):
+                if specific_acc:
                     chosen_acc = specific_acc
 
-            # Se a conta pedida não tem sessão instantânea pronta, seleciona automaticamente a melhor conta do estoque com sessão ativa (ativação em 300ms)
+            # Rotação Circular Justa: pega a próxima conta da fila (menos recentemente usada)
             if not chosen_acc:
                 chosen_acc = find_sky_valid_account()
 
@@ -2858,7 +2858,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 used_account = CURRENT_SKY_READY
                 acc_email = used_account.get("email", "").strip()
                 acc_email_clean = acc_email.lower()
-                kernel_logger.push_kernel_log(f"🔑 [Sky+] Selecionada conta do assinante: {acc_email} (Tentativa {_attempt+1}/2)...")
+                kernel_logger.push_kernel_log(f"🔑 [Sky+] Conta da fila: {acc_email} (Tentativa {_attempt+1}/2)...")
                 success, msg, info = activate_sky_tv(clean_code, used_account)
                 account_info = info or used_account.get("info", {})
                 last_msg = msg
@@ -2868,8 +2868,9 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     now_ts = time.time()
                     SKY_LAST_USED_AT[acc_email_clean] = now_ts
                     USED_SKY_ACCOUNTS.add(acc_email_clean)
-                    record_history_entry("Sky", used_account.get("file", "hits"), account_info.get("email", ""), clean_code, account_info.get("plan", "Sky TV VIP"), "Sucesso")
+                    record_history_entry("Sky", used_account.get("file", "skycontas.txt"), account_info.get("email", ""), clean_code, account_info.get("plan", "Sky TV VIP"), "Sucesso")
                     sky_service.record_account_activated(used_account.get("email", ""), used_account.get("password", ""), clean_code)
+                    sky_service.record_sky_account_used(acc_email_clean)
                     sky_service.load_all_sky_accounts(force_reload=True)
                     CURRENT_SKY_READY = find_sky_valid_account()
                     return self.send_json_response({
@@ -2879,8 +2880,10 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     })
                 else:
                     kernel_logger.push_kernel_log(f"⚠️ [Sky+] Tentativa {_attempt+1} falhou: {msg}", level="warn")
+                    sky_service.record_sky_account_used(acc_email_clean)
                     # Se for código de TV inexistente ou expirado na Smart TV (404), interrompe
                     if "404" in msg.lower() or "não encontrado" in msg.lower() or "expirado" in msg.lower():
+                        CURRENT_SKY_READY = find_sky_valid_account()
                         return self.send_json_response({
                             "success": False,
                             "message": msg

@@ -625,13 +625,49 @@ def get_active_sso_session() -> Optional[dict]:
     sessions = get_all_active_sso_sessions()
     return sessions[0] if sessions else None
 
+SKY_ROTATION_FILE = os.path.join(HITS_DIR, "sky_rotation.json")
+
+def _load_sky_rotation_data() -> dict:
+    """Carrega dados persistidos de rotacao para garantir distribuicao justa entre as contas."""
+    if os.path.exists(SKY_ROTATION_FILE):
+        try:
+            with open(SKY_ROTATION_FILE, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                if isinstance(data, dict):
+                    return {
+                        "last_used": data.get("last_used", {}),
+                        "use_counts": data.get("use_counts", {})
+                    }
+        except Exception:
+            pass
+    return {"last_used": {}, "use_counts": {}}
+
+def _save_sky_rotation_data(data: dict):
+    """Salva dados de rotacao das contas."""
+    try:
+        os.makedirs(HITS_DIR, exist_ok=True)
+        with open(SKY_ROTATION_FILE, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2)
+    except Exception:
+        pass
+
+def record_sky_account_used(email: str):
+    """Registra que uma conta Sky foi usada, enviando-a para o fim da fila de rotacao."""
+    em = email.strip().lower()
+    if not em:
+        return
+    data = _load_sky_rotation_data()
+    data["last_used"][em] = time.time()
+    data["use_counts"][em] = data["use_counts"].get(em, 0) + 1
+    _save_sky_rotation_data(data)
+
 # ═══════════════════════════════════════════════════════════════
 # CARREGAMENTO GLOBAL DE CONTAS SKY (PRIORIDADE: skycontas.txt)
 # ═══════════════════════════════════════════════════════════════
 def load_all_sky_accounts(force_reload: bool = False) -> List[dict]:
     """
-    Carrega e consolida todas as contas Sky priorizando diretamente as sessões ativas e skycontas.txt.
-    Enriquece metadados (plano, cliente, tokens) a partir de hits/ e raw_json de forma 100% segura.
+    Carrega e consolida todas as contas Sky reais de skycontas.txt.
+    Elimina dependência de sessões salvas para que cada conta autentique diretamente via testar_sky_api.py.
     """
     global CACHED_SKY_ACCOUNTS, CACHED_SKY_TIMESTAMP
 
@@ -657,34 +693,18 @@ def load_all_sky_accounts(force_reload: bool = False) -> List[dict]:
                     "country": "BR",
                     "client_name": "",
                     "cpf": "",
-                    "adicionais": [],
-                    "source": acc.get("file", "skycontas.txt")
+                    "adicionais": ["Autenticação Direta HTTP API"],
+                    "source": acc.get("file", "skycontas.txt"),
+                    "is_session": False
                 }
             seen_keys.add(em)
             all_accounts.append(acc)
 
-        # 0. ⚡ PRIORIDADE MÁXIMA ABSOLUTA: Todas as Sessões Ativas em sky_sessions.json / sso_token.txt
-        active_sessions = get_all_active_sso_sessions()
-        for active_sess in active_sessions:
-            em = active_sess["email"].strip().lower()
-            if em not in seen_keys:
-                all_accounts.append(active_sess)
-                seen_keys.add(em)
-
-        # 1. 🌟 PRIORIDADE 1: skycontas.txt na raiz (exatamente o arquivo solicitado pelo usuário!)
+        # 1. 🌟 PRIORIDADE ABSOLUTA: skycontas.txt na raiz (as 35 contas reais do usuário)
         if os.path.exists(SKY_CONTAS_FILE):
             try:
                 for acc in load_hits_from_text_file(SKY_CONTAS_FILE):
-                    em = acc.get("email", "").strip().lower()
-                    if em in seen_keys:
-                        # Enriquece sessão já existente com a senha de skycontas.txt
-                        for existing in all_accounts:
-                            if existing.get("email", "").strip().lower() == em:
-                                if acc.get("password") and not existing.get("password"):
-                                    existing["password"] = acc["password"]
-                                break
-                    else:
-                        add_acc(acc)
+                    add_acc(acc)
             except Exception:
                 pass
 
@@ -833,63 +853,44 @@ def _has_valid_account_session(acc: dict) -> bool:
 
 def find_sky_valid_account(used_accounts: Optional[Set[str]] = None, dead_accounts: Optional[Set[str]] = None, last_used_map: Optional[Dict[str, float]] = None) -> Optional[dict]:
     """
-    Retorna a melhor conta Sky disponível com foco em velocidade máxima (300ms).
-    ⚡ TIER 1 (MÁXIMA VELOCIDADE - 300ms):
-       Prioriza SEMPRE contas com sessão/token SSO oficial ativo e não-expirado.
-       Executa rotação circular perfeita (menos recentemente usada primeiro via last_used_map).
-    🛡️ TIER 2 (FALLBACK):
-       Se não houver nenhuma sessão ativa pronta, escolhe a melhor conta do estoque para autenticar.
+    Seleciona a melhor conta Sky com base na lógica de ROTAÇÃO JUSTA (LRU / Round-Robin):
+    1. Nunca repete a mesma conta se houver outras no estoque.
+    2. Prioriza a conta que nunca foi usada (ou que foi usada há mais tempo).
+    3. Percorre todas as 35 contas de skycontas.txt de forma 100% balanceada.
     """
     accounts = load_all_sky_accounts()
     if not accounts:
         return None
 
-    if last_used_map is None:
-        last_used_map = {}
-    if dead_accounts is None:
-        dead_accounts = set()
-    if used_accounts is None:
-        used_accounts = set()
+    rot_data = _load_sky_rotation_data()
+    stored_last_used = rot_data.get("last_used", {})
+    stored_use_counts = rot_data.get("use_counts", {})
 
-    act_counts = get_activation_counts()
-    normalized_dead = {str(d).strip().lower() for d in dead_accounts if d}
+    combined_last_used = dict(stored_last_used)
+    if last_used_map:
+        combined_last_used.update(last_used_map)
+
+    normalized_dead = {str(d).strip().lower() for d in (dead_accounts or set()) if d}
     normalized_dead.update(get_invalid_sky_accounts())
 
-    # ═══════════════════════════════════════════════════════════════
-    # ⚡ TIER 1: CONTAS COM SESSÃO ATIVA PRONTA (ATIVAÇÃO EM 300ms)
-    # ═══════════════════════════════════════════════════════════════
-    active_session_accounts = [
-        acc for acc in accounts
-        if acc.get("email", "").strip().lower()
-        and acc.get("email", "").strip().lower() not in normalized_dead
-        and _has_valid_account_session(acc)
-    ]
-
-    if active_session_accounts:
-        # Rotação circular: prioriza a menos recentemente usada
-        active_session_accounts.sort(key=lambda a: (
-            last_used_map.get(a.get("email", "").strip().lower(), 0.0),
-            act_counts.get(a.get("email", "").strip().lower(), 0)
-        ))
-        return active_session_accounts[0]
-
-    # ═══════════════════════════════════════════════════════════════
-    # 🛡️ TIER 2: FALLBACK (QUANDO TODAS AS SESSÕES EXPIRARAM OU FORAM ESGOTADAS)
-    # ═══════════════════════════════════════════════════════════════
+    # Contas elegíveis (excluindo as marcadas temporariamente como dead)
     candidates = [
         acc for acc in accounts
         if acc.get("email", "").strip().lower()
         and acc.get("email", "").strip().lower() not in normalized_dead
     ]
 
-    if candidates:
-        candidates.sort(key=lambda a: (
-            act_counts.get(a.get("email", "").strip().lower(), 0),
-            last_used_map.get(a.get("email", "").strip().lower(), 0.0)
-        ))
-        return candidates[0]
+    pool = candidates if candidates else accounts
 
-    return accounts[0]
+    # Ordenação justa:
+    # 1. Menor quantidade de usos (use_counts)
+    # 2. Menor timestamp de último uso (last_used) -> contas nunca usadas (0.0) vêm sempre primeiro!
+    pool_sorted = sorted(pool, key=lambda a: (
+        stored_use_counts.get(a.get("email", "").strip().lower(), 0),
+        combined_last_used.get(a.get("email", "").strip().lower(), 0.0)
+    ))
+
+    return pool_sorted[0] if pool_sorted else accounts[0]
 
 def select_sky_account_by_identifier(identifier: str) -> Optional[dict]:
     """Busca conta específica por email, login ou arquivo."""
@@ -907,10 +908,9 @@ def select_sky_account_by_identifier(identifier: str) -> Optional[dict]:
 # ═══════════════════════════════════════════════════════════════
 def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -> Tuple[bool, str, Optional[dict]]:
     """
-    Executa a ativação oficial da Smart TV Sky.
-    Suporta 2 estratégias em cascata:
-    1. Modo API REST Pura (testar_sky_api.py - 100% HTTP, sem navegador, ativação ultrarrápida em nuvem via TBX API).
-    2. Modo Navegador Headless (Playwright Chromium de fallback com resolução de captcha).
+    Executa a ativação oficial da Smart TV Sky usando as credenciais reais da conta (skycontas.txt).
+    Usa o motor testar_sky_api.py para autenticar via API REST pura, gerar tokens e ativar a Smart TV.
+    Após a tentativa, a conta é registrada na rotação para nunca repetir a mesma conta consecutivamente.
     """
     clean_code = re.sub(r'[^A-Za-z0-9]', '', str(tv_code)).upper()
     if len(clean_code) < 5:
@@ -921,86 +921,43 @@ def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -
 
     email = account_data["email"].strip()
     password = account_data.get("password", "").strip()
-    push_sky_log(f"📡 [Sky+] Transmitindo token para TV: {clean_code} (Conta: {email})...")
+    push_sky_log(f"📡 [Sky+] Transmitindo autenticação para TV: {clean_code} (Conta: {email})...")
 
     # ═══════════════════════════════════════════════════════════════
     # ESTRATÉGIA 1: ATIVAÇÃO 100% VIA API REST PURA (testar_sky_api.py)
     # ═══════════════════════════════════════════════════════════════
     try:
         import testar_sky_api
-        sso_token_direto = (account_data.get("sso_token") or account_data.get("token") or account_data.get("jwt_token") or "").strip()
-        profile_token_direto = (account_data.get("profile_token") or "").strip()
-
         success_api, msg_api, acc_api = testar_sky_api.executar_ativacao_completa(
             tv_code=clean_code,
             usuario=email,
             senha=password,
-            sso_token_direto=sso_token_direto,
-            profile_token_direto=profile_token_direto,
-            allow_gateway=True
+            sso_token_direto="",
+            profile_token_direto="",
+            allow_gateway=False
         )
+
+        # Atualiza rotação para enviar a conta para o fim da fila (garante que não repete)
+        record_sky_account_used(email)
 
         if success_api:
             info_ret = account_data.get("info", {})
             if acc_api and isinstance(acc_api, dict):
                 info_ret.update({k: v for k, v in acc_api.items() if k not in ["raw_response"]})
-            save_activation_log(email, password or "SESSION_TOKEN", clean_code, True, msg_api)
-            record_account_activated(email, password or "SESSION_TOKEN", clean_code)
+            save_activation_log(email, password, clean_code, True, msg_api)
+            record_account_activated(email, password, clean_code)
             return True, msg_api, info_ret
         elif "404" in msg_api or "não encontrado" in msg_api.lower() or "expirado" in msg_api.lower():
-            # Código incorreto/expirado na Smart TV — não tenta navegador pois a TV realmente não tem este código
+            # Código da TV expirado/inválido: interrompe imediatamente sem gastar outras contas
             push_sky_log(f"❌ [Sky+ API] {msg_api}", level="error")
             return False, msg_api, None
         else:
-            push_sky_log(f"⚠️ [Sky+ API] {msg_api}. Tentando fallback Chromium...", level="warn")
+            push_sky_log(f"⚠️ [Sky+ API] Falha na conta {email}: {msg_api}", level="warn")
+            return False, msg_api, None
     except Exception as e_api:
-        push_sky_log(f"⚠️ [Sky+ API] Exceção na API REST ({e_api}). Tentando fallback Chromium...", level="warn")
-
-    # ═══════════════════════════════════════════════════════════════
-    # ESTRATÉGIA 2: PLAYWRIGHT CHROMIUM (FALLBACK NA NUVEM / LOCAL)
-    # ═══════════════════════════════════════════════════════════════
-    if not password:
-        push_sky_log(f"❌ Conta {email} não possui senha para o fallback Playwright.", level="error")
-        return False, f"A conta {email} não possui senha nem sessão de tokens ativa para ativação.", None
-
-    push_sky_log(f"🌐 [Playwright] Abrindo navegador Chromium na nuvem para autenticar {email}...")
-    try:
-        import automacao_playwright
-        res = automacao_playwright.ativar_tv_playwright(
-            email=email,
-            password=password,
-            tv_code=clean_code,
-            headless=True,
-            timeout_ms=16000,
-            usar_proxy=use_proxy
-        )
-
-        success = res.get("success", False)
-        msg = res.get("message", "TV verificada")
-
-        if success:
-            save_activation_log(email, password, clean_code, True, msg)
-            record_account_activated(email, password, clean_code)
-            new_sso = res.get("sso_token")
-            if new_sso and "ey" in str(new_sso):
-                try:
-                    save_sky_session(str(new_sso))
-                    with open(SSO_TOKEN_FILE, "w", encoding="utf-8") as sf:
-                        sf.write(str(new_sso).strip())
-                except Exception:
-                    pass
-            return True, msg, account_data.get("info")
-        else:
-            if "credenciais" in msg.lower() or "inválid" in msg.lower() or "incorret" in msg.lower() or "não encontrada" in msg.lower():
-                record_invalid_sky_account(email, msg)
-            save_activation_log(email, password, clean_code, False, msg)
-            return False, msg, None
-
-    except ImportError:
-        return False, "Playwright ainda está sendo instalado no servidor na nuvem. Execute SUBIR_PARA_GITHUB.bat para ativar o Chromium no Render.", None
-    except Exception as e:
-        save_activation_log(email, password, clean_code, False, f"Exceção: {e}")
-        return False, f"Erro durante a ativação Sky: {e}", None
+        record_sky_account_used(email)
+        push_sky_log(f"⚠️ [Sky+ API] Exceção na API REST ({e_api})", level="warn")
+        return False, f"Exceção na autenticação Sky: {e_api}", None
 
 # ═══════════════════════════════════════════════════════════════
 # SALVAMENTO E IMPORTAÇÃO DE CONTAS SKY PELO PAINEL
