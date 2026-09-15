@@ -640,6 +640,9 @@
       <button type="button" class="admin-nav-btn" id="tab-btn-passwords" onclick="switchTab('passwords')">
         🔑 CRIAR & GERENCIAR SENHAS
       </button>
+      <button type="button" class="admin-nav-btn" id="tab-btn-sky-tester" onclick="switchTab('sky-tester')">
+        🧪 TESTADOR SKY+ API
+      </button>
     </div>
 
     <!-- ============================================== -->
@@ -1118,6 +1121,48 @@
       </div>
     </div>
 
+    <!-- ============================================== -->
+    <!-- TAB 4: 🧪 TESTADOR & ATIVADOR SKY+ API REST    -->
+    <!-- ============================================== -->
+    <div class="admin-card" id="view-sky-tester" style="display: none;">
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0, 160, 227, 0.25); padding-bottom: 12px;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <div style="width: 38px; height: 38px; border-radius: 12px; background: linear-gradient(135deg, #00A0E3, #0066CC); display: flex; align-items: center; justify-content: center; font-size: 18px; box-shadow: 0 0 16px rgba(0,160,227,0.4);">🧪</div>
+          <div>
+            <div style="font-family: var(--font-display); font-size: 16px; font-weight: 800; color: #fff;">TESTADOR SKY+ SMART TV (API PURA REST)</div>
+            <div style="font-size: 11px; color: #99cbee;">Executa o motor de testar_sky_api.py diretamente pelo painel (Login HTTP + OAuth DTVGO + Injeção na TV)</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 12px;">
+        <div>
+          <div style="font-size: 11px; color: #99cbee; font-weight: 700; margin-bottom: 4px;">👤 LOGIN SKY (Telefone, Email ou CPF):</div>
+          <input type="text" id="admin-sky-test-login" class="admin-textarea" style="height: 42px; font-size: 13px;" placeholder="Ex: 62999638003 ou seu@email.com" value="62999638003">
+        </div>
+
+        <div>
+          <div style="font-size: 11px; color: #99cbee; font-weight: 700; margin-bottom: 4px;">🔒 SENHA SKY:</div>
+          <input type="password" id="admin-sky-test-pass" class="admin-textarea" style="height: 42px; font-size: 13px;" placeholder="Senha da conta Sky..." value="Wpx@1948">
+        </div>
+
+        <div>
+          <div style="font-size: 11px; color: #99cbee; font-weight: 700; margin-bottom: 4px;">📺 CÓDIGO SMART TV (6 DÍGITOS):</div>
+          <input type="text" id="admin-sky-test-code" class="admin-textarea" style="height: 42px; font-size: 16px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; text-align: center; color: #00ff66;" placeholder="Ex: 224731" maxlength="6">
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 10px;">
+        <button type="button" class="btn-unlock" id="btn-admin-run-sky-test" onclick="executeAdminSkyTest()" style="flex: 1; padding: 13px; font-size: 14px; font-weight: 900; background: linear-gradient(135deg, #00A0E3 0%, #0066CC 60%, #1AC1FF 100%); color: #fff; box-shadow: 0 0 25px rgba(0,160,227,0.4);">
+          ⚡ EXECUTAR AUTENTICAÇÃO & PAREAMENTO NA TV
+        </button>
+      </div>
+
+      <div id="admin-sky-test-result" style="display: none; background: rgba(0, 0, 0, 0.7); border: 1.5px solid rgba(0, 160, 227, 0.4); border-radius: 14px; padding: 16px; font-family: var(--font-mono); font-size: 12px; line-height: 1.6;">
+        <div id="admin-sky-test-result-body"></div>
+      </div>
+    </div>
+
   </div>
 
   <script>
@@ -1452,10 +1497,14 @@
       document.getElementById('tab-btn-vault').classList.toggle('active', tab === 'vault');
       document.getElementById('tab-btn-users').classList.toggle('active', tab === 'users');
       document.getElementById('tab-btn-passwords').classList.toggle('active', tab === 'passwords');
+      const skyTabBtn = document.getElementById('tab-btn-sky-tester');
+      if (skyTabBtn) skyTabBtn.classList.toggle('active', tab === 'sky-tester');
 
       document.getElementById('view-vault').style.display = (tab === 'vault') ? 'flex' : 'none';
       document.getElementById('view-users').style.display = (tab === 'users') ? 'flex' : 'none';
       document.getElementById('view-passwords').style.display = (tab === 'passwords') ? 'flex' : 'none';
+      const viewSky = document.getElementById('view-sky-tester');
+      if (viewSky) viewSky.style.display = (tab === 'sky-tester') ? 'flex' : 'none';
 
       if (tab === 'vault') {
         loadStats();
@@ -1464,6 +1513,64 @@
         loadOnlineUsers();
       } else if (tab === 'passwords') {
         loadPasswordsList();
+      }
+    }
+
+    async function executeAdminSkyTest() {
+      const login = document.getElementById('admin-sky-test-login').value.trim();
+      const pass = document.getElementById('admin-sky-test-pass').value.trim();
+      const code = document.getElementById('admin-sky-test-code').value.trim().toUpperCase();
+      const btn = document.getElementById('btn-admin-run-sky-test');
+      const resBox = document.getElementById('admin-sky-test-result');
+      const resBody = document.getElementById('admin-sky-test-result-body');
+
+      if (!code || code.length < 5) {
+        alert('Por favor, informe o código de 6 dígitos exibido na Smart TV.');
+        return;
+      }
+
+      btn.disabled = true;
+      btn.innerText = 'CONECTANDO API SKY... ⏳';
+      resBox.style.display = 'block';
+      resBody.innerHTML = `<span style="color:#00A0E3; font-weight:700;">[*] Iniciando autenticação HTTP REST na Sky (testar_sky_api.py)...</span>`;
+
+      try {
+        const res = await fetch(`${API_BASE}/api/sky/test-activate`, {
+          method: 'POST',
+          headers: getAdminHeaders(),
+          body: JSON.stringify({
+            login: login,
+            password: pass,
+            code: code
+          })
+        });
+
+        const data = await res.json();
+        if (data.success) {
+          btn.innerText = 'SUCESSO! TV ATIVADA 🎉';
+          resBody.innerHTML = `
+            <div style="color: #00ff66; font-weight: 800; font-size: 14px; margin-bottom: 6px;">🎉 SUCESSO ABSOLUTO! SMART TV LIBERADA!</div>
+            <div style="color: #fff;"><b>Status:</b> ${data.message}</div>
+            <div style="color: #fff;"><b>Conta / Titular:</b> ${data.account ? data.account.email : login}</div>
+            <div style="color: #ffd700;"><b>Plano:</b> ${data.account ? data.account.plan : 'Sky+ Pay-TV HD'}</div>
+            <div style="color: #00e5ff;"><b>Código TV:</b> ${code}</div>
+          `;
+          loadStats();
+        } else {
+          btn.innerText = 'FALHA NO TESTE ❌';
+          resBody.innerHTML = `
+            <div style="color: #ff4d5a; font-weight: 800; font-size: 13px;">❌ Falha na Ativação da Smart TV</div>
+            <div style="color: #cbd5e1; margin-top: 4px;">${data.message || 'Erro desconhecido'}</div>
+          `;
+        }
+      } catch(e) {
+        btn.innerText = 'ERRO DE CONEXÃO ❌';
+        resBody.innerHTML = `<div style="color: #ff4d5a;">Erro ao contatar o servidor: ${e.message}</div>`;
+      } finally {
+        btn.disabled = false;
+        setTimeout(() => {
+          if (btn) btn.innerText = '⚡ EXECUTAR AUTENTICAÇÃO & PAREAMENTO NA TV';
+        }, 4000);
       }
     }
 
