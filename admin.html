@@ -6,20 +6,22 @@
   <title>PAINEL DE CONTROLE ADMIN // STREAM ACTIVATOR</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700;800&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <style>
     :root {
-      --bg-base: #030712;
-      --panel-bg: rgba(15, 23, 42, 0.78);
-      --panel-border: rgba(255, 255, 255, 0.12);
-      --accent-color: #ffd700;
-      --accent-glow: rgba(255, 215, 0, 0.4);
+      --bg-base: #070a13;
+      --panel-bg: rgba(16, 23, 40, 0.78);
+      --panel-border: rgba(255, 255, 255, 0.09);
+      --panel-border-hover: rgba(56, 189, 248, 0.35);
+      --accent-color: #38bdf8;
+      --accent-gold: #f59e0b;
+      --accent-glow: rgba(56, 189, 248, 0.25);
       --text-main: #f8fafc;
       --text-dim: #94a3b8;
-      --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+      --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
-      --font-display: 'Chakra Petch', sans-serif;
+      --font-display: 'Outfit', -apple-system, sans-serif;
     }
 
     * {
@@ -58,12 +60,12 @@
       height: 500px;
       border-radius: 50%;
       filter: blur(140px);
-      opacity: 0.18;
+      opacity: 0.12;
       pointer-events: none;
       z-index: 0;
     }
-    .orb-1 { top: -100px; left: -100px; background: #ffd700; }
-    .orb-2 { bottom: -100px; right: -100px; background: #00ff66; }
+    .orb-1 { top: -100px; left: -100px; background: #0284c7; }
+    .orb-2 { bottom: -100px; right: -100px; background: #7c3aed; }
 
     .admin-container {
       width: 100%;
@@ -78,56 +80,58 @@
     /* Top Bar */
     .admin-header {
       background: var(--panel-bg);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
       border: 1px solid var(--panel-border);
-      border-radius: 18px;
-      padding: 16px 22px;
+      border-radius: 20px;
+      padding: 16px 24px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      box-shadow: 0 12px 36px rgba(0,0,0,0.5);
     }
 
     .brand-title {
       font-family: var(--font-display);
-      font-size: 18px;
+      font-size: 19px;
       font-weight: 800;
-      letter-spacing: 0.8px;
-      color: #ffd700;
+      letter-spacing: 0.5px;
+      color: #ffffff;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
     }
 
     .badge-admin {
-      background: linear-gradient(135deg, #ffd700, #ff8800);
-      color: #000;
-      font-size: 10px;
-      font-weight: 900;
-      padding: 2px 7px;
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      color: #fff;
+      font-size: 10.5px;
+      font-weight: 800;
+      padding: 3px 8px;
       border-radius: 6px;
+      letter-spacing: 0.5px;
     }
 
     .btn-icon {
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(255, 255, 255, 0.04);
       border: 1px solid var(--panel-border);
       border-radius: 10px;
       padding: 7px 14px;
-      color: #fff;
+      color: #f1f5f9;
       font-size: 12px;
       font-weight: 700;
+      font-family: var(--font-sans);
       cursor: pointer;
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      transition: all 0.2s;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
       text-decoration: none;
     }
     .btn-icon:hover {
-      background: rgba(255, 255, 255, 0.12);
-      border-color: rgba(255, 215, 0, 0.4);
+      background: rgba(255, 255, 255, 0.09);
+      border-color: rgba(255, 255, 255, 0.2);
       transform: translateY(-1px);
     }
 
@@ -135,8 +139,8 @@
     .admin-nav-tabs {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
-      background: rgba(0, 0, 0, 0.45);
+      gap: 6px;
+      background: rgba(10, 14, 26, 0.65);
       padding: 6px;
       border-radius: 16px;
       border: 1px solid var(--panel-border);
@@ -146,9 +150,9 @@
       background: transparent;
       border: none;
       color: var(--text-dim);
-      font-family: var(--font-display);
+      font-family: var(--font-sans);
       font-size: 13px;
-      font-weight: 800;
+      font-weight: 700;
       padding: 12px 10px;
       border-radius: 12px;
       cursor: pointer;
@@ -157,27 +161,27 @@
       justify-content: center;
       gap: 8px;
       transition: all 0.2s ease;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.3px;
     }
     .admin-nav-btn:hover {
       color: #fff;
-      background: rgba(255, 255, 255, 0.04);
+      background: rgba(255, 255, 255, 0.05);
     }
     .admin-nav-btn.active {
-      background: linear-gradient(135deg, rgba(255, 215, 0, 0.22) 0%, rgba(255, 136, 0, 0.15) 100%);
-      color: #ffd700;
-      border: 1px solid rgba(255, 215, 0, 0.45);
-      box-shadow: 0 0 16px rgba(255, 215, 0, 0.2);
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.16) 0%, rgba(99, 102, 241, 0.12) 100%);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.38);
+      box-shadow: 0 4px 18px rgba(56, 189, 248, 0.15);
     }
 
     /* Content Cards */
     .admin-card {
       background: var(--panel-bg);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
       border: 1px solid var(--panel-border);
-      border-radius: 20px;
-      padding: 22px;
+      border-radius: 22px;
+      padding: 24px;
       box-shadow: 0 15px 40px rgba(0,0,0,0.6);
       display: flex;
       flex-direction: column;
@@ -382,46 +386,48 @@
 
     /* 🔑 Password Manager Suite */
     .pwd-generator-card {
-      background: linear-gradient(145deg, rgba(17, 24, 39, 0.95) 0%, rgba(10, 15, 29, 0.98) 100%);
-      border: 1.5px solid rgba(255, 215, 0, 0.45);
-      border-radius: 20px;
-      padding: 22px;
+      background: linear-gradient(165deg, rgba(19, 27, 48, 0.88) 0%, rgba(10, 15, 28, 0.96) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      padding: 24px;
       display: flex;
       flex-direction: column;
-      gap: 16px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65), 0 0 35px rgba(255, 215, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      gap: 18px;
+      box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.85), 0 0 40px rgba(56, 189, 248, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.12);
       position: relative;
       overflow: hidden;
+      backdrop-filter: blur(25px);
     }
     .pwd-generator-card::before {
       content: '';
       position: absolute;
-      top: -40px;
-      right: -40px;
-      width: 160px;
-      height: 160px;
-      background: radial-gradient(circle, rgba(255, 215, 0, 0.15) 0%, transparent 70%);
+      top: -50px;
+      right: -50px;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, rgba(56, 189, 248, 0.12) 0%, transparent 70%);
       pointer-events: none;
     }
     .pwd-step-title {
-      font-size: 11.5px;
+      font-size: 12px;
       font-weight: 800;
-      color: #ffd700;
+      color: #e2e8f0;
       letter-spacing: 0.6px;
       text-transform: uppercase;
+      font-family: var(--font-display);
       display: flex;
       align-items: center;
       gap: 8px;
     }
     .pwd-step-num {
-      width: 22px;
-      height: 22px;
-      border-radius: 7px;
-      background: rgba(255, 215, 0, 0.15);
-      border: 1px solid rgba(255, 215, 0, 0.4);
-      color: #ffd700;
+      width: 24px;
+      height: 24px;
+      border-radius: 8px;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      color: #38bdf8;
       font-size: 11px;
-      font-weight: 900;
+      font-weight: 800;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -433,109 +439,117 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-radius: 12px;
-      padding: 12px 14px;
+      border-radius: 14px;
+      padding: 13px 15px;
       cursor: pointer;
       user-select: none;
       transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
       border: 1.5px solid rgba(255, 255, 255, 0.08);
-      background: rgba(0, 0, 0, 0.45);
+      background: rgba(255, 255, 255, 0.025);
     }
     .quick-app-label:hover {
       transform: translateY(-2px);
     }
     .quick-app-label.app-netflix {
-      background: rgba(229, 9, 20, 0.08);
-      border-color: rgba(229, 9, 20, 0.35);
+      background: rgba(229, 9, 20, 0.04);
+      border-color: rgba(229, 9, 20, 0.25);
     }
-    .quick-app-label.app-netflix:hover {
-      border-color: #ff3344;
-      box-shadow: 0 6px 20px rgba(229, 9, 20, 0.25);
+    .quick-app-label.app-netflix:hover, .quick-app-label.app-netflix:has(input:checked) {
+      border-color: rgba(229, 9, 20, 0.6);
+      background: rgba(229, 9, 20, 0.12);
+      box-shadow: 0 6px 22px rgba(229, 9, 20, 0.2);
     }
     .quick-app-label.app-hbo {
-      background: rgba(168, 85, 247, 0.08);
-      border-color: rgba(168, 85, 247, 0.35);
+      background: rgba(168, 85, 247, 0.04);
+      border-color: rgba(168, 85, 247, 0.25);
     }
-    .quick-app-label.app-hbo:hover {
-      border-color: #c084fc;
-      box-shadow: 0 6px 20px rgba(168, 85, 247, 0.25);
+    .quick-app-label.app-hbo:hover, .quick-app-label.app-hbo:has(input:checked) {
+      border-color: rgba(168, 85, 247, 0.6);
+      background: rgba(168, 85, 247, 0.12);
+      box-shadow: 0 6px 22px rgba(168, 85, 247, 0.2);
     }
     .quick-app-label.app-crunchy {
-      background: rgba(244, 117, 33, 0.08);
-      border-color: rgba(244, 117, 33, 0.35);
+      background: rgba(244, 117, 33, 0.04);
+      border-color: rgba(244, 117, 33, 0.25);
     }
-    .quick-app-label.app-crunchy:hover {
-      border-color: #f47521;
-      box-shadow: 0 6px 20px rgba(244, 117, 33, 0.25);
+    .quick-app-label.app-crunchy:hover, .quick-app-label.app-crunchy:has(input:checked) {
+      border-color: rgba(244, 117, 33, 0.6);
+      background: rgba(244, 117, 33, 0.12);
+      box-shadow: 0 6px 22px rgba(244, 117, 33, 0.2);
     }
     .quick-app-label.app-sky {
-      background: rgba(0, 160, 227, 0.08);
-      border-color: rgba(0, 160, 227, 0.35);
+      background: rgba(0, 160, 227, 0.04);
+      border-color: rgba(0, 160, 227, 0.25);
     }
-    .quick-app-label.app-sky:hover {
-      border-color: #00A0E3;
-      box-shadow: 0 6px 20px rgba(0, 160, 227, 0.25);
+    .quick-app-label.app-sky:hover, .quick-app-label.app-sky:has(input:checked) {
+      border-color: rgba(0, 160, 227, 0.6);
+      background: rgba(0, 160, 227, 0.12);
+      box-shadow: 0 6px 22px rgba(0, 160, 227, 0.2);
     }
     .quick-input-box {
-      background: rgba(0, 0, 0, 0.55);
+      background: rgba(7, 11, 20, 0.7);
       border: 1.5px solid rgba(255, 255, 255, 0.1);
-      border-radius: 12px;
-      padding: 12px 14px;
-      color: #fff;
-      font-size: 13px;
+      border-radius: 13px;
+      padding: 13px 15px;
+      color: #f8fafc;
+      font-size: 13.5px;
       width: 100%;
       outline: none;
       transition: all 0.2s ease;
       font-family: var(--font-sans);
     }
     .quick-input-box:focus {
-      border-color: #ffd700;
-      background: rgba(0, 0, 0, 0.75);
-      box-shadow: 0 0 16px rgba(255, 215, 0, 0.25);
+      border-color: #38bdf8;
+      background: rgba(9, 14, 26, 0.95);
+      box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
     }
     .quick-input-box.mono {
       font-family: var(--font-mono);
-      color: #00ff66;
+      color: #38bdf8;
       font-weight: 700;
+      letter-spacing: 0.5px;
     }
     .quick-input-box.mono:focus {
-      border-color: #00ff66;
-      box-shadow: 0 0 16px rgba(0, 255, 102, 0.25);
+      border-color: #38bdf8;
+      box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
     }
     .btn-create-main {
-      padding: 14px 20px;
-      font-size: 13.5px;
-      font-weight: 900;
+      padding: 15px 22px;
+      font-size: 14px;
+      font-weight: 800;
       font-family: var(--font-display);
       letter-spacing: 0.5px;
-      background: linear-gradient(135deg, #00ff66 0%, #00cc88 100%);
-      color: #030712;
+      background: linear-gradient(135deg, #059669 0%, #10b981 50%, #06b6d4 100%);
+      color: #ffffff;
       border: none;
       border-radius: 14px;
       cursor: pointer;
-      box-shadow: 0 0 25px rgba(0, 255, 102, 0.45);
+      box-shadow: 0 8px 25px -3px rgba(16, 185, 129, 0.4), 0 0 20px rgba(6, 182, 212, 0.2);
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 8px;
-      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .btn-create-main:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(0, 255, 102, 0.65);
+      box-shadow: 0 12px 35px -3px rgba(16, 185, 129, 0.55), 0 0 30px rgba(6, 182, 212, 0.3);
+      filter: brightness(1.06);
+    }
+    .btn-create-main:active {
+      transform: translateY(1px);
     }
     .btn-create-secondary {
-      padding: 14px 18px;
-      font-size: 13px;
-      font-weight: 800;
-      font-family: var(--font-display);
+      padding: 15px 20px;
+      font-size: 13.5px;
+      font-weight: 700;
+      font-family: var(--font-sans);
       letter-spacing: 0.3px;
-      background: linear-gradient(135deg, rgba(255, 215, 0, 0.16) 0%, rgba(255, 136, 0, 0.1) 100%);
-      color: #ffd700;
-      border: 1.5px solid rgba(255, 215, 0, 0.45);
+      background: rgba(255, 255, 255, 0.05);
+      color: #f1f5f9;
+      border: 1.5px solid rgba(255, 255, 255, 0.14);
       border-radius: 14px;
       cursor: pointer;
-      box-shadow: 0 0 16px rgba(255, 215, 0, 0.15);
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -543,10 +557,13 @@
       transition: all 0.2s ease;
     }
     .btn-create-secondary:hover {
-      background: rgba(255, 215, 0, 0.25);
-      border-color: #ffd700;
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.25);
       transform: translateY(-2px);
-      box-shadow: 0 6px 22px rgba(255, 215, 0, 0.3);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+    .btn-create-secondary:active {
+      transform: translateY(1px);
     }
     .pwd-checkboxes-grid {
       display: grid;
@@ -554,15 +571,15 @@
       gap: 8px;
     }
     .pwd-checkbox-pill {
-      background: rgba(0, 0, 0, 0.4);
-      border: 1.5px solid rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
-      padding: 9px 12px;
+      background: rgba(0, 0, 0, 0.35);
+      border: 1.5px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 10px 14px;
       display: flex;
       align-items: center;
       gap: 8px;
       cursor: pointer;
-      font-size: 11.5px;
+      font-size: 12px;
       font-weight: 700;
       color: #94a3b8;
       transition: all 0.2s ease;
@@ -573,33 +590,34 @@
       font-weight: 800;
     }
     .pwd-checkbox-pill:hover {
-      border-color: rgba(255, 215, 0, 0.4);
+      border-color: rgba(56, 189, 248, 0.35);
+      background: rgba(255, 255, 255, 0.04);
     }
 
     .pwd-list-container {
       display: flex;
       flex-direction: column;
-      gap: 8px;
-      max-height: 480px;
+      gap: 10px;
+      max-height: 520px;
       overflow-y: auto;
       padding-right: 4px;
     }
     .pwd-item-card {
-      background: rgba(15, 23, 42, 0.65);
+      background: rgba(16, 23, 40, 0.72);
       border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 14px;
-      padding: 14px 18px;
+      border-radius: 16px;
+      padding: 16px 18px;
       display: flex;
       flex-direction: column;
-      gap: 8px;
-      transition: all 0.2s ease;
-      backdrop-filter: blur(10px);
+      gap: 10px;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      backdrop-filter: blur(16px);
     }
     .pwd-item-card:hover {
-      border-color: rgba(255, 215, 0, 0.4);
-      background: rgba(20, 28, 48, 0.85);
-      transform: translateY(-1px);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      border-color: rgba(56, 189, 248, 0.35);
+      background: rgba(19, 28, 48, 0.88);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5), 0 0 20px rgba(56, 189, 248, 0.06);
     }
 
     /* 🗑️ Topic Accounts Card & Delete Button */
@@ -687,27 +705,30 @@
     }
 
     .duration-pill {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       color: #94a3b8;
-      padding: 6px 12px;
-      border-radius: 8px;
-      font-size: 11px;
+      padding: 7px 14px;
+      border-radius: 10px;
+      font-size: 11.5px;
       font-weight: 700;
+      font-family: var(--font-sans);
       cursor: pointer;
-      transition: all 0.2s ease;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
       user-select: none;
     }
     .duration-pill:hover {
-      background: rgba(0, 255, 102, 0.1);
-      border-color: rgba(0, 255, 102, 0.4);
-      color: #00ff66;
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.22);
+      color: #f8fafc;
+      transform: translateY(-1px);
     }
     .duration-pill.active {
-      background: rgba(0, 255, 102, 0.2);
-      border-color: #00ff66;
-      color: #00ff66;
-      box-shadow: 0 0 14px rgba(0, 255, 102, 0.35);
+      background: rgba(16, 185, 129, 0.16);
+      border-color: #10b981;
+      color: #34d399;
+      box-shadow: 0 0 16px rgba(16, 185, 129, 0.25);
+      font-weight: 800;
     }
   </style>
 </head>
@@ -1073,22 +1094,22 @@
       <!-- ⚡ GERADOR DE SENHA RÁPIDA (1 CLIQUE AO VIVO) -->
       <div class="pwd-generator-card">
         <!-- Top Header do Gerador -->
-        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; border-bottom: 1px solid rgba(255, 215, 0, 0.2); padding-bottom: 14px;">
-          <div style="display: flex; align-items: center; gap: 10px;">
-            <div style="width: 36px; height: 36px; border-radius: 10px; background: rgba(255, 215, 0, 0.15); border: 1.5px solid #ffd700; display: flex; align-items: center; justify-content: center; font-size: 18px; box-shadow: 0 0 15px rgba(255,215,0,0.3);">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 16px;">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="width: 38px; height: 38px; border-radius: 12px; background: rgba(56, 189, 248, 0.12); border: 1.5px solid rgba(56, 189, 248, 0.35); display: flex; align-items: center; justify-content: center; font-size: 18px; box-shadow: 0 0 16px rgba(56, 189, 248, 0.2);">
               ⚡
             </div>
             <div>
-              <div style="font-family: var(--font-display); font-size: 15px; font-weight: 900; color: #ffd700; letter-spacing: 0.6px; text-transform: uppercase;">
+              <div style="font-family: var(--font-display); font-size: 16px; font-weight: 800; color: #f8fafc; letter-spacing: 0.5px; text-transform: uppercase;">
                 GERADOR DE SENHA AO VIVO // 1 CLIQUE
               </div>
-              <div style="font-size: 11px; color: var(--text-dim); margin-top: 1px;">
+              <div style="font-size: 11.5px; color: var(--text-dim); margin-top: 2px;">
                 Crie acessos personalizados instantaneamente com sincronização automática na nuvem.
               </div>
             </div>
           </div>
-          <span style="font-size: 10.5px; background: rgba(0,255,102,0.12); color: #00ff66; border: 1px solid rgba(0,255,102,0.35); border-radius: 20px; padding: 4px 12px; font-weight: 800; display: inline-flex; align-items: center; gap: 6px;">
-            <span style="width: 6px; height: 6px; border-radius: 50%; background: #00ff66; box-shadow: 0 0 8px #00ff66;"></span> SALVA & ATIVA NO SERVIDOR NA HORA
+          <span style="font-size: 11px; background: rgba(16, 185, 129, 0.12); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 20px; padding: 4px 12px; font-weight: 800; display: inline-flex; align-items: center; gap: 6px;">
+            <span style="width: 6px; height: 6px; border-radius: 50%; background: #10b981; box-shadow: 0 0 8px #10b981;"></span> SALVA & ATIVA NO SERVIDOR NA HORA
           </span>
         </div>
 
@@ -1100,10 +1121,10 @@
               <span>QUAIS APPS O CLIENTE PODERÁ USAR?</span>
             </div>
             <div style="display: flex; gap: 6px;">
-              <button type="button" class="btn-icon" onclick="setQuickAppsAll(true)" style="padding: 3px 10px; font-size: 10.5px; color: #00ff66; border-color: rgba(0,255,102,0.4); background: rgba(0,255,102,0.08);">
+              <button type="button" class="btn-icon" onclick="setQuickAppsAll(true)" style="padding: 4px 12px; font-size: 11px; color: #34d399; border-color: rgba(16, 185, 129, 0.35); background: rgba(16, 185, 129, 0.08);">
                 ✓ Marcar Todos
               </button>
-              <button type="button" class="btn-icon" onclick="setQuickAppsAll(false)" style="padding: 3px 10px; font-size: 10.5px; color: var(--text-dim);">
+              <button type="button" class="btn-icon" onclick="setQuickAppsAll(false)" style="padding: 4px 12px; font-size: 11px; color: var(--text-dim);">
                 ✕ Desmarcar
               </button>
             </div>
@@ -1111,33 +1132,33 @@
 
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px;" id="quick-app-selector">
             <label class="quick-app-label app-netflix" title="Liberar acesso à Netflix">
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="font-size: 16px;">🔴</span>
-                <span style="color: #ff3344; font-weight: 800; font-size: 12px; letter-spacing: 0.3px;">NETFLIX</span>
+              <div style="display: flex; align-items: center; gap: 9px;">
+                <span style="width: 7px; height: 7px; border-radius: 50%; background: #E50914; box-shadow: 0 0 8px #E50914; display: inline-block;"></span>
+                <span style="color: #ff4d5a; font-weight: 800; font-size: 12.5px; letter-spacing: 0.4px;">NETFLIX</span>
               </div>
-              <input type="checkbox" id="quick-app-netflix" checked style="accent-color: #ff3344; width: 18px; height: 18px; cursor: pointer;">
+              <input type="checkbox" id="quick-app-netflix" checked style="accent-color: #E50914; width: 18px; height: 18px; cursor: pointer;">
             </label>
 
             <label class="quick-app-label app-hbo" title="Liberar acesso ao HBO Max">
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="font-size: 16px;">🟣</span>
-                <span style="color: #c084fc; font-weight: 800; font-size: 12px; letter-spacing: 0.3px;">HBO MAX</span>
+              <div style="display: flex; align-items: center; gap: 9px;">
+                <span style="width: 7px; height: 7px; border-radius: 50%; background: #A855F7; box-shadow: 0 0 8px #A855F7; display: inline-block;"></span>
+                <span style="color: #c084fc; font-weight: 800; font-size: 12.5px; letter-spacing: 0.4px;">HBO MAX</span>
               </div>
-              <input type="checkbox" id="quick-app-hbo" checked style="accent-color: #c084fc; width: 18px; height: 18px; cursor: pointer;">
+              <input type="checkbox" id="quick-app-hbo" checked style="accent-color: #A855F7; width: 18px; height: 18px; cursor: pointer;">
             </label>
 
             <label class="quick-app-label app-crunchy" title="Liberar acesso ao Crunchyroll">
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="font-size: 16px;">🟠</span>
-                <span style="color: #f47521; font-weight: 800; font-size: 12px; letter-spacing: 0.3px;">CRUNCHY</span>
+              <div style="display: flex; align-items: center; gap: 9px;">
+                <span style="width: 7px; height: 7px; border-radius: 50%; background: #F47521; box-shadow: 0 0 8px #F47521; display: inline-block;"></span>
+                <span style="color: #fb923c; font-weight: 800; font-size: 12.5px; letter-spacing: 0.4px;">CRUNCHYROLL</span>
               </div>
-              <input type="checkbox" id="quick-app-crunchyroll" style="accent-color: #f47521; width: 18px; height: 18px; cursor: pointer;">
+              <input type="checkbox" id="quick-app-crunchyroll" style="accent-color: #F47521; width: 18px; height: 18px; cursor: pointer;">
             </label>
 
             <label class="quick-app-label app-sky" title="Liberar acesso ao Sky+ TV">
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="font-size: 16px;">🔵</span>
-                <span style="color: #00A0E3; font-weight: 800; font-size: 12px; letter-spacing: 0.3px;">SKY+ TV</span>
+              <div style="display: flex; align-items: center; gap: 9px;">
+                <span style="width: 7px; height: 7px; border-radius: 50%; background: #00A0E3; box-shadow: 0 0 8px #00A0E3; display: inline-block;"></span>
+                <span style="color: #38bdf8; font-weight: 800; font-size: 12.5px; letter-spacing: 0.4px;">SKY+ TV</span>
               </div>
               <input type="checkbox" id="quick-app-sky" checked style="accent-color: #00A0E3; width: 18px; height: 18px; cursor: pointer;">
             </label>
@@ -1153,14 +1174,14 @@
 
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px;">
             <div style="display: flex; flex-direction: column; gap: 5px;">
-              <label for="quick-client-name" style="font-size: 10.5px; color: var(--text-dim); font-weight: 700; display: flex; align-items: center; gap: 5px;">
+              <label for="quick-client-name" style="font-size: 11px; color: var(--text-dim); font-weight: 700; display: flex; align-items: center; gap: 6px;">
                 <span>👤</span> NOME OU WHATSAPP DO CLIENTE:
               </label>
               <input type="text" id="quick-client-name" class="quick-input-box" placeholder="Ex: Carlos VIP ou (11) 99999-9999">
             </div>
 
             <div style="display: flex; flex-direction: column; gap: 5px;">
-              <label for="quick-custom-pwd" style="font-size: 10.5px; color: var(--text-dim); font-weight: 700; display: flex; align-items: center; gap: 5px;">
+              <label for="quick-custom-pwd" style="font-size: 11px; color: var(--text-dim); font-weight: 700; display: flex; align-items: center; gap: 6px;">
                 <span>🔑</span> SENHA PERSONALIZADA (OPCIONAL):
               </label>
               <input type="text" id="quick-custom-pwd" class="quick-input-box mono" placeholder="Deixe vazio para gerar automaticamente">
@@ -1169,13 +1190,13 @@
         </div>
 
         <!-- PASSO 3: Período de Validade -->
-        <div style="background: rgba(0,0,0,0.45); border: 1px solid var(--panel-border); border-radius: 14px; padding: 12px 14px; display: flex; flex-direction: column; gap: 10px;">
+        <div style="background: rgba(10, 15, 28, 0.6); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 14px 16px; display: flex; flex-direction: column; gap: 12px;">
           <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
             <div class="pwd-step-title">
               <span class="pwd-step-num">03</span>
               <span>DURAÇÃO / VALIDADE DO ACESSO</span>
             </div>
-            <div id="quick-duration-preview" style="font-size: 11px; color: #00ff66; font-weight: 800; font-family: var(--font-mono); background: rgba(0,255,102,0.1); border: 1px solid rgba(0,255,102,0.3); border-radius: 8px; padding: 3px 9px;">
+            <div id="quick-duration-preview" style="font-size: 11px; color: #34d399; font-weight: 800; font-family: var(--font-mono); background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 20px; padding: 4px 12px;">
               ● Válida por 30 dias (calculando...)
             </div>
           </div>
@@ -1187,16 +1208,16 @@
             <button type="button" class="duration-pill" data-days="200" onclick="setQuickDuration(200, this)">200 Dias</button>
             <button type="button" class="duration-pill" data-days="360" onclick="setQuickDuration(360, this)">360 Dias</button>
             <button type="button" class="duration-pill" data-days="0" onclick="setQuickDuration(0, this)">♾️ Permanente</button>
-            <div style="display: inline-flex; align-items: center; gap: 4px; background: rgba(0,0,0,0.6); border: 1.5px solid var(--panel-border); border-radius: 10px; padding: 5px 10px;">
-              <span style="font-size: 10.5px; color: var(--text-dim); font-weight: 700;">Outro:</span>
-              <input type="number" id="quick-custom-days" min="1" max="9999" placeholder="Ex: 45" oninput="setCustomQuickDuration(this.value)" style="width: 55px; background: transparent; border: none; color: #00ff66; font-family: var(--font-mono); font-size: 12px; font-weight: 800; outline: none;">
-              <span style="font-size: 10.5px; color: var(--text-dim);">dias</span>
+            <div style="display: inline-flex; align-items: center; gap: 5px; background: rgba(0, 0, 0, 0.5); border: 1.5px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 6px 12px;">
+              <span style="font-size: 11px; color: var(--text-dim); font-weight: 700;">Outro:</span>
+              <input type="number" id="quick-custom-days" min="1" max="9999" placeholder="Ex: 45" oninput="setCustomQuickDuration(this.value)" style="width: 55px; background: transparent; border: none; color: #34d399; font-family: var(--font-mono); font-size: 12px; font-weight: 800; outline: none;">
+              <span style="font-size: 11px; color: var(--text-dim);">dias</span>
             </div>
           </div>
         </div>
 
         <!-- Botões de Criação Instantânea -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 2px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 4px;">
           <button type="button" class="btn-create-main" id="btn-quick-generate-login" onclick="executeQuickGenerateAndLoginLive()">
             ⚡ CRIAR & JÁ ENTRAR NO SITE 🚀
           </button>
@@ -1206,22 +1227,22 @@
         </div>
 
         <!-- Banner com a Senha Recém-Gerada e Botão de Copiar WhatsApp -->
-        <div id="quick-generated-result" style="display: none; background: rgba(0, 255, 102, 0.08); border: 1.5px solid #00ff66; border-radius: 14px; padding: 14px; flex-direction: column; gap: 10px; box-shadow: 0 0 25px rgba(0,255,102,0.25);">
+        <div id="quick-generated-result" style="display: none; background: rgba(16, 185, 129, 0.08); border: 1.5px solid #10b981; border-radius: 16px; padding: 16px; flex-direction: column; gap: 12px; box-shadow: 0 10px 30px rgba(16, 185, 129, 0.18);">
           <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px;">
-            <span style="color: #00ff66; font-weight: 900; font-size: 12.5px; display: inline-flex; align-items: center; gap: 6px;">
-              🎉 SENHA ATIVADA COM SUCESSO NO SERVIDOR!
+            <span style="color: #34d399; font-weight: 800; font-size: 13px; display: inline-flex; align-items: center; gap: 8px;">
+              <span style="font-size: 16px;">🎉</span> SENHA ATIVADA COM SUCESSO NO SERVIDOR!
             </span>
-            <span style="font-size: 11px; color: #00ff66; font-weight: 800;" id="quick-res-status">✅ Pronta para uso imediato!</span>
+            <span style="font-size: 11.5px; color: #34d399; font-weight: 800;" id="quick-res-status">✅ Pronta para uso imediato!</span>
           </div>
           <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
-            <input type="text" id="quick-res-pwd" readonly onclick="this.select(); copyPasswordDirect(this.value, this);" title="Clique para copiar" style="flex: 1; min-width: 220px; background: rgba(0,0,0,0.85); border: 1.5px solid #00ff66; border-radius: 10px; padding: 10px 14px; color: #00ff66; font-family: var(--font-mono); font-weight: 900; font-size: 13.5px; cursor: pointer;">
-            <button type="button" class="btn-icon" onclick="loginWithPasswordDirect(document.getElementById('quick-res-pwd').value)" style="padding: 10px 14px; color: #000; background: #00ff66; border-color: #00ff66; font-size: 11.5px; font-weight: 900;">
+            <input type="text" id="quick-res-pwd" readonly onclick="this.select(); copyPasswordDirect(this.value, this);" title="Clique para copiar" style="flex: 1; min-width: 220px; background: rgba(8, 12, 22, 0.85); border: 1.5px solid rgba(16, 185, 129, 0.4); border-radius: 12px; padding: 11px 15px; color: #34d399; font-family: var(--font-mono); font-weight: 800; font-size: 13.5px; cursor: pointer;">
+            <button type="button" class="btn-icon" onclick="loginWithPasswordDirect(document.getElementById('quick-res-pwd').value)" style="padding: 11px 16px; color: #040812; background: #10b981; border-color: #10b981; font-size: 12px; font-weight: 800; border-radius: 12px;">
               🚀 Entrar no Site Agora
             </button>
-            <button type="button" class="btn-icon" onclick="copyPasswordDirect(document.getElementById('quick-res-pwd').value, this)" style="padding: 10px 12px; color: #00ff66; border-color: #00ff66; font-size: 11.5px;">
+            <button type="button" class="btn-icon" onclick="copyPasswordDirect(document.getElementById('quick-res-pwd').value, this)" style="padding: 11px 14px; color: #34d399; border-color: rgba(16, 185, 129, 0.35); font-size: 12px; border-radius: 12px;">
               📋 Copiar
             </button>
-            <button type="button" class="btn-icon" id="btn-quick-wa" onclick="copyQuickGeneratedWhatsApp(this)" style="padding: 10px 16px; background: rgba(37, 211, 102, 0.18); color: #25D366; border-color: #25D366; font-size: 12px; font-weight: 800;">
+            <button type="button" class="btn-icon" id="btn-quick-wa" onclick="copyQuickGeneratedWhatsApp(this)" style="padding: 11px 18px; background: rgba(37, 211, 102, 0.15); color: #25D366; border-color: rgba(37, 211, 102, 0.4); font-size: 12px; font-weight: 800; border-radius: 12px;">
               📲 WhatsApp
             </button>
           </div>
@@ -1229,40 +1250,40 @@
       </div>
 
       <!-- Opção Manual Avançada (Acordeão Moderno) -->
-      <details style="background: rgba(0,0,0,0.35); border: 1px solid var(--panel-border); border-radius: 14px; padding: 12px 16px; transition: all 0.2s;">
-        <summary style="cursor: pointer; color: var(--text-dim); font-size: 12px; font-weight: 700; user-select: none; display: flex; align-items: center; justify-content: space-between;">
-          <span>✏️ Configuração Manual Avançada (Definir Senha Específica ou Descrição Longa)</span>
-          <span style="font-size: 11px; opacity: 0.7;">▼ expandir</span>
+      <details style="background: rgba(10, 15, 28, 0.5); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 14px 18px; transition: all 0.2s;">
+        <summary style="cursor: pointer; color: var(--text-dim); font-size: 12.5px; font-weight: 700; user-select: none; display: flex; align-items: center; justify-content: space-between;">
+          <span style="display: flex; align-items: center; gap: 8px;">✏️ <b>Configuração Manual Avançada</b> (Definir Senha Específica ou Descrição)</span>
+          <span style="font-size: 11.5px; opacity: 0.7;">▼ expandir</span>
         </summary>
-        <div style="margin-top: 14px; display: flex; flex-direction: column; gap: 12px; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 14px;">
+        <div style="margin-top: 14px; display: flex; flex-direction: column; gap: 14px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 14px;">
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;">
             <div>
-              <div style="font-size: 10.5px; color: var(--text-dim); margin-bottom: 4px; font-weight: 700;">🔑 SENHA DE ACESSO:</div>
-              <input type="text" id="new-pwd-val" class="quick-input-box mono" placeholder="Ex: CYBER-VIP-NETFLIX-9921">
+              <div style="font-size: 11px; color: var(--text-dim); margin-bottom: 5px; font-weight: 700;">🔑 SENHA DE ACESSO:</div>
+              <input type="text" id="new-pwd-val" class="quick-input-box mono" placeholder="Ex: VIP-NETFLIX-9921">
             </div>
             <div>
-              <div style="font-size: 10.5px; color: var(--text-dim); margin-bottom: 4px; font-weight: 700;">👤 NOME DO PERFIL / CLIENTE:</div>
+              <div style="font-size: 11px; color: var(--text-dim); margin-bottom: 5px; font-weight: 700;">👤 NOME DO PERFIL / CLIENTE:</div>
               <input type="text" id="new-pwd-role" class="quick-input-box" placeholder="Ex: Cliente VIP Carlos">
             </div>
           </div>
 
           <div>
-            <div style="font-size: 10.5px; color: var(--text-dim); margin-bottom: 6px; font-weight: 700;">🎯 STREAMINGS AUTORIZADOS NESTA SENHA:</div>
+            <div style="font-size: 11px; color: var(--text-dim); margin-bottom: 7px; font-weight: 700;">🎯 STREAMINGS AUTORIZADOS NESTA SENHA:</div>
             <div class="pwd-checkboxes-grid">
               <label class="pwd-checkbox-pill">
-                <input type="checkbox" id="chk-netflix" checked style="accent-color: #ff3344; width: 16px; height: 16px;">
+                <input type="checkbox" id="chk-netflix" checked style="accent-color: #E50914; width: 17px; height: 17px;">
                 <span>🔴 NETFLIX</span>
               </label>
               <label class="pwd-checkbox-pill">
-                <input type="checkbox" id="chk-hbo" checked style="accent-color: #c084fc; width: 16px; height: 16px;">
+                <input type="checkbox" id="chk-hbo" checked style="accent-color: #A855F7; width: 17px; height: 17px;">
                 <span>🟣 HBO MAX</span>
               </label>
               <label class="pwd-checkbox-pill">
-                <input type="checkbox" id="chk-crunchyroll" checked style="accent-color: #f47521; width: 16px; height: 16px;">
+                <input type="checkbox" id="chk-crunchyroll" checked style="accent-color: #F47521; width: 17px; height: 17px;">
                 <span>🟠 CRUNCHYROLL</span>
               </label>
               <label class="pwd-checkbox-pill">
-                <input type="checkbox" id="chk-sky" checked style="accent-color: #00A0E3; width: 16px; height: 16px;">
+                <input type="checkbox" id="chk-sky" checked style="accent-color: #00A0E3; width: 17px; height: 17px;">
                 <span>🔵 SKY+ / SKY TV</span>
               </label>
             </div>
@@ -1270,16 +1291,16 @@
 
           <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 12px;">
             <div>
-              <div style="font-size: 10.5px; color: var(--text-dim); margin-bottom: 4px; font-weight: 700;">📝 DESCRIÇÃO / OBSERVAÇÃO (OPCIONAL):</div>
+              <div style="font-size: 11px; color: var(--text-dim); margin-bottom: 5px; font-weight: 700;">📝 DESCRIÇÃO / OBSERVAÇÃO (OPCIONAL):</div>
               <input type="text" id="new-pwd-desc" class="quick-input-box" placeholder="Ex: Pacote Duo até 30/12">
             </div>
             <div>
-              <div style="font-size: 10.5px; color: var(--text-dim); margin-bottom: 4px; font-weight: 700;">📅 VALIDADE EM DIAS (0 = VITALÍCIO):</div>
+              <div style="font-size: 11px; color: var(--text-dim); margin-bottom: 5px; font-weight: 700;">📅 VALIDADE EM DIAS (0 = VITALÍCIO):</div>
               <input type="number" id="new-pwd-days" value="30" min="0" placeholder="Ex: 30, 200, 360" class="quick-input-box mono">
             </div>
           </div>
 
-          <button type="button" class="btn-unlock" id="btn-save-pwd-main" onclick="savePassword()" style="padding: 12px; font-size: 13px;">
+          <button type="button" class="btn-create-main" id="btn-save-pwd-main" onclick="savePassword()" style="padding: 14px; font-size: 13.5px; width: 100%;">
             💾 SALVAR SENHA E ATIVAR PERMISSÕES ⚡
           </button>
           <div id="pwd-save-msg" style="font-size: 11px; text-align: center; font-weight: 700;"></div>
@@ -1287,40 +1308,40 @@
       </details>
 
       <!-- Banner de Alerta de Recuperação de Senhas (Auto-Detecta reinício do Render) -->
-      <div id="pwd-restore-banner" style="display: none; background: rgba(255, 215, 0, 0.12); border: 1.5px solid #ffd700; border-radius: 14px; padding: 12px 16px; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);">
-        <div style="display: flex; align-items: center; gap: 10px;">
-          <span style="font-size: 20px;">🛡️</span>
+      <div id="pwd-restore-banner" style="display: none; background: rgba(56, 189, 248, 0.1); border: 1.5px solid #38bdf8; border-radius: 16px; padding: 14px 18px; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; box-shadow: 0 0 25px rgba(56, 189, 248, 0.18);">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <span style="font-size: 22px;">🛡️</span>
           <div>
-            <div style="font-weight: 800; color: #ffd700; font-size: 12px;">BACKUP DE SEGURANÇA DETECTADO NO SEU NAVEGADOR!</div>
-            <div style="font-size: 11px; color: var(--text-dim);" id="pwd-restore-desc">O servidor possui menos senhas do que o seu cofre local (o Render pode ter reiniciado).</div>
+            <div style="font-weight: 800; color: #38bdf8; font-size: 12.5px;">BACKUP DE SEGURANÇA DETECTADO NO SEU NAVEGADOR!</div>
+            <div style="font-size: 11.5px; color: var(--text-dim);" id="pwd-restore-desc">O servidor possui menos senhas do que o seu cofre local (o Render pode ter reiniciado).</div>
           </div>
         </div>
-        <button type="button" class="btn-icon" onclick="restorePasswordsFromVault()" style="background: #ffd700; color: #000; border-color: #ffd700; font-weight: 900; font-size: 11.5px; padding: 6px 14px; cursor: pointer;">
+        <button type="button" class="btn-icon" onclick="restorePasswordsFromVault()" style="background: #38bdf8; color: #040812; border-color: #38bdf8; font-weight: 800; font-size: 12px; padding: 8px 16px; cursor: pointer;">
           ⚡ RESTAURAR TODAS AS SENHAS NO SERVIDOR
         </button>
       </div>
 
       <!-- Barra de Ferramentas das Senhas Cadastradas -->
-      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 14px;">
-        <div style="display: flex; align-items: center; gap: 8px;">
-          <div style="font-size: 12px; color: #f8fafc; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 16px;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <div style="font-size: 13px; color: #f8fafc; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; font-family: var(--font-display);">
             📋 Senhas Ativas no Sistema:
           </div>
-          <span id="pwd-count-badge" style="background: rgba(255, 215, 0, 0.2); color: #ffd700; border: 1px solid rgba(255, 215, 0, 0.5); border-radius: 12px; padding: 2px 9px; font-size: 11px; font-weight: 900; font-family: var(--font-mono);">0</span>
+          <span id="pwd-count-badge" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.4); border-radius: 12px; padding: 2px 10px; font-size: 11px; font-weight: 800; font-family: var(--font-mono);">0</span>
         </div>
 
         <div style="display: flex; gap: 6px; flex-wrap: wrap;">
-          <button type="button" class="btn-icon" onclick="downloadPasswordsBackup()" style="font-size: 11px; padding: 5px 12px; color: #00e5ff; border-color: rgba(0, 229, 255, 0.4); background: rgba(0, 229, 255, 0.08);" title="Baixar arquivo config_senhas.json com todas as senhas para salvar no seu computador">
+          <button type="button" class="btn-icon" onclick="downloadPasswordsBackup()" style="font-size: 11.5px; padding: 6px 12px; color: #38bdf8; border-color: rgba(56, 189, 248, 0.35); background: rgba(56, 189, 248, 0.08);" title="Baixar arquivo config_senhas.json com todas as senhas para salvar no seu computador">
             📥 Baixar Backup (.json)
           </button>
-          <label class="btn-icon" style="font-size: 11px; padding: 5px 12px; color: #00ff66; border-color: rgba(0, 255, 102, 0.4); background: rgba(0, 255, 102, 0.08); cursor: pointer;" title="Importar arquivo config_senhas.json do seu computador">
+          <label class="btn-icon" style="font-size: 11.5px; padding: 6px 12px; color: #34d399; border-color: rgba(16, 185, 129, 0.35); background: rgba(16, 185, 129, 0.08); cursor: pointer;" title="Importar arquivo config_senhas.json do seu computador">
             📤 Importar Backup
             <input type="file" id="file-import-passwords" accept=".json" onchange="importPasswordsBackupFile(event)" style="display: none;">
           </label>
-          <button type="button" class="btn-icon" onclick="syncVaultToServer()" style="font-size: 11px; padding: 5px 12px; color: #ffd700; border-color: rgba(255, 215, 0, 0.4); background: rgba(255, 215, 0, 0.08);" title="Sincronizar cofre do navegador com o servidor">
+          <button type="button" class="btn-icon" onclick="syncVaultToServer()" style="font-size: 11.5px; padding: 6px 12px; color: #fbbf24; border-color: rgba(245, 158, 11, 0.35); background: rgba(245, 158, 11, 0.08);" title="Sincronizar cofre do navegador com o servidor">
             🔄 Sincronizar Tudo
           </button>
-          <button type="button" class="btn-icon" onclick="loadPasswordsList()" style="font-size: 11px; padding: 5px 10px; color: #ffd700;" title="Atualizar a lista agora">
+          <button type="button" class="btn-icon" onclick="loadPasswordsList()" style="font-size: 11.5px; padding: 6px 12px; color: #e2e8f0;" title="Atualizar a lista agora">
             🔄 Atualizar Lista
           </button>
         </div>
@@ -2757,10 +2778,10 @@
         const allowed = Array.isArray(rawAllowed) ? rawAllowed.map(s => String(s).toLowerCase()) : ['netflix', 'hbo', 'crunchyroll', 'sky'];
         const desc = item.descricao || item.description || '';
 
-        const badgeNf = allowed.includes('netflix') ? '<span style="background:rgba(229,9,20,0.2); color:#ff3344; border:1px solid rgba(229,9,20,0.35); border-radius:6px; padding:1px 6px; font-size:10px; font-weight:800;">🔴 Netflix</span>' : '';
-        const badgeHbo = (allowed.includes('hbo') || allowed.includes('hbomax')) ? '<span style="background:rgba(168,85,247,0.2); color:#c084fc; border:1px solid rgba(168,85,247,0.35); border-radius:6px; padding:1px 6px; font-size:10px; font-weight:800;">🟣 HBO Max</span>' : '';
-        const badgeCr = (allowed.includes('crunchyroll') || allowed.includes('cr')) ? '<span style="background:rgba(244,117,33,0.2); color:#f47521; border:1px solid rgba(244,117,33,0.35); border-radius:6px; padding:1px 6px; font-size:10px; font-weight:800;">🟠 Crunchyroll</span>' : '';
-        const badgeSky = allowed.includes('sky') ? '<span style="background:rgba(0,160,227,0.2); color:#00A0E3; border:1px solid rgba(0,160,227,0.35); border-radius:6px; padding:1px 6px; font-size:10px; font-weight:800;">🔵 Sky+</span>' : '';
+        const badgeNf = allowed.includes('netflix') ? '<span style="background:rgba(229,9,20,0.15); color:#ff4d5a; border:1px solid rgba(229,9,20,0.35); border-radius:6px; padding:2px 8px; font-size:10px; font-weight:800; display:inline-flex; align-items:center; gap:4px;"><span style="width:5px;height:5px;border-radius:50%;background:#E50914;"></span>Netflix</span>' : '';
+        const badgeHbo = (allowed.includes('hbo') || allowed.includes('hbomax')) ? '<span style="background:rgba(168,85,247,0.15); color:#c084fc; border:1px solid rgba(168,85,247,0.35); border-radius:6px; padding:2px 8px; font-size:10px; font-weight:800; display:inline-flex; align-items:center; gap:4px;"><span style="width:5px;height:5px;border-radius:50%;background:#A855F7;"></span>HBO Max</span>' : '';
+        const badgeCr = (allowed.includes('crunchyroll') || allowed.includes('cr')) ? '<span style="background:rgba(244,117,33,0.15); color:#fb923c; border:1px solid rgba(244,117,33,0.35); border-radius:6px; padding:2px 8px; font-size:10px; font-weight:800; display:inline-flex; align-items:center; gap:4px;"><span style="width:5px;height:5px;border-radius:50%;background:#F47521;"></span>Crunchyroll</span>' : '';
+        const badgeSky = allowed.includes('sky') ? '<span style="background:rgba(0,160,227,0.15); color:#38bdf8; border:1px solid rgba(0,160,227,0.35); border-radius:6px; padding:2px 8px; font-size:10px; font-weight:800; display:inline-flex; align-items:center; gap:4px;"><span style="width:5px;height:5px;border-radius:50%;background:#00A0E3;"></span>Sky+</span>' : '';
 
         // 📅 Cálculo de Validade e Badge de Status
         const expTs = item.expira_em;
@@ -2768,53 +2789,58 @@
         if (expTs && typeof expTs === 'number' && expTs > 0) {
           const expDateStr = item.expira_em_formatado || new Date(expTs * 1000).toLocaleDateString('pt-BR');
           if (nowSec > expTs) {
-            validityBadge = `<span style="background: rgba(255, 51, 68, 0.2); color: #ff4d5a; border: 1px solid rgba(255, 51, 68, 0.4); border-radius: 6px; padding: 2px 7px; font-size: 10px; font-weight: 800;">🔴 EXPIRADO (${expDateStr})</span>`;
+            validityBadge = `<span style="background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.35); border-radius: 6px; padding: 2px 8px; font-size: 10px; font-weight: 800; display: inline-flex; align-items: center; gap: 4px;"><span style="width: 5px; height: 5px; border-radius: 50%; background: #ef4444;"></span>Expirado (${expDateStr})</span>`;
           } else {
             const daysLeft = Math.max(0, Math.ceil((expTs - nowSec) / 86400));
             if (daysLeft <= 3) {
-              validityBadge = `<span style="background: rgba(255, 170, 0, 0.2); color: #ffaa00; border: 1px solid rgba(255, 170, 0, 0.4); border-radius: 6px; padding: 2px 7px; font-size: 10px; font-weight: 800;">🟡 Vence em ${daysLeft}d (${expDateStr})</span>`;
+              validityBadge = `<span style="background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.35); border-radius: 6px; padding: 2px 8px; font-size: 10px; font-weight: 800; display: inline-flex; align-items: center; gap: 4px;"><span style="width: 5px; height: 5px; border-radius: 50%; background: #f59e0b;"></span>Vence em ${daysLeft}d (${expDateStr})</span>`;
             } else {
-              validityBadge = `<span style="background: rgba(0, 255, 102, 0.15); color: #00ff66; border: 1px solid rgba(0, 255, 102, 0.35); border-radius: 6px; padding: 2px 7px; font-size: 10px; font-weight: 800;">🟢 Válido: ${daysLeft} dias (${expDateStr})</span>`;
+              validityBadge = `<span style="background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.35); border-radius: 6px; padding: 2px 8px; font-size: 10px; font-weight: 800; display: inline-flex; align-items: center; gap: 4px;"><span style="width: 5px; height: 5px; border-radius: 50%; background: #10b981;"></span>Válido: ${daysLeft} dias (${expDateStr})</span>`;
             }
           }
         } else {
-          validityBadge = `<span style="background: rgba(0, 229, 255, 0.12); color: #00e5ff; border: 1px solid rgba(0, 229, 255, 0.3); border-radius: 6px; padding: 2px 7px; font-size: 10px; font-weight: 800;">♾️ Permanente</span>`;
+          validityBadge = `<span style="background: rgba(56, 189, 248, 0.12); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 6px; padding: 2px 8px; font-size: 10px; font-weight: 800; display: inline-flex; align-items: center; gap: 4px;"><span style="width: 5px; height: 5px; border-radius: 50%; background: #38bdf8;"></span>♾️ Permanente</span>`;
         }
 
         return `
           <div class="pwd-item-card" id="pwd-card-${index}">
             <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap;">
-              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                <span style="font-size: 14px; font-weight: 800; color: #ffd700; display: inline-flex; align-items: center; gap: 6px;">
-                  <span>👤</span> ${escapeHtml(role)} ${desc ? `<span style="font-size: 11px; color: var(--text-dim); font-weight: 500;">(${escapeHtml(desc)})</span>` : ''}
-                </span>
-                ${validityBadge}
+              <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                <div style="width: 32px; height: 32px; border-radius: 10px; background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.25); color: #38bdf8; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 800;">
+                  👤
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 2px;">
+                  <span style="font-size: 14.5px; font-weight: 800; color: #f8fafc; font-family: var(--font-display); letter-spacing: 0.3px;">
+                    ${escapeHtml(role)} ${desc ? `<span style="font-size: 11.5px; color: var(--text-dim); font-weight: 500;">(${escapeHtml(desc)})</span>` : ''}
+                  </span>
+                  <div>${validityBadge}</div>
+                </div>
               </div>
               <div style="display: flex; gap: 5px; flex-wrap: wrap; align-items: center;">
-                <button type="button" class="btn-icon" onclick="loginWithPasswordDirect('${escapeHtml(pwd)}')" style="font-size: 10.5px; padding: 4px 10px; color: #00ff66; border-color: rgba(0,255,102,0.4); background: rgba(0,255,102,0.12); font-weight: 800;" title="Fazer login imediato no site com esta senha">
+                <button type="button" class="btn-icon" onclick="loginWithPasswordDirect('${escapeHtml(pwd)}')" style="font-size: 11px; padding: 5px 12px; color: #34d399; border-color: rgba(16,185,129,0.35); background: rgba(16,185,129,0.12); font-weight: 800;" title="Fazer login imediato no site com esta senha">
                   🚀 Entrar
                 </button>
-                <button type="button" class="btn-icon" id="btn-renew-${index}" onclick="renewPasswordByIndex(${index}, 30)" style="font-size: 10.5px; padding: 4px 9px; color: #ffd700; border-color: rgba(255,215,0,0.4); background: rgba(255,215,0,0.1); font-weight: 700;" title="Adicionar +30 dias de validade a esta senha com 1 clique">
+                <button type="button" class="btn-icon" id="btn-renew-${index}" onclick="renewPasswordByIndex(${index}, 30)" style="font-size: 11px; padding: 5px 10px; color: #fbbf24; border-color: rgba(245,158,11,0.35); background: rgba(245,158,11,0.1); font-weight: 700;" title="Adicionar +30 dias de validade a esta senha com 1 clique">
                   ➕ +30d
                 </button>
-                <button type="button" class="btn-icon" id="btn-edit-pwd-${index}" onclick="editPasswordByIndex(${index})" style="font-size: 10.5px; padding: 4px 9px; color: #00e5ff; border-color: rgba(0,229,255,0.35); background: rgba(0,229,255,0.08);" title="Editar permissões, dias ou nome desta senha">
+                <button type="button" class="btn-icon" id="btn-edit-pwd-${index}" onclick="editPasswordByIndex(${index})" style="font-size: 11px; padding: 5px 10px; color: #38bdf8; border-color: rgba(56,189,248,0.35); background: rgba(56,189,248,0.08); font-weight: 700;" title="Editar permissões, dias ou nome desta senha">
                   ✏️ Editar
                 </button>
-                <button type="button" class="btn-icon" id="btn-wa-${index}" onclick="copyPasswordWhatsAppByIndex(${index}, this)" style="font-size: 10.5px; padding: 4px 10px; color: #25D366; border-color: rgba(37,211,102,0.4); background: rgba(37,211,102,0.1); font-weight: 800;" title="Copiar texto formatado para enviar no WhatsApp com validade">
+                <button type="button" class="btn-icon" id="btn-wa-${index}" onclick="copyPasswordWhatsAppByIndex(${index}, this)" style="font-size: 11px; padding: 5px 12px; color: #25D366; border-color: rgba(37,211,102,0.35); background: rgba(37,211,102,0.1); font-weight: 800;" title="Copiar texto formatado para enviar no WhatsApp com validade">
                   📲 WhatsApp
                 </button>
-                <button type="button" class="btn-icon" id="btn-copy-${index}" onclick="copyPasswordByIndex(${index}, this)" style="font-size: 10.5px; padding: 4px 9px; color: #00ff66; border-color: rgba(0,255,102,0.3);">
+                <button type="button" class="btn-icon" id="btn-copy-${index}" onclick="copyPasswordByIndex(${index}, this)" style="font-size: 11px; padding: 5px 10px; color: #f1f5f9; border-color: rgba(255,255,255,0.15); background: rgba(255,255,255,0.05);">
                   📋 Copiar
                 </button>
-                <button type="button" class="btn-icon" id="btn-del-pwd-${index}" onclick="deletePasswordByIndex(${index})" style="font-size: 10.5px; padding: 4px 9px; color: #ff4d5a; border-color: rgba(255,77,90,0.35); background: rgba(255,77,90,0.06);">
+                <button type="button" class="btn-icon" id="btn-del-pwd-${index}" onclick="deletePasswordByIndex(${index})" style="font-size: 11px; padding: 5px 10px; color: #f87171; border-color: rgba(239,68,68,0.3); background: rgba(239,68,68,0.08);">
                   🗑️ Excluir
                 </button>
               </div>
             </div>
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; background: rgba(0,0,0,0.45); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 8px 12px; margin-top: 4px; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; background: rgba(6,10,18,0.6); border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 8px 12px; margin-top: 4px; flex-wrap: wrap;">
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 240px;">
-                <span style="font-size: 14px; opacity: 0.8;">🔑</span>
-                <input type="text" readonly value="${escapeHtml(pwd)}" onclick="this.select(); copyPasswordDirect(this.value, this);" title="Clique para selecionar e copiar automaticamente" style="background: rgba(0,0,0,0.6); border: 1px solid rgba(0, 229, 255, 0.35); border-radius: 8px; padding: 6px 12px; color: #00e5ff; font-family: var(--font-mono); font-size: 13px; font-weight: 800; width: 100%; cursor: pointer;" />
+                <span style="font-size: 13px; opacity: 0.7;">🔑</span>
+                <input type="text" readonly value="${escapeHtml(pwd)}" onclick="this.select(); copyPasswordDirect(this.value, this);" title="Clique para selecionar e copiar automaticamente" style="background: rgba(12,18,32,0.7); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 8px; padding: 6px 12px; color: #38bdf8; font-family: var(--font-mono); font-size: 13px; font-weight: 700; width: 100%; cursor: pointer;" />
               </div>
               <div style="display: flex; gap: 6px; flex-wrap: wrap;">${badgeNf} ${badgeHbo} ${badgeCr} ${badgeSky}</div>
             </div>
