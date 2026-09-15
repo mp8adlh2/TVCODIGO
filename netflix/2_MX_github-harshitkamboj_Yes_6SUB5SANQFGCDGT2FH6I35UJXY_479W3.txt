@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: MX
+Plan: Standard With Ads
+Next Billing: September 30, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: $139
+Extra Member: Yes
+Profiles (5): Wendy Medina Lopez, Mariah, Sebas, Mel, Pepe
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1822599014	nap	BgjvvevcAxJJkvhH5k6rleFXi06PQCSC5sTz89FvTPJjhaaczENGhDAgas4rob4_p2FGOPRW8n7bT2Hcj4t924nxpqbSdZEvtt0-ZywgbDQvgRgGIg4KDMVeY_io2T4qcypl6g..
+.netflix.com	TRUE	/	TRUE	1819575013	NetflixId	ct%3DBgjHlOvcAxK7A2e5leWpa1s-ptS_AHkRROtNRspA-wjKmaHNF2JUP5YO5psYp6Shok5FlpwQF1frVK1dQQ8vNenWqq_BKLwtiQFLSVvub0PFURX-SrhvjmNSq-pob3-PB9N9hG58ee5Tzv77nGOBmlURJdh1B5vIg9I8htOx--WRyTMwRsi833u8XU28AaBC_SzQILsW6lFfjktzDDKDoRESK0ONxZ2MWorlMxQcJCAAZ_LydEmRPlUJTzkyT3AUPOEwPyNxaZykI6YBu5PMOThJgtkj2cbwnwkj2W_1mqSv84WrNg9yvMRNm2BudJ2HW5ge210YGTuOLz_kb306sh0pGvgH_dxO9wbWOeD4Kjj54E60QRdrfTiaz6In_8-NG_ULBdK4m4pOYDifaTn4qdAK9et5ftfx3mOC0ItTfJcH_c3C8WmEOK5U1OYfzYhIBHdXi7z1j1dBAe16hfyLY_lv1p_a7RKEmuolKo59sj2fbvwWpCks_NexhJ8X7xX223nhy0emqtnB_QfwqqHjCaXyE9FUSIrV1Mj2VAjLGMT6leSwxn1EIuyTXKmiOXQli4_Ceeyhbr8MO0g6WZrnFo9TxDtsGAYiDgoMEqfayJyY3CcJ3BIs%26ch%3DAQEAEAABABS2KQ6-tFa6SosjF5i7eUvKvaS-_bh8dRk.%26v%3D3%26pg%3D6SUB5SANQFGCDGT2FH6I35UJXY
+.netflix.com	TRUE	/	FALSE	1795815014	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1795815014	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1819144018	nfvdid	BQFmAAEBEEIWYOu9rGB7oApb7DNAA45gcwAaZRIuuBmXThxR9vBu4byAHzRybqj6xkOljDMmj4oqYo7mL25vQ6m-PYgUTWE8XwwagkDo-zFxtORO7Iak55XKPVFAvuAxFMlvtIyTD4fwJGwYrFrxE4yxVMmj7rwQ
+.netflix.com	TRUE	/	FALSE	1819143468	OptanonAlertBoxClosed	2026-08-24T21:37:48.026Z
+.netflix.com	TRUE	/	FALSE	1819575015	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Aug+29+2026+15%3A30%3A15+GMT-0600+(hora+est%C3%A1ndar+central)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=c87dab68-3655-4022-8c3e-9fb430a94d9d&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&AwaitingReconsent=false&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&lastConsentTs=1787607468&intType=3&crTime=1787607468435&geolocation=MX%3BPUE
+.netflix.com	TRUE	/	FALSE	1795815014	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	TRUE	/	TRUE	1819575013	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSrtWgCdii9vfaeTxLYIyk_KZGc_9f80nU.%26dt%3D1788039012026

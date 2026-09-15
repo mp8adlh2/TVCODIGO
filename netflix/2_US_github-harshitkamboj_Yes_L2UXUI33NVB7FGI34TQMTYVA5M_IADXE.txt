@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: US
+Plan: Standard
+Next Billing: October 11, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: $19.99
+Extra Member: Yes
+Profiles (5): Jessica, Sylas, Kenzi, Dustin, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1805643276	nfvdid	BQFmAAEBEDvI4DKpZM40RTiki_nl21VgnXS-8HajRpzgSl6f6OYMexndvFtYH8RpeHjjwa8hMXiQuRIcle2J9NfdOnzfqv8cZcJ8tSzr5Hk7QGS5PVyB4fFmAA59wWAgmNhas71mxOiDQz-OtqOu5ft1fWHvkkcI
+.netflix.com	TRUE	/	TRUE	1806118316	NetflixId	ct%3DBgjHlOvcAxLNA6aKzCnYq4lLj7M2zdhIeDhmQVdagc9nC2YsIU7v9fdzGiaurK_oeCQlRrpG4nYNOZ2_ahQ7UXEUF3HOgLxLNb2oRvM9Yur1qRXRNk8Z1aBx_6-bsGiorNTPIVT6OK7M9A6AAdMTvJHeDOVInN4uGUfk4Q19i8BKaw9H39FdbmjneEga04oacDrkXZK8D7Al1MTMmex9btha3vFDu4b2qXe80T4R_avj2kBU9AKSmJ4EK9PsoGoUF8GPsEgxvX10p5Tq94OtKT9FKOHve7h4aTV_XjWGt5WqvPTG9_D6BA8F5uvs5NkwzWeo416D5HjTlB1hZEmy5-Ug-vkypi-D2yTXrMyZ5o7WmUt3-ZKlTV161pGU7QA7LKbWKtco7w6bPm3zrUEcHLQ0n6HWDYK5pVUBQiq9Q6sbqByrqvB3SjDPYAAIDO72LHceSC9eBatxGK8OAH_73mPk6QfnKfCz19qYpCvmM7nWvE-M0H4OxcyqOYrsfdSyLvs9LllYD15yXfOiyPDn2F5nQerIkBQH-X0_fEKfi4wR4EXV2hiskbBnI4p163KM4OZGitsGiOglZH3xX7AW414AbvDaRyHgO4OcuwltpmyIdGrFD3FEGAYiDgoMLpY_D7Cf729dLRkR%26ch%3DAQEAEAABABRg6rcMA02g3D4RKFo2XXpMX8nVMff79wE.%26v%3D3%26pg%3DL2UXUI33NVB7FGI34TQMTYVA5M
+.netflix.com	TRUE	/	FALSE	1806118319	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Mar+26+2026+23%3A31%3A59+GMT-0400+(Eastern+Daylight+Time)&version=202602.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=dd799c3e-3db5-4d2f-99b9-58e14ff2f6ff&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1774107218318&AwaitingReconsent=false&prevHadToken=0
+.netflix.com	TRUE	/	FALSE	1790616446	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1790616446	netflix-sans-normal-3-loaded	true

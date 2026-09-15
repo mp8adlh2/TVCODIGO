@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Standard With Ads
+Next Billing: October 8, 2026
+Payment: DC
+Quality: HD
+Streams: 2
+Price: R$ 20,90
+Extra Member: Yes
+Profiles (4): Dilson, Daiana, Luiz, Infantil
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1800669379	OptanonAlertBoxClosed	2026-01-23T01:56:19.441Z
+.netflix.com	TRUE	/	TRUE	1800669383	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKIA3yMN2Q3Z9lkcriiLDXg2pk8bhyfye4zQYeJRQncDElc98OS-viqkqgcI8NenrVygVaFTA_zgQTzNznd6aiK2ZRVU8kJJYhODQn6xdSoBlArsDPbtvyuBybGR7awEdbVF7MdcIAQkedhRGRrN5ZaHy95YGVKjjKPWKmaGBuA-04NjnnxJzMMsQScURg0-8A7yccrlfCXANbPuT-jaWFmCSzGJlik_aX_XuMvGcawCevLvaG7494jHCWE-XokoPws0x7N5NUD-oOdoO23xUhFoy8xp-Aq3RiaoTsSzVHKToA0wCYQ_2NHFrOy5AOyeZ9oOZL7qvZt-piQd0nfnkadMxEDf0CrxDaUwOU4IalPRgeDpJkKhspXPqgMYlXtefEmMgLrhnXbvShoKoihNqfV_1E7zBsyF4uY2DfW3wEginULGkqF2_3f1MGvA7wgzMsA6R-Ft4v5pvdg9mh-TfGsWoP8yG9CxlBZto0qrWdd68yo9d0ar5OGqHwd65pv2m1RInpTpcBbX3plGAYiDgoM9FCGAejM3YS2GGDj%26pg%3DERGIVMY5ARGPVL2TLWFUQJIBTM%26ch%3DAQEAEAABABSdqdgkRask8gjYeNh8_Z8ZviC4kQWV20w.
+.netflix.com	TRUE	/	FALSE	1800669383	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Jan+22+2026+21%3A56%3A23+GMT-0400+(Hor%C3%A1rio+Padr%C3%A3o+do+Amazonas)&version=202512.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=caa53597-73b8-4baf-a5aa-f4450d1fe298&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=3&crTime=1769133381986&geolocation=BR%3BMT&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1800669383	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSoI_3lIf_V4DiynodcXoZkQwAB7oAeIoA.%26dt%3D1769133287094
+.netflix.com	TRUE	/	FALSE	1800669383	nfvdid	BQFmAAEBEFTW0OWTKNjOPHUaNMsHG5xga-rV9t1KbXDg93ALow-kKmcudebF5UWsHF8-IriqJTz2SI77fOGlugxm_nly1ZYuHp-IHJ0UKWYagKFuQAD8VnMUFxqFsa2IX6a_puI91MMuh8ji0RDBq7rzB7NpKArG

@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: CA
+Plan: Standard With Ads
+Next Billing: October 11, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: $7.99
+Extra Member: Yes
+Profiles (4): Babitha, Ashvin, Abilash, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1811469680	OptanonAlertBoxClosed	2026-05-28T02:01:20.023Z
+.netflix.com	TRUE	/	FALSE	1814330709	nfvdid	BQFmAAEBEBI96FQboMPoB7Y2YjT0ow5g9pgeD30P1rRnlLrnM3TeVyL4wyChG1yM-7Gkd1liffAyHHxonZ1nO8m3hqXKVCra9zs_gUDqJHLwIh7wk-T6By5UVyWSkeR7QKW1qyYgLs44axYhrxWATlUliVGKFPGo
+.netflix.com	TRUE	/	TRUE	1815837486	NetflixId	ct%3DBgjHlOvcAxKOBJayDQbvUghEkk_TBYvigSQ2HWJQGDKoA2HVw_ItE1rXzC-OKm2FDMTclz7U0YiIiN-_tEU8aCSKHHQN53a9cNFEyO6Vw7zxCjnCNsZFCAfRkkvzu9YMhtX8FwrloO3Ki0x6dD4mrx8_LJ4g9R11_01Yqbh9gILqXNmleMo5tB4_ZCNZu4c-s7M0zXMYeCNdXzZUCZa2b9cHqIZ5jVwvOjRF7dzSf-UiV5x7MpRrW8xNXqyGd4tnr0NR_p2irbJckQPCW7gv_9AwrLXB_d3JzzG9rnZ8d3FtfuaItYDiJu5dM4M52GWWHmVKlarbvdmdYi9dGmFc4nGdXXiBYKYTEzJEKLvUeizaK2iKyj9einFcT65FJWNrn7zoAUcrsuGRJE9JL5ty7sEpxUQ1PhemdqYQqlFtfTS7YIARjlupnbKXj4zPb7cvh72F-hzzUq16nGib0YHyP9Lffhcr3kwSCU_wAwsZsmUVMg83UHNY5W-ksvnAyYlAPLnBWFBUFMeKk9aZD1x5RdK0AofewpvFdAOm2FMMWdqTG5nxsPCFHbnTNfIK_msN-7IhjLc6Dzvi_4KDqTJDydtnEK-EdvSLq3X-N4O5JrDWGM9DSCv4_6uA-5_fOEzD4mus1tLmSoPvzHVeXXS6a6kjNt_agdZt0CeFkjTHqDW34necwBaFKzdp24IJdZy3Y9nwVUCI2kcYBiIOCgxOxm0A70cwHxh2CDw.%26ch%3DAQEAEAABABS2FfKpjZThHrAlApEauR7AoH2XIED_99U.%26v%3D3%26pg%3DILEZAQUPWVDC7FZFOMNCC4AVFM
+.netflix.com	TRUE	/	FALSE	1815837488	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Jul+17+2026+11%3A18%3A08+GMT-0400+(Eastern+Daylight+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=499c9e23-ae32-47d9-8ca7-620f90de3a73&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&crTime=1779933680248&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0&fclco=&intType=3&geolocation=CA%3BQC
+.netflix.com	TRUE	/	TRUE	1815837486	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRS8M4A_gqVtVhvBsBTz4rPrLfkXkZGn5U.%26dt%3D1784301487237
+.netflix.com	TRUE	/	FALSE	1792077487	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792077487	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792077487	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

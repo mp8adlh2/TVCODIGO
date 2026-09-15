@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: IT
+Plan: Standard With Ads
+Next Billing: October 12, 2026
+Payment: GIFT
+Quality: HD
+Streams: 2
+Price: 6,99 €
+Extra Member: Yes
+Profiles (4): serena78dg, Nancy, Denis, Bambini
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1794924300	OptanonAlertBoxClosed	2025-11-17T14:05:00.887Z
+.netflix.com	TRUE	/	FALSE	1794924359	nfvdid	BQFmAAEBEJ8KRuSKffRptOkFlkElRvFgnVufjQ_oBl5a7y_08jyB-4g4r6x_eAtW5aR8dWNY_HwVxKWvpfcKbod_3axtBskrYqjJMxjYsaNIc7jr8k0-eoAYHcucAT7ELjyNMP7MuqN_GkmmrjqmkB-TPdi_T3qS
+.netflix.com	TRUE	/	TRUE	1807891017	NetflixId	ct%3DBgjHlOvcAxLjA5Ck2z_ApDpsxTXymPb2wb2b4Y7Iuk_DniPYT5brt06iFwOIA81ohaemZRI-pjz1hNensTvgkLdlx6e6no2cEEF66j-mBMbPRTMPenZgWXdy6-IabeRCOfzgRagnq5Uud9HLv1HDZPLfXomenq2rTa1WaDPqDA7-dyAlmMJd5z43GclqlnrVlpsv8yMFrCgQi3k-0KMhgPhF1Jkyw86pfdTtFTVff3-mNnRVQ_agcDcfhBZ9o2r2QKEjCemaUN7gODAGfi5RiFpyTWd_p9fsnUmmr2tNFwZbkUTnI5uWZwPRXQUDCwL6i2hWnLD_9c9XBP6FxQUVaILMpt2OVr82S7M7aj9_Bnf9g9_mU3Xmm9Rgv1HLqWP-zQP24XgE75vcHRHadQJTiJLo3aV8mQ9KsSBmEBFRomZZ4iEeYssVZXv6uSN4zhcb1A32TmkPxSMa2ABSKDWhrY48ciRrX63G2NXVhV4_H6TXH5qzz3XViD7wdlkKZCtXuOO1xcnUgEjpLWByMaT6zkRwuQ_XkKn6nuZLVxMcLOXZHtL4jyoRqbGF2ugUEyB3EYWEm8sHoyBPHGg3Ewvi5SmRTT7ZuDB7AZFJrUAnEGnLFBRAI1sh3sdaC09YwGUznCMEkXcy0SLvom-gbBgGIg4KDMS8sKP03oRagUHdOA..%26ch%3DAQEAEAABABRwGY8tlhZ9CxH8dh1SfPWFKra_e2sPim4.%26v%3D3%26pg%3D4D5I5FK56RHTPE2J24SMBLVIJI
+.netflix.com	TRUE	/	FALSE	1807891019	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Apr+16+2026+17%3A56%3A59+GMT%2B0200+(Ora+legale+dell%E2%80%99Europa+centrale)&version=202602.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=3d4f98b0-621d-41a7-a637-814b01125c7a&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&AwaitingReconsent=false&intType=3&geolocation=IT%3B52&prevHadToken=0
+.netflix.com	TRUE	/	TRUE	1807891017	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSmTWN25zs6mAsGIi9PvFs9t-uc-LEZ3Ws.%26dt%3D1776355016251
+.netflix.com	TRUE	/	FALSE	1790616446	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1790616446	netflix-sans-normal-3-loaded	true
