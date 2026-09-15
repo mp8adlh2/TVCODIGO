@@ -947,10 +947,11 @@ def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -
             save_activation_log(email, password, clean_code, True, msg_api)
             record_account_activated(email, password, clean_code)
             return True, msg_api, info_ret
-        elif "404" in msg_api or "não encontrado" in msg_api.lower() or "expirado" in msg_api.lower():
+        elif any(k in msg_api.lower() for k in ["404", "não encontrado", "expirad", "user_code_expired", "dtv-oidc-013", "invalid_request"]):
             # Código da TV expirado/inválido: interrompe imediatamente sem gastar outras contas
-            push_sky_log(f"❌ [Sky+ API] {msg_api}", level="error")
-            return False, msg_api, None
+            friendly_msg = f"O código '{clean_code}' expirou ou não foi encontrado na Smart TV. Gere um novo código na TV."
+            push_sky_log(f"❌ [Sky+ API] {friendly_msg}", level="error")
+            return False, friendly_msg, None
         else:
             push_sky_log(f"⚠️ [Sky+ API] Falha na conta {email}: {msg_api}", level="warn")
             return False, msg_api, None

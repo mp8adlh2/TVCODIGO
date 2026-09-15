@@ -2881,8 +2881,8 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 else:
                     kernel_logger.push_kernel_log(f"⚠️ [Sky+] Tentativa {_attempt+1} falhou: {msg}", level="warn")
                     sky_service.record_sky_account_used(acc_email_clean)
-                    # Se for código de TV inexistente ou expirado na Smart TV (404), interrompe
-                    if "404" in msg.lower() or "não encontrado" in msg.lower() or "expirado" in msg.lower():
+                    # Se for código de TV inexistente ou expirado na Smart TV, interrompe imediatamente
+                    if any(k in msg.lower() for k in ["404", "não encontrado", "expirad", "user_code_expired", "dtv-oidc", "invalid_request"]):
                         CURRENT_SKY_READY = find_sky_valid_account()
                         return self.send_json_response({
                             "success": False,
