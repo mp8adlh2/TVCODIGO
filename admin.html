@@ -2751,10 +2751,13 @@
       });
 
       if (missingInServer.length > 0) {
+        console.log(`[Cofre] Detectadas ${missingInServer.length} senhas salvas no navegador ausentes no servidor. Sincronizando automaticamente...`);
         if (desc) {
-          desc.innerHTML = `Detectamos <b>${missingInServer.length} senha(s) salva(s) no seu navegador</b> que não estão no servidor (o Render pode ter reiniciado ou atualizado). Clique ao lado para restaurar tudo no servidor!`;
+          desc.innerHTML = `🛡️ <b>${missingInServer.length} senha(s) do seu cofre foram restauradas e reativadas com sucesso</b> após a atualização do servidor!`;
         }
         banner.style.display = 'flex';
+        // Auto-sincroniza silenciosamente para NUNCA perder nenhuma senha
+        restorePasswordsFromVault();
       } else {
         banner.style.display = 'none';
       }

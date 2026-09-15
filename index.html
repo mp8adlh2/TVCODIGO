@@ -560,48 +560,49 @@
 
     .payload-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
+      grid-template-columns: 1fr 1fr;
       gap: 12px;
       margin-bottom: 16px;
       width: 100%;
     }
 
     .payload-box {
-      background: rgba(0, 0, 0, 0.52);
+      background: linear-gradient(160deg, rgba(16, 24, 42, 0.72) 0%, rgba(6, 10, 20, 0.9) 100%);
       border: 1px solid var(--panel-border-glass);
       border-radius: 18px;
-      padding: 12px 14px;
+      padding: 14px 16px;
       transition: all 0.25s ease;
-      box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.4);
+      box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.5), 0 4px 16px rgba(0, 0, 0, 0.25);
       min-width: 0;
       overflow: hidden;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      min-height: 76px;
     }
 
     .payload-box:hover {
       border-color: var(--panel-border);
-      background: rgba(0, 0, 0, 0.68);
-      box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.5), 0 0 16px var(--accent-glow-subtle);
+      background: linear-gradient(160deg, rgba(22, 32, 56, 0.82) 0%, rgba(8, 14, 28, 0.95) 100%);
+      box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.5), 0 0 20px var(--accent-glow-subtle);
     }
 
     .payload-box-label {
-      font-size: 9.5px;
+      font-size: 10px;
       color: var(--text-dim);
       text-transform: uppercase;
       font-weight: 800;
       letter-spacing: 0.6px;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 6px;
       flex-shrink: 0;
     }
 
     .payload-box-val {
       font-family: var(--font-body);
-      font-size: 12px;
+      font-size: 12.5px;
       font-weight: 700;
       color: #fff;
       min-width: 0;
@@ -618,19 +619,28 @@
       white-space: nowrap;
       min-width: 0;
       flex: 1;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.2px;
     }
 
     #active-account-plan {
       white-space: normal !important;
       word-break: break-word !important;
-      display: -webkit-box !important;
-      -webkit-line-clamp: 2 !important;
-      -webkit-box-orient: vertical !important;
-      overflow: hidden !important;
-      text-overflow: ellipsis !important;
-      max-height: 2.8em;
-      line-height: 1.35;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 6px !important;
+      padding: 4px 10px;
+      background: rgba(255, 215, 0, 0.09);
+      border: 1px solid rgba(255, 215, 0, 0.3);
+      border-radius: 12px;
+      color: #ffd700 !important;
+      font-weight: 800;
       font-size: 11.5px;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      box-shadow: 0 0 12px rgba(255, 215, 0, 0.15);
     }
 
     .badge-country {
@@ -777,8 +787,8 @@
 
     .pin-slot {
       aspect-ratio: 1 / 1.15;
-      background: rgba(0, 0, 0, 0.65);
-      border: 1.8px solid var(--panel-border-glass);
+      background: linear-gradient(180deg, rgba(20, 28, 48, 0.75) 0%, rgba(5, 9, 18, 0.95) 100%);
+      border: 1.8px solid rgba(255, 255, 255, 0.12);
       border-radius: 16px;
       display: flex;
       align-items: center;
@@ -790,33 +800,40 @@
       text-shadow: 0 0 14px var(--accent-glow);
       transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
       cursor: text;
-      box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.5);
+      box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.7), 0 4px 14px rgba(0, 0, 0, 0.3);
+    }
+
+    .pin-slot:hover {
+      border-color: rgba(255, 255, 255, 0.25);
+      background: linear-gradient(180deg, rgba(26, 36, 62, 0.8) 0%, rgba(8, 14, 26, 0.98) 100%);
+    }
+
+    .pin-slot.active {
+      border-color: var(--accent-color);
+      box-shadow: 0 0 24px var(--accent-glow), inset 0 0 10px var(--accent-glow-subtle);
+      animation: pulseSlotBorder 1.2s infinite alternate;
+      background: linear-gradient(180deg, rgba(30, 42, 72, 0.85) 0%, rgba(10, 16, 32, 0.98) 100%);
     }
 
     .pin-slot.filled {
       border-color: var(--accent-color);
-      background: var(--accent-glow-subtle);
-      box-shadow: 0 0 20px var(--accent-glow), inset 0 0 10px var(--accent-glow-subtle);
-      transform: scale(1.06);
+      background: var(--accent-gradient);
+      box-shadow: 0 6px 25px var(--accent-glow), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+      transform: scale(1.05);
       color: #ffffff;
+      text-shadow: 0 0 12px rgba(255, 255, 255, 0.85);
       animation: popSlot 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
     @keyframes popSlot {
       0% { transform: scale(0.85); }
       70% { transform: scale(1.12); }
-      100% { transform: scale(1.06); }
-    }
-
-    .pin-slot.active {
-      border-color: #ffffff;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
-      animation: pulseSlotBorder 1.2s infinite alternate;
+      100% { transform: scale(1.05); }
     }
 
     @keyframes pulseSlotBorder {
-      from { border-color: var(--accent-color); box-shadow: 0 0 12px var(--accent-glow); }
-      to { border-color: #ffffff; box-shadow: 0 0 22px rgba(255, 255, 255, 0.8); }
+      from { border-color: var(--accent-color); box-shadow: 0 0 14px var(--accent-glow); }
+      to { border-color: #ffffff; box-shadow: 0 0 24px var(--accent-glow); }
     }
 
     .pin-hint {
@@ -2013,7 +2030,7 @@
     <div class="cyber-card">
       <div class="pin-section">
         <div class="pin-label-row">
-          <div class="pin-title" id="hud-section-title">📺 SMART TV // NETFLIX PAIRING</div>
+          <div class="pin-title" id="hud-section-title">📺 CONECTAR SMART TV // NETFLIX</div>
           <div class="pin-counter" id="digit-counter">0 / 8 DÍGITOS</div>
         </div>
 
@@ -2031,7 +2048,7 @@
           </div>
         </div>
 
-        <div class="pin-hint">💡 TOQUE NOS CÍRCULOS, DIGITE NO TECLADO OU COLE O CÓDIGO</div>
+        <div class="pin-hint">💡 Digite o código de 8 dígitos da sua TV no teclado ou clique em Colar</div>
 
         <div class="pin-actions">
           <button type="button" class="btn-icon" onclick="event.stopPropagation(); pasteCode();">
@@ -2067,7 +2084,7 @@
       </div>
 
       <button class="btn-transmit" id="btn-transmit" onclick="event.stopPropagation(); transmitActivation();">
-        <span id="transmit-btn-text">EXECUTAR INJEÇÃO DE TOKEN ⚡</span>
+        <span id="transmit-btn-text">CONECTAR SMART TV AGORA ⚡</span>
       </button>
 
       <div class="alert-banner alert-error" id="alert-error" style="margin-top: 14px;">
@@ -2103,8 +2120,8 @@
         </div>
       </div>
 
-      <div class="login-title">CYBER DECK ⚡</div>
-      <div class="login-sub">Central de Ativação Smart TV // Acesso VIP</div>
+      <div class="login-title">CENTRAL DE ATIVAÇÕES ⚡</div>
+      <div class="login-sub">Conexão Smart TV // Acesso VIP</div>
 
       <div class="login-status-badge">
         <span class="login-pulse-dot"></span>
@@ -2127,7 +2144,7 @@
       </div>
 
       <button class="btn-unlock" onclick="executeLogin()">
-        <span>ACESSAR TERMINAL DE ATIVAÇÕES</span>
+        <span>ACESSAR CENTRAL DE ATIVAÇÕES</span>
         <span style="font-size: 18px; filter: drop-shadow(0 0 6px rgba(255,255,255,0.8));">🚀</span>
       </button>
 
@@ -2135,16 +2152,16 @@
 
       <div class="login-badges-row">
         <div class="login-mini-badge">
-          <span>🔒 CRIPTO</span>
-          <span style="color: #00E5FF; font-size: 8.5px;">TLS 256-BIT</span>
+          <span>🔒 CRIPTOGRAFIA</span>
+          <span style="color: #00E5FF; font-size: 8.5px;">256-BIT REAL</span>
         </div>
         <div class="login-mini-badge">
           <span>⚡ VELOCIDADE</span>
-          <span style="color: #00ff66; font-size: 8.5px;">&lt; 3 SEG</span>
+          <span style="color: #00ff66; font-size: 8.5px;">INSTANTÂNEA</span>
         </div>
         <div class="login-mini-badge">
           <span>🛡️ BLINDAGEM</span>
-          <span style="color: #c084fc; font-size: 8.5px;">ANTI-QUEDA</span>
+          <span style="color: #c084fc; font-size: 8.5px;">ATIVA 24/7</span>
         </div>
       </div>
     </div>
@@ -2153,7 +2170,7 @@
   <div id="success-modal" onclick="event.stopPropagation();">
     <div class="success-card">
       <div class="success-badge-icon">✅</div>
-      <div class="success-title">ACCESS_GRANTED</div>
+      <div class="success-title">ACESSO AUTORIZADO</div>
       <div class="success-subtitle">DISPOSITIVO SMART TV VINCULADO COM SUCESSO!</div>
 
       <div class="success-data-box">
@@ -2544,7 +2561,7 @@
         btn.classList.remove('loading');
       }
       if (btnText) {
-        btnText.innerText = 'EXECUTAR INJEÇÃO DE TOKEN ⚡';
+        btnText.innerText = 'CONECTAR SMART TV AGORA ⚡';
       }
     }
 
@@ -2866,10 +2883,10 @@
 
       const tvSectionTitle = document.getElementById('hud-section-title');
       if (tvSectionTitle) {
-        if (isNf) tvSectionTitle.innerText = '📺 SMART TV // NETFLIX PAIRING';
-        else if (isCr) tvSectionTitle.innerText = '📺 SMART TV // CRUNCHYROLL PAIRING';
-        else if (isSky) tvSectionTitle.innerText = '📺 SMART TV // SKY+ PAIRING';
-        else tvSectionTitle.innerText = '📺 SMART TV // HBO MAX PAIRING';
+        if (isNf) tvSectionTitle.innerText = '📺 CONECTAR SMART TV // NETFLIX';
+        else if (isCr) tvSectionTitle.innerText = '📺 CONECTAR SMART TV // CRUNCHYROLL';
+        else if (isSky) tvSectionTitle.innerText = '📺 CONECTAR SMART TV // SKY+ TV';
+        else tvSectionTitle.innerText = '📺 CONECTAR SMART TV // HBO MAX';
       }
 
       const maxLen = isNf ? 8 : 6;
