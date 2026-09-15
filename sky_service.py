@@ -902,19 +902,19 @@ def select_sky_account_by_identifier(identifier: str) -> Optional[dict]:
     return None
 
 # ═══════════════════════════════════════════════════════════════
-# ATIVAÇÃO OFICIAL DE SMART TV (dtv-oidc.tbxapis.com)
+# ═══════════════════════════════════════════════════════════════
+# ATIVAÇÃO OFICIAL DE SMART TV (testar_sky_api.py / TBX API)
 # ═══════════════════════════════════════════════════════════════
 def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -> Tuple[bool, str, Optional[dict]]:
     """
     Executa a ativação oficial da Smart TV Sky.
-    Suporta 3 estratégias em cascata:
-    1. Modo Nuvem Instantâneo (300ms, sem navegador, funciona 24/7 com PC desligado via API oficial TBX).
-    2. Modo API Móvel Direta (sem navegador).
-    3. Modo Navegador Headless (Playwright Chromium com resolução de captcha quando disponível).
+    Suporta 2 estratégias em cascata:
+    1. Modo API REST Pura (testar_sky_api.py - 100% HTTP, sem navegador, ativação ultrarrápida em nuvem via TBX API).
+    2. Modo Navegador Headless (Playwright Chromium de fallback com resolução de captcha).
     """
     clean_code = re.sub(r'[^A-Za-z0-9]', '', str(tv_code)).upper()
-    if len(clean_code) < 6:
-        return False, "O código de ativação da TV deve ter 6 dígitos/caracteres.", None
+    if len(clean_code) < 5:
+        return False, "O código de ativação da TV deve ter no mínimo 5 dígitos/caracteres.", None
 
     if not account_data or "email" not in account_data:
         return False, "Nenhuma conta Sky selecionada ou pronta no estoque.", None
@@ -923,130 +923,44 @@ def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -
     password = account_data.get("password", "").strip()
     push_sky_log(f"📡 [Sky+] Transmitindo token para TV: {clean_code} (Conta: {email})...")
 
-    # Inicia SEMPRE com conexão direta rápida (sem proxy para velocidade máxima).
-    # O proxy residencial é ativado apenas se houver bloqueio real de IP.
-    use_proxy = False
+    # ═══════════════════════════════════════════════════════════════
+    # ESTRATÉGIA 1: ATIVAÇÃO 100% VIA API REST PURA (testar_sky_api.py)
+    # ═══════════════════════════════════════════════════════════════
+    try:
+        import testar_sky_api
+        sso_token_direto = (account_data.get("sso_token") or account_data.get("token") or account_data.get("jwt_token") or "").strip()
+        profile_token_direto = (account_data.get("profile_token") or "").strip()
+
+        success_api, msg_api, acc_api = testar_sky_api.executar_ativacao_completa(
+            tv_code=clean_code,
+            usuario=email,
+            senha=password,
+            sso_token_direto=sso_token_direto,
+            profile_token_direto=profile_token_direto,
+            allow_gateway=True
+        )
+
+        if success_api:
+            info_ret = account_data.get("info", {})
+            if acc_api and isinstance(acc_api, dict):
+                info_ret.update({k: v for k, v in acc_api.items() if k not in ["raw_response"]})
+            save_activation_log(email, password or "SESSION_TOKEN", clean_code, True, msg_api)
+            record_account_activated(email, password or "SESSION_TOKEN", clean_code)
+            return True, msg_api, info_ret
+        elif "404" in msg_api or "não encontrado" in msg_api.lower() or "expirado" in msg_api.lower():
+            # Código incorreto/expirado na Smart TV — não tenta navegador pois a TV realmente não tem este código
+            push_sky_log(f"❌ [Sky+ API] {msg_api}", level="error")
+            return False, msg_api, None
+        else:
+            push_sky_log(f"⚠️ [Sky+ API] {msg_api}. Tentando fallback Chromium...", level="warn")
+    except Exception as e_api:
+        push_sky_log(f"⚠️ [Sky+ API] Exceção na API REST ({e_api}). Tentando fallback Chromium...", level="warn")
 
     # ═══════════════════════════════════════════════════════════════
-    # ESTRATÉGIA 1: ATIVAÇÃO DIRETA EM NUVEM (SEM PC / SEM NAVEGADOR)
-    # ═══════════════════════════════════════════════════════════════
-    sso_token = (account_data.get("sso_token") or account_data.get("token") or account_data.get("jwt_token") or "").strip()
-    profile_token = (account_data.get("profile_token") or "").strip()
-
-    # Se a conta não tiver tokens próprios, verifica se existe sessão salva em hits/browser_sessions/ para ESTA CONTA
-    if not sso_token:
-        sanitized_em = re.sub(r'[^a-zA-Z0-9_\-]', '_', email.lower())
-        b_sess_path = os.path.join(HITS_DIR, "browser_sessions", f"{sanitized_em}.json")
-        if os.path.exists(b_sess_path):
-            try:
-                with open(b_sess_path, "r", encoding="utf-8", errors="ignore") as bf:
-                    b_data = json.load(bf)
-                for origin in b_data.get("origins", []):
-                    if "skymais.com.br" in origin.get("origin", ""):
-                        for item in origin.get("localStorage", []):
-                            k = item.get("name", "")
-                            v = item.get("value", "")
-                            if k == "sessionToken" and v and v.startswith("ey"):
-                                sso_token = v
-                            elif (k == "profileToken" or k == "profile" or k == "profiles") and v and not profile_token:
-                                if v.startswith("ey"):
-                                    profile_token = v
-                                elif "profileToken" in v:
-                                    try:
-                                        p_obj = json.loads(v)
-                                        if isinstance(p_obj, list) and p_obj and "profileToken" in p_obj[0]:
-                                            profile_token = p_obj[0]["profileToken"]
-                                        elif isinstance(p_obj, dict) and "profileToken" in p_obj:
-                                            profile_token = p_obj["profileToken"]
-                                    except Exception:
-                                        pass
-            except Exception:
-                pass
-
-    # 🛡️ PROTEÇÃO TOTAL CONTRA VAZAMENTO DE CONTA:
-    # O token SSO DEVE pertencer EXCLUSIVAMENTE a este e-mail e estar válido/não-expirado.
-    # NUNCA utilizar sso_token.txt de outra conta!
-    if sso_token:
-        payload = parse_sso_jwt(sso_token)
-        token_em = (payload.get("email") or payload.get("sub") or "").strip().lower()
-        if token_em.startswith("sky_"):
-            token_em = token_em[4:]
-        token_exp = payload.get("exp", 0)
-        
-        # Validação de titularidade: o email do token deve coincidir com a conta que está sendo ativada
-        if token_em and (email.lower() not in token_em and token_em not in email.lower()):
-            push_sky_log(f"⚠️ [Sky+] Token SSO em cache ({token_em}) não pertence a {email}. Descartando token...", level="warn")
-            sso_token = ""
-            profile_token = ""
-        elif token_exp and token_exp < time.time():
-            push_sky_log(f"⚠️ [Sky+] Token SSO de {email} expirou ({token_exp} < {int(time.time())}). Renovando autenticação...", level="warn")
-            sso_token = ""
-            profile_token = ""
-
-    if sso_token and "ey" in sso_token:
-        push_sky_log(f"⚡ [Nuvem] Ativando instantaneamente via Token SSO oficial de {email} na API TBX (300ms)...")
-        try:
-            import ativador_tv
-            activator = ativador_tv.SkyTVActivator(use_proxy=use_proxy)
-            res_tbx = activator.activate_tv(token=sso_token, tv_code=clean_code, profile_token=profile_token)
-            if res_tbx.get("success"):
-                msg = res_tbx.get("message") or f"Smart TV Sky ativada com sucesso em 300ms via Nuvem ({email})!"
-                push_sky_log(f"✅ [Nuvem] {msg}", level="success")
-                save_activation_log(email, password or "SESSION_TOKEN", clean_code, True, msg)
-                record_account_activated(email, password or "SESSION_TOKEN", clean_code)
-                return True, msg, account_data.get("info")
-            elif res_tbx.get("not_found"):
-                push_sky_log(f"❌ [Nuvem] Código {clean_code} não encontrado ou expirado na Smart TV (HTTP 404).", level="error")
-                return False, f"Código {clean_code} não encontrado ou expirado na Smart TV (HTTP 404).", None
-            else:
-                push_sky_log(f"⚠️ [Nuvem] Sessão em nuvem de {email} expirou no servidor Sky. Acionando navegador...", level="warn")
-        except Exception as e:
-            push_sky_log(f"⚠️ [Nuvem] Tentativa direta falhou ({e}), acionando navegador...", level="warn")
-
-    # ═══════════════════════════════════════════════════════════════
-    # ESTRATÉGIA 2: ATIVAÇÃO VIA API MOBILE / ANDROID (SEM NAVEGADOR)
-    # ═══════════════════════════════════════════════════════════════
-    if email and password:
-        push_sky_log(f"📱 [API Mobile] Tentando pareamento direto via API Sky...")
-        try:
-            payload_android = None
-            payload_web = None
-            if os.path.exists(PAYLOAD_ANDROID_FILE):
-                try:
-                    with open(PAYLOAD_ANDROID_FILE, "r", encoding="utf-8", errors="ignore") as pf:
-                        payload_android = pf.read().strip()
-                except Exception:
-                    pass
-            if os.path.exists(PAYLOAD_WEB_FILE):
-                try:
-                    with open(PAYLOAD_WEB_FILE, "r", encoding="utf-8", errors="ignore") as pwf:
-                        payload_web = pwf.read().strip()
-                except Exception:
-                    pass
-
-            import ativador_tv
-            res_api = ativador_tv.activate_with_account(
-                email=email,
-                password=password,
-                tv_code=clean_code,
-                use_proxy=use_proxy,
-                payload_android=payload_android,
-                payload_web=payload_web
-            )
-            if res_api:
-                msg = "Smart TV Sky ativada com sucesso via API Sky!"
-                push_sky_log(f"✅ [API Mobile] {msg}", level="success")
-                save_activation_log(email, password, clean_code, True, msg)
-                record_account_activated(email, password, clean_code)
-                return True, msg, account_data.get("info")
-        except Exception as e:
-            push_sky_log(f"⚠️ [API Mobile] Tentativa API falhou, avançando para Playwright: {e}", level="warn")
-
-    # ═══════════════════════════════════════════════════════════════
-    # ESTRATÉGIA 3: PLAYWRIGHT CHROMIUM (NA NUVEM RENDER OU PC LOCAL)
+    # ESTRATÉGIA 2: PLAYWRIGHT CHROMIUM (FALLBACK NA NUVEM / LOCAL)
     # ═══════════════════════════════════════════════════════════════
     if not password:
-        push_sky_log(f"❌ Conta {email} não possui senha nem sessão de tokens ativa.", level="error")
+        push_sky_log(f"❌ Conta {email} não possui senha para o fallback Playwright.", level="error")
         return False, f"A conta {email} não possui senha nem sessão de tokens ativa para ativação.", None
 
     push_sky_log(f"🌐 [Playwright] Abrindo navegador Chromium na nuvem para autenticar {email}...")
@@ -1067,7 +981,6 @@ def activate_sky_tv(tv_code: str, account_data: dict, use_proxy: bool = False) -
         if success:
             save_activation_log(email, password, clean_code, True, msg)
             record_account_activated(email, password, clean_code)
-            # 🔄 Auto-renovação de tokens: salva novo token capturado para as próximas ativações levarem apenas 300ms
             new_sso = res.get("sso_token")
             if new_sso and "ey" in str(new_sso):
                 try:

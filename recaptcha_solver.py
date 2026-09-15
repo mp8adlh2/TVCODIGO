@@ -11,6 +11,12 @@ except Exception as _err_bb:
     decode_message = None
     encode_message = None
 
+try:
+    import cloudscraper
+except Exception:
+    cloudscraper = None
+import requests
+
 # ============================================================
 # Headers exatos capturados via Reqable do app Sky Android
 # ============================================================
@@ -43,17 +49,17 @@ def _build_proxies(proxy):
 
 
 def _new_scraper(proxy=None):
-    """Cria um cloudscraper configurado como browser mobile com velocidade máxima."""
-    scraper = cloudscraper.create_scraper(
-        browser={
-            "browser": "chrome",
-            "platform": "android",
-            "desktop": False,
-        }
-    )
+    """Cria uma sessão requests nativa configurada com headers reais do Chrome (sem cloudscraper para evitar o bug de verificação SSL do Python 3.12+)."""
+    sess = requests.Session()
+    sess.headers.update({
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+        "Accept": "*/*",
+    })
     if proxy:
-        scraper.proxies.update({"http": proxy, "https": proxy})
-    return scraper
+        sess.proxies.update({"http": proxy, "https": proxy})
+    sess.verify = False
+    return sess
+
 
 
 def update_payload_session_id(payload_b64, new_session_id=None):
@@ -286,28 +292,19 @@ def _get_paramount_recaptcha_version() -> str:
     if _cached_paramount_version:
         return _cached_paramount_version
     try:
-        ctx = ssl.create_default_context()
-        ctx.check_hostname = False
-        ctx.verify_mode = ssl.CERT_NONE
-        # Busca o api2.js com o sitekey correto — retorna a versão atual usada pela Google para esse domínio
         url = f"https://www.google.com/recaptcha/api2/anchor?ar=1&k={PARAMOUNT_SITEKEY}&co={PARAMOUNT_DOMAIN_CO}&hl=pt-BR&size=invisible"
-        req = urllib.request.Request(
-            url,
-            headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
-        )
-        with urllib.request.urlopen(req, context=ctx, timeout=8) as resp:
-            raw = resp.read()
-            if raw[:2] == b'\x1f\x8b':
-                raw = gzip.decompress(raw)
-            html = raw.decode("utf-8", errors="ignore")
-            # A versão aparece na URL dos scripts embutidos: /recaptcha/releases/<versao>/
-            m = re.search(r'/recaptcha/releases/([a-zA-Z0-9_-]+)/', html)
-            if m:
-                _cached_paramount_version = m.group(1)
-                return _cached_paramount_version
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        }
+        resp = requests.get(url, headers=headers, verify=False, timeout=8)
+        m = re.search(r'/recaptcha/releases/([a-zA-Z0-9_-]+)/', resp.text)
+        if m:
+            _cached_paramount_version = m.group(1)
+            return _cached_paramount_version
     except Exception:
         pass
     return PARAMOUNT_VERSION
+
 
 
 def get_latest_recaptcha_version() -> str:
@@ -316,21 +313,8 @@ def get_latest_recaptcha_version() -> str:
 
 
 def get_recaptcha_paramount_token(proxy=None) -> str:
-    """Gera o token reCAPTCHA api2 para a Paramount+ via SKY.
-    Usa cloudscraper (simula browser real) para anchor + reload na mesma sessão.
-    Isso evita detecção de bot pelo Google e garante score alto no token.
-    """
-    # ── Sessão cloudscraper como browser desktop ──
-    scraper = cloudscraper.create_scraper(
-        browser={
-            "browser": "chrome",
-            "platform": "windows",
-            "desktop": True,
-        }
-    )
-    if proxy:
-        scraper.proxies.update({"http": proxy, "https": proxy})
-    scraper.verify = False
+    """Gera o token reCAPTCHA api2 para a Paramount+ via SKY."""
+    scraper = _new_scraper(proxy=proxy)
 
     # ── PASSO 1: Anchor sem v= → Google responde com HTML que embute a versão atual ──
     url_anchor_probe = (
@@ -374,7 +358,8 @@ def get_recaptcha_paramount_token(proxy=None) -> str:
                 raise Exception(f"Anchor token Paramount não encontrado (v={version}). HTML: {anchor_html[:200]}")
 
     # ── PASSO 3: Carrega payload e injeta anchor token no Campo 2 ──
-    payload_file = "payload_paramount.b64"
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    payload_file = os.path.join(base_dir, "payload_paramount.b64")
     raw_bytes = None
     if os.path.exists(payload_file):
         try:

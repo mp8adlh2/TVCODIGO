@@ -1,0 +1,131 @@
+{
+  "email": "(71)98114-7891",
+  "password": "Reino1914",
+  "access_token": "af235422-b2a5-4566-98af-74ed97318e2a",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiYTAzMTk0NzAtZWJmYy00YzAzLWJlZTktMmEwYjMyN2Q2NTAzIiwiYXRfaGFzaCI6Im0wU3I1cGdmV3FwWVBLbS0xS3hoVXciLCJkZXZpY2VJZCI6ImRlY2VjYzNmOTkzZmNiYjcyMjNiMzBmZTAzYTFjOTVhZTc0OWI1YWEiLCJhdWRpdFRyYWNraW5nSWQiOiI5OGMwLTRhNmEtNDkyMy1hYWY3LWM1MjYiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4OTQ0NDU3NTI3OCwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiIxYjE3OWY0NS0wMzgyLTQ5YWYtOTZhNC1kMzBkMjRmOGFmODgiLCJzaWduYXR1cmVzIjpbIjMyMDY1Njg0Il0sImN1c3RvbWVySWQiOiIxNTg4ZjQxZDZjZGU3OWNlY2JkYzRhZDA3NTkzNzZiNSIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjMyMDY1Njg0IiwiZ2l2ZW5fbmFtZSI6IkpPTkFTIiwidXNlcm5hbWUiOiI3MTk4MTE0Nzg5MSIsInRlbGVwaG9uZU51bWJlciI6IjcxOTgxMTQ3ODkxIiwic2lkIjoiZGVjZWNjM2Y5OTNmY2JiNzIyM2IzMGZlMDNhMWM5NWFlNzQ5YjVhYSIsInN1Ym5hbWUiOiIxYjE3OWY0NS0wMzgyLTQ5YWYtOTZhNC1kMzBkMjRmOGFmODgiLCJyZWRlbXB0aW9uTGltaXQiOm51bGwsImlhdCI6MTc4OTQ0NDU3NSwiZXhwIjoxNzg5NTMwOTc1LCJpc3MiOiJzbS1za3kudnJpb3NlcnZpY2VzLmNvbSJ9.cbifS2Af5wEUP53yCuMzjq4hO8UVzk0l6QSTc9gkN7RJhcidvxKXrORIQNFGDJPtwCIPbOdrOq0uyOL0HqOM7qCtaFuhdcYpBpSmM-5Lsiip_f4N-WWfTByXh_DGc35vXbiDFsNbI4-4ubsy0SL2x8k3ns7Ug58uxru2DKZoYnFUsESAdxzvV7z7_HhJstiIxxMEZjwErnyckmf5o8Sk29JRnP92is6-fOGpn6watbT3f86Iw14lr6kCbGL0fTZrWxI4tjk3T_pe_9do-qy8Y_45txCd3_zvzLuESxnDTVOpbyJVRSQSwU1jsLIrzHK6a9k3C81WTNQPNpj0m0NAMg",
+  "raw_data": {
+    "accessToken": "af235422-b2a5-4566-98af-74ed97318e2a",
+    "externalId": "87e5416f-e3dd-54f0-947b-542a866385cf",
+    "username": "1588f41d6cde79cecbdc4ad0759376b5",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "32065684",
+    "protocol": "2026-150413662828",
+    "customer": {
+      "email": "jonasnascimentosobral@gmail.com",
+      "billingProfileCode": "1-ENCX-5801",
+      "name": "JONAS",
+      "secondName": "DO NASCIMENTO SOBRAL",
+      "birthday": "1978-08-22T00:00:00.000Z",
+      "ddd": 71,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5571981147891",
+      "id": "1588f41d6cde79cecbdc4ad0759376b5",
+      "cpf": "78009480568"
+    },
+    "signatures": [
+      {
+        "id": "32065684",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 981147891,
+          "dddMobilePhone": 71,
+          "dddComPhone": 71,
+          "comPhone": 981147891
+        },
+        "customerId": "1588f41d6cde79cecbdc4ad0759376b5",
+        "status": 1,
+        "productName": "TOP HD PLUS III 2025 - P",
+        "name": "JONAS",
+        "secondName": "DO NASCIMENTO SOBRAL",
+        "dna": "01000000000100010000001000000000100000000000000000000000000000000000000001000000000000001010000111110000000000100000000010000000011110100000000000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111011101110001111111111111111111101111111111111111111111111111111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111110111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100101111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Travessa 3ºtravessa Siri Siri",
+          "line1": "Travessa 3ºtravessa Siri Siri, 7 - Cosme De Farias",
+          "line2": "Casa 7",
+          "number": "7",
+          "city": "Salvador",
+          "state": "BA",
+          "country": "Brasil",
+          "postalCode": "40251300",
+          "referencePoint": "Referencia. Encima Da Venda De Dona Marlene//",
+          "addressType": "Travessa",
+          "resDdd": 71,
+          "resPhone": 81147891
+        },
+        "addressBilling": {
+          "linePublic": "Rua Siri Siri",
+          "line1": "Rua Siri Siri, 7 - Cosme De Farias",
+          "line2": ".",
+          "number": "7",
+          "city": "Salvador",
+          "state": "BA",
+          "country": "Brasil",
+          "postalCode": "40251300",
+          "referencePoint": ".",
+          "addressType": "Rua",
+          "resDdd": 71,
+          "resPhone": 34812974
+        },
+        "activation": "2007-12-13T00:00:00.000Z",
+        "email": "jonasnascimentosobral@gmail.com",
+        "parentAccount": "032065684",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001208022093",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR01",
+            "serialNumber": "CE0AD123810079194"
+          },
+          {
+            "smartcard": "001153946981",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A012082649828B"
+          },
+          {
+            "smartcard": "000580106128",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "010A2634127328793"
+          },
+          {
+            "smartcard": "000750734824",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "670A2035383140804"
+          },
+          {
+            "smartcard": "000750946816",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A203614142031C"
+          },
+          {
+            "smartcard": "000600553259",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH25",
+            "serialNumber": "CE0AA13533957094C"
+          }
+        ]
+      }
+    ],
+    "_id_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiYTAzMTk0NzAtZWJmYy00YzAzLWJlZTktMmEwYjMyN2Q2NTAzIiwiYXRfaGFzaCI6Im0wU3I1cGdmV3FwWVBLbS0xS3hoVXciLCJkZXZpY2VJZCI6ImRlY2VjYzNmOTkzZmNiYjcyMjNiMzBmZTAzYTFjOTVhZTc0OWI1YWEiLCJhdWRpdFRyYWNraW5nSWQiOiI5OGMwLTRhNmEtNDkyMy1hYWY3LWM1MjYiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4OTQ0NDU3NTI3OCwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiIxYjE3OWY0NS0wMzgyLTQ5YWYtOTZhNC1kMzBkMjRmOGFmODgiLCJzaWduYXR1cmVzIjpbIjMyMDY1Njg0Il0sImN1c3RvbWVySWQiOiIxNTg4ZjQxZDZjZGU3OWNlY2JkYzRhZDA3NTkzNzZiNSIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjMyMDY1Njg0IiwiZ2l2ZW5fbmFtZSI6IkpPTkFTIiwidXNlcm5hbWUiOiI3MTk4MTE0Nzg5MSIsInRlbGVwaG9uZU51bWJlciI6IjcxOTgxMTQ3ODkxIiwic2lkIjoiZGVjZWNjM2Y5OTNmY2JiNzIyM2IzMGZlMDNhMWM5NWFlNzQ5YjVhYSIsInN1Ym5hbWUiOiIxYjE3OWY0NS0wMzgyLTQ5YWYtOTZhNC1kMzBkMjRmOGFmODgiLCJyZWRlbXB0aW9uTGltaXQiOm51bGwsImlhdCI6MTc4OTQ0NDU3NSwiZXhwIjoxNzg5NTMwOTc1LCJpc3MiOiJzbS1za3kudnJpb3NlcnZpY2VzLmNvbSJ9.cbifS2Af5wEUP53yCuMzjq4hO8UVzk0l6QSTc9gkN7RJhcidvxKXrORIQNFGDJPtwCIPbOdrOq0uyOL0HqOM7qCtaFuhdcYpBpSmM-5Lsiip_f4N-WWfTByXh_DGc35vXbiDFsNbI4-4ubsy0SL2x8k3ns7Ug58uxru2DKZoYnFUsESAdxzvV7z7_HhJstiIxxMEZjwErnyckmf5o8Sk29JRnP92is6-fOGpn6watbT3f86Iw14lr6kCbGL0fTZrWxI4tjk3T_pe_9do-qy8Y_45txCd3_zvzLuESxnDTVOpbyJVRSQSwU1jsLIrzHK6a9k3C81WTNQPNpj0m0NAMg",
+    "_sess": 

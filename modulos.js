@@ -1,0 +1,85 @@
+/* eslint-disable no-var */
+/* eslint-disable no-unused-vars */
+let baseJS = '/o/sky-mais-theme/js'
+
+var require_acc = {
+	baseUrl: baseJS,
+	paths: {
+		'jquery': 'vendor/jquery/jquery',
+		'popper': 'vendor/popper/popper.min',
+		'bootstrap': `vendor/bootstrap/bootstrap-4.3.1.min`,
+        'slick': 'vendor/slick-carousel/slick.min',
+        'scrollbar': 'vendor/scrollbar/jquery.scrollbar.min',
+		'mask': 'vendor/jquery.mask/jquery.mask.min',
+		'main': 'modules/main/main',
+		'tools': 'modules/tools/tools',
+		'loginTools': 'modules/loginTools/loginTools',
+		'index': 'components/index/index',
+		'accountData': 'components/accountData/accountData',
+		'accessData': 'components/accessData/accessData',
+		'generalHeader': 'components/header/genericHeader',
+		'footer': 'components/footer/footer',
+		'exactTarget': 'modules/exactTarget/exactTarget',
+		'gtmTrack': 'modules/gtm/gtmTrack',
+		'registration': 'components/registration/registration',
+		'home': 'components/home/home',
+		'plan': 'components/plan/plan',
+		'contentCarousel': 'components/contentCarousel/contentCarousel',			
+		'CryptoJS': 'vendor/crypto-js/cryptojs.min',
+		'login': 'components/login/login',		
+		'shoppingCart': 'components/shoppingCart/shoppingCart',
+		'paymentHistory': 'components/paymentHistory/paymentHistory',
+		'paymentDetail': 'components/paymentDetail/paymentDetail',
+		'paymentStatus': 'components/paymentStatus/paymentStatus',
+		'invoice': 'components/invoice/invoice',
+		'modalChannels': 'components/modal/modalChannels',
+        'modalCombo': 'components/modal/modalCombo',
+		'paymentMethod': 'components/paymentMethod/paymentMethod',
+		'paymentMethodChange': 'components/paymentMethodChange/paymentMethodChange',
+		'mySubscription': 'components/mySubscription/mySubscription',
+        'breadcrumb': 'components/breadcrumb/breadcrumb',
+        'cancelation': 'components/cancelation/cancelation',
+        'cancelationForm': 'components/cancelation/cancelationForm',
+        'cancelationPromo': 'components/cancelation/cancelationPromo',
+        'cancelSubscription': 'components/cancelation/cancelSubscription',
+        'pageExtras': 'components/pageExtras/pageExtras',
+        'planReactivation': 'components/reactivation/plan',
+        'shoppingCartReactivation': 'components/reactivation/shoppingCart',
+        'extrasReactivation': 'components/reactivation/extras',
+        'extrasShowcase': 'components/extrasShowcase/extrasShowcase',
+        'selfcareExtras': 'components/extras/selfcareExtras',
+        'selfcareExtrasLander': 'components/extras/selfcareExtrasLander',
+        'moment': 'vendor/moment/moment.min',
+		'cupomRedirect': 'components/cupom/cupomRedirect',
+		'updatePlan': 'components/updatePlan/updatePlan',
+		'homeExtrasCombo': 'components/homeExtrasCombo/homeExtrasCombo',
+		'couponURL': 'components/coupon/couponURL',
+		'horizontalMenuMobile': 'components/horizontalMenuMobile/horizontalMenuMobile',
+		'giftCardSelfCare': 'components/giftCardSelfCare/gift-card',
+		'reedemSelfCare': 'components/giftCardSelfCare/reedem',
+		'selfcareRedirect': 'components/redirect/selfcarePageRedirect',
+		'redirectToStore': 'components/redirectToStore/redirectToStore',
+		'passwordReset': 'components/passwordRecovery/passwordReset',
+		'disneySubscriptionActivation': 'components/disneySubscriptionActivation/disneySubscriptionActivation',
+		'faqHome': 'components/faq/faqHome',
+		'faqCategory': 'components/faq/faqCategory',
+		'faqQuestionAndAnswer': 'components/faq/faqQuestionAndAnswer',
+		'faqSearch': 'components/faq/faqSearch',
+		'legalDocuments': 'components/legalDocuments/legalDocuments',
+		'welcome': 'components/welcome/welcome',
+		'emailValidation': 'components/emailValidation/emailValidation',
+		'amazonSubscriptionActivation': 'components/amazonSubscriptionActivation/amazonSubscriptionActivation',
+		'deviceManagement': 'components/deviceManagement/deviceManagement',
+	},
+	shim: {
+		'bootstrap': {
+			deps: ['jquery']
+		}
+	},
+	map: {
+	    '*': {
+	        'popper.js': 'popper'
+	    }
+	},
+	urlArgs: 'v=1789018954967'
+}

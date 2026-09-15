@@ -2369,6 +2369,10 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             if not self.check_rate_limit(max_requests=10, window_seconds=30):
                 return self.send_json_response({"success": False, "message": "Muitas ativações em sequência. Aguarde alguns instantes por segurança."}, 429)
             self.handle_api_activate()
+        elif raw_path == '/api/sky/test-activate':
+            if not self.is_authenticated():
+                return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
+            self.handle_api_sky_test_activate()
         elif raw_path == '/api/skip-cookie':
             if not self.is_authenticated():
                 return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
@@ -2898,6 +2902,46 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             })
         else:
             return self.send_json_response({"success": False, "message": "Serviço desconhecido."}, 400)
+
+    def handle_api_sky_test_activate(self):
+        content_length = int(self.headers.get('Content-Length', 0))
+        post_data = self.rfile.read(content_length)
+        try:
+            req = json.loads(post_data.decode('utf-8'))
+        except Exception:
+            return self.send_json_response({"success": False, "message": "JSON inválido na requisição."}, 400)
+
+        usuario = str(req.get('login') or req.get('usuario') or req.get('email') or '').strip()
+        senha = str(req.get('password') or req.get('senha') or '').strip()
+        tv_code = str(req.get('code') or req.get('tv_code') or '').strip().upper()
+
+        if not usuario and not senha and not tv_code:
+            return self.send_json_response({"success": False, "message": "Preencha as credenciais e o código da Smart TV."}, 400)
+
+        import testar_sky_api
+        kernel_logger.push_kernel_log(f"🧪 [Sky+ API Tester] Iniciando teste e ativação: Conta '{usuario or 'Padrão'}' | TV {tv_code}...")
+        success, msg, acc_info = testar_sky_api.executar_ativacao_completa(
+            tv_code=tv_code,
+            usuario=usuario,
+            senha=senha,
+            allow_gateway=True
+        )
+
+        if success:
+            if tv_code and len(tv_code) >= 5:
+                sky_service.save_activation_log(usuario or "TESTER", senha or "API", tv_code, True, msg)
+                sky_service.record_account_activated(usuario or "TESTER", senha or "API", tv_code)
+                record_history_entry("Sky", "testar_sky_api.py", acc_info.get("email", usuario) if acc_info else (usuario or "Sky+"), tv_code, "Sky+ API REST", "Sucesso")
+            return self.send_json_response({
+                "success": True,
+                "message": msg,
+                "account": acc_info or {"email": usuario, "plan": "Sky+ Pay-TV HD"}
+            })
+        else:
+            return self.send_json_response({
+                "success": False,
+                "message": msg
+            })
 
     def handle_api_kernel_logs(self):
         query_params = urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query)
