@@ -2599,10 +2599,12 @@
       btn.classList.add('loading');
       btnText.innerText = 'CONECTANDO SKY+... ⏳ (1s)';
       showAlert('success', '📡 Autenticando conta na Sky+ e injetando código na TV... Aguarde cerca de 10 segundos.');
-      soundClick();
-      switchDeckTab('logs');
-      startKernelLogStream();
-      logKernel(`Iniciando transmissão de token para TV: ${currentCode}...`);
+      try { soundClick(); } catch(e) {}
+      try {
+        switchDeckTab('logs');
+        startKernelLogStream();
+        logKernel(`Iniciando transmissão de token para TV: ${currentCode}...`);
+      } catch(e) {}
 
       const startTime = performance.now();
 
@@ -2911,11 +2913,7 @@
           tabBtn.innerText = `🍪 PRÓXIMOS DA FILA (${queue.length})`;
         }
       }
-
-      if (!queue.length) {
-        container.innerHTML = `<div style="color: var(--text-dim); text-align: center; padding: 16px;">Nenhuma outra conta na fila no momento.</div>`;
-        return;
-      }
+      if (!container) return;
 
       container.innerHTML = queue.map((c) => `
         <div class="cookie-row ${c.is_selected ? 'selected' : ''}">
@@ -2935,23 +2933,23 @@
     const seenKernelLogKeys = new Set();
 
     function switchDeckTab(tab) {
-      soundClick();
+      try { soundClick(); } catch(e) {}
       const qList = document.getElementById('cookie-queue-list');
       const lBox = document.getElementById('kernel-logs-box');
       const btnQ = document.getElementById('tab-btn-queue');
       const btnL = document.getElementById('tab-btn-logs');
 
       if (tab === 'queue') {
-        qList.style.display = 'flex';
-        lBox.style.display = 'none';
-        btnQ.classList.add('active');
-        btnL.classList.remove('active');
+        if (qList) qList.style.display = 'flex';
+        if (lBox) lBox.style.display = 'none';
+        if (btnQ) btnQ.classList.add('active');
+        if (btnL) btnL.classList.remove('active');
       } else {
-        qList.style.display = 'none';
-        lBox.style.display = 'block';
-        btnL.classList.add('active');
-        btnQ.classList.remove('active');
-        fetchKernelLogs();
+        if (qList) qList.style.display = 'none';
+        if (lBox) lBox.style.display = 'block';
+        if (btnL) btnL.classList.add('active');
+        if (btnQ) btnQ.classList.remove('active');
+        try { fetchKernelLogs(); } catch(e) {}
       }
     }
 
