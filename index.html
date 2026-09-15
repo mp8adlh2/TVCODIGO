@@ -2597,8 +2597,8 @@
 
       btn.disabled = true;
       btn.classList.add('loading');
-      btnText.innerText = 'TRANSMITINDO PAYLOAD... ⏳';
-      showAlert(null);
+      btnText.innerText = 'CONECTANDO SKY+... ⏳ (1s)';
+      showAlert('success', '📡 Autenticando conta na Sky+ e injetando código na TV... Aguarde cerca de 10 segundos.');
       soundClick();
       switchDeckTab('logs');
       startKernelLogStream();
@@ -2619,13 +2619,13 @@
       activeActivationController = controller;
       const timeoutId = setTimeout(() => {
         try { controller.abort(); } catch(e) {}
-      }, 35000);
+      }, 55000);
 
-      let timerSeconds = 0;
+      let timerSeconds = 1;
       activeProgressTimer = setInterval(() => {
         timerSeconds++;
         if (btn && btn.disabled) {
-          btnText.innerText = `TRANSMITINDO PAYLOAD... ⏳ (${timerSeconds}s)`;
+          btnText.innerText = `CONECTANDO SKY+... ⏳ (${timerSeconds}s)`;
         }
       }, 1000);
 

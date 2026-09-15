@@ -194,3 +194,4 @@ criar uma.
 
 Criar conta
 [SUCESSO] 12/09/2026 17:34:45 | juliocpmedina@gmail.com:Dora*001 | Codigo: 571331 | TV ativada com sucesso! Confirmado na plataforma Sky+.
+[SUCESSO] 15/09/2026 09:57:38 | adriboxone@yahoo.com.br:A83A82oc | Codigo: 227992 | Smart TV ativada com sucesso em 0.34s! (OLIVEIRA DA CUNHA ADRIANO (adriboxone@yahoo.com.br))
