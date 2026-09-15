@@ -380,7 +380,174 @@
       100% { opacity: 0.4; }
     }
 
-    /* 🔑 Password Manager */
+    /* 🔑 Password Manager Suite */
+    .pwd-generator-card {
+      background: linear-gradient(145deg, rgba(17, 24, 39, 0.95) 0%, rgba(10, 15, 29, 0.98) 100%);
+      border: 1.5px solid rgba(255, 215, 0, 0.45);
+      border-radius: 20px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65), 0 0 35px rgba(255, 215, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+    .pwd-generator-card::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 160px;
+      height: 160px;
+      background: radial-gradient(circle, rgba(255, 215, 0, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .pwd-step-title {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: #ffd700;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .pwd-step-num {
+      width: 22px;
+      height: 22px;
+      border-radius: 7px;
+      background: rgba(255, 215, 0, 0.15);
+      border: 1px solid rgba(255, 215, 0, 0.4);
+      color: #ffd700;
+      font-size: 11px;
+      font-weight: 900;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-mono);
+      flex-shrink: 0;
+    }
+    .quick-app-label {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 12px;
+      padding: 12px 14px;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      border: 1.5px solid rgba(255, 255, 255, 0.08);
+      background: rgba(0, 0, 0, 0.45);
+    }
+    .quick-app-label:hover {
+      transform: translateY(-2px);
+    }
+    .quick-app-label.app-netflix {
+      background: rgba(229, 9, 20, 0.08);
+      border-color: rgba(229, 9, 20, 0.35);
+    }
+    .quick-app-label.app-netflix:hover {
+      border-color: #ff3344;
+      box-shadow: 0 6px 20px rgba(229, 9, 20, 0.25);
+    }
+    .quick-app-label.app-hbo {
+      background: rgba(168, 85, 247, 0.08);
+      border-color: rgba(168, 85, 247, 0.35);
+    }
+    .quick-app-label.app-hbo:hover {
+      border-color: #c084fc;
+      box-shadow: 0 6px 20px rgba(168, 85, 247, 0.25);
+    }
+    .quick-app-label.app-crunchy {
+      background: rgba(244, 117, 33, 0.08);
+      border-color: rgba(244, 117, 33, 0.35);
+    }
+    .quick-app-label.app-crunchy:hover {
+      border-color: #f47521;
+      box-shadow: 0 6px 20px rgba(244, 117, 33, 0.25);
+    }
+    .quick-app-label.app-sky {
+      background: rgba(0, 160, 227, 0.08);
+      border-color: rgba(0, 160, 227, 0.35);
+    }
+    .quick-app-label.app-sky:hover {
+      border-color: #00A0E3;
+      box-shadow: 0 6px 20px rgba(0, 160, 227, 0.25);
+    }
+    .quick-input-box {
+      background: rgba(0, 0, 0, 0.55);
+      border: 1.5px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 12px 14px;
+      color: #fff;
+      font-size: 13px;
+      width: 100%;
+      outline: none;
+      transition: all 0.2s ease;
+      font-family: var(--font-sans);
+    }
+    .quick-input-box:focus {
+      border-color: #ffd700;
+      background: rgba(0, 0, 0, 0.75);
+      box-shadow: 0 0 16px rgba(255, 215, 0, 0.25);
+    }
+    .quick-input-box.mono {
+      font-family: var(--font-mono);
+      color: #00ff66;
+      font-weight: 700;
+    }
+    .quick-input-box.mono:focus {
+      border-color: #00ff66;
+      box-shadow: 0 0 16px rgba(0, 255, 102, 0.25);
+    }
+    .btn-create-main {
+      padding: 14px 20px;
+      font-size: 13.5px;
+      font-weight: 900;
+      font-family: var(--font-display);
+      letter-spacing: 0.5px;
+      background: linear-gradient(135deg, #00ff66 0%, #00cc88 100%);
+      color: #030712;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+      box-shadow: 0 0 25px rgba(0, 255, 102, 0.45);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-create-main:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0, 255, 102, 0.65);
+    }
+    .btn-create-secondary {
+      padding: 14px 18px;
+      font-size: 13px;
+      font-weight: 800;
+      font-family: var(--font-display);
+      letter-spacing: 0.3px;
+      background: linear-gradient(135deg, rgba(255, 215, 0, 0.16) 0%, rgba(255, 136, 0, 0.1) 100%);
+      color: #ffd700;
+      border: 1.5px solid rgba(255, 215, 0, 0.45);
+      border-radius: 14px;
+      cursor: pointer;
+      box-shadow: 0 0 16px rgba(255, 215, 0, 0.15);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+    .btn-create-secondary:hover {
+      background: rgba(255, 215, 0, 0.25);
+      border-color: #ffd700;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 22px rgba(255, 215, 0, 0.3);
+    }
     .pwd-checkboxes-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -413,22 +580,26 @@
       display: flex;
       flex-direction: column;
       gap: 8px;
-      max-height: 380px;
+      max-height: 480px;
       overflow-y: auto;
       padding-right: 4px;
     }
     .pwd-item-card {
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(15, 23, 42, 0.65);
       border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 12px;
-      padding: 12px 14px;
+      border-radius: 14px;
+      padding: 14px 18px;
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 8px;
+      transition: all 0.2s ease;
+      backdrop-filter: blur(10px);
     }
     .pwd-item-card:hover {
-      border-color: rgba(255, 215, 0, 0.35);
-      background: rgba(255, 215, 0, 0.03);
+      border-color: rgba(255, 215, 0, 0.4);
+      background: rgba(20, 28, 48, 0.85);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
     }
 
     /* 🗑️ Topic Accounts Card & Delete Button */
@@ -898,146 +1069,185 @@
     <!-- ============================================== -->
     <!-- TAB 3: 🔑 CRIAR & GERENCIAR SENHAS (AO VIVO)   -->
     <!-- ============================================== -->
-    <div class="admin-card" id="view-passwords" style="display: none;">
+    <div class="admin-card" id="view-passwords" style="display: none; padding: 18px; gap: 20px;">
       <!-- ⚡ GERADOR DE SENHA RÁPIDA (1 CLIQUE AO VIVO) -->
-      <div style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.12) 0%, rgba(0, 255, 102, 0.08) 100%); border: 1.5px solid #ffd700; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 0 30px rgba(255, 215, 0, 0.18);">
-        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
-          <div style="font-size: 13px; color: #ffd700; font-weight: 900; text-transform: uppercase; display: flex; align-items: center; gap: 6px;">
-            <span style="font-size: 18px;">⚡</span> GERADOR DE SENHA AO VIVO (1 CLIQUE)
+      <div class="pwd-generator-card">
+        <!-- Top Header do Gerador -->
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; border-bottom: 1px solid rgba(255, 215, 0, 0.2); padding-bottom: 14px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="width: 36px; height: 36px; border-radius: 10px; background: rgba(255, 215, 0, 0.15); border: 1.5px solid #ffd700; display: flex; align-items: center; justify-content: center; font-size: 18px; box-shadow: 0 0 15px rgba(255,215,0,0.3);">
+              ⚡
+            </div>
+            <div>
+              <div style="font-family: var(--font-display); font-size: 15px; font-weight: 900; color: #ffd700; letter-spacing: 0.6px; text-transform: uppercase;">
+                GERADOR DE SENHA AO VIVO // 1 CLIQUE
+              </div>
+              <div style="font-size: 11px; color: var(--text-dim); margin-top: 1px;">
+                Crie acessos personalizados instantaneamente com sincronização automática na nuvem.
+              </div>
+            </div>
           </div>
-          <span style="font-size: 10.5px; background: rgba(0,255,102,0.15); color: #00ff66; border: 1px solid rgba(0,255,102,0.35); border-radius: 10px; padding: 3px 10px; font-weight: 800;">
-            ● SALVA & ATIVA NO SERVIDOR NA HORA
+          <span style="font-size: 10.5px; background: rgba(0,255,102,0.12); color: #00ff66; border: 1px solid rgba(0,255,102,0.35); border-radius: 20px; padding: 4px 12px; font-weight: 800; display: inline-flex; align-items: center; gap: 6px;">
+            <span style="width: 6px; height: 6px; border-radius: 50%; background: #00ff66; box-shadow: 0 0 8px #00ff66;"></span> SALVA & ATIVA NO SERVIDOR NA HORA
           </span>
         </div>
 
-        <div style="font-size: 11.5px; color: var(--text-dim); line-height: 1.5;">
-          Escolha o streaming abaixo, digite o nome do cliente (opcional) e clique no botão: a senha é <strong>criada, salva no servidor e copiada instantaneamente</strong>!
-        </div>
-
-        <!-- Seleção Personalizada de Apps/Streamings com Checkboxes Independentes -->
-        <div>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 6px;">
-            <div style="font-size: 11.5px; color: #ffd700; font-weight: 800; text-transform: uppercase; display: flex; align-items: center; gap: 6px;">
-              <span>🎯</span> QUAIS APPS O CLIENTE PODERÁ USAR?
+        <!-- PASSO 1: Seleção dos Streamings Permitidos -->
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+            <div class="pwd-step-title">
+              <span class="pwd-step-num">01</span>
+              <span>QUAIS APPS O CLIENTE PODERÁ USAR?</span>
             </div>
             <div style="display: flex; gap: 6px;">
-              <button type="button" class="btn-icon" onclick="setQuickAppsAll(true)" style="padding: 3px 9px; font-size: 10px; color: #00ff66; border-color: rgba(0,255,102,0.4); background: rgba(0,255,102,0.08);">
+              <button type="button" class="btn-icon" onclick="setQuickAppsAll(true)" style="padding: 3px 10px; font-size: 10.5px; color: #00ff66; border-color: rgba(0,255,102,0.4); background: rgba(0,255,102,0.08);">
                 ✓ Marcar Todos
               </button>
-              <button type="button" class="btn-icon" onclick="setQuickAppsAll(false)" style="padding: 3px 9px; font-size: 10px; color: var(--text-dim);">
+              <button type="button" class="btn-icon" onclick="setQuickAppsAll(false)" style="padding: 3px 10px; font-size: 10.5px; color: var(--text-dim);">
                 ✕ Desmarcar
               </button>
             </div>
           </div>
 
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: 8px;" id="quick-app-selector">
-            <label class="quick-app-label" style="display: flex; align-items: center; gap: 8px; background: rgba(229,9,20,0.12); border: 1.5px solid rgba(229,9,20,0.45); border-radius: 10px; padding: 10px 12px; cursor: pointer; user-select: none;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px;" id="quick-app-selector">
+            <label class="quick-app-label app-netflix" title="Liberar acesso à Netflix">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="font-size: 16px;">🔴</span>
+                <span style="color: #ff3344; font-weight: 800; font-size: 12px; letter-spacing: 0.3px;">NETFLIX</span>
+              </div>
               <input type="checkbox" id="quick-app-netflix" checked style="accent-color: #ff3344; width: 18px; height: 18px; cursor: pointer;">
-              <span style="color: #ff3344; font-weight: 800; font-size: 12px;">🔴 NETFLIX</span>
             </label>
 
-            <label class="quick-app-label" style="display: flex; align-items: center; gap: 8px; background: rgba(168,85,247,0.12); border: 1.5px solid rgba(168,85,247,0.45); border-radius: 10px; padding: 10px 12px; cursor: pointer; user-select: none;">
+            <label class="quick-app-label app-hbo" title="Liberar acesso ao HBO Max">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="font-size: 16px;">🟣</span>
+                <span style="color: #c084fc; font-weight: 800; font-size: 12px; letter-spacing: 0.3px;">HBO MAX</span>
+              </div>
               <input type="checkbox" id="quick-app-hbo" checked style="accent-color: #c084fc; width: 18px; height: 18px; cursor: pointer;">
-              <span style="color: #c084fc; font-weight: 800; font-size: 12px;">🟣 HBO MAX</span>
             </label>
 
-            <label class="quick-app-label" style="display: flex; align-items: center; gap: 8px; background: rgba(244,117,33,0.12); border: 1.5px solid rgba(244,117,33,0.45); border-radius: 10px; padding: 10px 12px; cursor: pointer; user-select: none;">
+            <label class="quick-app-label app-crunchy" title="Liberar acesso ao Crunchyroll">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="font-size: 16px;">🟠</span>
+                <span style="color: #f47521; font-weight: 800; font-size: 12px; letter-spacing: 0.3px;">CRUNCHY</span>
+              </div>
               <input type="checkbox" id="quick-app-crunchyroll" style="accent-color: #f47521; width: 18px; height: 18px; cursor: pointer;">
-              <span style="color: #f47521; font-weight: 800; font-size: 12px;">🟠 CRUNCHY</span>
             </label>
 
-            <label class="quick-app-label" style="display: flex; align-items: center; gap: 8px; background: rgba(0,160,227,0.12); border: 1.5px solid rgba(0,160,227,0.45); border-radius: 10px; padding: 10px 12px; cursor: pointer; user-select: none;">
+            <label class="quick-app-label app-sky" title="Liberar acesso ao Sky+ TV">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="font-size: 16px;">🔵</span>
+                <span style="color: #00A0E3; font-weight: 800; font-size: 12px; letter-spacing: 0.3px;">SKY+ TV</span>
+              </div>
               <input type="checkbox" id="quick-app-sky" checked style="accent-color: #00A0E3; width: 18px; height: 18px; cursor: pointer;">
-              <span style="color: #00A0E3; font-weight: 800; font-size: 12px;">🔵 SKY+</span>
             </label>
           </div>
         </div>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-          <div>
-            <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 4px; font-weight: 700;">👤 NOME OU WHATSAPP DO CLIENTE:</div>
-            <input type="text" id="quick-client-name" placeholder="Ex: Carlos VIP ou 5511999999999" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 8px; padding: 10px 12px; color: #fff; font-size: 12px;">
+        <!-- PASSO 2: Identificação do Cliente e Senha -->
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <div class="pwd-step-title">
+            <span class="pwd-step-num">02</span>
+            <span>IDENTIFICAÇÃO DO CLIENTE & SENHA</span>
           </div>
-          <div>
-            <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 4px; font-weight: 700;">🔑 SENHA PERSONALIZADA (OPCIONAL):</div>
-            <input type="text" id="quick-custom-pwd" placeholder="Vazio = Gera senha forte automática" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 8px; padding: 10px 12px; color: #00ff66; font-family: var(--font-mono); font-size: 12px;">
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px;">
+            <div style="display: flex; flex-direction: column; gap: 5px;">
+              <label for="quick-client-name" style="font-size: 10.5px; color: var(--text-dim); font-weight: 700; display: flex; align-items: center; gap: 5px;">
+                <span>👤</span> NOME OU WHATSAPP DO CLIENTE:
+              </label>
+              <input type="text" id="quick-client-name" class="quick-input-box" placeholder="Ex: Carlos VIP ou (11) 99999-9999">
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 5px;">
+              <label for="quick-custom-pwd" style="font-size: 10.5px; color: var(--text-dim); font-weight: 700; display: flex; align-items: center; gap: 5px;">
+                <span>🔑</span> SENHA PERSONALIZADA (OPCIONAL):
+              </label>
+              <input type="text" id="quick-custom-pwd" class="quick-input-box mono" placeholder="Deixe vazio para gerar automaticamente">
+            </div>
           </div>
         </div>
 
-        <!-- 📅 SELETOR DE DURAÇÃO / VALIDADE DA SENHA (30, 60, 90, 200, 360 DIAS OU PERMANENTE) -->
-        <div style="background: rgba(0,0,0,0.4); border: 1px solid var(--panel-border); border-radius: 12px; padding: 10px 12px; display: flex; flex-direction: column; gap: 8px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px;">
-            <div style="font-size: 10.5px; color: #ffd700; font-weight: 800; letter-spacing: 0.3px;">
-              📅 DURAÇÃO / VALIDADE DO ACESSO:
+        <!-- PASSO 3: Período de Validade -->
+        <div style="background: rgba(0,0,0,0.45); border: 1px solid var(--panel-border); border-radius: 14px; padding: 12px 14px; display: flex; flex-direction: column; gap: 10px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+            <div class="pwd-step-title">
+              <span class="pwd-step-num">03</span>
+              <span>DURAÇÃO / VALIDADE DO ACESSO</span>
             </div>
-            <div id="quick-duration-preview" style="font-size: 11px; color: #00ff66; font-weight: 800; font-family: var(--font-mono);">
+            <div id="quick-duration-preview" style="font-size: 11px; color: #00ff66; font-weight: 800; font-family: var(--font-mono); background: rgba(0,255,102,0.1); border: 1px solid rgba(0,255,102,0.3); border-radius: 8px; padding: 3px 9px;">
               ● Válida por 30 dias (calculando...)
             </div>
           </div>
-          <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;" id="quick-duration-presets">
+
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center;" id="quick-duration-presets">
             <button type="button" class="duration-pill active" data-days="30" onclick="setQuickDuration(30, this)">30 Dias</button>
             <button type="button" class="duration-pill" data-days="60" onclick="setQuickDuration(60, this)">60 Dias</button>
             <button type="button" class="duration-pill" data-days="90" onclick="setQuickDuration(90, this)">90 Dias</button>
             <button type="button" class="duration-pill" data-days="200" onclick="setQuickDuration(200, this)">200 Dias</button>
             <button type="button" class="duration-pill" data-days="360" onclick="setQuickDuration(360, this)">360 Dias</button>
             <button type="button" class="duration-pill" data-days="0" onclick="setQuickDuration(0, this)">♾️ Permanente</button>
-            <div style="display: inline-flex; align-items: center; gap: 4px; background: rgba(0,0,0,0.6); border: 1px solid var(--panel-border); border-radius: 8px; padding: 4px 8px;">
-              <span style="font-size: 10px; color: var(--text-dim);">Outro:</span>
-              <input type="number" id="quick-custom-days" min="1" max="9999" placeholder="Ex: 45" oninput="setCustomQuickDuration(this.value)" style="width: 50px; background: transparent; border: none; color: #00ff66; font-family: var(--font-mono); font-size: 11px; font-weight: 800; outline: none;">
-              <span style="font-size: 10px; color: var(--text-dim);">dias</span>
+            <div style="display: inline-flex; align-items: center; gap: 4px; background: rgba(0,0,0,0.6); border: 1.5px solid var(--panel-border); border-radius: 10px; padding: 5px 10px;">
+              <span style="font-size: 10.5px; color: var(--text-dim); font-weight: 700;">Outro:</span>
+              <input type="number" id="quick-custom-days" min="1" max="9999" placeholder="Ex: 45" oninput="setCustomQuickDuration(this.value)" style="width: 55px; background: transparent; border: none; color: #00ff66; font-family: var(--font-mono); font-size: 12px; font-weight: 800; outline: none;">
+              <span style="font-size: 10.5px; color: var(--text-dim);">dias</span>
             </div>
           </div>
         </div>
 
-        <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 10px;">
-          <button type="button" class="btn-unlock" id="btn-quick-generate-login" onclick="executeQuickGenerateAndLoginLive()" style="padding: 13px; font-size: 13.5px; font-weight: 900; background: linear-gradient(135deg, #00ff66 0%, #00cc88 100%); color: #000; box-shadow: 0 0 25px rgba(0,255,102,0.5);">
+        <!-- Botões de Criação Instantânea -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 2px;">
+          <button type="button" class="btn-create-main" id="btn-quick-generate-login" onclick="executeQuickGenerateAndLoginLive()">
             ⚡ CRIAR & JÁ ENTRAR NO SITE 🚀
           </button>
-          <button type="button" class="btn-unlock" id="btn-quick-generate" onclick="executeQuickGenerateLivePassword()" style="padding: 13px; font-size: 13px; font-weight: 800; background: linear-gradient(135deg, #ffd700 0%, #ff8800 100%); color: #000; box-shadow: 0 0 20px rgba(255,215,0,0.35);">
-            ➕ Apenas Salvar Senha
+          <button type="button" class="btn-create-secondary" id="btn-quick-generate" onclick="executeQuickGenerateLivePassword()">
+            💾 Apenas Salvar Senha
           </button>
         </div>
 
         <!-- Banner com a Senha Recém-Gerada e Botão de Copiar WhatsApp -->
-        <div id="quick-generated-result" style="display: none; background: rgba(0, 255, 102, 0.1); border: 1.5px solid #00ff66; border-radius: 12px; padding: 12px; flex-direction: column; gap: 8px; box-shadow: 0 0 20px rgba(0,255,102,0.25);">
+        <div id="quick-generated-result" style="display: none; background: rgba(0, 255, 102, 0.08); border: 1.5px solid #00ff66; border-radius: 14px; padding: 14px; flex-direction: column; gap: 10px; box-shadow: 0 0 25px rgba(0,255,102,0.25);">
           <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px;">
-            <span style="color: #00ff66; font-weight: 900; font-size: 12px;">🎉 SENHA ATIVADA AO VIVO NO SERVIDOR!</span>
-            <span style="font-size: 10.5px; color: #00ff66; font-weight: 700;" id="quick-res-status">✅ Pronta para uso imediato!</span>
+            <span style="color: #00ff66; font-weight: 900; font-size: 12.5px; display: inline-flex; align-items: center; gap: 6px;">
+              🎉 SENHA ATIVADA COM SUCESSO NO SERVIDOR!
+            </span>
+            <span style="font-size: 11px; color: #00ff66; font-weight: 800;" id="quick-res-status">✅ Pronta para uso imediato!</span>
           </div>
           <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
-            <input type="text" id="quick-res-pwd" readonly onclick="this.select(); copyPasswordDirect(this.value, this);" title="Clique para copiar" style="flex: 1; min-width: 200px; background: rgba(0,0,0,0.85); border: 1.5px solid #00ff66; border-radius: 8px; padding: 9px 12px; color: #00ff66; font-family: var(--font-mono); font-weight: 900; font-size: 13px; cursor: pointer;">
-            <button type="button" class="btn-icon" onclick="loginWithPasswordDirect(document.getElementById('quick-res-pwd').value)" style="padding: 8px 12px; color: #000; background: #00ff66; border-color: #00ff66; font-size: 11px; font-weight: 900;">
+            <input type="text" id="quick-res-pwd" readonly onclick="this.select(); copyPasswordDirect(this.value, this);" title="Clique para copiar" style="flex: 1; min-width: 220px; background: rgba(0,0,0,0.85); border: 1.5px solid #00ff66; border-radius: 10px; padding: 10px 14px; color: #00ff66; font-family: var(--font-mono); font-weight: 900; font-size: 13.5px; cursor: pointer;">
+            <button type="button" class="btn-icon" onclick="loginWithPasswordDirect(document.getElementById('quick-res-pwd').value)" style="padding: 10px 14px; color: #000; background: #00ff66; border-color: #00ff66; font-size: 11.5px; font-weight: 900;">
               🚀 Entrar no Site Agora
             </button>
-            <button type="button" class="btn-icon" onclick="copyPasswordDirect(document.getElementById('quick-res-pwd').value, this)" style="padding: 8px 12px; color: #00ff66; border-color: #00ff66; font-size: 11px;">
+            <button type="button" class="btn-icon" onclick="copyPasswordDirect(document.getElementById('quick-res-pwd').value, this)" style="padding: 10px 12px; color: #00ff66; border-color: #00ff66; font-size: 11.5px;">
               📋 Copiar
             </button>
-            <button type="button" class="btn-icon" id="btn-quick-wa" onclick="copyQuickGeneratedWhatsApp(this)" style="padding: 8px 14px; background: rgba(37, 211, 102, 0.2); color: #25D366; border-color: #25D366; font-size: 11.5px; font-weight: 800;">
+            <button type="button" class="btn-icon" id="btn-quick-wa" onclick="copyQuickGeneratedWhatsApp(this)" style="padding: 10px 16px; background: rgba(37, 211, 102, 0.18); color: #25D366; border-color: #25D366; font-size: 12px; font-weight: 800;">
               📲 WhatsApp
             </button>
           </div>
         </div>
       </div>
 
-      <!-- Detalhes Avançados para Senha Personalizada Manual (Texto Customizado) -->
-      <details style="background: rgba(0,0,0,0.35); border: 1px solid var(--panel-border); border-radius: 12px; padding: 10px 14px;">
-        <summary style="cursor: pointer; color: var(--text-dim); font-size: 11.5px; font-weight: 700; user-select: none;">
-          ✏️ Opção Manual: Digitar uma Senha Específica ou Telefone Personalizado
+      <!-- Opção Manual Avançada (Acordeão Moderno) -->
+      <details style="background: rgba(0,0,0,0.35); border: 1px solid var(--panel-border); border-radius: 14px; padding: 12px 16px; transition: all 0.2s;">
+        <summary style="cursor: pointer; color: var(--text-dim); font-size: 12px; font-weight: 700; user-select: none; display: flex; align-items: center; justify-content: space-between;">
+          <span>✏️ Configuração Manual Avançada (Definir Senha Específica ou Descrição Longa)</span>
+          <span style="font-size: 11px; opacity: 0.7;">▼ expandir</span>
         </summary>
-        <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;">
-          <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 10px;">
+        <div style="margin-top: 14px; display: flex; flex-direction: column; gap: 12px; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 14px;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;">
             <div>
-              <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 3px; font-weight: 700;">🔑 SENHA DE ACESSO:</div>
-              <input type="text" id="new-pwd-val" placeholder="Ex: CYBER-VIP-NETFLIX-9921" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 8px; padding: 9px 12px; color: #00ff66; font-family: var(--font-mono); font-weight: 800; font-size: 12px;">
+              <div style="font-size: 10.5px; color: var(--text-dim); margin-bottom: 4px; font-weight: 700;">🔑 SENHA DE ACESSO:</div>
+              <input type="text" id="new-pwd-val" class="quick-input-box mono" placeholder="Ex: CYBER-VIP-NETFLIX-9921">
             </div>
             <div>
-              <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 3px; font-weight: 700;">👤 NOME DO PERFIL / CLIENTE:</div>
-              <input type="text" id="new-pwd-role" placeholder="Ex: Cliente VIP Carlos" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 8px; padding: 9px 12px; color: #fff; font-size: 12px;">
+              <div style="font-size: 10.5px; color: var(--text-dim); margin-bottom: 4px; font-weight: 700;">👤 NOME DO PERFIL / CLIENTE:</div>
+              <input type="text" id="new-pwd-role" class="quick-input-box" placeholder="Ex: Cliente VIP Carlos">
             </div>
           </div>
 
           <div>
-            <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 6px; font-weight: 700;">🎯 QUAIS STREAMINGS ESTA SENHA LIBERA?</div>
+            <div style="font-size: 10.5px; color: var(--text-dim); margin-bottom: 6px; font-weight: 700;">🎯 STREAMINGS AUTORIZADOS NESTA SENHA:</div>
             <div class="pwd-checkboxes-grid">
               <label class="pwd-checkbox-pill">
                 <input type="checkbox" id="chk-netflix" checked style="accent-color: #ff3344; width: 16px; height: 16px;">
@@ -1058,18 +1268,18 @@
             </div>
           </div>
 
-          <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 10px;">
+          <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 12px;">
             <div>
-              <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 3px; font-weight: 700;">📝 DESCRIÇÃO / OBSERVAÇÃO (OPCIONAL):</div>
-              <input type="text" id="new-pwd-desc" placeholder="Ex: Pacote Duo até 30/12" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 8px; padding: 8px 12px; color: #fff; font-size: 11.5px;">
+              <div style="font-size: 10.5px; color: var(--text-dim); margin-bottom: 4px; font-weight: 700;">📝 DESCRIÇÃO / OBSERVAÇÃO (OPCIONAL):</div>
+              <input type="text" id="new-pwd-desc" class="quick-input-box" placeholder="Ex: Pacote Duo até 30/12">
             </div>
             <div>
-              <div style="font-size: 10px; color: var(--text-dim); margin-bottom: 3px; font-weight: 700;">📅 VALIDADE EM DIAS (0 = VITALÍCIO):</div>
-              <input type="number" id="new-pwd-days" value="30" min="0" placeholder="Ex: 30, 200, 360" style="width: 100%; background: rgba(0,0,0,0.7); border: 1px solid var(--panel-border); border-radius: 8px; padding: 8px 12px; color: #00ff66; font-family: var(--font-mono); font-size: 11.5px; font-weight: 800;">
+              <div style="font-size: 10.5px; color: var(--text-dim); margin-bottom: 4px; font-weight: 700;">📅 VALIDADE EM DIAS (0 = VITALÍCIO):</div>
+              <input type="number" id="new-pwd-days" value="30" min="0" placeholder="Ex: 30, 200, 360" class="quick-input-box mono">
             </div>
           </div>
 
-          <button type="button" class="btn-unlock" id="btn-save-pwd-main" onclick="savePassword()" style="padding: 11px; font-size: 13px;">
+          <button type="button" class="btn-unlock" id="btn-save-pwd-main" onclick="savePassword()" style="padding: 12px; font-size: 13px;">
             💾 SALVAR SENHA E ATIVAR PERMISSÕES ⚡
           </button>
           <div id="pwd-save-msg" style="font-size: 11px; text-align: center; font-weight: 700;"></div>
@@ -1077,7 +1287,7 @@
       </details>
 
       <!-- Banner de Alerta de Recuperação de Senhas (Auto-Detecta reinício do Render) -->
-      <div id="pwd-restore-banner" style="display: none; background: rgba(255, 215, 0, 0.12); border: 1.5px solid #ffd700; border-radius: 12px; padding: 12px 16px; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);">
+      <div id="pwd-restore-banner" style="display: none; background: rgba(255, 215, 0, 0.12); border: 1.5px solid #ffd700; border-radius: 14px; padding: 12px 16px; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);">
         <div style="display: flex; align-items: center; gap: 10px;">
           <span style="font-size: 20px;">🛡️</span>
           <div>
@@ -1090,34 +1300,34 @@
         </button>
       </div>
 
-      <!-- Saved Passwords List Toolbar -->
-      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+      <!-- Barra de Ferramentas das Senhas Cadastradas -->
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 14px;">
         <div style="display: flex; align-items: center; gap: 8px;">
-          <div style="font-size: 11px; color: var(--text-dim); font-weight: 700; text-transform: uppercase;">
-            📋 Senhas Ativas no Sistema (Configuradas):
+          <div style="font-size: 12px; color: #f8fafc; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;">
+            📋 Senhas Ativas no Sistema:
           </div>
-          <span id="pwd-count-badge" style="background: rgba(255, 215, 0, 0.2); color: #ffd700; border: 1px solid rgba(255, 215, 0, 0.4); border-radius: 10px; padding: 1px 7px; font-size: 10.5px; font-weight: 800;">0</span>
+          <span id="pwd-count-badge" style="background: rgba(255, 215, 0, 0.2); color: #ffd700; border: 1px solid rgba(255, 215, 0, 0.5); border-radius: 12px; padding: 2px 9px; font-size: 11px; font-weight: 900; font-family: var(--font-mono);">0</span>
         </div>
 
         <div style="display: flex; gap: 6px; flex-wrap: wrap;">
-          <button type="button" class="btn-icon" onclick="downloadPasswordsBackup()" style="font-size: 10.5px; padding: 3px 10px; color: #00e5ff; border-color: rgba(0, 229, 255, 0.4); background: rgba(0, 229, 255, 0.08);" title="Baixar arquivo config_senhas.json com todas as senhas para salvar no seu computador">
+          <button type="button" class="btn-icon" onclick="downloadPasswordsBackup()" style="font-size: 11px; padding: 5px 12px; color: #00e5ff; border-color: rgba(0, 229, 255, 0.4); background: rgba(0, 229, 255, 0.08);" title="Baixar arquivo config_senhas.json com todas as senhas para salvar no seu computador">
             📥 Baixar Backup (.json)
           </button>
-          <label class="btn-icon" style="font-size: 10.5px; padding: 3px 10px; color: #00ff66; border-color: rgba(0, 255, 102, 0.4); background: rgba(0, 255, 102, 0.08); cursor: pointer;" title="Importar arquivo config_senhas.json do seu computador">
+          <label class="btn-icon" style="font-size: 11px; padding: 5px 12px; color: #00ff66; border-color: rgba(0, 255, 102, 0.4); background: rgba(0, 255, 102, 0.08); cursor: pointer;" title="Importar arquivo config_senhas.json do seu computador">
             📤 Importar Backup
             <input type="file" id="file-import-passwords" accept=".json" onchange="importPasswordsBackupFile(event)" style="display: none;">
           </label>
-          <button type="button" class="btn-icon" onclick="syncVaultToServer()" style="font-size: 10.5px; padding: 3px 10px; color: #ffd700; border-color: rgba(255, 215, 0, 0.4); background: rgba(255, 215, 0, 0.08);" title="Sincronizar cofre do navegador com o servidor">
+          <button type="button" class="btn-icon" onclick="syncVaultToServer()" style="font-size: 11px; padding: 5px 12px; color: #ffd700; border-color: rgba(255, 215, 0, 0.4); background: rgba(255, 215, 0, 0.08);" title="Sincronizar cofre do navegador com o servidor">
             🔄 Sincronizar Tudo
           </button>
-          <button type="button" class="btn-icon" onclick="loadPasswordsList()" style="font-size: 10px; padding: 2px 8px; color: #ffd700;" title="Atualizar a lista agora">
+          <button type="button" class="btn-icon" onclick="loadPasswordsList()" style="font-size: 11px; padding: 5px 10px; color: #ffd700;" title="Atualizar a lista agora">
             🔄 Atualizar Lista
           </button>
         </div>
       </div>
 
       <div id="pwd-list-container" class="pwd-list-container">
-        <div style="text-align: center; color: var(--text-dim); padding: 16px; font-size: 12px;">Carregando senhas configuradas...</div>
+        <div style="text-align: center; color: var(--text-dim); padding: 24px; font-size: 12px;">Carregando senhas configuradas...</div>
       </div>
     </div>
 
@@ -2573,38 +2783,40 @@
 
         return `
           <div class="pwd-item-card" id="pwd-card-${index}">
-            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap;">
               <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                <span style="font-size: 13.5px; font-weight: 800; color: #ffd700;">👤 ${escapeHtml(role)} ${desc ? `<span style="font-size: 11px; color: var(--text-dim); font-weight: 400;">(${escapeHtml(desc)})</span>` : ''}</span>
+                <span style="font-size: 14px; font-weight: 800; color: #ffd700; display: inline-flex; align-items: center; gap: 6px;">
+                  <span>👤</span> ${escapeHtml(role)} ${desc ? `<span style="font-size: 11px; color: var(--text-dim); font-weight: 500;">(${escapeHtml(desc)})</span>` : ''}
+                </span>
                 ${validityBadge}
               </div>
-              <div style="display: flex; gap: 5px; flex-wrap: wrap;">
-                <button type="button" class="btn-icon" onclick="loginWithPasswordDirect('${escapeHtml(pwd)}')" style="font-size: 10px; padding: 3px 9px; color: #00ff66; border-color: rgba(0,255,102,0.4); background: rgba(0,255,102,0.1);" title="Fazer login imediato no site com esta senha">
+              <div style="display: flex; gap: 5px; flex-wrap: wrap; align-items: center;">
+                <button type="button" class="btn-icon" onclick="loginWithPasswordDirect('${escapeHtml(pwd)}')" style="font-size: 10.5px; padding: 4px 10px; color: #00ff66; border-color: rgba(0,255,102,0.4); background: rgba(0,255,102,0.12); font-weight: 800;" title="Fazer login imediato no site com esta senha">
                   🚀 Entrar
                 </button>
-                <button type="button" class="btn-icon" id="btn-renew-${index}" onclick="renewPasswordByIndex(${index}, 30)" style="font-size: 10px; padding: 3px 8px; color: #ffd700; border-color: rgba(255,215,0,0.4); background: rgba(255,215,0,0.08);" title="Adicionar +30 dias de validade a esta senha com 1 clique">
+                <button type="button" class="btn-icon" id="btn-renew-${index}" onclick="renewPasswordByIndex(${index}, 30)" style="font-size: 10.5px; padding: 4px 9px; color: #ffd700; border-color: rgba(255,215,0,0.4); background: rgba(255,215,0,0.1); font-weight: 700;" title="Adicionar +30 dias de validade a esta senha com 1 clique">
                   ➕ +30d
                 </button>
-                <button type="button" class="btn-icon" id="btn-edit-pwd-${index}" onclick="editPasswordByIndex(${index})" style="font-size: 10px; padding: 3px 8px; color: #00e5ff; border-color: rgba(0,229,255,0.35); background: rgba(0,229,255,0.06);" title="Editar permissões, dias ou nome desta senha">
+                <button type="button" class="btn-icon" id="btn-edit-pwd-${index}" onclick="editPasswordByIndex(${index})" style="font-size: 10.5px; padding: 4px 9px; color: #00e5ff; border-color: rgba(0,229,255,0.35); background: rgba(0,229,255,0.08);" title="Editar permissões, dias ou nome desta senha">
                   ✏️ Editar
                 </button>
-                <button type="button" class="btn-icon" id="btn-wa-${index}" onclick="copyPasswordWhatsAppByIndex(${index}, this)" style="font-size: 10px; padding: 3px 9px; color: #25D366; border-color: rgba(37,211,102,0.4); background: rgba(37,211,102,0.08);" title="Copiar texto formatado para enviar no WhatsApp com validade">
+                <button type="button" class="btn-icon" id="btn-wa-${index}" onclick="copyPasswordWhatsAppByIndex(${index}, this)" style="font-size: 10.5px; padding: 4px 10px; color: #25D366; border-color: rgba(37,211,102,0.4); background: rgba(37,211,102,0.1); font-weight: 800;" title="Copiar texto formatado para enviar no WhatsApp com validade">
                   📲 WhatsApp
                 </button>
-                <button type="button" class="btn-icon" id="btn-copy-${index}" onclick="copyPasswordByIndex(${index}, this)" style="font-size: 10px; padding: 3px 8px; color: #00ff66; border-color: rgba(0,255,102,0.3);">
+                <button type="button" class="btn-icon" id="btn-copy-${index}" onclick="copyPasswordByIndex(${index}, this)" style="font-size: 10.5px; padding: 4px 9px; color: #00ff66; border-color: rgba(0,255,102,0.3);">
                   📋 Copiar
                 </button>
-                <button type="button" class="btn-icon" id="btn-del-pwd-${index}" onclick="deletePasswordByIndex(${index})" style="font-size: 10px; padding: 3px 8px; color: #ff4d5a; border-color: rgba(255,77,90,0.3);">
+                <button type="button" class="btn-icon" id="btn-del-pwd-${index}" onclick="deletePasswordByIndex(${index})" style="font-size: 10.5px; padding: 4px 9px; color: #ff4d5a; border-color: rgba(255,77,90,0.35); background: rgba(255,77,90,0.06);">
                   🗑️ Excluir
                 </button>
               </div>
             </div>
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; background: rgba(0,0,0,0.4); border-radius: 8px; padding: 8px 12px; margin-top: 2px; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; background: rgba(0,0,0,0.45); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 8px 12px; margin-top: 4px; flex-wrap: wrap;">
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 240px;">
-                <span style="font-size: 14px;">🔑</span>
-                <input type="text" readonly value="${escapeHtml(pwd)}" onclick="this.select(); copyPasswordDirect(this.value, this);" title="Clique para selecionar e copiar automaticamente" style="background: rgba(0,0,0,0.6); border: 1px solid rgba(0, 229, 255, 0.4); border-radius: 8px; padding: 6px 10px; color: #00e5ff; font-family: var(--font-mono); font-size: 12.5px; font-weight: 800; width: 100%; cursor: pointer;" />
+                <span style="font-size: 14px; opacity: 0.8;">🔑</span>
+                <input type="text" readonly value="${escapeHtml(pwd)}" onclick="this.select(); copyPasswordDirect(this.value, this);" title="Clique para selecionar e copiar automaticamente" style="background: rgba(0,0,0,0.6); border: 1px solid rgba(0, 229, 255, 0.35); border-radius: 8px; padding: 6px 12px; color: #00e5ff; font-family: var(--font-mono); font-size: 13px; font-weight: 800; width: 100%; cursor: pointer;" />
               </div>
-              <div style="display: flex; gap: 4px; flex-wrap: wrap;">${badgeNf} ${badgeHbo} ${badgeCr} ${badgeSky}</div>
+              <div style="display: flex; gap: 6px; flex-wrap: wrap;">${badgeNf} ${badgeHbo} ${badgeCr} ${badgeSky}</div>
             </div>
           </div>
         `;
