@@ -774,7 +774,12 @@
       </div>
 
       <div style="display: flex; flex-direction: column; gap: 6px;">
-        <div style="font-size: 10.5px; color: var(--text-dim); font-weight: 700;">SENHA DE DESBLOQUEIO:</div>
+        <div style="font-size: 10.5px; color: var(--text-dim); font-weight: 700; display: flex; justify-content: space-between; align-items: center;">
+          <span>SENHA DE DESBLOQUEIO:</span>
+          <button type="button" onclick="pasteIntoInput('admin-auth-input')" style="background: rgba(255,215,0,0.15); border: 1px solid rgba(255,215,0,0.35); color: #ffd700; border-radius: 6px; padding: 2px 8px; font-size: 10px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;">
+            📋 Colar Senha
+          </button>
+        </div>
         <div style="position: relative;">
           <input type="password" id="admin-auth-input" placeholder="Cole a senha do cofre aqui..." style="width: 100%; background: rgba(0,0,0,0.7); border: 1.5px solid var(--panel-border); border-radius: 10px; padding: 12px 42px 12px 14px; color: #fff; font-size: 13px; font-family: var(--font-mono);" onkeydown="if(event.key==='Enter') executeAdminUnlock();">
           <button type="button" onclick="const i=document.getElementById('admin-auth-input'); i.type=(i.type==='password'?'text':'password');" style="position: absolute; right: 10px; top: 11px; background: none; border: none; font-size: 16px; cursor: pointer; color: var(--text-dim);">👁️</button>
@@ -1174,17 +1179,32 @@
 
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px;">
             <div style="display: flex; flex-direction: column; gap: 5px;">
-              <label for="quick-client-name" style="font-size: 11px; color: var(--text-dim); font-weight: 700; display: flex; align-items: center; gap: 6px;">
-                <span>👤</span> NOME OU WHATSAPP DO CLIENTE:
-              </label>
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <label for="quick-client-name" style="font-size: 11px; color: var(--text-dim); font-weight: 700; display: flex; align-items: center; gap: 6px;">
+                  <span>👤</span> NOME OU WHATSAPP DO CLIENTE:
+                </label>
+                <button type="button" onclick="pasteIntoInput('quick-client-name')" style="background: rgba(56, 189, 248, 0.12); border: 1px solid rgba(56, 189, 248, 0.3); color: #38bdf8; border-radius: 6px; padding: 2px 8px; font-size: 10px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 3px;">
+                  📋 Colar
+                </button>
+              </div>
               <input type="text" id="quick-client-name" class="quick-input-box" placeholder="Ex: Carlos VIP ou (11) 99999-9999">
             </div>
 
             <div style="display: flex; flex-direction: column; gap: 5px;">
-              <label for="quick-custom-pwd" style="font-size: 11px; color: var(--text-dim); font-weight: 700; display: flex; align-items: center; gap: 6px;">
-                <span>🔑</span> SENHA PERSONALIZADA (OPCIONAL):
-              </label>
-              <input type="text" id="quick-custom-pwd" class="quick-input-box mono" placeholder="Deixe vazio para gerar automaticamente">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <label for="quick-custom-pwd" style="font-size: 11px; color: var(--text-dim); font-weight: 700; display: flex; align-items: center; gap: 6px;">
+                  <span>🔑</span> SENHA PERSONALIZADA (OPCIONAL):
+                </label>
+                <div style="display: flex; gap: 4px;">
+                  <button type="button" onclick="pasteIntoInput('quick-custom-pwd')" style="background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.35); color: #34d399; border-radius: 6px; padding: 2px 8px; font-size: 10px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 3px;">
+                    📋 Colar Senha
+                  </button>
+                  <button type="button" onclick="document.getElementById('quick-custom-pwd').value=''; showToast('🧹 Senha limpa!');" title="Limpar senha" style="background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.15); color: var(--text-dim); border-radius: 6px; padding: 2px 6px; font-size: 10px; font-weight: 700; cursor: pointer;">
+                    ✖️
+                  </button>
+                </div>
+              </div>
+              <input type="text" id="quick-custom-pwd" class="quick-input-box mono" placeholder="Cole sua senha ou deixe vazio para gerar">
             </div>
           </div>
         </div>
@@ -1258,11 +1278,21 @@
         <div style="margin-top: 14px; display: flex; flex-direction: column; gap: 14px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 14px;">
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;">
             <div>
-              <div style="font-size: 11px; color: var(--text-dim); margin-bottom: 5px; font-weight: 700;">🔑 SENHA DE ACESSO:</div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                <div style="font-size: 11px; color: var(--text-dim); font-weight: 700;">🔑 SENHA DE ACESSO:</div>
+                <button type="button" onclick="pasteIntoInput('new-pwd-val')" style="background: rgba(56, 189, 248, 0.12); border: 1px solid rgba(56, 189, 248, 0.3); color: #38bdf8; border-radius: 6px; padding: 2px 8px; font-size: 10px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 3px;">
+                  📋 Colar
+                </button>
+              </div>
               <input type="text" id="new-pwd-val" class="quick-input-box mono" placeholder="Ex: VIP-NETFLIX-9921">
             </div>
             <div>
-              <div style="font-size: 11px; color: var(--text-dim); margin-bottom: 5px; font-weight: 700;">👤 NOME DO PERFIL / CLIENTE:</div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                <div style="font-size: 11px; color: var(--text-dim); font-weight: 700;">👤 NOME DO PERFIL / CLIENTE:</div>
+                <button type="button" onclick="pasteIntoInput('new-pwd-role')" style="background: rgba(56, 189, 248, 0.12); border: 1px solid rgba(56, 189, 248, 0.3); color: #38bdf8; border-radius: 6px; padding: 2px 8px; font-size: 10px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 3px;">
+                  📋 Colar
+                </button>
+              </div>
               <input type="text" id="new-pwd-role" class="quick-input-box" placeholder="Ex: Cliente VIP Carlos">
             </div>
           </div>
@@ -3096,6 +3126,39 @@
       event.target.value = '';
     }
 
+    async function pasteIntoInput(inputId) {
+      const input = document.getElementById(inputId);
+      if (!input) return;
+      try {
+        let text = '';
+        if (navigator.clipboard && navigator.clipboard.readText) {
+          try {
+            text = await navigator.clipboard.readText();
+          } catch (clipErr) {
+            text = '';
+          }
+        }
+        if (!text) {
+          text = prompt('Cole aqui a senha ou texto:') || '';
+        }
+        if (text) {
+          input.value = text.trim();
+          input.dispatchEvent(new Event('input', { bubbles: true }));
+          input.dispatchEvent(new Event('change', { bubbles: true }));
+          showToast('📋 Texto colado com sucesso!');
+          if (typeof updateQuickDurationPreview === 'function') updateQuickDurationPreview();
+        }
+      } catch (err) {
+        const manual = prompt('Cole aqui a senha ou texto:');
+        if (manual) {
+          input.value = manual.trim();
+          input.dispatchEvent(new Event('input', { bubbles: true }));
+          input.dispatchEvent(new Event('change', { bubbles: true }));
+          showToast('📋 Texto colado com sucesso!');
+        }
+      }
+    }
+
     async function loadPasswordsList() {
       const container = document.getElementById('pwd-list-container');
       try {
@@ -3105,7 +3168,32 @@
         });
         if (res.ok) {
           const data = await res.json();
-          renderPasswordsListUI(data.passwords);
+          const serverPasswords = Array.isArray(data.passwords) ? data.passwords : [];
+          const vault = getLocalVaultPasswords();
+
+          // 🛡️ AUTO-HEALING: Se o servidor perdeu senhas no deploy/reinício do Render,
+          // restaura silenciosamente em segundo plano sem que o usuário perca nada!
+          if (vault.length > 0) {
+            const serverSet = new Set(serverPasswords.map(p => (p.senha || p.password || '').trim().toLowerCase()));
+            const missing = vault.filter(v => {
+              const p = (v.senha || v.password || '').trim().toLowerCase();
+              return p && !serverSet.has(p);
+            });
+            if (missing.length > 0) {
+              fetch(`${API_BASE}/api/admin/passwords/sync-all`, {
+                method: 'POST',
+                headers: { ...getAdminHeaders(), 'Content-Type': 'application/json' },
+                body: JSON.stringify({ senhas: vault })
+              }).then(r => r.json()).then(syncData => {
+                if (syncData && syncData.success && Array.isArray(syncData.passwords)) {
+                  saveToLocalVault(syncData.passwords);
+                  renderPasswordsListUI(syncData.passwords);
+                }
+              }).catch(() => {});
+            }
+          }
+
+          renderPasswordsListUI(serverPasswords);
         } else if (res.status === 401) {
           if (adminPassCached) {
             await executeAdminUnlock();
