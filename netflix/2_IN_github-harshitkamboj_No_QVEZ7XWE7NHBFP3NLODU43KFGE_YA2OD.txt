@@ -1,13 +1,13 @@
 NETFLIX HIT :👇
 
 Country: IN
-Plan: Basic
-Next Billing: October 14, 2026
+Plan: Standard
+Next Billing: September 28, 2026
 Payment: UPI
-Quality: HD720p
-Streams: 1
-Price: ₹199
-Profiles (4): paullltiju21, Paul, Khushi, Kids
+Quality: HD
+Streams: 2
+Price: ₹499
+Profiles (5): paullltiju21, Paul, Khushi, Carlos, Kids
 
 --------------------------------------------------------------------------------------------------
 

@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: GB
+Plan: Standard
+Next Billing: October 7, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: £13.99
+Extra Member: Yes
+Profiles (5): I have foot fungus, E, 𝔔𝔴𝔞𝔶𝔷𝔷𝔶, ALËÊÑÃ, X-DPO
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1791110195	OptanonAlertBoxClosed	2025-10-04T10:36:35.095Z
+.netflix.com	TRUE	/	FALSE	1791110197	nfvdid	BQFmAAEBENmmipkH8-wFr3KMPJLqAYRgob6D6DwbTTtqV-9yoPO1HfnWqWI82CSNSf4ukyPhivWkxsNHB6KZRf-WkMOS6a60bgFWMaOzowrHnTxxis74JY762rzmW-C5dpK0-bV5q31TTA5FZv4g4HeCAl-e3Eh-
+.netflix.com	TRUE	/	TRUE	1798090581	NetflixId	ct%3DBgjHlOvcAxL9A6AMAlc_smS8HQZw7HwfN7d5QsjZV368eySdjdnLhHzQvU51rDLW2hRyLKSbkNuUzKB_K5HX3O6MpqVgIQBMgbIQavZsD3UqggOMV5pIHWj1YwLC98FbaoEyinfdw3ybY3y0GDooWwo_MWj1C-hEJXQK3Gzp_OFZLVZ9259p4hOEhXi7-rUIfRYVFbdN9EK_C9GG7-7zZPP_6YJTiDtmUrMyQpPM1yViM1vF-Q1z-n6cosnaRgTcr2qXEJckNxHUixYnsBUtjpxux_ZI9jessW6DK4gdazD1Q4S5A9BNHBhRs6jBLdjhB6i8XHdOkokzGThZFvrW77RGrC-B6MCcUPMBH2bsTS27L-pXcyiYRYIeaCm5ASqO-EX4Bav37OKj_PRkOrn6yLaPqC8IeS7nhwvEueFuNwZ-ebG6W_RcCqx8p_x8v-kzicwkHBg2L2Ht2Jhfr9l7K54qGvxLnORMcQJ09OWLETUUqLgxlgq9xTBYRB2h7C5KzVooECIJb9zuf20XAH9x4Q1zNZ-BVkmGa-Jl72X7OTMNeqz3QSe9nabghyPqYjjhFR3SXGWNeAhP6FoPoJJERnE4Q1Hkdcl3guDpFYK0_aV5tsX4QdvKq-xzOPFW_qElKIZwxVE0Ke39XHK7EPX1XKw36b8Nhj5bCENsYoD-fCaglnauPuz8GAYiDgoMtRJ3VaZEJZuOn9f5%26ch%3DAQEAEAABABR4oi3NbqjevaeAMDDc35VkXt06dcXvFd0.%26v%3D3%26pg%3DHZUGGBFP7BBMJJTDHWBQCXGAXE
+.netflix.com	TRUE	/	FALSE	1798090587	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Dec+24+2025+05%3A36%3A27+GMT%2B0000+(Greenwich+Mean+Time)&version=202510.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=dce34d98-c6d7-4c64-a1ac-78a5787df795&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=1&geolocation=GB%3BENG
+.netflix.com	TRUE	/	TRUE	1798090581	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSSO26uYBntUin8iir6Xa5VMMfF_hnX0As.%26dt%3D1766554580319
+.netflix.com	TRUE	/	FALSE	1801114584	dsca	customer
+.netflix.com	TRUE	/	FALSE	1790291978	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1790291978	netflix-sans-normal-3-loaded	true

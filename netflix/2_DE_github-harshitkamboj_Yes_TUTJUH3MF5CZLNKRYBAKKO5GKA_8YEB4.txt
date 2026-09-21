@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: DE
+Plan: Standard
+Next Billing: October 15, 2026
+Payment: EU_DIRECT_DEBIT
+Quality: HD
+Streams: 2
+Price: €15.99
+Extra Member: Yes
+Profiles (2): Leon, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1797958097	OptanonAlertBoxClosed	2025-12-22T16:48:17.079Z
+.netflix.com	TRUE	/	FALSE	1798110381	nfvdid	BQFmAAEBEI16miP4FQAhUJirVVpNGmhgefwGKXL4DJGEC-YpDEesPKFRzFMkJCVtvJWyYZI5F38CmcmYj9-aPs24LjD9J9BjSl5cjTtV6XtBMVGxBcLRwah3ZV0ltaUj57ntruJtbpH8EuyPKyUDK09FIMIzfFRT
+.netflix.com	TRUE	/	TRUE	1790291977	gsid	7947ac2a-92fb-4ebe-8e0a-af58b436bb4f
+.netflix.com	TRUE	/	TRUE	1799050009	NetflixId	ct%3DBgjHlOvcAxLuA9gJWu1LMzfITNXTeWzV101CtxS-PInVAUDhqXZ9mRfpNzogYvmwENpF0Mo-acMzzSbNU-wlb-ayKWQSyz7jFCv1vsRDNZlGC0TCws0R2W157_oFN34PpzKREHqgNa0Z-PXMA3kK_ggZ_3a0-PZ_a8u2mjgXxEPJO1_0V2sOTHgyhRn7efYkqMzNFPA402sG_GOsvVs5gVJJYw3vV7kfrIlLuu0b7OCylx-3vgHxYcN35789YMSQWg9uAtBkO3vf0SxGo6mXzGAQLFDbYieO-s1B4AhVExa8atJqjyjvzFsgBWqXr0mFv_A2nIzzz0PIus7ZtIV1kLwwalFuqgmXIxA8khlLAH8-DF9yVgYHjVI4KFlABbMU4c0U7WQQk2Vj5je9zyNnREY5rgmh2YAMnQJ_2f4Ys6NfP7TOyMpox0qamIFVwpg4oMJ7HkoD4qJcVgX6dLyZx4NCydlu-9xes86X-OogAW1RK7ahqTloEAXRNqbQcDuPwyE7fxMeKDKqaq78ucW8_OF95OLjwmLAQl8GjKx7eScPsMLtvp7e0YcAuDSMy2TDbqavPfKCYNT4r97h33h3frcQZpybKBSz7JxGtXy_y--NAofea_nJKqc4NHh30s4q8B9MX33UnxJL931ky_19nc7ifWT26kIvGAYiDgoM-mloYz5XFihydZTA%26ch%3DAQEAEAABABQyY0-T1dsqCrsPTIhJKpmoMICqRRTcoyI.%26v%3D3%26pg%3DTUTJUH3MF5CZLNKRYBAKKO5GKA
+.netflix.com	TRUE	/	TRUE	1799050009	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQVDuLfetPir9s8LxKHA247xdjR8YtuZVk.%26dt%3D1767514010939
+.netflix.com	TRUE	/	FALSE	1790291977	profilesNewSession	0
+.netflix.com	TRUE	/	FALSE	1799053112	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Jan+04+2026+09%3A58%3A32+GMT%2B0100+(Mitteleurop%C3%A4ische+Normalzeit)&version=202510.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=16d779c0-b8be-4ca2-8ba6-9f5ea55a8435&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=1&geolocation=DE%3BBW
+.netflix.com	TRUE	/	FALSE	1802077112	dsca	customer
+.netflix.com	TRUE	/	FALSE	1790291977	flwssn	99a562db-4a1c-4cef-ac4d-4fd6eb2cfcc5
+.netflix.com	TRUE	/	FALSE	1790291977	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1790291977	netflix-sans-normal-3-loaded	true

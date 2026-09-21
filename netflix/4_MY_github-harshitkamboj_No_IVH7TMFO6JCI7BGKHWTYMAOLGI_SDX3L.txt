@@ -7,7 +7,7 @@ Payment: TELEKOM_MALAYSIA
 Quality: UHD
 Streams: 4
 Price: RM 69.90
-Profiles (5): Calvo, Yaya, Jeff, Ndd, Yassine
+Profiles (5): Luis, 1B, A3, A4, Degla
 
 --------------------------------------------------------------------------------------------------
 

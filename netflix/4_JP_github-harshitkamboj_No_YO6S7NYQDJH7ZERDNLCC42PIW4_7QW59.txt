@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: JP
+Plan: Premium
+Next Billing: October 5, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: JPY 2,290
+Profiles (5): Masaki, Aji, Mimi, Syaca, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1793082191	nfvdid	BQFmAAEBEDwuJb3PCxe6drHPHkd7Lx5gh40QkRxhWo2xptCAi_MlcT4xwNxghtXUKLrexRVGOq_X9BUD1jDzz2gAdz5E6_NLzE-lTzyXL8Jm760oXrHopdSZgvJfkCsKIJCnEGRpx6WqjbmdqqMLKsbsZsGGZL0F
+.netflix.com	TRUE	/	FALSE	1807762006	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Apr+15+2026+12%3A06%3A46+GMT%2B0800+(Philippine+Standard+Time)&version=202602.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=c0a23670-6ed1-49a3-b335-790095f35b7d&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0
+.netflix.com	TRUE	/	TRUE	1808738516	NetflixId	ct%3DBgjHlOvcAxLqA-tvUkRtZxVpg0raIUIStyuzjnBRU5TWifV9DvaHnsFjNM98VYhUGts8x41A8Jib9Cimo5hbBP_qp9CF8yi9kP-R1DlwUs-rt1AAfvV_EyXwCYHz10w4Z46l_-DmdKngeHOHA8EgC-Qz6Z67giy4VFgigbolM2PmXTRniE4J3fZE0rWRYXFXgsgQejttgvekSMJMuTU-0O_FFD6Lr8JykHODdMf3vCv8Gqlz6yu20T4Tk0BcssEtBrhPtiPBBhm5lnf5FyD5T4FaKfkhBEOXhfg9EbudyRALJFflyYmPhrB_D80hiRVC2oo7mV_LxxdvKTlz0347hIfDjHPltNfEw-_eWQt8GcJgcTHNG7uPMRJQV1fFQ1UGhXQ0iJG1-syr3Ze4VTFbvaOY72y2fjvIXiVT1HnqSvXyRwyByOo0U6sG7m2nxiDXDGitkpAs4_i26zXx3WkAHaA_QDt-hHu3PE7fDMffdQEm_Q2iSXkzDjTyVsEdNn8AAFbrzGYJRBQxYTIO5ang0bwR2Uxzn_ZnYalQQ7LM8NvvHS4TeeArcxZDxhH7oiVc0izYz6GBcZ7vargoU2kpEv6YnIGcQ-kcIJoJDXXqMEbIs0gvtxFe2PqavubszCf-rwylEURnn-5gYHUpQvu8yN_Uz6UYBiIOCgx9qw7s4wU189uGsIo.%26ch%3DAQEAEAABABRo5EALpo9w3AWoidigbWFXUly_hlK3tnU.%26v%3D3%26pg%3DYO6S7NYQDJH7ZERDNLCC42PIW4
+.netflix.com	TRUE	/	TRUE	1808738516	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABR-sYVY2oog3kM6PbZFTlTIaqru3g9pIGk.%26dt%3D1777202517445
+.netflix.com	TRUE	/	FALSE	1790291978	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1790291978	netflix-sans-normal-3-loaded	true

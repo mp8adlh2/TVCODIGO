@@ -1,0 +1,20 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Standard
+Next Billing: October 6, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 289,99 TL
+Profiles (4): Abdullah Ali, Tülin, Sümoşş, Çocuk
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1794080743	OptanonAlertBoxClosed	2025-11-07T19:45:43.197Z
+.netflix.com	TRUE	/	FALSE	1794080778	nfvdid	BQFmAAEBEFvtbtZEKf5Kp_I1WPUgxwFgtXr5uu40xeGpp0c-RbpSRtxRvWHGd0BmSqfFtj60LmDDXPFapPyG7IVVTRoCfNuEhOOA1tHpKZEzLvUXB69cFxqLk5QOB0e6bZvZgqVeXXOlK_kk69Yi4ulPcBX7x8Xy
+.netflix.com	TRUE	/	TRUE	1795215174	NetflixId	ct%3DBgjHlOvcAxLwA8yjegK9jnEc7waamMpgTa6DqBgyrkQlM_uhvl-k6dVbtwffuOyWd5DYewSgvc2NL4ZMJiSYDuagmGd6xfucxOilyKJtnhWeCmM5GleArAJA6rHgY2LCzT_ml5rSvDGcW1Z8pSRbtEb2No3v2dcpRFAMWAphT9H-FHtkL21CuOJxYm87HZHaM54EQSM2VsAo7li5KY9k88KAc3kBZlnIrJovEMIGd0O8BOvyumWagZtGmqgsJSRRlmhR8JAQKeYls1r4zBL8Nvi6gNNsByOnAsxxPeIfI-fzrurRaMdiReREGU6mGJ5B4PQDzyCr9e0uIf3MaDQUm1uE26ZwJLn-PqjESdqX4ZjMprac5wG_8h2wAaQum7Nd3I5uyeW_cdoDYlxM11n7hywWltCAvLddFTW2bvz_GpXEtQacW29jGBAKIDTm87P7E6rCLPRDbd_zDlY7LPEZGWDkkftBFubEAfVp0oFl40XBFEFlX2PV361i2ud1ifGPF66JXJl0NSCjh5maagTbhnSS_17bZx_ENOWc_kul_OrGChAqzz1wmlqDx1Tus3eSD8FtCUPPdclGWZwe-O5LNV3WhIwL9R7ahuyw3qO-VJJciLZZNh9h0-_xTi28IkiGDSSI9hcESDxnxsT6OMA56wyGGLiuB6SNKRUYBiIOCgznXpcWyw-wHZ2dm0Y.%26ch%3DAQEAEAABABTFk4WxNtIS30PX2x7Rncm6mVQfsNW0Ess.%26v%3D3%26pg%3D3P4FCXABGJB2FAMOPMRZ3ONWTM
+.netflix.com	TRUE	/	FALSE	1795215177	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Nov+21+2025+01%3A52%3A57+GMT%2B0300+(GMT%2B03%3A00)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=ffaacfd7-01bf-41de-af7e-753fc9c2b93e&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1&geolocation=TR%3B46&AwaitingReconsent=false
