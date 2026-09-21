@@ -39,6 +39,31 @@ if os.name == 'nt':
     except Exception:
         pass
 
+if sys.stdout and hasattr(sys.stdout, 'reconfigure'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+        sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+    except Exception:
+        pass
+
+def read_secure_file(fpath: str) -> str:
+    """Lê arquivo de cookie com suporte transparente a criptografia do cofre e codificação UTF-8."""
+    if not os.path.exists(fpath):
+        return ""
+    try:
+        with open(fpath, 'rb') as f:
+            raw_b = f.read()
+        try:
+            import gerenciador_seguranca
+            plain_b = gerenciador_seguranca.decrypt_bytes(raw_b, gerenciador_seguranca.get_master_key())
+            if plain_b is not None:
+                return plain_b.decode('utf-8', errors='ignore')
+        except Exception:
+            pass
+        return raw_b.decode('utf-8', errors='ignore')
+    except Exception:
+        return ""
+
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
     console.clear()
@@ -190,11 +215,15 @@ def _rx(pattern, text, default=""):
 def _rx_all(pattern, text):
     return re.findall(pattern, text, re.S)
 
-def parse_netscape(text):
+def parse_netscape(text: str) -> dict:
     cookies = {}
     for line in text.splitlines():
         line = line.strip()
-        if not line or line.startswith("#"):
+        if not line:
+            continue
+        if line.startswith("#HttpOnly_"):
+            line = line[len("#HttpOnly_"):]
+        elif line.startswith("#"):
             continue
         parts = line.split("\t")
         if len(parts) < 7:
@@ -206,54 +235,88 @@ def parse_netscape(text):
                 cookies[k] = v
     return cookies
 
-def parse_json_cookies(text):
+def parse_json_cookies(text: str) -> dict:
     try:
         data = json.loads(text)
         if isinstance(data, list):
-            return {c["name"]: c["value"] for c in data if "name" in c and "value" in c}
+            res = {}
+            for c in data:
+                if isinstance(c, dict):
+                    name = c.get("name") or c.get("Name") or c.get("key")
+                    val = c.get("value") or c.get("Value") or c.get("val")
+                    if name and val is not None:
+                        res[str(name)] = str(val)
+            return res
         if isinstance(data, dict):
-            return data
+            if "cookies" in data and isinstance(data["cookies"], (list, dict)):
+                return parse_json_cookies(json.dumps(data["cookies"]))
+            res = {}
+            for k, v in data.items():
+                if isinstance(v, (str, int, float, bool)):
+                    res[str(k)] = str(v)
+                elif isinstance(v, dict) and "value" in v:
+                    res[str(k)] = str(v["value"])
+            return res
     except Exception:
         pass
+
+    # Tenta extrair array [...] ou objeto {...} embutido no texto
+    try:
+        match = re.search(r'(\[.*\]|\{.*\})', text, re.DOTALL)
+        if match:
+            sub = json.loads(match.group(1))
+            if isinstance(sub, list):
+                return {c["name"]: str(c["value"]) for c in sub if isinstance(c, dict) and "name" in c and "value" in c}
+            elif isinstance(sub, dict) and "cookies" in sub:
+                return parse_json_cookies(json.dumps(sub["cookies"]))
+    except Exception:
+        pass
+
     return {}
 
-def load_cookies(text):
+def load_cookies(text: str) -> dict:
+    if not text or not isinstance(text, str):
+        return {}
     text = text.strip()
+
     # 1. Tenta formato JSON
-    if text.startswith("[") or text.startswith("{"):
+    if text.startswith("[") or text.startswith("{") or "cookies" in text:
         c = parse_json_cookies(text)
         if c and any(k in c for k in ["NetflixId", "SecureNetflixId"]):
             return c
 
-    # 2. Tenta formato Netscape (com tabs ou espaços alinhados, ignorando textos de HIT)
+    # 2. Tenta formato Netscape (incluindo cookies #HttpOnly_)
     c = parse_netscape(text)
     if c and any(k in c for k in ["NetflixId", "SecureNetflixId"]):
         return c
 
-    # 3. Formato chave=valor simples (estilo cabeçalho HTTP Cookie)
+    # 3. Fallback direto por Regex para NetflixId / SecureNetflixId soltos no arquivo
     cookies = {}
+    for name in ["NetflixId", "SecureNetflixId", "nfvdid", "OptanonConsent", "dsca", "flwssn", "OptanonAlertBoxClosed"]:
+        m = re.search(rf'(?:^|[\s\t;,\'"\n]){name}[\s\t]*[=:\t ]\s*([^\s;\'"\r\n]+)', text, re.I)
+        if m:
+            val = m.group(1).strip().strip('"\'')
+            if name.lower() == "netflixid":
+                cookies["NetflixId"] = val
+            elif name.lower() == "securenetflixid":
+                cookies["SecureNetflixId"] = val
+            else:
+                cookies[name] = val
+
+    if any(k in cookies for k in ["NetflixId", "SecureNetflixId"]):
+        return cookies
+
+    # 4. Formato chave=valor simples (estilo cabeçalho HTTP Cookie)
     for part in re.split(r"[;\n]", text):
         part = part.strip()
         if "=" in part:
             k, _, v = part.partition("=")
             k = k.strip()
             v = v.strip()
-            if k:
+            if k and v and k not in cookies:
                 cookies[k] = v
 
-    if any(k in cookies for k in ["NetflixId", "SecureNetflixId"]):
-        return cookies
-
-    # 4. Fallback com regex direto caso o texto contenha dados soltos
-    for name in ["NetflixId", "SecureNetflixId", "nfvdid", "OptanonConsent", "dsca", "flwssn"]:
-        m = re.search(rf'(?:^|[\s\t;,\'"]){name}[\s\t]*[=:\t ]\s*([^\s;\'"\r\n]+)', text)
-        if m:
-            cookies[name] = m.group(1).strip()
-
-    if any(k in cookies for k in ["NetflixId", "SecureNetflixId"]):
-        return cookies
-
-    return {}
+    return cookies
 
 # ═══════════════════════════════════════════════════════════════
 #  VALIDAÇÃO ROBUSTA DA CONTA NETFLIX
@@ -704,19 +767,10 @@ def find_next_valid_cookie(exclude_file: str = "", exclude_email: str = "") -> O
 
         parsed = None
         try:
-            import gerenciador_seguranca
-            with open(filename, 'rb') as f:
-                content_raw = f.read()
-            plain_b = gerenciador_seguranca.decrypt_bytes(content_raw, gerenciador_seguranca.get_master_key())
-            raw = plain_b.decode('utf-8', errors='ignore') if plain_b is not None else content_raw.decode('utf-8', errors='ignore')
+            raw = read_secure_file(filename)
             parsed = load_cookies(raw)
         except Exception:
-            try:
-                with open(filename, 'r', encoding='utf-8', errors='ignore') as f:
-                    raw = f.read()
-                parsed = load_cookies(raw)
-            except Exception:
-                pass
+            pass
 
         if not parsed or "SecureNetflixId" not in parsed:
             DEAD_COOKIES.add(filename)

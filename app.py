@@ -247,8 +247,7 @@ def test_netflix_cookie_file(fpath: str, timeout: float = 4.0) -> Optional[dict]
             return VALID_NETFLIX_BY_FILE[fpath]
 
     try:
-        with open(fpath, 'r', encoding='utf-8', errors='ignore') as f:
-            raw = f.read()
+        raw = read_secure_text(fpath)
         parsed = tv2.load_cookies(raw)
         if not parsed or not any(k in parsed for k in ["NetflixId", "SecureNetflixId"]):
             DEAD_NETFLIX_COOKIES.add(fpath)
@@ -298,9 +297,7 @@ def extract_netflix_file_info(fpath: str) -> Optional[dict]:
         return None
 
     try:
-        with open(fpath, 'r', encoding='utf-8', errors='ignore') as f:
-            raw = f.read()
-
+        raw = read_secure_text(fpath)
         parsed = tv2.load_cookies(raw)
         if not parsed or not any(k in parsed for k in ["NetflixId", "SecureNetflixId"]):
             return None
@@ -562,8 +559,7 @@ def extract_hbo_file_info(filename: str) -> Optional[dict]:
     if filename in DEAD_HBO_COOKIES or bname in DEAD_HBO_COOKIES:
         return None
     try:
-        with open(filename, 'r', encoding='utf-8', errors='ignore') as f:
-            content = f.read()
+        content = read_secure_text(filename)
         st_token = extract_hbo_st_token(content)
         if not st_token:
             return None
@@ -747,8 +743,7 @@ def select_hbo_cookie_by_filename(filename: str) -> Optional[dict]:
     if not os.path.exists(fpath):
         return None
     try:
-        with open(fpath, 'r', encoding='utf-8', errors='ignore') as f:
-            content = f.read()
+        content = read_secure_text(fpath)
         st_token = extract_hbo_st_token(content)
         if not st_token:
             return None
