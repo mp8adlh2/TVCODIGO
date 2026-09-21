@@ -140,13 +140,13 @@ UA_WEB = (
     "Chrome/131.0.0.0 Safari/537.36"
 )
 
-PROXY_USER_RAW = os.environ.get("PROXY_USER", "6d2980277123b8a1838d").strip()
+PROXY_USER_RAW = os.environ.get("PROXY_USER", "1a1a873f76905f764786").strip()
 if PROXY_USER_RAW and "__cr." not in PROXY_USER_RAW:
     PROXY_USER = f"{PROXY_USER_RAW}__cr.br"
 else:
     PROXY_USER = PROXY_USER_RAW
 
-PROXY_PASS = os.environ.get("PROXY_PASS", "2f94a7755f28e387")
+PROXY_PASS = os.environ.get("PROXY_PASS", "01e103487dc83ae7")
 PROXY_HOST = os.environ.get("PROXY_HOST", "gw.dataimpulse.com")
 PROXY_PORT = os.environ.get("PROXY_PORT", "823")
 
