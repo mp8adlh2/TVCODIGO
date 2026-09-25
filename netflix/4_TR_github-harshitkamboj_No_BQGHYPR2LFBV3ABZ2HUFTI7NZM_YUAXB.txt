@@ -1,0 +1,21 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: October 12, 2026
+Payment: DCB
+Quality: UHD
+Streams: 4
+Price: 379.99 TL
+Profiles (5): Abdullah, Mtergun, Zehrosne, Ebeveyn, Çocuk
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1806672797	OptanonAlertBoxClosed	2026-04-02T13:33:17.051Z
+.netflix.com	TRUE	/	TRUE	1806672877	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKEA9_k2HE6CAO8ItPmb94hEZuh1lVRckWhJMYqpPaq_cUneF7aUb8zIi1u4z7Qe1MQIFHIFuSotnk6IbLwGgSNxcbwKcVr8qUMmvhs12abHq6e6rPiJsDsMf6yV_3CmsS7j5r_GYTs6rxWraF1cNiKcFiD4rfW07CkAoacLGwxtfwaPO7mlaM2NB3vtiAsNVl0AUMrfdOmsCn-cUDqRVCPYWPeN1gHHb-Z82hRiFTzj_3LfgNtqeHV8ZhsOUGj3e_be6ykUvbuUR93W-CQVXhSKzyzDwRTQHoEU5fc0E9vO06_ANnPLXdaDr7Cc2cWvnd5K5dAcwURAROV-VJ1Mu31NpwGS30qqwV7HcmeI7IXyAmUxVcHcQkkEc4YO2ZGXw7DR4rf592_p47KfNaoksEpf_pBzAKTMuE59Qdvzyh16F9WoNUDIo2G6qGd18GAEyFCOnQS606ehF4ko26MDE3rD6f6NNlube3YNSdXYkGIC5P4OacRQc8KwVjX5E85k5YQFWFSM_8YBiIOCgwJLUbZlxUjJ2qed28.%26pg%3DBQGHYPR2LFBV3ABZ2HUFTI7NZM%26ch%3DAQEAEAABABSZy78mxyWQVZ1t-rVOz7znpwVJaGBbdQI.
+.netflix.com	TRUE	/	FALSE	1806672878	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Apr+02+2026+16%3A34%3A38+GMT%2B0300+(GMT%2B03%3A00)&version=202602.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=2844432f-c8d0-4257-9ad8-cdf3aab450ca&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&AwaitingReconsent=false&intType=3&crTime=1775136797727&geolocation=TR%3B56
+.netflix.com	TRUE	/	TRUE	1806672877	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRJ5TmKGIhf4VffJ3_sFl3QgoTEJDuatfs.%26dt%3D1775136877666
+.netflix.com	TRUE	/	FALSE	1806672877	nfvdid	BQFmAAEBEFZ_5jtPnqxco15jgVzc2t9gDyhhlsVl2P_5Pn2Z8PKYp4pbLV-zSWKFBcpI6XAPmXkGzLglCt6m8K0kOOoTZ4AWxZpR0EA2HOMlzGahG0UB6GSl5iC9GDIcnKJ7OpJ8kjD5oC8YzJXZ5omDKbeZAHr-

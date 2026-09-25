@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: MX
+Plan: Premium
+Next Billing: October 4, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: MXN 369
+Extra Member: Yes
+Profiles (5): CARMEN, 23, Jen, L, Bozoo
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1820548959	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKiAzYqKsEja3P-UIbkB1wXH3DiDPUQ0wfURQ1MJjU9AsxDEwe6Juc_ohw5aC1dOMulbyq1hKPl1bVbUXmHfJs1Za7P-VD5a5B_nVxDmmQngfEq2sMTl2bJwUlbw7HGb4cVPWMimmXwEDpC16OJI4rhZSQnAFe9sgHOk9ZwiyMmEJAIgwhkDQlVBEusK73Gdbw09DBfMJ1NvQwpGJqKj85_4zIRCxyRzz-2BalPLco6uFRn_VujetD4gHeTMCrIsa8JIv3KkM2DzyqpfMCKr7YznyoJhI6mE_VZ8nlmyluQsNuGp0QvMEEQesnlpHNxSD1y6DfTEAy1Y-4jTJom1HVzj29iLPZAvmso05lPtqpihlXdIAyQUZWMn0nSloDHJ8Vtf8T5WWadgooZvE41zURaxWLlr1BicHpC8T56YefY3WfuytJ9ZCz9Bq3kRvsDKpH-qFgOgUBasPbgURMEW3Cx7wjK3x_I4h0Ufeuib4DCgNHBv2sXfYRNqSo3TyOOM_F0-8t3pv1HD3qyqEhHW0n6jk8be23u83HFkj0A1jHRvsCi7DwYBiIOCgyWPm4WefSHesi-6PY.%26pg%3DHIYCBPC6YJAKZEOLJLW6WIMMN4%26ch%3DAQEAEAABABTQ8g7kL0H-ggJg1H1bAuqWpJ0fdWR6gv4.
+.netflix.com	TRUE	/	FALSE	1820548941	OptanonAlertBoxClosed	2026-09-10T04:02:21.746Z
+.netflix.com	TRUE	/	FALSE	1820548961	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+09+2026+22%3A02%3A41+GMT-0600+(hora+est%C3%A1ndar+central)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=1b65ff1d-c0e7-41d0-9d1b-298806f6e2e1&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&lastConsentTs=1789012941&intType=3&crTime=1789012941973&geolocation=MX%3BJAL&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1820548959	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQpmChbYG4LiB1d4BVCW3vhSDj51dz-Y-0.%26dt%3D1789012960381
+.netflix.com	TRUE	/	FALSE	1796788961	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796788961	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1820548959	nfvdid	BQFmAAEBEF4krHeRkEK7-6gZL-bjratgZKPaxVkJ2wuEwyPYQOCVjWGbfesPicWvXCvxLZ56tJGBCXq8kKYLJy9EXzcyrj5E1SHdvCGWukRBqIPZDNJBeTQEqt4bbcXvE71kVLijiSJgqYgPhknICM9fOwnOOtZh

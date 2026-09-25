@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: October 8, 2026
+Payment: UPI
+Quality: UHD
+Streams: 4
+Price: ₹649
+Profiles (5): VANSH, Nikki, Neeraj, Nidhi, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1792940818	nfvdid	BQFmAAEBEAY5JkvBy9BYwkF011Ew2rNgbF13kfsiUBSmq3mtrD4QeYjVYyb6h7UwH6J_l0xVfDKCz-u1eVZafpv73kohX5dYYi9BJLCICezSIQQz97ixULKRYa1FI7_R9iKSASL6WX05HkZ6aBTmO8uya1UJkNFn
+.netflix.com	FALSE	/	TRUE	1815410148	NetflixId	ct%3DBgjHlOvcAxL2A5nZpI5klpKIfBy1MC6jpmtHU1lTQ8utrkRYTs94iY2-GS8_ZqzaOUbDMazFkUEQEXunZylBKBbaueP3iO_VNF_qDhUZA5BeGsJkcr1VbKMwzVC0iYcmLinPKu4DkdUzalI0dTVUuO9MIV2LNQYpkgRc-_aPlOMIy3CtarAINCIjoqy16w5wjOWXb2eWujRRDfD0rgRvxRtbMtqI2XjXXq80X5Tl4RFma0F50q-JWAvM8GD6EG28_NRlyyKEfpTqS4mw_viELBYKuziWysVeZ1KwXDCh77UusBMfgMdxi4atU_8RCp5xfnvMg4t0G_6e0oAWDDlbdtVYvoErVSg5RJ7iE5LQGEjyIloYZKcMqzZBSRbLB5IiZEhNpsSXd98FUIoXAyidp-0Ek9RQBboDK7Or42TaTdinLsFt7EMOgQWKk1ZTWbVxgf6aBbO8X3U6giRbG8-VvVm_I4xulazyj8ZNox8GsJxiA0auQFx1z5slDbs5tt9HX6bigsoE9npBR4vHVsUdx0uBjEN48XNwCafvvvsT0QTqPBs_Kcp1en5gnoxe2VDa-6YAe1CXX3aSObqPR60fdzEo_kZnJC-i1x3rDBI-CwnZGup3jNMwKlKP3bwjVNOXTBO3L4i1o_BUmDy8De9HbroIQfsNC4UW6uJQs0XbbB0YBiIOCgxBPRbuQjcicHV2G00.%26ch%3DAQEAEAABABQSA07933bocQM-h29z8UOzWlgtkXZ2ITw.%26v%3D3%26pg%3DCNF5BLAJMFCFZM7OJDYVBYNWZE
+.netflix.com	FALSE	/	FALSE	1815410151	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Jul+12+2026+22%3A05%3A51+GMT%2B0530+(India+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=5db4d0b6-b941-4e43-b84f-405162998a18&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	TRUE	1815410148	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRtjZvZJQgEiBM11AOYnwEvCoQTgB3SKak.%26dt%3D1783874142005
+.netflix.com	FALSE	/	FALSE	1791650150	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1791650150	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1791650150	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

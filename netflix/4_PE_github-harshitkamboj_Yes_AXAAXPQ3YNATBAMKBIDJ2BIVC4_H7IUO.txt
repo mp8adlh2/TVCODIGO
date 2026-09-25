@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: PE
+Plan: Premium
+Next Billing: October 4, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: S/ 58.90
+Extra Member: Yes
+Profiles (2): Miguel TR, Mayki
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	13461562781445952	nfvdid	BQFmAAEBECp5ctVFIdJ7VmlENpRClyFghrDeOpH3yMH6A6wEHtpjULbGV6wNDwtUIDbqAPjyXjhZ45Tra3stG47EhcIW95FDKNBiRthjOIydf5Vn9YPhwAqwhuMLuambGRbeMRj76RhDMMxQxresRt1mWpARAbUZ
+.netflix.com	FALSE	/	FALSE	13465348157984960	NetflixId	ct%3DBgjHlOvcAxKOBDkY5GcRQkPcFtfHw5oeioA8TcykMf3yNsNSiMlUO5IeKelQJkmuLndagQ5sLdv0N-Dv584qoWzSDXLXDdAFE4N-OA1pumDtfdgT36wPFm7h1sG5MYRzrMGphTXYxuiX0LHeiEkDAbxwdAZjDB3pXAlfPkJvl5INlUvVdMZGPJMkZOIIK5z00hs2gOuslFjkHugm-iN_3Iscs319uqSkicKfztULl3BvJlTVuxf3n6-Op5BUBbBATQ7ne4j-lkGZgT-CJOkcIzxY9ruTZ-Ww3wpkSi1q8w9f-O959Lg-rdyfdLCGeMJdhpspveaySba4FGG9qqn0p5wSiotf-4ICD5abRCrTSk8OZWK7jHEOiOnYXBqNAv59q_qkvvv3cceUswBAA_sN-xu5-pLTmAYemW2iaVgC9bfGSqK-u-dTrsDu2yxvC_G9W8RYy59n98Ff0vCyFF0E3jzD5t0awlrRHGrMn57zbHvKVgWqGhbey72Piiz14jJYhkUxo0GJTgghoy4jq7XoAlCGiyAV9NpuCP3Hrx901O6m9ekW-usn7L4_5CZiG_m9oL92a4uEB_2a2ns4N_cHS0mtVIMCDvg2Xn371_oxxiTckkdH_bpsEtq22ahq53JPuiofoSDHFnk8oeQncyZNBhd7XYpykjzctEJmornq-dfqoQ7FBy77rTyfKnnrFhZCKhosiacZke8YBiIOCgyJlOdp5up0-LAS48A.%26ch%3DAQEAEAABABQqr8fJ4KW_sk_WZtoRT-6T7ZASOAFlQAs.%26v%3D3%26pg%3DAXAAXPQ3YNATBAMKBIDJ2BIVC4
+.netflix.com	FALSE	/	FALSE	13465348157984892	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRMNEQOtrG9OwAqsDB7CekGXCkVDEevqnM.%26dt%3D1789338557181
+.netflix.com	FALSE	/	FALSE	13433898557985108	gsid	f1f48cb2-a237-4cf9-bb6f-c8a01cf03f5f
+.netflix.com	FALSE	/	FALSE	13465357392000000	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+13+2026+20%3A03%3A12+GMT-0500+(hora+est%C3%A1ndar+de+Per%C3%BA)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=58496b57-e84d-424e-9acc-275b48e00a10&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1785553181450&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	13441597392117968	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	13441597392117748	netflix-sans-normal-3-loaded	true

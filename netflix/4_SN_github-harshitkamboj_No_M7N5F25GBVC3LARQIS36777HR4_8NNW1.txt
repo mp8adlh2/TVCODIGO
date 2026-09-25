@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: SN
+Plan: Premium
+Next Billing: September 27, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 9,99 $US
+Profiles (5): Khadidiatou, ASTOU, Johanna, SOURAYAT, Red
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1805133704	nfvdid	BQFmAAEBEGHn0CKZJmNq8BPjKkkSKWhgt9vtSqvZa-K244oAXEPuK3OISOpZngpl2LvP3z1EhmyKEFZxrKm2ZfvGSFFE8O2gowCMh1kHmtcFOPsDi67lGjSxwdhSXwWx12VOk-_Dd9iyJNRhINI44U7pwGSeT5OD
+.netflix.com	TRUE	/	TRUE	1805280559	NetflixId	ct%3DBgjHlOvcAxK-A1U7bnGDUha27smxRdiUSMZHDMFNWVGLyoXEc9yuavT70UrWj90oU28m4UjMu60VL8DbrQd5ZjbMIRMV8bJZju9gdFV3xQOikPZzgYYQ1nmODgDkZJZrxWtP_0VTHAqo-Hjn1S4Nh2Ci-VyhQdsWurpbpQWp2ASntO66FpzqWhGsRfVboskAB9ufD9RpBD0CFt_lijqYEnFGP6EMiWHTP3IpOT-ax6JseHy-G1keMwNfE3U0QS4mnmCECMmxulfpjb5BRHs-4x_dkcPvB-YoKynm0NAk2XrYBFPjINOk20gB5dpJOrlTnIs09n0NIKC1UlkezRVVRLtgV7cS7Frt_xRZsne1nQFNAaortPZJMTkI0JofHvRx9eqVmk9YjLqPhgJ6pdyLeqocb0uuZWcef4UPIr4QGtKJTOPS4n5HQ0yHRvd1BrF9NnXJcfHh5ICoT-_x4ePCfijdfrtQWnznzBHa752Ub0Ob7hZcmucA3-wnjqF0a6QrMGsUjUKbyjOc1N-_bPIi2SEkNwn8s8gFg3-fYF6W6Ha9Xad7wvS5OazV4tKQMFdo2M2Wr1SNlA14mHFDzLCJ_SiWGx4jO3J-GAYiDgoMZNrG3CJh98tBMNn0%26ch%3DAQEAEAABABTcKR4XCTKE0IXIsCc_x366J9j9IK7HOLI.%26v%3D3%26pg%3DM7N5F25GBVC3LARQIS36777HR4
+.netflix.com	TRUE	/	FALSE	1805280563	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Mar+17+2026+10%3A49%3A23+GMT%2B0000+(heure+moyenne+de+Greenwich)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=5f9c63f9-750a-42f9-9bd9-74a179c8cd91&interactionCount=0&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	TRUE	1805280559	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRvDryce-EU3bLfWD6IiY1roXHDAZAEODs.%26dt%3D1782302780440
+.netflix.com	TRUE	/	TRUE	1792853992	gsid	2fc127c1-5819-4e5d-812c-b7fb5b3e54a2
+.netflix.com	TRUE	/	FALSE	1792853992	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792853992	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792853992	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	TRUE	/	FALSE	1792853992	profilesNewSession	0

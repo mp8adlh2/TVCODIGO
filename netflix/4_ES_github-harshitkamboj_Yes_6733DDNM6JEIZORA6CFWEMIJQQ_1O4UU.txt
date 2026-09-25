@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: ES
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: TELEFONICA_SPAIN_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (5): joan, Maria, ivan, Abdou, Infantil
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1792853991	OptanonAlertBoxClosed	2025-07-21T21:01:54.020Z
+.netflix.com	TRUE	/	FALSE	1792853991	nfvdid	BQFmAAEBELUFtRjjQqmAxz8KOMU-9aNgJZZsi3CyUi3gky9k4pSot5sDKSM-MGaWkGICuNsQAFKIfIMQHCcO-6YcNnV4vRPffwL2JR7pa-Hrj3ZdqVYdlRYY6gfrYSl-eiX2mM-v75xcCx-QBLyWI4_nZerT7PC0
+.netflix.com	TRUE	/	TRUE	1796413505	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKAA5Ai-hJRmJapjZQldhLI_hD-QrAqVzIruqQkOm1gxOaJkxsQwoLmfNEgiTQt0zcUPVoD4skPViYQ8ZVceQjwfWZwgkwaallaVoGYgfiG8lt5y-vBtbPzwwEI0gOoaMlmU8QZVm1ExCSpzZGe8U7t7iBpCs8evXGfh7thqCdK0mJtLaDjN9Onj90DYkIy06c43IBbP32VSkt1zkCmMcNt_Tdl-1AN8qggYpAUfEjlWyyxW8NMhfGK-oF9uArbni9iAEoA6GDI7iQnYV50BBWdKrGUDSLdoxOQpztc8zo5qOacSErpCPWoyrtSUrRkDK2aIrKH2r7ZOP28fU3QTEsNgZJeUMciUKmkpASCc4pFxQqYgb8n2RPJj0zIZw1jd6ancAv_HTmhKGxi861xKQPwsZw1JFcn230dhPKwKSN4Xrn9oDDe7ySIZ1yarb2AVQl-9PkuLo-xwhWPyI_Wplu3j8J85MXJH1nFmWe68ur_ih03wEIRIeF-m0tkBtY0gHaLBRgGIg4KDJ9g1sESq9oQezHueA..%26pg%3D6733DDNM6JEIZORA6CFWEMIJQQ%26ch%3DAQEAEAABABTLBHTb1fJ0G5zfl076Lonbb6PpllSQ8Kw.
+.netflix.com	TRUE	/	TRUE	1796413505	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRyHS7dz7PMC4-MLkFBwuoH1-o_WCh5U-k.%26dt%3D1764877505960
+.netflix.com	TRUE	/	FALSE	1796413577	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Dec+04+2025+20%3A46%3A17+GMT%2B0100+(hora+est%C3%A1ndar+de+Europa+central)&version=202510.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=119051e8-d0c2-45a4-b8cb-539e7147c30c&interactionCount=3&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=1&geolocation=ES%3BCT
+.netflix.com	TRUE	/	TRUE	1799437575	dsca	true

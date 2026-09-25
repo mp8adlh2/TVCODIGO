@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: FREE_ILIAD_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Profiles (1): jean
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	13464705379000000	OptanonAlertBoxClosed	2026-09-06T11:56:19.238Z
+.netflix.com	FALSE	/	FALSE	13467756781805016	dsca	true
+.netflix.com	FALSE	/	FALSE	13464732778258072	nfvdid	BQFmAAEBEH_aTQ3ddhOimnDIpiO7CzZgkjQVWfkgcsVsiOtel5bK6x-cn1Saf8N40tyGS8mf4-3vWJsyO5ZyFZYHKBe7wNTQfU_SW8RPg2MWS1Y8LoR5lxhX0tIojZ_L4M2QzyHZYMazphossObBqBONUuyjzwBl
+.netflix.com	FALSE	/	FALSE	13464821364654320	NetflixId	ct%3DBgjHlOvcAxLBA5k5WUXPymo9PBr4R2aRepJ-wCrTPybgYmyfKLdU7uOy3RU1o90ys3Qlac7nZNQmTm8xY83Ar14mjuIhaZVxInUFggXiDTbtdS62oWicrpp16pQfrx30zC7dnxf-GIC-h7TGxh5AjUojimnhHSPCoEw-pYhQ8YVlbmFZ3PFCKz_LelrEamf9Ata2fkyEyzzytK-rwZcwtR4N1uFT0qZw1bMVKtJ0SvM9pAzGrp-xZezpXeQ23MASsneEiuCAKet8CMwHPYmyPhAgsgxmNKHX1UWCfK8QnVwvO-LVGBcb-TTOv1Apl4OV_gplt54K7ZKAZI_31aPiPgAWPja8cJkFINONeoMNSvwDE30iH7dWvF1t2Y4pwi3Mk-O9swOMrFiLocvaHV-1rYV-xCEKalF-0IHu9z9iV-qB563asyX8ymr8OtcTNUd71lZi6fKGmMOwfgg_P-Lwr5o5hhJTWoBCebn-o7Gi5G97AMb-1G-FrigjxMNjiziCGIh8p-oCje1H49axhJ3LVS9BsAR4eQK9xSK4IQ6uYNh4LJmn5bJWEzINlrtsTIg9yp2y4bRq3h6FqyDimU1ziCTtd9VmergKWHPyGAYiDgoM7PtZovEo4-O-6i3e%26ch%3DAQEAEAABABSRNT7TSKP3yQqs0tyVPQnE4Ybey6Up8og.%26v%3D3%26pg%3DF2LV7ASYOBB5DFVRBAWTMXKJRI
+.netflix.com	FALSE	/	FALSE	13464821364654262	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSZHLQRklT7f6zvSElKcwB0STqNl5U97KE.%26dt%3D1788811764243
+.netflix.com	FALSE	/	FALSE	13433371764654426	gsid	e2d16e25-b590-4134-bea3-3f3c205970fe
+.netflix.com	FALSE	/	FALSE	13464822568000000	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Sep+07+2026+22%3A29%3A28+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=1443c974-00de-4164-9144-5a6a62c8b2ab&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&lastConsentTs=1788695779&intType=1&geolocation=FR%3BNAQ&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	13441062568251760	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	13441062568251608	netflix-sans-normal-3-loaded	true

@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: MX
+Plan: Premium
+Next Billing: October 4, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: $369
+Extra Member: Yes
+Profiles (5): HH, Estetica Gerard, Chikis, Pier, Niños
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1807502234	OptanonAlertBoxClosed	2026-04-12T03:57:14.606Z
+.netflix.com	FALSE	/	FALSE	1807502239	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Apr+11+2026+21%3A57%3A19+GMT-0600+(hora+est%C3%A1ndar+central)&version=202602.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=8cd651cc-b8ba-4782-9460-10d1ab75eca8&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=3&crTime=1775966234845&geolocation=MX%3BCMX&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1810526228	dsca	true
+.netflix.com	FALSE	/	FALSE	1807502228	nfvdid	BQFmAAEBEOY1KKJ4kWmCnRiFxcsPdONg3F1ADFxgAaY--D3EMr99gZ23GIFCOUjaeyUiVJlIG2XkZcrMFH7JZTkrbleXs-DKkrrxSXeA_Y7laL2EBDaRFFPdVj_sZafRZAfIRZIEQHk6ar455tQ52ue1130gSYwp
+.netflix.com	FALSE	/	TRUE	1807920230	NetflixId	ct%3DBgjHlOvcAxLMA4ExwFR95G4r0c8bKcJdy0ld_j1if-vjIbnkpkMdwdQAcQMuZ2TvIswahEAWI04a0iE2yZs97_doBCMdhaAxL7Rim98idpy1iNthf4Mqqy8fya1w5i231gmZtVusv2oFpEzjmBkKI3U2RXxRN4wgYdbI4o0tcV2HEJ5dbwUIEQPOU3TAVKekmFFUiGw7-jW4nqnGOcum7Ui9DrUV53GVpQZD6AyDrA4aV-oDw7enbHFYI-ePON6ZTWB2SSxIqajMLHcZXTPekNCO6rP7p0Rep3cusdMcmTUmLg00SI3ihZsEKrL2WhCsHtadNnelL5u6oqpUFAG-nNvwNtKFa_FDmhse9XYWPneooMZPkHG0JCluHmGY2IGJcV2xqd3fE3emXLIxEek4R_zSRiZsuvZv_Wt7kHtHPUNoVr6yW5DLDCykB68c2rOOWcPCzW7IHBURFpwPbkboKe1u898sKYIT68qmV4M0Oce3KwsAIlsGtGH_clojI8swX-XqArm1oMSkTBlKh2IBWA_IO4E8GD_LEiBT1sV8ONUc_K9jvzWiZS5Veqxiur4B9gpB3gwi8Ojo7eMgR-BVJ8yrfRHBTfCC0W8wZ-0waKN9wnmXkSUYBiIOCgwlTYuXFZ-gXCCQ_Ks.%26ch%3DAQEAEAABABRHObEfekNJuivAUuixLn6mCdrWN1Mp-eU.%26v%3D3%26pg%3DWNYQCVF7QNGOFI3QEUIQUOTBK4
+.netflix.com	FALSE	/	TRUE	1807920230	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABR79zH2747l1-23NRQN4dfBs2pAvqqGWdI.%26dt%3D1776384230537

@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: JP
+Plan: Premium
+Next Billing: October 16, 2026
+Payment: MOBILE_WALLET
+Quality: UHD
+Streams: 4
+Price: JPY 2,290
+Profiles (5): kouki0301, あやつん, juntann, add, キッズ
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1812508301	nfvdid	BQFmAAEBEBe0nYnbaXysKs-_Lk6nXgZgJvFqpZw-jbbyaKqfR5wQ5inddcy2cD2savjCcM6GTdvJlFfO0wXcReMlPmegm38FSQPAYbe__nAnVMxrHnSXM0yGm0Vem7T_MlBJqVbn8WZXudfvqSowryM53Kqj_5TV
+.netflix.com	TRUE	/	TRUE	1814490982	NetflixId	ct%3DBgjHlOvcAxKQBMdZEYdgWXSnVH_Cpbse_67-k6lShZlM80wkepHEhTZYalwv7VPalqagw9YatmNJ913o3HGQmPO1XOZwfWhesBeTFm-FKdhA6_Wea0BPAK8mPVHbwKsCOqbLen2piZW99xw_FE1NscV2hbNeUIjp_GvRkwVVwQlZHibxVf1uDGlHm1fKu-gk_jIP3W-ZRFhFz9plQ-wzFS9MfZOwXDGxYrowZxEvb_l0EDZs89IejKbNvyF7qrxZ2jJoYKk05m6iwsXkXVox7HCEoPNPqLwsRMl0UdyAR_pJ8Nt_q6KBMwLLhkku3hyGxowvdM9UBb0lljKXyaVYZSGEGuZpfGLXDzEYhD049LvhQfAShXUHmzjaa5bjtv-oIgu3ceuQ0ojjxC6amReWwBebwTLbA3zdNI30SZfLlTVUfBKrLEZwFgo68wc4A-P03SHMTfWXOlWHPmyUzdh6hC8l08DqwtjOq3Ds2zs4Rb--0yUd2U4BXuLfUdt0maAp5liNxQaWXtSpulaBRtkgopMszMuHwLjsJESjwZeNvfhk21bcXgRGkpuob71wdCCXJqgSD7NehH2sRdjSMu6q6_5p-UZlYz6wB17egqP7nEUKgLObC4tVtSP3ERdXKFglf7VVSCxMNLdUklsL6Q2wHyn5elVes48dLvd1ZEOz5NijFj4RUKcijbyyYPmJuBchvMwFEeLtoUeTcBgGIg4KDLR-4c9KVzwWSmryag..%26ch%3DAQEAEAABABRCwUMnOn2bNwwaVn5goynaafITcgGz_Vc.%26v%3D3%26pg%3DANTTKKU2CZHSZFNI3PEASKTUQQ
+.netflix.com	TRUE	/	TRUE	1814490982	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTAvJWha7_wf03k2YPOmv4u4Bgz_yuzeZw.%26dt%3D1782954981281
+.netflix.com	TRUE	/	FALSE	1814498221	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Jul+02+2026+12%3A17%3A01+GMT%2B0900+(%E6%97%A5%E6%9C%AC%E6%A8%99%E6%BA%96%E6%99%82)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=92f75bb6-9450-4e66-ab19-565497c62fb7&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1778807894269&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1792853991	gsid	c1b3b168-8ec2-44b6-834e-f962fd096759
+.netflix.com	TRUE	/	FALSE	1790738220	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1790738220	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1790738220	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

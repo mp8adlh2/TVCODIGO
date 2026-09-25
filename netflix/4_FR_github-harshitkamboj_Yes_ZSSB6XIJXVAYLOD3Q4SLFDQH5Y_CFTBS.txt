@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Premium
+Next Billing: October 21, 2026
+Payment: DCB
+Quality: UHD
+Streams: 4
+Price: €21,99
+Extra Member: Yes
+Profiles (5): Ptit koala, Amouuur❤️, Alain, Anie, E
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1819230645	OptanonAlertBoxClosed	2026-08-25T21:50:45.991Z
+.netflix.com	FALSE	/	TRUE	1822254624	dsca	true
+.netflix.com	FALSE	/	FALSE	1819230622	nfvdid	BQFmAAEBEDnKjyzD5AmJfHB6RtSoZ6pgIMjewTnKWtmtWlksZiwIDxMMHaOhC6ZmdjOVhB2jsYCOQhewt8I0mD-D1AG6fC1cdsoDxzUYQ0t637ug0NFv2EYs86yzl3muPynRRd-KfL3NkTJH8LWZWE--FuUhcoVd
+.netflix.com	FALSE	/	TRUE	1819421300	NetflixId	ct%3DBgjHlOvcAxK6A5aW8egteASC3A9AjFGZZZga-dhSz4xxAMRjtMTEMRS8-mGFKDHlI2MKJOtn8C3WsbqO_jV3bPGm4fXIZzedO0B-Q2-MSd64tYsmBsUSqDzGNQj2AOvsrKu4xrBIyP2GBVwS-1COVs3W0XeCOFT2Iz9ExnCIwKqufxrraO45cO5jozjgA2DKwNwaBtrKdHgpnybFLc7I-nrykJiOQB11QIPr5UETpJ8bQTQ5ai_c-gj0m9QGsLGw9X0NHht5b3T9r68RLLMUGtbcyBrK6X1_6DhBOSUvnE0fVDihtzH0fUOIu57K-vDTf_uO1icSFX0w7baagGPgEGohILQlWn6H9aZDAKt7o18amT8lZItnOhNDBK7beP9gAyJRlc8W_svywGkM_bp273MRc6ZKmeVa2znfP8y2L-eknG0mS9vo1q59JOcPAPTsBWdyBNQoO6TEGE4-h4QMlY1bmvwkn5bLHoxPesyUaGQNh15FCzQ8tx-ut5n6EejZMskAraloIpiPz7_d9IovXkdLiX641N6HVx__VoTAts3uqm2P15R8aMYsSLmIrXsCTo2ng0mpIrO8R8S1pefa74uTOfkYBiIOCgxptjfXftU8p7nyBak.%26ch%3DAQEAEAABABRstZjwEJGzEnD3rqF1nlI4HvrRL6ERWJ8.%26v%3D3%26pg%3DZSSB6XIJXVAYLOD3Q4SLFDQH5Y
+.netflix.com	FALSE	/	FALSE	1819421301	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Aug+28+2026+04%3A48%3A21+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=7162004f-152d-41e1-9abd-1c6bdfa74d6d&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1787694646342&AwaitingReconsent=false&fclco=&lastConsentTs=1787694645&intType=1&geolocation=FR%3BNAQ
+.netflix.com	FALSE	/	TRUE	1819421300	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTo2eJo2QeR_xxqV5wKVNjfIclgq_FFxLQ.%26dt%3D1787885288055
+.netflix.com	FALSE	/	TRUE	1792940818	gsid	5ecfc760-8f43-4e6e-9f5c-9f6bc631a838
+.netflix.com	FALSE	/	FALSE	1795661301	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795661301	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795661301	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	FALSE	1792940818	profilesNewSession	0

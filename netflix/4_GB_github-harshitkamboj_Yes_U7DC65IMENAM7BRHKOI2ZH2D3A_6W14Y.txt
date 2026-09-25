@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: GB
+Plan: Premium
+Next Billing: October 11, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: £20,99
+Extra Member: Yes
+Profiles (5): Sandra Nyameke, Charity, Hilda, Honorable, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1815765960	nfvdid	BQFmAAEBEIbNchfVG5TjG_heyN5rw8dghGEC1TRVe9cil-2ItZUHa4vXwVvNlVD5p2cx7XuLNacHRzER-PscjX5EJ4vovQIrSA4vsV3d-OX0g5NIdn80jhhVfkMZreBsJsZySpZY7m7IZoJPWvVOPbo1Gd9lZSil
+.netflix.com	TRUE	/	TRUE	1815997187	NetflixId	ct%3DBgjHlOvcAxLfAzhn8pXN5Fk2EuK4TjaVheS4wSCg-vq2v0WX2c59GoeoJbTkR51-yERfS-5BYdZdfaB3e4gzEDkKz7NGlOziyxCfBnYSean8c7zr6Q9w2n0hB8k2TDLIzxlL419Bf-Qap69Ov1y5JHZIwYB314-DwJsYZ9Jl9tPaGiqGLpO04ZqhsKoLOui3dJ1VjPHUnn_aUT7TZznXY1IPZUbkoqNuePk_eFrkIw6n_-5fwSUV7rzGkh5-MuSu1elr67_HgGKFmMVlcjEd3Azo6Wm_ATXrzuY1HY-_mH8HuH7MTJp_k9HuES7Mi02dwmmOvJ5-Jn0hc55bJd9DF5hlDuflP2fCW3s-z-LPovlYIwgAKfrLxvX7aVvbKqhDQHcNWUL0C7amTi5rvLvHCjFeUgWvXzlmVyqukHBG54sn0QO_KlJnjEhpWtjqVZoKSpSc--c7XF4i592N9-SK5993tpOW1mGwfnKvz8FX3JMMeuInTbbDGx-QXQVTeHz2zEgOFfdvVdPNydqgJWHpZBbX-mnGQHHr-j3EMpOP0SL9Nc0wyfoKRLMxGqlKCHZ9-0ZOTEy0cUmt2R6OvMvoW9m-73YsNqCp6FDBb3CS2K9-XQcGIIQPxT1TTqVFf8sBVgm3LjuQb7m5GAYiDgoMl1dva5h4z2aVZ9_i%26ch%3DAQEAEAABABSwvk09te5NLBmW0KvmJWwfDaKvbnYEFhM.%26v%3D3%26pg%3DU7DC65IMENAM7BRHKOI2ZH2D3A
+.netflix.com	TRUE	/	TRUE	1815997187	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQJVdbY-mWZ03FAGvbfNIBgc-6rR4WcKLc.%26dt%3D1784461187078
+.netflix.com	TRUE	/	TRUE	1792940817	gsid	080e7109-8d59-4b64-aae5-3d27f0c99224
+.netflix.com	TRUE	/	FALSE	1816000984	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Jul+19+2026+12%3A43%3A04+GMT%2B0000+(Greenwich+Mean+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=af1cd29e-c50b-4b4e-8993-26d4a6bf240f&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1784230232652&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1792241013	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	FALSE	1792940817	profilesNewSession	0

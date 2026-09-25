@@ -1,0 +1,19 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: October 7, 2026
+Payment: UPI
+Quality: UHD
+Streams: 4
+Price: ₹649
+Profiles (5): Jay, Sunil, Mayank, Roopam, Jihed
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1798803233	NetflixId	ct%3DBgjHlOvcAxKxA8mnLOuBTXYdu5s-9zUnHA5pwX874qA5IShX922Jdy-u_0E8-ByCqGWCeEC3lpCmu-ekKna9FZPKqCaC8Rf8vqQs6mZUE_CNoO3Hs7udRBSG-ljUF1uDcvhltePfd8X1v_5HKQajyjWIUo5vShjZWC9qpUIoFAWpjSB3TIeRHT2U6Fz2XKW1yRfwiyrKUJDWfgmUHAsjzSPLjMiRs81TBpvF-z5saNCD0WMKiz_Sh_Bei8yAlrQFb5_JwuAXGTIJ7W5Zx_CqsJ60RhCHp0P74f5NSOsyCFQTvCxLnQWM1Yc5gCf-PhUpnt8JTL4OFa_FyRBAuTnUO9tti1M7QqMoDkyYp0sZLQYrlkX7equiejo2EJDTo-V25l2xC0UCZ49Ie1_bo7NaorjGlNGywpUECmP07ZYNCXWkala8X0FUCfbrZJskVtbrUNt2KqRWq7FNP0DaATP370sATU8411mPESDi3pKe_V4Zf4y9prF177iLphMUnQpAp8TpIZe09Mkyt8PTvn_UFVfPOCqR551c7fOYBpyX9_1MCI7CGPmGSY7xHWJc3lqvE1uH8kMNrVtFm5QYBiIOCgwQ23YMpWikNlWMr9I.%26ch%3DAQEAEAABABTxiwyDFBjdpMfR8YxT2h64uoOuELnB6L0.%26v%3D3%26pg%3DKD6ZO636SNHLRAECDW7PZ5NKV4
+.netflix.com	TRUE	/	FALSE	1798803240	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Jan+01+2026+17%3A04%3A00+GMT%2B0530+(India+Standard+Time)&version=202510.2.0&isIABGlobal=false&hosts=&consentId=9f94ee04-8fe9-4442-baf0-e50282675e6e&interactionCount=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&browserGpcFlag=0&isAnonUser=1
+.netflix.com	TRUE	/	TRUE	1798803233	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRJ11KDhvnPxbPRAc9d5JAKbgsE2VjB240.%26dt%3D1767267236981

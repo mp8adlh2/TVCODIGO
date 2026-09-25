@@ -1,0 +1,21 @@
+NETFLIX HIT :👇
+
+Country: NG
+Plan: Premium
+Next Billing: October 4, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 8 500 NGN
+Profiles (5): Aymen, Si Bodoh, juanca, daisy, li kayna🤟
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1792763754	nfvdid	BQFmAAEBEAG8xJHeucj15a_gYGPYiCpgreQGFvYdZpdv0AxOLrP5Fs09nYxlSvlZBV43YTjrRXwoxNshKXkbWfe7iexRpEAP6aWtzfsFbIvPLFgB82oLGeMfASxIRTvbYDLd2YEqy2CUxyzD_pT5N-9rIEyrbtTe
+.netflix.com	TRUE	/	FALSE	1812012135	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Jun+03+2026+09%3A42%3A15+GMT%2B0100+(West+Africa+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=db2827f0-9a18-4893-9372-668ded59f4af&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	TRUE	1818030923	NetflixId	ct%3DBgjHlOvcAxKyA2egSKaglVgQL77qDxs8X9bPuDQEI5dlAfu4GfKyAgwwzxUkB2qoJ7lOTtNwu8nAXjIg9BaRQC-vOH-T1QSQYIqTeDpLErHv8_-3TeA8GPOyAxWAn4o080l2NTZKZj7bO-TC2RS1ukkszp5DN5TbZ3l99ESl3vGPyMlUICvYUK6Bqa0ZGMPSkON8zYpYgIrvnNw1bxSLsH_V-ukME67GDNbvz1PDXtJ1A2rCyT4F8fjO84AIlOViNjIKLA0boZSyquEd8lgaXlqmIzCjg-IPIYqoy3uW_kEZb3JlxYTHsVH-THZG20mFzYk9gqJGAJlZHdBDmtuRH1iQxedn2N36GEWqS5N4-FN5Q7tt_zoU7Zuts-gr1EQGNqefMVL8OBkC_VcmJyke8XrsKeEdJjgJJYiR5_vCT1ADQkECbBMbkER3wNLue5qpJSS9YtNcKrfv1rUE5a3CTV8biRHtdhl59ymccK-X4HoLhLxDLe8C6TclV6InCQbdi6rfe3L0cm0X08Kr3WTl-rHmLMp1dDdm33cnqm9h4W-jHqKGfG2M4AK3GQ29-5dSJf8HRLlXsaLBJ0nwGAYiDgoM533kN_FHY8irzpcR%26ch%3DAQEAEAABABTvV4Un6dhj5lpZi0-GGkRJnsp2uVZCaBk.%26v%3D3%26pg%3D4DTAQ45BX5EF3NRDFY3MVNVZRE
+.netflix.com	TRUE	/	TRUE	1818030923	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRFynwYILR8QL-Wllchaj39w-t3OVJ9P5M.%26dt%3D1786494922463
+.netflix.com	TRUE	/	TRUE	1792763754	gsid	e378e375-729f-4b71-95ac-f73bde6015d6

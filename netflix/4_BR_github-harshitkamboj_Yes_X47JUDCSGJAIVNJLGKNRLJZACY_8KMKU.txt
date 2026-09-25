@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: September 30, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: BRL 59.90
+Extra Member: Yes
+Profiles (5): Elizabeth, Izabel, AANG, ポール, Fohigoro
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1810409043	OptanonAlertBoxClosed	2026-05-15T19:24:03.895Z
+.netflix.com	FALSE	/	FALSE	1810406110	nfvdid	BQFmAAEBEHU0aBJj4MmyNOLuR3BwvzZgwVqZDjz1EYGsUdDDxvP6-tWfOy0DEf86iVppnG_fyRoGS84R-TerZlAjmjIvmFuc7JLJJ58IYIArQJUZxOOcAfUItW5mNpZpdTe8qlhx55dGWDZSS6tTH3F743slD1dr
+.netflix.com	FALSE	/	TRUE	1817776490	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKYA65nZmMMD4UAmUlYHzeQwp-oST0QVpzwfM5aZOJboH5ef3wOB6O6RfnW-7wLxqSrugNKBzSqZXUCefLUzyC14IDARtUc9yVwb5Tvhgrfl8lkTft-pIPdZVFyxuUgkxe1ekz-eKRN_2rFdPAqPuNFj6_zrq97I21k2lyDjbSQthIlwp5ooSNAq3zGjvMNMCZ336QHsR0qPHHDykgosQwrJyCHgdaxvWO3lsqD7y3TxvnJIX8CKP_kzXkXzeRA9A8cs3bzBix19y-WQtv4vo1d76Z6vGIgFhpqOC0s2GWrw4lms_NN9DEv7dUKev_WpTEDkxQoBtEp7_VdN2AgNe3LEHQxFNxVNDVMxYdhJsNVNKlHFpcpxCb25pTBclMGzMU5m2N0NzVISmJ0WeiXCMEz7t-qS8Uv9HtvqP7x2Yf9xJ5KSrqr_VBPOaNRCGdZmhOvG-NWKpg62oS8gk80FccgkR1ZetkEfQ4Qwf1NjJtBiSRuXVgxKGBc2Rxx65g4X9e_3r-H6F0j0Si0v-1pdNWe_F7PL4UUaW4IQBgGIg4KDEgZRFZDnb0qd1b-Ng..%26pg%3DX47JUDCSGJAIVNJLGKNRLJZACY%26ch%3DAQEAEAABABSiIJSGU1eovAzBDPhybGsWYvGf_mv5ELI.
+.netflix.com	FALSE	/	TRUE	1817776490	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTGhpHYoRHaKTeyfCPrNaQwCkY8Q-9oo9Q.%26dt%3D1786240489935
+.netflix.com	FALSE	/	FALSE	1817776489	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Aug+08+2026+22%3A54%3A49+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=1295dc7e-74e1-4b7b-92f9-c6bb0cb4341a&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1778873044316&AwaitingReconsent=false&fclco=&intType=3&geolocation=BR%3BPE
+.netflix.com	FALSE	/	TRUE	1820800490	nap	BgjvvevcAxJJABantu3X2o70UBcmgbaPlQ4Wj1MIx_vvJBxBjdA55or5-DE0_Ai_qBPsMbVtwvVFp04VSJ-detWzhm-31jnlw2SoH4OBmFxoIBgGIg4KDOYBaWBxZ6u2CFnmVg..
+.netflix.com	FALSE	/	FALSE	1794016486	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794016486	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	TRUE	1792853992	gsid	37e0b48d-b182-4d66-9d00-c5718e38fdaf
+.netflix.com	FALSE	/	FALSE	1794016486	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	FALSE	1792853992	profilesNewSession	0

@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: October 3, 2026
+Payment: UPI
+Quality: UHD
+Streams: 4
+Price: ₹649
+Profiles (5): Lokman, Fouad, Yan, MOHAMED, Children
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1814960522	nfvdid	BQFmAAEBEBe1X3wyA7pLpEAiNV6YUc5gBUE-kvo4Tg2xyCu1Sxmik6eJmKIChkGldrmqhQhHU_noNOPlqm6UZt5SXiAOaUvqEg2zalCLeTDzxzZ4dy7Ch_3YNz0t7mzvjR_aodnQLiMVYpptlN6Y_y4sTdbki9Mu
+.netflix.com	FALSE	/	FALSE	1819547687	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Aug+29+2026+19%3A24%3A47+GMT%2B0530+(India+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=ee616c9c-def3-4070-9588-a349be7ac461&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1777046620526&AwaitingReconsent=false&isDntEnabled=0
+.netflix.com	FALSE	/	TRUE	1819770775	NetflixId	ct%3DBgjHlOvcAxKIBF26LX_0flPkKKX3ZHd6rFn_FkkEgYvof0CtMlTL85z3oktTeUvIvGr--Of_Pa5QAUiOwxYd3OHkqdnvtXZfDDQBgkwNv1vVO_7UyRV3gTwVhPnZz_0DlhU-_faOuruVoEdH-R6srUF89NYA6599DgDz3xCmUuwMwDefBr8D7V5sFXwjW6YuFKNzFHY1pVyj5ktC6jeaja8oOltHWOUci2-Nug7jUoAKW9p3IWRePnrTufFSpRD4pxlyoWEFS-h7YMv5vNSNU9_V8A4LOjg92UIqhivl4BwBc3AYE-JzdHm0c177rjWFaW4DK6rvl_cCb6929kT45CG07tCOYjzx76BFTuwX260icLKjdhf_MxfN-nEiitmcbAD6rcKjwAv5vgcE-FXUhFB5JBUAwRmIW1NBOKZniihcyg1gcsTYsxNBEOStmhCOcqWKSUQP1x0Vl6TCykYGI2QYGsduyFrpeiqFn4VuPZMFvNkYLawiIU-AhPMpvcjCgsaptq7euQxTViZg6WXsErgLmk_lYJVRmBL71IOReHJk9tGhLGqmGCxp5V_ah2X9eMcOSM2ybzf0F2gl0w6m47IvdvmD1UbN3HOzL-vVwr4ZBLRylfVy_i9LGWoeDa-CvJbnHC0wOSHR3T4kodDBROhik3GC0plb0cFzbtR2oLSKZ0UibHMUIjyzQPDiiJBQesoYBiIOCgzNqElcriSJY_a0uek.%26ch%3DAQEAEAABABQ3_35-GRmWEojuiPkiISxfqMUBlnQ6Nw4.%26v%3D3%26pg%3DJXXNOQCABRDWTGWG5T2OKLZY3Q
+.netflix.com	FALSE	/	TRUE	1819770775	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRP75gEW89r5J0dXlW9r5LUVdms99bxCIA.%26dt%3D1788234774066
+.netflix.com	FALSE	/	FALSE	1796010775	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796010775	netflix-sans-normal-3-loaded	true

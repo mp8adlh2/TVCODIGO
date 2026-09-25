@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: October 11, 2026
+Payment: DC
+Quality: UHD
+Streams: 4
+Price: BRL 59.90
+Extra Member: Yes
+Profiles (5): Gabriela, Davi, Yss, Not today, Boss
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1816948151	OptanonAlertBoxClosed	2026-07-30T11:49:11.938Z
+.netflix.com	FALSE	/	FALSE	1816948249	nfvdid	BQFmAAEBEEVM_42NQiHRLajMF3zyKydgKjY-miU-CmCp48uxLtNge3lLwf6s25B_heMCmn0XDGNgyfrBhG1FbLduIwLzxP0sxD1EQ6fThArSK8IsPjwdlcEcMfvQejK_n8qx2CWYos44W6kJt6rll7B32gFNOsfd
+.netflix.com	FALSE	/	TRUE	1817049435	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQifXE8vJg8_JofN2ELdtFX1K9Ea7QJCFE.%26dt%3D1785513439528
+.netflix.com	FALSE	/	TRUE	1817049435	NetflixId	ct%3DBgjHlOvcAxKwAyRUy1L3gsIEoEtdaz9nvvxemW3P6gWPPOHLiWKa_t8eqrsSt2zRZgAiXGe0cajAKN21giH40lv5vp4TdbkrNlSaSbI4M8-EEsJjs2L4j7jzuL7tv3pRusxfaeEd4jjWM-O6KNhEL7UZX_O-bMrdz-F3pOSYPVV5VuaUED-0kDimkvzyKATEcJ0SFMmSFe_ESrKGdIV-Nqv9tND7vMThNLzs79DGuYtZ4H3OnlfMXi-O2DyF0qYCD8qbXSAZLNajwQWiYUHR2q-T5bqsvTfi1DjcMZSsUpHhhv-E94cRjFd2yzVzxr3TTFP7js7XA1tnoGcIYVolndK9iqaPGT45I8HW_rGy6rjPcRAa35BszWk8RtnF82rgV99z-ud1DwoX67ur4rCKWsT4cZ3TK-yPx02N9ggBJRlctbTY2_yhZci-qp9JRUS2s8yqq3v2LRER_pigcAs_9fjD2AsjrcH4TMEc17CZOXMwT8T8ULHX2trUvBKZzC_4uhK4Gak0of-4NqCi8xzarQ8r6hoYfdbRdEHRUY3uQYVuDWazUK1TFHH6SgD_E8WYcGN57Yk07JlybRgGIg4KDGNdVPYyPi41wKG3qQ..%26ch%3DAQEAEAABABSV4M9rXCBG7qztVNuTklLAYsXQODZUDF4.%26v%3D3%26pg%3DMX3STYDODVEBNDSZKJ3YXASCJI
+.netflix.com	FALSE	/	FALSE	1793329252	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	TRUE	1792853992	gsid	06396e2e-fd08-483d-a2cd-caf24f85a73a
+.netflix.com	FALSE	/	FALSE	1793329252	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1792853992	profilesNewSession	0
+.netflix.com	FALSE	/	FALSE	1817089252	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Aug+01+2026+00%3A00%3A52+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=d9effd70-d1de-4d37-9d23-7a4f8271835f&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=3&crTime=1785412152351&geolocation=BR%3BSP&AwaitingReconsent=false

@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Premium
+Next Billing: October 7, 2026
+Payment: MOBILE_WALLET
+Quality: UHD
+Streams: 4
+Price: THB 419
+Extra Member: Yes
+Profiles (5): 123, cz, Hh, arigo, Saza
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1808809343	nfvdid	BQFmAAEBEE26EJv7BUT1m0_w1g0UbCNgnWJ2bfMngujW5uq3VSZhPz9Rf-2D0hp1CH5j1kfYUxd6Hk4sgdBJnLIjAx88sPia6hbkDnRs_z99ebwlIo6BXvxPrqCrZNQQz3mkARu9CGeklXu9TZRlOt7n1tmTDYQX
+.netflix.com	TRUE	/	FALSE	1819253286	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Aug+26+2026+11%3A08%3A06+GMT%2B0700+(Indochina+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=f387257f-3742-4db8-8d9b-e691c28aa357&interactionCount=0&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	TRUE	1819253273	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSFglL6OLRuvjCENGopsNeO6VN-P5zx75Y.%26dt%3D1787717274073
+.netflix.com	TRUE	/	FALSE	1795493285	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	TRUE	1819253273	NetflixId	ct%3DBgjHlOvcAxKXBIX-_v6Zk0s10oZ1-601SBqKwwfG8sKBNUsF6UlnNTOopr-V6TXpOC55jml4RLxf8_m5dBZzjVpqihfOQmtYZiZlWr6Oc1wYQtT8g9N6l0N4Fj0qHE32jF2FyqG2m34HbTZHU_UKYbe6zMhTxzvXci5wix3i8ZUbDLe-4yWZKa_sFSa6h31UM_qDPlCCoqGjKJAvR0SH9KZPMcnSYD9hix6lA8KZSN-l8CvaWRh13t8fNGgupm-wbhMmSAtfdYtX6B_ifAt-J9MNun_HTa30ERnIYSld1pfKcFmHiTKRlg6ms_aXLGvkVN-Tfoew5OrFw8Ew1d1anjJe3Bay20sDuf5SyzvjvNr3bp4UORaatA-O9qj9kFCqcxiBFJYj0NirN2zivExsvz8UBc3Y5so1vkF3OrwkDGnqtqlNA49-Va9yKi9QTXZd222OK_fJIO7b0fUpe1uwIzhV1OKkKrLNL5W0Xw4iRieq0Sgx3jYM7Ul2kWDh3P7TUnu1u3IFF66ho_Vnn8rq90uxFaCFFh-UAQItT3uq9FC89gihGVRdaZRX1R4mir2AkscDuDgrnVL0E8r7PrC3ShxT1pSI4aXq7umApEJQ-5cndY4SdssR11MWfNvEpoVyDDjYDXKK2baf5l8Gh4ARXvHJQbksdzRiBarVv6qzwZcutiZYVr5dTVTqQJ1n7F0wX3ZOuRHMsZwo_QP7kca5qF0YBiIOCgyymsE5oZOImmbKiyo.%26ch%3DAQEAEAABABRJj9Z8HiMftLQC1aVOT2imk2-tLJFoYDY.%26v%3D3%26pg%3D2Q6GEBYG6BA4BK4V3FU634PDAM
+.netflix.com	TRUE	/	FALSE	1795493285	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1795493285	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

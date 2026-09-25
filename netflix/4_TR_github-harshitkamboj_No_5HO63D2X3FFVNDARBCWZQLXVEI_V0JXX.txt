@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: October 12, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379.99 TL
+Profiles (5): Djed, İsmail batuhan zümrütel, Hümeyra, Boş, nonrules
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1822848796	dsca	customer
+.netflix.com	TRUE	/	TRUE	1792763754	gsid	53236daa-64d4-409f-9fd6-d4b300b8384e
+.netflix.com	TRUE	/	TRUE	1820516715	NetflixId	ct%3DBgjHlOvcAxKYBNFZM8zm9LAhT-6hfEYthKeOLvO0HA_neVG6A8m7vl_tx0Tu78J6MIMPs-tCmMxRuWUCwRzpU-Ae1uHqbi8pup-55o1BfPDMhDeJ3Q4XVWJZZ53mk8MeCrjutAo10O_6MqdQwVB1--9loF7nIhRW5Yk9SWlBqIQwnnXmkOHe6WRfj_0t8O5KBPpzukKWASPBgLaBkoD9azLKjT3cT0mD0ozJ4zD3l1xLeGlucljQmY5blVERoMtdls5UoCUPLQ4bzpoSc-v07n5avhaSJdv34OsIM1UNkRSS_U_NKd9plDlkt-3taM0y6JdaBHamkPMNhhlH03OJknzLNlACo4DSPRNSgITjLZI9TzvXiWI1Zfvx6YivV12rjXA4QxuxTK-D4h1W7yqtfDY8spPv6c8fNapVOwfxxPI2VjgRQ5O4ooEm6vYeXFUxWop5TWtOwGw4-NGutPyZAGzAGlhqCf4DfU5B6VQUYO9MM_Tpf_vKjA6GhQHFYmMEwqkMRtA9iFbxjeRpv38s41DpknmywPgiqxNGiOU8RoecuBOd-BA83HA4tsNuLyyP5I4WD-J06X4XfsAyJ8bn7-krHDWiIXR0wKjYhM5WaLezHkRSo-t76mRMzjoWT9QsXTpAPZacohcQ6TGmVKavLu9GoyssgGEQChTOSNU7WDBxWayKOFjqQfF_OJDP3cExJzE9GsORuZtxFQvaaV_Ld1lKGAYiDgoMZHE-3dR2TcQsGadV%26ch%3DAQEAEAABABSR2g8NrPzxIejWTx3CoHGnd2Llc1n6KR8.%26v%3D3%26pg%3D5HO63D2X3FFVNDARBCWZQLXVEI
+.netflix.com	TRUE	/	FALSE	1796756717	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796756717	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1798152300	nfvdid	BQFmAAEBEIjvLoJiCw54gOGrIY7ArxdgKb0zZmhigCFTLRXj4WWwmXA7I8Pi5uxzRtI0aQdghvGaIsFV9BVQSfCeJxSr1AskHrM_IJNEYI223nSts524BxsjZ6AEegQEGynmIH8Xrc_pmelqlMdCo2GeghQweAha
+.netflix.com	TRUE	/	FALSE	1798152286	OptanonAlertBoxClosed	2025-12-24T22:44:46.462Z
+.netflix.com	TRUE	/	FALSE	1820516718	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+09+2026+22%3A05%3A18+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=31ede290-4c47-4e82-95be-1f4b62e83cb9&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1&geolocation=TR%3B07&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	FALSE	1796756717	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	TRUE	1820516715	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQ3eMXVmUIABlAolJ1z49s1glzgym--Wr4.%26dt%3D1788980715894

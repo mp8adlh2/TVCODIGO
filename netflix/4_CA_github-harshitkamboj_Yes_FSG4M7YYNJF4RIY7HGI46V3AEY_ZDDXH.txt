@@ -1,0 +1,21 @@
+NETFLIX HIT :👇
+
+Country: CA
+Plan: Premium
+Next Billing: October 23, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: ‏23.99 CA$
+Extra Member: Yes
+Profiles (5): shey, tata, sofia, Aljon, chloe
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1799841012	nfvdid	BQFmAAEBEC1QHGdOW9dZpvdnaZtPKmlgwySw1DxFLZ6ZvACYB4Y3N7cLVCUAKmR_oY8ZGompFEWROkBE0Kkd-uCzZDmn1ThII1O5ur_BRJjhwH32wXhs6UZ_YYV94JhfnUMh8x-fqTbdto6BRUW0s_GvlHLycytS
+.netflix.com	TRUE	/	TRUE	1800272236	NetflixId	ct%3DBgjHlOvcAxK4A_GBmbN5ow59eMCOzxcOqytDK1NiyaGjLSBV5507xq2YWZCaHshzEHUf_AthTu1YdCSNckPVE6sbjatWXAWLGO7kL3S11Rn6CWof0ZiNt0QSF1D-xUgm4omVDLaAnmjD6uHxjQ6YE_cHYUc9Uo3cnxq0IFJuvOazBeEkdj53E4eHDqzWQNaHgHR-pJrEkWQKlWJqPbQhTslxyJwxtj3B5q0pxiK0vrz6FI-baeZsL3awLDCC2E6eJNmLktNFyA2Hu_nrWN-4Bvdt0sn56eJTk1LJvp7FNH5vAvjIusar5VHgHL8LhS10Vwc3TizywxHez5ONKBlYT-YXsKCjEImsn9Uh6rE8YxajBPj2VjnzHOX8ktc4y1AIsVJ_hPxExHsH6WyXrKj4OpBTN9k8miEIJsYSaCRnQgypRuv5wkNi9QwUlzkIQ8w7MbtnpKqoP_uB_SKCMOAu0Udn42EtRoosliZzL5ZodSe6c9eFTjqJlG_wyKm7S7H2aeGaIiMKEkoaf-c3gPaQmqE4mu-7dIxt-ReBfO4Gqq2GKFMULfjUX-UM9y-7l2iDk7s-z2DIJNx6F_MRfJXn_yarGAYiDgoMfOTUDrfv6uWSweij%26ch%3DAQEAEAABABRdaCkqPG6vVeVk2bW81RXovBnJ0BcCPzM.%26v%3D3%26pg%3DFSG4M7YYNJF4RIY7HGI46V3AEY
+.netflix.com	TRUE	/	TRUE	1800272236	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSGP_Xx6PAEJsm182g8y0duBg8XvIhtSrU.%26dt%3D1768736231575
+.netflix.com	TRUE	/	FALSE	1800272315	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Jan+18+2026+19%3A38%3A35+GMT%2B0800+(Philippine+Standard+Time)&version=202512.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=94b910ca-843a-48c5-a31e-d4f4cdb41774&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1768304826539&AwaitingReconsent=false

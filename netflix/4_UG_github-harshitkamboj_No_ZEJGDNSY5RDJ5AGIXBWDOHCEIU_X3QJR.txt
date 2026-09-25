@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: UG
+Plan: Premium
+Next Billing: September 27, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: $9.99
+Profiles (3): Kash, Treasure, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1815508600	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKhA2QofqZhRcMaLbK2jF1pVW8nrnIud4JKuXXBtkaNgOzct7KGZPG16WOJ1GZ0IBGrLfvujlLuDGixvLzFkFYrpg856tslVOxb_l9gHmdUcIIjG01Wep6pmGE2JnLVlV4pgenW6iD7RZKs_sJ9WR149A-9mzkgD-tvWLw2f-8aoWCLXyqWcWcHp4K2ilhD1YIsgAW3mn4-pSpnHvaNwU1EG7HHUA24byVsgfd6YLm9fNmzBuzNrKhkgMUBSh4xsKDwDgsNWk2NAS0_ajlKuWtBliPPzfhp4VDOUz5uEr2t08Rhg85ndc4f4uPHyTVIdacp0y0gF6-vVJKOKoDy4Ef2nO3wt_eJgAv-YHSof6kiTPCo_o3CG6k_7nytEZ2sNG7fnRSxOQ8bRbTEf_SzvRIO95S2fVEj1yxzLbNSsAvH6e4VuxDWKRk6O7BC_1CiqqwTH_nyK9MvLhwzSzpngSFBN5V_AadoXsC1OxrV72xn9dISqW1FuRsEy4gJ2cQW73uHS9m95824ice93kRq4-EHq27IJTMeKsx9SSrQBONcS3Bd8xgGIg4KDBWwvBY-4qAVkWzbbw..%26pg%3DZEJGDNSY5RDJ5AGIXBWDOHCEIU%26ch%3DAQEAEAABABRpVO8FjoLFiEoB4ewS1G23L6y4_PVktL8.
+.netflix.com	FALSE	/	FALSE	1815508601	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Jul+13+2026+22%3A56%3A41+GMT%2B0300+(East+Africa+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=6e8592e2-079c-462b-9f03-b91cab0c5e45&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1783972600318&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1815508600	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRSCy_GJetDj3yVwlAUEl0Tv1yDffzrF7A.%26dt%3D1783972595570
+.netflix.com	FALSE	/	FALSE	1791748601	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1791748601	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1815508600	nfvdid	BQFmAAEBEOZX0uITYW6qESlz3uyTkwRginHHj9p-tD0atmuVlFnT9Pm83pQlG89QHHT2zCDo_4PlLV1piSao3xUEm6zn1pqjuU0Xma6gT5xsuwcVNsDcTBQ2KSfeOu2Co6tozeiuKyqiow9wzUf680cBVps4ZuTk

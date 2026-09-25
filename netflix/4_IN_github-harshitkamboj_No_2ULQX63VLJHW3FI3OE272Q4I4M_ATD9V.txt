@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: AIRTEL_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Profiles (5): r34022570, Rani, Pixiee, Shikha, Children
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1817833585	nfvdid	BQFmAAEBEHcPOp2nrL857u2yqApf2s1gBi_wWGFar1tuHGUDMBW_7RikPqsiFueQuK8-C1TPw1_wM4XUrJN6NY-hcih3grQM_hqr_yHq1Wdub3Xbqkd5pEvRuA9jNjN9FjIRNsYYIJ7m-WSytTRM4fvSGEgvMGRj
+.netflix.com	TRUE	/	TRUE	1817840585	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSEUp8cW-SvOKUn1nn6xu3O6BiuOoAnIas.%26dt%3D1786304585712
+.netflix.com	TRUE	/	TRUE	1817840585	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKTA2IljNDpPkTpfWMAyc4lZWm1e7npVLCqx0e5RPrd2vqtQjNYwDJw0-g9nGRKHa6n2P70Je37ZSijUTO1Zn__T6i-smjB4HG4VF4SNLbeOs0OAA1wjChi3zxN2hmFNx9xpNqG1RkP5Kn1MZusnBncRDIX7xYyW-irKXXCqyLmveeSVBLELCcMO-B8MvArWuUIVhHNcQvaTYdyLbLkC35UqVniSNc5Mkq_erOiEmeKi8Dbp1IKhtYGZkRnNbWMX-0ybsewq8jB8yJFsBlF2__9Q6AoEjm6QaLz-uFDOMilQT1KbIzWmmbHQcJNOzAcYTwBIpDidBMfFrOTvT09Ohm0JvJPKoUf9VZaJgzW0uMcajg_vjWruFdmvvHWo9T547JWnLgh2QdrPmNd8sJNg6M8Dcr_7nLPUbgPx43uknkTjs4JQvianxIT8HFUlQtHHSk8oVpF0Y-tv9E9zF4io5qc0JfIq2heT3mU7P16MrLNkHfO6Ld5cgNAJ5IooIcXQhC6KzyLQCys43nJMj6ywxo7Avj7lmIYBiIOCgzns2ixl3ekOWJfSac.%26pg%3D2ULQX63VLJHW3FI3OE272Q4I4M%26ch%3DAQEAEAABABSZJiBB6qP8xoCCSpa8L0xl1Hie-eHSuxM.
+.netflix.com	TRUE	/	FALSE	1817840588	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Aug+10+2026+01%3A13%3A08+GMT%2B0530+(India+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=bbaba2fc-82fe-4906-abc5-625c94a5905d&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1774983715573&isDntEnabled=0&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1794080587	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794080587	netflix-sans-bold-3-loaded	true

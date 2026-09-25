@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: October 10, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379.99 TL
+Profiles (5): EMİR (KULLANMA BUNU), Guwol\', Fehime, hugo, Hk
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1793644611	OptanonAlertBoxClosed	2025-11-02T18:36:51.280Z
+.netflix.com	TRUE	/	FALSE	1793644714	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Nov+02+2025+21%3A38%3A34+GMT%2B0300+(GMT%2B03%3A00)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=2598fcf1-f693-4e1c-8ed2-648ec52d7d49&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&intType=3&geolocation=TR%3B35&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1792940817	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792940817	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1793644713	nfvdid	BQFmAAEBEFdPaZG8oNboNZFxRumdpO5gMLMIlctu_h6DN-bzsm27vg21mVlch8hDmSeJFpyEdNeZCy_WBQek_lcxqojqX73Xac7CAM2ERPHE5JqwV9iJL4PIfr--rRAi1RT09IrxrZYoy1D8lymQQCXC-DGm70T2
+.netflix.com	TRUE	/	TRUE	1793735541	NetflixId	ct%3DBgjHlOvcAxLJAyxtHxczDwrBgZ-j-LuyG36gTbVn5MxG-kedFyP8C3uUYGgvRRhCS01_CHZ53nb7BTFASJGKZsGhr3lDf2YHmOwhu3QlM-dwAQru6LU9T5FG_a7fVMdzgSwb_FZGDWD8RXMveOnEPyGkuexFgR2E0le74i74pT-cv91zaH3uWNhhT0qq2xtca2dS4vUMgnj0bRn-bxahQLT60I8-zBWS-qd38JzO0LJNOjWzZQ1RtwLZsVWmWSYItVmxiOZxqGNjyQG4txboUNO2o9GeaVr9PLjwcvLyINPLtbijYqUms_uHF6EWAuT7BzBfHKu98JzEZYyYv_pnaRgTvokQvfJ9mH-Mu-VvkbSL1OAUFbxfNohsnHlZzwD2BdiaWKprRzce5iqPu6WYs4Buf-bfQKPTwT4tokWhVSnJDj9pCjNnr7-MbBu3cQd_qntXKx5WyWymrKG5-0FNFNvMeQ2n06brs61i-7SrpS2gFUGlGfScTMGbOk6N-51hvtLYVw29oFHl4Nrb2JMpk8VuJi41_l1Ge03Ld1F4mLp3ocmSlzEmKEHRjbVg8CnDeeYTwgYKkWE_6AA3cnSA7uEdSNkw0roaKXuW1s_4j6_ohrEYBiIOCgxlIgUkkFDkesM9IV4.%26ch%3DAQEAEAABABQ9lkM6l0NbiEOMmEelmaJPOv_fPGG-u9E.%26v%3D3%26pg%3DNBO7R6LZ5ZBE3AHAOKDG2T6P2Y
+.netflix.com	TRUE	/	TRUE	1793735541	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTaD3G7WA4MLlP7u9G1_het4ZJoNwPbZzo.%26dt%3D1762199540977
+.netflix.com	TRUE	/	FALSE	1792940817	profilesNewSession	0

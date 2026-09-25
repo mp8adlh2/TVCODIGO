@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: UY
+Plan: Premium
+Next Billing: October 14, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: US$ 21,99
+Extra Member: Yes
+Profiles (5): Rene, Luca, AnaLu, Tinopak, Athina
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1793824199	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKYAwXouWsPI7hXW75PYTKessnkXhjtjsuZC4OfSeoBNN43NeX2XzxaqL1RyNmKfjFJdD_5JUgooW2Q3cCooxoQsxC2_EXlhks0ayIw8z_Wjya0F4m7DR2Y7WzrhuMl8S0_Q-GgFLhjU1yzpAeyFRcf_26qrS52F3UasvLxbRLz7TWlejt2CTjBNAprlMo9z5KmmWgf5nC9qPHKMiyeTcGlZW6VSKWhQxWH8LhsnZIGVGQ3I9b84B5lP0Ko_RZ0qOIvzO_HfKv3x_5c07KRNXYWbg8jOsiuOsTCOEC0w6kVhxMZo1En8aArMJXM88ICxXLHUlI3LONGAOvsq-nhxNdW5pwjRq0llCkQOxr2YxKrQ40uIvhtNsHzxVa_ITuQmMtjCFNNykY23RgcqeTUirycpYZkEi83YoihGlMcrFJhTe1MmPsGF9_FQVMgmZeJDP73uNOSdSmd4r5xuihE1fvUY_SIUWLl75_bsogerjYTYdcda4_pRo1b6Hni5ljaGb1nmNa23zqIwcYf2R0LkQoO_ECL29uS1E9guhgGIg4KDGHZ_I-8obTlKD042w..%26pg%3DGID737B22VBCFIWWACPFFD6EL4%26ch%3DAQEAEAABABSY8Xl0NiLIfH3EAqscQmCc-yPiXUlOgTU.
+.netflix.com	TRUE	/	FALSE	1792763754	flwssn	21619b41-3e32-4a3e-a385-92dec2546e62
+.netflix.com	TRUE	/	TRUE	1793824199	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTzg7dUHLzfXTuON8PEih2dOMtHKm-U8rw.%26dt%3D1778272199990
+.netflix.com	TRUE	/	TRUE	1792763754	gsid	07f5dbbb-131f-49c8-a3df-472e41bcf2fb
+.netflix.com	TRUE	/	FALSE	1792763754	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1793824192	nfvdid	BQFmAAEBENCv1yuSEpvIa6tHVsEIk8pgBxiBMIU-pGwHAvG5gPSxbL-w0p8uos2xNJx1VojoDrzn6GRlj8aLHijWF3ZXq80c3sIQzpZJEGgIPUK8FtsO8ljjY5MK7fveQ-GUljxu18aRHK6Q-uYwamoakjhHj1mf
+.netflix.com	TRUE	/	FALSE	1792763754	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792763754	profilesNewSession	0

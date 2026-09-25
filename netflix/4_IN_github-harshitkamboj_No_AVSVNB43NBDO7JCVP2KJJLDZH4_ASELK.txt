@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: AIRTEL_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Profiles (6): 1 ??, 1 💬, 2 💬, 4, adi, Delyar
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1820217199	nfvdid	BQFmAAEBEA1i4Bq1y6JWVKQoM0x5UNlguF45O89yfHmYWU-HIgkifuhNMk0yaOu6gPgmgtBkZHHjEe2PGiZOM83bgvRo5nBhC_K9fz72OfBckMoS9Uf_ff-Yy2fqGHzIvV06K5sULTwsdhscX8PONXdmXECh3K9j
+.netflix.com	TRUE	/	TRUE	1820338067	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKaAwHL66AHZcp5l3V2hQm_oICjGiZE8RBCItl_yP3nb5WQYlOvIzs3XaZsqw5mB_yNZ_G8bzSn4m2EVEG66L7yA496Gxseh0PGCb-vYCpXvIjducsoA4Tiq3iHOcxxnW-EBpwc8W6w_99lJFdIHBnKPsfsli2fHxKjdUsqDApV_dxP9vZvrS5P_mnBqBduqZ2pXZql-JTUVI2MUh6NtaOkNgh5jbQIa70tGT474CEXhUq2RBxjkTNSIl2skUkxlKpiOjldi9toi2PrGqGj5GHrkD8XeJ6TvlMqNLP4uHgYgDxLdTuKeZlgPLcGujUl75WVU2DBMFZXWgWu6NIlXOHXGdJHZL7FG2yNoEA7YyKvhNrfHuiOHme9IWpkLwqESzs9FQ021N1Q6pGH18iQsTGOCKiN0niKthHsCCEsXEZu44G2UjJx_zGcmt0f_MI5e78SEM2MkIroHbaMNe4CZtPgOztGoBdcQhANxCsVy1Lex9tumHfwoMuE6_01ey8tpsEg2caiPmZYI9GRWYhFi11UFZ56uyASeSEVCwQdGAYiDgoMHWDsUSYjcSkufPar%26pg%3DAVSVNB43NBDO7JCVP2KJJLDZH4%26ch%3DAQEAEAABABTTNZER77qmqQRU9br5pFXVxjTU0FTDL_M.
+.netflix.com	TRUE	/	TRUE	1820338067	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABS1WcsqRlZT2r1Geb1vDgWpVFYIHw1ykEM.%26dt%3D1788802064716
+.netflix.com	TRUE	/	FALSE	1820338069	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+08+2026+00%3A27%3A49+GMT%2B0700+(Indochina+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=06c2495c-eafe-4454-837c-c020b7e6c93a&interactionCount=0&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1796578069	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796578069	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796578069	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: TW
+Plan: Premium
+Next Billing: October 26, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: $460
+Extra Member: Yes
+Profiles (5): 家庭號, Arthur, Aka47, Habib, 兒童專區
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1803814310	nfvdid	BQFmAAEBEIoqb4_PH5zdmUVGtCPy1oBgdu16YAN2mwUTEk8cPWfOpaUDCjID2vN4CFS_7pGy3OApC0a9ON119kuYaAXa0KqlN2zTReQYu_QLXLQz131huhepnAWt33K-34bqP-4lo3XpIqxXiS19kdaKgtGvSoNA
+.netflix.com	TRUE	/	TRUE	1814800137	NetflixId	ct%3DBgjHlOvcAxKHBPydNox3-cCUJ8_QeTgPq9ykaQPblv_JpRS54BLByCa-DT8IvEyzk5kRqWdBPbC7Io578oJiSCgMb3hMfPdrc4xHkI_urrg91IREG6jdXWb-OQua2nckJZPFxQYtvmTvZQMyNmLuLObxRKj81eQ8sJSlL28rhtJlxJicdTe2w6TFbk8cM4ooxl3Alg5zuPoadZw3EcFcNPZZoi-bGC_bQ80uSXoSAaKTmH_juKYxPN7nTVRruBPtL4aXm9gluc9McR7M-hKkyd8Cuy5CU80nRuqBWunfnVMK-MWUjI7sN2hG03SavrC6aDK5Xt7xf1pJdMi1J8rk2V8CY9WcyC96uttgZeJM8yHAZXe6BzUh4jvCgKFq9_es8EIYcJVSpGSyiJ7ejr3ydWeKS59uW8nyiIn7K7OXygCQRNVS1K1kuA22QPZV80YY24D-0TBarSnRqLeEnmjx3tDMb-UU9_gxvyY4ioUi7nw-j3v5TnwIiof_-ABrHK_dtU1dzFwrqG5NcU9FOi9CMq7HInvpDEqeHgp5XC_DefwmUhu8dPpGAEiUbhea4VGk9zDUVo4IGeae5QuVkvQXW1lCd-U1TNUeFwwuQRCWt_4jwWuEhrpM9k8-aOQVvkjSUI6bC21P4j-3ES9nfYhkQUSN47DyH29RBvHqmh7msVKfu6UkBM00t_u3iqOmvifv0hgGIg4KDNsK59fUC_WHHBRkow..%26ch%3DAQEAEAABABSW1mA0qI8sBiMi_AzT0YjF0r91w6frx74.%26v%3D3%26pg%3DCTMOTRQWTFCMDLXNHIFFXU2KLQ
+.netflix.com	TRUE	/	FALSE	1814800139	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Jul+05+2026+23%3A08%3A59+GMT%2B0800+(%E5%8F%B0%E5%8C%97%E6%A8%99%E6%BA%96%E6%99%82%E9%96%93)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=36321a5a-7350-4deb-9c4f-d9a785d0a96b&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1772278229653&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1814800137	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABT9wXGvVR2U1bRcgD5YzxMtU1KA3mwAvPs.%26dt%3D1783264135541
+.netflix.com	TRUE	/	TRUE	1792853992	gsid	15933b47-f57a-4c0b-b879-10829a2996fc
+.netflix.com	TRUE	/	FALSE	1791040139	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1791040139	netflix-sans-normal-3-loaded	true

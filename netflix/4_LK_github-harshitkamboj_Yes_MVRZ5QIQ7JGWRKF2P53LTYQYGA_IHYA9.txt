@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: LK
+Plan: Premium
+Next Billing: October 5, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: US$ 9,99
+Extra Member: Yes
+Profiles (4): Netflix, Leefan, mansur, Tcl
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1818259237	nfvdid	BQFmAAEBEMlvDGsFY1aTb99rFYUjy1xg_IMTSioP5ocfTYyx3gjCnEuy2OMsHcAX1f7aCHkPfhsfYfqb19XImMCGEzuOK2yQkoMk6ffsoksD0XWV4__miEWfTJjYOdmYglcApbJgI1LppxPNQEXBi0B_J5LoPDww
+.netflix.com	FALSE	/	TRUE	1820484881	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKUA-ApMPJMDDiPlmHcLlRDSR3EZV84GQ-h2b8DBVUSYJ-j8_ch8yup_Og1b_vuxIZD57I1W-rcpHkJ0B7nWHv38OC1pzAOqz1WjkLkfZzJEGcTEmfzpcEhxuJeTul394V3j2hgeO_b023fMhprcfZwIp6Ylp9Z7tQtwZc5DUgLNWYC081hEeCGHfvws4tWk-CNP6r_Ftya15GhtvpB8ZevxrJlfUdbkPo4N_cJdPGK786XnM48VbeIYYU6jb7_w9Judot4NRsRt0kUaofwTboKFegUxFOPYqIxJEhM31mK7CVoZALAZv4Y54saR2GYTfVN9LpK1Az3D36ZkCv7ORxxNiY9jhfuNoYHpsz4NuVAt8BVrW7c_VfEEYuJzmJlimyo2wvGHT9ZSfBuXFIDVerlj-ZLh4trrSLBtNkAr9z-daXx96uZxXSyvJKzZPzyWhu6JYcrCWwjFoNE1N6nwCFN9a8j8qDk3VMN8jKU_6vczqxnIxDuhFkLfzjmpo3jXdE1ouJOuVzc_8C2vHxgETh0e3srjYcCGAYiDgoM_j9W5CEGCgSno5rN%26pg%3DMVRZ5QIQ7JGWRKF2P53LTYQYGA%26ch%3DAQEAEAABABSqYRrTtuDLwz_FdQkRTY7HsqnT4Qb5whM.
+.netflix.com	FALSE	/	FALSE	1820484885	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+09+2026+15%3A44%3A45+GMT%2B0530+(India+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=82fe84b5-edd0-45ea-aede-0a086c5a33d1&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&crTime=1786365868325&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1820484881	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSbspPxEmQcQyu3RkgsxnCjoQLOtdnJpyc.%26dt%3D1788948881037
+.netflix.com	FALSE	/	TRUE	1792853994	gsid	2017c2b0-6e98-492a-88a4-64c92e5b0963
+.netflix.com	FALSE	/	FALSE	1796724883	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796724883	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796724883	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	FALSE	1792853994	profilesNewSession	0

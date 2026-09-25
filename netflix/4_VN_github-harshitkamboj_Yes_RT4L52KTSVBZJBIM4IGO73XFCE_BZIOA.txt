@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: VN
+Plan: Premium
+Next Billing: October 25, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 273 000 ₫
+Extra Member: Yes
+Profiles (5): Desireth, Desi, Hải, cơm sườn, Trẻ em
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1814182433	nfvdid	BQFmAAEBEBdLs_zZyQg1OpfNNzwpBaJgF0327Z7WAHEZOadv-YLM4dXNIt9olpFK50NJ5GOcc_GrUpRqcFYMy9pbxO6oYyyteEbd_s6ZWMd_L5yoFPNJF1oOM_2I7NRd4qdyk8DWLVEyFwN05FqGQyrVGzAA-1kw
+.netflix.com	FALSE	/	FALSE	1820903008	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Sep+14+2026+16%3A23%3A28+GMT%2B1000+(Australian+Eastern+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=713c2dae-70cd-4331-aeac-21b65813d8f9&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1781670379277&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1820903006	NetflixId	ct%3DBgjHlOvcAxLUAx_p_gUh2HiYfqBeb3INZfuZGHRNHyJLZzA3NpB_VfTbKwjQOEGxAAK1R0bv6ZNYSblJR-cnGHdU3kjKqM0o-AnVdkhGoPTn3Nh4JfBPDr2Kv0MqIedtdDeniX8LUtH1SSK7-xsTJ_KTgzH-DbJjNhRlwVLipBhhplMvRSOwv4xwAzwpdja1y8Imdq8NW9GSmu8BoTsHRWs9kiAI7FtSsxpQOhPQL1dLC3WHG8lgtnRlUFC2-9XITZBj1qZMPs5GPtOPzOmfS2aUuxwB4GEf2n3tLpRZWw2rRgXfRHtpoO5JOmXWqZwCCZOinwsq2jBOWcpMA5gpHBDUA1BJSBURNLbgVA8Rx_xRwDgeft78SRWpdSmv_RGvimMbfR0xiwm8h7JsHkwwE5jdPWoZpj6j6tMue6LwNC7kbLrBrlVghYsFwjxE7QM5UFrswKHFunKaOxokTtDglLCKdajTp3n87d2-FdLDR3IaAqrTQscz5thUaIMEW3_chXf7-2b7NhXibPnPs5H9Y6L6JZnrx8wVWGRttaicrXP-CLF5bxgfnkgSiwbY9OiaNfWpe6Ko5r9C2TLB_64ocUnZ-CgpDdquZC4Q7PTDGHzoApbjmRKhdh0fvl_GdhgGIg4KDCb8Ti6cEjW_VPG1dw..%26ch%3DAQEAEAABABRL60dERJQj5Ilbon4QMIFrbrh8NbUqpNw.%26v%3D3%26pg%3DRT4L52KTSVBZJBIM4IGO73XFCE
+.netflix.com	FALSE	/	TRUE	1820903006	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQZHg67hepMzZrUGhxroGZBGZrHp04A0LA.%26dt%3D1789367006974
+.netflix.com	FALSE	/	TRUE	1792853992	gsid	71bdbbac-e72b-4aef-ae31-13a1cd6242e2
+.netflix.com	FALSE	/	FALSE	1797143008	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797143008	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797143008	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

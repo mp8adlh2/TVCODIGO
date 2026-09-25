@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: ID
+Plan: Premium
+Next Billing: October 24, 2026
+Payment: MOBILE_WALLET
+Quality: UHD
+Streams: 4
+Price: IDR 186,000
+Profiles (5): tujuanjogjavillas, Tujuan 1, Tujuan 3, Tujuan 5, Tujuan4
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1815537895	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Jul+14+2026+13%3A04%3A55+GMT%2B0900+(Waktu+Indonesia+Timur)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=9212fcdf-fb5e-46fe-ac48-d834de2d5339&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	FALSE	1815537888	nfvdid	BQFmAAEBEFkdfIzamOAMKCsWqkB86FZggA0D311W83K-I8I8L8cZuG_EHBzT0jYBVSKmtMeNwTRNPzSuoxv8UTBExhngPuP7Tvfn_PEfveUq-6QUc8KQk2hO0zXE9cI6EEnvfrzaOtgOcwGx18oTBi8cCIvqUDf2
+.netflix.com	FALSE	/	TRUE	1819518745	NetflixId	ct%3DBgjHlOvcAxKNBAmjUS5DBxvMeMa9Pb484gO1iGN2U-NCVlcTzu55G7_e72WaWLWFSKyhEFBtuaT-oZj2EvlxRpJQodAmyNdei_DjILHB7kbufscHzlhUfmDNCUAqzG26GRtQfHfMaTh-abEaefDSb7pVhh_LwAU43cWQK6rbXTcHmGvpvnB2_HiEVFc4bEfJeSaJeuHcAqCehOM9qQCKlqxGaPMWxE66xlCyYID0W7rbcoZt5nJ0TO-AhJtLbJ_YG5v1MNZz6ZzkVemV6fVFKo4jcuy4rUOsqgfmPt6xEhrwCK7-WiKEIsAP4HopwMfb9MrEd8yzgTLEDz7IChgwZPffuuzY05mW8bFDRG8PCYq4IgQgP1cJ56Gz8r-b9iMUyJxvKweGF7LznJo3qUzgAkwHapYfocixUmZv6C9DzgFbLT8PvCZEuOAWZOmEpiKfq4GNdDC93tX07prFau2jW3d1F_RMGNMNoB8svCO58bpsDqFr-ppVwPoesF5vycoASFx72HIqyKFoPDmqO8kJD-Qk8cRkkb9lLB5yjo1wGj6ff6O59PQnrqCqZOmGdLkoPwvXyjEE2ZuBkwl1OUwNo9XZH1zOubee6Ww2VZEehV4CS6Eat8LdcvdSPMujYeGHohqC5Oj4mGqhc-tYbvREFEkP7sZuImSphXLs_rJ4AL8bU4ov9-K0Cb47WzOv5IA31E3rWQs_JRgGIg4KDH30Oqp3uhDevXw68w..%26ch%3DAQEAEAABABQk1mwPdwMa2a-DATUq40d6a-SAIoFtpqM.%26v%3D3%26pg%3DBYC5EKJBZ5FGBHPVTZ64JQCLBE
+.netflix.com	FALSE	/	TRUE	1819518745	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRDWX7DLXQIyeA3z6fg7J1Do0gyEmL08l4.%26dt%3D1787982751614
+.netflix.com	FALSE	/	TRUE	1792940818	gsid	d6c89d6e-a4fe-41bb-9c6c-e40b4c1cb1c2
+.netflix.com	FALSE	/	FALSE	1795758746	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795758746	netflix-sans-normal-3-loaded	true

@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: CP_FR_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Profiles (5): Severine, Jpa, Kelly, Ossama, Tyron
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796835560	OptanonAlertBoxClosed	2025-12-09T16:59:20.738Z
+.netflix.com	FALSE	/	FALSE	1808922961	nfvdid	BQFmAAEBEOSXKaQXqUKvK_bWFeyHV1lg0IfuIxY3yIV-ki8TZJbb8ShnLIemZl8KdjXBUJjkPsNNYsK8TXmXFI_mlfvzBcQS1spqcMQ61OObq3FyoNBp361YuMshzfEEPJkwJhkIEiv5P92KME7NhiiS9DNNYyej
+.netflix.com	FALSE	/	FALSE	1819200375	dsca	customer
+.netflix.com	FALSE	/	TRUE	1819874659	NetflixId	ct%3DBgjHlOvcAxKABI_PLyw85WPbp_iHlZCj_zes_CBf3ubK6DbstIYZm0WgHylgV_6g-P9Se-PzwaFUXtCFxXAlNLpkTtwL_scpWhaOF94PKN_8oGC-7jtahvck1CAegqOar6-k4uPY8RFmqi7hmzmRVfLuR1run0yBA0xsgNd4u4RYj6u2xAU_lPJQiCEQUkeqHo_RZQDzmmC_8f-RsPitcN1tGFhCizrLqZW3Afat53KQ4mv_abkhsBxaKYrrjW72vkVQ4M3VBOgRGQbHVVfEUoCTS9_raS7pYSCNf8chokbkmXcGf7LKRoJruZhKHJoCc_OLs8XIrVkeJ2ZxKsBCCR-2AzwNG3PQYGe7eklc1SSlrJ2HkIT-qPOtQw1otCrMakNuyNLXk6XVmiHTgu65rIRsBrp2S6JhyUfF197xgXSlAGFWmncnXCiClSEN5U-Ay_v3UqKfOO0ypLbEAEei-AzqDd9rW-y0IFyzZkfPtSunK9Y0ownEBhR88nv_ZE55Xque6kMk8N1V4rohGvT5xwUSBwpuca-qNCBHvlVSGw-KJWXFvFRHNCLV1J2UBNN27NSw6GROkTZrrPTwvojl0uxX_oKBye4TiSj9q9C_YWtYW6GFtdQ229AFYoOua7LidCcQ4SATX5VkwTrnQLNuSsbuwqNVQvniFyvcq3Ef04Y8UQyHp8U383KfGAYiDgoMHcaH_gn7GR9eZMKk%26ch%3DAQEAEAABABTAwQHp_CIiMDOF1Y4k3wCdYsD-rU8TDh4.%26v%3D3%26pg%3D32PQ4W7HLBFZ5KFKA755YKW4RM
+.netflix.com	FALSE	/	FALSE	1819874660	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+02+2026+10%3A44%3A20+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=09d4347d-a490-4441-a7bc-32e1e0d975dd&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1&geolocation=FR%3BCVL&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	TRUE	1819874659	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTGrFypsoFxer7YbNciCOfuFHf_iAk4GQc.%26dt%3D1788338550940
+.netflix.com	FALSE	/	TRUE	1792853992	gsid	59b4af04-4bd0-4d02-b125-807c10e57cce
+.netflix.com	FALSE	/	FALSE	1796114660	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796114660	netflix-sans-normal-3-loaded	true

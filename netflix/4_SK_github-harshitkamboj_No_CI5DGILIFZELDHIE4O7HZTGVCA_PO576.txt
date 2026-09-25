@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: SK
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: O2_SLOVAKIA_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Profiles (5): Stanislav, Palda, Formy, Kamis, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	13440274623487472	NetflixId	v%3D3%26ct%3DBgjHlOvcAxL-AlOjKv6lKnenRU85VCDioC6SN2yNBvmcrh1Mfqzivo3v_hsM7Ds4nQUZyxwqc_T4yQSGSAwBVhWuHaghMAsBgDFF3GJ46LhTiG2WWGQ_tZEgHdCswxC6oSAasHYCkyimGEVUw4TN3Q7R8CFapx0nOiImAAWT4O4rblHPuZyM2Zs96xloUZw2AJ-9SQoDzyYfTmGCdLImysGLR12VjqYwznDaAEqCpG5w-tDDWKmRoBRgb0xPiESCT4A8OieHSS3sYo1N7nvPDVrww-3lvVF0ej9y1b_7UgYsPEs1hEjubqQxQA_3rvVSvAvrL0yuHta57OvOP-Mu-MR-twEyD5gwyTiL_djJxZpCmGDGIB6v_ZtMCBYwbdFLimXpcIQITi1LMCPkQtJ2IbkYIP0wlxeK20hTpp3qj4aCSViTDnWutzal4XJwON8FtUz88i1FFi1ZNjZU1gflz8WpqFvnhzc7MKgZWLw1aYSkfGJXJA6oquOzEuwzppm5MG9oZ7QZVv0YBiIOCgzKE1zZZWpKEFcF3YM.%26pg%3DCI5DGILIFZELDHIE4O7HZTGVCA%26ch%3DAQEAEAABABQSAgB7UDERjeDGoQL_h5ozrktbyTwhU4A.
+.netflix.com	FALSE	/	FALSE	13440274616000000	OptanonAlertBoxClosed	2025-11-27T17:36:56.124Z
+.netflix.com	FALSE	/	FALSE	13440274625000000	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Nov+27+2025+18%3A37%3A05+GMT%2B0100+(stredoeur%C3%B3psky+%C5%A1tandardn%C3%BD+%C4%8Das)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=c815cefe-9da2-40b7-9060-5e62c4ac2548&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&intType=3&geolocation=SK%3BTA&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	13440274623487340	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABShOW9hwm12QirdZfeDg3YDEfcn7Bmy4Lg.%26dt%3D1764264954723
+.netflix.com	FALSE	/	FALSE	13443298619621836	dsca	true
+.netflix.com	FALSE	/	FALSE	13440274619357650	nfvdid	BQFmAAEBEJreOny2K21cmaVzrQBvX-JgNVv0DhCjJwLsT6ZGUqGY6bfzekAu_5zM-5v6_WKjJPBvSRDBLwE3tvaqMpb27n87FUxJN03looI75XRm3PkSnyKSIdwHV30UlH2SHV9fOMuodgoTkdOjs0TznhPArow0

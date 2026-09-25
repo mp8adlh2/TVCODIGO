@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: US
+Plan: Premium
+Next Billing: September 28, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: ‏26.99 USD
+Extra Member: Yes
+Profiles (5): Kim, Mummy, Layla😝, Mosela, tropa do krl
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1800844404	nfvdid	BQFmAAEBEFYhu6eZeI8DNuJv42ddZY9gToovjTLMlVoIKkm1wOjmYK-ZVVtq_vJn5c322FWxChONLjtIIK0irZ_mO-_D17Um07Fx1h5EE8VF-vT48ZHt0UwvLDwEoU1D2LxhlITzDJSwQ66uw4Nt6CF2EifORhH_
+.netflix.com	FALSE	/	FALSE	1818123415	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Aug+12+2026+20%3A16%3A55+GMT-0600+(Mountain+Daylight+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=968a24cb-35b7-42c3-ace7-2b2574126b98&interactionCount=0&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	TRUE	1819332828	NetflixId	ct%3DBgjHlOvcAxKBBBvaa7kmrrw70iIrf168-Q9kzZA3Dz6THP9ZT5cGmNq40iNuo8SQeRpsZM9jw-w6GZl9bv2RIuyB35v2gR9W-x-64xkhK0hHXHLcRHCCM1msgBLowmRqZpznoN4ObpzesjXFYI0P60KuODobpylaeiJcNb4CyzUtAxV8sLcowyv-pT5FXYJJ433IB3jfMNyL3IktBA5sZ2kXQAfhm6KnViCk7SL5so4NiVyQdmTPdkNjQNfPoM-2sW76Ny1_K0eq7hqYh_i9n85lb__cX0gQ_V6T5j_gKbmBq9riiSiT5NiJ1e5oHxCZ3mARDHwQObE4JmdpzNjsPpKAmfN2mZNBUpWfVfwiZnctowkKxDkn9KJEfUn-PhUHbvMbflZJ43EvlUWo929pA6lmBMWoHgn2bUcOuoqaCG9MlftkKUf0emFVWWj-b6C5VXPKsV-eC7DTcB7nJb2RM3cxHhp1U-bdScv0tExZZGdYsHWG22cy6wch7yKhGPS1CXzvlbl11P3BlW07-28o6NxqiVFh4jWZvRttNATIhpcqUxceXN_trkt47EWfGgsmHXOsXpHSrkZjkEyuFNbXRQ79963LmnyFyzxv41JeICVrXoMr280fuKsRVV6dRzYTs_w0P-m549_EA4wd6ck8yXyHqWs5--t2bmFZnIt2P5vX1Qn03LVmsClLaRgGIg4KDPMabw9taZA_orj5WA..%26ch%3DAQEAEAABABR9Mq27yDf7N39vZF6qrsGLB6t8i1LW7aA.%26v%3D3%26pg%3D64GUT4YONZGZJFRG4DDPQY45Y4
+.netflix.com	FALSE	/	TRUE	1819332828	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQb7cxTsHryRB1WAeOwOEq_b0v7x-_e7CQ.%26dt%3D1787796828094
+.netflix.com	FALSE	/	FALSE	1795572828	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795572828	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795572828	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

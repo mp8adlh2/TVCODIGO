@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: VN
+Plan: Premium
+Next Billing: September 29, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 273.000 ₫
+Extra Member: Yes
+Profiles (5): Trần Tiến Quốc, Trần Thị Ngọc Thanh, Trần Trọng Tấn, Đỗ Lệ Thương, Phan Minh Châu
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1806675152	nfvdid	BQFmAAEBEHPZe1z4AZxKUAwPXzHtfVVgdzzglSmtK-0SNd3LWWpiN3syrXks2BhUm0-gKHfPzmLpmJxaxFMN3_YgZIBQ9HetGUS11NRDUh-oM1eUsVrY1leE7m3ClN9yjtqnUpkq0Zid_IkFI8gtBTagMfeszdTq
+.netflix.com	TRUE	/	TRUE	1807291805	NetflixId	ct%3DBgjHlOvcAxLJA01X8Q1r5o9JCeyoCC-UGrs9OVqXp_KXQ7U1IX_bafkAvPoJW6qhDliX4FpriK_5Hd4VbzEiA02M46LYCHYNGAGFs47a7zVWtl16QTJyokkJcvYon5yKL6dTJ26vM264pohRCC6leGoG1_kq34JbuYOo2AWgjLd2_1hWwvsXK6aD_qz_eye7_KdxxNSMOUj1mGPWmjrlO5qeNBn3Zu3NeR70_8hlda-AHpQ43xQYFy4lYf2eN9e-iqNGfs2b5VGOsW9Qjy4ZSS8B2mttAwksyrsWhS7csta-MVYQd960Uu_Fns8zTnngIeJ2XlV8vl2aUCnruy3SYoQozOE7tCE8bvvOIxin_WfXHQYt3Thv8GCR5Zq16WNDEE_uZuBPVOeEssV5fBdpS0kpmUbh72pXuUp5lJqYi2IzaVEY0jrFuIXdfw2DyOtIIUGzUwr8UyzcwXrH_-OOW3maj2dnSB6KQ__6Js5yy_hzSWEhEX4YA82ZDfFiz0fdCGOAgNnogy8MifMVo5SXhGtRW5tPRwkiRd38v4d-pSxA6cJzDqVbkt2XUCKcrKm5UYWHzqUcB4o5WyO4MPljpYQHWbGhKPBENBdTfMoTvxqwy7QYBiIOCgy38VXqxOVaqhMlbiM.%26ch%3DAQEAEAABABSbUMnWwu07GbdV-4CQcCXutvP9VoaVCA8.%26v%3D3%26pg%3DDK6USRHILBHCVEJI75IYWSP7P4
+.netflix.com	TRUE	/	TRUE	1807291805	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABT5SzYkYTDXzu3GKL7o2_CRpNcydYMwn54.%26dt%3D1775755805801
+.netflix.com	TRUE	/	FALSE	1807291822	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Apr+10+2026+00%3A30%3A22+GMT%2B0700+(Indochina+Time)&version=202602.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=fa596732-b93f-466f-b6bb-b97d21f72e21&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1775138963045&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1792940817	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792940817	netflix-sans-normal-3-loaded	true

@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: CA
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: TELUS_INT_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (3): Arnold, Win, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1814753280	dsca	true
+.netflix.com	FALSE	/	FALSE	1811729279	nfvdid	BQFmAAEBEOHiWrjmMnK8ZUvh588UwrdgOJv8RQm8GFQdntPIgjrONi-okBjTe2o5IZvwZu9OsVhN4kFTBtGU_rxUPOB4Ku1B5_w06DT2la0XxCgth69oX9yN-Lrue_i6N1WNCI6PYSJRcPHkxXSaoGZsD7I8ncnx
+.netflix.com	FALSE	/	TRUE	1818822417	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKaA73b1TXMxzOkxbLkC9ld4NdUp-0SgeqtE3p55W3rJuWMus8JKUi59Os4nbsRAvh1H6IlKYzfcH-Vn6skf8RkK9uYBoTYM4J5ptb0EbF6jbxZP-TK6Bp-FcPqm7qIxad9xaKzLpAShUpds4tJZAmKxwKeasaoWEpjliAsR-37UL0pQCDh0v5Fn6AqIgXD0YYcG9dj2TyJSbyxJpDZNKN6zCAI0-n3ACrqQGeTCfMCci0DWAfSp3ot1YXzajgfnXZIMo71ypD6BY7jPMFvPlIvfCRIAo4Iso5pZq7PVVyzvu8D_RyiPHyZw7HOfAh4FWgel4yaGwxenThc7O07-H_Xe787tFgWKP3m4XG7t-iurQKQ2AKydJ4kFE3PLn-TUR6nMWyVe-QHkjZI2fbtlJiNUEhVmhntiV8J8J0puS5DvrkXkCuy57csxQe45fb6k3Q5kBb1e84osuH7hBEy9lIRiTY1AhkiPI7khQVnVE4IjrrskXbGQpg0-hoFG21BesHYA6HLym8HS6y8AC8kGVovhNgGo1QjXB0iusTiGAYiDgoMzmp4R3Uv2LNh5vXP%26pg%3DTET5VVROFJFTXJTDZO4ZX7U6R4%26ch%3DAQEAEAABABR9lBgF5eX4IK0CGE4n_gY3NCkNwMUPB6U.
+.netflix.com	FALSE	/	TRUE	1818822417	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQGcIpkrcVL2oFTAEsuLtT4DwPqdOSEIq4.%26dt%3D1787286416002
+.netflix.com	FALSE	/	TRUE	1792940818	gsid	7ffdc890-9ba5-4f1f-93c4-4c57163a9ad5
+.netflix.com	FALSE	/	FALSE	1818822429	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Aug+21+2026+12%3A27%3A09+GMT%2B0800+(Philippine+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=7717d4e3-ff9b-4f62-b536-ac116b7ae669&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	FALSE	1795062429	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795062429	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795062429	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	FALSE	1792940818	profilesNewSession	0

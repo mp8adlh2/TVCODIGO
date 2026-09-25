@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Premium
+Next Billing: October 12, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: ‏21.99 EUR
+Extra Member: Yes
+Profiles (5): Prault, Nathan, Ethan, Annu, Léa
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1792853991	nfvdid	BQFmAAEBEB06sqNj-ddBP5iW_eEG_QZg-wnBj_q39GCP51RqUgbPo2lBRl-uccn3LqrlzkGocPU4r9WstAQ2KaVgWhE8aBe0DLj2GZdGKROrRJZiglizs-AbYN8tysY0wRrzA5_Ppo2m7eym242ZVzRDqjrXzIhw
+.netflix.com	TRUE	/	FALSE	1792853991	OptanonAlertBoxClosed	2026-08-25T13:38:41.731Z
+.netflix.com	TRUE	/	FALSE	1792853991	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+01+2026+19%3A39%3A12+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=e7cd4d70-68c3-46e5-ad85-634e23b5a8d0&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1787665122115&AwaitingReconsent=false&fclco=&lastConsentTs=1787665121&intType=1&geolocation=FR%3BOCC
+.netflix.com	TRUE	/	FALSE	1792853991	NetflixId	ct%3DBgjHlOvcAxKDBB6rOBlJvQCpAkffwTFrcXcWLD4tijLm7f2GDv3uBjh3nbqYzhCoUeGvw_9yNFaY3QUH0n4JGng4I4qjWhJ1G_6gk3bjtSMhljzIuOE2_JI4QY9l1bv5kBvI43-MR6eTvYwQduH0qq48ni415yeA2wXtgCv-Hv4AOI7n8g3nGl6qrR2YqjwxfQDYhEallri8e-UbUu-m3d5c8shBWIpnPGEl7imRAxllSIiuWDqDfeg7PXDoUAFAX44FwE-9P5Y5uxsIsWiFm4ld4muF8v0kJz5RGreSpDoR1bjV-_mzfQIe3u733CirI7qL8KNeS3gQDjXo8bzZFClaVhr_8xMomRvB_SaZZz9_fEZ3rpWWj63-47oueo4CHOoKv7EV_3AJve3Ahg8NldHTzensNwVCCzIEqklsWgQlmi_LH5DlkZePnfULn291H4SKZVbZB6kxFzwPJFLOTkaqBXK-nIDw5RBAE3hnIb3J6wqLghQ8u0HMNWhOUiME_-IQC_PawGJuSOgAUV-z9aPLWeYxcPVX2ZNTFX-HpdLPIeAuo_hJGI8s1fSjMaMhiTzzewOnSeJAWkOx5eMYyYSm7U3J4ODV858zTL49jmnK0FMAmXjSVL_ude_NEXghu_IK1M2TD7LN4WXwCjgPm4V6DUSHpsGDTlcMIEfzhqHopGHPN1YJQXRcYCA9GAYiDgoMRpTXpGRblbilOaj6%26ch%3DAQEAEAABABQKJ7_cHGFjG_05UevjtB38HTdHmXU4ZGA.%26v%3D3%26pg%3DURNB25JREFELHN4NH3VTB34TVA
+.netflix.com	TRUE	/	FALSE	1792853991	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSIvw1tvLFMz8X8TLlEvMY4qnqBsgL4fb0.%26dt%3D1788427722916
+.netflix.com	TRUE	/	FALSE	1792853991	gsid	daa27f44-b36a-4fe1-937c-714cc3528980
+.netflix.com	TRUE	/	FALSE	1792853991	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792853991	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792853991	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

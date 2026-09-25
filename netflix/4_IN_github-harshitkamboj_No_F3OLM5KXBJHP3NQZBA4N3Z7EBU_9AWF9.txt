@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: September 28, 2026
+Payment: UPI
+Quality: UHD
+Streams: 4
+Price: 649 INR
+Profiles (5): YAHIA, ADRIÁN, Sahil, Kid, Children
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1820768570	nfvdid	BQFmAAEBEA-aIMco-M8-1RxJ_Wpxesdgm51euXaGqdKH7c68UsOO5eIfL67LYxW96H3vyHuhGxMruedwGfyy_zhtJleL0PBHVgKhHsmxgObKpuAKgWj9OF38GSdW_l1g1MVQv61wuAQvXFmNsj3e_Lt2xUms6kNb
+.netflix.com	TRUE	/	TRUE	1821551770	NetflixId	ct%3DBgjHlOvcAxLGAxJ15_apZoGN9HU9bwSLNMw5SkUtMGhW2eeQqpS8jPj5lvJFXHPDqQYU1O48BRx7T4xpkQqH-5X1M7cq2Ul5HfGGt6LkTq7HEYPOA9xFxq0exs64WX0ZBpK0fBQY4g8PHm8-tfMwpTs1n-F9IGco4osNFWUDzBSQs2CuWaxLZKqr1PC1m1DGlhBKAHmLEtKgjghX3WOzNSPr-vZfpF0tKu5PUAF2Gi5OZRRufCCcop15GDOndvKwfbchnWW6brU6fCmWGp-ENchhVoBkUvDopHCulh-xMOhNOlxAXLGBPLjL5ulzDJPkEk79PC8Nf56T5FmXEA7ho6S4DBjOnLfkk2pPBpgLGxTg2nujUntNxBbVpsHJ4EjyODB2U3W3swvpVi-hJAi7C8SVXpBhSuVGOvW3GE61b92vNcg7PguxQ_EPrVHJm79Mst9Qzn0QjB1Pi5DuvgCVpUnPeRrfIuD_KCbijXwz66nGd6G6X1PabQ_izfaVSW4NQFT-pIVp9k-aPXWw6pk3jGihz4-KPNkg75ZItsXl4oFA-qjC40prDb3CG8W200lthjbf_73wS4U0TTaZgIVdTKgPr5k_x0ZrN9CeO2XgfYoYBiIOCgyPBTMnbXn5-IFKc2o.%26ch%3DAQEAEAABABROeatGBDL_7a97r3_GGlH_L4q3O-Qfwk0.%26v%3D3%26pg%3DF3OLM5KXBJHP3NQZBA4N3Z7EBU
+.netflix.com	TRUE	/	FALSE	1821551773	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+22+2026+00%3A06%3A13+GMT%2B0530+(India+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=1e7cf857-00a6-4a6f-964e-8e7cdd3e58dd&interactionCount=0&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1821551770	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABS3AwgPbJQ8C_-tp4ZIENnI2qz3pOuJ9iI.%26dt%3D1790015766683
+.netflix.com	TRUE	/	TRUE	1792763754	gsid	76d0a0c2-c158-4ca1-8832-78394f06d1bd
+.netflix.com	TRUE	/	FALSE	1797791773	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1797791773	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792763754	profilesNewSession	0

@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: SE
+Plan: Premium
+Next Billing: September 27, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 219 kr
+Profiles (3): Robin, Adam, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1814284575	nfvdid	BQFmAAEBEIhqInbyJYGcjvuOkAIRoJhgkW8zb8bfuOk-T8--LdeShNeIJZYm8a-BFeb7Xq4fwMXPRhAufs7Xp1fvaezf9kKj5u1SRenDmm3ue_CLKuCpuCuTdIXFB9Omc9kLU_l_vNSOqXNAp06bV7nYuhLO59j8
+.netflix.com	FALSE	/	FALSE	1814284522	OptanonAlertBoxClosed	2026-06-29T15:55:22.288Z
+.netflix.com	FALSE	/	FALSE	1819050148	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Aug+23+2026+21%3A42%3A28+GMT%2B0200+(centraleuropeisk+sommartid)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=9bf874d9-7c6f-444d-a66e-8694e659bdff&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=1&crTime=1782748522813&geolocation=SE%3BAB&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1795290148	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	TRUE	1819050147	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRFPX4yigKGEeB_xwSe3muswzm8tdqAwAg.%26dt%3D1787514146477
+.netflix.com	FALSE	/	TRUE	1819050147	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKaAwHCyoKN0dYURejRUqDlIiQloHlubxPB2ciny9KzxJcY5h3WbeQejl8Y5azJNEan5qX3puDFWWXFqiHGl8HrMxY9OeM061rL2GTB86D-H_g9wDhcuDt9_6Sp_LoQotyU3ONU2uY7ami0hB_cWH5NiQqVbXEEEpHhWamDV2Ss17-k03rrL83Ci5IJhLY1FVqn8Nix0qQK8GYzqnNnqOPVHd-cux105pT03ly4sZIYnqTw9RNbnAXPHrzNJX-GdV1jkmDBYmRpE2gy8D3FDs_grrRkiw-LdP9tJGNRr0DSPlHquTIZLPb7aTGPpmzVSumaqjK4FbGkijZgwofqpY7q2b7P9eXXTktdG55_TbRmK_JHRfFZufmN01Mb708zU9Nh1flmcbeJVcWW-XKXJM7dI0dMOQo0hfdu5V0xNfWrbHx9ieDEzrCcEzuYH0f3kk7XUzpwFIDGURjOo3UmDiNbSiVwprfSX-_fcLdmq9xozwjs_kIS803qTH65LVvFJa2BFCKdwi5UFQ6x7rnq512oFCeon0RJm7aBtPElGAYiDgoMkO5OknyyY1bQutmj%26pg%3DU5A3IHMTZ5EVFPCIFDMHAFCCEY%26ch%3DAQEAEAABABTWTWVjsicBM4Og3HPsfwGe2suKsxsLL8M.
+.netflix.com	FALSE	/	FALSE	1795290148	netflix-sans-normal-3-loaded	true

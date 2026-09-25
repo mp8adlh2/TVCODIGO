@@ -1,0 +1,21 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: October 6, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379.99 TL
+Profiles (5): Melis, Emre, Can, Elosss, Fam watch
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1792853992	dsca	true
+.netflix.com	TRUE	/	FALSE	1792853992	nfvdid	BQFmAAEBEDoXRb-QPVS5q-VLmf1jFE1g1g0qta1zzbqfDB_3NUYn1YHiHPcXQyArAv6_B_SCIqXS2zwQQA8haN_rzpVAU7F6S7JL-vgkjTjJj0beFVltAEgFUwTGpZCU672sOsS_tb3m6W_66zk3gDmlPlVf6IDt
+.netflix.com	TRUE	/	FALSE	1792853992	NetflixId	ct%3DBgjHlOvcAxKBBOB4fhfw7tPezo6g3o-r8geQlxxwT4QTZBqmRAgYhwxnmkKLURN1bLdQ4HRaBC33rlg5QGHVWawhXbT3JCR_X1GoTnki5FwEU6l0ht-VyzS4-8PMSgeEmuliJmxWWGCH_s2zdsfX8n1tn0hWbj3VV38xTHRtprRlmR4xzR_O3-Fs7bclbvhdNgQviUKiuZe7ad--GxjH88Y0--ejV6-eENZw6BiPMXwiB7OzguCbcj-klDLNPoa9gf5TZQdp8xzagQQFZqZ9AuB_p7nBNCEjB7RsXkX6UgFkRbLXbQK1zmOWJ167Y1rcDikj-AWVGy62HVgSfjPOOHRnJfSxMilG_7wNy9sli7z4P8g5cYAALnpmFtTfGZ_NnRx8P005T-bx04Bvq1CWr51dirdr_eILYbosWUQUGjVLP8F5RISYQnxavRyV4T6wRJsARwy5yY0PPEQLzu2oiSGNIRdIM9FA4D7ZLtSUL3cooaB8TcXHsknuj-AOJ8wRkzBzlZ5pSVmWFPVUCKEadH7W41jDs4vqMWQ2QOrsmr_rqVxxU3NyVgs6aQTyYA9I0juCU-GupoPL9H-wD_mHNGaEdzk0gAfVgEWEmKci1kerw2qjq-1Qd-ZYynWqaaobLSbXB2UokjkVbZdKto0m8E27ahPL4BLmbmEQEdBtuVfh6Mpt65jYQOz4gxgGIg4KDMhfEn8EtnjCuFiaMw..%26ch%3DAQEAEAABABSCSyFRvl3lzZxBuTsWOq2fQjxu-xobD_E.%26v%3D3%26pg%3DOVL32HVAABCTBBVZWQHIK7V6PU
+.netflix.com	TRUE	/	FALSE	1792853992	OptanonConsent	isGpcEnabled=0&datestamp=Sat+May+16+2026+12%3A15%3A48+GMT-0700+(Pacific+Daylight+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=129ffa6e-0beb-46ea-869b-821192ee483e&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&AwaitingReconsent=false&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	FALSE	1792853992	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQJkLw6utCBEWVDTjf-ULIBmAIYu8eCdVI.%26dt%3D1778958946021

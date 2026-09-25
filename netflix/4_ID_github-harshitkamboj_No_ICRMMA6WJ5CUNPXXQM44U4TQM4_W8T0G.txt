@@ -1,0 +1,20 @@
+NETFLIX HIT :👇
+
+Country: ID
+Plan: Premium
+Next Billing: October 8, 2026
+Payment: MOBILE_WALLET
+Quality: UHD
+Streams: 4
+Price: IDR 186,000
+Profiles (5): dede.suherman95, Aa, Dede, Evi, Teteh
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	13448873469644480	nfvdid	BQFmAAEBENezu03JeCvWTQZ9QWE7GI9gGAQsI_Z6izJlh5nMeU4dTijoAntRzpHXWYXMHyA2nQg9e3mOB3GbPi-WBzAJFMf-nlv30443AxfAlrxG5F5ivtURYCYiQPHMEc2hHc-vW6HjTcvtlA1b1I8s9pCsKyeU
+.netflix.com	FALSE	/	FALSE	13460121214969288	NetflixId	ct%3DBgjHlOvcAxL8Axsjr_qzoJUr9w7RlMIIbg_o4lFrok4wkE0XAzHXDA6GU4N9szjWaoTviCLByIygQ-rgnnVcB416Xrd2eqaGO__5B6urexAn_3MnMBq8MrP0fNsYS7N6-m27UhSNKDCqhC95S1fg9itDGRc-5OMGQnyzwpCyTY4AB0WBQBdadeAecaymtWI2GWVj22X4RAe2TuU0GGoYHfDZN2bWBTWxnwsr69iaNk7XJwnyY6tNxJ3X8CuXT-agN7NvMo8-XzjJo2FAaNrsraj7LaAnHyWDlI7B9W1onD7UWBmVHrCTHDSjQI-bWKVrA26NC4ijXDeZs9mzQZ66ANk1Y14IGLodUgC0dlyiqO20QKA0AG2j_f3ZjxAVo9bqniUiUCbdPTdJWTkz5Su1U2i80-NCoPiwux8bpwwkf6-_YkoQ50H2oNalJNR14613PmgmnDWjtnM5e1ap34J5oG7euZtHKQW7XAHlNf4uvnB1GJr67cci-qN3xmpdMXvZcA-RT9ElwZdgfyklMLkHXTO9CquboYxMW8D8VlDR6qdueyBq263Mu5qKen45cBce2CWBJuF0W3a--3Dc7paEHNc8cyt-vC52nzi0INdfHVj_mqSeYoRZv0WBj5Sz5akgJVsg23PpKHOXSfXzikmoOPU9MzxZ35uAbVnfbjEMTog93qu_XroYBiIOCgxoCcs4eTVCfnnHKh4.%26ch%3DAQEAEAABABSQJW7ZFC934r1pjXq6cBSx6MgfajYmztA.%26v%3D3%26pg%3DICRMMA6WJ5CUNPXXQM44U4TQM4
+.netflix.com	FALSE	/	FALSE	13460121214969052	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABR8STyGxqjfX6c2CQr9ROHyaZBAzO-ZtY4.%26dt%3D1784111614453
+.netflix.com	FALSE	/	FALSE	13460121334000000	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Jul+15+2026+17%3A35%3A34+GMT%2B0700+(Western+Indonesia+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=9dd8c016-f55f-4a97-b8ae-6fbd78ed55a8&interactionCount=0&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0

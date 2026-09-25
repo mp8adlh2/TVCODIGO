@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: October 20, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: R$59.90
+Extra Member: Yes
+Profiles (5): Claudia, Kyarx ff, ,,,,,,,, Pedz, Drax
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1819714745	dsca	customer
+.netflix.com	FALSE	/	FALSE	1792853994	flwssn	66d46753-88f3-4a8b-a746-7cbb0c4463c8
+.netflix.com	FALSE	/	TRUE	1792853994	gsid	7a3d7dba-6915-4583-bcbb-b732817425fd
+.netflix.com	FALSE	/	TRUE	1819714745	nap	BgjHvOvcAxJJvsZxdMs-V65iJOvyiLS5zUZ7kCYIcX7P-8Q1hGKF3Zo6vNk_xN3tuIDYSWFyM4oCj5IlDBMwlNs_kUUJbiy6DC9Xqp4d7ojKpxgGIg4KDMqBTE6XdazS8s2s_g..
+.netflix.com	FALSE	/	TRUE	1816690748	NetflixId	ct%3DBgjHlOvcAxLOAzFb8S_8_ufPh-PKQsWOyuPA3t1l2d25lEe3JrqzRkpVD_rAlqNFFZkIxBgIBAKGvN9_UarOTSJG9VLuN24otLjEXoIhXTrD0RDaVsCFxKO9lwdJ5MgNpb1xyQsavb1CzI5tI9uaT3_FfceuulOpfbq5CDTu8Fef7lWzNMTZosbp6E_zKSYngBMGuOKVyE7COmIT7TrX99RZTMZjcduFRySJ52NlmQzx6UFMWTKebBhnd1QKR5IFmHagYCwTI-SWW135gbxJO9uJJH_D0Rkma4IW4shZYcnjZhZKqRypcTCdgNXmxXdFE0biEdlsfcNEH0fD_fj3NMiQ_tKOjSaaaJHITDyPY1-5PXJMPozm6Hm9zZX32v_BuYArKZGiPVLrolMephSNV5Gs-ZAPR4ELKE2j6dJyNeszf_s-yhJr9x506Kr13xxH9X6n4BGksLeEqep5xGyTc--e62zggUCifLvntm-gn7kdVvLhHtWRBQLBXwCZd85DB5yXcqHUf4vuIXQ30xZiIVLLVOyglbr9SgZi-iSeSkJllEixFgPP3Okq315bIk7YZJWzt66Lr66urkuRp-hTCQ1ePPjl9zXSdcN45DwC913FUKIRmnW4aBgGIg4KDFJPZ3UGhuxKueLSgg..%26ch%3DAQEAEAABABRuXvuc5TGFQ9nkuqRRmwODWO5X4e6AROM.%26v%3D3%26pg%3DKNXLLQDV2VCE5PV77DETFBDWQI
+.netflix.com	FALSE	/	FALSE	1792931014	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1792931014	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1815999453	nfvdid	BQFmAAEBEPxzneFxYwJrWS3Er1EQPKNgjsQcBevc8uyBYtxDPuMm7L0aZVGVxR2dNCun_2UDMoP2qRLm9ca-CyNQMNvvqTfmehdMXKejwjNpyfs6Ta0oju1tcbybsHgjEpiWAeNfXtBA2LkJNjPlCu5dYaR5lzW-
+.netflix.com	FALSE	/	FALSE	1815999459	OptanonAlertBoxClosed	2026-07-19T12:17:39.029Z
+.netflix.com	FALSE	/	FALSE	1816691014	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Jul+27+2026+09%3A23%3A34+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=6de07c77-4cd0-4771-8902-e6ad0ad464ce&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1784463459401&AwaitingReconsent=false&fclco=&intType=3&geolocation=BR%3BRJ
+.netflix.com	FALSE	/	TRUE	1816690748	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRGu1MqAuaddKDyPwFUfOSN_ppV1D9MlpA.%26dt%3D1785154748617

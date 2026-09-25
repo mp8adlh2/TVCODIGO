@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: PT
+Plan: Premium
+Next Billing: September 26, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 17,99 EUR
+Extra Member: Yes
+Profiles (5): imadeee, Ricardo isidoro, Sandrina isidoro, Pero, Ferrinhos
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1823719903	dsca	true
+.netflix.com	TRUE	/	FALSE	1820695900	OptanonAlertBoxClosed	2026-09-11T20:51:40.550Z
+.netflix.com	TRUE	/	FALSE	1820695900	nfvdid	BQFmAAEBEAv7SDdC6FOzzDO9xa0TsRdgyk_p3-efQdTsJKpMO1j58-mQKFlG8QbtxcPuQIJYA3A3cwsfenAZZEMp0hAYADwo46igjZ5qS8l_fCXKyuiBdkuNmMaIJy6k2lT-EchNU4dhXl_G1aciEZFuBFie654R
+.netflix.com	TRUE	/	TRUE	1792763754	gsid	e2abded1-c267-41a7-b427-2dfa98ac9814
+.netflix.com	TRUE	/	TRUE	1821112928	NetflixId	ct%3DBgjHlOvcAxLAA4BrzK2Oc5OlB5HRoW7exx9ZZKNpsV9QMcbqvf48sZ2FCC1d1uNPlNUQj7fGoMHdGLvtNEu4rdpGBeaKXliasCqG9WbZX41yMqw2dstIyF8q5Lp1EukoHjk9dfuPlrR4hNggmL4CyfbdV_sHgoTMGXYnrzymwla5hmj-m1cwjFHnzE7QByBgTeF7mckMWZBe40J1gT80q1ElxErKD-7pDVZD5US_jUPaJaoZiPXc4eGcAn39bRaklSlxJdqa5eDeZ6DkA8L0YcdOG0rylfgpa0UWJsvdriwkRbAAX9-JT-U0fS8MNdVp4arX3eP8hQk2X8m4FlYPliLKb0lslDwV535vtCQkhVJIQSRgdZA8YrAjUiiu7uJhXu25ZJ-VyMbNva7K-KaICSxrcjd38Am_kD7d9xhOJL2UX9tz-oU7PU06yPRv5_uYJj-2HC4MemisEqETHFEPzqjvmh5X0M-RQbCl3hmzxPWsfJ4fGGVA8HBzGiFldX0_l200xtAk6nNdrjZ4B5KSdW6NmRof6gpoi63QYbiOD92m6hWm6B0pwIqhqifL15te4s5UXSljDgpEuxkNn1IBgCpXoIFaNI0RPEkYBiIOCgxrJK1P8Jt4gLQbC30.%26ch%3DAQEAEAABABQeIoi5WwdF-o9KKynVX_GtGNTzMEgxGPw.%26v%3D3%26pg%3DWRUART7Z6JAMNIJVPDUAV6RQMY
+.netflix.com	TRUE	/	FALSE	1821112932	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+16+2026+17%3A42%3A12+GMT%2B0100+(Hora+de+ver%C3%A3o+da+Europa+Ocidental)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=6488adc2-a49e-43cd-941d-d7c24040d208&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&lastConsentTs=1789159900&intType=1&crTime=1789159900934&geolocation=PT%3B08&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1797352930	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	TRUE	1821112928	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTuSJmYrqRlICvgQzhtipDmnmJaEC_suJ8.%26dt%3D1789576933559
+.netflix.com	TRUE	/	FALSE	1792763754	profilesNewSession	0
+.netflix.com	TRUE	/	FALSE	1797352930	netflix-sans-normal-3-loaded	true

@@ -1,0 +1,20 @@
+NETFLIX HIT :👇
+
+Country: GB
+Plan: Premium
+Next Billing: October 3, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: £20.99
+Extra Member: Yes
+Profiles (5): davemarkmason, b!tc, Safwen, Zizou, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	13456856446280994	NetflixId	ct%3DBgjHlOvcAxKLBDxvx8xFQSgxMv8HAbBBwvTkC2nPvM-GfpXHY-cl6-syyQvO0CM8Bv4E4pG29BcGtHMklDrinVB2j2TzjbyTAbH_vYv9yDIIO5ll84pOHsfI9ilxWs4Zmv70mVmdGJANJg_50AFAZ1GZNyrvfupLAw6s78ymg5eAiiEy7ZHNLuYV_WDue_2aN8N2c4LYRky_NOfpALXobOrXSMG3AKbYAPNvJPz8oLwkx0vGWtNE-O0zzbRUelmyoHxA3GQ-BSH56NBYjdBW1r3GE10rcnRy8wXkoCSFhkQewVsDpCMLDIlVy_-XSSUKRemSdD-wyj6vEMAsFh_CXnLzkgBULLFpoXT5YtiFrUl1IB_4Mnnc1Sdz39NlaJhFa2IUBbBk9sV8Gdk9TJQHPsLpaY8MVFFrVef_68UOnRMD4bq2gmNcYxodlN6-De6C_YQQnlhrRIx6z3bEZOqMdv2c7RbzTH59hNOo-tAbDo_qSJ9SlOCD8rbfqZAwnJ0x95j0jqTqLvmT-DjmctVB6NAd-zmV5rPDOo5W7gIip_9144-AyQdMKqv-BFnpBzBqdj7AaY7l63MdxqnjIdclP69T-AtUCUdoA3M_dgY5XvjqSz13qWdbv-J7-dw4GGlWtz98NNKP4_FC_iZsyR6hXV6eeg6hJSEecJ3DIctuTx1_ViMVM3kpTVdH7LUn0uqlEUtNapgYBiIOCgyAUHcPKL-aaTc7TcU.%26ch%3DAQEAEAABABRmaawybUKYtDk-6fzzaKfHhsnZdFDi7vk.%26v%3D3%26pg%3DN7QZ26U7N5BEZGOB235LZR6ZWQ
+.netflix.com	FALSE	/	FALSE	13456856447000000	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Jun+07+2026+16%3A40%3A47+GMT%2B0100+(British+Summer+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=86df25a1-2ca3-423d-b2d9-e7374b9905d3&interactionCount=3&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&isAnonUser=1&AwaitingReconsent=false&geolocation=GB%3BENG&intType=1&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	FALSE	13456856446280856	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRtOmZXaXitnRqSVUM0a7JePiyjbv2Cifs.%26dt%3D1780846847337

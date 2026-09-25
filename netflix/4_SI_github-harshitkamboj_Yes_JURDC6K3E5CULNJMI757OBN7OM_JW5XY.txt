@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: SI
+Plan: Premium
+Next Billing: October 4, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: EUR 10,99
+Extra Member: Yes
+Profiles (5): dronx861, gey, bot, kin, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	13461263391000000	OptanonAlertBoxClosed	2026-07-28T15:49:51.875Z
+.netflix.com	FALSE	/	FALSE	13463870215593600	nfvdid	BQFmAAEBEG3DxHb9ZrQJgymSlyJ6N3Vg6-wVTurKNIUE9Ra87qt0ZmThRQX-eHbOAtfG3SjNXSadEDIDL0i2aybqrjQsJQEtePBXR_CCVfW4SX_K4KAbJi8QyEL6KK9PcuzFdwuX4WLUNlc8kruMUPCaLxiSByTY
+.netflix.com	FALSE	/	TRUE	13433804366298720	gsid	49cfb464-4e7b-46bb-bb5c-ea83dbd22599
+.netflix.com	FALSE	/	TRUE	13465254018276752	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKSA5nphGyc4SMk_JN1JeEia9HMkDrBImhImg0ZBv3-wFtiKIKxxdzqbsUFHfO5rRkjiNRm8N_Z4BrcfnCSdHP517iaLP9yOLIPbfQr_7zHIIODJOODHjW3-M3290lraexXjW5WZa-vGyuLFjD_jStAZvFZeaU3_3WcsXpzonQ8Pq5Q4v-UldOYLdy7MZmd_SeFUBZBX4qGC20284fV4B55VKOS9Hz5hRtp-v_Ae8O06ldBZDTuEivaAT0tJXXMVRXiDZdXkQM8VN3EkElOn8qKZg8h5P-zMbH1sgAHLG-PId3kkp3opt7p6JF8gZ_bpQyZ5ZxXA-Bk6HPXyPzzGnI7lqBfkidDpnOBwEIFf9WGRvF9UWoJtqD2tYn8EFob0rc4MB0bU8VJf3n7lliV2LLjFQSE0d336_bUrmYl9Om1PhwqdHodHmRPqCP5xwKS182XkI8r-EL-T3MF4lM2UQEa_Lk0zrRLcA2ammVRentUoGTmBgNB7w0fBZdmyaeUE54B2Cre8xNWdHPRIhFO-is0NbNuaxgGIg4KDLwYnVieszZp8uNM_w..%26pg%3DJURDC6K3E5CULNJMI757OBN7OM%26ch%3DAQEAEAABABQb-pqQ4eyjHGkiUfezAYEkHDQcoWLt4KE.
+.netflix.com	FALSE	/	TRUE	13465254018276664	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQrIFTH2NjqBfIQGnQ80_9b3HTR6kCenXI.%26dt%3D1789244423158
+.netflix.com	FALSE	/	FALSE	13433718330000000	firstLolomoAfterOnRamp	true
+.netflix.com	FALSE	/	FALSE	13465254049000000	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+12+2026+22%3A20%3A49+GMT%2B0200+(Srednjeevropski+poletni+%C4%8Das)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=f6cd8b48-642f-4f68-8d2c-c395ac600bc0&interactionCount=3&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&AwaitingReconsent=false&intType=3&geolocation=SI%3B140&prevHadToken=0&isDntEnabled=0&fclco=&crTime=1785253792207
+.netflix.com	FALSE	/	FALSE	13433728844144688	flwssn	ffc5285c-e68d-4a56-819c-2b9c390f78b7
+.netflix.com	FALSE	/	FALSE	13441494048909188	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	13441494048909098	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	13433719880781062	profilesNewSession	0

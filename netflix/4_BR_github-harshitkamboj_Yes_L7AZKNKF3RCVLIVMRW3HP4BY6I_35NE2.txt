@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: October 9, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: R$ 59,90
+Extra Member: Yes
+Profiles (5): Maycon, S, Lala, flavio, Infantil
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1796071955	OptanonAlertBoxClosed	2025-11-30T20:52:35.198Z
+.netflix.com	TRUE	/	FALSE	1796071951	nfvdid	BQFmAAEBEHfPV7d9xkkriVbkYEzAe91gkRI3nm7EnxlY46SpWso_z2TMZUWhpVnAkjnHpmDvDvMxDiKTPFyhQWwqEgnQsWexNmHW7Pod71lm9aQShblIQQvXngUYkC5ucw8s9IFYRQtvga3aL4dgXqYoc-4m1wqq
+.netflix.com	TRUE	/	TRUE	1813455791	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKVA_XgnZYN7B8f8K1uWY3wBsdlnpieEsuj2ns-dEgka8pyFk2qWFAsCU4zDJyF7TAig_3KjNtx_rftcjGL4gtOZWsGcL2A4l6kpfe5bbDQo7wLSZJEt9bhKcxiWtxkQv1ru5I3F5QqB98tlqoUGE_qdGRZQCXsEV88FSG3dTMyA_qeTDVsDQDnNRRfVA8G69lJLa_iZCYtz_62IxBblq-CX3rsPtUQMpMUi1FBmKU-l62-nTa0cpT2gSZ6KQXpKZ1KYJ6UPkq-r-Dvdcm71YLJcCKFzQ7BWZxgRhQLpvVpTr5uKfAoMF8O2npyCY5ld1wnX8l-ZKbUJAWoEbMwNbSO9KnUZOhFRJP3eQPfA70SFyzp8jV-Bj2udM8W_n5hSRSi6yFGx0ctV4_xW6Cl85xlnISRHT1FkfMpjLhrzgNR-T7PKzrk5N1CN5TLszFxqRtSSpvPUpLptg6-FCrn6IjAtpIe6Uvs991sj-3BD6qahWm8wltEvAuudoDrZBGEMjr2KZHNL7fTK0RlakepWrUIFR5VE-bHQRgGIg4KDBMi8OCoGjNfzISo2Q..%26pg%3DL7AZKNKF3RCVLIVMRW3HP4BY6I%26ch%3DAQEAEAABABQTvhf2LejlcHyHtbaIBycDrJQsz_VMSPs.
+.netflix.com	TRUE	/	FALSE	1813455794	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Jun+19+2026+22%3A43%3A14+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=52445a87-b33d-4626-b6c5-0a975838feaa&interactionCount=3&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=3&geolocation=BR%3BRJ&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1813455791	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRFfEDdgSMauCIBtVSFVwkFtQx-4uFfTms.%26dt%3D1781919787562
+.netflix.com	TRUE	/	FALSE	1792940817	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

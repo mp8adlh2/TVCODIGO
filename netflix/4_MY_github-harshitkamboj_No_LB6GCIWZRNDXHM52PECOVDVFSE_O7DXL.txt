@@ -1,0 +1,21 @@
+NETFLIX HIT :👇
+
+Country: MY
+Plan: Premium
+Next Billing: October 24, 2026
+Payment: TELEKOM_MALAYSIA
+Quality: UHD
+Streams: 4
+Price: MYR 69.90
+Profiles (5): Shabihnaz Ansari Wo Mohd Akram, Shabihnaz, Home, Zahid, Children
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1792148311	nfvdid	BQFmAAEBEAHRvBgkV1LGQAFu906-qvdg9-9gx85VpP9RlXr3Vlglv67P7JkM618N5KQu4NAPD31XFnnfsPxM3yslP4kx-_h5kn-H8lXpbopDU_Gbo5k-JxwfaVR5lkrcAe7hUFul4CAqF-zEuxDNSyYiWHe0VcZA
+.netflix.com	TRUE	/	FALSE	1793210610	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Oct+28+2025+06%3A03%3A30+GMT-1200+(GMT-12%3A00)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=9ee904b4-9b3b-4108-be8c-7854e4d1fcbb&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1815035115	NetflixId	ct%3DBgjHlOvcAxKlBIu324d0Lq0wdsavJ6tjnIXamP74N2dCzJ8fiqY6dcwh7Wv1ATfsKM-tw3PJPxXjiRwrJNu-M4QMRMR9KQAoP_Vd98XSsRMDBUp7yl4whZAUvwwvCjVbpO1mf04WjgttLAgtB2_r4LsgwdxKrMcXfHWe36rJfZ8Yi545UlCLMRjdMF3D4xPzaYQlhgzQOPkrJaEzPkT9hY-KCRD2fvcOlcgssWvn79rla1SAlE151k0xu6d3Dfe-c1tlIibAh8vbJyJvagYUzoncstvgFbGEHY1WBPgoM_-o2t0jJCQtbd3Q-Rt81weu4GZQ4p3IcPIhxkqT_ApkJpIsnMqY1DbL5aDECF0u7IaERoDxTxBf71EpQhsuIOMZnj93EFbv1ol_f7vuNcgOhqc3dhfAcsJGih2ID8c5BvBzDK_7WD63qZ5w45zjYwsVaBwGWtFRouEottp4IqZxjwl2gcZXjXVFDTXXVCHmRyUt9BvtGjGHCB-dof1ApGsTy4tIxGHe7iinlbi15NacmEhsQzWBna9B4_LMtiTi9DASoud32ThgaB13JxgapjbVHXqMD5qEWRlJXHfRzuFVMqXuB7ZCyjGKxf58tpyJIuGRhgWPjFx0_Mny0FpWil29hK5dVM21FVT3bHV56DpDVFu0vnJ5S83TOOHLrFiXx6ubCzjxo1tCtNGwHyl7E6Mph5ARkPSHxPii8ABjXNr80FndJbQ3uMNQiHruoKG-JxgGIg4KDEfj4u4TKzNeQ5akQg..%26ch%3DAQEAEAABABRMP8wF-r3jGZe-ktiZgH11GR7TdfVwXPw.%26v%3D3%26pg%3DLB6GCIWZRNDXHM52PECOVDVFSE
+.netflix.com	TRUE	/	TRUE	1815035115	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQ4pclXPvCHdU8GH5YFmlzhzTX-oqaFaIg.%26dt%3D1783499119958
+.netflix.com	TRUE	/	TRUE	1791874216	gsid	eca12c96-2c93-41ca-a78b-9bf9cc36413a

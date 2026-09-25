@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: RW
+Plan: Premium
+Next Billing: October 23, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: US$9.99
+Profiles (4): Josine M, Sisi, Chriss, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1795707865	nfvdid	BQFmAAEBEGRmmqo8KdsUyguQ5qEDI0JgOf2wd9muBNlB1Hug16S-LVlXoV-KL-okTQj_t3t3xQvI30NIfCExvZGGKTZuo9HM6dogmUtYwqvhOIi30VNVfyELBXTp2Nj11728Y8Rl__DrmutoGtkh1Ok1vSPVXx8_
+.netflix.com	TRUE	/	FALSE	1809195930	OptanonConsent	isGpcEnabled=0&datestamp=Fri+May+01+2026+11%3A25%3A30+GMT-0700+(Pacific+Daylight+Time)&version=202604.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=ecc5d8d6-ef89-49ab-852f-164733b1ba6b&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	FALSE	1792940817	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792940817	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	TRUE	1809358378	NetflixId	ct%3DBgjHlOvcAxKPBKAF2IUGuyAe-32WaP1jaPoG_DGD5EqLOJ8qM-c-Q53mK-Xvmfj9p48GFArVGXk-ibv1Km1Nty2r0LyHJ1OvMvZs11-KFPY1YYJCumKWB-aiNDsVSr02pVgJzRYS6ryPibRBpWQk6l6wqrOdbcnRXxeNSEL4wYHO4ifTeIJLFyML3fGCKcVtwTICbls46DVPuCZg5WCZzWqKwc9SVJc2LgLDPkaRUGIL7Z3U6qk-cxvocIaPp5F-qbU85l_tngDWUOZyet_m7YlPcnetpn3sLHw5aF94_q95yzSWAc71eOHFZ5t3Grypwkzgmq1-6fo_WaR9IuyYdpAi1LYSvjNXS6CUknLFDFKyhdd9Ea0orIpe4WyifmCniga0XDMzp7BaUMDhnmw3Vc9s3m1kA-cZkwh7CTcN2602lN8F1AYmTBMDovF2aUJy7vt8Pwn5F59zkLO8P3l0SYcrujDmP8y-buz_foWkmgDqhDI3UG5lrYEOizQFd5V52Gj9TMR7cNt-TkPDwSNvMnrGeUmxj_wnBHjX3ruF_xbYyJF7SgYF0tJtIdk-HPYA-fL2z13cO4-VI9ZxscUCJZti_rhT5I3yYMoUJhCrkrHPSV2vFvtZPIt0BGzNdH5ySqQQXyUlW6u2t8s7jRsQqCKJ0RoESCirN_PdgMlU70P--HkpVjb3ZwoGUA3VzYOHJ6L_oRpKSFckGAYiDgoMqAGNMpq5x7O9AtRn%26ch%3DAQEAEAABABSWZZYltJXuaBV7Yu5XjpvmEHEzLXNVoaI.%26v%3D3%26pg%3D22CSSEYVHNCA5FGAQWN6ESHHHI
+.netflix.com	TRUE	/	TRUE	1809358378	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRCCzXlAYG-adUx-8YsB2hq3f-rQRmde4M.%26dt%3D1777822343365

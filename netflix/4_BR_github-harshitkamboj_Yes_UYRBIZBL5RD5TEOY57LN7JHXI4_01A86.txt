@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: October 14, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: R$ 59,90
+Extra Member: Yes
+Profiles (5): Livia, Eliana, Juliana, Evelyn, Infantil
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1792376146	OptanonAlertBoxClosed	2025-10-19T02:15:46.184Z
+.netflix.com	TRUE	/	FALSE	1792376426	nfvdid	BQFmAAEBEIMdr6RRyvEUqqsWP783ufxghwOgm91YUFAWsZKkEb-je4SUMcwU6LyFl-d6CDTNGaZnf6ONe8mfA4SLSX9ct8fH8wZm4k43KYuf7HPbkE1Gq9DPxtzE9seNeKhYVX4xuU2WAVPJEuGxzh_8wC8h0nUX
+.netflix.com	TRUE	/	TRUE	1814308601	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKZA9SxyAH43jj8d0zIrNWoedaRARqqitBn0_NkLOUUX95oAINXwnA1KFlghTdcAxE-Njg4fIRrvll7YYClbGUzcJHqGcgVr_bNZ_E4iEUuIcFqUZyazQTSrhz0SzMWGCiiSKjrMZomYZVje4iUqfNs_Q1R0JEasYtgRQ-aKLysDgCetjOY7LwDmDEXov_NaCnp2CVFjbPYAmHYbSFrAaRfaqHIWjTx_1Sv0_-vyNNqLxPOT35CYCB_Kv1_4wGVRRgNF1aUoiJNl8gR_y9pTpKNsQ2DtTDSvo8TUdAOO5p4u2aiqjaiq0oxmJGsfh-Xz5CcHresBsgnpZO9YQxFJG1TJ4U_45_i88aPCzjZP79pVj96hTs_Xh6y3c9A2dt8fiRpOu_PSabcIsjYhx8qgVM0BOccxtCupU1NJfzVB9qJQF-FndD7IKAVXDCwlFWksm68Tigas16ZsktTHVcZz2QqYLjB-BFH6SkXCwbyLBLtff7jAxdPBxwMqRvyamJoLfmzC92us8ghVSsJXGj0QuW9ilQlm6RXT7L_7t4YBiIOCgzt-QRliH-x2q6RnYA.%26pg%3DUYRBIZBL5RD5TEOY57LN7JHXI4%26ch%3DAQEAEAABABSBvfdLekq-Dv3sRnArzD97X6fHnDUexj4.
+.netflix.com	TRUE	/	TRUE	1814308601	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSbxWECp8eXopzVqxKHtEMhQpsMvZIix1Q.%26dt%3D1782772609975
+.netflix.com	TRUE	/	FALSE	1792940817	flwssn	645871b5-0dcf-43af-9fe0-666f9f849b27
+.netflix.com	TRUE	/	TRUE	1792940817	gsid	cdbb160f-49ec-484e-a611-d33b94383749
+.netflix.com	TRUE	/	FALSE	1814310101	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Jun+29+2026+20%3A01%3A41+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=ad5b8572-3a8f-49d2-95ea-ec21f166af68&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1&geolocation=NL%3BZH&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	FALSE	1792940817	profilesNewSession	0

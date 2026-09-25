@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: CP_FR_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Profiles (5): Mamie, Cloee, Lady whistledown, le daron, Jeunesse
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1792853992	flwssn	3e454bc4-e245-4cc9-893a-d92fae589b45
+.netflix.com	FALSE	/	TRUE	1792853992	gsid	9a87b291-485f-4971-a399-141d66c5a675
+.netflix.com	FALSE	/	FALSE	1809289526	OptanonAlertBoxClosed	2026-05-02T20:25:26.446Z
+.netflix.com	FALSE	/	TRUE	1809289564	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKZA8inOsgqiauZC7ZM43aq7LxlUTDC0vVyJAnUvaXfGXNS1WO-2RfvMMNiuUT1FDq1Ra_HmzTQRbTyYje2Ehzv18Wnh6bZ7FaJVVJBuLzd5PXPvdACV4ijafjnrn2t_PNC8T00otjDGetcYCLwX_FeGjSxctLo5c1Png5sx8iMLf-4fgpTcUFD2kZvma_7T40msUJ3Tajxsc3PITORhh9o0ewWpv1zAArziWUF0Bynk2cqjmCV8QmIKNJv8OgKkFgrJki3g2iO9FQxx6YzLwZkNjLO2wywIc2EIw1OpTn9M-5Y-nbQ6tcaq8amM1_3v1cd_bZuA1EhrqW8nVIHdMUgbNQxR48ewMAckhju2QjOL6ys5ucy2K8K4OqJcOkLlgkwjsaARY_Hj_2YPDAJuBZOBiYoPqtnWliSl_iasNrniK-H3gjytyk78bN92upRVf_WJGLO8x6hKXFyqK0cbCl_mWkuL1t2q_llUQeEeQoVSIrOYFWZaozACuFs_Bl2BBPXhdyNkYMT-p_2uEpZkGaLGFTaPdzG-ldxhGYYBiIOCgymuhtmbCOVEBn_8s4.%26pg%3D2OS3CJ7A4BBYBI3I6VTBAURIQM%26ch%3DAQEAEAABABQVqyH28cEkzkqpoH89qVrQYICZdAb8EHA.
+.netflix.com	FALSE	/	FALSE	1809289566	OptanonConsent	isGpcEnabled=0&datestamp=Sat+May+02+2026+22%3A26%3A06+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202604.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=e35f6d80-5be0-4dc6-a051-ab5bb52405ee&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&intType=3&crTime=1777753526785&geolocation=FR%3BIDF&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1809289564	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQ3__4HjDnQu5-gZO_LTa9XTLKUbBRQDrw.%26dt%3D1777753564581
+.netflix.com	FALSE	/	TRUE	1812313556	dsca	true
+.netflix.com	FALSE	/	FALSE	1792853992	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1792853992	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1809289555	nfvdid	BQFmAAEBEFK3ecwU8C4-2jYywOj23gpgDwE0NxfdVwa2sqJqYSxtaEDA9UtWh8LkDEmHWMtZuc2Dl4vegYu-f_DS3eLdRJysoVMo0oKFBpfwpUmTYnZmhQIT5i-uxGl0KzFocRAQKOMKNkMo7Ec-wAT7WDbuUQ0q
+.netflix.com	FALSE	/	FALSE	1792853992	profilesNewSession	0

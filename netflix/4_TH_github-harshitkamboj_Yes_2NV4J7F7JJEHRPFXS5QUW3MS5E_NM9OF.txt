@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Premium
+Next Billing: October 8, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: THB 419
+Extra Member: Yes
+Profiles (5): Somkiat, Ken, Wiwit, Pichavadee, Keen
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1792940817	flwssn	fbf39dcf-d50e-4a34-aafc-1feb9ce32a39
+.netflix.com	TRUE	/	FALSE	1792940817	nfvdid	BQFmAAEBEAi5QMXM-6RHOhkgOWmBk4dg18knPZL9qG_EMgOk_BUVxztdlAhLc2eq9MqWgpvP5A8CQgpp_9a5ksNc484jMWA4mpdS9fXX6cDy9gRAVf-BbEwMzME13DeUwpMzcVrRG8HD4U4r9zphsN6K6ULMdwLJ
+.netflix.com	TRUE	/	TRUE	1792940817	SecureNetflixId	v%3D2%26mac%3DAQEAEQABABTJ025DwBXrbym3y_BOByV-hj0ilEWFfsI.%26dt%3D1692782351415
+.netflix.com	TRUE	/	TRUE	1792940817	NetflixId	v%3D2%26ct%3DBQAOAAEBENNBOkck0aXOM5bbYAaIykmB0OC_cW0lCABqBoXBV6Zvom0GS6cPOezJ4w-kuZL3f8d4X0mCv-6lJkKFYs2KqvgCEf6rEZjfQGST3_k-nVtimNHctIT8bhUKAl7qEkKajkjyWRfYop16PCMjie9dzkvunjQaSOvBcHrHvLypgM0fmZIQITfKDmXtgWW8rKvZwVCFEoVVT-T9qZegSau93p_c-nQ4WeV6diLGRsQTMYTEHPlAj0BvNfF_A3K2MtyBenVEY2hiRBSunZQqobNSKGkIej4XfYCs92xIUuhMw2-r5hH4y_-fKmp93WwmGnV7xurp-O6c4PzqcRTCXSNgVps-UFZ1i3pZ4z7xUrgZLmAjawedQSbfEbydvLMdWIVfu5gChQ_vEKPfYJ_e2sPCLuYitpdoLo4gDgC8qi2HwbhLDSA4nrE1jZkkzU6Ez_Qw_vq_pM4N06lcy9Ibg7a_HrcawXSjjiO9M5KtFozC5pgD4Q-frPrBTStXIIsUSW2TFYi1artN0xY2Z-l2-47soIDjyLuJYQdl5_DyFQPCb_8MxZtByofOo-JI_rTN4M3vkgvPWxTSAAhu6gWnBVuSmmr-170quwR72QyLBI7I4l8bGScoAI1WCx3ZEVlMVrFAkAio%26bt%3Ddbl%26ch%3DAQEAEAABABQvgpvBoSiElr_9mo7HlJnt3qg7zDvMTKU.%26mac%3DAQEAEAABABRp-Baeg47FR6AWSU1jZZtuK7PekpQbixo.
+.netflix.com	TRUE	/	FALSE	1792940817	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792940817	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792940817	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Aug+23+2023+16%3A19%3A13+GMT%2B0700+(Indochina+Time)&version=202301.1.0&isIABGlobal=false&hosts=&consentId=0f5a9f17-7868-4311-975a-4363f0ffff24&interactionCount=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1792940817	profilesNewSession	0
+.netflix.com	TRUE	/	FALSE	1792940817	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

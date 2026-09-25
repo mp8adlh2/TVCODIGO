@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: October 6, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379.99 TL
+Profiles (5): M, Nassim, Mezber, Mine, Ston
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1792853992	gsid	969e6409-1a58-4b14-a4c4-48e48012902f
+.netflix.com	TRUE	/	TRUE	1820428154	NetflixId	ct%3DBgjHlOvcAxKIBKgkCHW1YtOeGUo_eENCczvRgx5V6d5HWEhyeS2TnNe3Eor2TjHZoxkCv2Vwg08XAv3KOjcVTOWJ-OfImTvH1GeXF-iw4jIVTNW5_DolnFIagZPuf-vBSFLVOSAud7GkK9oq0OpxvWsGzGGPnvVtDVbYjq-oLls4n93YB40-IFHdmHwLgiUkyusG36RSlLyhgvFWk3saaWxDvkTsBMAgEeOPi7ua8s5bZY81-ytiiTQTSj7Zlk4DZcBO6diDxp-5t9KRz06EHUrWo2NeCLH2u1vmIm-f-Trym-tQkxmBvNInWsF-1fgpHnX17RCDnpPx9q-RLeK-hIhZQ6ETcz5FGHccEnVUIQGpWnq3j3niWRsppL-nbfYMNunv1MbLzM0JrcBXuz_uolLp54v9vd2Wkd7USqvv7bBE4cqOgCL5UUmMDCegetHpZiSIcRDuPx573xhC_X_09o9ivI3o_thH7NmFu6eIBWz1VT0h39bKa7x2N0LBH99M-uamQFpKkc4qxFfsfSyKCp9Mik55zB4t-46u7o3WQUXLO5rN43POIqL7oiOsYfnlWqLRbj4D_lyyw7YaSNIAX3gBzAXAXVsWGs-m6_VhRHeNxX6wHlSzwVaA5qSzIy4EVgM3gwvpwVNV4EuF2coTEjLu-uEORgoFtugbjcQUSSs0JL8fQY3U8OQfo_rIIVRB4HgYBiIOCgyu31FIIqW4t2E6Kkk.%26ch%3DAQEAEAABABS1dMd24JYvzz1XEHT7bpXVydgyGfTJygk.%26v%3D3%26pg%3DJC6A5O4MRBFQLCKRTPUBSHIKGI
+.netflix.com	TRUE	/	FALSE	1796668154	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796668154	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1793565330	nfvdid	BQFmAAEBEMOCAWhqvdSZNEcmNPG0s7lg0NGMDQaUYWSno5UzZf3uJ_bR4lU-Vnku0kRMe7rzcbt7pYmtAJy2bVBKIPGTZUrRzJdo1Xnky5hHh0Q2_O1L1VjsetBbHQngtfrthS73y8XCJlSnQkbS2nb7Yk33vnji
+.netflix.com	TRUE	/	FALSE	1793565327	OptanonAlertBoxClosed	2025-11-01T20:35:27.200Z
+.netflix.com	TRUE	/	FALSE	1794780937	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Nov+16+2025+01%3A15%3A37+GMT%2B0300+(GMT%2B03%3A00)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=af491626-2c45-48ab-9668-51bfc0fca64b&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&intType=3&geolocation=TR%3B01&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1820428154	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABT2ybGbjQsLkSFGp5VvZFLrhSPcEGH_INw.%26dt%3D1788892154447

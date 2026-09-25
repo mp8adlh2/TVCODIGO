@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: AIRTEL_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Profiles (2): Kishya, Children
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1818155383	nfvdid	BQFmAAEBEPrdo5zHvDwpWozby-WMGY5gDL0Ab9q54VTdt0muSeo1_drex4SPzK7aTVsj6WrgUsjwfEseOc6gejEtvpk1onRTxNTbivzyrz8W6_ErsG4Ns2Al9pgYMT31PmMd57WGYQ2kV1me4rvSt4SbGBNOH5Sk
+.netflix.com	FALSE	/	TRUE	1818405612	NetflixId	ct%3DBgjHlOvcAxK5A6RFNVR4-6lMy46FdV3XvpgJ2Nurd9LtpOX6dOiqSCGv1J5lgjzW531aj03BAP9xZQsiV3guYwPkWze9JFjeHb2EiNaOI-GaK7KJ9d0EeHY_nSig6ho1qh8gT4qssqylRfj8ZwozWtYCJdVQT_pCaXslJDz9593pTYD3L76iQ-U0EdG7KAHrtqdTmBSSxYwW_Tve2xs_fbEqXPkccM3ONKcbO-ARiUF9WwcbWLR1oFUFKpH73cmW9AuljP3YDr5e3QeHhmELIVygHpnd0SReK3cJYYHDU9wCWWWpQL7r8zc7fmdR6Fnzy_ITAR0m0e9qviiK0LxmRlr9CdFggClqr9p9NehbuMz2RBSqYqkwOOap6nZsl2MBO2g5n0jTIWgV2QFvP3-cO4KV9b3UXGpSGInA-8zOgfvwXQxd1d5wgpEAB-Bk4_FkjUUkIeRmXaJVv-IPZlIgANFaXxS9wCsCmNjMbMH7zm4zX_h7BKi51oBB984KC3_i5Nv1dPUOV8hgUfcmAxDNabkfvhmF2nq0WUAL5EYPG3PqXSlQhNdpdaExZrs6w4iSkylavQnXL_TdcS4bOO-jB7JWzxgGIg4KDH0DaJAjKT0VJGwUlQ..%26ch%3DAQEAEAABABRhLhdQ9Ac3gUNptKC4PWG0jvPT7pDIR3k.%26v%3D3%26pg%3DF2O2IT2DCZGCLOU5B5IFOYJI74
+.netflix.com	FALSE	/	FALSE	1818405615	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Aug+16+2026+14%3A10%3A15+GMT%2B0530+(India+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=fee2f2b5-23fd-49b9-9e5a-e93af803338f&interactionCount=0&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1818405612	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTkAA98ZEucm_dtghWW2WexhtnXtGG8eQY.%26dt%3D1786869611908
+.netflix.com	FALSE	/	FALSE	1794645615	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794645615	netflix-sans-normal-3-loaded	true

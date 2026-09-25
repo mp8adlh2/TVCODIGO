@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: October 21, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: BRL 59,90
+Extra Member: Yes
+Profiles (5): G1 (Netflix 20), G2 (Netflix 20), G3 (Netflix 20), G4 (Netflix 20), G5 (Netflix 20)
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1807861086	dsca	true
+.netflix.com	FALSE	/	TRUE	1819392512	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKdA-n77dAVBfhX_4zGk8KIrEFKE3A10rV80AEXB9iUmCP_osFKnhNzWP18lO3_bf0X1LJtg2nzMZOab1eRgbk-dMsSi_98yj8V3-UFUy-aewjZ-0RNAQKmuP9G5i7SUhdjjrMcQBm9Ru3Zx4fWSy3Z-hyAk2vUtovMwgnaShBZlgpLiv_HXSM3lm-t-Gia5zRNS-YMFfTtamGfJV6PuOzkLKm_ERxWzeuv7zVgZbYk-pWjFCLA-hNiBc2I_esycPjiEU8i1if87NiuIo6OTWFoC9NFI5qSEgPCUVfH9FMxLqXwK4qg8mR4mRztCF5u7_L9JvbvaUOVSiCTk3xjNX6-NqZTCCCE7t1RwpSVICViCi3Z_bL2VM_8Z2IblJGVJZUvwicTf9RNISgZtfRKk8XQrSEVxYpatsYiBZoJJacCZUcfp2OjSM-b99JY7RpDfHT2cS2B3tCDeYIDRTAJ_nodeWGJHOdIYNhSZx-sD2dqwrLA4Z0FgUAhMG30pEZLnnqP66_E6dnN8YuJokC0POAIDEJ4tO6X2kUgDCHstQSIGAYiDgoMw6hnTU6_oPwxs3IU%26pg%3DYMLT4ZH3IFHADAX7QEEGVNPVLY%26ch%3DAQEAEAABABT7_lpykwjHM7ajnMjhdvgrTEa8x_suzw8.
+.netflix.com	FALSE	/	TRUE	1819392512	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABStqX4sY2LdmjtQrYBjMDmMa61GcOVRA7w.%26dt%3D1787856477049
+.netflix.com	FALSE	/	FALSE	1792940818	_cfaid	723555587a697859394d773070494d31415758747a696d69614b36465478545259666761647a592f654c6c665939596868664274326d4849314b6735494355456856647877546d6d6e3774477a7635483738555a36513d3d
+.netflix.com	FALSE	/	FALSE	1808156086	nfvdid	BQFmAAEBELGw0GZ4qRcsJTAXC-02Nm1gbOFwOg_3Fg5H85d9YwouuCs1g_rr43EY-W2f910d5qck-PSdOyuxnPUSAX1f6VUDSOX4T0bx9KOyI-47w1Ct1QG_E-mxH-lt2WPbiETAcNUNB9OTPnJkAQBo_czc4dmj
+.netflix.com	FALSE	/	FALSE	1792940818	sign	67675553365757497775736b394b6a44316e42503776627a47485743583657443945677371635a792b374548413674674c4e63633274375043627853346c4371
+.netflix.com	FALSE	/	FALSE	1819392665	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Aug+28+2026+03%3A51%3A05+GMT%2B0900+(Japan+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=703efc80-2db4-4444-bb74-e439c566b4bc&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1776620085914&AwaitingReconsent=false&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1795632665	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795632665	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795632665	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

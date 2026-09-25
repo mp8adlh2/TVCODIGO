@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Premium
+Next Billing: October 24, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 21,99 €
+Extra Member: Yes
+Profiles (5): :) the joker, Baz, l’ours, Dede star, Jeunesse
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1819053347	OptanonAlertBoxClosed	2026-08-23T20:35:47.467Z
+.netflix.com	FALSE	/	FALSE	1819053442	nfvdid	BQFmAAEBEPKCSHzTHyZGDTMbiVwiWFBguPcZfkUP1Wh2fdGgwTPT1nufghEtCfJcxL33WFpbdFCluL4-jozoMrgxS2pH7YeCRfcExwYMtgaCTImHUY4aW7Fmq1PprOkj2-T3gxAQu3sF1O9pOhzjj6Pu3eSSJUbb
+.netflix.com	FALSE	/	TRUE	1822735810	dsca	true
+.netflix.com	FALSE	/	TRUE	1820331034	NetflixId	ct%3DBgjHlOvcAxKDBDiLQg6wz3VPQA--j1iAXGDP29ggV3c2Z9y9PfLSwX-x2DCvW4jSyHObAdEk9iYatLzh4gWlkQMhMgUuGOIMgjHqgmPL6rbqmw7Wn4l3n1UZwCLVF7Kk6Mmv3ramjWMA1gRlExIFiRVLpTbHLzguhlAkIVZHDtf7NQgdMy8kC0afuZvq_LoE87qih5BQ1Zm8VVOKpjEPJkSO2nEfNVVkqFwqebkM02PDXYX88qEwlk4rNGRkVpiV7_VksL6Tmg7VruyYFQS9Zf_d5E33iBdEez4-w7c8XByFBOjM9o1DvmJ_wBaVV-6iGnS0DxOl8RfYEDacrG2uiYJ_KHporrIgsI-7LlV8fZfWf9Ez3IbTK0Dl2BTxevPRuq1OjbTvQ3cjfFn-txo-zkPbyNY2mK7yquhxsvNj1Jx2CM81cZRB3KZuiHYxL0hRxFefar4Y7JhS9muUwNFJzd9ouLm50La8_Ju4pENAEFbfLtL3ZvYDriiSrQ0l4gmIMJUAwBGGS6U7zq_xpb9XRS7ta6mKm2ahxZk8dhmcvJsRwjfO1Hg5DLr61g3ccBQsbYCmGBcuyKdgjKQNmeAtCj15CoE3k14amPkqR-zpkRA3fS0kq-Lac0o7Kuy1uHWb1KdaTlg0xsXOBgrMtOyB7VUpFcQD_QcgQ6zrjcnjq3j7cSCvQ-dH1VFyeDZkGAYiDgoMlP926XMXF9p65tnB%26ch%3DAQEAEAABABSAaNmLsLSTdN4Pxx9v_rfSDyifK5A9q8I.%26v%3D3%26pg%3DFMPWZEINANEA3KS4X5POWPKGA4
+.netflix.com	FALSE	/	FALSE	1820331036	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Sep+07+2026+17%3A30%3A36+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=ec997732-5cb9-48d1-88e7-2bef823fc021&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&fclco=&lastConsentTs=1787517347&intType=3&crTime=1787517347811&geolocation=FR%3BHDF&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1820331034	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTA6ShDslsKbFQVKMJYpU3GRPcHaGyso88.%26dt%3D1788795042809
+.netflix.com	FALSE	/	TRUE	1792853992	gsid	112aa95c-8b8b-4d54-a441-f646ef95afef
+.netflix.com	FALSE	/	FALSE	1796571036	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796571036	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796571036	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	FALSE	1792853992	profilesNewSession	0

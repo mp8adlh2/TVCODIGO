@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: TW
+Plan: Premium
+Next Billing: September 30, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: $460
+Extra Member: Yes
+Profiles (5): 杜阿仁, Breeze, ㄹㅗㅎㅎㅓㅅ, Zaza, 兒童專區
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1815889088	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKmA61fM7WEBrN2klO2_9A53RbuvrVcBvY1BcxeDGkIKnZJJY9qJBwrc9oVKsKYCUJoVhNgKUWLA980WnP9HRpM5Ge90dUBj8DWhwNwy3Qf_LgneOskrCH4KBfQ6OP_EmoF-BHUdFYE-Rvaj2qtqmSQQkKDj-WsFci0a0Zl-1KCbdxLUYdVHVGoN4R-RrgyJ6zxJeVv8Kq5NGUOWPj3O3-EE3r7gEN_j_aAakWJcXnWmmfwy4Q3_lBDWoG0psLtm0f0HpVgJ1mdCHx31SmdeEuzenHD8kdFdPzO6PbahqXsWz39JudxhsCIC36S1K1zE5OoipQpmxWhII64Gg68ri2dOzUuB0AKeez1ovjDQbM9wVrtj4bi7aTcdBFKAiJmw_7zhyLP1-5va1PdB5oMsdjMphPQL7Cfm6f0yKbLAbD36TtJBr7uFHF7rjoTJfCRiOuThAC8rfQYYNhywqAFrS081QbvXkm2OWgnpVwcZ9iGTfOZJlS9pCfFayrkJJScox7MF64oDm6Nceii-JYNmNZSI3IBclVxSiws1XdteLNaYOLMt1cFhxKLGAYiDgoMgarixFC0FaCwZ5Ao%26pg%3DW7XS7AY4VZEDZFC2BUICMRNJGU%26ch%3DAQEAEAABABS5Kcao4imy2zdrTMOmhNrIc9frxhAcR9g.
+.netflix.com	TRUE	/	FALSE	1815889089	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Jul+18+2026+13%3A38%3A09+GMT%2B0800+(%E5%8F%B0%E5%8C%97%E6%A8%99%E6%BA%96%E6%99%82%E9%96%93)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=0ae7b7b6-6893-4c29-a5a6-c96f4eddfe9b&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1784353088634&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1815889088	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABR1NDIyBmdGDE5bDgOzOh8fPojbEMqbX0k.%26dt%3D1784353089528
+.netflix.com	TRUE	/	TRUE	1792853992	gsid	f3dca99e-4b67-47e3-8ab4-fffec85ec1be
+.netflix.com	TRUE	/	FALSE	1792129089	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792129089	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1815889088	nfvdid	BQFmAAEBEMPMS1yvs1h5NZPn4DukfjRgSe_AJV35cVVDlPqRouSJfs1keLR8DIqYyyJPgxIsIOsmfqD1psfBDbaDx3FT4AczYcozTAVZgxhT-P-zDstU5IX_KoQMFuE9U9AbKiyflhMIJTmjkH-2iPLox1ULbIsN
+.netflix.com	TRUE	/	FALSE	1792147015	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	FALSE	1792853992	profilesNewSession	0

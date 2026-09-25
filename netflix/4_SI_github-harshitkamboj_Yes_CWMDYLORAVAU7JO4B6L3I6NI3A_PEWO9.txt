@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: SI
+Plan: Premium
+Next Billing: October 2, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: €10.99
+Extra Member: Yes
+Profiles (5): Čevnikkkkk, ni opcij, Rebekči, Čukec, La familia
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1792853991	memclid	deaef43c-cad7-484b-9816-567f7fd43bd1
+.netflix.com	TRUE	/	FALSE	1792853991	nfvdid	BQFmAAEBEGaifUyfc8cP6BH3Bv8e1SJg4VV%2FQJ6UEFY3SH7NQ%2B7dV1BdX2yg5NF%2BaYCaQVjbj9Io8CsehdWdm4TNOnV7n9dioVyNpEBwkxiDp1ECLLbC0YRufQmfX8bSpR6eVOfZsfGhwOaiwVuMFJeY%2Fp%2B4jIxJ
+.netflix.com	TRUE	/	FALSE	1792853991	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	TRUE	/	FALSE	1792853991	dsca	customer
+.netflix.com	TRUE	/	FALSE	1792853991	OptanonConsent	isIABGlobal=false&datestamp=Fri+Feb+03+2023+10%3A41%3A52+GMT%2B0100+(Srednjeevropski+standardni+%C4%8Das)&version=202301.1.0&consentId=a97c05af-a313-4edb-ac0d-117807926aae&interactionCount=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A0&hosts=&AwaitingReconsent=false&geolocation=SI%3B092&isGpcEnabled=0
+.netflix.com	TRUE	/	TRUE	1792853991	SecureNetflixId	v%3D2%26mac%3DAQEAEQABABRatpYl2kGvpPK7uquZWKM0EmsQAKmCwdE.%26dt%3D1685256512044
+.netflix.com	TRUE	/	TRUE	1792853991	NetflixId	ct%3DBQAOAAEBEAVikDHpTpSk1NElVSzdlJWCYGwEkd5TZyNvWZlE79IM1FBQHwcLCILajvvtcwXYTbDXzmrGIRbbUa7hNxA1q3ES2TnjWVrV6i9h-XHkVEp7WIPCkbPTQe_wV1UrI1Pjp5st94Ol84pVbVB46RFejiy3GPsrIvU7j__tB3VgNxnmhUscHG3z5ZDCFL0wLbcFbenR885bA5vo48k8ctx2_BnfdY7Wqc-HyqSUOB8M1IAq_mEhzheBGD2EhiIehfabMFsiMCHzqihkODajjxbhI55SXNrl1GbOposbkLUzvU1EJXMdjrZ4k9jPSR94v49qWPy-xGGLnrK2dPt4rBsG58QSGG0h_gP7DVLR5QN-XP2C8Lxjr0y2dIahBVz_tFLnA1-XdkiqBqTO_YtxYmqRw6538JgYVpUrx_QB9snpVcClT1y9AYd-A7s6CqcEu4VZyZw7EEz1AeYSCNcapo52mQOTDTaG3Ib4fFMak3gjoXRobKpeVOJCmll9feY2d0Mvg8eWkc3Km-5XAf7DsZHkLU43qiflD9fnHZaHlSUlzq4-inUnUmK5cdGzUBOkP_jOfzsVd-0C_asNXCHd0imZFpaEwQGF5kl4Ut1tn7OS-kOubK7MFWPFLF4ewQwAQVWkPv_MUn1OhnmcH8LM1_AEwV59NR3KFKXaLXJimAABqWIF85R3M7TZVz22Ptczuumf0U2yMIfxnHyaNJ5poDFbpVUyy2SMt4aiIQxT_aK4hwFMpXHcFcsQDUtM7bFeODIiaL1DTCXDQh00NamsJGtK9KrAG_F9p7GiB0E-xkkTnPZIfY_JMD8aMQnkYQwJM5WaEpym%26bt%3Ddbl%26ch%3DAQEAEAABABTSQWo2Rt75JhF7qi1uldKQw7oCQLhCBBQ.%26v%3D2%26mac%3DAQEAEAABABQea-pSUeg7m9vZYHZ_Ar4VNFdplFsY12Y.

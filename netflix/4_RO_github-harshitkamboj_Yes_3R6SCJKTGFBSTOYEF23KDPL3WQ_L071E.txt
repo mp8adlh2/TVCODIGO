@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: RO
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: ORANGE_ROMANIA_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (3): 3abud+denisa acc, 3abud Kids, 3abud Films
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1813837404	OptanonAlertBoxClosed	2026-06-24T11:43:24.329Z
+.netflix.com	TRUE	/	FALSE	1813837455	nfvdid	BQFmAAEBEKj0TRjgzkBjXk9dZqcKKEVgSAcmY28GzWAPSbvm6oUsL6hK5oUT0-gf4Z8l5qfTDdJDh0Nc32qWp_IZLCrwkfEiuxk3NNLMupPsnFFJScgTbi6wOAvXW4Hj-4XJUCF1n4MoQyNOB4uU_4fKri_3mdu_
+.netflix.com	TRUE	/	TRUE	1816339226	NetflixId	ct%3DBgjHlOvcAxKZBGdtIhxSVssNB5e2QSxKj2fIhd8bzGtbGh7MW-D5AsJdW1poHjO45bTBKaVXAuJWdfr59wcwS34eUHIPexQ7pveq110-kDYKFZJvy4i9IrqAsB6ZAn6QR7GvjkrFqUdnlgFrRhm6aAmyOHPeuFn3detQJHNJXRJx5d1hzKTE4VtZrZWSX2VnfabXzT-OvaY9KpPRTEMRIjQbtLHGsKocxLiwMMhm5FOYtcyF_GmVXc_-fp9tHI0dTBeLxRF65owbMJhLEIMjwfF8Szpj70calN6LnXEpGco-pcdhS3trgWn5w1DNtlj7yFBL-4snIwo-ruAjx0G5O5Ku7xJlsZPXBER_w82tPVyXWPbWKm0r5OrAFq49NQ6Degju3vdqKsoafGsojsEl4fE5W2oHn7ZJUPEL8bEnroPFZUlGjp5VYOCti-KHNAcTBQ3zmdNzlzYSu0UfijfuiTEK3AUd-nqi3muSTYtis4OKLVbAoIRNYmCBMySS_-gabMbuXhKCoUhDHi4YiYvrhPsZFPol63DIGjgbXQBv67l8ZaMUHWigP88L4Q5nyc4b9-pEjwpAfGE-GhU9ZngLsZjQv9R4_8cKQ9r9295jlrKG8dcQPz3Cz6nK_Bj8iPzEwbcHWD1cZR3LDT3JJUWh6xGScMZuO6XcTrHV5vBUDVVH8Q9vm61Rom_86zAgtBbAk0r8ZC25QGaKWK75Mf3JWWL67RgGIg4KDHcdvDcli4EFKVUClA..%26ch%3DAQEAEAABABTAOufZJd3Nwg2Cdh7t1HGwd22lWO-G-nY.%26v%3D3%26pg%3D3R6SCJKTGFBSTOYEF23KDPL3WQ
+.netflix.com	TRUE	/	FALSE	1816339265	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Jul+23+2026+13%3A41%3A05+GMT%2B0300+(Ora+legale+dell%E2%80%99Europa+orientale)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=1dd84b96-9a37-4fee-b083-33cb8087dc96&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=1&crTime=1782301404741&geolocation=RO%3BCS&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1816339226	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSGKIlZ-ge5JEFvGWwVHyJIWfth2HDiMbY.%26dt%3D1784803226647
+.netflix.com	TRUE	/	TRUE	1819363265	dsca	true
+.netflix.com	TRUE	/	FALSE	1792853991	flwssn	429ca69f-5fd2-4e52-8d22-2d99804db84a
+.netflix.com	TRUE	/	TRUE	1792853991	gsid	a27be980-d6bf-4f99-97b9-f43b1dd27c16
+.netflix.com	TRUE	/	FALSE	1792579263	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792579263	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792579263	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

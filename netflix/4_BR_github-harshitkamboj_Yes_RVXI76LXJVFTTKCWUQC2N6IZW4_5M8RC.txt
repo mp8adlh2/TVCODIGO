@@ -1,0 +1,29 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: September 30, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: R$ 59,90
+Extra Member: Yes
+Profiles (5): VloSt, Carol, Pai, Helena, Infantil
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1811786048000	OptanonAlertBoxClosed	2026-05-31T17:54:08.080Z
+.netflix.com	FALSE	/	FALSE	1811786110214	nfvdid	BQFmAAEBEI0xR3O5sMxzpYww53QOjWRgu9aQHg6iC9vlxjLqQQovew9NTnXPniqA2XvYoDxeKDbgO15a0Z5cYXqlBC-6av_RIhr4qmO_fZwM0fB30ZTNf6o9VFr09hwY_r6gMvrWyBfpXRAaE3jju6bmLWGBTp_R
+.netflix.com	FALSE	/	FALSE	1780251241000	firstLolomoAfterOnRamp	true
+.netflix.com	FALSE	/	FALSE	1791845910399	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	FALSE	1791845910399	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1791845910399	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1815605910000	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Jul+14+2026+19%3A58%3A30+GMT-0300+(Brasilia+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=2c51432b-5b39-46ea-86a4-20d5528dd079&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=3&crTime=1780250048500&geolocation=BR%3BPR&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1784075735540	profilesNewSession	0
+.netflix.com	FALSE	/	FALSE	1783992129506	flwssn	546665cd-142a-4977-85b7-5a7a86d37f0c
+.netflix.com	FALSE	/	TRUE	1815605081084	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTMnqGYGSDyZO85tKmJpzCA_9_0x2NNqKk.%26dt%3D1784069079434
+.netflix.com	FALSE	/	TRUE	1815605081084	NetflixId	ct%3DBgjHlOvcAxL7A0mQ9UaUvkIFWmfRtKKQaYUv7mqCUZHHKVY9nZZ7rCMVfTLMUcJFzHS-iNvXYqDMBkWxFuSC6oerd5GzNYfnjGg5KMfCHM9orgfyhAJ_0oCZ2BC8Ltnrraa7kAz30LgjKjdcYAKehRiOxESWCsxoovKUPfv8Rgfb1ermpf5BVoFlBkHkt3ZtHCcBk3m9QN7kijkswQYoDazami6egK17mx7rOwAx7Xjix5RsJDbDJ9OK5rOgt7qzJZceve7kaLyb-IYwg5chf3a2xrZJEjj10TOiKKjmZ8z-yBK65KJSOYwCrgRYrIgY_oMQErnxZiwN5JLGSuXvq0sf_91t76DAbDj65rjmUaP0-NTyNLF9jr7IVCa4YLeGKBxPVNAnEjjOgObwuqmuDFgbk2tOf-2TmQwg1ji2eNGpKOoPXxNAQRA9hqjgQ96ixO8IYQx8tDPk_Bg30cVFP_EloMMpwlR2uXceKTKFctcRoyVVK3X_8mKvQGAKjRGKpbZlE9A3T2hNhXfK1tGgH9EzaLZgG0OBQWbUxYz3is-6prwH0vRVKQVYGwgfSc28786D3LOUQP0dsImYrkgRAG3x1BnYMyOJbjqXtnO3KjI6TqZKYooezMnvi_5GqD4RixTld9DFz5Uum8rz_JRi7R5Jl5SqQWBA22Lath9DocIrToC5bhgGIg4KDNxtsnJR9SnE3pMuag..%26ch%3DAQEAEAABABRjqop8tTA2bMe_r2YJmT78lppaY0UV0Ws.%26v%3D3%26pg%3DRVXI76LXJVFTTKCWUQC2N6IZW4
+.netflix.com	FALSE	/	TRUE	1784155483084	gsid	3d1d9e87-9a0e-4238-9599-f71009948467

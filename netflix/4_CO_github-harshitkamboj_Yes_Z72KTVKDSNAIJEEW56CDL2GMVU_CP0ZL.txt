@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: CO
+Plan: Premium
+Next Billing: October 2, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: COP 44.900
+Extra Member: Yes
+Profiles (5): santi, Ely, pipe, Rok, Santiago
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1816124429	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Jul+20+2026+18%3A00%3A29+GMT-0500+(hora+est%C3%A1ndar+de+Colombia)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=79b09ed1-4b0c-4682-b98b-530db0d445c6&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1784588210621&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1792364428	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792364428	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1816124426	nfvdid	BQFmAAEBEFrOlPkjaarZU8-K9XWs8wRgVzeiTlTAPv4cqCu8w_6xrs8XGz0pxLFO_M65H0oxtvqORa379jnxSgMuCQiBchmeVsUdv6GCbPr9E7TJEj_Y6wl4ZGhQh7f6-lObTKdoHUT_d_eFSkvZOfoGzi_hlGKQ
+.netflix.com	TRUE	/	FALSE	1792374238	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	TRUE	/	TRUE	1818179570	NetflixId	ct%3DBgjHlOvcAxK8A2CFO1y1HwwVxZh8Jsdzb6rCcm-gyKgkMBqQp5U5FkGsi_DD2xgcuwh09aXc_gvdmaTcwdSKHbgpZgK-V1QDhqcX-8IVYlPXIScj-DDt9TUwCoIps50v021X2tKCKYGfDyhapMOk9_43azNfJXA9JtNbYvICl6OyPp_yBOrovJYbn74q-jH2B1h7MRjqMnnsnib0_ezoPf8MtbmKqAWKlXt5Rg-eLHrPKBhWXchA7wVv1o0yhQZAqCaLJdU6nlhQNpHcmJLU1mJayrv1xvzRyx9pTiwExbmeTbAY0xpU4ed7tGXw5GbZqV12nuLtsXpyzE2_nMEN-AKdSVIG296Uaanv-MLxs5OkfeRvmfvrwoS6kSMeFSODygzXHv7mur2dKkteQOf9uZ9d51SlD2SGEVGs7Gp3HJ1MHaRNsJQ3BmGfGeb8kNckKttONrO22d1tpLRkiyg1BhW3LqCy4ndVMp8p5vBsYlM0say8YWeGDw9km4VEMbSndO81kbS82We7F6yBZV1MLJ3M5iUN12BfPl8S8pSBjWdO3Py7un2l5f-dTK5iK9MYLw-KSd6U1utlrTI5z9G1x5wWWlVh3hgGIg4KDATNPOcVItgV9LWiHg..%26ch%3DAQEAEAABABSMJsVX1adV5Bx48lWu-5yJ5RqmYgIQJW0.%26v%3D3%26pg%3DZ72KTVKDSNAIJEEW56CDL2GMVU
+.netflix.com	TRUE	/	TRUE	1818179570	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABR0ojkNHYkw6_Tytz7fgAclGLTu5CtN8cY.%26dt%3D1786643562948

@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: October 16, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: R$ 59,90
+Extra Member: Yes
+Profiles (5): SỸ LUÂN, stt, Gh, Rodrigo, Bb
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1803517272	OptanonAlertBoxClosed	2026-02-25T01:01:12.187Z
+.netflix.com	TRUE	/	FALSE	1803775815	nfvdid	BQFmAAEBEBNI-BC67gBIANYj58EmSXxgsqRCFh0rqfl_hzuvuwpOeHpofDukMJWrVKTwF1TvprE79_1rbPqh3lQ2VakTVB2tCs2-8D5HNP4xS4pBppiB-04J1D6VGbWbZ7QdXZy4NFuhqyYgjQz493-WJs1bMXhy
+.netflix.com	TRUE	/	TRUE	1820357940	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRSWw0Bp_Gg4C1md8UtcVB4TpKJn6OVGzs.%26dt%3D1788821945968
+.netflix.com	TRUE	/	TRUE	1820357940	NetflixId	ct%3DBgjHlOvcAxLbA97I2v4T3PJQzbyjGjpXglcMwz8fzm0oBPaKdAviRf6ryCFxWodbkGlOfJKDogim1mjwWKBpYLWPU3oSieLbvWQs1yREbNGo5tEGbv6BNo9SjtrstZr-56S5KO01erLQ9-Ac4c0yBCBZaZhzs2DVtvu3UuzjTSpB4IK61kUWrg6Tqmy1vpw7CzO-uoBYKRhe9GeB0oxtxs69o85USf_ukRULif7vYB6V7Vo0YQ9gHKPeTuKY1xpNbiaAZkuyUPOOZRE_NhPJyJ6r9Lvzio7S_HLCCHD1uWjY-_oPyhfUFB4RBn2eZlRi2MKGJWj91l602VMGBe5Gk6MHtqFnEVubcg68QSvAau0tzbemWAcUAj-Ei6wKld6k3VWkmsNBWLTuWIdZI1BB8I5MclJ0mrvDR_bji6U76TnyiVBVHI3u29E5bhBGnE13xlXll1mJh6CVvrJdcpHuywxkpK7S8aS4_wyWzS-25hbYCFJJdDSCIAmXscFzvAKK3rxVUW-AcVUkWSYpLB0QGimNFKnILBSsygL73YCOjpNVOzDuF-6lvSz6uaGpDRaj9av2Iy0kRdr4xc94SZOgR_Ts9S_-5EU-l9WnIKjfbGIsuDi9XC8hD8WZIh2DLfE5mzYrTtMYBiIOCgw8N8qkOjyNZwSsInI.%26ch%3DAQEAEAABABRF0liKPxhL1FHJ9Bnl1iCnqRWkCS1-WCI.%26v%3D3%26pg%3DIVVYUPHHLFDZZPOGMX2A74UT54
+.netflix.com	TRUE	/	TRUE	1792763773	gsid	6b316c5f-e4ee-4660-9049-dd9727bc77c7
+.netflix.com	TRUE	/	FALSE	1792763773	flwssn	4a24bde5-1292-4d63-915f-d9a328926ec4
+.netflix.com	TRUE	/	FALSE	1796598001	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1820358002	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Sep+07+2026+20%3A00%3A02+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=06a8957e-72f2-481b-b367-d7383cb231b7&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1771981273559&AwaitingReconsent=false&intType=3&geolocation=BR%3BMG&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	FALSE	1796598001	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792763773	profilesNewSession	0
+.netflix.com	TRUE	/	FALSE	1796598001	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

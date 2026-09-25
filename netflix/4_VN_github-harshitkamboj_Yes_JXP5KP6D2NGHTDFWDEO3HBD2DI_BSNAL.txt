@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: VN
+Plan: Premium
+Next Billing: October 8, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 273,000 ₫
+Extra Member: Yes
+Profiles (5): Cher, the1nonly, Minh, Eden, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1794669598	nfvdid	BQFmAAEBEGsVQN_jl_E7wHmAqG1NymBgn-FDRZhd0Lq5d7fThJpgt0oROOHG2AvYuD_aCgRtzwVypTCU1F637dQTUl1RmnufBTDYQLYyoXqx18lvfCwxE3tfbBarsm60XiwOzcRQq4MvYZPC7P9COILTaIcAXYQ_
+.netflix.com	FALSE	/	TRUE	1811903290	NetflixId	ct%3DBgjHlOvcAxKJBJyZvT9lfE5y5lA-p6ZJPSP8_W2gJIyeECNtxFygCQcL04cUOV61CZUaAGvNdU0Nh9fohynbXbbO0yRU1nmIXLpOK0PX6wAPtKvZyUeETKqmTnVwehZdqwYAAIvYaahm_qWACHSb6smobbNl_pfC3sRJuxPoul4w0Upnc4gy1tUiUmg0ncmNZQKCT5TLQ_3z_xpUiGr8lo8EyobwhiVjXiH6wXGY-3TkN83NEo1MzKh7nmrZtPtMsoEku7ShfoEknd7d7Je4BtyYx8c9rTZbI9e8AQselt4wvOi9frQgaz6vFDyKcZMazX_NSFlJ4KccGlZRbDscB_BPGozZfdtyNLh45xUb29YpcvyY3YUFUXewY4Ym4TSTZD_Tq6zdwuStX7DYolZQQMgedmxRuRxmnvmrLztAIJV5_95JZFYnCsmfwFLOsIdhIdMW6SARmO8DUNNK72hSd-REsHjBYegg6-UiIKApdUZnmvv-NOiCQcNdnenTt0AZhYmG50FTm-Omf5AbS2iJyaJ2Y75DefwRFrhFI1Hld0R7wCeu18kujOXe40jRz2HqtU2BiTNxkVZ9MBu3lj5ah7gr78ASLQFzsW9fi0JT9PlDz5DltMmuIoEsyiA8xuHfp9ccLBTojaiW2N0whTRs8sOFgr8pd2VrrWYh0szN6sybanhPq1PiBo1p-jG1JC4tpfSQGAYiDgoMoH5HshFrH2WNs5gp%26ch%3DAQEAEAABABQHN9feVay7n3KY5lDeLFbcK4YU71Muwvs.%26v%3D3%26pg%3DJXP5KP6D2NGHTDFWDEO3HBD2DI
+.netflix.com	FALSE	/	FALSE	1811903291	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Jun+02+2026+10%3A28%3A11+GMT%2B0800+(Singapore+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=2c378833-627f-4607-b245-940d6ae44ea2&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	TRUE	1811903290	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABR5sjB5ZXAIZrNv_MaOakWpQhaHwoFcgyI.%26dt%3D1780367290373
+.netflix.com	FALSE	/	FALSE	1792940819	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1792940819	netflix-sans-normal-3-loaded	true

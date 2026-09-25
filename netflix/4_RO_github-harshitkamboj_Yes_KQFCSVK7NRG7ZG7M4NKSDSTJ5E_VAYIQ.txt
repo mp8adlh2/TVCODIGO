@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: RO
+Plan: Premium
+Next Billing: October 12, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: EUR 13,99
+Extra Member: Yes
+Profiles (5): Yacine cicinou, Loredana, Copii, Dia, Hamza
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	13460070251493876	nfvdid	BQFmAAEBEKTX3b7iZdGZ8sETjllA1VVgtYnPHknHYOzV8YKzT2tynJ7fqGDqPN-aeczu3dar15hf5cW5xq0d7qvk491r1vXXracIDgOt0zBM3ufSnfVEmGQhmT6NP9vrPvc2QjCERmisOZGbOPyrjOlazF4q2BUY
+.netflix.com	FALSE	/	FALSE	13460070260000000	OptanonAlertBoxClosed	2026-07-14T20:24:20.060Z
+.netflix.com	FALSE	/	FALSE	13463132274385092	dsca	true
+.netflix.com	FALSE	/	FALSE	13460108279879812	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKZA0eAuwG1hT-i6nNjNBHk8HT_8pyHyxyKEKLIFc7dN4s9mtMa_iIVpDL-Fm3rflYAYzLqIQBrL7h_s0qu2jSFbusrqlD8fMnUndmnLUzcTgaajdPWOSXtQzw-vV8pW_J1tKP3_e0xwmYprYVD_6JEd-aRh8ZwxrhSs7dY_lncTas-VjbVes4VWeAf99U1CSM9mydwGGLd9x6x_Pobec1mJjAgpLl26Il-66IKnOEWGXbKe3HyiqygcNPAXc9cFiSldL0noqJZRyV4gMXLcDl3YJHXdEd0hxiIcJDo1SrOUFeQFXJ4OjooRpLxz8G8tQaEIMP9ivnWbeF3aCfpCYdmUDy2tgXqPN17mG3ikUluqxdKRc51D5U9BcutQlKfBuDaX7TjMgV_xtjN_2EsVSCnC9nSrQ5heEENpU_y1cyqBlmNw7mUxQIOzQUyX-uNmHHoKQNrr7KcLSDLtGk0WvID7I8a_Z-jP1o_iQIvdbQhcPhLppBgraRpH82K_m6pA0X56YOqf4MLkJQwXRms2CcZsDNr3tDDy6v4XR0YBiIOCgy-65-Lg9T_rs9aMMU.%26pg%3DKQFCSVK7NRG7ZG7M4NKSDSTJ5E%26ch%3DAQEAEAABABQMfp-8WOQRafAtfRVSJotG6QOph2FVIJU.
+.netflix.com	FALSE	/	FALSE	13460108283000000	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Jul+15+2026+09%3A58%3A03+GMT%2B0300+(Eastern+European+Summer+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=56e3240d-bff5-416f-9f79-816f26142960&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1784060660470&fclco=&intType=1&geolocation=RO%3BHD&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	13460108279879732	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTf2oti6b0Yc5oiCFnNP1iHJvZgO5Obk04.%26dt%3D1784098796484

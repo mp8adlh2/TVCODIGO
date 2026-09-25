@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: US
+Plan: Premium
+Next Billing: October 2, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: $26.99
+Extra Member: Yes
+Profiles (5): Adrian, Jandriel😈, Adriana, mami, Adrianyelis
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1811731507	nfvdid	BQFmAAEBEIKNNQZuH7P-KrhR89sF2IVgyodHopWt68byJBoJtyuWP8807h3jl8-Z_m1wDMXK8OKdJ1LYzlOSTYEL2Q1bQRL9K0-gSOqVQKOVaQtMIkZDgPRq4KpZ5XP1OCRwNBJmoUGggr6wLu0LWgQBwm_ezK-y
+.netflix.com	TRUE	/	TRUE	1812940758	NetflixId	ct%3DBgjHlOvcAxK0A8BU9UnFML5BK8ztniNtGK4_W41MLx0giNwzjQX2Lc7muKLSvz_fggxdhy_Z3lM2jRHm2I_vLYjZ9e4f7kpz0c1XUF3tNmqDb8Xj_pVZ4X7Y4_QOlxI9ff0MXrr2MJH0tgoGpufolfwSvlh2p0OcqYNm2culqC7n23ieMlnCbX-yA0JcapmCxaDCaqalKhEhfDYRE19caD-uAEYCpfI0MdnN1d_quJANC2XgBdoR8DaQo1V4Amb7pCoxjX9pE3-_86ayJrS0kk0FUx52COC_hJjY4d1fsyt6CqnNfmsY_G0jLdPG6oXrdbmIkGzYiO7QlhHFTucFBa5jvMP3xHWTj6zVUV_IaamUsp59vNtbDPl6X3yWgO0aQgsH79Lw40IK6XfGG8CWQ53ohsYvDkIu5VEjq6PeLE6BV6XqEM_w_9a6vrePwWsw8jrsqd-sGb8cLAfaFuawTcjsREOv5CjdHIZ7Ar_YSSXFoq2js1F6vePmey3J92pVh2f441YOVeyZV1E9vPIii64uyGYyTlynJNbQpIg1w7p7ustA0-ioIW2H0u3LVsnWmy01xeN-5tjHHJ9dNC8YBiIOCgySCAMuAdMIqmvY47c.%26ch%3DAQEAEAABABThsnoiUuvUBYSiLUOcZXtWY3Q2JOlxBlg.%26v%3D3%26pg%3DC7ISZ3EICRCZ3D6Z4GQ5HP333Y
+.netflix.com	TRUE	/	FALSE	1812940758	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Jun+13+2026+22%3A39%3A18+GMT-0400+(Eastern+Daylight+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=266598b4-11ff-4cbb-abf2-d9fa26b7e3ee&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1779902867182&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1812940758	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRQc8xEgFf8lWp4vPNnW73PlP59g2IuKfo.%26dt%3D1781404757267
+.netflix.com	TRUE	/	FALSE	1792940817	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792940817	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792940817	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

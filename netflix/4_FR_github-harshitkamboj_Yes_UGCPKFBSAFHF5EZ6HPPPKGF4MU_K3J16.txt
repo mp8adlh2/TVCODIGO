@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Premium
+Next Billing: October 5, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 21,99 EUR
+Extra Member: Yes
+Profiles (2): B, Beni
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1806530348	OptanonAlertBoxClosed	2026-03-31T21:59:08.804Z
+.netflix.com	TRUE	/	FALSE	1818340871	nfvdid	BQFmAAEBEOpeJb-kW_Htmwg5mADXajpg_xHdFcNWjo1os17i5F7k1VGdxGIHAOsGv6dwpvvzMHH0rr_39wwZ3O4AwlX1W6Npy48ROkXbNQi3N6lE_39Y_V6HoD7IeIHzWkzccAj6unUViS1WttBBRqJ2QmnlhXrP
+.netflix.com	TRUE	/	TRUE	1820278589	NetflixId	ct%3DBgjHlOvcAxL_AwempIa2SP3BIyLJUR5ZD5Vm-t1Q6HqQ9QMrkBBGXAUnkcAB4FoSpyOYpderZUpPrkteYTn09XxCez8ZCLx5n3IvMoz4slcuABZJd2fGhxHcDrWQHGemyRiH0Jg24OM34QfrM_5kO_ofprq2RBcNxYSVeN-KPYe3ZMWAOExfQ6AyxLO1wLTdwCBwAdFvtiuQsxjdW_TkZJEBf0j4YnGyo7RS7rpeZ3iOug7_OmHwRxZc_q3LhJeLT5gHk18MMvmX2KuJXp3QmXiqTpMYBTHdLLO7YWmeO9SZRwsSV_H2dpvDQSju78RmCRyZ6tG5F7Nx4FdaXqh3MpfMpc0BiNL50PYLV77YG9q_L-1DExlW1TX3mjRKHXykYreCST4uRqwVI5b5VxISpb-fiul5dNP5vWBNcwzaCrO7lw_TgoSrl0oW_f3n7MPhb420vMFvZdvIlH7Lfoq12LKnvGQq9PPojcKO5eNtb8GKDHw49AWR-slfm3MY762awF2qzRGAoyYJIafeMUk9JSn_Miu9SEiqh4S4PQvNXV7kwwHY48INU9-ek-OTqOCktec5RKyt-Yx5VokB0qDwKt3jEKZ-1nN2Pjf4nBAA0lMCB7TwDhCTd9UnLriTL5ZnX0aNzhQp3JOYNaWD8eKgOhZAW4uBZUZvo1X_vclO8NRUgwRcZy9B4A0YBiIOCgz0dkUS5MlMq1pAQ1o.%26ch%3DAQEAEAABABTnlopiW1kUQWmKWO7Wn0hJxaexNd6GkJI.%26v%3D3%26pg%3DUGCPKFBSAFHF5EZ6HPPPKGF4MU
+.netflix.com	TRUE	/	FALSE	1820278589	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Sep+07+2026+02%3A56%3A29+GMT%2B0200+(Central+European+Summer+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=6feee645-c98d-49d2-b108-32ba6c5f10d5&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&AwaitingReconsent=false&intType=3&crTime=1774994349188&geolocation=FR%3BARA&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1820278589	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSgSFyxMZDolwwqpjc2XV1E_NTfaf9Sd-g.%26dt%3D1788742588676
+.netflix.com	TRUE	/	FALSE	1796518589	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796518589	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796518589	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

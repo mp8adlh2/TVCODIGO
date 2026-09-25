@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: October 2, 2026
+Payment: DC
+Quality: UHD
+Streams: 4
+Price: R$59.90
+Extra Member: Yes
+Profiles (4): 3abud Films-cartonns, Abdelhak, Tttt, Gg
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1817069677	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKfA98EAJ8LSY3Q7qWMaPs3c3ohK2WQjG3lH6TJQru4F8xJqlN2l1h5thad2EcTpaQrKIQ6Ue0ltQr2k7JZSdOMX96JBCvl7uDp_PWPnfbUC1XRWlZe1F1AD03R-yo7eZc44q_pVDohrBltvmVsiKQT_BbIgdzlkbNu2N5I--fA33IdfN9R8Yc5NZ5dDJ2Sa5kqpMcz3oRpAe_0VbFOk-oiz0ZBzmRYHCe9elhouNy2-i4QnYJr2EjYT0wF1a2XhJswyTwmni0GQ8rumQvxdm5seIoF1Aw5cOsDMmZjLjU7OPU96JVnHoAZIRX3vKguUwuptbOHmvATuIIvZPSQDTyQ84Ku1Xn-Iwhoyqp3s_dAdPk-G-RLYpsIkiywbqo0HXHgET8OG0rlSqkJgJyFvHNS0py8gpQsrbq2Ji_iHJHAzwh3dzs5hhrkT-mqrDD8L-YtVUH0waMCrZKypeGDaGgvp1vkdaDbKAWY1sJisjsBl5XYNXbFAuLQE4cfDj5FjpZmhJgmJFfcpJ4BAyI18KzQ_YQaaDdrrCe_gaEZT-pVOk8YBiIOCgxqaTeKC5Ught0iv2k.%26pg%3DA3CXXSUXQZFBRDIJU2SHKYXBD4%26ch%3DAQEAEAABABSosuZAfTi_Hvh-ME7GPv907b86AvWK0V0.
+.netflix.com	FALSE	/	FALSE	1808523514	nfvdid	BQFmAAEBEM72DLofauHd0XhH72vQRRpgC60vxrSlDZZ9ToBPz3UBQpqU8MgRM7kvc7g2sEo0ImBWlJg74YkqSauZ3RhrtZU8cvfDouxfcYDsTr4EChnl2ILB0iN5JNC285rql3qJnyCo8GfCuUe6boPP4OvGPnzz
+.netflix.com	FALSE	/	FALSE	1808523438	OptanonAlertBoxClosed	2026-04-23T23:37:18.088Z
+.netflix.com	FALSE	/	FALSE	1817069681	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Jul+31+2026+18%3A34%3A41+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=373e5774-a400-4cf2-96bd-ffc4dcefd6b4&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1776987438497&prevHadToken=0&AwaitingReconsent=false&intType=3&geolocation=BR%3BPR&isDntEnabled=0
+.netflix.com	FALSE	/	TRUE	1817069677	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQnvQEMPcoFZiD3x5ph1e6G4MEDA_d4qfw.%26dt%3D1785537588357

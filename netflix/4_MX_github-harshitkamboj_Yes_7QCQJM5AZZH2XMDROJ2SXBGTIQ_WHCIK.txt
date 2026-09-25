@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: MX
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: TOTALPLAY_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (5): brianrojano, Mamá, Hermano, Rubi, Hugo
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1795487708	OptanonAlertBoxClosed	2025-11-24T02:35:08.393Z
+.netflix.com	TRUE	/	TRUE	1798511730	dsca	true
+.netflix.com	TRUE	/	FALSE	1795487730	nfvdid	BQFmAAEBEMhBlpV0ofeh_S-StUdJj9tgj8-dK8V6qSiuCRr_DBV2_Lbryl6nycZvXHbnp55CsLx9gnpNaihMmr8dnzRFYXKYJ3egmdViqol56pXbvuQGM64EBn_euOEyPKrm4f89t95vMfE0jLXN0pOrCgQqPuSl
+.netflix.com	TRUE	/	FALSE	1810522429	OptanonConsent	isGpcEnabled=0&datestamp=Sat+May+16+2026+20%3A53%3A49+GMT-0600+(hora+est%C3%A1ndar+central)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=d4cfd42f-56b5-4f02-b818-cd7078d52fc5&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=3&geolocation=MX%3BNLE&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	TRUE	1815869454	NetflixId	ct%3DBgjHlOvcAxKABMSzMSUuHSTIQn9nYM3E1JrqgAktAvq1o2hlKW0EHFQGjgJqn-IfXJ87REvDfFHcL3TMcSlsdde_LHtMYYFuQbpTAyjZlOyb97JP5rpRBIdJD2hTX48iHHtBTlMs7CM9O15F7YKdlOLCCrHKHj6hNE2VQqsfQ6ZmiW3OAP6dpyxDWTeBa57VqWGHo-aJIuwF146zY6DLXwAWVZacWgG6SfRLpZiL4g8j3xIZr77y6L1_9YXCEOUT2LzeKkVoPONxQrjfRk903DhpzpUOSdh3HvMjU3bxuARGDMJXwePze20Oj1KZnDR_iVdUL9jicKmDCMJablW1lqzOPwgP7l3KDOrGJbf-sqKnOxaYCDWkhTYJunieUIc4-0LTDq-WyzbpcRBdI439RaYe2wS16Gn3Bva5PBcZzGVJivUK-_gDQN78PLxdT1ntWgGBc52ypB09SfNt6ySwEsNtb2EaZL5DPB6vD_6jbsPAvoEeeP2MuxEAgj1WHfQnbzkvV3kk_jQ2lL3AFDFxcVWzUTVgUJSPIJzHxS7Jp2b0m_ycHLwEfgGuQ4H5qguqLG42nbwmpuIBE-9HaIt25a7QOzEEsZFTLYrjvQg03WOa4YzpKzVEeCKTLtpQI6LAo4tvVVmQv3dt88hrakHRqPD6HXayfSVmswkF5L1edGpv_IiroAqCZZCZGAYiDgoMRVc5INWxOKOpncDe%26ch%3DAQEAEAABABQIrHghbEo7DdHT3C51UWMxRjvpV8cnPq8.%26v%3D3%26pg%3D7QCQJM5AZZH2XMDROJ2SXBGTIQ
+.netflix.com	TRUE	/	TRUE	1815869454	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRS1IafY9na5M7jQers9nUA_0fsB3D1zbc.%26dt%3D1784333443801
+.netflix.com	TRUE	/	TRUE	1792853991	gsid	4cf55b31-8f07-47de-a18e-a7f2fdd748da

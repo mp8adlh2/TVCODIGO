@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: October 11, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: R$ 59,90
+Extra Member: Yes
+Profiles (5): Edgard Henrique, Aline, Victor, Jaime, Faísca
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1809174747	OptanonAlertBoxClosed	2026-05-01T12:32:27.502Z
+.netflix.com	TRUE	/	FALSE	1809174738	nfvdid	BQFmAAEBEMwosBDPqhTI4I_bZ0Hom7FgIFgyidOAUMWhbXpQVW2AQrguqSaTQlkxOMHKsPrByi90_GHtHcuGxn7SOD4y_agfX9y3lxyeWDxM76aeqM49TrMZRYJ3itzfiYPMUJI1BSQtwNGd3si5MFn0jod6Va6v
+.netflix.com	TRUE	/	TRUE	1814726628	NetflixId	ct%3DBgjHlOvcAxKLBD4GA3dBLMUO-T2-jjHR5in17KyepL28eX3bx7eO2wAFNBPnYXUNR-ABmNoecGzM0o3invZu_964De7uomXFbJj2vxT2sJ35I4vY6ApW2AOw49KrxVhVUr1B5C4v2t22ak30CLsNsZRjacaXIHvEy-nCzCJzfCQp3iK9_x-6G0xZRd1axw6DsLhkPf3CQkqttCEZluWn1uOPaeSLhZ9yC8_VGhRgcI2Bm3Ogj7TAv8n-J1FPw7tdjVIf7GsouG44m4ZH3lO9G03IQV0wVtT-A-olOkefE6-Ux5VCxNKn-xiRlWY2SPApxf_fp-qoTBfoxL4ONdFBma7K1xqLG7RlhPcVm252GYMqyiNMC_Qjbc11rHtrN-rCn5OEQqc40lvuwwnZ-o0McA-_1r0dG3NE9nMSB8k-KlBf_NdOBzVnhG1i7zU1a0AwGLk90xyM_4GV0EOltRoIizM4qCu-2a9x9PKP6KDc8YdBJQsg7XtKbwKcLLzKzkQGAw81Ou0ejTm-_uGS6MHvdz5AT-jB0aXJnzW75zSOxFBmsjWJNLM0yo1Z9a2QfvcfdfEUxZiA8m3RudMN6GWAHbFuskjGWg3wHqoLHUjaaMYd_gX-1jDTZdW6OEwpjr6n3wueCXSRG5b_pe-03Hm82aFVXKE5yBlG-tyD9uwAIsSbogjNj49LKsOEVSAPHbukdzYcW3oYBiIOCgweqSEGyoHhiwJeMGE.%26ch%3DAQEAEAABABQKK37B2Qf5tgweAj6jKlJO4SX13B1ytJ8.%26v%3D3%26pg%3D5VHI4O5VYRC2NBE4PVXALLZVVA
+.netflix.com	TRUE	/	FALSE	1814726630	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Jul+04+2026+15%3A43%3A50+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=240518d3-c704-4106-baeb-65cdfabeee98&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=3&geolocation=BR%3BMG&prevHadToken=0&isDntEnabled=0&crTime=1777638747957
+.netflix.com	TRUE	/	TRUE	1814726628	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABS_rnCFiCkzuyy1Ps6pyMkxp9Lr1WVZ-mo.%26dt%3D1783190627723
+.netflix.com	TRUE	/	FALSE	1790966630	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1790966630	netflix-sans-normal-3-loaded	true

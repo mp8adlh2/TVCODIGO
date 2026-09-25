@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: PK
+Plan: Premium
+Next Billing: October 5, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: PKR 1.100
+Profiles (5): Faraz Masood, Dua, Duaaaaaaa, Farouk, E
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1807797159	nfvdid	BQFmAAEBEAROfHWh3JFUcnReheXqw_ZgrkjL8oTpZJMxr6Qn36lTdP18iTt5x1gElPFSWKeFRwNn7Hcj2nVfhDmKzJ1TSbKKaWPdCTJa0pYe5MwzFa8PU5b9OpJ4KWxza2FFk8nySAj61WosXBLum2_Obr2VVd38
+.netflix.com	TRUE	/	TRUE	1815494074	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKgA2WQAMQW9o7YMrVk2Qh4gFZsZZyyPdV-UmWKmHS55J-JiFCpatbEiwaaPwGLpGMzLzlpsQqS_JH3mrVBnFhwi4LYai5vtEWW-vOwCYKO-X-nP84eow_Mq5-BsmV4jeyUzQFFnCQTThUgFTfL4zTb_UFuxT9X_fL8rx0IarU2hAPTguu1ZJgtbDwf7pic9sOFECJHwUDojFxa8b6e733BY4iCke72pqjg-Vm8tb5OtrhGZDUazrZR8qImr0yI0fD9ZqEqp5AtTN1hOfhKZFSVuim3qUCGNZ5obkoodAt7R8QJhMTFfIMoQ7igMDak7-SkOHB4-JTTBiPZq4qCOS1KiYN7DmFD6NGDFPeINTvM4WXkwidkuX48ZAHRBFWHuWPZEpBAUzKqUCTWP_xmPq-Th1SlIRPoN7Fhgk8WPQYJBOfGp9CicalfZ4GG9Nyy753uoUP8asogyDPOFJfX6LuxpZbZ285PClF0Z6f411hTGMpD8B5oGORLuJ9s8DQHhNcNntK4MSorlMETMdNVbTI3sWB46MXfHbkKsM4Hl8n7qIN1GAYiDgoMyvYL9x7hjsEMs1ZI%26pg%3DBVGBZAHX5FDZPLLEZGWCIRL2PE%26ch%3DAQEAEAABABQvUk_JqfbaQ67gO5cWfPn67FaBDNqXML8.
+.netflix.com	TRUE	/	FALSE	1815494076	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Jul+13+2026+20%3A54%3A36+GMT%2B0500+(Pakistan+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=852d3b17-5d20-46cb-be8c-a750c9d2161e&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1815494074	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRpQ0cu2OrgJHKRjU8LNmnWrztB68Ie8x0.%26dt%3D1783958074693
+.netflix.com	TRUE	/	FALSE	1791734076	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1791734076	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1791734076	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

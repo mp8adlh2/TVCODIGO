@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: October 1, 2026
+Payment: UPI
+Quality: UHD
+Streams: 4
+Price: INR 649
+Profiles (3): Mayank, Tommy, Tv
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1811355427	nfvdid	BQFmAAEBEHtu9uzR4dMalgPwQaTjKs5gtCO9kQ6eYLY2kzay8UZDCtxTg2IDMmr6yAJ244kexmmgdKEva-Z-_bFRL9893i7vIEGaFhm8oxzAlk3t8XG_1yNuvS2gD-KHzVHTVp7eS8Cn-B49dGZQvL06SWg5BR5D
+.netflix.com	TRUE	/	TRUE	1814387786	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKbA7KG-_b-GK1sPn_3H46NWP6m_6Ty3US_1jYlbZEN6YueDpf9Tl-s3tL5yLDeFJca3kJ3Uk-qHP2YCwtIEsw5JffMXF8dZayc5vOc0FTkWJ3KZFv3K93HW3xvxBujwnSkzGI6agGiCpzsoxAt8WcvU42tN6TtcGiq33rDCKYgAdxEiPvjCbRqoU1_q8KecSSBSaLR5PWr7CCwSkYpK0H17WnOS5rGAU0-zLp56vsjx6c4cqHm31M6Euf2aOtaSEig4WUSCMNIMXOdTXLPj5DItbOdofQ3s87upq0Ugx4UI8iiGA7twcvs_8TVLn0WlaZePeCwGCs3txhydOnKNrs5ENYHjLzJtKO7q_5wQbwB5-XNZiIukTNVnC505KIdA9Y61VWmj0eKBs-lIs9YhaFFe3FfGk9gy6hnvMiXfKhRusouBDB0Rnj2VFC-2uRQuzeMf1eDfGSKHFbbhIUiY1ii9S9ojv7Elxf7ZcyMlo6ZLPB48uO1QphMsvzz2WPkpvIvkm5ok4sf1E24tTrOirxVDBsxFTNaE0KbZMdzAxgGIg4KDCDJbD5-znn8tdWFRw..%26pg%3DMHV75WKX7NEUNIBS2PMODBPVVM%26ch%3DAQEAEAABABSPedUm9oqLOvdO-t93giGv_MC56Pc_nlg.
+.netflix.com	TRUE	/	FALSE	1814387787	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Jul+01+2026+02%3A06%3A27+GMT%2B0530+(India+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=67127794-0ad7-46c3-acfd-c707f78d9b0f&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1779819427594&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1814387786	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQd_b-LEvcbSyiWA8vgKadMns4jc8hOS2k.%26dt%3D1782851778493
+.netflix.com	TRUE	/	FALSE	1790627786	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1790627786	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1790627786	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

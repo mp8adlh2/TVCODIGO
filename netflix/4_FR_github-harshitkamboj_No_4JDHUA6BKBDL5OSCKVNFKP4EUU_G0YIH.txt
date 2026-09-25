@@ -1,0 +1,20 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: FREE_ILIAD_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Profiles (5): Hugo, Glenn, Choupita, Gege, Labrosse
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1790622543	NetflixId	ct%3DBgjHlOvcAxKIA80OjsYTxwKI3-deLYNJwbSvuzHgooQrQO2SCMROjHY0yZi1ThuShVwF9uxLMnUHE3AK7uQNbRBIJiiRHY79MGuLZkC2Px32ERMjMvxQtuzDRlsECqIqykGtZOZxmO0bo18PTkjyHFg8AQ9C5bjqAZ1Ot9N49_eDIx0gsvyeOmNqCxrcGvMyJ7ht5XW52Q3zRR_S1K3B3M4Pv7E4t8pN3KF3FpwGuz-R24kKYHVMXXuP8SIkoeDJ5Qia9UFXWSb0QvsNYeeDCHk0ocPSGGtmpxQ9NIN99YibWyugZ_o-IUAWWCrOXU4WiVf2Y-IcFCpDkOZx0rLd2xwcKq9yFlCl13pVQQPMfINRRrpQ14acGGrw7TRyKdcCpWBcv88idsf2qCbzcq89Dq4DdahDsaXeeJKZQrheIFdRtRUy_9mYgRp-sNO7mCgarBv2fBAFVwuI5IfKPFxmLfkyDmOAFd_QU4MM6TgGRiEtBMkndurh3vyxU2Ufj8G-puDfj8SfxwcT_oARxSUxqnHYGAYiDgoMmuoC2hFbyVJNCG_D%26ch%3DAQEAEAABABT3BNAYYp17S_tCN5wjK89asxHJG0clgMQ.%26v%3D3%26pg%3D4JDHUA6BKBDL5OSCKVNFKP4EUU
+.netflix.com	TRUE	/	FALSE	1790622544	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+28+2025+21%3A09%3A04+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202508.1.0&browserGpcFlag=1&isIABGlobal=false&hosts=&consentId=051eee53-3771-4fe1-a7c6-228ba6fcada8&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=1&geolocation=FR%3BARA
+.netflix.com	TRUE	/	TRUE	1790622543	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQUMiPhKJtQBBzCLdBfx1Q7LSbDz__7urk.%26dt%3D1759086543923
+.netflix.com	TRUE	/	FALSE	1793646543	dsca	customer

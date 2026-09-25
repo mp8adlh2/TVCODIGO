@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: MX
+Plan: Premium
+Next Billing: September 26, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: MXN 369
+Extra Member: Yes
+Profiles (4): Kuajas, El chismoso, Kids, ikbel
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1792853991	OptanonAlertBoxClosed	2025-08-24T00:34:09.392Z
+.netflix.com	TRUE	/	FALSE	1792853991	nfvdid	BQFmAAEBEIZYNlVzzI66BEv95Cwc-tFgsdt1QYInAqkDfw64EanreAt0qevGgDmwqoJkU9B9UGtknRh5KMhpzmDtyfgAxBAeEwFfmZx4YaZj1yl96A7kj-0hVUpR8JIzkJ4LrEEP86MK1UwdF5Lcq5Ng6TX9Kl4X
+.netflix.com	TRUE	/	TRUE	1815610933	NetflixId	ct%3DBgjHlOvcAxKFBJ6Kmozfqyk_LZlW3XEyvuS8XpQrGJEkvmT7nvzMjB5YLNobN5s1dBXSDTVZ4r5gotKp3vtZYQ8rkOIZCSUzL2NjvOgLcFEkHeJCjLYfY1Vma2jtdGCvErxt2hVRKbo2ptzqHYXcFpd1pg2fYGo7D0rq41Q25lrPjrB-o5yravM9E3xuJm4GtkWQIoeAX0j20vU0lib0bCn_5jTTgRLNdEFzYm67XA-RDgDUWvwcqEuhnig34hMX39aa1bb3ch6RBj_mkH5a1mzRnvfLY5jqfoNNfOJ2EtOQkdhU2MYE0vLIRzUfYwroLPXZoxrllL-y27jjP8eofYpnaPm9I1b8vhrL6HlN5VpbdHUG17tlPCx0_MWfnD4rFZh5Khhe5mu3gpOTa4eYNlTPl6Wq22Y1WeVGljR3-PP_nDEw2mizbsP1edbF0np0vd6joEvnxbbbRh_mhNjZ4187_MHSvoIKkgKUezMDQyjlA68h4dgMeuRiuVB8irqYRAkyNXB_UiNZI-JV2k-0eBXiSOxjG0X7X41srYmgFCpnWhUXnwWDHcLihUxf-1Yoyz6a_lUsxr8UMCHEJYRrezVJb6vjvTgHloPr-x6X-MVoH3kNwVLGixS-f1YcHs1R4Uf0yi0MWuFmNsxX7_A3cie42Yxkj85KbZTxLQcLToexI86O8Eg7qPDPMjH5LbUYBiIOCgwNwXfd94zVilis8Nw.%26ch%3DAQEAEAABABSNzGCNDklPKCMdbLHzjycFThyB5qGcmL8.%26v%3D3%26pg%3DMHREOPHOOJCZJCRNIASRO5WMWQ
+.netflix.com	TRUE	/	FALSE	1815610937	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Jul+14+2026+18%3A22%3A17+GMT-0600+(hora+est%C3%A1ndar+central)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=aed04ee2-24bb-40bc-b574-8258cf88e42a&interactionCount=3&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=3&geolocation=MX%3BMIC&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1815610933	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABShnl0Hlyzx90oeulJDLznRCFbX_iVzwfA.%26dt%3D1784074956879
+.netflix.com	TRUE	/	FALSE	1791850936	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1791850936	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1791850936	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

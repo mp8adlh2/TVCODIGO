@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: NET_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (5): Ismail, Zero, Niño, Michelle, Kigtهو
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1818872611	OptanonAlertBoxClosed	2026-08-21T18:23:31.733Z
+.netflix.com	TRUE	/	FALSE	1818873211	nfvdid	BQFmAAEBECdUToLnz852qENWmKlmT9hg3EVLHlvneFvcIoQSix6CnkHW0Buz-FtyKkTznPGm7v8Vbxx4DzrjCGj05a4sNn_zQfFQcWoWrJJ72yGbQc4QRc0dL3pG_N9d-9SYORg43uLRso6H0EqWSDy__Q99v0b9
+.netflix.com	TRUE	/	TRUE	1823394734	dsca	true
+.netflix.com	TRUE	/	TRUE	1823394732	nap	BgiJv-vcAxJJXPIYriMqjOrhNN0eFG-HhCTQPOd4bIdB6xeRzBtHBj89LdV7e_DaBxxc-770ZyFYFr7KdsxbD26GAk_Y7KpIcRhEQ5pFLMHVfxgGIg4KDJOn6CJl_8ObHM6qRg..
+.netflix.com	TRUE	/	TRUE	1820410387	NetflixId	ct%3DBgjHlOvcAxKEBE2nXZCuykERogSYOuTondZFVdc0qxm6i5i9dlogL9swYCwYZYHA6tEgi65nI23rrTpMAtiMsJbmpOaxWmq34NpBnkzVMb5I6oaUlDWm6bbD2ImXHBm2ag-5XkUk0zRd4ZRB8oAAb-cXuM_ZtR9abYM-xdrBMgrTDCc9uKcD2zBy_W_sKCgRnHpCLMeSjHw_fJVN6LEUuVXgGfsyWff0tbBg-wrgLa0voQ-K8jm6srreg2mhp6bbR2ehv45rrl2Pz2mSP1nttPQ0S6jHMRx-ON69oFodGROcGkGHGZHhAEfj-5OeirH7RHbnkGvZi9evpJ17LNLifC5GxtL19O-_zFng_MuCtdtES2UOFdBgg5IjIgg8yHwfbVzCTvH-k1iw1EkRoJQdXm5wFWTy9vhxUYN7CPASH787CJUlnOqPQGScfcymFnBzdEv5iLGKwHMJLlLFLBcZssVWTKy3X1l5pWDTOdGW8eYCHeUs2t-ZmSpof49Q1n1oyvBozazh7EfLFvqHM1Y4esfEFXfukIzcUGZi5TTf3RLMK-1cxFSBVkt24shCiYtCBEOBPyuTrpUz1EGaAnEezUuARtS4sU8nHhHaJMxgSNSXsf2rkfwSoSnPwREuTS4LaqLGZbY17fJZUZpEO8JLRxUzXbC7V2JCTtlKfBR3-NJVyv9KhV8yH6xiXy66cxgGIg4KDBSTkvWrqSwGL4_FpQ..%26ch%3DAQEAEAABABTuf4MKUFauDb8eYSHDbnLw_kAp2tL9YlQ.%26v%3D3%26pg%3DQWSOS76ALRGNNJQQZM7ZKJVBF4
+.netflix.com	TRUE	/	FALSE	1820410388	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+08+2026+10%3A33%3A08+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=c90fa346-623c-45af-98e1-8a613147d6a5&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&lastConsentTs=1787336611&intType=3&crTime=1787336612449&geolocation=BR%3BSP&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1820410387	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABS46wnNAmaEujQCywqKQieTQ4_W-az0YMg.%26dt%3D1788874396501
+.netflix.com	TRUE	/	FALSE	1796650387	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796650387	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796650387	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

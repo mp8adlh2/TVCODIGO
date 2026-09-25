@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: MX
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: TELMEX_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (4): aziza 1, aziza, Djelloule Echchikh, عبدالله
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1799980807	OptanonAlertBoxClosed	2026-01-15T02:40:07.191Z
+.netflix.com	TRUE	/	TRUE	1799980873	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKHAz32_yh_1_Jx-Y6RjOrpQWQcn5uplFnySUOzj0AfiBjy7sWrG1OQR3v_g0L9COVyXaRyBRFpYSzlkw8HRghdXehaVwDL88szHDv12XGY10aMNZ5qUqBCc9NtH5X5FEX9WgU6Bcq_MMMN0XmS6CKm8ePo9CuQI19VPa-KYhna_JTX8SEepuR8h-SazJ-2JHQJ4U47K-hDEUSloCWmatkzmumSJOk23JBErB76uHfRQFzuufRoF__p6WWu36g1gk_kAYb0Nuqci-hv2Dx0kGIiUyDbgPl9yeJLzuMgZzrwVPqs0RgEYQndW5wUGTMzgeqrWBAq_wIkuvuIS6OTZobunRKsAfJC4BiM7m3O6QhhFA7Tz7-5qBBsXXalQzBOKg_RU8C2yVr2M7j-toTEAed-fU9yn96b9liikUD3NA0xa_bcAGFR81su543KqIYBNPqAgv0N_UhE9cKGXrRe0Z7KIPkXv20PlALyXKb-D-e5jvMsu1BDmd_JhB_HneadUyGUeqFir332FNYYBiIOCgxycQGCyzCjJd7Tus8.%26pg%3DGDYLCUJZJZBFLCB3NBW27C4X6U%26ch%3DAQEAEAABABRzB_Y93Oo4DAzAk97mKnkI6Mm070-tQFY.
+.netflix.com	TRUE	/	FALSE	1799980873	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Jan+14+2026+20%3A41%3A13+GMT-0600+(hora+est%C3%A1ndar+central)&version=202512.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=c9f48815-8e84-478e-beed-0be11f4fcc69&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=3&crTime=1768444807543&geolocation=MX%3BSLP
+.netflix.com	TRUE	/	TRUE	1799980873	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABR2ouFPqYysVXPXQDtYN842wWU3rnqDneY.%26dt%3D1768444854347
+.netflix.com	TRUE	/	TRUE	1803004873	dsca	true
+.netflix.com	TRUE	/	FALSE	1799980873	nfvdid	BQFmAAEBEM4kygQdBENdQ3P30uGLwHZg1oRJ0FHZdXPPtMCuqF-U125Lg82RDokSoGTXpLw9EjuLNgXKaCzRrwwhm4bVf_l1nle1MbxU2DKowddPlNc_lBeQJ0kFOLI6pWr7waaYEcfNKiZbEI5RuUhSCtEr4VcB

@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: October 8, 2026
+Payment: DC
+Quality: UHD
+Streams: 4
+Price: 59,90 BRL
+Extra Member: Yes
+Profiles (5): Ivanilda??, Ivanilda😘, Welton😎, Nathan, Louise
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1817417676	OptanonAlertBoxClosed	2026-08-04T22:14:36.234Z
+.netflix.com	TRUE	/	FALSE	1817417683	nfvdid	BQFmAAEBEAHVDoC5mqjO-zgSFi21p05g8LCA516e82KivCJVqmPGo5jW_8DbLPtkoUE5rhzV9NqqJqmLsoHlvmHNzgrLFZhA5N7hs58r1dMWQKCqBwMxGzyfj1X8ZQJ6L8t8puBSGVzNr1fi_mdjS1mowcE6eYBb
+.netflix.com	TRUE	/	FALSE	1820513340	dsca	customer
+.netflix.com	TRUE	/	TRUE	1820168441	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTWN5bXoPUWmIr3hrkzn6RDqomua9agN6Q.%26dt%3D1788632446839
+.netflix.com	TRUE	/	FALSE	1796408443	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1820168443	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+05+2026+15%3A20%3A43+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=0a419aa4-7717-4950-82e5-d20dcbc03adc&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=3&crTime=1785881677296&geolocation=BR%3BES&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1796408443	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	TRUE	1820168441	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKeA8NoRuy7TClTIc_npZ0y6hDOFREnUbmCtcixVs_b1kekZuAD0ShwV0cVUKg4i-_-GUCWp-98D1obkxzrdnE5gigZd2OL6zg76y176YxAfVYXc4IyXKFwRcungHE9Di4ToGCxo6wuD8V9A4Y4eVUmpn_909HsWik0XlvGmaMwpg9DHOtPvUvLul4I5XgyqEP_NZUR-VWjGs_pIaDn4B5TgFtkCbvxq_AHu1FSGeulT78OnPQKiE1SmPBi8LxnfTOGl3ao6GKEZf-_9sltoSwRA7efIiAxL9jwfCQmDuAXF0-_pA_87CGYJPEQw77J4c-gNxfJ2Uh2Hp_sEK4W5KBivUDAxo-8W6XipdIbGncrfcZ5xqDDg4KcHjuOmTbRAcGGw0KrO2JJ-2bkWevj8QiECl25lNwTCB29EgIH_gY-4NgVdXvvdypCVVWdHN-dnPv7LTNy17odNjQ_hNCm5-mDzyM2QW8vZtTtuNPuwFTD86v56yMsSC20cD8oSbMFPQZN_z3U6JoIRXmMbtYw2rPJZBAh0iBQda-LtqZqeZUE2xgGIg4KDN9m5asvqfHT0cwUUg..%26pg%3DL6F44WBXGRCYBIFDY62N5LDZKM%26ch%3DAQEAEAABABT9PEGnqUsywSQCxLF_xwrl7Tklo_Y0p0g.

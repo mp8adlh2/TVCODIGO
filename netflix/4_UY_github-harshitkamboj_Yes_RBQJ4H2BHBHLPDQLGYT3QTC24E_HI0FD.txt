@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: UY
+Plan: Premium
+Next Billing: October 8, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 21,99 USD
+Extra Member: Yes
+Profiles (5): Sabriinita, Sopita, Eduardito, facundito, M
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1790824072	nfvdid	BQFmAAEBEGPCpI5k_olzUg47fgcF6UZgxDqW1pm155PTU_Dhrldu9Nn9aznAaY7MUusB4P8raL3y8OsUxqCabdhCPhWFjlp05oF2Yu3Y7rWhc1P3o51-QfPXCI24mT7Njh92KHqEvy6_P1n6eDdVCyQBmL3TTcoj
+.netflix.com	FALSE	/	TRUE	1803153986	NetflixId	ct%3DBgjHlOvcAxKHBAB3WV4pTk6fIdzrWJ1mokVHhxKBSFhpcsR9Kryf19ByQzZAyBeiuje_vAUIaxVkzFf6aGyrEZH-_anvLcnMsD18wAKjc2wY_UL-_LzExOBsS_JCGPeKcxVvOasWp9XwjKo287pzujOGhXuEKTOFEdgBfzR9h-oFMMbc8R73RuveDfszA3wDs3I6R_ZRkEogN7HXQn8sGgYHYvY-9xbInQh_4VzEPNR4awWLnSUy9MbjGC4XH_QIoRT-k3svHXxjqsW_ubBSgj_Tf3RD6ZB7zDSQL3lSMCN9YTO3XhzLOJHuZPq5tPH2iadRYM8H_IK1V5yBz0CeEUm9ylu3XpCBEoY-BI2515tqPNyBM9XKcUNsqQ2TMqtpucRE7bIB4wwsdCc8t2Y3NKCQQP8j7XHm-wcxfUjm_kZ0te3upTruL_McB5P--XBVBi3oIfi7IXi57u9eXCkR2r6lRwVt9xSUwfxFS4Rh2XbsqgIkoCoO-xiMWwzl4zmzmJXcoNPGIK2ZGBwBz_WWs13Sv38o3vvUwn7dryVhAJl9hPhHBGuQFyVb8PEVgK6zh55kwYzh-23bkHvERj08_Q1-i-JNQSGTZidilKMUM3UbF3Q1HZRn_bZIwMGost8hnGBD7ttKIMdx1WfkhwsZTy2smQhuX9mZzJBeT1p7q7i1p8m86WyIKSI45XQ6O2_gPhgGIg4KDGz9kbRd-B81AtAczg..%26ch%3DAQEAEAABABTqx7rHPJyQV4hJzGopYibSS-c1F1e-YCM.%26v%3D3%26pg%3DRBQJ4H2BHBHLPDQLGYT3QTC24E
+.netflix.com	FALSE	/	TRUE	1803153986	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRRO7Kw4JEVz5Qr8LsPpFbEtcupWiRNNdA.%26dt%3D1787601983405
+.netflix.com	FALSE	/	TRUE	1792853994	gsid	09bff2cf-fb46-46b4-bd74-7de5a9b82786
+.netflix.com	FALSE	/	FALSE	1795394478	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795394478	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795394478	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

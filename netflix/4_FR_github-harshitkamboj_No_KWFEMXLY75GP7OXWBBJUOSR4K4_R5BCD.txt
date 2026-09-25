@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: FREE_ILIAD_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Profiles (5): carine, Tracy, Amaria, exauce, Geriel
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1817074226	dsca	true
+.netflix.com	FALSE	/	FALSE	1814050224	nfvdid	BQFmAAEBEB44XRYfiYvYlgm5p1pkTbhgk1C3VmDcVio-4pyAo0l7cFuLmjWZXdDNAhtcTAVMmM4BSsIkKAkHCIe6weVF5Ie8dbO9suvusuGk5Lvmfgc4fvo5j_9nVTTNXOSbaJc4zxtooqYYYUqr3FwvGXl3SVTy
+.netflix.com	FALSE	/	FALSE	1814050259	OptanonAlertBoxClosed	2026-06-26T22:50:59.564Z
+.netflix.com	FALSE	/	TRUE	1819913596	NetflixId	ct%3DBgjHlOvcAxKGBOBfGm8ZTAPjVTZONUtv1sD9C2M1zNXsYUljo1rew0hIPVd2r3clfPqVRZhagiwTW7sqUpx41xrbz-b7jy_FMyPm5ITN2FfYsbPVfKKh25RqL1pbwZUmt8kffSlmKjp8AAw1bJS71TkrmKz3j51C8XdYbx7boNqx8ukhyD97McoQiE2_Tr3u3eCmkUXU3mRslxb5gKjGP8hsTp7DljW6rV1-5WOhs9HsB9Pe6A6BqdTNUdsnr7OUD5KqTkt1FOD1MdsMGXN2L05zDd8gd7bGMWfFTSEdcZKFmnwAb9F8nO7EzexgYGpB-ru7CGCtb1oryeHMUYHrE-gr6f-7CLCpMzkaO06YP4OyrCgkODnwxWHh5jg9-nNd-8bv-Ci3HtIjpIC2i03fHkurWLtIhOtE1aP9-0J54W4ugdv1TVn2G57keSqwbDJYrxxoOO9z5x36ZjT-rrmLorpOzUDtqJeaWfEcZrNSNQOTDar9IEyuwf_mXJoyIE3bGTSTi5R6zy__mDYsDCnPS3oxO1knG_LLnL4PeVTuZDDah9GE1yy3BK1ASFYh-CRZpR9kNBIWQUfoi-Tv4muuMe1UC-twkUj-TXH7qq1hkxx_rF0rYuv9YBypzWwSqWbcuLQNpoJ77RQCDrRATjvZEuw_p3-b45ORjxzjjFl4roE-sTxbPw1dqHcqeUIU1BAQGAYiDgoMmX-vx7ttqHNH1yna%26ch%3DAQEAEAABABSz-4A-ZoG_PozB_tZ0lMDvAJQnbB4fysg.%26v%3D3%26pg%3DKWFEMXLY75GP7OXWBBJUOSR4K4
+.netflix.com	FALSE	/	TRUE	1819913596	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRMRDI7X6LljyelmBapa5_AhTQAYSbzIfU.%26dt%3D1788377599901
+.netflix.com	FALSE	/	FALSE	1819913599	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+02+2026+21%3A33%3A19+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=854796a3-3d7e-4d89-90d4-9831189d4a00&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&fclco=&intType=1&crTime=1782514261594&geolocation=FR%3BCVL
+.netflix.com	FALSE	/	FALSE	1796153599	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796153599	netflix-sans-normal-3-loaded	true

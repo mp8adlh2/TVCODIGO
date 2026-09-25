@@ -1,0 +1,20 @@
+NETFLIX HIT :👇
+
+Country: NG
+Plan: Premium
+Next Billing: October 6, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: NGN 8.500
+Profiles (6): Kinqq????, Kinqq👑👑, PHEELY, OBA IJAYA, Nevermore, Setarvision
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1810003081	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKiA2Ep2oGbuvZP8w0r3fLPRqCeEBFpL1r6TwENS4Dw3Pf8cozPFCzfJG7SauPUupCbyaA6ujHEBg17ON7z5Ru6RZdod7lF27P5zdf7hiZT83nZ58G16-Q3dIR4nKfuPxff9CvEo8ChIayJvRwajm70-pnPBft97s4dn6pGDsCuwJkQfCx1H5-ModrbhuL3SJrY7mrEKLZuwbP0PoqzQ-27-jRuBRLKJ3fry7KKRjp96a8QplzgpisyBoYbwbBRMDcWEc3j0tiCA1wsuoU6PaIhddIU-FLqboU5FrMadEUvt7_rYlnmwAtaho7z7aO3KcJmnmv44dVTSD4aWqakXOnwCgb7wGRb99Dza_KD9Qha0rfl6IyAAiX5QlEKuh5ACPmSVdwBKE2-TAXXW4N9WYqHHBTOShLDbhQaeU2a-0YUfKHGePduF2u14MuwFCemUdQIO3MSZ_uGKHPciorDRDrSrlkq3vyYN80qIOfcRv5bngpK2kVDSyK03-LY02EpGeplb7KMbNtaDmrmTG84Ho38DJDD1BtxEuJAfneLUmvPsR1yUzQYBiIOCgxOjbUT8xUyAAutezU.%26pg%3DDOHLDYGIHRDD7MLIUD3PJBVJAQ%26ch%3DAQEAEAABABRXdR2HdMbniIwRgTaX7vyygi-BY4r33MM.
+.netflix.com	TRUE	/	FALSE	1810003084	OptanonConsent	isGpcEnabled=0&datestamp=Sun+May+10+2026+19%3A38%3A04+GMT-0700+(GMT-07%3A00)&version=202604.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=ab9b834c-8646-42e7-81b5-a801989c51b8&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=https%3A%2F%2Fwww.netflix.com%2Fbrowse&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1778467081012
+.netflix.com	TRUE	/	TRUE	1810003081	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTfNfwB9DF_ifkmX_cunBkQDbUKA_IUChY.%26dt%3D1778467082172
+.netflix.com	TRUE	/	FALSE	1810003070	nfvdid	BQFmAAEBEIul_3R2zc4rYX_eJASA3mBgCAk8coxMFh8SDK-a7YFwqrj7c62DGJVqCxn7NV4zZNDBt-_zZp-KBhqU9CXzEC54yc_9liZpx1P3cvyv-qXmLRqCoyumaaCRO6CYmpHtm-xnKfljeCshml-dk1Q-Xm4A

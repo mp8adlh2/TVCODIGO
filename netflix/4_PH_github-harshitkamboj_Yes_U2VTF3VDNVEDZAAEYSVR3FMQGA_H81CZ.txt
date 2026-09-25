@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: PH
+Plan: Premium
+Next Billing: September 30, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: PHP 619
+Extra Member: Yes
+Profiles (4): Tina, Matthew, Marcus, M A G N U M
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1809497549	nfvdid	BQFmAAEBEEq3r4VHxYVFNXSVTsqdTYxgiTu64xncDzNCAP2SkDtnFNwj28w3oujSdnRYpT766OhfdHOOVYjDVE2tDTYNGwxx_DWMPwA6609KI4ygkoMs0jPW0Ag87AJuPuZCXd7H2oWbE1vuhmzg7PlBDL_26bWg
+.netflix.com	FALSE	/	TRUE	1820729635	NetflixId	ct%3DBgjHlOvcAxKCBPVRx51a-VibOPJlhLwMt6K6IXrzNdLg9-niSq2wShbCTmA5nW2LzzffVpk-FA3eh_V83-3OsNyujsie0fkg0XYxA2rpvhiEpN5AvBLme0eeXA_aAnDZkiRGOLNCrVbZvsWdiQQp2zqxMJNxkiADeZLo3_jTxeLsRKwUnuANdsAF1OmdzoNKlgpn6nuEuib_NXt7YT5me1a7m1_W5fVEqCIF8mBVn0uDRcLCQ2SZhORelf7DCSA_di8xHa2KwNJNB-jIWe5XYf91PPJ_x1BIlhFuxdoQpGEpefGT_PS0NzdTA1oOs6UDS5IVHIaKRpJCJEXgZAvAZU77uZsCqIpsQUGmx9VL0TFExRMPmpmWXMrKst-AHUgCfjXZql0csyAOs13LLJKICEpvEL4B-xA87sZ3VK5Bh5sipn1B9jD48ATV31axf_1N6_y8CK5z1TL9blaaYdN8CqJPVrLxT69A-Cl2fekeSm8K-Z10woprqPyT8QkcwAZKt4PUx28PdTpc6rojWJ_RlQDH4YAa9AfRHo5UnVt8JeB23zw_vHAj8U71-VpmaITU2_lbU4z2Xmk4TsrrArdaG-GL9zZPj2Zji8mhT26kUE7UxYog1nOfmw-mLqFSRDYNKc7KSiQ6M8fu7vky0x-ClFghc5pcTLI6qbHqBdqZCCJZ7tf1opGns3X-I1UYBiIOCgzEQiZa9InNPvFwZsg.%26ch%3DAQEAEAABABRUai9pqC_9dekmOfXij3TM_R4zr6nqgNY.%26v%3D3%26pg%3DU2VTF3VDNVEDZAAEYSVR3FMQGA
+.netflix.com	FALSE	/	TRUE	1820729635	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRvqYlMMk9m5KspAYp_ZWkh68X6NDJNONA.%26dt%3D1789193636209
+.netflix.com	FALSE	/	TRUE	1792853993	gsid	77c30a66-207e-4567-b664-bca8229da1b3
+.netflix.com	FALSE	/	FALSE	1820729639	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+12+2026+14%3A13%3A59+GMT%2B0800+(Philippine+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=541ba872-b548-4325-bb59-021cc8ef6fe8&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1777961549573&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796969647	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796969647	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796969647	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	FALSE	1792853993	profilesNewSession	0

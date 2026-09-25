@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: October 24, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: R$59.90
+Extra Member: Yes
+Profiles (5): Any, GUEST, Mayra, Kids, jk
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1803127071	NetflixId	v%3D3%26ct%3DBgjHlOvcAxL7Am9EEqzyjCZhkneFeJ9DjbLzTQ3B8XJ573jx_mDGnUElG8IC7Pe29ICBz6ONoplxZUZrS0KmdvOm4BY_tVlOwWxjcRR9iJYtHQrLi7hjDFGSmK9OYtK8g0Ccq2_zieSV369OVSGZZpJ5nioeqIVqWvE24gMRuZkxpyjsUfuIM8XpawP9a6Xh7IbM97rkO7z-TZOdQyoUWsJ-YHweUFVijqdeNwsO-fl-bjYdBnZg9dupUBbdIUXBm_23zZQ2UBlawXkD5IVg1Ncpd0BMvj_L7r6H8KIXxA9VTFrSztolMLh-R188aWs8VFTQEcba9pUwE-zMLdKbOtE87xCOe-5QkKdCqYJwl1HstJamqANWrIMalm-Ap86pJ3dSy0eG4Mla5PNVWq2ZOloknBQ5jXyhNGSczVH0gaSluPi6fKWhdXnf1zEP3RE4TTTAFswExKohGH87Et4LmgATGVG3XqpAPsoLTOkeAHtEbv7wQeb_LUNQJK8S4TgPveMym0QYBiIOCgzNOQbP_fcBD9KyBhU.%26pg%3DE53BZY5FPBBJLKLUQMLXNWVHRE%26ch%3DAQEAEAABABS4yxLd165dljARV1-_A9u-oE8o0-5jyp0.
+.netflix.com	FALSE	/	FALSE	1803127073	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Feb+20+2026+07%3A37%3A53+GMT-0500+(Eastern+Standard+Time)&version=202601.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=500ffeea-8215-4154-ab01-eaee65ad0875&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1771591012687&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1803127071	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSKHq-7m_p7im2wBaKr5O2z9f7fpDjcNnE.%26dt%3D1771591071994
+.netflix.com	FALSE	/	TRUE	1806151066	dsca	true
+.netflix.com	FALSE	/	FALSE	1803127066	nfvdid	BQFmAAEBEHZJkcGb3HKiO4lH41Ig0dpgKFM6hvDnqp50up3iIeo82hlt9-ZPgxYh0wlDesmeRQvcp7u8nn2hIgCGoUzjlfN2YMnwk22oPwZV91njXGmZBh1JpwicsRVujuPvq-o1MW3XuQQLxOwdz8qEvtDsroaP

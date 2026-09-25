@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: FREE_ILIAD_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Profiles (3): Richard, OMAR, Gui
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1801384772	OptanonAlertBoxClosed	2026-01-31T08:39:32.109Z
+.netflix.com	FALSE	/	TRUE	1805586002	dsca	true
+.netflix.com	FALSE	/	FALSE	1802562002	nfvdid	BQFmAAEBEMQz3GO9F6NJvwmcmDx2VKVg5AcDwdb97-VUS6gmGBhMP1A8eYB63i_L54hGcKlt4TH4HgJTQ_wA5UH_k6DAMGpAbMUP_yFGh0Aem8xKJutz9KJtcWnfNBfYV83F4a72mLJWBxh0yY8ZThskl9cu6_dy
+.netflix.com	FALSE	/	TRUE	1809630316	NetflixId	ct%3DBgjHlOvcAxKQBPPrI4v9b_wvTWgVDWda62yOXbHiV_Sv-CMWVGwlFTgFAJjXQdiV5PJEHJ2Q-eQHU2sWR3sTo9CED8LYsyk-LKdJFvPTGRTi5n_TSRP0_ZT128-LipjW8oL_DwHuSuMbE7liADTS_H902QKzowoXMgcq2E4F5G7l8raP1LWr0pGAZSfOwS8YTQgbO5MJvJYDDGFEOBIHxKUg4AwTVdn-5sKBOYy_4vcBG_JdhvNN0dU60knfUfzizaMswemGzVXA_gopptPcfLuhtZMYsFiyFzjQNcpRtMV6QHrUMj1q1ModekIL5mT6hSaI8Fx6sJyuPUmRfqWiYi63nuzjOxIeoA0DLVmH1iF0y8tKJFYfCen-g8x7Zx9atjLYQ8H7ZM3qgjzqB0vcT_2FU58Dfvk8PSyG6LYxImdgs1ZzK1o6vOxQ2cw8OuY-BiII3ou7P2-nExTfAQwE-XWGRdMr92N2xhJQOr0wtcnLhlhYV_leLafLwNhgCDtFqU3VTpmqNcBTR7GNdyztvsgHZFCBFJ_tAkoLDbnTaxVRf8165kwfDyCExlxCkjz7xHHjUvffXEktaksne8biUaiQ-vJPPUPCnYcwkDnFo3lmLobforOsBIQjIE1ZzdXXgaiQcdo77NgsmQVxgCtmJY7kKibVxGWVhnvwE6ffxdQlbh_mjtp3Wj4gm3C2PRWu5D1vAnX0shylCRgGIg4KDH5Uvr-xAKDQ1gBI0w..%26ch%3DAQEAEAABABRk_bBz3V4q4AeluWVDiv0QFjLw9B8NOPA.%26v%3D3%26pg%3DPV3H4G7Y7NFSLOZM2JC5U6LHX4
+.netflix.com	FALSE	/	FALSE	1809630317	OptanonConsent	isGpcEnabled=0&datestamp=Wed+May+06+2026+21%3A05%3A17+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202604.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=65f3f1c2-9591-45d5-964b-681ac78d384f&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&AwaitingReconsent=false&intType=3&crTime=1769848772499&geolocation=FR%3BNAQ&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	TRUE	1809630316	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQCPj5VYSn13053eYfKAnIwcdBUxwzu7vs.%26dt%3D1778094316191

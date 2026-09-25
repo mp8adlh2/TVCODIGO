@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: October 5, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379,99 TL
+Profiles (5): mintu, chaa, Drer, Mm, Gg
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1820787024	dsca	true
+.netflix.com	TRUE	/	TRUE	1817812014	NetflixId	ct%3DBgjHlOvcAxKyA9Q_JylFbOn_ClVCpiNuGkziuCRTTxR7hPpn7Azg0rFSf92e2ncH85xyqTzc45K3trXH_YSMSglfSjCWT1mucFlhrqE8-R20i6nQ4O8xQ_Z8Qyr6IIOyWXBmXMFhQzTm9-DPY_iXzecSK4kb9R7K5FoL3WLFVC2YiLitpir9UdsNBLv-JiiE9woQ97ZqQjML3S8bWyzSxwf_hR8O2UHP_6y_2HSoDGlimpJ0pziwEy5fly7t-19peOhdMT99Pk8ZR3UKxwsF7drEqec_cwjc1fdDZwQb4BKHdGgeEEW3Y6yq3IbTudAb3hHwSiC4nB-Gab-DFsne9ckQGXyVeiFRZ3tJFy_S9la2VMMK9dl2GZyDNqxwadBP56uYNxF3vlYmEPDPxiyUZoT-F047QfWdR3HTULaoSEFxcXt05cl0t3LUqiFT4Dof6EHRcfYZ3tGkdQYZ5YGvkP06iGNYRForxy1Vq81O6BX4zq_EuDWfBUrZvi5-Ahe7Bca6W7BcFUltMT8-dCyekUrYjQVICBnUPpfZHbpHXCS4EcMbSgRWtLsBrZ9-nEFsLusxi0wZ-Z3T0F1_GAYiDgoM-sfsrbyVynO23mv8%26ch%3DAQEAEAABABTrA45bcuyGyCO0YERvc7eOKtveQLhlwAc.%26v%3D3%26pg%3D6SZTJKZS65BXLFOVYTTS45VU4M
+.netflix.com	TRUE	/	FALSE	1794052016	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794052016	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1817763022	nfvdid	BQFmAAEBEAqr3anwh_gSho0uRh93NnlgNzq3QWieeMc8wDi3BdlCpfkovkjbbIasus4o_HGuOY4VQh86mmkYOcfwU2M1vNdbbfhZKKnbimBzEyNfKiqly4HailXS0yP6bcrRA_NuM1rcKGqtVaXVCrFaFl7vDf8w
+.netflix.com	TRUE	/	FALSE	1817762993	OptanonAlertBoxClosed	2026-08-08T22:09:53.619Z
+.netflix.com	TRUE	/	FALSE	1817812017	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Aug+09+2026+14%3A46%3A57+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=4fa6593d-7cd3-4b61-9c63-1ea20fe11670&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&fclco=&intType=1&crTime=1786226994076&geolocation=TR%3B34
+.netflix.com	TRUE	/	FALSE	1794052016	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	TRUE	/	TRUE	1817812014	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQK0D-aoGDtaJqE2jM8cfP-wRbAeoK6AGo.%26dt%3D1786276013805

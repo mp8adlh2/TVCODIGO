@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: TW
+Plan: Premium
+Next Billing: September 28, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: $460
+Extra Member: Yes
+Profiles (5): 仔妮, 周慧玲, 仔嘉哇, 媗媗, Temmy
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1814146670	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKjA7BC3_biCnWXByw65ufXKd56SVZZVNI8kd-9kxxCBjkFOs6bi2T4Gf2Fc_pGRwudoVrJnmOo4V0hObF2yYcZif6DC_fOuUnJNOzIIFiIFu8VBCwz9uisKzM7Dm6PjO5Xc7_u7ECOMcuNMKAW7JYwry8IBLkL5CRv8nrY8AOO5G2Xp2VX8PcYtLBp0UNE0puqFVRTXSOOpN1dpFxNylTdFBWWvCpcmNHDyvJP9loLyGYqbO4hXS_H6ofk9zrJqOl8ee0FBDHJ5VjAIIhajzx5NdCO49sDwHCyM_oDcIp3cVSz9BLS5DDsW_lzK4I4EXBvLOgkIaERrcVZHugXYauLYByYtk2TPG1qIIO7dSnH-Yo_WpMtoAbaJtGrJUT4Gy8vLarDXkAmp_9SLXkPbhHqRAEp-QF8-eSVDYV_gijsGbDMFvzS_kM9MdzuykUOLq661lkut7DlZWZFpSrZJIZ0nzM-1gY1pe8ei7GHaugyE1TDIXYJbClgZulUqEcclYmR-zd7eyEmD5e-XoDfylngqwwR0ojAqYFXk_E1_qoZClbwYoKzGAYiDgoM4CvpWCF8AwMoNbbV%26pg%3DHKJRNBBM4ZERNNVE4VK2SIBNYY%26ch%3DAQEAEAABABSJ6pVeUmcu3ySpldnugCdBTtkjCR9uwis.
+.netflix.com	FALSE	/	TRUE	1814146670	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRKeUdzrfrABUwjFExElYdXjd2_-83GrOk.%26dt%3D1782610662396
+.netflix.com	FALSE	/	FALSE	1814146670	nfvdid	BQFmAAEBECIqzSl2EcRjhIb9HHGW5hNgaNGYrhv42cZ_BBcsN1ZBYJ0ozb9i-VDsoz5eZgbStY5mwMtWuN8PYxL1bQ_Rv8OOEKiymR9USMTmHP61hM1lhfE-Gw0gfTncZ1fVROLxrEouZwMHsDmoUehC90_pXLLE
+.netflix.com	FALSE	/	FALSE	1814146820	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Jun+28+2026+09%3A40%3A20+GMT%2B0800+(%E5%8F%B0%E5%8C%97%E6%A8%99%E6%BA%96%E6%99%82%E9%96%93)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=8b694fd8-d150-4e02-9f8c-35854c7cb8b0&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1782610670378&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1790386820	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1790386820	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1790386820	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

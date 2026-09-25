@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: October 9, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379.99 TL
+Profiles (4): Svastika, Bqean, Smokoso, Çocuk
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1795448642	OptanonAlertBoxClosed	2025-11-23T15:44:02.118Z
+.netflix.com	TRUE	/	FALSE	1795448649	nfvdid	BQFmAAEBECvPSglD5J4yFjz3u9K_fv9g_NYWoryLhqfERtFrc_MS46ZESCHVV5gNdW78FwqZ98eq0cChl2XDjyR7I07TiNLwpbvkkHK5JwB6fy2QSpXxRTm9I3NGEpr04NuzYJpMC6nJLc0ZBBlqkegpes1-wO0W
+.netflix.com	TRUE	/	TRUE	1815870247	NetflixId	ct%3DBgjHlOvcAxKCBPxRy5VPkD3Efin34CzWBURZihHsrM4mnGYxz21ou_d_AzWiBgMN6ZCg4pH1ZBpDsZ-KT4u7UBvkkLAdDtxxAvqSawJa2t5jl9BeX8UPBdaV1U9EoeMpv9MOKoV0dc6UFDeXx3r0TC9gwWYAj7pW-mpSOER-UiylAkW8wQp7-OJPHxc_2sRoQvB8WcqGfHVdBx7B6KShdtRAWSnB9cnJOUB2vutieqJbO68Sw24V3CSwvXWCK8PXpj8IVvAVFsNekwtYrazV1xw6CqtuKeAp1159FTIbDFhq7ClYKJhy6GMtINDQjaZsxJajwrbfibA1qUUShVlhMl8l20rL62ZvZBCrasKiCrb1Nr2H4VA_9jI9L9LWzUhYhbxTBBFQoVbXZPbT0bb0aMrL6-P1zH96iYkI4lmnMeTRno3SNYqxuLGzNrQmUCtHCiY8_VzmY8j-a6PVOs4f_bnZRpPum5FC1Xp2AoNmii3Y3deIMTXWhKPavAR3sYauNAD6VoOvg5ZNqAkrWwtKUZYh4P47a61RENAOhfVohnkII3u_sFd7NcMpEDuVV9TIXAgy3JIPmA98E5_47Lq8_pZlnBVY1WpR9odasrGS3lRdw0iEECUDqHQ9L92L11RDROuV-0kxepESKgZ2rRgQ8qIRhKPNR7Hw7s0FBJxrE1PSqQyrn7zYsWAPz34YBiIOCgxpUBWVKVwxoESg_lg.%26ch%3DAQEAEAABABQE_RGrFVMsVnOES2jPPfrZ3klRO_Ij60s.%26v%3D3%26pg%3DFXFN2XOFZVHVBJIPTPYILPRFDM
+.netflix.com	TRUE	/	FALSE	1815870251	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Jul+18+2026+03%3A24%3A11+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=8c4b66de-b8e0-4491-99fa-952a909af5ed&interactionCount=3&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=3&geolocation=TR%3B34&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1815870247	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSw-0oUClZlzukNfUdnzaz36dcM_HxHJVs.%26dt%3D1784334255767
+.netflix.com	TRUE	/	TRUE	1792853992	gsid	0a31e67b-b9ea-4b48-836a-bf7df633a82c
+.netflix.com	TRUE	/	FALSE	1792110251	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792110251	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792110251	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	FALSE	1792853992	profilesNewSession	0

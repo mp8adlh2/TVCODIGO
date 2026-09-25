@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: NET_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (5): 1, 4, 2, 3, 5
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1814477407	OptanonAlertBoxClosed	2026-07-01T21:30:07.938Z
+.netflix.com	FALSE	/	FALSE	1819686082	nfvdid	BQFmAAEBELypLqo18SV28qKg4fa8doxgbv069_h95ABgQigAe9wTdxWDUJX2keBSGz9bOcWUVTFesZGs0FSOGPawDPbX2Xf8h7HLlytF297rZgPyaKM0nkV-3xxpaWpXFEoZo6HRMtQdVmVru2FZU3eUVGJDhsbv
+.netflix.com	FALSE	/	FALSE	1820281853	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+06+2026+22%3A50%3A53+GMT-0300+(Hora+padr%C3%A3o+de+Bras%C3%ADlia)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=995a9198-fd47-407d-b6d0-1aa8c9ddc07e&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=3&crTime=1782941408479&geolocation=BR%3BBA&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1823305852	dsca	true
+.netflix.com	FALSE	/	FALSE	1796521846	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796521846	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796521846	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1820339686	NetflixId	ct%3DBgjHlOvcAxKrA94nStd0IEok8QMtGl_-Go9w_-eVuO5ZdjV4c1AckdNd8lex1NPSy2Qzls9f5tEs-EAsrdPxmLVjhhnGdkUftqNDYz5PKqTot8LHJgSxUcxUmbBemU_pz1JnaVwbQZX5x3R8KHvY3qdvnp8MYdgyBON-RlJlpySF78dmL8b9jB3Gr4lKAPhmY2Ag7m3_WfgMjzcvSxH4QLKqas3YRGD6Vp1mr9Es02B7uCGqX-8msB3YPJr6rX4DGcgpeOoAAiL1Z57_yfCef6f5HhrzFGoKy50PPqKS-jvLXkDZk085mN3Nr_OeY6hmmYUbDC7conpF_aCikg03miylrYt9zMOWuaHK4lKEE8n_xqjZ27CL6U42o0lygdRjHlHkUwC0OnpOXBJw3wXHWvW3J86MOmucWcpvArh8srRFloyTFZuangd3zZrHgDgELfeb_PVWk0Y6awTEsIrlyE8ZnSTi1S9g_gm09WXfJtmk9pR-eCIBwqMjKq9bMCb28AGw07ozWsrLoRBYDv6jIQiPyx_dY1uVse4lYQtiBGAJ6paYHy6bBo1e9JZf4NC-KeFBbE0YBiIOCgwpkVP_bha89FR4bVg.%26ch%3DAQEAEAABABRpYwhJzKGH96OctP-mAWEcCHmx_SGmgTs.%26v%3D3%26pg%3DAQLKCTKNB5G7PNMRHFGCNGCZXY
+.netflix.com	FALSE	/	TRUE	1820339686	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSUVN8rW4ROpg3wZOO2B-xPUWP3bG_PXA8.%26dt%3D1788803685668
+.netflix.com	FALSE	/	TRUE	1823392365	nap	BgiJv-vcAxJJHX6SXBxxL1GVALGyFjDgghf0tdk1PvbBfZCLz-PTnIRct461Jf1XJ-jAg_njBI3KJBUKGvSzFP_L_UC6ZvLBKg2Mf6SuDVl2FRgGIg4KDFdE_t3GdtxJAj68Bw..
+.netflix.com	FALSE	/	FALSE	1792853992	profilesNewSession	0

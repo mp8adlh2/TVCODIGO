@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: October 5, 2026
+Payment: UPI
+Quality: UHD
+Streams: 4
+Price: ‏649 ₹
+Profiles (5): Sheela, Rathish, Varsha, Kernon, Fiva
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1814446070	nfvdid	BQFmAAEBEJ768h8HVsInMPp7JC18rn1grxl96_m1MMGMT6vwlqEBNDmZcv_trA6uvr5572UGDTPO8-aOGPQAViF19DdOH6r784xWECINEM48-L5qQqy3V6URivynSxgQSOKBcIHcfI5NDhBNTS_waOwO6zrP_1ZH
+.netflix.com	TRUE	/	TRUE	1815761955	NetflixId	ct%3DBgjHlOvcAxL9A420toc0EYOa4KlE1Y5WRCturQBPY9FgN3Xad-Aw8oYxf5S0L4M0MeYi8E_FZEaDFns-aoWS6WAU0w9MqSsNvlg0V9UQSiFPrUzZ1kpFgqIFo6Qdiq49dnp2eY9i3yZxuvVDXkbOm6chyqpMCF4-CZmvdnj8JzjUyg1XxQflzvTxHqJh9fYMG2hVZZIbyEjBaJj6nMrkYo9THl9IxDnSbhT3lAX6xAdMVGaq5wuVbjmmFN4ulGC-EuO9zEvGc1akKz7oB0wEHN7QO-RoFm0mK1UMaMEz14Zdtfulf6-fHzKg9Ffm8XKtT2ksNqN6t1EENm-FmhTe9pT8C_UbrdMgLCWTkfC8a340Qxu89xUbjtGNoxO4H5M7bxqTMK40tOES2EbcNLqNEtB7H6LU-zZFmb2q-VNU015hflfvpM4AHk30-HYNGXiKaHcdXa_gAyAUGsYkb7KasbGyN3J9M6VLxMYfJMyZtegPXrxwtKhlr_2daCYKFsXbKh83eo8OVB5LB5o1sEtGLqSxy0HYkBTmS7r7fLA6U1_BYjBlDZv-O07vSigP-9dUYbhg0qNGS29KDkSRAt6UAEchol0oJvw8EULO5P-wm6ZMYWTwjC0tzZDZ_sXp_Hk-axTjvQlbt2-_wAoroQ5DGaP-sjyx9p7KOTtJF4FAi0nmFjMVRZygGAYiDgoMDYmmKyFZwCaxQf3P%26ch%3DAQEAEAABABQA-VrRU72yPQCSs2tfmQGlalknaZ2FUL0.%26v%3D3%26pg%3DVJZ2FU5QI5GPNMLFXENCKKDUCQ
+.netflix.com	TRUE	/	FALSE	1815761958	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Jul+16+2026+23%3A49%3A18+GMT%2B0530+(India+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=59576654-0d8a-4910-bfe1-e8206e351487&interactionCount=0&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1815761955	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSKxLl5Z7YJ4UVYMdoT8QuUWVbGE-9FTVE.%26dt%3D1784225957137
+.netflix.com	TRUE	/	TRUE	1792853991	gsid	13f9fd16-c7f0-466b-98c6-3911106db09a
+.netflix.com	TRUE	/	FALSE	1792001957	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792001957	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792001957	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	FALSE	1792853991	profilesNewSession	0

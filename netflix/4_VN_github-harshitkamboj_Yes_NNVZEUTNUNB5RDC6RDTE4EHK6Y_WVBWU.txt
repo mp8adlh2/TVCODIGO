@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: VN
+Plan: Premium
+Next Billing: September 30, 2026
+Payment: MOBILE_WALLET
+Quality: UHD
+Streams: 4
+Price: ‏273,000 ₫
+Extra Member: Yes
+Profiles (5): thuyngoc3108, Ridha, yhwach, V, Trẻ em
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1792853992	nfvdid	BQFmAAEBEPnq1z0ed4EZDwbFB8e_Lu5gIqUboxyaB1BtSnaAEsuMF9-qOEOUP-JVrOH-lOqvuL2Gf1dYHXr97FUxuftil2HDJGjsbfujerBh43AF3TNAJlaJHgwma8Owk38E0gscRei5bD4sUthTmvCUt8-gYXf-
+.netflix.com	TRUE	/	FALSE	1792853992	NetflixId	ct%3DBgjHlOvcAxKPBEQZhjz1s41984Cj1-B9i70G1DTLd1m4r5Dza8QEVBGa1agqzc7Jk-lenqxWIW3B1HrYxO_0nwGpJyjNroUHQMqBtkwModCTDzyBOyfOp4l4scoCozvTFJlXztI2J5aeZwXr4HuFrYTTGSBYatiy3GOzI8v-kjCoJOOCaGeTiBnRBe_fgfHrUj-Mk4XHtGnKaHYI5mou2PnXts5UtlBHMy_B1q-kJwSLTuj4IOF9uYD-55cmO1w3acMQvQMH_euyvYPyoQFwuzHjDKzmJQpm6cE8S4JL1fUnWHKcM41nLyEplCzQ_rwDIcEVtePcwi9llSZf0MQe9Lwjhp4nXXHZs7e1C5ExfrON_bVfMXEZhKmj1VXjTP74Xg4DDGSgM-zVc-_sOnGJSktM31eyGmGk5Mh6WjK6FzB9aDzS0wHe7yMb2V4fP3Y1vZ02Gg9If765H0s0GGsiNeTlHIBhKfrugqXg4Lnrc84lfa-F008GCU1noZhQUxtkoA-ugbMWmUrdQoXZEbPdBqyZt3_J650YS33StmBLqB5V9AJjd-DihQTSdSTzGyeLCGzu_nd2H3RTZPp5B_LGeWWgI51VQMVS9Z7WyRvr_ienI04Zp9Tha4cTxVQahSYLF_RPXA3POlsbpqtDnb0GKCL2fpgUqcgok97n0OfjzYSk7nVNOsHO9dBd5dT8qW8oAvJOedu0DIdZGAYiDgoMr-FFudgM3_DShLxC%26ch%3DAQEAEAABABTr7aAqV4PPiBV5qlXZycitRJHGUime_Is.%26v%3D3%26pg%3DNNVZEUTNUNB5RDC6RDTE4EHK6Y
+.netflix.com	TRUE	/	FALSE	1792853992	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSgoONw2Elt18128CTWal7YgqLMMLRVqFo.%26dt%3D1774150363697
+.netflix.com	TRUE	/	FALSE	1792853992	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Mar+22+2026+10%3A47%3A20+GMT%2B0700+(Indochina+Time)&version=202601.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=ff7b34b2-a1b0-4ad3-b6ca-fc4d33379618&interactionCount=0&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1792853992	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792853992	netflix-sans-normal-3-loaded	true

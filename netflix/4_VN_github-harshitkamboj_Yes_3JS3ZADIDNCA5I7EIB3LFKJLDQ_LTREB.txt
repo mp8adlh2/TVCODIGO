@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: VN
+Plan: Premium
+Next Billing: October 4, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 273.000 ₫
+Extra Member: Yes
+Profiles (5): DaF, NAZIM, DafD, Aa, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1802010205	nfvdid	BQFmAAEBEEnyqATvFDYPNRTDj7-06E5gRY5IJKH_Elzsuh33JksBQPmJKt5NfFk0MNvOLW3xmQJ2lQF364siysVzrl6oeIei4GNzW1fT8eJVvbkbgylEXrA9Y6YogG0dsqT0Mp3OF28aznHK4IRJvrOMv9-WVZsm
+.netflix.com	TRUE	/	TRUE	1815927200	NetflixId	ct%3DBgjHlOvcAxKQBCoHJ5HxtuY2zX3ayN7EcJolGrv3L3vuzEohtipgd8qNDVyCv-cKUt1O77cSh24fRTeZYPU0zTgdl1DmGdRZc1x24Qansy35G2MA_Cg_DLSOEhNSQS3J4VtLzXQ95QJIsrRkBdmdcygd7fqzUm_mf0DqIYOR37szt4WlSlyLzqXdBmxH_OD_rmTdK7EWSs5scYN332UHyKpwzFDxDMVJ7VpTFb3jQQlh-4wyWSy_KZHKKsJ_yoIr-X_z12UEAcqEXLxfHfAAKQykVg622kRnCHTMqqrdPnFadFYuckQH9Ou56UlE3rtzERZnajZrgZBkcq95jOu4bm_GEqVaFaF_lUp4qw48GV6UciXvb4fY92PgD6t6xOa1o2gWNI7r24HqJ3mFFD9lvpA40_ktZA5lLblKoaxCJsygkKdGGXsxjjAVwQ7p-OklqtaSoFfSQP5-W4vvRnkSt2eGxQaa6WhdoZiY_DywXR1VbTTHr-MKPquPhgBzoD0_v_48-g6rgaZDpvixjpdpUpqOwMt3y4ZDA6sH7dpFT68yNXEkdTDIf9E0WjWgYY-Hhc-OEwNi2bxOdTkWbs5FcEXHpqPk3fjtbTJcMLuu45sBWhuOQKRO6LDFsaI5_7Eq3i0pJ7gvAMcIUL2otB7bwABxkpQCbY5FX4K15B14q9Ius9sMa1F7cgg46K_BjLfyc3rCtdXFhZXWzxgGIg4KDLprZWAKW1RqGm5k2g..%26ch%3DAQEAEAABABQMxd_aj9rN6bWrzi_LuPZWlQwHup8woZY.%26v%3D3%26pg%3D3JS3ZADIDNCA5I7EIB3LFKJLDQ
+.netflix.com	TRUE	/	TRUE	1815927200	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTWW3K84V4C797tKQyDB4wRknvNDG0bpvY.%26dt%3D1784391199128
+.netflix.com	TRUE	/	TRUE	1792763754	gsid	b81f1321-b7b1-42f5-80cb-49db06238198
+.netflix.com	TRUE	/	FALSE	1815966760	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Jul+19+2026+10%3A12%3A40+GMT%2B0700+(Indochina+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=0dfb0488-707a-40cd-9dc3-384dbe64d9e7&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1770474205227&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	FALSE	1792206760	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792206760	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792206760	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	TRUE	/	FALSE	1792763754	profilesNewSession	0

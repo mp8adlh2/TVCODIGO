@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: September 27, 2026
+Payment: DC
+Quality: UHD
+Streams: 4
+Price: R$ 59,90
+Extra Member: Yes
+Profiles (5): Gabriel, Clara, Maria, Adriano, Infantil
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1792940817	OptanonAlertBoxClosed	2024-05-04T13:51:13.366Z
+.netflix.com	FALSE	/	FALSE	1792940817	nfvdid	BQFmAAEBEKzqz3y3xj7DxReRFMDqaMNgiygS4idXE3P0VqtkPG8wQXPNfD6ufIVAp6kK4NSXhlc1X0ZYaMpVzMoNhh21xx6SbFYw1CeaeZTsWcPNYL1ybs7-mhsQIdzAjZ0fr4sF17lHCAbi0OALbgWcyHWzyuLv
+.netflix.com	FALSE	/	TRUE	1792940817	NetflixId	ct%3DBgjHlOvcAxKwAxvL0URKMwPeGvs39r6D_ni15g9OKuovRSqJoVFuW5DETMl1a7wflwwaCJr53rla1ARahZLzzzVsFE-yXtAUV_mORFiw6BGekXzNUyMEWFgmLYZrTD1xJjGQbs4uRT7XAykHY1bCLUsb8tBafGkv56jEJVllV43lzFUteBXY3ht8nzTg7W2AoVute9-kx0CveXv2CmfaUNyM7V3mLu21vcPvmBAUVXjx0F0U3ZuMDPmClzmdiGR5UQgG9AjNEh8P3CisOAse67w9p8ApXeIcZRIbHo7o8DLWLKGBO96zuwJ1Qhfr-Up9ct5t2aso7WQ-ZtaMZgSe38unqkENeZXGzl5J8xs4TQCNBrdFXMp_XEDPBoZDmNxPYQio3XYNsKUrtnYRIq0xYbmx_DwuXq2tklgwR-fLepKNdcAtGAeR2nSiSmjbDJ_zs-vBwQ0m9iG5_EDgQEa0Oi6E9gnWKi-EhSo-TueOZpGc8FhaJDoj0YycGs8lcZHblkIOl8xLs5OxKTFwbsIDkqTGxqICWDvM9MuqHi8ff-lxyMmQvuiYJVLFHbcdpFrqS8R2SIY3zUIf2RgGIg4KDBtE3ArcVHn7P-By_w..%26ch%3DAQEAEAABABRRQhHy4vPNvP5GnU5I74cSCWOu4n_ZSCo.%26v%3D3
+.netflix.com	FALSE	/	FALSE	1792940817	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Nov+23+2024+11%3A48%3A08+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202407.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=53705087-5b64-4611-bb65-16ffc41db594&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&geolocation=BR%3BSP
+.netflix.com	FALSE	/	TRUE	1792940817	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRBc1l2f-ACNOJeUmK0Z4DL1mJeL-Tp8p8.%26dt%3D1732373292253

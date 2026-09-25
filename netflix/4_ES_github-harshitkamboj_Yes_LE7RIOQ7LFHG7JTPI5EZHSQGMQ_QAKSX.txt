@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: ES
+Plan: Premium
+Next Billing: October 9, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: EUR 21.99
+Extra Member: Yes
+Profiles (5): jonerle, Sarah, Elli, Jaani, Ziko
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1803168312	OptanonAlertBoxClosed	2026-02-21T00:05:12.012Z
+.netflix.com	TRUE	/	FALSE	1803168308	nfvdid	BQFmAAEBELDSIv1B4VKtvgesfVeYFQpgtm8nLLQyLoRGk7MH5PT-kc5w9OM2qVuQH6M5aSo5rWm65nAF7HCeDRqoojAKULwwuHs0nCvbj6sXxybrWYbLSzZmRlq4CVwf5NO-O1oj6HUTQdkYR5-E3piJf6W004BU
+.netflix.com	TRUE	/	FALSE	1791145471	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1791145471	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1791145471	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	FALSE	1792940817	profilesNewSession	0
+.netflix.com	TRUE	/	TRUE	1792940817	gsid	1a019322-32bc-4045-874e-0ef906367e3b
+.netflix.com	TRUE	/	TRUE	1814905471	NetflixId	ct%3DBgjHlOvcAxKFBJlEgbR72GBArEiadbJNj6M6KhuB0lBPJSrdbBK34fUkwaurdIxs2URSkrFU9BenUrTcp1p-iJQp33fsFC18hoHhHfyG-LmaW46hPs_8LEMHVGr6LwYfjMztpjL1A-R3DWnvIC1nr5GG-wKWOtz6kThbghaA2BWLIeDgOCkupKBxzVkX9PSVevTUTUXB2TWfW21_6QipIL3mZKqDNr-Fl8fyhNStvyA94ooz9kp9kpmR2yXiXzdQVACoyIoRooKx7wTlBhgJx2rABvkBlwfTBvBYXzwLZ-_fn7Jmon2EcZi7QeNFBTgHWQyqRPcj9NxzxxtgEwk6FqBYJD06Hf63Kl4GbCOgRz5D6bL4bkKqDz66PKavCD0ySfvCP2DQcrLrQq4n95KlgP1L6kCQvQ9QSBtuiM-vrgnwE9fAw-kYp-GjPRdZrfHKAu2UsLUuqYMYgoVlMeNTLpjVeBGf21T_5AlhOk38nP6Dza13VMzUUFAX5xIg9M2SAzNXz6uFRQPtRs6c4kVXaw7ceeUUHM6-1j3YPn8pGVBgZ0T0V3KqDhU4GEzu0Wcp8v5srlpmfdO4BwH6uB92ldpho_yRkPoG8Sbf-rKj0JapF4Xllyso16EcZ0S6vIb_MYW1ANZL0zNqVRCXIJVKd4pD9GhTQIU5H9zUGmIBdHiDlycKA3DZWxxaoL2NV8EYBiIOCgyOf3smfOYUXbCN0Q4.%26ch%3DAQEAEAABABRE_OUj4jPIqQEbl19FXumdfrylYwHNpgM.%26v%3D3%26pg%3DLE7RIOQ7LFHG7JTPI5EZHSQGMQ
+.netflix.com	TRUE	/	FALSE	1814905472	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Jul+06+2026+22%3A24%3A32+GMT%2B0200+(Central+European+Summer+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=c3c8f523-3d6e-4ce9-937e-749ba785ffa9&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1771632312572&AwaitingReconsent=false&intType=1&geolocation=ES%3BCN&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1814905471	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABShVh3C08y-DwiZ9I-S8cucUm9rc4ncga8.%26dt%3D1783369471170

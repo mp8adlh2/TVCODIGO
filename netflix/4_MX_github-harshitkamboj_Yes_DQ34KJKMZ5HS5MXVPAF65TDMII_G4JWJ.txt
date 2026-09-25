@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: MX
+Plan: Premium
+Next Billing: September 26, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: MXN 369
+Extra Member: Yes
+Profiles (5): CasaEdi, Mama fíta, Brandon, WILVER, Mayra
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1794422039	dsca	true
+.netflix.com	FALSE	/	TRUE	1820504927	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKZAzrZPevJPbLuCDzG_Iop3XeLUKiE-Xg8kDDP3gKFw8Uwtj25B5CmBDYRYSHCydlaT9_CM7Z5SXEsdDjOD7E7mKe-7lCmmjebGd4OMdnH6HRZl_TOYS15Z2IQqRXNbbSgsHLidKxZrhHdzY1TQQoPj24J03lL3-Hewjd4hnXzZl47t9q1x4Yp3qMeNSw0lmuwss9bD9OleQHZRJ8insDNBt1dqwJQTIp0hgUkV1N9cPc6QvnxDBuHFYBVo_X5gDNfPH1XG-ek-jRagGzNS--oDyKgbcPC0YXtBF9dK--6zTvLWfHEyIaXGFLYgMFXKeudw_ek8mraIJt6tZ1WZNSuiwf2RFTz0AZQswgfkFjNBIS8cbIcVYAblPNeSq9hNPFvASxYE_wLJwum5h0ldxywQzurdrkt5etCL3J6fIfhfN8t2sCt9XdxphoLKZEgohNcXcMXgWNS8-iT5Mo0JqwdGufgo9lRyUsqaFfrf3_K6C_L07fvOsADzK_AiYJrKi_hGYCxW_7lI3DlEkAOZQXLoqTd7K9tAdaor4QYBiIOCgwV6w4R9CudpNwci08.%26pg%3DDQ34KJKMZ5HS5MXVPAF65TDMII%26ch%3DAQEAEAABABQ62gPmOajHaoqKIsaND2yCCuOUEjErwrk.
+.netflix.com	FALSE	/	FALSE	1814541915	nfvdid	BQFmAAEBEHkNf17J4zLcLiy_7vokLjhgiZOFaibkSPAtS3xDDFEmlFgVh3G-1ZnZaUYoTPwsFUSDsNiahIDtazlEqSjsahILS_BT9rPze_GPqOYuII_5u1Uf9MB5c8FbRkdsu7lNBBirEm2zbwTLVTEhOqLXsNEF
+.netflix.com	FALSE	/	FALSE	1820504933	OptanonAlertBoxClosed	2026-09-09T15:48:53.272Z
+.netflix.com	FALSE	/	FALSE	1820504935	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+09+2026+08%3A48%3A55+GMT-0700+(hora+est%C3%A1ndar+del+Pac%C3%ADfico+de+M%C3%A9xico)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=591f1a22-75ab-4ce2-9e81-019a420e7c0f&interactionCount=4&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=3&geolocation=MX%3BNAY&isDntEnabled=0&prevHadToken=0&fclco=&lastConsentTs=1788968933&crTime=1788968935658
+.netflix.com	FALSE	/	FALSE	1796744930	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1820504927	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRIUlbuNGwPKycJJ9k30uDRap4NZ8e-fjc.%26dt%3D1788968927783

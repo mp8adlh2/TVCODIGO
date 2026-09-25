@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: CP_FR_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Profiles (5): Maman, emma, Math, Lolo, Marraine
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	13440719817045020	dsca	customer
+.netflix.com	FALSE	/	FALSE	13456865782000000	OptanonAlertBoxClosed	2026-06-07T18:16:22.093Z
+.netflix.com	FALSE	/	FALSE	13460635764755456	nfvdid	BQFmAAEBED6yRkugzjAdI8GA3J9D3O1g-jJ8ySW-jj1b9aYbqQL-Zybd5YDFGMKciJ7GQNom3BQMEMVg03-2zQTD12eBpItOh1qUc6jcxiSpU-7jXW6oPw7o8oUoK7omjUGGNMGGY1kImqgkzqrP1ewbO5_HuVuU
+.netflix.com	FALSE	/	FALSE	13464539052583156	NetflixId	ct%3DBgjHlOvcAxKEBCc7TN3Xz0U1WO47W0tSX1b64dWqvNAcEZWpL0A6g4VRTqovf_u-betDQSyc2uguwYl7GKXhx52A5kB5DwLwgQwxDo2eJhEmlH3Ykhek63bTdy01kQwe5KpLwRcw2UpPO4JYbsLJMKlcdGvdEu289XK1g6gyuvIIW9197KvV43nTaZqODDo6LkN0oe3GjLCBYSzhlvFUeqGUiAVdP5uyouV8GePOY0qQgWY2WsVYQW2qZBZxPZK8pOTCVnGdlEML8n0y-9bLGwxDtG9JgUjpcSDmSMOVVTwrXcE2x_v5h14Bzg5-mySyEU5LF6gbg_ulIVcq0aHmZ3WRFlNep2IHpay7eDOSKdMqY36FUu4jNfSToXhY3X8x_15IBuGNeHybRVngQvP7MciZreizOkAJOrROL3tQ5Th7wkQnopg19SvoUEXwCxZJ15QuDTymiIBs38Dc21Ut3-y-lGQCzPL93bVMaT-pDwWlLYO6_3SWijc7SObKGk3_FeNKUfBN83l-gv6eF4XfNyLC4lFGUrSnIw89QfuHkIZW0WTkJd6TyuylzbwLn8gTpUE55kS8KBw5XWSh4qyj1iUF2m90p73UvD-fnQP_BE_NSxnTJLOpGBUh0vYoWKyt8yIHdsd00fwkBQUlpYAxeFHIakO9ozlefMkwEO8yjahs-5feXPR3lBaaHQIIiBgGIg4KDGYVKNWHM51JYTB5KA..%26ch%3DAQEAEAABABQBC8fraCjonPyAmOudsSafkQD12j9bSV0.%26v%3D3%26pg%3DAPVVZF7LLVEI3F72QRDORGDCH4
+.netflix.com	FALSE	/	FALSE	13464539055000000	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Sep+04+2026+15%3A44%3A15+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=7e585158-ec51-4466-90ad-530d42184fc9&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=3&geolocation=FR%3BOCC&prevHadToken=0&isDntEnabled=0&fclco=&crTime=1780856182468
+.netflix.com	FALSE	/	FALSE	13464539052583110	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQFWt7NdqzMonIjFnf9GR_jrqSfo0MLwyc.%26dt%3D1788529452170
+.netflix.com	FALSE	/	FALSE	13440779055078540	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	13440779055078484	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	13440779055078340	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

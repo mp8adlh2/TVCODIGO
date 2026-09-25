@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: RO
+Plan: Premium
+Next Billing: October 15, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: EUR 13.99
+Extra Member: Yes
+Profiles (5): Cosmin, Csongi, Nico, سلسل, Copii
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1798995611	OptanonAlertBoxClosed	2026-01-03T17:00:11.106Z
+.netflix.com	TRUE	/	TRUE	1802019606	dsca	true
+.netflix.com	TRUE	/	FALSE	1798995606	nfvdid	BQFmAAEBELG21uQD8RXE9Lq6a6YRmGJgE9-nYlpPYX0xGCkuD0qR9rXcR0esnnvb6PBqFjxQC8jiK_3xfToo-cK45T6q0SZiPMvJNfGHbaAykzb8k06HKdl2FWJCWjmOy4SkqyPYYFO3zo7T8ZbWgbP3WxUF1vA6
+.netflix.com	TRUE	/	FALSE	1811787413	OptanonConsent	isGpcEnabled=0&datestamp=Sun+May+31+2026+21%3A16%3A53+GMT%2B0300+(Ora+de+var%C4%83+a+Europei+de+Est)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=2c2107fe-5508-40af-bfe1-3061388bfe9c&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1&geolocation=RO%3BCJ&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1812378395	NetflixId	ct%3DBgjHlOvcAxKPBG_cHXriEeC5YaanfQH_jWtQ_9pBkit5be4k6FmRF22mJHJQNbXcJ9ECzI92gaxLvRn94aAfMHvaZyDG4qjbvL7OorlTO89Qxvs7Qe__WBLi280XSFk_z7smxkMTFwaEA6w-WQojnSmUgoJl6CwfC2WodFitQbaM44Zfry_RZKiX2j1mvKbiujF-pojDNfvg8HNIWfKYaTHGosteUTqBO0HecFZweyyi9M8T1_jola_RbXeWJcARJkhuZXY-3Bzgrgcs_5pnjFAd1GEhXMAihAGAkUErBjPr2zGGkIs6TMTP4Na1OdProzIId5zFIhVO4ZBHZ-zoIhPdd1omIj_n1xRq561aUkRgNH-d62IOIBq9VAyJP1S6ITNUt7vynH4FHhdzp3OyEHcJiK_kCXoDaGemEXfVNjuHfP69Mveq8EtQDwqUNov8wkBjS5_Ls9vPdMsGYfkv4GBOltkoIn6jzRLopmldjYVq4f7zHTjMSlUv_OCofwyYu2ObRmblk7b-IbyJ_i8z6yi5CLaJUWP0AASEvhCKcv8XBeLcMRytcc2uB-ZOsD0CoKHm6g1THJlhZmc7OpUY5VjwQ3gR2MAfQUIN8R8UOv_0V4hpYhUmCIN352b3pVGNcxARRQH5uVxwMOe8Yz3ZOwrbsucGXSTyJke4uNVgg9WKcDm4VVqNj2jidEQ4SSHRsaxgOsntvdvsGAYiDgoMIAJnghkdF1cvxQAm%26ch%3DAQEAEAABABRA2eTAw-eQckKYdiK8FhrWuIk5uG1lPjc.%26v%3D3%26pg%3DFLORB6ZX7ZCNDPBYX2VSXB2ALM
+.netflix.com	TRUE	/	TRUE	1812378395	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQOEPb0VV0yQa7B9QKPNbxSjO8_kSlZD0o.%26dt%3D1780842399320

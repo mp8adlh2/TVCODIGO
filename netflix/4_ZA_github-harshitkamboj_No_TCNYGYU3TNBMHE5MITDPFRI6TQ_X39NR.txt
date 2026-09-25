@@ -1,0 +1,19 @@
+NETFLIX HIT :👇
+
+Country: ZA
+Plan: Premium
+Next Billing: October 10, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: R 229
+Profiles (5): DR, Maril, Jean, History, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1799741616	nfvdid	BQFmAAEBEICHSqtLjuQW0TILXY7hoxxgX4n7rIbhwaZpATXDT9_XakRgCwAXAwP-54RdQTT__TnzukAJTvkXgHtf2FGtVfFD_XBuNUjQa5w_hBp-g5DZUKQgbmhr224MMEFYZmxV0yxxNUosw9U-lWCYQ2xDjukv
+.netflix.com	FALSE	/	TRUE	1814441484	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSELuKI_RT8twnWCETePPKHL7nazO0lJSk.%26dt%3D1782905484825
+.netflix.com	FALSE	/	TRUE	1814441484	NetflixId	ct%3DBgjHlOvcAxKABD-UTIRVEDQJN9o0zUsCimlLzl6HltNQqqSCav5Cyszxtccb6w7zdcrXJKLbCR9lszgayDCq7rrO20KkWpYTSZA52Uapt7vglFmBUR_7CuYqY2g6WGs9aSjlEyc5kmTOgBiIHevWgZzSp0u-7QiMVqvQdIdOZqWFxwgHw-m_EN3dR8p1v8DhzrlUOf8-YkSlE1UMmCj0UXTEMCu3NNvlfZG0VZKcSMKnngosy7SATPVeogB--NioDqil6SGMXQhhgECkEMheTCUb-ZtldzGNHRnkxBQpsN1RwwcpAPvBPTTNTx31i-Hlpvr7EvDhwTaEUIMxpD3kPCu6czka1OLZNVaDCqB_UDfqITKbAAbtan-QRIraxaWYamI3ejuad1ucwM7sB0O5Si1y4-qgmeC8ws8vJkVL2E4JeTqWWinir8Tdi425scgEAkW_AUbMqT-0jBRxDSL_3owyJu1C_r3qtxApJF609K9A-StHz_KGWGbG8tIYnNjQweq4kgHpmnubpenFxwE_fPih3WfOs8RZdbs1QSdLj7t9uN8uESrL-L9Iwe2cwiXBq78XupqAr_CT_s47KV2V6bmH6Vea-2zCxv9i0wA69_SA-rTtPSQs20dG2bOUbpM5-Ov3WGdhm81f8WUItLHiF3BQ2TrMkOScmYJzkypikBk6MVfU6FiD0KRIGAYiDgoMd3k6B3BYhfG6hXjM%26ch%3DAQEAEAABABSOSdz1YYETBF3Gbb1keuiBuNp5aI57rhI.%26v%3D3%26pg%3DTCNYGYU3TNBMHE5MITDPFRI6TQ

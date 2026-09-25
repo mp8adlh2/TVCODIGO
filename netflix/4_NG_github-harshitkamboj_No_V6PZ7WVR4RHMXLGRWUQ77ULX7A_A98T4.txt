@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: NG
+Plan: Premium
+Next Billing: September 27, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: ₦8,500
+Profiles (5): Levy, Boluwatife, Eatwithlade, Dey play-dey cho, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1792940834	gsid	b67a619a-3e5f-4385-88ed-dcadc0903cc1
+.netflix.com	TRUE	/	FALSE	1792940834	flwssn	d8c774c6-b9b5-453a-ae32-d5a394abc0c0
+.netflix.com	TRUE	/	FALSE	1820602410	nfvdid	BQFmAAEBEE7DS_Vg5QpZ98lgiOxjfbVgMn5R4XM9msRk4D4gmFKGQgqgrVvzXS0QhRwxSOMtG_UM1mjAoQ5ulzMtSiqRYX6CJ2q89YsQEr-0H8EgO1Bxf9rIdY1z4xGQ0d9Qr69euoZ8M4PhPlY985RyUZdpHQjV
+.netflix.com	TRUE	/	FALSE	1796842413	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796842413	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1820602414	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Sep+10+2026+12%3A53%3A34+GMT-0600+(Mountain+Daylight+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=8551c492-e655-4236-b1ef-34cb73dc370d&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1789066336056&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1820602440	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSFSi2xvTuEZJM2C0bGyEV2uJBO2clHd-w.%26dt%3D1789066460192
+.netflix.com	TRUE	/	TRUE	1820602440	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKOAx1GUgnTSNwte3pZnJO4GtHZzUM5G2fedVlMHAoc9KPEr_NHGKdtjwNcMJN-q5GMd-UDk_jSFKCFBW9qVNs5QwzSbrN79GAI9s9t1fpyhYFp5_W0wR9SQNIxU08GL8R-o5UgQXmb9T2SLCiEOZWpQwJJ3W8loGE9FlPty8s1zVjWZloZxSg4FID3TLfAwE5Wblq4sIFar4XJ8Xdcrsq48yv7hgp9B08bpcpBiHwFCOytPf7-ldVH70rfNAyoAQGGSRGNU1tBFGX2l4PT69UyF7vznL8eIsNbqN5dHEtqXaNEvqd_3sYsx3jZuNVz6rGZgOoeTN-z1KZbdXgowO8tS6VFhHogAPiZTuDyfxCpGFWsjmTB7DhR6uwFVy6lavKDUT9Z4Y1dhwT8xZP8BsDAg3e7VO0K28Sy-WsauWkGA9h63f5VZ8oLoPIG_iVQPPkIV6zlDw8cZQPxI1C3JyX7lGt5eftZjRmAYeaFuDERuboEj5mpkItGCFB2P6v_mWdOWQNuo4Tzu4Uaet0lnIlqGAYiDgoMlfLPv5G_6M27yTze%26pg%3DV6PZ7WVR4RHMXLGRWUQ77ULX7A%26ch%3DAQEAEAABABRTyRwL-cFZX8dRfX7O4s33eYGz6I09RBA.

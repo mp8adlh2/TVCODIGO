@@ -1,0 +1,21 @@
+NETFLIX HIT :👇
+
+Country: CL
+Plan: Premium
+Next Billing: September 26, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: CLP 12,990
+Extra Member: Yes
+Profiles (2): Daysi, Niños
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1792940817	nfvdid	BQFmAAEBEEU1xLoNCDTmpiWT45G4UHhgUo1MW-JzdYCI15MEoSBY2KWs-xqcP5v8a97JGx7c5_6ZcvSPnP9rw5M51EjmFZiIjjadpnFVLhIUMoDovvCljRJWzdZx6Pw9wPBM9Oo1cNqWHdPVC076YMhzdE9tIjzg
+.netflix.com	FALSE	/	TRUE	1792940817	NetflixId	ct%3DBgjHlOvcAxLkA_8JJZNi4tQcoZbhal1Q7jg28vPFCuMuXvgytQk2h5LGbsjg2L30YIm5T3tNcYoiVbhv4O9lpZnfI-zIXq5dPjKYYrZIplnEfKBh78sXzPTQcPW2IlveQNsoIPHjiiesvNaefN9HenMDujcWcUXQA0FDPSyR17tu9dFkVlqOqZLoX5nvDeyt325SnlObqzRre2th0W4LAtXo7LVJmnw3m9g-OW7GoG16P81PIChGqKMwTefLmhvkcnMpnEap1H8l1yXiq6CX4cpQqRbyePerCI5zRc3z_KTONYXGmV0geHl6RLmlMUXBno2WAIKbiqbHkYN2fNdTmiZzpw8IAkLeJw9d1Z11OtFJtHWAwnUZ2nJ6Fg08Ny7LlG3oG1xwlQKEyAcLZ8mXIvblhM6pHpV6SIBCGyCMjbNnGbVtEcd6hhV4UmNUVOBQ2jOo7kZz0e1sJChH0zRgHM6-FGjLhFWFmfRuCVag6FJBSEVv1U4oearCsRAwgGCo3qm36_O3Yo2lF9YCUGLEpFwG84LUMcx3Bnr7AznvK_0VWVLmD5HS63FTfzlbz2631Lkf8_7haaTY43opems_jcCAkdvtv9JvfigZWPjcEad1ge5jimlBuxRREF-EajQyMZMozMOF4Ev2SvAcUikYBiIOCgzvMoN4AxAQem4GwIo.%26ch%3DAQEAEAABABSKkNC3_JZJqnEa8AvRkcbA9QSeAr3QNYI.%26v%3D3%26pg%3DZZU3HQBLLZEGJPD32E2T7SSWBI
+.netflix.com	FALSE	/	FALSE	1792940817	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Sep+25+2025+01%3A14%3A25+GMT-0300+(hora+de+verano+de+Chile)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=6df1ba2a-08ec-4c05-9946-247369fa7dae&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1792940817	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRTh5Lrs0sBZoAsFErYka4pzZq9Oz8QyvU.%26dt%3D1758773596512

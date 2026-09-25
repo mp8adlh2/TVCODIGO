@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: ES
+Plan: Premium
+Next Billing: September 28, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 21,99 €
+Extra Member: Yes
+Profiles (4): Safadinha esperiente, Daniel, Putao rj, Achraf
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1817463412	OptanonAlertBoxClosed	2026-08-05T10:56:52.342Z
+.netflix.com	FALSE	/	FALSE	1817463410	nfvdid	BQFmAAEBEEH5gBiVj_cPfOQMHodw7kdgBiD8doN6qsfWJJ0wlaqmRI67fJcRsFnVXHdCPdpGwJKiNLCweUvnQZKYdIBvJRZ-QXF091TgJ51IDJuxRgNJ6iJnXOAA3SFDkP120VqHursfRK3SVDLSGVx5dHODBnoZ
+.netflix.com	FALSE	/	TRUE	1820493335	NetflixId	ct%3DBgjHlOvcAxKCBPsEhz15niGWb1qh4ilwEH6M9XjVD1--Z68vlbey5nFYQ8oa1wvFpddchdir4EmvIkwJPuy2a84UiJbox51C5bTi7zUrhmYZ_EgOKNF52Gh_K1-Ck7YAoPXymJQ8OBtZZmhO6JihCd9MeKWi5SxevMwBFBhJ2QbwqNi2HuX3seCwaFA1JgWeq32Syg3PByUws6w2dWlaE9Bo-4kLgk0YgGiOxRCOKozqjO6KZAmaaWxfihrqBVgAQc62jghG8jetvpShvWh72mvDkTXgVk__kn-V6VP_7aylvNIteYdmdgouyByNcAuyYsFXo_DEPMSM9AwrTcl0fNHh7sC342Ca8uXvMkZwYfP4bScGb_SGJ9EXgqs8afHP6OT4GkmQH_HivNqX9bW5qkl_wjBuOiATDAmepwDV0DW5g25ruTtyFgs8Jer1pG0oP9VqiUt5p5oeXG7s_ThuCrKdho5CoYIXv2kos-iWtvo-oxVGYwvJyO3qdGAeOMLikC61BWxKhB70xpbLiYFe1BjpTuj4sCmJdPwpYYNXml7TllXmMvJrBuKJTvCw58H3hD8h5sSsjGp-mkAjbW42ZQZvyIXLewWO5G7Eah0WwiVQWXYlR-gBKT5ikpPezx4sR06CRPfDFjkdmK_0kvdi69Zz2Y2UIZsXDYe8qngpHk0uILMsx6GklEcCZfwYBiIOCgw819Nw6JyiUXzsFtE.%26ch%3DAQEAEAABABRU0V4xnEzn68vzvb4LTXjAnTxMytMHbbA.%26v%3D3%26pg%3DPQHP47MLVJDHXOUQNILFBVDA6U
+.netflix.com	FALSE	/	TRUE	1820493335	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQLeTMDYVZj3w9GfScL59pwL2kSiOZjIIU.%26dt%3D1788957334848
+.netflix.com	FALSE	/	FALSE	1820493379	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+09+2026+14%3A36%3A19+GMT%2B0200+(hora+de+verano+de+Europa+central)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=997dc5e7-606b-4aee-9fad-8e10df987c4a&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1&geolocation=ES%3BCT&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1796733379	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796733379	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796733379	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

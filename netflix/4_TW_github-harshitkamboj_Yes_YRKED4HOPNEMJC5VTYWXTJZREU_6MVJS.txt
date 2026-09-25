@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: TW
+Plan: Premium
+Next Billing: October 19, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: ‏460 TWD
+Extra Member: Yes
+Profiles (5): D, Afen, KADA BOUHLAL, KIMO, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1813696392	nfvdid	BQFmAAEBEIclvV44oKegl-aj5FdhqPJgfR9THZdpRROBiiqVD5lUU8sY0_Lx8G8sK--fBv3dAoN946LFwAkHen-EnTn_2LIzeywX2DB0XS-HojAM8VCn4bmgnFRIKNz-NACzysIinSBtDn15djho346zyrCtytKv
+.netflix.com	FALSE	/	TRUE	1820925984	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSvlguawHArLYkaSapFYGuIySnylJ4w2I8.%26dt%3D1789389984473
+.netflix.com	FALSE	/	TRUE	1820925984	NetflixId	ct%3DBgjHlOvcAxLfAwnXC546aRewR3o5JweBypql1ksysoCRoeyhwHiC85_scjBx3uUpSOvXDHquSAZ-XePEbi9sAbBFHcn8jXpT4fqSkyWTFzc0_VgHjhU8C-oFCR7fDaRue1sEEpFaff4aXtZ8TJzVUCTco__lBVbKf81WDMMy0NQKHQgxqnqfhUgUgxvuMsNL7CdnhMmbK4jD10e5ktVru-8fIOpFzD8rAA3mFZXC9goLiLHwZ36x7LtIvjkhnG46wnq7MQzzbnrT80AYQj-UlSauyaE8PIbIFPZcTwqc2ZPwXRsj3a__xe6tX936cWmweFopEX73T42IfNDXUU4mlD_9RGwZ6gVeKKQ8zQlzuYoKRtFIFyfi2JeIpFOmSvEz2uvgYahti1_SDYEd7E-cqHSUFbx9KPEH-4E76GEzDbBVlLyxgvawlNX0nG7pn-Rul8J-LBpvmfkxkhjamAVWdl_bsHDl9JCir6C4VIU_oRZe3aWxjyt3W3fv9cA1rHQEukrMTsMNif7jNVU0_ws9PDZ-kuGx-G2oMuSgiyC3moj6JN_BUk3bzfUsc7zb1ZWcca-B8Zo2Y7rXhEorc7s_bKj195IDhZBl3wjmBe9Xeu0KO8eUzxZ-5VcQHoIy6qExAROwgec1gU4yGAYiDgoMutna4NdQzVmQ8cUX%26ch%3DAQEAEAABABThlmvuRalmzsUO-ok1AdP5shgVLcru2-c.%26v%3D3%26pg%3DYRKED4HOPNEMJC5VTYWXTJZREU
+.netflix.com	FALSE	/	FALSE	1797166348	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1820926349	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Sep+14+2026+20%3A52%3A29+GMT%2B0800+(Taiwan+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=fe0dd301-44b4-44a6-a421-47eefc298b6a&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1782160362732&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1797166348	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1792853994	flwssn	ad799317-f43d-4f01-9cee-b0f44d5ae769
+.netflix.com	FALSE	/	FALSE	1797166348	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1792853994	gsid	f89f15b4-63ef-46f8-a5ff-3104659e4112

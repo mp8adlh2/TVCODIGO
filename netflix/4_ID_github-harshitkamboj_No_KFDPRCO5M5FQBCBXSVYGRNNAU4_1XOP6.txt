@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: ID
+Plan: Premium
+Next Billing: October 16, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: IDR 186,000
+Profiles (5): Sandra, Miranti, Fanny, Belaggggggg, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1816422855	nfvdid	BQFmAAEBEDPBYMTtndmN_FpcOnvdDypgjZVViD1nRUarXZUnE46_MLkhqDlJ1pSdz3i5Cmnsplt3xRFd1ByjcqJRLnwomDCzUlBVK5AG9PH5LNVCLhFPkVKwaThe6EjCE0tlicofQXFI-toQ9yJG81bgz_kN7bNP
+.netflix.com	TRUE	/	TRUE	1820226728	NetflixId	ct%3DBgjHlOvcAxKxA5k17HzDDAP8Ltntt0G8ucB8DibqMoCwhOf9Xr9M6vVTVBvj6iOCllcGqyVCtyGAIIsO6XdCQP-4VZQ3jAw-LvDzosSU80q-ZNSmGJEjtku7QJ1FiCPXdHMjDyqMuYAkIuQUn1UcAl1bcrB9SD83QyqKdH6VMSStTLBVfZ8bP1F2Dh472QK0EE5sUfNqQQT-dzPCVufjVmxDq5huyW70CfAvKDsyrclf0t-qAT2tjhoXl0wIwbJwO4gomtqLv_JPDgDfKbmfnLWVfFm11ZrEbjv6zRvmGFxqrNH7nDnQTv2ZAqkcVWn8Vw9vxwd2EtyEnU8ZAW6LBASgIr2c6LPAtS2QH4kHV4QSaVtt-5L8Fb53sRm5SsB_ybeVhBav-yGxgBj2jXzarcl_wjFKnzpU0qP5p-Fc0Iwd5R0Krhe6DhHyD_EvS3hcmY75M3PNjdIdOEgSjBLwhr-6x_UR3iR8tneByS0NdmaL_rvALSpysPYBhCeDHIFt6dNxkyG8aFKd21w-sgm9Rcl2jqyy1l_ND_n-O31liOuxFv4LqKDYWy_V85zrDVtb0FNIC-9FBjOowM8YBiIOCgzCsMO3w1bQEiUqLVA.%26ch%3DAQEAEAABABQJsm_YuNxOc-mzrjVvDchKg8ff1HnHljU.%26v%3D3%26pg%3DKFDPRCO5M5FQBCBXSVYGRNNAU4
+.netflix.com	TRUE	/	FALSE	1820226732	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+06+2026+17%3A32%3A12+GMT%2B0700+(Indochina+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=2bf2bb76-a65a-4ac0-84ac-2f397f528dec&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1820226728	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRXssuB9gvfuJ4sgqciIm9GPWwLzA8AxfQ.%26dt%3D1788690728952
+.netflix.com	TRUE	/	FALSE	1796466732	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796466732	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796466732	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

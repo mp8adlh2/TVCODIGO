@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: October 12, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379,99 TL
+Profiles (5): SwtRJ, ziuos, Younes 003, Dos, Aymen
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1815311253	OptanonAlertBoxClosed	2026-07-11T13:07:33.073Z
+.netflix.com	TRUE	/	TRUE	1792853992	gsid	606e2de4-e881-49e9-a383-c6b3b8652f78
+.netflix.com	TRUE	/	FALSE	1815311285	nfvdid	BQFmAAEBEOnFvHUFPBb3kTT2rhb-Z59g2g9rmpCUxvvEeVa_E86q1kLyqbOxFTJTkfktvqCnaj_HyiBe1wae7UIMfOIbMjVc86pTYvBJae7NdBcCOIT0MNfcKtJ4PwBLOqPzyEwux1KMd5KePSLnspCDOpDVzcxU
+.netflix.com	TRUE	/	TRUE	1815389368	NetflixId	ct%3DBgjHlOvcAxK7A-c2q8B5c7lLacSFp2teimCfuligjzu77OAPUzLRP5MJ73JC7WWuGdDLNB0G5_9q9rKjeUEf93GMP9P6FMt-VFRajnoKpNqigi-emsdakbXxUp7bGbFPSNuXmxTTVRkGyenXcse0PT4TdNpXxRfXX4p7GGz5f7YIkrV2wNxL5Tn7NsAbcgigDwqqTDQBT4lSBmO9Oy6kS2GyNfP5srKJEgnT6f7m5Ykr3olwI8SlU3vFrMJYWxTI0wA6OfSQNvw5VhCwfGTceDVraojwh3rYFimGkPsfKc04vItfFnIGZTP-f7P9tCdoVHp3_KyC3owM32zzqDe0zp34sDHh0rdkTfC4iGlHKJRcBhoBT8y1g9d80P32rttfTGsHizad5PSTOHnjaBJSwq4xi0eTMoWSef-9rpFBIu-A_L4SUPqmSyN5_1iuL2RsR0qBwmRT3POQ9OERJNokRCc0wV31vrPGZty-sGwfu4Fy2vgfeq_bly0_oRsx6us6fGsiXoYUmmpj113U3Td1vNiWuf8Fz6fw81hUyc9nr610vCNLyZbuu1qyv9qEmn5P-Dodw1KQJJjWnL5e5Wvw48Z4BdS-GAYiDgoM_7nBxqdcRlIS4Ziu%26ch%3DAQEAEAABABTtb2ndJ8jlCx2IORrA7pA6El7z-YCOmRA.%26v%3D3%26pg%3DD2DALAQASBDRDGBP7PHSOV3EJA
+.netflix.com	TRUE	/	FALSE	1815389369	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Jul+12+2026+13%3A49%3A29+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=5a07f552-7f5d-46b7-9268-82f0584f5418&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&fclco=&intType=3&crTime=1783775253772&geolocation=TR%3B27&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1815389368	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTvG99rUlrvKerqIZY6AzfRiTTuknpLJRw.%26dt%3D1783853368389
+.netflix.com	TRUE	/	FALSE	1792853992	flwssn	f1974851-abe4-45ce-b3b3-be30ab09ea31
+.netflix.com	TRUE	/	FALSE	1791629369	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1791629369	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792853992	profilesNewSession	0

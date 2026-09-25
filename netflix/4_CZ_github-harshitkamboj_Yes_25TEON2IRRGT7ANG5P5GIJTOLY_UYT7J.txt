@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: CZ
+Plan: Premium
+Next Billing: October 7, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 419 Kč
+Extra Member: Yes
+Profiles (5): Rostin, Kids, ZeroTs, Mi, Simojazz
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1816095366	OptanonAlertBoxClosed	2026-07-20T14:56:06.547Z
+.netflix.com	TRUE	/	FALSE	1792853991	flwssn	a0ac1e39-eefc-43e9-a124-0d813c855a11
+.netflix.com	TRUE	/	TRUE	1792853991	gsid	3010f53c-8290-48d6-9a08-6dbfbe0b1c7e
+.netflix.com	TRUE	/	TRUE	1816095395	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKhA89Oqon5tapINAv9aSZbNsepRspuN1qN3WBve7RVKcnkpkJoiBBJnsqhaxze7QtE0bR_k238Kfe48K-JU_XdspcBFRAIp4fi4dP_6Q8hgxmq5X5xczJ4VdczxYhA3UDU9nhHMSHXhaLm_IyH7q6-lD0DaSjJhtUn8QPn3exub9BWvwLenXjjx0NV1jL5GlCR8_a5l4v7LuQHUyatBaGAk5euxO4_TL8tXgqqDmqswyGS1d7cBiub-FKzN_ASybfmlZe8T4oMD5L2dJT-2MQaK2WSwkLwvXgNqwhFry7vSs6Csao0ylM9HX97jiGwfQGKHBxCtG3kCdn9ZBzT3vSL8pEA_hnYQu2q_wCHhYkz7lNhGCumuk0xlkVkLr7kx9uY1lZI6raUFSZyBX1LI5akZdP2LphstwhQRdQM0aoC2JMFIemKRSvK4KGX2Zh1BnTDaSYLsjUrE-GcnJjc85Vc3PJFu18GKGY28vfMOxTVNAJzf1Wz335-VI0EhD6DB8ZoKVzFcss1e-E0cjFjzsPiKypOCrWvvmF6V7HrscJiLD62ABgGIg4KDIzcZlj_xd6zcSKtuw..%26pg%3D25TEON2IRRGT7ANG5P5GIJTOLY%26ch%3DAQEAEAABABRdjjKUjrs-mD206FRLU9fP3gUlfhg4Dis.
+.netflix.com	TRUE	/	TRUE	1816095395	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRLKMuhxfONSxfGOQpuWy5GUxsKXs00qXo.%26dt%3D1784559395092
+.netflix.com	TRUE	/	FALSE	1816095395	nfvdid	BQFmAAEBEEUniNYTnrnkFwpFqfs7QspgMHRlI6_jlbiImiMJhlq1SUkTDOhefX56A7ZY9r3Hs4BuOXKgHr83NBBaPkvo-qq_WB1B9CgCxS05eCdgUdbYvKz3MzhK3w8xKx-H_eyRtIXVDJ1U9XeFAK5vFb7avB0S
+.netflix.com	TRUE	/	FALSE	1816099499	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Jul+20+2026+18%3A04%3A59+GMT%2B0200+(st%C5%99edoevropsk%C3%BD+letn%C3%AD+%C4%8Das)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=0a0f1e8f-07fe-4889-a507-84dab4059ff6&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&fclco=&intType=3&crTime=1784559367077&geolocation=CZ%3B80&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1792339499	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792339499	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792853991	profilesNewSession	0

@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: PK
+Plan: Premium
+Next Billing: October 22, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: Rs 1,100
+Profiles (4): Ali, Haadi☠️, joni, ali shah
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1806847371	nfvdid	BQFmAAEBENntiBct3CkDOB5CeHItFAZgpQkRA5wOFHBqOsG8xvAMwXfDLiUciQhxoWNbiMtvKCMkIStbRbagsD7OKdtzskP31W3cBR0uOQPJ87Kr5A_CdR23D0gF-WgFHe3w6_vgMMTAiLptheA0grX9nJVkfKQL
+.netflix.com	TRUE	/	TRUE	1792940817	gsid	5ac53a47-2d20-4321-93bb-ed80381ed39b
+.netflix.com	TRUE	/	TRUE	1814909379	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKfA6KbVkzXWvDogUAkn_NiENZ-ArZlxIdY2jRscOfTKgUgLh1zopNt-S_SooVGGpjnAkh9IPXnYxWEAK-vfZhuhLyteWXJ1Fd2Df7zunMuohToYbSzGDcaHZz_RC7VvEjBpSBB2U1UPqA9AEhKC2o7Uc3lQ5Uu2Zv2olohaTMi0oXKwo9e6FHndimg3FogWtU-ycsywzAaB8nahc23zkNntGGsf2kUqlDbfQw5l-bFw8bf3hqSzybt4xhPpaKOVrO8rGZfMSTs0sUAxl6hhmCUX1q9W90dw0gYGxulyqm0MxXV0uUw08ZkaZxUCBDVZ6mEzVPtCw3s7LSUXEGnt3ymez6O5btHIoega4KJbpeX1G5aW1oF5h50VorJa0e34B-zB71JSCpM1h9wUrsI7kMC3CVzZkYh3a-dJx5qoeVPOX3TN6_nAnTQHaVG95OeNSbbjuDdCJnmB7mBYnrAY_L1uHSPnOEhZpB6MpouexTFtk0rSdyEx2nG5S2rK3001slL22Jl9h-DBpAt5zFr7M-Xg_8Xiymcj9qQMSNSmaeTYQcYBiIOCgyXphnhVMzi4wYuxes.%26pg%3D5XQEISLNMBBJHPK5P73ZP5LHCQ%26ch%3DAQEAEAABABTDclevrY0aX_R8UqtOVOZ5dHUHuWzRj74.
+.netflix.com	TRUE	/	FALSE	1814909382	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Jul+07+2026+02%3A29%3A42+GMT%2B0500+(Pakistan+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=74308206-fb65-4aab-8b23-03742b2a8ece&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1814909379	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTgeR2lpcgsgvu4DObu-ebh3b_IRY1UuhU.%26dt%3D1783373379402
+.netflix.com	TRUE	/	FALSE	1791149383	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	TRUE	/	FALSE	1792940817	profilesNewSession	0

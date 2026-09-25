@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: October 12, 2026
+Payment: DC
+Quality: UHD
+Streams: 4
+Price: 59,90 BRL
+Extra Member: Yes
+Profiles (2): Juliano e Camy, Juliana
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1792853992	OptanonAlertBoxClosed	2026-07-16T21:04:09.193Z
+.netflix.com	TRUE	/	FALSE	1792853992	nfvdid	BQFmAAEBEPevOhdGrmwCU8VQlodBnq9gurngy0wK04MyhhLqokbK4RdavofbqSQez5Xlbnpm-Dd_jAAMHVRyWQzL0oUgZYCnNvnImi_cxTwMWfI2QP8CXt0k89R7iG9oVwJp3zS1vGQVuX_Sc8aW-mljeHIxVKEy
+.netflix.com	TRUE	/	FALSE	1792853992	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Aug+24+2026+20%3A43%3A09+GMT%2B0100+(Hora+de+ver%C3%A3o+Brit%C3%A2nica)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=a2786328-dc30-4540-8981-686e4173640a&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=1&crTime=1784235849616&geolocation=PT%3B14&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1792853992	NetflixId	ct%3DBgjHlOvcAxLwA9bWYhd3dCUBrJrOq3YqYg31RuoTmdJ1kgBrWAeuU6u3lgrhn-olX3h-5warVkyNLsvhUjL_9XDGfsgietOzOomIDho0o27-fkPgrPfUPcCJTBz8zO2lEtZf386FKRqS1ggqck_nmLouaEwzCuRXkNs1Dk9f6KqMQDFOpre8-O0ztHOnTb-KEcAae9rekDEtyXdJm-bFSkmEBcO9QGMyqU1RF7VkgxN-fbiWCm0jRa-H5sNP9JthISytihWDGscKUdgAzDPPpOTS7-CSplLCCCrdU8_PQAcUaAk0BQ6w35NBek14bI6LveWjVAN9w4TLLBEYQYs4X0clUhyfNFGiOVWyaHzuk-4AntvG2JL7Ox7gxpRrRq8vk92sUdUB9YVY-7yJLsSWTWYmEaBrz7r1Xvia_Cp6wz_NRrrupCG4ePKtNH_LIgk4N3JZOKG0FYCQSrIVdlCxA3uGfQ9yjcWEpc3xiqh-tuMCv7MhVKMq1mWvSPL913EsJ_YQ9CZVsxeTqlaoy7ggw0qZb6nyb4A8pLMoqZ_JiHlFfeJvb96_qf8e0zvke3xSzHULDbqqOUcxdCvU6Pq-Pgd1XwgvHHZRkjGvBBbV1iLZPdgOUo99DlGVLDSG74GY_S8tdW-wssb_bynwxTOXeM-l-KFbxmyQ7bcYBiIOCgy-f5ZrgaXOsOR-_xg.%26ch%3DAQEAEAABABThREZCLgyYbC9hrhd41IUAcpJa-xdDcGw.%26v%3D3%26pg%3DAFSHBT2JAREH7LECUZKY4A5UNU
+.netflix.com	TRUE	/	FALSE	1792853992	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQePZkqXouXwgjrBMTFVEuV4r8oqYxB95s.%26dt%3D1788702567603
+.netflix.com	TRUE	/	FALSE	1792853992	gsid	f0b813dc-bcd0-4b65-bde2-4c0df736c28c
+.netflix.com	TRUE	/	FALSE	1792853992	nap	BgiJv-vcAxJJHCZa256akrdaADKoPp2ka1i6RevaYhgBES-OVp-NACZSr6ul4zGeNFu47p5WzmXwaCkxhcpCcQeQvMa_shSFTPsEQCLdbIVvsBgGIg4KDCC3_2OxheIpqe44lQ..
+.netflix.com	TRUE	/	FALSE	1792853992	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792853992	netflix-sans-normal-3-loaded	true

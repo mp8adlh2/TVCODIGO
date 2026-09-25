@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: IT
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: CP_FR_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Profiles (5): 1, 2R, 3, 55, 5
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1802550208	dsca	true
+.netflix.com	FALSE	/	FALSE	1802550206	nfvdid	BQFmAAEBELNdtVDb6h5FmQwZtptKpmtgoSo3URECLbZ6PE6lucnS0wohU3WVnZAa1PZyDIx5obU7ikIYTRpWDxxQbnsLLdw2H_Qhff-JTniVdnCizq3QDs5KhNA05LDsSatH5uLL_Y_FHA-sfSTISJ9ggdGB7fg_
+.netflix.com	FALSE	/	TRUE	1803694711	NetflixId	ct%3DBgjHlOvcAxL7AyNYeO49wtRqHxwq9HzX0gIRSntnnEBs3E-dmqAgfFtl1k0J1VRC3kqvojv_2zsMLTK0qLKQfWAhB8WzJXPWwwupE9wXRXkbZNZkkGRb-LV1IEsX0OE3qgliO2fePiW1CndfUK-0XmrqDKpaBzG2gjye1xIDf9C-VfShgZ_y6-m3fBTiR9C5O3gjRHxYHPkDByg5G9I8ojXHgUeI4iGRpM7fID2s5zuEfoAYBm0aaJ3Pt18Y9iBLufZNQ7xBKpW1w2k3295TqR1cToAGgCrnj5YTbCcb30OvI0EN6pFgFpnTeej5sAF_C92NAjiFgGboUHhU62kGaKZzVgReg4JHuLgexv_JEgt98Oab09-6e2teheJ0_0_g2zgliiEaFaqPVjRYlUsfI3zR4XS_hi8RYKVQC60xAytWCyzYbiZkmimJr5TV6dUH2gupmcgzPPtAlHKvjQbMKpkk4-eZBpYRJyApZOAlHjd0--h0bY14NpGM989mOO46aAVNAbyA-M_ld_ykA2rvc9y2PTcQ3dkYOrUJ3ZhFOVIzToxhRBHX-HbFHTZqhZslSlZwPvrs3AuqBUBOnMMQXx2J_-oWbDj8JSTeRQTG49r-8M93LGhQDUhoNgwo8kn-LOrb4qOJgrFOOBed7wHCRB2ODszOuQ3vPdPj--IRIFRhmHOjYBgGIg4KDOhAg5rIaq8ofxZnUg..%26ch%3DAQEAEAABABTHkOdMTyVGp1j7brvRoPxYwiRZ0bG-2KA.%26v%3D3%26pg%3D77J7JLHRFNDIRGOUPBXEYLG2GM
+.netflix.com	FALSE	/	TRUE	1803694711	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSJIi1BaGSU0o4TogZT8WqpCZwNeGz6i0I.%26dt%3D1788142710410
+.netflix.com	FALSE	/	TRUE	1792853993	gsid	20ee3aed-556d-485b-9593-c66eb4a41ae8
+.netflix.com	FALSE	/	FALSE	1795919290	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795919290	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795919290	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

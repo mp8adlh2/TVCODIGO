@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: KR
+Plan: Premium
+Next Billing: September 30, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: KRW 17,000
+Extra Member: Yes
+Profiles (5): 아빠, 엄마, 찌렁, 예삐, 어린이
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1809491385	nfvdid	BQFmAAEBEF1c85ZUBAVttKw0of17D0dg4zFZE7t44Wv-yydpe_oQMr_flvkPyCJnQhFYqwma1o-9AXLZ7Rcuo-u9jakl4OkflNPtmsukzMLo4lvVNPBJQAvEu7Z6B3sOy3fiN2xNc-1pxaNFpq39B_4WwSrRvKD6
+.netflix.com	TRUE	/	TRUE	1809926579	NetflixId	ct%3DBgjHlOvcAxK9A2O_I3OOiuP5QFplblw3lIy1sEpl2JPvvwO0I1F0CvZ_N-_JROzT4xeujutC1RPHu2-odtouVcdUA8mhYVwJdqprRSA_9OrMOd4YFN7eSI_CwyWVhvAld3rqyO3K9h94897Z-OYYhxrvGXz-_lk_CrD91gW0dt5XOJblKdzxkI_7r8UIg7qOeetrPqXfDqrzdUAA4WA-N2WurDYuPOzX3VInjbMY0AtiSYMYiYiaGPxtfrlpkUK1Z04-Eap-vnee0TeSNZZM11cyuYaC14VTqrhSx817cXb2IjSHQG57MfVAQwi3R60v-mxN-cOO8qTzCIZW07sJnzYf-IDBF9uw01bLy_ftPP8AHxtwy36ZA10lQfWmgF9lmQNejfLoh6oSfQJ4ambrTDHIPXv0pvWNDqCVsz6vFELCJYR-hkvLzitWlxCy304IMD9z4LVpPD2Ex1f42isOV-5N1bUwEcUxZwbEDZJx36AdQCm6ZvTP9wAiFOK9ufiRIbTkn4BrPAW2hVzNEI84TLIxLDSapnvk-Zle7aVYGMllXdHEw91m1UBRuc_gpgJ8nyUmMWI-AyKrfPgqDYEznM29pOvM9CMYBiIOCgwqpUEb0Xz9IvMRF9Y.%26ch%3DAQEAEAABABRoyRozTHqX6Kv8cIpTTY_DIO-ARCn3KSs.%26v%3D3%26pg%3DL6KO3GUI4VF4LGT7TOFGAOKSMA
+.netflix.com	TRUE	/	TRUE	1809926579	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRjCzv12S0OTOfFTvx99nETG2TXFsc9pG4.%26dt%3D1778390575274
+.netflix.com	TRUE	/	FALSE	1809926687	OptanonConsent	isGpcEnabled=0&datestamp=Sun+May+10+2026+14%3A24%3A47+GMT%2B0900+(%ED%95%9C%EA%B5%AD+%ED%91%9C%EC%A4%80%EC%8B%9C)&version=202604.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=c85e3bfe-71e9-413b-8005-31146f813505&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1777955328957&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1792940817	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792940817	netflix-sans-normal-3-loaded	true

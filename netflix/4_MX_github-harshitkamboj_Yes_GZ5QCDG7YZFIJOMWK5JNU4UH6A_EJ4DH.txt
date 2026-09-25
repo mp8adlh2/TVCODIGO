@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: MX
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: IZZI_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (5): Lilia, Leo, Ali, Kanak-kanak, Ilse
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1804535594	OptanonAlertBoxClosed	2026-03-08T19:53:14.166Z
+.netflix.com	TRUE	/	TRUE	1807559635	dsca	true
+.netflix.com	TRUE	/	FALSE	1804535634	nfvdid	BQFmAAEBENxqTK0ilMYJPbAe8okXcsVgWMv9EA5ALm7ZenGOh0X4zYeMmpYELWtRpf5Qvd0BnuD5nd1m_izu9VEkcZXKMe6k3e5cbQmV-qzJL3UP8h2UgoFQHUgnjVPC8enhgLjANYgYphd3t3UlxovD0MTrDuqv
+.netflix.com	TRUE	/	TRUE	1813544215	NetflixId	ct%3DBgjHlOvcAxKABNbqRGZ2UNO1N7z5Qo32Q2aSGs3lr9lbXz453MKNDGxH18cAcGlaigbSxO2O3Bixy-GlmJZA47ww2646fQooTeXFKJ2EmN6qZhz68DYg7ZVonfA_VFnyjBomcF6osDTTJhOuImJVtobpYfDherfREBlYzh7VXLJ7r04t0xwoYFRwC8-_ykoF8P_HdWjl9t6vTb6MP1QiiUSIN8Ls3h9WRD-2HLMfU87Ih5RzzMerEZrHLRejZSYXysPSw8TLKY9Z2kM3grOkRTfjAmY7z67aHRFHpmj5myNyjZqNfC06YISNHYZLJsF0FraqvYuz2Mh7NsHgLb-ZOBjd6HSqciGC1xfaSueV4rtioqXHI-p-pAqhzD7grYqBxVvB_3_hS03tnm8Sb7vjJC5IJL1HUoBgE2pFkONjmMp6I8Yry_biPNVXt0s4zouEWk6pdIi-9y4HguCP7asxEsy-vTzE9EXKJEsDzoQHq8eQDDubbPlykjA3VWeJLcUtuis8216tJvSzJyYPtdmahxOGTBC8u8YmfHS_8DFQvBnr7PxtJlYnz1GcBvhGhd1fm0aE_F2BfAupwknT_KA5tkVPHKKqYTOD1qe1n9cOeJTBxev54P3yYGcxdixeiMaX4OpGQdxHMTQMSEkwto3gn2cXgA_XAygeJB9FclcpfV3HYEw0YEavUWNqGAYiDgoM9XVB5Yf8UG1RpkLU%26ch%3DAQEAEAABABR7jKGinRwzJtIxulsiiDEEeJ-X69Y9wGQ.%26v%3D3%26pg%3DGZ5QCDG7YZFIJOMWK5JNU4UH6A
+.netflix.com	TRUE	/	FALSE	1813544218	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Jun+20+2026+20%3A16%3A58+GMT-0600+(hora+est%C3%A1ndar+central)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=04584193-7504-416a-b62c-27ee6891ecd5&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=3&crTime=1772999594448&geolocation=MX%3BCMX&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1813544215	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQczTW0rG6B--j8GYCjbwO4AZU9MDVexE4.%26dt%3D1782008214552
+.netflix.com	TRUE	/	TRUE	1792853991	gsid	a954b090-1f70-42b2-9a6a-0e7e28b71b08
+.netflix.com	TRUE	/	FALSE	1792853991	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792853991	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792853991	profilesNewSession	0

@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: October 5, 2026
+Payment: UPI
+Quality: UHD
+Streams: 4
+Price: ₹649
+Profiles (5): Jaxuu, Tammay, TV, gleeek, Speed
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1815242329	nfvdid	BQFmAAEBEMD4GmfJdQTsPNd2_2jdxG1gQo47mB0ds9y_-zOJYzDpt-MHKvb6dESUKarkti8PTfOdT5q2xrBQIE-fLwFoXHGELv_Rr4kHPYlryQr8Ud7wv9Oyz7p-PyssuONC4BHRG2LfrDHSy-ji-6otmO7BwdPV
+.netflix.com	FALSE	/	TRUE	1792940818	gsid	035478b3-eadf-48fa-930b-537402d1ee9a
+.netflix.com	FALSE	/	FALSE	1816105304	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Jul+20+2026+23%3A11%3A44+GMT%2B0530+(India+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=5ca3d4da-49d4-44a7-9e53-bef28dfa885e&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1783706329131&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1816157438	NetflixId	ct%3DBgjHlOvcAxKvA2Hm_YC8zaroPyni3UvJjGso7NdZx5EH-ELusGmOY3joG4bjAuhgXbcxvK5emypgtjIXwjilkEX4FgHZ3oTTyB9mQsZhlOMNI4031za10J8Ki6feo2WXGgDmDaQFLnlCt8la3HSSXBWR1Q6S7F3mEWFa_8cmrJQYWd_TVysqht1asgaOw6DZTVmL1ScEY_-SL9bAJFCvnnFyqQlkQ3dn1YaP3dTTc8wfWWMvPh8ZwlDTBjl3TQ0gNilo_BV_tQqZis1VV6YhevLDL_HYj0ETanN12hrRniiOTO66vK_qHuJfDfKHv3SpzioUzIMvUL4vwW0lSLPSS7vT6cWh-vOFwwKySKmOLDbmLAZ0E3AjUqzROd2K9dpdJiOEhK8-aPyK48iJUwg0p0Qu9qDTlLBDSeg993iGgbcP60dSNs5zNT-L2Uvf0h1a782sVAHJ6vvTbT3OXjMtDUDahO3zUGph1ADzL6WlC_VJoDWiWYxz8ALKwQq0LzatOHuPBfHiapvgOI8zk-ZpJMvOq1xGEUBKc7gym_RUDoNeE6iQ1z3hMBJ_Qc1V__GSJ1nr5a6YEf-RGAYiDgoM7TdmNtb3cH-4hv2X%26ch%3DAQEAEAABABTtiTV04rUbhTQrq13sdUm1J3uucsA1d4I.%26v%3D3%26pg%3DCOAPZVXYOZEZ5B6KXB5FP6RL4Y
+.netflix.com	FALSE	/	TRUE	1816157438	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTslUyDoBGRxzoAITUEKjF9J7sYznEDFKE.%26dt%3D1784621437562
+.netflix.com	FALSE	/	FALSE	1792397438	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1792397438	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1792397438	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

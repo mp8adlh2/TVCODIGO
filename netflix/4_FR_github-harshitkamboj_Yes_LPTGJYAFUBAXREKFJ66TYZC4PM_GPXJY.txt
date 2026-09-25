@@ -1,0 +1,29 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Premium
+Next Billing: October 11, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: EUR 21.99
+Extra Member: Yes
+Profiles (4): Šarke, Ethan, Bunmioguns, Meow
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	13442464529000000	OptanonAlertBoxClosed	2025-12-23T01:55:29.552Z
+.netflix.com	FALSE	/	FALSE	13443055477584724	nfvdid	BQFmAAEBEBZfw94ZNLgvgknwycePvqhg4FGaOmFQ_zvBEV-ZZpXVWTofW5LzwY67gq4sq_94M1ywvYykcxShIOgCHHq8U-LclYQG5Iwec7WrkgGmUqtwcwxzsvt2sMEE7tmyS9VLRpD6xBnlotvPVPAl62uBXKPb
+.netflix.com	FALSE	/	FALSE	13463291626571246	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKbA2uSc1JmldLQamcskK-VbAHrWS4W4K-cFa29aJc7x_ODbSBQIloLJ2Xtx9fDb7NcT-X1lfrGHacYRB4KoBMbL-Qu8EQwkpD_-uaHz3CRfUZ4RsZyWiw1Vg0eO9z6XcNY1wyjuVgHCAPVL2js3_S39Rnb6P1T2h_Mz64ovaiYcpjLACL8C8U5RkrIXSjzTEjYzVyvfTAqLr1B7pI1lNuVIcAaDlug7S2ddUgpFa-jXodAkhAcmdT7zSCRQ4Q9gGnnIz05yxPCFHPXMX61WzyyJrFx8LfOA-QkxgHENA27Gp0xBGWSi6aBIwMFp2TZ9Hu3P2mXny99KSm4lv0clLfSN9grHAtymBzXSFEpD58Cc5NFJ_mFajoHR7N-gMbuJA4ecqOn7VAjngceGicenHxEYURuqXmUcGMYt0VdWu6lrOCfCP-R3H3rCuOKnjuYyLu4_NMvkb3uXxdkEYGB54gqNHLiGZwkKhgHBYEFKsenKP9HhtjG2cNJCgWg330N4pyc6lntVmB_zNu1Sy8xxJLrJVh2Ag9KptcloK2hvBgGIg4KDKdgNrpQNvSScq4kNw..%26pg%3DLPTGJYAFUBAXREKFJ66TYZC4PM%26ch%3DAQEAEAABABTXT1uO3CU3F4PXZfMAln1wL_a9pbllOuw.
+.netflix.com	FALSE	/	FALSE	13463291628000000	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Aug+21+2026+05%3A13%3A48+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=0d974c6c-83a7-43d1-a3fb-86936454bed0&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1&geolocation=FR%3BHDF&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	13463291626571144	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQHVLXAzz5kmoh-E9PtI1GSaeOdSybC1mc.%26dt%3D1787282027729
+.netflix.com	FALSE	/	FALSE	13466315625243656	dsca	true
+.netflix.com	FALSE	/	FALSE	13431766423292772	flwssn	1b047731-8e57-44a6-9796-09fecf2c919a
+.netflix.com	FALSE	/	FALSE	13431842025243768	gsid	8abfab21-f7d6-4ca4-9756-185e25015711
+.netflix.com	FALSE	/	FALSE	13466315626465364	nap	BgjvvevcAxJJCGU8D2L6BqOI5CsJumfcyv15PBvTdcAYym081-_pJqoWmPXT9fyFrlhEvrSM_cwYECXe_puM1OERSF3CbrT4FQLL6xqKFAZlbxgGIg4KDI58yNJDGTX0WEQZFA..
+.netflix.com	FALSE	/	FALSE	13439531628315372	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	13439531628315252	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	13431757429884708	profilesNewSession	0

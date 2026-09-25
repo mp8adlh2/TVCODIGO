@@ -1,0 +1,20 @@
+NETFLIX HIT :👇
+
+Country: ID
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: TELKOMSEL_IN_PI_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Profiles (5): harlanatmaparwita, Rafi, Rakan, Mama, Razi&Razan
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	13442132212723238	nfvdid	BQFmAAEBEG6nODlZUr1WkeTOu81eLD1gxjChqvwxctrrjFZ4636etCAUzNOJBy1trBYAUTp2QYFdSB51llV3306C5pu4pqOVJHV3ZE0UglvCyX5jvANrHoSarMnXOEG6H69bPJOlg6B9nBwfh5Zn-fZmqiowFtFk
+.netflix.com	FALSE	/	FALSE	13464280325423064	NetflixId	ct%3DBgjHlOvcAxK4AwWD4a02FcMKwpCnf-5wrsWyF02U5-hFjKcGWP4DCweiPMPtF8INaUTliiaT29BQwvAKbBKrOns6ZAD8l0OTayj_s0FEJ2heyToqRMy_WWDTB76ZOjGz9ODJAR_yImOYV63dViJrBgyBtGQJjrmhCTHaoZZHwosvxCbBDcOX1RLdI_Z9IW55Ti8kCHB-I-BuWLMumsvyPokpsAyh0IPtA3YaFTvSEfeUkGDnU4NxPrOuAENj4M0dHhwQCa-H86F1zzj__WFhqoWyd_mAtcR4rj2ObnmoTA6JoAURCnBMBeyd7jUIKGboOW6bWU9284djTYFJ1QKmtJ-fznmiNWJgu30DO6ArOXiyBlNNUugcdD3be7gnLNfFv7DvVGT61fx5hHUgGBa3pt7Q595b8C8LE5vOWpvweo7WMfOLtPL_BzbCcsP3UXBUjVUTUaqP5KmCKxsrmfvUu4p2-sEmq7Dcc3tvaJ0KYsuwQjEXNsaREJ4_8PQLqDp7GCqV9vy2uuHA73FYQIKeZpBQJt4Ct7j53naAwnRdOw8y7LEWTteqAyqFb7QT2a4tNw0lhqpPCGid7ixRgpUVaTn1GAYiDgoM1NeZYJXzn94bUMT3%26ch%3DAQEAEAABABSq1vBdYPy4xeGtY0Y0ftOWXx7M-WCZUks.%26v%3D3%26pg%3DRUVLHATZHRAYDN4ZQMLBMTG6GM
+.netflix.com	FALSE	/	FALSE	13464280327000000	OptanonConsent	isIABGlobal=false&datestamp=Tue+Sep+01+2026+20%3A52%3A07+GMT%2B0700+(Indochina+Time)&version=202607.1.0&consentId=9ea4f44d-9c38-4a69-ac65-b151a591892f&interactionCount=1&landingPath=NotLandingPage&AwaitingReconsent=false&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&hosts=&isGpcEnabled=0&browserGpcFlag=0&isAnonUser=1&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	13464280325422812	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQixkHfrmZ4b8rybGKKPVlPkWtnvCKdJm0.%26dt%3D1788270721293

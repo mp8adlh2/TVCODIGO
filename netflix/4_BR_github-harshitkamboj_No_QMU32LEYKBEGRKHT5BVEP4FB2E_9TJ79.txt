@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: October 19, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: R$ 59,90
+Profiles (5): Geo, Giane, Grazielle, Gui, Gaby
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1803314047	nfvdid	BQFmAAEBEBUicIuKWKd5JYXQNA17cXBg05DKuZvjllBS0Xq9IamWFQYzgWZLR4NftS2pEK8A-o5TPrk5-Ci57BUOwefncyQTk8SdS4JdFdX2cxcCLTyPlw0NYe-TB8C51o24aIfD6aR0L5TP-X6xx7bgkZbKEnWa
+.netflix.com	FALSE	/	FALSE	1803314068	OptanonAlertBoxClosed	2026-02-22T16:34:28.742Z
+.netflix.com	FALSE	/	TRUE	1820154647	NetflixId	ct%3DBgjHlOvcAxLnA4Dvc_ecOYMsm09trLHMy5m7TvIcdYRuhMlOTVRDQZMDwofvrancckMeHPKyc8f6ElAQvqzijQLYUyF7fgS-V4qY516gxtT3DtJ_-uwQ-sOQa55N6clKDc9d3UqEr7VsuylpUj-Sd3wT0v29QmMt4-822t5UZ5NfKbsdxOdkaAckM7JxqNIRaVG9nFx87Mtvdf4E-nP0oTT0cJPtNBJ6MH7Or-Mkxmxq17SS1yT0LRpgPn463v8BOQYqJQQxlKent0h23kKwJ-68wH-LnLGfGapg77GqQeWAPEszcixvGaUeNKvi6mExQLqvnCCd-YPSiaj_vdeGSNWTQtrKMG6uQWi7vu-mbvi7AHAY7IzzOxkD0gUEqGRUiScPzqh0iX-DWLpFbNDVi-x2jt46qz_weM5b-oiCrDh-3MqAWzW7ZUYYHrc89BOZfG9JJ6iqc-sgEjgySWOHxEvtnKb2FQJApPx9XFHCbJ24ZY6v6w5_iIKk-HDAARU8ehgA4WhGGMp6CFCbZTOWex5-2VVRlyWtVv0VwF3_PZYeA7ks3PecvKzrWZJphGT3TDWMy4LFgMdbcmFFV0OmPfPw08T7fdnGEU1TcG2G1zBVxedBJekYprBwYkiZQ-AP0_Gp6KH-nnGcw31oiE2kEWMYBiIOCgzv0rZYEshF_c1O7Vw.%26ch%3DAQEAEAABABQQ3IGfGB6D2nka_Qwa54MLjNYefXjCXY8.%26v%3D3%26pg%3DQMU32LEYKBEGRKHT5BVEP4FB2E
+.netflix.com	FALSE	/	FALSE	1820154654	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+05+2026+11%3A30%3A54+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=874ee971-8194-4944-9bcf-ec57ba7f5dc0&interactionCount=4&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=3&geolocation=BR%3BPA&crTime=1771778069315&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	TRUE	1820154647	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSlpP1gu1742uhNIooRDRcqboRaafKD1I4.%26dt%3D1788618841587
+.netflix.com	FALSE	/	FALSE	1796394654	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796394654	netflix-sans-normal-3-loaded	true

@@ -1,0 +1,20 @@
+NETFLIX HIT :👇
+
+Country: CL
+Plan: Premium
+Next Billing: October 9, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: CLP 12,990
+Profiles (5): Jocelyn, Ronito, Texia, Vm, Niños
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1798654617	nfvdid	BQFmAAEBEMeuShpiuqkvvskosQMHqEVg7ES-mYhZ37w2bDJWVycO9l4EzpEfy8_vsf5Qu2dHUe7_yeF1tqAdTUlcrj6cPwraQ6_5NeP-bVvzEYu8gh6fLvt0mV2V8ex7s9iksthZ8hhCU5SlpV15vLLU9X75z7HC
+.netflix.com	TRUE	/	TRUE	1807203222	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKaAwiKNBjyewKmWC2kxUPay1vuLLcUJYR6KVGKeQSJUR5DVcoPoSAPtIoY-FGKRbqvco9ZhHDuyqAt6D9ZB7lLJxJFkuZSmFsPUDi11MejPCVEz2v1e5KNwE7o6_cPVyLFFoffQO8SeHqF5xiNbLrpFQtopZ5UhwUh-ibnEmqjwLy3zZ-yhWtOX8Z-Re3ogsS-iqXzyEMeGpF91Vp3Ga_jba2XarYZHKxO8ew2Z1JF4bxeaNwBJz6GCSmto-gmpaCb9zE5GDKv-YzkX0agEb8r4FGKLJ9FJgLO9H8R5p_r8HU2v-FmEQag_IVS5uJGGBy74crAwgfOcwyq41-lwUJmij8Sv6FyamPP_3ljg6pOWvHlIWSGYimvV3yIm9eu4BDKdUGTEHII-b_s08myddxKhMsJOkADl_78PTZdFdWOvCLHB2Jd93dL6J4t_bJNQxZYK7YO4YyL0zkFrLjBd1mnDu_omkTblaooD5RrPQzY0yuqc8Wev_dROluWc-3Z3CBlBp79DxXnhI-3C5w5Q0U1rqN7dRNiDwtmsePOGAYiDgoMNeYz3LwQocuM_TTm%26pg%3DRGOP2SKZGND4LGXRJ5C32DNLHQ%26ch%3DAQEAEAABABR0QeUgBcD_L4xzg7xava7vgyzYTlaqcfM.
+.netflix.com	TRUE	/	FALSE	1807203224	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Apr+08+2026+12%3A53%3A44+GMT-0400+(hora+est%C3%A1ndar+de+Chile)&version=202602.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=3a2ff1c3-2572-4a01-805e-2462bb50174a&interactionCount=0&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0
+.netflix.com	TRUE	/	TRUE	1807203222	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTuJXJU8XrmR3WA97bRJ6OgkL7AAhCVclQ.%26dt%3D1775667222588

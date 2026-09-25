@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Premium
+Next Billing: October 15, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 21,99 €
+Extra Member: Yes
+Profiles (5): رر, Dea, Toufik, Mélina, Jeunesse
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	13425659045000000	OptanonAlertBoxClosed	2025-06-11T13:44:05.735Z
+.netflix.com	FALSE	/	FALSE	13425659081410492	nfvdid	BQFmAAEBEJAtyvXvIzFP6HL0kLITK-tglFzZwse_Xad56Xl_rm4_lVnNdVDrpXYELeOnIXNdrawq9rghqUqzLEe182OvwWU7O0x7f4k0dYsdrIgLlAdg-cFhNBAaetJO8LQsB_JMdDalqxWz1oepfd0V2KRqikc8
+.netflix.com	FALSE	/	FALSE	13429533731879732	NetflixId	ct%3DBgjHlOvcAxKrAwl8ellf8JUfovi2TRzDnpztCR0Jd1S-lZr-hqeUwYAhIYBVsfFV6h3zBLMAFw4IXfqF1uy2rQFOSW2SSl3Ajmg8sr1mYA20lu2JXMlMWWtthqvfjWyLZAdvO2mfj_00OVPnDNenBg1hCnIE2gkj7w08UqwzmAR3zRhjdJ7XPk_nvFL03GYL8Z7UbBVjMCPtXg2MM-cyQ5jUwFE-QP8cAfbLD7a2xPtv7wSyfWChbhCZY0g0-V_6dm1gM41YnEycokthdpNDy8hyJkcN9HFQayluqG3CCHbt-UmE1mVC2TP34aiz7wn_Daz_eWEGcmoPtC_vlRdSZKCZ9-rtipQBR9XGYAg3BLR0eJj3TymhK0AH0t5tGProHsbrSGwXxHOeuqqR9YnxLGasT9IX7qptzc5zFizSYO82fIrCTm1lxhc5okxg9znYTlHQQEuQ-c_dAiBfrs2ETxASIfrC_kvikXPCjRAYNbVBIwJKI6w2w1z_Ak1LsCHAkol7hRVtGpRB1U9ItqS4Z7yccLH8aWUxyuZidZv-w45NPNvijRHq-AGry80-RzVw2_FSVOkYBiIOCgwIMPKheh-EPwBrGdc.%26ch%3DAQEAEAABABS3e9AE9Ourc0FvadEH6FkgmWn5SgoorLw.%26v%3D3%26pg%3D6J5B2EZL6RAX5OVWMFSZ5UFMJQ
+.netflix.com	FALSE	/	FALSE	13429533749000000	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Jul+26+2025+12%3A02%3A29+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202506.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=ff3ad372-bb7b-45d9-b659-08ca41ffb6e9&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&intType=2&geolocation=FR%3BIDF&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	13429533731879568	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSvlCk9BLmsRVCFqaxQLLcXrhFjOwy7Q9Y.%26dt%3D1753524131184
+.netflix.com	FALSE	/	FALSE	13432557734576736	dsca	customer
+.netflix.com	FALSE	/	FALSE	13398008534576632	flwssn	1636accc-094e-45c6-a938-0dedd0aeb9df
+.netflix.com	FALSE	/	FALSE	13398084142646498	gsid	59f8aca5-5551-4231-aed1-76cb77cb48f4

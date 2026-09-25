@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: ID
+Plan: Premium
+Next Billing: September 30, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: IDR 186,000
+Profiles (5): Kelvin Delano, said, Pliz, Ilyes, Dahi🇩🇿
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1792853993	gsid	78a6b9e2-8d07-4890-bc2f-9a7ed5207c3c
+.netflix.com	FALSE	/	FALSE	1792853993	flwssn	fb680f36-24f1-4428-a783-e89ae8a33d12
+.netflix.com	FALSE	/	TRUE	1792853993	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKIAy0GpJ8qwXGJ14CWOs2oHJtLAQcRIyTHb8ilNUDlnfBQFTBMNxoCelk2J6gUGEFEhPW8uMy08kNmpNkAGHV-DocBqArxDbTQxJLAq_BLtEquHZKGYMD4t1Ll17_-r7G_fCiqk5YeZBKGBGXbpMYTmYRaLUhSxhBXPY2EUXdB3cW-obY4QnLCYz6atk5VlfVIHzZXJMM0l60Oggx-R00vstkQcYxpk1OW7H6j7yTHRJcZfDWWsRhMUYDryAb4ZZ0tCYaANclzt5Y_imN3yLefRnnZDLRsmGdfvTc3vlRsQ8jEJNafvHuKrUfgAt5z7s7MHkmGpa4gMzLnd3UPD5Ox8G66dhKnrzDjO993APOnemMNd4HRkd970ic8m0TIGQZcMKtQvYbF6S1QHH5QjGBBuOmZ3rsxLy4Wooi9N_LV-Jk2K_Iw-Fdglckl7NrvYSLWLVH8j88uGw5buc2QVwhxbQpFHvxM-gVhfqCIQxryC385_aIt5Lt_XcxF7lX8f4M27XeK0DXhWBFqGAYiDgoMSX8nF81iwn0CH-6b%26pg%3DIWZAEJCVSBG75OIRDPTKS5L2DQ%26ch%3DAQEAEAABABSTiRzbFRINPyW0vcR_nj5UNhnKgXXGojc.
+.netflix.com	FALSE	/	TRUE	1792853993	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTQeBPoQdyO9apcrQsMdbHnUH92T1hi1nE.%26dt%3D1753549374830
+.netflix.com	FALSE	/	FALSE	1792853993	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1792853993	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Jul+27+2025+01%3A02%3A56+GMT%2B0800+(Central+Indonesia+Time)&version=202506.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=f5f4fbb2-62ac-4a9f-b32f-56f93ae6c859&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1792853993	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1792853993	profilesNewSession	0
+.netflix.com	FALSE	/	FALSE	1792853993	nfvdid	BQFmAAEBEGCi8K-EkUY9_tc3qXA8wJdgObMt6nIk3MMbOmPYwX5cnoeugVO_CEIFcOkSIH5KZCBMh-6ON6KGPoJ5pDKg3lSGbIuXffAm3lA5ZfXPA08ODqgV_smbdIHoSjq4tzVMXY-uME7nT7XoGEqlclxCivqp

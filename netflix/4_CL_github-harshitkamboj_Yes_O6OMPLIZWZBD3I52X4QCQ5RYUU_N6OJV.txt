@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: CL
+Plan: Premium
+Next Billing: October 16, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: CLP 12,990
+Extra Member: Yes
+Profiles (5): Mama, Dei v, Esperanza, Pan pe, Dara
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	13452933512314716	nfvdid	BQFmAAEBECRHe_TrLNWCXp0UsM6AmHdgH7V8r5HOGqEeUDQMkoE9cgxnPBSkADFs-4fGUF8FgXFsYX9_vdHQDfewj9mhEILzqlyaqtaw4EpteoqAKpSmr3QUddzEwr3yO--gukNmgbBMwvsI2O-OFc72IOMIHlkU
+.netflix.com	FALSE	/	FALSE	13460764440000000	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Jul+22+2026+17%3A14%3A00+GMT-0400+(hora+est%C3%A1ndar+de+Chile)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=616f31ad-40b9-4556-91fc-ed7b0a0df8c9&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	13465247756148640	NetflixId	ct%3DBgjHlOvcAxLOA101tkx9fBWrngcXugSxwdFol17nDw7CbFgMAUfshv5rc2xAQl_83EhCMMBcyAAuz98vLacUgSOikOi1uTztFF-JNkcwfZuFSwL6m1I6WPzZOlmqQ3iCYJUN8116Eddr00BQWryaRFaAPetF5mn6IjLgJ9mIfHIthhwyyDELcZ7kpoMZ80U0fUhxZigZCTzOouRjL0YcFoyMOD0zWRmAHVJsx5aaw3cBWSAzf-EqnJQjKMdENWOmsUE4Do5lSMj000JAx69mNTTGRtnXYh7exBc14XOaU-DPEnlUQVtODaeVCwJuuGwVKYs2plqdgToE3swWF66L584qvXx-8_YjS7ZmohsvyYv_5d0Sf2Y-4g7rabJOCQh4FEPuOZw4b1-4_xSwV3xV9ov32CGlpdNoS9nGPWIxKscaHSxmCqmdcdGTMSp1iBXaXQRRFPTKYAAR0lwrlBfGW77TcfHhCVOcZcoRRvHnCWfncgBez6SYzT-bqD8JQ3GhyBiZro8sYWDwSezCrSlBENw3uI6SsILOArlAML6En0jznJ_t-s6yCh7ANpOcQb2hWfjN_BE7tLyKjgxQ_JO0AjCIFFqSrzwVZqRWwTpcyb0q4GXEDLx8XBgGIg4KDMi9FI9veOoiznhQTA..%26ch%3DAQEAEAABABRbb_lTYZ1vUQQ3_yYM39uf1kBFTcNBGPY.%26v%3D3%26pg%3DO6OMPLIZWZBD3I52X4QCQ5RYUU
+.netflix.com	FALSE	/	FALSE	13465247756148560	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSy_mjdmZRC9OPd8zqo6Fk8VbXz1Ug6p5k.%26dt%3D1789238156299
+.netflix.com	FALSE	/	FALSE	13433798158148800	gsid	1814f443-0e82-4a59-b7a0-7d5a3d56537f
+.netflix.com	FALSE	/	FALSE	13441487758148358	netflix-sans-normal-3-loaded	true

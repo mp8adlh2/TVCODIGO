@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: SI
+Plan: Premium
+Next Billing: October 15, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: €10.99
+Extra Member: Yes
+Profiles (5): Karmen, T@I, papi, Pia&Klara, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1820192364	OptanonAlertBoxClosed	2026-09-06T00:59:24.049Z
+.netflix.com	FALSE	/	FALSE	1820192365	nfvdid	BQFmAAEBEK0HT_oROymfRO6InDTJjmlgUb2U8w3ZhnutKnuT28RE5ZrHPIMX5MtkLJn9NYjbNigEEGrDIVBC_rxtCWpjPpUANmrIJOKpX8tz9bYKzL6XxjZ4ML7jGymMapd7gGTsKHUd6589iPY4yvqv-nxmzPRV
+.netflix.com	FALSE	/	TRUE	1820278265	NetflixId	ct%3DBgjHlOvcAxKwA9KqdQe2dkU--xROOPxMHSrtJHK0vB1QFHoQ-GTybyVmre7SjL8EN_oRm6Ey_xiB-8s2N65QcLCsV-T2azDs_j2PfeFqYXgJcRv4aHiHykoY3fJHpfvMteKYaCvjIuRT0w0ZH4GMvX6QLcO9kWXFaZu2D45rCK95iAD1n8AJFwFaeJ6xyks0eVxA9ysk_FSDQf1ZzJl4xjqt6O8qXCmcWBf_RgV1euGAetWmuxRQDubWHPBG_TmuM9EUtTOMGcBRiR0qGbGZdsXVPDh2UA2banQ6g7ffYkFlaRovTpJW8Jq7ZAYEjNue30NicqMMGmeihxfWX6Rzox5W1ervtnHxD1BaLqpm4TqzdWA30TeYe1mLZSxxjplpn9PxyfK4POtQmmdX-i6HOHdpl5o3WIOrEyu-eKiADGKPXXiRVPSN8XPJxjdUUtB9eqZhfa2yAkEN-Sd2VVvIjqyldg1t2lC9Hl6AAdzaX1W_a0FyCL_w2P7-fk5D1FhFCqakBFNxuuHCgMbfkI64lclTc0iq6CM9Xdcefls16upzAYy3dYdDciR6hc-XNaM_HyT9jJHqaxi4ARgGIg4KDIWsh6NZqr7nnNTYOA..%26ch%3DAQEAEAABABS4U7pVeSwtdLFKUJx14esdxQVtHAd1oLE.%26v%3D3%26pg%3DRECSVSAQTVFSNN5245TC2BVOVU
+.netflix.com	FALSE	/	FALSE	1820278268	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Sep+07+2026+02%3A51%3A08+GMT%2B0200+(Central+European+Summer+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=14b6afb9-a727-49c1-bdcb-5a406b0a4991&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1788656364377&AwaitingReconsent=false&fclco=&lastConsentTs=1788656364&intType=1&geolocation=SI%3B048
+.netflix.com	FALSE	/	FALSE	1796518267	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796518267	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796526760	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1820278265	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABS-aJ5vMUhgt-fWNbk8HMmwHnlsPxq6hYk.%26dt%3D1788742191561

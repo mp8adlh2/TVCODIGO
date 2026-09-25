@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: BW
+Plan: Premium
+Next Billing: October 19, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: US$9.99
+Profiles (4): Mr T, Sarah, Wilfred, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1792940817	nfvdid	BQFmAAEBEKwgkTLz6Cl2X3Sc7mtAM1dgKx3v6kAFf2w2q1YxJ-BF_CLeYMf1ZDYT0780j63IH8cnwrjphIFfY8oRIPGamzLuRmz-biGH6689wyEn1SJZuoOohrR6YA83emhg9rDd7fFh9Xn1_jTK9BsVQf99v9oD
+.netflix.com	FALSE	/	TRUE	1815603892	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKUA5G3CDSEapHgD7tFVCBgwNrCSa2S3bSDGrNge4dDJXU4idJ1oku6O7JpD_qXZK2cfV7u4BmmtUbZdG_0DYhwu33rmMmiUl0OnH3-jijiKYJIRtEnGi2ppZ_y5TGOdjXkx8ndTOYmoX19mmTagonx-COB7cmpju91lGQfOeKR0Hru6CzNt4ZTBC6cJSchax4zOwm1sGzJbxJEPJsjLbuj418U_f2ME7ndN7HU92J1CmcqrHjfFvsMlqMhbmwWJzR7nAaiPhVLQQZNBOPajJc_vSgIKgpOmqQPo08bLHe7JVlXirvzDY4EePPavaZI_yMJ5j9DQbxxqCwfS9UXH5Xnn8KMbCzRu0g6QHs0CVmXGPvnLYs4N6qdOYzLlkXgjlKJ9psZ-SRFlpP_GMR6TOPPP7avbnnLsbdxCCF4Q6gBE9hSbs3z0CsCfEwPgT9PMi6Im6Cafi7LqPX_GuY7ixvDL8IjMAP27HpMK7gFbBMt2dMzpuToiWtgi2l_iMipC0gy7ueDK9TMizFyjdLAnjmDDPq_EPLwGAYiDgoMvMUulPXU4luZnziP%26pg%3DYNNLRUBUV5HH7LWSJ325MUOUTU%26ch%3DAQEAEAABABQutUg5vRqn0JTCCR_tHTPt0JRqsei3TpQ.
+.netflix.com	FALSE	/	FALSE	1815603896	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Jul+15+2026+00%3A24%3A56+GMT%2B0200+(Central+Africa+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=0bbf53cc-8af1-4b5a-93e4-8ea5f2e1df89&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	TRUE	1815603892	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTwe7Bs2Tnce76WZ7Ced_gV2v_tA9zahZA.%26dt%3D1784067892760
+.netflix.com	FALSE	/	FALSE	1791843894	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1791843894	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1791843894	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

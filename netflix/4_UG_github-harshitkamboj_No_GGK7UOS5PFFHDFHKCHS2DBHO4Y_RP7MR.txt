@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: UG
+Plan: Premium
+Next Billing: October 8, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: US$9.99
+Profiles (3): 41cubanathegreat, Jimmy🔥⭐️, Amé
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1792940817	gsid	c152484e-eac2-4d72-ab59-6ca90d2ca806
+.netflix.com	TRUE	/	TRUE	1821539200	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKtA3Z5nBr5arQ8fXDHMWABNLWZlB6hvU29AZXucT6hDoA_wSBY2rEzXYgOw67YEzHTB24xB20ib1F4bkTSMAwTkcMBkMMbkVcOaBp_sUMfdxE1pvE7AtDMf8tszjvjxTNahte_KEKqbo91F9DzTxd-0zO1N1sjVsSamTJ3EQ7uJBL0WmBtbNq934ZjBBQbGiHHY4qKKXMKp5xqkPmHNX3jDyrTYtnbV_e2RfLh5oLhrura9OPI8dBs1JIwG5fnZPffX3vrPbpuvAekgX73loepmRMz3tJjp3zCoIBO53r_igMi1C5bGPbYnD6LhY9QkR87oZR5UCntfmZL3oSww71R9cWmD3r4gL_5Q0K5b0eFyAdU4OFXZituLBvb5532t4qzWxpoDzqYpzKd9us0KFktTr1bNve1UpnQH26LJPVBKhppvYksWt9c6SSuxaISctK4y_dRqTrlZQEl3sT8OKt0wnPDTapeyfzHf_WuFz6oluFkSFBeECAyoC3x3uUgtSUhti0V7m2m0sEnUJ1BWO6r1EPns3QlAGkPAqz_vPeCa_QjF1CkE02Yz3kK7aaFnhgGIg4KDER4nWt3VQ98Znt0sQ..%26pg%3DGGK7UOS5PFFHDFHKCHS2DBHO4Y%26ch%3DAQEAEAABABQACRBMlI2u0fsrrVwt_mUjFyfQv8-2A84.
+.netflix.com	TRUE	/	FALSE	1821539203	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Sep+21+2026+08%3A06%3A43+GMT-0700+(Pacific+Daylight+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=637bc842-be40-4e48-a432-deb28bd6de79&interactionCount=0&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1821539200	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTX4IebCOZ1nwOYXJoPzgCBZA-njbQY58U.%26dt%3D1790003199534
+.netflix.com	TRUE	/	FALSE	1797779203	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1797779203	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1821539200	nfvdid	BQFmAAEBEIPz7BlWN3qTO7WfMTvGmf9gxskcXVtJxJL9cGcjMAHaoKDMCa2x0TRhgc0pXCGQ5fMszU-r5iVi7BVKspu89OkJPFqwKF9UfFvLE0VTskYOXHOKV8uDP0mA6FFj-uwrvORteQlUznIcy6Mkp3uTD981
+.netflix.com	TRUE	/	FALSE	1792940817	profilesNewSession	0

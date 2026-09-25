@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: CP_FR_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Profiles (5): Mélo, amber, Jean, Invite, Lilisurf
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	13442247751272220	dsca	customer
+.netflix.com	FALSE	/	FALSE	13445986937000000	OptanonAlertBoxClosed	2026-02-01T20:22:17.335Z
+.netflix.com	FALSE	/	FALSE	13445986934933236	nfvdid	BQFmAAEBEANHr78pyUEF0T8odnfb-N9g4_IQ9qygnzfvyxRvM-Gi5wED5iwfdHmcBW3FM2HPtFN3G_KN1AYdsqTiGPAlpfkRXtn6lQ2fOaGiULsAV931a5oHt5U_pxDmHMmuswGzD27kmyKIuQQIwUhdB40vwQ44
+.netflix.com	FALSE	/	FALSE	13463934920407380	NetflixId	ct%3DBgjHlOvcAxLKA49eKbgMeq9Sp8zfbSWEbhT2T692dnsenYoezF8JT4EaUg_3L60M-vZUz0KgV1PcLYrt25CKnk7IFob5VxxTz3FkAtSyLR7LijZ5CEzeDee4rdLF0ep_E4APQ8ox5sX3Akrj_JcII-6msJ7AXa9UfZW3ORhtNAT7z2A1H8OCvcPNOiAkzI634dA4AOaf4sQQ8sxzAINfbX6LjiZhpGQb9AGPxzGziNh4PNevfHnlGbB1veDYcOau1-9mG5cLqB7pg_V6eW5UEv9Iq0TOvdQteT5fMW3bbCFZIyOZuavLUWJRSlaVvDMaoJZ_0DUOaya5-5ZPk7Z87PVQep5pN74dQWvPpBV_Qgr8S-ZWmrwY7yeLt0icKESFyRNgEdK87LVu5O9H6XSc5nR3kMVDuooRS7YLZHgyovVYxZ0wDdktqLV_uUvNYcwqT2NwQjrKE5J3KVzlLiYCl90DrIzRPp2zEYuot9KfUXRkCw2r6DVgejeOmk8pzF4pnvWcZlBH_D1SxOos0rY9ZUFhluTXaWskinF8pMVWhM7FbxCmYNtUbAz_zW-RBvEWQ3zfFb6Kcle21zJbdogcNIC4jZUzRbiB4frtheYohDkYgYrcGAYiDgoMJAEjLfJ6hRfcIjm1%26ch%3DAQEAEAABABRalOPXoXME8-PFrgfYE2AhOiOliVTphD4.%26v%3D3%26pg%3DDFOJPD7W6VHFDP7IERPWNB7USA
+.netflix.com	FALSE	/	FALSE	13463934923000000	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Aug+28+2026+15%3A55%3A23+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=d6262544-001c-4051-82b1-2fdd6d6bd593&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=1&geolocation=FR%3BNAQ&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	13463934920407286	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABR8CJ-EJcpZZCQZpuY7bVQpMGPptHEXdB0.%26dt%3D1787925318393
+.netflix.com	FALSE	/	FALSE	13440174923015496	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	13440174923015450	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	13440174923015344	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

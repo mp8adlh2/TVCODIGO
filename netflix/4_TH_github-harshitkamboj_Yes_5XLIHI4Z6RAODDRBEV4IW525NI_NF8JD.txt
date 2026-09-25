@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Premium
+Next Billing: October 26, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 419 บาท
+Extra Member: Yes
+Profiles (6): Bunny??, Bunny🐰, Pang, Guy, Name, ^__^
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1799688122	nfvdid	BQFmAAEBEFZMVBNeIIMiDjaYX_ssb0pgECg6x7b1H5Y3wnLU9I3KyRtvHbmcb5nCxZCNAbCpGigWVaPd6jVRwaseueDd4IUpOXTyAwKrHoUSemLXOxAM1s3JKNz9W-6qp9RXy8-v3dMG4GE36Fvg8EeJ7QLuV6_O
+.netflix.com	TRUE	/	FALSE	1814842265	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Jul+06+2026+09%3A51%3A05+GMT%2B0700+(Indochina+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=18ec5a5d-17f7-4e31-9721-22c26aded3fc&interactionCount=0&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1814975262	NetflixId	ct%3DBgjHlOvcAxKOBOJNr1B-CI9NZ4f_v_qmaosYaIamUpX-Y5BbrX5R6kvf0ZPTHEAHYqqFbJ5ZBwz8wBjnFYUV0h3DOz-v-Fs6U0pPJShLGhNz1MZoE5_9YnWP5MnzqoBMzKCm8l-6YcItYphjS1uQXBxkUtFv9qXM9ksPlH6nEfz9IsTDbk6p7oexfhRSd2lbouJTU_0DASFJ_28wo0yodbG3oRjMXFQpS-wAMT0nFC95hV1DJ3cZh-lDEVAzs2W1RgXPNadY1pA80O3lU1CF6i7HPrO0OCnRQj99tnNXj_CZSCKcU88Mtx_WGYuKJWx4fXV96W6EpiIDObvLORP0-HWGEgK2rDhlnULD-WfXiIMBRN96U8pmlepRGD2J5diCygr1UQUXN45lNk6XKJDFhIteRZe4epfHGJxqvGYNK2y4rbuK0YC-BDEtOfwTSrhfKt12qj4YmQVdTrX7ofxRp9vcevpD3kQfpxliwwNLzf8X9TqOhYB8MdE5nRtZVyHJ58Uenwoh8lvHv6lsvl7d1bTSuLrPgPgV33k5wRkSHI9x4u2lF2RUhff-OTZy8_lDy3eJVhRGKZFFNDhbauERRqkxdt_RAvxbAQj85DWtwtgaWcGSJNDacXf2CuUnQk-4hXXU0FRHqmST86i_Ffikpl4be3PHHwCyZKuFMAtQgvkh4xnuNVNCywphXptRKlfQ0cnO7NR1irEYBiIOCgxZfPMvBUiKYNhRIII.%26ch%3DAQEAEAABABS5STpMz7CdAPjzo_nriRoCjL5MldoHgpY.%26v%3D3%26pg%3D5XLIHI4Z6RAODDRBEV4IW525NI
+.netflix.com	TRUE	/	TRUE	1814975262	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTdXANELor-1953fjzoWUifmYEFSxORUGg.%26dt%3D1783439262243
+.netflix.com	TRUE	/	TRUE	1792940817	gsid	560c549d-0210-48b7-83ad-65052bed9144
+.netflix.com	TRUE	/	FALSE	1791215263	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1791215263	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1791215263	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	FALSE	1792940817	profilesNewSession	0

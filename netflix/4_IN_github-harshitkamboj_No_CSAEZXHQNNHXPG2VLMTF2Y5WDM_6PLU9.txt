@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: October 7, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: ₹649
+Profiles (5): Romit, ViniX, Ganesh, Dhvani, Children
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1796806525	nfvdid	BQFmAAEBEPMrxwYzeqHS-_IfCxlK0stgjHBnUPVhKKJ7P3tFc2rCiWUCHJ9SprIAl5rtuWDkV9dAH39TWd31GMtv1FB82A5X5twi7zFr2bf9e7xsaj_FEKEGDjFP4WaNQZQeaBEZSy-q_09O2A4vOZ7gUdYclwZ1
+.netflix.com	TRUE	/	TRUE	1814448629	NetflixId	ct%3DBgjHlOvcAxLeA11zbnV8VUJcj2iDjghQ7SP6wHQ8Ddu8sLH7wL-fxJUGTF0Kk93MxoxNJbIHvRKHK2bj3W2DVFxrD7-5DWne5zBZ6pQcVXPVBN7Ge1eAb4dGDvnxZ5prGCgbj3BTklbaIKF7sViij0SLz2c309OhoDBcfogLl3cFkCC5PVievB12crEYp_USDWD40qqthT5hsrrRnr2TSvPtby5rUTxYd_htcsFvCcYqooxAx2YJ6umJiCF7m7XVoigTWeYPMFyk9rLcnsmWkRtHfxJJYSaLE-NR5LCN6RhzIbrY3XMgQ-HAccU4QfdrWXPk6hwpAhy2_zzlM9efgMIxEVzv-PsSBCmuGJZ_5cLdniFQ2hVFJaaUDHFlxze1C1V65bxO1Y1TvQ9-d4K5uiLdXIqWy5bn68BEbHYgWSPtHYdD8KMYTyt-2nOvXtMheMVWg-NO6eCl2wz73SXY64Xdg5kO8dzQrHG3GVLdRisTMm-osT_zNqZ-PpzOC53PxH-V6Jw5Z6E-TheiADVuR89aSm3rK3V2yudpowtSJcTs4frzsGzCWxv9Ui3pKNSdrpsDSaN_eNqIvOiExzVaOTyw3ymbtu788wH9VHG7zA6SMcpxlx7_w30IX0-CrjPxZOU-7r5RIbAYBiIOCgzmRx2-bFv-jTWxGtM.%26ch%3DAQEAEAABABQity0vkGMiOowYwlyk-jHIx_Md51eUFrE.%26v%3D3%26pg%3DCSAEZXHQNNHXPG2VLMTF2Y5WDM
+.netflix.com	TRUE	/	FALSE	1814448631	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Jul+01+2026+19%3A00%3A31+GMT%2B0530+(India+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=f4587766-a3d3-4515-9018-3cb866502448&interactionCount=0&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1814448629	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQ3GxhwNBEHaR2c-QIxqavZ5xFnN0EzQZA.%26dt%3D1782912627185
+.netflix.com	TRUE	/	TRUE	1792940817	gsid	8abb55c6-11f1-4cea-b051-e35078212710
+.netflix.com	TRUE	/	FALSE	1790688631	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1790688631	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1790688631	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	FALSE	1792940817	profilesNewSession	0

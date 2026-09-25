@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: October 4, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: R$ 59,90
+Extra Member: Yes
+Profiles (5): GG, سيدعلي, Erijon, XXX, Infantil
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	13464622919000000	OptanonAlertBoxClosed	2026-09-05T13:01:59.010Z
+.netflix.com	FALSE	/	FALSE	13464622940134444	nfvdid	BQFmAAEBELs0MrQ52AmH6lTqWjq3PF1gTf_QRrzuzXNGV1lljTVWDm1FlHoq9_knUkwiub3j6ZyT3-KehKuw7px6Q9Fu0vk-MdxeYRcI5n7QDIILqWEclGZEUZ0FgYWYF1Lbg-mCuJaUTi6LrM4c9NLIjDvWigNw
+.netflix.com	FALSE	/	FALSE	13465518230176296	NetflixId	ct%3DBgjHlOvcAxKNBAhJSs-_-ZnYEgCsQ8SQMtVBHwCMxODhCQLMJM4MP5GW64CEooI9otWOmPzpBxBIwpWXsisMKzAa_PfDkEGrUM5i5xGT809VEeJabgifnKQSz9Hvmz0WhWkPJshSrYtr5DRNs836JXaGSkVjvs2HKRkwepgL4ovHx3A6GuyH4EFNh44srGXk3aZq1WoaFpIrYFJfuPUw34u7R6o4jerMx7BXsVM_hU4xB9hzvQS0n11iWSMCFl1X0_yfXvzMGqtks_T19pNjaZr4zuvnkg0Qn_Al57jxMy3q7mVrLEhgOpOeVhxY44kNV9BHGcGnUJkP96ivn-myAdL4OGUbgM7VhWZOAEu9-NtKQKY2S2hP4i1sIwaCB_LfyU1XEbEwbkKTFo2SR7ieYqnCWYLLTXrVxNwazaKeYE4YRimUpXN6Tqibyxxe0-woVBNDZxleNzxdBLla2Sc5uOuRHO9EkXY9_A76nZqQShMpJwZlhvdxFXW6GhnTpsCw9EuGLe1oqCOo0GRcDTzf01DHSEEvntLBeE4TBkuIdCRb6dXS5mgtw1gByGq3jZA1U_sT4JJsZW8_z7nH0-Dehv7w0j4Xboou4_e6q7F4ZyPYn8EnJANANGMl-KKAq5n2E7NETeekeuyiqxqi9FKIpnRBs4JPFy0RiQROXHpVYuztK7DlUqxTz1-uVWv2Ql2yVVFfWAa1bhgGIg4KDPcfTUkLvYWsDxVudw..%26ch%3DAQEAEAABABQyIBYzAt2Aj526dPVK99YEjH0O8F_AHAY.%26v%3D3%26pg%3DHIRB6O4SPFEYHH5PAGV3BFN2JY
+.netflix.com	FALSE	/	FALSE	13465518230176148	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQiFzb6eGaZmO5mT_ehBNLKV1R5rfHx784.%26dt%3D1789508630590
+.netflix.com	FALSE	/	FALSE	13434068632420348	gsid	3a863ad1-e4fb-46f1-b58c-44ef3d1f6e80
+.netflix.com	FALSE	/	FALSE	13465537247000000	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+16+2026+00%3A00%3A47+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=ad3c09b2-2005-43fb-a383-7835dbcba9e0&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1788613319411&AwaitingReconsent=false&fclco=&lastConsentTs=1788613319&intType=3&geolocation=BR%3BPE
+.netflix.com	FALSE	/	FALSE	13441777247212062	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	13441777247211932	netflix-sans-normal-3-loaded	true

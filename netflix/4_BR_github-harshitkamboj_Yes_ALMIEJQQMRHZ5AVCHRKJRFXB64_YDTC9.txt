@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: TELEFONICA_B_PI_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (5): marluromerocestari, Benedito Carlos Alves Vieira, Pedro Vilardi de Oliveira Cestari, Gabriel Cestari Vilardi, Mônica Gambero Cestari
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1819828263	OptanonAlertBoxClosed	2026-09-01T19:51:03.113Z
+.netflix.com	TRUE	/	FALSE	1819828303	nfvdid	BQFmAAEBENNYPbd800GIPZtWjolkwIFgAyPk4ksnkrCTPbwGij_kjbDQpjR-1ph9Fjb1hqEA9vlpth_UZBLqIgm-9c09fQoY2-8L39a_daFb2GvR-aJPL9FlYg5Whss-IUCmpZQ797Kc1-zBbYsBe9UEbHT_lebG
+.netflix.com	TRUE	/	FALSE	1823024819	dsca	customer
+.netflix.com	TRUE	/	TRUE	1820240393	NetflixId	ct%3DBgjHlOvcAxL_A2LEGir3rIEKt_xXy8zkb1rwlgA8N3cHmvjKpXBEtT33AshqKp-jG3xy0IwB1DYLhvWrE28TZ72ckt1wEbbipglOf0jvCmCTOCbI4rYY6hLmpn-r62NukzU8lf1A5IquzLd4wKcd4NeV5OigT5zWnmbEf9ev-pfuuGI64mX7wG_XJUxYvUaZ1QORTcmsh5YS_ErHo73jhf4z8AI2pS14mPzktb9XByYvJ65h18y95hC2-6AoEksFQCokLprc6OsOmYmLSDBFoOH0EI-eh1rCqG8oWdrsV338bREpngsb26IApS7jUwxfVKpNFw4y1gGwn-OeyMFLnScVbLERkCvwByUt9RdoDSntLVy5PdsGBVrCkyKYckZ4MvuWKHCgNikPojkgI_6J1cPbKvo-uP8RzJ1T9VgDugF8EPQm8JdlmTjPJ0hrV9AXEo8XSrPMOjEuSpDwtw7eQK6YnFl9c329OQ8TN3QDZBU7ifeHVwlGh6GWmtmDCHyesQ7ioArx4QJ4SC-MIsMdiK43YbLSNC1rUF1K4iyPPOeCwa4CSPNPdZmW5NCdT8Nyy7AYQAbJPGI8BWuW_e_P1yOrPE0mFiPBnsqIYK05LwUVZrk2138QBExlMwK7ckr2Bt2PmfAvHD1_RJ2mFtkYWz0LVJE1d9jJoix-lQQz7dMJggNqzO0zqLUYBiIOCgw1OyVAAdkSzMhTIdU.%26ch%3DAQEAEAABABT4-4YDJrd7pVgWwKehamE_wqEZGPU40P8.%26v%3D3%26pg%3DALMIEJQQMRHZ5AVCHRKJRFXB64
+.netflix.com	TRUE	/	FALSE	1820240395	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+06+2026+11%3A19%3A55+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=04539f79-411e-4947-88d3-9d5455c35265&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1788292263567&fclco=&lastConsentTs=1788292263&intType=3&geolocation=BR%3BSP&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1820240393	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSAZNWzuO2g8aASeXW2uFn4zv-4gGbrsY4.%26dt%3D1788704400195
+.netflix.com	TRUE	/	TRUE	1792940834	gsid	c3991c2e-a5a5-4375-931b-8925042caec5
+.netflix.com	TRUE	/	TRUE	1823264395	nap	BgiJv-vcAxJJG1WhdFH6-ew_8NPGsNW5J1JnpUuws_3nWL6vkmigKxxH0b-t5T6nVAZtuswFl7yAJJL8WnnbbHYnaiR4TjXiXsMeJOC74vT9vBgGIg4KDG8SIdoC4jPj8Bp8cg..
+.netflix.com	TRUE	/	FALSE	1796480395	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796480395	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792940834	profilesNewSession	0

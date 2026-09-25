@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: September 28, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 59,90 BRL
+Extra Member: Yes
+Profiles (5): Lilia, Luiza, JAILSON/WALDECIRA, KARINA, Siam
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	13417489211040472	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKHA9oSk38cIm9SvfdPerMrvaoj2VCRWsHflQ9izMLvRAS2SHUJgFfoXbAUToCLLPslUzL3zPqDsD8dVn9FqEKyk3bnfVHqxyfOHOsn5WSBR_MiAkswkCgdKcEA1WKhLcZf1ZsBwjrKaya0XvKHIDaBe2yN050o52HkPAhCqhjtWhq5PotcaZBO0chrvH0C0dslqGnA8xGXrGp6gfsPsMkam0e6yPjJTeXSHyIXCjD_0Hiv5oU6axgcJr7_Yi-0z1pqxDWGljcjERxZMLc_tGaRKO4eLKIv3RO43nLjLVIO1DbGea6xN-_LM09JM7sXTpByDlxgxQmOFBEFU3IMUn1NzDUXivKKaeO2a2wc-w3fKi6HsjUc6RcPxpKaKgwD1-EccKBGqxVtGZOSO4LUs8b3Qu3Y2ArERDZimY3dH3MT5qgNskGSydHCWN7Oq0ajpYwQw-YGD71muMA3tErij4jjuoFcFgk0U4cna-c9q1IoRf1sGeIiSCQ-UkCGsVICkqjoRqEn-QFPPWcYBiIOCgyrQLSipOWEvq_iO6s.%26ch%3DAQEAEAABABTpBVW_3DvJNPP3p5wU-jlbA_umHY0oBIY.
+.netflix.com	FALSE	/	FALSE	13417489206000000	OptanonAlertBoxClosed	2025-03-09T00:20:06.577Z
+.netflix.com	FALSE	/	FALSE	13417489211000000	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Mar+08+2025+20%3A20%3A11+GMT-0400+(Hor%C3%A1rio+Padr%C3%A3o+do+Amazonas)&version=202411.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=39827abc-aa7e-4c19-a2c2-3a9e93626005&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=3&geolocation=BR%3BMT&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	13417489211040436	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTSarI18_QGxECEZmkz5QKNGF3UQHwm_Uk.%26dt%3D1741479612349
+.netflix.com	FALSE	/	FALSE	13386039601574156	gsid	a136ee72-3024-478c-974c-de246f905085
+.netflix.com	FALSE	/	FALSE	13417489211040370	nfvdid	BQFmAAEBEPx8UUqYenMX7rcWNmc8MoNgnNmv_uERvJE75PsgCGpeH_fNd_7CujJSNArD0FEElJwinTBSCNonNdCv32311bD9fuBAw_qU88NbygU5FIVvgh99cxWYpzFmh9SVax5kOZb7CHDW73xCCGCw-iyqlnzZ

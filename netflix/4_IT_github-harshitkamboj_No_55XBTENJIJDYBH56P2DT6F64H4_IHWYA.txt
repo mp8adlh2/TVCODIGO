@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: IT
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: SKY_ITALY_PI_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Profiles (5): Alessandro, Elisabetta, Abdo, TRAN HIEU, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1791142180	OptanonAlertBoxClosed	2025-10-04T19:29:40.171Z
+.netflix.com	TRUE	/	FALSE	1791142269	nfvdid	BQFmAAEBEBywGuS9sb028YDVjQlPXy9ge7Req0tI8X2AM7TfYSBG6699F7p3ihzHiy5bficATujYmoS_ayuQ9JA_GpG6jB1m1knaWl4xi4LqacJZCKwukce8JNILngv6XCiRQ1whCwoYal2FGixWKNqRBVYJ5L8s
+.netflix.com	TRUE	/	TRUE	1796506394	dsca	true
+.netflix.com	TRUE	/	TRUE	1797776893	NetflixId	ct%3DBgjHlOvcAxLGAxZclBkfYmdZvDJjD98B_w505YCGv3aQcruD1XzwmA0uTSfq5mkeOiClnW1XdA4ufUTh4DSag411yvU3QFavAnKfVK222ojf1zKiI0HjEle1KUtCI6WTBq3sa_jOmP5CZCqMznU2mmBC32x6b0VAtlWhjMzQdnrbmeOXO-Ym2_Kcb3GfhK5ewCN2ezUX2tdwNZMVplWgxQkS92PHZsyxufqy_jFM2U_O_0gPWoSIVJkQpnBC4sFB1DpayIKS0CUR1yLW73Ju6UC6xo8n2bAxCh7GR3vcX_o1RqBkSixxvAN2p8qsLiL5vcoGyBmJVy1kYhgmN-AOTEJsLtecHdb9R47x8z71a8KDl7_sDLwYyDKgXH9Ib7XDSgc_cF8Jfrimhbr9Pye1agmRWwuhhsWhwW_rsfcGxykKjZic0kf9udkT7jdjg4u0aIJYL7qwXx-pUcKOlJ5vwgAwbxOcbQZTq5UO4p9Syp4fRb9t6f1LdDq2HhlFNLGVUriEgPxEFBvvfUGupgxHMAcSWr3vhkLjewU9vECnH-TuaxFPwWIdDB7Inc99JQRbZhbUs7xMML8FdWPj_Ng2JYKQA2NLPwOOKvmATMtYfFkYBiIOCgwLhPl6VDSXVB17HBs.%26ch%3DAQEAEAABABSNcE_7RKPw_ax5fFzrWyeDUqXKd2mG4Nk.%26v%3D3%26pg%3D55XBTENJIJDYBH56P2DT6F64H4
+.netflix.com	TRUE	/	FALSE	1797776893	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Dec+20+2025+15%3A28%3A13+GMT%2B0100+(Central+European+Standard+Time)&version=202510.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=54b54e75-06f2-487e-84a7-6db8a8c5912f&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&intType=2&geolocation=IT%3B25&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1797776893	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTOJY3-XUH6fA4sXebIh1zVd1jekj7l_Rg.%26dt%3D1766240891044

@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Premium
+Next Billing: October 14, 2026
+Payment: MOBILE_WALLET
+Quality: UHD
+Streams: 4
+Price: THB 419
+Extra Member: Yes
+Profiles (5): Shinchan, กดสุพัด, Xxx, Koucy, Ram
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1809887232	nfvdid	BQFmAAEBENlfAu-r--brJkLl97yS3LNgGApQ_Tzxexjy8WqkGFd2FFjN6HGeNbmrUbNCccFLqVaskZ31eE_Hd2W4m5Fr0B6-utwnPiWafLvOM5mE-5iiFy5klsxfPyM9cxYBf79L-BaqW5FWK2cSn2t11aDsGRLj
+.netflix.com	TRUE	/	FALSE	1819114530	OptanonAlertBoxClosed	2026-08-24T13:35:30.304Z
+.netflix.com	TRUE	/	FALSE	1796073826	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1819833826	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+02+2026+04%3A23%3A46+GMT%2B0700+(Indochina+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=02b2e7c0-1875-4e78-ae14-c1aa955bfdae&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1787578532857&AwaitingReconsent=false&fclco=&lastConsentTs=1787578530&intType=1&geolocation=NL%3BZH
+.netflix.com	TRUE	/	FALSE	1796073826	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796073826	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	TRUE	1819894162	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABS5CC7mMqSLK741r0NfTb7Cp-5s_sjhXzU.%26dt%3D1788358162872
+.netflix.com	TRUE	/	TRUE	1819894162	NetflixId	ct%3DBgjHlOvcAxKPBPIKIw3buHsMPCG9Y011eXxZzIfFXPoR_6EaDT5pI86FPpVbPKGn-aIpCvXQCchOITcxDV_1bxKdenG6yEAV20c-oQmH3quujneidObIRJHIOMKitrMMsipiXNy63MbM00GRBU4_F9_6yBE1agYgxYauK8w4Wgx6iQ3DdxOKR3UVOxJtXbznKtlvngMk3-uM2ZSH5u-NYvKvZuPjA2qhiB1_kYgwlmoO6RQTJKaZRV9okOWlH4PdCOO484ZdOILEFR_14D2CQrFqiU-c2_lKKLidHoJInr2LMplqBJrU8BNejMTnKBLXpZ_1OopAuTRhjWarnpmRy9nKYHvZDwKo0ht7v9Y7h7oPrePEdMX4w1JuU4g-O5V4t_26V9IDqTZOdHu8YeSYgJBn-OE4OlPP2orv7QC0rhKdk5_nQ-5W8aR0xEkvSXB-8y69Nm_mnSG5yuHuG9z4JcQnwdtLH-xUJODy2KBw0qaHKoMhqTqownqmODrLz99lBSalb0UCRDsaZJNVOfr-OS8adS1Dn5G3lOQwu19-NsMQ3HBuAsOnPNyvGyt4f391rU0zERM6Q5HCUUcb13c2JdgS15s8JrwHw7r__XcEtZROEqgDQf7E281Gfbanuls0sbkLKz09uTwwADBdPPwJ4Diq1s7e6vpNYzzlixIASmFB2XRyTw0yKbpoftguFotwKUGNmpYRR5auGAYiDgoM_RQcij1QbVctRHe6%26ch%3DAQEAEAABABSHzh8GnL7xj9rCTMztg29-bsvylmWcvFA.%26v%3D3%26pg%3D377U2MPPWJHNTMRHWIKZTZCYGE

@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: IT
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: HUTCHISON_WINDTRE_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (5): Rft, sah org malaysia guna shopee, Oriana, Roberto, no touch
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1820287914	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKVAz8YXfQ0taJBu-i8CjDeEpuiQwMIByQAdwJxvJc5m8dm_kVi-EPBEEvM-egpGsPh6md2m2W4zrP8bKacPrYuXQLVtdMNf1Pxl7pZ0AoS_vaooGu5QpNH7vLHvJOXtTiidz9BkqtnYwOxXBqJVguXK6pcgGnHdhA0KukAHlZiiJjjG1DJ4Oap0cITfG9JtU8ZfCmbbIr8CfPxSyBKeovZ1Lr_yV78lit2m0gdtlNS85uC6EGikRHDrMvmgAcpjTtTCG4KYRMNViKHj4TWIDH9UykZOEXdrg-PUnQ6fliHgWllLDn-zooI-BLD6SbA1eemwPstgZkE8_LXB9U7FanViZcP7wIiqUWwsIpqY-fMWli5FHYBJcfpCX2ANEntZCiJ9nlnlFhLMRNZOEIpCMOpCZhOZ4pcCNIFLwEGpqyIXpZX4EBbM2GZrSLyjK54gDe2PQGcmzLXoIWEUEbgxdXyPZHKFm1roMz06ZKErL377QeAsCKYYeymWVhVOBtnPuJS5Xapk3aCR0ogqiiQ3Axi4vN-xT2mlhgGIg4KDNKcl4a3eSFRuLx4XQ..%26pg%3D7PFZDGRUXVHSHCFMBD5ZW5RVDI%26ch%3DAQEAEAABABTPb7VXWTD8sjNakLDoJ3THeSEWDhG9m0Q.
+.netflix.com	TRUE	/	FALSE	1820287911	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Sep+07+2026+04%3A31%3A51+GMT%2B0100+(GMT%2B01%3A00)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=671f756c-354d-4caf-a079-eab44500ed88&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1&geolocation=IT%3B72&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	TRUE	1820287914	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTe0uOPBicVI7QPZ4K7g3nAB2XYzkuz91M.%26dt%3D1788751944866
+.netflix.com	TRUE	/	FALSE	1792853993	flwssn	b5ae57cc-8e96-4833-9e23-fd0aa5c54aa5
+.netflix.com	TRUE	/	FALSE	1796527911	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796527911	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796527911	nkufi-normal-4-loaded	true
+.netflix.com	TRUE	/	FALSE	1796527911	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	FALSE	1796527911	nkufi-bold-4-loaded	true
+.netflix.com	TRUE	/	FALSE	1792853993	profilesNewSession	0

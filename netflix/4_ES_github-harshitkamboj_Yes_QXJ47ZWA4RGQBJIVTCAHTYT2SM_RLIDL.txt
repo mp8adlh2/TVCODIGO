@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: ES
+Plan: Premium
+Next Billing: October 9, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: EUR 21.99
+Extra Member: Yes
+Profiles (5): Walid Ayad, Jandro, Andrea, Mizo, Yosep
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1804285785	OptanonAlertBoxClosed	2026-03-05T22:29:45.879Z
+.netflix.com	FALSE	/	TRUE	1807309842	dsca	true
+.netflix.com	FALSE	/	FALSE	1804285841	nfvdid	BQFmAAEBEPREcvmQplQ4-Hc-SqAPfK5g-hboVr7zyBDndRx6-5L5bKumWLOrcCxxGFXrib-sPKFfYhRXWSceputvj3KpPNDlJ3vzx4Mxgoivk0_BMOjzL-t6n-XgHdRnk2LtPv-OZW_aE2ugzBebTzCr3-yNAFHm
+.netflix.com	FALSE	/	TRUE	1806770260	NetflixId	ct%3DBgjHlOvcAxLCA9nLeoCotSGwGTzIgpSUFVx3Y2xVza994piyottzQdk3nbrjYwU0NQ9ircUnaFVn0000SIjOY2IIMuIqgPAxX7FFy7FHZBtL48JoH0kdCCPELilK1-UCpKcJVFvDELvrMuDYvJxBOPP5xPn0V3RMV-y0PjrKAwAl5v9AZQyyzv9zqZVJHa2cflTM8a36bdwlROJIZqVp4B0oMO6-8QVbGmm8gQKo8g1DTWYkicSGT_yOe41JMBZLL7fBNRXbxUs5gVdEBOvVo5qBfsDKmKDFKvYyDRZ7P4A09APdsIZ2-I1W2MJHigswXwrCOaSTElbIKy7hR0kZK0x1w1FkFQRJQSi3vnwWH-nqvHr7XQRfLekTIjZylFMuvguIaOxFFXE-hgTZyBFrYdmajC-2JswyFD8MMXXgRL0xLEzZF3fvh4j9OM1VZhB36RI4SqndUkp4ZaqVK1mTuQjWy8-Ki-t8g9e6fD3uHFcbT0kXmAb_44YA-tCkwL2L3A6B5GnmEeEE-uriJFlS4lfMpPozGup-VFRIkZkiMlxZ4XRrDY5BZO1GQd8F01mn3tKhO5Ajwiuj3JA6YOEbcBvnSBgADjd-v8uLDxgGIg4KDBrvuYxdrfatPLUUpQ..%26ch%3DAQEAEAABABTegUfhjoCxZsAgV5wzYKuk9HhX5CD8PPg.%26v%3D3%26pg%3DQXJ47ZWA4RGQBJIVTCAHTYT2SM
+.netflix.com	FALSE	/	FALSE	1806770261	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Apr+03+2026+15%3A37%3A41+GMT-0100+(hora+est%C3%A1ndar+de+Cabo+Verde)&version=202602.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=325e26fb-0b4a-408d-adbd-30555bb1118e&interactionCount=3&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=3&crTime=1772749786248&geolocation=ES%3BCN&prevHadToken=0
+.netflix.com	FALSE	/	TRUE	1806770260	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSxNlikH3YKvstV-GFXIFjJYLy-UqZLYW4.%26dt%3D1775234230554

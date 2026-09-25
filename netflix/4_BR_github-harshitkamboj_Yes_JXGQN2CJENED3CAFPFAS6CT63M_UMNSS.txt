@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: October 5, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: BRL 59.90
+Extra Member: Yes
+Profiles (5): Vai Tomar No C* krlh, ruiks0263 discord, Bagass, Kon, ٫_٫
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1802313580	OptanonAlertBoxClosed	2026-02-11T02:39:40.544Z
+.netflix.com	TRUE	/	FALSE	1802388673	nfvdid	BQFmAAEBEKD52kMw_B8OmCnuFkZSiWZg_YIdr93nfTxqbZlM10J9g8KgblQRnXf7dgNTnuA5eYd9WnmsZSB6T6NmEq0s_X6nzmrzvTtYP-90asY4iaJ0yz0KzFt29JOseuTY_y2WcrpYRPGP21vurkDRonc4dtnQ
+.netflix.com	TRUE	/	TRUE	1808616970	NetflixId	ct%3DBgjHlOvcAxKKBEFqTh9OgGUABua6GXfMGkcgryNEzUmkrvYz5tLFtU13JCUQN0-SlwOXpGq_2qDISO4_3JiJn7eE0llf-hD9cKGyV8Hs7CDQ-aK3mV-znhBA13Z1QrueYeEgC0Q9Sc-nOaCLjvBqCesUnP73_igdu7bcDaU8QVSXzIhht_-HLYnogeiI9Vc3Kk-aHCxiq4B0MPxfI6KeLA_NI95ZDp3Uj8kISgQ884tdDRFtoFIVjsNykdQLSuS3Q8EFgMFtzI3gdbchYEc50ikgvXvrztw9DUA8jp2weU4WXJCMvHhJE0cYTZcP0cr9gK7Nq-3vOzjdKMUcpNVQVPwpA-QLuz9xYWft1xiQ59ovoslQyb8F-8a3ye0UkKrFsRw_7_MN3VI_QB0pCGQoemqU8lU05VCpKhvNDNo5JE9is84iEY4LL0I4Ge4UDsqdfUfnLLPqHKtFSTOXYUju5bwqH4l-e96T3xTZtivoMexRTykVFmmWyV1ux3XwPsqd-OzYi4AMAllaLH1KZix5Axsx3zgX4IA1J25wUOxv84Se2GHQ5CnRADyMVWSCU_5PMvqwD8tBr65e674Gwt6B9CIaMzrxcacv0rLkaNvnmM-oIUy-GH8bwsbWIcijx9Kpl7iwPAN_qx1q0nL38lUuP99v6AOQPUTNDI9UVJrrqVgQELVQWJtZmP-gfgP7hYgVg9jCJRgGIg4KDLskpMTdSNsUe09fQQ..%26ch%3DAQEAEAABABTpzTVzz63uLUluicx0K87_myafM9qfN4c.%26v%3D3%26pg%3DJXGQN2CJENED3CAFPFAS6CT63M
+.netflix.com	TRUE	/	FALSE	1808616971	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Apr+24+2026+22%3A36%3A11+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202604.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=f59f8954-f0de-4735-988c-3380ada56923&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=3&crTime=1770777581178&geolocation=BR%3BSP&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	TRUE	1808616970	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSVzAazn7T-u6W78NxdQLXj9IfoIkkxHNQ.%26dt%3D1777080968162

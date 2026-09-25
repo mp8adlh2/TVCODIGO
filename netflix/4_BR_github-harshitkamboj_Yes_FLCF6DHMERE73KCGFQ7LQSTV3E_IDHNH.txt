@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: October 22, 2026
+Payment: DC
+Quality: UHD
+Streams: 4
+Price: R$ 59,90
+Extra Member: Yes
+Profiles (5): Marcos, Thannya💗, Thauanny, Dandarah, Netflix
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1792853991	nfvdid	BQFmAAEBEBMhNXkYf8kd5ClMAB6Y4OtgBcfOKCOvFj9YpdYDjA2ySLdgOLy6_92GpBDr6dRgr87xcvzYTyCSIU2EF9MCn6Lv_JH8DHSYgOFnFJNVkbRIP9T-eomSddmSsn-9_x8njHs1LCyTQQdSM5Bod3cqTWyN
+.netflix.com	TRUE	/	TRUE	1792853991	NetflixId	ct%3DBgjHlOvcAxK6A01Lt8xtAxrQPJMWg7qv2fgSGc6mnq2oEPa5LS8qAzOQF5IUdL_Z89QVphUPREEiRQ9hhvyWow_hi7dKhTGRHlDVa2lC3hqU9rpOSF-KNYFBGJdFRKhhnWRmu2vmH705xSW8r0JN400bLYrpnBusMXjVg7OBfrMi7mW7VjjTEhNFP-uVu22qFXQ-g9QWmDfjDpVGOTpxdvD-7cj3TRybj3E1zlfpHkuHr9aHS1vs40HeHf_WZz3oxOb0H5JPnlwffA6xAj_Wv68HnSmyUxAMeLvgEtfB57Sf10FQYq0TXJWMFR6DWsghCOSYtVeKCGXKI3ZW5yV-tqbDX55WKXa7l_UZgFlHI5bt24HMlMHSqasrJDn09AT27hCiSJdvJi1TuM7lalB0qf6FiwnyDS9_5BcF7ETu-0hyQHN3qE_Vm0OkV29r5YVijbcWUJHb0k6hCBqie5gytvfCSsJjQK82Q_MyctzbYX2b_RnXgZcryWALR2CKmvxYzl1NOYR9SRVeDsfjnXwb78DiTAEY9xjI1QTShEB6rC3dxhBGjIr_TIFQDU7z65lsqhsGUr7OWLS6-WcL0S_Cg7KpTiMYBiIOCgwP098VcTY-xFMCelY.%26ch%3DAQEAEAABABRnev3fnSX439S1OTXqckbIL8xvworRhKM.%26v%3D3%26pg%3DFLCF6DHMERE73KCGFQ7LQSTV3E
+.netflix.com	TRUE	/	TRUE	1792853991	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTYDgiz0P-W6-9kXbiU48iyOzdTEgKqSHM.%26dt%3D1772278312030
+.netflix.com	TRUE	/	TRUE	1792853991	dsca	true
+.netflix.com	TRUE	/	FALSE	1792853991	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792853991	netflix-sans-normal-3-loaded	true

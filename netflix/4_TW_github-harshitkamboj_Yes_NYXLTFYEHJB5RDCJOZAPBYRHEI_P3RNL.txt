@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: TW
+Plan: Premium
+Next Billing: October 1, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: TWD 460
+Extra Member: Yes
+Profiles (3): 敏正, Jinen, Don\'t Even Try
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1811838028	nfvdid	BQFmAAEBEHb4RpDhzDpQxoZ4os2Fr8dgA-W92rjsz2N5L0te-Vk2DXn7GIMRUfitXfjcLhkK0TZm3dOxV4qe-eZ9oYoLaZqA8di08uE8-5PKZYE1g4GHOkfpNXystUp9iIhQr9ak5jTRpxIPF2NzAyIj3CMjTlcD
+.netflix.com	TRUE	/	TRUE	1815820813	NetflixId	ct%3DBgjHlOvcAxKEBAeriO3Si9rgVkEDHMKfYnhXOJ6Ip4UNvSfa7Lt0c6d4yNrefaKZFph1rYma3f8B9jaATanpsOMUa7u_OA4-237ecWNcsfz1bKObFBcsAgydUNKEMMeSJ-ZpWSAM-RHsvwyqhTcd6aYrrEK3x6DrjYU3YEBuKzqQx_K_SFbPaUFBQNVRsRUXd-oX5f4FY77r8KTXyfNe-e3r3VwjgmKj9OERN7Q0Z8PpjsnN_rmbLk6pdGlyIEuXGpxXSBJ2hRpHuvBjX9Mw72e2WSL3jGZzQnpRkQuhVi1dg9Q7Uo6ez3sS662qe5Ko8AWLGVS0OIWRdO0drXY84M-oUFfoLedOIasrNN0yGaY8iOrckEfkDqDtnpQWRtGht93FPr47I5qbS8TKyDaPaiortiP6BlQpTrlzjSTxkFvzNAbWd1Jv1kvWIAoH6LKOGZyvXLJie5cZgYcAN7OV9EgVYQv6PMzYfLw-F9YE4l8CoHekGYNujo4CEK0p5UVuehYDbNtrRf2X3iokG4VXWkpWq-ERf0TaD7JHDD7qqGF_elP-VN6qP_7UoWoZnTIkqjEyOW2N0R9YBddJDwoSe-0w0TSvpdlUedVYWXGda4fYsV9UP3C1wDeO7e8f26p17GHOTxMR657yX17WosTEW7QWGB4H1zwB6PfOblDN_qyGOkaGqnJkZqH63Av3thgGIg4KDKuQf8YNVpadla7RyA..%26ch%3DAQEAEAABABSRlk2I8mJis1FJ9T2Mrn59dcrzKJxpGKk.%26v%3D3%26pg%3DNYXLTFYEHJB5RDCJOZAPBYRHEI
+.netflix.com	TRUE	/	FALSE	1815820819	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Jul+17+2026+18%3A40%3A19+GMT%2B0800+(%E5%8F%B0%E5%8C%97%E6%A8%99%E6%BA%96%E6%99%82%E9%96%93)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=149f5fe2-5fee-4ccf-bb9b-965845682747&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1780302028977&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1815820813	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSUS0djQcU8Td7r_pYvRo87H3vaYZ2090A.%26dt%3D1784284812927
+.netflix.com	TRUE	/	TRUE	1792853992	gsid	b2df1ea9-9718-420a-ab7e-afcc7f8427ff
+.netflix.com	TRUE	/	FALSE	1792060815	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792060815	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792060815	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	TRUE	/	FALSE	1792853992	profilesNewSession	0

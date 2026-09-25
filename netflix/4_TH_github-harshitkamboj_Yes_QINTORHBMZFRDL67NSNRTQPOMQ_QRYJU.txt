@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Premium
+Next Billing: October 18, 2026
+Payment: MOBILE_WALLET
+Quality: UHD
+Streams: 4
+Price: ‏419 THB
+Extra Member: Yes
+Profiles (5): BooMz, Nom, Palm, Ayb, Yai
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1792853992	nfvdid	BQFmAAEBELSqBMcXzaWswykLE1a7t1hg4xzYnIk9doyENtkDSlNfrgUWpe9dR6wppHY93YEjHLdUkwUy_0VzoiZFTtqsKYojcuzfuXuokfnxJEjZI0k30d8cL829HorcQ6e5MwSgz17FZGvNy3jUg0M3NPs4W6z_
+.netflix.com	TRUE	/	FALSE	1792853992	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKRA3WeJNt4txqjqm_8Cjk6HdWyTmGtL5oO6pa6bH12HVE4pGFrEO7_pFpSmZk48MsuPkejSR_5hIgiwuJxxYKy7M1H2lLgTLGcl0QJeYsGIu-WV33AGmw2IbcW-b-kmkFwMPtinNQv2qWVHwCekfIQBM1C3bqNcUElpGcpCxXzcUOof8qlcoIliqZw08rKOQH_NZYPialAVuSKyx_RKJT5nBLVKBssMq7TZhgsoRDA2eV8cTEaFRPQCTaOb9GzMYvTlHEQxB773RvFAsU8rvwDMGDrHTdAz1abPrkTrz5i69br0xzlhjpldLYYKxzmOtKg-pBT2FckoCZSq1Lbu3KZ_mRpwOymh5J6tXidyLMVW7eyZnIqOPLtjeNF9ZX7rs6WaQxHKsLMSKA65Z9-VzOwu6e5alki-YMXQumUlV-F3mkD0X01eTYW6voo8pFkmvSSYxLkYKIFFuIPIPMlP1Pe4Gcg59eXv2FhUkLC9OEatXqnsQpqW4m4Qani4wEj0aPNVfo9I7LClMCltwNd-VSlcZpIGAYiDgoMer1cVeCoTLUyQ6dw%26pg%3DQINTORHBMZFRDL67NSNRTQPOMQ%26ch%3DAQEAEAABABToMCJHswTkJRskxcoZmIyvhAIgbt1JJq0.
+.netflix.com	TRUE	/	FALSE	1792853992	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Aug+29+2026+21%3A58%3A02+GMT%2B0700+(Indochina+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=8fced557-9108-4490-ae0d-68f75a841760&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1769225127051&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	FALSE	1792853992	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQMetZV0--9lujev45aoWJuQcAM5A57ygs.%26dt%3D1788015513578
+.netflix.com	TRUE	/	FALSE	1792853992	flwssn	24cfd0f7-39e3-4a6f-ac84-a2816fdac07c
+.netflix.com	TRUE	/	FALSE	1792853992	gsid	e52d040d-bbfb-49ef-82db-b560af010b79

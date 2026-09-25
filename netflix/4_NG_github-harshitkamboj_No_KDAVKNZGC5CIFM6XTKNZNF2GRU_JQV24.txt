@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: NG
+Plan: Premium
+Next Billing: September 26, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: ₦8,500
+Profiles (5): Albert, Rotanna, Weirdo, moha, Ali
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1801427550	nfvdid	BQFmAAEBEHdtuViAQ1iut0_QgrBQJndgfEYVpUAy6siACnTKnkY5K98x2aMccLNJ2YLVOAl9OnJNGV7Mq7zi15wfaA1vu8a4GULw_DkiHno6ZtWvbzyM7g4Rqw1BYOPVyjXzZUDLPa6G4mO2ETDrLsBMlZJsDJUw
+.netflix.com	TRUE	/	TRUE	1808930837	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKYA8PMYRAGbvhUbu-fVtqtiZA5O7i7nLyjuSCS1QbHj1Ts9IinrVa7YuU0CWuzHsDQKLm1ol1k3g6HOwkf4UBmq_MHHsvbWk5ICx81e3VREHPjzfQzTVbZ7AA8adnkB3mUZwyK75dM-DUq-_O56olXiTMX38kfN9e_AmDssDQzwMZsbwG9nURxEa13FSQWdpAF5f7aLSHDHWkFau2QdwnsdfjPr15SznLHK_VkjQT_Ogo3DSln34GapZpUxPFUIGwH466GJDiHOYjpd8qs8bI_rEDpmxda8JeGZkzCBlRt4XQCNtOL5YuSUBlo_WjKZiXXjW4qcF6frR-xWiAQ9KdOZR5bCI4uG422s9ZwjyU0Hvx0lPNak-0L6EwJe0cmMmHhYR_txtB9iIk2yxngfO2ofsH4Msoc5wP5dvxgCZEe9aqft6zWx3t4ZjP19NZhTK63Ajt5fFdkc11f2nlnTz0zYC69WjJMZYJhnOTpr6D5WG66yoIDlMTFQcImJW3TBkzlsAg0covlpglXLQB7ACM9coo98uPgPhjAohgGIg4KDINrtpQO0HfqjW9pbA..%26pg%3DKDAVKNZGC5CIFM6XTKNZNF2GRU%26ch%3DAQEAEAABABT1jf8tFhabSsE63LT4nUQrcrJMUl44gTk.
+.netflix.com	TRUE	/	FALSE	1808930839	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Apr+28+2026+17%3A47%3A19+GMT%2B0100+(West+Africa+Standard+Time)&version=202604.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=7d1419c5-6b09-4e39-bc4b-73834540cf00&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1808930837	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSTeL1ap8p3hULjAQuf7ITOhac8gl2eYE8.%26dt%3D1777394830769
+.netflix.com	TRUE	/	FALSE	1792853992	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792853992	netflix-sans-normal-3-loaded	true

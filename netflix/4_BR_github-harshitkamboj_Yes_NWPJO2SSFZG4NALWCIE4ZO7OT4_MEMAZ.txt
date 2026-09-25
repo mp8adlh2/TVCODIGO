@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: September 28, 2026
+Payment: DC
+Quality: UHD
+Streams: 4
+Price: BRL 59.90
+Extra Member: Yes
+Profiles (5): Rosângela, Cristian, Chreeeef, [eric] doidão, Bella
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	13389214638000000	OptanonAlertBoxClosed	2024-04-15T18:17:18.655Z
+.netflix.com	FALSE	/	FALSE	13392238797127816	dsca	customer
+.netflix.com	FALSE	/	FALSE	13389214797127856	nfvdid	BQFmAAEBEHgzsIQJu-HmqOIZmWBw8H9gd0SiizENFTJPiQN9a2C_TsKU5PrrSDCxrqAsdtENzyMGPZlUHtCBvgexkcTf4MM7XzJtNcRkMe5zFgEhfTWz816VZKJezbydip5BMoERUEva5kQvXBxD9rmHYuOXyg7A
+.netflix.com	FALSE	/	FALSE	13389214797000000	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Apr+15+2024+15%3A19%3A57+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202402.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=c3e99f27-f4a1-4210-b87f-9ffa5f70db56&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&geolocation=BR%3BMG&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	13389995741020928	SecureNetflixId	v%3D2%26mac%3DAQEAEQABABR6Hu2Xj88PXx8TAlbQwTCUC-g4LdGoUWk.%26dt%3D1713986141515
+.netflix.com	FALSE	/	FALSE	13389995741020992	NetflixId	ct%3DBQAOAAEBEETaPonk7miqV2LsEzdRooiCAES03GCT2pD9Otawp9lI4rYUOuuWtnxcudDuxxFy4fjnLvlaqPR0qaY_sXYoUkYYhYIhjK7xDazl0RxoEEoCe1bNlFUJQOMhu_8udzrOgBXyvm9M897olodDKbXhUxBW5hH6iErYK__tHsWczIIPZrHz4gIAO820Izp8qnO_i6qQy7ZZknHch-4Q0dqB5ivBUUZ7LufKo573ghcFJzsFtSORSu626AuymgxtCarFFMfXoT3d0FC4gLKXIs33Ef864j3Hnsyx93jqAiCEKoXEynOVOLd2ZaUjF_iCNg6hTrR-GYXCFkmZfx-_gLztRx6uOSDLa8__8fEvK0tXkkUZ6ZVMmjRzNwfd3oOg8-OJTbxRZ_P2bgv7cAPz3yLqXQGpqEln62LNDUlUNPzBmvc_SdL-2VqHCXG9wfBa3AmZ5zT6jh5Q-XC3kg_XFeMbRo2fr88TJ4XkuEq5UbupayZi0FhXYzREkDm1_4FwiXLCWGAOxFlzyyolcjHc8GzBTUxoGSPN_vGOKoztlBQMzLqSm1GQAyw0ZJPfhcAb6kjzqZPQ_trNgciddEiehXMHMXv2It7aBKwpbKijTJRO9WPjGtjmWKNTxb-AvkW-ecj88b39PMh9t8WP2QSevd1Tjr9nHXXZp1GD_q6xq2bEwyLmT6IAgVWX_LyNiXvh3mGLe_oX%26bt%3Ddbl%26ch%3DAQEAEAABABQzUNjTgcv3wj1vauL6LA8PQyGcuS1xz9c.%26v%3D2%26mac%3DAQEAEAABABQ3PzdRJumaeqaTP09vw1ikefVtZpTEZwM.

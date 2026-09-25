@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: DE
+Plan: Premium
+Next Billing: September 27, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: €19.99
+Extra Member: Yes
+Profiles (5): Katia/ Mamma, Liliana, Corinne, Bimbi, Matteo
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	13440375936000000	OptanonAlertBoxClosed	2025-11-28T21:45:36.274Z
+.netflix.com	FALSE	/	FALSE	13440375991871648	nfvdid	BQFmAAEBEFbAPESgcFwxyN22ldvQ2exgNG181f9dXl1W7G8Q0TpHx1bZ-Th8ebBJibit6rKmiStYlbTkEhu-NiamSUpixDAEOP0MlDZOuu12amJcuHa6VOAPrkZJeDBnmZklyORL6xXLOhcLkwbdXBTMszdfWGxI
+.netflix.com	FALSE	/	FALSE	13453648038733532	dsca	true
+.netflix.com	FALSE	/	FALSE	13458764175410028	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKXAwAr424tPoOSIVdKmonCkff7lASTVtnLrbNDxRauCrh5K2-tbPXYVBYyBJbNNDb9PpkvL6HsqFaj9m8fzU5QzcAaSoaqZuSAAFAjz8FkA3c5pq6VrhOW6Kd6Puo2pCDLjrqSEyJ92p3hrcwuLMm74sdUI5NPUxAqtJ8hN7As-rIaAJa1qe_5Xn6mu09LLCq2Lg9o5Fd-zjlt6Jn2mDblcGuv2Jsirep4VF9z-W97YK5bMyGNnOZtVFT4ikpZUu0kY9PUZwQQKxIFKYJmsPLYRTA0Xjk7OlhSBOO9nANGgETXYPONOPWJkwGYGsDxpRtbGjOKNt4ZdJEHY78_OjWKJE013oKHBl8sQZ4nfBiOkYoswh8_SOzzrwes15Qi-BhbtGtKabBrRVQD8UydYAQ_PgLqC981UcXlz5wfc3HLzEfs5KdGb_BVvGH8kiYzOKf-mCZHBZex2j5sKY6NEQQg_4tO0a-l1MqjY-n93jKaW3012gE5UiIjYI20R2qVNlme38T5svZcJdvcT64JB813BSnRMdKzkDD9GAYiDgoMXE7J0FxEL8bA0DZF%26pg%3DJ6G7IYYOPRBXNEDSXNZA2C3A6I%26ch%3DAQEAEAABABR8SFJ4hqzngMXRln8CxU2QDVvlpBbrwgs.
+.netflix.com	FALSE	/	FALSE	13458764177000000	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Jun+29+2026+19%3A36%3A17+GMT%2B0200+(Central+European+Summer+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=286e0bdc-4cce-44af-b38a-94c67b84cbf7&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1&geolocation=DE%3BBW&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	13458764175409844	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABR1FMh0CDGGHhZzKcYN7nnXQWoRz4UZdds.%26dt%3D1782754574901
+.netflix.com	FALSE	/	FALSE	13435004177557740	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	13435004177557508	netflix-sans-normal-3-loaded	true

@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: October 6, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379.99 TL
+Profiles (5): dilekcosmaak, Dilek, Sedat, Azra, AMAR
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1817667231	OptanonAlertBoxClosed	2026-08-07T19:33:51.867Z
+.netflix.com	FALSE	/	FALSE	1817667273	nfvdid	BQFmAAEBEAhhs-a4LQ18L0OrXsh5Ng5g2OEubKYoKriXEUORF9NEjeIHGYk7kxQIer0pZ-z2ZY_nejJ32OoHjEQrwKQy27r4WSaqGgo935FjdU3DvO50S5bBtaJh-PQBvCgKSuhGyXGZ3HRHfqAtR5i4C90yqkap
+.netflix.com	FALSE	/	FALSE	1820180759	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+06+2026+00%3A45%3A59+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=52881ff3-365a-42a7-9c54-72b2ff46bfea&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&AwaitingReconsent=false&fclco=&intType=3&crTime=1786131232455&geolocation=TR%3B06
+.netflix.com	FALSE	/	TRUE	1792853994	gsid	2011adea-687d-47d8-9799-17378bc1d6bf
+.netflix.com	FALSE	/	FALSE	1796420759	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796420759	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796420759	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	TRUE	1820240477	NetflixId	ct%3DBgjHlOvcAxKvA3EuIF488D3pX10LRbE_w2xBPKp1GcWf2_snyen-VkoeRzKFDNTcYLL1sMkjaouYKDQvoXFnSKDPUb8XfnnveKK9O6H2pLeXMfSleLkYios0W4nbqBENRChZg_QUYe-y9hsIlFey5kpAqrWFLHcCIBQ0P0TxxnD4vR5nDummP2hw3dvOOeonIjWQ8aTDBlELerrqWoKjB-Qi8YrD5d2dGqcYFMsNoKmasrGHDqNyKCu7RpWljAi9n9duFuWKAd_TVRBJqIvC7UCuINIpE-_MH1IKwUyWNAwdfeJUkPUOatVrbNXLME4WeV49YqeMHPkDJnQDlv6Ylbxx0ObDVc8WIoLAsrFgMeyBbhRwT4AGzSCgnyzvMXs3QtoHt_hK8xYzvJ4PnjGzZGrIBbol-KeDZWPbUT94iUdiw9xtAFV3UjbXhsimoFJduCnAyDh91RQRSIR1uFq8AEunrrQAE4sEmWOqKcl772OITLw4WsSZ-_um9tvn3Dr9Xms7trhJfhYhdiWJI4whVoWHKn7bSmeoYX3jnt401_LiljD0k7RT5QJsvQWliCQuUnDXhpYaD_txGAYiDgoMwW5_bqfSWyJJzul8%26ch%3DAQEAEAABABQsdup6K4R5KBgnEWv9dgnCLIxzr4nZs0I.%26v%3D3%26pg%3DRER5JNLWVFAGNIKY4MWAGIXZ3E
+.netflix.com	FALSE	/	TRUE	1820240477	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTe37gonCSNX0Eii2kj4nwm-rwLPsuE8Bo.%26dt%3D1788704475282

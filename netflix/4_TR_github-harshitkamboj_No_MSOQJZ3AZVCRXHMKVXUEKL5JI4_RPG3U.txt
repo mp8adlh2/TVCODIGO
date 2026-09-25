@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: October 3, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379.99 TL
+Profiles (4): berkasy12, Mehmet, Murat, Ege
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1811583892	OptanonAlertBoxClosed	2026-05-29T09:44:52.961Z
+.netflix.com	TRUE	/	TRUE	1811583949	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKkAx_uJDN8OTceMoGtjC1mI4qTgCVgbZhYTxOhUjEkv8ohH82BmzbDYgbEwEov5mYRdosXxqIFhMGs0usFb_8K-XSWepTXJtEwjv33G3XwJM8YaSCFmDWu8BZFZsp4pcTOVxf0RZ6XU-NHuW1Ddsqm_LLplH1MTN5tmx4eBkKSuGNcERt--aOKCI8-N0XGRkYOWDoPfDuI2kCN2Dxsttry44yCBvLLbXrbf2LJ5Y2VDFKrfN3N7CU3Hb-Ly1eAhVgZnfMUj-8tTMVii0KjvXV2R9KNApxKOjYKHWQ-AYOBvcG-9SKvjPP1G7__gwqndhO61cHDWlC5EQVqJxpCWPWVP_rqlQZQi83La-CrEtKsq5S9VGLM_t-YNgz_0D-NgYHlPyA_GQ__jRBgWSw4Cbw1qsqRGQux9EnHUld7w3WRsiir9xcfzqKCsFWbjhmNN1FMyX2eItcHYxtEovPW0cnEeMzwu1QrNR3fKw8oolUEBs7s51Fbh7mYmELCcyL5qniw6_GOEO9PN8LgbI0QkvpvZZ52k59TtoipVcPtsDlQ_wOhb237JhgGIg4KDD-Rb6RfBXqMjdjhlA..%26pg%3DMSOQJZ3AZVCRXHMKVXUEKL5JI4%26ch%3DAQEAEAABABSKLz13h9Nfy81tNnJjR82Q9zj7iC5a8QQ.
+.netflix.com	TRUE	/	FALSE	1811583950	OptanonConsent	isGpcEnabled=0&datestamp=Fri+May+29+2026+12%3A45%3A50+GMT%2B0300+(T%C3%BCrkiye+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=c052514d-a538-499a-8b09-193d04bc6844&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&fclco=&intType=1&crTime=1780047893414&geolocation=TR%3B34
+.netflix.com	TRUE	/	TRUE	1811583949	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABT451KW3naVetG_aA3vpv63awbNfM0qD_k.%26dt%3D1780047951598
+.netflix.com	TRUE	/	FALSE	1792940817	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792940817	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1811583949	nfvdid	BQFmAAEBEM24vpx3aRhdUScVm2QYIVVgCPo31MhqjMSZhbURmcIdCoT3_GUGGECqd38nkatWfKD72FWsINp6scG2Brb7O2z_xlKe0V2f-HaF8KWyw0i9WfIPFkAD-cIwWjkL-c08scBNw0okNt53UkMczzFl7W2s

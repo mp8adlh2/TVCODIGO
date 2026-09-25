@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: October 16, 2026
+Payment: UPI
+Quality: UHD
+Streams: 4
+Price: INR 649
+Profiles (5): Madjid, س7, كسختك, AZOZO, Sara
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1802342164	nfvdid	BQFmAAEBEKzwX4ge1PJIFlAcASOVPl5gv08P5pca9bjrEWUPU087vWOM2M3XDYERDPkgpbAw7BS4fhuv9zTErYRQ0g8XDpkFQgfWFD7EjjLvvcug8j9XeT_K4dji7wQfq-sbaFTJB5AmTlIq6360jtKL7FO_oqAR
+.netflix.com	TRUE	/	FALSE	1802342344	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Feb+11+2026+16%3A09%3A04+GMT%2B0530+(India+Standard+Time)&version=202512.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=ab847e83-96e9-47b9-9894-cc31825a0e89&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1770806164595&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1808136222	NetflixId	ct%3DBgjHlOvcAxKrA1vGwnffORSeDoOvPZrMJGwwsaIclGDSRoPnikanPeRbJ7HiDm3K8c29ayqos7Ux_gEUbD99rJ3AwuerqXP5iIRY_4j8i7SpnrGxme0uQ_BmCJdNm4IIzyjzIzdv2BjmqZeQkv4G2WzXgbLiR2uWAG_-NKjYwrsX3ZDioUSzopIFgX-MEe_4fePp8Rzns877HN46LOejPld9_6Fj5Qh_AyuYWbdPrbt0uua-Ydd06DzRLALnsL1s0deIKplNUMKENHq_kvZx2Rk57v_1hcHLhghv_6PYoSkmQ7z_0oBB6NK35LL29GxvwMIqzK-JW7D55ZR7kmHKQOzsrYmrwOvIz0y4NSTFRX9f-DAxiIFvnKp5AEh1uaQsh6Gj9yjs6D7105lL4XAKHvPZUlvSg6uxJwcZpJZVZvG8S4xS88saFMvd76ez-pHE3eIt_KtBy1PxS8JZ-KKuz-QM3ztjZe3xOlcuMvgR6s89dR8Fz7a6tW-NwJwL3-NNTEEM1cBWSos3YJgmXtr9VQ1KivSApbdUADxgwBRRSLG9_icrjm3ggQjsIFxJpNZwLI9LR90YBiIOCgwVidXlP-zXTQ-SURw.%26ch%3DAQEAEAABABQrKYGJoGwv_z68NnJff2qi27UMydq9gNo.%26v%3D3%26pg%3DU57PE7KPFRBYTGM62B2IX2DFB4
+.netflix.com	TRUE	/	TRUE	1808136222	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSKrEk3E6LX4D5HNTrbOj8-eLwDKzpv7yo.%26dt%3D1776600222252
+.netflix.com	TRUE	/	TRUE	1791874216	gsid	f8da3956-4422-4719-a11e-1b4c57d91d81
+.netflix.com	TRUE	/	FALSE	1791874216	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1791874216	netflix-sans-normal-3-loaded	true

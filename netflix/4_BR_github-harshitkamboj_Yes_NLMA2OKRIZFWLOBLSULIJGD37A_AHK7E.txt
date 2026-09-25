@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: September 28, 2026
+Payment: DC
+Quality: UHD
+Streams: 4
+Price: R$59.90
+Extra Member: Yes
+Profiles (5): Marlon, Mari, islam islam, Ntzzkkj, ZZZ
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1811468040	OptanonAlertBoxClosed	2026-05-28T01:34:00.638Z
+.netflix.com	TRUE	/	FALSE	1811468065	OptanonConsent	isGpcEnabled=0&datestamp=Wed+May+27+2026+22%3A34%3A25+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=83ee577b-70fe-421f-90f4-84596331ae4f&interactionCount=3&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=3&crTime=1779931916869&geolocation=BR%3BRS&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1811468053	nfvdid	BQFmAAEBEE9GvHxypb4uLuy3Qwnn4s9gL2QRKfQySI3IV2QOiLS6L4eCKyMtTUJw3s5G4uMDe2TiS0yUJrA2JLizxpr8tswL34eqNQCfokCSBvQ_4lAbrEY7U8UFeMlGjffbL7jCR5fm_Z2iQrE27Ed8S49L1s6A
+.netflix.com	TRUE	/	TRUE	1792940817	gsid	4528aff9-9727-410b-9ea1-fd06db2d0e17
+.netflix.com	TRUE	/	TRUE	1813167171	NetflixId	ct%3DBgjHlOvcAxKCBAUBh81jN0u-FrL9rAyQ0kZjKudxE9o9LfmUA0FG6zEd78FXHhaT82KtXRnQrUZYZIxPcqNBPghIVYwK8t9V9wJZo_x9OpxT4NDCcOPyNOU4C8Yr97ejNRnUOiRyMvSBoUIVR8i5oYEllrJjcSwl2IwB4Uua1J_nZD9ImlIzUHvgzBX8zbrmjQZpRgsiHxEo1ZhKbhbdVvANIaMqGd7MvQ8dJz0KQG6fyIp_mQNiWyWKa1t2JBz6AqvFv7LHW2QXtmq5PfJDUXTGTXamAxxjatftqUThvdAVtaoa3V37C7xu-Z0TB-N5B-j9fR5nfMdjPUQ9srMyXNZcwI35BxSy4jG7W-0kI3xJjPplC2QQFu5Xw4AT7i9kbRcfNSYmmJdv0aOMDp2fd7mB-s59QSjYG0ebXAccF4PkmNCDoGLvUm22yrgCYhV7-SyML-wiMjGTQszXCfiIL1M_vwm5njePt5ot80GUZHekMhl0Hzc1Bkm-guBFBi6a0l2bcktVK976uUXKWM7aryhRB1-fRYrJFnZK7uTX8HkFuyh1RZt7us9PhRiFA0NyryW8oDRx-T8DykqjbmFDbC5ifywvygEFU52izzijG7v7SrFGOYz8p1JGzWqYZjCiZVH2fxOI9kT1C1atrFnX50aRJHhszGkp_j7YbZR8QPRZAKnX07qQmEeCq-UYBiIOCgxyFbF82t8iODiHa0w.%26ch%3DAQEAEAABABRspLaS2oQNh_MVMYNWCJTvbsIrcU1PB0c.%26v%3D3%26pg%3DNLMA2OKRIZFWLOBLSULIJGD37A
+.netflix.com	TRUE	/	TRUE	1813167171	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRo5APX2cCdpv3P-h2SNw9plljirm1-9AY.%26dt%3D1782412832000
+.netflix.com	TRUE	/	TRUE	1816191171	nap	BgiPu-vcAxJJaJP8jTqC3d06QdR6xKbPRfJwtdlisRX9-4focUc6hbM84IEFcwibZXkFZKZLhDu7S9j2TPb3bHsonD0stq3YVqV8ScOWG48GChgGIg4KDKu_WtLEqBTYRKpuiQ..
+.netflix.com	TRUE	/	FALSE	1792940817	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792940817	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792940817	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
