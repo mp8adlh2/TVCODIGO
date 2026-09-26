@@ -713,6 +713,12 @@ def activate_tv_code(session, tv_code: str, auth_url: str = "") -> Tuple[bool, s
             pass
 
     # 3. FALLBACK: FLUXO LEGADO COM FORM POST /tv2
+    if not auth_url:
+        try:
+            auth_url = extract_auth_url(session) or ""
+        except Exception:
+            auth_url = ""
+
     headers = {
         'Content-Type': 'application/x-www-form-urlencoded',
         'Origin': 'https://www.netflix.com',
@@ -991,10 +997,8 @@ def activate_with_cookie(cookie_data: dict, tv_code: str) -> Tuple[bool, str, Op
     session = get_session()
     set_cookies_on_session(session, parsed_cookies)
 
-    auth_url = extract_auth_url(session) or ""
-
     console.print(f"  [#00FF66]✓[/#00FF66] [white]Iniciando pareamento da TV com o código {clean_code}...[/white]")
-    success, status_msg = activate_tv_code(session, clean_code, auth_url)
+    success, status_msg = activate_tv_code(session, clean_code)
 
     if success:
         mark_cookie_used(filename, acc_info.get("email", ""))

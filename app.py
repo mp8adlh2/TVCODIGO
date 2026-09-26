@@ -2721,7 +2721,15 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 if success:
                     tv2.mark_cookie_used(used_file, account_info.get("email", ""))
                     record_history_entry("Netflix", used_file, account_info.get("email", ""), clean_code, account_info.get("plan", "Netflix"), "Sucesso")
-                    CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=used_file, exclude_email=account_info.get("email", ""))
+                    # Atualiza a próxima conta em segundo plano sem travar a resposta do usuário
+                    def _async_load_next(ex_f, ex_em):
+                        global CURRENT_NETFLIX_READY
+                        try:
+                            CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=ex_f, exclude_email=ex_em)
+                        except Exception:
+                            pass
+                    threading.Thread(target=_async_load_next, args=(used_file, account_info.get("email", "")), daemon=True).start()
+
                     kernel_logger.push_kernel_log(f"⚡ [Netflix] [SUCESSO] TV {clean_code} vinculada com sucesso!", level="success")
                     return self.send_json_response({
                         "success": True,
@@ -2752,7 +2760,14 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                         if succ2:
                             tv2.mark_cookie_used(alt_file, alt_info.get("email", ""))
                             record_history_entry("Netflix", alt_file, alt_info.get("email", ""), clean_code, account_info.get("plan", "Netflix"), "Sucesso")
-                            CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=alt_file, exclude_email=alt_info.get("email", ""))
+                            def _async_load_next2(ex_f, ex_em):
+                                global CURRENT_NETFLIX_READY
+                                try:
+                                    CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=ex_f, exclude_email=ex_em)
+                                except Exception:
+                                    pass
+                            threading.Thread(target=_async_load_next2, args=(alt_file, alt_info.get("email", "")), daemon=True).start()
+
                             return self.send_json_response({
                                 "success": True,
                                 "message": msg2 or "TV pareada e ativada com sucesso!",
