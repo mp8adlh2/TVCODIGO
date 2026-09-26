@@ -504,14 +504,17 @@ def extract_auth_url(session) -> Optional[str]:
             # Sessão já expirada na Netflix
             return None
 
-        html = r.text
-        for pat in patterns:
-            m = re.search(pat, html, re.IGNORECASE)
-            if m:
-                val = m.group(1).strip()
-                val = re.sub(r'\\x([0-9a-fA-F]{2})', lambda x: chr(int(x.group(1), 16)), val)
-                if len(val) >= 12 and val.lower() not in ('foreground', 'background', 'none', 'false', 'true', 'null'):
-                    return val
+        if not is_real_login:
+            html = r.text
+            for pat in patterns:
+                m = re.search(pat, html, re.IGNORECASE)
+                if m:
+                    val = m.group(1).strip()
+                    val = re.sub(r'\\x([0-9a-fA-F]{2})', lambda x: chr(int(x.group(1), 16)), val)
+                    if len(val) >= 12 and val.lower() not in ('foreground', 'background', 'none', 'false', 'true', 'null'):
+                        return val
+            if 'reactContext' in html or 'clcs' in html or 'clcshook' in html.lower():
+                return "clcs_ready"
 
     # Fallback rápido: /tvlogin (timeout 3.5s)
     try:
@@ -526,13 +529,190 @@ def extract_auth_url(session) -> Optional[str]:
                         val = re.sub(r'\\x([0-9a-fA-F]{2})', lambda x: chr(int(x.group(1), 16)), val)
                         if len(val) >= 12 and val.lower() not in ('foreground', 'background', 'none', 'false', 'true', 'null'):
                             return val
+                if 'reactContext' in r_tv.text or 'clcs' in r_tv.text:
+                    return "clcs_ready"
     except Exception:
         pass
 
     return None
 
-def activate_tv_code(session, tv_code: str, auth_url: str) -> Tuple[bool, str]:
+def _activate_tv_code_graphql(session, clean_code: str) -> Tuple[bool, str]:
+    """Ativação de Smart TV utilizando a API moderna GraphQL CLCS da Netflix (2026)."""
+    try:
+        r = session.get('https://www.netflix.com/tv2', timeout=9, allow_redirects=True, verify=False)
+    except Exception:
+        return False, "network_error"
+
+    if not r or r.status_code != 200:
+        return False, "network_error"
+
+    final_url = getattr(r, 'url', '').lower()
+    if ('/login' in final_url and 'tvlogin' not in final_url and 'tv2' not in final_url) or ('/signin' in final_url and 'tvlogin' not in final_url and 'tv2' not in final_url):
+        return False, "expired_cookie"
+
+    m = re.search(r'netflix\.reactContext\s*=\s*(\{.*?\});\s*</script>', r.text)
+    if not m:
+        return False, "no_clcs"
+
+    try:
+        raw_json = re.sub(r'\\x([0-9a-fA-F]{2})', lambda x: chr(int(x.group(1), 16)), m.group(1))
+        ctx = json.loads(raw_json)
+    except Exception:
+        return False, "no_clcs"
+
+    locale = "pt-BR"
+    try:
+        u_info = ctx.get('models', {}).get('userInfo', {}).get('data', {})
+        if u_info.get('locale'):
+            locale = u_info['locale']
+    except Exception:
+        pass
+
+    data = ctx.get('models', {}).get('graphqlClcs', {}).get('data', {})
+    if not data:
+        return False, "no_clcs"
+
+    try:
+        first_val = list(data.values())[0]
+        hook_res = first_val.get('clcsHookV2', {}).get('result', {})
+        screen = hook_res.get('screen', {})
+        server_state = screen.get('serverState')
+        server_screen_update = None
+        for node in screen.get('componentTree', {}).get('nodes', []):
+            if node.get('__typename') == 'CLCSButton':
+                for child in node.get('onPress', {}).get('nodes', []):
+                    if child.get('__typename') == 'CLCSRequestScreenUpdate':
+                        server_screen_update = child.get('serverScreenUpdate')
+                        break
+    except Exception:
+        return False, "no_clcs"
+
+    if not server_state or not server_screen_update:
+        return False, "no_clcs"
+
+    gql_payload = {
+        "operationName": "CLCSScreenUpdate",
+        "variables": {
+            "format": "HTML",
+            "imageFormat": "PNG",
+            "locale": locale,
+            "serverState": server_state,
+            "serverScreenUpdate": server_screen_update,
+            "inputFields": [
+                {
+                    "name": "rendezvousCode",
+                    "value": {
+                        "stringValue": clean_code
+                    }
+                }
+            ]
+        },
+        "extensions": {
+            "persistedQuery": {
+                "id": "3b8d1a94-b412-4f69-bc9b-a51503757f9d",
+                "version": 102
+            }
+        }
+    }
+
+    headers = {
+        'Content-Type': 'application/json',
+        'Origin': 'https://www.netflix.com',
+        'Referer': 'https://www.netflix.com/tv2',
+        'x-netflix.request.clcs.bucket': 'high',
+        'Accept': '*/*',
+    }
+
+    try:
+        gql_r = session.post('https://www.netflix.com/graphql', json=gql_payload, headers=headers, timeout=12, verify=False)
+    except Exception:
+        return False, "network_error"
+
+    if gql_r.status_code != 200:
+        return False, f"graphql_http_{gql_r.status_code}"
+
+    try:
+        res_data = gql_r.json()
+    except Exception:
+        return False, "graphql_invalid_json"
+
+    if 'errors' in res_data and res_data['errors']:
+        err_msg = str(res_data['errors'][0].get('message', '')).lower()
+        if 'rate' in err_msg or 'too many' in err_msg:
+            return False, "rate_limit"
+        return False, "invalid_code"
+
+    result = res_data.get('data', {}).get('result', {})
+    res_screen = result.get('screen', {})
+
+    # Verificação minuciosa dos nós retornados pela Netflix
+    has_code_input = False
+    error_detected = None
+
+    nodes = res_screen.get('componentTree', {}).get('nodes', [])
+    for node in nodes:
+        t = node.get('__typename')
+        if t == 'CLCSInputPinCode':
+            has_code_input = True
+
+        txt = (
+            node.get('text', {}).get('value')
+            if isinstance(node.get('text'), dict) else node.get('text')
+        ) or (
+            node.get('webTextWithTags', {}).get('text', {}).get('value')
+            if isinstance(node.get('webTextWithTags'), dict) else None
+        )
+        if txt:
+            txt_l = txt.lower()
+            if any(k in txt_l for k in ['expir', 'expired', 'tempo esgotado']):
+                error_detected = "expired_code"
+                break
+            elif any(k in txt_l for k in ['wrong', 'incorrect', 'invalid', 'incorreto', 'errado', 'não conseguimos encontrar', 'recusad', 'deu errado']):
+                error_detected = "invalid_code"
+                break
+            elif any(k in txt_l for k in ['já utilizado', 'already used', 'already linked']):
+                error_detected = "already_used"
+                break
+
+    if error_detected:
+        return False, error_detected
+
+    screen_name = ''
+    try:
+        ti = json.loads(res_screen.get('trackingInfo') or '{}')
+        screen_name = (ti.get('screenName') or '').lower()
+    except Exception:
+        pass
+
+    if has_code_input and 'rendezvous' in screen_name:
+        return False, "invalid_code"
+
+    return True, "success"
+
+def activate_tv_code(session, tv_code: str, auth_url: str = "") -> Tuple[bool, str]:
     global ACTIVE_PROXY
+    clean_code = re.sub(r'[^A-Za-z0-9]', '', tv_code).upper()
+
+    # 1. TENTA PRIMEIRO VIA GRAPHQL CLCS (FLUXO ATUALIZADO 2026 DA NETFLIX)
+    try:
+        success, status_msg = _activate_tv_code_graphql(session, clean_code)
+        if success or status_msg in ("invalid_code", "expired_code", "already_used", "expired_cookie"):
+            return success, status_msg
+    except Exception:
+        pass
+
+    # 2. SE RATE-LIMIT OU BLOQUEIO, RETENTA COM PROXY
+    if not ACTIVE_PROXY and PROXY_CONFIG:
+        try:
+            apply_proxy_to_session(session, True)
+            ACTIVE_PROXY = True
+            success, status_msg = _activate_tv_code_graphql(session, clean_code)
+            if success or status_msg in ("invalid_code", "expired_code", "already_used", "expired_cookie"):
+                return success, status_msg
+        except Exception:
+            pass
+
+    # 3. FALLBACK: FLUXO LEGADO COM FORM POST /tv2
     headers = {
         'Content-Type': 'application/x-www-form-urlencoded',
         'Origin': 'https://www.netflix.com',
@@ -541,12 +721,12 @@ def activate_tv_code(session, tv_code: str, auth_url: str) -> Tuple[bool, str]:
     }
     payload = {
         'flow': 'websiteSignUp',
-        'authURL': auth_url,
+        'authURL': auth_url or "",
         'flowMode': 'enterTvLoginRendezvousCode',
         'withFields': 'tvLoginRendezvousCode,rendezvousCode,isTvUrl2',
-        'code': tv_code,
-        'tvLoginRendezvousCode': tv_code,
-        'rendezvousCode': tv_code,
+        'code': clean_code,
+        'tvLoginRendezvousCode': clean_code,
+        'rendezvousCode': clean_code,
         'isTvUrl2': 'true',
         'action': 'nextAction',
     }
@@ -565,29 +745,6 @@ def activate_tv_code(session, tv_code: str, auth_url: str) -> Tuple[bool, str]:
     final_url = r.url.lower()
     html = r.text.lower()
 
-    # Se a resposta indicar bloqueio de IP ou rate-limit, tenta novamente via proxy
-    is_blocked = is_blocked_response(r.status_code, html, final_url) or any(kw in html for kw in ['too many', 'muitas tentativas', 'rate limit', 'try again later'])
-    if is_blocked and not ACTIVE_PROXY and PROXY_CONFIG:
-        try:
-            apply_proxy_to_session(session, True)
-            ACTIVE_PROXY = True
-            console.print("  [bold #FFD700]⚡ Bloqueio/Rate-limit detectado na ativação. Retentando via Proxy...[/bold #FFD700]")
-            new_auth = extract_auth_url(session)
-            if new_auth:
-                payload['authURL'] = new_auth
-            r = session.post(
-                'https://www.netflix.com/tv2',
-                data=payload,
-                headers=headers,
-                timeout=REQUEST_TIMEOUT + 3,
-                allow_redirects=True,
-                verify=False
-            )
-            final_url = r.url.lower()
-            html = r.text.lower()
-        except Exception:
-            pass
-
     # 1. Se a URL final redirecionou para a página de login da conta (não a tela de pareamento)
     is_real_login_page = (
         ('/login' in final_url and 'tvlogin' not in final_url and 'tv2' not in final_url)
@@ -598,7 +755,7 @@ def activate_tv_code(session, tv_code: str, auth_url: str) -> Tuple[bool, str]:
     if is_real_login_page:
         return False, "expired_cookie"
 
-    # 2. Padrões explícitos de erro da Netflix (Verificação Obrigatória em Primeiro Lugar)
+    # 2. Padrões explícitos de erro da Netflix
     error_patterns = {
         'invalid_code': [
             'código inválido', 'code is invalid', 'incorrect code', 'wrong code',
@@ -634,8 +791,6 @@ def activate_tv_code(session, tv_code: str, auth_url: str) -> Tuple[bool, str]:
         or 'name=\'rendezvouscode\'' in html
         or 'id="rendezvouscode"' in html
         or 'data-uia="rendezvouscodeentry"' in html
-        or 'rendezvouscode' in html
-        or 'sesuaikan dengan kode' in html
         or 'placeholder="código"' in html
         or 'placeholder="codigo"' in html
         or 'placeholder="code"' in html
@@ -836,14 +991,9 @@ def activate_with_cookie(cookie_data: dict, tv_code: str) -> Tuple[bool, str, Op
     session = get_session()
     set_cookies_on_session(session, parsed_cookies)
 
-    auth_url = extract_auth_url(session)
-    if not auth_url:
-        DEAD_COOKIES.add(filename)
-        DEAD_COOKIES.add(os.path.basename(filename))
-        console.print("  [bold #FF0033]❌ Falha: Não foi possível obter autorização da Netflix.[/bold #FF0033]")
-        return False, "Não foi possível obter autorização da Netflix. Próximo cookie carregado!", None
+    auth_url = extract_auth_url(session) or ""
 
-    console.print(f"  [#00FF66]✓[/#00FF66] [white]authURL obtida com sucesso. Enviando código {clean_code}...[/white]")
+    console.print(f"  [#00FF66]✓[/#00FF66] [white]Iniciando pareamento da TV com o código {clean_code}...[/white]")
     success, status_msg = activate_tv_code(session, clean_code, auth_url)
 
     if success:
@@ -853,7 +1003,7 @@ def activate_with_cookie(cookie_data: dict, tv_code: str) -> Tuple[bool, str, Op
 
     if status_msg == "invalid_code":
         console.print(f"  [bold #FFD700]⚠ Código '{clean_code}' recusado pela Netflix.[/bold #FFD700]")
-        return False, f"O código '{clean_code}' foi recusado pela Netflix. Verifique o código exibido na TV.", None
+        return False, f"O código '{clean_code}' foi recusado pela Netflix. Verifique se o código na TV expirou ou foi digitado incorretamente.", None
     elif status_msg == "expired_code":
         console.print(f"  [bold #FFD700]⚠ Código '{clean_code}' expirou na tela da TV.[/bold #FFD700]")
         return False, f"O código '{clean_code}' expirou na tela da TV. Gere outro código na TV.", None
@@ -863,6 +1013,11 @@ def activate_with_cookie(cookie_data: dict, tv_code: str) -> Tuple[bool, str, Op
     elif status_msg == "rate_limit":
         console.print(f"  [bold #FFD700]⚠ Rate-limit atingido na Netflix. Aguarde 2 minutos.[/bold #FFD700]")
         return False, "Muitas tentativas na Netflix. Aguarde 2 minutos.", None
+    elif status_msg == "expired_cookie":
+        DEAD_COOKIES.add(filename)
+        DEAD_COOKIES.add(os.path.basename(filename))
+        console.print(f"  [bold #FF0033]❌ Sessão do cookie expirada. Alternando cookie...[/bold #FF0033]")
+        return False, "Sessão do cookie Netflix expirada. Alternando para o próximo cookie!", None
     else:
         DEAD_COOKIES.add(filename)
         DEAD_COOKIES.add(os.path.basename(filename))
@@ -926,14 +1081,7 @@ def run_activation_cycle():
     session = get_session()
     set_cookies_on_session(session, parsed_cookies)
 
-    auth_url = run_with_spinner("Obtendo autorização...", lambda: extract_auth_url(session))
-    if not auth_url:
-        box_error("SESSÃO INSTÁVEL", [
-            "Não foi possível obter authURL da Netflix.",
-            "Cookie descartado. Na próxima rodada outro cookie será utilizado."
-        ])
-        time.sleep(2)
-        return
+    auth_url = run_with_spinner("Obtendo autorização...", lambda: extract_auth_url(session)) or ""
 
     success, status_msg = run_with_spinner("Pareando TV...", lambda: activate_tv_code(session, tv_code, auth_url))
 

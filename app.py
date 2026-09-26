@@ -2730,10 +2730,8 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     })
                 else:
                     kernel_logger.push_kernel_log(f"⚠️ [Netflix] Tentativa inicial falhou: {msg}", level="warn")
-                    # Se for código de TV inválido ou expirado, encerra IMEDIATAMENTE sem re-tentar outro cookie
+                    # Se for código de TV inválido ou expirado, encerra IMEDIATAMENTE sem queimar o cookie
                     if any(k in msg.lower() for k in ["código", "codigo", "expirou", "inválido", "invalido", "recusado", "já utilizado"]):
-                        tv2.mark_cookie_used(used_file, account_info.get("email", ""))
-                        CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=used_file, exclude_email=account_info.get("email", ""))
                         return self.send_json_response({
                             "success": False,
                             "message": msg
