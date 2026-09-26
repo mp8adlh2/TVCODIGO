@@ -2279,7 +2279,14 @@
     let currentPlan = 'TODOS';
     let currentCode = '';
     let authToken = localStorage.getItem('cyber_auth_token') || sessionStorage.getItem('cyber_auth_token') || '';
-    let allowedServices = ['netflix', 'hbo', 'crunchyroll', 'sky'];
+    let allowedServices = ['netflix'];
+    try {
+      const savedSvcs = localStorage.getItem('cyber_allowed_services') || sessionStorage.getItem('cyber_allowed_services');
+      if (savedSvcs) {
+        const parsed = JSON.parse(savedSvcs);
+        if (Array.isArray(parsed) && parsed.length > 0) allowedServices = parsed;
+      }
+    } catch(e) {}
     let soundEnabled = localStorage.getItem('cyber_sound_enabled') !== 'false';
     let audioCtx = null;
     let cachedCookiesList = [];
@@ -2386,7 +2393,8 @@
       localStorage.removeItem('cyber_allowed_services');
       sessionStorage.removeItem('cyber_auth_token');
       sessionStorage.removeItem('cyber_allowed_services');
-      allowedServices = ['netflix', 'hbo', 'crunchyroll', 'sky'];
+      allowedServices = ['netflix'];
+      applyAllowedServicesUI();
     }
 
     function updateTelemetryValidity(daysRemaining, expDate) {
@@ -3104,8 +3112,12 @@
         const servData = data[currentService];
         if (servData) updateCardWithServiceData(servData, currentService);
 
-        if (data.allowed_services && Array.isArray(data.allowed_services) && data.allowed_services.length > 0) {
+        // 🔒 Só atualiza permissões se o usuário estiver logado E o servidor enviou lista explícita
+        if (authToken && data.allowed_services && Array.isArray(data.allowed_services) && data.allowed_services.length > 0) {
           allowedServices = data.allowed_services;
+          try {
+            localStorage.setItem('cyber_allowed_services', JSON.stringify(allowedServices));
+          } catch(e) {}
           applyAllowedServicesUI();
         }
 
@@ -3328,9 +3340,11 @@
       clearCode();
       updateSoundUI();
       updatePinDisplay();
+      applyAllowedServicesUI();
       
       const isAuth = await checkAuth();
       if (isAuth) {
+        applyAllowedServicesUI();
         const target = allowedServices.includes(currentService) ? currentService : (allowedServices[0] || 'netflix');
         switchService(target, true);
       }

@@ -1286,8 +1286,35 @@ def extract_passwords_from_senhas_de_acesso() -> List[dict]:
         with open(txt_path, 'r', encoding='utf-8', errors='ignore') as f:
             lines = f.read().splitlines()
 
-        curr = {'nome': 'Cliente VIP', 'servicos': ["netflix", "hbo", "crunchyroll", "sky"], 'senha': '', 'descricao': ''}
+        curr = {'nome': 'Cliente VIP', 'servicos': [], 'senha': '', 'descricao': ''}
         expect_senha = False
+
+        def _finalize_item(item_dict):
+            nonlocal extracted
+            p = item_dict.get('senha', '').strip()
+            if not p or any(secure_str_compare(p, b) for b in blacklisted):
+                return
+            svcs = list(item_dict.get('servicos', []))
+            n_low = item_dict.get('nome', '').lower()
+            if not svcs:
+                if 'netflix' in n_low and 'hbo' in n_low:
+                    svcs = ['netflix', 'hbo']
+                elif 'netflix' in n_low:
+                    svcs = ['netflix']
+                elif 'hbo' in n_low or 'max' in n_low:
+                    svcs = ['hbo']
+                elif 'crunchyroll' in n_low or 'crunchy' in n_low:
+                    svcs = ['crunchyroll']
+                elif 'sky' in n_low:
+                    svcs = ['sky']
+                elif 'master' in n_low or 'todos' in n_low or 'vip master' in n_low:
+                    svcs = ['netflix', 'hbo', 'crunchyroll', 'sky']
+                else:
+                    svcs = ['netflix']
+            
+            clean_item = dict(item_dict)
+            clean_item['servicos'] = svcs
+            extracted.append(clean_item)
 
         for raw_line in lines:
             line = raw_line.strip()
@@ -1307,7 +1334,7 @@ def extract_passwords_from_senhas_de_acesso() -> List[dict]:
                 if 'hbo' in low or 'max' in low: svcs.append('hbo')
                 if 'crunchyroll' in low or 'crunchy' in low: svcs.append('crunchyroll')
                 if 'sky' in low: svcs.append('sky')
-                curr['servicos'] = svcs or ["netflix", "hbo", "crunchyroll", "sky"]
+                curr['servicos'] = svcs
                 continue
                 
             if line.lower().startswith('validade:'):
@@ -1330,9 +1357,8 @@ def extract_passwords_from_senhas_de_acesso() -> List[dict]:
                 after = line.split(':', 1)[1].strip()
                 if after:
                     curr['senha'] = after
-                    if not any(secure_str_compare(curr['senha'], b) for b in blacklisted):
-                        extracted.append(dict(curr))
-                    curr = {'nome': 'Cliente VIP', 'servicos': ["netflix", "hbo", "crunchyroll", "sky"], 'senha': '', 'descricao': ''}
+                    _finalize_item(curr)
+                    curr = {'nome': 'Cliente VIP', 'servicos': [], 'senha': '', 'descricao': ''}
                 else:
                     expect_senha = True
                 continue
@@ -1340,9 +1366,8 @@ def extract_passwords_from_senhas_de_acesso() -> List[dict]:
             if expect_senha:
                 if not line.startswith(('=', '-', '•', 'Libera:', 'Validade:', 'Detalhes:')):
                     curr['senha'] = line
-                    if not any(secure_str_compare(curr['senha'], b) for b in blacklisted):
-                        extracted.append(dict(curr))
-                    curr = {'nome': 'Cliente VIP', 'servicos': ["netflix", "hbo", "crunchyroll", "sky"], 'senha': '', 'descricao': ''}
+                    _finalize_item(curr)
+                    curr = {'nome': 'Cliente VIP', 'servicos': [], 'senha': '', 'descricao': ''}
                     expect_senha = False
                 continue
 
@@ -1586,9 +1611,8 @@ def find_access_role(password: str) -> Optional[dict]:
             "servicos": ["netflix", "hbo", "crunchyroll", "sky"]
         }
 
-    # 4. Senhas padrão de conveniência administrativa (libera todos os 4 serviços)
+    # 4. Senhas padrão de conveniência administrativa (apenas senhas mestres reais)
     ADMIN_DEFAULT_PASSWORDS = {
-        "admin", "admin123", "master", "root", "123456", "cyber2026", "admin2026", "senha",
         "ADMIN#VAULT@2026$COOKIE*BLINDADO#PROTECT*ROOT!VIP",
         "CYBER#STREAM@2026$MASTER*TITANIUM!ULTRA*ACCESS#VIP",
         "ADMIN#COOKIES@7739$VIP*VAULT!2026",
@@ -2273,10 +2297,16 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                         "expiration_date": exp_date,
                         "message": f"⚠️ Acesso expirado em {exp_date}. Renove com o administrador."
                     }, 403)
+            used_pwd = session.get("password", "")
+            role = find_access_role(used_pwd) if used_pwd else None
+            servicos = session.get("services")
+            if not servicos and role:
+                servicos = role.get("servicos")
+                session["services"] = servicos
             return self.send_json_response({
                 "authenticated": True,
-                "allowed_services": session.get("services", ["netflix", "hbo", "crunchyroll", "sky"]),
-                "role_name": session.get("role_name", "Acesso Autorizado"),
+                "allowed_services": servicos or ["netflix"],
+                "role_name": session.get("role_name", role.get("nome", "Acesso Autorizado") if role else "Acesso Autorizado"),
                 "expires_at": session.get("expires_at"),
                 "days_remaining": session.get("days_remaining"),
                 "expiration_date": session.get("expiration_date")
@@ -2708,7 +2738,11 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         # Registra heartbeat em tempo real
         track_client_heartbeat(client_ip, auth_token, ua, role_name, "")
 
-        res["allowed_services"] = session.get("services", ["netflix", "hbo", "crunchyroll", "sky"]) if session else ["netflix", "hbo", "crunchyroll", "sky"]
+        # Permissões do cliente na telemetria: NUNCA envia todos os 4 streamings se o cliente não tiver sessão
+        if session and session.get("services"):
+            res["allowed_services"] = session.get("services")
+        else:
+            res["allowed_services"] = None
         res["role_name"] = role_name
         res["server_version"] = SERVER_DATA_VERSION
         res["online_users"] = get_online_users_data()
