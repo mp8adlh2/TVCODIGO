@@ -482,51 +482,50 @@ def extract_auth_url(session) -> Optional[str]:
     patterns = [
         r'<input[^>]*name=["\']authURL["\'][^>]*value=["\']([^"\']+)["\']',
         r'<input[^>]*value=["\']([^"\']+)["\'][^>]*name=["\']authURL["\']',
-        r'"authURL"\s*:\s*"([^"\\]+)"',
-        r'\\"authURL\\"\s*:\s*\\"([^"\\]+)\\"',
-        r'&quot;authURL&quot;\s*:\s*&quot;([^&"\\]+)&quot;',
-        r'authURL\s*[=:]\s*["\']([^"\']+)["\']',
-        r'name="authURL"\s+value="([^"]+)"',
-        r'"csrfToken"\s*:\s*"([^"\\]+)"',
-        r'\\"csrfToken\\"\s*:\s*\\"([^"\\]+)\\"',
-        r'&quot;csrfToken&quot;\s*:\s*&quot;([^&"\\]+)&quot;',
-        r'"token"\s*:\s*"([^"\\]+)"',
-        r'authURL=(\d{10,}\.[A-Z0-9]+)',
-        r'"authURL":\s*"(\d{10,}\.[A-Z0-9]+)"'
+        r'["\']authURL["\']\s*[:=]\s*["\']([^"\']+)["\']',
+        r'\\"authURL\\"\s*[:=]\s*\\"([^\\"]+)\\"',
+        r'&quot;authURL&quot;\s*[:=]\s*&quot;([^&"]+)&quot;',
+        r'authURL\s*[=:]\s*["\']?([a-zA-Z0-9\.\_\-\%\+\=\\]+)["\']?',
     ]
 
-    # Requisição ultra-rápida (timeout 5s)
+    # Requisição rápida (timeout 4s)
     try:
-        r = session.get('https://www.netflix.com/tv2', timeout=5, allow_redirects=True, verify=False)
+        r = session.get('https://www.netflix.com/tv2', timeout=4, allow_redirects=True, verify=False)
     except Exception:
         r = None
 
     if r and r.status_code == 200:
         final_url = getattr(r, 'url', '').lower()
         is_real_login = (
-            ('/login' in final_url and 'tvlogin' not in final_url)
-            or ('/signin' in final_url and 'tvlogin' not in final_url)
+            ('/login' in final_url and 'tvlogin' not in final_url and 'tv2' not in final_url)
+            or ('/signin' in final_url and 'tvlogin' not in final_url and 'tv2' not in final_url)
         )
         if is_real_login:
-            # Sessão já expirada na Netflix, encerra imediatamente sem perder tempo
+            # Sessão já expirada na Netflix
             return None
 
         html = r.text
         for pat in patterns:
             m = re.search(pat, html, re.IGNORECASE)
             if m:
-                return m.group(1)
+                val = m.group(1).strip()
+                val = re.sub(r'\\x([0-9a-fA-F]{2})', lambda x: chr(int(x.group(1), 16)), val)
+                if len(val) >= 12 and val.lower() not in ('foreground', 'background', 'none', 'false', 'true', 'null'):
+                    return val
 
-    # Fallback rápido: /tvlogin (timeout 4s)
+    # Fallback rápido: /tvlogin (timeout 3.5s)
     try:
-        r_tv = session.get('https://www.netflix.com/tvlogin', timeout=4, allow_redirects=True, verify=False)
+        r_tv = session.get('https://www.netflix.com/tvlogin', timeout=3.5, allow_redirects=True, verify=False)
         if r_tv and r_tv.status_code == 200:
             final_tv = getattr(r_tv, 'url', '').lower()
-            if not ('/login' in final_tv and 'tvlogin' not in final_tv):
+            if not ('/login' in final_tv and 'tvlogin' not in final_tv and 'tv2' not in final_tv):
                 for pat in patterns:
                     m = re.search(pat, r_tv.text, re.IGNORECASE)
                     if m:
-                        return m.group(1)
+                        val = m.group(1).strip()
+                        val = re.sub(r'\\x([0-9a-fA-F]{2})', lambda x: chr(int(x.group(1), 16)), val)
+                        if len(val) >= 12 and val.lower() not in ('foreground', 'background', 'none', 'false', 'true', 'null'):
+                            return val
     except Exception:
         pass
 
@@ -544,9 +543,10 @@ def activate_tv_code(session, tv_code: str, auth_url: str) -> Tuple[bool, str]:
         'flow': 'websiteSignUp',
         'authURL': auth_url,
         'flowMode': 'enterTvLoginRendezvousCode',
-        'withFields': 'tvLoginRendezvousCode,isTvUrl2',
+        'withFields': 'tvLoginRendezvousCode,rendezvousCode,isTvUrl2',
         'code': tv_code,
         'tvLoginRendezvousCode': tv_code,
+        'rendezvousCode': tv_code,
         'isTvUrl2': 'true',
         'action': 'nextAction',
     }
@@ -555,7 +555,7 @@ def activate_tv_code(session, tv_code: str, auth_url: str) -> Tuple[bool, str]:
             'https://www.netflix.com/tv2',
             data=payload,
             headers=headers,
-            timeout=8,
+            timeout=7,
             allow_redirects=True,
             verify=False
         )
@@ -579,7 +579,7 @@ def activate_tv_code(session, tv_code: str, auth_url: str) -> Tuple[bool, str]:
                 'https://www.netflix.com/tv2',
                 data=payload,
                 headers=headers,
-                timeout=REQUEST_TIMEOUT + 4,
+                timeout=REQUEST_TIMEOUT + 3,
                 allow_redirects=True,
                 verify=False
             )
@@ -591,7 +591,7 @@ def activate_tv_code(session, tv_code: str, auth_url: str) -> Tuple[bool, str]:
     # 1. Se a URL final redirecionou para a página de login da conta (não a tela de pareamento)
     is_real_login_page = (
         ('/login' in final_url and 'tvlogin' not in final_url and 'tv2' not in final_url)
-        or ('/signin' in final_url and 'tvlogin' not in final_url)
+        or ('/signin' in final_url and 'tvlogin' not in final_url and 'tv2' not in final_url)
         or ('entryurl=%2ftv2' in final_url)
         or ('entryurl=%2f' in final_url and 'tv2' not in final_url)
     )
@@ -604,15 +604,16 @@ def activate_tv_code(session, tv_code: str, auth_url: str) -> Tuple[bool, str]:
             'código inválido', 'code is invalid', 'incorrect code', 'wrong code',
             'código não é válido', 'enter a valid code', 'não conseguimos encontrar esse código',
             "that code didn't work", 'invalid code', 'esse código não funcionou',
-            'não foi possível validar', 'verifique o código', 'check your code'
+            'não foi possível validar', 'verifique o código', 'check your code',
+            'kode kesalahan', 'tidak dapat menemukan kode'
         ],
         'expired_code': [
             'código expirou', 'code has expired', 'no longer valid', 'expired code',
-            'expirado', 'gerar novo código'
+            'expirado', 'gerar novo código', 'kode kedaluwarsa'
         ],
         'already_used': [
             'already used', 'já utilizado', 'already linked', 'already activated',
-            'já foi usado'
+            'já foi usado', 'sudah digunakan'
         ],
         'rate_limit': [
             'too many requests', 'muitas tentativas', 'rate limit', 'try again later',
@@ -624,11 +625,17 @@ def activate_tv_code(session, tv_code: str, auth_url: str) -> Tuple[bool, str]:
             if kw in html:
                 return False, err_type
 
-    # 3. Se a página ainda exibe o campo para digitar código, a Netflix RECUSOU o código
+    # 3. Se a página ainda exibe o campo para digitar código ou a tela de confirmação de rendezvous
     tem_campo_codigo = (
         'name="tvloginrendezvouscode"' in html
         or 'name=\'tvloginrendezvouscode\'' in html
         or 'id="tvloginrendezvouscode"' in html
+        or 'name="rendezvouscode"' in html
+        or 'name=\'rendezvouscode\'' in html
+        or 'id="rendezvouscode"' in html
+        or 'data-uia="rendezvouscodeentry"' in html
+        or 'rendezvouscode' in html
+        or 'sesuaikan dengan kode' in html
         or 'placeholder="código"' in html
         or 'placeholder="codigo"' in html
         or 'placeholder="code"' in html
@@ -642,7 +649,7 @@ def activate_tv_code(session, tv_code: str, auth_url: str) -> Tuple[bool, str]:
         'dispositivo conectado', 'aparelho conectado', 'conectado com sucesso',
         'pronto para assistir', 'tv conectada', 'rendezvous successful',
         'your device is now connected', 'tudo pronto para assistir',
-        'assistir à netflix na tv', 'tela conectada'
+        'assistir à netflix na tv', 'tela conectada', 'perangkat terhubung'
     ]
     for ind in success_indicators:
         if ind in final_url or ind in html:

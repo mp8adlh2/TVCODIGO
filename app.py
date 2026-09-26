@@ -19,6 +19,7 @@ from datetime import datetime
 from typing import Dict, Optional, Tuple, List, Set
 import urllib.parse
 import stat
+import traceback
 import kernel_logger
 import gerenciador_seguranca
 
@@ -2338,82 +2339,89 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         self.end_headers()
 
     def do_POST(self):
-        raw_path = self.path.split('?')[0]
+        try:
+            raw_path = self.path.split('?')[0]
 
-        if raw_path == '/api/login':
-            self.handle_api_login()
-        elif raw_path == '/api/logout':
-            self.handle_api_logout()
-        elif raw_path == '/api/verify-token':
-            self.handle_api_verify_token()
-        elif raw_path == '/api/heartbeat':
-            self.handle_api_heartbeat()
-        elif raw_path == '/api/admin/verify-pass':
-            self.handle_api_verify_admin_pass()
-        elif raw_path == '/api/admin/passwords/quick-create':
-            if not self.is_admin_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
-            self.handle_api_quick_create_password()
-        elif raw_path == '/api/admin/passwords/save':
-            if not self.is_admin_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
-            self.handle_api_save_password()
-        elif raw_path == '/api/admin/passwords/delete':
-            if not self.is_admin_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
-            self.handle_api_delete_password()
-        elif raw_path == '/api/admin/passwords/renew':
-            if not self.is_admin_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
-            self.handle_api_renew_password()
-        elif raw_path == '/api/admin/passwords/sync-all':
-            if not self.is_admin_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
-            self.handle_api_sync_all_passwords()
-        elif raw_path == '/api/admin/accounts/delete':
-            if not self.is_admin_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
-            self.handle_api_admin_delete_account()
-        elif raw_path == '/api/admin/cookies/clear-all':
-            if not self.is_admin_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
-            self.handle_api_admin_clear_all_cookies()
-        elif raw_path == '/api/activate':
-            if not self.is_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
-            if not self.check_rate_limit(max_requests=10, window_seconds=30):
-                return self.send_json_response({"success": False, "message": "Muitas ativações em sequência. Aguarde alguns instantes por segurança."}, 429)
-            self.handle_api_activate()
-        elif raw_path == '/api/sky/test-activate':
-            if not self.is_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
-            self.handle_api_sky_test_activate()
-        elif raw_path == '/api/skip-cookie':
-            if not self.is_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
-            self.handle_api_skip_cookie()
-        elif raw_path == '/api/select-cookie':
-            if not self.is_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
-            self.handle_api_select_cookie()
-        elif raw_path == '/api/filter-plan':
-            if not self.is_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
-            self.handle_api_filter_plan()
-        elif raw_path == '/api/admin/upload-cookies':
-            if not self.is_admin_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Senha do gerenciador de cookies requerida."}, 401)
-            self.handle_api_upload_cookies()
-        elif raw_path == '/api/admin/sky-tokens':
-            if not self.is_admin_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Senha do gerenciador de cookies requerida."}, 401)
-            self.handle_api_save_sky_tokens()
-        elif raw_path == '/api/admin/reset-cache':
-            if not self.is_admin_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Senha do gerenciador de cookies requerida."}, 401)
-            self.handle_api_reset_cache()
-        else:
-            self.send_error(404, "Endpoint not found")
+            if raw_path == '/api/login':
+                self.handle_api_login()
+            elif raw_path == '/api/logout':
+                self.handle_api_logout()
+            elif raw_path == '/api/verify-token':
+                self.handle_api_verify_token()
+            elif raw_path == '/api/heartbeat':
+                self.handle_api_heartbeat()
+            elif raw_path == '/api/admin/verify-pass':
+                self.handle_api_verify_admin_pass()
+            elif raw_path == '/api/admin/passwords/quick-create':
+                if not self.is_admin_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
+                self.handle_api_quick_create_password()
+            elif raw_path == '/api/admin/passwords/save':
+                if not self.is_admin_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
+                self.handle_api_save_password()
+            elif raw_path == '/api/admin/passwords/delete':
+                if not self.is_admin_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
+                self.handle_api_delete_password()
+            elif raw_path == '/api/admin/passwords/renew':
+                if not self.is_admin_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
+                self.handle_api_renew_password()
+            elif raw_path == '/api/admin/passwords/sync-all':
+                if not self.is_admin_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
+                self.handle_api_sync_all_passwords()
+            elif raw_path == '/api/admin/accounts/delete':
+                if not self.is_admin_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
+                self.handle_api_admin_delete_account()
+            elif raw_path == '/api/admin/cookies/clear-all':
+                if not self.is_admin_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
+                self.handle_api_admin_clear_all_cookies()
+            elif raw_path == '/api/activate':
+                if not self.is_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
+                if not self.check_rate_limit(max_requests=10, window_seconds=30):
+                    return self.send_json_response({"success": False, "message": "Muitas ativações em sequência. Aguarde alguns instantes por segurança."}, 429)
+                self.handle_api_activate()
+            elif raw_path == '/api/sky/test-activate':
+                if not self.is_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
+                self.handle_api_sky_test_activate()
+            elif raw_path == '/api/skip-cookie':
+                if not self.is_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
+                self.handle_api_skip_cookie()
+            elif raw_path == '/api/select-cookie':
+                if not self.is_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
+                self.handle_api_select_cookie()
+            elif raw_path == '/api/filter-plan':
+                if not self.is_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
+                self.handle_api_filter_plan()
+            elif raw_path == '/api/admin/upload-cookies':
+                if not self.is_admin_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Senha do gerenciador de cookies requerida."}, 401)
+                self.handle_api_upload_cookies()
+            elif raw_path == '/api/admin/sky-tokens':
+                if not self.is_admin_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Senha do gerenciador de cookies requerida."}, 401)
+                self.handle_api_save_sky_tokens()
+            elif raw_path == '/api/admin/reset-cache':
+                if not self.is_admin_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Senha do gerenciador de cookies requerida."}, 401)
+                self.handle_api_reset_cache()
+            else:
+                self.send_error(404, "Endpoint not found")
+        except Exception as e:
+            traceback.print_exc()
+            try:
+                self.send_json_response({"success": False, "message": f"Erro interno do servidor: {str(e)}"}, 500)
+            except Exception:
+                pass
 
     def send_json_response(self, data: dict, status_code: int = 200):
         try:
@@ -2656,270 +2664,275 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
     def handle_api_activate(self):
         global CURRENT_NETFLIX_READY, CURRENT_HBO_READY, CURRENT_CRUNCHYROLL_READY, CURRENT_SKY_READY
-        content_length = int(self.headers.get('Content-Length', 0))
-        post_data = self.rfile.read(content_length)
         try:
-            req = json.loads(post_data.decode('utf-8'))
-        except Exception:
-            return self.send_json_response({"success": False, "message": "JSON inválido na requisição."}, 400)
+            content_length = int(self.headers.get('Content-Length', 0))
+            post_data = self.rfile.read(content_length)
+            try:
+                req = json.loads(post_data.decode('utf-8'))
+            except Exception:
+                return self.send_json_response({"success": False, "message": "JSON inválido na requisição."}, 400)
 
-        service = req.get('service', 'netflix')
+            service = req.get('service', 'netflix')
 
-        # 🔒 Bloqueio rigoroso se a senha não tiver acesso a este streaming
-        if not self.is_service_allowed(service):
-            s_name = "Crunchyroll" if service == 'crunchyroll' else ("HBO Max" if service == 'hbo' else ("Sky+" if service == 'sky' else "Netflix"))
-            return self.send_json_response({
-                "success": False,
-                "message": f"🔒 VOCÊ NÃO TEM ACESSO A ESSE CONTEÚDO! ({s_name} bloqueado pela sua senha)."
-            }, 403)
-
-        tv_code = req.get('code', '').strip()
-
-        if not tv_code:
-            return self.send_json_response({"success": False, "message": "Por favor, digite o código exibido na TV."}, 400)
-
-        clean_code = re.sub(r'[^A-Za-z0-9]', '', tv_code).upper()
-
-        if service == 'netflix':
-            kernel_logger.push_kernel_log(f"🍿 [Netflix] Iniciando pareamento de TV com código {clean_code}...")
-            
-            # Seleção forçada de cookie apenas se explicitamente solicitada (ex: depuração ou escolha pontual)
-            req_cookie = req.get('force_cookie') or req.get('cookie_choice')
-            specific_account = None
-            if req_cookie and isinstance(req_cookie, str) and req_cookie.strip() and not req_cookie.strip().startswith('COOKIE:'):
-                specific_account = select_netflix_cookie_by_filename(req_cookie.strip())
-
-            used_account = specific_account or CURRENT_NETFLIX_READY or find_netflix_valid_cookie()
-            if not used_account:
-                all_nf = get_all_netflix_accounts()
-                if all_nf:
-                    used_account = random.choice(all_nf)
-
-            if not used_account:
-                kernel_logger.push_kernel_log("❌ [Netflix] Nenhum cookie válido disponível no cofre.", level="error")
+            # 🔒 Bloqueio rigoroso se a senha não tiver acesso a este streaming
+            if not self.is_service_allowed(service):
+                s_name = "Crunchyroll" if service == 'crunchyroll' else ("HBO Max" if service == 'hbo' else ("Sky+" if service == 'sky' else "Netflix"))
                 return self.send_json_response({
                     "success": False,
-                    "message": "Nenhum cookie Netflix válido disponível no momento."
-                }, 404)
+                    "message": f"🔒 VOCÊ NÃO TEM ACESSO A ESSE CONTEÚDO! ({s_name} bloqueado pela sua senha)."
+                }, 403)
 
-            CURRENT_NETFLIX_READY = used_account
-            used_file = used_account.get("file", "")
-            account_info = used_account.get("info", {})
-            kernel_logger.push_kernel_log(f"🍪 [Netflix] Injetando cookie: {account_info.get('email', os.path.basename(used_file))}...")
-            success, msg, info = activate_netflix_tv(clean_code, used_account)
-            account_info = info or used_account.get("info", {})
+            tv_code = req.get('code', '').strip()
 
-            if success:
-                tv2.mark_cookie_used(used_file, account_info.get("email", ""))
-                record_history_entry("Netflix", used_file, account_info.get("email", ""), clean_code, account_info.get("plan", "Netflix"), "Sucesso")
-                CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=used_file, exclude_email=account_info.get("email", ""))
-                kernel_logger.push_kernel_log(f"⚡ [Netflix] [SUCESSO] TV {clean_code} vinculada com sucesso!", level="success")
-                return self.send_json_response({
-                    "success": True,
-                    "message": msg or "TV pareada e ativada com sucesso!",
-                    "account": account_info
-                })
-            else:
-                kernel_logger.push_kernel_log(f"⚠️ [Netflix] Tentativa inicial falhou: {msg}", level="warn")
-                # Se for código de TV inválido ou expirado, encerra IMEDIATAMENTE sem re-tentar outro cookie
-                if any(k in msg.lower() for k in ["código", "codigo", "expirou", "inválido", "invalido", "recusado", "já utilizado"]):
-                    tv2.mark_cookie_used(used_file, account_info.get("email", ""))
-                    CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=used_file, exclude_email=account_info.get("email", ""))
+            if not tv_code:
+                return self.send_json_response({"success": False, "message": "Por favor, digite o código exibido na TV."}, 400)
+
+            clean_code = re.sub(r'[^A-Za-z0-9]', '', tv_code).upper()
+
+            if service == 'netflix':
+                kernel_logger.push_kernel_log(f"🍿 [Netflix] Iniciando pareamento de TV com código {clean_code}...")
+                
+                # Seleção forçada de cookie apenas se explicitamente solicitada (ex: depuração ou escolha pontual)
+                req_cookie = req.get('force_cookie') or req.get('cookie_choice')
+                specific_account = None
+                if req_cookie and isinstance(req_cookie, str) and req_cookie.strip() and not req_cookie.strip().startswith('COOKIE:'):
+                    specific_account = select_netflix_cookie_by_filename(req_cookie.strip())
+
+                used_account = specific_account or CURRENT_NETFLIX_READY or find_netflix_valid_cookie()
+                if not used_account:
+                    all_nf = get_all_netflix_accounts()
+                    if all_nf:
+                        used_account = random.choice(all_nf)
+
+                if not used_account:
+                    kernel_logger.push_kernel_log("❌ [Netflix] Nenhum cookie válido disponível no cofre.", level="error")
                     return self.send_json_response({
                         "success": False,
-                        "message": msg
-                    })
+                        "message": "Nenhum cookie Netflix válido disponível no momento."
+                    }, 404)
 
-                # Se falhou por motivo de sessão do cookie, tenta no máximo 1 conta alternativa
-                DEAD_NETFLIX_COOKIES.add(used_file)
-                DEAD_NETFLIX_COOKIES.add(os.path.basename(used_file))
-                tv2.DEAD_COOKIES.add(used_file)
-                tv2.DEAD_COOKIES.add(os.path.basename(used_file))
-                alt_account = find_netflix_fast_cookie(exclude_file=used_file, exclude_email=account_info.get("email", ""))
-                if alt_account:
-                    CURRENT_NETFLIX_READY = alt_account
-                    alt_file = alt_account.get("file", "")
-                    alt_info = alt_account.get("info", {})
-                    kernel_logger.push_kernel_log(f"🍪 [Netflix] Tentando cookie alternativo: {alt_info.get('email', os.path.basename(alt_file))}...")
-                    succ2, msg2, info2 = activate_netflix_tv(clean_code, alt_account)
-                    if succ2:
-                        tv2.mark_cookie_used(alt_file, alt_info.get("email", ""))
-                        record_history_entry("Netflix", alt_file, alt_info.get("email", ""), clean_code, account_info.get("plan", "Netflix"), "Sucesso")
-                        CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=alt_file, exclude_email=alt_info.get("email", ""))
-                        return self.send_json_response({
-                            "success": True,
-                            "message": msg2 or "TV pareada e ativada com sucesso!",
-                            "account": info2 or alt_info
-                        })
-                    else:
-                        msg = msg2
-
-                return self.send_json_response({
-                    "success": False,
-                    "message": msg or "Falha ao parear com a TV. Verifique o código digitado."
-                })
-
-        elif service == 'hbo':
-            kernel_logger.push_kernel_log(f"🟣 [HBO Max] Iniciando pareamento de TV com código {clean_code}...")
-            if CURRENT_HBO_READY is None:
-                CURRENT_HBO_READY = find_hbo_valid_cookie()
-
-            if not CURRENT_HBO_READY:
-                all_hbo = get_all_hbo_accounts()
-                if all_hbo:
-                    CURRENT_HBO_READY = all_hbo[0]
-
-            if not CURRENT_HBO_READY:
-                kernel_logger.push_kernel_log("❌ [HBO Max] Nenhum cookie ativo disponível.", level="error")
-                return self.send_json_response({
-                    "success": False,
-                    "message": "Nenhum cookie HBO Max ativo encontrado nas pastas."
-                }, 404)
-
-            used_file = CURRENT_HBO_READY["file"]
-            account_info = CURRENT_HBO_READY.get("info", {})
-            kernel_logger.push_kernel_log(f"🍪 [HBO Max] Injetando credenciais: {account_info.get('email', os.path.basename(used_file))}...")
-            success, msg, info = activate_hbo_tv(clean_code, CURRENT_HBO_READY)
-            account_info = info or CURRENT_HBO_READY.get("info", {})
-
-            if success:
-                now_ts = time.time()
-                HBO_LAST_USED_AT[used_file] = now_ts
-                HBO_LAST_USED_AT[os.path.basename(used_file)] = now_ts
-                record_history_entry("HBO Max", used_file, account_info.get("email", ""), clean_code, account_info.get("plan", "HBO Max VIP"), "Sucesso")
-                CURRENT_HBO_READY = find_hbo_valid_cookie()
-                kernel_logger.push_kernel_log(f"⚡ [HBO Max] [SUCESSO] TV {clean_code} vinculada com sucesso!", level="success")
-                return self.send_json_response({
-                    "success": True,
-                    "message": msg,
-                    "account": account_info
-                })
-            else:
-                kernel_logger.push_kernel_log(f"⚠️ [HBO Max] Falha: {msg}", level="warn")
-                DEAD_HBO_COOKIES.add(used_file)
-                DEAD_HBO_COOKIES.add(os.path.basename(used_file))
-                CURRENT_HBO_READY = find_hbo_valid_cookie()
-                return self.send_json_response({
-                    "success": False,
-                    "message": msg or "Falha ao parear com a TV HBO Max. Verifique o código de 6 dígitos."
-                })
-
-        elif service == 'crunchyroll':
-            kernel_logger.push_kernel_log(f"🟠 [Crunchyroll] Iniciando pareamento de TV com código {clean_code}...")
-            if CURRENT_CRUNCHYROLL_READY is None:
-                CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account()
-
-            if not CURRENT_CRUNCHYROLL_READY:
-                kernel_logger.push_kernel_log("❌ [Crunchyroll] Nenhuma conta premium pronta no combo.", level="error")
-                return self.send_json_response({
-                    "success": False,
-                    "message": "Nenhuma conta Crunchyroll premium encontrada nos combos."
-                }, 404)
-
-            used_account = CURRENT_CRUNCHYROLL_READY
-            kernel_logger.push_kernel_log(f"🔑 [Crunchyroll] Autenticando com {used_account.get('email')}...")
-            success, msg, info = activate_crunchyroll_tv(clean_code, used_account)
-            account_info = info or used_account.get("info", {})
-
-            if success:
-                now_ts = time.time()
-                CR_LAST_USED_AT[used_account["email"]] = now_ts
-                record_history_entry("Crunchyroll", used_account.get("file", "combo.txt"), account_info.get("email", ""), clean_code, account_info.get("plan", "Crunchyroll VIP"), "Sucesso")
-                CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account()
-                kernel_logger.push_kernel_log(f"⚡ [Crunchyroll] [SUCESSO] TV {clean_code} ativada com sucesso!", level="success")
-                return self.send_json_response({
-                    "success": True,
-                    "message": msg,
-                    "account": account_info
-                })
-            else:
-                kernel_logger.push_kernel_log(f"⚠️ [Crunchyroll] Falha: {msg}", level="warn")
-                if "sessão" in msg.lower() or "token" in msg.lower() or "wrong_creds" in msg.lower():
-                    DEAD_CRUNCHYROLL_ACCOUNTS.add(used_account["email"])
-                    CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account()
-                return self.send_json_response({
-                    "success": False,
-                    "message": msg
-                })
-
-        elif service == 'sky':
-            kernel_logger.push_kernel_log(f"📡 [Sky+] Transmissão iniciada para TV {clean_code}...")
-
-            # 🎯 Se o frontend solicitou uma conta específica selecionada
-            req_account_id = req.get('account') or req.get('email') or req.get('cookie_name')
-            chosen_acc = None
-            if req_account_id and isinstance(req_account_id, str) and req_account_id.strip():
-                specific_acc = select_sky_account_by_identifier(req_account_id.strip())
-                if specific_acc:
-                    chosen_acc = specific_acc
-
-            # Rotação Circular Justa: pega a próxima conta da fila (menos recentemente usada)
-            if not chosen_acc:
-                chosen_acc = find_sky_valid_account()
-
-            if chosen_acc:
-                CURRENT_SKY_READY = chosen_acc
-
-            last_msg = ""
-            for _attempt in range(2):
-                curr_sky_em = CURRENT_SKY_READY.get("email", "").strip().lower() if CURRENT_SKY_READY else ""
-                if CURRENT_SKY_READY is None or (curr_sky_em and curr_sky_em in DEAD_SKY_ACCOUNTS):
-                    CURRENT_SKY_READY = find_sky_valid_account()
-
-                if not CURRENT_SKY_READY:
-                    kernel_logger.push_kernel_log("❌ [Sky+] Nenhuma conta Sky pronta no estoque.", level="error")
-                    break
-
-                used_account = CURRENT_SKY_READY
-                acc_email = used_account.get("email", "").strip()
-                acc_email_clean = acc_email.lower()
-                kernel_logger.push_kernel_log(f"🔑 [Sky+] Conta da fila: {acc_email} (Tentativa {_attempt+1}/2)...")
-                success, msg, info = activate_sky_tv(clean_code, used_account)
+                CURRENT_NETFLIX_READY = used_account
+                used_file = used_account.get("file", "")
+                account_info = used_account.get("info", {})
+                kernel_logger.push_kernel_log(f"🍪 [Netflix] Injetando cookie: {account_info.get('email', os.path.basename(used_file))}...")
+                success, msg, info = activate_netflix_tv(clean_code, used_account)
                 account_info = info or used_account.get("info", {})
-                last_msg = msg
 
                 if success:
-                    kernel_logger.push_kernel_log(f"⚡ [Sky+] [SUCESSO] TV {clean_code} ativada com sucesso!", level="success")
+                    tv2.mark_cookie_used(used_file, account_info.get("email", ""))
+                    record_history_entry("Netflix", used_file, account_info.get("email", ""), clean_code, account_info.get("plan", "Netflix"), "Sucesso")
+                    CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=used_file, exclude_email=account_info.get("email", ""))
+                    kernel_logger.push_kernel_log(f"⚡ [Netflix] [SUCESSO] TV {clean_code} vinculada com sucesso!", level="success")
+                    return self.send_json_response({
+                        "success": True,
+                        "message": msg or "TV pareada e ativada com sucesso!",
+                        "account": account_info
+                    })
+                else:
+                    kernel_logger.push_kernel_log(f"⚠️ [Netflix] Tentativa inicial falhou: {msg}", level="warn")
+                    # Se for código de TV inválido ou expirado, encerra IMEDIATAMENTE sem re-tentar outro cookie
+                    if any(k in msg.lower() for k in ["código", "codigo", "expirou", "inválido", "invalido", "recusado", "já utilizado"]):
+                        tv2.mark_cookie_used(used_file, account_info.get("email", ""))
+                        CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=used_file, exclude_email=account_info.get("email", ""))
+                        return self.send_json_response({
+                            "success": False,
+                            "message": msg
+                        })
+
+                    # Se falhou por motivo de sessão do cookie, tenta no máximo 1 conta alternativa
+                    DEAD_NETFLIX_COOKIES.add(used_file)
+                    DEAD_NETFLIX_COOKIES.add(os.path.basename(used_file))
+                    tv2.DEAD_COOKIES.add(used_file)
+                    tv2.DEAD_COOKIES.add(os.path.basename(used_file))
+                    alt_account = find_netflix_fast_cookie(exclude_file=used_file, exclude_email=account_info.get("email", ""))
+                    if alt_account:
+                        CURRENT_NETFLIX_READY = alt_account
+                        alt_file = alt_account.get("file", "")
+                        alt_info = alt_account.get("info", {})
+                        kernel_logger.push_kernel_log(f"🍪 [Netflix] Tentando cookie alternativo: {alt_info.get('email', os.path.basename(alt_file))}...")
+                        succ2, msg2, info2 = activate_netflix_tv(clean_code, alt_account)
+                        if succ2:
+                            tv2.mark_cookie_used(alt_file, alt_info.get("email", ""))
+                            record_history_entry("Netflix", alt_file, alt_info.get("email", ""), clean_code, account_info.get("plan", "Netflix"), "Sucesso")
+                            CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=alt_file, exclude_email=alt_info.get("email", ""))
+                            return self.send_json_response({
+                                "success": True,
+                                "message": msg2 or "TV pareada e ativada com sucesso!",
+                                "account": info2 or alt_info
+                            })
+                        else:
+                            msg = msg2
+
+                    return self.send_json_response({
+                        "success": False,
+                        "message": msg or "Falha ao parear com a TV. Verifique o código digitado."
+                    })
+
+            elif service == 'hbo':
+                kernel_logger.push_kernel_log(f"🟣 [HBO Max] Iniciando pareamento de TV com código {clean_code}...")
+                if CURRENT_HBO_READY is None:
+                    CURRENT_HBO_READY = find_hbo_valid_cookie()
+
+                if not CURRENT_HBO_READY:
+                    all_hbo = get_all_hbo_accounts()
+                    if all_hbo:
+                        CURRENT_HBO_READY = all_hbo[0]
+
+                if not CURRENT_HBO_READY:
+                    kernel_logger.push_kernel_log("❌ [HBO Max] Nenhum cookie ativo disponível.", level="error")
+                    return self.send_json_response({
+                        "success": False,
+                        "message": "Nenhum cookie HBO Max ativo encontrado nas pastas."
+                    }, 404)
+
+                used_file = CURRENT_HBO_READY["file"]
+                account_info = CURRENT_HBO_READY.get("info", {})
+                kernel_logger.push_kernel_log(f"🍪 [HBO Max] Injetando credenciais: {account_info.get('email', os.path.basename(used_file))}...")
+                success, msg, info = activate_hbo_tv(clean_code, CURRENT_HBO_READY)
+                account_info = info or CURRENT_HBO_READY.get("info", {})
+
+                if success:
                     now_ts = time.time()
-                    SKY_LAST_USED_AT[acc_email_clean] = now_ts
-                    USED_SKY_ACCOUNTS.add(acc_email_clean)
-                    record_history_entry("Sky", used_account.get("file", "skycontas.txt"), account_info.get("email", ""), clean_code, account_info.get("plan", "Sky TV VIP"), "Sucesso")
-                    sky_service.record_account_activated(used_account.get("email", ""), used_account.get("password", ""), clean_code)
-                    sky_service.record_sky_account_used(acc_email_clean)
-                    sky_service.load_all_sky_accounts(force_reload=True)
-                    CURRENT_SKY_READY = find_sky_valid_account()
+                    HBO_LAST_USED_AT[used_file] = now_ts
+                    HBO_LAST_USED_AT[os.path.basename(used_file)] = now_ts
+                    record_history_entry("HBO Max", used_file, account_info.get("email", ""), clean_code, account_info.get("plan", "HBO Max VIP"), "Sucesso")
+                    CURRENT_HBO_READY = find_hbo_valid_cookie()
+                    kernel_logger.push_kernel_log(f"⚡ [HBO Max] [SUCESSO] TV {clean_code} vinculada com sucesso!", level="success")
                     return self.send_json_response({
                         "success": True,
                         "message": msg,
                         "account": account_info
                     })
                 else:
-                    kernel_logger.push_kernel_log(f"⚠️ [Sky+] Tentativa {_attempt+1} falhou: {msg}", level="warn")
-                    sky_service.record_sky_account_used(acc_email_clean)
-                    # Se for código de TV inexistente ou expirado na Smart TV, interrompe imediatamente
-                    if any(k in msg.lower() for k in ["404", "não encontrado", "expirad", "user_code_expired", "dtv-oidc", "invalid_request"]):
+                    kernel_logger.push_kernel_log(f"⚠️ [HBO Max] Falha: {msg}", level="warn")
+                    DEAD_HBO_COOKIES.add(used_file)
+                    DEAD_HBO_COOKIES.add(os.path.basename(used_file))
+                    CURRENT_HBO_READY = find_hbo_valid_cookie()
+                    return self.send_json_response({
+                        "success": False,
+                        "message": msg or "Falha ao parear com a TV HBO Max. Verifique o código de 6 dígitos."
+                    })
+
+            elif service == 'crunchyroll':
+                kernel_logger.push_kernel_log(f"🟠 [Crunchyroll] Iniciando pareamento de TV com código {clean_code}...")
+                if CURRENT_CRUNCHYROLL_READY is None:
+                    CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account()
+
+                if not CURRENT_CRUNCHYROLL_READY:
+                    kernel_logger.push_kernel_log("❌ [Crunchyroll] Nenhuma conta premium pronta no combo.", level="error")
+                    return self.send_json_response({
+                        "success": False,
+                        "message": "Nenhuma conta Crunchyroll premium encontrada nos combos."
+                    }, 404)
+
+                used_account = CURRENT_CRUNCHYROLL_READY
+                kernel_logger.push_kernel_log(f"🔑 [Crunchyroll] Autenticando com {used_account.get('email')}...")
+                success, msg, info = activate_crunchyroll_tv(clean_code, used_account)
+                account_info = info or used_account.get("info", {})
+
+                if success:
+                    now_ts = time.time()
+                    CR_LAST_USED_AT[used_account["email"]] = now_ts
+                    record_history_entry("Crunchyroll", used_account.get("file", "combo.txt"), account_info.get("email", ""), clean_code, account_info.get("plan", "Crunchyroll VIP"), "Sucesso")
+                    CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account()
+                    kernel_logger.push_kernel_log(f"⚡ [Crunchyroll] [SUCESSO] TV {clean_code} ativada com sucesso!", level="success")
+                    return self.send_json_response({
+                        "success": True,
+                        "message": msg,
+                        "account": account_info
+                    })
+                else:
+                    kernel_logger.push_kernel_log(f"⚠️ [Crunchyroll] Falha: {msg}", level="warn")
+                    if "sessão" in msg.lower() or "token" in msg.lower() or "wrong_creds" in msg.lower():
+                        DEAD_CRUNCHYROLL_ACCOUNTS.add(used_account["email"])
+                        CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account()
+                    return self.send_json_response({
+                        "success": False,
+                        "message": msg
+                    })
+
+            elif service == 'sky':
+                kernel_logger.push_kernel_log(f"📡 [Sky+] Transmissão iniciada para TV {clean_code}...")
+
+                # 🎯 Se o frontend solicitou uma conta específica selecionada
+                req_account_id = req.get('account') or req.get('email') or req.get('cookie_name')
+                chosen_acc = None
+                if req_account_id and isinstance(req_account_id, str) and req_account_id.strip():
+                    specific_acc = select_sky_account_by_identifier(req_account_id.strip())
+                    if specific_acc:
+                        chosen_acc = specific_acc
+
+                # Rotação Circular Justa: pega a próxima conta da fila (menos recentemente usada)
+                if not chosen_acc:
+                    chosen_acc = find_sky_valid_account()
+
+                if chosen_acc:
+                    CURRENT_SKY_READY = chosen_acc
+
+                last_msg = ""
+                for _attempt in range(2):
+                    curr_sky_em = CURRENT_SKY_READY.get("email", "").strip().lower() if CURRENT_SKY_READY else ""
+                    if CURRENT_SKY_READY is None or (curr_sky_em and curr_sky_em in DEAD_SKY_ACCOUNTS):
+                        CURRENT_SKY_READY = find_sky_valid_account()
+
+                    if not CURRENT_SKY_READY:
+                        kernel_logger.push_kernel_log("❌ [Sky+] Nenhuma conta Sky pronta no estoque.", level="error")
+                        break
+
+                    used_account = CURRENT_SKY_READY
+                    acc_email = used_account.get("email", "").strip()
+                    acc_email_clean = acc_email.lower()
+                    kernel_logger.push_kernel_log(f"🔑 [Sky+] Conta da fila: {acc_email} (Tentativa {_attempt+1}/2)...")
+                    success, msg, info = activate_sky_tv(clean_code, used_account)
+                    account_info = info or used_account.get("info", {})
+                    last_msg = msg
+
+                    if success:
+                        kernel_logger.push_kernel_log(f"⚡ [Sky+] [SUCESSO] TV {clean_code} ativada com sucesso!", level="success")
+                        now_ts = time.time()
+                        SKY_LAST_USED_AT[acc_email_clean] = now_ts
+                        USED_SKY_ACCOUNTS.add(acc_email_clean)
+                        record_history_entry("Sky", used_account.get("file", "skycontas.txt"), account_info.get("email", ""), clean_code, account_info.get("plan", "Sky TV VIP"), "Sucesso")
+                        sky_service.record_account_activated(used_account.get("email", ""), used_account.get("password", ""), clean_code)
+                        sky_service.record_sky_account_used(acc_email_clean)
+                        sky_service.load_all_sky_accounts(force_reload=True)
                         CURRENT_SKY_READY = find_sky_valid_account()
                         return self.send_json_response({
-                            "success": False,
-                            "message": msg
+                            "success": True,
+                            "message": msg,
+                            "account": account_info
                         })
+                    else:
+                        kernel_logger.push_kernel_log(f"⚠️ [Sky+] Tentativa {_attempt+1} falhou: {msg}", level="warn")
+                        sky_service.record_sky_account_used(acc_email_clean)
+                        # Se for código de TV inexistente ou expirado na Smart TV, interrompe imediatamente
+                        if any(k in msg.lower() for k in ["404", "não encontrado", "expirad", "user_code_expired", "dtv-oidc", "invalid_request"]):
+                            CURRENT_SKY_READY = find_sky_valid_account()
+                            return self.send_json_response({
+                                "success": False,
+                                "message": msg
+                            })
 
-                    # A conta falhou (ex: sem streaming Sky+, senha inválida etc.)
-                    # Marca como indisponível e tenta IMEDIATAMENTE a próxima conta da fila!
-                    now_ts = time.time()
-                    if acc_email_clean:
-                        SKY_LAST_USED_AT[acc_email_clean] = now_ts
-                        DEAD_SKY_ACCOUNTS.add(acc_email_clean)
-                    sky_service.load_all_sky_accounts(force_reload=True)
-                    CURRENT_SKY_READY = find_sky_valid_account()
+                        # A conta falhou (ex: sem streaming Sky+, senha inválida etc.)
+                        # Marca como indisponível e tenta IMEDIATAMENTE a próxima conta da fila!
+                        now_ts = time.time()
+                        if acc_email_clean:
+                            SKY_LAST_USED_AT[acc_email_clean] = now_ts
+                            DEAD_SKY_ACCOUNTS.add(acc_email_clean)
+                        sky_service.load_all_sky_accounts(force_reload=True)
+                        CURRENT_SKY_READY = find_sky_valid_account()
 
-            kernel_logger.push_kernel_log(f"❌ [Sky+] Falha final na ativação: {last_msg}", level="error")
-            return self.send_json_response({
-                "success": False,
-                "message": last_msg or "Falha ao ativar a TV com as contas disponíveis."
-            })
-        else:
-            return self.send_json_response({"success": False, "message": "Serviço desconhecido."}, 400)
+                kernel_logger.push_kernel_log(f"❌ [Sky+] Falha final na ativação: {last_msg}", level="error")
+                return self.send_json_response({
+                    "success": False,
+                    "message": last_msg or "Falha ao ativar a TV com as contas disponíveis."
+                })
+            else:
+                return self.send_json_response({"success": False, "message": "Serviço desconhecido."}, 400)
+        except Exception as e:
+            traceback.print_exc()
+            kernel_logger.push_kernel_log(f"❌ [API] Falha inesperada em /api/activate: {str(e)}", level="error")
+            return self.send_json_response({"success": False, "message": f"Erro interno ao processar ativação: {str(e)}"}, 500)
 
     def handle_api_sky_test_activate(self):
         content_length = int(self.headers.get('Content-Length', 0))
