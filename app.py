@@ -222,6 +222,23 @@ VALID_HBO_POOL: List[dict] = []
 def get_netflix_files() -> List[str]:
     return tv2.get_available_cookie_files()
 
+def get_all_netflix_files_raw() -> List[str]:
+    """Retorna TODOS os arquivos da pasta netflix/ sem filtrar por DEAD_COOKIES."""
+    import glob as _glob
+    base_d = os.path.dirname(os.path.abspath(__file__))
+    folders = [os.path.join(base_d, "netflix"), os.path.join(base_d, "cookies")]
+    all_files = []
+    seen_names = set()
+    for fold in folders:
+        if os.path.exists(fold):
+            for ext in ["*.txt", "*.json"]:
+                for f in _glob.glob(os.path.join(fold, ext)):
+                    bname = os.path.basename(f)
+                    if bname not in seen_names:
+                        seen_names.add(bname)
+                        all_files.append(os.path.abspath(f))
+    return all_files
+
 def classify_plan(filename: str, plan_text: str = "") -> str:
     combined = f"{filename} {plan_text}".lower()
     if any(k in combined for k in ['premium', 'cao cấp', 'uhd', '4k', 'vip', 'مميزة']):
@@ -357,8 +374,10 @@ def extract_netflix_file_info(fpath: str) -> Optional[dict]:
         return None
 
 def get_all_netflix_accounts() -> List[dict]:
-    """Retorna todas as contas Netflix disponíveis da pasta (deduplicadas), com metadados instantâneos."""
-    files = get_netflix_files()
+    """Retorna todas as contas Netflix disponíveis da pasta (deduplicadas), com metadados instantâneos.
+    Usa get_all_netflix_files_raw() para não ser zerado por DEAD_COOKIES de rede."""
+    # Usa arquivos físicos brutos para não ser afetado por falhas de rede temporárias
+    files = get_all_netflix_files_raw()
     accounts = []
     seen_names = set()
 
@@ -368,7 +387,8 @@ def get_all_netflix_accounts() -> List[dict]:
             continue
         seen_names.add(bname)
 
-        if fpath in DEAD_NETFLIX_COOKIES or bname in DEAD_NETFLIX_COOKIES or fpath in tv2.DEAD_COOKIES:
+        # Ignora apenas cookies confirmadamente mortos pela validação ao vivo (não por timeout)
+        if fpath in DEAD_NETFLIX_COOKIES or bname in DEAD_NETFLIX_COOKIES:
             continue
 
         # Se já tiver validação ao vivo salva em cache
@@ -377,7 +397,7 @@ def get_all_netflix_accounts() -> List[dict]:
                 accounts.append(VALID_NETFLIX_BY_FILE[fpath])
                 continue
 
-        # Extração instantânea de metadados
+        # Extração instantânea de metadados (sem requisição HTTP)
         meta = extract_netflix_file_info(fpath)
         if meta:
             accounts.append(meta)
