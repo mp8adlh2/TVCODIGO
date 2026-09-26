@@ -2485,7 +2485,7 @@
           if (data.allowed_services && Array.isArray(data.allowed_services) && data.allowed_services.length > 0) {
             allowedServices = data.allowed_services;
           } else {
-            allowedServices = ['netflix', 'hbo', 'crunchyroll', 'sky'];
+            allowedServices = ['netflix'];
           }
           applyAllowedServicesUI();
           updateTelemetryValidity(data.days_remaining, data.expiration_date);
@@ -2573,7 +2573,7 @@
           if (data.allowed_services && Array.isArray(data.allowed_services) && data.allowed_services.length > 0) {
             allowedServices = data.allowed_services;
           } else {
-            allowedServices = ['netflix', 'hbo', 'crunchyroll', 'sky'];
+            allowedServices = ['netflix'];
           }
           
           if (remember) {

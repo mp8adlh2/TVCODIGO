@@ -1410,6 +1410,126 @@ def extract_passwords_from_text_files() -> List[dict]:
                     pass
     return extracted
 
+def clean_password_str(s: str) -> str:
+    """Higieniza a senha removendo espaços invisíveis, aspas, quebras de linha e BOM."""
+    if not isinstance(s, str):
+        s = str(s or "")
+    cleaned = s.replace('\ufeff', '').replace('\u200b', '').replace('\u00a0', ' ').replace('\r', '').strip()
+    if (cleaned.startswith('"') and cleaned.endswith('"')) or (cleaned.startswith("'") and cleaned.endswith("'")):
+        cleaned = cleaned[1:-1].strip()
+    return cleaned
+
+def normalize_phone_digits(val: str) -> str:
+    """Extrai apenas dígitos para comparação flexível de números de WhatsApp/Telefone."""
+    if not isinstance(val, str):
+        val = str(val or "")
+    return re.sub(r'\D', '', val)
+
+def secure_str_compare(a: str, b: str) -> bool:
+    """Comparação segura, flexível e imune a espaços invisíveis, BOM, aspas e case."""
+    if not isinstance(a, str) or not isinstance(b, str):
+        a = str(a or "")
+        b = str(b or "")
+    ca = clean_password_str(a)
+    cb = clean_password_str(b)
+    if not ca or not cb:
+        return False
+    if ca == cb:
+        return True
+    if ca.upper() == cb.upper():
+        return True
+    try:
+        return hmac.compare_digest(ca.encode('utf-8'), cb.encode('utf-8'))
+    except Exception:
+        return False
+
+def infer_services_for_password(pwd: str, name: str = "", current_svcs: list = None) -> List[str]:
+    """Determina de forma estrita e infalível quais serviços uma senha tem direito.
+    
+    🛡️ BLINDAGEM: Impede terminantemente que senhas antigas, senhas sem serviços definidos
+    ou senhas recuperadas de caches liberem todos os 4 serviços indevidamente.
+    """
+    p_low = clean_password_str(pwd).lower()
+    n_low = str(name or "").lower()
+    combined = f"{p_low} {n_low}"
+
+    # 1. Senhas Mestres / Administrativas que liberam tudo
+    if any(k in combined for k in [
+        'tvcodigo#admin', 'admin#vault', 'admin#cookies', 'cyber#stream', 'ativador#master',
+        'vip#all', 'vip#master', 'master admin', 'tudo liberado', 'todos os 4', 'root#vip'
+    ]):
+        return ["netflix", "hbo", "crunchyroll", "sky"]
+
+    # 2. Dicionário de senhas históricas exatas
+    HISTORIC_MAP = {
+        'netflix#only@7712$red*cyber!2026': ['netflix'],
+        'netflix#only@9421$red*vault#ultra*4k*hdr!2026': ['netflix'],
+        'hbomax#only@5534$purple*cyber!2026': ['hbo'],
+        'hbomax#only@8153$purple*warner#stream*4k!2026': ['hbo'],
+        'crunchy#only@3391$orange*cyber!2026': ['crunchyroll'],
+        'crunchyroll#only@6274$orange*anime#mega*fan!2026': ['crunchyroll'],
+        'skyplus#only@4918$blue*fibra#super*hd*tv!2026': ['sky'],
+        'stream#duo@4829$vip*matrix!2026': ['netflix', 'hbo'],
+        'netflix#hbo#pass@9921$stream*lock!2026': ['netflix', 'hbo'],
+        'shield#token@7971$premium*66!2026': ['netflix', 'hbo'],
+        'titanium#vault@6470$vip*43!2026': ['netflix', 'hbo'],
+        'cyber#access@2531$elite*15!2026': ['netflix', 'hbo'],
+        'omega#security@1360$blindado*45!2026': ['netflix', 'hbo'],
+        'ultra#access@8905$hdr*75!2026': ['netflix', 'hbo'],
+        'ultra#pass@6106$hdr*99!2026': ['netflix', 'hbo'],
+        'duo#stream@8831$netflix*hbomax#premium*vip!2026': ['netflix', 'hbo'],
+        'cinema#pass@7742$flix*max#high*definition!2026': ['netflix', 'hbo'],
+        'vip#security@8929$vip*24!2026': ['netflix', 'hbo'],
+        'omega#vault@8384$premium*67!2026': ['netflix', 'hbo'],
+        'pass#netflix': ['netflix'],
+        'pass#hbo': ['hbo'],
+        'pass#crunchyroll': ['crunchyroll'],
+        'pass#stream': ['netflix', 'hbo']
+    }
+    for h_pwd, h_svcs in HISTORIC_MAP.items():
+        if h_pwd in p_low:
+            return h_svcs
+
+    # 3. Termos explícitos de exclusividade (#ONLY, Apenas, Somente)
+    if 'netflix#only' in p_low or 'apenas netflix' in n_low or 'somente netflix' in n_low or 'senha oficial netflix' in n_low:
+        return ["netflix"]
+    if 'hbomax#only' in p_low or 'hbo#only' in p_low or 'apenas hbo' in n_low or 'somente hbo' in n_low or 'senha oficial hbo' in n_low:
+        return ["hbo"]
+    if 'crunchy#only' in p_low or 'crunchyroll#only' in p_low or 'apenas crunchyroll' in n_low or 'somente crunchyroll' in n_low:
+        return ["crunchyroll"]
+    if 'skyplus#only' in p_low or 'sky#only' in p_low or 'apenas sky' in n_low or 'somente sky' in n_low:
+        return ["sky"]
+
+    # 4. Se a lista atual foi configurada explicitamente e não é fallback acidental de 4
+    if current_svcs and isinstance(current_svcs, list):
+        clean_svcs = [s for s in current_svcs if s in ["netflix", "hbo", "crunchyroll", "sky"]]
+        if 0 < len(clean_svcs) < 4:
+            return clean_svcs
+        if len(clean_svcs) == 4 and any(k in combined for k in ['master', 'todos', 'total', 'root', 'admin', 'all']):
+            return clean_svcs
+
+    # 5. Deteccao de servicos especificos no nome ou senha
+    has_netflix = ('netflix' in combined or 'flix' in combined)
+    has_hbo = ('hbo' in combined or 'max' in combined)
+    has_crunchy = ('crunchy' in combined or 'anime' in combined)
+    has_sky = ('sky' in combined)
+
+    detected = []
+    if has_netflix: detected.append('netflix')
+    if has_hbo: detected.append('hbo')
+    if has_crunchy: detected.append('crunchyroll')
+    if has_sky: detected.append('sky')
+
+    if detected:
+        return detected
+
+    # 6. Duos e perfis comuns de Cliente VIP
+    if any(k in combined for k in ['duo', 'cinema', 'stream', 'vip', 'cliente', 'matrix', 'omega', 'shield', 'titanium']):
+        return ["netflix", "hbo"]
+
+    # 7. Fallback seguro: NUNCA todos os 4!
+    return ["netflix"]
+
 def load_access_keys() -> List[dict]:
     """Carrega dinamicamente a lista de senhas unificando config_senhas.json, backups e SENHAS_DE_ACESSO.txt."""
     valid_keys = []
@@ -1435,19 +1555,18 @@ def load_access_keys() -> List[dict]:
                 return
         
         nome = str(item.get("nome", "") or item.get("role_name", "") or "Cliente VIP").strip()
-        raw_svcs = item.get("servicos", ["netflix", "hbo", "crunchyroll", "sky"])
+        raw_svcs = item.get("servicos")
         if isinstance(raw_svcs, str):
             raw_svcs = [s.strip() for s in raw_svcs.split(",") if s.strip()]
-        elif not isinstance(raw_svcs, list):
-            raw_svcs = ["netflix", "hbo", "crunchyroll", "sky"]
-        svcs = [s for s in raw_svcs if s in ["netflix", "hbo", "crunchyroll", "sky"]]
+        
+        svcs = infer_services_for_password(pwd, nome, raw_svcs)
         desc = str(item.get("descricao", "")).strip()
 
         seen_pwds.add(pwd)
         valid_keys.append({
             "senha": pwd,
             "nome": nome or "Cliente VIP",
-            "servicos": svcs or ["netflix", "hbo", "crunchyroll", "sky"],
+            "servicos": svcs,
             "descricao": desc or f"Libera: {', '.join(svcs)}",
             "dias_validade": item.get("dias_validade"),
             "criado_em": item.get("criado_em"),
@@ -1485,51 +1604,35 @@ def load_access_keys() -> List[dict]:
     for item in extract_passwords_from_text_files():
         _add_key(item)
 
-    # 5. Senhas vitais padrão do sistema (garantindo que nunca fiquem faltando)
+    # 5. Senhas vitais e históricas padrão do sistema (garantindo que nunca fiquem faltando ou liberando tudo)
     DEFAULT_KEYS = [
         {"senha": "VIP#MASTER@1444$4K*76!2026", "nome": "VIP Master 4K", "servicos": ["netflix", "hbo", "crunchyroll", "sky"], "descricao": "Libera todos os 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+"},
+        {"senha": "TVCODIGO#ADMIN@2026$MASTER*TITANIUM!ROOT#VIP", "nome": "Master Admin Titanium", "servicos": ["netflix", "hbo", "crunchyroll", "sky"], "descricao": "Libera todos os 4 serviços"},
+        {"senha": "ADMIN#VAULT@2026$COOKIE*BLINDADO#PROTECT*ROOT!VIP", "nome": "Senha Cofre Root", "servicos": ["netflix", "hbo", "crunchyroll", "sky"], "descricao": "Libera todos os 4 serviços"},
         {"senha": "DUO#STREAM@8831$NETFLIX*HBOMAX#PREMIUM*VIP!2026", "nome": "Senha Duo Netflix + HBO", "servicos": ["netflix", "hbo"], "descricao": "Libera: netflix, hbo"},
         {"senha": "CINEMA#PASS@7742$FLIX*MAX#HIGH*DEFINITION!2026", "nome": "Senha Duo VIP", "servicos": ["netflix", "hbo"], "descricao": "Libera: netflix, hbo"},
         {"senha": "VIP#SECURITY@8929$VIP*24!2026", "nome": "Cliente VIP", "servicos": ["netflix", "hbo"], "descricao": "Libera: netflix, hbo"},
-        {"senha": "OMEGA#VAULT@8384$PREMIUM*67!2026", "nome": "5521984920015", "servicos": ["netflix", "hbo"], "descricao": "Libera: netflix, hbo"}
+        {"senha": "OMEGA#VAULT@8384$PREMIUM*67!2026", "nome": "5521984920015", "servicos": ["netflix", "hbo"], "descricao": "Libera: netflix, hbo"},
+        {"senha": "NETFLIX#ONLY@7712$RED*CYBER!2026", "nome": "Apenas Netflix", "servicos": ["netflix"], "descricao": "Libera apenas Netflix"},
+        {"senha": "HBOMAX#ONLY@5534$PURPLE*CYBER!2026", "nome": "Apenas HBO Max", "servicos": ["hbo"], "descricao": "Libera apenas HBO Max"},
+        {"senha": "CRUNCHY#ONLY@3391$ORANGE*CYBER!2026", "nome": "Apenas Crunchyroll", "servicos": ["crunchyroll"], "descricao": "Libera apenas Crunchyroll"},
+        {"senha": "STREAM#DUO@4829$VIP*MATRIX!2026", "nome": "Netflix + HBO Max", "servicos": ["netflix", "hbo"], "descricao": "Libera Netflix e HBO Max"},
+        {"senha": "NETFLIX#HBO#PASS@9921$STREAM*LOCK!2026", "nome": "Netflix + HBO Max", "servicos": ["netflix", "hbo"], "descricao": "Libera Netflix e HBO Max"},
+        {"senha": "SHIELD#TOKEN@7971$PREMIUM*66!2026", "nome": "Cliente VIP (Netflix + HBO)", "servicos": ["netflix", "hbo"], "descricao": "Libera: netflix, hbo"},
+        {"senha": "TITANIUM#VAULT@6470$VIP*43!2026", "nome": "Cliente VIP (Netflix + HBO)", "servicos": ["netflix", "hbo"], "descricao": "Libera: netflix, hbo"},
+        {"senha": "CYBER#ACCESS@2531$ELITE*15!2026", "nome": "Cliente VIP (Netflix + HBO)", "servicos": ["netflix", "hbo"], "descricao": "Libera: netflix, hbo"},
+        {"senha": "OMEGA#SECURITY@1360$BLINDADO*45!2026", "nome": "Cliente VIP (Netflix + HBO)", "servicos": ["netflix", "hbo"], "descricao": "Libera: netflix, hbo"},
+        {"senha": "ULTRA#ACCESS@8905$HDR*75!2026", "nome": "Cliente VIP (Netflix + HBO)", "servicos": ["netflix", "hbo"], "descricao": "Libera: netflix, hbo"},
+        {"senha": "ULTRA#PASS@6106$HDR*99!2026", "nome": "Cliente VIP (Netflix + HBO)", "servicos": ["netflix", "hbo"], "descricao": "Libera: netflix, hbo"},
+        {"senha": "PASS#NETFLIX", "nome": "Apenas Netflix", "servicos": ["netflix"], "descricao": "Libera apenas Netflix"},
+        {"senha": "PASS#HBO", "nome": "Apenas HBO Max", "servicos": ["hbo"], "descricao": "Libera apenas HBO Max"},
+        {"senha": "PASS#CRUNCHYROLL", "nome": "Apenas Crunchyroll", "servicos": ["crunchyroll"], "descricao": "Libera apenas Crunchyroll"},
+        {"senha": "PASS#STREAM", "nome": "Netflix + HBO Max", "servicos": ["netflix", "hbo"], "descricao": "Libera Netflix e HBO Max"}
     ]
     for d_item in DEFAULT_KEYS:
         _add_key(d_item)
 
     return valid_keys
-
-def clean_password_str(s: str) -> str:
-    """Higieniza a senha removendo espaços invisíveis, aspas, quebras de linha e BOM."""
-    if not isinstance(s, str):
-        s = str(s or "")
-    cleaned = s.replace('\ufeff', '').replace('\u200b', '').replace('\u00a0', ' ').replace('\r', '').strip()
-    if (cleaned.startswith('"') and cleaned.endswith('"')) or (cleaned.startswith("'") and cleaned.endswith("'")):
-        cleaned = cleaned[1:-1].strip()
-    return cleaned
-
-def normalize_phone_digits(val: str) -> str:
-    """Extrai apenas dígitos para comparação flexível de números de WhatsApp/Telefone."""
-    if not isinstance(val, str):
-        val = str(val or "")
-    return re.sub(r'\D', '', val)
-
-def secure_str_compare(a: str, b: str) -> bool:
-    """Comparação segura, flexível e imune a espaços invisíveis, BOM, aspas e case."""
-    if not isinstance(a, str) or not isinstance(b, str):
-        a = str(a or "")
-        b = str(b or "")
-    ca = clean_password_str(a)
-    cb = clean_password_str(b)
-    if not ca or not cb:
-        return False
-    if ca == cb:
-        return True
-    if ca.upper() == cb.upper():
-        return True
-    try:
-        return hmac.compare_digest(ca.encode('utf-8'), cb.encode('utf-8'))
-    except Exception:
-        return False
 
 def check_item_expiration(item: dict) -> dict:
     """Verifica se uma senha cadastrada possui data de expiração e se está vencida."""
@@ -1960,8 +2063,9 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                         save_active_sessions()
                         return None
 
-                    # Atualiza dinamicamente as permissões caso tenham sido editadas no painel
-                    s_data["services"] = role.get("servicos", s_data.get("services"))
+                    # Atualiza dinamicamente as permissões caso tenham sido editadas no painel ou venham de senha legada
+                    role_svcs = infer_services_for_password(used_pwd, role.get("nome", ""), role.get("servicos"))
+                    s_data["services"] = role_svcs
                     s_data["role_name"] = role.get("nome", s_data.get("role_name"))
 
                     # 👥 Registra presença e heartbeat do dispositivo em tempo real
@@ -1988,7 +2092,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         session = self.get_session_info()
         if not session:
             return False
-        services = session.get("services", ["netflix", "hbo", "crunchyroll", "sky"])
+        services = session.get("services") or ["netflix"]
         return service in services
 
     def _verify_admin_password_str(self, password: str) -> bool:
@@ -2184,6 +2288,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     v_pwd = str(v_item.get("senha", "") or v_item.get("password", "")).strip()
                     v_nom = str(v_item.get("nome", "")).strip()
                     if secure_str_compare(password, v_pwd) or (v_nom and secure_str_compare(password, v_nom)):
+                        v_item["servicos"] = infer_services_for_password(v_pwd, v_nom, v_item.get("servicos"))
                         try:
                             with SENHAS_LOCK:
                                 cur_k = load_access_keys()
@@ -2209,7 +2314,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 # 🔓 Senha correta: limpa bloqueios anteriores e libera o terminal
                 LOGIN_ATTEMPTS.pop(ip, None)
                 new_token = secrets.token_hex(32)
-                allowed_services = role.get("servicos", ["netflix", "hbo", "crunchyroll", "sky"])
+                allowed_services = infer_services_for_password(password, role.get("nome", ""), role.get("servicos"))
                 role_name = role.get("nome", "Acesso Autorizado")
                 days_rem = role.get("days_remaining")
                 exp_ts = role.get("expira_em")
@@ -2299,14 +2404,14 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     }, 403)
             used_pwd = session.get("password", "")
             role = find_access_role(used_pwd) if used_pwd else None
-            servicos = session.get("services")
-            if not servicos and role:
-                servicos = role.get("servicos")
-                session["services"] = servicos
+            role_svcs = role.get("servicos") if role else session.get("services")
+            role_nom = role.get("nome", session.get("role_name", "")) if role else session.get("role_name", "")
+            servicos = infer_services_for_password(used_pwd, role_nom, role_svcs)
+            session["services"] = servicos
             return self.send_json_response({
                 "authenticated": True,
-                "allowed_services": servicos or ["netflix"],
-                "role_name": session.get("role_name", role.get("nome", "Acesso Autorizado") if role else "Acesso Autorizado"),
+                "allowed_services": servicos,
+                "role_name": role_nom or "Acesso Autorizado",
                 "expires_at": session.get("expires_at"),
                 "days_remaining": session.get("days_remaining"),
                 "expiration_date": session.get("expiration_date")

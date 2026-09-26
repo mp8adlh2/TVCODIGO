@@ -170,6 +170,195 @@
       "criado_em": null,
       "expira_em": null,
       "expira_em_formatado": null
+    },
+    {
+      "senha": "NETFLIX#ONLY@7712$RED*CYBER!2026",
+      "nome": "Apenas Netflix",
+      "servicos": [
+        "netflix"
+      ],
+      "descricao": "Libera apenas Netflix",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "HBOMAX#ONLY@5534$PURPLE*CYBER!2026",
+      "nome": "Apenas HBO Max",
+      "servicos": [
+        "hbo"
+      ],
+      "descricao": "Libera apenas HBO Max",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "CRUNCHY#ONLY@3391$ORANGE*CYBER!2026",
+      "nome": "Apenas Crunchyroll",
+      "servicos": [
+        "crunchyroll"
+      ],
+      "descricao": "Libera apenas Crunchyroll",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "STREAM#DUO@4829$VIP*MATRIX!2026",
+      "nome": "Netflix + HBO Max",
+      "servicos": [
+        "netflix",
+        "hbo"
+      ],
+      "descricao": "Libera Netflix e HBO Max",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "NETFLIX#HBO#PASS@9921$STREAM*LOCK!2026",
+      "nome": "Netflix + HBO Max",
+      "servicos": [
+        "netflix",
+        "hbo"
+      ],
+      "descricao": "Libera Netflix e HBO Max",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "SHIELD#TOKEN@7971$PREMIUM*66!2026",
+      "nome": "Cliente VIP (Netflix + HBO)",
+      "servicos": [
+        "netflix",
+        "hbo"
+      ],
+      "descricao": "Libera: netflix, hbo",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "TITANIUM#VAULT@6470$VIP*43!2026",
+      "nome": "Cliente VIP (Netflix + HBO)",
+      "servicos": [
+        "netflix",
+        "hbo"
+      ],
+      "descricao": "Libera: netflix, hbo",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "CYBER#ACCESS@2531$ELITE*15!2026",
+      "nome": "Cliente VIP (Netflix + HBO)",
+      "servicos": [
+        "netflix",
+        "hbo"
+      ],
+      "descricao": "Libera: netflix, hbo",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "OMEGA#SECURITY@1360$BLINDADO*45!2026",
+      "nome": "Cliente VIP (Netflix + HBO)",
+      "servicos": [
+        "netflix",
+        "hbo"
+      ],
+      "descricao": "Libera: netflix, hbo",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "ULTRA#ACCESS@8905$HDR*75!2026",
+      "nome": "Cliente VIP (Netflix + HBO)",
+      "servicos": [
+        "netflix",
+        "hbo"
+      ],
+      "descricao": "Libera: netflix, hbo",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "ULTRA#PASS@6106$HDR*99!2026",
+      "nome": "Cliente VIP (Netflix + HBO)",
+      "servicos": [
+        "netflix",
+        "hbo"
+      ],
+      "descricao": "Libera: netflix, hbo",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "PASS#NETFLIX",
+      "nome": "Apenas Netflix",
+      "servicos": [
+        "netflix"
+      ],
+      "descricao": "Libera apenas Netflix",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "PASS#HBO",
+      "nome": "Apenas HBO Max",
+      "servicos": [
+        "hbo"
+      ],
+      "descricao": "Libera apenas HBO Max",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "PASS#CRUNCHYROLL",
+      "nome": "Apenas Crunchyroll",
+      "servicos": [
+        "crunchyroll"
+      ],
+      "descricao": "Libera apenas Crunchyroll",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "PASS#STREAM",
+      "nome": "Netflix + HBO Max",
+      "servicos": [
+        "netflix",
+        "hbo"
+      ],
+      "descricao": "Libera Netflix e HBO Max",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
     }
   ]
 }
