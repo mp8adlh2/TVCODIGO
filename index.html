@@ -2054,7 +2054,7 @@
             COOKIE: carregando...
           </div>
           <div id="live-stock-badge" style="font-family: var(--font-mono); font-size: 11px; font-weight: 800; color: #00ff66; background: rgba(0,255,102,0.1); border: 1px solid rgba(0,255,102,0.3); padding: 3px 9px; border-radius: 8px; display: inline-flex; align-items: center; gap: 5px;">
-            <span>📦</span> <span id="live-stock-count">0 DISPONÍVEIS</span>
+            <span>📦</span> <span id="live-stock-count">Verificando estoque...</span>
           </div>
         </div>
       </div>
@@ -2284,6 +2284,10 @@
     let audioCtx = null;
     let cachedCookiesList = [];
     let cachedStatusData = null;
+    try {
+      const savedStatus = sessionStorage.getItem('cyber_status_cache') || localStorage.getItem('cyber_status_cache');
+      if (savedStatus) cachedStatusData = JSON.parse(savedStatus);
+    } catch(e) {}
 
     function getAudioContext() {
       if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -3069,7 +3073,10 @@
       } catch (e) {}
     }
 
+    let isFetchingStatus = false;
     async function loadStatus() {
+      if (isFetchingStatus) return;
+      isFetchingStatus = true;
       try {
         const res = await fetch(`${API_BASE}/api/status?_t=${Date.now()}`, { 
           headers: getHeaders(),
@@ -3080,8 +3087,14 @@
           showLoginOverlay();
           return;
         }
+        if (!res.ok) {
+          return;
+        }
         const data = await res.json();
         cachedStatusData = data;
+        try {
+          sessionStorage.setItem('cyber_status_cache', JSON.stringify(data));
+        } catch(e) {}
         const servData = data[currentService];
         if (servData) updateCardWithServiceData(servData, currentService);
 
@@ -3093,7 +3106,11 @@
         if (data.local_ip) {
           document.getElementById('telemetry-ip').innerText = `IP: ${data.local_ip}`;
         }
-      } catch (e) {}
+      } catch (e) {
+        console.warn('Falha na telemetria de status:', e);
+      } finally {
+        isFetchingStatus = false;
+      }
     }
 
     function renderQueuePreview(queue) {
@@ -3310,7 +3327,6 @@
       if (isAuth) {
         const target = allowedServices.includes(currentService) ? currentService : (allowedServices[0] || 'netflix');
         switchService(target, true);
-        loadStatus();
       }
     });
   </script>

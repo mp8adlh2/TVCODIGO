@@ -1762,6 +1762,61 @@ CURRENT_NETFLIX_READY: Optional[dict] = None
 CURRENT_HBO_READY: Optional[dict] = None
 CURRENT_CRUNCHYROLL_READY: Optional[dict] = None
 
+_STATUS_ACCOUNTS_CACHE = {
+    "netflix": [],
+    "hbo": [],
+    "crunchyroll": [],
+    "sky": [],
+    "last_update": 0.0
+}
+_STATUS_CACHE_LOCK = threading.Lock()
+
+def invalidate_status_accounts_cache():
+    global _STATUS_ACCOUNTS_CACHE
+    with _STATUS_CACHE_LOCK:
+        _STATUS_ACCOUNTS_CACHE["last_update"] = 0.0
+
+def get_cached_status_accounts(max_age_seconds: float = 25.0):
+    global _STATUS_ACCOUNTS_CACHE
+    now = time.time()
+    with _STATUS_CACHE_LOCK:
+        if (now - _STATUS_ACCOUNTS_CACHE["last_update"] < max_age_seconds) and _STATUS_ACCOUNTS_CACHE["netflix"]:
+            return (
+                _STATUS_ACCOUNTS_CACHE["netflix"],
+                _STATUS_ACCOUNTS_CACHE["hbo"],
+                _STATUS_ACCOUNTS_CACHE["crunchyroll"],
+                _STATUS_ACCOUNTS_CACHE["sky"]
+            )
+
+    try:
+        all_netflix = get_all_netflix_accounts()
+    except Exception:
+        all_netflix = _STATUS_ACCOUNTS_CACHE.get("netflix", [])
+
+    try:
+        all_hbo = get_all_hbo_accounts()
+    except Exception:
+        all_hbo = _STATUS_ACCOUNTS_CACHE.get("hbo", [])
+
+    try:
+        all_cr = get_all_crunchyroll_accounts()
+    except Exception:
+        all_cr = _STATUS_ACCOUNTS_CACHE.get("crunchyroll", [])
+
+    try:
+        all_sky = get_all_sky_accounts()
+    except Exception:
+        all_sky = _STATUS_ACCOUNTS_CACHE.get("sky", [])
+
+    with _STATUS_CACHE_LOCK:
+        _STATUS_ACCOUNTS_CACHE["netflix"] = all_netflix
+        _STATUS_ACCOUNTS_CACHE["hbo"] = all_hbo
+        _STATUS_ACCOUNTS_CACHE["crunchyroll"] = all_cr
+        _STATUS_ACCOUNTS_CACHE["sky"] = all_sky
+        _STATUS_ACCOUNTS_CACHE["last_update"] = time.time()
+
+    return all_netflix, all_hbo, all_cr, all_sky
+
 class AppRequestHandler(SimpleHTTPRequestHandler):
     def send_security_headers(self):
         """Cabeçalhos avançados de proteção contra XSS, Clickjacking, MIME-sniffing, Injeções e Cache."""
@@ -2259,75 +2314,82 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             self.send_error(500, "Erro interno ao carregar o painel administrativo.")
 
     def do_GET(self):
-        # Normalização do caminho (proteção contra path traversal como /../)
-        raw_path = self.path.split('?')[0]
+        try:
+            # Normalização do caminho (proteção contra path traversal como /../)
+            raw_path = self.path.split('?')[0]
 
-        if raw_path == '/api/ping':
-            # Keep-Alive endpoint público para evitar que a instância durma
-            return self.send_json_response({
-                "status": "alive",
-                "uptime": "24/7",
-                "timestamp": time.time(),
-                "service": "CYBER_DECK_KERNEL_ONLINE"
-            })
-        elif raw_path == '/api/kernel-logs':
-            self.handle_api_kernel_logs()
-        elif raw_path == '/api/status':
-            if not self.is_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
-            self.handle_api_status()
-        elif raw_path == '/api/heartbeat':
-            self.handle_api_heartbeat()
-        elif raw_path == '/api/admin/stats':
-            if not self.is_admin_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Senha do gerenciador de cookies requerida."}, 401)
-            self.handle_api_admin_stats()
-        elif raw_path == '/api/admin/users-online':
-            if not self.is_admin_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
-            self.handle_api_get_online_users()
-        elif raw_path == '/api/admin/accounts':
-            if not self.is_admin_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
-            self.handle_api_admin_list_accounts()
-        elif raw_path == '/api/admin/passwords':
-            if not self.is_admin_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
-            self.handle_api_get_passwords()
-        elif raw_path == '/api/admin/passwords/backup':
-            if not self.is_admin_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
-            self.handle_api_backup_passwords()
-        elif raw_path in ['/api/admin/passwords/generate', '/api/admin/passwords/quick-create']:
-            if not self.is_admin_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
-            if raw_path == '/api/admin/passwords/quick-create':
-                self.handle_api_quick_create_password()
+            if raw_path == '/api/ping':
+                # Keep-Alive endpoint público para evitar que a instância durma
+                return self.send_json_response({
+                    "status": "alive",
+                    "uptime": "24/7",
+                    "timestamp": time.time(),
+                    "service": "CYBER_DECK_KERNEL_ONLINE"
+                })
+            elif raw_path == '/api/kernel-logs':
+                self.handle_api_kernel_logs()
+            elif raw_path == '/api/status':
+                if not self.is_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
+                self.handle_api_status()
+            elif raw_path == '/api/heartbeat':
+                self.handle_api_heartbeat()
+            elif raw_path == '/api/admin/stats':
+                if not self.is_admin_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Senha do gerenciador de cookies requerida."}, 401)
+                self.handle_api_admin_stats()
+            elif raw_path == '/api/admin/users-online':
+                if not self.is_admin_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
+                self.handle_api_get_online_users()
+            elif raw_path == '/api/admin/accounts':
+                if not self.is_admin_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
+                self.handle_api_admin_list_accounts()
+            elif raw_path == '/api/admin/passwords':
+                if not self.is_admin_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
+                self.handle_api_get_passwords()
+            elif raw_path == '/api/admin/passwords/backup':
+                if not self.is_admin_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
+                self.handle_api_backup_passwords()
+            elif raw_path in ['/api/admin/passwords/generate', '/api/admin/passwords/quick-create']:
+                if not self.is_admin_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Senha de administrador requerida."}, 401)
+                if raw_path == '/api/admin/passwords/quick-create':
+                    self.handle_api_quick_create_password()
+                else:
+                    self.handle_api_generate_password()
+            elif raw_path == '/api/admin/sky-tokens':
+                if not self.is_admin_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Senha do gerenciador de cookies requerida."}, 401)
+                self.handle_api_get_sky_tokens()
+            elif raw_path == '/api/history':
+                if not self.is_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
+                self.handle_api_history()
+            elif raw_path.startswith('/api/cookies'):
+                if not self.is_authenticated():
+                    return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
+                self.handle_api_cookies()
+            elif raw_path in ['/admin', '/admin.html', '/admin.htm']:
+                self.serve_admin_html()
+            elif raw_path in ['/', '/index.html', '/index.htm', '']:
+                self.serve_index_html()
+            elif raw_path == '/favicon.ico':
+                self.send_response(204)
+                self.end_headers()
             else:
-                self.handle_api_generate_password()
-        elif raw_path == '/api/admin/sky-tokens':
-            if not self.is_admin_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Senha do gerenciador de cookies requerida."}, 401)
-            self.handle_api_get_sky_tokens()
-        elif raw_path == '/api/history':
-            if not self.is_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
-            self.handle_api_history()
-        elif raw_path.startswith('/api/cookies'):
-            if not self.is_authenticated():
-                return self.send_json_response({"authenticated": False, "message": "Acesso restrito. Faça login."}, 401)
-            self.handle_api_cookies()
-        elif raw_path in ['/admin', '/admin.html', '/admin.htm']:
-            self.serve_admin_html()
-        elif raw_path in ['/', '/index.html', '/index.htm', '']:
-            self.serve_index_html()
-        elif raw_path == '/favicon.ico':
-            self.send_response(204)
-            self.end_headers()
-        else:
-            # 🛡️ BLOQUEIO TOTAL DE SEGURANÇA:
-            # NUNCA serve arquivos como cookies/, SENHA_MESTRE.txt, app.py, tv2.py, used_cookies.json etc.
-            self.send_error(403, "Acesso Proibido: Recurso confidencial e protegido.")
+                # 🛡️ BLOQUEIO TOTAL DE SEGURANÇA:
+                # NUNCA serve arquivos como cookies/, SENHA_MESTRE.txt, app.py, tv2.py, used_cookies.json etc.
+                self.send_error(403, "Acesso Proibido: Recurso confidencial e protegido.")
+        except Exception as e:
+            traceback.print_exc()
+            try:
+                self.send_json_response({"success": False, "message": f"Erro interno do servidor: {str(e)}"}, 500)
+            except Exception:
+                pass
 
     def do_OPTIONS(self):
         """Tratamento de preflight CORS para navegação transparente entre portas, origens e localhost."""
@@ -2446,62 +2508,29 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         global CURRENT_NETFLIX_READY, CURRENT_HBO_READY, CURRENT_CRUNCHYROLL_READY, CURRENT_SKY_READY
 
         try:
-            all_netflix = get_all_netflix_accounts()
-        except Exception:
-            all_netflix = []
+            all_netflix, all_hbo, all_cr, all_sky = get_cached_status_accounts()
 
-        try:
-            all_hbo = get_all_hbo_accounts()
-        except Exception:
-            all_hbo = []
-
-        try:
-            all_cr = get_all_crunchyroll_accounts()
-        except Exception:
-            all_cr = []
-
-        try:
-            all_sky = get_all_sky_accounts()
-        except Exception:
-            all_sky = []
-
-        # ⚡ Validação e seleção instantânea da conta pronta para cada serviço
-        try:
+            # ⚡ Seleção instantânea sem bloquear com chamadas HTTP síncronas na rota de status
             if CURRENT_NETFLIX_READY is None or (CURRENT_NETFLIX_READY and (CURRENT_NETFLIX_READY.get("file") in DEAD_NETFLIX_COOKIES or CURRENT_NETFLIX_READY.get("file") in tv2.DEAD_COOKIES)):
-                CURRENT_NETFLIX_READY = find_netflix_valid_cookie()
-            if CURRENT_NETFLIX_READY is None and all_netflix:
-                CURRENT_NETFLIX_READY = random.choice(all_netflix)
-        except Exception:
-            if all_netflix:
-                CURRENT_NETFLIX_READY = random.choice(all_netflix)
+                if all_netflix:
+                    CURRENT_NETFLIX_READY = random.choice(all_netflix)
 
-        try:
             if CURRENT_HBO_READY is None or (CURRENT_HBO_READY and (CURRENT_HBO_READY.get("file") in DEAD_HBO_COOKIES or os.path.basename(CURRENT_HBO_READY.get("file", "")) in DEAD_HBO_COOKIES)):
-                CURRENT_HBO_READY = find_hbo_valid_cookie()
-            if CURRENT_HBO_READY is None and all_hbo:
-                CURRENT_HBO_READY = all_hbo[0]
-        except Exception:
-            if all_hbo:
-                CURRENT_HBO_READY = all_hbo[0]
+                if all_hbo:
+                    CURRENT_HBO_READY = all_hbo[0]
 
-        try:
             if CURRENT_CRUNCHYROLL_READY is None or (CURRENT_CRUNCHYROLL_READY and CURRENT_CRUNCHYROLL_READY.get("email") in DEAD_CRUNCHYROLL_ACCOUNTS):
-                CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account()
-            if CURRENT_CRUNCHYROLL_READY is None and all_cr:
-                CURRENT_CRUNCHYROLL_READY = all_cr[0]
-        except Exception:
-            if all_cr:
-                CURRENT_CRUNCHYROLL_READY = all_cr[0]
+                if all_cr:
+                    CURRENT_CRUNCHYROLL_READY = all_cr[0]
 
-        try:
-            curr_sky_em = CURRENT_SKY_READY.get("email", "").strip().lower() if CURRENT_SKY_READY else ""
-            if CURRENT_SKY_READY is None or (curr_sky_em and curr_sky_em in DEAD_SKY_ACCOUNTS) or not sky_service._has_valid_account_session(CURRENT_SKY_READY):
-                CURRENT_SKY_READY = find_sky_valid_account()
-            if CURRENT_SKY_READY is None and all_sky:
-                CURRENT_SKY_READY = all_sky[0]
+            if CURRENT_SKY_READY is None or (CURRENT_SKY_READY and CURRENT_SKY_READY.get("email", "").strip().lower() in DEAD_SKY_ACCOUNTS):
+                if all_sky:
+                    CURRENT_SKY_READY = all_sky[0]
         except Exception:
-            if all_sky:
-                CURRENT_SKY_READY = all_sky[0]
+            try:
+                all_netflix, all_hbo, all_cr, all_sky = _STATUS_ACCOUNTS_CACHE.get("netflix", []), _STATUS_ACCOUNTS_CACHE.get("hbo", []), _STATUS_ACCOUNTS_CACHE.get("crunchyroll", []), _STATUS_ACCOUNTS_CACHE.get("sky", [])
+            except Exception:
+                all_netflix, all_hbo, all_cr, all_sky = [], [], [], []
 
         active_nf_file = CURRENT_NETFLIX_READY.get("file", "") if CURRENT_NETFLIX_READY else ""
         active_nf_bname = os.path.basename(active_nf_file) if active_nf_file else ""
