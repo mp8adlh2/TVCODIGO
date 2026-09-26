@@ -1274,14 +1274,93 @@ def atomic_save_config_senhas(keys: List[dict]) -> bool:
         except Exception:
             return False
 
+def extract_passwords_from_senhas_de_acesso() -> List[dict]:
+    """Lê todas as senhas cadastradas em SENHAS_DE_ACESSO.txt com perfil, serviços e validade."""
+    txt_path = os.path.join(BASE_DIR, "SENHAS_DE_ACESSO.txt")
+    if not os.path.exists(txt_path):
+        return []
+    
+    extracted = []
+    blacklisted = load_blacklisted_passwords()
+    try:
+        with open(txt_path, 'r', encoding='utf-8', errors='ignore') as f:
+            lines = f.read().splitlines()
+
+        curr = {'nome': 'Cliente VIP', 'servicos': ["netflix", "hbo", "crunchyroll", "sky"], 'senha': '', 'descricao': ''}
+        expect_senha = False
+
+        for raw_line in lines:
+            line = raw_line.strip()
+            if not line or line.startswith('==='):
+                continue
+            
+            if '🔑' in line:
+                clean_name = re.sub(r'^\d+\.\s*', '', line.replace('🔑', '')).strip()
+                if clean_name:
+                    curr['nome'] = clean_name
+                continue
+                
+            if line.lower().startswith('libera:'):
+                low = line.lower()
+                svcs = []
+                if 'netflix' in low: svcs.append('netflix')
+                if 'hbo' in low or 'max' in low: svcs.append('hbo')
+                if 'crunchyroll' in low or 'crunchy' in low: svcs.append('crunchyroll')
+                if 'sky' in low: svcs.append('sky')
+                curr['servicos'] = svcs or ["netflix", "hbo", "crunchyroll", "sky"]
+                continue
+                
+            if line.lower().startswith('validade:'):
+                val_txt = line.split(':', 1)[1].strip()
+                m_exp = re.search(r'(\d{2})/(\d{2})/(\d{4})', val_txt)
+                if m_exp:
+                    try:
+                        d, m, y = map(int, m_exp.groups())
+                        curr['expira_em'] = datetime(y, m, d, 23, 59, 59).timestamp()
+                        curr['expira_em_formatado'] = f"{d:02d}/{m:02d}/{y} às 23:59"
+                    except Exception:
+                        pass
+                continue
+
+            if line.lower().startswith('detalhes:'):
+                curr['descricao'] = line.split(':', 1)[1].strip()
+                continue
+                
+            if line.lower().startswith('senha:'):
+                after = line.split(':', 1)[1].strip()
+                if after:
+                    curr['senha'] = after
+                    if not any(secure_str_compare(curr['senha'], b) for b in blacklisted):
+                        extracted.append(dict(curr))
+                    curr = {'nome': 'Cliente VIP', 'servicos': ["netflix", "hbo", "crunchyroll", "sky"], 'senha': '', 'descricao': ''}
+                else:
+                    expect_senha = True
+                continue
+                
+            if expect_senha:
+                if not line.startswith(('=', '-', '•', 'Libera:', 'Validade:', 'Detalhes:')):
+                    curr['senha'] = line
+                    if not any(secure_str_compare(curr['senha'], b) for b in blacklisted):
+                        extracted.append(dict(curr))
+                    curr = {'nome': 'Cliente VIP', 'servicos': ["netflix", "hbo", "crunchyroll", "sky"], 'senha': '', 'descricao': ''}
+                    expect_senha = False
+                continue
+
+    except Exception as e:
+        print(f"[Extract SENHAS_DE_ACESSO] Erro: {e}")
+    
+    return extracted
+
 def extract_passwords_from_text_files() -> List[dict]:
-    """Lê dinamicamente senhas configuradas nos arquivos SENHA_*.txt da pasta raiz."""
+    """Lê dinamicamente senhas configuradas nos arquivos SENHA_*.txt na raiz e pasta senhas/."""
     file_service_map = {
         "SENHA_NETFLIX.txt": (["netflix"], "Senha Oficial Netflix (4K UHD)", "Libera: netflix"),
         "SENHA_HBO.txt": (["hbo"], "Senha Oficial HBO Max", "Libera: hbo"),
         "SENHA_SKY.txt": (["sky"], "Senha Oficial Sky+ / Sky TV", "Libera: sky"),
         "SENHA_CRUNCHYROLL.txt": (["crunchyroll"], "Senha Oficial Crunchyroll", "Libera: crunchyroll"),
         "SENHA_NETFLIX_HBO.txt": (["netflix", "hbo"], "Senha Oficial Duo (Netflix + HBO)", "Libera: netflix, hbo"),
+        "SENHA_ADMIN.txt": (["netflix", "hbo", "crunchyroll", "sky"], "Master Admin Titanium", "Libera todos os 4 serviços"),
+        "SENHA_COOKIES.txt": (["netflix", "hbo", "crunchyroll", "sky"], "Senha Cofre Root", "Libera todos os 4 serviços")
     }
     extracted = []
     blacklisted = load_blacklisted_passwords()
@@ -1293,8 +1372,8 @@ def extract_passwords_from_text_files() -> List[dict]:
                     with open(fpath, 'r', encoding='utf-8', errors='ignore') as f:
                         for line in f.read().splitlines():
                             line = line.strip()
-                            if line and not line.startswith(('=', '-', '•', 'LIBERAÇÃO', 'SENHA', '💡', '🔍', '🎬', '🔴', '🟣', '🟠', '🔵', '🔐', '🍪', 'para', 'No ', 'Ao ', 'http')):
-                                if ' ' not in line and len(line) >= 6 and any(c in line for c in ['#', '@', '$', '*', '!']):
+                            if line and not line.startswith(('=', '-', '•', 'LIBERAÇÃO', 'SENHA', '💡', '🔍', '🎬', '🔴', '🟣', '🟠', '🔵', '🔐', '🍪', 'para', 'No ', 'Ao ', 'http', 'https', 'Link')):
+                                if len(line) >= 4 and ' ' not in line:
                                     if not any(secure_str_compare(line, b) for b in blacklisted):
                                         extracted.append({
                                             "senha": line,
@@ -1302,123 +1381,95 @@ def extract_passwords_from_text_files() -> List[dict]:
                                             "servicos": svcs,
                                             "descricao": desc
                                         })
-                    break
                 except Exception:
                     pass
     return extracted
 
 def load_access_keys() -> List[dict]:
-    """Carrega dinamicamente a lista de senhas cadastradas no config_senhas.json e arquivos SENHA_*.txt."""
-    default_data = {
-        "senhas": [
-            {
-                "senha": "VIP#MASTER@1444$4K*76!2026",
-                "nome": "VIP Master 4K",
-                "servicos": ["netflix", "hbo", "crunchyroll", "sky"],
-                "descricao": "Libera todos os 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+"
-            },
-            {
-                "senha": "VIP#SECURITY@8929$VIP*24!2026",
-                "nome": "Cliente VIP",
-                "servicos": ["netflix", "hbo"],
-                "descricao": "Libera: netflix, hbo"
-            },
-            {
-                "senha": "OMEGA#VAULT@8384$PREMIUM*67!2026",
-                "nome": "5521984920015",
-                "servicos": ["netflix", "hbo"],
-                "descricao": "Libera: netflix, hbo"
-            }
-        ]
-    }
-    
+    """Carrega dinamicamente a lista de senhas unificando config_senhas.json, backups e SENHAS_DE_ACESSO.txt."""
     valid_keys = []
     seen_pwds = set()
     blacklisted = load_blacklisted_passwords()
 
-    # 1. Carrega do config_senhas.json se existir (fonte prioritária de verdade)
+    def _add_key(item: dict):
+        if not isinstance(item, dict):
+            return
+        pwd = str(item.get("senha", "") or item.get("password", "")).strip()
+        if not pwd or any(secure_str_compare(pwd, b) for b in blacklisted):
+            return
+        # Procura se já vimos esta senha de forma segura
+        for existing in valid_keys:
+            if secure_str_compare(existing.get("senha", ""), pwd):
+                # Se achou e o novo tiver nome/validade melhor, atualiza
+                if item.get("nome") and existing.get("nome") in ["Cliente VIP", "Perfil"]:
+                    existing["nome"] = item.get("nome")
+                if item.get("expira_em") and not existing.get("expira_em"):
+                    existing["expira_em"] = item.get("expira_em")
+                    existing["expira_em_formatado"] = item.get("expira_em_formatado")
+                    existing["dias_validade"] = item.get("dias_validade")
+                return
+        
+        nome = str(item.get("nome", "") or item.get("role_name", "") or "Cliente VIP").strip()
+        raw_svcs = item.get("servicos", ["netflix", "hbo", "crunchyroll", "sky"])
+        if isinstance(raw_svcs, str):
+            raw_svcs = [s.strip() for s in raw_svcs.split(",") if s.strip()]
+        elif not isinstance(raw_svcs, list):
+            raw_svcs = ["netflix", "hbo", "crunchyroll", "sky"]
+        svcs = [s for s in raw_svcs if s in ["netflix", "hbo", "crunchyroll", "sky"]]
+        desc = str(item.get("descricao", "")).strip()
+
+        seen_pwds.add(pwd)
+        valid_keys.append({
+            "senha": pwd,
+            "nome": nome or "Cliente VIP",
+            "servicos": svcs or ["netflix", "hbo", "crunchyroll", "sky"],
+            "descricao": desc or f"Libera: {', '.join(svcs)}",
+            "dias_validade": item.get("dias_validade"),
+            "criado_em": item.get("criado_em"),
+            "expira_em": item.get("expira_em"),
+            "expira_em_formatado": item.get("expira_em_formatado")
+        })
+
+    # 1. Carrega do config_senhas.json se existir
     if os.path.exists(CONFIG_SENHAS_FILE):
         try:
             with open(CONFIG_SENHAS_FILE, 'r', encoding='utf-8') as f:
                 data = json.load(f)
                 raw_list = data.get("senhas", []) if isinstance(data, dict) else []
                 for item in raw_list:
-                    if isinstance(item, dict):
-                        pwd = str(item.get("senha", "") or item.get("password", "")).strip()
-                        nome = str(item.get("nome", "") or item.get("role_name", "") or "Cliente VIP").strip()
-                        raw_svcs = item.get("servicos", ["netflix", "hbo", "crunchyroll", "sky"])
-                        if isinstance(raw_svcs, str):
-                            raw_svcs = [s.strip() for s in raw_svcs.split(",") if s.strip()]
-                        elif not isinstance(raw_svcs, list):
-                            raw_svcs = ["netflix", "hbo", "crunchyroll", "sky"]
-                        svcs = [s for s in raw_svcs if s in ["netflix", "hbo", "crunchyroll", "sky"]]
-                        desc = str(item.get("descricao", "")).strip()
-
-                        # Se a senha estiver na lista negra de excluídos, ignora
-                        if any(secure_str_compare(pwd, b) for b in blacklisted):
-                            continue
-
-                        if pwd and pwd not in seen_pwds:
-                            seen_pwds.add(pwd)
-                            valid_keys.append({
-                                "senha": pwd,
-                                "nome": nome or "Cliente VIP",
-                                "servicos": svcs or ["netflix", "hbo", "crunchyroll", "sky"],
-                                "descricao": desc or f"Libera: {', '.join(svcs)}",
-                                "dias_validade": item.get("dias_validade"),
-                                "criado_em": item.get("criado_em"),
-                                "expira_em": item.get("expira_em"),
-                                "expira_em_formatado": item.get("expira_em_formatado")
-                            })
-                # Se o arquivo existe (mesmo vazio), respeita a lista atual sem ressuscitar senhas excluídas
-                return valid_keys
-        except Exception:
-            pass
-    else:
-        try:
-            with open(CONFIG_SENHAS_FILE, 'w', encoding='utf-8') as f:
-                json.dump(default_data, f, indent=2, ensure_ascii=False)
-            sync_passwords_text_file(default_data["senhas"])
-            valid_keys = list(default_data["senhas"])
+                    _add_key(item)
         except Exception:
             pass
 
-    # Se o arquivo não existia e a lista estava vazia, utiliza os valores padrão e arquivos TXT como fallback inicial
-    if not valid_keys:
-        for item in default_data["senhas"]:
-            pwd = item["senha"]
-            if not any(secure_str_compare(pwd, b) for b in blacklisted):
-                if pwd not in seen_pwds:
-                    seen_pwds.add(pwd)
-                    valid_keys.append(item)
-        for item in extract_passwords_from_text_files():
-            pwd = item["senha"]
-            if not any(secure_str_compare(pwd, b) for b in blacklisted):
-                if pwd and pwd not in seen_pwds:
-                    seen_pwds.add(pwd)
-                    valid_keys.append(item)
-
-    # 🛡️ PROTEÇÃO CONTRA PERDA NO RENDER: Se houver backup com senhas adicionais, restaura
+    # 2. Carrega do config_senhas_backup.json para resgatar senhas
     if os.path.exists(CONFIG_SENHAS_BACKUP_FILE):
         try:
             with open(CONFIG_SENHAS_BACKUP_FILE, 'r', encoding='utf-8') as bk_f:
                 bk_data = json.load(bk_f)
                 bk_list = bk_data.get("senhas", []) if isinstance(bk_data, dict) else []
-                if len(bk_list) > len(valid_keys):
-                    for item in bk_list:
-                        if isinstance(item, dict):
-                            pwd = str(item.get("senha", "") or item.get("password", "")).strip()
-                            if pwd and pwd not in seen_pwds and not any(secure_str_compare(pwd, b) for b in blacklisted):
-                                seen_pwds.add(pwd)
-                                valid_keys.append(item)
-                    try:
-                        with open(CONFIG_SENHAS_FILE, 'w', encoding='utf-8') as sf:
-                            json.dump({"senhas": valid_keys}, sf, indent=2, ensure_ascii=False)
-                        sync_passwords_text_file(valid_keys)
-                    except Exception:
-                        pass
+                for item in bk_list:
+                    _add_key(item)
         except Exception:
             pass
+
+    # 3. Lê todas as senhas de SENHAS_DE_ACESSO.txt
+    for item in extract_passwords_from_senhas_de_acesso():
+        _add_key(item)
+
+    # 4. Lê senhas dos arquivos TXT avulsos
+    for item in extract_passwords_from_text_files():
+        _add_key(item)
+
+    # 5. Senhas vitais padrão do sistema (garantindo que nunca fiquem faltando)
+    DEFAULT_KEYS = [
+        {"senha": "VIP#MASTER@1444$4K*76!2026", "nome": "VIP Master 4K", "servicos": ["netflix", "hbo", "crunchyroll", "sky"], "descricao": "Libera todos os 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+"},
+        {"senha": "DUO#STREAM@8831$NETFLIX*HBOMAX#PREMIUM*VIP!2026", "nome": "Senha Duo Netflix + HBO", "servicos": ["netflix", "hbo"], "descricao": "Libera: netflix, hbo"},
+        {"senha": "CINEMA#PASS@7742$FLIX*MAX#HIGH*DEFINITION!2026", "nome": "Senha Duo VIP", "servicos": ["netflix", "hbo"], "descricao": "Libera: netflix, hbo"},
+        {"senha": "VIP#SECURITY@8929$VIP*24!2026", "nome": "Cliente VIP", "servicos": ["netflix", "hbo"], "descricao": "Libera: netflix, hbo"},
+        {"senha": "OMEGA#VAULT@8384$PREMIUM*67!2026", "nome": "5521984920015", "servicos": ["netflix", "hbo"], "descricao": "Libera: netflix, hbo"}
+    ]
+    for d_item in DEFAULT_KEYS:
+        _add_key(d_item)
 
     return valid_keys
 
@@ -2103,6 +2154,21 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
         # 🛡️ 5. Comparação e Validação de Senha
         role = find_access_role(password)
+        if role is None and req.get("vault") and isinstance(req.get("vault"), list):
+            for v_item in req.get("vault"):
+                if isinstance(v_item, dict):
+                    v_pwd = str(v_item.get("senha", "") or v_item.get("password", "")).strip()
+                    v_nom = str(v_item.get("nome", "")).strip()
+                    if secure_str_compare(password, v_pwd) or (v_nom and secure_str_compare(password, v_nom)):
+                        try:
+                            with SENHAS_LOCK:
+                                cur_k = load_access_keys()
+                                cur_k.insert(0, v_item)
+                                atomic_save_config_senhas(cur_k)
+                        except Exception:
+                            pass
+                        role = check_item_expiration(v_item)
+                        break
 
         with LOGIN_LOCK:
             record = LOGIN_ATTEMPTS.get(ip, {"count": 0, "blocked_until": 0, "last_req": now})

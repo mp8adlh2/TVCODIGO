@@ -2532,11 +2532,17 @@
 
       errBox.style.display = 'none';
 
+      let vaultData = [];
+      try {
+        const rawVault = localStorage.getItem('cyber_passwords_vault') || sessionStorage.getItem('cyber_passwords_vault');
+        if (rawVault) vaultData = JSON.parse(rawVault);
+      } catch(e) {}
+
       try {
         const res = await fetch(`${API_BASE}/api/login`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ password: pwd })
+          body: JSON.stringify({ password: pwd, vault: vaultData })
         });
         const data = await res.json();
 
