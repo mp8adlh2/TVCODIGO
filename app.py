@@ -1672,30 +1672,30 @@ def find_access_role(password: str) -> Optional[dict]:
     if not p_clean:
         return None
 
-    p_digits = normalize_phone_digits(p_clean)
-
-    # 1. Checa senhas cadastradas e nomes de clientes (ex: 5521984920015)
+    # 1. Comparação direta com as senhas cadastradas (prioridade máxima e estrita)
     for item in keys:
-        item_pwd = item.get("senha", "")
-        item_name = item.get("nome", "")
-        
-        # Comparação direta com a senha
-        if secure_str_compare(p_clean, item_pwd):
+        if secure_str_compare(p_clean, item.get("senha", "")):
             return check_item_expiration(item)
-        
-        # Comparação com o nome / telefone digitado pelo cliente
+
+    # 2. Comparação direta com o nome cadastrado
+    for item in keys:
+        item_name = item.get("nome", "")
         if item_name and secure_str_compare(p_clean, item_name):
             return check_item_expiration(item)
 
-        # Comparação flexível por dígitos de telefone (WhatsApp do cliente)
-        if len(p_digits) >= 8:
-            if item_name:
-                name_digits = normalize_phone_digits(item_name)
-                if name_digits and (p_digits == name_digits or p_digits.endswith(name_digits) or name_digits.endswith(p_digits)):
+    # 3. Comparação flexível por telefone de WhatsApp APENAS se o usuário digitou somente números
+    p_digits = normalize_phone_digits(p_clean)
+    if p_clean.isdigit() and len(p_digits) >= 8:
+        for item in keys:
+            item_name = item.get("nome", "")
+            item_pwd = item.get("senha", "")
+            name_digits = normalize_phone_digits(item_name)
+            pwd_digits = normalize_phone_digits(item_pwd)
+            if item_name and len(name_digits) >= 8:
+                if p_digits == name_digits or (len(p_digits) >= 10 and len(name_digits) >= 10 and (p_digits.endswith(name_digits) or name_digits.endswith(p_digits))):
                     return check_item_expiration(item)
-            if item_pwd:
-                pwd_digits = normalize_phone_digits(item_pwd)
-                if pwd_digits and (p_digits == pwd_digits or p_digits.endswith(pwd_digits) or pwd_digits.endswith(p_digits)):
+            if item_pwd and len(pwd_digits) >= 8:
+                if p_digits == pwd_digits or (len(p_digits) >= 10 and len(pwd_digits) >= 10 and (p_digits.endswith(pwd_digits) or pwd_digits.endswith(p_digits))):
                     return check_item_expiration(item)
 
     # 2. Senha Mestre do Terminal
