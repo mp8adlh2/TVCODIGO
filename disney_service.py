@@ -163,6 +163,29 @@ _disney_lock = threading.Lock()
 _apikey_cache = None
 _apikey_lock  = threading.Lock()
 DEAD_DISNEY_ACCOUNTS: Set[str] = set()
+DEAD_DISNEY_TIMESTAMPS: Dict[str, float] = {}
+DEAD_FAIL_COOLDOWN = 600  # 10 minutos de cooldown temporário se falhar senha
+
+def is_account_dead(email: str) -> bool:
+    em = str(email or "").strip().lower()
+    if em in DEAD_DISNEY_ACCOUNTS:
+        fail_ts = DEAD_DISNEY_TIMESTAMPS.get(em, 0.0)
+        if time.time() - fail_ts > DEAD_FAIL_COOLDOWN:
+            DEAD_DISNEY_ACCOUNTS.discard(em)
+            DEAD_DISNEY_TIMESTAMPS.pop(em, None)
+            return False
+        return True
+    return False
+
+def mark_account_dead(email: str):
+    em = str(email or "").strip().lower()
+    if em:
+        DEAD_DISNEY_ACCOUNTS.add(em)
+        DEAD_DISNEY_TIMESTAMPS[em] = time.time()
+
+def clear_dead_accounts():
+    DEAD_DISNEY_ACCOUNTS.clear()
+    DEAD_DISNEY_TIMESTAMPS.clear()
 USED_DISNEY_ACCOUNTS: Set[str] = set()
 DISNEY_LAST_USED_AT: Dict[str, float] = {}
 
@@ -608,8 +631,8 @@ def record_tv_activation(email: str, password: str, tv_code: str, plan: str, cou
 
 def load_all_disney_accounts(force_reload: bool = False) -> List[dict]:
     """
-    Carrega contas prioritariamente de disney/ e combo/,
-    descartando automaticamente contas que já ativaram alguma TV ou com falha.
+    Carrega todas as contas cadastradas nas pastas disney/ e combo/,
+    garantindo que o estoque reflita fielmente as contas disponíveis sem zerar.
     """
     used_emails = get_used_emails()
 
@@ -617,7 +640,8 @@ def load_all_disney_accounts(force_reload: bool = False) -> List[dict]:
         glob.glob(os.path.join(DISNEY_DIR, "*.txt")) +
         glob.glob(os.path.join(DISNEY_DIR, "*.csv")) +
         glob.glob(os.path.join(COMBO_DIR, "disney*.txt")) +
-        glob.glob(os.path.join(COMBO_DIR, "disney*.csv"))
+        glob.glob(os.path.join(COMBO_DIR, "disney*.csv")) +
+        glob.glob(os.path.join(COMBO_DIR, "combo*.txt"))
     )
 
     seen_paths = set()
@@ -641,8 +665,6 @@ def load_all_disney_accounts(force_reload: bool = False) -> List[dict]:
                         email = m.group(1).strip()
                         pwd   = m.group(2).strip()
                         em_low = email.lower()
-                        if em_low in used_emails or em_low in USED_DISNEY_ACCOUNTS or em_low in DEAD_DISNEY_ACCOUNTS:
-                            continue
                         if em_low not in seen_emails:
                             seen_emails.add(em_low)
                             accounts.append({
@@ -660,19 +682,32 @@ def load_all_disney_accounts(force_reload: bool = False) -> List[dict]:
         except Exception:
             pass
 
-    # Ordenação justa: coloca no final contas já usadas recentemente
+    # Ordenação justa e resiliente:
+    # 1. Contas saudáveis (fora do cooldown de erro)
+    # 2. Contas nunca usadas vêm primeiro; depois, as usadas há mais tempo (Round-Robin)
     def sort_key(acc):
         em = acc["email"].lower()
-        return DISNEY_LAST_USED_AT.get(em, 0)
+        dead_score = 1000000000.0 if is_account_dead(em) else 0.0
+        used_score = 100000.0 if (em in used_emails or em in USED_DISNEY_ACCOUNTS) else 0.0
+        last_used = DISNEY_LAST_USED_AT.get(em, 0.0)
+        return (dead_score, used_score, last_used)
 
     accounts.sort(key=sort_key)
     return accounts
 
 def find_disney_valid_account() -> Optional[dict]:
-    """Retorna a próxima conta Disney+ disponível da fila."""
+    """Retorna a próxima conta Disney+ disponível da fila usando rotação justa."""
     accounts = load_all_disney_accounts()
     if not accounts:
         return None
+
+    # Tenta primeira conta saudável (fora do cooldown de erro)
+    healthy = [acc for acc in accounts if not is_account_dead(acc["email"])]
+    if healthy:
+        return healthy[0]
+
+    # Se todas estiverem em cooldown (ex: instabilidade temporária), perdoa e usa a primeira
+    clear_dead_accounts()
     return accounts[0]
 
 def select_disney_account_by_identifier(identifier: str) -> Optional[dict]:
@@ -813,7 +848,8 @@ def activate_disney_tv(clean_code: str, account_data: Optional[dict] = None) -> 
 
         if status in ("BAD", "2FA") or status != "OK" or not auth_token:
             push_disney_log(f"⚠️ Conta {email} falhou no login ({status}). Tentando próxima...", level="warn")
-            DEAD_DISNEY_ACCOUNTS.add(em_low)
+            if status in ("BAD", "2FA"):
+                mark_account_dead(em_low)
             continue
 
         # Checa plano / assinatura

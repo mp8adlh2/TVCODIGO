@@ -1366,7 +1366,7 @@ def extract_passwords_from_senhas_de_acesso() -> List[dict]:
                 elif 'disney' in n_low:
                     svcs = ['disney']
                 elif 'master' in n_low or 'todos' in n_low or 'vip master' in n_low:
-                    svcs = ['netflix', 'hbo', 'crunchyroll', 'sky', 'disney']
+                    svcs = ['netflix', 'hbo', 'crunchyroll', 'sky']
                 else:
                     svcs = ['netflix']
             
@@ -1392,6 +1392,7 @@ def extract_passwords_from_senhas_de_acesso() -> List[dict]:
                 if 'hbo' in low or 'max' in low: svcs.append('hbo')
                 if 'crunchyroll' in low or 'crunchy' in low: svcs.append('crunchyroll')
                 if 'sky' in low: svcs.append('sky')
+                if 'disney' in low: svcs.append('disney')
                 curr['servicos'] = svcs
                 continue
                 
@@ -1514,18 +1515,39 @@ def infer_services_for_password(pwd: str, name: str = "", current_svcs: list = N
     n_low = str(name or "").lower()
     combined = f"{p_low} {n_low}"
 
-    # 1. Senhas Mestres Exclusivas do Administrador / Dono (Apenas TVCODIGO ADMIN / ROOT / COFRE)
+    # 1. Senhas Mestres Exclusivas do Administrador / Dono (Apenas TVCODIGO ADMIN / ROOT / COFRE / MASTER)
     if any(k in p_low for k in [
-        'tvcodigo#admin', 'admin#vault', 'admin#cookies', 'root#vip'
+        'tvcodigo#admin', 'admin#vault', 'admin#cookies', 'root#vip',
+        'cyber#stream@2026$master*titanium', 'ativador#master@2026$stream*vip'
     ]):
         return ["netflix", "hbo", "crunchyroll", "sky", "disney"]
 
-    # 2. Senha Histórica Antiga VIP MASTER vendida a clientes anteriores
-    # 🔒 REGRA RIGOROSA: Esta senha específica NUNCA libera Disney+!
+    # 2. ⚡ SE A LISTA DE SERVIÇOS FOI CONFIGURADA EXPLICITAMENTE (Criada ou Editada pelo Painel Admin / Salva no JSON)
+    # A escolha do Administrador é SOBERANA! Se ele adicionou a Disney para a senha (seja antiga ou nova), a Disney É LIBERADA!
+    if current_svcs and isinstance(current_svcs, list):
+        clean_svcs = []
+        for s in current_svcs:
+            s_clean = str(s).strip().lower()
+            if s_clean in ["netflix", "nf"] and "netflix" not in clean_svcs:
+                clean_svcs.append("netflix")
+            elif s_clean in ["hbo", "hbomax", "hbo_max", "max"] and "hbo" not in clean_svcs:
+                clean_svcs.append("hbo")
+            elif s_clean in ["crunchyroll", "crunchy", "cr"] and "crunchyroll" not in clean_svcs:
+                clean_svcs.append("crunchyroll")
+            elif s_clean in ["sky", "skytv", "sky+", "sky_tv"] and "sky" not in clean_svcs:
+                clean_svcs.append("sky")
+            elif s_clean in ["disney", "disney+", "disneyplus", "disney_plus"] and "disney" not in clean_svcs:
+                clean_svcs.append("disney")
+        
+        if clean_svcs:
+            return clean_svcs
+
+    # 3. Senha Histórica Antiga VIP MASTER vendida a clientes anteriores (QUANDO NÃO HOUVER LISTA EXPLÍCITA SALVA)
+    # 🔒 REGRA RIGOROSA: Senhas legadas sem configuração de Disney NUNCA liberam Disney+ automaticamente!
     if 'vip#master@1444$4k*76!2026' in p_low:
         return ["netflix", "hbo", "crunchyroll", "sky"]
 
-    # 3. Dicionário de senhas históricas exatas
+    # 4. Dicionário de senhas históricas exatas (QUANDO NÃO HOUVER LISTA EXPLÍCITA SALVA)
     HISTORIC_MAP = {
         'netflix#only@7712$red*cyber!2026': ['netflix'],
         'netflix#only@9421$red*vault#ultra*4k*hdr!2026': ['netflix'],
@@ -1558,7 +1580,7 @@ def infer_services_for_password(pwd: str, name: str = "", current_svcs: list = N
         if h_pwd in p_low:
             return h_svcs
 
-    # 4. Termos explícitos de exclusividade (#ONLY, Apenas, Somente)
+    # 5. Termos explícitos de exclusividade (#ONLY, Apenas, Somente)
     if 'netflix#only' in p_low or 'apenas netflix' in n_low or 'somente netflix' in n_low or 'senha oficial netflix' in n_low:
         return ["netflix"]
     if 'hbomax#only' in p_low or 'hbo#only' in p_low or 'apenas hbo' in n_low or 'somente hbo' in n_low or 'senha oficial hbo' in n_low:
@@ -1570,27 +1592,8 @@ def infer_services_for_password(pwd: str, name: str = "", current_svcs: list = N
     if 'disney#only' in p_low or 'disneyplus#only' in p_low or 'apenas disney' in n_low or 'somente disney' in n_low:
         return ["disney"]
 
-    # 5. Se a lista de serviços foi configurada explicitamente (Criada ou Editada pelo Painel Admin / Salva no JSON)
-    if current_svcs and isinstance(current_svcs, list):
-        clean_svcs = []
-        for s in current_svcs:
-            s_clean = str(s).strip().lower()
-            if s_clean in ["netflix", "nf"] and "netflix" not in clean_svcs:
-                clean_svcs.append("netflix")
-            elif s_clean in ["hbo", "hbomax", "hbo_max", "max"] and "hbo" not in clean_svcs:
-                clean_svcs.append("hbo")
-            elif s_clean in ["crunchyroll", "crunchy", "cr"] and "crunchyroll" not in clean_svcs:
-                clean_svcs.append("crunchyroll")
-            elif s_clean in ["sky", "skytv", "sky+", "sky_tv"] and "sky" not in clean_svcs:
-                clean_svcs.append("sky")
-            elif s_clean in ["disney", "disney+", "disneyplus", "disney_plus"] and "disney" not in clean_svcs:
-                clean_svcs.append("disney")
-        
-        if clean_svcs:
-            return clean_svcs
-
     # 6. Senhas antigas ou sem lista explícita que contenham termos genéricos de "Tudo Liberado"
-    # (NUNCA liberam Disney+ para senhas antigas de clientes!)
+    # (NUNCA liberam Disney+ automaticamente para senhas antigas de clientes!)
     if any(k in combined for k in [
         'vip#master', 'vip#all', 'cyber#stream', 'ativador#master',
         'master admin', 'tudo liberado', 'todos os 4', 'todos os 5'
