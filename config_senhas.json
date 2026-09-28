@@ -33,9 +33,10 @@
         "netflix",
         "hbo",
         "crunchyroll",
-        "sky"
+        "sky",
+        "disney"
       ],
-      "descricao": "Libera todos os 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+",
+      "descricao": "Libera todos os 5 serviços: Netflix, HBO Max, Crunchyroll e Sky+ e Disney+",
       "dias_validade": null,
       "criado_em": null,
       "expira_em": null,
@@ -122,9 +123,10 @@
         "netflix",
         "hbo",
         "crunchyroll",
-        "sky"
+        "sky",
+        "disney"
       ],
-      "descricao": "Libera todos os 4 serviços",
+      "descricao": "Libera todos os 5 serviços e Disney+",
       "dias_validade": null,
       "criado_em": null,
       "expira_em": null,
@@ -137,9 +139,10 @@
         "netflix",
         "hbo",
         "crunchyroll",
-        "sky"
+        "sky",
+        "disney"
       ],
-      "descricao": "Libera todos os 4 serviços",
+      "descricao": "Libera todos os 5 serviços e Disney+",
       "dias_validade": null,
       "criado_em": null,
       "expira_em": null,
@@ -355,6 +358,18 @@
         "hbo"
       ],
       "descricao": "Libera Netflix e HBO Max",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "DISNEY#ONLY@2481*MAGIC!2026",
+      "nome": "Senha Oficial Disney+",
+      "servicos": [
+        "disney"
+      ],
+      "descricao": "Libera: disney",
       "dias_validade": null,
       "criado_em": null,
       "expira_em": null,

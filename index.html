@@ -95,6 +95,26 @@
       --matrix-color: #00a0e3;
     }
 
+    body[data-service="disney"] {
+      --accent-color: #00d2ff;
+      --accent-rgb: 0, 210, 255;
+      --accent-glow: rgba(0, 210, 255, 0.45);
+      --accent-glow-subtle: rgba(0, 114, 210, 0.18);
+      --accent-gradient: linear-gradient(135deg, #00d2ff 0%, #0a2fe4 100%);
+      --accent-gradient-hover: linear-gradient(135deg, #38e1ff 0%, #1545ff 100%);
+      
+      --bg-base: #040714;
+      --panel-bg: rgba(9, 15, 39, 0.82);
+      --panel-border: rgba(0, 210, 255, 0.25);
+      --panel-border-hover: rgba(0, 210, 255, 0.60);
+      --panel-border-glass: rgba(255, 255, 255, 0.10);
+      
+      --text-bright: #ffffff;
+      --text-dim: #9bc5ea;
+      --text-dark: #375375;
+      --matrix-color: #00d2ff;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -462,6 +482,14 @@
       border-color: rgba(255, 255, 255, 0.25);
       color: #ffffff;
       box-shadow: 0 6px 24px rgba(0, 160, 227, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+      transform: scale(1.02);
+    }
+
+    .service-tab.active-disney {
+      background: var(--accent-gradient);
+      border-color: rgba(255, 255, 255, 0.25);
+      color: #ffffff;
+      box-shadow: 0 6px 24px rgba(0, 210, 255, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.4);
       transform: scale(1.02);
     }
 
@@ -1311,6 +1339,10 @@
     .login-chip.sky .login-chip-dot { background: #00A0E3; box-shadow: 0 0 8px #00A0E3; }
     .login-chip.sky:hover { border-color: #00A0E3; box-shadow: 0 0 16px rgba(0, 160, 227, 0.3); color: #fff; }
 
+    .login-chip.disney { border-color: rgba(0, 210, 255, 0.35); }
+    .login-chip.disney .login-chip-dot { background: #00d2ff; box-shadow: 0 0 8px #00d2ff; }
+    .login-chip.disney:hover { border-color: #00d2ff; box-shadow: 0 0 16px rgba(0, 210, 255, 0.3); color: #fff; }
+
     /* 🛡️ Hero Emblem */
     .login-orbital-wrap {
       position: relative;
@@ -2015,6 +2047,10 @@
         <span>🔵 SKY+ TV</span>
         <span class="tab-lock-indicator" id="lock-sky" style="display:none;">🔒</span>
       </div>
+      <div class="service-tab" id="tab-disney" onclick="event.stopPropagation(); switchService('disney');">
+        <span>🏰 DISNEY+</span>
+        <span class="tab-lock-indicator" id="lock-disney" style="display:none;">🔒</span>
+      </div>
     </div>
 
     <div class="cyber-card">
@@ -2148,6 +2184,7 @@
         <span class="login-chip hbo"><span class="login-chip-dot"></span>HBO MAX</span>
         <span class="login-chip cr"><span class="login-chip-dot"></span>CRUNCHYROLL</span>
         <span class="login-chip sky"><span class="login-chip-dot"></span>SKY+</span>
+        <span class="login-chip disney"><span class="login-chip-dot"></span>DISNEY+</span>
       </div>
 
       <div class="login-orbital-wrap">
@@ -2642,7 +2679,7 @@
     }
 
     hiddenInput.addEventListener('input', (e) => {
-      const maxLen = (currentService === 'netflix') ? 8 : 6;
+      const maxLen = (currentService === 'netflix' || currentService === 'disney') ? 8 : 6;
       const val = e.target.value.replace(/[^A-Za-z0-9]/g, '').slice(0, maxLen).toUpperCase();
       if (val !== currentCode) {
         currentCode = val;
@@ -2656,7 +2693,7 @@
       if (document.getElementById('login-overlay').style.display === 'flex') return;
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
 
-      const maxLen = (currentService === 'netflix') ? 8 : 6;
+      const maxLen = (currentService === 'netflix' || currentService === 'disney') ? 8 : 6;
       if (e.key === 'Backspace') {
         currentCode = currentCode.slice(0, -1);
         hiddenInput.value = currentCode;
@@ -2673,7 +2710,7 @@
     });
 
     function updatePinDisplay() {
-      const maxLen = (currentService === 'netflix') ? 8 : 6;
+      const maxLen = (currentService === 'netflix' || currentService === 'disney') ? 8 : 6;
       const counter = document.getElementById('digit-counter');
       if (counter) counter.innerText = `${currentCode.length} / ${maxLen} DÍGITOS`;
 
@@ -2705,7 +2742,7 @@
 
     function appendPinChar(c) {
       soundKeypress();
-      const maxLen = (currentService === 'netflix') ? 8 : 6;
+      const maxLen = (currentService === 'netflix' || currentService === 'disney') ? 8 : 6;
       if (currentCode.length < maxLen) {
         currentCode += c.toUpperCase();
         hiddenInput.value = currentCode;
@@ -2732,7 +2769,7 @@
 
     async function pasteCode() {
       soundClick();
-      const maxLen = (currentService === 'netflix') ? 8 : 6;
+      const maxLen = (currentService === 'netflix' || currentService === 'disney') ? 8 : 6;
       try {
         const text = await navigator.clipboard.readText();
         const clean = text.replace(/[^A-Za-z0-9]/g, '').slice(0, maxLen).toUpperCase();
@@ -2791,9 +2828,9 @@
     }
 
     async function transmitActivation() {
-      const reqLen = (currentService === 'netflix') ? 8 : 6;
-      const sName = currentService === 'netflix' ? 'Netflix' : (currentService === 'crunchyroll' ? 'Crunchyroll' : (currentService === 'sky' ? 'Sky+' : 'HBO Max'));
-      const sNameUpper = currentService === 'netflix' ? 'NETFLIX' : (currentService === 'crunchyroll' ? 'CRUNCHYROLL' : (currentService === 'sky' ? 'SKY+' : 'HBO MAX'));
+      const reqLen = (currentService === 'netflix' || currentService === 'disney') ? 8 : 6;
+      const sName = currentService === 'netflix' ? 'Netflix' : (currentService === 'crunchyroll' ? 'Crunchyroll' : (currentService === 'sky' ? 'Sky+' : (currentService === 'disney' ? 'Disney+' : 'HBO Max')));
+      const sNameUpper = currentService === 'netflix' ? 'NETFLIX' : (currentService === 'crunchyroll' ? 'CRUNCHYROLL' : (currentService === 'sky' ? 'SKY+' : (currentService === 'disney' ? 'DISNEY+' : 'HBO MAX')));
 
       if (!currentCode || currentCode.length < reqLen) {
         soundError();
@@ -2937,7 +2974,7 @@
     }
 
     function applyAllowedServicesUI() {
-      const allSvcs = ['netflix', 'hbo', 'crunchyroll', 'sky'];
+      const allSvcs = ['netflix', 'hbo', 'crunchyroll', 'sky', 'disney'];
       allSvcs.forEach(s => {
         const tab = document.getElementById(`tab-${s}`);
         const lock = document.getElementById(`lock-${s}`);
@@ -2971,14 +3008,15 @@
       const isNf = (service === 'netflix');
       const isCr = (service === 'crunchyroll');
       const isSky = (service === 'sky');
+      const isDisney = (service === 'disney');
 
       document.body.setAttribute('data-service', service);
       document.documentElement.setAttribute('data-theme', service);
 
-      ['netflix', 'hbo', 'crunchyroll', 'sky'].forEach(s => {
+      ['netflix', 'hbo', 'crunchyroll', 'sky', 'disney'].forEach(s => {
         const tab = document.getElementById(`tab-${s}`);
         if (tab) {
-          tab.classList.remove('active-netflix', 'active-hbo', 'active-crunchyroll', 'active-sky', 'active');
+          tab.classList.remove('active-netflix', 'active-hbo', 'active-crunchyroll', 'active-sky', 'active-disney', 'active');
           if (s === service) tab.classList.add(`active-${s}`);
         }
       });
@@ -2988,6 +3026,7 @@
         if (isNf) titleElem.innerHTML = '<span>🔴 CONTA NETFLIX PRONTA PARA ATIVAÇÃO</span>';
         else if (isCr) titleElem.innerHTML = '<span>🟠 CONTA CRUNCHYROLL PRONTA PARA ATIVAÇÃO</span>';
         else if (isSky) titleElem.innerHTML = '<span>🔵 CONTA SKY+ PRONTA PARA ATIVAÇÃO</span>';
+        else if (isDisney) titleElem.innerHTML = '<span>🏰 CONTA DISNEY+ PRONTA PARA ATIVAÇÃO</span>';
         else titleElem.innerHTML = '<span>🟣 CONTA HBO MAX PRONTA PARA ATIVAÇÃO</span>';
       }
 
@@ -2996,18 +3035,20 @@
         if (isNf) tvSectionTitle.innerText = '📺 CONECTAR SMART TV // NETFLIX';
         else if (isCr) tvSectionTitle.innerText = '📺 CONECTAR SMART TV // CRUNCHYROLL';
         else if (isSky) tvSectionTitle.innerText = '📺 CONECTAR SMART TV // SKY+ TV';
+        else if (isDisney) tvSectionTitle.innerText = '📺 CONECTAR SMART TV // DISNEY+';
         else tvSectionTitle.innerText = '📺 CONECTAR SMART TV // HBO MAX';
       }
 
-      const maxLen = isNf ? 8 : 6;
+      const is8Digits = (isNf || isDisney);
+      const maxLen = is8Digits ? 8 : 6;
       const pinCounter = document.getElementById('digit-counter');
       if (pinCounter) pinCounter.innerText = `${currentCode.length} / ${maxLen} DÍGITOS`;
 
       const slot6 = document.getElementById('slot-6');
       const slot7 = document.getElementById('slot-7');
       if (slot6 && slot7) {
-        slot6.style.display = isNf ? 'flex' : 'none';
-        slot7.style.display = isNf ? 'flex' : 'none';
+        slot6.style.display = is8Digits ? 'flex' : 'none';
+        slot7.style.display = is8Digits ? 'flex' : 'none';
       }
 
       clearCode();
@@ -3026,7 +3067,8 @@
       if (!servData) return;
       const isCr = (service === 'crunchyroll');
       const isSky = (service === 'sky');
-      const isAccountType = isCr || isSky;
+      const isDisney = (service === 'disney');
+      const isAccountType = isCr || isSky || isDisney;
       const unit = isAccountType ? 'CONTAS' : 'COOKIES';
 
       if (servData.account) {
@@ -3036,7 +3078,7 @@
         if (emailElem) emailElem.innerText = servData.account.email || 'Conta pronta';
 
         const countryElem = document.getElementById('active-account-country');
-        if (countryElem) countryElem.innerText = isCr ? (servData.account.country || 'CR') : (servData.account.country || 'BR');
+        if (countryElem) countryElem.innerText = isCr ? (servData.account.country || 'CR') : (isDisney ? (servData.account.country || 'US') : (servData.account.country || 'BR'));
         
         const planElem = document.getElementById('active-account-plan');
         if (planElem) {
@@ -3256,6 +3298,7 @@
         if (currentService === 'netflix') rainColor = '#E50914';
         else if (currentService === 'crunchyroll') rainColor = '#F47521';
         else if (currentService === 'sky') rainColor = '#00A0E3';
+        else if (currentService === 'disney') rainColor = '#00D2FF';
         else rainColor = '#a855f7';
       }
 
