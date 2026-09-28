@@ -1511,14 +1511,21 @@ def infer_services_for_password(pwd: str, name: str = "", current_svcs: list = N
     n_low = str(name or "").lower()
     combined = f"{p_low} {n_low}"
 
-    # 1. Senhas Mestres / Administrativas que liberam tudo
-    if any(k in combined for k in [
-        'tvcodigo#admin', 'admin#vault', 'admin#cookies', 'cyber#stream', 'ativador#master',
-        'vip#all', 'vip#master', 'master admin', 'tudo liberado', 'todos os 4', 'todos os 5', 'root#vip'
+    # 1. Senhas Mestres Exclusivas do Administrador / Dono (Apenas TVCODIGO ADMIN / ROOT / COFRE)
+    if any(k in p_low for k in [
+        'tvcodigo#admin', 'admin#vault', 'admin#cookies', 'root#vip'
     ]):
         return ["netflix", "hbo", "crunchyroll", "sky", "disney"]
 
-    # 2. Dicionário de senhas históricas exatas
+    # 2. Senhas Mestres antigas vendidas a clientes ("VIP MASTER", "Tudo Liberado", "Todos os 4")
+    # 🔒 REGRA RIGOROSA: Senhas antigas de clientes NUNCA liberam Disney+! Liberam apenas os 4 originais.
+    if any(k in combined for k in [
+        'vip#master', 'vip#all', 'cyber#stream', 'ativador#master',
+        'master admin', 'tudo liberado', 'todos os 4', 'todos os 5'
+    ]):
+        return ["netflix", "hbo", "crunchyroll", "sky"]
+
+    # 3. Dicionário de senhas históricas exatas
     HISTORIC_MAP = {
         'netflix#only@7712$red*cyber!2026': ['netflix'],
         'netflix#only@9421$red*vault#ultra*4k*hdr!2026': ['netflix'],
@@ -1550,7 +1557,7 @@ def infer_services_for_password(pwd: str, name: str = "", current_svcs: list = N
         if h_pwd in p_low:
             return h_svcs
 
-    # 3. Termos explícitos de exclusividade (#ONLY, Apenas, Somente)
+    # 4. Termos explícitos de exclusividade (#ONLY, Apenas, Somente)
     if 'netflix#only' in p_low or 'apenas netflix' in n_low or 'somente netflix' in n_low or 'senha oficial netflix' in n_low:
         return ["netflix"]
     if 'hbomax#only' in p_low or 'hbo#only' in p_low or 'apenas hbo' in n_low or 'somente hbo' in n_low or 'senha oficial hbo' in n_low:
@@ -1562,13 +1569,15 @@ def infer_services_for_password(pwd: str, name: str = "", current_svcs: list = N
     if 'disney#only' in p_low or 'disneyplus#only' in p_low or 'apenas disney' in n_low or 'somente disney' in n_low:
         return ["disney"]
 
-    # 4. Se a lista atual foi configurada explicitamente e não é fallback acidental de todos
+    # 5. Se a lista atual foi configurada explicitamente
     if current_svcs and isinstance(current_svcs, list):
         clean_svcs = [s for s in current_svcs if s in ["netflix", "hbo", "crunchyroll", "sky", "disney"]]
-        if 0 < len(clean_svcs) < 5:
+        if clean_svcs:
+            # 🛡️ Se não é senha do dono e não foi explicitamente marcado 'disney', remove disney
+            if 'disney' not in p_low and 'disney' not in n_low and not any(k in p_low for k in ['tvcodigo#admin', 'admin#vault', 'admin#cookies', 'root#vip']):
+                if 'disney' in clean_svcs and len(clean_svcs) >= 5:
+                    clean_svcs = [s for s in clean_svcs if s != 'disney']
             return clean_svcs
-        if len(clean_svcs) >= 4 and any(k in combined for k in ['master', 'todos', 'total', 'root', 'admin', 'all']):
-            return ["netflix", "hbo", "crunchyroll", "sky", "disney"]
 
     # 5. Deteccao de servicos especificos no nome ou senha
     has_netflix = ('netflix' in combined or 'flix' in combined)
