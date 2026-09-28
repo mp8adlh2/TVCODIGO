@@ -1256,6 +1256,7 @@ def sync_passwords_text_file(passwords_list: List[dict]):
             if "hbo" in servicos: svc_tags.append("🟣 HBO Max")
             if "crunchyroll" in servicos: svc_tags.append("🟠 Crunchyroll")
             if "sky" in servicos: svc_tags.append("🔵 Sky+")
+            if "disney" in servicos: svc_tags.append("🏰 Disney+")
             
             libera_str = " | ".join(svc_tags) if svc_tags else "Nenhum"
             
@@ -1504,8 +1505,10 @@ def secure_str_compare(a: str, b: str) -> bool:
 def infer_services_for_password(pwd: str, name: str = "", current_svcs: list = None) -> List[str]:
     """Determina de forma estrita e infalível quais serviços uma senha tem direito.
     
-    🛡️ BLINDAGEM: Impede terminantemente que senhas antigas, senhas sem serviços definidos
-    ou senhas recuperadas de caches liberem todos os 4 serviços indevidamente.
+    🛡️ BLINDAGEM:
+    - Senhas novas configuradas pelo Admin com Disney+ liberam Disney+.
+    - Senhas antigas de clientes e senhas mestres vendidas no passado NUNCA liberam Disney+.
+    - Senhas mestres exclusivas do dono (TVCODIGO ADMIN / ROOT / COFRE) liberam todos os 5.
     """
     p_low = clean_password_str(pwd).lower()
     n_low = str(name or "").lower()
@@ -1517,12 +1520,9 @@ def infer_services_for_password(pwd: str, name: str = "", current_svcs: list = N
     ]):
         return ["netflix", "hbo", "crunchyroll", "sky", "disney"]
 
-    # 2. Senhas Mestres antigas vendidas a clientes ("VIP MASTER", "Tudo Liberado", "Todos os 4")
-    # 🔒 REGRA RIGOROSA: Senhas antigas de clientes NUNCA liberam Disney+! Liberam apenas os 4 originais.
-    if any(k in combined for k in [
-        'vip#master', 'vip#all', 'cyber#stream', 'ativador#master',
-        'master admin', 'tudo liberado', 'todos os 4', 'todos os 5'
-    ]):
+    # 2. Senha Histórica Antiga VIP MASTER vendida a clientes anteriores
+    # 🔒 REGRA RIGOROSA: Esta senha específica NUNCA libera Disney+!
+    if 'vip#master@1444$4k*76!2026' in p_low:
         return ["netflix", "hbo", "crunchyroll", "sky"]
 
     # 3. Dicionário de senhas históricas exatas
@@ -1535,6 +1535,7 @@ def infer_services_for_password(pwd: str, name: str = "", current_svcs: list = N
         'crunchyroll#only@6274$orange*anime#mega*fan!2026': ['crunchyroll'],
         'skyplus#only@4918$blue*fibra#super*hd*tv!2026': ['sky'],
         'disney#only@2481$blue*magic!2026': ['disney'],
+        'disney#only@2481*magic!2026': ['disney'],
         'stream#duo@4829$vip*matrix!2026': ['netflix', 'hbo'],
         'netflix#hbo#pass@9921$stream*lock!2026': ['netflix', 'hbo'],
         'shield#token@7971$premium*66!2026': ['netflix', 'hbo'],
@@ -1569,17 +1570,34 @@ def infer_services_for_password(pwd: str, name: str = "", current_svcs: list = N
     if 'disney#only' in p_low or 'disneyplus#only' in p_low or 'apenas disney' in n_low or 'somente disney' in n_low:
         return ["disney"]
 
-    # 5. Se a lista atual foi configurada explicitamente
+    # 5. Se a lista de serviços foi configurada explicitamente (Criada ou Editada pelo Painel Admin / Salva no JSON)
     if current_svcs and isinstance(current_svcs, list):
-        clean_svcs = [s for s in current_svcs if s in ["netflix", "hbo", "crunchyroll", "sky", "disney"]]
+        clean_svcs = []
+        for s in current_svcs:
+            s_clean = str(s).strip().lower()
+            if s_clean in ["netflix", "nf"] and "netflix" not in clean_svcs:
+                clean_svcs.append("netflix")
+            elif s_clean in ["hbo", "hbomax", "hbo_max", "max"] and "hbo" not in clean_svcs:
+                clean_svcs.append("hbo")
+            elif s_clean in ["crunchyroll", "crunchy", "cr"] and "crunchyroll" not in clean_svcs:
+                clean_svcs.append("crunchyroll")
+            elif s_clean in ["sky", "skytv", "sky+", "sky_tv"] and "sky" not in clean_svcs:
+                clean_svcs.append("sky")
+            elif s_clean in ["disney", "disney+", "disneyplus", "disney_plus"] and "disney" not in clean_svcs:
+                clean_svcs.append("disney")
+        
         if clean_svcs:
-            # 🛡️ Se não é senha do dono e não foi explicitamente marcado 'disney', remove disney
-            if 'disney' not in p_low and 'disney' not in n_low and not any(k in p_low for k in ['tvcodigo#admin', 'admin#vault', 'admin#cookies', 'root#vip']):
-                if 'disney' in clean_svcs and len(clean_svcs) >= 5:
-                    clean_svcs = [s for s in clean_svcs if s != 'disney']
             return clean_svcs
 
-    # 5. Deteccao de servicos especificos no nome ou senha
+    # 6. Senhas antigas ou sem lista explícita que contenham termos genéricos de "Tudo Liberado"
+    # (NUNCA liberam Disney+ para senhas antigas de clientes!)
+    if any(k in combined for k in [
+        'vip#master', 'vip#all', 'cyber#stream', 'ativador#master',
+        'master admin', 'tudo liberado', 'todos os 4', 'todos os 5'
+    ]):
+        return ["netflix", "hbo", "crunchyroll", "sky"]
+
+    # 7. Deteccao por palavras-chave no nome ou senha
     has_netflix = ('netflix' in combined or 'flix' in combined)
     has_hbo = ('hbo' in combined or 'max' in combined)
     has_crunchy = ('crunchy' in combined or 'anime' in combined)
@@ -1596,11 +1614,11 @@ def infer_services_for_password(pwd: str, name: str = "", current_svcs: list = N
     if detected:
         return detected
 
-    # 6. Duos e perfis comuns de Cliente VIP
+    # 8. Duos e perfis comuns de Cliente VIP antigo
     if any(k in combined for k in ['duo', 'cinema', 'stream', 'vip', 'cliente', 'matrix', 'omega', 'shield', 'titanium']):
         return ["netflix", "hbo"]
 
-    # 7. Fallback seguro: NUNCA todos!
+    # 9. Fallback seguro: Apenas Netflix! (NUNCA todos e NUNCA Disney+)
     return ["netflix"]
 
 def load_access_keys() -> List[dict]:
@@ -4468,7 +4486,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         cliente = str(req.get("nome", "") or req.get("cliente", "") or req.get("role_name", "") or "").strip()
         custom_pwd = str(req.get("senha", "") or req.get("password", "") or "").strip()
 
-        # 🎯 Suporte direto a seleção personalizada múltipla (ex: Netflix + HBO Max + Sky)
+        # 🎯 Suporte direto a seleção personalizada múltipla (ex: Netflix + HBO Max + Sky + Disney)
         req_services = req.get("servicos") or req.get("services")
         servicos = []
         if isinstance(req_services, list) and len(req_services) > 0:
@@ -4482,6 +4500,8 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     servicos.append("crunchyroll")
                 elif s_clean in ["sky", "skytv", "sky+", "sky_tv"] and "sky" not in servicos:
                     servicos.append("sky")
+                elif s_clean in ["disney", "disney+", "disneyplus", "disney_plus"] and "disney" not in servicos:
+                    servicos.append("disney")
 
         if not servicos:
             # Fallback para string de plano pré-definido
@@ -4503,9 +4523,12 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             elif plan in ["combo_nf_hbo", "duo"]:
                 servicos = ["netflix", "hbo"]
                 plan_label = "Duo (Netflix + HBO)"
-            else:
+            elif plan in ["all_with_disney", "todos_5"]:
                 servicos = ["netflix", "hbo", "crunchyroll", "sky", "disney"]
                 plan_label = "VIP Master (Todos os 5)"
+            else:
+                servicos = ["netflix", "hbo", "crunchyroll", "sky"]
+                plan_label = "VIP (4 Originais)"
         else:
             names_map = {"netflix": "Netflix", "hbo": "HBO Max", "crunchyroll": "Crunchyroll", "sky": "Sky+", "disney": "Disney+"}
             plan_label = " + ".join([names_map.get(s, s.upper()) for s in servicos])
@@ -4639,9 +4662,9 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 elif s_clean in ["disney", "disney+", "disneyplus", "disney_plus"]:
                     if "disney" not in valid_services: valid_services.append("disney")
 
-        # Se nenhum serviço válido foi identificado, libera todos os 5 por segurança
+        # Se nenhum serviço válido foi identificado, libera os 4 serviços originais por segurança (sem Disney+)
         if not valid_services:
-            valid_services = ["netflix", "hbo", "crunchyroll", "sky", "disney"]
+            valid_services = ["netflix", "hbo", "crunchyroll", "sky"]
 
         if not nome:
             svc_names = [s.upper() for s in valid_services]

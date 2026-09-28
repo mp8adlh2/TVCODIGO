@@ -33,10 +33,9 @@
         "netflix",
         "hbo",
         "crunchyroll",
-        "sky",
-        "disney"
+        "sky"
       ],
-      "descricao": "Libera todos os 5 serviços: Netflix, HBO Max, Crunchyroll e Sky+ e Disney+",
+      "descricao": "Libera os 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+ (Sem Disney+)",
       "dias_validade": null,
       "criado_em": null,
       "expira_em": null,
