@@ -1114,7 +1114,7 @@
         </button>
       </div>
 
-      <div class="online-users-stats-row" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 8px;">
+      <div class="online-users-stats-row" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(88px, 1fr)); gap: 6px;">
         <div class="online-stat-card">
           <span class="online-stat-val" id="users-total-val" style="color: #00ff66;">0</span>
           <span class="online-stat-title">TOTAL DISPOSITIVOS</span>
@@ -2602,6 +2602,8 @@
         if (svc === 'hbo' || svc === 'hbomax') svcBadge = '<span style="background:rgba(168,85,247,0.2); color:#c084fc; border:1px solid rgba(168,85,247,0.4); border-radius:6px; padding:2px 8px; font-size:10px; font-weight:800;">🟣 HBO MAX</span>';
         else if (svc === 'crunchyroll' || svc === 'cr') svcBadge = '<span style="background:rgba(244,117,33,0.2); color:#f47521; border:1px solid rgba(244,117,33,0.4); border-radius:6px; padding:2px 8px; font-size:10px; font-weight:800;">🟠 CRUNCHYROLL</span>';
         else if (svc === 'sky') svcBadge = '<span style="background:rgba(0,160,227,0.2); color:#00A0E3; border:1px solid rgba(0,160,227,0.4); border-radius:6px; padding:2px 8px; font-size:10px; font-weight:800;">🔵 SKY+</span>';
+        else if (svc === 'disney' || svc === 'disneyplus') svcBadge = '<span style="background:rgba(0,210,255,0.2); color:#00d2ff; border:1px solid rgba(0,210,255,0.4); border-radius:6px; padding:2px 8px; font-size:10px; font-weight:800;">🏰 DISNEY+</span>';
+        else if (svc === 'claro' || svc === 'clarotv') svcBadge = '<span style="background:rgba(255,82,82,0.2); color:#ff5252; border:1px solid rgba(255,82,82,0.4); border-radius:6px; padding:2px 8px; font-size:10px; font-weight:800;">⚡ CLARO TV+</span>';
 
         if (isTv) {
           const tvCode = escapeHtml(item.tv_code || '------');

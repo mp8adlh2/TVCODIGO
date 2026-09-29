@@ -2008,7 +2008,7 @@ def get_online_users_data() -> dict:
             ACTIVE_CLIENT_HEARTBEATS.pop(k, None)
         
         users_list = []
-        by_service = {"netflix": 0, "hbo": 0, "crunchyroll": 0, "sky": 0, "disney": 0}
+        by_service = {"netflix": 0, "hbo": 0, "crunchyroll": 0, "sky": 0, "disney": 0, "claro": 0}
         
         for v in list(ACTIVE_CLIENT_HEARTBEATS.values()):
             idle_seconds = max(0, int(now - v.get("last_seen", now)))
@@ -2017,6 +2017,7 @@ def get_online_users_data() -> dict:
             elif svc in ["cr", "crunchy"]: svc = "crunchyroll"
             elif svc in ["sky+", "sky_tv"]: svc = "sky"
             elif svc in ["disney", "disney+", "disneyplus"]: svc = "disney"
+            elif svc in ["claro", "clarotv", "claro_tv"]: svc = "claro"
             if svc in by_service:
                 by_service[svc] += 1
             dev_str = v.get("device", "💻 Computador")
