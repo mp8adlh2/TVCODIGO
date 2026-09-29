@@ -344,28 +344,22 @@ def _realizar_login_playwright(username: str, password: str) -> Tuple[bool, dict
     with _CLARO_BROWSER_LOCK:
         try:
             with sync_playwright() as p:
+                common_args = [
+                    "--disable-blink-features=AutomationControlled",
+                    "--no-sandbox",
+                    "--disable-dev-shm-usage",
+                    "--disable-gpu",
+                    "--disable-setuid-sandbox"
+                ]
+
                 try:
-                    browser = p.chromium.launch(
-                        headless=True,
-                        args=[
-                            "--disable-blink-features=AutomationControlled",
-                            "--no-sandbox",
-                            "--disable-dev-shm-usage"
-                        ]
-                    )
+                    browser = p.chromium.launch(headless=True, args=common_args)
                 except Exception as launch_err:
                     err_msg = str(launch_err)
                     if "Executable doesn't exist" in err_msg or "playwright install" in err_msg:
                         push_claro_log("Navegador Playwright ausente detectado no momento da ativação. Baixando agora...", level="warn")
                         ensure_playwright_browsers()
-                        browser = p.chromium.launch(
-                            headless=True,
-                            args=[
-                                "--disable-blink-features=AutomationControlled",
-                                "--no-sandbox",
-                                "--disable-dev-shm-usage"
-                            ]
-                        )
+                        browser = p.chromium.launch(headless=True, args=common_args)
                     else:
                         raise launch_err
 
@@ -375,8 +369,17 @@ def _realizar_login_playwright(username: str, password: str) -> Tuple[bool, dict
                 )
                 page = context.new_page()
 
+                # Ignora imagens e vídeos pesados para carregar ultra-rápido no servidor
                 try:
-                    page.goto("https://www.clarotvmais.com.br/?redirectUri=/usuario/minha-conta/conectar-tv", wait_until="load", timeout=60000)
+                    page.route("**/*.{png,jpg,jpeg,webp,gif,mp4,mp3,avi}", lambda route: route.abort())
+                except Exception:
+                    pass
+
+                try:
+                    try:
+                        page.goto("https://www.clarotvmais.com.br/?redirectUri=/usuario/minha-conta/conectar-tv", wait_until="domcontentloaded", timeout=35000)
+                    except Exception as goto_err:
+                        push_claro_log(f"Aviso no goto Claro ({goto_err}), verificando se elementos já estão prontos no DOM...")
 
                     # Aceitar aviso de cookies LGPD se visível
                     try:
@@ -387,7 +390,7 @@ def _realizar_login_playwright(username: str, password: str) -> Tuple[bool, dict
                         pass
 
                     # Clica no botão de perfil/login
-                    btn_perfil = page.wait_for_selector('.user-avatar-button, .header-profile-login, [aria-label*="usuário deslogado"]', timeout=15000)
+                    btn_perfil = page.wait_for_selector('.user-avatar-button, .header-profile-login, [aria-label*="usuário deslogado"]', timeout=20000)
                     btn_perfil.click()
 
                     # Preenche usuário e senha
