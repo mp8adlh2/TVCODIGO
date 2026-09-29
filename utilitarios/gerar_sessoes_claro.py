@@ -42,10 +42,14 @@ def main(limit=5):
             existing_sessions.add(u_key)
             success_count += 1
             print(f"✅ SUCESSO! Sessão da conta {u} gerada e salva com validade até 2027! ({success_count}/{limit})")
-            time.sleep(2)
+            time.sleep(4)
         else:
             print(f"❌ Falha na conta {u}: {msg}")
-            time.sleep(1)
+            if "score is too low" in str(msg).lower():
+                print("⏳ reCAPTCHA pediu pausa preventiva. Aguardando 10 segundos...")
+                time.sleep(10)
+            else:
+                time.sleep(2)
 
     print(f"\n=======================================================")
     print(f" Concluído! Total de sessões ativas prontas: {len(claro_service._CLARO_SESSIONS_CACHE)}")

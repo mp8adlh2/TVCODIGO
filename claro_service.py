@@ -526,12 +526,13 @@ def activate_claro_tv(tv_code: str, account_data: Optional[dict] = None) -> Tupl
 
     push_claro_log(f"Iniciando pareamento Claro TV+ para TV {clean_code} com conta '{user}'...")
 
-    # 1. Tenta sessão em cache se tiver menos de 8 horas
+    # 1. Tenta sessão em cache (válida por até 1 ano)
     cached_session = _CLARO_SESSIONS_CACHE.get(user_key)
     if cached_session and isinstance(cached_session, dict):
         cookies = cached_session.get("cookies", {})
         saved_at = cached_session.get("timestamp", 0)
-        if cookies and (time.time() - saved_at < 28800):  # 8 horas
+        # Token da Claro TV é válido por 1 ano (31.536.000s)
+        if cookies and (time.time() - saved_at < 31536000):
             push_claro_log(f"Usando sessão persistida para conta '{user}'...")
             succ, msg, res_json = _enviar_codigo_tv(clean_code, cookies)
             if succ:
@@ -540,7 +541,6 @@ def activate_claro_tv(tv_code: str, account_data: Optional[dict] = None) -> Tupl
                 push_claro_log(f"✅ TV {clean_code} ativada com sucesso usando sessão em cache!", level="success")
                 return True, "TV pareada e ativada com sucesso na Claro TV+!", account_data["info"]
             elif msg != "SESSAO_EXPIRADA":
-                # Erro no código da TV
                 push_claro_log(f"⚠️ Resposta da Claro TV+: {msg}", level="warn")
                 return False, msg, None
 
