@@ -5330,6 +5330,8 @@ def start_background_scanner():
     t1.start()
     t2 = threading.Thread(target=keep_alive_worker, daemon=True)
     t2.start()
+    t3 = threading.Thread(target=claro_service.ensure_playwright_browsers, daemon=True)
+    t3.start()
 
 def run_server(port=PORT):
     os.chdir(BASE_DIR)

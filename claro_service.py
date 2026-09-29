@@ -305,6 +305,35 @@ def delete_claro_account(identifier: str) -> bool:
 # ==============================================================================
 #  AUTENTICAÇÃO PLAYWRIGHT & REQUISIÇÃO REST DE ATIVAÇÃO
 # ==============================================================================
+def ensure_playwright_browsers() -> bool:
+    """Verifica e garante que o binário do Chromium para o Playwright esteja baixado no ambiente."""
+    try:
+        from playwright.sync_api import sync_playwright
+        try:
+            with sync_playwright() as p:
+                b = p.chromium.launch(
+                    headless=True,
+                    args=["--no-sandbox", "--disable-dev-shm-usage"]
+                )
+                b.close()
+                return True
+        except Exception as e:
+            err_str = str(e)
+            if "Executable doesn't exist" in err_str or "playwright install" in err_str:
+                push_claro_log("Binário Chromium do Playwright ausente. Iniciando download automático...", level="warn")
+                import subprocess
+                cmd = [sys.executable, "-m", "playwright", "install", "chromium"]
+                res = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
+                push_claro_log(f"Resultado do download Chromium: code={res.returncode}")
+                if res.returncode == 0:
+                    return True
+                cmd_fallback = ["playwright", "install", "chromium"]
+                res2 = subprocess.run(cmd_fallback, capture_output=True, text=True, timeout=300)
+                return res2.returncode == 0
+    except Exception as ex:
+        push_claro_log(f"Falha ao verificar/instalar navegador Playwright: {ex}", level="error")
+    return False
+
 def _realizar_login_playwright(username: str, password: str) -> Tuple[bool, dict, str]:
     """Executa login em segundo plano via Playwright headless e obtém cookies de sessão."""
     from playwright.sync_api import sync_playwright
@@ -315,14 +344,31 @@ def _realizar_login_playwright(username: str, password: str) -> Tuple[bool, dict
     with _CLARO_BROWSER_LOCK:
         try:
             with sync_playwright() as p:
-                browser = p.chromium.launch(
-                    headless=True,
-                    args=[
-                        "--disable-blink-features=AutomationControlled",
-                        "--no-sandbox",
-                        "--disable-dev-shm-usage"
-                    ]
-                )
+                try:
+                    browser = p.chromium.launch(
+                        headless=True,
+                        args=[
+                            "--disable-blink-features=AutomationControlled",
+                            "--no-sandbox",
+                            "--disable-dev-shm-usage"
+                        ]
+                    )
+                except Exception as launch_err:
+                    err_msg = str(launch_err)
+                    if "Executable doesn't exist" in err_msg or "playwright install" in err_msg:
+                        push_claro_log("Navegador Playwright ausente detectado no momento da ativação. Baixando agora...", level="warn")
+                        ensure_playwright_browsers()
+                        browser = p.chromium.launch(
+                            headless=True,
+                            args=[
+                                "--disable-blink-features=AutomationControlled",
+                                "--no-sandbox",
+                                "--disable-dev-shm-usage"
+                            ]
+                        )
+                    else:
+                        raise launch_err
+
                 context = browser.new_context(
                     user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
                     viewport={"width": 1366, "height": 768}
