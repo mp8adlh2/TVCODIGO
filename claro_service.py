@@ -26,7 +26,14 @@ def push_claro_log(msg: str, level: str = "info"):
             kernel_logger.push_kernel_log(msg, level=level)
         except Exception:
             pass
-    print(f"[*] [Claro TV+] {msg}", flush=True)
+    try:
+        print(f"[*] [Claro TV+] {msg}", flush=True)
+    except Exception:
+        try:
+            safe = str(msg).encode('ascii', errors='replace').decode('ascii')
+            print(f"[*] [Claro TV+] {safe}", flush=True)
+        except Exception:
+            pass
 
 # ==============================================================================
 #  CONFIGURAÇÕES & DIRETÓRIOS
@@ -384,43 +391,34 @@ def _realizar_login_playwright(username: str, password: str) -> Tuple[bool, dict
                 page = context.new_page()
 
                 try:
-                    try:
-                        page.goto("https://www.clarotvmais.com.br/?redirectUri=/usuario/minha-conta/conectar-tv", wait_until="domcontentloaded", timeout=40000)
-                    except Exception as goto_err:
-                        push_claro_log(f"Aviso no goto Claro ({goto_err}), prosseguindo...")
+                    page.goto("https://www.clarotvmais.com.br/?redirectUri=/usuario/minha-conta/conectar-tv", wait_until="load", timeout=60000)
+                    page.wait_for_timeout(2000)
 
-                    # 1. Trata e remove banner de LGPD / OneTrust para não cobrir a tela
+                    # Trata aviso de cookies da LGPD se visível
                     try:
                         cookie_btn = page.locator('#onetrust-accept-btn-handler')
                         if cookie_btn.is_visible(timeout=2000):
                             cookie_btn.click()
                     except Exception:
                         pass
-                    try:
-                        page.evaluate("() => { const ot = document.getElementById('onetrust-consent-sdk'); if (ot) ot.remove(); }")
-                    except Exception:
-                        pass
 
-                    # 2. Se o campo #username ainda não estiver visível, clica no avatar/login
-                    if not page.locator('#username').is_visible():
-                        try:
-                            page.locator('.user-avatar-button, .header-profile-login').first.click(timeout=6000)
-                        except Exception:
-                            page.evaluate('''() => {
-                                const btn = document.querySelector('.user-avatar-button, .header-profile-login, [class*="avatar"]');
-                                if (btn) btn.click();
-                            }''')
+                    # Aguarda com certeza o botão de login aparecer e clica
+                    btn_perfil = page.wait_for_selector('.user-avatar-button, .header-profile-login, [aria-label*="usuário deslogado"]', timeout=15000)
+                    btn_perfil.click()
 
-                    # 3. Preenche usuário e senha
-                    user_field = page.wait_for_selector('#username', timeout=15000)
+                    # Preenche usuário e senha
+                    user_field = page.wait_for_selector('#username', timeout=10000)
                     user_field.fill(username)
 
                     pwd_field = page.wait_for_selector('#password', timeout=10000)
                     pwd_field.fill(password)
 
-                    # 4. Envia o formulário e aguarda a autenticação
+                    # Aguarda 1.5s para reCAPTCHA Enterprise processar os dados do usuário
+                    page.wait_for_timeout(1500)
+
+                    # Aguarda resposta da API de autenticação
                     with page.expect_response(lambda r: "/avsclient/1.2/user/auth" in r.url, timeout=30000) as response_info:
-                        page.locator('input[type="submit"], button[type="submit"]').first.click()
+                        page.locator('input[type="submit"]').first.click()
 
                     auth_response = response_info.value
                     status_http = auth_response.status
