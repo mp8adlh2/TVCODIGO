@@ -198,15 +198,17 @@ def load_all_claro_accounts(force_reload: bool = False) -> List[dict]:
         except Exception as e:
             push_claro_log(f"Erro ao ler contas de {f}: {e}", level="warn")
 
-    # Ordenação justa Round-Robin:
-    # 1. Contas ativas (fora do cooldown de erro)
-    # 2. Contas menos recentemente usadas
+    # Ordenação inteligente:
+    # 1. Contas saudáveis (não em erro)
+    # 2. Contas com sessão autenticada ativa no cache (ativação em 1s)
+    # 3. Rotação justa (round-robin por menos recentemente usada)
     def sort_key(acc):
         u = acc["user"].lower()
         dead_score = 1000000000.0 if is_account_dead(u) else 0.0
-        used_score = 100000.0 if u in USED_CLARO_ACCOUNTS else 0.0
+        has_session = 0.0 if (u in _CLARO_SESSIONS_CACHE and _CLARO_SESSIONS_CACHE[u].get("cookies")) else 500000.0
+        used_score = 10000.0 if u in USED_CLARO_ACCOUNTS else 0.0
         last_used = CLARO_LAST_USED_AT.get(u, 0.0)
-        return (dead_score, used_score, last_used)
+        return (dead_score, has_session, used_score, last_used)
 
     accounts.sort(key=sort_key)
     return accounts
