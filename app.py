@@ -1565,7 +1565,8 @@ def infer_services_for_password(pwd: str, name: str = "", current_svcs: list = N
     
     🛡️ BLINDAGEM:
     - Senhas novas configuradas pelo Admin com Disney+ liberam Disney+.
-    - Senhas antigas de clientes e senhas mestres vendidas no passado NUNCA liberam Disney+.
+    - Senhas novas configuradas pelo Admin com Claro TV+ liberam Claro TV+.
+    - Senhas antigas de clientes NUNCA liberam Disney+ nem Claro TV+ automaticamente.
     - Senhas mestres exclusivas do dono (TVCODIGO ADMIN / ROOT / COFRE) liberam todos os 6.
     """
     p_low = clean_password_str(pwd).lower()
@@ -1651,9 +1652,11 @@ def infer_services_for_password(pwd: str, name: str = "", current_svcs: list = N
         return ["sky"]
     if 'disney#only' in p_low or 'disneyplus#only' in p_low or 'apenas disney' in n_low or 'somente disney' in n_low:
         return ["disney"]
+    if 'clarotv#only' in p_low or 'claro#only' in p_low or 'apenas claro' in n_low or 'somente claro' in n_low or 'apenas claro tv' in n_low:
+        return ["claro"]
 
     # 6. Senhas antigas ou sem lista explícita que contenham termos genéricos de "Tudo Liberado"
-    # (NUNCA liberam Disney+ automaticamente para senhas antigas de clientes!)
+    # 🔒 NUNCA liberam Disney+ nem Claro TV+ automaticamente para senhas antigas de clientes!
     if any(k in combined for k in [
         'vip#master', 'vip#all', 'cyber#stream', 'ativador#master',
         'master admin', 'tudo liberado', 'todos os 4', 'todos os 5'
@@ -1661,18 +1664,19 @@ def infer_services_for_password(pwd: str, name: str = "", current_svcs: list = N
         return ["netflix", "hbo", "crunchyroll", "sky"]
 
     # 7. Deteccao por palavras-chave no nome ou senha
+    # 🔒 BLINDAGEM: claro e disney NUNCA são detectados por palavra-chave para proteger acesso não autorizado!
     has_netflix = ('netflix' in combined or 'flix' in combined)
     has_hbo = ('hbo' in combined or 'max' in combined)
     has_crunchy = ('crunchy' in combined or 'anime' in combined)
     has_sky = ('sky' in combined)
-    has_disney = ('disney' in combined)
+    # NOTA: disney e claro são BLOQUEADOS propositalmente aqui — só liberam via config explícita do Admin
 
     detected = []
     if has_netflix: detected.append('netflix')
     if has_hbo: detected.append('hbo')
     if has_crunchy: detected.append('crunchyroll')
     if has_sky: detected.append('sky')
-    if has_disney: detected.append('disney')
+    # Claro TV+ e Disney+ NÃO são adicionados aqui automaticamente
 
     if detected:
         return detected
