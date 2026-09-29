@@ -23,6 +23,7 @@ import traceback
 import kernel_logger
 import gerenciador_seguranca
 import disney_service
+import claro_service
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -32,6 +33,7 @@ NETFLIX_COOKIES_FOLDER = os.path.join(BASE_DIR, "netflix")
 HBO_COOKIES_FOLDER = os.path.join(BASE_DIR, "hbomax")
 CRUNCHYROLL_COMBO_FOLDER = os.path.join(BASE_DIR, "combo")
 DISNEY_COOKIES_FOLDER = os.path.join(BASE_DIR, "disney")
+CLARO_COOKIES_FOLDER = os.path.join(BASE_DIR, "CLAROTV")
 HITS_FOLDER = os.path.join(BASE_DIR, "hits")
 USED_REGISTRY_FILE = os.path.join(BASE_DIR, "used_cookies.json")
 COOKIES_BUNDLE_FILE = os.path.join(BASE_DIR, "cookies_bundle.json")
@@ -54,12 +56,13 @@ def read_secure_text(fpath: str) -> str:
         return ""
 
 def sync_cookies_bundle():
-    """Garante suporte total às pastas netflix, hbomax, combo, disney e hits sem ressuscitar arquivos excluídos."""
+    """Garante suporte total às pastas netflix, hbomax, combo, disney, clarotv e hits sem ressuscitar arquivos excluídos."""
     os.makedirs(NETFLIX_COOKIES_FOLDER, exist_ok=True)
     os.makedirs(HITS_FOLDER, exist_ok=True)
     os.makedirs(HBO_COOKIES_FOLDER, exist_ok=True)
     os.makedirs(CRUNCHYROLL_COMBO_FOLDER, exist_ok=True)
     os.makedirs(DISNEY_COOKIES_FOLDER, exist_ok=True)
+    os.makedirs(CLARO_COOKIES_FOLDER, exist_ok=True)
     
     old_netflix = os.path.join(BASE_DIR, "cookies")
     old_hbo = os.path.join(BASE_DIR, "cookies 01")
@@ -124,11 +127,19 @@ def sync_cookies_bundle():
                         if not os.path.exists(dest):
                             with open(dest, 'w', encoding='utf-8', errors='ignore') as out:
                                 out.write(content)
+
+                current_claro = glob.glob(os.path.join(CLARO_COOKIES_FOLDER, "*.txt"))
+                if not current_claro:
+                    for fname, content in data.get("claro", {}).items():
+                        dest = os.path.join(CLARO_COOKIES_FOLDER, fname)
+                        if not os.path.exists(dest):
+                            with open(dest, 'w', encoding='utf-8', errors='ignore') as out:
+                                out.write(content)
         except Exception:
             pass
 
     # 2. Salva todos os cookies locais atuais no arquivo único cookies_bundle.json
-    bundle = {"netflix": {}, "hbo": {}, "crunchyroll": {}, "disney": {}}
+    bundle = {"netflix": {}, "hbo": {}, "crunchyroll": {}, "disney": {}, "claro": {}}
     if os.path.exists(NETFLIX_COOKIES_FOLDER):
         for f in glob.glob(os.path.join(NETFLIX_COOKIES_FOLDER, "*.txt")) + glob.glob(os.path.join(NETFLIX_COOKIES_FOLDER, "*.json")):
             try:
@@ -162,6 +173,15 @@ def sync_cookies_bundle():
                 c = read_secure_text(f)
                 if c:
                     bundle["disney"][os.path.basename(f)] = c
+            except Exception:
+                pass
+
+    if os.path.exists(CLARO_COOKIES_FOLDER):
+        for f in glob.glob(os.path.join(CLARO_COOKIES_FOLDER, "*.txt")):
+            try:
+                c = read_secure_text(f)
+                if c:
+                    bundle["claro"][os.path.basename(f)] = c
             except Exception:
                 pass
 
@@ -226,7 +246,7 @@ def record_history_entry(service: str, filename: str, email: str, tv_code: str, 
 import tv2
 
 USED_NETFLIX_COOKIES = tv2.USED_COOKIES
-ACTIVE_PLAN = {"netflix": "TODOS", "hbo": "TODOS", "crunchyroll": "TODOS", "sky": "TODOS", "disney": "TODOS"}
+ACTIVE_PLAN = {"netflix": "TODOS", "hbo": "TODOS", "crunchyroll": "TODOS", "sky": "TODOS", "disney": "TODOS", "claro": "TODOS"}
 
 # Cache de cookies testados e validados ao vivo
 VALID_NETFLIX_LOCK = threading.Lock()
@@ -1122,6 +1142,41 @@ def start_background_disney_validator():
 start_background_disney_validator()
 
 # ═══════════════════════════════════════════════════════════════
+#  INTEGRAÇÃO CLARO TV+ (PLAYWRIGHT HEADLESS & SESSÕES AVANÇADAS)
+# ═══════════════════════════════════════════════════════════════
+CURRENT_CLARO_READY: Optional[dict] = None
+
+def get_all_claro_accounts() -> List[dict]:
+    return claro_service.load_all_claro_accounts()
+
+def find_claro_valid_account() -> Optional[dict]:
+    return claro_service.find_claro_valid_account()
+
+def select_claro_account_by_identifier(identifier: str) -> Optional[dict]:
+    return claro_service.select_claro_account_by_identifier(identifier)
+
+def activate_claro_tv(tv_code: str, account_data: Optional[dict] = None) -> Tuple[bool, str, Optional[dict]]:
+    return claro_service.activate_claro_tv(tv_code, account_data)
+
+def start_background_claro_validator():
+    def _worker():
+        global CURRENT_CLARO_READY
+        time.sleep(2)
+        while True:
+            try:
+                acc = find_claro_valid_account()
+                if acc and CURRENT_CLARO_READY is None:
+                    CURRENT_CLARO_READY = acc
+            except Exception:
+                pass
+            time.sleep(30)
+
+    t = threading.Thread(target=_worker, daemon=True)
+    t.start()
+
+start_background_claro_validator()
+
+# ═══════════════════════════════════════════════════════════════
 #  SERVIDOR HTTP & API REST
 # ═══════════════════════════════════════════════════════════════
 # ═══════════════════════════════════════════════════════════════
@@ -1257,6 +1312,7 @@ def sync_passwords_text_file(passwords_list: List[dict]):
             if "crunchyroll" in servicos: svc_tags.append("🟠 Crunchyroll")
             if "sky" in servicos: svc_tags.append("🔵 Sky+")
             if "disney" in servicos: svc_tags.append("🏰 Disney+")
+            if "claro" in servicos: svc_tags.append("⚡ Claro TV+")
             
             libera_str = " | ".join(svc_tags) if svc_tags else "Nenhum"
             
@@ -1443,9 +1499,10 @@ def extract_passwords_from_text_files() -> List[dict]:
         "SENHA_SKY.txt": (["sky"], "Senha Oficial Sky+ / Sky TV", "Libera: sky"),
         "SENHA_CRUNCHYROLL.txt": (["crunchyroll"], "Senha Oficial Crunchyroll", "Libera: crunchyroll"),
         "SENHA_DISNEY.txt": (["disney"], "Senha Oficial Disney+", "Libera: disney"),
+        "SENHA_CLARO.txt": (["claro"], "Senha Oficial Claro TV+", "Libera: claro"),
         "SENHA_NETFLIX_HBO.txt": (["netflix", "hbo"], "Senha Oficial Duo (Netflix + HBO)", "Libera: netflix, hbo"),
-        "SENHA_ADMIN.txt": (["netflix", "hbo", "crunchyroll", "sky", "disney"], "Master Admin Titanium", "Libera todos os 5 serviços"),
-        "SENHA_COOKIES.txt": (["netflix", "hbo", "crunchyroll", "sky", "disney"], "Senha Cofre Root", "Libera todos os 5 serviços")
+        "SENHA_ADMIN.txt": (["netflix", "hbo", "crunchyroll", "sky", "disney", "claro"], "Master Admin Titanium", "Libera todos os 6 serviços"),
+        "SENHA_COOKIES.txt": (["netflix", "hbo", "crunchyroll", "sky", "disney", "claro"], "Senha Cofre Root", "Libera todos os 6 serviços")
     }
     extracted = []
     blacklisted = load_blacklisted_passwords()
@@ -1509,7 +1566,7 @@ def infer_services_for_password(pwd: str, name: str = "", current_svcs: list = N
     🛡️ BLINDAGEM:
     - Senhas novas configuradas pelo Admin com Disney+ liberam Disney+.
     - Senhas antigas de clientes e senhas mestres vendidas no passado NUNCA liberam Disney+.
-    - Senhas mestres exclusivas do dono (TVCODIGO ADMIN / ROOT / COFRE) liberam todos os 5.
+    - Senhas mestres exclusivas do dono (TVCODIGO ADMIN / ROOT / COFRE) liberam todos os 6.
     """
     p_low = clean_password_str(pwd).lower()
     n_low = str(name or "").lower()
@@ -1520,10 +1577,10 @@ def infer_services_for_password(pwd: str, name: str = "", current_svcs: list = N
         'tvcodigo#admin', 'admin#vault', 'admin#cookies', 'root#vip',
         'cyber#stream@2026$master*titanium', 'ativador#master@2026$stream*vip'
     ]):
-        return ["netflix", "hbo", "crunchyroll", "sky", "disney"]
+        return ["netflix", "hbo", "crunchyroll", "sky", "disney", "claro"]
 
     # 2. ⚡ SE A LISTA DE SERVIÇOS FOI CONFIGURADA EXPLICITAMENTE (Criada ou Editada pelo Painel Admin / Salva no JSON)
-    # A escolha do Administrador é SOBERANA! Se ele adicionou a Disney para a senha (seja antiga ou nova), a Disney É LIBERADA!
+    # A escolha do Administrador é SOBERANA! Se ele adicionou a Disney ou Claro para a senha, É LIBERADA!
     if current_svcs and isinstance(current_svcs, list):
         clean_svcs = []
         for s in current_svcs:
@@ -1538,6 +1595,8 @@ def infer_services_for_password(pwd: str, name: str = "", current_svcs: list = N
                 clean_svcs.append("sky")
             elif s_clean in ["disney", "disney+", "disneyplus", "disney_plus"] and "disney" not in clean_svcs:
                 clean_svcs.append("disney")
+            elif s_clean in ["claro", "clarotv", "claro_tv", "claro-tv", "claro+"] and "claro" not in clean_svcs:
+                clean_svcs.append("claro")
         
         if clean_svcs:
             return clean_svcs
@@ -1557,7 +1616,8 @@ def infer_services_for_password(pwd: str, name: str = "", current_svcs: list = N
         'crunchyroll#only@6274$orange*anime#mega*fan!2026': ['crunchyroll'],
         'skyplus#only@4918$blue*fibra#super*hd*tv!2026': ['sky'],
         'disney#only@2481$blue*magic!2026': ['disney'],
-        'disney#only@2481*magic!2026': ['disney'],
+        'clarotv#only@3914$red*fibra#stream*4k!2026': ['claro'],
+        'pass#claro': ['claro'],
         'stream#duo@4829$vip*matrix!2026': ['netflix', 'hbo'],
         'netflix#hbo#pass@9921$stream*lock!2026': ['netflix', 'hbo'],
         'shield#token@7971$premium*66!2026': ['netflix', 'hbo'],
@@ -1701,10 +1761,12 @@ def load_access_keys() -> List[dict]:
     # 5. Senhas vitais e históricas padrão do sistema (garantindo que nunca fiquem faltando ou liberando tudo)
     DEFAULT_KEYS = [
         {"senha": "VIP#MASTER@1444$4K*76!2026", "nome": "VIP Master 4K", "servicos": ["netflix", "hbo", "crunchyroll", "sky"], "descricao": "Libera os 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+ (Sem Disney+)"},
-        {"senha": "TVCODIGO#ADMIN@2026$MASTER*TITANIUM!ROOT#VIP", "nome": "Master Admin Titanium", "servicos": ["netflix", "hbo", "crunchyroll", "sky", "disney"], "descricao": "Libera todos os 5 serviços"},
-        {"senha": "ADMIN#VAULT@2026$COOKIE*BLINDADO#PROTECT*ROOT!VIP", "nome": "Senha Cofre Root", "servicos": ["netflix", "hbo", "crunchyroll", "sky", "disney"], "descricao": "Libera todos os 5 serviços"},
+        {"senha": "TVCODIGO#ADMIN@2026$MASTER*TITANIUM!ROOT#VIP", "nome": "Master Admin Titanium", "servicos": ["netflix", "hbo", "crunchyroll", "sky", "disney", "claro"], "descricao": "Libera todos os 6 serviços"},
+        {"senha": "ADMIN#VAULT@2026$COOKIE*BLINDADO#PROTECT*ROOT!VIP", "nome": "Senha Cofre Root", "servicos": ["netflix", "hbo", "crunchyroll", "sky", "disney", "claro"], "descricao": "Libera todos os 6 serviços"},
         {"senha": "DISNEY#ONLY@2481$BLUE*MAGIC!2026", "nome": "Apenas Disney+", "servicos": ["disney"], "descricao": "Libera apenas Disney+"},
         {"senha": "PASS#DISNEY", "nome": "Apenas Disney+", "servicos": ["disney"], "descricao": "Libera apenas Disney+"},
+        {"senha": "CLAROTV#ONLY@3914$RED*FIBRA#STREAM*4K!2026", "nome": "Apenas Claro TV+", "servicos": ["claro"], "descricao": "Libera apenas Claro TV+"},
+        {"senha": "PASS#CLARO", "nome": "Apenas Claro TV+", "servicos": ["claro"], "descricao": "Libera apenas Claro TV+"},
         {"senha": "DUO#STREAM@8831$NETFLIX*HBOMAX#PREMIUM*VIP!2026", "nome": "Senha Duo Netflix + HBO", "servicos": ["netflix", "hbo"], "descricao": "Libera: netflix, hbo"},
         {"senha": "CINEMA#PASS@7742$FLIX*MAX#HIGH*DEFINITION!2026", "nome": "Senha Duo VIP", "servicos": ["netflix", "hbo"], "descricao": "Libera: netflix, hbo"},
         {"senha": "VIP#SECURITY@8929$VIP*24!2026", "nome": "Cliente VIP", "servicos": ["netflix", "hbo"], "descricao": "Libera: netflix, hbo"},
@@ -1799,7 +1861,7 @@ def find_access_role(password: str) -> Optional[dict]:
         return {
             "senha": get_master_password(),
             "nome": "Master Admin Titanium",
-            "servicos": ["netflix", "hbo", "crunchyroll", "sky", "disney"]
+            "servicos": ["netflix", "hbo", "crunchyroll", "sky", "disney", "claro"]
         }
 
     # 3. Senha do Cofre / Gerenciador de Cookies
@@ -1807,7 +1869,7 @@ def find_access_role(password: str) -> Optional[dict]:
         return {
             "senha": get_cookie_admin_password(),
             "nome": "Administrador do Cofre",
-            "servicos": ["netflix", "hbo", "crunchyroll", "sky", "disney"]
+            "servicos": ["netflix", "hbo", "crunchyroll", "sky", "disney", "claro"]
         }
 
     # 4. Senhas padrão de conveniência administrativa (apenas senhas mestres reais)
@@ -1821,7 +1883,7 @@ def find_access_role(password: str) -> Optional[dict]:
         return {
             "senha": p_clean,
             "nome": "Master Admin (VIP)",
-            "servicos": ["netflix", "hbo", "crunchyroll", "sky", "disney"]
+            "servicos": ["netflix", "hbo", "crunchyroll", "sky", "disney", "claro"]
         }
 
     return None
@@ -1998,6 +2060,10 @@ def get_online_users_data() -> dict:
                         svc_badge = "hbo"
                     elif "crunchy" in svc_lower:
                         svc_badge = "crunchyroll"
+                    elif "disney" in svc_lower:
+                        svc_badge = "disney"
+                    elif "claro" in svc_lower:
+                        svc_badge = "claro"
                     else:
                         svc_badge = "netflix"
                     
@@ -2043,6 +2109,7 @@ _STATUS_ACCOUNTS_CACHE = {
     "crunchyroll": [],
     "sky": [],
     "disney": [],
+    "claro": [],
     "last_update": 0.0
 }
 _STATUS_CACHE_LOCK = threading.Lock()
@@ -2062,7 +2129,8 @@ def get_cached_status_accounts(max_age_seconds: float = 25.0):
                 _STATUS_ACCOUNTS_CACHE["hbo"],
                 _STATUS_ACCOUNTS_CACHE["crunchyroll"],
                 _STATUS_ACCOUNTS_CACHE["sky"],
-                _STATUS_ACCOUNTS_CACHE["disney"]
+                _STATUS_ACCOUNTS_CACHE["disney"],
+                _STATUS_ACCOUNTS_CACHE.get("claro", [])
             )
 
     try:
@@ -2090,15 +2158,21 @@ def get_cached_status_accounts(max_age_seconds: float = 25.0):
     except Exception:
         all_disney = _STATUS_ACCOUNTS_CACHE.get("disney", [])
 
+    try:
+        all_claro = get_all_claro_accounts()
+    except Exception:
+        all_claro = _STATUS_ACCOUNTS_CACHE.get("claro", [])
+
     with _STATUS_CACHE_LOCK:
         _STATUS_ACCOUNTS_CACHE["netflix"] = all_netflix
         _STATUS_ACCOUNTS_CACHE["hbo"] = all_hbo
         _STATUS_ACCOUNTS_CACHE["crunchyroll"] = all_cr
         _STATUS_ACCOUNTS_CACHE["sky"] = all_sky
         _STATUS_ACCOUNTS_CACHE["disney"] = all_disney
+        _STATUS_ACCOUNTS_CACHE["claro"] = all_claro
         _STATUS_ACCOUNTS_CACHE["last_update"] = time.time()
 
-    return all_netflix, all_hbo, all_cr, all_sky, all_disney
+    return all_netflix, all_hbo, all_cr, all_sky, all_disney, all_claro
 
 class AppRequestHandler(SimpleHTTPRequestHandler):
     def send_security_headers(self):
@@ -2200,6 +2274,8 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         services = session.get("services") or ["netflix"]
         if service in ["disneyplus", "disney+"]:
             service = "disney"
+        if service in ["clarotv", "claro_tv", "claro-tv", "claro+"]:
+            service = "claro"
         return service in services
 
     def _verify_admin_password_str(self, password: str) -> bool:
@@ -2813,10 +2889,10 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             pass
 
     def handle_api_status(self):
-        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY, CURRENT_CRUNCHYROLL_READY, CURRENT_SKY_READY, CURRENT_DISNEY_READY
+        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY, CURRENT_CRUNCHYROLL_READY, CURRENT_SKY_READY, CURRENT_DISNEY_READY, CURRENT_CLARO_READY
 
         try:
-            all_netflix, all_hbo, all_cr, all_sky, all_disney = get_cached_status_accounts()
+            all_netflix, all_hbo, all_cr, all_sky, all_disney, all_claro = get_cached_status_accounts()
 
             # ⚡ Seleção instantânea sem bloquear com chamadas HTTP síncronas na rota de status
             if CURRENT_NETFLIX_READY is None or (CURRENT_NETFLIX_READY and (CURRENT_NETFLIX_READY.get("file") in DEAD_NETFLIX_COOKIES or CURRENT_NETFLIX_READY.get("file") in tv2.DEAD_COOKIES)):
@@ -2838,11 +2914,15 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             if CURRENT_DISNEY_READY is None or (CURRENT_DISNEY_READY and CURRENT_DISNEY_READY.get("email", "").strip().lower() in disney_service.DEAD_DISNEY_ACCOUNTS):
                 if all_disney:
                     CURRENT_DISNEY_READY = all_disney[0]
+
+            if CURRENT_CLARO_READY is None or (CURRENT_CLARO_READY and CURRENT_CLARO_READY.get("user", "").strip().lower() in claro_service.DEAD_CLARO_ACCOUNTS):
+                if all_claro:
+                    CURRENT_CLARO_READY = all_claro[0]
         except Exception:
             try:
-                all_netflix, all_hbo, all_cr, all_sky, all_disney = _STATUS_ACCOUNTS_CACHE.get("netflix", []), _STATUS_ACCOUNTS_CACHE.get("hbo", []), _STATUS_ACCOUNTS_CACHE.get("crunchyroll", []), _STATUS_ACCOUNTS_CACHE.get("sky", []), _STATUS_ACCOUNTS_CACHE.get("disney", [])
+                all_netflix, all_hbo, all_cr, all_sky, all_disney, all_claro = _STATUS_ACCOUNTS_CACHE.get("netflix", []), _STATUS_ACCOUNTS_CACHE.get("hbo", []), _STATUS_ACCOUNTS_CACHE.get("crunchyroll", []), _STATUS_ACCOUNTS_CACHE.get("sky", []), _STATUS_ACCOUNTS_CACHE.get("disney", []), _STATUS_ACCOUNTS_CACHE.get("claro", [])
             except Exception:
-                all_netflix, all_hbo, all_cr, all_sky, all_disney = [], [], [], [], []
+                all_netflix, all_hbo, all_cr, all_sky, all_disney, all_claro = [], [], [], [], [], []
 
         active_nf_file = CURRENT_NETFLIX_READY.get("file", "") if CURRENT_NETFLIX_READY else ""
         active_nf_bname = os.path.basename(active_nf_file) if active_nf_file else ""
@@ -2917,11 +2997,26 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             for e in all_disney[:30] if isinstance(e, dict) and e.get("email") != active_disney_email
         ]
 
+        active_claro_user = CURRENT_CLARO_READY.get("user", "") if CURRENT_CLARO_READY else ""
+
+        claro_queue = [
+            {
+                "filename": e.get("user") or e.get("file", "contas.txt"),
+                "email": e.get("info", {}).get("email", e.get("user", "Claro TV+ VIP")),
+                "country": e.get("info", {}).get("country", "BR"),
+                "plan": e.get("info", {}).get("plan", "Claro TV+ 4K"),
+                "is_selected": (e.get("user") == active_claro_user),
+                "is_verified": e.get("validated", False)
+            }
+            for e in all_claro[:30] if isinstance(e, dict) and e.get("user") != active_claro_user
+        ]
+
         nf_count = len(all_netflix)
         hbo_count = len(all_hbo)
         cr_count = len(all_cr)
         sky_count = len(all_sky)
         disney_count = len(all_disney)
+        claro_count = len(all_claro)
 
         res = {
             "netflix": {
@@ -2963,6 +3058,14 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 "account": CURRENT_DISNEY_READY.get("info") if CURRENT_DISNEY_READY else None,
                 "cookie_name": CURRENT_DISNEY_READY.get("email") if CURRENT_DISNEY_READY else None,
                 "cookie_queue": disney_queue
+            },
+            "claro": {
+                "total_in_vault": claro_count,
+                "available_count": claro_count,
+                "has_account": CURRENT_CLARO_READY is not None,
+                "account": CURRENT_CLARO_READY.get("info") if CURRENT_CLARO_READY else None,
+                "cookie_name": CURRENT_CLARO_READY.get("user") if CURRENT_CLARO_READY else None,
+                "cookie_queue": claro_queue
             },
             "local_ip": get_local_ip(),
             "port": PORT
@@ -3026,6 +3129,12 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 em = CURRENT_DISNEY_READY["email"].strip().lower()
                 disney_service.DISNEY_LAST_USED_AT[em] = now_ts
             CURRENT_DISNEY_READY = find_disney_valid_account()
+        elif service in ['claro', 'clarotv', 'claro_tv']:
+            if CURRENT_CLARO_READY and CURRENT_CLARO_READY.get("user"):
+                u = CURRENT_CLARO_READY["user"].strip().lower()
+                claro_service.CLARO_LAST_USED_AT[u] = now_ts
+                claro_service.USED_CLARO_ACCOUNTS.add(u)
+            CURRENT_CLARO_READY = find_claro_valid_account()
         else:
             if CURRENT_HBO_READY and CURRENT_HBO_READY.get("file"):
                 f = CURRENT_HBO_READY["file"]
@@ -3036,7 +3145,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         self.handle_api_status()
 
     def handle_api_activate(self):
-        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY, CURRENT_CRUNCHYROLL_READY, CURRENT_SKY_READY, CURRENT_DISNEY_READY
+        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY, CURRENT_CRUNCHYROLL_READY, CURRENT_SKY_READY, CURRENT_DISNEY_READY, CURRENT_CLARO_READY
         try:
             content_length = int(self.headers.get('Content-Length', 0))
             post_data = self.rfile.read(content_length)
@@ -3049,7 +3158,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
             # 🔒 Bloqueio rigoroso se a senha não tiver acesso a este streaming
             if not self.is_service_allowed(service):
-                s_name = "Crunchyroll" if service == 'crunchyroll' else ("HBO Max" if service == 'hbo' else ("Sky+" if service == 'sky' else ("Disney+" if service in ['disney', 'disneyplus'] else "Netflix")))
+                s_name = "Crunchyroll" if service == 'crunchyroll' else ("HBO Max" if service == 'hbo' else ("Sky+" if service == 'sky' else ("Disney+" if service in ['disney', 'disneyplus'] else ("Claro TV+" if service in ['claro', 'clarotv', 'claro_tv'] else "Netflix"))))
                 return self.send_json_response({
                     "success": False,
                     "message": f"🔒 VOCÊ NÃO TEM ACESSO A ESSE CONTEÚDO! ({s_name} bloqueado pela sua senha)."
@@ -3351,6 +3460,44 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                         "success": False,
                         "message": msg or "Falha ao parear com a TV Disney+. Verifique o código exibido na tela."
                     })
+            elif service in ['claro', 'clarotv', 'claro_tv']:
+                kernel_logger.push_kernel_log(f"⚡ [Claro TV+] Conexão iniciada para TV {clean_code}...")
+
+                req_account_id = req.get('account') or req.get('email') or req.get('user') or req.get('cookie_name')
+                chosen_acc = None
+                if req_account_id and isinstance(req_account_id, str) and req_account_id.strip():
+                    chosen_acc = select_claro_account_by_identifier(req_account_id.strip())
+
+                if not chosen_acc:
+                    chosen_acc = CURRENT_CLARO_READY or find_claro_valid_account()
+
+                if not chosen_acc:
+                    kernel_logger.push_kernel_log("❌ [Claro TV+] Nenhuma conta Claro TV+ disponível no estoque.", level="error")
+                    return self.send_json_response({
+                        "success": False,
+                        "message": "Nenhuma conta Claro TV+ disponível no momento. Adicione mais contas no painel de administração."
+                    }, 404)
+
+                CURRENT_CLARO_READY = chosen_acc
+                success, msg, info = activate_claro_tv(clean_code, chosen_acc)
+                account_info = info or chosen_acc.get("info", {})
+
+                if success:
+                    kernel_logger.push_kernel_log(f"⚡ [Claro TV+] [SUCESSO] TV {clean_code} pareada e ativada com sucesso!", level="success")
+                    record_history_entry("Claro TV+", chosen_acc.get("file", "contas.txt"), account_info.get("email", chosen_acc.get("user", "")), clean_code, account_info.get("plan", "Claro TV+ 4K"), "Sucesso")
+                    CURRENT_CLARO_READY = find_claro_valid_account()
+                    return self.send_json_response({
+                        "success": True,
+                        "message": msg or "TV Claro TV+ pareada e ativada com sucesso!",
+                        "account": account_info
+                    })
+                else:
+                    kernel_logger.push_kernel_log(f"⚠️ [Claro TV+] Falha na ativação: {msg}", level="warn")
+                    CURRENT_CLARO_READY = find_claro_valid_account()
+                    return self.send_json_response({
+                        "success": False,
+                        "message": msg or "Falha ao parear com a TV Claro TV+. Verifique o código exibido na tela."
+                    })
             else:
                 return self.send_json_response({"success": False, "message": "Serviço desconhecido."}, 400)
         except Exception as e:
@@ -3419,6 +3566,8 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             query_service = 'sky'
         elif 'service=disney' in self.path:
             query_service = 'disney'
+        elif 'service=claro' in self.path or 'service=clarotv' in self.path:
+            query_service = 'claro'
 
         if not self.is_service_allowed(query_service):
             return self.send_json_response({
@@ -3511,6 +3660,29 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 })
             items.sort(key=lambda x: not x["is_selected"])
             items = items[:150]
+        elif query_service in ['claro', 'clarotv']:
+            try:
+                all_accounts = get_all_claro_accounts()
+            except Exception:
+                all_accounts = []
+            active_claro_user = CURRENT_CLARO_READY.get("user", "") if CURRENT_CLARO_READY else ""
+            items = []
+            for entry in all_accounts:
+                if not isinstance(entry, dict):
+                    continue
+                acc = entry.get("info", {})
+                user = acc.get("email") or entry.get("user") or entry.get("file", "contas.txt")
+                items.append({
+                    "filename": user,
+                    "email": user,
+                    "country": acc.get("country", "BR"),
+                    "plan": acc.get("plan", "Claro TV+ 4K"),
+                    "is_selected": (entry.get("user") == active_claro_user),
+                    "is_verified": entry.get("validated", False),
+                    "is_dead": False
+                })
+            items.sort(key=lambda x: not x["is_selected"])
+            items = items[:150]
         else:
             all_accounts = get_all_hbo_accounts()
             active_file = os.path.basename(CURRENT_HBO_READY["file"]) if CURRENT_HBO_READY else ""
@@ -3532,12 +3704,12 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         self.send_json_response({
             "service": query_service,
             "total_valid": len(items),
-            "active_cookie": active_email if (query_service in ['crunchyroll', 'sky', 'disney']) else active_file,
+            "active_cookie": active_claro_user if (query_service in ['claro', 'clarotv']) else (active_email if (query_service in ['crunchyroll', 'sky', 'disney']) else active_file),
             "cookies": items
         })
 
     def handle_api_select_cookie(self):
-        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY, CURRENT_CRUNCHYROLL_READY, CURRENT_SKY_READY, CURRENT_DISNEY_READY
+        global CURRENT_NETFLIX_READY, CURRENT_HBO_READY, CURRENT_CRUNCHYROLL_READY, CURRENT_SKY_READY, CURRENT_DISNEY_READY, CURRENT_CLARO_READY
         content_length = int(self.headers.get('Content-Length', 0))
         post_data = self.rfile.read(content_length)
         req = json.loads(post_data.decode('utf-8')) if post_data else {}
@@ -3598,6 +3770,18 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 })
             else:
                 return self.send_json_response({"success": False, "message": "Não foi possível selecionar esta conta Disney+."}, 404)
+        elif service in ['claro', 'clarotv', 'claro_tv']:
+            selected = select_claro_account_by_identifier(filename)
+            if selected:
+                CURRENT_CLARO_READY = selected
+                return self.send_json_response({
+                    "success": True,
+                    "message": f"Conta Claro TV+ {selected['info'].get('email', filename)} selecionada!",
+                    "account": selected["info"],
+                    "cookie_name": selected.get("user", filename)
+                })
+            else:
+                return self.send_json_response({"success": False, "message": "Não foi possível selecionar esta conta Claro TV+."}, 404)
         else:
             selected = select_hbo_cookie_by_filename(filename)
             if selected:
@@ -3635,9 +3819,14 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         saved_crunchyroll = 0
         saved_sky = 0
         saved_disney = 0
+        saved_claro = 0
 
         def detect_service_for_text(text: str, filename: str = "") -> str:
             lower = (text + " " + filename).lower()
+            if 'claro' in lower or 'clarotv' in lower:
+                return 'claro'
+            if global_service in ['claro', 'clarotv', 'claro_tv']:
+                return 'claro'
             if 'disney' in lower:
                 return 'disney'
             if global_service in ['disney', 'disneyplus']:
@@ -3690,6 +3879,8 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 target_dir = CRUNCHYROLL_COMBO_FOLDER
             elif svc in ['disney', 'disneyplus']:
                 target_dir = DISNEY_COOKIES_FOLDER
+            elif svc in ['claro', 'clarotv', 'claro_tv']:
+                target_dir = CLARO_COOKIES_FOLDER
             elif svc in ['hbo', 'hbomax', 'max']:
                 target_dir = HBO_COOKIES_FOLDER
             else:
@@ -3716,6 +3907,11 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     saved_disney += max(1, len(c_lines))
                     disney_service.DEAD_DISNEY_ACCOUNTS.clear()
                     disney_service.USED_DISNEY_ACCOUNTS.clear()
+                elif svc in ['claro', 'clarotv', 'claro_tv']:
+                    c_lines = [l for l in content.splitlines() if (':' in l or '|' in l) and not l.strip().startswith('#')]
+                    saved_claro += max(1, len(c_lines))
+                    claro_service.DEAD_CLARO_ACCOUNTS.clear()
+                    claro_service.USED_CLARO_ACCOUNTS.clear()
                 elif svc in ['hbo', 'hbomax', 'max']:
                     saved_hbo += 1
                     USED_HBO_COOKIES.discard(fpath)
@@ -3812,6 +4008,11 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 saved_disney += added
                 disney_service.DEAD_DISNEY_ACCOUNTS.clear()
                 disney_service.USED_DISNEY_ACCOUNTS.clear()
+            elif svc in ['claro', 'clarotv', 'claro_tv']:
+                added, _ = claro_service.add_claro_combos(raw_text)
+                saved_claro += added
+                claro_service.DEAD_CLARO_ACCOUNTS.clear()
+                claro_service.USED_CLARO_ACCOUNTS.clear()
             elif svc == 'crunchyroll' or ((':' in raw_text or '|' in raw_text) and '@' in raw_text and 'netflix' not in raw_text.lower() and 'securentflxid' not in raw_text.lower()):
                 save_cookie_content('crunchyroll', 'contas_crunchyroll.txt', raw_text, append_mode=True)
             else:
@@ -3836,7 +4037,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                         if chunk:
                             save_cookie_content(svc, f"batch_cookie_{timestamp}_{b_idx + 1}.txt", chunk)
 
-        total_saved = saved_netflix + saved_hbo + saved_crunchyroll + saved_sky + saved_disney
+        total_saved = saved_netflix + saved_hbo + saved_crunchyroll + saved_sky + saved_disney + saved_claro
         if total_saved > 0:
             global SERVER_DATA_VERSION
             SERVER_DATA_VERSION = time.time()
@@ -3858,6 +4059,8 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 CURRENT_SKY_READY = find_sky_valid_account()
             elif saved_disney:
                 CURRENT_DISNEY_READY = find_disney_valid_account()
+            elif saved_claro:
+                CURRENT_CLARO_READY = find_claro_valid_account()
             elif saved_netflix:
                 CURRENT_NETFLIX_READY = find_netflix_fast_cookie()
             elif saved_crunchyroll:
@@ -3873,8 +4076,9 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 "saved_crunchyroll": saved_crunchyroll,
                 "saved_sky": saved_sky,
                 "saved_disney": saved_disney,
+                "saved_claro": saved_claro,
                 "server_version": SERVER_DATA_VERSION,
-                "message": f"🎉 {total_saved} conta(s)/cookie(s) importado(s) com sucesso! ({saved_netflix} Netflix, {saved_hbo} HBO Max, {saved_crunchyroll} Crunchyroll, {saved_sky} Sky, {saved_disney} Disney+)"
+                "message": f"🎉 {total_saved} conta(s)/cookie(s) importado(s) com sucesso! ({saved_netflix} Netflix, {saved_hbo} HBO Max, {saved_crunchyroll} Crunchyroll, {saved_sky} Sky, {saved_disney} Disney+, {saved_claro} Claro TV+)"
             })
         else:
             return self.send_json_response({"success": False, "message": "Nenhum arquivo ou texto válido enviado."}, 400)
@@ -3972,11 +4176,13 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         all_cr = get_all_crunchyroll_accounts()
         all_sky = get_all_sky_accounts()
         all_disney = get_all_disney_accounts()
+        all_claro = get_all_claro_accounts()
         verified_nf = [a for a in all_nf if a.get("validated")]
         verified_hbo = [a for a in all_hbo if a.get("validated")]
         verified_cr = [a for a in all_cr if a.get("validated")]
         verified_sky = [a for a in all_sky if a.get("validated")]
         verified_disney = [a for a in all_disney if a.get("validated")]
+        verified_claro = [a for a in all_claro if a.get("validated")]
         return self.send_json_response({
             "netflix_total": len(all_nf),
             "netflix_verified": len(verified_nf),
@@ -3993,6 +4199,9 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             "disney_total": len(all_disney),
             "disney_verified": len(verified_disney),
             "disney_dead": len(disney_service.DEAD_DISNEY_ACCOUNTS),
+            "claro_total": len(all_claro),
+            "claro_verified": len(verified_claro),
+            "claro_dead": len(claro_service.DEAD_CLARO_ACCOUNTS),
             "keep_alive": True,
             "timestamp": time.time()
         })
@@ -4007,6 +4216,8 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             query_service = 'sky'
         elif 'service=disney' in self.path:
             query_service = 'disney'
+        elif 'service=claro' in self.path or 'service=clarotv' in self.path:
+            query_service = 'claro'
 
         items = []
         if query_service == 'netflix':
@@ -4081,6 +4292,20 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     "filename": entry.get("file", "combo.txt"),
                     "email": email,
                     "plan": acc.get("plan") or "Disney+ Standard",
+                    "country": acc.get("country", "BR"),
+                    "is_ready": is_ready
+                })
+        elif query_service == 'claro':
+            all_claro = get_all_claro_accounts()
+            for idx, entry in enumerate(all_claro):
+                acc = entry.get("info", {})
+                user = acc.get("email") or entry.get("user") or f"claro_{idx+1}"
+                is_ready = bool(CURRENT_CLARO_READY and CURRENT_CLARO_READY.get("user") == entry.get("user"))
+                items.append({
+                    "id": user,
+                    "filename": entry.get("file", "contas.txt"),
+                    "email": user,
+                    "plan": acc.get("plan") or "Claro TV+ 4K Box",
                     "country": acc.get("country", "BR"),
                     "is_ready": is_ready
                 })
@@ -4295,6 +4520,18 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 disney_service.USED_DISNEY_ACCOUNTS.discard(em)
             CURRENT_DISNEY_READY = find_disney_valid_account()
 
+        elif service in ["claro", "clarotv"]:
+            deleted = claro_service.delete_claro_account(target_id)
+            for em in target_emails:
+                if claro_service.delete_claro_account(em):
+                    deleted = True
+            claro_service.DEAD_CLARO_ACCOUNTS.discard(target_id)
+            claro_service.USED_CLARO_ACCOUNTS.discard(target_id)
+            for em in target_emails:
+                claro_service.DEAD_CLARO_ACCOUNTS.discard(em)
+                claro_service.USED_CLARO_ACCOUNTS.discard(em)
+            CURRENT_CLARO_READY = find_claro_valid_account()
+
         # Atualiza o arquivo único cookies_bundle.json removendo a conta permanentemente
         try:
             if os.path.exists(COOKIES_BUNDLE_FILE):
@@ -4302,13 +4539,14 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 if bundle_raw:
                     bundle_data = json.loads(bundle_raw)
                     bundle_modified = False
-                    for svc_key in ["netflix", "hbo", "crunchyroll", "sky", "disney"]:
+                    for svc_key in ["netflix", "hbo", "crunchyroll", "sky", "disney", "claro"]:
                         if svc_key in bundle_data and isinstance(bundle_data[svc_key], dict):
                             if (svc_key == "netflix" and service in ["netflix", "nf"]) or \
                                (svc_key == "hbo" and service in ["hbo", "hbomax", "max"]) or \
                                (svc_key == "crunchyroll" and service in ["crunchyroll", "cr"]) or \
                                (svc_key == "sky" and service in ["sky", "skymais"]) or \
-                               (svc_key == "disney" and service in ["disney", "disneyplus"]):
+                               (svc_key == "disney" and service in ["disney", "disneyplus"]) or \
+                               (svc_key == "claro" and service in ["claro", "clarotv"]):
                                 to_del = []
                                 for k, val_content in bundle_data[svc_key].items():
                                     val_str = str(val_content) if val_content else ""
@@ -4461,6 +4699,39 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 "message": f"🎉 Todos os {deleted_count} arquivos da Crunchyroll foram removidos com sucesso!"
             })
 
+        elif service in ["claro", "clarotv"]:
+            if os.path.exists(CLARO_COOKIES_FOLDER):
+                for f in glob.glob(os.path.join(CLARO_COOKIES_FOLDER, "*")):
+                    try:
+                        import stat
+                        os.chmod(f, stat.S_IWRITE | stat.S_IREAD)
+                        os.remove(f)
+                        deleted_count += 1
+                    except Exception:
+                        pass
+
+            if os.path.exists(COOKIES_BUNDLE_FILE):
+                try:
+                    with open(COOKIES_BUNDLE_FILE, 'r', encoding='utf-8', errors='ignore') as bf:
+                        b_data = json.load(bf)
+                    if isinstance(b_data, dict):
+                        b_data["claro"] = {}
+                        with open(COOKIES_BUNDLE_FILE, 'w', encoding='utf-8', errors='ignore') as bf:
+                            json.dump(b_data, bf)
+                except Exception:
+                    pass
+
+            claro_service.DEAD_CLARO_ACCOUNTS.clear()
+            claro_service.USED_CLARO_ACCOUNTS.clear()
+            CURRENT_CLARO_READY = None
+
+            SERVER_DATA_VERSION = time.time()
+            return self.send_json_response({
+                "success": True,
+                "deleted_count": deleted_count,
+                "message": f"🎉 Todos os {deleted_count} arquivos da Claro TV+ foram removidos com sucesso!"
+            })
+
         return self.send_json_response({"success": False, "message": "Serviço não suportado para limpeza total."}, 400)
 
     def handle_api_get_online_users(self):
@@ -4489,7 +4760,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         cliente = str(req.get("nome", "") or req.get("cliente", "") or req.get("role_name", "") or "").strip()
         custom_pwd = str(req.get("senha", "") or req.get("password", "") or "").strip()
 
-        # 🎯 Suporte direto a seleção personalizada múltipla (ex: Netflix + HBO Max + Sky + Disney)
+        # 🎯 Suporte direto a seleção personalizada múltipla (ex: Netflix + HBO Max + Sky + Disney + Claro)
         req_services = req.get("servicos") or req.get("services")
         servicos = []
         if isinstance(req_services, list) and len(req_services) > 0:
@@ -4505,6 +4776,8 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     servicos.append("sky")
                 elif s_clean in ["disney", "disney+", "disneyplus", "disney_plus"] and "disney" not in servicos:
                     servicos.append("disney")
+                elif s_clean in ["claro", "clarotv", "claro_tv", "claro+"] and "claro" not in servicos:
+                    servicos.append("claro")
 
         if not servicos:
             # Fallback para string de plano pré-definido
@@ -4523,17 +4796,23 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             elif plan in ["disney", "disneyplus", "disney+"]:
                 servicos = ["disney"]
                 plan_label = "Disney+"
+            elif plan in ["claro", "clarotv", "claro+"]:
+                servicos = ["claro"]
+                plan_label = "Claro TV+"
             elif plan in ["combo_nf_hbo", "duo"]:
                 servicos = ["netflix", "hbo"]
                 plan_label = "Duo (Netflix + HBO)"
+            elif plan in ["all_with_claro", "todos_6", "all_6", "all"]:
+                servicos = ["netflix", "hbo", "crunchyroll", "sky", "disney", "claro"]
+                plan_label = "VIP Master Total (Todos os 6)"
             elif plan in ["all_with_disney", "todos_5"]:
                 servicos = ["netflix", "hbo", "crunchyroll", "sky", "disney"]
                 plan_label = "VIP Master (Todos os 5)"
             else:
-                servicos = ["netflix", "hbo", "crunchyroll", "sky"]
-                plan_label = "VIP (4 Originais)"
+                servicos = ["netflix", "hbo", "crunchyroll", "sky", "disney", "claro"]
+                plan_label = "VIP Master Total"
         else:
-            names_map = {"netflix": "Netflix", "hbo": "HBO Max", "crunchyroll": "Crunchyroll", "sky": "Sky+", "disney": "Disney+"}
+            names_map = {"netflix": "Netflix", "hbo": "HBO Max", "crunchyroll": "Crunchyroll", "sky": "Sky+", "disney": "Disney+", "claro": "Claro TV+"}
             plan_label = " + ".join([names_map.get(s, s.upper()) for s in servicos])
 
         new_pwd = custom_pwd if custom_pwd else generate_strong_cyber_password()
@@ -5019,6 +5298,8 @@ def background_verifier_loop():
             get_verified_hbo_cookies(min_count=4)
             get_verified_crunchyroll_accounts(min_count=2)
             get_all_sky_accounts()
+            get_all_disney_accounts()
+            get_all_claro_accounts()
         except Exception:
             pass
         time.sleep(12)
@@ -5056,7 +5337,7 @@ def run_server(port=PORT):
     start_background_scanner()
     with ThreadedTCPServer(("", port), AppRequestHandler) as httpd:
         print(f"\n=======================================================")
-        print(f" 🚀 ATIVADOR NETFLIX, HBO MAX, CRUNCHYROLL & SKY+ INICIADO COM SUCESSO!")
+        print(f" 🚀 ATIVADOR NETFLIX, HBO MAX, CRUNCHYROLL, SKY+, DISNEY+ & CLARO TV+ INICIADO COM SUCESSO!")
         print(f" ⚡ Anti-Sleep 24h: ATIVADO (Render sempre acordado)")
         print(f" 💻 Acesse no PC:      http://localhost:{port}")
         print(f" 📱 Acesse no Celular: http://{local_ip}:{port}  (no mesmo Wi-Fi)")

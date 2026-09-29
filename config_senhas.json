@@ -373,6 +373,30 @@
       "criado_em": null,
       "expira_em": null,
       "expira_em_formatado": null
+    },
+    {
+      "senha": "CLAROTV#ONLY@3914$RED*FIBRA#STREAM*4K!2026",
+      "nome": "Senha Oficial Claro TV+",
+      "servicos": [
+        "claro"
+      ],
+      "descricao": "Libera: claro",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "PASS#CLARO",
+      "nome": "Apenas Claro TV+",
+      "servicos": [
+        "claro"
+      ],
+      "descricao": "Libera apenas Claro TV+",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
     }
   ]
 }

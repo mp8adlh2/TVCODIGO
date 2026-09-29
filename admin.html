@@ -191,7 +191,7 @@
     /* Stats Grid */
     .admin-stats-grid {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(7, 1fr);
       gap: 8px;
     }
     .admin-stat-chip {
@@ -216,7 +216,7 @@
     /* Service Selector */
     .admin-service-radios {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(6, 1fr);
       gap: 8px;
     }
     .admin-radio-btn {
@@ -241,6 +241,7 @@
     .admin-radio-btn.active-cr { border-color: #f47521; background: rgba(244, 117, 33, 0.15); color: #fff; }
     .admin-radio-btn.active-sky { border-color: #00A0E3; background: rgba(0, 160, 227, 0.15); color: #fff; }
     .admin-radio-btn.active-disney { border-color: #00d2ff; background: rgba(0, 210, 255, 0.18); color: #fff; }
+    .admin-radio-btn.active-claro { border-color: #e51d25; background: rgba(229, 29, 37, 0.2); color: #fff; }
 
     /* Dropzone & Textareas */
     .admin-dropzone {
@@ -495,6 +496,15 @@
       border-color: rgba(0, 210, 255, 0.6);
       background: rgba(0, 210, 255, 0.12);
       box-shadow: 0 6px 22px rgba(0, 210, 255, 0.2);
+    }
+    .quick-app-label.app-claro {
+      background: rgba(229, 29, 37, 0.04);
+      border-color: rgba(229, 29, 37, 0.25);
+    }
+    .quick-app-label.app-claro:hover, .quick-app-label.app-claro:has(input:checked) {
+      border-color: rgba(229, 29, 37, 0.6);
+      background: rgba(229, 29, 37, 0.14);
+      box-shadow: 0 6px 22px rgba(229, 29, 37, 0.2);
     }
     .quick-input-box {
       background: rgba(7, 11, 20, 0.7);
@@ -879,6 +889,10 @@
           <div class="admin-stat-chip-lbl">🏰 Disney+</div>
         </div>
         <div class="admin-stat-chip">
+          <div class="admin-stat-chip-num" id="stat-claro-count" style="color: #ff5252;">--</div>
+          <div class="admin-stat-chip-lbl">⚡ Claro TV+</div>
+        </div>
+        <div class="admin-stat-chip">
           <div class="admin-stat-chip-num" style="color: #00ff66;">24/7</div>
           <div class="admin-stat-chip-lbl">⚡ Anti-Sleep</div>
         </div>
@@ -903,6 +917,9 @@
         </button>
         <button type="button" class="admin-radio-btn" id="target-disney" onclick="setTarget('disney')">
           🏰 DISNEY+
+        </button>
+        <button type="button" class="admin-radio-btn" id="target-claro" onclick="setTarget('claro')">
+          ⚡ CLARO TV+
         </button>
       </div>
 
@@ -1030,6 +1047,33 @@
           <textarea class="admin-textarea" id="disney-combos" placeholder="usuario1@gmail.com:senha123&#10;usuario2@hotmail.com:senha456"></textarea>
           <button type="button" class="btn-unlock" onclick="submitDisneyCombos()" style="background: linear-gradient(135deg, #00d2ff, #0a2fe4); color: #fff; padding: 11px;">
             🚀 IMPORTAR LOTE DISNEY+ ⚡
+          </button>
+        </div>
+      </div>
+
+      <!-- ⚡ CLARO TV+ SECTION -->
+      <div id="section-claro" style="display: none; flex-direction: column; gap: 12px;">
+        <div style="background: rgba(229, 29, 37, 0.12); border: 1px solid rgba(229, 29, 37, 0.4); border-radius: 12px; padding: 10px 14px;">
+          <div style="font-weight: 800; color: #ff5252; font-size: 13.5px;">⚡ GERENCIADOR DE CONTAS CLARO TV+ (PLAYWRIGHT & AVS API)</div>
+          <div style="font-size: 11px; color: var(--text-dim);">Adicione contas individuais ou cole combos em lote (usuario:senha / CPF:senha). Ativação direta na Smart TV via código de 6 dígitos.</div>
+        </div>
+
+        <div style="background: rgba(0,0,0,0.4); border: 1px solid var(--panel-border); border-radius: 12px; padding: 12px; display: flex; flex-direction: column; gap: 8px;">
+          <div style="font-size: 11px; color: #ff5252; font-weight: 800;">⚡ Adicionar 1 Conta Claro TV+ Rápida:</div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+            <input type="text" id="claro-email" placeholder="CPF ou Usuário Claro" style="background: rgba(0,0,0,0.6); border: 1px solid var(--panel-border); border-radius: 8px; padding: 8px 10px; color: #fff; font-size: 12px;">
+            <input type="text" id="claro-pass" placeholder="Senha Minha Claro" style="background: rgba(0,0,0,0.6); border: 1px solid var(--panel-border); border-radius: 8px; padding: 8px 10px; color: #fff; font-size: 12px;">
+          </div>
+          <button type="button" class="btn-unlock" onclick="submitSingleClaro()" style="background: linear-gradient(135deg, #e51d25, #ff5252); color: #fff; padding: 10px; font-size: 12.5px;">
+            ➕ SALVAR E HABILITAR CONTA CLARO TV+ ⚡
+          </button>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <div style="font-size: 11px; color: var(--text-dim); font-weight: 700;">Ou cole várias contas (usuario:senha / CPF:senha):</div>
+          <textarea class="admin-textarea" id="claro-combos" placeholder="12345678900:minhasenha123&#10;usuario@email.com:senha456"></textarea>
+          <button type="button" class="btn-unlock" onclick="submitClaroCombos()" style="background: linear-gradient(135deg, #e51d25, #b30000); color: #fff; padding: 11px;">
+            🚀 IMPORTAR LOTE CLARO TV+ ⚡
           </button>
         </div>
       </div>
@@ -1219,6 +1263,14 @@
               </div>
               <input type="checkbox" id="quick-app-disney" style="accent-color: #00d2ff; width: 18px; height: 18px; cursor: pointer;">
             </label>
+
+            <label class="quick-app-label app-claro" title="Liberar acesso ao Claro TV+">
+              <div style="display: flex; align-items: center; gap: 9px;">
+                <span style="width: 7px; height: 7px; border-radius: 50%; background: #e51d25; box-shadow: 0 0 8px #e51d25; display: inline-block;"></span>
+                <span style="color: #ff5252; font-weight: 800; font-size: 12.5px; letter-spacing: 0.4px;">CLARO TV+</span>
+              </div>
+              <input type="checkbox" id="quick-app-claro" checked style="accent-color: #e51d25; width: 18px; height: 18px; cursor: pointer;">
+            </label>
           </div>
         </div>
 
@@ -1371,6 +1423,10 @@
               <label class="pwd-checkbox-pill">
                 <input type="checkbox" id="chk-disney" style="accent-color: #00d2ff; width: 17px; height: 17px;">
                 <span>🏰 DISNEY+</span>
+              </label>
+              <label class="pwd-checkbox-pill">
+                <input type="checkbox" id="chk-claro" checked style="accent-color: #e51d25; width: 17px; height: 17px;">
+                <span>⚡ CLARO TV+</span>
               </label>
             </div>
           </div>
@@ -1903,11 +1959,15 @@
       document.getElementById('target-cr').className = (svc === 'crunchyroll' || svc === 'cr') ? 'admin-radio-btn active-cr' : 'admin-radio-btn';
       document.getElementById('target-sky').className = (svc === 'sky') ? 'admin-radio-btn active-sky' : 'admin-radio-btn';
       document.getElementById('target-disney').className = (svc === 'disney') ? 'admin-radio-btn active-disney' : 'admin-radio-btn';
+      const claroBtn = document.getElementById('target-claro');
+      if (claroBtn) claroBtn.className = (svc === 'claro' || svc === 'clarotv') ? 'admin-radio-btn active-claro' : 'admin-radio-btn';
 
       document.getElementById('section-cookies').style.display = (svc === 'netflix' || svc === 'hbomax' || svc === 'hbo') ? 'flex' : 'none';
       document.getElementById('section-crunchyroll').style.display = (svc === 'crunchyroll' || svc === 'cr') ? 'flex' : 'none';
       document.getElementById('section-sky').style.display = (svc === 'sky') ? 'flex' : 'none';
       document.getElementById('section-disney').style.display = (svc === 'disney') ? 'flex' : 'none';
+      const secClaro = document.getElementById('section-claro');
+      if (secClaro) secClaro.style.display = (svc === 'claro' || svc === 'clarotv') ? 'flex' : 'none';
 
       if (svc === 'sky') loadSkyTokens();
       loadTopicAccounts();
@@ -1924,6 +1984,8 @@
           document.getElementById('stat-sky-count').innerText = data.sky_verified || data.sky_total || '0';
           const disEl = document.getElementById('stat-disney-count');
           if (disEl) disEl.innerText = data.disney_verified || data.disney_total || '0';
+          const claroEl = document.getElementById('stat-claro-count');
+          if (claroEl) claroEl.innerText = data.claro_verified || data.claro_total || '0';
         }
       } catch (e) {}
     }
@@ -1946,7 +2008,9 @@
         'crunchyroll': '🟠 Crunchyroll',
         'cr': '🟠 Crunchyroll',
         'sky': '🔵 Sky+ / Sky TV',
-        'disney': '🏰 Disney+'
+        'disney': '🏰 Disney+',
+        'claro': '⚡ Claro TV+',
+        'clarotv': '⚡ Claro TV+'
       };
       titleEl.innerText = svcLabels[currentTarget] || currentTarget.toUpperCase();
 
@@ -2085,7 +2149,9 @@
         'hbo': 'HBO MAX',
         'hbomax': 'HBO MAX',
         'crunchyroll': 'CRUNCHYROLL',
-        'sky': 'SKY+'
+        'sky': 'SKY+',
+        'disney': 'DISNEY+',
+        'claro': 'CLARO TV+'
       };
       const label = svcNames[svc] || svc.toUpperCase();
 
@@ -2299,6 +2365,69 @@
           msg.style.color = '#00ff66';
           msg.innerText = data.message || '🎉 Combos Disney+ importados!';
           document.getElementById('disney-combos').value = '';
+          loadStats();
+          loadTopicAccounts();
+        } else {
+          msg.style.color = '#ff4d5a';
+          msg.innerText = data.message || 'Erro ao importar.';
+        }
+      } catch (e) {
+        msg.style.color = '#ff4d5a';
+        msg.innerText = 'Erro de conexão.';
+      }
+    }
+
+    async function submitSingleClaro() {
+      const user = document.getElementById('claro-email').value.trim();
+      const pass = document.getElementById('claro-pass').value.trim();
+      const msg = document.getElementById('upload-msg');
+      if (!user || !pass) {
+        alert('Preencha usuário/CPF e senha da Claro TV+.');
+        return;
+      }
+      msg.style.color = '#ffd700';
+      msg.innerText = 'Salvando conta Claro TV+...';
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/upload-cookies`, {
+          method: 'POST',
+          headers: getAdminHeaders(),
+          body: JSON.stringify({ service: 'claro', user: user, password: pass })
+        });
+        const data = await res.json();
+        if (data.success) {
+          msg.style.color = '#00ff66';
+          msg.innerText = '🎉 Conta Claro TV+ adicionada!';
+          document.getElementById('claro-email').value = '';
+          document.getElementById('claro-pass').value = '';
+          loadStats();
+          loadTopicAccounts();
+        } else {
+          msg.style.color = '#ff4d5a';
+          msg.innerText = data.message || 'Erro ao salvar conta.';
+        }
+      } catch (e) {
+        msg.style.color = '#ff4d5a';
+        msg.innerText = 'Erro de conexão.';
+      }
+    }
+
+    async function submitClaroCombos() {
+      const rawText = document.getElementById('claro-combos').value.trim();
+      const msg = document.getElementById('upload-msg');
+      if (!rawText) return;
+      msg.style.color = '#ffd700';
+      msg.innerText = 'Importando contas Claro TV+...';
+      try {
+        const res = await fetch(`${API_BASE}/api/admin/upload-cookies`, {
+          method: 'POST',
+          headers: getAdminHeaders(),
+          body: JSON.stringify({ service: 'claro', raw_text: rawText })
+        });
+        const data = await res.json();
+        if (data.success) {
+          msg.style.color = '#00ff66';
+          msg.innerText = data.message || '🎉 Contas Claro TV+ importadas!';
+          document.getElementById('claro-combos').value = '';
           loadStats();
           loadTopicAccounts();
         } else {
@@ -2677,11 +2806,12 @@
       if (document.getElementById('quick-app-crunchyroll')?.checked) svcs.push('crunchyroll');
       if (document.getElementById('quick-app-sky')?.checked) svcs.push('sky');
       if (document.getElementById('quick-app-disney')?.checked) svcs.push('disney');
+      if (document.getElementById('quick-app-claro')?.checked) svcs.push('claro');
       return svcs;
     }
 
     function setQuickAppsAll(state) {
-      ['quick-app-netflix', 'quick-app-hbo', 'quick-app-crunchyroll', 'quick-app-sky', 'quick-app-disney'].forEach(id => {
+      ['quick-app-netflix', 'quick-app-hbo', 'quick-app-crunchyroll', 'quick-app-sky', 'quick-app-disney', 'quick-app-claro'].forEach(id => {
         const el = document.getElementById(id);
         if (el) el.checked = state;
       });
@@ -2943,6 +3073,7 @@
         const badgeCr = (allowed.includes('crunchyroll') || allowed.includes('cr')) ? '<span style="background:rgba(244,117,33,0.15); color:#fb923c; border:1px solid rgba(244,117,33,0.35); border-radius:6px; padding:2px 8px; font-size:10px; font-weight:800; display:inline-flex; align-items:center; gap:4px;"><span style="width:5px;height:5px;border-radius:50%;background:#F47521;"></span>Crunchyroll</span>' : '';
         const badgeSky = allowed.includes('sky') ? '<span style="background:rgba(0,160,227,0.15); color:#38bdf8; border:1px solid rgba(0,160,227,0.35); border-radius:6px; padding:2px 8px; font-size:10px; font-weight:800; display:inline-flex; align-items:center; gap:4px;"><span style="width:5px;height:5px;border-radius:50%;background:#00A0E3;"></span>Sky+</span>' : '';
         const badgeDisney = allowed.includes('disney') ? '<span style="background:rgba(0,210,255,0.15); color:#38e1ff; border:1px solid rgba(0,210,255,0.35); border-radius:6px; padding:2px 8px; font-size:10px; font-weight:800; display:inline-flex; align-items:center; gap:4px;"><span style="width:5px;height:5px;border-radius:50%;background:#00d2ff;"></span>Disney+</span>' : '';
+        const badgeClaro = (allowed.includes('claro') || allowed.includes('clarotv')) ? '<span style="background:rgba(229,29,37,0.15); color:#ff5252; border:1px solid rgba(229,29,37,0.35); border-radius:6px; padding:2px 8px; font-size:10px; font-weight:800; display:inline-flex; align-items:center; gap:4px;"><span style="width:5px;height:5px;border-radius:50%;background:#e51d25;"></span>Claro TV+</span>' : '';
 
         // 📅 Cálculo de Validade e Badge de Status
         const expTs = item.expira_em;
@@ -3003,7 +3134,7 @@
                 <span style="font-size: 13px; opacity: 0.7;">🔑</span>
                 <input type="text" readonly value="${escapeHtml(pwd)}" onclick="this.select(); copyPasswordDirect(this.value, this);" title="Clique para selecionar e copiar automaticamente" style="background: rgba(12,18,32,0.7); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 8px; padding: 6px 12px; color: #38bdf8; font-family: var(--font-mono); font-size: 13px; font-weight: 700; width: 100%; cursor: pointer;" />
               </div>
-              <div style="display: flex; gap: 6px; flex-wrap: wrap;">${badgeNf} ${badgeHbo} ${badgeCr} ${badgeSky} ${badgeDisney}</div>
+              <div style="display: flex; gap: 6px; flex-wrap: wrap;">${badgeNf} ${badgeHbo} ${badgeCr} ${badgeSky} ${badgeDisney} ${badgeClaro}</div>
             </div>
           </div>
         `;
@@ -3067,11 +3198,13 @@
       const chkCr = document.getElementById('chk-crunchyroll');
       const chkSky = document.getElementById('chk-sky');
       const chkDisney = document.getElementById('chk-disney');
+      const chkClaro = document.getElementById('chk-claro');
       if (chkNf) chkNf.checked = allowed.includes('netflix');
       if (chkHbo) chkHbo.checked = allowed.includes('hbo') || allowed.includes('hbomax');
       if (chkCr) chkCr.checked = allowed.includes('crunchyroll') || allowed.includes('cr');
       if (chkSky) chkSky.checked = allowed.includes('sky');
       if (chkDisney) chkDisney.checked = allowed.includes('disney');
+      if (chkClaro) chkClaro.checked = allowed.includes('claro') || allowed.includes('clarotv');
 
       const submitBtn = document.getElementById('btn-save-pwd-main');
       if (submitBtn) {
@@ -3451,7 +3584,9 @@
         'cr': '🟠 Crunchyroll',
         'sky': '🔵 Sky+',
         'disney': '🏰 Disney+',
-        'disneyplus': '🏰 Disney+'
+        'disneyplus': '🏰 Disney+',
+        'claro': '⚡ Claro TV+',
+        'clarotv': '⚡ Claro TV+'
       };
       const streamingsStr = allowed.map(s => streamingsMap[s] || s.toUpperCase()).join(', ');
 
@@ -3521,6 +3656,7 @@
       if (document.getElementById('chk-crunchyroll')?.checked) allowed.push('crunchyroll');
       if (document.getElementById('chk-sky')?.checked) allowed.push('sky');
       if (document.getElementById('chk-disney')?.checked) allowed.push('disney');
+      if (document.getElementById('chk-claro')?.checked) allowed.push('claro');
 
       if (!allowed.length) {
         if (msg) {

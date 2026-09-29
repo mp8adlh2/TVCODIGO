@@ -115,6 +115,26 @@
       --matrix-color: #00d2ff;
     }
 
+    body[data-service="claro"] {
+      --accent-color: #e51d25;
+      --accent-rgb: 229, 29, 37;
+      --accent-glow: rgba(229, 29, 37, 0.45);
+      --accent-glow-subtle: rgba(229, 29, 37, 0.14);
+      --accent-gradient: linear-gradient(135deg, #e51d25 0%, #ff3b30 100%);
+      --accent-gradient-hover: linear-gradient(135deg, #ff3b30 0%, #ff6b6b 100%);
+      
+      --bg-base: #0a0404;
+      --panel-bg: rgba(24, 10, 10, 0.82);
+      --panel-border: rgba(229, 29, 37, 0.25);
+      --panel-border-hover: rgba(229, 29, 37, 0.60);
+      --panel-border-glass: rgba(255, 255, 255, 0.08);
+      
+      --text-bright: #ffffff;
+      --text-dim: #f3b2b5;
+      --text-dark: #743538;
+      --matrix-color: #e51d25;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -417,8 +437,8 @@
     /* ======================================================== */
     .service-switcher {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 8px;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 6px;
       background: rgba(4, 8, 18, 0.65);
       border: 1px solid var(--panel-border-glass);
       border-radius: 22px;
@@ -438,7 +458,7 @@
       justify-content: center;
       gap: 6px;
       font-family: var(--font-display);
-      font-size: 12.5px;
+      font-size: 12px;
       font-weight: 800;
       letter-spacing: 0.4px;
       color: var(--text-dim);
@@ -490,6 +510,14 @@
       border-color: rgba(255, 255, 255, 0.25);
       color: #ffffff;
       box-shadow: 0 6px 24px rgba(0, 210, 255, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+      transform: scale(1.02);
+    }
+
+    .service-tab.active-claro {
+      background: var(--accent-gradient);
+      border-color: rgba(255, 255, 255, 0.25);
+      color: #ffffff;
+      box-shadow: 0 6px 24px rgba(229, 29, 37, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.4);
       transform: scale(1.02);
     }
 
@@ -1343,6 +1371,10 @@
     .login-chip.disney .login-chip-dot { background: #00d2ff; box-shadow: 0 0 8px #00d2ff; }
     .login-chip.disney:hover { border-color: #00d2ff; box-shadow: 0 0 16px rgba(0, 210, 255, 0.3); color: #fff; }
 
+    .login-chip.claro { border-color: rgba(229, 29, 37, 0.35); }
+    .login-chip.claro .login-chip-dot { background: #e51d25; box-shadow: 0 0 8px #e51d25; }
+    .login-chip.claro:hover { border-color: #e51d25; box-shadow: 0 0 16px rgba(229, 29, 37, 0.3); color: #fff; }
+
     /* 🛡️ Hero Emblem */
     .login-orbital-wrap {
       position: relative;
@@ -1948,7 +1980,7 @@
         white-space: nowrap;
       }
       .service-switcher {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 6px;
       }
       .service-tab {
@@ -2003,7 +2035,7 @@
         </div>
         <div class="brand-info">
           <h1 class="brand-title">STREAM ACTIVATOR <span class="brand-title-badge">PRO</span></h1>
-          <p class="brand-subtitle">Smart TV Pairing Hub &bull; Netflix &bull; HBO Max &bull; Crunchyroll &bull; Sky+</p>
+          <p class="brand-subtitle">Smart TV Pairing Hub &bull; Netflix &bull; HBO Max &bull; Crunchyroll &bull; Sky+ &bull; Disney+ &bull; Claro TV+</p>
         </div>
       </div>
     </header>
@@ -2050,6 +2082,10 @@
       <div class="service-tab" id="tab-disney" onclick="event.stopPropagation(); switchService('disney');">
         <span>🏰 DISNEY+</span>
         <span class="tab-lock-indicator" id="lock-disney" style="display:none;">🔒</span>
+      </div>
+      <div class="service-tab" id="tab-claro" onclick="event.stopPropagation(); switchService('claro');">
+        <span>⚡ CLARO TV+</span>
+        <span class="tab-lock-indicator" id="lock-claro" style="display:none;">🔒</span>
       </div>
     </div>
 
@@ -2185,6 +2221,7 @@
         <span class="login-chip cr"><span class="login-chip-dot"></span>CRUNCHYROLL</span>
         <span class="login-chip sky"><span class="login-chip-dot"></span>SKY+</span>
         <span class="login-chip disney"><span class="login-chip-dot"></span>DISNEY+</span>
+        <span class="login-chip claro"><span class="login-chip-dot"></span>CLARO TV+</span>
       </div>
 
       <div class="login-orbital-wrap">
@@ -2829,8 +2866,8 @@
 
     async function transmitActivation() {
       const reqLen = (currentService === 'netflix' || currentService === 'disney') ? 8 : 6;
-      const sName = currentService === 'netflix' ? 'Netflix' : (currentService === 'crunchyroll' ? 'Crunchyroll' : (currentService === 'sky' ? 'Sky+' : (currentService === 'disney' ? 'Disney+' : 'HBO Max')));
-      const sNameUpper = currentService === 'netflix' ? 'NETFLIX' : (currentService === 'crunchyroll' ? 'CRUNCHYROLL' : (currentService === 'sky' ? 'SKY+' : (currentService === 'disney' ? 'DISNEY+' : 'HBO MAX')));
+      const sName = currentService === 'netflix' ? 'Netflix' : (currentService === 'crunchyroll' ? 'Crunchyroll' : (currentService === 'sky' ? 'Sky+' : (currentService === 'disney' ? 'Disney+' : (currentService === 'claro' ? 'Claro TV+' : 'HBO Max'))));
+      const sNameUpper = currentService === 'netflix' ? 'NETFLIX' : (currentService === 'crunchyroll' ? 'CRUNCHYROLL' : (currentService === 'sky' ? 'SKY+' : (currentService === 'disney' ? 'DISNEY+' : (currentService === 'claro' ? 'CLARO TV+' : 'HBO MAX'))));
 
       if (!currentCode || currentCode.length < reqLen) {
         soundError();
@@ -2960,6 +2997,8 @@
       if (currentService === 'hbo') svcName = 'HBO MAX';
       else if (currentService === 'crunchyroll') svcName = 'CRUNCHYROLL';
       else if (currentService === 'sky') svcName = 'SKY+ / SKY TV';
+      else if (currentService === 'disney') svcName = 'DISNEY+';
+      else if (currentService === 'claro') svcName = 'CLARO TV+';
       document.getElementById('modal-service-name').innerText = svcName;
       document.getElementById('modal-paired-code').innerText = code;
       document.getElementById('modal-account-email').innerText = account.email || 'Conta Autenticada';
@@ -2974,7 +3013,7 @@
     }
 
     function applyAllowedServicesUI() {
-      const allSvcs = ['netflix', 'hbo', 'crunchyroll', 'sky', 'disney'];
+      const allSvcs = ['netflix', 'hbo', 'crunchyroll', 'sky', 'disney', 'claro'];
       allSvcs.forEach(s => {
         const tab = document.getElementById(`tab-${s}`);
         const lock = document.getElementById(`lock-${s}`);
@@ -3009,14 +3048,15 @@
       const isCr = (service === 'crunchyroll');
       const isSky = (service === 'sky');
       const isDisney = (service === 'disney');
+      const isClaro = (service === 'claro');
 
       document.body.setAttribute('data-service', service);
       document.documentElement.setAttribute('data-theme', service);
 
-      ['netflix', 'hbo', 'crunchyroll', 'sky', 'disney'].forEach(s => {
+      ['netflix', 'hbo', 'crunchyroll', 'sky', 'disney', 'claro'].forEach(s => {
         const tab = document.getElementById(`tab-${s}`);
         if (tab) {
-          tab.classList.remove('active-netflix', 'active-hbo', 'active-crunchyroll', 'active-sky', 'active-disney', 'active');
+          tab.classList.remove('active-netflix', 'active-hbo', 'active-crunchyroll', 'active-sky', 'active-disney', 'active-claro', 'active');
           if (s === service) tab.classList.add(`active-${s}`);
         }
       });
@@ -3027,6 +3067,7 @@
         else if (isCr) titleElem.innerHTML = '<span>🟠 CONTA CRUNCHYROLL PRONTA PARA ATIVAÇÃO</span>';
         else if (isSky) titleElem.innerHTML = '<span>🔵 CONTA SKY+ PRONTA PARA ATIVAÇÃO</span>';
         else if (isDisney) titleElem.innerHTML = '<span>🏰 CONTA DISNEY+ PRONTA PARA ATIVAÇÃO</span>';
+        else if (isClaro) titleElem.innerHTML = '<span>⚡ CONTA CLARO TV+ PRONTA PARA ATIVAÇÃO</span>';
         else titleElem.innerHTML = '<span>🟣 CONTA HBO MAX PRONTA PARA ATIVAÇÃO</span>';
       }
 
@@ -3036,6 +3077,7 @@
         else if (isCr) tvSectionTitle.innerText = '📺 CONECTAR SMART TV // CRUNCHYROLL';
         else if (isSky) tvSectionTitle.innerText = '📺 CONECTAR SMART TV // SKY+ TV';
         else if (isDisney) tvSectionTitle.innerText = '📺 CONECTAR SMART TV // DISNEY+';
+        else if (isClaro) tvSectionTitle.innerText = '📺 CONECTAR SMART TV // CLARO TV+';
         else tvSectionTitle.innerText = '📺 CONECTAR SMART TV // HBO MAX';
       }
 
@@ -3068,7 +3110,8 @@
       const isCr = (service === 'crunchyroll');
       const isSky = (service === 'sky');
       const isDisney = (service === 'disney');
-      const isAccountType = isCr || isSky || isDisney;
+      const isClaro = (service === 'claro');
+      const isAccountType = isCr || isSky || isDisney || isClaro;
       const unit = isAccountType ? 'CONTAS' : 'COOKIES';
 
       if (servData.account) {
@@ -3082,7 +3125,7 @@
         
         const planElem = document.getElementById('active-account-plan');
         if (planElem) {
-          let planText = servData.account.plan || (isAccountType ? 'Sky TV VIP' : 'Premium VIP');
+          let planText = servData.account.plan || (isClaro ? 'Claro TV+ 4K' : (isAccountType ? 'Sky TV VIP' : 'Premium VIP'));
           planElem.innerText = planText;
         }
 
@@ -3117,8 +3160,8 @@
 
     async function cycleCookie() {
       soundClick();
-      const actionName = (currentService === 'crunchyroll' || currentService === 'sky') ? 'conta' : 'cookie';
-      logKernel(`Rotacionando para o próximo ${actionName} da fila...`);
+      const actionName = (currentService === 'crunchyroll' || currentService === 'sky' || currentService === 'disney' || currentService === 'claro') ? 'conta' : 'cookie';
+      logKernel(`Rotacionando para a próxima ${actionName} da fila...`);
       try {
         await fetch(`${API_BASE}/api/skip-cookie`, {
           method: 'POST',
@@ -3177,7 +3220,7 @@
       const container = document.getElementById('cookie-queue-list');
       const tabBtn = document.getElementById('tab-btn-queue');
       if (tabBtn) {
-        if (currentService === 'crunchyroll' || currentService === 'sky') {
+        if (currentService === 'crunchyroll' || currentService === 'sky' || currentService === 'disney' || currentService === 'claro') {
           tabBtn.innerText = `🔵 PRÓXIMAS CONTAS (${queue.length})`;
         } else {
           tabBtn.innerText = `🍪 PRÓXIMOS DA FILA (${queue.length})`;
@@ -3299,6 +3342,7 @@
         else if (currentService === 'crunchyroll') rainColor = '#F47521';
         else if (currentService === 'sky') rainColor = '#00A0E3';
         else if (currentService === 'disney') rainColor = '#00D2FF';
+        else if (currentService === 'claro') rainColor = '#E51D25';
         else rainColor = '#a855f7';
       }
 
