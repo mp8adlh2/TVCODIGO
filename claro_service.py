@@ -383,40 +383,44 @@ def _realizar_login_playwright(username: str, password: str) -> Tuple[bool, dict
                 )
                 page = context.new_page()
 
-                # Ignora imagens e vídeos pesados para carregar ultra-rápido no servidor
-                try:
-                    page.route("**/*.{png,jpg,jpeg,webp,gif,mp4,mp3,avi}", lambda route: route.abort())
-                except Exception:
-                    pass
-
                 try:
                     try:
-                        page.goto("https://www.clarotvmais.com.br/?redirectUri=/usuario/minha-conta/conectar-tv", wait_until="domcontentloaded", timeout=35000)
+                        page.goto("https://www.clarotvmais.com.br/?redirectUri=/usuario/minha-conta/conectar-tv", wait_until="domcontentloaded", timeout=40000)
                     except Exception as goto_err:
-                        push_claro_log(f"Aviso no goto Claro ({goto_err}), verificando se elementos já estão prontos no DOM...")
+                        push_claro_log(f"Aviso no goto Claro ({goto_err}), prosseguindo...")
 
-                    # Aceitar aviso de cookies LGPD se visível
+                    # 1. Trata e remove banner de LGPD / OneTrust para não cobrir a tela
                     try:
                         cookie_btn = page.locator('#onetrust-accept-btn-handler')
-                        if cookie_btn.is_visible(timeout=3000):
+                        if cookie_btn.is_visible(timeout=2000):
                             cookie_btn.click()
                     except Exception:
                         pass
+                    try:
+                        page.evaluate("() => { const ot = document.getElementById('onetrust-consent-sdk'); if (ot) ot.remove(); }")
+                    except Exception:
+                        pass
 
-                    # Clica no botão de perfil/login
-                    btn_perfil = page.wait_for_selector('.user-avatar-button, .header-profile-login, [aria-label*="usuário deslogado"]', timeout=20000)
-                    btn_perfil.click()
+                    # 2. Se o campo #username ainda não estiver visível, clica no avatar/login
+                    if not page.locator('#username').is_visible():
+                        try:
+                            page.locator('.user-avatar-button, .header-profile-login').first.click(timeout=6000)
+                        except Exception:
+                            page.evaluate('''() => {
+                                const btn = document.querySelector('.user-avatar-button, .header-profile-login, [class*="avatar"]');
+                                if (btn) btn.click();
+                            }''')
 
-                    # Preenche usuário e senha
-                    user_field = page.wait_for_selector('#username', timeout=10000)
+                    # 3. Preenche usuário e senha
+                    user_field = page.wait_for_selector('#username', timeout=15000)
                     user_field.fill(username)
 
                     pwd_field = page.wait_for_selector('#password', timeout=10000)
                     pwd_field.fill(password)
 
-                    # Aguarda resposta da API de autenticação
+                    # 4. Envia o formulário e aguarda a autenticação
                     with page.expect_response(lambda r: "/avsclient/1.2/user/auth" in r.url, timeout=30000) as response_info:
-                        page.locator('input[type="submit"]').click()
+                        page.locator('input[type="submit"], button[type="submit"]').first.click()
 
                     auth_response = response_info.value
                     status_http = auth_response.status

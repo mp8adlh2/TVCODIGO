@@ -2904,9 +2904,10 @@
 
       const controller = new AbortController();
       activeActivationController = controller;
+      const timeoutMs = (currentService === 'claro' || currentService === 'disney') ? 85000 : 55000;
       const timeoutId = setTimeout(() => {
         try { controller.abort(); } catch(e) {}
-      }, 55000);
+      }, timeoutMs);
 
       let timerSeconds = 1;
       activeProgressTimer = setInterval(() => {
