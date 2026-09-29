@@ -3363,7 +3363,18 @@
 
     window.addEventListener('resize', initMatrix);
     initMatrix();
-    setInterval(drawMatrix, 35);
+
+    let lastMatrixDrawTime = 0;
+    const matrixFrameInterval = 1000 / 30; // 30 FPS suave e super leve
+    function loopMatrix(currentTime) {
+      requestAnimationFrame(loopMatrix);
+      if (document.hidden) return; // Não consome CPU quando a aba não estiver visível
+      if (currentTime - lastMatrixDrawTime >= matrixFrameInterval) {
+        lastMatrixDrawTime = currentTime;
+        drawMatrix();
+      }
+    }
+    requestAnimationFrame(loopMatrix);
 
     const confettiCanvas = document.getElementById('confetti-canvas');
     const confettiCtx = confettiCanvas.getContext('2d');
@@ -3415,11 +3426,13 @@
     }
 
     setInterval(() => {
+      if (document.hidden) return;
       const ping = 15 + Math.floor(Math.random() * 12);
       document.getElementById('telemetry-ping').innerText = `PING: ${ping}ms`;
     }, 4000);
 
     setInterval(() => {
+      if (document.hidden) return;
       if (document.getElementById('login-overlay').style.display !== 'flex') loadStatus();
     }, 5000);
 

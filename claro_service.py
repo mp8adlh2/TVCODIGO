@@ -543,6 +543,10 @@ def activate_claro_tv(tv_code: str, account_data: Optional[dict] = None) -> Tupl
             elif msg != "SESSAO_EXPIRADA":
                 push_claro_log(f"⚠️ Resposta da Claro TV+: {msg}", level="warn")
                 return False, msg, None
+            else:
+                push_claro_log(f"⚠️ Sessão em cache expirada para '{user}'. Removendo do cache e re-autenticando...", level="warn")
+                _CLARO_SESSIONS_CACHE.pop(user_key, None)
+                _save_sessions_to_disk()
 
     # 2. Login completo via Playwright headless
     push_claro_log(f"Autenticando conta Claro TV+ '{user}' via navegador...")

@@ -44,16 +44,6 @@
       position: relative;
     }
 
-    #matrix-canvas, #confetti-canvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      pointer-events: none;
-      z-index: 0;
-    }
-
     .ambient-glow {
       position: fixed;
       width: 500px;
@@ -756,8 +746,6 @@
 
   <div class="ambient-glow orb-1"></div>
   <div class="ambient-glow orb-2"></div>
-  <canvas id="matrix-canvas"></canvas>
-  <canvas id="confetti-canvas"></canvas>
 
   <!-- 🔐 ADMIN LOGIN LOCK OVERLAY -->
   <div id="admin-login-overlay">
@@ -1154,6 +1142,14 @@
         <div class="online-stat-card">
           <span class="online-stat-val" id="users-sky-val" style="color: #00A0E3;">0</span>
           <span class="online-stat-title">🔵 SKY+</span>
+        </div>
+        <div class="online-stat-card">
+          <span class="online-stat-val" id="users-disney-val" style="color: #00d2ff;">0</span>
+          <span class="online-stat-title">🏰 DISNEY+</span>
+        </div>
+        <div class="online-stat-card">
+          <span class="online-stat-val" id="users-claro-val" style="color: #ff5252;">0</span>
+          <span class="online-stat-title">⚡ CLARO TV+</span>
         </div>
       </div>
 
@@ -2726,19 +2722,25 @@
           let hboCount = byService.hbo || 0;
           let crCount = byService.crunchyroll || 0;
           let skyCount = byService.sky || 0;
+          let disneyCount = byService.disney || 0;
+          let claroCount = byService.claro || 0;
 
           tvs.forEach(tv => {
             const s = (tv.service || '').toLowerCase();
             if (s === 'netflix') nfCount++;
-            else if (s === 'hbo') hboCount++;
-            else if (s === 'crunchyroll') crCount++;
+            else if (s === 'hbo' || s === 'hbomax') hboCount++;
+            else if (s === 'crunchyroll' || s === 'cr') crCount++;
             else if (s === 'sky') skyCount++;
+            else if (s === 'disney' || s === 'disneyplus') disneyCount++;
+            else if (s === 'claro' || s === 'clarotv') claroCount++;
           });
 
           if (document.getElementById('users-nf-val')) document.getElementById('users-nf-val').innerText = nfCount;
           if (document.getElementById('users-hbo-val')) document.getElementById('users-hbo-val').innerText = hboCount;
           if (document.getElementById('users-cr-val')) document.getElementById('users-cr-val').innerText = crCount;
           if (document.getElementById('users-sky-val')) document.getElementById('users-sky-val').innerText = skyCount;
+          if (document.getElementById('users-disney-val')) document.getElementById('users-disney-val').innerText = disneyCount;
+          if (document.getElementById('users-claro-val')) document.getElementById('users-claro-val').innerText = claroCount;
 
           // Atualiza contadores dentro dos botões de filtro
           const fTvs = document.getElementById('filter-count-tvs');
@@ -3795,8 +3797,9 @@
       }
     }
 
-    // Auto Refresh Loop (100% AO VIVO)
+    // Auto Refresh Loop (100% AO VIVO com proteção para não sobrecarregar em segundo plano)
     setInterval(() => {
+      if (document.hidden) return; // Não consome recursos nem trava o navegador quando minimizado
       if (adminToken) {
         loadStats();
         if (document.getElementById('view-users').style.display !== 'none') {
