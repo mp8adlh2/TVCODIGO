@@ -1,0 +1,21 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: November 1, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: ‏59.90 BRL
+Extra Member: Yes
+Profiles (5): JHON01, Ata, nona, José, Fuck
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1794674560	nfvdid	BQFmAAEBEGD1nZm8SyPAak_3mfxBR5Rgz8BNAnvSYbo6dSdBJ7SqKimZr7X8Fo-8_lu9w1tpkVFcWBQv-FfQR582t3AhTxidQYo5R4yVnmIH9oL1Vnaa9Qr_Wtn9STxdIlS54J_e03AWkjCPOYGFnt8xAQnOx5ec
+.netflix.com	TRUE	/	FALSE	1794674560	NetflixId	ct%3DBgjHlOvcAxLSA4jUHdR2axHB3cX9FjEsti8M1fdqmEOHtIvLyvVjz9_yjXqRUdTGcvYszMQJsxC2XBi84x3DWWwF0tcQ6mjJ6j02IpO6kaj_lOxgvtpEW6Uq5jzdMDNcodm0t-ky5Xb6EuX-taPdt3y5wZVR4aIrwiwkHtP5QwGUbpyhbhyIzFsxq6zs5uvGUK7BlFzCiKMQv5n0ItFsTmzW9Hxzvc6G9IIsD5aXUHB6bu9um5MLUW5fTDBl_kirmKGz1hvaAPPPxy6izgZdCvYuUOC4Y-yH6FN81FXTB8QytwEoODvbIRphdVSWpYauLpVtSFjHojOFjNdxP-jn0mlU-KLwwwpMeM-keaLUeh39HyV2H4BSpF7OyqIjNGqgEXhJr-nd-SVnzMKE_8ia-9_ceBVDvR07sgFFe2k1LgK9BvJmT1dw2bok9f0nbzYI_JV77VhnHb7H65_9KrKZmbCCh4k4ho2QF9sNqjvFkY8NCdbT1h91GfUztoVOAFCUJUfssPxqNr6YNikmvk20fvp8pLGhANfrLUrTJPMEbQamyFODo2Mmxn_6KvtQMBgcW9JLawgoGx8LnoCGBBCb3UE4Xe-cxROCyjrfpKD0bIDjqnLkWDY-RPLODGIYBiIOCgwb2Qf9uj8bB7M9Fds.%26ch%3DAQEAEAABABSX5ZsXuhe7MB8gPPaLVz350-OOaConOxg.%26v%3D3%26pg%3D46QDQM5V6FA77FBCCOSSZAKXYM
+.netflix.com	TRUE	/	FALSE	1794674560	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Nov+04+2025+00%3A25%3A10+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=464543c0-37a3-4d23-9232-20fb33a7659a&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=3&geolocation=BR%3BBA&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1794674560	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABT6vOQVNml54cTQ5hh9hJyYTL-86SIKQxo.%26dt%3D1762226695644

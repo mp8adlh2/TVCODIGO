@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: October 18, 2026
+Payment: UPI
+Quality: UHD
+Streams: 4
+Price: ₹649
+Profiles (3): Lg, A man, Reacher
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1813991714	nfvdid	BQFmAAEBEPd6NvXjFrESBm6LzzCaGqVgmOMSyHwz6vs6XCLEJzVIrMMoMc2duJh0ibjKjy0ccD4VLN8fYB37u3MXMxdHWzoa-YGj7LtmAF3svJx5HgiRLyHSyMN6K2wg9eihiLVMkaeDzUUQmTyReKMjtecvXpnt
+.netflix.com	FALSE	/	TRUE	1814097169	NetflixId	ct%3DBgjHlOvcAxK7AzF96GRJPHGzlDEL5WegLDuivFkOuXVKcas88naIZhFj8zx2KU1ZQweBOxJhM7CGFqaNyvVT7RY7ZnjvysBm4cl2RSoIC1ai4maF-3A3cLJetIYtuLhj_0q4aFvNlX4sRgSRQ_CsZfXJ0-E05GBQ_nzbNZEejLKDN3PNdO6DL1khQp1HZFJdfGhfRg4Fw7ZDGUhvRhc1a8ryEfEZMQV73dVzF4slVJc_l6c_iBaIea9WgyxtH4DsfuPD4xHExG2Dux7zopH0tOsRULX37EGllN6fmPuyuQhQfTfGyIJKFyQsxSP25QTIhvu8JAGbmtr6CPbDQB_lgCOBos0oAYWycke0a3fC77pZGhshkcq95ypKCv4tCc-lUQt9OACpeqVLKrAuAe9FsOlb5LS_gXtlft5b-WM3V3ZXpZGnYfQiu4MewF4dc41CsQJp1wiKP6NRkk1yKypuYVNHxYyZSCfTr3EwzdGOeFvman5IithFBIVx3c4GqrW_xgimANpQ5LXgws8Hrzxt8SHCO6ywVlksc7-bFrG7Fxo0L88wmqQEPF3uSzyKOEcBbA0BYm2urtxsEjX6MJXFU_0555lYGAYiDgoMY_FZQtcoj8ptiEXG%26ch%3DAQEAEAABABTsaBS1gGdVeDhlFk4m5BPdYd9cbsvGbgw.%26v%3D3%26pg%3DQIUDECJZVBBFFKG37WXIZUEBVY
+.netflix.com	FALSE	/	FALSE	1814097170	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Jun+27+2026+17%3A22%3A50+GMT%2B0530+(India+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=0ee14fb5-152a-435b-8c5b-ed099bfd130e&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1782455714868&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1814097169	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSMO5ZptQUVeSZfHGaqibRzgZ_9MBInJ8Y.%26dt%3D1782561231152
+.netflix.com	FALSE	/	TRUE	1794674560	gsid	e1a6757d-c7ee-41a6-813e-c786ec91c735
+.netflix.com	FALSE	/	FALSE	1794674560	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794674560	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794674560	profilesNewSession	0

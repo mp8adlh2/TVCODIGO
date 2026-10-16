@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: October 21, 2026
+Payment: UPI
+Quality: UHD
+Streams: 4
+Price: INR 649
+Profiles (4): RK, Son, Raze, Rexy
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1803527563	nfvdid	BQFmAAEBEE3lT_gn0jUr19cz5o3Viq1gRdSmq6xLK9K7XXXecUBdafenGtT8CatypaNuWKzHroP-ah0RL6yPIeR2VihH-AOiayc5mbMa33txW4PzctIBc8Cfqow_qLUIW0BsJBqBnF77uNqrOFffX-7ACo0K8t4N
+.netflix.com	TRUE	/	TRUE	1794674560	gsid	6c9e8eee-3511-4475-8f50-d8e54322494b
+.netflix.com	TRUE	/	FALSE	1823343431	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Oct+12+2026+00%3A17%3A11+GMT-1200+(GMT-12%3A00)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=a58fdb3e-3aeb-4821-a93d-7fb971217eb3&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1771991563489&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1823343432	NetflixId	ct%3DBgjHlOvcAxKUBAhz2YrLPt40zQ_pAHOwuHJgVSbo4vBkT2v8rVWuYFSFDQx9y257WTu08d9I1XtLpEQl20UFh1mkff3_8W8OWKDUQEYJjedRrlexC-RhkLPynQDXSKA1fAQNN4DW-tlUp0YuxjlRkNARA0fzy4_bjjyhGcuRaU-HzVmxOV7_RItmryvYHJPjR4UsUisPS6A_CJmhaCJppzXkF4PhKx3I-Pr_-R8jgoKxifNF1yrUXE8iY9x5rNcxXtoUOFwtB87oterKodK2zt54UMOPI1lC9aqA4LBuUwQGdnEyAv1ZieATbuSSCTu56BxO8NHYHUIC2Y8BMlD_hKUUpEf0T_OAjOBMWKK34qfXXndb-eu6Rm2nwM5Yzxv4FKw31newLEbobT457W_gjScGp4FbvE2bs7bzpwjAk5lSiDyhU5QUCipdUD2cqpikmWF1q8oxf_x2RBYra7R9Q2oQww2LlJhxHDdkAnFVjQx8P5Uc68l_DDci8EFJwPlO3uvbqb8W5hr1u1sHKKhNnL5cLSIT3D5xR4vhpO2z3rWkmriue15UJzR2ix2olUgpIbKu7prMg7Zyg4Lpdq7xQ9mYaEqrTFtdGuOJiNx-isLaDP2aP_lxRzu9x_aWxdBRXeJtaljSDpy_8bMLWAr_2DKnQ_-f_cNLUPzHstqjEkaRO6MJGksaM5t35N8HQShYIPjpJUZob83Gc_BEAnQYBiIOCgygtGsE1iwVQOJeUyI.%26ch%3DAQEAEAABABSsad3eFhm-7EhxF-ir7grlralN7DInBIQ.%26v%3D3%26pg%3DRTEE3GYZSFBG3FH6BEKIESZKWY
+.netflix.com	TRUE	/	TRUE	1823343432	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSyOP97E2fnEo-aRHBh6xEsSbeK0aeu_7E.%26dt%3D1791807433406
+.netflix.com	TRUE	/	FALSE	1799583431	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1799583431	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1799583431	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	FALSE	1794674560	profilesNewSession	0

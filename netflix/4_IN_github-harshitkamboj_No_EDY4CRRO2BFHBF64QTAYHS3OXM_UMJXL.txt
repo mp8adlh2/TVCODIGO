@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: October 22, 2026
+Payment: UPI
+Quality: UHD
+Streams: 4
+Price: ₹649
+Profiles (2): Hassane, Shri Ram OTT
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1821525470	nfvdid	BQFmAAEBEH6D55y2RxP0ARPqFkRgf-1gGd-u43B9IORG4DO5UPSMukYZkpfKv6C26HTc2Ut-qVYx0GCXL42E5Ym0-8nfycbH5aCv1Sbq-CQAO9ZzlGaDKBP_vPEx3QZYH2xTl_56uGPE26yudpwrjEaZtPYUxNRT
+.netflix.com	TRUE	/	FALSE	1823448092	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Oct+13+2026+22%3A51%3A32+GMT%2B0530+(India+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=8dc07126-0a39-4431-a17e-f6eebc54b340&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&isDntEnabled=0&prevHadToken=0&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1823448094	NetflixId	ct%3DBgjHlOvcAxK1Ay1c2h3VQaiipUeg4dl1U1Mrpfi5NvyvSSzsbglGqCYkMSfO4xAq0gJMgfE_rWnFrQqg5HTJAPQBH7QE9PoHxqKT_cm3PsEHJLyGwy91mhVWIKP-rXIoTF_PKJumkAPYYkhJyKsJFuuO6dKpU_WcIPKzYRbGNQspnvOvibIibb3-2UG3HbDDguGLL74DwODmKjpMRffO6dHFshf6yCOGED-_MVjiPDDShYk1Kn79A9BkoffuLOgRq9iPcmbT_JAZIVNpVb8UCuxx3aY0BPeNQUhTYAsa6mAkZfNDDD6vaI7IZDPGI1qiyP7NDbNJQ8koEDyAwGvRmlPRhK1dLykxtm1CsT1qdrwPwsS1vFn7qFIoA3l8W7ybGRcn20KfgdWrXIvViTcXJOzPvpDIFU-SBiKNJ-4BZnJm52o5Y_iCWPvxrd7VmHm28MkagRZB2wP0CG99eGBLGeWobnV_ayDGq1kb_I5qoMdNtjyou43bYdGXgKQsL4fqlsn5h-3CCB_oLI9e_adyCVOPnCGuaQVL120LWYXax1cGDD15BsMl6l9LFC-u8cCaTloRO-HEB9iUclHUOq-uGAYiDgoMNIj0Y3DyDDwiI0sW%26ch%3DAQEAEAABABQUMLLZhd39MGlBvB6JvFMsEfE9nImOnE8.%26v%3D3%26pg%3DEDY4CRRO2BFHBF64QTAYHS3OXM
+.netflix.com	TRUE	/	TRUE	1823448094	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTKXGIXRN6tempvv7zHMAeBQomnq4tsSyI.%26dt%3D1791912096161
+.netflix.com	TRUE	/	TRUE	1794674560	gsid	f517e097-d32f-4c75-8cf9-fe840e0ef37a
+.netflix.com	TRUE	/	FALSE	1799688091	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1799688091	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1799688091	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	TRUE	/	FALSE	1794674560	profilesNewSession	0

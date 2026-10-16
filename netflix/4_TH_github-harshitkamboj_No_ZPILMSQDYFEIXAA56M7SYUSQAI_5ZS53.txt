@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Premium
+Next Billing: October 17, 2026
+Payment: AIS
+Quality: UHD
+Streams: 4
+Price: THB 419
+Profiles (1): Zbi
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1821538127	nfvdid	BQFmAAEBEDzfHRnUhA5E_h003lobfzdgFduHdIDkHULTZ02Dma_nprZ8hrNak-AyYasgQPMIUtxTsfmesnuXKpXAvd0aZVdG7JUOopFg3QYk2h-Uy8gBo-XQGeT_wPKNhyk8KqVDv3CaWRS83dsyKo_3SiS1QyHc
+.netflix.com	TRUE	/	TRUE	1821586082	NetflixId	ct%3DBgjHlOvcAxKUBIzaVGYqZ9LYg9L1DVhDO1uUv0Q0MvVzgXYA48umJrLfL8qIqhUtnmC5HC64mHQm0b6h9hUjNggJSjFCNS0fpkhc3yO0EHhq0TADq8dX0Uk6V87yhxXcNwsrX9XGhrVGycPBmUOCxo2LfuhSDis2Pe_w7nZKqPA2tR4kyDP1GisgRGfD7M3RoH3OVatEA6fr-zbu4CjTHYc5a-OkCV6Tn1oywjSo-mrh9dOXlA79pdsWvSKj4_H8fnBqKmBq87zK4DWEZ8jDhrEkRcKRkWkArkFCeudtHPOxUaYseXil1XJplyk2LXPvdvmh-fUDyGoclQuDwOC_ZEAegxpefhKGKb4VVkxRWthnHBrOCrT-UhfJpAagZwq3V690o_B6SDVlRt0E1s5onkOcTDV9QjGpQb2OCvaY4C9xpuwC_VTYlG6R8QSJKW3-21k5UJx-R2tpzXfLWqhSyPsLSu0iIxZZvBYIVr_Wf5U81OHVteRhfyldMXf0_pc3QXZ3ngus0K5EA_KSl8KPGbfaYdL8MoACtm-U9X87-V1Mca2vmtyKCUo0h867Aa91lcqiWXZyAzDyNErfFpPl_tZaZcWoYNjugIklV9Pn1OPZOrp8nD6cck08J6tIqt1rZZ-TJ72-ylf9b50A7uQ6XJAolHJocriBBz_91e8e4Tk093zrv4eG_q_TFhWY9fVvQD_U4zpVPG12QPMHREoYBiIOCgwDaUgbh338agwjO8s.%26ch%3DAQEAEAABABTpW5lSCu7lbEQaGgvEGkonJ_fAts2IWuE.%26v%3D3%26pg%3DZPILMSQDYFEIXAA56M7SYUSQAI
+.netflix.com	TRUE	/	TRUE	1821586082	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABShbKB5jsELa0FNwwucjugwFSQpuKrlvo8.%26dt%3D1790050082556
+.netflix.com	TRUE	/	FALSE	1821621200	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+22+2026+20%3A53%3A20+GMT%2B0700+(%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B9%82%E0%B8%94%E0%B8%88%E0%B8%B5%E0%B8%99)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=dd7b15e7-ab25-46a9-9407-bb8f1b0aa9d8&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1784932915798&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1797861200	graphik-bold-1-loaded	true
+.netflix.com	TRUE	/	FALSE	1797861200	graphik-normal-1-loaded	true
+.netflix.com	TRUE	/	FALSE	1797861200	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1797861200	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794674560	profilesNewSession	0

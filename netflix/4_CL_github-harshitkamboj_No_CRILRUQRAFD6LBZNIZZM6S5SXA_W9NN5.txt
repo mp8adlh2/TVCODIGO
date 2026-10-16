@@ -1,0 +1,21 @@
+NETFLIX HIT :👇
+
+Country: CL
+Plan: Premium
+Next Billing: November 16, 2026
+Payment: ENTEL_PI
+Quality: UHD
+Streams: 4
+Price: CLP 12,990
+Profiles (5): Fam TV, anis, voldexzzz, Mp, mzzzz
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1818891863	nfvdid	BQFmAAEBENh76rY3mZUSqvaVjtyT6h5gHWO2yhf6TFh8rrqYkYyi11uYJ09Eq51B7HwLaZPMr1pobqIA-lBL55I12ztMsMXutsqajJmm85UVeKFVcCU27PTXnoupaEZtJuKIkZLN_vfVeo8veyFqqR8e6sSX4RXV
+.netflix.com	TRUE	/	TRUE	1820282317	NetflixId	ct%3DBgjHlOvcAxK6AxULxrANiHGOardNvKeSMlWAZyFudtX-323gRGIe2VQQf6sWKInIYB0kB_k-dUtMQwgWZOXEuU4R39TGp6MljR1R7Z1BxOj_1etLe8eI8pa8DtHL6CuFPeDB5nvdg-gPw3G0flCkhyjv5USzn-NBHAk_QDeP4pST_TVtgDjySmtx1GzFrlq6ZySFUrDcqumn8iLttOEBTRa5oZyyUOvFW6cbfUh5D6Uz54HnCa8y7bb8iTMPR_FS_b_jEUZV0A9iizrofSoXQRRioZQHLyW8XGFLjUFRuiXt6TPvZn4nDppWUObYHU6hq2l5NM2W9x8v5egPVu5Y3iM6Uq8mTpvKnLQL-zaOBSZIzHAZWJt6d965YbwqrmqCnRwgucJRDLYm9eryFqIQLfnpM00qQvRiSFBbMoHvCCFoEBIlJmMx_b7iM6sTgtnC3q3VG4T8mNmI8b2JVoEuq-78nJNY1igiooz2zkNf6rKP82tR9OKdLI5TW1-EsrsyOx0fBbLeg6mqr5yR3fKKJqXMTqoKMS9fBjJl9uDQCX2OYRHrBTfY265jFij1jMRiKk188Y4NiT-3P7zKlpw0S-dvvYQYBiIOCgxjJdS6i6I-1EwusOM.%26ch%3DAQEAEAABABSP7EI2SeOGOh1WlnDMKe1vhvhhNHnIDU8.%26v%3D3%26pg%3DCRILRUQRAFD6LBZNIZZM6S5SXA
+.netflix.com	TRUE	/	FALSE	1820282319	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+06+2026+22%3A58%3A39+GMT-0300+(hora+de+verano+de+Chile)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=95a2afa6-bef6-45d7-95ad-0cd4a4a97eb0&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	TRUE	1820282317	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQHyIhQLc3J3SS_QNlVgrnR-t1l1AbqWRI.%26dt%3D1788746317851
+.netflix.com	TRUE	/	FALSE	1796522419	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: October 19, 2026
+Payment: UPI
+Quality: UHD
+Streams: 4
+Price: 649 ₹
+Profiles (5): Hedi, Lal kak, jessy, James, Children
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1794674560	flwssn	95465ec0-be1e-4908-aec3-c3b60bd06cac
+.netflix.com	TRUE	/	TRUE	1794674560	gsid	030b8231-9a12-4e59-8640-21db597a10c3
+.netflix.com	TRUE	/	TRUE	1823423683	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKpA5o_ADEQHVnS8Otr2TsTo76AulKbTkSzPyrDunqtSBdXY2rCJ565yQbwJ8-s2UiWxPzIlbUly2pzFQ5f1yyEdHpf7KEZB02koRUwQLjTN2H_DrU9-VfqU3r75QnKXJlihz0MTTeEaIOYzjUEfYe_9nS8m-V9Mr4CRkgrLKvdGobPfXh3RiQDYWszgli2162aa6mfONd8Jzqj20b4qCZWr7Vvz93RUSZcagaK2V3Ykig-KqwUK_OE7e5AgYyFtGl33LMT_bJ2EEQgZmEBhw-A3s7bz87ksn015hkRXRKxuBRPWGh5kufpnZ8T05iQbOXdgYR91LtDjwDihu9mqj8j8ryw7Dg2cBztHCjVJVNxpxHygMdA8qJjb47zni3MgxVNcv6shY98ox7GFvDw9sxlEjQmIxdVclklCkW1_YlGpFa4uoGdYxzXgPEdpGkWD1IfRldGQ9ZdKxCOaT1Jkltu0wB_3Q9DHUEkdILVYZm3SxoOvO3dOq-sXWdZJDVQrVPVdoPV0smnXW_ovAv_9pjKHqSiviJSqWeOEfi2ISgMfQlJQbHFxcr3gMtwGAYiDgoMc5eV4WahN-tEVwzY%26pg%3DFRQ7L3M3W5EI3H47K3M3OJCZB4%26ch%3DAQEAEAABABSN2YgFVjsVJtZYO0VJ2vYLp1r-zfRiNic.
+.netflix.com	TRUE	/	TRUE	1823423683	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSjXclhGZFyPvqm1REbCqlp2S6pj4EEO2U.%26dt%3D1791887683242
+.netflix.com	TRUE	/	FALSE	1823423683	nfvdid	BQFmAAEBEMglfs8i0KaIYGMbcFcXR1VgzX-Kk64x2gG5PGLehtNSObMTkyzxe4R9kdc5aHhX3xmS2e1vIojRPnLoyCtxCyeB4g2zLBuL6HvYVUOZ5su8x6osdxTArglxDDrZYVpdsZQMdwe99uu-ZV-EYzcq1A3F
+.netflix.com	TRUE	/	FALSE	1823423720	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Oct+13+2026+16%3A05%3A20+GMT%2B0530+(India+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=f4d9523a-21c5-4ed4-af21-fa8c0d2033d6&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1791887634552&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1799663719	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1799663719	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794674560	profilesNewSession	0

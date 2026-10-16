@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: ES
+Plan: Premium
+Next Billing: October 18, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: €21.99
+Extra Member: Yes
+Profiles (5): 1, WINGOD, Sher, Oo, Steve
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1794674560	gsid	d32a6506-15a3-4b82-94aa-84d31160bfe1
+.netflix.com	TRUE	/	FALSE	1816608552	OptanonAlertBoxClosed	2026-07-26T13:29:12.947Z
+.netflix.com	TRUE	/	TRUE	1816608759	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKYA1OBCv6k4fuPig9RCcmQOVzmJhmL8gqodvT_TG8DpDB_9JKV-KqtvLGcabaqniTQ0HoJnz_Tg9UwetASWqvCWjQdouXoM0y5QwYoYPoId4pM7kYFM1zRe1sqS5Dtgpw8j4YYPb147_NlEYB_S4PIkQLeEZ-yCUxNwnX1B-nq6Nu8xo8567rov--3Z2qyMyKfdVAvSKSlXywFpg8BNav0uYoM38b-mOseT7RYpZPnoprLRlknRLaukOcsCEB__cvmj9cdPA3IDuQBrBcx0YlvvMQlGbeU28401wHML5ao7FuytQsshLsGqoRBMdIZBb9czlb0XqZl3Vtk2tb20fnZUiPQM0kjIrRSiQVgBVrlbjNksXFjbkO3W4RKIZeeFZk3AK7R-4tThJLiUY02eH4YkqzvfghlkYsG5d9gbpkDdmPbc0i2mE0BBxLbTFbXnQpyPCsbJP5trZDb76kmAaj15fubXtkElB6FLWlRpUD0PWvkRX1U3lNR6Lp4ipX0hffVBT_k8OC0ayRrDaF53BxI2yj0D0mwB_PtjRgGIg4KDMQS_eJBWp3ew-B4OA..%26pg%3DPHQZBFSSKNG3LP6X6GSUBNHWLI%26ch%3DAQEAEAABABSEXarPf2k_a5YaKMayeeL0cmLuTlWctRg.
+.netflix.com	TRUE	/	TRUE	1816608759	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQjRD_39lYoJkNZGSoF-REbodn64I1d7wY.%26dt%3D1785072759286
+.netflix.com	TRUE	/	FALSE	1816608759	nfvdid	BQFmAAEBEF-JBW1_2ox5yeaB4twjQcVggvzOrcOeHsUiijmhB6n_m2FMNGPU4eSuMnV2G6Y-CVQU7NNWdCYOXtaoI6TQL3wdtJKYSNgFY25Yono0u7ia4cLTkfR0avtJU3ZZMRbo-YmY4YMmReCEmdVYsHcT-h3b
+.netflix.com	TRUE	/	FALSE	1794674560	firstLolomoAfterOnRamp	true
+.netflix.com	TRUE	/	FALSE	1816608883	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Jul+26+2026+15%3A34%3A43+GMT%2B0200+(hora+de+verano+de+Europa+central)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=de7dccc1-6c17-405c-a807-aee7348f80fb&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&fclco=&intType=1&crTime=1785072553352&geolocation=ES%3BCT
+.netflix.com	TRUE	/	FALSE	1794674560	flwssn	5e602c3a-b400-4eb8-8388-9b9d6f18a741
+.netflix.com	TRUE	/	FALSE	1792848882	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1792848882	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794674560	profilesNewSession	0

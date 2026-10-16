@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: November 8, 2026
+Payment: DCB
+Quality: UHD
+Streams: 4
+Price: 379,99 TL
+Profiles (5): halbilenf, Fırat, Emine, Fatma, Mirali
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1800403215	OptanonAlertBoxClosed	2026-01-20T00:00:15.433Z
+.netflix.com	FALSE	/	TRUE	1800403261	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKLA5MAZRUHj4hMbArtaHSAstzYl-K07YhRhLcahtjJO88eqKf2GutzXYglZalJea_XhUvMQsvDznyxHYThVtlpbaSBklW_rSOgzzEU0f4_W04cB6UGWBSbrXPHBwewbyMSbhShyW9olufKiITmBq2yrhYbq2yq-T3sWmtzge7j_mGxVRDoY1Ber7UDR3LWN3s-LTUn5MKTK4qojt0syBd7ZI4YkMSK5oIW1HhUZtggizH-aTf1RF91XSB0EzsKcS-fMA2SX6IBmQLywHU8DD_lYtg882c_41dt6GdXFKfzOu0P7VRm-rsCCo16MjQl95VZFFpA3q6xHXzYgvEj2-lM_fEu-gGfy0QRMbR24ES6W7bRwaox2C1BsQI5xmKkS8LFOzalUlRryCmxur0ZEyFjupJXkrL3-zEgn4JQGM8ShXdPIDhYezCU1jLvl3udYeZYVH0sNFMeUROzz7jZTWn_dEE6Nw0ewwGaNmKaRthY3JvsQ5px5xF9jgcX0wtK--N749gJ1GB04te7X0QzGAYiDgoMndzGzsCC556v-0v0%26pg%3D5MOMVEQGCBDODMYLKO7CVZ32GE%26ch%3DAQEAEAABABR1KSUtSpZaQC_5NiWQlXjV032KRjRQn_g.
+.netflix.com	FALSE	/	TRUE	1800403261	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSK1Ac7QCBGDL071KPtPxuLg8h0aLMG5PE.%26dt%3D1768867261375
+.netflix.com	FALSE	/	FALSE	1800403261	nfvdid	BQFmAAEBEM7KNMN3pdM-jDCo-8vVNHhgycvKxywHX6rgl78XybOnsRZ_KiOfSWUmLhAcJm0oHge2ivRmTc3SIZpAat66gW7R2LOW5uH38y51fU4XFEcJABuTBvePCq3W6QF7v9XyyZhmMvKmMydVK2in2iz5G-RY
+.netflix.com	FALSE	/	FALSE	1800409219	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Jan+20+2026+04%3A40%3A19+GMT%2B0300+(GMT%2B03%3A00)&version=202512.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=e2a25c0a-6292-4f75-8006-571f07e4d1d1&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1768867216121&AwaitingReconsent=false&intType=1&geolocation=TR%3B34
+.netflix.com	FALSE	/	FALSE	1794674560	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794674560	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794674560	profilesNewSession	0

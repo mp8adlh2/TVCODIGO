@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: November 14, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: BRL 59.90
+Extra Member: Yes
+Profiles (5): 7mo, Sousa, luis, Max, Meu dinheiro meu perfil:|
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1807969820	NetflixId	ct%3DBgjHlOvcAxK9AzNkYadSRTIjksxvRRMojMVmRfH_lBmGgCzUprHENhWORngaVUPyWmXoRzQB2JeAy7GuIdTtyYXUbVompyTnJfB3AY0VW7NfLcEAt9raYXgmoAN98ILxbTND9naZo7mYiCdRmn3u0eIvhHv5zjs5cw99P79AI50Cv1YKhb3sWfTZb_-QZ8nRaAFQAx1PXyiVt23aphvNg4rO0TwA-KJjvFKwU3hDUM-GN5h1yFybmZLQTEeHE-rTa7BacVK-cBp8T4HgX8n4L07eAB08wpySwXLyuDH3KTFFv-9vMLo5L_0bdS7MGZfPvoWwRY6eTUf8tFw3dlVfpN4-HQCtXwVWllzz-3zOJnplGV38K6mq_nFROzyveHa2VjqjiXTd-ETwrqtqfId9cqxZSfpCoGF4ZhR9d_AERRxw0ct0pZU2XoYvUQSh0Vypxfk2Z09Jt3MpPSH747GDjNbAwrf-gSPD55O-Yt_T3pxOiYHxqqFuEm3GgQyDh5bcPhwapwcjSvLUIeiNuvn7QEAjhfqoHF5ttbZoe-3Y0a4X1zJYJrOSB6g59rMMcQuEuWSv84YyfI5fIB5LvNKORIARkUpNF34YBiIOCgxXQ3HBoXzyXUuR6wM.%26ch%3DAQEAEAABABRtSnfz944av2pfBYQfjfPfJJAelBREgzY.%26v%3D3%26pg%3DQWOZ3VEW7FCHLG22RIC34PUINY
+.netflix.com	TRUE	/	FALSE	1807969823	OptanonAlertBoxClosed	2026-04-17T13:50:23.026Z
+.netflix.com	TRUE	/	FALSE	1807969823	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Apr+17+2026+10%3A50%3A23+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202602.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=3faa116f-55c3-4f4a-9cfc-15b0fc69c38e&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=3&crTime=1776433823470
+.netflix.com	TRUE	/	TRUE	1807969820	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQKsNqnzDHmg0Q7beczmN0EcRtxzsg0w9I.%26dt%3D1776433831190
+.netflix.com	TRUE	/	TRUE	1810993820	dsca	true
+.netflix.com	TRUE	/	FALSE	1807969819	nfvdid	BQFmAAEBEOTc6xm4la364ql2cJiOUwRgjeUM13EtYrn9Xt0fPVgxhp6kMw7sy-RPqkLmR8p36pwb5JyxXxPV4OdKkjr--vt189zGhHLnPu8l3vx4Uv78GlJWop1TpFIMJqX14aAJAPsHrdKh1e6PVs2_TZ8pG51p

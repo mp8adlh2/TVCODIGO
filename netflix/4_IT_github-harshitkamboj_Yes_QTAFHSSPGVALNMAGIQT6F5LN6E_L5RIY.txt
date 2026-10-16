@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: IT
+Plan: Premium
+Next Billing: November 14, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 19,99 €
+Extra Member: Yes
+Profiles (5): MELANIEEE, Lebes?, Chbik¿?, deedee, Niños
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/title	TRUE	1794180342	dsca	true
+.netflix.com	FALSE	/	FALSE	1812684674	nfvdid	BQFmAAEBEI-6sTxWg7q6WH1rKr0VAxhgDBGrTXinsre3ygWWojdSzEtdotMySgUCZABYt8JYeipqUELz6L4aNRy2x1jf2riWOoRSs9QwSN1shIgDTsIJuDPulRYmuT0WANHDNNtM0s0MpDVKBrN_8dbN12E27KAA
+.netflix.com	FALSE	/	FALSE	1813097129	OptanonAlertBoxClosed	2026-06-15T22:05:29.579Z
+.netflix.com	FALSE	/	TRUE	1814918040	NetflixId	ct%3DBgjHlOvcAxKGBK67fLT3CdySq2qRPzLmmDW9c02VteBt-6hIKZZ986xUouzNTiJ8iu3a3jBslg8YGbDsgIReseQ2TAwnK2Ci5rdPXHeN4fr_z9gOYT3lVn465JBZHrgx_XRzR2R2oEny87etWDqD3TnNw0nrHrDV22BI0cK4G_BOMNBKwfZOly77o7eLpGcbz_ZNGD8GDPM9gy6AIMYyxXiR_YyShDxfa7AilPEwQ8Z-e6I0JFI7GTL7TyoO07M3do6hkhSdaremajLG-SbxvVQojlj05CGUF7ETZMO_hQhFbB2Ar0uWty_LAxAAjLjAaAV6M2Ir8jWn95VfrEpwTYeXyAI0g5WQRhAlpOmGiWXa8j7lsFulQAUfAkG1MkO6GWektcdIWHhhgGFUziyxYq1p3AVxq6eY6EqNXVJD7rJa5W4ZB7aM7pMDfrB2MeL0wvbfu3MPJv9cF54Sz8VSAnYHXS2McsVJ9m3LUiXhsg-cA3Tiy602GRf4gWlXMYi66z6rWbflNZKU3EQKdP8loPVqRvQ4XQnESBH9LEJrWhnZGCYAOef_9u00mBTSweSGAL8k4Fx0bpv5A1MkaI_ZFPgk-_kIzvpXwLHH4-iSYX3ecP5VTxH-LaM9Q5Lls1EPkOcI47HMctf9kC5NBfniPyuBGiiVN9YhVeIhxi8g7oWz0JRztd8xAbJlyVtEeXF4GAYiDgoMEkLp-GZGzmZ2YLCE%26ch%3DAQEAEAABABSVLo6PIg_9-0ZGtsMvs6fQGZS_ZlG5AxI.%26v%3D3%26pg%3DQTAFHSSPGVALNMAGIQT6F5LN6E
+.netflix.com	FALSE	/	FALSE	1814918041	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Jul+07+2026+01%3A54%3A01+GMT%2B0200+(Ora+legale+dell%E2%80%99Europa+centrale)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=8f6e92fc-7a8a-4726-a4ce-a07ae91a8627&interactionCount=3&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&AwaitingReconsent=false&intType=2&geolocation=IT%3B21&prevHadToken=0&isDntEnabled=0&fclco=&crTime=1781561129981
+.netflix.com	FALSE	/	TRUE	1814918040	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSKYepy6AF4uu5vW-n1s5_ByO6-OqbrvXQ.%26dt%3D1783382041952
+.netflix.com	FALSE	/	FALSE	1794674560	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794674560	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794674560	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

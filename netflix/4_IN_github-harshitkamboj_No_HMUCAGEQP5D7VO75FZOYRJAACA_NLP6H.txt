@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: October 23, 2026
+Payment: UPI
+Quality: UHD
+Streams: 4
+Price: ₹649
+Profiles (2): smproductionsawantwadi, Me1n
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1800103141	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Jan+16+2026+18%3A09%3A01+GMT%2B0530+(India+Standard+Time)&version=202512.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=5cff3400-1387-4ee2-a57a-6561e08ba8a8&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1819654657	nfvdid	BQFmAAEBEPHAsIp3eVZtJN0qWMG3tcxgDYmN7IlybLNtPZb_1wr_OwrH-Aq_Hk6xjjq0yWC70TJK7-iHj0YpJB2vKbpm4Jn8rqEdv9OC_uQYL0_ayL6HHk7YaVk_dyUjaT4KvJ5onz8AQFCMe4YpO2HLyo3Kq6Tm
+.netflix.com	TRUE	/	TRUE	1820839347	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSJd-bKLuqH5wOFUIednHD9ENHcDZlCgfA.%26dt%3D1789303348332
+.netflix.com	TRUE	/	TRUE	1820839347	NetflixId	ct%3DBgjHlOvcAxKdBBrEAOu24oN5X3G0JleIPugBVGGlFy6bGg65M8XLBzO6IRf1cyiyqIzhaQhHNqp1g63_4AT-friszjq2xbaJ0iqoFZ1U6xOjfzMgDEh1A6BSuKQd0SpNZZ8PLE_WktoToXhGwGqFUUUTKG21Y2lDHDUmzcO7NCIzTMlJtnqHmbi1Z9gU1yWWAE1wspL6YWEE5k8MfRpfLQ03fZ7VV_mJXMW7NgQ_JC69pcOky4iLT6rEV7sbCC0ftvaRu8TTU2mxZqx_bGemAffuLqw2JLktXMjuYxlLBWsf0ZSt9SW7WPg17MhWcSPAFEJSch7xK6CFholeIbVvXO-xwuqElRcJhcWx2y2KuzWOJf0WUADRF0cHDb9ye2g_f1xF5vLh14ukhB3QxQmAu6RLrUBPbJBs-9ANjsmpZsmnFuZbyk5jbSUuQrhIU4es8MzWoCLXCdk0nH7pPI-uIwcFCTrb-1XVdIkNfftLQbDlW7n87Dq_39iAlXRrA7ockounvqaW5F-9obyXjblPpVcA3ZPJmSgnT4HI6xztnNMvLaCeFRD4BfoDDtEFNv_i1uqaSVN0ZOfY17RwiuE85SgDozVspaoW6t396SdRIVjpLNOLEd_20igQJpot5td1lzWO3rph668NPwPBv2-WTQodtpqstYXFBHid30QyYvPq7A-GUODtbSfokx9ly4hsUE3LmQV-EjFL4EDSc9xi7F7NRRz7ouEYBiIOCgwwWp0PpD5gqrZK2kE.%26ch%3DAQEAEAABABTwamGuUO5vgkSBIEBne1IYNzH4rXFj7W8.%26v%3D3%26pg%3DHMUCAGEQP5D7VO75FZOYRJAACA
+.netflix.com	TRUE	/	FALSE	1797079348	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1797079348	netflix-sans-bold-3-loaded	true

@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: ID
+Plan: Premium
+Next Billing: October 20, 2026
+Payment: MOBILE_WALLET
+Quality: UHD
+Streams: 4
+Price: Rp 186.000
+Profiles (5): giovanni.satria, Use, H, Hi, User1
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1798273862	nfvdid	BQFmAAEBEEQmqWibfF0PEGlMoTA9QmFgQ-yihqdoBJpBHjGk_5KU3iMjsdTcW8mY2bXpoctnazQvWlLq5CVUJQGf9jDGAxy-dDroorxvFNvakXraJAryOHVbJH_XthBTa1h8VbhX-honX48R78oaotvPh-cRAicJ
+.netflix.com	TRUE	/	FALSE	1798277183	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Dec+26+2025+16%3A26%3A23+GMT%2B0700+(Western+Indonesia+Time)&version=202510.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=5e189c9a-8c0b-472d-8af8-6eabfe25fb56&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1794674560	gsid	7c7980d8-25af-4f34-bfce-6228b7024b5e
+.netflix.com	TRUE	/	FALSE	1794674560	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	TRUE	1814093670	NetflixId	ct%3DBgjHlOvcAxKWBJ_x-jyFTlvkic79yZgTWqMlKgnWoDPiZaDYEk5QHdxAGORo0u-z5lRezYSK3piWwZZlL6WDbknCgY6GLewmv_deY5RCC3-NMQb7bEoKceFA-MoACEkDYu_jGoAxdY3MC0vPCyEZZwTdTcNxfAT4XA7ZifbWksTjN6NzY-17mb-9PV6YCxVJyYdu_9_9IxH534jYAAPZZK9lB0JKmtVikmrmg4SGoUM_ayYPmb21vJtEolBQqRh8VKzTi_YSpD2cRdyiE1voP2dOnKeAO6VC2wEETz7jBMGHzmbXm-QzlTanEGuBFB3fBXi9F5318c4yS0_3MNl3sqwSTxs-Nc41SyItM31imUqLBCh_vQ-D8CcqDhYZqryr9pZrOdJwlQzwakoT40CG0nRzJPgBr8Xuf_O-rc9JivBs2v0sw2jgWTytONflIEGW4BW-vJUUMLZajEy1932YY997l9QD7DvHTXMGFYCvI-T4ROiVccaJzGDJFtr2pqXOluXzVsg7QJEjfVhTTnxMSz-ZUYxe_LfVJ2IlJg2qPX21iZ7wYTm00BX843eB0gygtxst5mpKsZdcIVsZWswjkbIuUT8ne5zsAeFyZmfuvLfkyebt9r-NlC_82FxSorYZLtuYEi9f_3flQ388d5Xp6uGhxq0noyItx__sC1bXA_JFk7Xz7fwVosFPYzrjW5oKPovO_XUSh92q2SUP1DxBlxgGIg4KDHLU5lTiXNiNML8IIg..%26ch%3DAQEAEAABABStek4_9uTVgPVAYPPxiIRHtk07dNAqkcY.%26v%3D3%26pg%3DMIL5WCHRINCNLIPHGESVIDRHM4
+.netflix.com	TRUE	/	TRUE	1814093670	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABR36ugBPgGztYnpdR864hUQ7fv7X7yJkp0.%26dt%3D1782557667784
+.netflix.com	TRUE	/	FALSE	1794674560	netflix-sans-normal-3-loaded	true

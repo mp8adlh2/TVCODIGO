@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: TELEFONICA_B_PI_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (5): juanandrade091, Capivaro, Juan, cấmđộng, BABA VOSS
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1811203213	OptanonAlertBoxClosed	2026-05-25T00:00:13.907Z
+.netflix.com	FALSE	/	TRUE	1814227280	dsca	true
+.netflix.com	FALSE	/	FALSE	1811203279	nfvdid	BQFmAAEBED0VXw6SCJcrwZm3CznUdFVgPh_Sg5_P8vMZjZBo7V-4VwfYVR1mNpR90nr4CuAdX5HAn26min4JOnrYvbgEfRqxp7IcTl7QrJ6EKpvbwSGt5RjPeKf4ZPguzqgg0Xlnwd_o0xSDs46i_hvkiNUG23JI
+.netflix.com	FALSE	/	FALSE	1811203280	OptanonConsent	isGpcEnabled=0&datestamp=Sun+May+24+2026+21%3A01%3A20+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=73624222-2504-434e-9c5f-8c2406e9a74f&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1779667214438&AwaitingReconsent=false&fclco=&intType=3&geolocation=BR%3BBA
+.netflix.com	FALSE	/	TRUE	1822671696	NetflixId	ct%3DBgjHlOvcAxKVBOv1EXY5d_veFFFK79HTgoovXOYWPV_MKXhvx2I38qNZpmDgK9CPBLV_EyCiSg8LJy8kO4gQ80EDVpAx0A3dmjMf1sFDwSPslKDs3DFw87DHcruGlp_boLiVL3TLmX1DWW8qJzXTT82hLQXx618XQyY5A9gj7WKkmb0g4UW486D7YNB8H1J6vQgt-qujXPFrZw2cnWaQwZHOc4OOxA0GpoZ5fBuIy80dY-B9Q4_Pl3WzZ8eOqyVTILakSlo0cwq0UScIstkcofTFydbmNlDM9Im4vfXlXwhrptvp9ABWQzNv_Q4v_9tqj-1OGv6Qf8mvoAApOVgBXan9xTyxV6OfR-VdVHTDgEa-NpM-6zzDemf5WNy9-q02F_Tzd6AUWlgGTrPE9TUuqg5L4qo-ykc-Ie67lcXcT1h-j63dr6lfodrPBC_gf5CNvrs7RaudoKCLr11u-f6qQA_AucSetsSyVvDgCYK-SHm92h9226_sOHj3Ak_O65XBDon8MDQfqyOI5HrXHheveq34QzQsfCc0le-eDI7qkUigKWxbKESA4dIvMWb2admtJ72PdhNnXZtitHjKkuCqJ6YXweoderLSTQGn0ysasWhoOJHJM6TSlNtU1HNLJGyNX6P4sH0zoOPRKtIwPCQ6eU2a0wP9k8F_q4KQwA5QNohRTRJsmQVc4azjTp2fgysoaie5e5rDPvN6MIuyVOk7GAYiDgoM7YgO-yWGMlYCsu7E%26ch%3DAQEAEAABABRoe133yVriv7HFgbxw1GXp6BG51F0jWhM.%26v%3D3%26pg%3DV4VESLICTZATNNF3YOKIV27KNA
+.netflix.com	FALSE	/	TRUE	1822671696	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRBYRcCJ1MetcR7xkT7OME4kCIxkfkqLnQ.%26dt%3D1791135827513

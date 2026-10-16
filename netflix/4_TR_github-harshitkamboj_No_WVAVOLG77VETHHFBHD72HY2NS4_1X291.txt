@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: November 15, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379.99 TL
+Profiles (4): Demir, JP, Riccardo, Çocuk
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1818442866	OptanonAlertBoxClosed	2026-08-16T19:01:06.638Z
+.netflix.com	FALSE	/	TRUE	1821466918	dsca	true
+.netflix.com	FALSE	/	FALSE	1818442916	nfvdid	BQFmAAEBEO4WWyV3rde8ZxQy1jYwkWlgsj3oSX_Oz3gv7HAUDJjwsr0hpSCbExKF8Tt6rZQKmyCkAE08WDYp1eqT_uxG8GuyWQQ2HjmNxSU0DxBY2xlUje9HP0rCd10EXj4hq92XJKaw1ZXtg8XkSBkfNG60EOXx
+.netflix.com	FALSE	/	TRUE	1818533711	NetflixId	ct%3DBgjHlOvcAxK_A0GquKjUf_nDKZWPPLCTDUUF84PP2Aemt2T5SHplUZCgxeXICjZr1rt9x6kCUkczDILhpwWWSkxCWIeYuJ4MDrgNOEs4baf2NYeiRNO5HkcrTAkKITBcYd9B0NMYyTglsp_n1RsqrC2-aXneCZilt0SHpxO_kzQiUfkneKdDYfxhph8_w0mLyb_PruECWkiq9T-FC-rvUkW6z3cH55NhcD3sgTFaIHKsxJeBd1iDbyOuYlLBQBoHQ-15uRxGM3xIrjjyUJv-qnMl49MRbnFDmfxqWYvPlytC2oH2MNcQJvF30LknPnTxGPeGKwqeIBdzKDU1EX_K6JXA20eWUUKb7NSzV2S4ylVp3p-OPzThLdWzri9dcnm3AoL-rz0L4NKGo7jkF_vOjuz1yLbN6kJrVHNyiX9IA7iy8uIybDr4AMWWdrhcEgb-SW7rN63OLyCLzM8596G6_TmILNFfcuAGlCNu2CQ_9jjvgeNNSIBiAuEnvNB1qhV2iipxiDQ8etQ8kXuiD1DlyATINl7xPKSy-ysrR45W89MwpQMIBA5xqyM_TsTCkeo6sqpupWE0BvrxTf92dVyqSeB4JmPVGI9gKxgGIg4KDLgTBQU7KMxhRBj9bQ..%26ch%3DAQEAEAABABRPbC7x-DrlRk1l-3h8CXR7K5e1TAfZdC4.%26v%3D3%26pg%3DWVAVOLG77VETHHFBHD72HY2NS4
+.netflix.com	FALSE	/	TRUE	1818533711	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSyoqpfwnMKU-kE3VAEXdPlGHKW1ccPP-Q.%26dt%3D1786997502168
+.netflix.com	FALSE	/	FALSE	1794774172	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794774172	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794774172	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	FALSE	1818534591	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Aug+17+2026+23%3A29%3A51+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=a9e0e04f-692e-493b-a3f7-fd694d0e9089&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&fclco=&intType=3&crTime=1786906867334&geolocation=TR%3B09&AwaitingReconsent=false

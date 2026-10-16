@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: October 22, 2026
+Payment: UNKNOWN
+Quality: UHD
+Streams: 4
+Price: ₹649
+Profiles (5): 1A, 2B, 3C, 4D, H5
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1821114501	nfvdid	BQFmAAEBEBWrvz4UFqFPmyLjWKyc_txgDJ0z7hxUwZtM2rYbiMWJmUkLw3s9iFNF6SpgqQr5dlOvxyuo9kXe7F6YxxGiXIdsrFDC4BAUvxHuBahxlu6dcC0Vd4EopQeLkFEvcDsPhxPlokRs7iLgCqzAaHftuala
+.netflix.com	TRUE	/	TRUE	1794674560	gsid	c446b392-6b51-4e16-9f1a-84a81e61d499
+.netflix.com	TRUE	/	TRUE	1794674560	netflix-mfa-nonce	BgjLwOvcAxKVAepamdfq2fQv-hcNLNFzdZ7H54l4hXCQlFEWgTrmknMhUs4zLw-is5fJT6G0VyqvCfxjm2R39jKuOBSS9IXQesWyY0Sv785HN3dTZj1s2UbwKt6_UV9Zn8P1AsX_-ZTr0KeDxfs-AMim1fJF3UTWktMuMQUvg747WrdvhEFb1n5uGqv9cT5VmfGEpu7Nd4ghncvMjyT1GAYiDgoMuIC2E9YayljcxLBm
+.netflix.com	TRUE	/	TRUE	1823097664	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKOA7Z2VwEJlJsrlQAQfWbJRtkvzUct74NWnbsFf8tlStu67Ky65tgur5cvqwShM2_IyMm9cbXk9vhn-XT1ij3Dy5VuQu5uku4XIJHV3hv8KGXGOdQXEv8EosSk7ElzvcuAuRB3Cxs73LfqnGZrstoX6T9hzl_UQ7aPVVX-LoKWTvjnsmWj19YQi1i5YDL4SCRd60PkeNLmS_G4Nwr772KrW2JVZiuNescEKPrtwxfW9H647MNH6koqXiwOrVAL4B2O7x6ZE5TKFxjztzcUisrV9hCIg08nMTNQaKRz1n2wV-wxQyUiHKGICwnBgav5Mof80hysjrkkvQLVFz0p5BGhhvOca6eds_pKn5QvKZ3RmWnWVMZnddNRn7b3UeZ7nYLlr6DBV3qt03F8FzKuIKWEzw250fFVR1L7VESEnn0AANdBBSWYZehLyxwOYZaRPggNFnzt91IhYYuEsqxwfYKerEWRZH-NnLU8q7q0mDHKg023Di5nHd880LNZf3LsXDZ3Jd1Zvo_1O8jQkoNKRw1rGAYiDgoMg4FMlbQMQpysE8BS%26pg%3DZL3D3W2VQJEO5BT5E7EY4Y7E2E%26ch%3DAQEAEAABABQBkpixgYPInTITwICftdG26IpLJgnDdVQ.
+.netflix.com	TRUE	/	FALSE	1823097666	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Oct+09+2026+21%3A31%3A06+GMT%2B0530+(India+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=2f7492e5-ba7e-4df6-b034-7936c3c73ba6&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1789578501069&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1823097664	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQEZvvNOXQGCYrs2VJX6_FUG8kPEUi2NHc.%26dt%3D1791561662578
+.netflix.com	TRUE	/	FALSE	1799337666	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1799337666	netflix-sans-normal-3-loaded	true

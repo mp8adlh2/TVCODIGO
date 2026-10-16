@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: KR
+Plan: Premium
+Next Billing: October 26, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: ₩17,000
+Extra Member: Yes
+Profiles (5): kay, Sa, Nia, neya, fani
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1812803800	nfvdid	BQFmAAEBELmJM6dJUwfgVh6LcRvR41JgMqeLPn8F8qgPeXElTZ5eC_9MVWkmAAqRsMRNnyrizXQnWapEEAj296UmP2wF1TAcSAJB5t1km30tkcAuRMxch_JDDZ2HGI7qQ9abSIUS9oL_Ir1aDX8GlFh6gx7SL9B9
+.netflix.com	TRUE	/	TRUE	1815440205	NetflixId	ct%3DBgjHlOvcAxL-A8x-K0EfMIV6rlvtSU8Z3QGxXuxOIEqvgWsIKnvGugySX6-H5wtAkmEk-jCmf5MNHDR75us6M2WeRSrVkxu0WNsBKvifPUnvwPgdxGPDMxnLbJ3OVR1wXe-X8X_alXdWcTr5w3Fo_tBT27SCtRFraYSQm-h6ZwbRUo2_nmyW5aoWJB8ua46Ixf8TrzhsxtwKY9hnsZnNfUW9JNmF_KiK6Tm-Vb_ygICi5aX-xo-zJVxtRwEweOpviQII3Kj26iLFDnqP5h0yInJFf17xbtUR-waOAo6VUSb7_a6q2L4TMrxGk8T1yTaTtDsRCLgTw1_Iei354VS0R16_ZfhVn3RikSLIMt6VyONqqhLUg_YAGl3TmwwsPByHL1YTeON3tla9hOK9ixshQkDKxt2cHRDYo0wws0gbNHfz7loX7PL_eriU765icx-ZrkZ_DJxpgaQL-SvKcgcgsVwmiuibHDusuqwzMlHTrnjha1d3OzsTRJ1do4StaQ4rL1YkzYBFpKbBAsycV5Z_1d4uXey85lfKLbZhaTJNrDQlw78MMX_ctCt3bgZ6tCCLwY5HNCTIH91DL-Dv3Yfp6d7-FjFswqVbWcxjLxZPC4yDavVuVeTOKx2VYaxqRpawWreFdotFuuXh79gFDmyXLK9ddhKYl0yYxzgSpdqg5BGk1qHyzVPZphgGIg4KDH9EdqA5GS4TLS1Vhw..%26ch%3DAQEAEAABABTh9x9gKLYImt9lAWBe1jateM2ADLCNBGo.%26v%3D3%26pg%3DQDDWRZXE5RFPPMCHSVLBAMGISE
+.netflix.com	TRUE	/	FALSE	1815440206	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Jul+13+2026+09%3A56%3A46+GMT%2B0900+(%ED%95%9C%EA%B5%AD+%ED%91%9C%EC%A4%80%EC%8B%9C)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=386a6111-617e-4773-bdfb-ddc6dd424d59&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1815440205	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQTWBStybNKPp-gZV9a3ily0_jQr-nioJc.%26dt%3D1783904205713
+.netflix.com	TRUE	/	TRUE	1794674560	gsid	aec64289-9ec1-455d-85e8-78888832d6c0
+.netflix.com	TRUE	/	FALSE	1794674560	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794674560	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794674560	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	FALSE	1794674560	profilesNewSession	0

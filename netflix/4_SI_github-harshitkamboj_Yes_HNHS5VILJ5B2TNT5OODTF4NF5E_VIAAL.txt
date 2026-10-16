@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: SI
+Plan: Premium
+Next Billing: November 15, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: €10.99
+Extra Member: Yes
+Profiles (6): Manca??, Manca🎀, Anja, ml arnes husbant, broski, Pia
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1818347954	OptanonAlertBoxClosed	2026-08-15T16:39:14.947Z
+.netflix.com	TRUE	/	FALSE	1818348010	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Aug+15+2026+18%3A40%3A10+GMT%2B0200+(Srednjeevropski+poletni+%C4%8Das)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=765537dc-01bc-420d-b2ae-6144d70be567&interactionCount=3&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=3&crTime=1786811930187&geolocation=SI%3B011&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1794588009	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794588009	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1818347999	nfvdid	BQFmAAEBEPO_IzQ9MTdsrCUASW6A7K1gXolD2TnxM0Ow66XJapUkPk1WTjDGpfgyNL3hCpiAr56uId1cTTbEW6mXw_RTNXBg9bdXp1xV11FSlKz-uqKp3xt1ZUdPb3FDv-FGgcJ_jDkFv1IQwPH6FlcydV30-ztm
+.netflix.com	TRUE	/	TRUE	1818400013	NetflixId	ct%3DBgjHlOvcAxK8A0ScfFN5hK25hNzIwE4BA8NurWuY0njTt0Iyu6E0ibRm0BsZZhzc_4vDaBoBxNznGxixsVmrNp0g9cC7XAUW90VTyKbvSKRifAl3aErfBs9D8Cipkw19eRtD-A0vNbLJQVfxsZGlESRhpmD2Nf2E5fW-uoLfI2W5QcxtZpKQ8ghluLm8r6I5inIwe1g7pqzoD0BPIIzeuV854KqKK0iBeYeJZgBHVgoylz7tugIZe9ZBMIqIPcRXkpMMzdnkh5iyV8W8z2HYsaX0sl7JZP-nbw5rET-crc5oVXtsRzyMKVS-DEf-vnep7g9oGS4coIi2RxYf9ODu9tZ_Dsnpm_Dj9I_ieO76laiKabC4Qilceux_VfSTW6-E-qZ6HDEc8mI7QsBU0ORcHzIn-8kQKfDbsRatNRAxIHKLW8Uj_rE_pqzw3EwXU65WILDRGUNdLY0u-i5rl5I9_rYT2N2KBcUifkhW7RJDNPicSw7hZhNhZcNJjgrXFawkTXXvmzzo86WPFvJBTCuR9EAQhLRk-vjMVIChHDJNKw8tySrqV5X8gTRpcIlRWjYpSCje1Ud00VWS6P8H_d0BHZyqPGMs_BgGIg4KDP0WX03CnUoyk2uxBQ..%26ch%3DAQEAEAABABRqRyVp4zXZ1rFJxnwZ_FiYoNA-ji_bmgw.%26v%3D3%26pg%3DHNHS5VILJ5B2TNT5OODTF4NF5E
+.netflix.com	TRUE	/	TRUE	1818400013	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQVMgpWgpBNhFuPu8-ldzkv-ch912bNAwQ.%26dt%3D1786864013743

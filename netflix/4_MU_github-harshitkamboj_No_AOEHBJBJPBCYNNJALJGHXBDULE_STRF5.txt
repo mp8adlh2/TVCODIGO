@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: MU
+Plan: Premium
+Next Billing: October 25, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: US$11.99
+Profiles (5): COBRAx, Violin, g, Cc, 4
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1794090525	flwssn	f5e1508a-0d5b-42c7-8bd4-f39a32f55b34
+.netflix.com	FALSE	/	FALSE	1794090525	gsid	8ee43beb-6b13-448e-b05a-8e7e9b51e9b3
+.netflix.com	FALSE	/	FALSE	1794090525	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKZA1zIfwHLy0i4XUUdqtzrESACtP516C0H9zQ2LO0jmMaKAKQa1kLIT1PUVKnhQbcd9Vzo2gzS2DIRm1oEqy_e2KLUY9S4LQCErrkspgVoDtbfgm0TbkmdacOF33GWOWggTnBHc1Ekx_SL_ReS7o25AHeoOmwQ_PBDgV3GwVzQapE6hTQnNNOL0NUrjZMYkJ5qbZ6jRobJaP_FrhBXPSq9-T6jDBbxr539D5rGpP02y9WuQlzhqO8Ypvy7Erpe_zqreJZCZoYv4cecF1O7j3ty9PidzNSVRGAjpEq9E5jiGv-FB5564ByHMwGV0oj4mXVvxVMbIwsNl9mzJ2jHZYuy14_yuTUbLD9KArdHOZ2dIZ_UpnlGGXMGeRmCyJgJx_5f0tmfMwoO8vR8asWkXPVVUFr8hxlj3b-mqwdmKlzXmS08qo8gkTT6-CsBxyG1bkCtkcva-vWHOqLBOoID57y-ZXU50KOYb2V5G9QCc-oEBYv64PyvEQCQqhz4eCefYJdYSz51byB85R19f4xJPQ1hm2cp-PIE9A0aMwQYBiIOCgxLXKT7ktzBMJ8R_yA.%26pg%3DAOEHBJBJPBCYNNJALJGHXBDULE%26ch%3DAQEAEAABABQ6zT8hFoaa22DuCo7pOQoye1-RDGSskoM.
+.netflix.com	FALSE	/	FALSE	1794090525	OptanonConsent	isGpcEnabled=0&datestamp=Mon+May+18+2026+18%3A55%3A25+GMT%2B0300+(East+Africa+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=7115d8db-009b-4426-9908-35bc80685e6e&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1779119707546&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1794090525	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABR6Thp4W7lSLRYUrjGFYfxOv82cOg2WW6I.%26dt%3D1779119722731
+.netflix.com	FALSE	/	FALSE	1794090525	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794090525	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794090525	nfvdid	BQFmAAEBEBZbmd2vBcN4W_YQ2iR0EQNgZXM9TjKRgMH-IfriOo6GgVroeHqakS1fIxJFpOzH4K6s6IjY4CLgN66X214IsAKozg09gcy0H2WZJoHfggFxV0ygWJ5Q1wjZFCJk-F1dHZMql4TDWD18TnpWmX6PGZmv
+.netflix.com	FALSE	/	FALSE	1794090525	profilesNewSession	0

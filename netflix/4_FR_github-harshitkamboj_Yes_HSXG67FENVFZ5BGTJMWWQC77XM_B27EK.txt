@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Premium
+Next Billing: October 23, 2026
+Payment: DCB
+Quality: UHD
+Streams: 4
+Price: €21,99
+Extra Member: Yes
+Profiles (5): Marin, NiSsou, Derek, first, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1794674560	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1812391890	OptanonAlertBoxClosed	2026-06-07T18:11:30.252Z
+.netflix.com	TRUE	/	TRUE	1812469698	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKbA__B2KVuqO_KbcYRoQiobLkW2XBgXD7j-cPQXq0eWBBbI7T2zA2T-kxpFWY_f0MFhIw_m6pfBe0Muku0GC22CTNvxCu2OyLVPSYOpTs5BOuRimshFfISoqVH_tBQQwYHP_Sqk2DJUYs6bllI2nQcrJ1cP0rN9BLqClONNleXEvz6xPLNekvV6Z7agELJuuDlJauoKBMMmXfpaPCHPSZbGdfDmW4TYdrnfAhB99d-vkAm5O4WKXGpQpdxPC85ySKrt8itCQdQ8jbS_vJ1aFK-x7x5ZaZuunF1V8_5dOw0X0gA0H_yF3MYQI2EwUY9WVbRCpxRUro4b6gGqzuL3I1SX4hPx5dfU4YaWlHzQtj5gudOi_py459uI2uLtWRu_MAkL1byfREERqDxHVQx3nMkngMZE-hjmRvBO33gV71u0U3HCmYZwAjk6XiKc4sn-7_nEaEw2B0wwIIz_HkpJoI8Tc5A6-hQrsxresl_ygw3Ox485kfX_YeL8hSUmNizk8F-Bi_P78iUaUMKci3P897DcD7PlqNoEEmOfc9mhhgGIg4KDCpmsqC8WSzwOz0QAQ..%26pg%3DHSXG67FENVFZ5BGTJMWWQC77XM%26ch%3DAQEAEAABABTYdlqyKILcLWMFwycQNUtYCU51u3bHk7A.
+.netflix.com	TRUE	/	TRUE	1812469698	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSf_EbyQqlcAjcwl0Xnun8XbuasqZ-zZRM.%26dt%3D1780933697866
+.netflix.com	TRUE	/	FALSE	1812469698	nfvdid	BQFmAAEBEJxzZjAdoShOap4dFC_mmhJggIPslEFbu72iRHDkfVOT3xOORqs29M5nc0XvdHdXLNdSZQJ8mOw1SLa89pzYgyldYvh23s8_yXE33ECexkT5hx0m3qiAqTNtZFI4SZsCpuTZAPhuaKhUXXgkg-Eaf9ND
+.netflix.com	TRUE	/	FALSE	1812469741	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Jun+08+2026+17%3A49%3A01+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=2a18bbd3-1331-4e74-b9fa-22e6aca2ed1b&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&fclco=&intType=1&crTime=1780855891076&geolocation=FR%3BIDF
+.netflix.com	TRUE	/	FALSE	1794674560	netflix-sans-bold-3-loaded	true

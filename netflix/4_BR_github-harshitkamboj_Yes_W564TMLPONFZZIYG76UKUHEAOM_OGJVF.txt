@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: TIM_PI_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (5): xapadin, KB, Magnum, Emil, Infantil
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1821745193	nfvdid	BQFmAAEBEI78maSDNvLbK6dpZ-guQOZg_BfdNiZGHuByLU1Hj2u_2RKOBBNxI049Tz8-LGmUoISFi4K4rPbFCqGFDr5SFEd0ooGXYcRpeNKQO_5knsbJROhp-uITiUU018LYfaBEl7rafFM-u8ksVecRHm4-_tWW
+.netflix.com	TRUE	/	FALSE	1821748866	OptanonAlertBoxClosed	2026-09-24T01:21:06.004Z
+.netflix.com	TRUE	/	TRUE	1821910044	NetflixId	ct%3DBgjHlOvcAxLKA7-mSEkmToz86v3ib7p_GZYhghiFPfEllA6JvdvmZ7SCBe-7A3uPhvNnRh-bRDjT1LiBkjB9I0TFydHYxs7Nk_zyUueea6VYM7QHM9eUs6uS-EebTdcZQ87-i7OdXwfbQ5dLI9qlEhqKchJXAes18WAso4tJonyiTJ4prhEDwgf8GM44O-xrqeZIDNDKGwRXzWinWOV9IMz8sXaBmjg2uEcJrah0-z0crO5sRln6IH6TRlnZ5tlOpr3haWT-A7foh69Ut69KCEx9mLhNw-p1Y5_htGxlJtQ6cgsVvDP9KH4iXwbo0QyU59WuIKYzAlhTIfpKwPT4QDEywf2XuSi2_5jJISa3FUGoA7quHQjurUrRWbYvbS0E2HDMRTNYUrN0wkgO3Ei-h9jyQM2a60dSXKrtJMwULoqcjTMSxusv-huNsELiIWJpaG8VXUEtpXNqP0gFQLUSYuGCHial9BmPb3b2GejSicIcVBpxOnMBVI-BK84-3_7aeGS-uTCXnkmnL0a3ZAFMK4Bi2KjhZByJ-Sx6zp98Kz52DxzVUWRWRJGeOR2zumvLPxnpWXeZz1LgbI1WqXZfvwwx6o6scqvldvXsSpqiIGYXIWWhGAYiDgoMzf0IPYtLhwAS0evG%26ch%3DAQEAEAABABSaRnulZhmWaO-3Z_iUG9w2ta8ecbWoEHs.%26v%3D3%26pg%3DW564TMLPONFZZIYG76UKUHEAOM
+.netflix.com	TRUE	/	FALSE	1821910042	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Sep+25+2026+19%3A07%3A22+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=2d7e1800-48a5-4343-81a4-89d95d8b06d1&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1790212866550&AwaitingReconsent=false&fclco=&lastConsentTs=1790212866&intType=3&geolocation=BR%3BPA
+.netflix.com	TRUE	/	TRUE	1821910044	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRvaVkPHt9K6vuCo4BnftOfig2vdaT2BhI.%26dt%3D1790374767553
+.netflix.com	TRUE	/	FALSE	1824934040	dsca	customer
+.netflix.com	TRUE	/	FALSE	1798150042	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1798150042	netflix-sans-normal-3-loaded	true

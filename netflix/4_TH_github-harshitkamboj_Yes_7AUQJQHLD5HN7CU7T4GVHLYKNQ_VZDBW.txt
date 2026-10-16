@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Premium
+Next Billing: October 18, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: THB 419
+Extra Member: Yes
+Profiles (5): KUMA, แม่พุง, Alice, PLOY, UREDO
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1781694100970	flwssn	3cfb5680-b632-45d4-8546-92170d3fa670
+.netflix.com	FALSE	/	FALSE	1813219310030	nfvdid	BQFmAAEBEKaIzZQFuOHB5jo8IEXZthxgnzIkFPCdSpdqcp6vNv1vpEl5qwiR5_OBDu_eJ2Ds7gB3hvq0TeBj6HhAdVWbE3F7-koMTqQSK786jnwuRd8ckEM5fo9zu4ho42LCqxbizLSMUDDA1NMA4LrCVDNVoHYV
+.netflix.com	FALSE	/	FALSE	1819407044430	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRhJN_6AMz0druAPGBNLAmO22DkRnxc5zs.%26dt%3D1787871044130
+.netflix.com	FALSE	/	FALSE	1819407044430	NetflixId	ct%3DBgjHlOvcAxKCBPTsU0m8dJrPxey-GIUALskYVEnn8-lcPqu1fMER1OEl_lRS-9oc5geG8uxyCiUclLFIbjh3efd24DIo0ZlROaNlkmSSpChZWR_NOtKryb20t--mF26cmrADMoSppSUzh2G-QhV8vlAF7XYJY1I1kuyNIgYlmtePZ-bznqqchdVR-ZARx4euL2sir7Giw3hK1vrZNqoK7B_m5kb9e6wcv76_iBeuE0jfOrlcxXQcGIKh5KfmYgqB8NoHwk5WuxqV-z1GEN-cWrnFCHuVzq8JzNG1Gx_UDGgLIZlScMtywIrvG6FMp8-mXoNW8uD6CBkeBlByMus_7C1259xeFxDfCj6LcMCd73aVRTwfOL7h6XH-nXOpctvGs1BuA-Ndsi9LWlhqtMLtKxvDTgisiUXvevyHzt60TSWR7MSMjopV7Zdbx5B6ElTLSfscz7ur8v9EQvpq_sUsELq4H8SgI8Xvgr2533IIVjulr_hOLqNcXAQ__YJPtLOrnGNP2EPQDsL-ViBMts9Y3JxphVBcoePYKrR2fBAPcfuKnt1Ma2fZxkAl5xtMYiywqpbWftR2kAvQ8zpRs0kYJdsKq1s4VPQH4hlxf4j-IvCYuYI0i9QLZVetRCGKs-W4i-ZNwaA_8h4h7Imn6VdsFdILSM4yCEvkLYWcnID2WwmCrom_e2I9EThrx20YBiIOCgyC--SCeuJKkhKPT4c.%26ch%3DAQEAEAABABTRrhj_sYDwV2PdxJkzZDivcqGFqbCncy0.%26v%3D3%26pg%3D7AUQJQHLD5HN7CU7T4GVHLYKNQ
+.netflix.com	FALSE	/	FALSE	1787957445430	gsid	9a88e895-f6b7-495d-8ddd-fed3acb11dd5
+.netflix.com	FALSE	/	FALSE	1795654653967	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795654653967	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1819414654000	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Aug+28+2026+07%3A57%3A34+GMT%2B0700+(Indochina+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=54a07486-dbec-4326-8d29-644e4e24d3ad&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1781683300386&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1787895982305	profilesNewSession	0

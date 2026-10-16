@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: CA
+Plan: Premium
+Next Billing: November 4, 2026
+Payment: UNKNOWN
+Quality: UHD
+Streams: 4
+Price: $23.99
+Extra Member: Yes
+Profiles (5): 1, londres, Wari, 2, H
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1818521904	OptanonAlertBoxClosed	2026-08-17T16:58:24.711Z
+.netflix.com	TRUE	/	TRUE	1818521953	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKgA9mHIxd4BFWgYMKxb3Bsgt92-IzNFlo3hHqocQ1WceKbGy64vuomw43Tn1OPgMmNpRoUhvF8BxZwNI8oQj-yYue4lc05F3zw4sOE2n1Jtu2p9J79bgIiSnWa02vR4X9J8mqvLjdRb-DPbrp44Bz2p7D3etc3gjwszQNJsncc84NdUkQGikLQIgt5EGdK_b_fhJCWBRJ53adplNbtZjC0CGS1O6Zy_JxvzPDIJ0FM7nEvjZqRERyOmjbB-Uq6qRc-ZQ8FISxB3QYt1ol2OjUD9fmijGK6W9wwEHgD_7mPFCqJ5qDtmkZ5n58wid7svpKDZJ6WrsC91F9pX_OvISK9irYJ4KZGDHeusgmMp-3S0-urw9sSi2oy1ACRjDlw_S8S8sdIEAGysS64jbHUkvygXwcJAD5Nll8sVlfG2_of9aZccmXN2-Qd9u3D5vrhDMvabUHooiZee3UyH5LIzuoBL7Hivg6fKSu9droQdhG4-HiJBx_sQoAqKjivd4ys7MTvzrDwPENX_6p_MzTdlhi0mconFODp7TlPrenGR7Kn-O0aGAYiDgoMW0f9eZd3O2VkEFiC%26pg%3D2QG3LRL6M5CVTLL5NDRD5SHG7A%26ch%3DAQEAEAABABQcdUcWNWeBbc7FLqGa6msgUhKyA_sDCWk.
+.netflix.com	TRUE	/	FALSE	1818521955	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Aug+17+2026+12%3A59%3A15+GMT-0400+(heure+avanc%C3%A9e+de+l%E2%80%99Est)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=b30445cf-e64c-49d7-b59e-65d62c7b409e&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&fclco=&intType=3&crTime=1786985904919&geolocation=CA%3BQC
+.netflix.com	TRUE	/	TRUE	1818521953	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSHS2ltcA-U_-ixBIhjDbICxwVZYss8cBE.%26dt%3D1786985953242
+.netflix.com	TRUE	/	FALSE	1794761954	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794761954	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1818521953	nfvdid	BQFmAAEBEJEob0Yb4eiXLU24xuNRoglgeMoajEZC5BT1SX6jcFY7ksu3jD5-t_np310ccp7oMnPf1dmPRR8DFK7DSLa-NQMBPBBsY4T6jlAuUmiu9-5i5c66m2DQaeIhgdnZuX8JOEmk1ZXP4UpKcS15yc42ODhe
+.netflix.com	TRUE	/	FALSE	1794761976	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

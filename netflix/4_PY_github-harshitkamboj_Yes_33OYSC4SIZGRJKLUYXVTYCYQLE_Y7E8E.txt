@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: PY
+Plan: Premium
+Next Billing: November 13, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: $8.99
+Extra Member: Yes
+Profiles (5): アイムジャパニーズ, Carlos, ROJAS, Tema!!!, Admin
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1794090526	nfvdid	BQFmAAEBEPBmYgX-mxKS7qEWg76AXsZgYlreSNmDG0W9yWe25kq--glAws5qr2dKxkf5P_yAMxhQqjaVNNHN7X-ffJIpd8ZkjhBeVJ2i2hWLtzSguXazO8HyvsFK3zcrxxQ7n5OD8QOB0pyOiof-K3Oeby5aV8jW
+.netflix.com	FALSE	/	FALSE	1794090526	NetflixId	ct%3DBgjHlOvcAxLPA-CGc17aHYfNZDavxDgVyztINXa1c33GsuWICLfpp340t9Tvw-kTdyQzTu4Q3jvm6vmrG-HhYLij_diI_heuLobIY-irn-LZtb01_EVKNOHq7bXEqoazCQpVfS_2Xf0Hmyqr7ONNhylmF4O9AJSn4as0SKNLm1-xodRW3CbmLtKqMuO0tiRIoSHrr88CrB0LRW3sFIjvfPcAz8NHSkdhzojH5fsjOq7pa51_419bcBUPCYMHJ51QWWDeSm2BzYLZ8YZPuD2AW9iiq5B_oELYdzlCEd4sXHukq6rdQ1eXuvo2qMZSqd5nH3bo7BhuC_BpmR7UwnbI-b_AGF2OS7FaXeWl3P43zvrUjercRiMlgbpwhCopd-F-8kUq-7363XNwBY3O5P2OmpheO0X5RuQcjfgI0hSQou11Gmb6zIUZswJpKpwokG6ysVA-bLfe8KbNxNXR9yIo0_CtYP_j61fvrnFHrZni4X9PrA2v_XFnJh6R4f_2yruEeVdxnmDjYsaaXxCCX6IG9NV4o5v8ULv-BgK0o8-liy71NG0tzWfouBBo_A-VCyM99rTSfbnCft0qpp9prco_qz3PgBtvkFKcGz1xFysYm7jWhYbZVfxbDOIYBiIOCgyFXJ_SNrhXu2r5R10.%26ch%3DAQEAEAABABSmIuBoPWEvjvPl_OAbuVgH78P3qJThPpg.%26v%3D3%26pg%3D33OYSC4SIZGRJKLUYXVTYCYQLE
+.netflix.com	FALSE	/	FALSE	1794090526	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+10+2025+13%3A45%3A06+GMT-0300+(hora+est%C3%A1ndar+de+Paraguay)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=6afc5eab-abb7-4c6f-91bb-03df51c62964&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1794090526	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABST8rPKvsv10AgDLH8vGPGBe3PTMinNei0.%26dt%3D1757522706700
+.netflix.com	FALSE	/	FALSE	1794090526	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794090526	netflix-sans-normal-3-loaded	true

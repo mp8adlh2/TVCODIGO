@@ -1,0 +1,20 @@
+NETFLIX HIT :👇
+
+Country: JP
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: KDDI_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Profiles (5): トーラス・シルバー, アクション映画, あにめ, sm, Misave
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1818718852	nfvdid	BQFmAAEBELQgJvAGBoliyCtOQB4NWhRgQR8dn_DTYuNLyBshyyBRAxFcD4RvNVo3oNp3b8yBSlk9U3wo19chKG2uny0G9Cnew11Wrorh3bKDzpVf5fYgZieeESJn-YHiu1C6c3hgvqjyCDMrwN3DsCCwoeNiYuN8
+.netflix.com	FALSE	/	TRUE	1821220577	NetflixId	ct%3DBgjHlOvcAxLRA5NxUZmVkRFZP1ezjhSrlFb3H5zfxzARAMBEJKbE_bai9XLomZQ1SgBcz9F2dAI5jZXa-rRXDGeeSHBNRjn7O3cLx0YLsdI1LVDlS6uhwwa3_egr7qeKGs7peTmDKI6y9AVyVZGDSJzbtP5eRwmV2NcofeRoMHDRVR0eNIg2tLCXlMERSqyvPscK3epMhL8Kx2ivSMIdltQulSprU01Q4BuZ7l8Msdwf-4JsNoY1RpJYav-HwJ_S416QRMthFOBdYmp8bMsuq_wZdYWADq7Ce4G7sRbwuI7c4fM5wPx0wtsOlj5L8zsYUROA4ykaX0GBHq56GY_FCpTXCxtMLMT3jsDqMzm5-mHdncvLnCMQ82Pbw6oYTFASJyIwNQAkMAeT4kMcPxfCu49nX8rTfd5Sfy70rb6H59DwrUVAiURqroYYPONAFPapWnicBcQdspxRwoeZkS4rUV105OII-qrwmwzNMs-xDXkES0EgpnY611TDEBm8f4CLF1lEPlK6xRI3Umo34L28qbo2MN380kuiud2uis8ma-TeiSHYJ7AfT5k5vP2oxZVo2wrKY-Zzd4mA4b4CZ3ZC8XSSEQX1eMs_IQxiIRYOLpyG-QiCia8djcw3CRgGIg4KDFaXT6btSq_uTspQyg..%26ch%3DAQEAEAABABTzKkJ1Fu-iQdsscU_04Pfk4l1Uy6Mm1l8.%26v%3D3%26pg%3DFR3YSP4YGVGSJMECQWQ7BDILFI
+.netflix.com	FALSE	/	FALSE	1821220580	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Sep+18+2026+07%3A36%3A20+GMT%2B0900+(%E6%97%A5%E6%9C%AC%E6%A8%99%E6%BA%96%E6%99%82)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=b47dfa62-4ad1-41fc-8ecd-dcd137c36032&interactionCount=0&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1821220577	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQwlfDHlwltrek4UNHURfn0IgfrwN1L23A.%26dt%3D1789684576490

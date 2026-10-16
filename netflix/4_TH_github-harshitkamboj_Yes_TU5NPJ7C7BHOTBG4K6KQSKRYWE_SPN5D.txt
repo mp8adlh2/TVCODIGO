@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: TRUE_PI_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (5): Nongmuay, Lion, บังมึงเปลี่ยนไรนักหนา, 4rafi, จอกุมึงจะเข้ามาดูทำพระแสงอะไร
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1803039329	nfvdid	BQFmAAEBEHhVGD7tGHqlQ_sZ7CRVPptgUSijaAO43V8oZUC4Bx63RzUbQPkOKQpvHnBV20yurEF-vDmkY9-t9E6H0CwezX8ShdGaCsNFnHwi98ikjTeokqbZHWoNSplgnJs64mC5zCgeY3YMiCA1pcv2jBLmsYQa
+.netflix.com	TRUE	/	FALSE	1815738068	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Jul+16+2026+18%3A41%3A08+GMT%2B0700+(%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B9%82%E0%B8%94%E0%B8%88%E0%B8%B5%E0%B8%99)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=aacbfad1-32d4-4fef-a16a-0fb31d4bc384&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1820671698	NetflixId	ct%3DBgjHlOvcAxKZBMwIqnYHaChODvHhqDpJvnw5B3SIFder4O5pa0Nc1E1-mRzXv-Irym6vZA0HfcCNJsSS3stVVLSBm4B0VS7qVj4H0zsQhJEZY9GXIKuiThI1lOM9j5WRnurZQ24Zofaxk8oaJXsCnWqqq6JGGLSNZ-ifpUSdCRuE9e5jIoWARxgPEUfWR6tj-PaORRuTyoiQMAkHpaX7q86IgUccEFl7fdUR6QinA3nIKgIf3__rz5Jyg3l-LSMphyTRNsVotpqUQeSdrYL8iZy87muc0wpiycruublBEuWz-Pt01eR3qklxUfAKFhn1J0x3jzOuKIei298SMKoSARV6g_tSJGn5nkE8ogN7Ixs6LH7lN6vPrC9ujBkQyxKxAi2r1VqobzL1dbn3jcLjaklc3PVfZQFqPBBZ_LhsnT5n9LQ5TKYBBn6V1-WtchRUvJhS7-KhzMO_Rj-tE9sGIaZVsakVooiQau69jxR2a4Ir1S7-Yk6iwzhZkBT55TeFJsroGJcDPHLaetjTncnCPerJV7nS_asb8XO8E3zKfLinvrM2odGHQngcQQq4PF4tWF5cpjP2MK660spEby4mgOQvpzH3gRzFl8Ds5-WV0VeYvnbQB3DEDasdmgL2F-zbT73fbL9OnsE90KJXBqtxjw-c-e335Kqk143bDp8Y0oGGWXWdCpoUwoHQ7Y_oruo-nYnRWurwOYFnUl0plhJg1sf7uRgGIg4KDBPlAitXT-MhEIvMuA..%26ch%3DAQEAEAABABQ4PRUARQSQgFi5KeeLzN1MSRXy3IToY-Y.%26v%3D3%26pg%3DTU5NPJ7C7BHOTBG4K6KQSKRYWE
+.netflix.com	TRUE	/	TRUE	1820671698	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRequpN44Faw_EBy5-rUBt6LzeSPRErfag.%26dt%3D1789135697209
+.netflix.com	TRUE	/	FALSE	1796911698	graphik-bold-1-loaded	true
+.netflix.com	TRUE	/	FALSE	1796911698	graphik-normal-1-loaded	true
+.netflix.com	TRUE	/	TRUE	1794674560	gsid	6d9f3a1d-d4c0-4abf-ac32-7f97f8158e7a
+.netflix.com	TRUE	/	FALSE	1796911698	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796911698	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796911698	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

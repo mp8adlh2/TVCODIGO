@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: JO
+Plan: Premium
+Next Billing: November 3, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: USD 9.99
+Profiles (5): Nofan, Ziena, Shahem, Abdallah, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1794674576	memclid	72698447-c2fa-4a5a-8929-d686b48e4692
+.netflix.com	TRUE	/	FALSE	1794674576	nfvdid	BQFmAAEBENOd6cxGd8_mGghYUi7nDDJgG7V1cLz4_RqwP8GlA0Z1ChaG6v9nCnCvaTFCgcPts8oy1u98FBlhN-irsbKROIxAnzsBhWCb0PgDX4RcUQyo_HlrW6o6-rU1d0N20BS35RSmwULZKRg5RFlHx_LGcOnn
+.netflix.com	TRUE	/	FALSE	1794674576	OptanonConsent	isIABGlobal=false&datestamp=Fri+Apr+01+2022+15%3A11%3A01+GMT%2B0300+(Eastern+European+Summer+Time)&version=6.6.0&consentId=5b709a15-5479-498c-8197-5d3fa617561d&interactionCount=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1&hosts=H12%3A1%2CH13%3A1&AwaitingReconsent=false&geolocation=JO%3BAM
+.netflix.com	TRUE	/	FALSE	1794674576	OptanonAlertBoxClosed	2022-04-01T12:11:01.865Z
+.netflix.com	TRUE	/	TRUE	1794674576	SecureNetflixId	v%3D2%26mac%3DAQEAEQABABSrbl535GNvhR1jCbrpE_vq1SyjpxH9n-c.%26dt%3D1657535591417
+.netflix.com	TRUE	/	TRUE	1794674576	NetflixId	ct%3DBQAOAAEBEIgRpYVfwag60JTK0UhV8fyCYIevuEGCaaaIXCj5HQC9jfECu7PbSbfMyer-pCZluHV3DjvDZLjV-Iog1g6z1QOyCEKnhQYrlWe6YCo4EzDHURa-Otn_fnI7Sb8aRkNlJSR49JZHp5XwzxBKGYr9HQthkjdwoNOMm7_UItmSiWBPKfkiaBWj8Owooscl-40VBggQ-Ilcj-oq7XjgPDIj_dmzNoX_lNJHz8e--fECd4ZwUeLA1LbW5YFi3C9fc93rL-ZfnCdgfm8jdgR33wH7Q6Pg7i2CtNg7-aVkp0s6kWX1ILHwukRL1gKKuM2ZwIpj4MEO5tb9Dc2rYR62rkI1ec7xT6r1LDaahT85a7hSIAj4ckFBIDMGaNnuM6ITljjvN1puxG48k9Kt5eokedszV3GgfILmSPg0xzEI7qWLoCKoSd-PX88I2vIKPZrE-yaCWnxfWITwu2v1Mjo1XrKfLuUaWLLGzA1LU2KFvsFxFQLJWWcvG3FPD2RkjuFHfeNmvWO6ByUkIRVrZ078_FlSNLbIWxFfJkJ2sZwNeL53nINZaESj0yFPtNJVcSrVcRHeLcUM1qm5CtPcml0J5YLZ2RxGo0VMAn6_iNc-I1eurDRoScse7Hff7Ce4wuNIjc2ElEiroJCHTzAyoHbAOSuWvWdIiiiyJneDdL51uN0TlINkRtk_LBWlMWGvgKbVdnSnP3NRSHikidY7-roMAZymMZx9sqvBp6FRwl6-aNUcrCM-s6zPenT2RRLF2I6upa32zyjOMcdtDT1p0nb5x_3kLoHedoXCiaDS5qhj55LsdkMTdjwOoo0OWePWcRTQ7KB6dL0h%26bt%3Ddbl%26ch%3DAQEAEAABABSheXMHSbIeDHC2gt0Aquf50hO69p6iSws.%26v%3D2%26mac%3DAQEAEAABABSZv0evDV46lT5lxG7E-1P2farAJ2Ojtxw.

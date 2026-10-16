@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: ID
+Plan: Premium
+Next Billing: November 11, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: IDR 186,000
+Profiles (5): agmi, Rusydi, jb, Taurs, Queen
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1794674560	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794674560	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794674560	nfvdid	BQFmAAEBEKSkS4eaOmVuBntonyuEXapgcTf32739aCbDV9SZAxmfER0LVxqdQIXz3Ix8gt6uG1-8J2sm9ZcbqtwsPnr0l3vcMvrOpkMKlcgLw7wrJPV1mOP7zBCN0xvcrSj24600s6Yhe9OVWhsXjpd2wIRL7Hhq
+.netflix.com	TRUE	/	FALSE	1794674560	flwssn	842411cb-1b6e-462e-9870-0d612f4ea4b4
+.netflix.com	TRUE	/	TRUE	1815052216	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABR8MS0ETQEBXpt_Gj-mJ5Vn7mTW6i3fT7s.%26dt%3D1783519817761
+.netflix.com	TRUE	/	TRUE	1815052216	NetflixId	ct%3DBgjHlOvcAxKCBE_y_efIa-kd-FdNkNljEO1bjVbiCDfK41GA8z1lBUg664-_bEkzEbJGmwlhKB3oYCr0QoIm36G8PR9KFc_XE1ViIWg_bTtBiJ0bMvs3WEMr7YMyWu7bso7RHJlVSYSbd20R5vviYkQ2hTfgxwuR4fWaNPKZnKT2WLiuSVa1CjDSffSqC-A4MmWGianDoWzrxWXM0udeGg4tbEn7fYi9wK-wrRbEEKRILihvGyavn_Bd3NT2ycoyn2g9rf18GhAvKdxn6Pr6Cnki5x1dAyhHeZF2XzBGyo70QY69MJ-qilyHvV3ZWrIAs2cjkS921s78aIwhZCOONcadgH3od2qnFjZDS70hqYJ92wEQq1R5NkvYNHj9kD_2-XBl6Ij52qtQeSeaiRNBp3lYbr8drAJWSjgJPq112qXnTpPZlbwErWOzjeKb4YFJ5RItqstDH0-CnsgmIIfmH9I0h0RJJqMHfQcLvxfA6k7kyvpT3v1mXqyYyO9sW3wW0z1CZESWw_1fRAlxK5SOAQJn4G3aKppmwBgADvRWJmvHLx1Lopxnij7Uh7inXamk1rHbTTKUB_IMYFA8gu2hI7kg55ZaOP8zI3ZZDV4iGfnyOBuZOD2GW_G4lyAXDyvQ0Dl5xcmBVyTYjHxYeK2OK4wObmD68tZHt_HCjJfEhKKyN7eeqAkMNSBWU8kYBiIOCgzgwVh92NYY9FSK_xM.%26ch%3DAQEAEAABABR6Qa8J1GiMPl30likPr-IXOS2EKwkTkPQ.%26v%3D3%26pg%3D5R3MYXYSF5CIXBQ36XWTFI5K6I
+.netflix.com	TRUE	/	TRUE	1794674560	gsid	d96e2184-b11f-4466-9cdb-a582493945a9
+.netflix.com	TRUE	/	FALSE	1815052219	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Jul+08+2026+21%3A10%3A19+GMT%2B0800+(China+Standard+Time)&version=202604.2.0&isIABGlobal=false&hosts=&consentId=dc9e1a18-4dc3-4102-8c1c-8506c472e230&interactionCount=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&browserGpcFlag=0&isAnonUser=1&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	FALSE	1794674560	profilesNewSession	0

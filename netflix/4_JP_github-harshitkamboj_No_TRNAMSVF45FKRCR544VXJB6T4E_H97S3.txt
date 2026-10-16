@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: JP
+Plan: Premium
+Next Billing: October 27, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: JPY 2.290
+Profiles (5): Ling, Samir, Isaac, Gop Gop, Leo
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1794674560	dsca	true
+.netflix.com	FALSE	/	FALSE	1794674560	netflix-mfa-nonce	BgimvuvcAxKXAR3SZpxDjFdV6L4TkYtBB9LMf9wqWjY86BMvUIMv3CJ2x7lTK193ObqkYTR50_J-NM0S0euhNNn5A8KscYaJmkhSeYhiGqvKZVRRdc-ZQaC1lFGgbB1-oViOci7jRaKSyVD0ZS8iTFKmihCilF-NgoYk1joTPF9Y0O2wBUZc_uV8ck4XfSBGE6JJERPvtz-jaevOUXjVQjwYBiIOCgxSYZ9l9-lkngKtJg8=
+.netflix.com	TRUE	/	FALSE	1794674560	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Aug+30+2026+22%3A48%3A06+GMT%2B0700+(Western+Indonesia+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=d09edcd6-ae67-4a6f-920f-66f6b30e193e&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1771350920273&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	FALSE	1794674560	gsid	0f134dba-0a4f-49d8-9a53-666c2ae89c5a
+.netflix.com	TRUE	/	FALSE	1794674560	nap	BgjvvevcAxJJXPUH1mJde4vnkIu210GSUpqUhdeYAYma_xKg4huvixUL08VEKgXY8xL0MZknDJJmV_ikRVVlZwdqRpdLT_VPOkyYKD88mS1ycBgGIg4KDC7iLq9GjHAnJdjM6A..
+.netflix.com	TRUE	/	FALSE	1794674560	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794674560	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794674560	nfvdid	BQFmAAEBEEMBcjRXY3AVmb2wk3sRf8JgxBGybbDA8vREEbs-h5FoU0Cbhk-CNiZ4MxNi-FckwnNFCCqxQWbPAFuERRI9grs3h6vS25jU5aEuhvnSjEP3PqwYLg4oO22emK-m3DpbDwq84Wf1bA9umdzXrpVT3Zfz
+.netflix.com	TRUE	/	FALSE	1794674560	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	FALSE	1794674560	NetflixId	ct%3DBgjHlOvcAxK2A-Xk7g7Qfspnl5K366PQaUWlD1uLKNMsP5zSAk6tkpt9Rk4h3BOhHRftqW3kChLfeTLDd64Bu9dRLkoAq6WapeYGhKsE3QmIXBipcXAQS0KpSRKr6zEWQJXBn7FYrp0FRLsupNzNnEUCou3KKVItdjvomo4GUqaVS-TLC_UEVCIndKDpHJKsQlbDHm8vqZV-rgQEHNWhL4goUHrDhVeIgAsTVpNU87M8fmcvaLx1bS8TND6p1BoLT0EdlP6zpnTRRArr07djNgjc6fBDnAF6Vk2MD2oSlwUystU7urZ4XOdgmxI9WTCrhlBCVE8wb3GSok9vN2KzDhcu8C8pYJrcwApUeZrD54X6IeD8AeKz4SH6ai2fae8pKlCXG-fn-zIoyG1cCDPwD2Oe8yoBa-NKHjFnEKrjBTVcubMhk6ZPh2b-xVQmZzFZW9T6n5TV6yD5V-zj2Yihkehq2gFMHrbnipgV2tjxYF9jCUT0N9v4YS5MRS2QvrGLAyhBZMeNOirMV60fV3daePk18qSCsLyHRoKaLrbeYciUceBSALAzjzTlFV8eGfo0MvqBbADV2FkIQV4nV1h-YBgGIg4KDFC8su-Fy0DJErIDTA..%26ch%3DAQEAEAABABR0GXqyRZn0vb8bEjlLkX16EdFtA2ZKUKU.%26v%3D3%26pg%3DTRNAMSVF45FKRCR544VXJB6T4E
+.netflix.com	TRUE	/	FALSE	1794674560	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSmn3rbIFeyJ9bYludup7_09GDvRofYmto.%26dt%3D1788161951720
+.netflix.com	TRUE	/	FALSE	1794674560	profilesNewSession	0

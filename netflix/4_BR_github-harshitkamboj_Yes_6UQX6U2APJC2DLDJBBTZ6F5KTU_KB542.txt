@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: October 17, 2026
+Payment: DC
+Quality: UHD
+Streams: 4
+Price: BRL 59.90
+Extra Member: Yes
+Profiles (6): Doidinha??, Doidinha🤣, Simone, Isaac, Eurípedes, Infantil
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1795042065	nfvdid	BQFmAAEBEKvE36N7g0op7SrdeNgmID1git4RKq-zHMc2qpFPz6vkx1ElfjEjzHZkvh1pjqe8WlmyOqfuEx40wH9-KJ2l3YiSosUKFZHMZXedqHK86uv7drjOpxtmkXOmV0AjXGTlC9-mGHELBHG3IiDbIucC98XZ
+.netflix.com	TRUE	/	FALSE	1801254630	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Aug+02+2026+17%3A30%3A30+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202604.2.0&browserGpcFlag=1&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=8e2197fa-c6d5-4dff-b152-b054cec3c0c2&interactionCount=0&isAnonUser=1&prevHadToken=0&landingPath=https%3A%2F%2Fwww.netflix.com%2Fbrowse&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1
+.netflix.com	TRUE	/	TRUE	1794674560	gsid	05f50f7c-a411-40dd-be36-c485c4ffef6f
+.netflix.com	TRUE	/	TRUE	1807132365	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRvLvD4gW2T2Uit1xnjDuzx-gz3X1zcgnQ.%26dt%3D1791580368447
+.netflix.com	TRUE	/	FALSE	1799356365	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	TRUE	1807132365	nap	BgimwOvcAxJJeq8irIgwaGixSHAYI-AiYj-Q-9r1nTldAcIOLB5hu2Dr7P0d-C6a0yA_xz5uOfGnL_a17NhYOJDPKccF1YgjNF1Od56eXjwIehgGIg4KDAexZX30EYhLEGs_ew..
+.netflix.com	TRUE	/	FALSE	1799356365	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1799356365	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	TRUE	/	TRUE	1807132365	NetflixId	ct%3DBgjHlOvcAxKUBHCFjuYlw2CIUpDJELMhReJqq2kKnYuWd5ivcD6-Q_nMSiuIsl7fFcO384xeK960jb66BbFnihQG1InAv2GL_XyULLk0pKvQPJ-7KJ2pS3RmbvTKVV4vhyiMP-AkGh7CTcYOD9qXpEd3CvzlAt7tp_ig-zkimiRKPjh8dC1Lh0sVJVjT7k8XUC8ZAvihf6LH7KUcVHGXaynbCZLTmuMdOKnz2T42jiQk66aFAwNMiDhWZz8Fkz229-EgOcWIQOLPORHLjR7TNq519TWEftKbdQIzH3WQ7oau4sCIo8Zn_-b8GNEa7E0rSxL236Fm7YQ-hn_eefS9GFPqAJZOUpO-xfGxX9Ku90CHTKYgyUbpVTx306FInolnPTSKoU60CnEtmdqI_xCu41D8SDjaC5XB8i0hKOGLlOr97WvV-PJL3u-ITzz4O9f3wS9aU8kb7dmv2HHg_bWVnlKTiREJa2oiorsIjJ3m_7Pmkbz6ee7bYc80ZALcDn4NDGiFnEVfuxnCTgBU-XyGDngJ7bCxoH3P9WLD3QzHOG24_gIMWkq1_usXmLr0OjPOV7PLqcXq-yzqnID5n4ikuxLFxsVG2BIGBjH433iPpgLGu3I3ivd0WhcriOdjXhZT0t7GEnoPaG6XB08mLlAQzOmesR6q2D51j8h2FcTpkjHdE45wp6ZsMt80u5zYVZddHheed-AWm7SHZsiPFnUYBiIOCgzZLeNmoTGgmOMqM4M.%26ch%3DAQEAEAABABSemN0c1iKktCfrHTUBXLYgU9SotzVqOC0.%26v%3D3%26pg%3D6UQX6U2APJC2DLDJBBTZ6F5KTU

@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: ID
+Plan: Premium
+Next Billing: October 20, 2026
+Payment: MOBILE_WALLET
+Quality: UHD
+Streams: 4
+Price: 186 000 IDR
+Profiles (5): argataputriliana, ArgataftAR, Ang, Drax, drax 2
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1794090525	nfvdid	BQFmAAEBEA5ajiqJ_-yCJDxfggDthYhg74icWm191O1_jvpB_lD6Ib20elYMXu0sfIfoYnEQqOY0hzL2LPRZCdNw4YrvtgZ5stolO3sru8OXShIeFRNKVrhd87o4oza8hFcYzzw4PXPSgIEVFL2Px8hQgmGx2qWu
+.netflix.com	FALSE	/	FALSE	1794090525	NetflixId	ct%3DBgjHlOvcAxKPBFi1mIqaN5DXSvztLtEcHSLre3fBF_ADglYyyprPdeNkz5frrk2D3J6shz3-cDyrMogDDRaW4v-uPX9Ua5tSHAz1R4HtTecKDL4E6avrCnoAk5Cc5Gw0eHbk5iATlR-uvDWvl3G3lfnXBY6XjyfPjHz8GmVCmDNuSouspAA0vBF-3OqEhoKXe3Aw7lt_C1sqCytGgVhiRRDPWAogI4MGHjyEs5nCOazLGRJob6h6p6327hQ0Ce1cZV9I_MOBcx2JDwpfEYfEt2j_hevV-Ep3jGsB_bVtKvhBg9zzrmr0dNGdsi3NGC-O8IAvPJtbELAcoP0iUx11rH-V_CqACXa3sdvcicb28mdXqTSQwtc1ZTBgWjjeF78k5iMrRez29TVQTO19dltWdYCudqhreMwvyOz0SLnu1uK153Ajludk9ZXUooJSX-CHY14Qam1ruIOndLSYzNv5k9ZrB06LVlwk4JIOxXqC518XE5Fgq2Z-r0BoqlE5JlcoTyn28Gh_KeewPDDfV5vDEMO1fhtJeMPaXz93diycrdV_VbAZBAJIRv-obb5hx7DdCq0oq08rxXAfliclFMYN2-Qal8oOjp8c9xNJ2MOaJ-7a2oP43PEckx2M8loPv_WjQA7N6dOpqM3MUqkwRHWk1BFlOmx19cho21Q2zfPeT5wLMkbPrFJi8d9k3XTesM-yl6B8tolbfxrpGAYiDgoM0GEWS7Hi76zWMUmI%26ch%3DAQEAEAABABRpvwYwr7yPNUic0CyslPC82h613FBwFSA.%26v%3D3%26pg%3DMDSYFW4NFRC73CHZ6FPPWZTOEM
+.netflix.com	FALSE	/	FALSE	1794090525	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQbjPvJhFnpeftcPF4egKk3VuElvaFZ63U.%26dt%3D1788506576689
+.netflix.com	FALSE	/	FALSE	1794090525	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Sep+04+2026+14%3A23%3A39+GMT%2B0700+(Western+Indonesia+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=821d197d-11c0-4b93-85dd-d9763918638c&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1770011721610&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1794090525	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794090525	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794090525	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

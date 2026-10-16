@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Premium
+Next Billing: October 25, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 21,99 €
+Extra Member: Yes
+Profiles (5): Alix, bibi, brandou, MaFemme, Jeunesse
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1794674560	OptanonAlertBoxClosed	2025-09-28T01:50:26.166Z
+.netflix.com	TRUE	/	FALSE	1794674560	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+28+2025+03%3A50%3A39+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=686a997f-00af-4d73-b932-275566857726&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1&geolocation=FR%3BOCC&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1794674560	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794674560	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794674560	nfvdid	BQFmAAEBEMqkL4ptu0ixl0xCCer4XPdgOxsfswF5fEmfTx62pyPntgjaci2HIYRn760FL0rEFX067t69ayHuvAceVsmxArHlEUhn56F5XXh4yh3AUueBccrOCSiQzekIqR8sKJj2phxcrsWooJ3FlwVYraootL-b
+.netflix.com	TRUE	/	TRUE	1794674560	NetflixId	ct%3DBgjHlOvcAxKYA69SrRXCRq2S5wR72NslQXov1VzwQ4q08i8K3wxguzj9zvTPpvzyDZb8kkCJz5tpjjc27mjNDR3967L0Q3g01zvEIyQ_FcPOugkVMovfwF19tNic9f4EqBXaA2s3j4y6Ix9arbUHXs4HssPhPutCdAE8eUqG2FDE_bd5_Qg_5vOOtHa0zbsYI0jsXdh3cOx-YkJP2vfBplaO9IqNNKsYHD96umORM3WOPt5Y3JO76G1HuN7xJPhzi-6z6DFJZUHon1sfKj7npYkvHYb-MojQjpt4-CoZ-rDAYjiC2dtOmIU_5Z7-XABtgsy5HCxYCUb4c2o_rTEybjCllGx0bT0vwQCApQfjXxH4Mr4WS75J_Jj-5UnP0Y5OjJ5WvBI4OD10Q_d05APJNw6eY2s5MwvgIJn2LSPT0uLN-9N7k0_-YyACSerQj_YdMDP1Zu4AyPBDCo1LvskmyEzuzt8iodG23rLjecGGvPqVh8yrYx062nkbfzn1KLaEs0YRbt9Z6PrlkgQ4j4iY5QtcIGdLVYpdv2aKLQxRSQwN0hgGIg4KDKliJrL1VVwGnyaHeA..%26ch%3DAQEAEAABABRRLlhVSeg7grdpRDHQB_WMee2hMrT4Kds.%26v%3D3%26pg%3DTRBE5NCPXBENPDPU2M3UYJWDV4
+.netflix.com	TRUE	/	TRUE	1794674560	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABR0oAj9Qi8llAnnZ2dncBM3nWAxseonxaE.%26dt%3D1759090465889

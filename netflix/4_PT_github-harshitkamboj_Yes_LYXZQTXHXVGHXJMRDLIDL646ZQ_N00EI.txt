@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: PT
+Plan: Premium
+Next Billing: October 26, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: €17.99
+Extra Member: Yes
+Profiles (5): w, Julian, Govind, kfifif, Vanessa
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1794674560	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKTA1ydhZqPmo51HudCB5cyQIF4kjbxcSxnwGNeQEo4pbGCMT06kcjIy34OjcSJj-bNJjYa282PfUbw_trjbk8S0nB6k5ytxvMHdmN5Fp6OKYCM9nnS9wPTRH4Z2jgEr7zRetsq7GxQikOQSXaZWcqDOtg7eXa4gQoqqMvlW0RfNLWVjwTyiTRtVtlr_KjeL5kOkRb2EXD_atpwbPgkL4AkldfgqqxrPE5zGk-WqlG46c9YECGQzUSn7WkaIc4by5b2ePWNjX0KjYXh8XXy_8zmdmROrninC9B0xrA-u6cvzMANSZK4dQlymX7eY1QgLvYosQ8ux0OGi1ziihOsTtCv45ADj5YBTObQmIzfTN5OrlGFuwFYsIGVk7ALE8hyFD3_U-lB6O_c4iUiYPCnMR76Fu4EOQ2jUPxKCkwPk5JisDOSOzn3RdQcUmi269jar7froQHNzfceapklTZri9KGZJaq6S5tEwAr8qu2a2zcmycaftOXh-yNkxxdDHCNh8G5dLSMzhPN_TJk_zeerpy2et-FVM5kYBiIOCgwZOb2icFC4Ygrm12s.%26pg%3DLYXZQTXHXVGHXJMRDLIDL646ZQ%26ch%3DAQEAEAABABRMIGMeLhbxmeTTv94xU7AQEgFTKfqe1SM.
+.netflix.com	TRUE	/	FALSE	1794674560	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Jul+12+2026+12%3A49%3A25+GMT%2B0100+(GMT%2B01%3A00)&version=202604.2.0&isIABGlobal=false&hosts=&consentId=3f2d2035-16af-4c50-b8e7-375186171fe4&interactionCount=3&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&browserGpcFlag=0&isAnonUser=1&geolocation=PT%3B01&intType=1&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	FALSE	1794674560	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSFmmwVxmm7rnibm5eeYM-42gzk9oYTAX8.%26dt%3D1783856966556
+.netflix.com	TRUE	/	FALSE	1794674560	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794674560	nfvdid	BQFmAAEBEO98-pYUIv_Azq5rYWTqfwVgwOnXULzKNdebhXYJW2m_Mcw2oNEI2vUckd3QNt11T9DXj-opJ99wG9UaFSpGLMkCh_n0mOTQ_SJRbANVEyBED5RDzzHvoPO0fEI6m9gNKEB5yFdrkXQqHfCug7EN3OMP

@@ -1,0 +1,21 @@
+NETFLIX HIT :👇
+
+Country: ZW
+Plan: Premium
+Next Billing: October 28, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: US$9.99
+Profiles (2): 7AMODY, Aymen
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1797077999	nfvdid	BQFmAAEBEEZTwfTebNavqGdXCW-I585g2jU2mRa7aCkUdQuxnq5LEBoC6_BaRRHgrsRInq1OwN64PqQzYChhx7eyJEBNA7Ej7fl71bRqzsgLEI2xl4l-9-p8T3gxgk57a2SdkZJ4sD6C8JdWsVELZi2Xqv4y0DRg
+.netflix.com	TRUE	/	TRUE	1797078010	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKYA4tAMw96ptghxnRvDOeIJi3HYAeJMyCXh3OIHE6miGubaEcmOhFwRD6nGAW_yzfL-goRXIvYc66h8fxhEUpRin0DE3NW5guVIiq0WOpDWcR9QvQPIiXSTL2ZueuT6TKt_TUKxnRqVkPP7mqVyME5ZFGm9Ub4phFrsiVNYukFUrS16VhwwnHK1fqeO7NfrEjJakeb7XHEzO_k40ioqw0u7K6b0pqQkXz8-p08a_XcAAw-nTd7X3o8Jlim-m4nTsQ3iFl3IS6kC4gCAX8SjT1xVwJoFtxeeUggCnmZoedYVa3Sdpfbt3GhBtYNrlBrhO6EH3DC3tT3JXmjOFnoGzcd_lrLq4sGnsfwNIZgvBCeOYPYXUGi8rlAd_zKTMbeyXOtQW-0u_f2StrdSkWkSRt3gHpKFgX_gRPOJdN2eYCurYgdzqKZ67cLDBnmkCiNqK7JdtNoOgcZFxCnNBnIMbdTNvtnWpC-ULoaCcvFCToxhu-pnrowBqYJiIhRyIi4LESV1sZZ2mB6z3AaMpeGT9og5fW09NfSIH-6wRgGIg4KDI9V-Mi7zJoUWPuR9Q..%26pg%3DNFU7JV3PEFE5JMPN2TSEYMXBPY%26ch%3DAQEAEAABABQyLlcV5KF6T83h3slFhrJebpvbLXLrQYk.
+.netflix.com	TRUE	/	FALSE	1794674560	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794674560	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	TRUE	1797078010	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQYm18TvFFvwo_lrIuyYR2HTkfqFZJ4fGk.%26dt%3D1781526010811

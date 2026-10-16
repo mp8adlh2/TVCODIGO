@@ -1,0 +1,20 @@
+NETFLIX HIT :👇
+
+Country: JP
+Plan: Premium
+Next Billing: October 25, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: JPY 2.290
+Profiles (5): victor allan, margie, gabriel, JENNY, diego
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1794839318	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Nov+16+2025+23%3A28%3A38+GMT%2B0900+(Japan+Standard+Time)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=060f2f2c-0268-42bf-abb0-9b0fb2e907c3&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1794839318	nfvdid	BQFmAAEBEMHnpRjzVeroaq5VYj6vrR1gZ5Xbyn_jEfQSMuUPJvLaFcMqLgCz9GJfg6Ev2GFB_sJsEtNM_lhddhQ8blnqB5H1gWU9dowfxuwE50NSAsgaHjL3nO6Y_j7x8JLi8U16lqWXaAQxq8esRZ_KC8kfnMKB
+.netflix.com	TRUE	/	TRUE	1797669856	NetflixId	ct%3DBgjHlOvcAxLoA7PnUvhzWa6z5dlLROcZgl9bSflTLIKzAdT1zi8ZemvYGJ1rSIdYrxBIsMJFiIHpHMb1FihUZEm73AQDlJ1cwRLzW3r5q-mkmLKu2wNiU9cNwRCuMf3Dfz1VFrufsfZpc8SMILjbydaZZOoV0xtT08OkJ6mkb4cO9ZT_RMyXWpXx2DuIqaudCNn4XZFPAyFmz4ctwCRDURQeAp5uWxBoNQYmZ9Hlr81pWIRmtKK1oYFGh-F7gk3UA8Ei20ITrjBwp3FtpZRbUrs4jAHMvf1hvDTwxFGd3SQrvpIDsLNLfmlX5OSwrbPV1U7xikHokjvDgzfmjoDiaqLg78kpocFdGVMHLnRPO05LFDkhJIc7FrSCEW4hDldOj25c9N90orKKQGJypSXcBJpAM5TxMQ5j015B6GqgRj-YSA0HP9S3_5XonyHz55XIiHMfKRmfL38Ti0ptlIgemx5RZw8ssSxopjV1Yocg51Jz6amDCkBsEFUeAt7k8g64Iz6gku3-9QCJP7kwnWjaPsyjxaHeXztD7qc_U50t3wexM-dp6igdBGmN1G1_gOLOK_H8_L0rh0Pg_Uc6lpzXL_nlmdLbonCtGIxMy1L2VCk8kaNQgKdV3_IP_vHvX3np0ynqGyHrhAWK4edw-3knKE6AGAYiDgoMAQCWE01O1QzBUC1z%26ch%3DAQEAEAABABQcc5faGKci1luHcNq9Vjp4b5r5eIt0gno.%26v%3D3%26pg%3DTXZWQLXGFFFXHPS4LWJILFVBDE
+.netflix.com	TRUE	/	TRUE	1797669856	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTUZBI13_QOaWYtJCMGnzFvlJzzDVRjfQk.%26dt%3D1766133856592

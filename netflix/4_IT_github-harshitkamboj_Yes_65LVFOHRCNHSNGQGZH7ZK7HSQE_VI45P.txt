@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: IT
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: TELECOMITALIA_V2_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (5): P1, Dahian, Klazz, Ayurexx, Sky Cinema
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1794674560	OptanonAlertBoxClosed	2026-08-20T20:08:17.172Z
+.netflix.com	TRUE	/	FALSE	1794674560	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Aug+20+2026+22%3A08%3A22+GMT%2B0200+(hora+de+verano+de+Europa+central)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=d08adbe5-eaaf-4d18-96b7-384851749d8c&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&crTime=1787256497978&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&fclco=&lastConsentTs=1787256497&intType=1&geolocation=IT%3B25
+.netflix.com	TRUE	/	FALSE	1794674560	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794674560	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794674560	nfvdid	BQFmAAEBEFk7xr4sO0E4tHqXFuL_W1VgxKXqWlV1PNKeSfKUPNLXgsCyqrtU06wgGHJWba-ZmWAchOT_n5W8RDQrzt_P77D0he3TCs6E_OEaLLMdV6tp-5L8gCmFwUE4AZR5uoYzVhBTeKjtEV8t9crgBfVaMEqy
+.netflix.com	TRUE	/	FALSE	1794674560	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKTA9Qn5ozIYLuHjXjOb1rpcme51m8DfvYoayxC8bAqzAEMr9U1Ak-GynSFFnKyMLonKE7BCUQA0wMqrrhbk9PkRqe_Fro0uTNQxmpNh1yXmHYLNU4-PArHY2U5Jl6BdcIto7SK6G4DwFGBON73PtITJ2FJA06fmVD23ecEwJyCrAW40h9LJXmInLtcJZWEYMh-GDrBu6exmePtzC9D8gxj0haigRmVAIdTeUeF_5NRCvu7wEUOfsL1aFCCyiAXg_e37LnB_0yaZCc3jDEEWwVa5Gfiw2DHMJ52uXXYcQmie-lDIUkVAuUmEvNkSpb0xWPca5MZ-QUA4HzpNXreM01YBrFOEfZRVyBRu1l7t09dF68Z2oQLLLg0DBVDfpNakxR2TkCHbDs4Zik9qvB7ColhN81iUnQY7DAz7aZG-Fkq_co6TNL89SAH24_cHDG15WwgLYG5qiX256cB82xzXI86AT41_wCPQFI_RCU5Ea_B-AdcG4KF9A_Y-HdA1qB4OluE_A_rfj1WYv39s-T1xJ_r0-iyyxYYBiIOCgzX2aJ5JaBVxZJKp2w.%26pg%3D65LVFOHRCNHSNGQGZH7ZK7HSQE%26ch%3DAQEAEAABABSSCtTEXf2T9BLNGzVZapQ4QtJa3cvp3W4.
+.netflix.com	TRUE	/	FALSE	1794674560	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQBWPzFI9BGtQOug8EolAXr6twAqkW_T18.%26dt%3D1787256525983

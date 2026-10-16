@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: CL
+Plan: Premium
+Next Billing: October 23, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: CLP 12,990
+Extra Member: Yes
+Profiles (3): José Manuel, 3, all
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1798155572	nfvdid	BQFmAAEBEMMPag1IM0zVLIHpHEglAG5g9Ozcl7QHf1du87LKnSzOkBxHgdzLzy_DxYRIq1cggzD7elun0tqS-W_Bh74cwTAHTXY-r6dDm-9Hiw6RC6RjkMk6hrwiLRKZe3suHkc_Pm1iXsHAxIS0Z1qafo4eGV2D
+.netflix.com	TRUE	/	FALSE	1818117550	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Aug+12+2026+20%3A39%3A10+GMT-0400+(hora+est%C3%A1ndar+de+Chile)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=7bee00b7-4709-493e-9164-19e367f63e43&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	FALSE	1794357548	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794357548	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794357548	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	TRUE	/	FALSE	1794674560	profilesNewSession	0
+.netflix.com	TRUE	/	TRUE	1818164286	NetflixId	ct%3DBgjHlOvcAxLGAz4mWIOowVlFuukhIUnMS937ntwSjd6xgSSSRkWlXwonKsEt4vKMxZu13u5__CAWETm8-8dWyZvZxgU8aljnpBnrm5eZotfXp6lwcnxJLLJhwwUhyCvrFuWeV82Qm7qyPM6xaZ3oza9oPcnLIj87ScQyC2sUaBN_ac6wQTzwN1OqCE9UU5pUeu8kDrVgvuZIfE83tw_sp2sSFaftrid5KjFx2HKShETI52PAuXi2AwOP7yQny15wZfr-BI0JBurbbRdI6E-G9EZhK19Ties0qe7FNra5j3YIUUlSQZIyH2vKHtwBXFBrBA7SEdn89C0DFEthSc7JE8CgOEureu4HfnJuwqonP3tFl74NdkZHQxKPmBUPYqftmNqES3Lb2F2s-261czv5ZJnN6VZhYtN7jjX0C03euvp2pL9fAkUh-e1gOX6D3zDBIjd4NxnIINlTDTnWWYNX08sHMDUN9LWETF5cNHqNkFw2E4CRaKmZ6sYu2Od3dpO09JuU79gqjtSrNuQbvB0sOg9F9i4vSnOyKGIzhigRwGDas6mmvZe7Hz5VxOuyZ3ewxKya70GZ0gOnsbA8ZuMwBKxHNLKp5vm_GPFTeUVv74wYBiIOCgwPax1N7mGN0_5rEBI.%26ch%3DAQEAEAABABRYRD32_iKX6YoveS0y_6B5AQ23lzTSfR0.%26v%3D3%26pg%3D3NTYERXMABBZHOYRGQQVIXQY6M
+.netflix.com	TRUE	/	TRUE	1818164286	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTkYNahmvfOigayv_PI8HDtAdTXdRtJqLA.%26dt%3D1786628285382

@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: CH
+Plan: Premium
+Next Billing: October 26, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: CHF 29.90
+Extra Member: Yes
+Profiles (3): tungkhamkasmanee, Kn, D
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1794674560	OptanonAlertBoxClosed	2026-08-21T11:07:38.897Z
+.netflix.com	TRUE	/	FALSE	1794674560	nfvdid	BQFmAAEBEB8zp6OjEuxVEHg8GaCDu79grk-oDHCkocIiQlcgVBd7UZ90o8n6tEH84XLgGG73jsD7o0RG7gKSo-T4rgDb84mLJsfceqSj6C6drEvJifTeqU9VzHLzzOjL4gdOzEyuLGCtHlT6f694E0OdPDnwVpXQ
+.netflix.com	TRUE	/	FALSE	1794674560	NetflixId	ct%3DBgjHlOvcAxKKBD_qj8DeqOHPIT9o_CXOH_fpTykVpzBgkJd3ou7Wn37OW8mehneD9Qvo_sTRs5_RDTbzzmemVhdhcm_2bluCOS8Z9JHZqMUweOriJW4YBW3tQHoFIPradFPQ6JXYgSIndsuuiXkPSgf53dRxpYbbwsKzYu3Pov6axRuO0EJX0IfXk976MsvHJWxdYTQ7mp5Y4ceHI523tE5_tMDIM6OztAGj5RpRFZ_1HX849Jrvw_FX4gx96mJ4QegdoQQnP8iK0r-FYaWZPhrZtjwd-C9ibaQ62AZczh5Z4yef4njkQICmR-iV-VbuxR7c3BUsE15XrlPADENzkeypPebXooDYYrgfTu9bv17vLv1GGFsIhHIIhxDaJPDtWHRfnaeROtyNY_f8WJY10F_Yi9sj3cPfzaT__IuXCd9mfXl3zBUTZoDNcENPp7oSqyI3V50ha_vHbePCpyaDAfGbzj2FU2Z2a4vfzBks4dTrhQbzLqemnjboqTD1qBIl9IvoDrQ70dUEcfANmIAUCN7Cn5oPM9DH4VPEUtRY45WO8fFWPQOQ07eME4sjfW2CuXSKYmyQXT7qTkOlxguawhOxkJV1pSVhVr6z2QSeikfC-Rq2s4Oww0BHBb8wepuMt8guDaWKPilSZeUTHilpmDGce7CbQPrW91s8J-wOQ2753CGcWN77S7sGwf3eZWKldtNaShgGIg4KDHw_S92MQtgOBM-sug..%26ch%3DAQEAEAABABRAGTKaQYwRJ72WM5TdEDDPEzYXALIxggg.%26v%3D3%26pg%3DX76BA5V74BHIJFDGEYIDAEOYFU
+.netflix.com	TRUE	/	FALSE	1794674560	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+12+2026+14%3A21%3A39+GMT%2B0200+(Mitteleurop%C3%A4ische+Sommerzeit)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=8d788e26-95a1-4ed7-91fa-aa0c392e7d9e&interactionCount=3&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&AwaitingReconsent=false&intType=2&geolocation=CH%3BAG&prevHadToken=0&isDntEnabled=0&fclco=&lastConsentTs=1787310458&crTime=1787310460307
+.netflix.com	TRUE	/	FALSE	1794674560	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRr1Ia3vTAKcSUd2taOJpSJvEAQ_fuHglI.%26dt%3D1789215694748
+.netflix.com	TRUE	/	FALSE	1794674560	gsid	8c3e427e-b143-4376-bda3-0b02ac8e3891
+.netflix.com	TRUE	/	FALSE	1794674560	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794674560	netflix-sans-normal-3-loaded	true

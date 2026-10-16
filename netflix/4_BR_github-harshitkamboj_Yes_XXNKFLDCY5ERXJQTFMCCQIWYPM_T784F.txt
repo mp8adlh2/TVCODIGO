@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: November 9, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: BRL 59,90
+Extra Member: Yes
+Profiles (5): Junia, Anderson, Leandro, Adriano, Ayoub
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/watch	TRUE	1811074437	dsca	true
+.netflix.com	FALSE	/	TRUE	1821438913	NetflixId	ct%3DBgjHlOvcAxLEA8IOatmWjazfm0hKmtLlR0AyxQNjR8m5dHmaJU19eBDNd7rYwIAxdGLSF1Jr6fGxL30R5WEIcWKwa-jshF9CC_W5a-b0x1adfH0i3R75DbUo_VNm-_VNuWFybQIG__YZ8ds4ot6Nzog9YR8QnCVS8GWc7dCrTipbZLQSCfXYfymdxa2nc07mvwb6fOlCx2kZE2AOlh155fg7Re1lRNPI7i1m0yrVFpGR1QhnR23DP9RMleZytgMlnUG6_SwnweCRWAZkquWBpmRXyqIFLfYRWMUSGxLSOT244YYGOL7cFc7GZvz_7EpbdGdbiM-Ws-aLfHpJxdIHs7ovmBoVDhEvhzdsYy1S0W5Z0rfST9DpP07He4gOQSmJ8UegTaik_ACEBN4Pj0OJufCvbNlM1U807HVmQF2-m7LZraTcdtEv89qo6mvaiMlNPDnJQpZJUKSrL_lL9hyX0dzUlgaoHr0LGLBIlasWjhOGlHeZNsW91x2ygVml3WUnBuh66vlcklhQEKmkdYYn2_nIl7imfdH5v7QewATPTzT3gR1rxpoZnzCKZXMOpbPplH1xb6MP27I5jV51MtER6RRAvHJjAplffK7MKmCLGAYiDgoMz62IyQXytPQy4SIN%26ch%3DAQEAEAABABQlaJk2JVCHDcwjtCuwtzpw9vCJjG1xI14.%26v%3D3%26pg%3DXXNKFLDCY5ERXJQTFMCCQIWYPM
+.netflix.com	FALSE	/	FALSE	1821438914	OptanonAlertBoxClosed	2026-09-20T11:15:14.487Z
+.netflix.com	FALSE	/	TRUE	1821438913	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABREwLKa7R5ASsu_8A4szjd9AiHK7F2eDP0.%26dt%3D1789902913062
+.netflix.com	FALSE	/	FALSE	1821438903	nfvdid	BQFmAAEBENskZkAYrxhGHxSDpkXEJihgFKF69GNX5W0EdHV1hjahAx5EnvTJo_iiADgBqybo6QEzFlMGepkSPhy7O5T9AXaCp_gBZEIETmmZyRAXfvq9q3vWNYsZh-QZt8SVJi-HQQlGj1v69ZjcX2BXONVMdue5
+.netflix.com	FALSE	/	FALSE	1821455432	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+20+2026+16%3A50%3A32+GMT%2B0100+(Hora+da+%C3%81frica+Ocidental)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=b03bf675-9871-4847-b66d-d0566d3328e7&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&lastConsentTs=1789902914&intType=1&crTime=1789902915249&geolocation=PT%3B13&AwaitingReconsent=false

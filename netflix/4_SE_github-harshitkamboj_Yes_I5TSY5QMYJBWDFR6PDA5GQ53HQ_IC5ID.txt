@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: SE
+Plan: Premium
+Next Billing: October 20, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 219 kr
+Extra Member: Yes
+Profiles (6): Hoyoo Leban and Samuel & Ioane????, Hoyoo Leban and Samuel & Ioane💜🪻, diah💕🎀, Nefi, Noorh, Auroela
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1794090524	OptanonAlertBoxClosed	2026-08-10T12:44:57.732Z
+.netflix.com	FALSE	/	FALSE	1794090524	NetflixId	v%3D3%26ct%3DBgjHlOvcAxLHA8_a6LMZVASeSbFkPLaITCm3phVMpyuugQLg-L59b17v_LukR8H9jCkAFJdE0Ehfjyt0IpOzq9oRUh1nRELnXc9B4iUc_-mT5TKmiilnmrBRsD8q-bFeCWBZygTiKjixXSC4cTZiJ1xsqPeFoljTgrwhedWryjo8JKGcKlZ6nxcJXbK6BP5ov2iVYu26StYGNNBOIkZNjUo4MSU8LtmRh-IwCB_gwswulbN3IRNJ6qjfdA8jRnrM6GCi312X5t63nBoW0Cd8IcuKlnpcjb8dIk8_mLn0LwQiFtn-XXZOtiVTOpj4n8OXnaukKwJC3jUtUF4KHNdDvX0DZO3BB2mrJ20jIMwslwZ4MxrDI-QmPb7N1axUveGYfSlOitgrwLyz-CHHWxuFSRaL6ORYAu8nmCk_-ymN3_-SGANG0FrKpmTqII1AAByZr_Naz4oe6AiMDm_zG92hLbJyzPm8ut_RepcjOICivT5Eq9TP9WVVrW8CbU1OhhhcLVKAVUbCvEwYBrQcCklYZQhjJXx_nRFDAYnd-xl4Ns6T1ckxl248AICDNT_XIenhkI6JLLatIsLhWMGqm51vcaRM7DBE73HruIH_yNhOLSL6GAYiDgoMPkVIt-MguWG05vTD%26pg%3DI5TSY5QMYJBWDFR6PDA5GQ53HQ%26ch%3DAQEAEAABABQGyfbXoP_WElbji3sT0Y-UlMcmt862bng.
+.netflix.com	FALSE	/	FALSE	1794090524	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTr52U5fbjT-phXqxhoCGm_zL5UyWvUKZQ.%26dt%3D1786366001284
+.netflix.com	FALSE	/	FALSE	1794090524	nfvdid	BQFmAAEBEBedy3JqMhKxAGIxjhMGCz9gd6imYO5zgE2OZD1AcP9IOux0ZzMVIoOcR3_cf46izJGcE9d81NYbvd_hDceHXjSefASk0VLuk-Cl6eIGf05LsN-Mpc-4fX0XFH5hQATeLY8KwHVv-LVVpyW6xJAnNFLT
+.netflix.com	FALSE	/	FALSE	1794090524	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Aug+10+2026+14%3A48%3A44+GMT%2B0200+(Central+European+Summer+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=220a5633-e556-4fab-896c-77d93a8342a4&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&fclco=&intType=3&crTime=1786365898330&geolocation=SE%3BAB&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1794090524	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794090524	netflix-sans-normal-3-loaded	true

@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Premium
+Next Billing: November 11, 2026
+Payment: AIS
+Quality: UHD
+Streams: 4
+Price: THB 419
+Profiles (5): Bagtred, TARGGET, Target 2, target 3, whymig
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1802700590	nfvdid	BQFmAAEBEDhNURD9wrIdeETtRrnUZadgaoAB9QNw_sCgkhRtCzCjeI-ve0Aa3_dizbB4vZ4nnS-ZlhHuiMfhhEQLK2Qd9ZJC8Q99LWo-qREDKigN-Rg8qiCExGXT9VI78kLEp9ciX8IlIZ57rZW7AuIHehSlAvwE
+.netflix.com	TRUE	/	TRUE	1803323231	NetflixId	ct%3DBgjHlOvcAxKmA-BAz3w7PQE0uneFRpQ54NtdG9zim2UEZIa32oqpp6BAsmUbUdpyA0BvbH-T-fJTmmW3FbQxlwSiW1EWlRDZCwV_mF05nV7EszLlFre-ZYgNw4vo3joLKzB0g6zP4GRUgCCVh2S3ykrJ5QnzsqgEM5nO-ViH_BKVpIIn5pc6ruZR8--25ryrASI8dMb8XX6KACrnZ65NT1Yv65a9ZX1owfsfLpDnpLMQKuMAqQCnfd8_EIlJ9RMbBmB-zZW51WyDgQUloIVurnKMDL4Ck8tat4JK__sZgf5UG24tN-yIGuSMfBM5pJ8hNH1e0OXdfFOzkmwp-dHH4qlOwnoGmpLUMVT9UhOXHylrKA6mQ42SZElDRC6VBbqHU4rJLvPvdQHlee2hQ4O7Vw2E5sPANpypXHV1C0DugvMJ2JlI8mpLm7bMBuincl127wns98Kr5Lq1y2VNy4n7hHHOAMPqfwJcVMhbk51-oKf2z7fVSl73-uwMIKZsnqB3NydQTDFXuxC83wkZT62SskitrDcxPTxzeKEKir4Mo1qg3HTAGg_tVz933-wHjuRNGAYiDgoMONfMBGQG_rnXicMB%26ch%3DAQEAEAABABQG40ga8sul95bEcDPsGYQJ4Af_obG715Y.%26v%3D3%26pg%3DA346CRCUGFAFBDUMTDX43NV56E
+.netflix.com	TRUE	/	FALSE	1803323230	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Feb+23+2026+02%3A07%3A10+GMT%2B0700+(%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B9%82%E0%B8%94%E0%B8%88%E0%B8%B5%E0%B8%99)&version=202601.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=437a489b-2de9-4fe8-b6b9-48128766b7dd&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1771164590500&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1803323231	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTbiDBy71IMJtRm_YntdPVyO8Zr6B0gz5I.%26dt%3D1771787231525
+.netflix.com	TRUE	/	FALSE	1794674560	graphik-bold-1-loaded	true
+.netflix.com	TRUE	/	FALSE	1794674560	graphik-normal-1-loaded	true
+.netflix.com	TRUE	/	TRUE	1794674560	gsid	7f5884c7-ae47-4129-b4bc-a8b1691a00d8
+.netflix.com	TRUE	/	FALSE	1794674560	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794674560	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794674560	profilesNewSession	0

@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: CP_FR_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Profiles (5): Grand Maître, Kkk, C, kkkkkkk, aurie
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1803412572	nfvdid	BQFmAAEBEDZUSY-nNSoG-nMox0RUKxlgcO9p4_kTgfX8jloYmrNs1LYOhV-sZ77TErhW8g2uL-q929Jrvjt5Jc81TbmCURqq2pwoN-JWnQgbk7fZTIOu1o0N3F2po7IiLDzEJK8eDxNEMw7Du2QdsGVK7Jn33L3e
+.netflix.com	TRUE	/	FALSE	1803412576	OptanonAlertBoxClosed	2026-02-23T19:56:16.262Z
+.netflix.com	TRUE	/	TRUE	1810820489	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQfTSTwfk1mKOfRwnj6XucqLv2mNgnC6cc.%26dt%3D1779284530836
+.netflix.com	TRUE	/	TRUE	1810820489	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKjA3XQuDnZHNG6-Eg73-KfTjPAD2Zq6FvUoaH1XbQF3Shw6741UjC2d1MUPO0qH6D3C59PHiGSpr0ue5ZglSGAH641_jyv2KNu-Oj3t7t7Rex6-We6AzroxN6W8Pw1iWqvsa3UxAqVNThodT6ovQkH9pAcXxLdyfBwIOLbXXiHuIlWM_gp_q0LJ97g8xHgqxH_8N36FyXsBIQ9bCxXOR2dQqXTGnrE9A5mEuJ7Z1RnFFyQxQ_4a_Iq8iSh0zLOebb5JbHT1GLZjYlch5oF3YDv1s_lDaQKjmGGHC1PZT-jO4wKCGPNwYeI5BLyqfzXD8o_2wJy8J99My_wtYr5iQYGCuimjhUZ57u881piAln4lMW7a2HiLNeHKUsBYVxJke1Xt2XPWy46N24BjAhf1zJhEymiqAy2xM4B6RqllgPYbYGE69lQ4TjNNLjs0VoClPOzx9klS71NjMvL0W2YLlYPNPVKcFiX0xvaOpiGr90w3wK9dJKqrotlWfP3ffvAhC02mJ0JTGJZ48MT3wTqBmDNFd_eogQ-wKqBwbVFYBqmHBhooUQxGAYiDgoMpAjY__FXU2GA_DJ3%26pg%3DQODMQB5B5FDMHGMMYFCQILS4GI%26ch%3DAQEAEAABABTVnwLE8Egs3sayaPXE1Z352xfW9vI3hQg.
+.netflix.com	TRUE	/	TRUE	1813844491	dsca	true
+.netflix.com	TRUE	/	FALSE	1810820491	OptanonConsent	isGpcEnabled=0&datestamp=Wed+May+20+2026+15%3A41%3A31+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=112902db-30b6-4a71-b8af-9ec9a9d2cd55&interactionCount=2&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&geolocation=FR%3BNAQ&AwaitingReconsent=false&isAnonUser=1&intType=1&prevHadToken=0&isDntEnabled=0

@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: October 25, 2026
+Payment: UPI
+Quality: UHD
+Streams: 4
+Price: 649 INR
+Profiles (5): 1, 2, 3, Sky, 5
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1804681702	nfvdid	BQFmAAEBEDguUmxSfqepXkBsFV7qfwFgOWDvnRnNo45xieQAj8Q0ZUtlScN7quO1DGCSsDYKafs12i7bFdnwqWCs2Vckrl1X3pw_PREjBvmOAaZH0sUXmi8sSuxIuPXn-vhcOLbinTF8AOuaIthOOYyoowVuUGG2
+.netflix.com	TRUE	/	TRUE	1810532276	NetflixId	ct%3DBgjHlOvcAxKRBOTgBTckn-gSQbCYRRwheqV2ZL1W9-3BhXYSem8FasD5qw9UA4ioTKlrEgALR4NxxaANZEST-L2_Oj2S--rZspEx1bCvB7NTxtgIEtD1agy6a_YWmx9fjCWqXcTt9UOP0JnPvd-GkDH7OQJGX0hK9NBWFUIvu03OwbUrgTIkBPEjsyYZC3yIOZ1VFfpBtPeHYCOZ6_3qz1GDVZ-K4KzlpQ517WIxXk9IpxRFwGM1XF-Qr96Qcvv-0-Vpij_a66U6xCDGPAOk-p3QJB0YII_DDV-BPETaru1P7e_lzb3lNA4PurtlQ4Hc48m3li10rBu7nV1avDf6UopFVM8agBBgz6Gw1zXAKiJ_ayPVqhViuUvPAEpOIcqMN6_lZLVNKEbt3uBdax1jZumKnMfnBSg3A3t-IOYkVnCm1mI-pLuDFxWZfAYKe0FT4VxlAVOnuT_dVAjwBhLL-DszD37Xn0sA1iZ1Qyd4lVPzzdCrgzTyfJDCttEY8MDmlWVwFCASfyDoA3E357L2NwJyg6ouwINwEQOT4JUmbskFQG5ev9-lyR8DVyz-ksYhykvhmpW08hKM6Me8TkDtXN52XGNJ4GxF5j4IwNcJXc3PgWI37AmJ-vPD_YXWAEuQuBPC2MOWc68PXIp9WjZffnI_yFFtV2Rr4X1QgZhrY24mQz4egrla6b-EtwGW8Z8pKF0YXNdl45cesuEYBiIOCgwZrMaNrsuR8FsexUk.%26ch%3DAQEAEAABABRPIOsEGRGyC2K9e5EtW3ADndM4CUJdmSE.%26v%3D3%26pg%3DVZ6PFK2FJZCKZFJBGX25WCMWFU
+.netflix.com	TRUE	/	FALSE	1810532278	OptanonConsent	isGpcEnabled=0&datestamp=Sun+May+17+2026+11%3A07%3A58+GMT%2B0530+(India+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=f7d866b8-977c-40ab-81db-e8bb648b945f&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1773145702849&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1810532276	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTrcrswHepZi9jaHfhdXjjadkBT58dJL68.%26dt%3D1778996276491
+.netflix.com	TRUE	/	TRUE	1794674560	gsid	cc0e138b-659e-47bd-9983-a73f13b31575
+.netflix.com	TRUE	/	FALSE	1794674560	profilesNewSession	0

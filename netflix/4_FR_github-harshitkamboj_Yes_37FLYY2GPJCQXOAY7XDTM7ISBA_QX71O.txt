@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Premium
+Next Billing: October 19, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: EUR 21.99
+Extra Member: Yes
+Profiles (5): 1, Rachel, Fols, Kompre, Tues
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1822307531	OptanonAlertBoxClosed	2026-09-30T12:32:11.192Z
+.netflix.com	FALSE	/	FALSE	1822309268	nfvdid	BQFmAAEBEKbQcDmPSnSCjuTQ5zi74OZg5mIb1NdqJ8hM5zLiRbnvSpj7TEJL5RSUm1AKJQuP0uDQSbKIF9GcvPW6W4kVucGaUAu4mVkWEQA83jPEEQRFl8MtEu5VnaaJRQmubfgU0ynPAhZASpi-1EMRdRz7nvAW
+.netflix.com	FALSE	/	FALSE	1794090526	firstLolomoAfterOnRamp	true
+.netflix.com	FALSE	/	FALSE	1794090526	flwssn	5828d55e-a136-478a-b1cc-e1a6dc7773b8
+.netflix.com	FALSE	/	FALSE	1798891471	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798891471	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	TRUE	1822651468	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTLJ47P5J1POfbNmMZoSwh_IPi4H1fxT94.%26dt%3D1791115468577
+.netflix.com	FALSE	/	TRUE	1822651468	NetflixId	ct%3DBgjHlOvcAxLnA2yyJ11muxkD1gLnLBXax2NarbjSoWfDJyD_CzirbZSiFahMDZUfcB_js7nXZpUyFq7q_bBlTLT_CFNt_8CkKn_eX5YLEDgnqyk3sijlbJ2f_ZrFi8G7BB2J60GCSCxmXvzCWA2Bh33Bjh5uymyO4T5PYAlfE7GDcuda1BlpHwtGqQ9-ER40SoPvbNyDkjecUlJGAGLfjU7vTo8cs7-YbEFqo9UPj8XVhpUj4__0VjQ_uQre6TbblikLLVaMUJfTFOIFXoYr9C79EEL6TiAfgFO-RRtpFFpfaLgS0_T61rZ4VNPKzDN1utk5fIPBYx0C_TiShO8DbJGcFY4sjfe3KkNLz5iz6NwKigEO6WSP2VGzC17o21VjYVCr-DmseyFr7Kz1dEG4a13jdImJcWB8iYZj55B18JITJYf-f29OyUeLXIDFtmMS-ljyGJasRF2lrxsvOt4GNVax8CsUxDUK-v-4xT0HKfHZRzk_fllrrCSwExynSg0fnlNrpsKqHyiUoBFtMB1EcElf5Q_N0biJJxZM97EAuD1oKJ6_ftX8A8V2lMMpV5_A0NErJUTS84kB_Gf1_FKqyEPp6Jh1TZK4KJ9YM82yvQZ6k_BjJjO2HzaEjxmxej7EeJ8FhiFLbcmT7Cw1uynCU0cYBiIOCgyb9Y0gG6wfESlbHkQ.%26ch%3DAQEAEAABABR67r_FrCTCbKtA1zBP-6wJP5Q8LWEAZJ4.%26v%3D3%26pg%3D37FLYY2GPJCQXOAY7XDTM7ISBA
+.netflix.com	FALSE	/	TRUE	1794090526	gsid	f99f957f-42f2-4668-bdbd-a3bcd2a5dcdd
+.netflix.com	FALSE	/	FALSE	1822651472	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Oct+04+2026+14%3A04%3A32+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=7f7698ff-8e16-400a-8953-3f70cba18cd5&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&lastConsentTs=1790771531&intType=1&crTime=1790771531540&geolocation=FR%3BNAQ&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1794090526	profilesNewSession	0
