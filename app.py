@@ -1694,16 +1694,35 @@ def load_access_keys() -> List[dict]:
     seen_pwds = set()
     blacklisted = load_blacklisted_passwords()
 
-    def _add_key(item: dict):
+    def _add_key(item: dict, from_json: bool = False):
         if not isinstance(item, dict):
             return
         pwd = str(item.get("senha", "") or item.get("password", "")).strip()
         if not pwd or any(secure_str_compare(pwd, b) for b in blacklisted):
             return
         # Procura se já vimos esta senha de forma segura
-        for existing in valid_keys:
+        for i, existing in enumerate(valid_keys):
             if secure_str_compare(existing.get("senha", ""), pwd):
-                # Se achou e o novo tiver nome/validade melhor, atualiza
+                # CORREÇÃO: Se vem do JSON (fonte principal), sobrescreve a entrada existente completamente
+                # Isso garante que senhas criadas/editadas pelo painel sempre prevalecem sobre defaults
+                if from_json:
+                    nome_new = str(item.get("nome", "") or item.get("role_name", "") or existing.get("nome", "Cliente VIP")).strip()
+                    raw_svcs_new = item.get("servicos")
+                    if isinstance(raw_svcs_new, str):
+                        raw_svcs_new = [s.strip() for s in raw_svcs_new.split(",") if s.strip()]
+                    svcs_new = infer_services_for_password(pwd, nome_new, raw_svcs_new)
+                    valid_keys[i] = {
+                        "senha": pwd,
+                        "nome": nome_new or "Cliente VIP",
+                        "servicos": svcs_new,
+                        "descricao": str(item.get("descricao", "")).strip() or f"Libera: {', '.join(svcs_new)}",
+                        "dias_validade": item.get("dias_validade"),
+                        "criado_em": item.get("criado_em"),
+                        "expira_em": item.get("expira_em"),
+                        "expira_em_formatado": item.get("expira_em_formatado")
+                    }
+                    return
+                # Se achou de fonte secundária e o novo tiver nome/validade melhor, atualiza
                 if item.get("nome") and existing.get("nome") in ["Cliente VIP", "Perfil"]:
                     existing["nome"] = item.get("nome")
                 if item.get("expira_em") and not existing.get("expira_em"):
@@ -1732,25 +1751,28 @@ def load_access_keys() -> List[dict]:
             "expira_em_formatado": item.get("expira_em_formatado")
         })
 
-    # 1. Carrega do config_senhas.json se existir
+    # 1. Carrega do config_senhas.json se existir (FONTE PRINCIPAL - tem prioridade máxima)
+    json_loaded_ok = False
     if os.path.exists(CONFIG_SENHAS_FILE):
         try:
             with open(CONFIG_SENHAS_FILE, 'r', encoding='utf-8') as f:
                 data = json.load(f)
                 raw_list = data.get("senhas", []) if isinstance(data, dict) else []
                 for item in raw_list:
-                    _add_key(item)
-        except Exception:
-            pass
+                    _add_key(item, from_json=True)  # from_json=True: estas prevalecem sobre tudo
+                json_loaded_ok = True
+        except Exception as e:
+            print(f"[load_access_keys] Aviso: Falha ao ler config_senhas.json: {e}")
 
-    # 2. Carrega do config_senhas_backup.json para resgatar senhas
+    # 2. Carrega do config_senhas_backup.json para resgatar senhas (se o principal falhou ou está vazio)
     if os.path.exists(CONFIG_SENHAS_BACKUP_FILE):
         try:
             with open(CONFIG_SENHAS_BACKUP_FILE, 'r', encoding='utf-8') as bk_f:
                 bk_data = json.load(bk_f)
                 bk_list = bk_data.get("senhas", []) if isinstance(bk_data, dict) else []
                 for item in bk_list:
-                    _add_key(item)
+                    # Se o JSON principal carregou OK, o backup só adiciona senhas novas (não sobrescreve)
+                    _add_key(item, from_json=not json_loaded_ok)
         except Exception:
             pass
 
@@ -1908,16 +1930,37 @@ def load_active_sessions():
                 client_raw = data.get("client_sessions", {}) if isinstance(data, dict) and "client_sessions" in data else (data if isinstance(data, dict) else {})
                 admin_raw = data.get("admin_sessions", {}) if isinstance(data, dict) and "admin_sessions" in data else {}
                 
+                # CORREÇÃO: Carrega as senhas do arquivo para ter contexto correto ao validar sessões
+                # Isso evita invalidar sessões válidas por falha momentânea de leitura
+                try:
+                    blacklisted = load_blacklisted_passwords()
+                except Exception:
+                    blacklisted = set()
+                
                 clean_clients = {}
                 for t, val in client_raw.items():
                     if isinstance(val, dict):
                         pwd = val.get("password", "").strip()
                         if pwd and val.get("exp", 0) > now:
-                            role = find_access_role(pwd)
-                            if role:
-                                val["services"] = role.get("servicos", val.get("services"))
-                                val["role_name"] = role.get("nome", val.get("role_name"))
-                                clean_clients[t] = val
+                            # CORREÇÃO: Só descarta sessão se a senha estiver na lista negra (excluída pelo admin)
+                            # Não descarta mais por falha de leitura do config_senhas.json
+                            if any(secure_str_compare(pwd, b) for b in blacklisted):
+                                continue  # Senha foi explicitamente excluída pelo admin
+                            try:
+                                role = find_access_role(pwd)
+                                if role:
+                                    val["services"] = role.get("servicos", val.get("services"))
+                                    val["role_name"] = role.get("nome", val.get("role_name"))
+                                    clean_clients[t] = val
+                                else:
+                                    # Se não achou a role, mantém a sessão com os dados salvos
+                                    # (pode ser senha nova que ainda não foi lida do disco)
+                                    if val.get("services") and val.get("role_name"):
+                                        clean_clients[t] = val
+                            except Exception:
+                                # Em caso de erro na busca, preserva a sessão pelos dados salvos
+                                if val.get("services") and val.get("role_name"):
+                                    clean_clients[t] = val
                 ACTIVE_SESSIONS = clean_clients
 
                 clean_admins = {}
@@ -4825,11 +4868,13 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
         descricao = f"Libera: {', '.join(servicos)}"
 
         # ⏱️ Cálculo da duração e data de expiração
+        # CORREÇÃO: Padrão alterado para 0 (PERMANENTE) - o admin pode definir o número de dias desejado
+        # Isso evita que serviços como Sky expirem automaticamente após 30 dias sem aviso
         dias_val = req.get("dias") if req.get("dias") is not None else req.get("duration_days", req.get("days"))
         try:
-            dias = int(dias_val) if dias_val is not None else 30
+            dias = int(dias_val) if dias_val is not None else 0
         except Exception:
-            dias = 30
+            dias = 0
 
         now = time.time()
         if dias > 0:
@@ -4958,11 +5003,12 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
             nome = f"Perfil {' + '.join(svc_names)}"
 
         # ⏱️ Validade e Duração
+        # CORREÇÃO: Padrão alterado para 0 (PERMANENTE) - o admin define o prazo desejado
         dias_val = req.get("dias") if req.get("dias") is not None else req.get("duration_days", req.get("dias_validade"))
         try:
-            dias = int(dias_val) if dias_val is not None else 30
+            dias = int(dias_val) if dias_val is not None else 0
         except Exception:
-            dias = 30
+            dias = 0
 
         now = time.time()
         if dias > 0:

@@ -1317,17 +1317,17 @@
               <span>DURAÇÃO / VALIDADE DO ACESSO</span>
             </div>
             <div id="quick-duration-preview" style="font-size: 11px; color: #34d399; font-weight: 800; font-family: var(--font-mono); background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 20px; padding: 4px 12px;">
-              ● Válida por 30 dias (calculando...)
+              &#9679; Acesso Vitalício / Permanente &#9854;
             </div>
           </div>
 
           <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center;" id="quick-duration-presets">
-            <button type="button" class="duration-pill active" data-days="30" onclick="setQuickDuration(30, this)">30 Dias</button>
+            <button type="button" class="duration-pill" data-days="30" onclick="setQuickDuration(30, this)">30 Dias</button>
             <button type="button" class="duration-pill" data-days="60" onclick="setQuickDuration(60, this)">60 Dias</button>
             <button type="button" class="duration-pill" data-days="90" onclick="setQuickDuration(90, this)">90 Dias</button>
             <button type="button" class="duration-pill" data-days="200" onclick="setQuickDuration(200, this)">200 Dias</button>
             <button type="button" class="duration-pill" data-days="360" onclick="setQuickDuration(360, this)">360 Dias</button>
-            <button type="button" class="duration-pill" data-days="0" onclick="setQuickDuration(0, this)">♾️ Permanente</button>
+            <button type="button" class="duration-pill active" data-days="0" onclick="setQuickDuration(0, this)">♾️ Permanente</button>
             <div style="display: inline-flex; align-items: center; gap: 5px; background: rgba(0, 0, 0, 0.5); border: 1.5px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 6px 12px;">
               <span style="font-size: 11px; color: var(--text-dim); font-weight: 700;">Outro:</span>
               <input type="number" id="quick-custom-days" min="1" max="9999" placeholder="Ex: 45" oninput="setCustomQuickDuration(this.value)" style="width: 55px; background: transparent; border: none; color: #34d399; font-family: var(--font-mono); font-size: 12px; font-weight: 800; outline: none;">
@@ -1434,7 +1434,7 @@
             </div>
             <div>
               <div style="font-size: 11px; color: var(--text-dim); margin-bottom: 5px; font-weight: 700;">📅 VALIDADE EM DIAS (0 = VITALÍCIO):</div>
-              <input type="number" id="new-pwd-days" value="30" min="0" placeholder="Ex: 30, 200, 360" class="quick-input-box mono">
+              <input type="number" id="new-pwd-days" value="0" min="0" placeholder="Ex: 30, 200, 360 (0 = Permanente)" class="quick-input-box mono">
             </div>
           </div>
 
@@ -2761,7 +2761,7 @@
 
     /* 🔑 Password Manager (100% AO VIVO com Seleção de Apps por Checkbox e Validade/Duração) */
     let lastGeneratedWhatsAppMsg = '';
-    let selectedQuickDays = 30;
+    let selectedQuickDays = 0; // PADRÃO: Permanente (0 = sem expiração)
 
     function updateQuickDurationPreview() {
       const previewEl = document.getElementById('quick-duration-preview');
@@ -2793,8 +2793,8 @@
         document.querySelectorAll('#quick-duration-presets .duration-pill').forEach(b => b.classList.remove('active'));
         updateQuickDurationPreview();
       } else if (val === '' || val === '0') {
-        selectedQuickDays = 30;
-        const defaultBtn = document.querySelector('#quick-duration-presets .duration-pill[data-days="30"]');
+        selectedQuickDays = 0;
+        const defaultBtn = document.querySelector('#quick-duration-presets .duration-pill[data-days="0"]');
         if (defaultBtn) defaultBtn.classList.add('active');
         updateQuickDurationPreview();
       }
