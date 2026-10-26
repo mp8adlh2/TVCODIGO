@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: CL 🇨🇱
+Plan: Premium
+Next Billing: November 16, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 12 990 CLP
+Extra Member: Yes
+Profiles (5): Natalia, AleDo, Gg, ---, Vhgty
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1808174754	nfvdid	BQFmAAEBEAVzvQuVbAA6-yx2r8xcOSpgY7muEIlKUEmaedmYLOjvWyWQrrOsQpaIyU5hocvAZ7a5tLqOWZ1I7bJfLDiiYMLAO4JGABkFVMx72KyuNhejtYHxTnfDXyh8OY4EhZtLoOzw8wUCZtiiVM_dwEvyhpIT
+.netflix.com	TRUE	/	TRUE	1817252838	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKbA8ISiXtQwHnlGcGu7Hcromsy7WLrs_EahLINN9rDlRZzm38-Dg17N1ZIqbjBZnWv3itTZrWsUkbzAcE4HKnOTm0IiIVuf253D7iweZ0BBk--fRAprAiEMrFmUIT3qAlw8s-EYLQTUb8DuZt-WOumUNEUOQFOuOlEo3jv7NYcS9Uz8Fh1Nq-gj1fH4aGcE6mWAiZ0PZKdJp6pLDdxdR-_STj5uOTl2D2bvaTcIGwVFp5aU-BT15klIlaR5drV6HBJwIjrUkcQTyo_DFDzRpw9heSjqWE6q7X8mmgxIjNrnwnzJMrB-MA7cxDrAjjV3CMugLwrn1VP03bRf11Eiwb26lBwrKY1Ffu9Gi_d94OuzLGDKEMcOEItLsyRygSkL-dwFZiwYbqhX2j9s7hHbBwoYx87hAhpRbx8knWVm8EQc3k5YWk7FtElNYaGozEdt-3jaWWiyhtSGooRwh9oGoe1CjStk-nQsasnuu4D5nj8Ts8YWKZPHPYoMctuVgkGoV6Dz1IBiPhY-o70ELLKYrj24XzLwT99ZYmFMHqW9RgGIg4KDLMfnonqpWuhQ6iuCg..%26pg%3DFZDY5DJXMJGCTJ7GBVTRPEHW5U%26ch%3DAQEAEAABABQk-vxzmSom3KHqxdHAl14MGz7lW0fpzfo.
+.netflix.com	TRUE	/	FALSE	1817252843	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Aug+02+2026+20%3A27%3A23+GMT-0400+(hora+est%C3%A1ndar+de+Chile)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=20c88a35-313a-4c11-af58-4225a1bf68d3&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1769523475229&prevHadToken=0&AwaitingReconsent=false&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1817252838	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQh1aeeDJApv3Om5XSEcVg0iNmUBUTJz_8.%26dt%3D1785716838207
+.netflix.com	TRUE	/	FALSE	1793492841	netflix-sans-normal-3-loaded	true

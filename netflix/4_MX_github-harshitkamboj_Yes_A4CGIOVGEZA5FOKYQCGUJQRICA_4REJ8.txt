@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: MX 🇲🇽
+Plan: Premium
+Next Billing: October 29, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: MXN 369
+Extra Member: Yes
+Profiles (5): HB, ahmed, emamanuel, emamanuelelele, Hafedh
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1793813583	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKTA5CzlUQO5wVVuPFRywVkXnDkk5Gb6e2nuRnG5bvnOs48sY_HJTjkxtNj5wdDIokeiKbU6r4VizEFACX3O1fGNJo37JZQ-QNUN3qYHS_opNVd-Rbgyp9g6PwfIRf1wNVVV0U0cblqFocIvEk4Jm74JV3U8hyvad-3S6ikQlohBIQ-GsOgYm_Md9ypSzFKGyZO4gwj202lPYneyf4VdP66gu0M9xYfuXPmmynvigzZeq-lQ19irmqD54RA63H_s56VO524EZXXuFxK_S5OQFtKJ7RKRjF5UXTIw4ZFE1bckyl_5eJuJ-UhzEHu-uCcieWvlCOkbIZ10X0h_39B6afZ9iiU_milL_IYYORUdsOJhCpzCkpzl6zUWx-ufQDB5zTZqinYo7ARCITeVYavqlgw_RP1MN0aOEm_nrIvyEbWD1iaTXhVjoM7xGw-wX8Ha_YLeit-LxhVYxz7BOjgdADipHOsGWO097w8PoYMPcG3_Q2kJ994CYjbzSjGV9AODeL4a6deoc4KuWeRz56O2uo_fbS3BzsYBiIOCgz68OG5IFdwaOnE75k.%26pg%3DA4CGIOVGEZA5FOKYQCGUJQRICA%26ch%3DAQEAEAABABQtvdPZCMb_N3ceD8xj6Zpu7pIFsZ01js0.
+.netflix.com	TRUE	/	FALSE	1793813601	OptanonAlertBoxClosed	2025-11-04T17:33:21.598Z
+.netflix.com	TRUE	/	FALSE	1793813601	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Nov+04+2025+11%3A33%3A21+GMT-0600+(hora+est%C3%A1ndar+central)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=fbee4493-d3fe-4e2f-819e-ff69605a666e&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=3
+.netflix.com	TRUE	/	TRUE	1793813583	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSKyQpMbCmugo0uwD2M5xJ92I9QK3Sex3w.%26dt%3D1762277582397
+.netflix.com	TRUE	/	FALSE	1795458760	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1795458760	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1793813583	nfvdid	BQFmAAEBEFWh_EpPEqvKuYzB_in7i4JgcHk0TEBF3GvK-MP-B1ZsQKkzY-8XOOvMXuX-xVAhxohgzhWB8dJvbo7SS9E_dZP2yWKcWUlEZqybtIBspQaOPcx1XWdbJ1rxFJKvRC_ovXSlqJlxWb1qoyRxuLY58xSn
+.netflix.com	TRUE	/	FALSE	1795458760	flwssn	a2671b5e-9939-4a01-a441-100af6cf62b7

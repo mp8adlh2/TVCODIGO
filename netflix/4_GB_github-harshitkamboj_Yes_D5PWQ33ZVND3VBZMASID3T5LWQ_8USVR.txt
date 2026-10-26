@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: GB 🇬🇧
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: VIRGIN_MEDIA_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (5): Adhi, Rix, Ryuk, 4, G
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1817106247	OptanonAlertBoxClosed	2026-08-01T07:44:07.757Z
+.netflix.com	FALSE	/	FALSE	1817106266	nfvdid	BQFmAAEBEP7TXnBxNc7f2soGZBZh3BJgD_dw4rwNiBdUw_RQ6qrqKs3F0P8kTvWHUIzFmGOAyXfbGB74_GtIY8d987sWgy1s8ZgoRM59IdXDa1Gx_50ZHL6rpvDzb9q9TrPvs-RysPN_gGs2dOToKDIGeqrZaUGb
+.netflix.com	TRUE	/	TRUE	1823760453	dsca	true
+.netflix.com	TRUE	/	TRUE	1823267913	NetflixId	ct%3DBgjHlOvcAxL_Aw8_ExFPvwTUN7mcVD__IcPqU_cWt8rLTsCkkEhHPZJ8rLaoCgaJCjoKUbiuq21T-lvTHiYoVglh9lc_GlhqQgSrH1QtyKiC8-TKlp_gW-6dPK2fbGuZGyoKdVWjxul4njpEpUvh4DhiC4rfTKTaZU3VaWkR8XQmD1VKHJV5-0NLqLgIwOqQ0zuIPepWsSvC9fK8Hd1YV_vMdVCunzMpiro0Kz52v66IAg2nx1592YEVg5zPsPdgHJfH5pNdub4aeTyQEP8wEEUdDlcPf66YC0h-kKr4nDP8ZxIzaUaHCMUpA75pQDdXzpq8cYIGTCjqSczDZjHGdGVSgWF3Hdzt9yTSw96pf911oYkenco44r8T0ESlCA08UB8GZc9D8N_cJfAfHz2Xt8EGJuYELZ57pDIKVoUzU0ScSwA45uokQJEdU3mnEdtsDOWsvn37SjvBfO06UmYaOdB9rlvt66KG8ZYMjo1ShZvYY9NIZD3U4YBfvp2dyB3hVBd3fS8MtU4oMJnvKwUBT0I76BxSM0US2OtXeD7ebgdSZImANmAPTECnm6gGfoR2RPouXOKOC3njyD5tPWhcg44zW8GAGf_ZFtacSQ46OXEhBjSMtl_ngtXdTMDspd349k8VoQRPazJzN-16STnICDrUdgCIzCFeaGAqXHh9buvYgjiEnLVLLhwYBiIOCgzqV-GTp-Wmrw5mxBg.%26ch%3DAQEAEAABABQQPmzxrLMshuLfRYj9S0dQoQJyNXMSrv0.%26v%3D3%26pg%3DD5PWQ33ZVND3VBZMASID3T5LWQ
+.netflix.com	FALSE	/	FALSE	1823267916	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Oct+11+2026+16%3A18%3A36+GMT%2B0100+(British+Summer+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=8f1854b6-e401-4a90-8b08-4bd345a655d6&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=1&crTime=1785570248054&geolocation=GB%3BENG&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1823267913	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSIrUs8wRLoMjMiAijPl-gYm3FZo-RPhvY.%26dt%3D1791731914604
+.netflix.com	TRUE	/	TRUE	1795458760	gsid	45b6e32c-9e43-4986-a95a-7df08ce20c67
+.netflix.com	TRUE	/	TRUE	1826291915	nap	BgimwOvcAxJJcDGkp6azzeMSipWdNPE_h5XMeEz8sstE0fFJ0-d0-Gm-e4jE1bXaUXgbOBGqoXg8xPoyEUxS1f5CeNZ1K29yddI-Sh9TxHa5pBgGIg4KDBLUhM3eaCmXie-B8g..
+.netflix.com	FALSE	/	FALSE	1799507915	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1799507915	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795458760	profilesNewSession	0

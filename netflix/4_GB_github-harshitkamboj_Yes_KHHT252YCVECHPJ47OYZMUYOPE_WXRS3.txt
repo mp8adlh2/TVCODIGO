@@ -1,0 +1,29 @@
+NETFLIX HIT :👇
+
+Country: GB 🇬🇧
+Plan: Premium
+Next Billing: October 29, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: £20.99
+Extra Member: Yes
+Profiles (5): seb, elaudi, N3ssuno12, elnomerche, G
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1812297124	OptanonAlertBoxClosed	2026-06-06T15:52:04.438Z
+.netflix.com	FALSE	/	FALSE	1812297124	nfvdid	BQFmAAEBEJrZTVR-r81i09HCsvgfPZRgArF7WDZMQ0W1Bt8cxe8yNj4hxMQ2mOM397l2VbfbdTxe8pJ9KcfuhijDWFOfs4wg5xqwKvOO0rFoxF7M-9Qv8bcWveKf9BfIKqqPQ_3mkSakyDY4bKqgJV3tjQC8DKPP
+.netflix.com	FALSE	/	TRUE	1795272712	gsid	cd17239b-7b3d-491e-9a5e-e5b5aa35b6b3
+.netflix.com	FALSE	/	TRUE	1825671700	nap	BgimwOvcAxJJBfCUPF2sdY4Cnnf0Ky2fByFpROeKkWrLezGWwZcHO2Bn-yF9sQbRVKwyAmK77zvo3ejbwy99d3sT5nwVQMY3gMT60TckjRAvDRgGIg4KDPl0rcHHsY6lKLyGWQ..
+.netflix.com	FALSE	/	TRUE	1822666676	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKXA11_6a_CvLpwhj1XeoqhP_7EOF-z6pZbhB4miJ0VtNYNneAWNPlcceTuYXacyae6CqxJshkARjrQRYlai-15IAfUCHRVfsCP6ToATUsaSwu2OvRCoomlzSKGbfA4eWycnulbI8r4zgr3r3gFz3zcng_0Xo9I8ji4FULcYEZoVw6bp2OLSXX80PKPI7ro031RkwQXuAqjkGANOS5PSJTsh3Gp71BfxdI0PAJsqnKdN2qKTGv09XCJ79G8DysnGs5cH8IFfiG8sxDsHv23SulsugYGpb9R4XAXgHg8YtJ5PW63TwgraLlI58PM_1Z_TAR49vgmlZAUSJRkO-MplNivEoCmS_xdJuG8zLUSlqJvjPTTUy65__ev-i5xsYO5WUY3UacjYwZHTvrboZrlzXt4nbAJrijzKDPWARQcLh3NNX_Hk0B5IKQhgD4st6r7d-Gq_-M1r3S13Yy1VitiYqOZu1g78ieX7viPLgu3rf_6t4VvNMF6HyJXlCd4eNJhQn-HeQR2xUE-fUaVk4NiPX6Zl8aWk5qQwkw8GAYiDgoMZ74sAO5Pqb2SbG3c%26pg%3DKHHT252YCVECHPJ47OYZMUYOPE%26ch%3DAQEAEAABABQ70JVdDNzET5NBSms1nJ6gpbbU39IRRkY.
+.netflix.com	FALSE	/	FALSE	1822666678	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Oct+04+2026+17%3A17%3A58+GMT%2B0100+(British+Summer+Time)&version=202607.1.0&browserGpcFlag=1&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=c86176d1-4047-4915-ab9b-60e090a081d9&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1780761124301&fclco=&intType=1&geolocation=GB%3BENG&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1822666676	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABR-g94VgmbC2ibu5C_sOmbkxd_XvpqChOA.%26dt%3D1791130676906
+.netflix.com	FALSE	/	FALSE	1795272712	flwssn	03f7eeb6-900a-4d21-8589-cb2965b37604
+.netflix.com	FALSE	/	FALSE	1798906676	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798906676	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798906676	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	FALSE	1795272712	profilesNewSession	0

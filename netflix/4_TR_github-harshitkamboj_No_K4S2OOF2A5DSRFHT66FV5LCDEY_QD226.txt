@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TR 🇹🇷
+Plan: Premium
+Next Billing: November 20, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379.99 TL
+Profiles (5): FN, Onemon, Rockina, Enggeneng, Akram
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1795458760	OptanonAlertBoxClosed	2026-03-18T15:25:40.584Z
+.netflix.com	TRUE	/	FALSE	1795458760	nfvdid	BQFmAAEBEK-4YfJ2NwMKu0IDanZ_BghgDtYwqaJZ7rXR3nWshWSPvFtv3ZW-67K4nNGpdLtdE-Gt8NWv9FcAvja5isTiciL_OVKOQL0dG7414VgS-lfIFvdAJzRhKqrWct8aPlSljTUXVipr7ctWilFe-WzletOf
+.netflix.com	TRUE	/title	FALSE	1795458760	dsca	true
+.netflix.com	TRUE	/	FALSE	1795458760	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+13+2026+04%3A09%3A19+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=1b432b09-2464-465c-a4bd-4ca1b675b33a&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&AwaitingReconsent=false&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1&crTime=1773847541148&geolocation=TR%3B34&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	FALSE	1795458760	NetflixId	ct%3DBgjHlOvcAxKHBAOdVTQ9OmFHAuULeppdITYJhFilGR8HTDyI4O0FLK_Wox6sVXLjFgfxETPzY6IMg88ZYeVIXgVWpTwiNThFO5I-3kWfoJ3OBCg3UVytPUfhXUcQc6Uvfqhk8NhR-iVWfSUsvZVZv0OSvConcRRqYdVJq3nRBnHtihHwyv7WLyKewIWYqvxGExH3yF3cJiVgBDsMkh9D94pqnRH3-dCfBIWvw0mbCIgPfQcOuMn59_TIG25KrxO5kWSaRv2GDsX7T1l-zBTtpd0tX8Y1-ghsVa9uEH5m3fL7hcSz_PqdaaTZlS8t8Lv16PcU2krhfjvKYAIkDeTMkpV9R-7y8KqWeDAPxeT0HJ4TCzAD50Swjq5t1jmn3ENdhVenglaGJ7bCs7XJED7QQ9hSzJ1FqAyEBZUI1BJ9g4hT6GqKoLqhOj7fmAwtep4p1WUu9D2dI2sUGQox0sQYoo5OIbb8OwHmr6rRi0yUmll7MNi2Ergi2iVF3mOIWkowOBfT3GYC2BAqZTAomNXuhHOpPIXrU3ucxWnPVn9MieDMGSQTaX7RDgN8JBvAuivD4R61-oW-19IrNrl4meJyTDFmYjLUgCE6fchPkVmYXTYq19s2EefLq9TmyOh3nm0PX0pWpLYS7UEqBfCrvMoFcLRhiHyAlraXuDjl8LhmaXWEPNFI59BOjR6yT-nfDMTpExgGIg4KDJnDSIpZUb40CNlA4g..%26ch%3DAQEAEAABABRdF71VIq1REqKn3xTTGTqROL6SfxfN_5A.%26v%3D3%26pg%3DK4S2OOF2A5DSRFHT66FV5LCDEY
+.netflix.com	TRUE	/	FALSE	1795458760	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRlmNvWy08vLq-lcTwUIUU4g6LUmZw7vCY.%26dt%3D1789961631792
+.netflix.com	TRUE	/	FALSE	1795458760	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1795458760	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1795458760	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

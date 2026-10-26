@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: ES 🇪🇸
+Plan: Premium
+Next Billing: November 1, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 21,99 €
+Extra Member: Yes
+Profiles (5): Moni, Barron, Angi, Daniela, Bry
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1803335349	OptanonAlertBoxClosed	2026-02-22T22:29:09.919Z
+.netflix.com	TRUE	/	FALSE	1820620358	nfvdid	BQFmAAEBEGZ3bG7guymvBvL1HGRMZ-dgW_VXutE9FxCU-rAbnMfAQD6hz2hYaQlBIA-BRP5vQv4N0icCrptlg40XXUYoWzi-KmnBLqolhNCs31IqAUJeRlL33Y-QQjD8bgvwsgphWCU9l8YpofhbEC4TZCUb5dP4
+.netflix.com	TRUE	/	TRUE	1820859697	NetflixId	ct%3DBgjHlOvcAxKzA7X3O157L19Rx5iiDBFg53xPL53JXkkMKpGwd0cUpCpxLWk05S-m5Xj0dWCXdyx04tjHIwuLzEQj8Uxyp3cBOIjIxxavLXGTOsqfXlYXG2Q3_GIw7PXr0ukkIZLu5spU1X5xVUi_YfFD5_dw0l2ZCEbopLZfrymb5AAxqI3MSAvMB4wvyQeSjUatSNBpT00nyoKr1oYH6a8d3LsfM6oitbINJ-6pwLmvIty9Q1obf2WIwKWBIwC1JIRlUokDNkHHqXRandFKxwJwXCJ8KwDanZIgA28H-CI9lxMrmScmc7LXGnCyftZBa0szmBGb9EsFaFDeH2LcUOPrpooyBK7eYU3JO4JdIgxZWBKJhdUslCHu_kVKRAGpEm3WsONIG2Ajvd-oaYxh-Q7-hzznWmknJrDJXkyE-8lcEEeF9gF-84948mrFr-Zmyc0OsFDyT_jX5qQlHxlBfEhfmhbd07rT_vs4-NHSIUDq1ucFMoQ-h98AD5WAle5e9OVS0-3TE250L9qCIUHCIMTqAlQED1Wzbq4GpCc5ZSbC469QKUyfwV9zmY0O22nVR3bJ77P3NfSZUBhpURgGIg4KDHS-E6aSfJY8tSQIuA..%26ch%3DAQEAEAABABRxVwAwlwQ0heO6r4AC711SI6y649kaJjY.%26v%3D3%26pg%3D6YMNW74QT5FR5OF7P6VJKEON2E
+.netflix.com	TRUE	/	FALSE	1820859699	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+13+2026+20%3A21%3A39+GMT%2B0200+(hora+de+verano+de+Europa+central)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=53bdf098-740a-4448-ab0d-adac2c1a9a88&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&AwaitingReconsent=false&intType=3&crTime=1771799350450&geolocation=ES%3BMD&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	TRUE	1820859697	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRzXHnGHDieyV4jMVaHsBw8vK02L3kj7CQ.%26dt%3D1789323696570
+.netflix.com	TRUE	/	FALSE	1797099699	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1797099699	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1797099699	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

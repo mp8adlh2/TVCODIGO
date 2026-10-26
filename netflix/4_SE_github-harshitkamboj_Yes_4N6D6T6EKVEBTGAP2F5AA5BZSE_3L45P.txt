@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: SE 🇸🇪
+Plan: Premium
+Next Billing: November 8, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: SEK 219
+Extra Member: Yes
+Profiles (5): Kaimook, wasana, Mamma, Max, barn
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1818109068	OptanonAlertBoxClosed	2026-08-12T22:17:48.026Z
+.netflix.com	TRUE	/	FALSE	1818109104	nfvdid	BQFmAAEBEHD6S059al7kfO1K6tyfeL9gzN_pOjpnx20z8MH9N4AVngt2sNw0yHOx0C3mv9hBZmhr_ZXWbGN4SY4TVpTrnLNNFXKceJ-aeoCQXT3LtQdjOBmE28iBKGSedfvqUlGiAvSrh8PIQ3iuDhJ7WtqGOgnn
+.netflix.com	TRUE	/	TRUE	1818466588	NetflixId	ct%3DBgjHlOvcAxKxAx0p44s3PdUavvNO5LKBr64hT4DtmNjzRm8gJu9-qYk4sIKtR7HVMSfEq-U-ABIwZ70guDjE8ttFlhjIa_ug9X9j-KqzwoJ59rDA60e_uxeT42pJXbMc6DUCN2knwMEJ1lDfl9fYfrI0pX860NlRZX2whWqHSi2wi3qc-qF02MHX7vHi-pF7OksfXS-iiSfpXBuJMgtcTvUTCqYsgu_zpSvHaNBIqQbfD1vsqbYR2SimIBlc1Q1ipdbV7eGVwGDKFhYScILy4F7j8KatEhHR3UmJtBsNyyAF_5DVASb_3U1h4551IVFm1SRhMUCznu9gspQbj26ATNWdHle1P3fFZR2Y_0tB-aRo4w3z5z2G1__d4Zj9gmiU72qEWIos30Y5SNwx3d4-N7SEwaKpMvCDgs3yAaUQB2n4-q505KbahCfTejsW5uvhVr9jC6shSBZ9mcVvkBD8FB50_JJFEr_W7CcY7gfTp_U4xa5_CgjVKoKfJfMSEL1aAr8FMSwcO3PGbML3iJWWMT2-OzvE3EiBxTqktNpEMkDIqFl5Br7pujphCqFslVFfzi1rP2cRNPk1_fcYBiIOCgxWWshqPAUquvUiRG8.%26ch%3DAQEAEAABABQdtm7SMBa7mvZMaD1-oyq-PqarD_z4maY.%26v%3D3%26pg%3D4N6D6T6EKVEBTGAP2F5AA5BZSE
+.netflix.com	TRUE	/	FALSE	1818466587	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Aug+17+2026+08%3A36%3A27+GMT%2B0700+(Indochina+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=9d412358-1ac1-4a23-9799-f240d51bde88&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&fclco=&intType=3&crTime=1786573068398&geolocation=SE%3BW&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1818466588	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSrg4prHG03tY-nqRYq78qZkGbQnBIeRQo.%26dt%3D1786930588382
+.netflix.com	TRUE	/	FALSE	1794706586	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794706586	netflix-sans-normal-3-loaded	true

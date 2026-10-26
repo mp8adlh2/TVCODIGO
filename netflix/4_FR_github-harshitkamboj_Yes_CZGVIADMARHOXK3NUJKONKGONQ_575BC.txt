@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: FR 🇫🇷
+Plan: Premium
+Next Billing: October 28, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 21,99 EUR
+Extra Member: Yes
+Profiles (5): 67, LMV, Ccc, الأطفال, GG
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1815087264	OptanonAlertBoxClosed	2026-07-08T22:54:24.269Z
+.netflix.com	FALSE	/	TRUE	1815087384	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKhA2aC_XF-Dxg86fonzC4wTYtAzuLY0Xi0krCCAJ0PskS9T0m3NtE_LXn14eI1LV5CsAapYU98m7RQ3bwUIMo4RmGJwBBw5bt1oiy4inu6pPacTlOXrpOTQmqMkH0xuRdH65O-nEvdoo5yTbyEMyp7Aq0x63cEXGycxCKL6OikS7OCkt1Jl_IwwANUGDjYH2S1qdm1_gLGllCZdMJuE6SBFggb_nJxNMlDqqc-UgqRKDWN7GINlTKD5j4MspnjQ_QbUUlC73ckaTqwwYnWfbliztre_nie5VXs738EhOvw5md-frOvpTW-fSvfTc5kJW-I9ytLVgmMNYGjuOq55WYI6LblVYDlHJTgWMM02vqibvkz9h41BGRPaW6LJQIBxAR6pDK_fNjS9cAv0rKhXKb3WV9GApM_N5zgj7h3rOB_52MNfG1LLyFyPyfnf8K8IJpTvHzMrG95D9b99366-fjkaOPPYJvrbskl_zyxvPC9WG8_0WQjyJlvwA42xc5iI9OxWpYCYrVLwGeDRvULmEUWduInyfuvsKaez1RdseMOgBnkqhgGIg4KDNTHUKfocs1G5RaQzA..%26pg%3DCZGVIADMARHOXK3NUJKONKGONQ%26ch%3DAQEAEAABABRidcxa4Ycf_W1cCTDsHWV7w63wBUNgC6k.
+.netflix.com	FALSE	/	FALSE	1815087386	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Jul+09+2026+00%3A56%3A26+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=2fb3bf33-0938-43f8-b4a0-36780558152b&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&fclco=&intType=3&crTime=1783551264593&geolocation=FR%3BHDF&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1815087384	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTjf4zykyMn-O8lcVW-YTmmQ5iAaYD1eBo.%26dt%3D1783551377129
+.netflix.com	FALSE	/	FALSE	1815087384	nfvdid	BQFmAAEBEOFo1VRxRaZqrMUVA-XCdF5gtW1r318u4tISQhojVUs2L3Za1qxGGnaxbt9SOTQ6OBMAvWeQhjiOSL367KwJA0R-z9G3NHPbrYEFFrW7vDJc716wTgxS0McuAKL5ZqpzauVKNW0pGzLxrNbZXRBPXkQH

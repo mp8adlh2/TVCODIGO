@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: IL 🇮🇱
+Plan: Premium
+Next Billing: October 29, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 69,90 ILS
+Extra Member: Yes
+Profiles (5): zarga, Briki, no signal, @, Privado❌
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	13435066778151312	nfvdid	BQFmAAEBEEqzAEvQnv9DSY1xYU1hhNxgDzyvuyPYDJpfT_TKNuX3ObZ9zT3YpMBt3cSNEHanL9ZKLRo56DzputMuevVZffZuf5hkMZkoOaxnSxgWhbUATncgtemoKrbYeXXDiEgse2_dtHuJewWsN6reYsyYA-hu
+.netflix.com	FALSE	/	FALSE	13460644207000000	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Jul+21+2026+14%3A50%3A07+GMT%2B0300+(Israel+Daylight+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=3e52dce0-de0c-4c66-8619-f5ee85f3c9da&interactionCount=0&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	13436884204478508	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	13436884204478274	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	13436884218286632	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	FALSE	13460726759021190	NetflixId	ct%3DBgjHlOvcAxKpA4fl12-1-re8uAlLAUCojNI3rjU9U-AfUlm4_RaivoZV09ga7rH7vijvLwZ3vS3RQNKyquunnkqKu8ipZeQQJHmRd53sOXITbqsBLqZBEO88rwtv32fZLee0o_g6RZyXNkwn_INjgUfkRbScyroSsACm6jVbkkl_6XCFpCknqxnd98_mpzehlzCebuGp0fsjKhyzE2x7slt-BgFhv8rr_LLjEI_Rvghq9IT0MiTFMiMY0YTiMhWUquZMFovMGirINlgCWn1qdvit8tKQk466hbTFNhTmz4rrV2p_ishl5XHCFdiDqfniJeAdE3umTTMPtHMbgF1qHCidoXgLqvweHSNSG__TgsKHwdS1UaKlAOamFDkNwrpIROMeaEe-2FWk5WTNthV-ayBeToRzCM_BWBuYk4DFLjTJfxp_5cnjtXh-jtlMsiTkgNgxkH_0T8WE2qGJpHvRmn2DptEqnZRR0LW7NgKeT8Jw-42MqNmOzhn30UDHFuqz8sCfWGSniujvX-YNYvvM-9_dcqO-fMiM5NAWT7m9JbwX1wqXCNOXi4I2y80D1uOI_NHXGAYiDgoMxNeElP8sOML8HTL8%26ch%3DAQEAEAABABSWEC1O_ASsgzF38dIk_ekmXty1hvFx38o.%26v%3D3%26pg%3DOG5BIYLNVNHVXJK5RQJOQZRIG4
+.netflix.com	FALSE	/	FALSE	13460726759020674	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTwJ3WMSRqTcW-NFO4HQXL593kjxhj46xY.%26dt%3D1784717159911

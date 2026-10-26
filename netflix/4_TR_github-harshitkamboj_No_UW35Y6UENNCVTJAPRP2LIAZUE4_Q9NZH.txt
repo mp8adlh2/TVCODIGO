@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: TR 🇹🇷
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: TURKCELL_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Profiles (5): Suio, 23, Carlsam, Swap, chehan
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1819640694	NetflixId	ct%3DBgjHlOvcAxKRBCO9u5MWpaWlbDrgqIAUtS_JNEadlXpJp-C4ocB3NFccrGNc3Osmp2IFD5YDBCwT5tSyD9J3wdMXx9hB9s1oEuuPBENx2ppouYVFOTzQxmrwe3wCcj4_k8kvzV3ZbB6zBhRygBoO3eUAMF-p6M4q6VtUICn85IyU0heWzOi62jXg2Zbqp9nkYCZFuqXtPK5qdKQPd0WEbWmc_m8mz5fTFBlw3sA9Vym-iVEDlQ_Cx9-WHX1BhonTzBnlYGaWHRMWq9XNiJIsF9lpeLxhINEw-1K_MY-ES8NwGn9MfdWR-H3CF_XD8pJLlRrlt6vNQg4_YLqzrCfo89cbW3COUI30sTKr9gsxedjL42RjMTRywundnfunJhFjxyiStAkkCg7ihDH-mKO8rQgpG1ysw5jG2CFR-Jb-UBhns6twGOQobkLH1gzcQeUREi8uZomtINNFAQWYZImAz0a_M50EVgdd5DOeHtTonuyR5N4vEpAMWmzpat1C7kytgcASw6uBYyxB7zKaRoboDawLoPpI45CIwMNLJFWo8JPUX0Zrg9stT2aa9GJx-aFJs6dnX9bPCooc-om4ylI6nPimucUjf_JY8AreW3MjlyLsjfUhdlEgpf7goHNgkVZ9MRQEF0YDHn1OZEo596pLYKAGphMlV3RVpSPZ7v5bdpSAuJw_tU8ZYYtBS-p0hyRchSsEYf9O_1nLHZcYBiIOCgy8NF4yKarNgiJv978.%26ch%3DAQEAEAABABQfrRo14Ll8rNULNqLGbm8iL_whU0nl7oM.%26v%3D3%26pg%3DUW35Y6UENNCVTJAPRP2LIAZUE4
+.netflix.com	FALSE	/	FALSE	1795880696	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795880696	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1817933842	nfvdid	BQFmAAEBEP96KR0JRsLmEjLF_q2pNQRgiT_SD_G_rSQMLJOA3OWnSi-4j7928dCGte4I9Kjbes1X_Vq7UbaibKXzVov22LQ39n22ZdfXHf-uN70qm9T2BadQf0kj_cZwvA8fuYg5BOgYLLRym3IpJzHHmQMlcoqO
+.netflix.com	FALSE	/	FALSE	1817933746	OptanonAlertBoxClosed	2026-08-10T21:35:46.859Z
+.netflix.com	FALSE	/	FALSE	1819640697	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Aug+30+2026+18%3A44%3A57+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=5d93fc67-ea4b-42a9-bcfa-9905b328b4b6&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&AwaitingReconsent=false&fclco=&intType=3&crTime=1786397747866&geolocation=TR%3B06
+.netflix.com	FALSE	/	FALSE	1795880696	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	TRUE	1819640694	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTGRSoMYM9d3aNRpLjLmQCxr1zN38iWPic.%26dt%3D1788104703344

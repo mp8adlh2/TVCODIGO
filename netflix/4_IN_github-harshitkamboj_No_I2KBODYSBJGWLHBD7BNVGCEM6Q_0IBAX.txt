@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: IN 🇮🇳
+Plan: Premium
+Next Billing: November 1, 2026
+Payment: UPI
+Quality: UHD
+Streams: 4
+Price: INR 649
+Profiles (5): Y, hah, Med, M, J
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1810484612	nfvdid	BQFmAAEBECOYik4PwUDbzYRgg8S2Lq5gc-CCU9HkC7QxOWiKFDfoVK3VFXzDkl46uCGVUH_H35SAQJFU-tlvwwmAw_IaK2BWpTTrZHl5JlleMXfVwdu9WHqECh2cqp0WcR4cbeZNm9GUOMRoh7ZCjIObhuW7eGl7
+.netflix.com	TRUE	/	TRUE	1822227662	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRLC5Hj87makLqEQ2eOGJbRuMok9YWc-JM.%26dt%3D1790691662857
+.netflix.com	TRUE	/	TRUE	1822227662	NetflixId	ct%3DBgjHlOvcAxL_A5m1MFRD1o0ptmBt6QUEp5tb2e5K9sWgWEer3aSHAexRhVxvyYYYSurhoW4Jc-1tC_mjLSp6826Y9YcIDMng6HaHdvGhMk_toZpcfShHo3kMiMvp3Dac_fbptZu42FuRnRUu4AkLc0V4q3PWojjNGFsnSnyGnO5_zef4wYCRtZZtmS2elKyBBpySGLXd3NECBhR9OHJ-_G4IrLbgnYFEbrjBQk_9Lf0rI2SZsUJYhaAE1PjI2MM-UwBbeGTlTMtbRA6DNYZ4qbTldgQLmJeptbx0pAVBZgF2XDkkWGCbkoyGLapwiQ9jR3LOhUXUipCv4xSVsHahS7GyWTbvU7yRfiChntvEv4dZFhdncgcC3e70WDRKv5VpVRblgf7uiVbP7idaD8j9Yrp8kSJMnLX3I1HVfn_njoaxSnmFJjD76qDwX20KG3H5x6cEDtXYke3wWhT4bBdJocAL7SzwReWUOmnjrxF4GENSpMNvY3K0k_mGmCpLuExrvl86HWH8tRUoYvM7N6gXWRwIPHIqVLTGn06B9Lv0FB05fI-SUBCISEymxqWAQIO666yILvV0gT8kTrKENa6PsIXo63SrmhxGXEtJBHX7Y1UIZnkaOYAiuUtFSJMB4AgfPf2ZvTMHudx_Z8tYFhiAxhJNljo1lFJ_wzLApDNIpT9MqtWftwXQwiYYBiIOCgyQCEHhuf6SNCygNtA.%26ch%3DAQEAEAABABSrhN-ttGRCFi1vqIGW7nQXO3iOjvtkOH0.%26v%3D3%26pg%3DI2KBODYSBJGWLHBD7BNVGCEM6Q
+.netflix.com	TRUE	/	FALSE	1798467665	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1822227666	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+29+2026+19%3A51%3A06+GMT%2B0530+(India+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=dec52e81-ca4d-48da-88b6-0f478a7ae729&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&AwaitingReconsent=false&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1778948534920
+.netflix.com	TRUE	/	FALSE	1798467665	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	TRUE	/	FALSE	1798467665	netflix-sans-normal-3-loaded	true

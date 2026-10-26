@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: BR 🇧🇷
+Plan: Premium
+Next Billing: November 4, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: BRL 71.90
+Extra Member: Yes
+Profiles (5): NOUR, Edvin, INVITÉ, Indi, Infantil
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1813019085	OptanonAlertBoxClosed	2026-06-15T00:24:45.001Z
+.netflix.com	TRUE	/	FALSE	1813019108	nfvdid	BQFmAAEBEJoPZCKQrvC019qLV_UnCudgQmxWgPFlTxJ35e9HQ1U1NEFCEvtw5bgkjYNs85iftMjG6rPu1pLiJCyFo4Q344uI8yqqX2B3wRcrJZb05t9YNeiduxgrEcK2x3yk0jmbmV6YloHEiFm97j36FUVFmXkv
+.netflix.com	TRUE	/	TRUE	1813019117	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKcA3Bt7X6RNKwbrlYukAY8PiRsY3x8KL8YLURObIow3RGmFk7IUB9nGJy_kHck_rVMh6OfrXt7fD9LXmCWaofHbxLHIpptBj70T6zE_QQcnR_y3JtTp2_wybv8nfWYnMM-PIw110uMAlfS4gdYy0r6BJAYMvHRSp2MD7qh0Zi88hWgykjYtq7tgr9Xt8mSOjl3LOYbOJnvapNY12Me5bnRh8NtlK1pJLJS86d0EQikGzO_hZVU31l92iV9l7pPN0zKkiH1Bdp23Z3DS68QTjPQnJVei7fJ4Ew8Qtpu6xvMrCZRxwocZMlQAtgl_UPsKMokMUkO2ZYEE7lHFeIYKM-Mf71xIoI3VQTGXiyD2W60RumGpmx4rLtSltW9IDPNIAcvZ-T4l0dILPW_otv6SlTx4lfBtRfcjM8fFMI0J_hXymiy2ozBUGk8hLbbuKGyMynaCPZSH4KBAZDHke9VtNDzWXG_KOZPy1VlK4OBJcqGPrJEZ3-7C1HbYsp2AzEzB65__QA9Rd3JusXuKRJPAp7SoJsHwg0-DvbxON5SDokYBiIOCgzIaZUdD0JGM-NCb9g.%26pg%3DLLO63I6X5BEK5KJ5KUSZV5SOUY%26ch%3DAQEAEAABABRRC4bfGzICMcjFg8a-Co05cJf3NI_OLsU.
+.netflix.com	TRUE	/	TRUE	1813019117	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRA1jAShoX3zGxBFa77h1IZKu5DOuFSHQU.%26dt%3D1781483133971
+.netflix.com	TRUE	/	FALSE	1813019214	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Jun+14+2026+21%3A26%3A54+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=4a257617-d240-4e0d-877d-751cfd8224d7&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&AwaitingReconsent=false&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=3&crTime=1781483085699&geolocation=BR%3BRS

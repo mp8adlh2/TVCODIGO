@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: VN 🇻🇳
+Plan: Premium
+Next Billing: October 28, 2026
+Payment: MOBILE_WALLET
+Quality: UHD
+Streams: 4
+Price: 273.000 ₫
+Extra Member: Yes
+Profiles (2): ntl, HeidyPrivado Porfa
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1821790902	nfvdid	BQFmAAEBEDpK0FZkzY41gxHRHgg6JDNgZiF2YoGvFkEfusMv3mdJam6V-49S4hPVzzJVgl7zZNl8B-CpKPcwDwAvrdJ3XXjAB7TqUx2BVJfSAFiweNX84Uk-bK6IoXL-MxZxISSzQzvmNNYIBLRWHao8R4TyaBm5
+.netflix.com	TRUE	/	FALSE	1824147706	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Oct+22+2026+02%3A41%3A46+GMT%2B0700+(Indochina+Time)&version=202609.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=007fbe1a-eda0-4f39-ae34-df7b9963928b&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1790254848458&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1824147694	NetflixId	ct%3DBgjHlOvcAxKDBLk2PYJJp5sM3fVLS3Dd-BJpqK6oVWk8LCAu-sS28WQz1DLMGzANR4qsKC3LlQIxBEpzP8CMLxy5A1Zv3n1udNUC2nnQXMTcDLHRh6LvTS9NKFBjK-RqVkGOSZxwZtcQWR0P1fxtr5uIQQZwjeWrVaXS4OpZChopVWQWuPZpUu2JiUOkLJPBV7Jeok-0floEaCK5Gej8SjeJ6Vm6D_jKGQadRe-16sVXO867bsHwrUzJSxFECbz_Cwg-0nQVQCPPTg5NUpDaGwcbe11JUWHyDj2mjzgcDe42haqrzcuhlLMDy5xh9zz5gjNjAxqyjkOQi2tlFqieeseWxtXi6VwBMVQwuNbF1vq2LOzHDy5VRdAVAqGDuWxCePLe7WHbCh6b01kfJ9dyhgaZtpkBdsTWilFppiTLH0aOaShOdWCvA1-ogtqlOj7tmQjC2jykvAxx-kxBTYnz7E4JwD9bVaV_41o4S8dTmc2RbQIvgrrwESdKZjwIlU2a4zt21yGLFZqNFRd9xnKTipVrmLrL0yTf3yFiERGv4VNwWVoamj35W61WUyWiTeKq2T-mNemolE3Dd1_VauoLVs_Nw5HIej8Srxgjxo2q-ewtKBMKjEzAuO9ce30mgZfIubb7l6qg9lZT1Gvi-jxFp-ydkjicZ0lfixULIKu7GEQVuq-s1NqrOuDWSw3VGAYiDgoMLINs3qrxxMaYWM_8%26ch%3DAQEAEAABABTIv02uKSFSdme7RyB2dabYHOdn93dUQ_Q.%26v%3D3%26pg%3DALMYMWBISFHI7JXIUWO73UHO6Q
+.netflix.com	TRUE	/	TRUE	1824147694	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTLxM6c4ZHl3gH6huaj0UnSTCsz3S9rJ_s.%26dt%3D1792611695173
+.netflix.com	TRUE	/	TRUE	1795458760	gsid	b12150c6-8b8a-4543-b63b-299ea7fc1db0
+.netflix.com	TRUE	/	FALSE	1800387696	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1800387696	netflix-sans-normal-3-loaded	true

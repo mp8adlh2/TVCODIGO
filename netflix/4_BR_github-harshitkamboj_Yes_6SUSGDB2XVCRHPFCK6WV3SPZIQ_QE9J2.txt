@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: BR 🇧🇷
+Plan: Premium
+Next Billing: November 25, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: BRL 71.90
+Extra Member: Yes
+Profiles (4): Gabas, Adélia, Monica, Anak
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1813598133	OptanonAlertBoxClosed	2026-06-21T17:15:33.494Z
+.netflix.com	TRUE	/	FALSE	1817592804	nfvdid	BQFmAAEBEDqmk0UO7o57Q68FKn-m2bFgE9ViuDWif55GFDkGk_2vY2c_IaJhy1VzPwGlZIEnNJ_aiMQdAVULPW2kZ9MTPhxuoI1zQFv9gAmCLbJzpdjk5tfems_lw1BXM-64eHbD8SIOiY2HKyjbCz7Fy7I4ikVU
+.netflix.com	TRUE	/br/title	TRUE	1821394643	dsca	true
+.netflix.com	TRUE	/	TRUE	1820108408	NetflixId	ct%3DBgjHlOvcAxKIBMm-43fHKbQpLxS6FOIPMioyBwGmkBwlVrS8m904JJs0cmG4yHRkeLqK6UGxfBVcaZSjZE45IbCbjmG_18QuPadSvDR2wng-QsUsY9Qzs60ywT5CRwMEfSR8QVybBKUnU7ktIvJPm6gAG3UUXvEzqhkxipyw7tpy15eU-c6XHWg1mx5N0Za91BzYEMgE18XV_AQfCnHyWaUz-uuo2VE-nTt6n8QpQ9w50Ktk2ku_mxUK4L3hwbza0KQon6Ft2tN5IvZofHnrG7uxLm_TuybwITQCsMAjN_9SbkDwAw6NQBQoSVn40M7l8KDlNLRewot24GP6NivjNZvwxuzTTi5ao-9GJjmZYvc_DrhncxxS2Yf7TePKJcaY_UVzCrZ8-Qpxr6mhwZI06dtbaAh_Cmmh8JyHRiBWaOQQMpRJlup2XI-lVa_coXTOoQ5x4U9PMLycPC1HYD_MD3FXKUwQoCNc2egBKKMYj1wzUQ_t7NVCuAS_FvYQw4WwLVVt6pNCvZQv2FaK-7QrG6T_0qd-au0kh9IIsyYGaRD8dtzOn3q-n2nm1HMfXr2_jSrl2j5rtKsTGvx4zJsZ98Mc72MBOh0r6q0xsvvzTea2M6Nl6-s-3qkFT8I5b7itCCskw_fJMMIWnvym5Gj9W9uLUTudqSkHdP9acwNVHUy6iLXlUuD2RBALHTvcBvnw-VIYBiIOCgzcDbf96oUMfKMBL9w.%26ch%3DAQEAEAABABT155ml4zu8LTjbZur8A4UtyP0Ghywexq4.%26v%3D3%26pg%3D6SUSGDB2XVCRHPFCK6WV3SPZIQ
+.netflix.com	TRUE	/	FALSE	1820108409	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Sep+04+2026+22%3A40%3A09+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=c7145654-541f-4327-b384-62f49b35e096&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=3&crTime=1782062133911&geolocation=BR%3BRJ&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1820108408	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRu5G30DqEqFFzL_Tb55c88rsfDwphCjhA.%26dt%3D1788572409021
+.netflix.com	TRUE	/	FALSE	1796348409	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796348409	netflix-sans-normal-3-loaded	true

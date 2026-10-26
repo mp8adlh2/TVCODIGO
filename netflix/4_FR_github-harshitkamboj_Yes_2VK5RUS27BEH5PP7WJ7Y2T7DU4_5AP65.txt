@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: FR 🇫🇷
+Plan: Premium
+Next Billing: November 23, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: EUR 21.99
+Extra Member: Yes
+Profiles (5): Malay, Suiru, BIM, indo, Cam
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1805324090	OptanonAlertBoxClosed	2026-03-17T22:54:50.284Z
+.netflix.com	TRUE	/	FALSE	1805324102	nfvdid	BQFmAAEBEFnAysRpuLTUoLRkKygDhI5gF_SJQszVUA-o6n0VPuVhXg6TholtUx2OEosn9GJ9qISl_153w_yRhtHd7Fa1PLsersAJqotdbDXiNx89PuxZggu73OPxK_ZM4KTAeesdD72lJd_z-uFuLAiEoTsukKXO
+.netflix.com	TRUE	/	TRUE	1808860657	dsca	true
+.netflix.com	TRUE	/	TRUE	1820750705	NetflixId	ct%3DBgjHlOvcAxL9A7Oa4dodk-bBEulg-xePqEqd7H8M7r2rThR98TgAkkmmG4trKcpPDj6Pe5tLZfurnU8pFvDKaxUo654W1S0U3CX-G8U3Wfov0p7OhES2dVPSLztDwUARC48Q8P1F_vlGb_58-raRNtC8XX2J5aFYnJLrk-_MB4vgbaNeFjoy1AuGoZIrs9tDebhjbtvqdQGBWuuXDYqYd4wlW_4PZnZN_A_tJkl_Ui2mGH6cfxkNWo2g_4cL6eNKAkjrrs45A3hVY_vUQPmbCUuaprWjgKOaUsMVlyvaaX7Q9qa0rzAh1NUejPyPC2SE6prSRkKrrmQC2wYtyjfivCcbzE_M_kLT_lJmJJi1nAMHphtf0Z1TRHqKt8U37890GZLh3AROBWlEoNAwZyRBoTU5HSbG9tNcOtpln9ggyuhDSnutG83zwihw9S--2imq8mSU8Rckt4moAOnYALPGz4_RNqkZdbj4onYFoS5K4SptZuBvWM0Q4_PyfHmWiOcvyipXa4EDMOvZ5fhc-QUFnwPaLCZiLN6ytZq75t-1_ou3MlakVpnusmm9cDFygI2KHeRUf4Wh0Xr5E_tZSAfDHPGOUviPaPoahWP3jd2rUeAhPAukI5k1OvO3I_U3sTkyqz9I69tPQOX8UGfzXnzOv4ovqKPwJacuAayUa6YTBgDkasJLHULhGAYiDgoMtLllNH5M_ItO8fFa%26ch%3DAQEAEAABABSQDIUCK27YQjzoc758jveiEpnw4PF3DxI.%26v%3D3%26pg%3D2VK5RUS27BEH5PP7WJ7Y2T7DU4
+.netflix.com	TRUE	/	FALSE	1820750707	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+12+2026+14%3A05%3A07+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=38586962-09da-4885-900b-7273378a506f&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&crTime=1773788090627&AwaitingReconsent=false&intType=3&geolocation=FR%3BGES&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1820750705	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSGYXhE1-FNdI-C6E5YdnKZIYXi7238idE.%26dt%3D1789214704300
+.netflix.com	TRUE	/	FALSE	1796990705	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796990705	netflix-sans-normal-3-loaded	true
