@@ -221,8 +221,45 @@ def _rx_all(pattern, text):
     return re.findall(pattern, text, re.S)
 
 def parse_netscape(text: str) -> dict:
+    """Parse cookies no formato Netscape (tab-separado).
+    
+    Suporta valores quebrados em múltiplas linhas (como os gerados pelo
+    checker github.com/harshitkamboj onde NetflixId e SecureNetflixId
+    têm seus valores longos quebrando para a linha seguinte).
+    """
     cookies = {}
-    for line in text.splitlines():
+
+    # Pré-processa: reconstrói linhas quebradas unindo continuações ao registro anterior
+    raw_lines = text.splitlines()
+    joined_lines: list = []
+
+    def _is_netscape_start(line: str) -> bool:
+        """Verifica se a linha é o início de um registro Netscape válido."""
+        if not line:
+            return False
+        if line.startswith("#HttpOnly_"):
+            return True
+        if line.startswith("#"):
+            return False
+        # Registros Netscape têm pelo menos 6 TABs e começam com domínio ou hostname
+        parts = line.split("\t")
+        if len(parts) >= 6:
+            first = parts[0].strip()
+            # Domínio válido (ex: .netflix.com) ou hostname sem ponto inicial
+            if first.startswith(".") or (first and not first[0].isspace()):
+                return True
+        return False
+
+    for raw_line in raw_lines:
+        stripped = raw_line.rstrip("\r\n")
+        if _is_netscape_start(stripped):
+            joined_lines.append(stripped)
+        elif joined_lines and stripped and not stripped.startswith("#"):
+            # Continuação de valor longo — concatena diretamente ao último registro
+            joined_lines[-1] = joined_lines[-1] + stripped
+        # Linhas em branco ou comentários de cabeçalho são ignoradas
+
+    for line in joined_lines:
         line = line.strip()
         if not line:
             continue
@@ -945,7 +982,7 @@ def find_next_valid_cookie(exclude_file: str = "", exclude_email: str = "") -> O
         except Exception:
             pass
 
-        if not parsed or "SecureNetflixId" not in parsed:
+        if not parsed or not any(k in parsed for k in ["NetflixId", "SecureNetflixId"]):
             DEAD_COOKIES.add(filename)
             DEAD_COOKIES.add(os.path.basename(filename))
             continue
