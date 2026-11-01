@@ -3263,29 +3263,45 @@
 
     function checkLocalVaultDiscrepancy(serverList) {
       const banner = document.getElementById('pwd-restore-banner');
-      const desc = document.getElementById('pwd-restore-desc');
-      if (!banner) return;
+      if (banner) banner.style.display = 'none';
 
       const vault = getLocalVaultPasswords();
+      const currentServer = Array.isArray(serverList) ? serverList : [];
+
       if (!vault.length) {
-        banner.style.display = 'none';
+        if (currentServer.length > 0) saveToLocalVault(currentServer);
         return;
       }
 
-      // Se o servidor possui senhas ativas normalmente, o servidor está saudável: não exibe banner
-      if (serverList && serverList.length > 0) {
-        banner.style.display = 'none';
-        return;
-      }
+      // Identifica senhas que estão no cofre local do navegador mas ausentes no servidor (ex: após deploy/reinício)
+      const serverPwds = new Set(currentServer.map(k => (k.senha || k.password || '').trim().toLowerCase()));
+      const missingFromServer = vault.filter(v => {
+        const p = (v.senha || v.password || '').trim().toLowerCase();
+        return p && !serverPwds.has(p);
+      });
 
-      // Se o servidor voltou zerado (ex: reinício/deploy do Render), oferece o backup com 1 clique
-      if ((!serverList || serverList.length === 0) && vault.length > 0) {
-        if (desc) {
-          desc.innerHTML = `🛡️ <b>${vault.length} senha(s) do seu cofre local</b> estão salvas e prontas para restauração no servidor.`;
-        }
-        banner.style.display = 'flex';
+      // Se houver senhas ausentes no servidor, restaura AUTOMATICAMENTE sem exigir intervenção manual
+      if (missingFromServer.length > 0) {
+        console.log(`[Auto-Vault] Sincronizando automaticamente ${missingFromServer.length} senha(s) ausente(s) no servidor...`);
+        fetch(`${API_BASE}/api/admin/passwords/sync-all`, {
+          method: 'POST',
+          headers: { ...getAdminHeaders(), 'Content-Type': 'application/json' },
+          body: JSON.stringify({ senhas: missingFromServer })
+        }).then(r => r.json()).then(data => {
+          if (data && data.success) {
+            showToast(`🛡️ ${missingFromServer.length} senha(s) do cofre restauradas automaticamente no servidor!`);
+            const updated = Array.isArray(data.passwords) ? data.passwords : currentServer.concat(missingFromServer);
+            saveToLocalVault(updated);
+            renderPasswordsListUI(updated);
+          }
+        }).catch(err => {
+          console.warn('[Auto-Vault Sync error]', err);
+        });
       } else {
-        banner.style.display = 'none';
+        // Todas as senhas estão sincronizadas: atualiza o cofre local com a lista mais recente
+        if (currentServer.length > 0) {
+          saveToLocalVault(currentServer);
+        }
       }
     }
 

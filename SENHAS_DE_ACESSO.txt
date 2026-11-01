@@ -1,145 +1,169 @@
 ================================================================================
-          🔐 CENTRAL DE SENHAS MASTER & NÍVEIS DE ACESSO (2026)
+   CHAVES DE ACESSO DO SISTEMA - CADASTRO OFICIAL COMPLETO (2026)
 ================================================================================
 
-Todas as senhas abaixo possuem proteção avançada contra força bruta e controlam
-a liberação dos serviços na tela do ativador em tempo real.
-
-================================================================================
- 1. 🔑 CLIENTE VIP
-================================================================================
- Libera:   🔴 Netflix | 🟣 HBO Max
- Validade: Permanente ♾️
- Detalhes: Libera: netflix, hbo
- Senha:
- MATRIX#ACCESS@7055$PREMIUM*20!2026
-
-================================================================================
- 2. 🔑 CLIENTE VIP
-================================================================================
- Libera:   🔴 Netflix | 🔵 Sky+
- Validade: Permanente ♾️
- Detalhes: Libera: netflix, sky
- Senha:
- MATRIX#SECURITY@5621$4K*63!2026
-
-================================================================================
- 3. 🔑 VIP MASTER 4K
-================================================================================
- Libera:   🔴 Netflix | 🟣 HBO Max | 🟠 Crunchyroll | 🔵 Sky+
- Validade: Permanente ♾️
- Detalhes: Libera os 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+ (Disney+ Bloqueado com Cadeado 🔒)
- Senha:
- VIP#MASTER@1444$4K*76!2026
-
-================================================================================
- 4. 🔑 SENHA OFICIAL NETFLIX (4K UHD)
-================================================================================
- Libera:   🔴 Netflix
- Validade: Permanente ♾️
- Detalhes: Libera: netflix
- Senha:
- NETFLIX#ONLY@9421$RED*VAULT#ULTRA*4K*HDR!2026
-
-================================================================================
- 5. 🔑 SENHA OFICIAL HBO MAX
-================================================================================
- Libera:   🟣 HBO Max
- Validade: Permanente ♾️
- Detalhes: Libera: hbo
- Senha:
- HBOMAX#ONLY@8153$PURPLE*WARNER#STREAM*4K!2026
-
-================================================================================
- 6. 🔑 SENHA OFICIAL SKY+ / SKY TV
-================================================================================
- Libera:   🔵 Sky+
- Validade: Permanente ♾️
- Detalhes: Libera: sky
- Senha:
- SKYPLUS#ONLY@4918$BLUE*FIBRA#SUPER*HD*TV!2026
-
-================================================================================
- 7. 🔑 SENHA OFICIAL CRUNCHYROLL
-================================================================================
- Libera:   🟠 Crunchyroll
- Validade: Permanente ♾️
- Detalhes: Libera: crunchyroll
- Senha:
- CRUNCHYROLL#ONLY@6274$ORANGE*ANIME#MEGA*FAN!2026
-
-================================================================================
- 8. 🔑 SENHA OFICIAL DUO (NETFLIX + HBO)
-================================================================================
- Libera:   🔴 Netflix | 🟣 HBO Max
- Validade: Permanente ♾️
- Detalhes: Libera: netflix, hbo
- Senha:
- DUO#STREAM@8831$NETFLIX*HBOMAX#PREMIUM*VIP!2026
-
-================================================================================
- 9. 🔑 SENHA OFICIAL DUO (NETFLIX + HBO)
-================================================================================
- Libera:   🔴 Netflix | 🟣 HBO Max
- Validade: Permanente ♾️
- Detalhes: Libera: netflix, hbo
- Senha:
- CINEMA#PASS@7742$FLIX*MAX#HIGH*DEFINITION!2026
-
-================================================================================
- 10. 🔑 MASTER ADMIN TITANIUM
-================================================================================
- Libera:   🔴 Netflix | 🟣 HBO Max | 🟠 Crunchyroll | 🔵 Sky+
- Validade: Permanente ♾️
- Detalhes: Libera todos os 4 serviços
- Senha:
- TVCODIGO#ADMIN@2026$MASTER*TITANIUM!ROOT#VIP
-
-================================================================================
- 11. 🔑 SENHA COFRE ROOT
-================================================================================
- Libera:   🔴 Netflix | 🟣 HBO Max | 🟠 Crunchyroll | 🔵 Sky+
- Validade: Permanente ♾️
- Detalhes: Libera todos os 4 serviços
- Senha:
- ADMIN#VAULT@2026$COOKIE*BLINDADO#PROTECT*ROOT!VIP
-
-================================================================================
- 12. 🔑 CLIENTE VIP
-================================================================================
- Libera:   🔴 Netflix | 🟣 HBO Max
- Validade: Permanente ♾️
- Detalhes: Libera: netflix, hbo
- Senha:
- VIP#SECURITY@8929$VIP*24!2026
-
-================================================================================
- 13. 🔑 5521984920015
-================================================================================
- Libera:   🔴 Netflix | 🟣 HBO Max
- Validade: Permanente ♾️
- Detalhes: Libera: netflix, hbo
- Senha:
- OMEGA#VAULT@8384$PREMIUM*67!2026
-
-================================================================================
- 14. 🔑 SENHA OFICIAL DISNEY+
-================================================================================
- Libera:   🏰 Disney+
- Validade: Permanente ♾️
- Detalhes: Libera: disney
- Senha:
- DISNEY#ONLY@2481$BLUE*MAGIC!2026
-
-================================================================================
- 15. 🔑 SENHA OFICIAL CLARO TV+
-================================================================================
- Libera:   ⚡ Claro TV+
- Validade: Permanente ♾️
- Detalhes: Libera: claro
- Senha:
- CLAROTV#ONLY@3914$RED*FIBRA#STREAM*4K!2026
-
-================================================================================
- 💡 DICA: Você pode criar ou excluir senhas pelo Painel Admin com 1 clique!
-================================================================================
+- SENHA: MATRIX#ACCESS@7055$PREMIUM*20!2026
+  Nome: CLIENTE VIP
+  Servicos: netflix, hbo
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: MATRIX#SECURITY@5621$4K*63!2026
+  Nome: CLIENTE VIP
+  Servicos: netflix, sky
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: VIP#MASTER@1444$4K*76!2026
+  Nome: VIP Master 4K
+  Servicos: netflix, hbo, crunchyroll, sky
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: NETFLIX#ONLY@9421$RED*VAULT#ULTRA*4K*HDR!2026
+  Nome: Senha Oficial Netflix (4K UHD)
+  Servicos: netflix
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: HBOMAX#ONLY@8153$PURPLE*WARNER#STREAM*4K!2026
+  Nome: Senha Oficial HBO Max
+  Servicos: hbo
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: SKYPLUS#ONLY@4918$BLUE*FIBRA#SUPER*HD*TV!2026
+  Nome: Senha Oficial Sky+ / Sky TV
+  Servicos: sky
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: CRUNCHYROLL#ONLY@6274$ORANGE*ANIME#MEGA*FAN!2026
+  Nome: Senha Oficial Crunchyroll
+  Servicos: crunchyroll
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: DUO#STREAM@8831$NETFLIX*HBOMAX#PREMIUM*VIP!2026
+  Nome: Senha Oficial Duo (Netflix + HBO)
+  Servicos: netflix, hbo
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: CINEMA#PASS@7742$FLIX*MAX#HIGH*DEFINITION!2026
+  Nome: Senha Oficial Duo (Netflix + HBO)
+  Servicos: netflix, hbo
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: TVCODIGO#ADMIN@2026$MASTER*TITANIUM!ROOT#VIP
+  Nome: Master Admin Titanium
+  Servicos: netflix, hbo, crunchyroll, sky, disney, claro
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: ADMIN#VAULT@2026$COOKIE*BLINDADO#PROTECT*ROOT!VIP
+  Nome: Senha Cofre Root
+  Servicos: netflix, hbo, crunchyroll, sky, disney, claro
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: VIP#SECURITY@8929$VIP*24!2026
+  Nome: CLIENTE VIP
+  Servicos: netflix, hbo
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: OMEGA#VAULT@8384$PREMIUM*67!2026
+  Nome: 5521984920015
+  Servicos: netflix, hbo
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: NETFLIX#ONLY@7712$RED*CYBER!2026
+  Nome: Apenas Netflix
+  Servicos: netflix
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: HBOMAX#ONLY@5534$PURPLE*CYBER!2026
+  Nome: Apenas HBO Max
+  Servicos: hbo
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: CRUNCHY#ONLY@3391$ORANGE*CYBER!2026
+  Nome: Apenas Crunchyroll
+  Servicos: crunchyroll
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: STREAM#DUO@4829$VIP*MATRIX!2026
+  Nome: Netflix + HBO Max
+  Servicos: netflix, hbo
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: NETFLIX#HBO#PASS@9921$STREAM*LOCK!2026
+  Nome: Netflix + HBO Max
+  Servicos: netflix, hbo
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: SHIELD#TOKEN@7971$PREMIUM*66!2026
+  Nome: Cliente VIP (Netflix + HBO)
+  Servicos: netflix, hbo
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: TITANIUM#VAULT@6470$VIP*43!2026
+  Nome: Cliente VIP (Netflix + HBO)
+  Servicos: netflix, hbo
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: CYBER#ACCESS@2531$ELITE*15!2026
+  Nome: Cliente VIP (Netflix + HBO)
+  Servicos: netflix, hbo
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: OMEGA#SECURITY@1360$BLINDADO*45!2026
+  Nome: Cliente VIP (Netflix + HBO)
+  Servicos: netflix, hbo
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: ULTRA#ACCESS@8905$HDR*75!2026
+  Nome: Cliente VIP (Netflix + HBO)
+  Servicos: netflix, hbo
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: ULTRA#PASS@6106$HDR*99!2026
+  Nome: Cliente VIP (Netflix + HBO)
+  Servicos: netflix, hbo
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: PASS#NETFLIX
+  Nome: Apenas Netflix
+  Servicos: netflix
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: PASS#HBO
+  Nome: Apenas HBO Max
+  Servicos: hbo
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: PASS#CRUNCHYROLL
+  Nome: Apenas Crunchyroll
+  Servicos: crunchyroll
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: PASS#STREAM
+  Nome: Netflix + HBO Max
+  Servicos: netflix, hbo
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: DISNEY#ONLY@2481*MAGIC!2026
+  Nome: Senha Oficial Disney+
+  Servicos: disney
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: CLAROTV#ONLY@3914$RED*FIBRA#STREAM*4K!2026
+  Nome: Senha Oficial Claro TV+
+  Servicos: claro
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: PASS#CLARO
+  Nome: Apenas Claro TV+
+  Servicos: claro
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: DISNEY#ONLY@2481$BLUE*MAGIC!2026
+  Nome: SENHA OFICIAL DISNEY+
+  Servicos: disney
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: PASS#DISNEY
+  Nome: Apenas Disney+
+  Servicos: disney
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------

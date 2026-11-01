@@ -35,7 +35,7 @@
         "crunchyroll",
         "sky"
       ],
-      "descricao": "Libera todos os 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+",
+      "descricao": "Libera os 4 serviços: Netflix, HBO Max, Crunchyroll e Sky+ (Sem Disney+)",
       "dias_validade": null,
       "criado_em": null,
       "expira_em": null,
@@ -122,9 +122,11 @@
         "netflix",
         "hbo",
         "crunchyroll",
-        "sky"
+        "sky",
+        "disney",
+        "claro"
       ],
-      "descricao": "Libera todos os 4 serviços",
+      "descricao": "Libera todos os 5 serviços e Disney+",
       "dias_validade": null,
       "criado_em": null,
       "expira_em": null,
@@ -137,9 +139,11 @@
         "netflix",
         "hbo",
         "crunchyroll",
-        "sky"
+        "sky",
+        "disney",
+        "claro"
       ],
-      "descricao": "Libera todos os 4 serviços",
+      "descricao": "Libera todos os 5 serviços e Disney+",
       "dias_validade": null,
       "criado_em": null,
       "expira_em": null,
@@ -147,7 +151,7 @@
     },
     {
       "senha": "VIP#SECURITY@8929$VIP*24!2026",
-      "nome": "Cliente VIP",
+      "nome": "CLIENTE VIP",
       "servicos": [
         "netflix",
         "hbo"
@@ -355,6 +359,66 @@
         "hbo"
       ],
       "descricao": "Libera Netflix e HBO Max",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "DISNEY#ONLY@2481*MAGIC!2026",
+      "nome": "Senha Oficial Disney+",
+      "servicos": [
+        "disney"
+      ],
+      "descricao": "Libera: disney",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "CLAROTV#ONLY@3914$RED*FIBRA#STREAM*4K!2026",
+      "nome": "Senha Oficial Claro TV+",
+      "servicos": [
+        "claro"
+      ],
+      "descricao": "Libera: claro",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "PASS#CLARO",
+      "nome": "Apenas Claro TV+",
+      "servicos": [
+        "claro"
+      ],
+      "descricao": "Libera apenas Claro TV+",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "DISNEY#ONLY@2481$BLUE*MAGIC!2026",
+      "nome": "SENHA OFICIAL DISNEY+",
+      "servicos": [
+        "disney"
+      ],
+      "descricao": "Libera: disney",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "PASS#DISNEY",
+      "nome": "Apenas Disney+",
+      "servicos": [
+        "disney"
+      ],
+      "descricao": "Libera apenas Disney+",
       "dias_validade": null,
       "criado_em": null,
       "expira_em": null,

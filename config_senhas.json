@@ -123,7 +123,8 @@
         "hbo",
         "crunchyroll",
         "sky",
-        "disney"
+        "disney",
+        "claro"
       ],
       "descricao": "Libera todos os 5 serviços e Disney+",
       "dias_validade": null,
@@ -139,7 +140,8 @@
         "hbo",
         "crunchyroll",
         "sky",
-        "disney"
+        "disney",
+        "claro"
       ],
       "descricao": "Libera todos os 5 serviços e Disney+",
       "dias_validade": null,
@@ -149,7 +151,7 @@
     },
     {
       "senha": "VIP#SECURITY@8929$VIP*24!2026",
-      "nome": "Cliente VIP",
+      "nome": "CLIENTE VIP",
       "servicos": [
         "netflix",
         "hbo"
@@ -393,6 +395,30 @@
         "claro"
       ],
       "descricao": "Libera apenas Claro TV+",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "DISNEY#ONLY@2481$BLUE*MAGIC!2026",
+      "nome": "SENHA OFICIAL DISNEY+",
+      "servicos": [
+        "disney"
+      ],
+      "descricao": "Libera: disney",
+      "dias_validade": null,
+      "criado_em": null,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "PASS#DISNEY",
+      "nome": "Apenas Disney+",
+      "servicos": [
+        "disney"
+      ],
+      "descricao": "Libera apenas Disney+",
       "dias_validade": null,
       "criado_em": null,
       "expira_em": null,

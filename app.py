@@ -1398,6 +1398,42 @@ def sync_passwords_text_file(passwords_list: List[dict]):
     except Exception as e:
         print(f"[Password Sync] Erro ao salvar SENHAS_DE_ACESSO.txt: {e}")
 
+def async_sync_passwords_to_github(keys: List[dict]):
+    """Sincroniza automaticamente as senhas com o repositório GitHub se GITHUB_TOKEN estiver configurado."""
+    token = os.environ.get("GITHUB_TOKEN", "").strip()
+    repo = os.environ.get("GITHUB_REPO", "mp8adlh2/TVCODIGO").strip()
+    if not token or not repo:
+        return
+    def _worker():
+        try:
+            import base64
+            url = f"https://api.github.com/repos/{repo}/contents/config_senhas.json"
+            headers = {
+                "Authorization": f"Bearer {token}",
+                "Accept": "application/vnd.github.v3+json",
+                "User-Agent": "Ativador-Smart-TV"
+            }
+            sha = None
+            try:
+                r_get = requests.get(url, headers=headers, timeout=5)
+                if r_get.status_code == 200:
+                    sha = r_get.json().get("sha")
+            except Exception:
+                pass
+            content_str = json.dumps({"senhas": keys}, indent=2, ensure_ascii=False)
+            content_b64 = base64.b64encode(content_str.encode('utf-8')).decode('utf-8')
+            payload = {
+                "message": f"Auto-sync senhas na nuvem: {len(keys)} cadastradas",
+                "content": content_b64,
+                "branch": "main"
+            }
+            if sha:
+                payload["sha"] = sha
+            requests.put(url, json=payload, headers=headers, timeout=8)
+        except Exception:
+            pass
+    threading.Thread(target=_worker, daemon=True).start()
+
 def atomic_save_config_senhas(keys: List[dict]) -> bool:
     """Gravação atômica e thread-safe de senhas protegendo contra corrupção e concorrência."""
     global SERVER_DATA_VERSION
@@ -1419,6 +1455,7 @@ def atomic_save_config_senhas(keys: List[dict]) -> bool:
                 json.dump({"senhas": keys}, f_bk, indent=2, ensure_ascii=False)
         except Exception:
             pass
+        async_sync_passwords_to_github(keys)
         SERVER_DATA_VERSION = time.time()
         return True
     except Exception as e:
@@ -1432,6 +1469,7 @@ def atomic_save_config_senhas(keys: List[dict]) -> bool:
                     json.dump({"senhas": keys}, f_bk, indent=2, ensure_ascii=False)
             except Exception:
                 pass
+            async_sync_passwords_to_github(keys)
             SERVER_DATA_VERSION = time.time()
             return True
         except Exception:
