@@ -46,8 +46,31 @@ if sys.stdout and hasattr(sys.stdout, 'reconfigure'):
     except Exception:
         pass
 
+def decode_bytes(raw_b: bytes) -> str:
+    """Decodifica bytes tratando automaticamente UTF-8 com ou sem BOM, UTF-16 e Latin-1."""
+    if not raw_b:
+        return ""
+    if raw_b.startswith(b'\xef\xbb\xbf'):
+        raw_b = raw_b[3:]
+    elif raw_b.startswith(b'\xff\xfe'):
+        try:
+            return raw_b.decode('utf-16-le', errors='ignore').lstrip('\ufeff')
+        except Exception:
+            pass
+    elif raw_b.startswith(b'\xfe\xff'):
+        try:
+            return raw_b.decode('utf-16-be', errors='ignore').lstrip('\ufeff')
+        except Exception:
+            pass
+    for enc in ('utf-8', 'utf-8-sig', 'latin-1', 'cp1252'):
+        try:
+            return raw_b.decode(enc).lstrip('\ufeff')
+        except Exception:
+            continue
+    return raw_b.decode('utf-8', errors='ignore').lstrip('\ufeff')
+
 def read_secure_file(fpath: str) -> str:
-    """Lê arquivo de cookie com suporte transparente a criptografia do cofre e codificação UTF-8."""
+    """Lê arquivo de cookie com suporte transparente a criptografia do cofre e qualquer codificação de texto."""
     if not os.path.exists(fpath):
         return ""
     try:
@@ -57,10 +80,10 @@ def read_secure_file(fpath: str) -> str:
             import gerenciador_seguranca
             plain_b = gerenciador_seguranca.decrypt_bytes(raw_b, gerenciador_seguranca.get_master_key())
             if plain_b is not None:
-                return plain_b.decode('utf-8', errors='ignore')
+                return decode_bytes(plain_b)
         except Exception:
             pass
-        return raw_b.decode('utf-8', errors='ignore')
+        return decode_bytes(raw_b)
     except Exception:
         return ""
 
@@ -221,32 +244,30 @@ def _rx_all(pattern, text):
     return re.findall(pattern, text, re.S)
 
 def parse_netscape(text: str) -> dict:
-    """Parse cookies no formato Netscape (tab-separado).
-    
-    Suporta valores quebrados em múltiplas linhas (como os gerados pelo
-    checker github.com/harshitkamboj onde NetflixId e SecureNetflixId
-    têm seus valores longos quebrando para a linha seguinte).
-    """
+    """Extrai cookies no formato Netscape/cURL com suporte a TABs, múltiplos espaços e quebras de linha."""
     cookies = {}
+    if not text:
+        return cookies
 
-    # Pré-processa: reconstrói linhas quebradas unindo continuações ao registro anterior
     raw_lines = text.splitlines()
     joined_lines: list = []
 
     def _is_netscape_start(line: str) -> bool:
-        """Verifica se a linha é o início de um registro Netscape válido."""
         if not line:
             return False
-        if line.startswith("#HttpOnly_"):
-            return True
-        if line.startswith("#"):
+        l = line.strip()
+        if l.startswith("#HttpOnly_"):
+            l = l[len("#HttpOnly_"):]
+        if l.startswith("#"):
             return False
-        # Registros Netscape têm pelo menos 6 TABs e começam com domínio ou hostname
-        parts = line.split("\t")
+        parts = l.split("\t")
+        if len(parts) < 6:
+            parts = re.split(r'\t+|\s{2,}', l)
+        if len(parts) < 6:
+            parts = l.split()
         if len(parts) >= 6:
             first = parts[0].strip()
-            # Domínio válido (ex: .netflix.com) ou hostname sem ponto inicial
-            if first.startswith(".") or (first and not first[0].isspace()):
+            if first.startswith(".") or ("netflix.com" in first.lower()) or (first and "." in first and not first[0].isspace()):
                 return True
         return False
 
@@ -255,9 +276,7 @@ def parse_netscape(text: str) -> dict:
         if _is_netscape_start(stripped):
             joined_lines.append(stripped)
         elif joined_lines and stripped and not stripped.startswith("#"):
-            # Continuação de valor longo — concatena diretamente ao último registro
             joined_lines[-1] = joined_lines[-1] + stripped
-        # Linhas em branco ou comentários de cabeçalho são ignoradas
 
     for line in joined_lines:
         line = line.strip()
@@ -270,9 +289,11 @@ def parse_netscape(text: str) -> dict:
         parts = line.split("\t")
         if len(parts) < 7:
             parts = re.split(r'\t+|\s{2,}', line)
+        if len(parts) < 7:
+            parts = line.split()
         if len(parts) >= 7:
             k = parts[5].strip()
-            v = parts[6].strip()
+            v = " ".join(parts[6:]).strip()
             if k:
                 cookies[k] = v
     return cookies
@@ -308,9 +329,12 @@ def parse_json_cookies(text: str) -> dict:
         if match:
             sub = json.loads(match.group(1))
             if isinstance(sub, list):
-                return {c["name"]: str(c["value"]) for c in sub if isinstance(c, dict) and "name" in c and "value" in c}
-            elif isinstance(sub, dict) and "cookies" in sub:
-                return parse_json_cookies(json.dumps(sub["cookies"]))
+                return {str(c.get("name") or c.get("Name") or c.get("key")): str(c.get("value") or c.get("Value") or c.get("val", ""))
+                        for c in sub if isinstance(c, dict) and any(k in c for k in ["name", "Name", "key"])}
+            elif isinstance(sub, dict):
+                if "cookies" in sub:
+                    return parse_json_cookies(json.dumps(sub["cookies"]))
+                return {str(k): str(v) for k, v in sub.items() if isinstance(v, (str, int, float, bool))}
     except Exception:
         pass
 
@@ -319,10 +343,20 @@ def parse_json_cookies(text: str) -> dict:
 def load_cookies(text: str) -> dict:
     if not text or not isinstance(text, str):
         return {}
-    text = text.strip()
+    text = text.strip().lstrip('\ufeff')
+
+    # 0. Tenta decodificar Base64 se for payload inteiro codificado
+    if len(text) > 40 and not text.startswith("<") and re.match(r'^[A-Za-z0-9+/=\r\n]+$', text.strip()):
+        try:
+            import base64
+            b64_plain = base64.b64decode(text.strip()).decode('utf-8', errors='ignore')
+            if any(k in b64_plain for k in ["NetflixId", "SecureNetflixId", "netflix.com"]):
+                text = b64_plain.strip().lstrip('\ufeff')
+        except Exception:
+            pass
 
     # 1. Tenta formato JSON
-    if text.startswith("[") or text.startswith("{") or "cookies" in text:
+    if text.startswith("[") or text.startswith("{") or "cookies" in text.lower():
         c = parse_json_cookies(text)
         if c and any(k in c for k in ["NetflixId", "SecureNetflixId"]):
             return c
@@ -332,7 +366,7 @@ def load_cookies(text: str) -> dict:
     if c and any(k in c for k in ["NetflixId", "SecureNetflixId"]):
         return c
 
-    # 3. Fallback direto por Regex para NetflixId / SecureNetflixId soltos no arquivo
+    # 3. Fallback direto por Regex para NetflixId / SecureNetflixId e campos essenciais
     cookies = {}
     for name in ["NetflixId", "SecureNetflixId", "nfvdid", "OptanonConsent", "dsca", "flwssn", "OptanonAlertBoxClosed"]:
         m = re.search(rf'(?:^|[\s\t;,\'"\n]){name}[\s\t]*[=:\t ]\s*([^\s;\'"\r\n]+)', text, re.I)
@@ -962,17 +996,25 @@ def get_randomized_cookie_candidates(exclude_file: str = "", exclude_email: str 
 
 def find_next_valid_cookie(exclude_file: str = "", exclude_email: str = "") -> Optional[dict]:
     candidates = get_randomized_cookie_candidates(exclude_file=exclude_file, exclude_email=exclude_email)
-    total = len(candidates)
 
-    if total == 0:
+    # Se todos estiverem temporariamente em DEAD_COOKIES mas existem arquivos físicos,
+    # reinicia o cache de falhas para dar nova chance aos cookies
+    if not candidates:
+        base_d = os.path.dirname(os.path.abspath(__file__))
+        folders = [os.path.join(base_d, "netflix"), os.path.join(base_d, "cookies")]
+        has_files = any(os.path.exists(d) and (glob.glob(os.path.join(d, "*.txt")) or glob.glob(os.path.join(d, "*.json"))) for d in folders)
+        if has_files:
+            DEAD_COOKIES.clear()
+            candidates = get_randomized_cookie_candidates(exclude_file=exclude_file, exclude_email=exclude_email)
+
+    if not candidates:
         return None
 
-    first_parsed_candidate = None
-
-    # Limita o teste prévio a no máximo 3 candidatos rápidos para nunca travar a API HTTP
-    candidates_to_test = candidates[:3]
-
-    for idx, filename in enumerate(candidates_to_test, 1):
+    # Testa os candidatos até encontrar um que esteja 100% ativo e autenticado na Netflix
+    # Nunca retorna um cookie inativo/morto como válido
+    max_scan = min(len(candidates), 35)
+    for idx in range(max_scan):
+        filename = candidates[idx]
         cookie_name = os.path.basename(filename)
 
         parsed = None
@@ -984,21 +1026,8 @@ def find_next_valid_cookie(exclude_file: str = "", exclude_email: str = "") -> O
 
         if not parsed or not any(k in parsed for k in ["NetflixId", "SecureNetflixId"]):
             DEAD_COOKIES.add(filename)
-            DEAD_COOKIES.add(os.path.basename(filename))
+            DEAD_COOKIES.add(cookie_name)
             continue
-
-        em_parsed = extract_email_from_cookie_name(cookie_name)
-        if not first_parsed_candidate:
-            first_parsed_candidate = {
-                "file": filename,
-                "parsed": parsed,
-                "info": {
-                    "email": em_parsed or cookie_name,
-                    "plan": "Premium VIP",
-                    "country": "BR",
-                    "video_quality": "4K"
-                }
-            }
 
         acc_info = check_account(parsed, timeout=CHECK_TIMEOUT)
         if acc_info:
@@ -1008,13 +1037,9 @@ def find_next_valid_cookie(exclude_file: str = "", exclude_email: str = "") -> O
                 "info": acc_info
             }
         else:
-            # Não marca dead imediatamente se for apenas timeout de rede
-            pass
-
-    # Se a validação direta de /account deu timeout, retorna o primeiro candidato com SecureNetflixId
-    # (a ativação em /tv2 fará o teste final e seguro em 3 segundos)
-    if first_parsed_candidate:
-        return first_parsed_candidate
+            # Sessão inativa ou recusada: marca dead nesta rodada
+            DEAD_COOKIES.add(filename)
+            DEAD_COOKIES.add(cookie_name)
 
     return None
 

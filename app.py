@@ -40,6 +40,29 @@ COOKIES_BUNDLE_FILE = os.path.join(BASE_DIR, "cookies_bundle.json")
 PORT = int(os.environ.get("PORT", 5000))
 SERVER_DATA_VERSION = time.time()
 
+def decode_bytes(raw_b: bytes) -> str:
+    """Decodifica bytes tratando automaticamente UTF-8 com ou sem BOM, UTF-16 e Latin-1."""
+    if not raw_b:
+        return ""
+    if raw_b.startswith(b'\xef\xbb\xbf'):
+        raw_b = raw_b[3:]
+    elif raw_b.startswith(b'\xff\xfe'):
+        try:
+            return raw_b.decode('utf-16-le', errors='ignore').lstrip('\ufeff')
+        except Exception:
+            pass
+    elif raw_b.startswith(b'\xfe\xff'):
+        try:
+            return raw_b.decode('utf-16-be', errors='ignore').lstrip('\ufeff')
+        except Exception:
+            pass
+    for enc in ('utf-8', 'utf-8-sig', 'latin-1', 'cp1252'):
+        try:
+            return raw_b.decode(enc).lstrip('\ufeff')
+        except Exception:
+            continue
+    return raw_b.decode('utf-8', errors='ignore').lstrip('\ufeff')
+
 def read_secure_text(fpath: str) -> str:
     """Lê um arquivo do cofre de forma segura, descriptografando em tempo real se estiver blindado."""
     if not os.path.exists(fpath):
@@ -50,8 +73,8 @@ def read_secure_text(fpath: str) -> str:
         key = gerenciador_seguranca.get_master_key()
         plain = gerenciador_seguranca.decrypt_bytes(raw, key)
         if plain is not None:
-            return plain.decode('utf-8', errors='ignore')
-        return raw.decode('utf-8', errors='ignore')
+            return decode_bytes(plain)
+        return decode_bytes(raw)
     except Exception:
         return ""
 
@@ -346,13 +369,14 @@ def test_netflix_cookie_file(fpath: str, timeout: float = 4.0) -> Optional[dict]
             tv2.DEAD_COOKIES.add(fpath)
         return None
 
-def extract_netflix_file_info(fpath: str) -> Optional[dict]:
+def extract_netflix_file_info(fpath: str, ignore_dead: bool = False) -> Optional[dict]:
     """Extrai informações do arquivo de cookie (email, plano, país) sem travar a requisição com rede."""
     if not os.path.exists(fpath):
         return None
     bname = os.path.basename(fpath)
-    if fpath in DEAD_NETFLIX_COOKIES or bname in DEAD_NETFLIX_COOKIES or fpath in tv2.DEAD_COOKIES:
-        return None
+    if not ignore_dead:
+        if fpath in DEAD_NETFLIX_COOKIES or bname in DEAD_NETFLIX_COOKIES or fpath in tv2.DEAD_COOKIES:
+            return None
 
     try:
         raw = read_secure_text(fpath)
@@ -384,19 +408,20 @@ def extract_netflix_file_info(fpath: str) -> Optional[dict]:
             else:
                 email = bname.replace('.txt', '').replace('.json', '')
 
+        # Country
         if country == "BR":
-            c_match = re.search(r'(?:🌍|\bPais\b)[\s:]*.*?\(([A-Z]{2})\)', raw, re.I)
+            c_match = re.search(r'(?:🌍|\bPais\b|\bCountry\b)[\s:]*.*?([A-Za-z]{2})', raw, re.I)
             if c_match:
                 country = c_match.group(1).upper()
             else:
-                c2_match = re.search(r'Country:\s*([A-Z]{2})', raw, re.I)
-                if c2_match:
-                    country = c2_match.group(1).upper()
+                fn_c = re.search(r'^[0-9]+_([A-Za-z]{2})_', bname)
+                if fn_c:
+                    country = fn_c.group(1).upper()
 
-        if plan == "PREMIUM" or not plan:
-            p_match = re.search(r'(?:📋|\bPlano\b)[\s:]*([^\r\n]+)', raw, re.I)
-            if p_match:
-                plan = p_match.group(1).strip()
+        # Plan
+        p_match = re.search(r'(?:📋|\bPlano\b|\bPlan\b)[\s:]*([^\r\n]+)', raw, re.I)
+        if p_match:
+            plan = p_match.group(1).strip()
 
         cat = classify_plan(bname, plan)
 
@@ -417,7 +442,6 @@ def extract_netflix_file_info(fpath: str) -> Optional[dict]:
 def get_all_netflix_accounts() -> List[dict]:
     """Retorna todas as contas Netflix disponíveis da pasta (deduplicadas), com metadados instantâneos.
     Usa get_all_netflix_files_raw() para não ser zerado por DEAD_COOKIES de rede."""
-    # Usa arquivos físicos brutos para não ser afetado por falhas de rede temporárias
     files = get_all_netflix_files_raw()
     accounts = []
     seen_names = set()
@@ -428,27 +452,34 @@ def get_all_netflix_accounts() -> List[dict]:
             continue
         seen_names.add(bname)
 
-        # Ignora apenas cookies confirmadamente mortos pela validação ao vivo (não por timeout)
         if fpath in DEAD_NETFLIX_COOKIES or bname in DEAD_NETFLIX_COOKIES:
             continue
 
-        # Se já tiver validação ao vivo salva em cache
         with VALID_NETFLIX_LOCK:
             if fpath in VALID_NETFLIX_BY_FILE and fpath not in DEAD_NETFLIX_COOKIES:
                 accounts.append(VALID_NETFLIX_BY_FILE[fpath])
                 continue
 
-        # Extração instantânea de metadados (sem requisição HTTP)
         meta = extract_netflix_file_info(fpath)
         if meta:
             accounts.append(meta)
+
+    # Se todos foram filtrados por DEAD_NETFLIX_COOKIES mas existem arquivos físicos válidos,
+    # reseta para que o estoque de contas nunca seja zerado falsamente
+    if not accounts and files:
+        DEAD_NETFLIX_COOKIES.clear()
+        tv2.DEAD_COOKIES.clear()
+        for fpath in files:
+            meta = extract_netflix_file_info(fpath, ignore_dead=True)
+            if meta:
+                accounts.append(meta)
 
     return accounts
 
 def start_background_netflix_validator():
     """Valida em segundo plano os cookies restantes da pasta de forma suave sem derrubar conexões."""
     def _worker():
-        time.sleep(15)
+        time.sleep(10)
         while True:
             files = get_netflix_files()
             for f in files:
@@ -462,8 +493,8 @@ def start_background_netflix_validator():
                     test_netflix_cookie_file(f, timeout=3.5)
                 except Exception:
                     pass
-                time.sleep(3.0)
-            time.sleep(180)
+                time.sleep(2.5)
+            time.sleep(120)
 
     t = threading.Thread(target=_worker, daemon=True)
     t.start()
@@ -476,16 +507,36 @@ def get_verified_netflix_cookies(min_count: int = 1) -> List[dict]:
 
 def find_netflix_valid_cookie(target_plan: str = "TODOS", exclude_file: str = "", exclude_email: str = "") -> Optional[dict]:
     """Retorna o próximo cookie Netflix 100% verificado usando seleção aleatória e anti-repetição de tv2.py."""
+    ex_bname = os.path.basename(exclude_file).lower() if exclude_file else ""
+    ex_email = (exclude_email or "").strip().lower()
+
     if exclude_file:
         tv2.mark_cookie_used(exclude_file, exclude_email)
     elif exclude_email:
         tv2.LAST_USED_AT[exclude_email.lower()] = time.time()
 
+    # 1. Prioriza contas já validadas e ativas no pool
+    with VALID_NETFLIX_LOCK:
+        for entry in list(VALID_NETFLIX_POOL):
+            fpath = entry.get("file", "")
+            bname = os.path.basename(fpath).lower()
+            em = entry.get("info", {}).get("email", "").lower()
+            if fpath in DEAD_NETFLIX_COOKIES or bname in DEAD_NETFLIX_COOKIES or fpath in tv2.DEAD_COOKIES:
+                continue
+            if exclude_file and (bname == ex_bname or fpath.lower() == exclude_file.lower()):
+                continue
+            if ex_email and em == ex_email:
+                continue
+            return entry
+
+    # 2. Busca e valida ativamente via tv2
     cookie_data = tv2.find_next_valid_cookie(exclude_file=exclude_file, exclude_email=exclude_email)
     if cookie_data:
         f = cookie_data.get("file", "")
         with VALID_NETFLIX_LOCK:
             VALID_NETFLIX_BY_FILE[f] = cookie_data
+            if not any(e["file"] == f for e in VALID_NETFLIX_POOL):
+                VALID_NETFLIX_POOL.append(cookie_data)
         return cookie_data
     return None
 
@@ -4148,6 +4199,8 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
     def handle_api_reset_cache(self):
         global CURRENT_NETFLIX_READY, CURRENT_HBO_READY, CURRENT_CRUNCHYROLL_READY, CURRENT_SKY_READY, CURRENT_DISNEY_READY, DEAD_NETFLIX_COOKIES, USED_NETFLIX_COOKIES, USED_HBO_COOKIES, DEAD_CRUNCHYROLL_ACCOUNTS, USED_CRUNCHYROLL_ACCOUNTS, DEAD_SKY_ACCOUNTS, USED_SKY_ACCOUNTS, SERVER_DATA_VERSION
         DEAD_NETFLIX_COOKIES.clear()
+        tv2.DEAD_COOKIES.clear()
+        tv2.LAST_USED_AT.clear()
         COOKIE_FAIL_COUNTS.clear()
         tv2.USED_COOKIES.clear()
         USED_HBO_COOKIES.clear()
