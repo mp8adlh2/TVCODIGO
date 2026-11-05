@@ -695,20 +695,29 @@ def load_all_disney_accounts(force_reload: bool = False) -> List[dict]:
     accounts.sort(key=sort_key)
     return accounts
 
-def find_disney_valid_account() -> Optional[dict]:
-    """Retorna a próxima conta Disney+ disponível da fila usando rotação justa."""
+def find_disney_valid_account(exclude_email: str = "") -> Optional[dict]:
+    """Retorna conta Disney+ disponível da fila usando seleção aleatória para não viciar."""
     accounts = load_all_disney_accounts()
     if not accounts:
         return None
 
-    # Tenta primeira conta saudável (fora do cooldown de erro)
-    healthy = [acc for acc in accounts if not is_account_dead(acc["email"])]
-    if healthy:
-        return healthy[0]
+    ex_clean = (exclude_email or "").strip().lower()
 
-    # Se todas estiverem em cooldown (ex: instabilidade temporária), perdoa e usa a primeira
+    # Contas saudáveis (fora do cooldown de erro)
+    healthy = [acc for acc in accounts if not is_account_dead(acc["email"])]
+    pool = healthy if healthy else accounts
+
+    if ex_clean and len(pool) > 1:
+        fresh = [acc for acc in pool if acc.get("email", "").strip().lower() != ex_clean]
+        if fresh:
+            pool = fresh
+
+    if pool:
+        return random.choice(pool)
+
+    # Se todas estiverem em cooldown (ex: instabilidade temporária), perdoa e sorteia
     clear_dead_accounts()
-    return accounts[0]
+    return random.choice(accounts) if accounts else None
 
 def select_disney_account_by_identifier(identifier: str) -> Optional[dict]:
     """Localiza uma conta específica por email ou nome de arquivo."""

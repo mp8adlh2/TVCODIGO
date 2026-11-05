@@ -515,8 +515,9 @@ def find_netflix_valid_cookie(target_plan: str = "TODOS", exclude_file: str = ""
     elif exclude_email:
         tv2.LAST_USED_AT[exclude_email.lower()] = time.time()
 
-    # 1. Prioriza contas já validadas e ativas no pool
+    # 1. Prioriza contas já validadas e ativas no pool de forma ALEATÓRIA
     with VALID_NETFLIX_LOCK:
+        valid_candidates = []
         for entry in list(VALID_NETFLIX_POOL):
             fpath = entry.get("file", "")
             bname = os.path.basename(fpath).lower()
@@ -527,9 +528,12 @@ def find_netflix_valid_cookie(target_plan: str = "TODOS", exclude_file: str = ""
                 continue
             if ex_email and em == ex_email:
                 continue
-            return entry
+            valid_candidates.append(entry)
 
-    # 2. Busca e valida ativamente via tv2
+        if valid_candidates:
+            return random.choice(valid_candidates)
+
+    # 2. Busca e valida ativamente via tv2 (com embaralhamento aleatório)
     cookie_data = tv2.find_next_valid_cookie(exclude_file=exclude_file, exclude_email=exclude_email)
     if cookie_data:
         f = cookie_data.get("file", "")
@@ -538,6 +542,13 @@ def find_netflix_valid_cookie(target_plan: str = "TODOS", exclude_file: str = ""
             if not any(e["file"] == f for e in VALID_NETFLIX_POOL):
                 VALID_NETFLIX_POOL.append(cookie_data)
         return cookie_data
+
+    # 3. Fallback: sorteia diretamente de todas as contas carregadas
+    all_nf = get_all_netflix_accounts()
+    if all_nf:
+        fresh = [a for a in all_nf if (not ex_bname or os.path.basename(a.get("file", "")).lower() != ex_bname) and (not ex_email or a.get("info", {}).get("email", "").lower() != ex_email)]
+        return random.choice(fresh if fresh else all_nf)
+
     return None
 
 # Alias de compatibilidade
@@ -761,11 +772,19 @@ def get_verified_hbo_cookies(min_count: int = 1) -> List[dict]:
     """Retorna a lista de contas HBO Max disponíveis."""
     return get_all_hbo_accounts()
 
-def find_hbo_valid_cookie() -> Optional[dict]:
+def find_hbo_valid_cookie(exclude_file: str = "") -> Optional[dict]:
     all_hbo = get_all_hbo_accounts()
     if not all_hbo:
         return None
-    return random.choice(all_hbo)
+    ex_bname = os.path.basename(exclude_file).lower() if exclude_file else ""
+    pool = [a for a in all_hbo if a.get("file", "") not in DEAD_HBO_COOKIES and os.path.basename(a.get("file", "")).lower() not in DEAD_HBO_COOKIES]
+    if not pool:
+        pool = all_hbo
+    if ex_bname and len(pool) > 1:
+        fresh = [a for a in pool if os.path.basename(a.get("file", "")).lower() != ex_bname and a.get("file", "").lower() != exclude_file.lower()]
+        if fresh:
+            pool = fresh
+    return random.choice(pool)
 
 def activate_hbo_tv(tv_code: str, cookie_data: dict) -> Tuple[bool, str, Optional[dict]]:
     clean_code = re.sub(r'[^0-9]', '', tv_code)
@@ -991,12 +1010,20 @@ def test_crunchyroll_account(email: str, pwd: str, fname: str) -> Optional[dict]
     finally:
         session.close()
 
-def find_crunchyroll_valid_account() -> Optional[dict]:
-    """Retorna uma conta Crunchyroll válida e pronta para pareamento na TV usando rotação circular."""
+def find_crunchyroll_valid_account(exclude_email: str = "") -> Optional[dict]:
+    """Retorna uma conta Crunchyroll válida e pronta para pareamento na TV usando seleção aleatória."""
     all_cr = get_all_crunchyroll_accounts()
     if not all_cr:
         return None
-    return all_cr[0]
+    ex_clean = (exclude_email or "").strip().lower()
+    pool = [a for a in all_cr if a.get("email", "").strip().lower() not in DEAD_CRUNCHYROLL_ACCOUNTS]
+    if not pool:
+        pool = all_cr
+    if ex_clean and len(pool) > 1:
+        fresh = [a for a in pool if a.get("email", "").strip().lower() != ex_clean]
+        if fresh:
+            pool = fresh
+    return random.choice(pool)
 
 def select_crunchyroll_account_by_identifier(identifier: str) -> Optional[dict]:
     """Busca conta específica por email ou arquivo e a ativa."""
@@ -1118,9 +1145,9 @@ def get_all_sky_accounts() -> List[dict]:
     """Retorna todas as contas Sky da pasta hits/ e skycontas.txt com metadados completos."""
     return sky_service.get_all_sky_accounts()
 
-def find_sky_valid_account() -> Optional[dict]:
-    """Retorna a melhor conta Sky disponível no estoque para pareamento."""
-    return sky_service.find_sky_valid_account(USED_SKY_ACCOUNTS, DEAD_SKY_ACCOUNTS, SKY_LAST_USED_AT)
+def find_sky_valid_account(exclude_email: str = "") -> Optional[dict]:
+    """Retorna uma conta Sky disponível no estoque para pareamento de forma aleatória e balanceada."""
+    return sky_service.find_sky_valid_account(USED_SKY_ACCOUNTS, DEAD_SKY_ACCOUNTS, SKY_LAST_USED_AT, exclude_email=exclude_email, random_mode=True)
 
 def select_sky_account_by_identifier(identifier: str) -> Optional[dict]:
     """Seleciona conta Sky específica pelo email ou login."""
@@ -3038,23 +3065,23 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
             if CURRENT_HBO_READY is None or (CURRENT_HBO_READY and (CURRENT_HBO_READY.get("file") in DEAD_HBO_COOKIES or os.path.basename(CURRENT_HBO_READY.get("file", "")) in DEAD_HBO_COOKIES)):
                 if all_hbo:
-                    CURRENT_HBO_READY = all_hbo[0]
+                    CURRENT_HBO_READY = random.choice(all_hbo)
 
             if CURRENT_CRUNCHYROLL_READY is None or (CURRENT_CRUNCHYROLL_READY and CURRENT_CRUNCHYROLL_READY.get("email") in DEAD_CRUNCHYROLL_ACCOUNTS):
                 if all_cr:
-                    CURRENT_CRUNCHYROLL_READY = all_cr[0]
+                    CURRENT_CRUNCHYROLL_READY = random.choice(all_cr)
 
             if CURRENT_SKY_READY is None or (CURRENT_SKY_READY and CURRENT_SKY_READY.get("email", "").strip().lower() in DEAD_SKY_ACCOUNTS):
                 if all_sky:
-                    CURRENT_SKY_READY = all_sky[0]
+                    CURRENT_SKY_READY = random.choice(all_sky)
 
             if CURRENT_DISNEY_READY is None or (CURRENT_DISNEY_READY and CURRENT_DISNEY_READY.get("email", "").strip().lower() in disney_service.DEAD_DISNEY_ACCOUNTS):
                 if all_disney:
-                    CURRENT_DISNEY_READY = all_disney[0]
+                    CURRENT_DISNEY_READY = random.choice(all_disney)
 
             if CURRENT_CLARO_READY is None or (CURRENT_CLARO_READY and CURRENT_CLARO_READY.get("user", "").strip().lower() in claro_service.DEAD_CLARO_ACCOUNTS):
                 if all_claro:
-                    CURRENT_CLARO_READY = all_claro[0]
+                    CURRENT_CLARO_READY = random.choice(all_claro)
         except Exception:
             try:
                 all_netflix, all_hbo, all_cr, all_sky, all_disney, all_claro = _STATUS_ACCOUNTS_CACHE.get("netflix", []), _STATUS_ACCOUNTS_CACHE.get("hbo", []), _STATUS_ACCOUNTS_CACHE.get("crunchyroll", []), _STATUS_ACCOUNTS_CACHE.get("sky", []), _STATUS_ACCOUNTS_CACHE.get("disney", []), _STATUS_ACCOUNTS_CACHE.get("claro", [])
@@ -3249,10 +3276,12 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     tv2.mark_cookie_used(cur_file, cur_email)
             CURRENT_NETFLIX_READY = find_netflix_fast_cookie(exclude_file=cur_file, exclude_email=cur_email)
         elif service == 'crunchyroll':
-            if CURRENT_CRUNCHYROLL_READY and CURRENT_CRUNCHYROLL_READY.get("email"):
-                CR_LAST_USED_AT[CURRENT_CRUNCHYROLL_READY["email"]] = now_ts
-            CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account()
+            cur_cr_em = CURRENT_CRUNCHYROLL_READY.get("email") if CURRENT_CRUNCHYROLL_READY else ""
+            if cur_cr_em:
+                CR_LAST_USED_AT[cur_cr_em] = now_ts
+            CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account(exclude_email=cur_cr_em)
         elif service == 'sky':
+            em = ""
             if CURRENT_SKY_READY:
                 em = CURRENT_SKY_READY.get("email", "").strip().lower()
                 if em:
@@ -3260,24 +3289,27 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     USED_SKY_ACCOUNTS.add(em)
                     SKY_LAST_USED_AT[em] = now_ts
             sky_service.load_all_sky_accounts(force_reload=True)
-            CURRENT_SKY_READY = find_sky_valid_account()
+            CURRENT_SKY_READY = find_sky_valid_account(exclude_email=em)
         elif service in ['disney', 'disneyplus']:
+            em = ""
             if CURRENT_DISNEY_READY and CURRENT_DISNEY_READY.get("email"):
                 em = CURRENT_DISNEY_READY["email"].strip().lower()
                 disney_service.DISNEY_LAST_USED_AT[em] = now_ts
-            CURRENT_DISNEY_READY = find_disney_valid_account()
+            CURRENT_DISNEY_READY = find_disney_valid_account(exclude_email=em)
         elif service in ['claro', 'clarotv', 'claro_tv']:
+            u = ""
             if CURRENT_CLARO_READY and CURRENT_CLARO_READY.get("user"):
                 u = CURRENT_CLARO_READY["user"].strip().lower()
                 claro_service.CLARO_LAST_USED_AT[u] = now_ts
                 claro_service.USED_CLARO_ACCOUNTS.add(u)
-            CURRENT_CLARO_READY = find_claro_valid_account()
+            CURRENT_CLARO_READY = find_claro_valid_account(exclude_user=u)
         else:
+            f = ""
             if CURRENT_HBO_READY and CURRENT_HBO_READY.get("file"):
                 f = CURRENT_HBO_READY["file"]
                 HBO_LAST_USED_AT[f] = now_ts
                 HBO_LAST_USED_AT[os.path.basename(f)] = now_ts
-            CURRENT_HBO_READY = find_hbo_valid_cookie()
+            CURRENT_HBO_READY = find_hbo_valid_cookie(exclude_file=f)
 
         self.handle_api_status()
 
@@ -3317,11 +3349,17 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 if req_cookie and isinstance(req_cookie, str) and req_cookie.strip() and not req_cookie.strip().startswith('COOKIE:'):
                     specific_account = select_netflix_cookie_by_filename(req_cookie.strip())
 
-                used_account = specific_account or CURRENT_NETFLIX_READY or find_netflix_valid_cookie()
-                if not used_account:
-                    all_nf = get_all_netflix_accounts()
-                    if all_nf:
-                        used_account = random.choice(all_nf)
+                if specific_account:
+                    used_account = specific_account
+                else:
+                    # Sorteia aleatoriamente um cookie válido do estoque, evitando repetir o que estava em cache
+                    curr_file = CURRENT_NETFLIX_READY.get("file", "") if CURRENT_NETFLIX_READY else ""
+                    curr_em = CURRENT_NETFLIX_READY.get("info", {}).get("email", "") if CURRENT_NETFLIX_READY else ""
+                    used_account = find_netflix_valid_cookie(exclude_file=curr_file, exclude_email=curr_em) or CURRENT_NETFLIX_READY
+                    if not used_account:
+                        all_nf = get_all_netflix_accounts()
+                        if all_nf:
+                            used_account = random.choice(all_nf)
 
                 if not used_account:
                     kernel_logger.push_kernel_log("❌ [Netflix] Nenhum cookie válido disponível no cofre.", level="error")
@@ -3402,21 +3440,31 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
             elif service == 'hbo':
                 kernel_logger.push_kernel_log(f"🟣 [HBO Max] Iniciando pareamento de TV com código {clean_code}...")
-                if CURRENT_HBO_READY is None:
-                    CURRENT_HBO_READY = find_hbo_valid_cookie()
+                req_account_id = req.get('account') or req.get('cookie_name')
+                chosen_hbo = None
+                if req_account_id and isinstance(req_account_id, str) and req_account_id.strip():
+                    for acc in get_all_hbo_accounts():
+                        if req_account_id.strip().lower() in acc.get("file", "").lower():
+                            chosen_hbo = acc
+                            break
 
-                if not CURRENT_HBO_READY:
+                if not chosen_hbo:
+                    curr_f = CURRENT_HBO_READY.get("file", "") if CURRENT_HBO_READY else ""
+                    chosen_hbo = find_hbo_valid_cookie(exclude_file=curr_f) or CURRENT_HBO_READY
+
+                if not chosen_hbo:
                     all_hbo = get_all_hbo_accounts()
                     if all_hbo:
-                        CURRENT_HBO_READY = all_hbo[0]
+                        chosen_hbo = random.choice(all_hbo)
 
-                if not CURRENT_HBO_READY:
+                if not chosen_hbo:
                     kernel_logger.push_kernel_log("❌ [HBO Max] Nenhum cookie ativo disponível.", level="error")
                     return self.send_json_response({
                         "success": False,
                         "message": "Nenhum cookie HBO Max ativo encontrado nas pastas."
                     }, 404)
 
+                CURRENT_HBO_READY = chosen_hbo
                 used_file = CURRENT_HBO_READY["file"]
                 account_info = CURRENT_HBO_READY.get("info", {})
                 kernel_logger.push_kernel_log(f"🍪 [HBO Max] Injetando credenciais: {account_info.get('email', os.path.basename(used_file))}...")
@@ -3428,7 +3476,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     HBO_LAST_USED_AT[used_file] = now_ts
                     HBO_LAST_USED_AT[os.path.basename(used_file)] = now_ts
                     record_history_entry("HBO Max", used_file, account_info.get("email", ""), clean_code, account_info.get("plan", "HBO Max VIP"), "Sucesso")
-                    CURRENT_HBO_READY = find_hbo_valid_cookie()
+                    CURRENT_HBO_READY = find_hbo_valid_cookie(exclude_file=used_file)
                     kernel_logger.push_kernel_log(f"⚡ [HBO Max] [SUCESSO] TV {clean_code} vinculada com sucesso!", level="success")
                     return self.send_json_response({
                         "success": True,
@@ -3439,7 +3487,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     kernel_logger.push_kernel_log(f"⚠️ [HBO Max] Falha: {msg}", level="warn")
                     DEAD_HBO_COOKIES.add(used_file)
                     DEAD_HBO_COOKIES.add(os.path.basename(used_file))
-                    CURRENT_HBO_READY = find_hbo_valid_cookie()
+                    CURRENT_HBO_READY = find_hbo_valid_cookie(exclude_file=used_file)
                     return self.send_json_response({
                         "success": False,
                         "message": msg or "Falha ao parear com a TV HBO Max. Verifique o código de 6 dígitos."
@@ -3447,16 +3495,28 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
             elif service == 'crunchyroll':
                 kernel_logger.push_kernel_log(f"🟠 [Crunchyroll] Iniciando pareamento de TV com código {clean_code}...")
-                if CURRENT_CRUNCHYROLL_READY is None:
-                    CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account()
+                req_account_id = req.get('account') or req.get('email')
+                chosen_cr = None
+                if req_account_id and isinstance(req_account_id, str) and req_account_id.strip():
+                    chosen_cr = select_crunchyroll_account_by_identifier(req_account_id.strip())
 
-                if not CURRENT_CRUNCHYROLL_READY:
+                if not chosen_cr:
+                    curr_em = CURRENT_CRUNCHYROLL_READY.get("email", "") if CURRENT_CRUNCHYROLL_READY else ""
+                    chosen_cr = find_crunchyroll_valid_account(exclude_email=curr_em) or CURRENT_CRUNCHYROLL_READY
+
+                if not chosen_cr:
+                    all_cr = get_all_crunchyroll_accounts()
+                    if all_cr:
+                        chosen_cr = random.choice(all_cr)
+
+                if not chosen_cr:
                     kernel_logger.push_kernel_log("❌ [Crunchyroll] Nenhuma conta premium pronta no combo.", level="error")
                     return self.send_json_response({
                         "success": False,
                         "message": "Nenhuma conta Crunchyroll premium encontrada nos combos."
                     }, 404)
 
+                CURRENT_CRUNCHYROLL_READY = chosen_cr
                 used_account = CURRENT_CRUNCHYROLL_READY
                 kernel_logger.push_kernel_log(f"🔑 [Crunchyroll] Autenticando com {used_account.get('email')}...")
                 success, msg, info = activate_crunchyroll_tv(clean_code, used_account)
@@ -3464,9 +3524,10 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
 
                 if success:
                     now_ts = time.time()
-                    CR_LAST_USED_AT[used_account["email"]] = now_ts
+                    cr_em = used_account.get("email", "")
+                    CR_LAST_USED_AT[cr_em] = now_ts
                     record_history_entry("Crunchyroll", used_account.get("file", "combo.txt"), account_info.get("email", ""), clean_code, account_info.get("plan", "Crunchyroll VIP"), "Sucesso")
-                    CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account()
+                    CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account(exclude_email=cr_em)
                     kernel_logger.push_kernel_log(f"⚡ [Crunchyroll] [SUCESSO] TV {clean_code} ativada com sucesso!", level="success")
                     return self.send_json_response({
                         "success": True,
@@ -3475,9 +3536,10 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     })
                 else:
                     kernel_logger.push_kernel_log(f"⚠️ [Crunchyroll] Falha: {msg}", level="warn")
+                    cr_em = used_account.get("email", "")
                     if "sessão" in msg.lower() or "token" in msg.lower() or "wrong_creds" in msg.lower():
-                        DEAD_CRUNCHYROLL_ACCOUNTS.add(used_account["email"])
-                        CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account()
+                        DEAD_CRUNCHYROLL_ACCOUNTS.add(cr_em)
+                    CURRENT_CRUNCHYROLL_READY = find_crunchyroll_valid_account(exclude_email=cr_em)
                     return self.send_json_response({
                         "success": False,
                         "message": msg
@@ -3494,9 +3556,14 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     if specific_acc:
                         chosen_acc = specific_acc
 
-                # Rotação Circular Justa: pega a próxima conta da fila (menos recentemente usada)
+                # Sorteio Aleatório: seleciona de forma aleatória do pool de contas disponíveis, evitando repetir a anterior
                 if not chosen_acc:
-                    chosen_acc = find_sky_valid_account()
+                    curr_em = CURRENT_SKY_READY.get("email", "") if CURRENT_SKY_READY else ""
+                    chosen_acc = find_sky_valid_account(exclude_email=curr_em)
+                    if not chosen_acc:
+                        all_sky = get_all_sky_accounts()
+                        if all_sky:
+                            chosen_acc = random.choice(all_sky)
 
                 if chosen_acc:
                     CURRENT_SKY_READY = chosen_acc
@@ -3505,7 +3572,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 for _attempt in range(2):
                     curr_sky_em = CURRENT_SKY_READY.get("email", "").strip().lower() if CURRENT_SKY_READY else ""
                     if CURRENT_SKY_READY is None or (curr_sky_em and curr_sky_em in DEAD_SKY_ACCOUNTS):
-                        CURRENT_SKY_READY = find_sky_valid_account()
+                        CURRENT_SKY_READY = find_sky_valid_account(exclude_email=curr_sky_em)
 
                     if not CURRENT_SKY_READY:
                         kernel_logger.push_kernel_log("❌ [Sky+] Nenhuma conta Sky pronta no estoque.", level="error")
@@ -3528,7 +3595,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                         sky_service.record_account_activated(used_account.get("email", ""), used_account.get("password", ""), clean_code)
                         sky_service.record_sky_account_used(acc_email_clean)
                         sky_service.load_all_sky_accounts(force_reload=True)
-                        CURRENT_SKY_READY = find_sky_valid_account()
+                        CURRENT_SKY_READY = find_sky_valid_account(exclude_email=acc_email_clean)
                         return self.send_json_response({
                             "success": True,
                             "message": msg,
@@ -3539,7 +3606,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                         sky_service.record_sky_account_used(acc_email_clean)
                         # Se for código de TV inexistente ou expirado na Smart TV, interrompe imediatamente
                         if any(k in msg.lower() for k in ["404", "não encontrado", "expirad", "user_code_expired", "dtv-oidc", "invalid_request"]):
-                            CURRENT_SKY_READY = find_sky_valid_account()
+                            CURRENT_SKY_READY = find_sky_valid_account(exclude_email=acc_email_clean)
                             return self.send_json_response({
                                 "success": False,
                                 "message": msg
@@ -3552,7 +3619,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                             SKY_LAST_USED_AT[acc_email_clean] = now_ts
                             DEAD_SKY_ACCOUNTS.add(acc_email_clean)
                         sky_service.load_all_sky_accounts(force_reload=True)
-                        CURRENT_SKY_READY = find_sky_valid_account()
+                        CURRENT_SKY_READY = find_sky_valid_account(exclude_email=acc_email_clean)
 
                 kernel_logger.push_kernel_log(f"❌ [Sky+] Falha final na ativação: {last_msg}", level="error")
                 return self.send_json_response({
@@ -3568,7 +3635,12 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     chosen_acc = select_disney_account_by_identifier(req_account_id.strip())
 
                 if not chosen_acc:
-                    chosen_acc = CURRENT_DISNEY_READY or find_disney_valid_account()
+                    curr_em = CURRENT_DISNEY_READY.get("email", "") if CURRENT_DISNEY_READY else ""
+                    chosen_acc = find_disney_valid_account(exclude_email=curr_em) or CURRENT_DISNEY_READY
+                    if not chosen_acc:
+                        all_disney = disney_service.load_all_disney_accounts()
+                        if all_disney:
+                            chosen_acc = random.choice(all_disney)
 
                 if not chosen_acc:
                     kernel_logger.push_kernel_log("❌ [Disney+] Nenhuma conta Disney+ disponível no estoque.", level="error")
@@ -3584,7 +3656,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 if success:
                     kernel_logger.push_kernel_log(f"⚡ [Disney+] [SUCESSO] TV {clean_code} pareada e ativada com sucesso!", level="success")
                     record_history_entry("Disney+", chosen_acc.get("file", "combo.txt"), account_info.get("email", ""), clean_code, account_info.get("plan", "Disney+ VIP"), "Sucesso")
-                    CURRENT_DISNEY_READY = find_disney_valid_account()
+                    CURRENT_DISNEY_READY = find_disney_valid_account(exclude_email=account_info.get("email", ""))
                     return self.send_json_response({
                         "success": True,
                         "message": msg or "TV Disney+ pareada e ativada com sucesso!",
@@ -3592,7 +3664,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     })
                 else:
                     kernel_logger.push_kernel_log(f"⚠️ [Disney+] Falha na ativação: {msg}", level="warn")
-                    CURRENT_DISNEY_READY = find_disney_valid_account()
+                    CURRENT_DISNEY_READY = find_disney_valid_account(exclude_email=account_info.get("email", ""))
                     return self.send_json_response({
                         "success": False,
                         "message": msg or "Falha ao parear com a TV Disney+. Verifique o código exibido na tela."
@@ -3606,7 +3678,12 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     chosen_acc = select_claro_account_by_identifier(req_account_id.strip())
 
                 if not chosen_acc:
-                    chosen_acc = CURRENT_CLARO_READY or find_claro_valid_account()
+                    curr_u = CURRENT_CLARO_READY.get("user", "") if CURRENT_CLARO_READY else ""
+                    chosen_acc = find_claro_valid_account(exclude_user=curr_u) or CURRENT_CLARO_READY
+                    if not chosen_acc:
+                        all_claro = claro_service.load_all_claro_accounts()
+                        if all_claro:
+                            chosen_acc = random.choice(all_claro)
 
                 if not chosen_acc:
                     kernel_logger.push_kernel_log("❌ [Claro TV+] Nenhuma conta Claro TV+ disponível no estoque.", level="error")
@@ -3622,7 +3699,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                 if success:
                     kernel_logger.push_kernel_log(f"⚡ [Claro TV+] [SUCESSO] TV {clean_code} pareada e ativada com sucesso!", level="success")
                     record_history_entry("Claro TV+", chosen_acc.get("file", "contas.txt"), account_info.get("email", chosen_acc.get("user", "")), clean_code, account_info.get("plan", "Claro TV+ 4K"), "Sucesso")
-                    CURRENT_CLARO_READY = find_claro_valid_account()
+                    CURRENT_CLARO_READY = find_claro_valid_account(exclude_user=chosen_acc.get("user", ""))
                     return self.send_json_response({
                         "success": True,
                         "message": msg or "TV Claro TV+ pareada e ativada com sucesso!",
@@ -3630,7 +3707,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     })
                 else:
                     kernel_logger.push_kernel_log(f"⚠️ [Claro TV+] Falha na ativação: {msg}", level="warn")
-                    CURRENT_CLARO_READY = find_claro_valid_account()
+                    CURRENT_CLARO_READY = find_claro_valid_account(exclude_user=chosen_acc.get("user", ""))
                     return self.send_json_response({
                         "success": False,
                         "message": msg or "Falha ao parear com a TV Claro TV+. Verifique o código exibido na tela."

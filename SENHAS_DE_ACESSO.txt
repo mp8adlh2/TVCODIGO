@@ -167,3 +167,143 @@
   Servicos: disney
   Validade: Permanente (Sem Expiracao)
 --------------------------------------------------------------------------------
+- SENHA: SHIELD#VAULT@1026$ELITE*61!2026
+  Nome: Cliente (Netflix + HBO Max + Crunchyroll + Sky+ + Claro TV+)
+  Servicos: netflix, hbo, crunchyroll, sky, claro
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: VIP#TOKEN@5282$PRO*75!2026
+  Nome: Cliente (Netflix + HBO Max)
+  Servicos: netflix, hbo
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: VIP#MASTER@4936$HDR*49!2026
+  Nome: Cliente (Netflix + HBO Max + Sky+ + Claro TV+)
+  Servicos: netflix, hbo, sky
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: CYBER#MASTER@2855$BLINDADO*34!2026
+  Nome: Cliente (Netflix + Sky+)
+  Servicos: netflix, sky
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: MATRIX#SECURITY@1478$HDR*86!2026
+  Nome: Cliente (Netflix + HBO Max + Crunchyroll)
+  Servicos: netflix, hbo, crunchyroll
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: SHIELD#TOKEN@7446$PRO*12!2026
+  Nome: Cliente (Netflix + Crunchyroll + Sky+)
+  Servicos: netflix, crunchyroll, sky
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: TITANIUM#MASTER@7142$VIP*39!2026
+  Nome: Cliente (Netflix + Sky+)
+  Servicos: netflix, sky
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: MATRIX#KEY@4763$4K*84!2026
+  Nome: Cliente (Netflix + HBO Max + Claro TV+)
+  Servicos: netflix, hbo
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: SHIELD#SECURITY@4179$ELITE*65!2026
+  Nome: Cliente (Claro TV+)
+  Servicos: netflix, hbo, crunchyroll, sky
+  Validade: 01/11/2026 às 13:57
+--------------------------------------------------------------------------------
+- SENHA: HYPER#MASTER@3617$4K*10!2026
+  Nome: Cliente (Netflix + HBO Max + Sky+ + Disney+)
+  Servicos: netflix, hbo, sky
+  Validade: 31/10/2026 às 18:53
+--------------------------------------------------------------------------------
+- SENHA: MATRIX#ACCESS@2061$ACTIVE*66!2026
+  Nome: Cliente (Netflix + Sky+)
+  Servicos: netflix, sky
+  Validade: 30/10/2026 às 01:49
+--------------------------------------------------------------------------------
+- SENHA: SHIELD#PASS@3667$HDR*90!2026
+  Nome: Cliente (Netflix + HBO Max + Sky+ + Claro TV+)
+  Servicos: netflix, hbo, sky
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: NEXUS#MASTER@4556$PREMIUM*32!2026
+  Nome: Cliente (Netflix + HBO Max + Sky+ + Disney+)
+  Servicos: netflix, hbo, sky
+  Validade: 28/10/2026 às 22:48
+--------------------------------------------------------------------------------
+- SENHA: CYBER#MASTER@6867$ELITE*56!2026
+  Nome: Cliente (Netflix + HBO Max + Sky+ + Disney+)
+  Servicos: netflix, hbo, sky
+  Validade: 28/10/2026 às 21:58
+--------------------------------------------------------------------------------
+- SENHA: TITANIUM#KEY@3090$ACTIVE*39!2026
+  Nome: Cliente (Netflix + HBO Max + Sky+)
+  Servicos: netflix, hbo, sky
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: NEXUS#ACCESS@5870$BLINDADO*87!2026
+  Nome: Cliente (Netflix + HBO Max + Sky+)
+  Servicos: netflix, hbo, sky
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: SHIELD#TOKEN@3197$ACTIVE*43!2026
+  Nome: Cliente (Netflix + HBO Max + Crunchyroll + Sky+)
+  Servicos: netflix, hbo, crunchyroll, sky
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: MATRIX#SECURITY@2242$ELITE*91!2026
+  Nome: Cliente (Netflix + HBO Max + Crunchyroll + Sky+)
+  Servicos: netflix, hbo, crunchyroll, sky
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: teste
+  Nome: Cliente (Netflix + HBO Max + Crunchyroll + Sky+)
+  Servicos: netflix, hbo, crunchyroll, sky
+  Validade: 17/09/2026 às 23:32
+--------------------------------------------------------------------------------
+- SENHA: ULTRA#KEY@4236$VIP*49!2026
+  Nome: oliveira
+  Servicos: netflix, hbo, crunchyroll
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: STREAM#SECURITY@1410$PREMIUM*57!2026
+  Nome: oliveira
+  Servicos: netflix, hbo, sky
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: MATRIX#STREAMING@5208$PRO*83!2026
+  Nome: oliveira
+  Servicos: netflix, hbo
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: SHIELD#SECURITY@5039$PRO*73!2026
+  Nome: oliveira
+  Servicos: netflix, sky
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: VIP#PASS@4461$ACTIVE*44!2026
+  Nome: Cliente (Netflix + HBO Max + Crunchyroll + Sky+)
+  Servicos: netflix, hbo, crunchyroll, sky
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: STREAM#PASS@5133$VIP*68!2026
+  Nome: 5521984920015
+  Servicos: netflix, hbo
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: ULTRA#ACCESS@2082$PREMIUM*29!2026
+  Nome: 559182925194
+  Servicos: netflix
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: MATRIX#STREAMING@4408$BLINDADO*39!2026
+  Nome: 556195588126
+  Servicos: netflix, sky
+  Validade: Permanente (Sem Expiracao)
+--------------------------------------------------------------------------------
+- SENHA: OMEGA#PASS@4915$PRO*37!2026
+  Nome: lopes
+  Servicos: sky
+  Validade: 16/10/2026 às 22:43
+--------------------------------------------------------------------------------

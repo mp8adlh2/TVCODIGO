@@ -851,12 +851,16 @@ def _has_valid_account_session(acc: dict) -> bool:
 
     return False
 
-def find_sky_valid_account(used_accounts: Optional[Set[str]] = None, dead_accounts: Optional[Set[str]] = None, last_used_map: Optional[Dict[str, float]] = None) -> Optional[dict]:
+def find_sky_valid_account(used_accounts: Optional[Set[str]] = None,
+                           dead_accounts: Optional[Set[str]] = None,
+                           last_used_map: Optional[Dict[str, float]] = None,
+                           exclude_email: str = "",
+                           random_mode: bool = True) -> Optional[dict]:
     """
-    Seleciona a melhor conta Sky com base na lógica de ROTAÇÃO JUSTA (LRU / Round-Robin):
-    1. Nunca repete a mesma conta se houver outras no estoque.
-    2. Prioriza a conta que nunca foi usada (ou que foi usada há mais tempo).
-    3. Percorre todas as 35 contas de skycontas.txt de forma 100% balanceada.
+    Seleciona uma conta Sky com base na lógica de ROTAÇÃO ALEATÓRIA e balanceada:
+    1. Nunca repete a mesma conta consecutivamente se houver outras no estoque.
+    2. Sorteia aleatoriamente entre as contas disponíveis (ou entre as de menor uso).
+    3. Distribui os pareamentos de forma imprevisível entre todas as contas de skycontas.txt.
     """
     accounts = load_all_sky_accounts()
     if not accounts:
@@ -873,7 +877,9 @@ def find_sky_valid_account(used_accounts: Optional[Set[str]] = None, dead_accoun
     normalized_dead = {str(d).strip().lower() for d in (dead_accounts or set()) if d}
     normalized_dead.update(get_invalid_sky_accounts())
 
-    # Contas elegíveis (excluindo as marcadas temporariamente como dead)
+    ex_clean = (exclude_email or "").strip().lower()
+
+    # Contas elegíveis (excluindo as marcadas como dead)
     candidates = [
         acc for acc in accounts
         if acc.get("email", "").strip().lower()
@@ -882,9 +888,22 @@ def find_sky_valid_account(used_accounts: Optional[Set[str]] = None, dead_accoun
 
     pool = candidates if candidates else accounts
 
-    # Ordenação justa:
-    # 1. Menor quantidade de usos (use_counts)
-    # 2. Menor timestamp de último uso (last_used) -> contas nunca usadas (0.0) vêm sempre primeiro!
+    # Se houver mais de uma conta elegível, exclui a recém-usada para não repetir
+    if ex_clean and len(pool) > 1:
+        fresh_pool = [a for a in pool if a.get("email", "").strip().lower() != ex_clean]
+        if fresh_pool:
+            pool = fresh_pool
+
+    # Seleção aleatória para rotação contínua e variada
+    if random_mode and pool:
+        # Pega a menor quantidade de usos presente no pool para manter o equilíbrio
+        min_uses = min(stored_use_counts.get(a.get("email", "").strip().lower(), 0) for a in pool)
+        # Filtra as contas que têm o menor uso (ou uso próximo) para sortear aleatoriamente entre elas
+        best_tier = [a for a in pool if stored_use_counts.get(a.get("email", "").strip().lower(), 0) <= min_uses + 1]
+        pool_to_choose = best_tier if best_tier else pool
+        return random.choice(pool_to_choose)
+
+    # Fallback ordenado
     pool_sorted = sorted(pool, key=lambda a: (
         stored_use_counts.get(a.get("email", "").strip().lower(), 0),
         combined_last_used.get(a.get("email", "").strip().lower(), 0.0)

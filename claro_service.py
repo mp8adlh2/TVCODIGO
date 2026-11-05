@@ -213,20 +213,29 @@ def load_all_claro_accounts(force_reload: bool = False) -> List[dict]:
     accounts.sort(key=sort_key)
     return accounts
 
-def find_claro_valid_account() -> Optional[dict]:
-    """Retorna a próxima conta Claro TV+ pronta para ativação."""
+def find_claro_valid_account(exclude_user: str = "") -> Optional[dict]:
+    """Retorna conta Claro TV+ pronta para ativação usando seleção aleatória para não viciar."""
     accounts = load_all_claro_accounts()
     if not accounts:
         return None
 
-    healthy = [acc for acc in accounts if not is_account_dead(acc["user"])]
-    if healthy:
-        return healthy[0]
+    ex_clean = (exclude_user or "").strip().lower()
 
-    # Se todas em cooldown, perdoa e tenta a primeira
+    healthy = [acc for acc in accounts if not is_account_dead(acc["user"])]
+    pool = healthy if healthy else accounts
+
+    if ex_clean and len(pool) > 1:
+        fresh = [acc for acc in pool if acc.get("user", "").strip().lower() != ex_clean]
+        if fresh:
+            pool = fresh
+
+    if pool:
+        return random.choice(pool)
+
+    # Se todas em cooldown, perdoa e sorteia
     DEAD_CLARO_ACCOUNTS.clear()
     DEAD_CLARO_TIMESTAMPS.clear()
-    return accounts[0]
+    return random.choice(accounts) if accounts else None
 
 def select_claro_account_by_identifier(identifier: str) -> Optional[dict]:
     """Seleciona conta por usuário/CPF ou nome do arquivo."""

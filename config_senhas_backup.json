@@ -423,6 +423,392 @@
       "criado_em": null,
       "expira_em": null,
       "expira_em_formatado": null
+    },
+    {
+      "senha": "SHIELD#VAULT@1026$ELITE*61!2026",
+      "nome": "Cliente (Netflix + HBO Max + Crunchyroll + Sky+ + Claro TV+)",
+      "servicos": [
+        "netflix",
+        "hbo",
+        "crunchyroll",
+        "sky",
+        "claro"
+      ],
+      "descricao": "Libera: netflix, hbo, crunchyroll, sky, claro",
+      "dias_validade": 0,
+      "criado_em": 1793572200.1304798,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "VIP#TOKEN@5282$PRO*75!2026",
+      "nome": "Cliente (Netflix + HBO Max)",
+      "servicos": [
+        "netflix",
+        "hbo"
+      ],
+      "descricao": "Libera: netflix, hbo",
+      "dias_validade": 0,
+      "criado_em": 1793406808.9180987,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "VIP#MASTER@4936$HDR*49!2026",
+      "nome": "Cliente (Netflix + HBO Max + Sky+ + Claro TV+)",
+      "servicos": [
+        "netflix",
+        "hbo",
+        "sky"
+      ],
+      "descricao": "Libera: netflix, hbo, sky, claro",
+      "dias_validade": 0,
+      "criado_em": 1793144044.2143888,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "CYBER#MASTER@2855$BLINDADO*34!2026",
+      "nome": "Cliente (Netflix + Sky+)",
+      "servicos": [
+        "netflix",
+        "sky"
+      ],
+      "descricao": "Libera: netflix, sky",
+      "dias_validade": 0,
+      "criado_em": 1793143998.9642303,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "MATRIX#SECURITY@1478$HDR*86!2026",
+      "nome": "Cliente (Netflix + HBO Max + Crunchyroll)",
+      "servicos": [
+        "netflix",
+        "hbo",
+        "crunchyroll"
+      ],
+      "descricao": "Libera: netflix, hbo, crunchyroll",
+      "dias_validade": 0,
+      "criado_em": 1792949084.726193,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "SHIELD#TOKEN@7446$PRO*12!2026",
+      "nome": "Cliente (Netflix + Crunchyroll + Sky+)",
+      "servicos": [
+        "netflix",
+        "crunchyroll",
+        "sky"
+      ],
+      "descricao": "Libera: netflix, crunchyroll, sky",
+      "dias_validade": 0,
+      "criado_em": 1792708877.7377613,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "TITANIUM#MASTER@7142$VIP*39!2026",
+      "nome": "Cliente (Netflix + Sky+)",
+      "servicos": [
+        "netflix",
+        "sky"
+      ],
+      "descricao": "Libera: netflix, sky",
+      "dias_validade": 0,
+      "criado_em": 1792189839.0762675,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "MATRIX#KEY@4763$4K*84!2026",
+      "nome": "Cliente (Netflix + HBO Max + Claro TV+)",
+      "servicos": [
+        "netflix",
+        "hbo"
+      ],
+      "descricao": "Libera: netflix, hbo, claro",
+      "dias_validade": 0,
+      "criado_em": 1791044650.3620563,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "SHIELD#SECURITY@4179$ELITE*65!2026",
+      "nome": "Cliente (Claro TV+)",
+      "servicos": [
+        "netflix",
+        "hbo",
+        "crunchyroll",
+        "sky"
+      ],
+      "descricao": "Libera: claro",
+      "dias_validade": 30,
+      "criado_em": 1790949465.3939831,
+      "expira_em": 1793541465.3939831,
+      "expira_em_formatado": "01/11/2026 às 13:57"
+    },
+    {
+      "senha": "HYPER#MASTER@3617$4K*10!2026",
+      "nome": "Cliente (Netflix + HBO Max + Sky+ + Disney+)",
+      "servicos": [
+        "netflix",
+        "hbo",
+        "sky"
+      ],
+      "descricao": "Libera: netflix, hbo, sky, disney",
+      "dias_validade": 30,
+      "criado_em": 1790880820.490605,
+      "expira_em": 1793472820.490605,
+      "expira_em_formatado": "31/10/2026 às 18:53"
+    },
+    {
+      "senha": "MATRIX#ACCESS@2061$ACTIVE*66!2026",
+      "nome": "Cliente (Netflix + Sky+)",
+      "servicos": [
+        "netflix",
+        "sky"
+      ],
+      "descricao": "Libera: netflix, sky",
+      "dias_validade": 30,
+      "criado_em": 1790732940.1429875,
+      "expira_em": 1793324940.1429875,
+      "expira_em_formatado": "30/10/2026 às 01:49"
+    },
+    {
+      "senha": "SHIELD#PASS@3667$HDR*90!2026",
+      "nome": "Cliente (Netflix + HBO Max + Sky+ + Claro TV+)",
+      "servicos": [
+        "netflix",
+        "hbo",
+        "sky"
+      ],
+      "descricao": "Libera: netflix, hbo, sky, claro",
+      "dias_validade": 0,
+      "criado_em": 1790711281.715075,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "NEXUS#MASTER@4556$PREMIUM*32!2026",
+      "nome": "Cliente (Netflix + HBO Max + Sky+ + Disney+)",
+      "servicos": [
+        "netflix",
+        "hbo",
+        "sky"
+      ],
+      "descricao": "Libera: netflix, hbo, sky, disney",
+      "dias_validade": 30,
+      "criado_em": 1790635709.0911229,
+      "expira_em": 1793227709.0911229,
+      "expira_em_formatado": "28/10/2026 às 22:48"
+    },
+    {
+      "senha": "CYBER#MASTER@6867$ELITE*56!2026",
+      "nome": "Cliente (Netflix + HBO Max + Sky+ + Disney+)",
+      "servicos": [
+        "netflix",
+        "hbo",
+        "sky"
+      ],
+      "descricao": "Libera: netflix, hbo, sky, disney",
+      "dias_validade": 30,
+      "criado_em": 1790632682.3428216,
+      "expira_em": 1793224682.3428216,
+      "expira_em_formatado": "28/10/2026 às 21:58"
+    },
+    {
+      "senha": "TITANIUM#KEY@3090$ACTIVE*39!2026",
+      "nome": "Cliente (Netflix + HBO Max + Sky+)",
+      "servicos": [
+        "netflix",
+        "hbo",
+        "sky"
+      ],
+      "descricao": "Libera: netflix, hbo, sky",
+      "dias_validade": 0,
+      "criado_em": 1790631680.7739766,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "NEXUS#ACCESS@5870$BLINDADO*87!2026",
+      "nome": "Cliente (Netflix + HBO Max + Sky+)",
+      "servicos": [
+        "netflix",
+        "hbo",
+        "sky"
+      ],
+      "descricao": "Libera: netflix, hbo, sky",
+      "dias_validade": 0,
+      "criado_em": 1790631622.8682935,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "SHIELD#TOKEN@3197$ACTIVE*43!2026",
+      "nome": "Cliente (Netflix + HBO Max + Crunchyroll + Sky+)",
+      "servicos": [
+        "netflix",
+        "hbo",
+        "crunchyroll",
+        "sky"
+      ],
+      "descricao": "Libera: netflix, hbo, crunchyroll, sky",
+      "dias_validade": 0,
+      "criado_em": 1790123671.7652738,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "MATRIX#SECURITY@2242$ELITE*91!2026",
+      "nome": "Cliente (Netflix + HBO Max + Crunchyroll + Sky+)",
+      "servicos": [
+        "netflix",
+        "hbo",
+        "crunchyroll",
+        "sky"
+      ],
+      "descricao": "Libera: netflix, hbo, crunchyroll, sky",
+      "dias_validade": 0,
+      "criado_em": 1790009230.4867644,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "teste",
+      "nome": "Cliente (Netflix + HBO Max + Crunchyroll + Sky+)",
+      "servicos": [
+        "netflix",
+        "hbo",
+        "crunchyroll",
+        "sky"
+      ],
+      "descricao": "Libera: netflix, hbo, crunchyroll, sky",
+      "dias_validade": 1,
+      "criado_em": 1789601521.102033,
+      "expira_em": 1789687921.102033,
+      "expira_em_formatado": "17/09/2026 às 23:32"
+    },
+    {
+      "senha": "ULTRA#KEY@4236$VIP*49!2026",
+      "nome": "oliveira",
+      "servicos": [
+        "netflix",
+        "hbo",
+        "crunchyroll"
+      ],
+      "descricao": "Libera: netflix, hbo, crunchyroll",
+      "dias_validade": 0,
+      "criado_em": 1789600867.2151277,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "STREAM#SECURITY@1410$PREMIUM*57!2026",
+      "nome": "oliveira",
+      "servicos": [
+        "netflix",
+        "hbo",
+        "sky"
+      ],
+      "descricao": "Libera: netflix, hbo, sky",
+      "dias_validade": 0,
+      "criado_em": 1789600835.7816958,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "MATRIX#STREAMING@5208$PRO*83!2026",
+      "nome": "oliveira",
+      "servicos": [
+        "netflix",
+        "hbo"
+      ],
+      "descricao": "Libera: netflix, hbo",
+      "dias_validade": 0,
+      "criado_em": 1789600810.4878387,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "SHIELD#SECURITY@5039$PRO*73!2026",
+      "nome": "oliveira",
+      "servicos": [
+        "netflix",
+        "sky"
+      ],
+      "descricao": "Libera: netflix, sky",
+      "dias_validade": 0,
+      "criado_em": 1789600749.6813803,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "VIP#PASS@4461$ACTIVE*44!2026",
+      "nome": "Cliente (Netflix + HBO Max + Crunchyroll + Sky+)",
+      "servicos": [
+        "netflix",
+        "hbo",
+        "crunchyroll",
+        "sky"
+      ],
+      "descricao": "Libera: netflix, hbo, crunchyroll, sky",
+      "dias_validade": 0,
+      "criado_em": 1789600649.074076,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "STREAM#PASS@5133$VIP*68!2026",
+      "nome": "5521984920015",
+      "servicos": [
+        "netflix",
+        "hbo"
+      ],
+      "descricao": "Libera: netflix, hbo, crunchyroll, sky",
+      "dias_validade": 0,
+      "criado_em": 1789600206.7301476,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "ULTRA#ACCESS@2082$PREMIUM*29!2026",
+      "nome": "559182925194",
+      "servicos": [
+        "netflix"
+      ],
+      "descricao": "Libera: netflix",
+      "dias_validade": 0,
+      "criado_em": 1789600070.308788,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "MATRIX#STREAMING@4408$BLINDADO*39!2026",
+      "nome": "556195588126",
+      "servicos": [
+        "netflix",
+        "sky"
+      ],
+      "descricao": "Libera: netflix, sky",
+      "dias_validade": 0,
+      "criado_em": 1789599836.6002717,
+      "expira_em": null,
+      "expira_em_formatado": null
+    },
+    {
+      "senha": "OMEGA#PASS@4915$PRO*37!2026",
+      "nome": "lopes",
+      "servicos": [
+        "sky"
+      ],
+      "descricao": "Libera: sky",
+      "dias_validade": 30,
+      "criado_em": 1789598580.597892,
+      "expira_em": 1792190580.597892,
+      "expira_em_formatado": "16/10/2026 às 22:43"
     }
   ]
 }
