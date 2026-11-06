@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: CA
+Plan: Premium
+Next Billing: November 30, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: ‏23.99 CAD
+Extra Member: Yes
+Profiles (5): Tomasz, Roman, Polski, Mi, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554946	flwssn	c6c9cbd7-a504-4334-98fe-4e4f1f18f254
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	b0dbab43-6347-48f2-b3eb-f5a1063b597c
+.netflix.com	FALSE	/	TRUE	1796554946	NetflixId	ct%3DBgjHlOvcAxKzA1HJLI3e7f9sh8lSiQc5lz18XKQQRWAmWIoZvciAFFORNNm82a6Fl5dfetGx-_gFk-58txd3XFhuDQRqx6f6D5Qtq4eUBEx3nfl47zAty68Shi9474R2xXfpWVUYw93rUE9U3-vMycGmkcXARojigq7BzKbd0O1oWbRwQZFfPHMdunz78ctKOIJuKnEQKKap2nlTYjCNGaExW-JQy_WYS2d7_Be7ZjWt1PLL2Ua8a9-Wr9vWdjwEjl8_HkJ8oqh91g_AlnUlnD9ckJ9xCuvE4bMT53LgyIAfbO5OIxpO3zco6xH8YwpGdrxXw2yGv4GfPTeeyCSQmw9SCSl2Q7y5MMmJL4RAvbraXan-qHAbHKIRhlboG-_fAgRmeA-ccdh65zkXkZGGqOkc8-CkS_8vWFxc9KcHDmqbY5cGDudTAAvD5kB7_OL1iUeQIk1ZNjf8xgZ85ddj3cdbev572rWok77MXpY3fCTOYTmXk8Ls4jPFbmZebXqhF5mZJXNLhpAuyXDEQeuLNZYUgaI3G0gEzIH5AoS2f8yXfD2eEq0DNJS2AKZKLtFz5kp0ZOlhvUP5NJAWVRgGIg4KDAkBKHvywdzPxkaphg..%26ch%3DAQEAEAABABSDXPXTHkzRz8u5vLJSikVHWvJlc4onHjU.%26v%3D3%26pg%3DLDQQC7N3VBDK7IBNOTAMOADP2A
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554946	nfvdid	BQFmAAEBEG5AxrJtxcW86pPpyQIY0S1ge-14hB90FlzzghC2rrm0dd3mm5Zm6qF1giY30e8LWyscXIzUSdnr3fpQ6uvcpb5kOKJJ3vK8uq809KoswXSIeoOZOlM5ANlwBO5KokgSABhh3WuigYtKXjadamMAlzt2
+.netflix.com	FALSE	/	FALSE	1796554946	OptanonAlertBoxClosed	2026-08-13T15:45:17.392Z
+.netflix.com	FALSE	/	FALSE	1796554946	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Sep+17+2026+22%3A55%3A35+GMT%2B0200+(Central+European+Summer+Time)&version=202607.1.0&browserGpcFlag=1&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=4fa7765b-6213-4885-b159-c20bfbd8b1d4&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&fclco=&intType=6&crTime=1786635917704&geolocation=CA%3BON&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554946	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1796554946	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRVdK5FrAkM0dRfD2ffOLoGMezOO0g0o2Q.%26dt%3D1789678529178

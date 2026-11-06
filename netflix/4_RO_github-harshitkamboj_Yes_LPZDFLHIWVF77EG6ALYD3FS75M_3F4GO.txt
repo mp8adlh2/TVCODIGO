@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: RO
+Plan: Premium
+Next Billing: November 9, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 13,99 EUR
+Extra Member: Yes
+Profiles (5): Mirela, Beni, Iulia, g, Lantos
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1817714367	NetflixId	ct%3DBgjHlOvcAxLmA93IqQoAQBZbEBFNdAnhuBrdB_vk0oF7pCWD-GqqWzMj4eVlyz52Uf0ng4rpUyeLULZ6R5ApQ-kr1oJuQDzsT59yzt95uyBjg2IEb7_uoGdeh1eFmWpCe1-NVHAOqwTBFhu-xmspxXy5q6pO932K3rO6OLZ2c5-Pi_n6g4vPYnameaLk0dRqQsoNAqlBkf3Nrr-MGd2iDNA-FCbi-4fSHRCMJh-jS7qr0NM7afhlJh8fpbGsjQfEz32I7ocSvVsm_3HoQ42wt889dkP9K0RJcijiVWPJFHyVLGfv9ncRsUAxa8ctOLy7_13g-1Y4SpkMxqrdL_klvU0umrbuK9Ww3p-SvoL2g927t6vO1t04KHwR9bEAEZcVzHa1Gs24YoXEjyrIVmFkWoLq3IsBEx1v_hoDDc0No5xi5Y-cNqBGWQjLbS7k3NB5WVZGcJtrIIZdS4r8U7YZ0t5qJ2u7iju6TMn0bR5B9536OABDUIJR15gBMsdJ6CnvQP5LM9E6LvroKEhvvSfCCl8LKdyiERxpQH0tYoWWWF1acfG14LTPeWUY7GKS78e5BhaxMQ_QnmN2_wKBoRH8vkM2si9CASm3g92VxO0PSlwLN805oahvTI9EDKbt3j6Dy7BRfY16uxLHSIwRFYDishgGIg4KDK1NC8pCzn-3X9p7IQ..%26ch%3DAQEAEAABABSw-FBHAxEVIyrO4diBx1aFfqRfZZ2_24Y.%26v%3D3%26pg%3DLPZDFLHIWVF77EG6ALYD3FS75M
+.netflix.com	FALSE	/	FALSE	1801388260	nfvdid	BQFmAAEBENbx4WMobgDZZIvcj6-j-Txg6FTGyXozklA8pQqlc5j7lcNMTz3HVwFgUR7I_d7BzF9ezdOXVlAc1YpHDjC7fLx4-4PgjJ_wdCWv7e2gNQhvawY2jkuJJHxvUZbsPLaw7UyppFdUUesAiN4xTH3IEZ07
+.netflix.com	FALSE	/	FALSE	1801388199	OptanonAlertBoxClosed	2026-01-31T09:36:39.686Z
+.netflix.com	FALSE	/	FALSE	1817714369	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Aug+08+2026+11%3A39%3A29+GMT%2B0300+(Eastern+European+Summer+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=5f1b8f7d-a9f5-4386-bfb3-3a35e9d493ed&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=1&crTime=1769852200156&geolocation=RO%3BMS&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	TRUE	1817714367	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSjW5Mpxx7YLapqfSjbEb5eUu79OfC7vHE.%26dt%3D1786178367274

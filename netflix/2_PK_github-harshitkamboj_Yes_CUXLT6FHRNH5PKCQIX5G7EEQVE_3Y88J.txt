@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: PK
+Plan: Standard
+Next Billing: November 11, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: PKR 800
+Extra Member: Yes
+Profiles (3): Jamal, Arfa, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	b01bc435-48dd-4e43-83c0-0dbe66efed1e
+.netflix.com	FALSE	/	TRUE	1821361804	NetflixId	ct%3DBgjHlOvcAxKyA8zbNnnm7_zyMK681bjVTR60t_SLD4fBslEr6dAWwDVAiCI4tqkQfXH6TnoXvv1pxtr4jZgG4f353RBFU_9bm-SXdHB5E5vFO2hdGOJK0WmhKzsQdgY6Jyr_8O2bfKCde5ZARQ5KzMScmDxKi7l4OjLo9gQgHoZHFHeVrG0V2WhwJcraND45dXTAoFN37ETJNUB18Mpc75DrbUwIvLYioSwgrnArN5JMQW2vIbexEEChFgLs_2oFCZlksbLxivfM_d_eMaD7xJCffstZ15lQkhd1db9NJvs4PC1ZxuV_VlwnVA1OiaNYVkyU_nhJVGRtkD-o9umpXdDY1-CX3_ZmsEP_XzBQT4k96n8-LzGFaSF10JxRYaybWIBrW0wl7-jTU_Y7A166YfHmC-1C7vFdIadVv4yKZcZIVC08QV1YqEk8oRkbl71gWtU8cWR8JLN8Sa5HXqufTIJv65f3UvhRZRVQP-EG3sp5Q0o2DOY5BsCX5atMNsD2wb-bCpR64Ar5OnocVqgRSHMWY8FnRIjJtnXpKt4-83nA8AKrZH_rtmFQmtEOCeGq76Gu3-y-vForQS-tGAYiDgoMaD4jOuVD3uRC5VTY%26ch%3DAQEAEAABABThQ79M-RJV7G_pnrYwyAQaM_5EvXwDuHI.%26v%3D3%26pg%3DCUXLT6FHRNH5PKCQIX5G7EEQVE
+.netflix.com	FALSE	/	FALSE	1821361805	nfvdid	BQFmAAEBEMSVRe0QfZUzD-9GSfHOj59gCGGwCJlF9AwzvTN9SJBrRqY1-1wBMKfWqVkaGzyHWKYSfMGJSOtASA9zfKAplR_MsM7MH-f4FuS3BSw9dWH8gtMABZlHrDuDsK6x2ZdIcgN4Yk-1VX9tjqhxhjZ4ljWl
+.netflix.com	FALSE	/	FALSE	1813435602	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Jun+20+2026+01%3A06%3A42+GMT%2B0500+(Pakistan+Standard+Time)&version=202604.2.0&isIABGlobal=false&hosts=&consentId=6ec21cc3-537a-4db2-8f04-a1176022044f&interactionCount=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&browserGpcFlag=0&isAnonUser=1&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	TRUE	1821361804	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABR57KqU-zk4w-a54bqwSy-PmL7v52D5Aq0.%26dt%3D1789825804381

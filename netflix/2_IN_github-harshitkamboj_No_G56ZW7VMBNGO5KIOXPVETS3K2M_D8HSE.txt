@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Standard
+Next Billing: November 16, 2026
+Payment: UPI
+Quality: HD
+Streams: 2
+Price: ₹499
+Profiles (4): Manish, Mohit, R, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1811315699	nfvdid	BQFmAAEBEI_PsUWwTADDlajVQ1A_uSBgmy_YOhe_ESCNN0MR7WcTypJID0FDE7yXgvgd634pOWzZsLWgnwGlU55pr2CXTVuUWkGumNBAt2u0zr8waWwBqgoFQzGcaOzLzXdhKQhjTXPy0g_qOMvJrLB8Nbzfihjb
+.netflix.com	FALSE	/	FALSE	1811583006	OptanonConsent	isGpcEnabled=0&datestamp=Fri+May+29+2026+15%3A00%3A06+GMT%2B0530+(India+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=2e296170-b013-4bf9-a57b-cdd98e262e24&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&crTime=1779779603125&AwaitingReconsent=false&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1
+.netflix.com	FALSE	/	TRUE	1811583007	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABS4NmLTm5R2rsRWRW3h9mq1ncNzNuelm4I.%26dt%3D1780047010317
+.netflix.com	FALSE	/	TRUE	1811583007	NetflixId	ct%3DBgjHlOvcAxK0A51V_5sbMWyc-pRHtgdAE4ktfofBmqIwO2_do_qd4bM00EJ5v40tezfIEDdJYYSDylTJRy0JKIkvy34vCVCW4XMHjTIpzGzMbERw8YxAW8v_OdM9Ri_1HFRem7MBCGEx2IURIW_HobzOtd_ntTe5Z25tW-Lp73y749-IE1DdVjhlicaechaug57witkXgM_8GkobuZIjAGUSYiGDgJvQTSxRyKlNhOoMjFUBiod7YbH7ej_88_ontojgyTrAso8JgtUBXfzn3ixcL5Ks6s1diSjIm0QG7ByjKZ72LiHd5wywImGwm_XQqDCLQFJblWFcRXHTraixHcpXp2aS9ooT2sFjLlOyBH1zCVcRVUcDUezxP-6dhWqodA0i1tYg99dkQrYcB84u8UHEDCsDT1QSzKH6_DAWDGJDh5yVFifS5Kt_NBXfAS67punDM1iETzJMi2UrDxz6qGmT6aH-NJF0B73IQVtfd8lJVqe8TS4WkOAqxVrdVYXXnVVgmXCHg3qvIuW3oog5TZlS3b12UWd3L146fOzWqJscTmMKHJ8NskDHLccc0LYyw5EXxFvChfYekWfrtHkYBiIOCgyRsLqOb3dqyqguveg.%26ch%3DAQEAEAABABS6U--qz2RF6CJkAuv4Za9qE0jO4zEBrqY.%26v%3D3%26pg%3DG56ZW7VMBNGO5KIOXPVETS3K2M
+.netflix.com	FALSE	/	FALSE	1796554945	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554945	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554945	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	FALSE	1796554945	profilesNewSession	0

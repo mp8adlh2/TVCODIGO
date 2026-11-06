@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: BG
+Plan: Premium
+Next Billing: November 7, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: EUR 10.99
+Extra Member: Yes
+Profiles (5): Le tout puisant, Alex, Invité, Liv, Willy
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1820358734	NetflixId	ct%3DBgjHlOvcAxKLBH6gRyhYQKF1wmztUPA61oH8HMf_vTGUVjbfYEezOsG5dQlWwXQi6pk8h_EFd0G7pZhUFCGb8pXZIZqCNO9dA6wJqouhUpb2Tn49oWredII5md6rwabT7mgbRSJJVsaCGQPNd0X1xOnPXtEGgazRvablIDLB1GmoqoVXt2uKNeBuKXFsWfrco5dhMaoRPOyJiBwrgdFO5eP98wWk2R77tE1Mivamk1adLL3xodKS_-r_ADe0j8_1enNHegqWhADOrCMhpdMvWUA9Vx6k_z9vFtU9yZTUk6m6AhdCbYf5VnZV59029YWw7gii5hxwwrIJdok2iIwcX-DolMmznQkiO9BCvpr2eq5ngP0M3N-PrC5e1qWtLcvjZ-c6aNNyKcMGMA-gRqoYY7blhgjMkYV7rCRdlSRjYwf4GtcT2j6fu_e3zjPJfbPB1ryDEyxdGQmBDLwmy-ke4WZmlA7e_1A_QDDiCs96P30S-kSD5WL7aVPEXcfh5LWJ-8n4oPrPHcojJTfoMGEZ-0i7lMT6pi_sSKuFlx5yNANggNelWOcob4bN0dZkxWnTs8MCcM0kn-nL3KGQDa9fmNiLL-kuvJLx5mzTbny425uZWfaIKKzu_5MUeLI1cTBjSgs2c8vzxkUu6mzjQq4x9E2LsNb2T6TLsU8L67g50_xrfCSX7cLTgD3LMQnMXutBV3wYmiYYBiIOCgziBlpXbYETAl46dzQ.%26ch%3DAQEAEAABABRXiMU6q85aXKSwscsFM0q20NmcAmqko4E.%26v%3D3%26pg%3DSL3DK44A5RF7VG4QDLGKQ7IEUA
+.netflix.com	FALSE	/	FALSE	1796598736	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796598736	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1800451548	nfvdid	BQFmAAEBEAiDrfGYOE_SXtAeYxE0VPtguSIc3WqDBZy5EhxWqLys57tqOJS1xe6UVXK3q01UdnJkahO0xm4Lk2ylYaUxgp39hP79oOuQKXYj6HYXCLcVb3z0p-CXMGKF8qkRSKZMZmN5GIaaqtrvY5s5WN0LOZYU
+.netflix.com	FALSE	/	FALSE	1820358737	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+08+2026+01%3A12%3A17+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202607.1.0&browserGpcFlag=1&isIABGlobal=false&hosts=&consentId=6d0bcf4d-4ea8-4149-9595-21561d97ce62&interactionCount=0&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	TRUE	1820358734	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTog04UoyS9RF7D4lnStALzNlG5N-Pi8Lo.%26dt%3D1788822734225

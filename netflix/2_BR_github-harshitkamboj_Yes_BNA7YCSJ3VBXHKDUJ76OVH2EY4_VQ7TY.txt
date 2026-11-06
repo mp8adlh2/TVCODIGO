@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Standard
+Next Billing: UNKNOWN
+Payment: NET_BILLED
+Quality: HD
+Streams: 2
+Price: N/A
+Extra Member: Yes
+Profiles (3): rogeriodesouza774, José Mauro, 03
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1807369474	dsca	true
+.netflix.com	FALSE	/	TRUE	1796554944	gsid	4d576bdd-ee6c-4d09-83c2-a782dfee61aa
+.netflix.com	FALSE	/	TRUE	1822503647	NetflixId	ct%3DBgjHlOvcAxLtA-8uLTV-azBZf5O5IVxZ0rtoXJivS5l3ba6h2aecUtfiw6UYZpy5MapfCHJ5V2Tom0k6ZTdl9BM1ejmF_fFcoMjJfTSDI4VqpJo_gXiQuiYUQdn_H63WA0UIH18YkWdw8zKZsRgasGdTjz2Ps1KKgWrCKwTg20oqq1VDUo5mtbf2dTRUDUngJMQMqK3uVz0nwqjP6-fo8qrVEFPdGD3vila2BCJPF72ZsyQWplgxBy0W1W1oQ0FFqmuucttRXgXYjxQws2FQy-dKf4U40lBfOTdQNHsGD4uyh9wDh8tx8L59AIYBKp3cbmt5OOdlEEqiN3uTHGG3Oi-nvknuaggsdN-GMEzAq1Yxq-1xr2y6N1lG5WSzFZXx_uWqMPcEFiH7kE4H6fSryIQtMfLj6ppoOV9YmPFtPqcQU07oUMU8KmwsR4n7H0sXxWTssFAdVHA3Pvx0xXgUbAjAt4AlFCnzbDo1r0iuD_eHmYgvG0HldxHXfBedLtU3mMXf2xUFZo1dpGhylbX9cNXsjPsJC9N4dltqVH28WlTQEMUfgIG4uAdc-6bKljWmOZwaDKVbtU8-7fWJ_heRSUnrRleXzLT-Akt4sBFn6Zp_Yyg6hJ7KhYu4kGvI73M8e2RdWT1Dv_Xy1Mu2n6F0jy8hKDYWI-IYBiIOCgzjUs9YRxLlxfpmJkU.%26ch%3DAQEAEAABABTmSCXiW_7VCeQkHv_vTXVAGIXx56AUBAc.%26v%3D3%26pg%3DBNA7YCSJ3VBXHKDUJ76OVH2EY4
+.netflix.com	FALSE	/	FALSE	1804345473	nfvdid	BQFmAAEBEHmPdRbAm2ljidgFBHN4O6RgwHeHJsJaxpWMAC5W83B_Gmy_seTlzPQm_T9QIETyOO8snMonBAM-GFbxqtQ_PiPvAwMWAvTC82hdA-B6dYo0oaTH8cerOYMhT3w0cMuCMAEwv7IPL5TOdsquHgv-Tssg
+.netflix.com	FALSE	/	FALSE	1802881801	OptanonAlertBoxClosed	2026-02-17T16:30:01.662Z
+.netflix.com	FALSE	/	FALSE	1822503650	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Oct+02+2026+16%3A00%3A50+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=56b01591-4961-4554-8a76-c55789d42bdc&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&crTime=1771345802342&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=3&geolocation=BR%3BSP&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	TRUE	1822503647	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRnwMcAKQdyJqC5aK8Ny-Cy5e0EV1lgkS4.%26dt%3D1790967646106

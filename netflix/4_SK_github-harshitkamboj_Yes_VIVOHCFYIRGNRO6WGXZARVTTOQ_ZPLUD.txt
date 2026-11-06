@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: SK
+Plan: Premium
+Next Billing: December 5, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: EUR 13.99
+Extra Member: Yes
+Profiles (5): Anetta, Elianka, Timon, Taťka, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	a843fcbc-a454-450c-b3c2-1200d4501566
+.netflix.com	FALSE	/	TRUE	1822120489	NetflixId	ct%3DBgjHlOvcAxKHBM2Ae2tSVXhYG0b83KDrTGugy9i4xMSp8SKuPOWC2Wi7W6Nz2HsrJQFjH7wrxEZBiRo5CZL0feLXoVFZSELXpvYIzCGu2hdot32k8LGMSQC1bn0fD8uQTtfd7Sjo2CdShG1mEsenL-CO3a12XePImSJLHRfkPPdlLHUIxhHlwvaKYkR5jkHyw5biYcnCJQ6d_o4PmO0R2wN7ePiK70S-R10rJR-eiQ2sjd6OuhNPliinp30tyLqreAlv3oMbhhOu75VD47egmSc8IKNBpF_Q06_qqffgjiy5rdWlAqLJTXZEsF0wAxKV4VRsk5qbnMxrHcKJCTl09j5koiIW0rFGZ6bMnhfuVWLiE_wstM_SG8zxFD66NMwf7UfpI0XOgnpV5p7E3iki0GSIPaAQL5qDKbt_HoYARlyeIRc-9EKqiiSPGL0rM8yC5TTY9rlPmOK5CUSgcegkpf_DssXpoINcpWPyVPm3RAT_E6JPTHmRIeyiaDOMhbsBeL75CdoNzUh-LSea3e7cqRhj1WZlRgJ2jOHEZNyqerrg7DGvJ6tFI51hBXysHgdPKTrdJwhm4iPqkEL3nuC5NBYFTWJVPrjnlnGoQYt3Y0vR2xqm-THARSlwQkfLBfRL4kSwkjAgKXXcnig8x_m5X9A_MKwUkSkpfMeZbKSKM1iVFXuQPXdkn23vTgLfZXVKmRgGIg4KDByl6hqTIH36hC4Ryg..%26ch%3DAQEAEAABABTZIFRErx1PZfAaULPDx2EmHJ_IHbQOlew.%26v%3D3%26pg%3DVIVOHCFYIRGNRO6WGXZARVTTOQ
+.netflix.com	FALSE	/	FALSE	1799506644	nfvdid	BQFmAAEBEIfOqWTn-0Jt8OSlaD7WzGRgwX-gWq2d9iPn9ZR6DQzY2eczBp0wJbPgZx3WirhwKKSrHLRCJ9DjacEn5TaBTh1ugatlAoBOjtSOGksj0CLbLL_iM7b5I4VlZxHbqGMyJCkk13-WQ-o760pxavCvXyaQ
+.netflix.com	FALSE	/	FALSE	1799478727	OptanonAlertBoxClosed	2026-01-09T07:12:07.538Z
+.netflix.com	FALSE	/	FALSE	1822076302	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+27+2026+22%3A18%3A22+GMT%2B0200+(Central+European+Summer+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=7e665ba8-5479-46ad-8157-bafd44f04dd6&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&AwaitingReconsent=false&intType=3&geolocation=SK%3BNI&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	TRUE	1822120489	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSHki_hwZzWTlVtOktF5tHKfO2EcFNk-TM.%26dt%3D1790584490493

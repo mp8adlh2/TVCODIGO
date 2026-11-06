@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Standard
+Next Billing: November 7, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: EUR 14,99
+Extra Member: Yes
+Profiles (4): julien, allison, Mateo, j
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1800962130	dsca	true
+.netflix.com	FALSE	/	TRUE	1796554945	gsid	2d80d2a2-7810-40b2-8e49-ae283b590687
+.netflix.com	FALSE	/	TRUE	1822061297	NetflixId	ct%3DBgjHlOvcAxKFBBQ07KQSN4CYYAlMKaSc5DxHGHJit4-2WHWoOWwoEzWVbcFB3ExFm9lcLgXwpe45a-TpkumRXsSofdFRxOlISVpbCptEXDSE8esoTbiGPuaYsorjsEZIinvW82kw7L_ataQZUqcnSYis5Kd5HouAw95ijwiRQbZvD-OTqrJF9nDhy10heNi8r29OWlywrk__RmpO3vKU22KO8qKCVu11dn-GSLPsDEjtDFRTGsTTg04Vq5Jzcbub-T_aLpwdKL1hqVgyXe-8V6gBbFfbQcsgd-PvAWG1yl_RKY-ccDLH6VD_brBQmoVkSxBVcenUpAaRUQvnhJ7fvLklch_WRS_lblA4DbOqx_KIgp0TCDi9J7t6k9ylZ9sn-uiMWFulIgtlncZZZ67q5zJqWFQCzwLU-10zV2HylCQ2Iu8Nq8ifeg3Y9hn-VsMu0O29xifVJfiKxqR5Wb-eJqz4PgnlGccEcSdgO2i3ZFS0h0Ege4i8RfS_SRTzlD_n0KaPgejAUSGSOxoh6J4PdQRhkliH67Q2rok8TCb0wO_KorNbJM9ROnLTsHMpxYTdjVBRc2Csnk1lqKn8m9HFL77bFtRRng-KAtVRdve62aATdcSxP3yKIdFMxCT8qJDHbc_qrts2ka6fvW1V6eyNUDOTj_Y8hnzqAP9dATkbYOA4ZOdOIljUkARdx3UNOi0YBiIOCgz8C96UB23vrK74wxo.%26ch%3DAQEAEAABABRLosceviBzcDiZU_UaslpY0gFQs8Fqq9Y.%26v%3D3%26pg%3D3HGCV76AONBPFD6BTJGOJ5QQ6Q
+.netflix.com	FALSE	/	FALSE	1797938129	nfvdid	BQFmAAEBEMC84b2VF4O2yB3yIaHTKOBgJrQEmQYO6e_hHBVAtpDnh9gO-v4aWUnijxorpIuHhoOryCYvlnVQ7_bgBzSSwEUReqsoUeQ_ur8L4tFm3flDTacswI9ZIXcwjT2owHV1THLDQmtebNhakWr0iJE2Rg5Y
+.netflix.com	FALSE	/	FALSE	1822061306	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+27+2026+23%3A08%3A26+GMT%2B0700+(Waktu+Indochina)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=9617b3ac-6a86-4c25-b6de-6e1be0612150&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	FALSE	1796554945	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1822061297	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSItAQadVVu4UR9lNEFCtLNxo2lk3wOrBE.%26dt%3D1790525297873

@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: PL
+Plan: Premium
+Next Billing: November 26, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 75 zł
+Extra Member: Yes
+Profiles (5): Rozmusowie, Klaudia, Tata, Patryk, Mama
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1801328967	dsca	customer
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	5822aa68-05be-44a2-ae07-dae4bec3f148
+.netflix.com	FALSE	/	TRUE	1804431801	NetflixId	ct%3DBgjHlOvcAxKGBILdMDeZhxW7tDL9pURzsRCz0EcmzljFyDxRGu4T9dMcgLumuHmMatX4158wO-P8eXkZFohkUv8QXfG8epG8IKaa1i_0LnoG9gFKhGPfznpGibyRwCLH6GIDDRO5Eepz0kT5_K9rAAZm3VFjnHy8TUYdT5jF0Bb8dhyceQUqUXUNW1I3jL-5Vqimy2dkrM7RXfojjy-Yq2bNBohE64WlrGv3ORQO13Lxlyn_4TqVGwHYn0BrzePWmPZb1vPhqh5b9m47BBXBXm1gBe1IffWdkA7j1nhPaSzQYXnMTYDf7Vjm71HCMtlsNItzizZSKL-rUzavoLdxM1LofkvlZwFIpTVvMXHSMblJLOoiRWKIgOWRrfNzshS9l7fZh-p2-C_7ZtLJZqDygr8s8RtPu0ak6QNoOHqj7Ir_1sW29pUAsJgOoqNR2sgR4bZkoumOSn4lPR-KEMJ5L3Hkkspy7iByYHxr8U8-XbPnt_3vk00GLeGWJUlLon7nP81akOdexi4KfIPrsn0Yum05RfUQWDER1WbiIETy736DH3ioHHkjq22k8NGbdEpwj4WdxXnac3cb-od_A16hPWiMVrIUhiHPRcNwbuoIKrsa2cpLjIJdm8MTNFLKWXVtmyuXO8LusXXfJCRfYBTSwLOw7Vqbn9_BX10vyX8EWxh3dQAO2Kg4t8pb3pn875yNGAYiDgoM_wZ5B4Wv5E7z0odN%26ch%3DAQEAEAABABTumskcrCj5So-7iON0LJQVO9lF5WIdPTI.%26v%3D3%26pg%3DIC3F24QZHZCPZLJN5UZSHA7OIE
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795019413	nfvdid	BQFmAAEBENjtgReO33TV29_habk1_nRgZ7e8MqRuQhMJMbo5DChfUZxQnsqckRzOCeMFYa0wpKXbNDAMtOZ4-lN-g2NL6jx0e45ihYcX9rFjt0IUfNMEnozHTCqcEm26Zz4K2Sp7RYOPcl14No9y7ObHXlSAjwU9
+.netflix.com	FALSE	/	FALSE	1795019600	OptanonAlertBoxClosed	2025-11-18T16:33:20.707Z
+.netflix.com	FALSE	/	FALSE	1804431808	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Mar+07+2026+16%3A03%3A28+GMT%2B0100+(czas+%C5%9Brodkowoeuropejski+standardowy)&version=202601.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=bafc02e4-4e71-43b4-a36c-a06ed060fa67&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=1&geolocation=PL%3B14
+.netflix.com	FALSE	/	TRUE	1804431801	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSVL-Pow7JqqUXui6R7P8E30V-cwYf9-ys.%26dt%3D1772895797288

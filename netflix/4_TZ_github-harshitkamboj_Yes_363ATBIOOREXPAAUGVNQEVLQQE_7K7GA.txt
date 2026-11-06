@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TZ
+Plan: Premium
+Next Billing: November 7, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: US$9.99
+Extra Member: Yes
+Profiles (5): Collins, Baraka, Geniutic, BEAMERS, Lahsun
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554947	flwssn	3f36eb6a-7ee6-42cd-91ad-89400265a27e
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	8a7801da-3d85-49d7-b4ca-326fefe362ae
+.netflix.com	FALSE	/	TRUE	1821075301	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKRA6Rnp0bTDQPKT3-NGlWeC1lpninlQoI6nBc3w65UkpL3LMyReIUzLEEVk2c1dMXflKBExiKuANxVLVzRbJX3ZpT4HyRNeim3gVE4t3_tRi7v-Vabr9Q384P_V8hKdeq5nCKGxdOdo9IM8aN3hkLikWg4YKg_voD0wavXarC0WJZZwetSUvyWVQVMRU3MOqn4OpDVnJTxt_0F8HgrFVePtW7Tg32WFNi-9H3Xqkfm66d8fmbIxf7jWHRutOXJdttKs2z2XyBqTwP5-jTxjtvVf8m28c9PD5w4EMD6MwmaZbg4m2GyyEPQ6mqzuwpdjml3g90E7JHXI6xNKlWNwCgyh9YiQl9zL_x22qzx-5JsGYHNHhiD9GVBhaxYsdBfGdKIWNJ9aOaUZQNLWv5kP8rZAuPcgg9EiLlA92_x2-Y5Wl8-3eIwS7nk03NHHqIAnANVvFeLEOG3nk8Ry67jnQBkzMoTIfF1GL32xO6P5iv9Z4BQac3up6akNS-mXnHyIRk_mFduzu17ydG_Fl2-uKMlP4P9GAYiDgoMeTab-pifGa-z4GCl%26pg%3D363ATBIOOREXPAAUGVNQEVLQQE%26ch%3DAQEAEAABABR9v_q7YQu0K-c8MCuCZU50fkfjtBqoDtE.
+.netflix.com	FALSE	/	FALSE	1821075305	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+16+2026+09%3A15%3A05+GMT%2B0300+(East+Africa+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=cfc02e89-822e-4f2d-986b-73fd08842e02&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=1&geolocation=TZ%3B02&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	TRUE	1821075301	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRA-JD_a2WRKfrSfVEB7-mpCd135RsLfRo.%26dt%3D1789539303339
+.netflix.com	FALSE	/	FALSE	1797315304	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797315304	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1821075301	nfvdid	BQFmAAEBECq4k3rEWYyoQriybVZRvNxgPeVKFgM5BePNxoMSRi5eCi9FHMRuk-UIyo_Qsh6Bam8zdBuUJ63PvUax78e9Ithb-MWNbRcrfrWhKSQJ9gf1kxXmONWqnvTf_WUrU3-ebLWKHzaZYp1R384Tc78xOijP

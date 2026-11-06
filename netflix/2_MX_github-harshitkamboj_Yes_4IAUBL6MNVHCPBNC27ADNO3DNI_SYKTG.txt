@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: MX
+Plan: Standard
+Next Billing: November 7, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: $269
+Extra Member: Yes
+Profiles (5): Francisco J., Yazmin T., Jack, IJM, Niños
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1823013176	dsca	customer
+.netflix.com	FALSE	/	TRUE	1819989138	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKXAwfrpti6SNW2M3hs_jL_ObzMa-El3V-rC9q1_UwBn9btm389jjicTDD-ziq6YY09odlj3j32KDcMAz8tnhhasl4R0fEzzzL956D3Vsc7hMa2i7zb8mySCyq0V4FApuoxYRUpzem3tWooaiHl_quuQ4DAnVHs0jDPWioTcVplgXdz7RY_PF06HffAioKTdB11ktUq7Xa0mDpjH516KBsjzD-c4m0PDkUerI0V3CBziaUgqJ4STOatCA0Y1O81j6CLR9ghm-d3KgyItW_f8foFVTGNamqwsfGXLsiqZxDbqD4PVxQqX5Hoa4TibN_jssTI1YN2eficIDDGtd9rsQKL51kKt5d7p2x_zRnZYtvtVFdWXFpaWo2zYVKTIacVvaX0lIfJgq55FneMeRoMS-s7_cUgHTDPLDORateiVFx3MbCn6yZ5E0ZmuF4M_nZZaONdO23Wz8Ctca_oTcI0PjUccH1IaLopdD_ZvaY9hz9ogx0665vYpCGHmQeJ0xOyDI50Yt-yhu9bFqQdZBTQHV0ti-DDu8Pra-ZLGAYiDgoM_VgrUKMmszlc4E7V%26pg%3D4IAUBL6MNVHCPBNC27ADNO3DNI%26ch%3DAQEAEAABABT-A2XZHFXzsu2Amzc8Hy8X2kPuHjbTSvQ.
+.netflix.com	FALSE	/	FALSE	1796229180	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796229180	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1819989077	nfvdid	BQFmAAEBEITKP4V7PlGA5v0_1GJ2FMFg3Ovjq5RB-xeXePP22E0ockK92r8Csk0gh_WyHrsj7QlhL3UpYNoiOvj53VrbgQrhtW05fc3vd2GsntM48PZbAG7z60S7CPzjfvhST4b5OXqfkp8Yxx6QNlrHNLz93JAu
+.netflix.com	FALSE	/	FALSE	1819988662	OptanonAlertBoxClosed	2026-09-03T16:24:22.848Z
+.netflix.com	FALSE	/	FALSE	1819989180	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Sep+03+2026+10%3A33%3A00+GMT-0600+(hora+de+verano+de+la+monta%C3%B1a)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=80581890-f50d-4589-9a4c-367d8bd7ef0c&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&fclco=&lastConsentTs=1788452662&intType=3&crTime=1788452663064&geolocation=MX%3BCMX
+.netflix.com	FALSE	/	FALSE	1796554946	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1819989138	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRXC-E6mCZpuI-qyAdn3iwldt01DBjMI5Q.%26dt%3D1788453128725

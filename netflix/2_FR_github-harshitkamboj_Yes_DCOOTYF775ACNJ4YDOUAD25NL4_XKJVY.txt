@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Standard
+Next Billing: November 14, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 14,99 €
+Extra Member: Yes
+Profiles (3): jean-françois/sandra, clémentine, Jeunesse
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1821295024	NetflixId	ct%3DBgjHlOvcAxKPBAy8xIkH_M7S-P0ntT0p0m74cwC8aD7bfYnWOaEL_GmHdEdsgm4od5IW8MtUC6TvAkLxpZfkWewfIYHiHlgUBI3N8VMmJoP6614F5uxO5a2FZQJEZkiiNSOmcUTmcEqhFCzUW1P8qx9ZUnkvwGqboL2BpViq-9seWhLQXwrUY_MZvqyzzIJlFjfrt__3nslNX8zZnVDWRX2DY9YfJh9ojYMStKWGD9EaosxZFohaVbhYC1E9AG9Ndm9n7JNPwVwBDwrVJAT1SDrvSCXfa145q8CerBaY3p6w0G4Pxioc3Zzl_7JZgdstDwNOMbp1iyTWzGu7zj0hgdoFyPfmVYkkS7sZsGCcYWK93bIqPIGZIm3aojLtUEHcHTpOXHQ3br1mgoK43OR5UGV33thKqjDcGHolf6uwm02aEsktgPxm-W1jm1-hciEfvxL0D1NEav2EtgiJ7ixAbcLLb6KOtp2KSd4pl52LYwym5o83j-P_PbFEA55aJ0B2Fgw_FTnZ9EDT5QlRIWhmxYnzond_by_FhNr0H5NflPeWvx-G6I_0OOVXtpi8Ow3mTZA3qWx-2t593jA0icYGlmX8TIeDiWXwBvQA0pQ6EqwEo-oo6nq1eHuUbuKrw1RL90B6q1pa4aRiygcmOmoYSafYxhxhxOFUbSYeLLA8ap73qq0zbxwxiK2wyRq2c62rc9uQYq0EiAPYGAYiDgoMQZIMB0TfvHWxmT25%26ch%3DAQEAEAABABRyFl3TexqsXxFds8J0lo9Ww1On63Qgpbw.%26v%3D3%26pg%3DDCOOTYF775ACNJ4YDOUAD25NL4
+.netflix.com	FALSE	/	FALSE	1797562178	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797562178	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1799525848	nfvdid	BQFmAAEBEFHCmT5u3I1zRjFfzm3ByUpgcDYPlJ0cs1jK4MdWPmb7BeB_ydbIRofHJTuksbRT07yjh86nSvzgj2S0HDZTLXIKGK8--3fjHV342BwoVgIcO9U9Nosvab7WuuUj5Nlx8vdidsYmSNUxH8f79wcC7_tB
+.netflix.com	FALSE	/	FALSE	1813863493	OptanonAlertBoxClosed	2026-06-24T18:58:13.336Z
+.netflix.com	FALSE	/	FALSE	1821322178	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+19+2026+04%3A49%3A38+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202607.1.0&isIABGlobal=false&hosts=&consentId=614cedbc-f221-4acd-8afd-4c20037180b8&interactionCount=3&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&AwaitingReconsent=false&browserGpcFlag=0&isAnonUser=1&intType=2&geolocation=FR%3BPDL&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1797562178	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1821295024	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRQyLUAy1hGVfkCZjEFiWUpW1b4f5psZV4.%26dt%3D1789759024142

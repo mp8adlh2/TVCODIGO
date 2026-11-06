@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: IT
+Plan: Premium
+Next Billing: November 15, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 19,99 €
+Extra Member: Yes
+Profiles (5): razzodeejay52, K, profilo, Nay07, Bambini
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1821381704	dsca	true
+.netflix.com	FALSE	/	TRUE	1820077758	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKcA9wHyiUufjc65UIJxTvHvf2fNdlQaeXnmtDyseBpo4dbw5lAzg0FfgSd3yapeji7SmSrNdj2Z7VLnZOVTCtgamrBzIWDUfSfm4SIOLQdCqVnzaKzcyuDg0w6f7RCCeq3BnLvolkK1bAXfbae1HEqD2SBydK9BAV5Jtx5qiOpvaeoCIa7ZT9xrqiZpZsqNl8nbXScTAvzsXk81mXmjPpKB6jF76SeSSg7khChgMToCT2HsFLQLa07DcbD-Eqz2rmhEplYcOaX2f4Op_0jYkp0LQixx5bO6UjejF3qPmyBcWfV8g_0EkCt8oky1R8K-wtxIaKspbj05aoCv3nSn8SgiX5_SluCcT-j9AtQOsb1QJ-vd9j_8s9oWLH31nuyWvjxLLyTPtIvbkWBa4_8k6LWGUhZMd8WfRwgd-pwFRhk8E-CSTVpoakfi3d5osYK3NFx52pZcgOfdPB5M4eqOZxON4ZLvGB8EzlsWtmtNs2B4m31XIXHic593cll9SgBC035kjtRCscoYJNWDvunqEDCx_CnGOv_BgzY581BX0gYBiIOCgxllb_XWFUB5xfdXq4.%26pg%3DP77VVJKM6RBNLLXTY4AKQQX7LY%26ch%3DAQEAEAABABTEgtrYcrrXvmF5NcK0Is4v9n1BNlRzEd0.
+.netflix.com	FALSE	/	FALSE	1796338443	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796338443	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1818357687	nfvdid	BQFmAAEBEFKByBMKUs4QrxFWMql1ACpgcoWkbuh9HO47G5MhFxlLbsrjYyLpvpwX9uGAc99FFYnvjRBVeCRzunLsXVLsht9pjzxcYIoHEhfT1XQSvmZUUCmLXD_ORc6TKq0Fn6H9de30g8Jbx_8DhtBiBJ30WfYk
+.netflix.com	FALSE	/	FALSE	1800896537	OptanonAlertBoxClosed	2026-01-25T17:02:17.899Z
+.netflix.com	FALSE	/	FALSE	1820098443	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+05+2026+00%3A54%3A03+GMT%2B0200+(Ora+legale+dell%E2%80%99Europa+centrale)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=3581a130-c00d-45bc-a5d9-312486020c24&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&intType=3&crTime=1769360538396&geolocation=IT%3B25&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1796338443	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	TRUE	1820077758	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQUb-vg5e7LlKMrVVtVubpXph5HuGUkM18.%26dt%3D1788541757949

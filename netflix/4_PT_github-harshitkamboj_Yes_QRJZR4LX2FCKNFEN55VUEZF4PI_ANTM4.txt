@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: PT
+Plan: Premium
+Next Billing: November 17, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: € 17,99
+Extra Member: Yes
+Profiles (5): Romeritoneres, Pitbull, USF, Maher, Crianças
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1807813829	dsca	true
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	19528b45-2ab6-48b2-b059-699dfbf48717
+.netflix.com	FALSE	/	TRUE	1822576037	NetflixId	ct%3DBgjHlOvcAxKNBEq_08Ylgrpsj2PqdlAbBvP9B8feJrjrkitHzIwKaK1JGJuLNAkhw5EGnEEQaT_LJAk6lu3Y0PI6SyoaXLAtSAS5OXFyC5PVXzIO6mRePnO05z5ABTN01Vp-8Iu-FbBQUvsLZmD7FHDbb3q9eBYcBIDtQDMOM4VveqIrkSQTaWmeNMuvYSEzRgqPQb6FXFgUD7_7t9mqjMdrvpSkWApdVDri1ZCeSHcyJrjD61tedfJiHUllSbzUC5p8O2GamcrM1gPE8mXk9zu_NZ8Q63d1zVjajh6xJCVBKfI4hoZylXHg-qZTQUYQ6JPpf_n1_94dHUq9XZkZeQhvrHCh3rEN5zGfkgbfv2vA0aQE7Ua1BF7TjXDO3LeW4pZrTDma07Olh-PICdCkEPgvJVPhUBGvoDEoJs9zoGLwom0wPIqFvp3AodHTl73jQd9MhME5TNwX3XMa27q_RwpdKevBZ4gn6Q35s7RTIrKeQl98TcQIIxH2D1Fyefk-NShKkEXdcJ37hzWgR8FxCKYFX9hgOnllB-xvy1jPloNzRimf4MfOF4NhmY8-5lP55Tc2k89v5sDwMvkBEm-wSU6T8yJ4udow9i5TtPLvT6VYdbELVL5jE1wcWhvavNDomXOqb5lSHWpiE3-K48gicD4F2QAa2dE-ePG9DLf2QHmF_Ba6ylFH1suP26FAKLk-Aty5DUPJuhgGIg4KDNDdRfpU8BBn3S5dgg..%26ch%3DAQEAEAABABQw9p0DyCjV95S8IY3Mw2-zNdo475et_uc.%26v%3D3%26pg%3DQRJZR4LX2FCKNFEN55VUEZF4PI
+.netflix.com	FALSE	/	FALSE	1798739138	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798739138	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1804789825	nfvdid	BQFmAAEBENHepWuZeGb5_99xVvITnmhgA3ZHhaRoNVWz3VOXeeDnKmdug1RSziHU5KTBqV_nLkE1EHmcqhylCy0eeQIr_elVqeKHWS3cqoS7NnzpjFTq3uHuX1bgLhYX6rGzsVE24E9d3kmmcbB9WHbKM7KLQWdE
+.netflix.com	FALSE	/	FALSE	1804789544	OptanonAlertBoxClosed	2026-03-11T18:25:44.489Z
+.netflix.com	FALSE	/	FALSE	1822499459	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Oct+02+2026+18%3A50%3A59+GMT%2B0100+(Hora+de+ver%C3%A3o+da+Europa+Ocidental)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=48b66315-38e4-4371-864a-56a8410ab3a2&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&intType=3&crTime=1773253545777&geolocation=PT%3B11&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1798739138	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1822576037	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTA2k8W1ddoPAsDMg2CTbwbh9n4c_GeETA.%26dt%3D1791040092352

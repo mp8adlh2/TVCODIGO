@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: November 7, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379.99 TL
+Extra Member: Yes
+Profiles (2): Venom, i have cancer
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	587f5a9b-a4e1-49ef-9229-a0e795940c25
+.netflix.com	FALSE	/	TRUE	1819256265	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKNA1knIHlSYkFuBTkBUFMSFXZOeDqAARQbW9_9wZ9tXgvCWhieta7n7hJNVGnn1C7qlfbVTpaOfEulWkX2wEs1uM3kYl0lSa8QxRruYEYiJ_f6VIjkVlfAaeGeup5lgbLgpFOc4zIvotr3bPD9CUkvdi0tg3uKLm7U_11TVfmeYcO234Gj-kHt4kBlyFd_Zr4ib97QnsY7ri8Nt4c_jkDEeoLHeYK4Kol4BdnvJseQnRhh5iCc2A42iKCd0TYRe7ZS35X2XNZNW_I76YqWTZ6L1KnFXSOlvwWHlqCsJjMwyjqF-Rx2tY0IrAZj2B0ALaqHJ1wy23nJ1E42cpbzOkSYy7I3axkN9YCn0afHgPgRbtsW8-Ul2zNC7Zj021vDtHmV6ihNYd7vUapukNSfHNk91T65Cpvc-xi7SqaH3rDEvTfIhPFGgYz0bB9w9eXBJ9PM6aOJzY2rC0onlwTNb7MezXL2f9hTSolzcNDaKlpgFhAyoYctKFbJK6-PLqcoCUb1PZLHzYiA6yybVIZbq6UYBiIOCgyJpR4JVEa56hK3eeo.%26pg%3DUD4EGTW2SJFFLG24IOKKNFGTCQ%26ch%3DAQEAEAABABShS1YIzEhv5RKNGmCjPqsaggghXurqBe8.
+.netflix.com	FALSE	/	FALSE	1819256200	nfvdid	BQFmAAEBENl2_fZ20gTKGozQWuHDDrlgAoeUTruFJ6hwKGUssTO18dLT8eS4dOprHCVijas9romcJBQrGUiNpF7F0Fs9tBAd8nTL1jqms-lcFlZJRw3vGq2Ji05bzkBBSyR4nY0yHCsst1dSN3eqRGW_Ya2HR-NY
+.netflix.com	FALSE	/	FALSE	1819256268	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Aug+26+2026+12%3A57%3A48+GMT%2B0800+(%E5%8F%B0%E5%8C%97%E6%A8%99%E6%BA%96%E6%99%82%E9%96%93)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=e53ba307-db9a-4aef-b1fe-df5136ca6fa9&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=https%3A%2F%2Fwww.netflix.com%2Fbrowse&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1787720219752
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1819256265	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQuL-80tsOBCmQk9Gp7ts6hzB-oEUO1wmM.%26dt%3D1787720261305

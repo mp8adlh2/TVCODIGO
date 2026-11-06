@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: ZM
+Plan: Premium
+Next Billing: November 10, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: US$9.99
+Extra Member: Yes
+Profiles (5): clinsmasheke14, DAV19♤, Bertha💅🏿❤️, 👻, Home
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1822321720	NetflixId	ct%3DBgjHlOvcAxKGBPl_aRvbmul5v-dUMB5zH52hUyTVFJPN5ksFB2l9autRRGIp-otxPPo50eMLKFUQRDknX96o0fLGqrss05SDJyhDK7w7NyjuVqRDBJsAr7_vqfljRf4PV9RUSKOb2PPMVlXraF_nXWcJ-2g8u8oHT0UkGd1Sv19MUTqAyOTSxCbURJ5pdnZkNbHVeUfE5WHBrh9VOljsr9EhJrDoGU78LayvhSdg7dm_2KAgSiwZTd5hcQb1SXmkog7g5C_3MEMnRlffypwO4jxOK3xDDTsWLDheWkQJSQTwNTopearH-qsSlnvWmcAH_-vlfdK4YTtQbRRfrYjD_gBjUXojeI7gATyLzrqYuCnQpDQ3HH48xcDDn-1275Ne31p2fM_lLHNEH8vOmpCFeeulxperTYRbkDl85rq_DQY2895z_qERIsnwkIfEeVRjVcfKr92TLXVNTPoxzCGVp4H5XnBdEorqbEmpuor-vvBOQ2EoJDWxcKnJmD0Niv6MB4gqsKynjt5zH5br8kAYSCRgvLpm1m-0BEPm2Q83EMUHtmT-sTuiSdDB1Le5GVx6Y99C0XTkbCGmQdTTaDJhxVE5MC1J0Dy6CdzS0C-8gd5YLrdU36OtKx2zxR5-DVUACPZbYGErUJcLwDL39Ow4p61V0kJvrYsfWqMniOCqTZ2p62nB0bDFk0L1DzqT2iJrGAYiDgoMm48eQQb2GdQE8H82%26ch%3DAQEAEAABABRbIfDJFFjqKEdux2huabBrEH6kN_hDsKc.%26v%3D3%26pg%3DYJNHZCIYAVDM7CHZN2SOYHQNIE
+.netflix.com	TRUE	/	FALSE	1798568527	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1798568527	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1820956627	nfvdid	BQFmAAEBEGOSFA9NfiGTglY0lPNflJxgysQ3uy7IHlljrsizexgU9CjnxEOfIKqMeW25OOI16gy7Q-Arx_xcDCy2pt6XKyx03BO7zC8HINbcg59887GrBokXYL6FhjJlnBiw_vhoxfjJ0WIZ4bvgAxreTgyJrq4E
+.netflix.com	TRUE	/	FALSE	1822328530	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+30+2026+20%3A22%3A10+GMT%2B0200+(Central+Africa+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=f9ffbf75-5c00-4065-ad0b-95811ceeee1a&interactionCount=0&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1798568527	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	TRUE	/	TRUE	1822321720	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTINTFckEKvC42Ct15VxEOKz85pE9iTeb4.%26dt%3D1790785781068

@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: MX
+Plan: Standard
+Next Billing: November 25, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: $269
+Extra Member: Yes
+Profiles (5): Alex, Rex, Rosalba, Dont join, Oth
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1812254440	dsca	true
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	d0fc8b3a-8299-491e-9825-3a5131f7c25c
+.netflix.com	FALSE	/	TRUE	1825099213	nap	BgiJv-vcAxJJ7jjLHu_GCpqubDQ6HWroQVQqX9dy3dpQrLeeQnn5MlSXKJ0oOYVtgyl-vFw2wJ1F6G7VMxAO2VuA-gIed--msID5qrbDp-0HxBgGIg4KDJI8_2ggfpI9ZaATjg..
+.netflix.com	FALSE	/	TRUE	1822075213	NetflixId	ct%3DBgjHlOvcAxKBBP4b5MjeEecZLEYJ6JsPme07IfDbMX2jum_imKVvmFy-EBggYjPEhB_E-xO9luETSJ8eWAZi0D6V0zxA_-JE6NWMzpJVn8YQrEeDlRcIj_bLZY2EfMdxVtk3J5AEScWMcd04MS8aVG_lyul8bViDGdPshXeJbJolGUJPFt5801ZDuwvfUvctcj-8okrO1lJfz3AiBXkfIyInuNYgLOiMSaLjwhRemcIRH7HcFbU0Aj5iuoALLdF-OcnAE3PZMOJC9Rwc47G53TXdEF__KmNYZza0SzxjgiCCNxY66QE-R4GU1Wm6TCfLBy8mVVRypN386af32UQdI8MdTmhQEVb48Pm7yJhanmY1BPyXTxCsQiv8r9RrsQumpj8VnSpHBgJSTt6VdyJFPtzD71TJTsk-gNdI9CDIRayWaHNck_PbCryPBGJ4fL020RDHLuBF9D1kXrVVrJAe7beP7tkQTk3_8ad0TrHkrdV8OWHJDT3_FnIW2f_1m_UML3C89_uY2I_Fb4_FwyIe9U8vBtdYHb7CRWGUSKS-uHXNMBZIhTbnmScwanaMeG0RXYXpZ2Km4ngbS9VoCr-4VqxCp5CzoKY6U3ckqjeKKjSmTNxmcBXoute4h_oualN8SOFkMozX9dzKIBk_He-b6JA8qlntVvU7kPNpIgwzIPmB6eKFLpIIJRqM8RgGIg4KDIBhkDwByPBcruV_zw..%26ch%3DAQEAEAABABTvn7NqlbBWtxtL6vwVgtjuQUwyXKzgq0g.%26v%3D3%26pg%3D36DYGMONQVDKDEXUCVTJOZVBHM
+.netflix.com	FALSE	/	FALSE	1798315213	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798315213	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554946	nfvdid	BQFmAAEBEPcG1U1xxFX_eOuWiGHqG5NgEgEOGK-pA2yvT9HbioUH2Q1ReqZesiIco5fcMUitQ-xfANBv1nSudmm67Nq_KaHhoBpOmoYwhNon3XYApVooFnpEYEeF_cg4tNkX8oUWrROEWwADNw_Guhz3yFAvGS_5
+.netflix.com	FALSE	/	FALSE	1795752847	OptanonAlertBoxClosed	2025-11-27T04:14:07.385Z
+.netflix.com	FALSE	/	FALSE	1809230469	OptanonConsent	isGpcEnabled=0&datestamp=Fri+May+01+2026+23%3A01%3A09+GMT-0500+(hora+est%C3%A1ndar+oriental)&version=202604.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=94d6bd99-d66d-4645-b496-c8a700fee2e2&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=3&geolocation=MX%3BROO&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	FALSE	1798315213	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	TRUE	1822075213	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRzyjIVR6g1rYkNArSg7GeA--oSKX22XJk.%26dt%3D1790539212963

@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: RO
+Plan: Standard
+Next Billing: UNKNOWN
+Payment: ORANGE_ROMANIA_BILLED
+Quality: HD
+Streams: 2
+Price: N/A
+Extra Member: Yes
+Profiles (5): Robert Elemer, Tamas, Pantex, T, Gyerekeknek
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1825499775	dsca	customer
+.netflix.com	TRUE	/	TRUE	1796554947	gsid	445e7ff1-6899-4f57-9398-5f3f0659affb
+.netflix.com	TRUE	/	FALSE	1796554947	locale	ro-RO
+.netflix.com	TRUE	/	TRUE	1822459666	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKjA860JoP31L1wyxOfouQQb7bcZCuc9GY2gR0FLMNOB8fKDLQ2TKnDt8Vg0o4v0JqQHgpczqm6gZApe0HHCQqGPfGUa-2m_vUykiri8AHmQ8VrlagJhP8Tg79jazlZm5GJo8Xe16NFwfkVEC4ngQ3vWGJ_W3iVkLR8L5Rlunb1xvSQ_Cj-ZEYV4VZMK9qwM28w2e-xEFJMakMD4wHb7ngo3V_i7zbOmMqe40paHsjz9CrwQj-wuaj2ahOZxpXlXMCAWTBnz3eeLE5MVhg1WcZOgKqS4Z4XNSM74_DM3wXKqcRCqSN7m0P7MoKaoo9TPUogMyAe9ynH2dRrzta61KY9m2-1dwHOl3_MyQpq-LOgIYZy-L4ddUHQUxyhWpitS__7n39ht7hSunz4PYin3X_cRNCNY0A3xwwvSwp613DDQTVNYl5cnlMyjS_QKo_-G885QueViNB7WT1y3ZzKy-F177CnfDWhXctoskR7gD6nLR-rIyYx_wYmMmpeOQCUKgqKVbG1_zGlG1xZLco1OuLEfjZYdhS2O2vwqBmz3CNpeTSSPbLWGAYiDgoMeLB0ZHwLuVL8Nxse%26pg%3DUNV4W2AKMJGQ7HXWNPNP5GXAC4%26ch%3DAQEAEAABABRfeHcVMFXvn-mapM0IBhh5rqLw-oe1XeY.
+.netflix.com	TRUE	/	FALSE	1798715775	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1798715775	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1822411169	nfvdid	BQFmAAEBEIzd9aLawcm7PMdFRCB8vd5gZsOaMAz8rPE-tMZK-rFRMUJDLd8FJJD69HGyymPv66q1b52RDQmxntqqcnyHcTtloZcGFtdbhCOjt6zNkhK1k7RCHyo4zVDLTmxZKvkKvEfWgaeb4lW59sQ0p3tlavz3
+.netflix.com	TRUE	/	FALSE	1822385255	OptanonAlertBoxClosed	2026-10-01T10:07:35.121Z
+.netflix.com	TRUE	/	FALSE	1822475775	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Oct+02+2026+14%3A16%3A15+GMT%2B0300+(kelet-eur%C3%B3pai+ny%C3%A1ri+id%C5%91)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=d1568eda-1def-4a99-a79f-f0a760855c81&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&fclco=&lastConsentTs=1790849255&intType=1&crTime=1790849255529&geolocation=RO%3BHR
+.netflix.com	TRUE	/	TRUE	1822459666	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTDO4NAASev1FVRWgMgP4BoCK2m3g0FIOY.%26dt%3D1790923666381

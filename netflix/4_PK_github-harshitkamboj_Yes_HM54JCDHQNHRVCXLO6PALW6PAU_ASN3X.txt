@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: PK
+Plan: Premium
+Next Billing: December 4, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: Rs 1,100
+Extra Member: Yes
+Profiles (4): Chickoo, Zeeshan, Dou, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1800722562	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Jan+23+2026+21%3A42%3A42+GMT%2B0500+(Pakistan+Standard+Time)&version=202512.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=08c8061a-dd3f-4e73-921f-0f6bd93fcdad&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1769186199085&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1800722555	nfvdid	BQFmAAEBEL3inEoQLVxeExRletxS8bRgOi9Zi6ax3T9IjB_pgtzfo7q-N33T6MwhUkWGgraU9dS_B0kyQB0T8f7v-WetJz5t0WRqIRxc06rz_YueAJccaurLc-hMlO1TN511wu3N3VVA_JUL8Pe06otO0O92mp6L
+.netflix.com	FALSE	/	TRUE	1801150111	NetflixId	ct%3DBgjHlOvcAxKiA6xiAUKreeRjD6ZUHjPk4Alyy03hBjA-hspafinFyibbmNTOkPhmszjuzWz3WIuzb7AAD67i-QGJXELDxhEyLClyWGG1LaQrFbovsqdrAmJxmOugicXjAN56ma3dABqhRM1vI-qKO4NkXYRpPOBo4d8RGkHCxLSBP6QXNskCJIMZ_BWOkbdnIVVo5hjhUnCXgX9-U9AbNbZiwb5PHxdxWuL3RcyswXfzPcP7AmgJb9xyeFnQTx9w3Xt796l4Yg7sdHyYtF6P4dN0IgOd6qx9Nvaux5awarNWuQPSra3AYP3eyi4MlLi--z35w14s47IpL-sxeWB6P1kk8WrVZcvsFEzr2dJP1wLEJgBsOfMmzwkfLIsB6xstyhorGfx2gI7fd0vbfKE7WFmHSMPTMrWjWfYl2T5Gwi79sJfP7OsDqJnVB_4zs0wVTtGObppTqvRKfv2x8Ciun6tHaqC6UVqzKJFgjTMk6T7OL2FrUXRruYLCOFhFZWUwcJuRfdviEPSQEzV3byipYghzbVFCYE2iZSYVYpOwEc6a-21jXmVc-2V-2DsYBiIOCgwuXwN0AEKfGXRltzA.%26ch%3DAQEAEAABABS4HtWpyhf3JFtDPfOhzL7JK5pQiOE7rfA.%26v%3D3%26pg%3DHM54JCDHQNHRVCXLO6PALW6PAU
+.netflix.com	FALSE	/	TRUE	1801150111	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTmjcJbvpjjzeHKPc0hxXonZF3ruareXxM.%26dt%3D1769614110488
+.netflix.com	FALSE	/	FALSE	1796554946	profilesNewSession	0

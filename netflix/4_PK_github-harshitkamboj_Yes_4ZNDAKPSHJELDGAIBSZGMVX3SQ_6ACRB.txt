@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: PK
+Plan: Premium
+Next Billing: November 21, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: Rs 1,100
+Extra Member: Yes
+Profiles (5): Zoya, Ustani, Hassu, DK, Ammu
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	a59d18d7-c1b3-4b33-ba34-759c12dfa926
+.netflix.com	FALSE	/	TRUE	1821180004	NetflixId	ct%3DBgjHlOvcAxKCBA4DmeeLmGDQGfQrAAATHUXFuDWclZa5PgSjopUlIhNENWp1NPYHDiuIcsk3MgLQvLjVFlthGy7OcuKp7NJ0lJAZEMPxqBQGVm5fFNxcuSJ65tXidTyNTdkiO85W79uuz3tdCHnRuGJo17-odKPGDC2dkzaCnolF_ZfPowZk4Bks_-dEJDoTi23R8MjijfYMF-MXNgd-FJsnhqa0C4W0HnesWI-F_EhNrLikiRXnSjC1pxAH4WPVxgD8tOROMBX_YO_M4LqHfJ2fMFvU7jEXG00awypz5gX29U9sud8Z7FwHZ-SLX8WHIaUMlJAf1ZIl8fK2-5rxoOlscXck-JmLffWNZqmGKuTl7i--2yUer6mydmSfTZK3-47A8GnVI8apEGGaXNb8KD7Bi28AsTwDPoYqbTBymSJx1KHwJtqO2t_48-2Q7febzk-fZE0RSSKyrhkKClNxfGwM6ptXsymg3jpcqDqYAHKZTcc_YdgjXXqyTK620kbMldLRr8P9RpetzQ4_ScamVlJC5n_jarzNfXrlsnhnW7dutuT0fxkJou2C69PsnEYRTdGN6dZEiNQlkBghmouCd1x0Dv9lNQOR83sZ8yh7zaWuimuYpMVCfzRu_n6SiyRN9A6VCBHYUSrltYELUGJwexW8cpxbACmdeXzMZEbi-AFcdo2yu7LfqKRwGBwYBiIOCgzgMlOXxxImja04tps.%26ch%3DAQEAEAABABS4grN8aNi0s42s8hlLV7wENmNhOlRVQM4.%26v%3D3%26pg%3D4ZNDAKPSHJELDGAIBSZGMVX3SQ
+.netflix.com	FALSE	/	FALSE	1797420005	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797420005	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1820413270	nfvdid	BQFmAAEBEIHizjWLIa43MmaQ7RNRKL1g5r3ZnvM5Xgy7Ym-Bv39ARzrGo1SX1yhm8StqE-p1btOWVWjyjgoqlpJnExsm29MB5BpL_e8v5Ka5RDhJGKd8XacucGqSHDk4WbbvUaLjtauhjXYloHq9BBZBmW1fsMmH
+.netflix.com	FALSE	/	FALSE	1821180008	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Sep+17+2026+16%3A20%3A08+GMT%2B0500+(Pakistan+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=b4816820-82da-47ed-898c-6a1bce15ba6e&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&AwaitingReconsent=false&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1788876466515
+.netflix.com	FALSE	/	TRUE	1821180004	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTnkNljFX9cy1R0lBiZx_Hv8E5uroOlhDE.%26dt%3D1789644075959

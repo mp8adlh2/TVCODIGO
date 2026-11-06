@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: IT
+Plan: Standard
+Next Billing: November 25, 2026
+Payment: PAYPAL
+Quality: HD
+Streams: 2
+Price: 13,99 €
+Extra Member: Yes
+Profiles (4): Giovanni, DANIELE, Federico, STELLA
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1812816561	dsca	customer
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	6a94fccb-e827-4315-9753-4a563bbbe2d9
+.netflix.com	FALSE	/	TRUE	1810816818	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKeA5BtcDH0NU_kIab0mzYz7oY5x1--GXlPrLp_Rrd5YDh4VLWDaEcRR6QgCoVSdDPqvvov9tytGMAfH6S8IWqg9G2e8ScO3TKLEYE_zdRe0iaYxIbi_JTsOKmShXaqc_g5GWnm8PSZNKXUvqhdunEowsSgWRaisBoHZ7LSLXL5Q22nemFossOzJ-NfS9OhzE_VsHgvftggi5UTBIRFJroACT6BpfPBl2luLfW7LjPT9MVNCpEE5FCVWe6n3Wx2A__Bf7xpKEctt85ZCPkC5RXGcCmRUkwYrOV-8HzI50teHsRfBFwNe5bB3StNVe5ZMPJIuPLtk1rVuIsEqbFC_e0FfMnKNXd_qGvv_eEZUQwAtrZbwJ73I1amUR0H_nIVKDRNA_bvzcJf8s5OSn45OqM65nMqh5fPBycIoWja_BBEi1JzlMUZXlbiUv2qI_RUS-B_5w6GArPa4SXDJI-gQCgkte4V75pW39KzrJ49rHovAC59En25DN-CVqfAI7FiKsDChaYayXBQxqbSwKJ7OCRuTxaP1C205OjM_nM-EWEe2BgGIg4KDKju-c3icL8zMACZYQ..%26pg%3DGDY2OW4O5FHOVCZN5BMFU7EEWQ%26ch%3DAQEAEAABABQu8nqx41jjcBkZqcgRARL9gC_PRlmmYD8.
+.netflix.com	FALSE	/	FALSE	1796554946	nfvdid	BQFmAAEBEENOfuolXqyJkZi82PHjQ6xgZH0EmJ8zJDjxoowsjX_kGsuBbRDlcGC-dUol4J4yjyjSCViCL6gaRbYejumJEONzyh1AN6KJ57YrYDpLPtPNw6RZK9bdrVDIb7qzA5EobQE8f8xeyvUXii-XE5QmJrPU
+.netflix.com	FALSE	/	FALSE	1805463045	OptanonAlertBoxClosed	2026-03-19T13:30:45.347Z
+.netflix.com	FALSE	/	FALSE	1810816820	OptanonConsent	isGpcEnabled=0&datestamp=Wed+May+20+2026+14%3A40%3A20+GMT%2B0200+(Ora+legale+dell%E2%80%99Europa+centrale)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=ec4ed88f-36a3-424c-a92a-5dae1c5e0d4b&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1&geolocation=IT%3B21&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	FALSE	1796554946	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1810816818	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQc8JE4bF8vAOpOD2ZPlu3wiUl__xNYoLc.%26dt%3D1779280814617

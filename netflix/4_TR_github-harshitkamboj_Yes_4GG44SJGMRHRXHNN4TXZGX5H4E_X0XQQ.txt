@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: November 10, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379,99 TL
+Extra Member: Yes
+Profiles (5): Gülcan Demirci, Satunuu, Mustafa, loli, Çocuk
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1815601292	OptanonAlertBoxClosed	2026-07-14T21:41:32.533Z
+.netflix.com	FALSE	/	FALSE	1815601296	nfvdid	BQFmAAEBEPxpVlsm2aSsQwh3eqC1sH9gtNZsbrPScboBqLJCDVvEr_P6IMeS6gtMS-V3JkRBmOZ3l7gedXCUUqqP11_RL916Fm86nIF2ia8lnybeMtHWOV8xGOwRyB2d7_awMJBjZNT6IL4Zws-XJHcovXH--3L_
+.netflix.com	FALSE	/	TRUE	1819403741	NetflixId	ct%3DBgjHlOvcAxKDBC8fTD3eWgnTs6k27p769SDEnDNrKSPiErv1zEpF4xAm6eXScgjkHwRYkh-gkyfDIxCHiI8HERSwq9C1RXgAKmCP7NgBPHKEOYlOLlSyjwEZHjZRLP2DStjmREzB_0h5tLFt57gN_KuLIoB7QUJc97KyS49m9QiFdu6sHHkL8UO6tnmbo9_yFPvNOdfBkfXUsvVFRwIhx3fUOa-1jP2An-3JuGwEGQgShz90JtmJZllehW2RqEC_rOVFj7Ty0AbfgVNm0cqdr8ASmyH2dw4ffzut67azVk6WhKdiHG3DqKcC-ZO6RP7_k32w5uLVM6To6lWccDHaKijqwBqy6GfKXBWA30yvKmBj-CuoTMjFU4JfgU9XTwMFcRj0yTWBzkXN4vc8XbnajuN4CAz7q47KtzWDkN-pV--lKa-AwADOjB02hyNpe5ouvr3AvoUQ5Mr_AUAHc75rzqaJsVQF3lQWaGgqTbpUVAaquDcfMfAmdWfmafzOr9dySOs9TU446g9rANqSIo7_d70KnQ8JKXWAB_NPpAcROpx8S4dexR3JtZZ8WzPfHQefYOuX9a8zoKc4y3mth3YRt9skNKnWFxlxfalor2lY3ooeaAhbqZ5hKf7G0-B6tfqx34Qr9_sGJIiXC8xzuwvK8sTeASAcI_tEuCY3qcZtl-NFDrDJXB_tDtLSuzelGAYiDgoM96KZhJN4zqtpt2qF%26ch%3DAQEAEAABABSqMLKz8kKR_cxVNqsB__Hwy8ajBrfyBfU.%26v%3D3%26pg%3D4GG44SJGMRHRXHNN4TXZGX5H4E
+.netflix.com	FALSE	/	FALSE	1819403741	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Aug+28+2026+00%3A55%3A41+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=d06fe1b1-b47b-401d-9fe3-b30ba03940b1&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&crTime=1784065292966&fclco=&intType=3&geolocation=TR%3B35&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1819403741	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSEoWMdStbnvHvYKEBKat12p1X-Cexg-Wk.%26dt%3D1787867740541
+.netflix.com	FALSE	/	FALSE	1795643739	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795643739	netflix-sans-normal-3-loaded	true

@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Premium
+Next Billing: November 15, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: EUR 21,99
+Extra Member: Yes
+Profiles (5): Yuyuta, Yumi, Dycs, yanis, My
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1821628238	OptanonAlertBoxClosed	2026-09-22T15:50:38.603Z
+.netflix.com	TRUE	/	FALSE	1821628738	nfvdid	BQFmAAEBEHeR9FVzajtXmH7JYA-RV6tgKuqX_8Ce5mMsv9C4p6D9SOrbwnA-akMIdEJhDXAaq6EBK2DSsSU47sTjLs2Vk0rQEtRu20XCw8mpAsE3nYZfTiHAyTq7k3FpO4175ulX4fiZXbE8XlPR-XTTetW6feyJ
+.netflix.com	TRUE	/	TRUE	1823182187	NetflixId	ct%3DBgjHlOvcAxLPA7-ANu0XfJESzPPhx_4uk0mBR1pNRh2Mp9Xfk8qPbGf7k1pVl3Na9qcqHpRBVWcLatW5l1J1uEyxrpCaWaOq6lL7tVQj37VWQwux1KlBaNkV5s2HgBNZ1aSvWRgl7mgQIVsV4v5mom5Xjg5XCrZGB27enPjwgrDnMKqhwofeKQ1wH4QKOpb-OZwAdEQeXxE-IlD2zgVFkVn20ffUKVUUFZJ3Ltdy1jlCRmWFMoCWv2_kQKcywyi5PpXfy_XKd09TNVjGB5ku_Ms8sjJJPyItCnu2IXbJ7U-ULHZiukyRd3LY68RdAgCmcgycjBvLnZRHoLDYK9rhsOziqG3m1eZ75Cy3amCHVh5CY3Vpgpab4BT7P-vUDbsEn_b5k260y_OrFLgLcudANbPQvLbaCBRk3Y3-Zq0m6SlKSFoiKq7QxqSCzvxZKNfskaC8Wjq1fyms1XqVwRk11INVrOme8vtMVt54CTSln5fOnBJz8GmfV84hgdLfqWC0wFGyo9X7dxe65Rn0RRM61UmZMualN18pEGTGSwKyvMX_LYSq2UkghJeXsSahHxUd0CSGorA0LU3e2Lu9ZyvzimQQzOD50Q66Uc11bST6e49rrb1QdXXfEb4YBiIOCgzILdeNjdXnIP-NskM.%26ch%3DAQEAEAABABSKTFKsd8VjroibPpLmoZYkrcX75xmKmnk.%26v%3D3%26pg%3D34E2IJKMBFEYROGAH2P3BAUFZ4
+.netflix.com	TRUE	/	FALSE	1823182191	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Oct+10+2026+17%3A29%3A51+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=a32106a6-65bf-43fc-a730-fa2af57a2f17&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&fclco=&lastConsentTs=1790092238&intType=1&crTime=1790092239293&geolocation=FR%3BIDF
+.netflix.com	TRUE	/	TRUE	1823182187	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQ_t8r8lYhDI-pwR9_qfBbPpEhIC4LBch4.%26dt%3D1791646217707
+.netflix.com	TRUE	/	FALSE	1799422190	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1799422190	netflix-sans-normal-3-loaded	true

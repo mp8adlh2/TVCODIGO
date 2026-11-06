@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: IT
+Plan: Standard
+Next Billing: December 4, 2026
+Payment: PAYPAL
+Quality: HD
+Streams: 2
+Price: 13,99 €
+Extra Member: Yes
+Profiles (4): francescodiprima7, Siofi, Jefe, Bambini
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554945	flwssn	ca1148d6-a355-44df-a3fc-dc1312644230
+.netflix.com	FALSE	/	TRUE	1796554945	gsid	595ed7a2-c4f9-463f-baca-9751d61a407c
+.netflix.com	FALSE	/	TRUE	1796554945	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKTA7PN7Ps4uNu-dB1WKL895HIEionltv9pdEaAaEJmVR3AJO5segYofN3BwGfU4N0WxZdKl3swnvxqza_cF3-aODHGRmjiPcYCxeRHwq1R42nY4WENUuX7q-0vtAqQhXoprjcmht2kTvil6wjad7HRxc0Ygjfme8ag0MKkIx_1uHhsOTCJzy0VJQOHCraUItabtviLj1l2zFMMN3gHHGl5HaR4VlHszr7fVqkBlCLotUBT7cHWF9bbEEdywoewTMBgdv2ivU4yU7hzYEzVXtCeZT9W2JMgyTeodkhOar6OtZNIOHvRotihY_VSCL2nrLCC4oZ_jHswdO8vVpGd9oQw5-xCcPMja6EGClveCwB71SofwIu6s7ktJ1Id3ivgsIDVsGOgRHGrEZr2u2dxy6W-IkMFjTxvNBzCTS5kj9atdsXE-idoFsiTLdTwxlVIIbTJEeuvFpQA7n-Lz0g_ljoO5VcOGVQWiDGIAnJ2sLvBOcXQEb8RRq-pWkIvFZJ4LU5GR-n4rnd1eWI0oB5XeYpp92PFHj0YBiIOCgyFQtro5BVzv409J1Q.%26pg%3DAKLNSFQJ5RHWBD57CCYIEQOJTE%26ch%3DAQEAEAABABQUJWaed4vbdpBhVSAZoPVCSYotoThb-Wg.
+.netflix.com	FALSE	/	FALSE	1796554945	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554945	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554945	nfvdid	BQFmAAEBEMMT4oSogKdrtNE0FDeoISdgDKHbZvuG-IHXtNXcfcGuyyEP9W6i4p6Z9pHf0LzIs8v0UJimww85ABf8M06XrdybwLTP5jKKMgDnNHRBhnexLDFRcL1ehVMKqSFfJt8SLwwFBFLmbjRVkqMvSqnwgEyI
+.netflix.com	FALSE	/	FALSE	1796554945	OptanonAlertBoxClosed	2026-07-07T00:20:28.426Z
+.netflix.com	FALSE	/	FALSE	1796554945	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Jul+07+2026+02%3A21%3A47+GMT%2B0200+(Ora+legale+dell%E2%80%99Europa+centrale)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=e679e072-caf7-4c7c-b121-699f61b8f60f&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1783383628939&AwaitingReconsent=false&fclco=&intType=1&geolocation=IT%3B82
+.netflix.com	FALSE	/	FALSE	1796554945	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1796554945	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTJnasEhOXrYhJowhmCiqCLILFGNV0SEjA.%26dt%3D1783383706241

@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Standard
+Next Billing: UNKNOWN
+Payment: ORANGE_V2_BILLED
+Quality: HD
+Streams: 2
+Price: N/A
+Profiles (5): ma.ol, wil, HAHAHA, Tit, Guest
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/fr/title	TRUE	1815500095	dsca	true
+.netflix.com	TRUE	/	FALSE	1812476072	OptanonAlertBoxClosed	2026-06-08T17:34:32.837Z
+.netflix.com	TRUE	/	FALSE	1796311328	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796311328	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1812476095	nfvdid	BQFmAAEBEOlFVMpCxzdrfxVIHSyCuORg73Rq_kyRvT3jlplmrYk_Ss3Vysmnh2s5LPdy_8nkoj2LziN1Eq_PZwZpLBF9wmJlO-TFQIq5yjKbOaz6djSKzmUzo0Fncdb5EdDjjFe6q2lQ71JnF1hOSKptIB807TIZ
+.netflix.com	TRUE	/	FALSE	1796311328	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	TRUE	1820071326	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQJksO0eohRi7ARIbyRcwnJdwXg-uZq6UY.%26dt%3D1788535326508
+.netflix.com	TRUE	/	TRUE	1820071326	NetflixId	ct%3DBgjHlOvcAxKBBPbvZ_OhxxVNh6lGN7cbuzmTIumx4zYNQrKcGkUQ_igBnwdtL6XPmDAJIZSSKh1IF5M1ytPxbwngZ2v_NrNV44cftEHP8ma6UGv9w6pT8AoFmEEoFSxab-btwBmILEFZWd7L9gyMkxsypmmRzqd4EOWu0JBQ5DOaK9hcH0sP7AIWukfIfTU7-9zlnglS8UqokoJLTb2N0SdLYLDKSsL_1AVhdhuC5YXpCpN7nPu2G-FV93sv3QzYMDDyJrW-JH1MJulNrpDZHKYmboJCzjh19HW4tuNj6pUKj6-4ntOkuUs0Y2-2CrBtRwjFh7OtoEN3iNCwwf9UhZW7lUfv4naROQvx6vXre7XflFLcRxDqN2ZfQh45_BetJeuGPVcXYbas7sfpgn6VR6qJcLQ89i3KwnE3L7ci28mbrN7bZvGvs4saSdJ4CrB1ATMi2cWbAGQmykyzoNRF45gGFFZERXs7usYCl_EjuRCH2n9Xmi0-FV_wz5Oane_DXJYcsbAeNo1wmMNaVv04cVuOGHaOA6kntKiPXBOs0gP3yOwPTYiZbLAHseRnkeL_iGunsV-I0VCGxRr-rlKxseACwD8s0tmj-WEeqDj-Tet9I4ATpt3AeO56oQgof8O9Kv2HeWMsm-IhYfbMZZOE9xAiIYWg5fdij7X4tmHTyV9EwoCLnU5QU4GJRxgGIg4KDKd8te32KiPPmTSleQ..%26ch%3DAQEAEAABABSqnRh--eAZXcgpQ_9dJH6NNVXZaaOJeqE.%26v%3D3%26pg%3DOXNPDWJBA5FNJLTLEYDQ3T2RI4
+.netflix.com	TRUE	/	FALSE	1820071329	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Sep+04+2026+17%3A22%3A09+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=91e42a50-8d1f-4137-8893-0d7a13c90c28&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&fclco=&intType=2&crTime=1780940073295&geolocation=FR%3BPDL&AwaitingReconsent=false

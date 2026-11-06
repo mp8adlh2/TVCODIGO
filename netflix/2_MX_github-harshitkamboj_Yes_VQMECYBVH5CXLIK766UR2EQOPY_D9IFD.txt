@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: MX
+Plan: Standard
+Next Billing: November 29, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: $269
+Extra Member: Yes
+Profiles (5): Cecy, karol, Gorety, Dyd, Niños
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1794266331	dsca	true
+.netflix.com	TRUE	/	TRUE	1796554947	gsid	f60f892a-c17b-4282-8d53-9f2393054b87
+.netflix.com	TRUE	/	TRUE	1799542229	NetflixId	ct%3DBgjHlOvcAxLmA1adOL8g_nbwd4YZTa39wDAZ2pvj4VbeJuAFEFBo01PYDDFoamlBTiP0SPNxKE8y4FwlzmuivrfugPZeDzHHE6rWj9ezcyNdXuI3gT0SKL3lEO7Xw_ugddo_1NdGlovbPPEQ5FPgZ3phrPs3qHLf0Vx5bzVAsmQVCGTgAth7TFJbeJCJs2UE41XIrmGq1OHpNxUL2Io_sMM86hCz0iMABuc7utN2MLfk_CVQW6F306gnAA6mOD--r7DU9w6n_kmAQxjkn0Bfj8QXatCrOWyFqXQmVZOJJAr2SUloRfYHU-2NkZCexlgvzJ06VxxyY12RTPFjfX6ogWpXcwgOqXDBmZoLvW9Psi2GH5cVRSGZ_LfuRoKaQKyp1vpsaTn1Nh6THtTPEklcvpjtC5bzU1T704cdGWDRhle34_QXXh2l1QcnCZ2CwSGFDzzxhulstm8HDbQBJI6Il2JtYJ7uouSe5oHIRAzex-Nr3_1bCgywNDaE76MaObau863Xmp-E2xgbm_CJ-bQ4gycYkAxGi39UiybghEFHFaunphSfgUKtWcpmfMQ1XJIRY1gFRVOYIH4rBpdKHK9kJ0CRGF2-EocJ9xyM89MOgnSejVY4C_LAJEJiAh7U9QzlDBc9mJY6ke40gb5R-teK6RgGIg4KDM0V1CgoPiUEh-XP4A..%26ch%3DAQEAEAABABQSPAsHx0CUO2GJYrbHh7lvV9lv8nS6uRo.%26v%3D3%26pg%3DVQMECYBVH5CXLIK766UR2EQOPY
+.netflix.com	TRUE	/	FALSE	1796554947	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796554947	nfvdid	BQFmAAEBEHsa0V13uIPSxOT_TMgbMTlgGeyMjhSnYlf8NLmeIV1-h3KxERUvFbJzpQ38DkvXUYsyz931nDYJCYK7urGVClfoP4i1yL-mVyj_84nXZ7skXThjy9NwPTo6PpeqhzmPaR_vbdVoPU93LdZQRJz85qhh
+.netflix.com	TRUE	/	FALSE	1796554947	OptanonAlertBoxClosed	2025-10-05T23:19:11.027Z
+.netflix.com	TRUE	/	FALSE	1799542232	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Jan+09+2026+18%3A50%3A32+GMT-0600+(hora+est%C3%A1ndar+central)&version=202512.1.0&isIABGlobal=false&hosts=&consentId=876d0330-accd-4772-a7f3-773f2e9020d1&interactionCount=4&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&browserGpcFlag=0&isAnonUser=1&intType=3&geolocation=MX%3BSLP
+.netflix.com	TRUE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	TRUE	/	TRUE	1799542229	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQbhSMIDRh6oCUE5mM1nIKGjEsak8oswqM.%26dt%3D1768006229838

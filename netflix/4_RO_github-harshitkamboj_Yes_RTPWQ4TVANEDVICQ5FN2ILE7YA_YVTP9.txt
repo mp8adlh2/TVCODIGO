@@ -1,0 +1,29 @@
+NETFLIX HIT :👇
+
+Country: RO
+Plan: Premium
+Next Billing: November 27, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 13,99 EUR
+Extra Member: Yes
+Profiles (5): Iulian Danut, Elena, Adi, Ma, Creața
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1814684389	dsca	true
+.netflix.com	TRUE	/	FALSE	1796554947	flwssn	4373d0cb-e96e-4fc4-b482-dcc212cb5ec3
+.netflix.com	TRUE	/	TRUE	1796554947	gsid	b07b07c4-d4b4-47df-9d64-0e1052570894
+.netflix.com	TRUE	/	TRUE	1811660393	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKbA6rJHa2fFSdM91nQ8PQyuSc9lVU5lyENLFIUGG3t7YWNMBHpfMC20ksKDIwikbRTfdeo_C74T1A1bXVje_5f0rU47C7q81PyTnEm6TUoWpySd4cMpd-KWk7J78NbKPMOluwKjzmo_rQl6S0i3Nz9cyOVHz840I3cmho2z_zJN8VeV7wqCvpUuVgmY-Abv4iLTSUcZDixsdhqUnCNEipffkozzgzezbh35AE2AXrxZFfKeRQso2RbO3USwakMj-yQXlacWILlDGaFNSezxi4jN-P6-9wFFTpCNmDU33kiMQ2mIy5qT1CInaKhiu4GddkTVQ23nVwfhBoJCQAxpfs5W6ipTHYmmH7ScF427lyzuu4lz6okL-T4hNPdFPu77-_9Y6axoTpVXMUmAYRODHr4YOLIeZ6OCyBSmCAAh8MIIllD39-xsgNw1X_sA_UvxivQp5Xvg1VpbYTmc49l7B4zpmyJcOVKfmGhmL-Hc1iQqvFDCt3IL_yG3C_z2BMubTl9R1mmS2TScjdkq8bP4_4rAqXWsccTVM7eVO1mJBgGIg4KDJnK55lGlSGtFORnDg..%26pg%3DRTPWQ4TVANEDVICQ5FN2ILE7YA%26ch%3DAQEAEAABABQQaGI8UOtfMoHXTvvdjMML1dkS1h9A-Yk.
+.netflix.com	TRUE	/	FALSE	1796554947	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796554947	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1811660389	nfvdid	BQFmAAEBEBYbry86u3RCUPQ-2zqtx9JgEjUFT1aTjImIUm35ioRYY6wsmJ4bMgk2Ad6Uwh8imK_LinznsnVs6NbR8glv74Eadu5wI-GeYrWaknwBSQHgw0if20gwOfJ7_vLdgFFgFj1buvfPqjEPQWlNK69YJsB_
+.netflix.com	TRUE	/	FALSE	1811660371	OptanonAlertBoxClosed	2026-05-30T06:59:31.947Z
+.netflix.com	TRUE	/	FALSE	1811660488	OptanonConsent	isGpcEnabled=0&datestamp=Sat+May+30+2026+10%3A01%3A28+GMT%2B0300+(Eastern+European+Summer+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=663c56fd-855c-4091-a6cd-773bff2a1cc0&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&fclco=&intType=3&crTime=1780124372343&geolocation=RO%3BNT&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1796554947	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	TRUE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	TRUE	/	TRUE	1811660393	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSfkrXNdaUeiLMbG0k4wSEJxqM3c28LShc.%26dt%3D1780124396530

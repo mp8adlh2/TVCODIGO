@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: PK
+Plan: Premium
+Next Billing: November 15, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: Rs 1,100
+Extra Member: Yes
+Profiles (5): Malik Haris, Haris Malik, Haris, Khadija, lolo
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	329fdf7c-f7a8-4f46-9e25-406064f66380
+.netflix.com	FALSE	/	TRUE	1821389615	NetflixId	ct%3DBgjHlOvcAxKJBBnVDesie_j-kLKb-2EQstC-NZHMDS9fg614kgKcYGcURlcANQWLyoJC8Ihbf9tQBd3Dj5BRhvsHbModes-9HI96a7AvLWGqgLmkki7OWnjw9e3UUfI4OidSjvVJhs-GRaGzvqhNGUUJtc_GOedU9PxSbJ-nB4PUyIYxAc2iVISt5IFTQVnBnzDPRRTnvPuYCfgVuwlFV-TJ_rlQ8QEAg_teHUwpd92t8pZPUU73_hIq_B7Ykhc7pl32JGZaLfOtkHrRyqM62ScQ5irtfKtw7GMg_yZKxv4DzhzBNXmveRa3N426kqtiVxZw2WD1MAE3olc9feio3c9IQoVgQv8zj2zbk2zxFXiMjanT-h_Sf1t9I7jOEPpsJRSGdDOE4RgVxfHUM3mRnWLUF_y6FABRX1XYjnEC66qIhlUwEPp9sqy6R-36RRJB-hN3PjKkJuG0WLOQxuxchT44QkaAGeIyRYCT9HRxwtRp6ImGoc4DAXAF-jrTqybLSi7kigT_6ZtNm9KwXKY5KK0drSzNeOIPePi1rcMceriIPNhTX1TKypj0jd59ZEa3v0yagHRi_LnaCH1BOlL3vkPphgxEfZNTs0EVQtygHOt4_lt_-kCRwvxbbiX-dFgZiVi11X6WD5_b-GDIYyxYG-RXg0xcKKwkmE2_8aP9chMl7zm6CG-lcGQYTQ6mkHV3DDazGAYiDgoM9oCHH1Dpla3Nr894%26ch%3DAQEAEAABABTXdo50GRVXq-haAD-sMFlmSktvNbGx4hg.%26v%3D3%26pg%3DXONVI6D2ABGHPLIBGCHUERBAIU
+.netflix.com	FALSE	/	FALSE	1797555807	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797555807	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1818109920	nfvdid	BQFmAAEBEAkbke3-UXnNtsQq0I5L9c9gn92zyWHGM9hVkqPy0eQXrAzYeFGIw0dqMCzl4i32g0KB95C92ikjp1mWG2elqE3mpQ-cNn35ftqwKwe3W8WTGRyNBmJm_W5fSEzta0HLxhkjecDAQjlaE0iSyIq6pg-H
+.netflix.com	FALSE	/	FALSE	1821315810	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+19+2026+06%3A03%3A30+GMT%2B0500+(Pakistan+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=668aa30f-6b84-4f00-8be6-406b317390a9&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&crTime=1781474022078&AwaitingReconsent=false&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1
+.netflix.com	FALSE	/	FALSE	1797555807	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1821389615	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTFlG7ZuvLkfZUpKqkTwUuU1q1Je31U5eY.%26dt%3D1789853616724

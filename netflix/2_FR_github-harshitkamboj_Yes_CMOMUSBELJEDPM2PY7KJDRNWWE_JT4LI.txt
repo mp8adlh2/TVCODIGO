@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Standard
+Next Billing: November 8, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 14,99 €
+Extra Member: Yes
+Profiles (2): Kadiatou, Jeunesse
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554945	gsid	d33c470d-e996-4980-9a9a-26c61370ed46
+.netflix.com	FALSE	/	TRUE	1821460388	NetflixId	ct%3DBgjHlOvcAxKIBLNaG905TR-auRncOhA2cvEdGnD-MRuu9V5nVIEqVD31vhStpv3qhJoVUI4co7SciqnwJb9RBkO6lWf1SJpwSEzGcKdUEzm04LTzgWU8_T7xVZW1SX37p55HRhNaYf55VWdq4dF6jRBVrMK4QKGZlBGljaS0qBkdlTlckADT2vrcsBuoUjD8Ra-RrBXp6cMg4O8ns43mJCky-gh5e_sgO3VERIcD6tgkxXL_Lsyz81NZmxrFVbVCB0Vcz_jCALz6YIzijAUH7ZANGErwIcZ9D1XNR2Z4enrXKP3qUAq0fnjBO3GQtSmBrUgzHfVcb8Bxq-W5DxsXTRivMOsaK6QHheyNcZGhDkrJ2ZNmyr9LWE9gghnZArBNkGJhHq9B1dieBx2L_mdcCzV4tldtTGY6nQtezZKoIAz0sH0n_t7OvbQVdVXjq5PcYB5n8Tac5XYmBL0Ijj6R7Ssj-TYA_iENqU_iWeDJGDyTrX1Lpg4bNZKDspbhrkoPaqPRl0z9MO2jJUtQSpf77u-so8Ga698-x5hSTjIcNXe_ZUs1nYZCMfp-9gzFePJP4YCNS-R1YhxC-nI1PkGjui_RtiL__4FibaXlfwt2utKMKD3Rw67zPe8IZ3mUMGUnXzdy57bqUBpFkXSaeZEpSLjBZHJEW9DNG3JKUsq5uQumlHd89l7l93pQrsAveeQzvA8YBiIOCgyGRtDZSXnItHO0s6g.%26ch%3DAQEAEAABABTBCJ7gMWbcjAtAk_dMFie65eF9XtPolmo.%26v%3D3%26pg%3DCMOMUSBELJEDPM2PY7KJDRNWWE
+.netflix.com	FALSE	/	FALSE	1796554945	nfvdid	BQFmAAEBEOHLKO7SUZfiVP_ynoxmNHVgNpapTrmT4GtgVns9_UX7mDymd8Grpk2xw7HKxs8FDL62crScPY4E5rcUIYoLFUW3pabYSqGqDEmVksNVq7xtpIiwTZ2_ZLO-zWRrsPsPkC5DRhNpx70Z8mKDAUUwLJWi
+.netflix.com	FALSE	/	FALSE	1793974584	OptanonAlertBoxClosed	2025-11-06T14:16:24.023Z
+.netflix.com	FALSE	/	FALSE	1821460391	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+20+2026+19%3A13%3A11+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=340a9490-6a2a-43d2-b7f2-ab6d8df83ba9&interactionCount=3&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&AwaitingReconsent=false&intType=2&geolocation=FR%3BPDL&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1797700390	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	FALSE	1796554945	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1821460388	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSzMVthvV1D7CKrRJlz6yk6bJcpZIfmEbU.%26dt%3D1789924386834

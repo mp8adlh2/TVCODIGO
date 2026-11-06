@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: MY
+Plan: Premium
+Next Billing: December 6, 2026
+Payment: DCB
+Quality: UHD
+Streams: 4
+Price: RM 69.90
+Extra Member: Yes
+Profiles (5): P10, Seerius Black, darthvaedha, Appaz Singh, Tày
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1796554947	flwssn	5ea2f9cb-9ab3-4008-ad83-25e8e79d65f9
+.netflix.com	TRUE	/	TRUE	1796554947	gsid	f1e96742-ad13-4e11-a134-f8a1bd7b44d5
+.netflix.com	TRUE	/	TRUE	1796554947	NetflixId	v%3D3%26ct%3DBgjHlOvcAxLzAsXPM3qFB67fTEql1I1c8bS8WtlZsVgpigPW_ZMa3MzSphevlc2q0Iw7v6zYwuiVsVoNGSDNk_OmKeQnna-a9YxMp5uUOmEHEEoRsIjKjfdGZeaIASCn-QfuZv0KqFp2DWO-F03AgiqD1HZr6fMtEk0mz2MIvTzvNM-ae8vohbOgiuFFfy_VYexi8h04j6dDPt0ujUFibam1-iVPocvSdwzYh2PABT8hgp9ou6tXH8TSWKr5Xn6FEHByS93adNHV6reII1o6BiqyjZ4kufYxvkv6Yg2XpgF0QJjgUMddx2R5GQs2pU1QK1paY-VbdACS-OWujizKd5tjwXH1Q6CGVxSQQbVTWDJOehEwExBqmW-wBJfzhroONaJ0jrF8NLgIDVpiqrG6X43C65luurcUCEUJCnKNlOCO1VXjt_QPYa2Ny5LKo99Ws5RDk_5WmCBWzKCD3NlZ_VKFjg2v-dcChOmBXCgsnUmFKLOBAXELjk9OE-3vGAYiDgoM_VjaQQXo8RhpiwF-%26pg%3DTDZLMPP5CRFXBCAM3QLIQMVZUE%26ch%3DAQEAEAABABQznIPaJWvrFhrDxoZFP9ORClFLMPG-wVA.
+.netflix.com	TRUE	/	FALSE	1796554947	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796554947	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796554947	nfvdid	BQFmAAEBEELGHEXPb2CmTD3h47JBtKlgtvRcH8N9oLdSXioIjqEAP9vHH7tR_cSFkRzQm86-r34BvChdSoChJ6pzpcGGrF3rSGuxStVYJV1WM0FV0retHyTJbGMLVqpX2zQAt70xw50rrdSKXk5ohyvTTM69j0XE
+.netflix.com	TRUE	/	FALSE	1796554947	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Jul+05+2025+20%3A31%3A28+GMT%2B0800+(Malaysia+Time)&version=202505.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=aa7ca9a2-ac46-4fe9-af74-a103cb00809d&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	TRUE	/	TRUE	1796554947	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSJxxsxGTqfBjO-Uki3Qh0gFtfqYnzPnFQ.%26dt%3D1751718672225

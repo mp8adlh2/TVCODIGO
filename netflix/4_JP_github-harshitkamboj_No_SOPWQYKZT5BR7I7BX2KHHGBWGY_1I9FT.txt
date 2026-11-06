@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: JP
+Plan: Premium
+Next Billing: November 16, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: JPY 2,290
+Profiles (4): マム, Rajiv, れおん, Krishna Baral
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	6ca5464e-5338-4a8c-9cfa-25b066143c08
+.netflix.com	FALSE	/	TRUE	1813038555	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKhA2Nl_4lPa-wIvUPoSQze0fLnRbe5hGse_w5xoNV-zw3L-dh0twdlwSWg4_NhgpVjSNGLp24q4JjrD5vbaQEj366-QJDI0F_1aw2-o8CBYH_6tNU1SnN9OdLt7XuYgRsZI5DruDsE3Ck9Uzip0erJX5XOnd1ptpFNGYEDexiLwayGSsjU_WlgarX-LGgK8ZkzNgxTvj4EbjNy8D2h9jtshw9Iyw0tIRPd_VeJ_uDcTf9DAyaZMOo-IEFulV6PCn7l1Ni8TpWf6Zdsp76tfhuhWt2NXDLVwSPwOWUeDu6A3KD6VIpnV62AoRlOiuzesfkcti2IicAKElHu6yP7LBRJvo6SkheHEemRMt1TuBzLNgwLA0-Nx9I1oeMKJ6aLevpKnL5N7hCd1QzBMYn__caZG3GQVmn0kokxvZWbSDKRDQzdD01XBKBAQxycXz2xXdxqmfz6pr_u_56fjX6VvpWNJaOxyMjNHmK7-lEaDszfp4vxydBTceNpFIuKgCd2EhyNkijE7sc0XDNcUT8hrWEeEv4DflVaV463nU_Uus6Otu5r4xgGIg4KDFa-I7V0sfbvZL1iIQ..%26pg%3DSOPWQYKZT5BR7I7BX2KHHGBWGY%26ch%3DAQEAEAABABSPacufXL7-U7esaFJiCqZMamz3MH-d2AY.
+.netflix.com	FALSE	/	FALSE	1805172677	nfvdid	BQFmAAEBEKK3PTSJ3cEqIcVdIx9i4-VgVZGIy1rhHNrj5StowCpAfCSxkWewNWvx-1UHk-nPPANqTxEmHAH005xez4gwYtsTiTaR-ysuE97dDRb-9txjIm1SOWMJ3Vkfx_Jgzft1KHaJ6w1gji2UmiQgwrzDyJmz
+.netflix.com	FALSE	/	FALSE	1813038557	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Jun+15+2026+11%3A34%3A17+GMT%2B0545+(Nepal+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=90fb3f20-b340-47ed-8ca9-92b880502b60&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1773636677654&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1796554946	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	FALSE	1796554946	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1813038555	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABS1Uyme8tG6TT2koWd5CQC1uwhJYDHoVFk.%26dt%3D1781502555597

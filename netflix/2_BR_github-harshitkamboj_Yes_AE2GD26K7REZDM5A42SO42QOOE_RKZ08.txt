@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Standard
+Next Billing: November 8, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: BRL 44,90
+Extra Member: Yes
+Profiles (4): VergilDubs, Mislene, Sal, J26
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1814073025	NetflixId	ct%3DBgjHlOvcAxLUAxZPQjkeFsPzu1HgL7fxs4k33DaGHC1ujK15NRmcyvn4ilj3QIMTJv7QIEQmtwDkqcA1XUqXVkf80xLB5VwKf2a2i_vHF881uqsaGEKQ03PO8BeE2CKwlQGL0cZOLQuIhbR6N4sAYKKO0QGm1uhfsmgmWrIZ0aJEtqvxVczPlVvFeLQOGOTvFKjsLvL8xMKcFxTU17g_QTUCE2ooZHqoCQ1UtVS9d5_spht8l8CaWDCEYcClzxW4OsGz3WWAw8pLeL5bx2BQYwlU-Q_sI1vO7-JKirWMS-Zk4YnsGu6PjsikLI_YwJ4ckILTQjNI77TWSFD8-QMWd1Up6kHieFxYZJx3XxHvIw1hD7V_gOu2vclPMSUlEAz-M-adnaGgBst-2wtMuBWHY6yUvuPQX25yjQML8-WImwWI5kTCxFonsgY-ov46gLLsZlGD3rwmNQaXIbsuzrzi7K8XALlbf0Lm-8HX7R0i3D5sBw1t6xBA9eI8nOJKFB1Dn2Kccfv1tg2IinE3HA24x3P1u04D-DsricfoIytXNB0ffGslPMGO1q56iJFlSrY5AesYEpCmIUi4QpMOXis801i9PaK67FUlXD8HIk0KkJWW4gZyKEs4PG1tTDB4ahgGIg4KDFvmdQjqx5koZOJMvA..%26ch%3DAQEAEAABABT3r1hQGFUDZT5nr5H9n6I_3p6k-SA93i8.%26v%3D3%26pg%3DAE2GD26K7REZDM5A42SO42QOOE
+.netflix.com	FALSE	/	FALSE	1796554944	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554944	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1814073020	nfvdid	BQFmAAEBEGBoZgr2Ol6yZYFrWL9RhMBgEg56XRCDpybyIZwwdjJqH09Hrx6PSWf5MQmnAS7C1n8CQTUBnPZY-NIlTcK-E1BEPLaPspyfDi-CPHp8rJHumib4ws4c7P1o656xp8LbsXAF5v-OgUZUE8cR4V5hT374
+.netflix.com	FALSE	/	FALSE	1814073027	OptanonAlertBoxClosed	2026-06-27T05:10:27.330Z
+.netflix.com	FALSE	/	FALSE	1814073085	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Jun+27+2026+02%3A11%3A25+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=ec9bfbf7-39b8-4268-87dd-b9e4739ce79f&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=3&crTime=1782537027922&geolocation=BR%3BSP&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554944	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	TRUE	1814073025	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTtdgA_GI8W427eFAAtAPujiGmfXCgIV20.%26dt%3D1782536970906

@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Standard
+Next Billing: November 18, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 44,90 BRL
+Extra Member: Yes
+Profiles (4): Viviane, Unknown, mouad, Infantil
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554944	gsid	8810e6ce-4664-43c7-8d72-ab445ee7437a
+.netflix.com	FALSE	/	TRUE	1824003418	nap	BgiJv-vcAxJJ0O3HuWz76h95jK0UxdtQ6bfyR5a7tiij_6MXQ3k7-COfSnLcxV29DTcym9t81z5S0LHO4GsL1UMW67ld8XYR9tfW7erBWhrYnRgGIg4KDAFOWVaz0knNWr7RNQ..
+.netflix.com	FALSE	/	TRUE	1820979417	NetflixId	ct%3DBgjHlOvcAxLKA_YCnOt1Djb9AlPjPEPTFaiKXUksp0VLRXT5B4TX_oJG2-UWWm-uSlXYCV2nYXkRr0sb43v9AMzs9dtf0vmhzI08fXS9w-WtOhjlmhagpc9-ClzbkSJZryt4KH8uznJ1N8jmeyceKM9iRrH3q-MURykqTx6m-HVhTbF_YnyWkEXDY6cycwIbmgbYhLv6j5eM_mRRYelUdw5cx_pcnMjY-BPlKj87zlhxplXOf1oENF7qzggk3XPIKUsNNHmLfM_75ScgqSoRFDhIlZzcDTkExyR3IokAx1Ks6vTVnW0j2zPH-4KDEIuZl-JsAOuLaGF5zUrl7ZWEGWvY26TwNpWbF5vd2yHlbjSF-UzEx97XSFInM6ajNnwtJTC_37P4697qb17wuLVerUmFB9bgE0xb9IEEWKl9fNaYAw8d5_mYpGIDVlYI6Tz2ZA-x3De453KMssNVgBdd9Vf79QuyirROwfeR9mas8vlVtejXAj98dEbPzgCJHVDXo3qdsSDjIGP6PNs5OKtSrw3UihpPMey2ZGNfsrpQJ6GTTqg0V7vFMAf0GDTEeo2tpzpsPmJSPZTGvu8TW_hGH0dYLJo01-thjhAMyOqFxmvbVDKAGAYiDgoMSRergo0FnZLXsi1a%26ch%3DAQEAEAABABSgcupGVwQR6IKBPma0SNCWVC7ljPcibrI.%26v%3D3%26pg%3DWHJSU2W45BHADHONNWC5HRSXKM
+.netflix.com	FALSE	/	FALSE	1797252878	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797252878	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1820849053	nfvdid	BQFmAAEBEAwgN3qF_v_x5lonhzUl8tdg8qxtMoL6EIUePNn5hqqcyDpvxhV721H6XLT5q0L_BOY5VYAgqNx5z4XqzL11dYMrOQXYl0BhBScQjBfQd0IH4N0ViLd2-_zq8ElnxKPn-2q4nksciZ2wpAQtcDGVaBag
+.netflix.com	FALSE	/	FALSE	1821012878	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+15+2026+09%3A54%3A38+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=a272d53d-37fc-4047-a260-e0aae0431328&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1789313030427&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1797252878	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1820979417	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTR5uwDnrcHd1_45tWGV053AbJSOhVsZWc.%26dt%3D1789443416208

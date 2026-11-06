@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: KR
+Plan: Premium
+Next Billing: November 10, 2026
+Payment: DCB
+Quality: UHD
+Streams: 4
+Price: KRW 17,000
+Extra Member: Yes
+Profiles (4): 김진희, 박민서, 박정서, 박준서
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1796554947	gsid	eafcb1f2-c2f0-4723-9a1b-dfb6ff3df07c
+.netflix.com	TRUE	/	TRUE	1822543492	NetflixId	ct%3DBgjHlOvcAxKHBG5WJvSoXVMDgvJ2koT__fVHx5wqx1Wd0Mr4iC9kr5-he-PiPK-8FCfaTExn4kXCwNwixG06607Dfcddsg3FgkfrRhm5C89meOkISBCZfF9W_Rw9ZNNYhXmrN_pH2CkVjiH4dThv3bH13HM3hbH-U9BQYMvp3HDRa8HiYBrrJh6vLFMnABM8zSMLhL06vhIkc3Otx31oEnhsFKk5Nzn7C45BQ3Q3fPB7DecjGv2NycHZedhF8k43A4wmEaQ94uAEkABCbNy4Ya7353UZ9YZRHI4SL_fBTVYp_-KPsypxw7HqfTGIa0e8X3TomTwFTwpJoQp218oTK0aTgDO8Jz3ZYg_sMljiAtAXVJvBC5QxCTgKbmLpkxGE_RuBdTPOg54bFcH7sGQ5AtWmjQpFqwRezLoZqOjKFzl61Cr5BNe0aDcRlUGFPqDxkHJLHy9p5g5fD8ZHcWNA4kiXQi7l_g41NiyJ-SSvlL2qhvVDg_A21KA9nhAUe37lyfOkyrYmf8daIekT3Bgmw7TrWn-TOSHt05XSkdf42oGCqYl8wxkd0KDF5zttlAyGyNIGgOj44zgzOhUeLUO1HQjHUjKKLOUQKTylcbY6f3cxFAzOejLKQ7moKYBS5b2hHZNq6oHLk_SnZk4TVQG-CjDkKLLtLDs1L9PblFjHpQKI_lboGTqnwBjGDcy5ZLqEABgGIg4KDOoSTnt7bOWFoMRHUw..%26ch%3DAQEAEAABABRZWw38LUl7zuwr4kLSVav-EBEcVhJ1UTE.%26v%3D3%26pg%3DGI5ST5CEANBFTEEPKYCE7YHGM4
+.netflix.com	TRUE	/	FALSE	1798783492	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1798783492	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1799283248	nfvdid	BQFmAAEBEFQKhLPkgkBJJdZmMIcevCpg67JTmyd1UBGZ_2KdLf06BI30-s_aOjOYFKjZONGZtW7gO51ibm2yIeGfEvwX38_bemlGPJHd9gPQBIxBmIrs31kTgfHTsZT25pfFH70WBzfgUGw4WaztFDl5prz_sMde
+.netflix.com	TRUE	/	FALSE	1816656365	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Jul+27+2026+11%3A46%3A05+GMT%2B0900+(%ED%95%9C%EA%B5%AD+%ED%91%9C%EC%A4%80%EC%8B%9C)&version=202604.2.0&isIABGlobal=false&hosts=&consentId=5fe43351-0ff7-445b-a39e-0baae9c067dd&interactionCount=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&browserGpcFlag=0&isAnonUser=1&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	TRUE	1822543492	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQHqDG60Q0fNJiQWKSD0y3kVolM-Ie4oVY.%26dt%3D1791007492217

@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: PE
+Plan: Premium
+Next Billing: December 1, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: S/ 58.90
+Extra Member: Yes
+Profiles (5): Allie, Marle, Marco, Invitado, Niños
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554945	gsid	f5d3d8a6-b633-4808-8b87-899f5fbd5e87
+.netflix.com	FALSE	/	TRUE	1821555456	NetflixId	ct%3DBgjHlOvcAxKGBPKKM_rSJE6TKYJw8osR6BrCk7N_nSi4ctHE11uXxdyZ6DCxleuKRfoMDVGOP-2t3-cYA-h2RZHpOVIeSngHPLLvhg_8WuXSKMltUai48vuSo74AvszImGUYYXq6B-GSAQrsRFL1Nivb9xJBJteyck4CqsEEqVKONPLhRS8u1I6YfMAi0ge_73Y_2KFS7d7VvsQbBDUszqKRsLFV3H4fdE02rq-TZFmJnrTzBbN1q7WEsxJcIp-Ic-btD-u73EQP0ieFXhHR_NB0Nw6Aryy5ECpnfXC4Pd7VCQZz1lTresLEf1lor7H2sRilywqGabHRBfx8LP2K9G55AGV66NeptQUwVdVFTbtgTKiiD8CRVacwxidz5KF7RQYP7bJtEapAjtfa2IuBK4toQmBQ1R-YPPAch_3Keo8yFqfXxByxDWwIxtEFxQcZpSAKlu-PzFp2-RJfmpXylT_udm4bmO9BglV9LIU59eqCPaV231gLCJ6cLgqX8Tsdu3Jjp7hmekpDvr5EpYD2hGq3GARJFKJmTMl2geauWXx1Db7XR0Wp8GdPXu2DwDCoprrsfrLVC872yh-YQP1pULCrQjQgWhIdE_5701BhAEfFsMSXgeS7f0Zz9tofGJXzyyp-u5GRZf_RfTsTO7bwrIQ9wJX_tZPacVt04Szicsu95khPPREVqYvCHDZf8LRiGAYiDgoMTzrD4cvXuyabfupE%26ch%3DAQEAEAABABRLaXXpTSJTwQwvcGf9uHQMZRT6q8_E6LU.%26v%3D3%26pg%3DNZOLUGMIAFF45DYOPQ33QRWP34
+.netflix.com	FALSE	/	FALSE	1797789302	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797789302	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1812403583	nfvdid	BQFmAAEBEKo_TzhiCPfa6QipVhzBC0dgalJcUFmvMdujeKNpWbzWqmBaqJQj3DlYQgj1ty2i4EEJ6wSViBfSw1nZV25NzFUWKOT6czhFzshX5GmAfgpAySpLgj6yFELDtsnyo0rOP8nZhbYUDADDQMtwL8dc3I6-
+.netflix.com	FALSE	/	FALSE	1812403295	OptanonAlertBoxClosed	2026-06-07T21:21:35.305Z
+.netflix.com	FALSE	/	FALSE	1821549302	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Sep+21+2026+12%3A55%3A02+GMT-0500+(hora+est%C3%A1ndar+de+Per%C3%BA)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=13bcce69-aad7-4699-ad9c-53505564cb4a&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=1&crTime=1780867296131&geolocation=IT%3B25&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1797789302	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1821555456	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABR3fJIY5bZFVZqf9aurPxQTNwBj-04QbCo.%26dt%3D1790019457113

@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Standard
+Next Billing: UNKNOWN
+Payment: CP_FR_BILLED
+Quality: HD
+Streams: 2
+Price: N/A
+Profiles (5): Famille, Slm, Manon, VINCENZO @MUSIQUE🎤⭐️, Jeunesse
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1803495375	nfvdid	BQFmAAEBECYtOKTNazstSG_HrmaaaQNgE9_wPUqhjg61QhSnC7sJtXA-iz2banGesCdp35GlxqKwP_ovX52SxkqffhmYCFTomr73v5u-U6A7RniAwCJ5TD4vCePLe6uybw8Cmj654R8pRhpneU11Hi-UCbERF651
+.netflix.com	FALSE	/watch	TRUE	1804614749	dsca	true
+.netflix.com	FALSE	/	TRUE	1796554945	gsid	9a64504a-45cd-4479-aa3a-42b2b11d7513
+.netflix.com	FALSE	/	TRUE	1805050456	NetflixId	ct%3DBgjHlOvcAxKOBFDWKdrGtGBOOZqQ_-FB6GIepl8S2zUyiEvaaoeqheKUny1foAVSp0wBaAb39ZIR39KwPUUZxmCIQPu0JyBbkw_1W-7OZXca4GVKY8cltHpekM0YMWkHi1igE9_KeNCgzM3_cBCL3xg3XisQrnU2v0dlQrlAAkFNgKW9jmiPcBumyUOExlv3L5OIFAfsb7YVIlW6guqjSnoeeJyUtm9G6ELm8mEtCbPS1tATEtnU0IRnCUmhQMx6R5z0yDADft-ZoQxDUvcFGqIVG8ECWwkmZydC18jn0hvWMPdLf1HVSWDX03S5a4NrDz9YopDOXB93Uw8T3CSwWiTuuaB0YZ6SmjMcvVr_yVNzE6qFk9ADVKKzxbWMINYmLENqK8JKI5bvDTloGnUDugUx4EfIFEpUGzjz10Qj_DpgD__afUEyibdabnNzEVyeKsc3Mrk1F2xWpK6P6udApx2nL_5Ad2YsBZsprmqxFFvjftqgVv0TlA9X4hHrYQAAip2mi7sroQwSy8ncb0Fesjy2fa87YEXeQR37pMS-vAMPg4XyndC4WMREsVUedkQHwI5o1U1bo81z99qtADMYWGMI1DSYQh78G5YmbL0xSlBymnq3I6-kidK6DEj0FLuQCVaLv1XbnO6_1MOW38OU2O40IEIzoZ0AWQRGk24jg4DxBxVULQfGklZO1FXqgn_nrHUQkgJ89y4YBiIOCgyzLiANvuqxbYSD5b4.%26ch%3DAQEAEAABABSLSVRBBHc1i2s3VSMiq17I8lTPuZptAFQ.%26v%3D3%26pg%3D556C4ZY72ZAXRMHFFWYXMUBSOY
+.netflix.com	FALSE	/	TRUE	1805050456	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQrSyRir5u_E6ar3TTPtgx760rZPH-01HM.%26dt%3D1789498457054
+.netflix.com	FALSE	/	FALSE	1796554945	flwssn	658ce7c2-0f85-4d67-904f-a8ec11510b9a
+.netflix.com	FALSE	/	FALSE	1797274463	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797274463	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797274463	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

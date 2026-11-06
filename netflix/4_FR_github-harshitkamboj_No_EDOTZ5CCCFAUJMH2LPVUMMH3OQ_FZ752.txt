@@ -1,0 +1,21 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: ORANGE_V2_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Profiles (5): Rasta, Nathalie, ryan et brandon, margotte, Jeunesse
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1809100932	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKgA1CJXgeCSJ1MpfQdiJKcg6-au4zriyUwShwjhXMgyr9FQVz8iYO9yqGMUOoEmeA3_Y3h2Hjv4rcusR0p6RLY7tUiNsD-bNvW_JAApYH8i9hLuSKzHk12D9sM6m7eQEEk0Usk_pAbEJdEYUpaXnbH_4LWv2o2nmGT2MwOdgr7JadEj__nzh-IMc3ffsaQywgYNUJmIbpBK-oapAfWNt_34XGnsvojtb3mi0a2VnM7oVNgi-xyjfJi0ocbHn_GZhW2y3fBIEtmLqkS6FLLsAwYk0pw8ZIeQ0dIzszry5cFRb7jYCLl_57V6tviZgyytsu1LqjZgjOr9bcanNw7CBV1iQOZhtH_9CWUF5Yf1_HjV0VkVwvWgADtbls1-nObWy-ngziU2_YymhYE6MRYPRv8F066kq-PAvNAu2Wx1UiCKSmOoCW4fsNvxTZsvhaSOchHkqdxb6prjWHzzVDrHEpBFTh5xnmIKMM6zWV7VGnt3hrVDWKCL8MSP0CqmQDz0TU5VjmUHRwAwH4lOi8BWHWvJhkpUqF203_CzmeI4VfRzEM8GAYiDgoMZtyuU22Tr4KHR32G%26pg%3DEDOTZ5CCCFAUJMH2LPVUMMH3OQ%26ch%3DAQEAEAABABQHZTe5APLmsE3vVJAuOJtGz-L7IzK_JqE.
+.netflix.com	FALSE	/	FALSE	1809100932	nfvdid	BQFmAAEBEI8tlw3aGigJ_mU3wo_MSblg0gxWcKRpcN_5D8Kh9zW5W-aLg4LJMZLRQs2CHRZ_Ynvr5vUMeKGvBd-DxkVf8SA1s-tf79SGzLliq-YT_bvktrEL13JYGRw1EkUSwxD7GcrdpMvsIrKGQUju4F7kFJT1
+.netflix.com	FALSE	/	FALSE	1809100924	OptanonAlertBoxClosed	2026-04-30T16:02:04.194Z
+.netflix.com	FALSE	/	FALSE	1809101364	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Apr+30+2026+18%3A09%3A24+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202604.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=aa0aeb76-87e2-4799-8731-9fbcea9c758f&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&intType=3&crTime=1777564924642&geolocation=FR%3BPDL&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1809100932	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSpn6Ozi75FxOuJGjeeTeezD58BuVOZsFA.%26dt%3D1777564929052

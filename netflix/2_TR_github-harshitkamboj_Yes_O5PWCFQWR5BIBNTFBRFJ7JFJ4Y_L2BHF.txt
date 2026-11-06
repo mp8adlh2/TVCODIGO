@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Standard
+Next Billing: UNKNOWN
+Payment: TURKCELL_MOBILE_BILLED
+Quality: HD
+Streams: 2
+Price: N/A
+Extra Member: Yes
+Profiles (2): muhammetali0744, Niba
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1822647809	dsca	true
+.netflix.com	FALSE	/	FALSE	1796554947	flwssn	fd5714e3-bc7a-40eb-b4a4-1c2203d6718a
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	973bb4ea-2cef-4f79-96c4-0b05d4f9c646
+.netflix.com	FALSE	/	TRUE	1819623811	NetflixId	ct%3DBgjHlOvcAxKwAzJeiO5JNPUeu9ZyOwI9TK46iaVzBNnfY0fFFJBP90ihosYzh-OKBpqF0-PycMqGpfnamTmtt9vO3d8l8_EbowWW4a98SuLiQfmzI5FFJxWn0fxVwmmKfg8SiB8L7PVoXUFrh2Fo4eSUhUo8pwWPFI7l5SK392lYY-HjTqs8PRaOnp9vl3KH010YUUkULC1OMyx3dtWrpC3YnY_Ow80y8jCDIxE0WeJuRdK6lrlEzlNS7ZoH6oBxl_3GkinKdOEgkpDZG2yIuudOUZy9ThCzba8dBMTvqeAF3U1XlH1cXG5KfVWGT7_81AM8NL_Pq_pmD6EJIU0xCYH9yls6B-bWiigIsSXkuhBh6q_Jt_s0fwzpsPYalhiPq1sJVNI5mFvL9kxwcS-gyuKsgqX45JwFzH80PGV5m_ZGT4WnoIXL5pECTeaGgvgezW1phiJp9vuC5ji7SnEfLYxRXl0TuG_pCjgxaRLyYGf_3PBmt6jeszF314AA21_-6KfB9C5x1QC7iTj5zcz0EqBQBgUGLLyp8Z_o6LbT_110LnYVWoJFZ9QQYW4oXCS-cz6utXP-C78mTRgGIg4KDNou6TTh6wluYBBNKg..%26ch%3DAQEAEAABABSbw_WXbe6BsBvmDjAqITDS4cKsWROMkcQ.%26v%3D3%26pg%3DO5PWCFQWR5BIBNTFBRFJ7JFJ4Y
+.netflix.com	FALSE	/	FALSE	1795863807	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795863807	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1817813396	nfvdid	BQFmAAEBEKmoV-XMNZDr-XhEt-fJ5bJgDvefAfyb5zOD1qx9eIsnd5WD83Oqv4tM0H0cofYvYf6fjQFh76t1pDm4RFxCIWN2RA0NL3T0VykIy9lztmZNWKoGKrXXqzp7sk0ptCrd9Y8EXq__z8sew0JA98_QmPzo
+.netflix.com	FALSE	/	FALSE	1817813369	OptanonAlertBoxClosed	2026-08-09T12:09:29.201Z
+.netflix.com	FALSE	/	FALSE	1819623810	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Aug+30+2026+14%3A03%3A30+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=01b9ee3a-c416-40c2-9e30-ca6e009fdd22&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&fclco=&intType=3&crTime=1786277369745&geolocation=TR%3B07&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1819623811	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABR_XSELPpM5he93FZFLV14WcW8Wf_gI3AQ.%26dt%3D1788087811492

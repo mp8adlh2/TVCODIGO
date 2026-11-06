@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: November 22, 2026
+Payment: UPI
+Quality: UHD
+Streams: 4
+Price: ₹649
+Profiles (2): Sardar karthik, Children
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554945	gsid	892b77e9-0f06-4d57-83e3-76f0eedd6b20
+.netflix.com	FALSE	/	TRUE	1822301990	NetflixId	ct%3DBgjHlOvcAxKMBI3e4YTA4Ur0F4NqCh26U875_uY-CjjugT8CXkgmnXbMeW01ET9RgpsYydkbN3NxhHDiLCo4eGeUcWmpsFfUa-Ado9x5tAgBwEdOC0uDoGhfDgS7NORJd1Jp_6xG-aaZR0GlR0vKXtmQrUWe2K9A3GH35eOiuUX_B1W4UdHD4U6Opmw2gAsQvEibvEnA-Rj_YadgMFthOwnrFhUy6B-FPmK2MtNUDej4u80XAdoUZKNX9L8DiJWqxJn905zPICxvWQZiPo9ImZt4MA5otPItYQTrwk0fPyqwGMcpHcq5OaoCdvsI3pG4oIuDfl3fYPelWQawlu5xEUCw1lA-CEwGcF3y6RtAzNFLAXQhRovKFTqMWx1SrfdIpQrwtPhN0XKsV6XM7HYdObR_yz1kDNFjKUx-KdMfB7meJVqR50tpBZbOq11kfIkv757ek9jH3u7Tt_b6rM0_YOh9jagUiFbv1UyMRtX1XQLK49jtWSZjMYIiNUoFlfrNOPeWACMyxLnmMroePCeAtga8ZBwsQ0JvMFacDUYnWl_EIeQT-zQBCI93aDFtkWQWQJEHGvfkB8xZkELfG0unsI9QUGplmmwSQB2asiY00oFYidUTApDj4HPpcwggPFpqX-m46ViibCVnREZzF2rpE38H9_NJPlbjh64MMvLm0YWPPpGXTJOvy-Pu9OgaHVnB6pteyOjUGAYiDgoMFciyvOL82KY07OFl%26ch%3DAQEAEAABABQc3QnuvkwiML12WBF4d4Oo2Nu2S-ts9y0.%26v%3D3%26pg%3DSUGNG3YJ7JDNTHHOLYRR257EN4
+.netflix.com	FALSE	/	FALSE	1798550787	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798550787	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1820797811	nfvdid	BQFmAAEBEPaUr4W57IyDY7BU7UuRL6dgnxjupuW9DZ-21yFoFcSw5VBul1zhBtVkJLrys8jN6pMF3ONa2Cc_06-PvDeYU8JOky3yA0ViZ0icOE-oC37q2j_QZEsdBtTxqmjNYUCy5SZ-wDz-sRmAxQRoPjWx_9yc
+.netflix.com	FALSE	/	FALSE	1822310788	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+30+2026+18%3A56%3A28+GMT%2B0530+(India+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=817b83c4-a28c-4917-8fc9-08346a19dd2f&interactionCount=0&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554945	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1822301990	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABT1NO9TOhLYirvRQ_oxfhNkQF3Q9aIuKBw.%26dt%3D1790765989333

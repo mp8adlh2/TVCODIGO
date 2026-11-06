@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TW
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: TAIWANMOBILE_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (3): 劉兆恩, 🦈, 兒童專區
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	15ead53b-58af-4b89-bc7e-c79f4cc55536
+.netflix.com	FALSE	/	TRUE	1821439146	NetflixId	ct%3DBgjHlOvcAxKDBMtul2gm4Xa-Y-JZuqhQ_bN80GaadmEbzMe3yU8vRD74SIHGw_cDKxzZKIwpF0Ryg8xCgFgWyjPD-GwWZrAbhQXXtZCmp5j2xGm7yQtLPplq47ALI8FubsmtvzKon6fO3uTFOUW-GzRytRgNDTkgUWpnPhihVXrghIc3HKHPr5S_jqhvnNCQYBaJfmsdZp0zYJHW76BWHDYxF7lIPOoDCJmZGNkwqJ-a2hyQ9nhNfZdsIQmaIitu1yYrr6blqCBpsTWik3MgkbROX2ft7C0dSYAwS4IhKj2x7jwGa5J3Yz4ZmMaO9uM8nPGpHzGrxGQRd9MrVOtB6KKblCTvTO0Vtcf1dA5On3zUThYv7rkncgu7ew8PBLujPxh5DNdZzU6wqXDedkUlE2glWfoKGAf1eWxBN8Mc5CEvhYla03WP1aWlgNgP6HFDMz4zKi7-Ay8fsYt4FkeNzmszX3CoVCbIUf0VGh335dYg1bPw0jklQOdXkzqj2OFsrXzeNyB0d9qtU87ZEpqAtUF8ikTnUtXAd0IyyPKf8iWS_DHT6Gayr3TDRxmCigRUyUuCJpkCCSekJN1scup3JHqLiTrXj-OEGDvprENeKhKDJ8WczTdTZbpxqXfCq7H4vWnwxOei5SPmwfoldkgHxiGPAqm7BH9gWJp0me6zGd_PPDyiqjvQkOcDv1BdGAYiDgoMRI0qCM6i8UzEPMVM%26ch%3DAQEAEAABABS0ApLS4rM5AmplVxX_vLbeOi8mKu9VNmY.%26v%3D3%26pg%3DA233JJNY4VBUDJ6WBN3TWKHG3U
+.netflix.com	FALSE	/	FALSE	1797703635	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797703635	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1811944678	nfvdid	BQFmAAEBEO5QN8wYH7SKbSWNA2VWkCBgcxrJ1vB5p9Tic6YbWvMy5J-Bp40JBUrlKofYIrW-0e68z8k4mV-GxhGLo4HmvrALXdMhTtXt00EBixDkKKovOoZ1zUZZCbHyPKsECmggkx6rw8rNJ3Gi4FTZNHE7JFmc
+.netflix.com	FALSE	/	FALSE	1821439926	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+20+2026+19%3A32%3A06+GMT%2B0800+(%E5%8F%B0%E5%8C%97%E6%A8%99%E6%BA%96%E6%99%82%E9%96%93)&version=202607.1.0&isIABGlobal=false&hosts=&consentId=bb531fbe-4cf4-4c62-ba16-68a26a93abd6&interactionCount=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&browserGpcFlag=0&isAnonUser=1&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1797703635	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1821439146	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQqmyQrbtQHo_PLtowoYUFEKplhigpefzo.%26dt%3D1789903146930

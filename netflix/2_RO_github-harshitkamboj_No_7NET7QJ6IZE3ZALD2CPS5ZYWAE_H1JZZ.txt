@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: RO
+Plan: Standard
+Next Billing: November 7, 2026
+Payment: ORANGE_ROMANIA
+Quality: HD
+Streams: 2
+Price: €10.99
+Profiles (6): Gabriel????, Gabriel🧔🏽, Marcel👨🏿‍🦳, Mihaela👩🏻, Mihai🧑🏽‍🦱, filler
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1819461866	OptanonAlertBoxClosed	2026-08-28T14:04:26.622Z
+.netflix.com	FALSE	/	FALSE	1819461917	nfvdid	BQFmAAEBEE4vGnzDUZf8U65x8maxq6NgywtlHIs-O1yWFRkrJmaBwTrn9NFDkSFtrBYyOIO9mYukvfSbcLsDLxZbA5llDDvXWEMah5azZNjMpNYZBiXdOLB6f23nbzBz6yskGNBq2CUdpXBgzGstk-SFCc20QoAX
+.netflix.com	FALSE	/	FALSE	1819461919	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Aug+28+2026+17%3A05%3A19+GMT%2B0300+(Eastern+European+Summer+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=82115e8e-0ab2-4a02-9a08-033f6a8b423f&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&crTime=1787925866986&AwaitingReconsent=false&fclco=&lastConsentTs=1787925866&intType=3&geolocation=RO%3BB
+.netflix.com	FALSE	/	FALSE	1795701918	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795701918	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	TRUE	1819989813	NetflixId	ct%3DBgjHlOvcAxLjA9wP6xEik08czjVwA1wl4PkLIoSy1kturcDRf2D4DrIyhic7O8yXdzhFJZVJyBWq7fh9Fft_lVfh5b_k8p5-hXVS3t7EB7SzmTJLZd26JpWV-rilBOsCYNdGIqxPeb96V3lxHGyibksiVgda2Zn3NjY4l9_s3mEn9IPEwIxPt7UZYkPFkXjM1mzR7Rsmh_E4-wVwO3aLh50eoa-_m3gEYXrYJzKi25ItfiIqvTsdFnMWG9GETymLpXfrC-v7F5StFmTTbAp5wP0lzImydhALm60_M_G0mF6MzuCmWfbgm01Nn7cGda2J4_BK9rrmPBhwx-WzNDmK_bZg2tv9GQF40MHROJ6HFWqjL_RXWJSvjk59gevyPNZ159Pz673MOpf3F_a4UxcMA9bQTiOGF5yi1triwwRdKESqkxRn2CAoBn41TzdDGaqIb4dQkwgC4DMmovzZCwMh6GR_kpi-tFVRaHBV4mQVcIP7pomI3eC38fjwSC67gxBwTv--h1SV4iN4b-cMa8JlEy7a2YzU_VHzAg9jebUI8rvWpHcilmqG2jVwFTfnxDwoUTLTHulX5KwgNn30nnVCuBjonlps0kHRCjc6mBE4DLWVUObWkZXxFc7yYmLrBhtStqrCm_MJIqS0skN0TBgGIg4KDFm2TbByAKTeErrdzw..%26ch%3DAQEAEAABABQwEEoskIoADS3Sx021Ibd1P8snqetI9oM.%26v%3D3%26pg%3D7NET7QJ6IZE3ZALD2CPS5ZYWAE
+.netflix.com	FALSE	/	TRUE	1819989813	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTYsh5z9pTrar7sUL0zjymSu0OX-5-fUJM.%26dt%3D1788453804086
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0

@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: MX
+Plan: Premium
+Next Billing: November 30, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: MXN 369
+Extra Member: Yes
+Profiles (5): Parker, Jacobo, Ale, Lupin, xxx
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1819371767	NetflixId	ct%3DBgjHlOvcAxLMAyvFmCVkGJ-vRuAZAxh65fxrWFtaxdo3wKO37JrJ2sDj4T0C8Q71yAqbFm-xhmvz2VqvGgrMKfZPMjct9yJSN6bVLGMMCfIr8SLRwNiIhZVHhsBIn5MK0uOYACQ-krksk95A6SVQbhDV_TZOcsPyb84OR47ZZ3hHoxbpORbFpY647UZRjaUN1CFi00vxW8Nm27keYOfg9uEB5AAwrKl3X3upZ2qlsExyziKv0mClFVCq0GEB8Dr7XOe-P2fhARI9XmBzunndofaSz0gnaMTsnsuv0jGtrr_QqN-UppIvCgXWTBHaPpU3QZBXY3ijIFLd6ZdwmcTxI60EjxPhDyNr7C48elfK1LtMzgqr7VjmkQmpVYIcEoIb2sQrAVxP7tJOBD-8R1-l-kF5Za-dV_CxvhX4JG32ZwDZXQ7e3q9fKonvhhwwyX2lRy-0H73RPkC5yzF541AtUTBoXupAQTi4kdY3xqbZW7v9-tDsRg-qz88Z4MR2_-1-E5FD7M0iOFs5DTBL8xWQU5QUFKdIYCFetTNneka8_MikPCsTmcTqadRAz71zc2hGoOwpgRPhG2dAPe9EKJ0hDGg-InG9o-0-hNNccNTpt1qFNHKnijoYBiIOCgzKlxkXVGBgHXkVq-0.%26ch%3DAQEAEAABABTynN0dA7ddvCCPZI8xHM0PWhERWkyhcas.%26v%3D3%26pg%3DSFBPXOVCMFHZNHPCXYEVCUJFUY
+.netflix.com	FALSE	/	FALSE	1795611770	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795611770	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1819218001	nfvdid	BQFmAAEBEBEgxGgEUcywLypEZhtLXfhgVy5HczI_0G7yI93-SO2LXYXyIQyA6VZYqWdDwQOZYYN_daeQZNMJOtCzHfhTs3Wu8uOHnbF46kUD_mlfe2zZBvB7kb_mHytRJnW2F7KGUueUQxyOA-AD4-fW06mvd2Qt
+.netflix.com	FALSE	/	FALSE	1819217552	OptanonAlertBoxClosed	2026-08-25T18:12:32.905Z
+.netflix.com	FALSE	/	FALSE	1819371770	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Aug+27+2026+06%3A02%3A50+GMT-0700+(Pacific+Daylight+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=4c402bc9-e05d-409d-be75-aba78247c8b6&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&fclco=&lastConsentTs=1787681552&intType=3&crTime=1787681553223&geolocation=MX%3BBCN
+.netflix.com	FALSE	/	TRUE	1819371767	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRtRk0-murDA6WbKaCAlJgH6IoXJpGZHa8.%26dt%3D1787835767508

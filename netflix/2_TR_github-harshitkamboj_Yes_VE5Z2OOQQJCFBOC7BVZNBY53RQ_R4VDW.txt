@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Standard
+Next Billing: December 1, 2026
+Payment: DCB
+Quality: HD
+Streams: 2
+Price: 289,99 TL
+Extra Member: Yes
+Profiles (2): CengizhanÖztürk, fuk you cenzikhan
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1796554944	flwssn	505344c2-484a-4d57-93bc-53e2d6b86c4e
+.netflix.com	TRUE	/	TRUE	1796554944	gsid	09bc8274-b33b-455f-9f03-da45872deace
+.netflix.com	TRUE	/	TRUE	1822515082	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKrAwM6tMT4w25cQDjGrfswUKOO9O4JDF560drZhnasuNlE8i4GTb3BcFGfZFfcZopBxnkQYdDBJAy4AANSnD1dqz5JRMC2saOaJ-9DBoowRRFQmnAaaNgipwj6d8xSjJqsTu60swcOQB0eOuTMA49OCWYgMcsa3ajvv01QDxeoeTKshictn7QD7JllcJPh7jLf8OpCv2gAKTC14MaKPtk3hBOwc_PYXP7dWfBDxGKOMoph4Mo2I1ZdzUqiNmOvXBjT07LP2hQpaiwLfKwLVHlPAibpJlfLDjsSPekW-PrG-bJ7YLN9piMrbMrSX2WMLBe240rMJvZiEkzjKzHbmxZFA07hgz5jYILwaGrwkaGy7btW9IDWewUP42Xi5ITdLm1P5zy4TVQPqIJU1g5-ccrGRLwfU1mcznNK-X1aHlzkhRxtnhPyMP-_Mi47zpIpUvCU1EnMUcmizPlE25-Dovya0PuuvxucKZ6S0npotgA4x7g0pvjK1guRjVOiifq-grGMdx4LTLKhHpm8e-hyhx7e17rArJiryxzLak6JPq5Ct0QTzndH2Q6lZLWQi5MYBiIOCgyhcZVMb2qM_uzrCek.%26pg%3DVE5Z2OOQQJCFBOC7BVZNBY53RQ%26ch%3DAQEAEAABABSjwtd-tYiTa99ITGvtGvlWotgMI6nk4EM.
+.netflix.com	TRUE	/	FALSE	1798761213	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1798761213	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1822515082	nfvdid	BQFmAAEBEOG3AryQ5Z0vOCuagO0mVYBghF2S1H0QPbwE8ZGVkbBn8-68QVHGlI8tdxwSkSJn_VtqLWdlpTnDmdqGVMyRas_-yMcETF064G_sMmXQBet8wCHvYX2S_2Tj0GImJf9NTQZdwIQYDGB4-gCykPZwnAp1
+.netflix.com	TRUE	/	FALSE	1822515079	OptanonAlertBoxClosed	2026-10-02T22:11:19.944Z
+.netflix.com	TRUE	/	FALSE	1822521214	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Oct+03+2026+02%3A53%3A34+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=334ccac8-5112-49e6-86e1-9eabe9590b97&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&lastConsentTs=1790979079&intType=1&crTime=1790979080414&geolocation=TR%3B81&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1796554944	profilesNewSession	0
+.netflix.com	TRUE	/	TRUE	1822515082	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSfpBsYO7TKK9RUIwjNHj4SUDUseDId3CA.%26dt%3D1790979083398

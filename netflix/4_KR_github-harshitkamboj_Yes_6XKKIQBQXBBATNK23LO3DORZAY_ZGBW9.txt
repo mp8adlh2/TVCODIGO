@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: KR
+Plan: Premium
+Next Billing: November 11, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: KRW 17.000
+Extra Member: Yes
+Profiles (5): ❤️, Amarah, Jaja, Carla, Anak
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1812058778	NetflixId	ct%3DBgjHlOvcAxLmAxdkxBVFfe8IBb1tFqQBwiiy1O-kv9T6NJJuXF9eJVU0Tk_i9nyeit5F9m1A4_-I1Lu3jqB9bw6BhctNI3SuMAiKZh4aSRdDU7hkke6pSXOsRUUha4OMf7d_0zUw0QbuynQGfpnQl02F-nGF4B2MaWNTH6Q1-oA4cozFIj6LnSFn9VPSxzR66w1093IWmEcGpD5B1FQYl3Tw8AvHRTY0v4oR8JJQg4nZSnjYYma5OUCSTwLoBV5VNGKrOHDI-4qr29_IiXM2nzG6sAh_3-idrJtTtHMz67R4laL4q_Tx7TGS4WOriV3vu1C9_IrIoHl9ZMI8vO-zZJHpBi8eqExFHn7j3DtGsy5khgijjMT0pZtUHpysbarmcZuRDMs4tPXVp7QGUfofTVZUh1kWrAj6ojijoqjoH6eBFJY2Id1WG2EKX4IjH0rMUYFPLygtFN4tgMhYCnHJVpku8AHbFjJQxd9ldysP8iPhjclttLkMJ1mccGv-qtChEWChitBl3Kj0xlB4YQAwSvTUeOHGI40xbWe7DGEGQfb6JjkbFIpCJ8EukvKIsCzmy7jzAs3tuLDahnZMjV5vel4XGCxgQeJixIGkF-H633qNpC1e2n3jSbY8LBs1eGmzj4fivNzV4KB32Rr13YmhexgGIg4KDGjSfYr2HePvwHBCIA..%26ch%3DAQEAEAABABRlKEcQSsBc_L8S5XaMn_z3aj_ThmYg1-M.%26v%3D3%26pg%3D6XKKIQBQXBBATNK23LO3DORZAY
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1811895817	nfvdid	BQFmAAEBEGGkW6BrBX9rSZW6VsLledNg5VBKRUvwTmpPhQvyN1wYH9zR5R_VOKOr0ZUZ6x_T6xa5Ov6uq4dMmbjHto8f9RGuCpIHW6gIDZYRk6S4Rk0bMUreBDidoEis9Rtyi-IQuTlCw86KWg-gyBJkmnogUkyh
+.netflix.com	FALSE	/	FALSE	1811895830	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Jun+02+2026+08%3A23%3A50+GMT%2B0800+(Malaysia+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=5568a120-4e5d-4c1d-8163-d03b7ad9efb0&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1780359817620&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554946	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1812058778	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQz1LdGtUS16WTfRWf91oX7g_SistMtJe0.%26dt%3D1780522785558

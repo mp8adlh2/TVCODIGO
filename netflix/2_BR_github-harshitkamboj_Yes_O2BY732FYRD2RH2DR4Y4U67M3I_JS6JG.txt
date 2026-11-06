@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Standard
+Next Billing: November 7, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: BRL 44,90
+Extra Member: Yes
+Profiles (5): Willian De Lima, Kaka, Clarice, Nathali, Kueh
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554944	OptanonAlertBoxClosed	2025-10-13T01:03:04.445Z
+.netflix.com	FALSE	/	TRUE	1796554944	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKPA10_PledACWDy0fHk3xdWjLTQA6UOdE5-lC_61tl8BYm9fqf4OxMiqvhyLjpH5-fILoqoMd5gR1_JlgJ07d_jMliYKtEf6AulmLQSwEZFqD6b9YV596iioSfZVyRqe82WP84E0Wnp8Iz1WONpafywRH62c0P7KwQxbeZE03maghe3qq4i-fv1790eFV2Hca0N_hVfrF2ewCJuIaEE8537JMs4KfhxG0bwRvCgOPdd3NKnHsDiubOpBHZ-Vz8cXU-l8oFOxhssQCa6rz5uJ_26plYLWT1r683XZStSvJHzsan5DD0ioVGnCM5s2ouVQwSO_I_N59snjuDMWYnnxpO4l2KT7yWnlSiFZ3JFCJZZl19cmcWPsVXi-zcvctjBIvhNVfeZ9lH01CZYqehNtTp2D6xl_0aPrIZzwHDfMKQxlcywHPRTiI60LFmxGNnV-O4dtngNgF6t1uuFBRm888gTTpfSqosuxBHv0D55WRMwUAN74p3miMCyew5r0JPFJ9eogBpvKJlruLW5-dJhtILWxgGIg4KDCajMEovWrKaDzo4qQ..%26pg%3DO2BY732FYRD2RH2DR4Y4U67M3I%26ch%3DAQEAEAABABSZRpPIYdwNbzmu0Rw1cUeC77NGdrxmAGg.
+.netflix.com	FALSE	/	FALSE	1796554944	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Oct+12+2025+22%3A03%3A49+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=926b1efe-d0b3-469f-a9b6-b06be5eb9374&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=3&geolocation=BR%3BSC
+.netflix.com	FALSE	/	TRUE	1796554944	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABThO44prlzIeU038DUNJmtAJfsMVLOoYlY.%26dt%3D1760317428717
+.netflix.com	FALSE	/	FALSE	1796554944	nfvdid	BQFmAAEBEBWOtofgKSWRd_uTmv0jA5RgET9SioHlHis2-2oi7oFumLn-3q86tY7yjjKzCaRWIzgR4K9Iuk6z8SYVo1Io0M-HN-y-p5qg35oYuZKKquIaliLaRHfex1IV4V8jgHiFrcLkgnB54ReVzTTS7cOsDRYA

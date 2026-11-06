@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: ES
+Plan: Standard
+Next Billing: UNKNOWN
+Payment: O2_SPAIN_BILLED
+Quality: HD
+Streams: 2
+Price: N/A
+Extra Member: Yes
+Profiles (5): Mercedes P. Borruel, Irene, Maria Eulalia, Carmenchu, Infantil
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1817736348	NetflixId	ct%3DBgjHlOvcAxL_A7-CWYaeaJpdgMJaQcLYY895L9oKT-FfHmxNZqKCKUTt-AfcxZBVphGlhPldI8X2ZafO52GB31knwdUgV1SRCOFtg8D7u5yOAOPz5cw1QeAWs2pfm45GnqkII4epOPAvBZu9Sut-6moZv6ghZ8EWjIYg6g890zTOkVx_UiufElXOmVtMcC1t4I9Z1sqc18kwzZfndRp4imSpRfiy6Y6uKAYu-6euLkoQsFPybMTjnWbpkLHHa83xPcy8IGmlv4iHHrY5Yxcj9m9IM3zkOAQpkCNHFIYXkCHbF7RMSunAA_MVKL2ObAocPyNMmGIyabbMAwsS-w4MCgghQty6pMONqZ0_zbferxidPKnYXBTLzDi6tARs3Dfwa6y8T_ml4ELCpwu4wb0jll8zcyyDTNepFE1uC3lWD6UzmzZYya2aYs1Bv_beSlnX_RCa0znM2w-VOzOfi4vyuZTMRkh_AkVxpldcg1QnMsbofxQoQgevqgsNvsCN3vUI5Pv8qTwjTVvu-_Wd_j_OuQzVfevf9mz4cekgzDWxb3banAannH11hgdi_O1oifbO00vhy-x9w0kVQpbkjmZ9Gg4XfwFC8iQKMLZHunmmekBDmWUKaTk3cKxD59_ohStLJUyq7QBfb97lgw5hI3kgu9l--xJ6cAeGUDke-ItjadZSZtJarOjSKt4YBiIOCgz2XkxxkydG4iC_e5k.%26ch%3DAQEAEAABABQYC1SZKogCLRhqMGdnC-HiKMsPxfhalDU.%26v%3D3%26pg%3DKZNEIJCBAFADRF6FM3L2CKDR6E
+.netflix.com	FALSE	/	FALSE	1793998065	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1793998065	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1817661589	nfvdid	BQFmAAEBEATJlTfgQWLXuUBkS_mFnEhgQcE6aonj7FVhVBhs92WfbymHldOJpRnxYlPwEaGI1A3vohy8uyUX9kimA6wBoAf99-kmlA5p7PUuu5JERIhYhuGR01yZfywmRnRjidakGU5mSNyjZ_ALrUwd9PBem38Z
+.netflix.com	FALSE	/	FALSE	1817661598	OptanonAlertBoxClosed	2026-08-07T17:59:58.091Z
+.netflix.com	FALSE	/	FALSE	1817758065	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Aug+08+2026+22%3A47%3A45+GMT%2B0200+(hora+de+verano+de+Europa+central)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=721c0096-2f99-4282-b92b-e9ebef379f28&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&AwaitingReconsent=false&intType=2&geolocation=ES%3BCM&prevHadToken=0&isDntEnabled=0&fclco=&crTime=1786125598292
+.netflix.com	FALSE	/	TRUE	1817736348	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSA6J_dr48yiZZarNrlSZv0_DOn_8l5ISg.%26dt%3D1786200347249

@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: MX
+Plan: Standard
+Next Billing: UNKNOWN
+Payment: TELMEX_BILLED
+Quality: HD
+Streams: 2
+Price: N/A
+Extra Member: Yes
+Profiles (5): Keylnn, Hola, Alesaa, wtf, Niños
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1818226120	OptanonAlertBoxClosed	2026-08-14T06:48:40.202Z
+.netflix.com	FALSE	/	TRUE	1821250289	dsca	true
+.netflix.com	FALSE	/	FALSE	1818226287	nfvdid	BQFmAAEBELB7eNhP6unzb3ROGJgTfOhgFdMmQXWo1S0LsJ7XkgPiMu-Za8ZZlMmR-S92_84KxMK-tH7_xMeLeRA-hJimMu-At7mQaif0tm9hMuadRBX-hTGezjTcEnnmId3lM0FFzt17i9AD0BQtrM37jfrfk78e
+.netflix.com	FALSE	/	TRUE	1822775568	NetflixId	ct%3DBgjHlOvcAxKPBN8lnQCXu-_kL5bAV-eJLTHsdk0n42wG9uNFujY41zj7r7sCq912CvwWBo7VyeiR3rBb1AdXPs3ZhWt_iIH-mIgrllrrKuE_ez8xdk0rFOf6rmiZppBqN_lY-BPIJ5rtBCCX_o10PN_kqnEgBkRIvW9NKK-BICyYvYKTrmjzSmjL2vWef0eyMEIOE4ewyQ9-xHBvAnddUoPJP2mQNo_oCPYBaxFHt0Q3EMYQ4dkz8PiZkJzfDQFtEtOEwQaLYfB2wQtmbQz1kSxOA8WvqxegO1PR2BHEams5LVP92Afc9fOUG_Etto65OiMCblaLPJfeVkcR5ZfTIt_-Pkygb7QXCZny_BKF9KO3GltJqdO0wjMi_QEn9gOC5MDrVVn2D0O5m8L3YgzxeFJBpQoV3rMIi-kQfUpepp90JD0quGv4p-VOnyIadTtiIbDpfo6AqBIxuHTqSaLoFLe8RaOQJDcGe_UBrMZf-LOT-QTVoi37gNPmw4k2QMOpcch3lSK5AWRJkXPI1DQlj9jlaQIyksxEUtBzRMa7s07CRVWqthMiEGbm_kueaFX3_GUf8I5IwEreFtz01jrAANv9t-zVuXRAvJ5ApSR-1_N681wyoZowu_DbnDFroS4SMF4gc8gLQKAFMIoxHtQF8LXxH07SbANtR4GutvRZ7IGF-pl9wggNS87XZrRFNo3uhQdIe4Sk4JqvGAYiDgoMTKZbZvAMOTE334Z2%26ch%3DAQEAEAABABQ8fAIhsaPddOnDO-OHreRtmoZN_kWo0lc.%26v%3D3%26pg%3DPRATQ5SXUJFEHBG6PHGU3VGXEA
+.netflix.com	FALSE	/	FALSE	1822775576	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Oct+05+2026+16%3A32%3A56+GMT-0600+(hora+est%C3%A1ndar+central)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=63309c36-f7bd-4c2b-9b10-f759d3870e4a&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&fclco=&intType=3&crTime=1786690011849&geolocation=MX%3BJAL
+.netflix.com	FALSE	/	TRUE	1822775568	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTgzW9-4-6INgyjcUHUfli6fcKF788eGkM.%26dt%3D1791239571335
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	f5053586-77ff-4401-83dc-8fa3cb1a4e67
+.netflix.com	FALSE	/	FALSE	1799015575	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1799015575	netflix-sans-normal-3-loaded	true

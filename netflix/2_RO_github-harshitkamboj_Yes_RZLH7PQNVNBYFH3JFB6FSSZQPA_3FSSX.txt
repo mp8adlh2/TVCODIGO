@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: RO
+Plan: Standard
+Next Billing: December 3, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: EUR 10.99
+Extra Member: Yes
+Profiles (5): Harabagiu, Rareș, Dragoș, Mihai, Anca
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1813756080	dsca	true
+.netflix.com	FALSE	/	TRUE	1813154082	NetflixId	ct%3DBgjHlOvcAxK2A7Kl0Q3QiPtwdJI7YFn7we9KhewNGTTFVHuzOcGjtkRBVGOvS8kXEbStjMMHmC-18P4JngqExu8L9WdEAPmF5_JyRsAMdw3p3UHJPKn57NBncYc0iSMKys1apZc0pDUTGKlqlNbTM2koxYO4ab7WxBLJgRHzLr1j7picN6a1VCd73xwjo4k5F66aZh0nlb6pv75m0j-0_ifR995-rwEKj4x8UeweiVdroRMKeJZPucdvHlu-adO3JzU0ElMZpV8ztAM9fg9zJAmrqkl7wdtLYEPPIAQdXA68b_ZtMSUcT150dgRPGFBuh74Y8QSJq5gWkHlX8MguHRqw_7gnGXpB0KHg5dTagLB5NGXsPyqcGZwutdzl-oYX-TPfCoQwzVikpnL9oNnJAWKyYla_qOCEqmWt50_rXUEbV_1Oh5Ahxrgt-Sylk1m8v4YTD__FNPZRvEBN8iEj6FT-Xu22dRiWHFb0vKZLzn4PFrH5QMc2ntLPVEcwvmHhKXUfAbTDNK9wXfVzfsu8122pm9MlDk_0Fn6Ub1fvUlCci_MFsb55DuybmZCD0aTGiUXFcrvRF7BIp89BHoUVCBgGIg4KDJKqRcUJTSsEUACl8Q..%26ch%3DAQEAEAABABQ1_uLA2s7aQuTKFxuHCoq4vXgIA-vSo3k.%26v%3D3%26pg%3DRZLH7PQNVNBYFH3JFB6FSSZQPA
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1810732080	nfvdid	BQFmAAEBEGRNRYWMjsgzfR1jK-HE4CtgHIYsEJy4qM5yYsVU11BbWxRE4CsfugGRbUMNlgIbY155t7JoU8Wip8Z3lWfFeE1Jpq8BEd1SoWEtaicOofk7OOxHDLPe3pG_1bPUjubiLY0ogNwUnTbRRoYVNhO2g2LY
+.netflix.com	FALSE	/	FALSE	1810731818	OptanonAlertBoxClosed	2026-05-19T13:03:38.596Z
+.netflix.com	FALSE	/	FALSE	1813154083	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Jun+16+2026+16%3A54%3A43+GMT%2B0300+(Eastern+European+Summer+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=77f2e978-121d-4f60-a195-d40fd3ae4b93&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&fclco=&intType=1&crTime=1779195819036&geolocation=RO%3BCJ
+.netflix.com	FALSE	/	FALSE	1796554946	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	TRUE	1813154082	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTBXRMsrEDJqI6D782a_yREEav4YaFi-ww.%26dt%3D1781618082376

@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Premium
+Next Billing: November 14, 2026
+Payment: MOBILE_WALLET
+Quality: UHD
+Streams: 4
+Price: 419 บาท
+Extra Member: Yes
+Profiles (4): แมวตัวใหญ่, เจียวๆ, บ้าน, มุมเด็ก
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1809871975	nfvdid	BQFmAAEBEKA6UtL2tJnvLYMDLoqk-Ehg9CBOp-tEB6rpXemw4bczMAHDDHUBsFi1_7Ocyr-1WgcmDt8TX7WUCazeeuDMzRRTRFOOU1VJSVBemBXV3uSbv47or9c6Fz8e903X0DeKJpNXL8IYs2xPHqUT6G2i7QPn
+.netflix.com	FALSE	/	FALSE	1821595666	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+22+2026+13%3A47%3A46+GMT%2B0700+(%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B9%82%E0%B8%94%E0%B8%88%E0%B8%B5%E0%B8%99)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=4f9cd2a0-6853-41dc-b800-d9723842ca58&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1778335968868&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1821954150	NetflixId	ct%3DBgjHlOvcAxKKBLe78HqBakKLgOeyLvkQWtr03DGvjx-SClBKsuGFgGhPnQS93WunaEctDOEIFMZac3Rp1mGVP1GXij5Z0iWxQLzXEkg8Aqegh5UjDI4f7eKaipp6Z75kBkeMcju0nKewC8ENRwOi9FZNfcc8-wFKWFl5cOgyB6gUkyqsGU008NFrOjt6UBRUA6-P_CJQdB6W-OA4UUeRzMJdfKfxWJ9snhPsL06898O78kWd8yhfMXOLtWWC_-tQpl--0hFDt_GAq9mgTxRXn9XiFkctRPo89OI6ChoK0ue2XCCBTuVd5Ftetun2Cjs2yNGDajGUPDaeDdr3lJvG097_UduqRtOTailN_SneOjJWu19BHNC7IrjjNPvd-gITYhm1SEPbfu9-pziyfriXVeoT46JpFMIgmHk11tFTqv-xQ2ujGcGztxZZTRlb-yF0u59IKcIWms3gxRDBAvYr5cDESCTKFY06jZLN__Lr07IGbBWEo7vittu6xoZTOqTY52ApSH1BvGSJHPVhc-auS2p6fp5v3hY4kJyGZ36QKU7D4lZb0qbb54tYsUGH7QSid0pHTQyqmZhHHkKuVh3YaLZcgQA-JJX_bWvrjBztRjyA-wfkFamL4FcDJPN3JyKfXpgNtBXkYQxE-BUFFM8DHxR8GDNJtB8KQ6H5bIbaiO67aUQMBSQT__1DMsLOImQsL6i4ORgGIg4KDFIM2rz0rP-8F4eTLg..%26ch%3DAQEAEAABABRwqcFFf1O4XWm6AOuepkcymztIDFDQYXk.%26v%3D3%26pg%3DITA63CEQ4VGVXD27IPSZF453JU
+.netflix.com	FALSE	/	TRUE	1821954150	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQnM9opJaLDcjUcsMhiz6qPIy3tM5z8lhM.%26dt%3D1790418150988
+.netflix.com	FALSE	/	FALSE	1798194150	graphik-bold-1-loaded	true
+.netflix.com	FALSE	/	FALSE	1798194150	graphik-normal-1-loaded	true
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	fb822696-0490-4cbb-99c7-25c2e6e6d620
+.netflix.com	FALSE	/	FALSE	1798194150	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798194150	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798194150	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

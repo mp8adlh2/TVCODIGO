@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: KR
+Plan: Premium
+Next Billing: November 12, 2026
+Payment: MOBILE_WALLET
+Quality: UHD
+Streams: 4
+Price: 17,000원
+Extra Member: Yes
+Profiles (5): 돼린, 펭귄, 코알라, 오지, 키﻿즈
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554946	flwssn	bdcd53e7-6410-47a6-a9f9-32f34f93e20d
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	fddee23c-c32b-424e-8791-be70fc798f1d
+.netflix.com	FALSE	/	TRUE	1819603365	NetflixId	ct%3DBgjHlOvcAxK0A1iExqBWDXUSQ4LcJMjMjX4Mt5r_T_Xp96eQNgeg0b--oE1gXfm-QmwfVV9PtRASHHbvLjCtMn4hu-Zq0BwMHmQgjGuxvp0IIiVgegl1jrh8aRe46E4f4euIXb-yCe4skpdcYNIOw5esYpDBLPDgC347yyyx_ZB3zZk_XbDAISwE9GLG_Zmz_-Tz0xlBZff0FpyqTJwDR93mBNL3HoWMnMElHtub6dtmStlEQoTVXSCNxDFObLxeyiGy6Q_4f0dOkq5KaRFV98yE3osqBqSY3AnlLwC6ZBdAp8RScR6IsowUrmE76z-1nOreh1MOmo6bV2m3r6fHLbPlE25IBEuBk_cf-tomXzd3dN5NHz9E0sGF-2rHTjtCTGgiV4jSOG7AsTUOPw424xkOS_WnDstz_xApJkCofrhdoQec-ONbCHVhBkFFmjXzfCuhd7hdKvg7gKF5EhR8v0rC84tVQBC7Z4zlsNLzAPnlfP9j5URdt4lbA5J9XnAWhfnYSvOonG4SjbRLJ71cWC6LqIJCEuCH7HTkYk33XzuFqhhw_iqe5A0N2oVsNIywOm4KeB0ugWAmsmPpJLQYBiIOCgzFS-SphxmNEQhxHps.%26ch%3DAQEAEAABABTwfe2CdxYcNadvTn4lmCXxF2SG4HreGK8.%26v%3D3%26pg%3DISL35HCUVJCSVIPDKSKAXKZUYA
+.netflix.com	FALSE	/	FALSE	1806232401	nfvdid	BQFmAAEBEAIkLIKyWCsQK0XDm9tWABxg_8f7W55kvltBtycWcAHUf9U95QGdtcvj5GYHgBZLqliOdMdIJnh8_6BKD0w0JoBFUXdPDI2e34PFt8-nBKj1fXF-Hw-U0hkeD0AEB3n2Nig-mJ5Xif86iTVyFyUu0bQ1
+.netflix.com	FALSE	/	FALSE	1819603363	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Aug+30+2026+14%3A22%3A43+GMT%2B0900+(%ED%95%9C%EA%B5%AD+%ED%91%9C%EC%A4%80%EC%8B%9C)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=e07eae10-9d40-4d1d-ad30-02c38e5ab4af&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1774696379106&AwaitingReconsent=false&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1795843362	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	FALSE	1796554946	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1819603365	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQvC2sCO0nVY5Y4RXvHHQeXy_g0KdfvTGs.%26dt%3D1788067368909

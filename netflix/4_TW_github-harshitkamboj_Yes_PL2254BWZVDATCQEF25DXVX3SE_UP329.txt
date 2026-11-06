@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: TW
+Plan: Premium
+Next Billing: November 28, 2026
+Payment: DCB
+Quality: UHD
+Streams: 4
+Price: $460
+Extra Member: Yes
+Profiles (5): fir0980795318, Smiling, xby, xby2, 兒童專區
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1819193654	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKYAx8CEJfCJerUR9vVLgHeL2yghhlBYWboMs9W9BhVPngUAG2IKQbzf_lByW590I67xwXYKpsGa9XYzzAGo_ZVKdmxK2LAyz1Q1XLdoyt0JlTjz5fQJO-eVv8t165g8WQqEY-TXqygn9cdnCWXsNBVbBDca4cm75WgFJKGsBjJdayXlHW01nFJg-TZVHCT82HS9bXG84sOnq-hFFAeC0f5EYr8zM45i9w8W2sfn_TXC9gVSTTq_eis8TqlywLwUm6ipinTLUYZ5mTaLxmwj1a_naWQj7uMgLjKd-l6lE5fYopeNcOsVuGJeSXZNR3ABqdGRbbJdW8gDwJldc9-UAeH1l7wkmlybV8ZQP8vDzejFQzXhRGJxcK23-lcPrD2CAxNzelrEo0fcZQnkwoqcDQ4LCCHNC1l7vfY65g4V10rr-kSf69lDV2hiejbNMI8l8lcuFo_3fzwOjMdlu0-jRUmGVBExZcgg2C8p6VqaUzlvm0H-yEMAXP7SbZN2MCRigpyHPM4AxJkUXO_oqAYVnKFiPF36ZkqN1loNhgGIg4KDGxpRAG5LPO4AB8aaQ..%26pg%3DPL2254BWZVDATCQEF25DXVX3SE%26ch%3DAQEAEAABABRyA70rvk02dlmeQdVfc4Byo2lp_4npn9o.
+.netflix.com	FALSE	/	FALSE	1795433652	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795433652	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1819193650	nfvdid	BQFmAAEBELECtbh83F4fl013DkJTLltgcMi8B5NFZfyPMBPCi8IYOf7yJDjH2Ozv81U0v1shL1J-R4yRLmiTKHdWST5I11LZ9I4CxcpEesHC6s0u_z0Vqx7JgPubcZSw2JDYqYKLLt5_yJlWCMVSbrBT1awYH6Pk
+.netflix.com	FALSE	/	FALSE	1819193652	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Aug+25+2026+19%3A34%3A12+GMT%2B0800+(%E5%8F%B0%E5%8C%97%E6%A8%99%E6%BA%96%E6%99%82%E9%96%93)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=9661f90a-862b-4e7d-9dd1-f0a2192b7bba&interactionCount=0&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1819193654	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABT1cuG3t2tMLhL_RKStnNK_-T9FQ3-KFKw.%26dt%3D1787657654580

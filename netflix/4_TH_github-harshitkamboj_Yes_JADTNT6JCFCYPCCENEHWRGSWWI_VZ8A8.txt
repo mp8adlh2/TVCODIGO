@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: TRUE_PI_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (5): คุณนายท็อป, โอม, Suphagerich, เออุาย35, โอมมี่
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554947	flwssn	ab656000-bee0-44d6-901c-a2608c183be5
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	1efb3310-1846-4c0e-a3f5-ded070127553
+.netflix.com	FALSE	/	TRUE	1821582003	NetflixId	ct%3DBgjHlOvcAxKJBEsVrfqgq-HOZr3RuPXxAmjUhuIaETAXVr8i59xDXenTJafRioNCPVLDg6S1R5rSmuio4R6b0IgWFI_lqsw9q6VhAJYS_RH9wCC5p75rjMvgZ2pGpGvzwakgCn2jAHuvwqi2ibshcXfRVCuk0yK8yVKqGIe1Biwb2r_bbkPuYmi4MPUVUX6frEA4NbDQRZjazMss7hXj_fYpMW4y9RAhCt8ncPBJEqbq_AbX-QN1G_Uq7J_mv7SSy1D6s5d_fvtlfAf1L1v6qkeCp-HSNwcHWoOQd9gSiQxmAtOLv8_3AqmnHViLtNJ_CsefPv1qEQhkbwbCpDBFnP-v5xzOqNhGjJobTgHb6KrLOOchjqcQ4Dc2VNOakmfj2k4EKR8vvPaaZx6tNhXWmQZTCTBbKHSdWDLkbDORMe9EW5zbomqdmjvwLHwflYlmkVFhsGH18nPb_7ovEHQmjuoF8izo1YeIb59K3wfGL2hGyneMZSfQXIuCaqh64rX_ahtCoDkQiS9jyaMMM4ylK1mN_64HlzjmjQ7e35yKsKAKg6r3nFBuYTZ7sFlvkYJxMgnoiseYEVI4cLDsJnuEpuVpn3Tte45NFghiKLc_dedpVQ1_9JNEOuIs6CXL3txi_zSJqIGTGqd86VSxRCpurJWlU4F7zkaMv24eKIq4QOB9l0SK73_9R2YElIC-U01odXllGAYiDgoMfHkzEbnTVI1kXixl%26ch%3DAQEAEAABABS8j2i_AhiSCZk6A3vlquQAfEE4C1Zmu6Y.%26v%3D3%26pg%3DJADTNT6JCFCYPCCENEHWRGSWWI
+.netflix.com	FALSE	/	FALSE	1797816453	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797816453	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1820086026	nfvdid	BQFmAAEBEFXxUgE14yD2eP-0bfyAnmJgR5-ohHVZqhp2T4OQijUyJZ30m1LQFLmKlsqA5MW_SXm5Lftz1ZvcfCADu9bKn1BPU-DIMUdSWlN-uccLp0wbKBB6fseJxnIY8PNjnVqScLyU9NZO9ymGEgJNX8RTYosp
+.netflix.com	FALSE	/	FALSE	1821576453	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+22+2026+08%3A27%3A33+GMT%2B0700+(Indochina+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=18b937ac-7e6c-4401-9e1e-215ae9687b15&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1788550026839&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1797816453	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1821582003	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTv3_zedinLIZWazof4jxX-t1FpVVqKGew.%26dt%3D1790046011470

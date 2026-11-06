@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: ES
+Plan: Standard
+Next Billing: November 10, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 14,99 €
+Extra Member: Yes
+Profiles (5): Ana, Nacho, Mx, Zz, Infantil
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1805752471	OptanonAlertBoxClosed	2026-03-22T21:54:31.196Z
+.netflix.com	TRUE	/	FALSE	1805754143	nfvdid	BQFmAAEBEHA71IA9MZu1we_srsT5LTdg9Khr4syz4JrLf4zFMFjRHY-_6PUuBt0I6QUaegWoK7kUwgk_X5G6YSEidATXZqH3UPRrByVZA_6nxkPh2A07DdvuOiGAjmeUK8qdurIcnI8CLCxz6eXy9_axfvxFW_Yb
+.netflix.com	TRUE	/	FALSE	1816815871	dsca	customer
+.netflix.com	TRUE	/	TRUE	1821476288	NetflixId	ct%3DBgjHlOvcAxLPA5IVj3pk7oKUfTFPcr26HX7fSTGZIVUP7KuYef61vfm047vxkuNU-RvBe3_203mqF9G0M0PHU4EiSskYjW0t3UTl0NoVhV1CAbWk5L6hxlp6AioVGLTSOKcoNU0NvF4H0TTD9kfnlbW9tB78h8aH3n9av7pW7lWSTCdI7BETNDCJAlFZPO7leNak-l8MYfoqPlsARIHtmOa3y8SNP2vv3NKyo0ulzkXEyFvPw-0gv16kvKJRpawSPJzchs3Z3SWsa2CAoA0ndb0mcaaYO7L_r9RAhrBxJgU3DLhLSpEJJVTqIgLGQzV5WTjcbrXnxk4afu67l67uZhvWAaQjgLYXhhM3VpbQDZHFGp5hAqkNTK-aDwQ1zoTv3dfCAcajnyjgGpCC71W_TQYRZp4rxyYnlECjHz6uDDuFdV_VZnTjH0L4SaPtFfhiBQ-osRRYV1MoLI4AKvxVsoVS8EaTx0IM4glYJK6th3AQ-IgXPTEMkuR1MHJgCwDAVy46t88VFpCF8-_9rOrVDI1rmVjNzK4Ty0VJCiEwATo1BS6oKfT9TeOrfgMVuRrSqfWHqjQqvuG-B6Fx0pI4jvth0U7pxrSb1WEvgQzY1YF9SdWWLiOQVPYYBiIOCgwWCUkHsW24VDhPKRM.%26ch%3DAQEAEAABABSdt6Z3dRWN0fazKEV1gUAug6_y3T5hJhs.%26v%3D3%26pg%3DWEIJTIN6TZCXLLRA4OBY6BCNZA
+.netflix.com	TRUE	/	TRUE	1821476288	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTaJAe_gR0H2MKUuuK8fSYxgOsxaCtpQeM.%26dt%3D1789940288763
+.netflix.com	TRUE	/	FALSE	1821478606	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Sep+21+2026+00%3A16%3A46+GMT%2B0200+(hora+de+verano+de+Europa+central)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=d45d4170-40f0-45d4-b887-574e8435f82a&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1&crTime=1774216471586&geolocation=ES%3BMD&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	FALSE	1797718606	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1797718606	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1797718606	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

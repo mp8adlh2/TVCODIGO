@@ -1,0 +1,21 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Standard
+Next Billing: UNKNOWN
+Payment: FREE_ILIAD_BILLED
+Quality: HD
+Streams: 2
+Price: N/A
+Extra Member: Yes
+Profiles (5): Erwan, Karine, Angel, laurynne, Jeunesse
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554945	dsca	customer
+.netflix.com	FALSE	/	TRUE	1796554945	NetflixId	ct%3DBgjHlOvcAxLsAwVf7DxYkmoAt5_0jlsTk95bvaA6-LZEhn-cWKniw8U0Tev9U5rnKA_B9EbMRa5xSwqy3_YXktEf0bwTwgYIthrDj431GME2UYxyx3uvR9B1i_v2lAOsFQt7IWnxfdt8CiWpPBBUoiiedQjxPFqBKFFqXgp7eyHpLFT1ULiRG5e4rODJjUB0qUFoOYZ2Cwu_0gQ3EpIL-YUxE7n2Nonw_KvcfPHt1Cbon36uHXWyC4eHC6vqH0ITIGQsFSeMTU_752w2aINTdUMXX3kJc6cenMKnYZz-Jv7eUIsrvQeuIPtS9rRmGwaLHVIhJWKl01m5mXCMl7XO00UyER7E67k00EP-Stjo0Goi0R-W6fdZ8Oj5NN17eyipNtLcaBcgEKDg_xq1er8hnMamzc3ZWgHlm_4XbkcHpGt3G1l2EdtNTyA-R7SK4wDp0ds4lNrYwH3Q7KupAr4jjJMjqJ-YUqxgvoLmS8OKdTvilzCIsIDYplcPNP-YWRxGJXEiDv__25pRafYKvr7norxOTRJXr9yw4Ulq79xoQjuNd7neOmgcJB3GuT03Kh0DeNycwcjc3QogVz-goR01w4j5atdDchle4pkuu9AagYjiF_MHIuZWpHcfq3T9l18AeMZ8V3FhNfoJGB1mlVZBxkWCWG8ziRgGIg4KDMpNH58BaRvsCNX2nw..%26ch%3DAQEAEAABABTt4q8PWwx3G5CVe74nq8YOW7hTw19A3Xs.%26v%3D3%26pg%3DPKBCOWRLA5EA7OKVPORUI4YAUU
+.netflix.com	FALSE	/	FALSE	1796554945	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+02+2025+11%3A52%3A50+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=7409903d-143a-40db-99d1-bdb5522e2c52&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&intType=3&geolocation=FR%3BBFC&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1796554945	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABT6-Z5fnEeTMSggzoEvJYI8aMv4B1D6Ppk.%26dt%3D1757160472460

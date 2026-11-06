@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: November 19, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379,99 TL
+Extra Member: Yes
+Profiles (5): Burak, Mert, Berra, Nare, Hacer
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1819049966	dsca	true
+.netflix.com	FALSE	/	TRUE	1818608268	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKZA-z8Ldg5cLZkivmQCcC2rl4bEngGV2an3wcf44NE9NoLU6V5MjcOIjq6BA1yliaYdTTgc-YKiWvxyBXNdRPcD4Bzf7LYfYvhmzMUlja-NIia_chVrQPjLJOHXL3og2egBzYND78dxkFlMgCs8kOhFDgwJE_Czrn1BYHQ3w2fynEBIIdOMf904rAfL17MTPa2BhyNf5JaGsAcQ2KYQ-bV7sC62-2V4lgzFQQoslyKA65Bu521r7FyRmrun_s32glZhF5O-l6cb9xDyKaRndAHn4hZndd_aPEYnhTE4BcxqHEiupPOSyTKzb760vbn6QeGuAfzOdlXSUgp2CU9VPBdbSIp3YhLPhcc1EN_C5Zcx3dpMlM4seONz0kjth_T4R6IRYHM5wqWifptXbin5b17ig8wed7P18Yt1yx-76agl_di914n65G1qkYHD5p6TFxETm0CIV8mY_zeDl_1PlN38h9I90F9xdSi-pG6o7dYGIsBk2CrK8Blas1mvETuSd1StBE3ujxTwlZDFwqrDusY_H4BwGLFb0ZxL5cYBiIOCgyq1Ge849X81PE91Jg.%26pg%3DRUCGTDSZRZFJ7MM7EORIX73EJ4%26ch%3DAQEAEAABABRJxWNBxbGj0gS_mx6K5pLIuS3MSZrf5dQ.
+.netflix.com	FALSE	/	FALSE	1794848270	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794848270	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1807903630	nfvdid	BQFmAAEBEBd017KZ3BmHYPFZ1lsq9TxgjT7jBaenStHu2HxejQ8y7QBs-IJkJdwq-O_WubBd8bB2IrLUN48dF-52fv4lvWIkO7fDKBD180L26CMhkE4r4qM4v2qSH5TGzjzmtpbpycgSMe3jq87tXafqr0Hfugth
+.netflix.com	FALSE	/	FALSE	1807901387	OptanonAlertBoxClosed	2026-04-16T18:49:47.937Z
+.netflix.com	FALSE	/	FALSE	1818608270	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Aug+18+2026+19%3A57%3A50+GMT%2B0300+(T%C3%BCrkiye+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=efed03d9-2970-499f-a0f0-8601cd311cc7&interactionCount=3&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&crTime=1776365388357&AwaitingReconsent=false&intType=3&geolocation=TR%3B35&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1794848270	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	TRUE	1818608268	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABT74LB92HP-mTdXU9P7_fDFud8ziffUFjo.%26dt%3D1787072267262

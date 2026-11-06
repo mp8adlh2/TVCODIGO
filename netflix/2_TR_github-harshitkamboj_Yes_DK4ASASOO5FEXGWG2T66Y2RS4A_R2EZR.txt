@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Standard
+Next Billing: November 21, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 389,99 TL
+Extra Member: Yes
+Profiles (2): Elif, Çocuk
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554947	NetflixId	ct%3DBgjHlOvcAxLnA9E7w5PaMntyKHDJ-OMATxT1-0i6wp4MQM43NOOGaphaPHKVjm3-s3LSxoR6itc_Iedp4TfDTl3OZJNivDgZs9C6MZEhBtqbSUq7kDKg-0eWn4XU-3x9bL72vWEiruaC-aoUl_xH4XpRQ6tslJ3KJn_t08iPF2Q85GW-RZnu8oPXOGfrxtpPZvj4pl6M88RuPtPjVVclZnUXyxsxVB85D9XfomodF1o0bAJtr3bmfekxEUeq2DetMsO-8ule9JBF7Q1gGFFp9C25fWRK_Zj7_7vE7LcgCZQHIZz_zxTvKADLNZ9n25ASsdH2y_xP39SBIOP-yGyPU1lYNXTkp4Yn7t7UuX2aDCSsa0J8vOaxPS3MT9dfy8lYrwwDV6wcDKSnJbdX4FIQkS0KriTCFSHAlFqUvn64gTIaPiEUrhZ6LsYlkMdU393g0pocdzQ1jNFGSu0_6OIJfqk-a_p4urssmKahNzTWNFTrfuo6k0fRlcIrQN7IXhmx41wuGo5hY4yifd3tlO1lphV3VWsBOUG63_Qkx011bJSykVnVDlTwc1ytEDwo6ty1GhZn5mdgiqn_VsDT3HH9uzsvWfLwfCH2-zrxriiau2Vu1h8lNts2von7s24GdlRAXbxSd5T9SUBxM-T4wRJa8QAYBiIOCgzF8t2JsVHZpkE2X_4.%26ch%3DAQEAEAABABTlgEmCwHsGFM53yn3OyZZkNoxRP2bFMYk.%26v%3D3%26pg%3DDK4ASASOO5FEXGWG2T66Y2RS4A
+.netflix.com	FALSE	/	FALSE	1796554947	nfvdid	BQFmAAEBEEWUpcC7tCloqEXXh-IYDkRgUwdPWZjgF4dLG5XtuAuZEyE4jW7sq7zzReLMzAvWX1DI_utbAwVPwPCyMjAvUqVFCbc2J4lZ89F0-Qh1Is9Y2XBPynASmgSGgBE8YsvnxTloVzZ1Q6HE5D-QoDrDtVKK
+.netflix.com	FALSE	/	FALSE	1796554947	OptanonAlertBoxClosed	2024-12-24T17:11:48.996Z
+.netflix.com	FALSE	/	FALSE	1796554947	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Aug+10+2025+21%3A39%3A50+GMT%2B0300+(GMT%2B03%3A00)&version=202506.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=1003b99b-656e-4cf8-b29e-87259f634302&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&AwaitingReconsent=false&intType=2&geolocation=TR%3B34
+.netflix.com	FALSE	/	FALSE	1796554947	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1796554947	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABT_QP4H_KjSEK1wPVr5FsRfM4FW6TeoNVg.%26dt%3D1754826261761

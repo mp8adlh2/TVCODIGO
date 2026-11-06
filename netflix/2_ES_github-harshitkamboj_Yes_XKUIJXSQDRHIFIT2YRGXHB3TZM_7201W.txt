@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: ES
+Plan: Standard
+Next Billing: November 12, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 14,99 €
+Extra Member: Yes
+Profiles (2): Margarita, Infantil
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1809631716	OptanonAlertBoxClosed	2026-05-06T19:28:36.695Z
+.netflix.com	FALSE	/	FALSE	1809631695	nfvdid	BQFmAAEBEODZHGt8Cy-KHzqp7qf1hcVgOPYeFX2S_71t-V3fK4Kz_Sucjoowe2gXvgK_afIEP4ETTQUKA8QjrnyEzJaX8kmQs52mulrWRetSKaLQ0kf3TtTXz2zpWQChtHbiB-oR7IpfcuOoOOi4Xk3_Da75wtn7
+.netflix.com	FALSE	/	FALSE	1795649403	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795649403	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795649403	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	FALSE	1819409404	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Aug+28+2026+01%3A30%3A04+GMT%2B0200+(hora+de+verano+de+Europa+central)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=b4024268-b101-468d-879b-8af95ebec7e8&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&crTime=1778095717047&AwaitingReconsent=false&intType=3&geolocation=ES%3BVC
+.netflix.com	FALSE	/	TRUE	1819410296	NetflixId	ct%3DBgjHlOvcAxKOBPuEUxTP-42xSFTwMoAV6mDB5AunJO1C29GNOGsi9H3uFhpINWfMK3-HUbG9OtuknOiW8NHTRfDR-V2rpQu1YVe1k4g7JNLKV9ydXEApwTERwXtAOvdCQhQKrlsJQg1iQW4BAOann6ijxPkecLaFi6J6niItCtuZCx786B65n9XFtHInDlWajgY0kvH7QQkMeJ4PDfP4t9uz7Djp_-xZWMnOg_BfasoLamarAZdoP1Te51fZosqzXIeeGHTTURzWY5m-9DntH0zj7QgAwNb-6vtgNsOeGUDuVwU6aF_1RlqamA_BtFQe4uEAdd6cLkC6RyIbPQfhV3g2e1umwjZX_eO1Zi31pV101c8DgbptYQ-4diBN8KvfZMm0EXfsQWqXVdR2TFfWKfYJmZQR8-vCn6u5duEllIcBoZaEppUeESQV5QgtDpAa6Rg96NXLKATwsCgensmja1m7qFBf4IpZmWVAKvR2rMR2tFnovo9k6ktOZImZOcEkboke-pCwU1Nc7CzQgAixrMFfHZAkR4Lbs36EI0UiSnbpO8RnIg6-gWyzV7JmBRXb7copnd8gT-2Ueb-H_YCvKxyfzqauhwMqHYoHqCWCG88sYyUJ7YB156AFv1I_OOkqu9ute79BTG_82soVSXRBIZUyolQ_MFq1fJI_41i2raEYqvcZ4D_NwsGqaFWQHyp2oY1_NtzuFN4YBiIOCgzjnT_NiH2ZcSGDAZg.%26ch%3DAQEAEAABABQm8aGnB5uQCmZqQjwZNcLICbP27lEUB74.%26v%3D3%26pg%3DXKUIJXSQDRHIFIT2YRGXHB3TZM
+.netflix.com	FALSE	/	TRUE	1819410296	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQuDcm5kstQUNVA3j5EW-bVGA8UgUB3eqQ.%26dt%3D1787874305613

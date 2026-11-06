@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: December 1, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379,99 TL
+Extra Member: Yes
+Profiles (3): alperkoncak, ALPER, Çocuk
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1820349204	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKaA9oNasX2s-m_lQ7cVkaDZntEXwBn0tKT_tY4IK8FS2Y1C3_CzkImGq-nYemuol5nWptd-a82tTx0vdMhDpIlod0QLBCtclFF2buhGqlomlVFk1BOs72DYPWzpuwCnQHILgilbMPufdfdwG2Pw55L-cCab0hZPTszmrGPZJxdDw_gUhHPKmpGK_PbFJdgPIiOP-tWkZCWYtmhWne_HJKGvR23GV5b_tcd42CjEVRcxbsD2gBW8yoGc4E8QgID3ZPCIsTAqmd4__ZXIF7bfGgCZHwDoSAr5Ed2aBcbhkWBOzTUZjgdhqjfePUZbR9ZDoTvPAOtpiNEjZl-WvScbI5s98i3nnxErDvxDBUn-Xs63e6sR0RtOLHnwpwSQ-i78nEGBkAu7MSJijhTS1Tvi_0M_zLe8J0eLmLFU-62uXdfzLjH3ezXotPe3lexhuPGHzgcdKM7waux_CsUZRhQ993KXSp63qC2T995irj67ysrTMFCMeDWT8HBeCb0NAMYRjwHpZW_fSjdL6QvmcD6BNgovgxRdIGlPU76NdZ-GAYiDgoMGyafdZbMBiA3OWvR%26pg%3DBGSIEUAMQRCT3IR3B77BB25U6A%26ch%3DAQEAEAABABRwjM5y0n_pVoybN4nTpgYGjd3naINKmpg.
+.netflix.com	FALSE	/	FALSE	1796589207	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796589207	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1813873269	nfvdid	BQFmAAEBEH-OTmWTbAsmtW2MCIEw2zVgqnpSGmkEiTrJj0z8B4D8taseZXMTJJc8kHY8BcE0ng2HwcbbZPEqmdJRAOw0LcrcSUzikBu-snhQplLsGrPIHSr6nxM9_Hxmu7666Akto4Ya-9z_JR6KFs1gHMhlh-uA
+.netflix.com	FALSE	/	FALSE	1813873220	OptanonAlertBoxClosed	2026-06-24T21:40:20.961Z
+.netflix.com	FALSE	/	FALSE	1820349209	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Sep+07+2026+23%3A33%3A29+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=c5fe762e-37f7-4e06-9208-3905d4873ae3&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=1&crTime=1782337221726&geolocation=TR%3B35&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796589207	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	TRUE	1820349204	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRWCYSy6OCOXHeeJt3VnI0XKRUpNNVgd-I.%26dt%3D1788813204111

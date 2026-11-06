@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: November 23, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: R$ 71,90
+Extra Member: Yes
+Profiles (5): Leonardo Furlan S Navarro, DAVID NAVARRO, Jangan Diganti Bang, Beka, Infantil
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554944	flwssn	95455230-8a53-4ec2-9e0a-97e80472bb6c
+.netflix.com	FALSE	/	TRUE	1796554944	gsid	b0483f5e-cab7-461e-a2fa-ae20d9fe016d
+.netflix.com	FALSE	/	TRUE	1821322843	NetflixId	ct%3DBgjHlOvcAxLhA3k9701GK7n7UPbpREiAcmhW13nQ1LZ3CaI3H7AEAnnzRfkwr9KTxf4AXKLGRrvXwgYmlQgRyKlgSdIE1mq9pJtjnd0hEa76K_OZGLftYfGt_XXNO93gl8ru5FbMrf98K4jbVkdyIzrlC6ZXk2zG2DhqcsVvoEzOd-xYy1sk55V8xKbTcEHwbA9oQ3-FzKxZxiHhtBLzFOKoTeKW6UwU294aFz1w0h6FA3ZcVDebky_Mop81OL75OisoRCrT3mYhdRM0CfLzVkTpPz7SQv_ZILZPBAlqppesQ7tVx4n5FOwOVKFzvRgKyj5ueYzpDSVl3tNJ5bp0APWbVKKuRn3-1m8v1xhTun5HNeEm5eSr7ltbSXF2v11CVOvhejvOEqDCocPVO3yXbKdiN_vVlQiS_EGUy9tZ3bhkPRbAGksfbdMxwqQ3VlNKhWiQb0cif0B5Er3g51LJgUhRBSsQZu4nsppUvbFT-9maaDCgtsF3JeNUdNZc3cq5exbPval2Pn6xXB2MLnjkzQR_OUqr8qrgckmTKpAizIUOpjXBxFCAJ0oNGzzl0ZvhXuKIqk1_J_O1n-GlcALHb8yZVtw-TDhIC5Ya_38YVaH2VOkGvA1I2M-vWMTir_PR_16rZx84AySmCQwYBiIOCgx7OJA8u6opwEtm6wM.%26ch%3DAQEAEAABABSvgxPlhPqez5s6HuPuV6MXOTIVPUt1ANU.%26v%3D3%26pg%3DHOUZD53P3NGL5P5YEBKYZHIKPM
+.netflix.com	FALSE	/	FALSE	1797562511	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797562511	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1818640934	nfvdid	BQFmAAEBEC4WjlUm3_IY1wKDX-4JIfVg9yNoR_TOPWdBPsjSBRf9rojHvs_PvaQTzMCo8nUGcnTZtJtTmZGJ0ztOqWC8NRy96Ar20vj-Hx-Z9-InLgYbkfR0EgJEUMG5H6wQsgckfma2CUx514nr1OAC-bUgTEcA
+.netflix.com	FALSE	/	FALSE	1812493753	OptanonAlertBoxClosed	2026-06-08T22:29:13.479Z
+.netflix.com	FALSE	/	FALSE	1821322514	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Sep+18+2026+23%3A55%3A14+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=54089c04-8475-4967-87a6-621a5ab36b3f&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=3&crTime=1780957753995&geolocation=BR%3BSP&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554944	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1821322843	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSrmdsHCult1Kvt3hVyCOf9CfV4dNRCUKY.%26dt%3D1789786843334

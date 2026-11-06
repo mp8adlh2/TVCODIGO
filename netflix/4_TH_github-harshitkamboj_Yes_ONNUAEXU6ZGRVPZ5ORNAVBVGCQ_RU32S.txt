@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Premium
+Next Billing: November 20, 2026
+Payment: DCB
+Quality: UHD
+Streams: 4
+Price: 419 บาท
+Extra Member: Yes
+Profiles (5): thawachchatiphncu, Job, จีจี้, MRball, มุมเด็ก
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1815318517	NetflixId	ct%3DBgjHlOvcAxLlAwIIkJ2uh5ze4Xi_hB-cyhfSU1dNNhZZsK3i1H6REYH0LG7mNuo3_JwrdlZUaaSuB7sPvSddFwLYnAKFKX6niyGU31UgYV5IwtGV7lbp5bL_Q3B5WTT5vtYnsh4w6KW_wAdxyaGP4QHydfwZ41kz974FoulwUHytahAKU0um8hRLmduGbmxX9gonDlNZX2XdWkpcEOii1Y-7ZcN5rRp1IOlvsVnUIfStbi182STK3i-oe7xBHw_GWdIU1YUSzH_rBL8S12yVUNMY-rFIp8nTytaSuU9REOXuwxyQD7io_6OcO5NIoolFGX8sgl2wrGE8Y5PeJtzeHdSxZtFjk2BpakyInd535b5hF6zq7DWs4TuL9jTsNOsKS9ri7JT4grV6Gpo64Rwjts_WH6UxHL0TIigW_r4MM3VG-Eslzv6CB9A_MPuqbEnWQmR3xQVo9d3ChVARvprxLK8ZB-nUtGBMn309MMO5ie3K7Wi92nu4E2QRa3ZLPUwbwqoEecr7i0ahiXOwUOsZEcC2NFPFwyVK1cCfDC27l9e9mxgb054s2kpkD8czqU8a7o9izdEB1xH3IOKhMfP5x4mcgbCQsVCFmBUWroh-uHQvkgBQIU7T7-m6FnX-S8KlwkmGRfuRh7AAou0L4gQWGAYiDgoMUEkBhh-6b4UUeiUg%26ch%3DAQEAEAABABShCNTPz0JKWTdV8JqTf3ZGbXvvA-gWv2Y.%26v%3D3%26pg%3DONNUAEXU6ZGRVPZ5ORNAVBVGCQ
+.netflix.com	FALSE	/	FALSE	1796554947	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554947	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1807358726	nfvdid	BQFmAAEBEI3cOtAnCjBujvuyzBw-vphgecVIMtUMScuSoDf6MtcR8xYE5M-ZXr_i8H4WjCpBCAmNujpG8RgIVh36BQdprSKxf0JpVl_znpDqkABv_axa3htqoF0VEQC9z8MQjWXrOGz7HpUfjH9WHxRVsaTCr_Yf
+.netflix.com	FALSE	/	FALSE	1815319599	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Jul+11+2026+22%3A26%3A39+GMT%2B0700+(Indochina+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=175f0246-4d03-453f-abaf-fc51d073a0f2&interactionCount=0&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1796554947	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	TRUE	1815318517	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABT-WJK2BdPDXjVq5GmDxcFWf0hhvCG2Rvk.%26dt%3D1783782474388

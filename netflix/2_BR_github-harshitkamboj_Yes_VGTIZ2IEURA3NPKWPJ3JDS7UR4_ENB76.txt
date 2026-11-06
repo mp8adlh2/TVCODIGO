@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Standard
+Next Billing: November 7, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: R$ 51,90
+Extra Member: Yes
+Profiles (5): WAGNER ALCANTARA, Wagner, João💯, Aldenora, M
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554944	dsca	anonymous
+.netflix.com	FALSE	/	FALSE	1796554944	nfvdid	BQFmAAEBEFxNCgEdP5qwy2orVItjIstgrKSzwpeSOmvUhYy2MkZN9Fn-4qtEpAHm46oEblSiC1_P3qk9PjLWA4TTDi-v8MzNkTirKhCDIBd4z8b01_5LV6cDV_fr0cBBEwCmzWkgAbA1FxgOkEHfIccTUkoSZB9b
+.netflix.com	FALSE	/	FALSE	1796554944	OptanonAlertBoxClosed	2024-08-17T13:59:59.970Z
+.netflix.com	FALSE	/	TRUE	1796554944	NetflixId	ct%3DBgjHlOvcAxK0A6pknG8k7haIKw_1vkOPWuuJa__pp8GT9IfReLTbyZpnaLFCAfPqVoBbpTV6KNeBK0XeK87Ku84EiSfk1g6gUc1ni4fC6C7KUNmeNHgWR1WoyXh7TB6r43XHZsEZxW5Em3mZYKP5zdsOFag4pyEu-HeydBFA9JFPBi5I-CzltbR2WoStjWXGXVYN5GeclAs3xltnW3T00RAz_iKK0szKv9WKqarHrVZZo6jgsy4Sa4ZhTAQkstxmFVjOB7-Fhej5WcZif4Gz4Q4WSeJ7IVdtqJEo2SDFPHed_1B1xRNM_uv3xfP51nFaX5gqae-dxKky_RUSpgobZKyXYJ6-K-rF0bsuwpfNTMhFHi7Gna048jtUpZz1tB8Rp3LqRd5kJVnQdgmmu5rd0L_Fy0z-e_-KM2HebKjzSTu5eUeI_IMDy3TXAtoildINBc9ykWYu-CqVy0yXggvmvosV9MdkL5jKz4LKyyBo9Wqeg-MJck_3_Pdz9GjMt97H7On2_93mfzcGceD7chDnAh0p-twHsxB7W2cDsosnuPpfJo-xdqxhsxjAVPGNsq89pO6yAzCh-ACaO9KPmrcYBiIOCgyGL1ueZencQ9laVS8.%26ch%3DAQEAEAABABR2eubJ5Sc4x1GR9W1pMiKNYhY65TAbTQ0.%26v%3D3
+.netflix.com	FALSE	/	TRUE	1796554944	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSwSZ_xk0HVBAAPbXc6Hrlgv2KKDgDgz6A.%26dt%3D1727382646742
+.netflix.com	FALSE	/	FALSE	1796554944	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Sep+26+2024+17%3A50%3A21+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202407.2.0&isIABGlobal=false&hosts=&consentId=7d81b673-77ad-4cc7-9904-6c00242a0cd6&interactionCount=2&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&browserGpcFlag=0&isAnonUser=1&intType=3&geolocation=BR%3BRJ

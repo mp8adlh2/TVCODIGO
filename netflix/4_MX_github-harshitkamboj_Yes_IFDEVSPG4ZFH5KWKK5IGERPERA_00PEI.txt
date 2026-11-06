@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: MX
+Plan: Premium
+Next Billing: November 25, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: $369
+Extra Member: Yes
+Profiles (5): Juan José Ascenciógg, Ivan, yats💗, Edith, Lolii
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1814679699	OptanonAlertBoxClosed	2026-07-04T05:41:39.679Z
+.netflix.com	FALSE	/	TRUE	1814679772	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKZAy-0_kDVQuQZfGp7vQkZmWm3Bt-4Fqg4QybT83JS0qjeW3xfdEcqjVPYiriH4f0VNl5cEybZ9etkYs6OQ6VDyhwXChInGUo4L3jXcZkKb-x0XnoL94ubIq3LWYippGN49lajrovR_hMuqY3kkfj59mPNDF3oAdUnmlVHlBpwxsZznAyD9EUueiIUBdr-zYA2exsG3MqX6VGpuMId5VRG1e6_UIgQwQuBvDQEJX4sAWm9iYzf45eqFaOZLlVyt2YCUmcoBg7v4Bh1RuEvXFLf5qoZFLJulZkdWx1bF8fQCnfilxVxIXcdC0BKRFJgsedll-GpFyj87F17WVPqARv_01621TVQ1uoLb88UK85wTuUgur2cZ0ayNPxJl_AbYfVCMR9GBvVYqUPMAvWvcN0G8VLkKfLKiBE9ga1iykUoznVC1iNvGN59fHhlynRQEf8lJKdcjUTujXUsuL17nhymhYb8VlueUtx_GQSmTN5DzefBro5ty7Pj7UMIhLSIAQmA9paEQxNZu2HO_PW60ClEP-xMTpNVv8wdK4UYBiIOCgwZuYw1GXhybGlcGLg.%26pg%3DIFDEVSPG4ZFH5KWKK5IGERPERA%26ch%3DAQEAEAABABSr727GCzOhY8QMWYeFvZ1ZwnVVCWiWnnc.
+.netflix.com	FALSE	/	FALSE	1814679776	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Jul+03+2026+23%3A42%3A56+GMT-0600+(hora+est%C3%A1ndar+central)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=a200f1ac-b477-41f8-aef2-6ccc7535612b&interactionCount=5&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=3&geolocation=MX%3BZAC&isDntEnabled=0&prevHadToken=0&fclco=&crTime=1783143347715
+.netflix.com	FALSE	/	TRUE	1814679772	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRaiorduPn5Q5Z06jm3CbGVOzQ0nBVq7Jw.%26dt%3D1783143772286
+.netflix.com	FALSE	/	TRUE	1817703767	dsca	true
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1814679767	nfvdid	BQFmAAEBEGG0sJjTWyhYl95qtROXkdtgCTsLflZWhJf0QorbfwHfW4txapWyN5uXxypdYGTPFPElcQ5sep56XdV_Prv2Znls0G492ihLFJINtMhf89mEXmKKFfuycNEjeXsCr5MEz_-M_C4teMjb_nM2N_YNSRhZ
+.netflix.com	FALSE	/	FALSE	1796554946	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

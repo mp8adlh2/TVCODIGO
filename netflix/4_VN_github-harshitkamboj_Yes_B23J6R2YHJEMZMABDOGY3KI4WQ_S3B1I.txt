@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: VN
+Plan: Premium
+Next Billing: December 1, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 273.000 ₫
+Extra Member: Yes
+Profiles (2): Thanh Nhut, Boi Ngoc
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554947	flwssn	d43111ac-40b0-4af5-9464-febef35de365
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	ee3c1b2b-02bd-45c8-9d58-fc5668536a2a
+.netflix.com	FALSE	/	TRUE	1796554947	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKGAw__CwDyNg0w0TciiWu0-XkHxqfr5jMO8een9Ikj5zhyxawPvOKKl1macY80M_ES-S-BijSua6ZhYVy2XEh7cS9usYe7_AjfH5ZOwADF5KZtkzNw306oL6xs3eUW9og-eCr-caB-T1l0uROoQvkHa7G4tx3QlCsfpu2dQ1lEnwF-X_dRrBd3Kw1QPneBFed_Tt-ZEWE6ZJg-T7cM8FoJ1A4nDp8h9tAfnwV1Ym6ZkivVCbKFlvWKOXW6deQEtzXbnjW0T1Q75qTg7KrOOciuJJocze9eYdoTtVu7BxC12ORxpAbrE-T2hL5TeEP5MF20tgZavrAuEgm42bQEejtxjv-5Akw7jMwSKkZYBoryD4FejrCa2ai18RzhO8icByQ2MEFUHtFQDXwpNcCQF1h8ymLVilBZTLrnPrlj0mCFjfZlH0LJz3pqibVrSAP5JDHLcv6RYSO_txFQ8ZK-R9S-B3egG8ULAUSUhtEmaCRLuVZmtRty8yJGzrfEJzpyWamkjFgKgtKXaBgGIg4KDNEn42-L0UQI86o_OA..%26pg%3DB23J6R2YHJEMZMABDOGY3KI4WQ%26ch%3DAQEAEAABABT75yVIRszMPUlwitxcZteo7N6R0Bv-HCk.
+.netflix.com	FALSE	/	FALSE	1796554947	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554947	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554947	nfvdid	BQFmAAEBEPL2r0kSeywdTkmulM8pQjlgmJhfOa_mfsnb3BkdX0yhLLvrtzN4OMmbEAiCIGdhd7XXumO35E9U361p2HUAC4gBD3b2GnkkKCOptJw49a8xCegeo-vNEMRmqsfYFkSIMKiIRiyfoE1ps_1DjkVAm8-q
+.netflix.com	FALSE	/	FALSE	1796554947	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Oct+15+2025+19%3A33%3A21+GMT%2B0700+(Gi%E1%BB%9D+%C4%90%C3%B4ng+D%C6%B0%C6%A1ng)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=74c36af7-7cb8-4b6d-84f5-19a7dc1dd719&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1796554947	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQUGVNcjNNl5-e1p5R6RBzlPtMcCUV6MMw.%26dt%3D1760531596144

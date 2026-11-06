@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Standard
+Next Billing: December 5, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 14,99 €
+Extra Member: Yes
+Profiles (3): Quentin, Aaron, Melissa
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554944	NetflixId	ct%3DBgjHlOvcAxK6A0SiyKjJpFfT2mgaZRiCCQAJC0waV2GzseG-Y3-Ha6VNd7skgIiSTsdGftipgTliyVC7JGkfD3O-PM52aLFlL3CpRKvO1IdkW7zQ11xxhEbWO0TywF8fOERaOc_4O5Z4QZ5Nze1H-I3zFi61lHk7NxthlX-8mrCCYoM5hyYdYkYFgEaz3A8sP925cCKCHbkWaVvAOLQA-PCCJYQz6OKIEJaDMbLQcEyQJHIQx8Yf4R5pzyLKtOdfHgQ14vCuZL7KbmBbGs0YH6WsTJWCvUCMgrN-kLx44vfHzmrYmXui95SaS3sgKPty7irD6J4p-L5E8faf6-fNSC4HuER1ovfh4spYdt4vwzB6GNw1Bm5SfNJg9DpFrc_Nf-ZgdvfCdzsW-PznkwYqyjJ1IPrQuqkVvafXA284sT0QljsrK6eZY9hbX47qHzRy3raSnX_n8caR3WomXHtXfBc8ZLjy5iPIbH8hpKpmhbT6n36-acbr_ibHs6BURbVBlH25N59DI5sZw61jKNLnX8VyKUIKDOdlix5fOThUdSl0BRo6IH-19ZSohNK9wnATpMWjf2cAiHRdfe2dWo3320XWmUAYBiIOCgzWBS2xgotoqeOJrsE.%26ch%3DAQEAEAABABQvjBA9HJggEMDrZ4qgePXqAuYIbf5Rm6Q.%26v%3D3%26pg%3DMMGW4O5LXRGCNCJQXJZIXHOBQQ
+.netflix.com	FALSE	/	FALSE	1796554944	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554944	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554944	nfvdid	BQFmAAEBECTgn6o98pJhYAonhJVOBhpgmPbhm9GL4u5SaKqGeAfJzlNJvG-IVUtevwY0AenBvSASpCLRLpsm-3w3ekNY2SIbJXCSBwK-6kzD1QglSuPVOg26bZ5XFP5ntSjjLrkdLpSMxz9P0bg5MOBr9RvKmCmO
+.netflix.com	FALSE	/	FALSE	1796554944	OptanonAlertBoxClosed	2026-08-02T10:13:02.620Z
+.netflix.com	FALSE	/	FALSE	1796554944	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Aug+02+2026+12%3A13%3A56+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=4afdc413-78fb-489b-a59a-dcaa67322e17&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&fclco=&intType=3&crTime=1785665582999&geolocation=FR%3BOCC&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1796554944	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQxP2_P3oMk2ohzAcVumTmBWx7fdm3tA7g.%26dt%3D1785758318446

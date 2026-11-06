@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Standard
+Next Billing: November 19, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 289,99 TL
+Extra Member: Yes
+Profiles (4): Şirin, 213, ilgin, Velet Ler Yeri
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	68f1032c-d69a-4a4b-b8e4-95a9cd6ca98c
+.netflix.com	FALSE	/	TRUE	1821345962	NetflixId	ct%3DBgjHlOvcAxLLAwFgFrse0PVO4_NlE0lNbYehad4I4MOpIgguNeZW7uGLpqga5CKYnHWV35uDlTIIFy0fhcpscCscrgzNZsUDwIbkGyuR2vmUsuRriG9W41Kn_bInJXyu4ofxR2DsiY3jgBtUwqdXplIcahGUY2lRuNhxBCpz-NHdb4kF46OWwna2xdHkfjD1hz0B_KBD7nkzfmxgbHRmWX1gandPAFjCYyF07Nkd_VUuMJpP7vQIglNP2YobJjAhDsgpXo20eW4zJOhZnR7hRTUbLuZ9LuPf391vqEj0lPfwcApQjEtklqwdZhXCHQp7e_PCB2RK6sLycNIaaElgEICZene4E2wsbmmnRvlhAvDrDMIjiET88vLzYefFIX-FfDwhn9uhpsRdm14W1WrmsJNgHJQPo8E2jg6BrwTvJkNLTo20q1jyuzdP5yQs5MBUdjtxmM1C1Adqxicn4GT3P_EnrPxl8AmYzvwpNbdfBVXHFPBHN7dPI2wB-8bD1Qsd-uzas5sHI6EW9kHJkE7U0mevhCmtvDyKOtUa-5Qs1gAWgh06ncW1pIUrrYCakiInLGimivxJo83o6iQhttWKozLJ6iz356cFa_3aVnefH9Z8ODLYGBgGIg4KDDNfKvwQyPbLAjpmog..%26ch%3DAQEAEAABABRsDNPYTnx8ZTolvvqCgN8XL5rPu06EKBk.%26v%3D3%26pg%3DRBCR4VLMZVGDFN6IRRATXUOQME
+.netflix.com	FALSE	/	FALSE	1797585962	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797585962	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1820069131	nfvdid	BQFmAAEBEPXhPQLiGfv4yXvc7sHVhedg00RytC2R_SZ3Or_21227Q7dDFd6hs_AtmCgQnHC79V6q8bVCkMl-jEmlgepWHSyz-caxAT8hSHt7QvVgNU691fCMN19vuLdGYrZfP5BRtJum7wpCjvnaFJe8CgjyeHrJ
+.netflix.com	FALSE	/	FALSE	1820069046	OptanonAlertBoxClosed	2026-09-04T14:44:06.807Z
+.netflix.com	FALSE	/	FALSE	1820164772	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+05+2026+20%3A19%3A32+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=69e0686e-3795-44a5-808e-b249d1904964&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&fclco=&lastConsentTs=1788533046&intType=3&crTime=1788533047207&geolocation=TR%3B35
+.netflix.com	FALSE	/	TRUE	1821345962	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRvyRtnjhXOaZsoia8Mf0nuPrkT0UibtVc.%26dt%3D1789809961711

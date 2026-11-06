@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Standard
+Next Billing: November 8, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 14,99 €
+Extra Member: Yes
+Profiles (5): celine, eva, ludo, Baba, chloé
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1823977029	dsca	customer
+.netflix.com	FALSE	/	TRUE	1796554945	gsid	0a26fccb-d2c5-4076-bc95-79687ed1f4e2
+.netflix.com	FALSE	/	TRUE	1821209311	NetflixId	ct%3DBgjHlOvcAxKABO6R2lEnGrgE-cXhDgckcffk09120LBPIc-H_hdegEg_nJgAekF8l8DNxpD8fpjph7wXhRWbBltnpChwF5kQg-E4WRvbotFX2i-ikOIHi-KMV1MoyYJORal3L8T19N44Mm4ud5oacxtMnOmTDf4SsaUpLznWP-2rSOOg21qlO2hU7pQWaKmD4o96kWKz8uUiTDr5O5aGiNFt_t5DOhQkY8E3ydbwl6Hafh5hURCEdjMAcSzSiafArX-pKun8Yi9TXeCuRK5zWegD74dtg7G0r5zYEd2X0FNjUXUXcifoJvwKeZLPdn1xgufwmzjH5hJzFm0cq57cc9DL04kmD_Y1rU4BTnPCioIcYgTA9ghQ1bMhYlK5fg6ie6d25_PDKDW_NK5hE7NHK5beSNO_FtWeXApm0Lns39lm06KoLsUno-oPtDGA_h38HNRNxeFQqiMpW0bNh-aU_n0WN4pZJcxG1M3BrkhJOZ9sA-LG-UjFssVVFnFV4u9rMGS-XPSARdnhm8VIY7mzx7dib_TrB8wmbQxUERZ-9-W2Io7OivgKy6Nq7OmRNvvyW2eUIIh6miNtJi2Yj5c4y6l23U1vxexHHYw5fPWEoftDRbD7WzAT8HAqI-HlHeIy55UUxs0fq8Jvk6bnA0anpNippAtfzfL5PSor7jwUwIVzPx0VThrIVtkvGAYiDgoMCYRqhVEqKjknkauS%26ch%3DAQEAEAABABQAzjzayuYiO8W2tbJbkj5f_QxhMAjBIm0.%26v%3D3%26pg%3DXBXQG4V2ZBEOBIWTJHWKC6T74A
+.netflix.com	FALSE	/	FALSE	1797449312	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797449312	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1804104640	nfvdid	BQFmAAEBEKnxnQKLmz8GtyOLS4oZQBRg1K0RoMpMvZ6-64piN0YZSFCEPMB-xtwhWR25nlgkji05pq-w_XuQkbwZXHbgC-MyNYAQEGiR9wUurj7AYCe56-UD98GN_2VvpJRHtPZiruwMApBCCN2udaqVvQBbEKAZ
+.netflix.com	FALSE	/	FALSE	1804104495	OptanonAlertBoxClosed	2026-03-03T20:08:15.726Z
+.netflix.com	FALSE	/	FALSE	1821209314	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Sep+17+2026+21%3A28%3A34+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=fa7b1947-c3f6-45c9-b0ab-b240a462c576&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&AwaitingReconsent=false&intType=2&crTime=1772568497299&geolocation=FR%3BHDF&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	TRUE	1821209311	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQKbOf8DOlydNVRVtQbzOvw9TBABM4eWMU.%26dt%3D1789673299643

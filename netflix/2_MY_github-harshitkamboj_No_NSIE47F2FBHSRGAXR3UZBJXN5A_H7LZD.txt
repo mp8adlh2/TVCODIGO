@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: MY
+Plan: Standard
+Next Billing: December 4, 2026
+Payment: TELEKOM_MALAYSIA
+Quality: HD
+Streams: 2
+Price: MYR 55.90
+Profiles (3): kikhouse, arrying, Kanak-kanak
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554946	flwssn	ff1398e1-63f9-49de-abd9-e13e692ce68d
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	405764a2-93df-4b93-96a2-ec2f6fa4b050
+.netflix.com	FALSE	/	TRUE	1797441953	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKGAwSyTekBpED3Fzz8cqSIWW2oPfRFyzgWCrJCgW5xpb8xlPGYKkM7f8De2brWG4c3BQcPULn_N_DhaAUwv7VfITOdDZOSALpQHXaanFZ6YzLBiduAcB9BqBOCGQwNrR19iqIU6lsNfQ1_4Cc_aNLUwXXDhWzf4pvrAt5kjiQit_WVaVPFCgJeogty8VAy__VL3_-faMWqEAgpICqvRqQWcaQQlyOf69WlcXYqcM9LhJlTZ2v56cbplGy5thSutLJY0Wr0tzDVD-Y2W62n43LZY3kD8n4ATpn1owDMnL9YJWJA8d39r1ZI-pOsBICbEE1wmDPOERF7SXQv5nELwh9s1FDfmieVUm8tQ4Q5ERavL1CCTFS7i5ZJVtiwrFVdE6G8Mmnu7I5IQlqlzFN3QI6Lvq0GWS07i4v0nhBtPnWhRxDE73Gd4_BufxHc8JK_bX-sjIkrU9pJW54A1HCV6oAaQ0xUsR7sXj4ARnf625-59d9Yp2OlGRShazcJonU3ilOED3exQhIMdRgGIg4KDDMqwZx2Kkn_spjw1A..%26pg%3DNSIE47F2FBHSRGAXR3UZBJXN5A%26ch%3DAQEAEAABABSasLJbBwmP4hqHBLFohwd4GkkTmTjjbLM.
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797441953	nfvdid	BQFmAAEBEAhJJmeZXYfIwABUwWM4rT5gYSQkPqsrEcizSjh4dVRatR5Bi6_ND7vX0gT1132H0RsTMZCcok80zyscd3uAMRsdezgLupn9tVL7ELn-0iiXtdkGSVBZiTZurgBgq3mhJVaR4QGaE4apLQsWGKXQ2hFI
+.netflix.com	FALSE	/	FALSE	1797441955	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Dec+17+2025+01%3A25%3A55+GMT%2B0800+(Malaysia+Time)&version=202510.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=ad5e8dc3-c7b1-4cad-9770-b84a2916d47b&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554946	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1797441953	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRv9QPWSHYHbeGeNZTTPR7v7TT-bJxpRGU.%26dt%3D1765905953373

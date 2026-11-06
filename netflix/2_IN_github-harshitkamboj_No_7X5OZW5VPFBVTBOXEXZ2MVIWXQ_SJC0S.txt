@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Standard
+Next Billing: November 25, 2026
+Payment: UPI
+Quality: HD
+Streams: 2
+Price: ₹499
+Profiles (2): Parvathy Ajit, Children
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1804601852	nfvdid	BQFmAAEBEPUePl2rZmn7XjfDXDSExMtgV-XhAWzZadDjXfG_AAu0BxfftlxLDWoT-cWup6bVn8KzBnnzokAq_H2-Tu8ttZJUB21jMXyawy4e2gT4FSszQsHfJ03UUwP9ubK79wI6Qgx7Le0R-nNPDrcDXV5bZnS9
+.netflix.com	TRUE	/	TRUE	1809281695	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQP_zyNbPXwxpYfSU4ExzTlnfjkJECXefY.%26dt%3D1793729694422
+.netflix.com	TRUE	/	TRUE	1796554944	gsid	416985f8-b173-4283-ba33-d201fdc10581
+.netflix.com	TRUE	/	TRUE	1809281695	NetflixId	ct%3DBgjHlOvcAxKLBMkGkRkbkY1WavsdTKrdZgBPJCre1cTSxDTW3u39BVpQRJTT3FS6KBrs9W-0HLRSGdsNRg81WJCewkHe_PFVyvjOszajem4jSelpyx_lvvc5s4e0DnrJlg72e1yAy-dTrt96F8OX0te32ta93ye7vSBYaGZSvqozbx9ii0c72hbYA75S3NDSX7GYAu3RXqgqDZnmGMjyeeQIeEpK0YaMHuI701O8gJIPNc1YXvP2SzIUVuprolDqQK-u6uouloQp91T7SthnmTrAXKneJhbVvU3o8dyMjWOzd-lbqtJYqRvkvrFMtSro6DFX-IvEPajHqHoWUrFfQ3a94nWpRCBcqD3cm9cJQhCKvojgRt20n2oEkNj_O-PqIVcu9GGgXsuQt7QvklrYGwvUkXhLhWHDXnlu2bpQ58B3RzPl1b40WinA7tTbp69iPt9aofinkzk9QKhHhGcNnhLJFCCQki52XkpwrLfFUT1g1XvvS9dyoNOoXTqB4x6698k5Y-ELMPv9-6Uq6wFq3xsAOZjyvXp699ACgbm1Q6wATDoJeAeT3MYuR4BJZ5a-ARPUaMQfIoKO06KfA-EBz2NkqZOvt9DOOoudcVrN4rkXUkBxNUzlBoMB-3hEO2Rk2hNnFMsD5FGyu9a2o7olJoqBLwbnLKty8jc6cUZrWkoul0334hK-s6SOzHfYjP7MA16lzTcYBiIOCgxLYYSVbEebA24uKbo.%26ch%3DAQEAEAABABRs2vUB_WyLOsPcc0bJYr_5kc6odhli1MU.%26v%3D3%26pg%3D7X5OZW5VPFBVTBOXEXZ2MVIWXQ
+.netflix.com	TRUE	/	FALSE	1801505695	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1801505695	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1801505695	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: ID
+Plan: Standard
+Next Billing: November 12, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: Rp120.000
+Profiles (5): Ammar, Mamamacan, Abi, Bapakmacan, Anak
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554945	flwssn	72469029-071d-4e72-9960-ff09357b2e81
+.netflix.com	FALSE	/	TRUE	1796554945	NetflixId	v%3D3%26ct%3DBgjHlOvcAxL1Avl2M10JigUp31b2OowowYJDhW29Q6xv8FDbHgCnSLgGiao1FQ35hXNN75_n1lDGEjJ2x5RwheTe1IUnoj1o1mbsUBdzete-YFk4058k1suTz-_QDbHjY7vG9CD-3Towg4q_4PyXpm52S9Fhs506Y8mCixlFmxi-V6qV2RzYOyAAI0IKNKs2NyMkwlg9-VIlZVx22fsb8W8pYTz4PnIda6YRyix-P8O_PFfW-apLCRW8YxiJT9WjZ1hgDJjnUiv9KhUzJnxUmvUTgE6A3-a3jZcFKXyqjpdLRFrIb1cov1WdHlDOdBRJVNUpzRWCQclq7EtOBNKloeK0kq_hcURavePUrvtSMBk2CWCpMvxBe539PrhgQ-mUfU9M-Y9jv7H4rZB8ZYxvyt7y-GBJtO_eyvHxLznZ-9GJsthVD9IrqJ1k9LAjilJzwM7Ymlm5jymlax_nNuLGVDwwKm-zK7ArH9rXVkzSdbF9RWyrcKN_k5GBCzXHcY0YBiIOCgx-XqEv0Bmi9L0PUWU.%26ch%3DAQEAEAABABSXORPSsa7-MfI5tPdl8d5ZkoUn2pRI3Dg.
+.netflix.com	FALSE	/	FALSE	1796554945	nfvdid	BQFmAAEBEGHAtk0CDukN2oAlhBmDxIJgjsBraNJ6IEpWZzL-b1qhOVwdaOErPBEHyLE_hXsgeypTm2KbfKSuDzSSRUOc-6d4ssS_VAd9H2QkvcWDsrkpWTW5Oy6m4KYnvktBpTtPg_fagimMfrkMLxvKbB1zFN-9
+.netflix.com	FALSE	/	FALSE	1796554945	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+10+2024+21%3A15%3A57+GMT-0700+(Pacific+Daylight+Time)&version=202407.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=31cd50f6-d94c-44ac-a273-9905e6ad95d6&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554945	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1796554945	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSwgUJp3-s7NqvD8RlW7HPvM1ESnOvAvT8.%26dt%3D1726028159844

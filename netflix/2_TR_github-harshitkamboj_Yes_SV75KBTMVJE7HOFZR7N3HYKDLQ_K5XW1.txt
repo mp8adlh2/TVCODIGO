@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Standard
+Next Billing: November 20, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 289,99 TL
+Extra Member: Yes
+Profiles (5): HAYDAR, NESRİN, İHSAN, BURAK, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1809035161	OptanonAlertBoxClosed	2026-04-29T21:46:01.515Z
+.netflix.com	TRUE	/	FALSE	1809035678	nfvdid	BQFmAAEBEL5cWKyJNsjwuqIHkCX3WtpgnxR3x8k459MI9ZleNY_osP_lNKvcRIAku4c-OmxDmNZc9e-u4EpKy5A_TULwUmOfm3ws8rQfyqSEMqYWidILOzj_y9eW_lvRbwJQuq5XC01hwKn9DbcinuMB9si-K9oG
+.netflix.com	TRUE	/	TRUE	1824732777	NetflixId	ct%3DBgjHlOvcAxKCBAdFckNIG-qaPxlsPTki5Bb5mdGmeJiVwHmOW7NwVF-VemxCYRfou2puH0YjtMulS42bLtXyD-OID3w1M5LS92cd5zmDBtEd84ghV92V53EHAuVITPw8GQ0zR-XzeAR-UNoDeRhT5rd013pCNi-eSJpNoEIO-6ABorZZ_B8ifZhSDli1kiNWo1WnyfTvScDMc56L5CG0hP7hgEZCTAJQ6hauSE7v-csnFG8iQNW3t22i1Iud6berfyPJCwVbOYAokqIeNJjbByEnUzehu_pwy_LdLGVz24NWbJzQ5u_KM3NmJE9GfvI9_wJbxsU6FUUOSKCvR9pi6-_Nyuxl90cWqCDifi0lMIK8U1na6j8KuvwSr_zsNKClmgMOKl2xTdLDMbNT_QpB34j28SethzRgZCqpm-8yBwdGHonklDLSNmJKyIQYhC9poIeHKQG5N-PHIwHw70NFjESpvI2A8LZxF_Yvw11zxIf5Osh33MQnahEaO2X6WvqfneGux37Nbu1yFnq9YVH3qh5zsj0PLehUbBRKo-N4AI5bYIANtfd5-rGbK8sz4h99DzXQ34isDvv806oRA-_RgyZtxKJ2QMiQuvkk1uk7k_dT6wc46z-v0OiLtIC0ey6_LEuSS78j0mYWdYliddXtoP6ohiEvuuVNIbZljLoLmVyHyIMMTwXZgqSgvBgYBiIOCgwW4uB2xvyHMFnhEBs.%26ch%3DAQEAEAABABRsSxeWz_Gien45_Q6-hiS4LGFvupG8tr4.%26v%3D3%26pg%3DSV75KBTMVJE7HOFZR7N3HYKDLQ
+.netflix.com	TRUE	/	FALSE	1824732781	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Oct+28+2026+17%3A13%3A01+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202609.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=b53ca4c5-47fa-4dd2-a502-b35d936ef631&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1&crTime=1777499162394&geolocation=TR%3B34&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1824732777	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQN_V0C2_IpfBUAKCJZkswkV2JnBV_ppzc.%26dt%3D1793196776556
+.netflix.com	TRUE	/	TRUE	1796554944	gsid	e3b97765-21e2-4836-bfd9-161bbf6fa1d6
+.netflix.com	TRUE	/	FALSE	1800972781	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1800972781	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1800972781	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: November 7, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379,99 TL
+Extra Member: Yes
+Profiles (3): Enes, yamur, Yusuf
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1820002926	OptanonAlertBoxClosed	2026-09-03T20:22:06.063Z
+.netflix.com	FALSE	/	FALSE	1820003001	nfvdid	BQFmAAEBENCWbIFk5GWS513juGLx495g_0dUoTkdQPIlV30QYH13ZXog8yrY_rAMWFZGoE4mrtxNvxoNi4erfk7oC7UKdxUotm1fA1YlNUx8nj9zHTi9H5cxOpuZgPd1-PyQBVy37a30XXYkaiL7165-daYhA1aq
+.netflix.com	FALSE	/	TRUE	1821630977	NetflixId	ct%3DBgjHlOvcAxKBBK2ooS9fsEBjMbib3uqjqbq5NK06kSz4EbRZYy5EKqEUdG8M0rTc8_etpJCZmY6MSX-gHC45sziZL9IxtsAhOk8kGCjrkNWJeR578owLfkUn38n13ZxCn8IAj-VUXFY6YI1jqhXqIkpXaqwKVcdIx3vYlt4QLcZUwe_osZxi7fRPWkQORxikiM2JKTB6hxQI-DhrC6SeSrPeOlHMcEwK1HMZeqHwiVVcnZXrK_wAPf5MPWQOmATd6JW25j19dlRPxJW5UuTgyHi-JYYsgLBt-zKIXiTDC8_1tyL16xNXZINRc3VkJ2LExl3tFfWn8d0NQsddT0GMqD0MCt9xJGCUqB68C2dUQG7dklSrnPGrBYLJakbqw46OF8prMYphsK1p1zlyN8ZMn2f1K1HXciH6bQedy9Tc3GFcaC3hqoPJy5V7m2hef-eVenR0SC5vp2RqRk0mQBAk9fxEI8A6pq_ffOwXBZc48wFMJWPr6WcpAg1fqrWVh4m_-JMmuOPBruMDssMnMkddMEsZIvBMR1NDcvGD2pl_rJgurwa_7UBh8GsCR9FGFwcytPzLlIFWw_kEs0pctIKaDoy9gSpPDAym2MheO47PixptQE4NFNZM5TGEQE5EXMREr1_zA32JdlVIxUQNSc6FjnlsCFVPkxHQyXiCttga8QYwFJiJIQQK87t-WxgGIg4KDHsNGKwMUumB3zKonQ..%26ch%3DAQEAEAABABSQ0tfPbdJTxHIlwTJBrajS4RWMHKXGVLA.%26v%3D3%26pg%3D4PNH6VWBGFBTDJRAF3JMVUL3YM
+.netflix.com	FALSE	/	TRUE	1821630977	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRaVGu4hB6ykoT85_ExQDjhhO6U-82UadU.%26dt%3D1790094977908
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	c9f4a8ba-9402-42af-a073-0d9d23c9d2ee
+.netflix.com	FALSE	/	FALSE	1821632339	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+22+2026+19%3A58%3A59+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=960e4b51-8009-4fdd-b159-3614ec068357&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&crTime=1788466926569&fclco=&lastConsentTs=1788466926&intType=3&geolocation=TR%3B34&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1797872346	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797872346	netflix-sans-normal-3-loaded	true

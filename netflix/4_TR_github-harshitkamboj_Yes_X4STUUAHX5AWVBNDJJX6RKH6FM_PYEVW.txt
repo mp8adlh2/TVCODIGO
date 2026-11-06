@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: November 16, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 499,99 TL
+Extra Member: Yes
+Profiles (4): Barış, Nes, Fevzi, Çocuk
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1806446902	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKWA9U56w8m5Mx2fxKAFJ53WUT76gp5otNFOzE_hrn9_Pi0DyfMHICaEqD6mv6k52mpIECRRANZBPGdmPm6h8T9rG-oE3ZAGJ8O02wHAgk4tBWr2IBFELorIUW6VDqzdpL-bT4i7mym2LHjJN1YTYEebvxJkn9oAhygde9xsTsTI3k5y9HGo39AidF1MXKjzX1invmcuW7mKITX9SaOsWn08fotICYgt5mIz_9Ao12fIJXF6WcpLKZITpWkeVXZDuuFVYq9d9eHFhaGja0GSttHQlGHZb5R-1vexAgnNwXSVxoxln1bCX5--AKNYQVhSLzmCJv-OVTY3Elhtej5Eu-Kb62u3xBZNZarUeBlItSX5fIMxDNz8WN60ir28fzAhUkjD5qz82wJsi79nYqCUvnDxWkpWoU1Mj-f6uCYjpfNJDug31T9ESDrzvFm3dqK9yT6W6EFydeE4dGc8ysY-gpjly4hh2fQCnWFxYlUjniuFYs40qZETOtwHrj-j3ZGrSae42XTycYO9mDcUMbbjoGRukh9iixpA3IYBiIOCgwz7WvbOvyPhmSH7MQ.%26pg%3DX4STUUAHX5AWVBNDJJX6RKH6FM%26ch%3DAQEAEAABABTDoyrhrWsSA_JT-7YTj1PiXR9QTuAXSo4.
+.netflix.com	FALSE	/	FALSE	1798670904	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798670904	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1806446898	nfvdid	BQFmAAEBEEQdCrdp0xs9R9Dq6-TvEHJgmpMaqnaNWa4evkR44y67eXc5ATj6Dy-9trYQZqf379o19DEc4igy5p4RVTkbAvqk1UEO6CUdiAiIvsiz7Pliue6BbQ63npJOvDzg73XvM6V1tMMVb8mJb5MczTRI_DKO
+.netflix.com	FALSE	/	FALSE	1801161282	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Aug+01+2026+21%3A34%3A42+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202604.2.0&browserGpcFlag=1&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=8b2bee5c-626d-4255-8984-2e9fca012cc2&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=https%3A%2F%2Fwww.netflix.com%2Fwatch%2F81948315&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&crTime=1785609282392
+.netflix.com	FALSE	/	FALSE	1798670904	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1806446902	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQj_XTjhrZoF1rUsciyCw9gOvmbV_cryXk.%26dt%3D1790894901984

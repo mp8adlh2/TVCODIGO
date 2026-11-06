@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: ZW
+Plan: Standard
+Next Billing: November 13, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: $7.99
+Extra Member: Yes
+Profiles (5): Trigga, Naomi🙃, Lilly, Mom❤️😎, Deezy
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1810451495	nfvdid	BQFmAAEBEBjflmKToDQixTSXurh2qztgPR2gLjSAFA-nq_rARDGFWJBt-ykOlRFnLBWpWtwx3HvduzF8KPBvPYp2NHp40q73xas7EWQRctgXQI34XiVH07d381jKjOLcNkPcBlmRO3_2DJ4wgjVCTKGF7832gwrw
+.netflix.com	TRUE	/	TRUE	1796554945	gsid	b6043e22-00d7-4a7f-a819-edd8e781e3db
+.netflix.com	TRUE	/	TRUE	1825246921	NetflixId	ct%3DBgjHlOvcAxKEBIsQZTgaG5zAqWP4kPwTLg9wzA1V2dI68ghTC6wkysmuZN7HMfByKbdrTfWSY2yffr7JKT1k-qY1e7oJD6lN8LS7dCMEwhKtQTkHZhs9SGI4k_5yV0on0ax8CfBGtd3VjajWxH-XWxQvo4IaSbhaIo1ubnezMXgBaye5HBR0w3AJOzppv-qIHczPsPPIxX1yJAW4pzhtCRGXBau-yups7zAgxzY7ZbwnK-PGa4E-hD7rz_vV0xVSiZthoAHen-FmWbDW3F0oK1kS-FJs4pLJiZldwBN9es_wPCHB4qwJ2x65YRK-xWqZBH6iKb-Zt1TcpI-25xU_jeFlX_QmNPqLQFnYa_TRWn-lfOuXYAM263oh_Db1SYFW0sW7VGcFAnPeBR6hmDifogcMW28spIH4WnlntUynhKD3mlE59MlL7AU_rb5PAee1FzR7AqxlW9y0jf22JPn_2YLht5ZBr4TBZbG_7jwNko6pU76jDZpxVfkw4l_7IElLqg9BE5DvXlF_vklhbC_c7kcvAU-Q_FCW-158AX2-bZNZO-YwpNfG-Y_yyaEmMeuO_uAHIUNrwT1-83trTDLdU5aqe19dKHoHVGdoU6ifYjqfRavTlxA782qLAP5m4BK-H5BUlkBVelwXCMVF4l-V4_JA3Yr_CgJxDA63LfnIM1fQ6OcYC12Q8nBUkWxzxxgGIg4KDO5nw2-ZVjPPkJe15g..%26ch%3DAQEAEAABABRA9BZwei-AsmyoVFeyODT-eyN4QFmnE6g.%26v%3D3%26pg%3DU4DCH6TDTZFKHLYRC6Y6BZH46Q
+.netflix.com	TRUE	/	TRUE	1825246921	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQboMJ8OuDehT6k11eeFwHZizbkobVpXZU.%26dt%3D1793710920779
+.netflix.com	TRUE	/	FALSE	1825251288	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Nov+03+2026+16%3A14%3A48+GMT%2B0200+(South+Africa+Standard+Time)&version=202609.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=6d8dcb19-d426-455d-af28-939225864d9d&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1778915424095&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1801491287	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1801491287	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1801491287	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	FALSE	1796554945	profilesNewSession	0

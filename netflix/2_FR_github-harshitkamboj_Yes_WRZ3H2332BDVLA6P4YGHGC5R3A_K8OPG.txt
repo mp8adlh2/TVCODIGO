@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Standard
+Next Billing: November 30, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 14,99 EUR
+Extra Member: Yes
+Profiles (3): Gmozi, Niki, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1763410409939	gsid	8e412dba-a08a-46af-be1d-21a4f8288cea
+.netflix.com	FALSE	/	FALSE	1763334813232	flwssn	597d0a3b-59e2-45b4-a616-3624af351ec8
+.netflix.com	FALSE	/	FALSE	1794860015000	OptanonAlertBoxClosed	2025-11-16T20:13:35.063Z
+.netflix.com	FALSE	/	FALSE	1794860074500	nfvdid	BQFmAAEBEDUcj4m5afcmg-F7BYe3FIVgrcEHJjAysRt_Dq4x0zOdzE3nyvmUpzPnB7-AvchE74Ho2WpXGMuc_UJU-JSwV59Pmk4fdyltlrour9f3sejqxgy_4Qm98Co5xEazaobA0RthZlg2i-rjtbNeqHru_HWo
+.netflix.com	FALSE	/	TRUE	1797884075182	dsca	true
+.netflix.com	FALSE	/	FALSE	1771111776729	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1771111776729	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794871776000	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Nov+17+2025+00%3A29%3A36+GMT%2B0100+(k%C3%B6z%C3%A9p-eur%C3%B3pai+t%C3%A9li+id%C5%91)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=182abbc0-16bf-4c8b-bd4c-26b69fcf7501&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=1&geolocation=FR%3BIDF
+.netflix.com	FALSE	/	FALSE	1763396503193	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1794930736495	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSoz4HYay8szQ5C3u7Ugo8qe3sHR-LrKjM.%26dt%3D1763394737945
+.netflix.com	FALSE	/	TRUE	1794930736495	NetflixId	ct%3DBgjHlOvcAxKXA1h3hia1JM7oqrBfXBNGbu2BkrTfZikmfII18eozhEhnQZEAatzFghr9bVLYFYDtbrYR17h9Ad1uEn-6who5g90CPhkPwC05vUCRLYN-xDIFX6KMtREGVGmB8mLtGcEMg7rTrN6Gn0WD6RqlvIaaBaju0sfNe9zSFQ2ixgpdErFJyWGYP7qO_mHDfc0RS_-EQ2H1Dux-qd9tWpqE7sQJ-ifjmJdS5BhbMBYKby4wVEPRni0qmlVc1HGVvmZPUPJY8xl4xGzQvWaKgzGoRO3lqdRA8qr1ogxXcP9RI4hCS-yFjsK9X2pwwKKNmkPnfM2PvURR6AM-Dqz7vDKtC3qZddGJZHhKCDxHLcwxTIT0gsHzHdde5r3FM5r0CcFMbrIWC0_kN_ePhmtinoC8SpYPGOMmPeV6OyxthA5P0hlBOO7bdNfVFAnKf6wrh1VjabaKM7_LZmrFETMFi-3Mz0D3TvzehbYTjatOO_zZh7Cwvu_4z84l2cxn6dmWY6iKOX3n58ET0nHzbS9upaMkxUY-ZZgSpU2zzpggGAYiDgoMAnmbawMh7TVqFNWb%26ch%3DAQEAEAABABSPHnednzIJqMNfOsddoS53xYvBWlOaGis.%26v%3D3%26pg%3DWRZ3H2332BDVLA6P4YGHGC5R3A

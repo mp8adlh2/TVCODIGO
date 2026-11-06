@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Standard
+Next Billing: November 10, 2026
+Payment: UPI
+Quality: HD
+Streams: 2
+Price: ‏499 INR
+Profiles (5): PRAJWAL, NINAD💪🏿, SHASTRY👨🏻‍⚖️, √2JEET, Nithii-ahh
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796977346	nfvdid	BQFmAAEBEIiDKD18n0IrZyP8yb4qKkBgaNH1PYvTGw8PDXd0EZpJ84XzfDlbETRyvRHNthzC68-UmPJWmb-fMdtdN9rSrLZRKxYi3yGlUu111H0qKf1Gu0mUOIEP3WvEQylVSumcdratcgbyvd-rYndotEY0vsOt
+.netflix.com	FALSE	/	TRUE	1799320969	NetflixId	ct%3DBgjHlOvcAxK8A4G_bnj3itarhb6d7e3SNjkVq-BaLzUzUjm78kD__e1WubHXhtqdMhGrtihfYargUICLDExHjQPHbWrrhnKeeHE6V3bT4__lFyT81fL65nuwgtB7ZRRJr2pUkxReIgzcSTItBc5DeyOz1jwOdeVRREj0ymEPzSAAXd74pWp9m1WrOue62vCqMH1KJ93qD-RPxkrNGtXCqsW7PxDzO1dW3oAqiXLkK5Q74eiGTHf80Fe4Dg2gZxJ8CEztztDBd-FxaUle_ithxj7n_AlbvRrvyCvY7meUziiw54bnIeKOU8nOUogR04iYX3StyevaOUQ11VE7sgjGckN7ujjIvo2urc6cZYLVvO3NvwfWq2-iWczP0tZSVYR-P4LhFPeGqb2fuxGCaovaJ3gLokvYHyMVGxNd0bTjiGYvC57mr7jAvHkvE0TVe2hkHfU2y3b0WAb5FXYBEYSnXxzCm9vdT4LkpqqZcm5P6gJbC5-KUAydbYHRQ_L-eAIdrXHtLTr89fcA_UhxKwGw-c6d0mzCI7zlHznkF4UX7s3Zt4jtqleZF-M1whLkwAAIQgcNdt41OEMxuLuWghZWzm-yDwl6pxgGIg4KDK_WAYSI-mmAi2Magg..%26ch%3DAQEAEAABABT0kf3khE3b2MSeNVWwjW0E1JqHwlSVzdY.%26v%3D3%26pg%3D3DNBCS3DYRALNCXR32MUW26YQE
+.netflix.com	FALSE	/	TRUE	1799320969	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABS5TVzMfq3fgODpkrZUUbvBIQWIA7GFmAY.%26dt%3D1783768967804
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	cce316ba-2208-4a2b-a1b9-70e23e182871
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-normal-3-loaded	true

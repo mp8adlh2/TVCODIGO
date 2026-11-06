@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Premium
+Next Billing: November 29, 2026
+Payment: MOBILE_WALLET
+Quality: UHD
+Streams: 4
+Price: THB 419
+Extra Member: Yes
+Profiles (5): KenPUss, Rasa, Chaisun, Mugkawalin, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1819371103	NetflixId	ct%3DBgjHlOvcAxKOBJcqZnOmbChWLC6tYmcU1sQH8j_uyKUm_Fq3vVZR8xaXsNQwtc8np42iLJ_IYH_oullKoqpkiwiqIn5avpp8T9_XlUfN-IHpFdkeKX3yz1TDOXNOlj4QEABCX2GytgchwGMjBLXW28tG0NDihj81l5sttWzvBD5iHLAmQ2GnTS_Yl-lDRDOl-f2mHx6SrSugbOVY3UdRtTUrdljj3SDIWIsAlU3mOuzPCBprQ5izqFWVo-_G-wTpGQ8x7QdTlbh0MXu-WhsyvFJQjouGnLaUS1HVHRzSkStP4uDsLQJd4-vLGNEuj8tjYcnu4dz-wNk88oadcyuBjwO8UJUQ5f0XkCcMZw4aAEpABK48SpD4Ys_OXjKuSkqn5ZDgxr1qqsyyQeWgOpUaak7yuiUrf7_c4sHbHLezSOHlyRcvWQU-TFkzaIGTr5FfnlC9BxDPKSx8XRIlw_kkham5IMBC-6fwe_Y4yH8D0WT-gGlTWOzzumH5GbGNA8xxbf9SSS_JlqcBIpZIiTMmljy8U75qxlSRVN5IpEnGe7E0PhBnxaoYrx0bpkzjmfFl1wXtp_yX4MmjQkho6Lj_MgFAF8e5huEp30eV-oepH2wMUu7X_3zqbkoeBUWQtGlltxQV-I0FH00g3thQWRYXgjmMkTEgMg6Nn7kdRUHYTFE2eBJtuLqbp4s8d0nTZuiGQOnuH2GOVrgYBiIOCgykdUyDuPXVHRa3lYs.%26ch%3DAQEAEAABABRpfmuRF2KLqQPQIhs2t82-NNT1RjjCr-M.%26v%3D3%26pg%3DVKWGR3AGAFG4ZM7MK3T5E5CXGI
+.netflix.com	FALSE	/	FALSE	1795611122	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795611122	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1805637701	nfvdid	BQFmAAEBEGWmXkW1p05_wJM0kFuAtr9gBQJG-J_9TMPiRBpAwzsrSc_mdApzxgmf6KCPNuKggFYJs3X5XX6RlXNF8HYoNF8iRPPKP0AY7W99iuksI8dhLD1H1JKIKICm1aGJaV6QqpH_zrf5e4Slyk_nURcM94Jd
+.netflix.com	FALSE	/	FALSE	1819371122	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Aug+27+2026+19%3A52%3A02+GMT%2B0700+(Indochina+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=538c3b90-6597-4d25-befa-9b6e184b5be0&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1771856633494&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1795611122	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1819371103	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSjzaE8xpqQgwmzewRYqySvjD0Ty9jIRhY.%26dt%3D1787835102501

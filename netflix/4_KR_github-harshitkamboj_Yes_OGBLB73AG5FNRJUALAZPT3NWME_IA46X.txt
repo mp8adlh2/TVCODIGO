@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: KR
+Plan: Premium
+Next Billing: November 23, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: KRW 17.000
+Extra Member: Yes
+Profiles (5): 최호여, 최선도, 최민호, 최선우, 최선재
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1817629857	NetflixId	ct%3DBgjHlOvcAxK3A60MQLYdEI1ysMSnUFk7frHzpiE4eISR3oGbRP8u3Fgsn49TXAA6zgMmvHcpw5j0qk2_zEgncT-Muw3VGpz6bAZ5WGRD9e2JgQtpnWBkfSHqRXUfNAGaRnZnRZ9_4JU_3y9ENxe5gFru0b0m6gbuLA5edrp3-xwzRun30y2X9X6TaTLy69nzOua2ZWcnIVL-DQIEIPT5gguavkEy7fw_X5OJUQ1x7p44DLesifodw0R424JYijWqhWL_w5YKlcRqWuY953vNiip0P67B7Yh9zUZZjQp72QF4X4ORqli2XyA0uWHKC_VZ4G60BFmUurxcPfHedi_2Zve9e_NNCEOpyst4GPQSQ2dNW4V6tapeQf4FoMML2QNSJEBjCF78PK05WnbsUEB5dYf6_SQzRPitl4n3tedyI6Z8C8L32yn20ZODbiHPOFAJMxOxpmdSA9Y3zt4P32R1McNXJ2auaCXarQLcGFrrbyJw2vf1GTGhx6N2-4K_zIliSnoU0wJD6lxrf6En5I9oiBVADCtDNgw37yyLH1QVr-XhD58Wr5GKpikWXWMghgk3pXdytOwX4L3BHcoxtmP4TN0YBiIOCgzFUBtIhT99st_h63Q.%26ch%3DAQEAEAABABRIb3Bp3H9D6yB2BqruUIG1htiy4e5DdQc.%26v%3D3%26pg%3DOGBLB73AG5FNRJUALAZPT3NWME
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1807447654	nfvdid	BQFmAAEBENq6fSCppz6MUeLVtMwHIVBgJqJfT2XmBgZFXbNKrMqFfrdaB_qROxS4PUP8ZbFwypZrQU_nrqGH2nq5oghtoCj5GsSdyleFH5hJM8Havn9Bh1tIsf5IpPyY2Ej03HisV8QeNRaoRmPLfDbdX3_EGeK_
+.netflix.com	FALSE	/	FALSE	1817629856	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Aug+07+2026+18%3A10%3A56+GMT%2B0900+(%ED%95%9C%EA%B5%AD+%ED%91%9C%EC%A4%80%EC%8B%9C)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=909f3a46-d9bd-4cee-834d-7527fb75a085&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1775911597235&AwaitingReconsent=false&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1796554946	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	TRUE	1817629857	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQwqmCWZqc1dBqyGm5J-e5LgyyVBFH4PII.%26dt%3D1786093851885

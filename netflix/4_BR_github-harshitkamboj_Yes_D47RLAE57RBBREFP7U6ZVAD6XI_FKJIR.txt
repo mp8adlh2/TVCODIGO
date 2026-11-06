@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: November 28, 2026
+Payment: DC
+Quality: UHD
+Streams: 4
+Price: BRL 59,90
+Extra Member: Yes
+Profiles (6): Adah Jackson's, Adah Jackson\'s, Rosa, Freddy, E, Adah Kaulitz
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554944	gsid	48137439-464d-47c6-af60-4ac4132324bc
+.netflix.com	FALSE	/	TRUE	1825043286	nap	BgiJv-vcAxJJ8patgE5v_ttJxKeC8mCXqvb40fTdmYa-eo5J0PnazJwehkIz1PlVlzXoM_VUT9Bs0MQqNrwGoSkT40y-_euWr5lTLOef-xKyDxgGIg4KDAlcrIexUJLaTK7sew..
+.netflix.com	FALSE	/	TRUE	1822019285	NetflixId	ct%3DBgjHlOvcAxLOA2aU8hUWNLLeo_FVWy8qHXKtetaK-RrMp_7rcyWd2jpIbmyZdkCFb9BWacJrWjR6llIozOoLYPAp5i41EXAU9HlmGSMjRDlHDdgH_GmZAxyI2xQD_BXKWxq8wEE5Phod3xvyhbP7F1fEUt9YWgvdZ_D8xdoHewcdfTsAlLGX43H36ydKnD-LKrZjR8LnVqRdYEaUKG0hM2iVS-h95egaJGHELVzo_vj6roQ3ZpwJtyroJcfzIZPK8fVeOzeOEYKFJoxMJMv48dVkI6v2t8EG1OnfAD4OLf_XK1vHbCiYMl0OpqBCKO3Zptwwh9z3HYEMOfIvsyPaEMd_i_q0rhEVaRK7OLFDWXZeQT9SKqqcs5KYFTolEM_bLNZLJh1L6xI1ZrvTnGpKoX1v92AbhBpGcnEC02XrmujWLiDDqqdj1JSvnnemNTuIpd4WnKqKJiAy7VjVOePK4sG8aGxWdhXg5Dm68y781g-Kx8glDjRK-w0erQTTRlKji-1HepIdDrRyB_2cobr8FjkBMcipii-kkS9uA1-EOn41UtF7f4gcpIGkijTvky6wnSlG05J25aLVNZSyzy-raAyaFHYxiowsuSW9_ascjh9aX3Pn_keGfBgGIg4KDH1-G721BA0k2g1lRg..%26ch%3DAQEAEAABABQ11hts5k9m6F6K2AtKttHXPkq-zKdiktE.%26v%3D3%26pg%3DD47RLAE57RBBREFP7U6ZVAD6XI
+.netflix.com	FALSE	/	FALSE	1798285944	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798285944	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1805153580	nfvdid	BQFmAAEBEEN84CchX8GUVpbr-aQpEexgffF6WUV_2NIAqQYD7VcTykDcEBKU0_0kIpzNYKpni-i5vlJMUdXqsiLHFAuYWDJEAh2phoxC_mLGcoLnml6BRhnZKjeF8lRGzBFQS5J06TF5clw7Z_gAQDm1hOG3-6wu
+.netflix.com	FALSE	/	FALSE	1805152255	OptanonAlertBoxClosed	2026-03-15T23:10:55.270Z
+.netflix.com	FALSE	/	FALSE	1822045946	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+27+2026+08%3A52%3A26+GMT-0300+(Brasilia+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=56cdb35a-2fff-4e53-a367-98123d172bf0&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1773616256349&AwaitingReconsent=false&intType=3&geolocation=BR%3BPI&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1798285944	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1822019285	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABT8URuKyHZv4Gw4chg-k0ZtqA7CabZ6Wxs.%26dt%3D1790483288614

@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Standard
+Next Billing: UNKNOWN
+Payment: TURKCELL_MOBILE_BILLED
+Quality: HD
+Streams: 2
+Price: N/A
+Extra Member: Yes
+Profiles (5): Abdullah, Lena, İ, esc, Çocuk
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1810047544	OptanonAlertBoxClosed	2026-05-11T14:59:04.478Z
+.netflix.com	TRUE	/	TRUE	1813071557	dsca	true
+.netflix.com	TRUE	/	FALSE	1810047556	nfvdid	BQFmAAEBEBP-qgBuznUmScjtDMZO9Yxgij7Hszkv9K1sDqZ4vSBZ4eTP6PuOqHGYN-kOAbYkl2D7BqmzKP7QT8a-2YZKme7FjjyH70XQnAMi7BPRi8IheO5bZm86vUb5WaLcvACAjwGBow1pHfcgSy6DgwwmtOg9
+.netflix.com	TRUE	/	TRUE	1813500305	NetflixId	ct%3DBgjHlOvcAxKPBKgbMb2ZY_UG7TmsNv1erhgQ0RZPbm--g4UZ3ffpNrXny4CZ-ThRd3lOQGFyeVwXPgOd_I3u8Q5GP5rKGxYl-BYEk1HrqoPv-2G2wrdRDZ2TrOrWSz6PhoXJjF_OcJyuN3cYu7eBUM60lEQZhY3wlF4sJiC8Ci11Su0RYEGk6NBql7OkvcvEBiBEDM6vV8s6rnbceIIDYr9ZiqdxScC4ENY9oQ84ecEj0DhA-2GVuyVsj4s0Y5XGjdEo0dPJyx2DTz1u8hLqNUF-VftmGDg5EVZiFUvLOoe0pE6VVSslandwfdVCfycBnRUiU87xh_IxzJz-1_U4CefUk7yKmtBgWUlPhvYqYJsjkZpH9HL7B8KlGzMWoQS5OtEWUjXG1tr8DQCkTxnVlI9Z1EFjHyP59puRTyzXMX6rfTULI8q48ZCdzF_a6M4PXwskIwUsMAChxxf30-VqK0DITs7OUglEEDBrEWh2bQGbs-KlwoD3B8pp33_Bgjiy3Pwh7sQhMIv0v-BCGdZbyCUmBJ1Lc4THzrlhE7Bvlp7IPsB3GhEmfVSCopY_9AeRyTgotcfuKXIrcDCS-QkvwQynwBDZE-RODznL5NFjl11ATB57BQt5z59Loy50dB63rwTL8ADQrzkzbHdXqCZhOjKG2z4byT5Vdw1PUBrCyImTZxNcb7jjn5xk-11CMUws3uA7LAf8U1YqGAYiDgoMLZdT98tRFOfLfOlz%26ch%3DAQEAEAABABRt1Lkb6ueLvllR3CmSZl6A__0SSnhTBO4.%26v%3D3%26pg%3DSH4OCDBN5VATBPJWGXIGS3EHIU
+.netflix.com	TRUE	/	FALSE	1813500309	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Jun+20+2026+17%3A05%3A09+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=ebd283fe-248d-4b6b-9987-b13e9109233e&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&crTime=1778511544947&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=1&geolocation=TR%3B07
+.netflix.com	TRUE	/	TRUE	1813500305	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQFLvkmJP-XfN2xk8H5_B1t4kXZZAVICi8.%26dt%3D1781964304450
+.netflix.com	TRUE	/	TRUE	1796554947	gsid	dd711c55-fb47-4b59-a20f-e42afdb927d9
+.netflix.com	TRUE	/	FALSE	1796554947	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796554947	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796554947	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	TRUE	/	FALSE	1796554947	profilesNewSession	0

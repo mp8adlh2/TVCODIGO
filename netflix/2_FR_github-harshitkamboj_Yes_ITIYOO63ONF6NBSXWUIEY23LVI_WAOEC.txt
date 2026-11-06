@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Standard
+Next Billing: December 4, 2026
+Payment: DCB
+Quality: HD
+Streams: 2
+Price: 14,99 €
+Extra Member: Yes
+Profiles (3): Yanou, loulou, Jeunesse
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1804796519	OptanonAlertBoxClosed	2026-03-11T20:21:59.440Z
+.netflix.com	FALSE	/	FALSE	1804796693	nfvdid	BQFmAAEBELeSXeWeW8-q9O37fGTWQhBgHKFpHBMDi0H2RC2kP_2oDXlZ_Cfn8dvybmQroMefbFCMtbhxgZg4BWvMV1hWiOQNxrBEo0ROs6ojaJNHl5J2qVVA_JR9Jnh-w9nCh5PzTiVmCCtri5AusK2Xb3UYip1P
+.netflix.com	FALSE	/	FALSE	1821794092	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Sep+24+2026+15%3A54%3A52+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=0237cbc7-e136-461c-b1d1-2b7e03b653e0&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&crTime=1773260520113&AwaitingReconsent=false&intType=3&geolocation=FR%3BIDF&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	TRUE	1824818089	dsca	true
+.netflix.com	FALSE	/	TRUE	1822078387	NetflixId	ct%3DBgjHlOvcAxKFBJkBfUsvP4GUixYrcv9tEbtvTqNOUdxPW6x9vVC3202kgzZmBllOKIzPdpKWjaqnx7IOgZWpFm1Q_oFwaLCwYIplOoPPR0kNPZCEGqpWuv5rIEy_Hpy1hKmdc41MSE4DiQxFOYuhs98fX7cUU5mrvKYBBeAf19eX-yw9lgWhvU6jp52DVeKpDEo4SWi-TktQ_-XU0yIayWdKyFzGQHRzVqCkG33RdAo0ITMSAJFOq40crPyqwMxGOc6KwM3wFAHd4JwF-HgpBhVzpjG8kwBfTwq2yzHvxsLSrZ5_P-8E0o1-yZoeIZ2vofOckG7WEM3ZWKv9TIYMKGlnO4W_rFY-rXUI-hGAvP4NhFGv-mdaqsQyrRxqsKnNnWobcDcAUf71WbSTOawSNelsqxEJujxdo_KPgG74QBYn_B8RTIscChYxNbExp-RXdF1e5-LItrjH0CoK7kkZCELaIgAcYdr6nBiHL26yVl5Zkbf9AGJ5s19VXI0W1WQn61Obi0gw76luQd9CeSOdD9u2dDXWC78x-y3mbxdMbovJbTwcIbuhZzxB1L-PS-LDZ4U-wTFAFWWnPr0gpHerLYaNz9r6U9FyvgIRV5efEioEFmZF9BduH8k-LB0Vj25gzKy3dYbkrPT15SZhyEgpNZN7fezSJXO2ppMZPqJu0djuhn1t9Yfie4PJ8HqSrMsYBiIOCgyfHRF63jjjksHilsY.%26ch%3DAQEAEAABABS5NLz0UMbYCnEvi7aSLa_QglTymg1YTPo.%26v%3D3%26pg%3DITIYOO63ONF6NBSXWUIEY23LVI
+.netflix.com	FALSE	/	TRUE	1822078387	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABToTbtHwUUw_F9jDlwShZb1MC6IOZ34mMM.%26dt%3D1790542415449
+.netflix.com	FALSE	/	FALSE	1796554945	profilesNewSession	0

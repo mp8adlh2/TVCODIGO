@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: MX
+Plan: Premium
+Next Billing: November 22, 2026
+Payment: DC
+Quality: UHD
+Streams: 4
+Price: $369
+Extra Member: Yes
+Profiles (5): margarita, valeria, A, 이별, Beto
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1816481534	dsca	true
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	f4936d62-eaee-4f8a-90b7-0e6f7ca9047d
+.netflix.com	FALSE	/	TRUE	1819224173	NetflixId	ct%3DBgjHlOvcAxKDBG7y2oWEbgQ7KMw744vpTPPwWRhQfdiIzN8WFdG3szVgJ1uZBvRIAA1chcNRDheW-91c1471ZAPuzPuevUPrXWL5VsD6HbMEo1C3voz6uiforQTNFbivgmBIyPgEPjrhgOOyZPcJX52XMaFaTotexxUUmxO4Z7VHas7XgTy_PQ2qV14Pqf9LZ9kShgRXB6lCOe3VDQZtPlTYgoQcS6nwY22pPuUR39Gm9iipxKVh31MHOeoVwwLHn645Xn8It0Y0TYqUdY6MB4lCvmBHnyhnT2DNjZUXZxsn-Qo3xfo1WG1Ou3tRu8xB3KJTasIw6f-Rz8CBuJ0loO9R9tIm8Z0vphtqGUg3iqMe4OsNP-rH-VoEISCQtytnrIKRjcWvqklYm5j9dG80a79aXG0c4ohYbCKNUikTDDdMUp0dJLFpKzZvEz8j3k6qmpWPeFZgykT8cVBFS23e-XEEPCTlbvwhg3SK5mp8hkt8BNMsHJRtNmOtaqKP8ll3cOKVt5rP7KBMBcFEXpsYAdWgynI155DVOXeebGa-LfnCDVYm0BuAjFEtShO9Z8kwA8_qlq_qol2c1ta8Ju0eiw2MF5tyh98TVozF-XoO_VD3rHRmcgsK5r-dowl-KxhpGctgw54CQBfpr1tsux6TbDeBXYPNgyHpK8Nk127E7JkAiv99hGVdN5DfqCY1GAYiDgoMAHs9NfeNve_ZB9kJ%26ch%3DAQEAEAABABTOYNpiltLhNVLWcivY6GEYH7hWKs2iyyE.%26v%3D3%26pg%3DT7WMLVN3XNCFLKZP7MIFHMR6YY
+.netflix.com	FALSE	/	FALSE	1796554946	nfvdid	BQFmAAEBELZG6hk1lPl3rf_Lpl3Ga-9gM48Nrg4Gmw3YcU9GU0cvJhFxC0JfwEvYLZGt5J1OHEMJsP-ne-HpX34pm8YYoWV4Nc5uSPuora_X5pUgk3wsGs6WLxFN1_GMA97GQ4pgcOeZSmmlox48pYGrCuhIHAF9
+.netflix.com	FALSE	/	FALSE	1796554946	OptanonAlertBoxClosed	2025-09-24T02:37:01.217Z
+.netflix.com	FALSE	/	FALSE	1819224177	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Aug+25+2026+14%3A02%3A57+GMT-0600+(hora+est%C3%A1ndar+central)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=d3ddad6d-6e8a-4450-b336-4015399e3309&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=3&geolocation=MX%3BSON&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1795464175	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	TRUE	1819224173	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABS025EdwwR5d4xuQExayXsEMfiSw1LOqG0.%26dt%3D1787688173807

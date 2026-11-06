@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: LK
+Plan: Premium
+Next Billing: November 15, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: USD 9,99
+Extra Member: Yes
+Profiles (4): Sajeev, Kavindya K, Ruvindya K, Vihanga K
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1821169409	NetflixId	ct%3DBgjHlOvcAxKwA3wXsom96DXcxuWiBw4IBTA88W0tQzWPJ77IuTWvXIH-C8zFqJK8Ql3TLnfFsOX1sM0KNmIiOaKKF5t4EOzTDps6bwc5TdDAKpccNeuOCcyfjenBue75JXr0gYc9vVCGXax9GNpalHMsbp9fKOZ_oQnmlG7ab3ExYn7msun9PJwY8-N3ESDwDT1cI8VqUHfH8yBuapptiF7b2XdB6MShqZyKFanVTlEQJ74IICWwzYQSx6MDpJZLbAYRFabPPdXCSxg11XZGn8UpDOhTHKPUyDMvUBHp9P0-24kZkuWjt2Y_MIEx8tJ_Vaome_4SsYTXTasT9noQz-oNfkBz-hrd34TVTNPbnXezgHcjpjX64qr8_Iyozj7XIG2yQSMMgH9Kj_KeLiYqvbnqZlT9ygnAlRu2WMscuuRqRkt0IEAe182uAG4Ed1KiVV3Tpt7hJJs1CoqZwpCuHTROJ2W8SlGGMeYo9DIdQwwo889_Tm2Y_V0jmXINvLKkym8pexY-mY1GWw11dJkWHRQnKW2TpN6qp1-7-0EVwdL5zsEoX68KfvyJpBgqRbwXiZCACMpXw2XQ-xgGIg4KDHHuEnC1OqtGOuSEsg..%26ch%3DAQEAEAABABQh_mUam4CANTclKwoLhnRVreNi1ne_wnQ.%26v%3D3%26pg%3D7YPXAQTB6FDWDNTQPMQNHOVGAI
+.netflix.com	FALSE	/	FALSE	1797409731	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1803995238	nfvdid	BQFmAAEBEGF2EJ-KKvtJc74EvTfrOaZgZ9ITexpAyCym-SqC4CjgGIADagb2fFT-wkIEw3uLjiQ0FJh_InSXFKvKF05VAL29lSjfJQEVTKxPUmujyHWgcYKBRWRuK5hCBIVdpC6PU8zpalrpnAJOX3RCfTlE32V5
+.netflix.com	FALSE	/	FALSE	1821169732	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Sep+17+2026+13%3A58%3A52+GMT%2B0530+(India+Standard+Time)&version=202607.1.0&isIABGlobal=false&hosts=&consentId=43c4e922-a04c-4573-bfb3-4ca062f2abbc&interactionCount=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&browserGpcFlag=0&isAnonUser=1&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	FALSE	1797409731	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1821169409	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSnFcXRFp-hi73m0HGDF06CGOlLuvNB4xE.%26dt%3D1789633404785

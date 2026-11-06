@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Standard
+Next Billing: November 26, 2026
+Payment: MOBILE_WALLET
+Quality: HD
+Streams: 2
+Price: 349 บาท
+Extra Member: Yes
+Profiles (5): KK, Hardtime, แมวจุง, Y6, มุมเด็ก
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1794982609	graphik-bold-1-loaded	true
+.netflix.com	FALSE	/	FALSE	1794982609	graphik-normal-1-loaded	true
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	54276ada-9581-4aa0-bead-c05c8fc84207
+.netflix.com	FALSE	/	TRUE	1818742606	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKWA49oJssHm0emPZXtGLzBj-2EsrZUvO1uDmWe_OAxGtCNOsWDN0IVxUZvrAAjATGl4rsKtsm61B0Q9rVK44AlOGQ9Te7m0eaiWm9zy3zm6QJH0dzIItWO6p-j0g_TyBHcJDSPLNN76CQqdZvOetcx6C40emO1IWEDuBuTeB5DqSAeDdoLVCOlhgGhGh67-21LTkNIvXwHbAGC_irw7GUGVybtZHtx7YMxyF_qF340eEVYTNNwvqOzJX85c9retAQn3JG4SXENw5HNRx-Y6n-DvbmIrccnurx8I7GrTV2EdUVRo-_tffJOQxkjJc0_7Ozbh4wUB6Z91BJX1GUXGro7Lj0gnFSMjXAE0ZwL54qzh6vTSMFwswfZV-Tjc0uZYeWk61Kv-HgVgD2TE35d2Iaj6H_yBGZKisgwoHEOB3jneWeSa2QFsxRUlRGo7lwiTIUYkjL65RHsn3Co3R9-F2SvMKlQZLfAV4x8tq8zXPiFNhajbvILIJ8rCxmDo17xVgTxEmxMvB_225XkaUuoLnxbnFQ9dKmPj98YBiIOCgyfdTJqhU5HO1Cgxzg.%26pg%3DLDGTX5RLARHFLJMW7AZNFENKWU%26ch%3DAQEAEAABABTw73-cG8wEFqQJ16FNoX4WT601s2CHE8c.
+.netflix.com	FALSE	/	FALSE	1794982609	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794982609	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1817791688	nfvdid	BQFmAAEBEBx1uIwZOXjKOMNQHZkVjsJgTw-bT7sSEzsF-QPlLILdp394Ba8kuGhuIymmoo7Uqc-AF5JVGxVcXZ8CyUm9y4ROb6N0a0RScT6aR-1oKrm6mDuKhOnMnMX6m8tveMZnOr2s_O2Ui83HgRp0R2eIl-x_
+.netflix.com	FALSE	/	FALSE	1818742610	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Aug+20+2026+13%3A16%3A50+GMT%2B0700+(%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B9%82%E0%B8%94%E0%B8%88%E0%B8%B5%E0%B8%99)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=647f19de-3bc9-4f9b-845a-09ee0f12aac0&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1786171421750&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1818742606	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTctLe7BZ8b7iWIrTY6NqD3Atlf3UTfWis.%26dt%3D1787206606172

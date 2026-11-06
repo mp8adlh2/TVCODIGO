@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: ES
+Plan: Standard
+Next Billing: December 3, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 14,99 €
+Extra Member: Yes
+Profiles (3): Jose Maria, Alejandro, Ordoñez
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1821301587	dsca	true
+.netflix.com	FALSE	/	TRUE	1819993575	NetflixId	ct%3DBgjHlOvcAxKIBJunBu0icE1CakoFx0Y2HYR2qK4yl0uVoznXR8yPCDjGUySxoZUshZu2m_5VJpP1UQcLBD459kisNP7BK4M5EnljaIxQ4cPZ3BK23UgnizVIGgfoYO9nX1l633d9-BOJNfL5NYxnTN8tlbzv6xdgvE3DU4lPJcFlIDhN6X7R8ADaLRJo22hjwHnUI1Qd-kpL_H7T8BzTRE4vOhMhsshqzuqxzvyNkahimHcFXEWfPtolepWNb1xGMjHlvyth20mcQdvHd_deM5YZqzVyhPbmoqio_KictJzN3q_717YsjZQg11WOmfMsLMrahHdjMrxO1jFJlsLaYEFj6zU3UNnyKLKLrxIQBaY-IDhtU7CN2GQsXywfVwCEZpBxf2gq7xALYsLkFqlpp5rDqLSjUFam3EhZGYJSMyedZ__RG0QeNkCwyVfzUYY5ndfbCT2tm_o4FusfqvjrHF6AYL62KB7NMASHfa_bE49LHYQgI95xsSJgirf0OfVlLyFNzz4q_UFQuj6tO0s0Ri6-hxVIFQy0vJr6MDQLmaiOTZVeLGsIZBqm_Xr0g1TE609wLPmyqB8NQeZC-4ULX536ert_UD7Dmf0k8CKH4JWoUb3-5MaRru8UnCGtjvavgMulWOtGQjI0i70Y89yTJzIpG2aqVYCEnasdYW0klj6bDGnrQk80FAIe9wyYwtth8jUYBiIOCgxHeO2A9jKe6m3txEc.%26ch%3DAQEAEAABABTCAjZ8bwgjCtlmgFJkCpDVt4FiWmzc4kY.%26v%3D3%26pg%3DGPLDKSMYOFAKFKHLEQBEMG3VK4
+.netflix.com	FALSE	/	FALSE	1806762222	nfvdid	BQFmAAEBEE3gU8o30bopqGn4_AGbkOlgjCbq5co8NaVQVpdff4SBzSiX8cz6ACN-_28cnkSmfvUnMHoDJTR9Hwz8VytKfFIMPAdlrmQZ-krQAO2-YMtSWWSlNYhvS1Pre-zbDwD8UqB7eQSA-I5EPs5hcUF01Jcd
+.netflix.com	FALSE	/	FALSE	1817236919	OptanonAlertBoxClosed	2026-08-02T20:01:59.567Z
+.netflix.com	FALSE	/	FALSE	1818277589	OptanonConsent	isIABGlobal=false&datestamp=Fri+Aug+14+2026+23%3A06%3A29+GMT%2B0200+(hora+de+verano+de+Europa+central)&version=202604.2.0&consentId=1d9d6f24-8b2f-4bf4-9d5b-2b551d817911&interactionCount=4&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&hosts=&AwaitingReconsent=false&isGpcEnabled=0&geolocation=ES%3BAN&browserGpcFlag=0&isAnonUser=1&intType=1&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1795174533	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1819993575	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQtU6AIqE-9FVhT8P3iDT7zWU0UNf6Mcl0.%26dt%3D1788457576418

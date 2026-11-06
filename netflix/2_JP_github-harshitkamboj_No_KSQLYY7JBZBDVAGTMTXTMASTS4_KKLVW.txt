@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: JP
+Plan: Standard
+Next Billing: November 29, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: JPY 1,590
+Profiles (5): Jyoti, Ashok, Sajal, Sadi, Prabin
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	434ad6d3-f072-4485-b7a3-0c189146e076
+.netflix.com	FALSE	/	TRUE	1824306734	nap	BgiJv-vcAxJJa6R2cDY-ckkYTVLVydOvKAO2xpd0vvugPJzU1PBvebUtwsghkoUb-wlCi-enM2TjwMowfhWygDh9aimy0996IO7oqv_aUqIfPxgGIg4KDFlaUvIU9OATBkphAQ..
+.netflix.com	FALSE	/	TRUE	1821336684	NetflixId	ct%3DBgjHlOvcAxKDBPV8kuDVZKe-I8mOSckee0YjI95NSGdncLUSBwblWVPNkZWYrP0h9vFdcCAY4Xy78s2erqBOJdHDscWmY60w_H94YQqA-UW0UHqKB-fHPe7SQEO0o_r0nfMmvTM7GGHBUJ5OIhtqdWk1elPvTSOOjPwruw1LE1WvDBdVEEI_mlEC_HyZAs5tz0SxCDi2bDTN3xA7gUs4nRgZOJ7XeqFh_MI1wM5Gv_l6Hq9o2e7A8j3CewjA9cpfK81QS-9DXMZOk7cL6wvS_kX4njXHv-1AfEIzfOTgo3NmXpv_-HYqukZ8zebjq0nxdLyVnmhbOqNNA8WmLro2Cv_-2Pj5f1NaWO10Wv5HsTiWeYRxoQkIXqdXhfSiWd7mm4YIC1kCQ27edR4FxjKiTbMXggw5COtH6QMepURMqAVRKRkBT178MxeXXAn0lh5e2WDNBtH5awVWEIkpq-GcDF5Z5ta2682UaXQkVGTceUe88xG6MfDRJBCjjDnw86Hv1SOJhOoeAdV2H9zkCBVo-JRNcORw8k2ZqFqjXwAKEC53Ufq2Dp0tI58g34_rk60ToO8TIJ8Mkd4sQTMglKDvmcIwR7QQUBZcWLj5G-teVc7aMNodrtYAS90UvsMmAtF5NeFEL9uxycS0fTkl0zFa1vRsBnRRpj_lBT385GAhx-URUG65dRp7KGMuVCn5GAYiDgoMWujhsJgoKCzsIB5E%26ch%3DAQEAEAABABSFUp4HyvX8WFFjdFJvnWIUYpJKSwAKdvo.%26v%3D3%26pg%3DKSQLYY7JBZBDVAGTMTXTMASTS4
+.netflix.com	FALSE	/	FALSE	1797576686	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797576686	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1814365079	nfvdid	BQFmAAEBEBYxYY83w2SGf5AiFR5adjNgJ6mmilDUYcteBA-NMkd1k5yVUn7JGO-6xnWQqwNqzp1o9IrVDGRAAb5ubMNPlHqZQMLwo7dXyQl9s4W_fngWbEirVpKui7NfgiHXjN6C-hLcnoqe2FDsy7PzTVzAU6n5
+.netflix.com	FALSE	/	FALSE	1821336688	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+19+2026+12%3A36%3A28+GMT%2B0545+(Nepal+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=cd9eb570-737d-44fb-a146-70d14d136892&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	FALSE	1797576686	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	FALSE	1796554946	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1821336684	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQQ2llyoyuHcDhGvfftYFmJcVCn5vqIfu8.%26dt%3D1789800684838

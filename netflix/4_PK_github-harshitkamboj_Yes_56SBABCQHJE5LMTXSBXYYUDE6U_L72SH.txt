@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: PK
+Plan: Premium
+Next Billing: November 18, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: Rs 1,100
+Extra Member: Yes
+Profiles (5): France, Forte, MAF, yass, Ttt
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1796554944	nfvdid	BQFmAAEBEMev5r2cz5SvU6PtzX_2t5lg92ox8AiOiEwz7OY8Wz8R8yBooI5TMj2kY-olKpAQ7ss0-NUhF2F73cXxho-Cq3BppZ6nNvynxcV4cXWGDU9CM8pZbxw3-aiXS55kWM4ostytiFN-e7XKZCPuiQgaBk81
+.netflix.com	TRUE	/	TRUE	1815555321	NetflixId	ct%3DBgjHlOvcAxKEBIyRHcTHID7k_XoSEA9323h_gePpjRnfVnNcBy-1_tkrp8t3Vwi0UaMlyyl7b0QixlBZ3ODxfWxMyGVc8eQJTMvEC7uPxJ5B0SX3oOPN29i64bXP8ie7mtHptqzAkk87g_nLb2wtUwQe1zKH3f6x7TRn6Of5O2cvRU2UKmXpGJK3GPGE0NG6dqhq7zJKqHhVCuRfOcpQspKItoMqxuf0ZzXFKxG6SBszElLR5hGjuUd_4AbkFH_tBCTiKBIrBJiG3jkevUszkvixvStkVh16Wr7iQGmp4QFmQmUf3Lr6Pvclg_nRK3jH0inTURj2Kanhv43xh6KVNr79BMl9vRai5U0BVd4zTsJne2IWBMlKNLS-pFUW3YehfsdDwZsP0f9r2MbYz9HsTyNdppY3A1-W9Isbdh8wVDpFmfOqpu6vTPemvJeWd2KdTwBJc3j_5o4Q0aKn3lCajXpQrXVZ-Cik4Y82mH6tyx1GKqNNR0_7nWJiczOktrADDaokRlpFVyMzp8G-UsCJrB-V2q9PmIUGhRbmCJoVTszQk5pl0_8I0SAPvduZy1hC_tPs9MVJ6iCyYO479xiNNk7Ex-MM94O9S9ObfXR512DTC6kTwUMDxWNbb3vGnsppjcCESxfwQeLpOJJGFSelWLOe9zZ-8kGUVYO_IdAnWwpekcIy18GoO2KWA3kkNBgGIg4KDApgK98qJjF2jN-UDA..%26ch%3DAQEAEAABABQIzmB1S3mn95yItLk3KS4wZygv3TU2ndE.%26v%3D3%26pg%3D56SBABCQHJE5LMTXSBXYYUDE6U
+.netflix.com	TRUE	/	TRUE	1815555321	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSXuBI27o5j2UfJu56YEErh5PIArvSB6mk.%26dt%3D1784019321252
+.netflix.com	TRUE	/	FALSE	1815555353	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Jul+14+2026+13%3A55%3A53+GMT%2B0500+(Pakistan+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=2732d97c-182c-4363-8475-60fbf8f54ae0&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	FALSE	1796554944	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796554944	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796554944	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

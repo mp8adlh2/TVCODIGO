@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Standard
+Next Billing: November 19, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 389,99 TL
+Extra Member: Yes
+Profiles (5): Chnam, Bizim, Cinar, Gggg, Anak
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1815068669	nfvdid	BQFmAAEBEJdpmkJUpTg8r3DRVrdD5w5gfvsaJRscc3xudgJMieKOgOTu60hPCVSgn2Kp04qFmgevBrt5wkmtdpLl9WJDBY50n2tQSDu3cPD6qb5pmHGLhhXQ2XVKmOfUg61CzkzI3-Zt9NUwpQoqXTcut3XF7m4e
+.netflix.com	FALSE	/	FALSE	1815480621	OptanonAlertBoxClosed	2026-07-13T12:10:21.903Z
+.netflix.com	FALSE	/	TRUE	1816795675	NetflixId	ct%3DBgjHlOvcAxLLA9ij7I2MK0lRSqW4gdB-Gl7L_tTW9bQfwF8YhVIey9VrqLQTeyX7S4ywOTmNzWF9FZ8NoqehdjGgsXz8Ivlj3fykan1rVbzpKA5Ir3rV-fuSS58F0tdsxzltfXDvcUpDE28oB5JPeVZRLS8PwyaYoeSaz5kuLyHYi4AQoDD3hjrncijYSD97V43guucHFcrvOWpbxrecpZZ0QrYtLQ72V8eZrnOi8iCM0vv3QqP1Jn5At1zGhfPGAtwsCMKzXNKtN09X0-fCUxGCc_p7tJRBESwnoNuvI5yaAZI8pu-NJc1t1GwAvkAr1N7J3kanNJ7ouAI0sHn9g3OG6mVWvxeWGE27B_rG8oV5qmWofxoTbgzMnI04TtbuxTR7KEr-q_8FS-cKamt5tQMwkfXK1jX-h24PDgjyZZ9RsnUp6oRMs05-OkEzQhUKOKkKmY_QcAr2303fRk6otqz4whWgxuKYUALwXBhjtvI7fnxZduKMB7hh1rZdRJh3UKRDHZ4xHdPIE3a7dmmIgvYrG07Ob5ol7bSOzbSbvjV3dZNDeDXQSLEQ_hXOUI1UJwg2TXd7FPaXQhjPkDZiRF5q1V3lez66Sx6lA8xZW4GkhBGn_hgGIg4KDDF6mpPNin5KHfUHYw..%26ch%3DAQEAEAABABT5ZUgHqDMrRnZKKbcg0g16qWoVhjIMLPc.%26v%3D3%26pg%3DCKEI3N2ALREJJJD2DMGQ6LMRCY
+.netflix.com	FALSE	/	FALSE	1816795677	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Jul+28+2026+20%3A27%3A57+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=cb85dfaa-7db1-4dd3-b326-7e04f30c0dd5&interactionCount=3&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=1&geolocation=TR%3B34&prevHadToken=0&isDntEnabled=0&fclco=&crTime=1783944622507
+.netflix.com	FALSE	/	TRUE	1816795675	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQggpU_stiuhox6oQZedFIPaEG2Icg8_Bo.%26dt%3D1785259665030
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554946	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

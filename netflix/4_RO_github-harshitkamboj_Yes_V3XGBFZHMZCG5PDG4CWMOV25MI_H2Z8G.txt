@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: RO
+Plan: Premium
+Next Billing: November 10, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: EUR 13.99
+Extra Member: Yes
+Profiles (5): Claudiu, Edi, Roxana, Denis, Antonia
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554947	flwssn	79ba9c1c-40e6-4d3c-98ab-11dd99e4a2fd
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	074eecf7-9e3e-41c7-8385-efb310fef9ed
+.netflix.com	FALSE	/	TRUE	1821458315	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKYAxGUdgDq93PsxCg0TyTrPMSaCfYqfv9lDtAHOLJzaXuKA48af8ztp5bq7D-wezi0u45eYNwRxT4atFHTJRAsrKNy_23k9futnO_jGVcDt4Mf9H0skT7P631EuQ6GkbELMf7M6JF2WPwo-t1nxUTMGgaIGe7MiaRFovniexwdEtUozBRUU1zdWQ8LraXoxqg7VlEXhafu6nQotG-y0BliDtHM6R9JiEf0bj5d7wfquF4S3GVvL8HmS26taGUX9ZTV4nMCwKcCvG3vSmYHVLbQnhtEne15npyIwznjKgchXVLAzv9XBZ8Hq_6BKifTzLJU7-iiJ20DzSVhl3fGzPs3HYXYZgB0kvMoTnwdaaHWDSKMZn56yzxPXVK9gj6kgV7O-s48KC4gPWsF5Dg1vGuoBYY7QrmPwLiMz9FE-kKo8cP3jThVuvSbGDoL0SqaZgGStRfneQDYPO9T5Yjrr8Nbq_YOcTf7Fu7Dd9bNkbSSkf7UdS2TIGWPQHdK2_OfEnNiijYlrVAE7qfw91cTQ5ayOAxxzHSZnzebExgGIg4KDDaS6jgpM20PrY0XXQ..%26pg%3DV3XGBFZHMZCG5PDG4CWMOV25MI%26ch%3DAQEAEAABABRgU4Ls2GL_-p_Q5_9O_ee7HMnU_vRPrrY.
+.netflix.com	FALSE	/	FALSE	1797698317	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797698317	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1821458295	nfvdid	BQFmAAEBEAry3ME-b_xT0Q8IiHOHZmxgZXE4yAi5ono245ymUXG-1BubkzNQJwBzH3ZHr4JZuqfBVsI25xsdgANTcuaJWMY9VnvlHbqZ90pHr0LdsiDd721JllmjLyaMHgw0rnrZI4hTxoc2GBdnGuRj77v6Mt-1
+.netflix.com	FALSE	/	FALSE	1821458264	OptanonAlertBoxClosed	2026-09-20T16:37:44.977Z
+.netflix.com	FALSE	/	FALSE	1821458317	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+20+2026+19%3A38%3A37+GMT%2B0300+(Eastern+European+Summer+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=77125e82-255d-4a5c-92bb-7c6bf0720f99&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&crTime=1789922265349&AwaitingReconsent=false&fclco=&lastConsentTs=1789922264&intType=3&geolocation=RO%3BVS
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1821458315	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRGf4f0-Ae54CX3ZH3nlXrRb07F4rgAc_A.%26dt%3D1789922315883

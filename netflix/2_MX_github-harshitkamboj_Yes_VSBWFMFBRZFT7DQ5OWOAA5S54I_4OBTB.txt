@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: MX
+Plan: Standard
+Next Billing: November 8, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: MXN 269
+Extra Member: Yes
+Profiles (5): FERNANDO, Leo, Salvaje, Fer, ELIANA
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1807296965	dsca	true
+.netflix.com	TRUE	/	TRUE	1796554947	gsid	a6e3a91b-31be-4d79-8499-cc27bc61ce7d
+.netflix.com	TRUE	/	TRUE	1825165731	nap	BgiJv-vcAxJJaK7UJYytMj2x8aBxd2V86AcoXVR5CM5q8vkJkqwqlcmL2NtQwqpXehevXGS7BlM2Yh4aGNzdbZj9yoNrKU1xa07SlH0HdEvNVxgGIg4KDECEnzmoUMj7IdE3nw..
+.netflix.com	TRUE	/	TRUE	1822141731	NetflixId	ct%3DBgjHlOvcAxKGBHae-NhhxqxzJg-EzSVasTcojn7wbvCPEE4Ucd1DfQcj0NDMjGXZNmPdDXqwmedRF6wd7opBAzLQm-Zb9WcnGQfNGRgIkTjlUqOpD4D9tWqYYf1FqjsqF-dgyILeKiGZiaUqiUjLNvFTuIg-Lxef94OoJhmXC1kAJ5Ot-GqdXRxdBIfFB2PbbFIhtuEFdzUtTbRNTC_glTarcKx4hnfndUr8Y2KffZf-lrhFhiUA7nvvM4LtHySlpAQBdbs1TrPGKkVgcCC_cILnRq0cxjjn2ec2W4ElkQKvRlZJB5XSqMpaU9htAOuDGRObXTIuqgynvFmimO1kXiNaUIjgku1_ivvAGyOerihe3Aqt8HtJXO4ZJYFeQi7-uE2xb-uXib0ADbfjVVenqsNkryow_-XfekmJQZVmBD0XoOxgYT7HD0uGpTvXCHiaJf-z5sfi4_DrU4OlmCgF7NqH8IoDgnAmIH4uW-4HGzqf4uuIUw5AtyDjSObNQI6kQypFyzYQ3BJtRgbDfkUaUXUnl1Nn3jzbbTXLM0DM49BzE55JU9_EBvD2JriizONJ-7yIv9YwdENdAK7_AGY3gfbUIW-SDykfOJhqAcatFFNNBk8fYbBvTWi2f3dwzF4dSsPMwrFcoz-WU5OjQkOJH-jgWSdgJqURdH_0bLs3nj_amolqKlB9NnRTOYXESrAJGAYiDgoMrEQpzWjsOE6OIWXU%26ch%3DAQEAEAABABSUvTDPObzV-FTMziyeq-_fYHZEtnzog3c.%26v%3D3%26pg%3DVSBWFMFBRZFT7DQ5OWOAA5S54I
+.netflix.com	TRUE	/	FALSE	1808926658	nfvdid	BQFmAAEBEEvR9wPuKBpC7zjEKTCoJQVgW_d9OMJxo3ECRASZTWkefTSVBIQHfOB-WdBKoCSHL-M68jZNKptKdvEtlrEDiaoNpA5eGjFOx_CEoadngjg6VXIpbbRJ9qQkMASsLcS_AqiizyUx4tjQN19x1K9BSvEI
+.netflix.com	TRUE	/	FALSE	1808926663	OptanonAlertBoxClosed	2026-04-28T15:37:43.600Z
+.netflix.com	TRUE	/	FALSE	1820764968	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+12+2026+10%3A02%3A48+GMT-0600+(Central+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=463df2c5-8379-48f4-8489-ae0c29a781a9&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1777390663970&intType=3&geolocation=MX%3BNLE&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1798381731	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	TRUE	/	TRUE	1822141731	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQqHdbbMPgoP4S8EuyOnZd4mgSlD08c_84.%26dt%3D1790605731186

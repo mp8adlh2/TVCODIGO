@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: MX
+Plan: Premium
+Next Billing: December 3, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: $369
+Extra Member: Yes
+Profiles (5): Maria, Ramses, Vane, José Luis, Adrián
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	5d6d9c33-8642-4ea6-a494-8eb4b207358c
+.netflix.com	FALSE	/	TRUE	1822524159	NetflixId	ct%3DBgjHlOvcAxKJBPHDuOvgydtXUrdfCUdYvxlAfniyFqHAXIhClIvdTPv5wNdOUIpu7zr_XSSzzm2Lzf0Dn5ubycdn_FkXpohAtLB4xRJ4RpvFTETA7RDHeN0RuerdMp71DMHqmzm535lqaHiLGG8j9SqICXO42sjrZsrq-BWhnRnAmgXqdspHhqEBqlmj1sI1HkV5BsNnDFLNp68lTLChemVbaY_KGVVqn8GbSft95hFEaJ5FyLIo2HIVt4QDiVSMUU9FFlLvI6Yxo77DTd3q4Sd_DVHW0WyAUxuNJttZvkwPInsxa4AE1LdQmIfbDL1tWfzN3fwdsO65rL-LLdyVkuYc9qLAypivysKOBaL4wlDM2qEjszIsl0Tm6J_XGmJb4q_ad-rRh0zprZCXyOxsS9OnDeKpdbv9alAJSb572QlP4XCpg_XyD1w3RWIa2wYC8jv1aA1XiC7PRkLgzvdW0z2BPX8N6FNW3eWG0XX8-ya_-rquU9FnK605ZT181xFsVpYUa4O_sUTib3F93FPLARUcoBQqf95U94tq2yBvW9KvYHCSWjN1BEsxR66i91PpFpn9gaPw0sxitfGgiFAyCGn59b8ueLulvTV5f6AUlo0g183qgrj82ccq67TNdBrn5JYUd4fcPnW7IUPq390IVvHPa1pMvk_F7jVJuiGYEsDdUnP3nPr16jj0ZW_YJGgn5lDyGAYiDgoMv9FrnBFuAb93cFm2%26ch%3DAQEAEAABABS-umQrIs-yV44oyM6pu1X5XnNTS91-PEc.%26v%3D3%26pg%3DNYXVSBEZ7BGMZMJOABLLF2JS44
+.netflix.com	FALSE	/	FALSE	1798768750	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798768750	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1821148417	nfvdid	BQFmAAEBEDGRuoongcQCF8orK5L7CqZgCKdIz4tigFxPe9NLpu1evPxvfC1VeUfJm8pupGCg4c0KFbd5y2qY9cqXaVSHie0lKcEBWSMUcNdGuyggHXoUUkChDRBlAVZaSi78YSY_DGmQmYKQLnhyaECv2-9zmXQ2
+.netflix.com	FALSE	/	FALSE	1821148132	OptanonAlertBoxClosed	2026-09-17T02:28:52.447Z
+.netflix.com	FALSE	/	FALSE	1822528751	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Oct+02+2026+19%3A59%3A11+GMT-0600+(hora+est%C3%A1ndar+central)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=6ce4c4fd-7ab2-4f30-a211-421127173547&interactionCount=3&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1789612132654&fclco=&lastConsentTs=1789612132&intType=3&geolocation=MX%3BGUA&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554946	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1822524159	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTgBJSbfzMbVldnbzM22yCiw3Eg2F64aoY.%26dt%3D1790988159360

@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: RO
+Plan: Premium
+Next Billing: November 20, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: EUR 13.99
+Extra Member: Yes
+Profiles (3): Horgasék, Eszter, Copii
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1796554982	flwssn	f468827f-d822-4b6f-aa4b-161cfcdd8684
+.netflix.com	TRUE	/	TRUE	1796554982	gsid	fb9f8700-513a-43f6-b55b-913e147bb33b
+.netflix.com	TRUE	/	TRUE	1796554982	NetflixId	ct%3DBgjHlOvcAxLmA0QGH1e-jzQ8zr1U74XThnImGm3mdSQh8gu3_MuM7hY66XXH3DXxPZXbLHilEmPJ4T9CV2Exwgzvks8DABJyU-dXdArF0cM_BmGK4tfepVV737ZHq_shOcOkqXWsX_0pwSB41rAO_5XX0lMj3ZUZBVNx4ATFbLlTC2LZf55k2WFOCNn2vxoWrUcJm9sAhXa9KztVERUuSIhFXHxCQjMPc9e_nbCjTb7mPxmEOokuZRPJ3UMlOsOJlOW2-uQ5sjCfiZhXNzhI43q-D7rzSG_M_QjcwnVhb06kKzXee5O109WmeKNnFXxLkD5E10mHNVtdKicfo7gy2bMPhTIfpj5tsKF0BdDChvk355fw4yEXCVJVNfZ8gm52GwDArnEduZ1R9S9XyrOmYdSzHtV2xB7IlE550dL4AD3u2LljDFRDRvO9o8-YxiipQ1vgzOlsRmcRhcFqOlI-7Tx4ALdCVzVz7ytKUk0ZIFBAqKsyZYbPpl140JhwkH_WGr-RPca-eAwuX4iT--Ib8EISnMqngUA7yC_rJ5Ux-MZOuY_qv_TLtnr6rgkZsOim0ayTFpQjz2rD4qSItW02WjAXoHSs8cY24dg7BUM4oCli_Jjwkujs2tJ7KvCnsRpi7ZZap42_yFycs1peIjN5QxgGIg4KDOM-nqGDA8CeTGanKw..%26ch%3DAQEAEAABABTDOnrayz1bX_6sDeAlMMcRjVHFTy2Lo4w.%26v%3D3%26pg%3DFA2GMEUS6BG55JS2QV4UYM64RU
+.netflix.com	TRUE	/	FALSE	1796554982	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796554982	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796554982	nfvdid	BQFmAAEBELJVjMZMxc1hJWW_fX2jJddgoOMrEP-A4TuVrqUz-jCEUk6ZIItXgiLCaCzCukvkaD3yhz16VRTLqJtnxTi0ehiEqd9_vUQBEGXcN5jUay4Q5txAOyZau1oYJihdEFo8rky7oFyBF3YpHDxM-3wyR6Yx
+.netflix.com	TRUE	/	FALSE	1796554982	OptanonAlertBoxClosed	2025-11-29T09:49:43.226Z
+.netflix.com	TRUE	/	FALSE	1796554982	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Sep+10+2026+19%3A24%3A00+GMT%2B0300+(Eastern+European+Summer+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=6c33ef20-8973-44c9-b9b9-b2d77943b7f4&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1&geolocation=RO%3BMS&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	FALSE	1796554982	profilesNewSession	0
+.netflix.com	TRUE	/	TRUE	1796554982	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTS8scnLMb4k_OlnMXyI4t4-VK2M6BUHCo.%26dt%3D1789057437785

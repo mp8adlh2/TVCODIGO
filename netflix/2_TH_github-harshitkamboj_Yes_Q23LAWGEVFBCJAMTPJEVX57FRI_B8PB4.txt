@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Standard
+Next Billing: November 29, 2026
+Payment: MOBILE_WALLET
+Quality: HD
+Streams: 2
+Price: 349 THB
+Extra Member: Yes
+Profiles (5): nichaya2924, รูป, Sg, ภาพยนตร์, มุมเด็ก
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1820725929	nfvdid	BQFmAAEBECH3fssNbVR2tuDyZN-c-idgchCjNQ8A6oXUYqEnvSjmjzeixJCMOMlnEd6RTlOeAkU_p_7T_HMBsHOBrEPXFOZSQ6qXR0_os8KuZDNWKFeUbH9sCA2OoMYR8RoBeiw47YTuJECtI04XUE3azOwwuAaD
+.netflix.com	FALSE	/	FALSE	1824012657	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Oct+20+2026+13%3A10%3A57+GMT%2B0700+(Indochina+Time)&version=202609.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=554231db-3400-4be8-97e3-60c7f2f78892&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1789099060421&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1824132846	NetflixId	ct%3DBgjHlOvcAxKABAgwF7vPJw0SnU0we6UeMk2B6F63lUZNlw2fzlZ4rH1AUPUcArw5dx8OG-hZ6FgM8IplaQM4DkkKTJcrcvaeNtpPEwdQA_0ENN_2Pab981Nlz0a2rwN1MUHFz9P-jUYmpC7xfvZ3X8tFZMFButtYzFhBeeT8KgzJLkyASpiTMUZ4QLoNeeN5GExiODymhFh9Hc9OzWl8NGc_DSPnzWmGjsQ1baCib5T0u4THTxAXNwo5fuicwZ2Ly90jKpIwaYD8LjDBvM_419YPzp_KVNywIQ22Dr3gOpv7MskSf8fCNbyRLgM6FnV4yIp0bdoBZlmJUTT-2NaznjwEha0kXHTCCZXMDECE-IYCtSYXsh1D2uMlwe8SBBKkr75_JmaiRP2wJou2Xpbx3olpHrcg3_WWE0u9IbDF29OTzm1l2Rt-UIxRBSFTYgnHwaIt2isgQH6qICBaGQ3v37GCwAk5w1P5xC15pccXVbIMjuE6A-tz2nzLfOWh8Jevju2dYtpzJVu05vQ99pgIA9RLMdN5A_Ts1_-DFQI3sR79afOEMXURjHMzl0wcLSFVszageQ3CQI-yTHcXduCK5SG2oAU_uNI1J5wkbnhaSK0jrIZy1gIiXK61ClK2l8Ke4Z_yM0yAreH71nNpehKr6WuEPn7UTflT6OhrldjLwuxMW88iOK_3ZYOWGAYiDgoMhOKAWUf6VYa3zbx-%26ch%3DAQEAEAABABS01im81EpPT3R-XBujVPVVzhXpzkrPVBY.%26v%3D3%26pg%3DQ23LAWGEVFBCJAMTPJEVX57FRI
+.netflix.com	FALSE	/	TRUE	1824132846	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSPchUP8vCLuj5BVzcaSHH-sEyVGx-9bCA.%26dt%3D1792596846546
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	eba9fd75-7096-4363-87e1-218ba90f3931
+.netflix.com	FALSE	/	FALSE	1800372848	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1800372848	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1800372848	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	FALSE	1796554946	profilesNewSession	0

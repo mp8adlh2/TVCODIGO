@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Standard
+Next Billing: UNKNOWN
+Payment: TELEFONICA_B_PI_BILLED
+Quality: HD
+Streams: 2
+Price: N/A
+Extra Member: Yes
+Profiles (5): Homero Souza, Isa Siqueira, Queenby, Cota, Juan
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1821828027	NetflixId	ct%3DBgjHlOvcAxKuA008SAmaVMVxhVBhI6KeHoSbFLKK0ecMhnYmv_I6PPYCUTzVELWeW3eBxlCuD-bxOO_Mt_PaMtQxUZjuv9fg4GT1fPsOQ5Uouj__fM8hJhl8iDX7KL5qQyBGkmRx8T_6wHZ-pBeGiZMxUy2q9yQDrInjrKhAQpqGmHV7U1ecVmS6VQ3vomwaE7uVdy5z6wJt2_PLSyseTe5lGLjVHdPm7Cx3cupEJJyb5ripJD_Fd0bOSUIACG2S9_wGm3CoNKKXqsltbCIzjk33zNjnPeObTEsMaX5vteUWxsD3JBAvzGOBXDznLORn485QJ9xJLvRAy1oZowMb9FsfYv-KAhWMQOaLpVGzEbTo7pRvPrQ0X1cMPeVtsoFfW5GMjIrVrVKx99hQfW7Mra4ztnXPfHEzeoGDe-aCTLwOQMGuy6ezaL_nXBlPg0yHP9b2iVfU-svJW7hmTKSV1PqZeGPCsJakKSvSa_FBmPnx3HMBx9F0UfWfRLX_0MAgLklUK3jNYGunZeSrbwoCu2Cl0G3FdUvMRlB8MU9In3QO3t6B5PcSX4YLiXLScPQE5fWeghaFlQ0YBiIOCgz-3HLYxE3uGo1p1a0.%26ch%3DAQEAEAABABTpk2mSoiBtWk1S8AJMTxrWYzBOc-6h-nI.%26v%3D3%26pg%3DDGNQGI2NZVANXJAHZNAYDRFWO4
+.netflix.com	TRUE	/	FALSE	1798068030	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1798068030	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1820189010	nfvdid	BQFmAAEBED_6Ub0jZpbp_yF0jBOUk4VgmhBxD9AYgYBJOpDfxFwXdoAoxoF3WjJSjFyuW07X3wiNEXCYx7sNPSfoR2DrCmzSX442zhbawoQWC6H40SMQiTpmPnyGnqGP96k44mVl7paR9NICaGSyFptusVWPxAjW
+.netflix.com	TRUE	/	FALSE	1820189007	OptanonAlertBoxClosed	2026-09-06T00:03:27.423Z
+.netflix.com	TRUE	/	FALSE	1821828031	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Sep+24+2026+20%3A20%3A31+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=ebc2e35f-2b32-4d9c-89e8-286651e92447&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&crTime=1788653008127&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0&fclco=&lastConsentTs=1788653007&intType=3&geolocation=BR%3BPA
+.netflix.com	TRUE	/	TRUE	1821828027	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRvFt25kfVIAlOa_YzIrHe22vors0oi_b4.%26dt%3D1790292027394

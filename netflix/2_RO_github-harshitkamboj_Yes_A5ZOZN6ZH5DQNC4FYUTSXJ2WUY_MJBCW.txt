@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: RO
+Plan: Standard
+Next Billing: November 7, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 10,99 EUR
+Extra Member: Yes
+Profiles (4): RAVAR CRISTINA, Denisa, Ovidiu, Copii
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	898090a7-de6c-4d50-b0c0-0003a1cb4b1b
+.netflix.com	FALSE	/	TRUE	1821182103	NetflixId	ct%3DBgjHlOvcAxKEBA_Sk_HnoYAb_9cno-3gGSDd7bAh3ySnwrIMtmMZYhtqLsEMRXmaCcHMyE8Z0fZ1TJkt_FQXfG7TRI6ZJtk4VryK6iDGaAQBSVrC2Kvl6jP68xS7Y33uUDpjWLH5A6lerW0ZUXs9q6RBVGFpou5-PrbsPbBzvDX9X6SqSpcueggZPKCS7HGygr8jIMfK1rrHJyN5noGazP8Tf-STic9qVl60khwGnJB62XALOPjjFdg5Pwoy3YqRJgRfpJNvwbXxbm2bgr9QGGiod0tGchxCCmuKtxT7lbLJYat21jOJ2oxYlx3cNBBzQA8cAisedRnmWLYxmzsqM7TWCo3_ydIxwQOLOJRf1MPhWskif6ani6XASFowWCiT6yTN0xxZpoQ1mJH2R92CkaPNhhMeoqrL5hf6QNp4UwxKUAUiVySSFUssJ3NoLNgi4V2DIWOnyQP3Hkc4Ais4Ch5JRc11FfJcjchORHVctXBU5N6xggMWTO4DhBx2Q7nazbUQg8Luj1W1Hd-u0lzPHy0cykMUKnF6gDHn6OppJS8dtypIjK21CUZ_iEzDBJNf_xELVBHUbYjjzR6-sH9sCJkJEq1UE2djwWAHyOyaJpG1jWCmJGOYK7i3lqeeEGjP7fL3S0aTIog3SdGWbCzry80eOqKmUIXq9S5Xxmxa_TrJ-2ASKf2PzbuSdM5lWxgGIg4KDP7AJmjnyh8kD-at9g..%26ch%3DAQEAEAABABRq3iP-b_rWBASiiP8sPFUeDociNhyLtnw.%26v%3D3%26pg%3DA5ZOZN6ZH5DQNC4FYUTSXJ2WUY
+.netflix.com	FALSE	/	FALSE	1797450682	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797450682	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1820183964	nfvdid	BQFmAAEBEEGca4PMgwBiGy7SSoR0t1Zg8127BEJMjEUcyF5G8-5f2_PcTVsLWZP6Aptp25iLZ0HkVnQcp9Wze0ROImy2VJbak-gSm1DeCfrS2S9Jdo8_O_U_hjAIbTzs9TzjmsE7ZlkQjPTDxX5MaAlSV0U0IQw5
+.netflix.com	FALSE	/	FALSE	1813953800	OptanonAlertBoxClosed	2026-06-25T20:03:20.327Z
+.netflix.com	FALSE	/	FALSE	1821182106	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Sep+17+2026+14%3A55%3A06+GMT%2B0300+(Eastern+European+Summer+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=0f970693-c493-4156-948b-0b1fe869ea6d&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=1&crTime=1782417801064&geolocation=RO%3BSB&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1797450682	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1821182103	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSXzONLOS3vkIMORZ9veXW2uqlIo-37s4I.%26dt%3D1789646104743

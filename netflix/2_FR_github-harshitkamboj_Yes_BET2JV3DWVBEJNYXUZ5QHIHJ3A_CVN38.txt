@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Standard
+Next Billing: November 23, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 14,99 €
+Extra Member: Yes
+Profiles (5): Coralie, Yaya, Maman, Elolotte, Jeunesse
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1824403990	dsca	true
+.netflix.com	FALSE	/	TRUE	1796554944	gsid	394e4701-1b8d-4c57-9067-38fb2244ab59
+.netflix.com	FALSE	/	TRUE	1821379987	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKmA87Qj0qVuD_QMaXoNbKj3RgLAN4eyDBAwABlUmQ-Z4xpCBdlJMGR84haq3PNePoPMK9_m-h9hDKlAIAzfHGO6vRqQhV1LSa4DVuxu2IfsqQllB2XxWHfnnqYH6EfUOrR8n6kn2YcLKJgcWfq8X6WSUF_fO_n31pHnr6L2vpPYcroD5RpOqyl95-F5Wfd58W2po6elY1bHwejX0aqtk57gj_GGxjVNlACAAizcQXMjtHJAquCIx8zvRaT9EEl5NSV-VCC4Ss1T-WwPSpPit9T4M0on9Ud4oPjUGvQ_0W-ZkufbmPnYBnRut3oYSC4IOsE1DoyNs4Jlgvj051sxh4I0tDpeMGDYWRWHEJjeF95fRc4eBgXdqwUnL7GyskXzg-40PXm8_xPVGOviwDEkiqaZvlQ8ImsamlOAZ4PWMk4ak0tAtfrWR4FGEzsmOSA-rUpE1o8IA1CQNUSgy9TfbLGpzYYsBCzViDJfvSVRJNvEwy8rl4Ddgu2Wql_OiRxcCRgsL_6F7ZOjT_ss2rzIGBCPAPjCw8M2R6C00wJQwoTgWQo-7owTjZyGAYiDgoMwRlWf_GKg_mSWG-C%26pg%3DBET2JV3DWVBEJNYXUZ5QHIHJ3A%26ch%3DAQEAEAABABSzbyKmCEbQvZTBT0yeJVmQ2loKqmPQoO8.
+.netflix.com	FALSE	/	FALSE	1797619952	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797619952	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1821379987	nfvdid	BQFmAAEBEABxwN-nB2vsg-UDDD1EZGpgYkjm_FuyKl3v4mjqaoGyeJjNCkieJfuSNqF_RIQbxW1Z2GGc8Tohrn4iq273tIqEX3Yd-xYN7BYa0UQ139ehi68DF7200YgHbAb2rfDGmVjmKXvlO9LxwNSdUErx-ge9
+.netflix.com	FALSE	/	FALSE	1821379955	OptanonAlertBoxClosed	2026-09-19T18:52:35.160Z
+.netflix.com	FALSE	/	FALSE	1821379990	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+19+2026+20%3A53%3A10+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=ea21b504-0cd1-452a-b868-4ae6d1e2556e&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1789843955564&AwaitingReconsent=false&fclco=&lastConsentTs=1789843955&intType=1&geolocation=FR%3BIDF
+.netflix.com	FALSE	/	TRUE	1821379987	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRLGGFzpg30JYBAd7Xy2x2wIjPflpHD1ds.%26dt%3D1789843986531

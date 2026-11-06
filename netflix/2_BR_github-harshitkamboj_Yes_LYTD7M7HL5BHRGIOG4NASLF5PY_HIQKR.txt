@@ -1,0 +1,19 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Standard
+Next Billing: December 4, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: BRL 44.90
+Extra Member: Yes
+Profiles (4): Joao Pedro, Mariana, Adriana, HOME
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1801392151	NetflixId	ct%3DBgjHlOvcAxLoA-Rc2ZABbqfgU8PSeMy8-7wMHtP1oar_0BZZ26YtrdKs-l3y1tVnJC3pwYmu8l8EIJAsQ8iUEXC85dI_2e_2-W-iGfLCbcOgklBaLjP1vq758C9flHamNvsg6D11I646CmpnwGEiZogAhpMKVEpRYLHJx2ND7DUE0c1UP0o7LWoMUn4coaCiHSrUGGbpjsUIiBR-pQcTVfLZf0z5OpClqEETqdudeH0KiwR4DlkDDYUgPoZXDemTyh0hJ_UYPCd5woJcEbJwfGeZDgCTrqyGuDlqPecEmZVK9R2cXc8GceyHspHtvir-mj_oiCQSl477wSC0-nP6iX6Zs_0NLK1tHwcPMza-TMmotboIaN971mgmN7nFm-x3ryZNkM90PdfE9BVUZaVfbZZALyPKCDunvVCZm8JqiddT9_Hp9Y_5shGsmt9BiACpUqvFnz68pOlu60rk-RzVOD6KuageEF-dFDZZXzbEJ0q7GI5QrwSlR1fExSL9hthVITghD7CZjU75pBgBu324rSen2AOoVDKzqb5o_Z4siMJBlDgd6yGRUMIMq3ZthCdgmyuCyqmAkRkr8OWcSOb95w9gsB6xBH8LrzkS3v-ahMrObhCNRRlYOIPm-iHE9W595k1vt1JgA9DfjWKjEpw-myERGAYiDgoM8RTf-Rd-b9JOA2C8%26ch%3DAQEAEAABABTUv-_CdiYofBIJKcYkswnpprLsjpPKK1U.%26v%3D3%26pg%3DLYTD7M7HL5BHRGIOG4NASLF5PY
+.netflix.com	FALSE	/	TRUE	1801392151	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABS_FxCrjgd10cJ18tasEaT7aIqmtABwCOc.%26dt%3D1769855484241

@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: TZ
+Plan: Premium
+Next Billing: November 16, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: US$9.99
+Extra Member: Yes
+Profiles (4): Puja, Home🏡, Humayrah, Farwa
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1821453803	nfvdid	BQFmAAEBELBhMhtekhMpQOCThGlCfHBgvFsQERSN3TE1_dY06iAR6j6jK8FLSB-U0CMZSFtYUDjcC0yZgqNOEpIYw-qvGCrQ8Zswy-g-aU6uv713UP99PnxKlWPiXUy4CdAyn6-lKqyL_CImYwLrqNF_I0PU-BFX
+.netflix.com	TRUE	/	TRUE	1823819135	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRlLjAhHnejkYC7KGhJ_hVkjorUn5PTM4w.%26dt%3D1792283136602
+.netflix.com	TRUE	/	TRUE	1823819135	NetflixId	ct%3DBgjHlOvcAxLIA2MWzzJDWhJgpZekZX1mogzoiVSSGyyM5EFZ4mppuffKFzSSaQUeiGoq8G3Oq7gme2C3WwLVPW6XF4jB0GihbXnZmQxzvgrn-lZ7PDr_RYySFA1-oInkgXxqAj6PBa6xbY7HEn5KXaE-jxTMoTgU6_BE3jsHUmdzW35ZnxoxGs4NULw0juRXsypyfX4WCWoUwtozS-vokHaYLp-v8oARyqdBs1hJz-6yRQ3XZMWFItrSjmoDE4y5OxP0X9edHnwQDKmPOi7HbW7YJxSeASsLkrPIsrynSghbboXw_4P9ybx-CQE8oPNDBOGQE42_PjDRNsdQ5HiLvAs-YcOakyTbz6I7OtkPy1F8buGCBCAzSXTThOf4W9QEqGdG_qCLzjb8-B4w4aAlNUqrT1Jcj055wCfZwLxakIBw9U8JB7wD38HB6OKMgGQorXixcyZtVEJFtmN7_jJvBUr591eZ-zgfpEVaif4a25pzlGAPLoyFD9gJeDxU7QnA-ivvhD7rEFTlYJQpQFvDGi9pWcRYmp9NfkBgyhs7VYKWFg_olBrVkwIVo2j26i1hMUwrrXJIqPP9FfgvldhgGm_fI2bU3X1njVqlG-oW2g_sQBgGIg4KDIOgon2f78DGZbsk3g..%26ch%3DAQEAEAABABTN2XywyrH0UbQwRLWrOebJh_8bzExMcSo.%26v%3D3%26pg%3D62U5N2DHR5DTPM7R2PABKPQ25Y
+.netflix.com	TRUE	/	FALSE	1823833824	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Oct+18+2026+07%3A30%3A24+GMT%2B0300+(East+Africa+Time)&version=202609.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=39c5cfe3-fb33-46f5-af2e-654678f9a162&interactionCount=0&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	FALSE	1800073824	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1800073824	netflix-sans-bold-3-loaded	true

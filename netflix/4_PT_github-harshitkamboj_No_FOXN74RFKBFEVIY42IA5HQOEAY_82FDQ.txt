@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: PT
+Plan: Premium
+Next Billing: November 22, 2026
+Payment: NOS
+Quality: UHD
+Streams: 4
+Price: 17,99 €
+Profiles (2): LauraMira, Crianças
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	60dcba02-a6ee-4dbd-b42f-2c6465998de6
+.netflix.com	FALSE	/	TRUE	1822241528	NetflixId	ct%3DBgjHlOvcAxKOBFXnZ-W0zMj13ltcwSlR2b63pj6uTJs9AdjsnnDDd1iO3oHc31g0cVyYxFpqiNutdWyvlYPR2uAMq5rqVs9Pi2_g8O__orodKJsIIESiaSIl3Q82d2I0bsXmSOTxg7c-8RlsjuQ821T955Gpe1bmVBH_SJMsl127WiM4gpCl_2-qPj2YUlpvJRKHURnpXf8lizrMxvO8F6_1iqF-DJ0RJGiF2yQRlEEhlXTxgsyJiP_Xj3c6dtXOh_KcZY8WG6Fegg09lBxoNvjBJBpAezdVuR7EWCtSitbfWcIIbuoi1OtDPdvhotwiKubcPetnftW4BXY7TIRyxrHA3-ymbAMq8NVLttJ9ZBgy5F2GRG2M7yPTdq8NV6JjPHEuiU9PPo8a2FwrpVrx4WWJ3XDAW1LnW13h6WpS5uCoXDHHniy4fK8FIreuZ38r2ERi_8YEYXMllHr1hfsDhienB4gk6PuLBKe9ueK5vB3V37JM19SvoH4jbTLxRmfwVoSw0nSSJUtZ9tlpuigS7gMzsx7XgMbqGmdUg_awMASEwdaIJufAWgy2MnGNTO92LYMshIYezHxCsWZio6Wv4ujEff-kypB3K5LXRZcDrZag7ZwJ3kJISHYrOc3SAowJPQ1Hi0Ej89d2rp6-T5CXl6K7EXDXkWF0vxgIc0d_ij4vKfzdNljvK0vmuu9NTMco5XCUjzKxdPYYBiIOCgzjnzl_ZCJB3SBJTiY.%26ch%3DAQEAEAABABRFyyPalJ7-dHeQByfj_QpcI2CBKFOUeT0.%26v%3D3%26pg%3DFOXN74RFKBFEVIY42IA5HQOEAY
+.netflix.com	FALSE	/	FALSE	1799168274	nfvdid	BQFmAAEBEPTx6Mc1c5wkuhAn_nQptPRgFbM-tyzrr2zVD979cafjlkNaKZQyTOQ2wgczvbHpDT09psm6MoFTWD5t8lmEJG9Q9l2yH3sSbxrQoeE8glyw0_omtSdnOjImHmDvkifiq_CdYz8rIc8TrET6znCf62tQ
+.netflix.com	FALSE	/	FALSE	1799168255	OptanonAlertBoxClosed	2026-01-05T16:57:35.189Z
+.netflix.com	FALSE	/	FALSE	1822241532	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+29+2026+19%3A12%3A12+GMT%2B0100+(Hora+de+ver%C3%A3o+da+Europa+Ocidental)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=01a4f711-4863-406e-b429-930370830672&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=1&geolocation=PT%3B11&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	FALSE	1798481531	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	FALSE	1796554946	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1822241528	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRNZCzANgz2DwQHlONkLsb_UwI39ICm8Aw.%26dt%3D1790705528798

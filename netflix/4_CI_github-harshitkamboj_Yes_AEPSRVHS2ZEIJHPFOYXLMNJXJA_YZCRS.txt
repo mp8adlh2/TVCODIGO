@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: CI
+Plan: Premium
+Next Billing: November 27, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 9,99 $US
+Extra Member: Yes
+Profiles (5): Maison, Maman, Ephrem, Dg, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1821038684	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+15+2026+20%3A04%3A44+GMT%2B0000+(heure+moyenne+de+Greenwich)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=1df8273f-f27a-4b7f-96d9-0ef246eca99b&interactionCount=0&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	TRUE	/	TRUE	1821038681	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSvve-wsvNhT5W2xXX4wTWusz4guUw7Jvs.%26dt%3D1789502682595
+.netflix.com	TRUE	/	FALSE	1797278684	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1797278684	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	TRUE	1821038681	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKUA1SXVQHo5od3Z8jXUdsVgDUfV4knNvuGUKZ8W2V7TvfnoV7izkOwqq3mC3KU5l0d-bjN1kRSCPPr0MxJ6r0dV2lUhVsiHgMPdiJ63BN7NiSQnrtK9D_WyGyZys7ZoPOsOl0iIjcZ77SeKggPXZ-GHwXNUmJxryyfzzRU3JhNCJLiHly5p8hMB5iGUTQv5uQ3uu4gD2Xnyo8uqEnS976akHF-wjAyoRt1YNA6Hwv1LqZWMWEMjIp3WUc6-SSpxC6NG-kFMcrlZGd9kUN_x0aFRVbTbBI6abBHy2dqY63KFML7eMW5GwKo7ow4Iam4yBQHrmhY71a41K2SMbuF92mDlwBQQV828dvs6GeZ-Rbx127taDgfsasQykllu33mHawT6EpaWWQSFea941D_FndzDTz6JQrAmxy0OCHX2bp6oDyxn94ag7LlkcxI8KGvyg14Y8L_jKZi8HPvAP6v8_bXkrPRRKgeb3ZjQ4_14KgFJaSH9-WnDNQrMR4JI_o47clDlWg_HFnSgT3muhEW0R2-N1iKL9wWGAYiDgoMk1_NT-lHc0yYIoUj%26pg%3DAEPSRVHS2ZEIJHPFOYXLMNJXJA%26ch%3DAQEAEAABABStZSe0yNK5YcmbU5LrTO_ACQQXGHzr3nY.
+.netflix.com	TRUE	/	FALSE	1821038674	nfvdid	BQFmAAEBEKMyX-sUIug7l_h9sOuelUlgFFwv3kpsYRf2pxGphBOOAStn3dQLYtbRKrhJMtyLcGdolYusuZZ4xjPxRd7vPYo6K3S__Wxs66D4umFbK4Kt-0DKVUCFexvQcCy0En1MqhO-I5lj9wSp8JwCcG42SI_o

@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: November 13, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 59,90 BRL
+Extra Member: Yes
+Profiles (5): Elisangela, Carlos Henrique, Alessandro, Ana Carolina, S
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1821324564	OptanonAlertBoxClosed	2026-09-19T03:29:24.715Z
+.netflix.com	FALSE	/	FALSE	1821324666	nfvdid	BQFmAAEBEL-t9mFIR6mcrJPcbluysbxgtiBFWbGBKFg3T3rdsnSycuklPg1D69rqOiRHWayT04G6TR3PmK3lm6g7N-oaF4adq6zaCUb_dOL7zK7VAW2zkTecXdtkXHr1ZCE2Gv6AFmF2Cid8-xShyvxeWC5mr7ts
+.netflix.com	FALSE	/	TRUE	1821378162	NetflixId	ct%3DBgjHlOvcAxK7A3nYubzdn4JObMts7bn6WNmCB-J86N-_nJc6ECm8zrKxJjMX1YrW7E_ivs13VZjKHZMqv8W26oGVAXsGY664fPo48YEKkvfwEVfqez9HCy3Sw-3nnyH1RZ2y_-JlOTKY07LzQuILI7KXpim7yzvvB2XrheBJWLSChTQDMTYeGMAajTnU7XUc2mPblX1tfC5nT62KuXWlhnSrX7drzRUmW8uA8BFWj0wXauE4fSfkkDmoCu_Jf7WvJRo1ArDJepMRK8KfiJD9NyLL8PXy14lEAyaBmE_W0UtQNusOqpWa0IcLRas_CmY5QJ8v-ERoupFJvdjXp4Gk4_tPy0iMwUN583BVXxOmjRrEAFpxvVcJa5s5S80Hb0bsDNR2QkJ7KItPDJsCsZQTM2elmthDsUUrBeo9hwpN3kiDLCQtsoR6yahcGAF_OkGM7jU00qidArqGXwj_qLWhHp7RT8hztllVFgGvZxmJU7kNNfVFhf41eHAGuUJtyoG39H3fC5f4p4fW-Hu7G-pEAo7qy2U7jVjjO_dcjVXuvasmtc9KliihRIN_r8P8WRUzH-Ah2N6nabsQzpik2QJ5Ox6gLtM7GAYiDgoMHueVWHISso2ybtPo%26ch%3DAQEAEAABABQ21z2qmr8sy6VBjgx0XR3EyuMbrnlfV2U.%26v%3D3%26pg%3D6HL4WNIYEJAQRKXFM5OXZLQPUU
+.netflix.com	FALSE	/	FALSE	1821378165	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+19+2026+15%3A22%3A45+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=780a6f98-79d9-4a49-ae47-fe83f13a148b&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&fclco=&lastConsentTs=1789788564&intType=3&crTime=1789788565173&geolocation=BR%3BES
+.netflix.com	FALSE	/	TRUE	1821378162	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSMDAJr0ZyMsgbvvW3Gm5BU3YaoEonxlP8.%26dt%3D1789842164241
+.netflix.com	FALSE	/	FALSE	1797618164	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797618164	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797618164	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
