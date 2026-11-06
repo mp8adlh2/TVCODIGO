@@ -649,12 +649,21 @@ def _activate_tv_code_graphql(session, clean_code: str) -> Tuple[bool, str]:
         screen = hook_res.get('screen', {})
         server_state = screen.get('serverState')
         server_screen_update = None
+
+        # Busca dinâmica e abrangente por CLCSRequestScreenUpdate em qualquer nó da tela
         for node in screen.get('componentTree', {}).get('nodes', []):
-            if node.get('__typename') == 'CLCSButton':
-                for child in node.get('onPress', {}).get('nodes', []):
+            on_press = node.get('buttonLike_onPress') or node.get('onPress') or {}
+            if isinstance(on_press, dict):
+                for child in on_press.get('nodes', []):
                     if child.get('__typename') == 'CLCSRequestScreenUpdate':
-                        server_screen_update = child.get('serverScreenUpdate')
-                        break
+                        server_screen_update = (
+                            child.get('requestScreenUpdate_serverScreenUpdate')
+                            or child.get('serverScreenUpdate')
+                        )
+                        if server_screen_update:
+                            break
+            if server_screen_update:
+                break
     except Exception:
         return False, "no_clcs"
 
@@ -714,48 +723,43 @@ def _activate_tv_code_graphql(session, clean_code: str) -> Tuple[bool, str]:
         return False, "invalid_code"
 
     result = res_data.get('data', {}).get('result', {})
+    outcome_type = result.get('outcomeType') or result.get('__typename') or ""
+    res_str = json.dumps(result, ensure_ascii=False).lower()
+
+    # 1. Sucesso na ativação CLCS (CLCSScreenUpdateEffect -> redireciona para loginlinksuccess / approved)
+    if (
+        outcome_type == 'CLCSScreenUpdateEffect'
+        or 'loginlinksuccess' in res_str
+        or 'approved' in res_str
+        or 'redirectingtologinlinkfromtvapproved' in res_str
+    ):
+        return True, "success"
+
+    # 2. Tela de transição com erro ou repetição de código
     res_screen = result.get('screen', {})
-
-    # Verificação minuciosa dos nós retornados pela Netflix
-    has_code_input = False
-    error_detected = None
-
     nodes = res_screen.get('componentTree', {}).get('nodes', [])
     for node in nodes:
-        t = node.get('__typename')
-        if t == 'CLCSInputPinCode':
-            has_code_input = True
+        txt = ""
+        for field in ['plainContent', 'text_plainContent', 'text', 'webTextWithTags', 'buttonLike_label']:
+            v = node.get(field)
+            if isinstance(v, dict):
+                txt = v.get('value') or v.get('text', {}).get('value') or ""
+            elif isinstance(v, str):
+                txt = v
+            if txt:
+                break
 
-        txt = (
-            node.get('text', {}).get('value')
-            if isinstance(node.get('text'), dict) else node.get('text')
-        ) or (
-            node.get('webTextWithTags', {}).get('text', {}).get('value')
-            if isinstance(node.get('webTextWithTags'), dict) else None
-        )
         if txt:
             txt_l = txt.lower()
-            if any(k in txt_l for k in ['expir', 'expired', 'tempo esgotado']):
-                error_detected = "expired_code"
-                break
-            elif any(k in txt_l for k in ['wrong', 'incorrect', 'invalid', 'incorreto', 'errado', 'não conseguimos encontrar', 'recusad', 'deu errado']):
-                error_detected = "invalid_code"
-                break
+            if any(k in txt_l for k in ['confira o código', 'confira o codigo', 'wrong', 'incorrect', 'invalid', 'incorreto', 'errado', 'não conseguimos encontrar', 'recusad', 'deu errado', 'código incorreto']):
+                return False, "invalid_code"
+            elif any(k in txt_l for k in ['expir', 'expired', 'tempo esgotado']):
+                return False, "expired_code"
             elif any(k in txt_l for k in ['já utilizado', 'already used', 'already linked']):
-                error_detected = "already_used"
-                break
+                return False, "already_used"
 
-    if error_detected:
-        return False, error_detected
-
-    screen_name = ''
-    try:
-        ti = json.loads(res_screen.get('trackingInfo') or '{}')
-        screen_name = (ti.get('screenName') or '').lower()
-    except Exception:
-        pass
-
-    if has_code_input and 'rendezvous' in screen_name:
+    # Se permaneceu na tela de inserir código rendezvous sem efeito de sucesso
+    if 'rendezvouscode' in res_str or 'confira o código' in res_str or 'inputpincode' in res_str:
         return False, "invalid_code"
 
     return True, "success"

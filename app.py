@@ -1192,8 +1192,8 @@ CURRENT_DISNEY_READY: Optional[dict] = None
 def get_all_disney_accounts() -> List[dict]:
     return disney_service.load_all_disney_accounts()
 
-def find_disney_valid_account() -> Optional[dict]:
-    return disney_service.find_disney_valid_account()
+def find_disney_valid_account(exclude_email: str = "") -> Optional[dict]:
+    return disney_service.find_disney_valid_account(exclude_email=exclude_email)
 
 def select_disney_account_by_identifier(identifier: str) -> Optional[dict]:
     return disney_service.select_disney_account_by_identifier(identifier)
@@ -1227,8 +1227,8 @@ CURRENT_CLARO_READY: Optional[dict] = None
 def get_all_claro_accounts() -> List[dict]:
     return claro_service.load_all_claro_accounts()
 
-def find_claro_valid_account() -> Optional[dict]:
-    return claro_service.find_claro_valid_account()
+def find_claro_valid_account(exclude_user: str = "") -> Optional[dict]:
+    return claro_service.find_claro_valid_account(exclude_user=exclude_user)
 
 def select_claro_account_by_identifier(identifier: str) -> Optional[dict]:
     return claro_service.select_claro_account_by_identifier(identifier)
