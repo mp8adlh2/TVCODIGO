@@ -512,14 +512,16 @@
     },
     {
       "senha": "TITANIUM#MASTER@7142$VIP*39!2026",
-      "nome": "Cliente (Netflix + Sky+)",
+      "nome": "Cliente (Netflix + HBO Max + Sky+ + Claro TV+)",
       "servicos": [
         "netflix",
-        "sky"
+        "hbo",
+        "sky",
+        "claro"
       ],
-      "descricao": "Libera: netflix, sky",
+      "descricao": "Libera: netflix, hbo, sky, claro",
       "dias_validade": 0,
-      "criado_em": 1792189839.0762675,
+      "criado_em": 1794066716.4897075,
       "expira_em": null,
       "expira_em_formatado": null
     },

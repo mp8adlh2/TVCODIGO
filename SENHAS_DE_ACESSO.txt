@@ -198,8 +198,8 @@
   Validade: Permanente (Sem Expiracao)
 --------------------------------------------------------------------------------
 - SENHA: TITANIUM#MASTER@7142$VIP*39!2026
-  Nome: Cliente (Netflix + Sky+)
-  Servicos: netflix, sky
+  Nome: Cliente (Netflix + HBO Max + Sky+ + Claro TV+)
+  Servicos: netflix, hbo, sky, claro
   Validade: Permanente (Sem Expiracao)
 --------------------------------------------------------------------------------
 - SENHA: MATRIX#KEY@4763$4K*84!2026
