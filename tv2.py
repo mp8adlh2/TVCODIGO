@@ -567,9 +567,10 @@ def extract_auth_url(session) -> Optional[str]:
 
     if r and r.status_code == 200:
         final_url = getattr(r, 'url', '').lower()
+        url_path = final_url.split('?')[0]
         is_real_login = (
-            ('/login' in final_url and 'tvlogin' not in final_url and 'tv2' not in final_url)
-            or ('/signin' in final_url and 'tvlogin' not in final_url and 'tv2' not in final_url)
+            ('/login' in url_path and 'tvlogin' not in url_path and 'tv2' not in url_path)
+            or ('/signin' in url_path and 'tvlogin' not in url_path and 'tv2' not in url_path)
         )
         if is_real_login:
             # Sessão já expirada na Netflix
@@ -592,7 +593,8 @@ def extract_auth_url(session) -> Optional[str]:
         r_tv = session.get('https://www.netflix.com/tvlogin', timeout=3.5, allow_redirects=True, verify=False)
         if r_tv and r_tv.status_code == 200:
             final_tv = getattr(r_tv, 'url', '').lower()
-            if not ('/login' in final_tv and 'tvlogin' not in final_tv and 'tv2' not in final_tv):
+            url_path_tv = final_tv.split('?')[0]
+            if not (('/login' in url_path_tv and 'tvlogin' not in url_path_tv and 'tv2' not in url_path_tv) or ('/signin' in url_path_tv and 'tvlogin' not in url_path_tv and 'tv2' not in url_path_tv)):
                 for pat in patterns:
                     m = re.search(pat, r_tv.text, re.IGNORECASE)
                     if m:
@@ -618,7 +620,10 @@ def _activate_tv_code_graphql(session, clean_code: str) -> Tuple[bool, str]:
         return False, "network_error"
 
     final_url = getattr(r, 'url', '').lower()
-    if ('/login' in final_url and 'tvlogin' not in final_url and 'tv2' not in final_url) or ('/signin' in final_url and 'tvlogin' not in final_url and 'tv2' not in final_url):
+    url_path = final_url.split('?')[0]
+    if (('/login' in url_path and 'tvlogin' not in url_path and 'tv2' not in url_path) or 
+        ('/signin' in url_path and 'tvlogin' not in url_path and 'tv2' not in url_path) or
+        ('entryurl=%2ftv2' in final_url)):
         return False, "expired_cookie"
 
     m = re.search(r'netflix\.reactContext\s*=\s*(\{.*?\});\s*</script>', r.text)
@@ -824,14 +829,15 @@ def activate_tv_code(session, tv_code: str, auth_url: str = "") -> Tuple[bool, s
         return False, "exception"
 
     final_url = r.url.lower()
+    url_path = final_url.split('?')[0]
     html = r.text.lower()
 
     # 1. Se a URL final redirecionou para a página de login da conta (não a tela de pareamento)
     is_real_login_page = (
-        ('/login' in final_url and 'tvlogin' not in final_url and 'tv2' not in final_url)
-        or ('/signin' in final_url and 'tvlogin' not in final_url and 'tv2' not in final_url)
+        ('/login' in url_path and 'tvlogin' not in url_path and 'tv2' not in url_path)
+        or ('/signin' in url_path and 'tvlogin' not in url_path and 'tv2' not in url_path)
         or ('entryurl=%2ftv2' in final_url)
-        or ('entryurl=%2f' in final_url and 'tv2' not in final_url)
+        or ('entryurl=%2f' in final_url and 'tv2' not in url_path)
     )
     if is_real_login_page:
         return False, "expired_cookie"

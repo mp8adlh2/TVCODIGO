@@ -32,6 +32,62 @@ RECAPTCHA_HEADERS = {
 RECAPTCHA_BASE = "https://www.recaptcha.net/recaptcha/api3"
 
 
+def _inject_anchor_field(raw_bytes: bytes, anchor_token: str) -> bytes:
+    """Injeta anchor token no campo 2 do protobuf, com fallback 100% nativo em Python puro."""
+    if decode_message and encode_message:
+        try:
+            msg, typedef = decode_message(raw_bytes)
+            msg['2'] = anchor_token.encode('utf-8')
+            res = encode_message(msg, typedef)
+            return res[0] if isinstance(res, tuple) else res
+        except Exception:
+            pass
+
+    try:
+        offset = 0
+        if len(raw_bytes) > 2 and raw_bytes[0] == 0x0a:
+            offset = 1
+            len1 = 0
+            shift = 0
+            while offset < len(raw_bytes):
+                b = raw_bytes[offset]
+                offset += 1
+                len1 |= (b & 0x7f) << shift
+                if not (b & 0x80):
+                    break
+                shift += 7
+            offset += len1
+            if offset < len(raw_bytes) and raw_bytes[offset] == 0x12:
+                tag1_data = raw_bytes[:offset]
+                offset += 1
+                len2 = 0
+                shift = 0
+                while offset < len(raw_bytes):
+                    b = raw_bytes[offset]
+                    offset += 1
+                    len2 |= (b & 0x7f) << shift
+                    if not (b & 0x80):
+                        break
+                    shift += 7
+                offset += len2
+                rest = raw_bytes[offset:]
+
+                tok_bytes = anchor_token.encode('utf-8')
+                n = len(tok_bytes)
+                varint_bytes = bytearray()
+                while True:
+                    towrite = n & 0x7f
+                    n >>= 7
+                    if n:
+                        varint_bytes.append(towrite | 0x80)
+                    else:
+                        varint_bytes.append(towrite)
+                        break
+                return tag1_data + b'\x12' + bytes(varint_bytes) + tok_bytes + rest
+    except Exception:
+        pass
+    return raw_bytes
+
 def _decode_b64(b64_str: str) -> bytes:
     fixed = b64_str.replace('-', '+').replace('_', '/')
     fixed += "=" * ((4 - len(fixed) % 4) % 4)
@@ -68,28 +124,34 @@ def update_payload_session_id(payload_b64, new_session_id=None):
     if new_session_id is None:
         new_session_id = str(uuid.uuid4())
 
-    data = _decode_b64(payload_b64)
-    msg, typedef = decode_message(data)
+    if not decode_message or not encode_message:
+        return payload_b64, new_session_id
 
-    # campo principal
-    msg['8']['1'] = new_session_id.encode()
+    try:
+        data = _decode_b64(payload_b64)
+        msg, typedef = decode_message(data)
 
-    # fingerprint interno (campo 8.7.1)
-    data_2 = _decode_b64(msg['8']['7']['1'].decode())
-    msg_2, typedef_2 = decode_message(data_2)
-    msg_2['2'] = new_session_id.encode()
+        # campo principal
+        msg['8']['1'] = new_session_id.encode()
 
-    inner_encoded = encode_message(msg_2, typedef_2)
-    if isinstance(inner_encoded, tuple):
-        inner_encoded = inner_encoded[0]
+        # fingerprint interno (campo 8.7.1)
+        data_2 = _decode_b64(msg['8']['7']['1'].decode())
+        msg_2, typedef_2 = decode_message(data_2)
+        msg_2['2'] = new_session_id.encode()
 
-    msg['8']['7']['1'] = _encode_b64(inner_encoded).encode()
+        inner_encoded = encode_message(msg_2, typedef_2)
+        if isinstance(inner_encoded, tuple):
+            inner_encoded = inner_encoded[0]
 
-    final_encoded = encode_message(msg, typedef)
-    if isinstance(final_encoded, tuple):
-        final_encoded = final_encoded[0]
+        msg['8']['7']['1'] = _encode_b64(inner_encoded).encode()
 
-    return _encode_b64(final_encoded), new_session_id
+        final_encoded = encode_message(msg, typedef)
+        if isinstance(final_encoded, tuple):
+            final_encoded = final_encoded[0]
+
+        return _encode_b64(final_encoded), new_session_id
+    except Exception:
+        return payload_b64, new_session_id
 
 
 def _do_mri(session_obj, payload_bytes: bytes, proxy=None):
@@ -148,13 +210,25 @@ def _do_mrr(session_obj, payload_bytes: bytes, proxy=None) -> str:
     if len(resp_data) >= 2 and resp_data[:2] == b'\x1f\x8b':
         resp_data = gzip.decompress(resp_data)
 
-    msg, _ = decode_message(resp_data)
-    token_bytes = msg.get('1')
+    token_str = ""
+    if decode_message:
+        try:
+            msg, _ = decode_message(resp_data)
+            token_bytes = msg.get('1')
+            if token_bytes:
+                token_str = token_bytes.decode() if isinstance(token_bytes, bytes) else str(token_bytes)
+        except Exception:
+            pass
 
-    if not token_bytes:
+    if not token_str:
+        m = re.findall(rb'([a-zA-Z0-9_\-]{80,})', resp_data)
+        if m:
+            token_str = m[0].decode('utf-8', errors='ignore')
+
+    if not token_str:
         raise Exception("Token não encontrado na resposta do /mrr")
 
-    return token_bytes.decode()
+    return token_str
 
 
 def get_recaptcha_token(payload_b64: str, proxy=None) -> str:
@@ -227,11 +301,7 @@ def get_recaptcha_web_token(payload_web_b64: str, proxy=None) -> str:
 
     # 2. Injeta anchor token no Campo 2 do payload
     raw_bytes = _decode_b64(payload_web_b64)
-    msg, typedef = decode_message(raw_bytes)
-    msg['2'] = anchor_token.encode('utf-8')
-    new_raw_bytes = encode_message(msg, typedef)
-    if isinstance(new_raw_bytes, tuple):
-        new_raw_bytes = new_raw_bytes[0]
+    new_raw_bytes = _inject_anchor_field(raw_bytes, anchor_token)
 
     # 3. Dispara para o reload da Google
     url_reload = "https://www.google.com/recaptcha/enterprise/reload?k=6Lc_7gUqAAAAAO0Kfv_fCbRrDrbW0jBh1ihU3s2o"
@@ -380,11 +450,7 @@ def get_recaptcha_paramount_token(proxy=None) -> str:
     if not raw_bytes:
         raise Exception("payload_paramount.b64 não encontrado")
 
-    msg, typedef = decode_message(raw_bytes)
-    msg['2'] = anchor_token.encode('utf-8')
-    new_raw_bytes = encode_message(msg, typedef)
-    if isinstance(new_raw_bytes, tuple):
-        new_raw_bytes = new_raw_bytes[0]
+    new_raw_bytes = _inject_anchor_field(raw_bytes, anchor_token)
 
     # ── PASSO 4: Reload na MESMA sessão cloudscraper (cookie/fingerprint consistente) ──
     url_reload = f"https://www.google.com/recaptcha/api2/reload?k={PARAMOUNT_SITEKEY}"

@@ -3402,21 +3402,31 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                             "message": msg
                         })
 
-                    # Se falhou por motivo de sessão do cookie, tenta no máximo 1 conta alternativa
+                    # Se falhou por motivo de sessão do cookie, tenta automaticamente outras contas do estoque
                     DEAD_NETFLIX_COOKIES.add(used_file)
                     DEAD_NETFLIX_COOKIES.add(os.path.basename(used_file))
                     tv2.DEAD_COOKIES.add(used_file)
                     tv2.DEAD_COOKIES.add(os.path.basename(used_file))
-                    alt_account = find_netflix_fast_cookie(exclude_file=used_file, exclude_email=account_info.get("email", ""))
-                    if alt_account:
-                        CURRENT_NETFLIX_READY = alt_account
+                    last_cookie_msg = msg
+
+                    for _alt_try in range(3):
+                        alt_account = find_netflix_fast_cookie(exclude_file=used_file, exclude_email=account_info.get("email", ""))
+                        if not alt_account:
+                            break
                         alt_file = alt_account.get("file", "")
                         alt_info = alt_account.get("info", {})
-                        kernel_logger.push_kernel_log(f"🍪 [Netflix] Tentando cookie alternativo: {alt_info.get('email', os.path.basename(alt_file))}...")
+                        used_file = alt_file
+                        DEAD_NETFLIX_COOKIES.add(alt_file)
+                        DEAD_NETFLIX_COOKIES.add(os.path.basename(alt_file))
+                        tv2.DEAD_COOKIES.add(alt_file)
+                        tv2.DEAD_COOKIES.add(os.path.basename(alt_file))
+
+                        kernel_logger.push_kernel_log(f"🍪 [Netflix] Tentando cookie alternativo ({_alt_try+1}/3): {alt_info.get('email', os.path.basename(alt_file))}...")
                         succ2, msg2, info2 = activate_netflix_tv(clean_code, alt_account)
+                        last_cookie_msg = msg2
                         if succ2:
                             tv2.mark_cookie_used(alt_file, alt_info.get("email", ""))
-                            record_history_entry("Netflix", alt_file, alt_info.get("email", ""), clean_code, account_info.get("plan", "Netflix"), "Sucesso")
+                            record_history_entry("Netflix", alt_file, alt_info.get("email", ""), clean_code, alt_info.get("plan", "Netflix"), "Sucesso")
                             def _async_load_next2(ex_f, ex_em):
                                 global CURRENT_NETFLIX_READY
                                 try:
@@ -3430,12 +3440,15 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                                 "message": msg2 or "TV pareada e ativada com sucesso!",
                                 "account": info2 or alt_info
                             })
-                        else:
-                            msg = msg2
+                        if any(k in msg2.lower() for k in ["código", "codigo", "expirou", "inválido", "invalido", "recusado", "já utilizado"]):
+                            return self.send_json_response({
+                                "success": False,
+                                "message": msg2
+                            })
 
                     return self.send_json_response({
                         "success": False,
-                        "message": msg or "Falha ao parear com a TV. Verifique o código digitado."
+                        "message": last_cookie_msg or "Falha ao parear com a TV. Verifique o código digitado."
                     })
 
             elif service == 'hbo':

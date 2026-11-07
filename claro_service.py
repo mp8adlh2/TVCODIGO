@@ -214,13 +214,26 @@ def load_all_claro_accounts(force_reload: bool = False) -> List[dict]:
     return accounts
 
 def find_claro_valid_account(exclude_user: str = "") -> Optional[dict]:
-    """Retorna conta Claro TV+ pronta para ativação usando seleção aleatória para não viciar."""
+    """Retorna conta Claro TV+ pronta para ativação priorizando sessões já autenticadas em cache."""
     accounts = load_all_claro_accounts()
     if not accounts:
         return None
 
     ex_clean = (exclude_user or "").strip().lower()
 
+    # 1. Prioriza contas com sessão ativa no cache (ativação instantânea em 500ms via API)
+    cached_healthy = [
+        acc for acc in accounts
+        if not is_account_dead(acc["user"])
+        and acc["user"].strip().lower() in _CLARO_SESSIONS_CACHE
+        and _CLARO_SESSIONS_CACHE[acc["user"].strip().lower()].get("cookies", {}).get("avs_cookie")
+    ]
+    if cached_healthy:
+        fresh_cached = [acc for acc in cached_healthy if acc.get("user", "").strip().lower() != ex_clean]
+        pool = fresh_cached if fresh_cached else cached_healthy
+        return random.choice(pool)
+
+    # 2. Contas saudáveis gerais do estoque
     healthy = [acc for acc in accounts if not is_account_dead(acc["user"])]
     pool = healthy if healthy else accounts
 
@@ -401,9 +414,25 @@ def _realizar_login_playwright(username: str, password: str) -> Tuple[bool, dict
                 )
                 page = context.new_page()
 
+                # Bloqueia recursos pesados (imagens, vídeos, fontes e analytics) para carregamento instantâneo
+                def _intercept_route(route):
+                    req_type = route.request.resource_type
+                    req_url = route.request.url.lower()
+                    if req_type in ["image", "media", "font"]:
+                        route.abort()
+                    elif any(k in req_url for k in ["google-analytics", "googletagmanager", "facebook", "doubleclick", "hotjar", "optimizely", "clarity", "dynatrace", "appdynamics"]):
+                        route.abort()
+                    else:
+                        route.continue_()
+
                 try:
-                    page.goto("https://www.clarotvmais.com.br/?redirectUri=/usuario/minha-conta/conectar-tv", wait_until="load", timeout=60000)
-                    page.wait_for_timeout(2000)
+                    page.route("**/*", _intercept_route)
+                except Exception:
+                    pass
+
+                try:
+                    page.goto("https://www.clarotvmais.com.br/?redirectUri=/usuario/minha-conta/conectar-tv", wait_until="domcontentloaded", timeout=30000)
+                    page.wait_for_timeout(1000)
 
                     # Trata aviso de cookies da LGPD se visível
                     try:
