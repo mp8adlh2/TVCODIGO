@@ -184,11 +184,11 @@ PROXY_CONFIG = {
     "https": DEFAULT_PROXY,
 } if DEFAULT_PROXY else None
 
-# Proxy DataImpulse ativado por padrão se configurado (pode ser desativado com USE_PROXY=0)
-if os.environ.get("USE_PROXY", "").lower() in ("0", "false", "no", "off"):
-    ACTIVE_PROXY = False
-else:
+# Conexão direta turbo por padrão; proxy DataImpulse em standby para auto-failover se houver block
+if os.environ.get("USE_PROXY", "").lower() in ("1", "true", "yes", "on"):
     ACTIVE_PROXY = bool(PROXY_CONFIG)
+else:
+    ACTIVE_PROXY = False
 
 def is_blocked_response(status_code: int, text: str = "", url: str = "") -> bool:
     """Detecta se a resposta da Netflix indica bloqueio de IP ou rate limit."""
@@ -612,7 +612,7 @@ def extract_auth_url(session) -> Optional[str]:
 def _activate_tv_code_graphql(session, clean_code: str) -> Tuple[bool, str]:
     """Ativação de Smart TV utilizando a API moderna GraphQL CLCS da Netflix (2026)."""
     try:
-        r = session.get('https://www.netflix.com/tv2', timeout=9, allow_redirects=True, verify=False)
+        r = session.get('https://www.netflix.com/tv2', timeout=5, allow_redirects=True, verify=False)
     except Exception:
         return False, "network_error"
 
@@ -773,7 +773,7 @@ def _activate_tv_code_graphql(session, clean_code: str) -> Tuple[bool, str]:
     }
 
     try:
-        gql_r = session.post('https://www.netflix.com/graphql', json=gql_payload, headers=headers, timeout=12, verify=False)
+        gql_r = session.post('https://www.netflix.com/graphql', json=gql_payload, headers=headers, timeout=6, verify=False)
     except Exception:
         return False, "network_error"
 
@@ -884,8 +884,8 @@ def _activate_tv_code_playwright(cookies: dict, clean_code: str) -> Tuple[bool, 
                 pass
 
             try:
-                page.goto("https://www.netflix.com/tv2", wait_until="domcontentloaded", timeout=20000)
-                page.wait_for_timeout(1000)
+                page.goto("https://www.netflix.com/tv2", wait_until="domcontentloaded", timeout=12000)
+                page.wait_for_timeout(800)
             except Exception as e:
                 browser.close()
                 return False, f"navigation_error: {e}"

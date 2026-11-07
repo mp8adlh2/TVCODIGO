@@ -3423,7 +3423,7 @@ class AppRequestHandler(SimpleHTTPRequestHandler):
                     tv2.DEAD_COOKIES.add(os.path.basename(used_file))
                     last_cookie_msg = msg
 
-                    for _alt_try in range(3):
+                    for _alt_try in range(1):
                         alt_account = find_netflix_fast_cookie(exclude_file=used_file, exclude_email=account_info.get("email", ""))
                         if not alt_account:
                             break
