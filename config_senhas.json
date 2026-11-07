@@ -469,14 +469,16 @@
     },
     {
       "senha": "CYBER#MASTER@2855$BLINDADO*34!2026",
-      "nome": "Cliente (Netflix + Sky+)",
+      "nome": "Cliente (Netflix + HBO Max + Sky+ + Claro TV+)",
       "servicos": [
         "netflix",
-        "sky"
+        "hbo",
+        "sky",
+        "claro"
       ],
-      "descricao": "Libera: netflix, sky",
+      "descricao": "Libera: netflix, hbo, sky, claro",
       "dias_validade": 0,
-      "criado_em": 1793143998.9642303,
+      "criado_em": 1794011422.124972,
       "expira_em": null,
       "expira_em_formatado": null
     },
