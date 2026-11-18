@@ -5,4 +5,4 @@ cloudscraper>=1.2.71
 colorama>=0.4.6
 playwright>=1.40.0
 SpeechRecognition>=3.10.0
-python-telegram-bot==20.7
+python-telegram-bot>=21.0
