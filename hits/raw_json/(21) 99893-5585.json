@@ -1,0 +1,217 @@
+{
+  "email": "(21) 99893-5585",
+  "password": "Sky11115555",
+  "access_token": "3a586714-6d30-47ab-a610-601074654c93",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiYmUzZGExMTQtMjdkZS00ZWFjLTlkMGYtYzgyZjBkYmVhNWJjIiwiYXRfaGFzaCI6ImFiZWhTXzVXVW1CWGFLTGNBc1VLZGciLCJkZXZpY2VJZCI6ImEzYjYxMzZiOTFjNzgyMzY4ZmIyNjNlNmU4NGUyMjA4MmVhYWRiODQiLCJhdWRpdFRyYWNraW5nSWQiOiI3OTRmLTk1MmEtNDA1NC05OTE4LTE2OWMiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODgxNjY0MTg2MywidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJlZmY1Y2QzYS03ZjZhLTRkYWYtOTc3YS04NzlkNTliZTI5OTkiLCJzaWduYXR1cmVzIjpbIjE1MzAyODcxMzciXSwiY3VzdG9tZXJJZCI6ImU3ZmY1ZDgwODc3Mzg0ZmU5ZDllY2ExN2JlODE0YzdkIiwicmVnaXN0cmF0aW9uU2lnbmF0dXJlIjoiMTUzMDI4NzEzNyIsImdpdmVuX25hbWUiOiJGRVJOQU5ETyIsInVzZXJuYW1lIjoiMjE5OTg5MzU1ODUiLCJ0ZWxlcGhvbmVOdW1iZXIiOiIyMTk5ODkzNTU4NSIsInNpZCI6ImEzYjYxMzZiOTFjNzgyMzY4ZmIyNjNlNmU4NGUyMjA4MmVhYWRiODQiLCJzdWJuYW1lIjoiZWZmNWNkM2EtN2Y2YS00ZGFmLTk3N2EtODc5ZDU5YmUyOTk5IiwicmVkZW1wdGlvbkxpbWl0IjpudWxsLCJpYXQiOjE3ODg4MTY2NDEsImV4cCI6MTc4ODkwMzA0MSwiaXNzIjoic20tc2t5LnZyaW9zZXJ2aWNlcy5jb20ifQ.IXhNGij2EEcnzayytME2PM8S0Y1bh-3XuRGfW1hhVoVRxni0QdbKqQ2uHdKJB7WrPBptI-lA_CQ3QwHO87QsbBHo_2LU1n12hFIw46yaLhlAhuJfSiCkbNCP2ioutR6zGfmasoSY48o9R7rxw0biKPHpktLE0eGx2fmmtsxfvSEXW8prU1Wm-mF2TQs9bOgXI5S3sevl3MgI0ghAHmMoDtvWiG81T1P-xPEnrIMkYIPOEiV2mKuJtyc4NEucUonc2RXm6o9lOi6-3c43N3nwgw5lgdAi3_y9tqChPI7hFmlmoRSfC-9VGrRIYYgEeO4ZvQp1F8rEt0jWAnKc-oOzCQ",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "3a586714-6d30-47ab-a610-601074654c93",
+    "externalId": "371c3f08-0779-55f2-a031-1ae81e504c76",
+    "username": "e7ff5d80877384fe9d9eca17be814c7d",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "1530287137",
+    "protocol": "2026-150293338387",
+    "customer": {
+      "email": "skylomusica@hotmail.com",
+      "billingProfileCode": "1-1GWU14LY",
+      "name": "FERNANDO",
+      "secondName": "SOARES DA SILVA",
+      "birthday": "1984-05-03T00:00:00.000Z",
+      "ddd": 21,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5521998935585",
+      "id": "e7ff5d80877384fe9d9eca17be814c7d",
+      "cpf": "31493972863"
+    },
+    "signatures": [
+      {
+        "id": "1530287137",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 998935585,
+          "dddMobilePhone": 21
+        },
+        "customerId": "e7ff5d80877384fe9d9eca17be814c7d",
+        "status": 1,
+        "productName": "TOP HD II EXCLUSIVO 2025 - P",
+        "name": "FERNANDO",
+        "secondName": "SOARES DA SILVA",
+        "dna": "01000000000100000000000000000000100000000000000000000000000000000000010000000000000000100010000111110000000000000000000000100000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110001000000000001101111111111111011101110001111111111110111111101111111111111111111111111110011111111111110111111111110011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Onofre Jorge Velho",
+          "line1": "Rua Onofre Jorge Velho, 269 - Cidade Lider",
+          "line2": null,
+          "number": "269",
+          "city": "Sao Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "08280330",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 21,
+          "resPhone": 998935585
+        },
+        "addressBilling": {
+          "linePublic": "Rua Onofre Jorge Velho",
+          "line1": "Rua Onofre Jorge Velho, 269 - Cidade Líder",
+          "line2": null,
+          "number": "269",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "08280330",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2022-06-21T00:00:00.000Z",
+        "email": "skylomusica@hotmail.com",
+        "parentAccount": "1530287136",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000771489903",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A203619378415D"
+          },
+          {
+            "smartcard": "000772987806",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2036188920169"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "1530287137",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 998935585,
+        "dddMobilePhone": 21
+      },
+      "customerId": "e7ff5d80877384fe9d9eca17be814c7d",
+      "status": 1,
+      "productName": "TOP HD II EXCLUSIVO 2025 - P",
+      "name": "FERNANDO",
+      "secondName": "SOARES DA SILVA",
+      "dna": "01000000000100000000000000000000100000000000000000000000000000000000010000000000000000100010000111110000000000000000000000100000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110001000000000001101111111111111011101110001111111111110111111101111111111111111111111111110011111111111110111111111110011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Onofre Jorge Velho",
+        "line1": "Rua Onofre Jorge Velho, 269 - Cidade Lider",
+        "line2": null,
+        "number": "269",
+        "city": "Sao Paulo",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "08280330",
+        "referencePoint": null,
+        "addressType": "Rua",
+        "resDdd": 21,
+        "resPhone": 998935585
+      },
+      "addressBilling": {
+        "linePublic": "Rua Onofre Jorge Velho",
+        "line1": "Rua Onofre Jorge Velho, 269 - Cidade Líder",
+        "line2": null,
+        "number": "269",
+        "city": "São Paulo",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "08280330",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2022-06-21T00:00:00.000Z",
+      "email": "skylomusica@hotmail.com",
+      "parentAccount": "1530287136",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000771489903",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A203619378415D"
+        },
+        {
+          "smartcard": "000772987806",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2036188920169"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "1530287137": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "ASSINATURAS DIGITAIS IX",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "20-08-2026",
+          "end_date": null,
+          "icon": "📺"
+        },
+        {
+          "name": "AMAZON PRIME",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "19-01-2026",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-21E06JZ",
+            "name": "ASSINATURAS DIGITAIS IX",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": null,
+            "price": "2.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "20-08-2026",
+            "startDate": "20-08-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-21ATHJR",
+            "name": "AMAZON PRIME",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Amazon%403x.png",
+            "urlDetail": "https://www.sky.com.br/amazon-prime",
+            "price": "5.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "19-01-2026",
+            "startDate": "19-01-2026",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

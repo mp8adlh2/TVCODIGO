@@ -1,0 +1,299 @@
+{
+  "email": "lvital1955@gmail.com",
+  "password": "Dante2020",
+  "access_token": "dc32b6ce-9e8c-44c8-b9b8-a5114873ef9d",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiMWM1NmY1NmYtMzNhYS00OTE5LWFiMjEtNzUzNjZkYzAyZjg0IiwiYXRfaGFzaCI6Imw1c0VWaDNqU3lHV2p5X2RIeUxicWciLCJkZXZpY2VJZCI6IjAyZGQ1MjQ3NGE3ODE4ZjM1NmVkM2EwMDZlN2I3N2I0ZWVhNDU4MGQiLCJhdWRpdFRyYWNraW5nSWQiOiIyNTBlLWE1ZDgtNDc1ZS1hOGE2LTc2OGYiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODY1MDgyMjU1MCwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiI1Y2M0MjY0YS1mZDdjLTQ0YmEtYWI2NC04OTc5ODQyNzlmODMiLCJzaWduYXR1cmVzIjpbIjE1Mzc3MjI1NjUiLCIxNTI1ODQwODAxIl0sImN1c3RvbWVySWQiOiJiNTUyNjZkN2U1MTFkNzg0NjkzZjNhYWZhOThlMTU4YiIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjE1MjU4NDA4MDEiLCJnaXZlbl9uYW1lIjoiWlVMRUlERSIsInVzZXJuYW1lIjoibHZpdGFsMTk1NUBnbWFpbC5jb20iLCJtYWlsIjoibHZpdGFsMTk1NUBnbWFpbC5jb20iLCJyZWRlbXB0aW9uTGltaXQiOm51bGwsImlhdCI6MTc4ODY1MDgyMiwiZXhwIjoxNzg4NzM3MjIyLCJpc3MiOiJzbS1za3kudnJpb3NlcnZpY2VzLmNvbSJ9.DeF4o4c0d-B0mKS4TyGu1DClI-4baPWvEwfo68_H8GbUJz2V4VYuWYH28P-W9vBR5BHPbQVsLm0L1nfK78SPt_OnX4LAt35Hl2aKpWuhrnqLpWSAKhSZICtbtRYZMdfjtBfBcajp943nS5G8LHZvh1q2LuoS2H2Ll97JsAnkzmQBfzxxIk9pXOz8ga5ytuvT4EZw_XrVAuzDMOuRA6CuVoi7Xm-bxFuVIqB4LEwmLL6eVFVwPuzp0RrDKecbBe1irTLVWwTlkOaM3ElC03gII5dDZpSZKPmw5-iP1SVPc7l88Ubi0-Z0bQeOn4QDYv4VwM-j3pudQe980vGiBVztkQ",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "dc32b6ce-9e8c-44c8-b9b8-a5114873ef9d",
+    "externalId": "fb8c2f5d-b386-55ee-a69e-9bb003e519fb",
+    "username": "b55266d7e511d784693f3aafa98e158b",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "1525840801",
+    "protocol": "2026-150264594114",
+    "customer": {
+      "email": "lvital1955@gmail.com",
+      "billingProfileCode": "1-1ABCC4OE",
+      "name": "ZULEIDE",
+      "secondName": "FERREIRA DE ARAUJO",
+      "birthday": "1943-02-21T00:00:00.000Z",
+      "ddd": 21,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5521965549007",
+      "id": "b55266d7e511d784693f3aafa98e158b",
+      "cpf": "71221620797"
+    },
+    "signatures": [
+      {
+        "id": "1537722565",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 965549007,
+          "dddMobilePhone": 21
+        },
+        "customerId": "b55266d7e511d784693f3aafa98e158b",
+        "status": 1,
+        "productName": "PAY-TV + FIBRA 200 MB - P",
+        "name": "ZULEIDE",
+        "secondName": "FERREIRA DE ARAUJO",
+        "dna": "01000000000100000000000000000000000000000000000000000000000000000000000000000000000000100001000111110000000000000000000000000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110100000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Banda Larga",
+        "addressInstallation": {
+          "linePublic": "Rua Pedra Alva",
+          "line1": "Rua Pedra Alva, 97 - Vila Oito De Maio",
+          "line2": "Casa 2",
+          "number": "97",
+          "city": "Duque De Caxias",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "25086400",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 21,
+          "resPhone": 965304237
+        },
+        "addressBilling": {
+          "linePublic": "Rua Pedra Alva",
+          "line1": "Rua Pedra Alva, 97 - Vila Oito De Maio",
+          "line2": "Casa",
+          "number": "97",
+          "city": "Duque De Caxias",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "25086400",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2024-07-18T00:00:00.000Z",
+        "email": "lvital1955@gmail.com",
+        "parentAccount": "1537722566",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [
+          {
+            "id": "1525840801",
+            "organizationType": 0,
+            "phones": {
+              "mobilePhone": 965549007,
+              "dddMobilePhone": 21
+            },
+            "customerId": "b55266d7e511d784693f3aafa98e158b",
+            "status": 2,
+            "productName": "SUPER HD 2024 - P",
+            "name": "ZULEIDE",
+            "secondName": "FERREIRA DE ARAUJO",
+            "dna": "00000100000100000000000000000000000000000000000000000000000000000000000000000000000000100011000111110000000000000000000000000001011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101001111111101111111111111110011111111111111111111111111111111111111111111111111111111110011111011111111111111",
+            "type": "Pós-Pago Antecipado",
+            "addressInstallation": {
+              "linePublic": "Null Pedra Alva",
+              "line1": "Null Pedra Alva, 97 - Vila Oito De Maio",
+              "line2": "Casa 2",
+              "number": "97",
+              "city": "Duque De Caxias",
+              "state": "RJ",
+              "country": "Brasil",
+              "postalCode": "25086400",
+              "referencePoint": "Arroz Em Frente Ao Portão Do Cemitério Nossa Senhora Das Graças",
+              "addressType": null
+            },
+            "addressBilling": {
+              "linePublic": "Rua Pedra Alva",
+              "line1": "Rua Pedra Alva, 97 - Vila Oito De Maio",
+              "line2": "Casa",
+              "number": "97",
+              "city": "Duque De Caxias",
+              "state": "RJ",
+              "country": "Brasil",
+              "postalCode": "25086400",
+              "referencePoint": null,
+              "addressType": "Rua"
+            },
+            "activation": "2021-02-24T00:00:00.000Z",
+            "email": "lvital1955@gmail.com",
+            "parentAccount": "1525840796",
+            "productStatus": "C",
+            "isPrimary": false,
+            "childrenSignatures": [],
+            "chargeStatus": 0,
+            "dunnLevel": null,
+            "equipments": [],
+            "permissions": {
+              "modalWinbackGatinho": true,
+              "modalWinbackCobranca": false,
+              "chatWinbackReativacao": false,
+              "chatWinbackWebview": false,
+              "chatWinbackCobranca": false,
+              "chatWinbackTelevendas": true,
+              "featureVerTelaCompras": true,
+              "featureSkyPlay": true,
+              "featureGuia": true,
+              "featureFatura": true,
+              "featureComprovantes": true,
+              "featureMeusDados": true,
+              "featureMinhasVisitas": true,
+              "featureAtendimento": true,
+              "featureAtendimentoChatReativacao": true,
+              "featureAssistenteVirtual": true,
+              "featureQuiz": true,
+              "featureControleRemoto": true,
+              "featureRealizarCompra": false,
+              "featureEnvioSinal": false,
+              "featureTurbinarPacote": false,
+              "additionalData": {
+                "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=19999870213e8efad3070b14ca8c95ff13b33e4bee9cab0fe2b850af7a73dc5d47b3e2462ba542693479bfecb41c4a10beabfede8d9c214ed8d4c0577406371953efeb31be812060f55a1dda38f71da157c3d96e1694a9cd874e75e1325e959266ba9268f38f0bb4107a56f3809e95195684307c7ef778cc2f332e96ee948fa63420a194f53c90a4a664ce8909639e7d6c8b4c408485af26e1010fbd409fd22942eee4a882a40f432083a92e3a19a76186340ea118e1c96a9216fee44860a64b75ce4248e6b874df8d91b789951278869cc9a2246a212254538da8d648075d4b78ce9c9270029f775f8fd60b6cd9cdfb336aa97cc2319edd7486&id1=fb72b81b2ffcf9698df4394b70db179e9e3741165b216a5f31b20f008fb9ae8ea1cd93c1a8407a40d924c255bfbe8792f67557558e07899e3949636fc9702f8a3d041c73466b4247b3b1698efbc93644edc73b084957095cf3510f2b95e357d5b977b786801dfb411b554ae2b74278f3f0ef60fcf4664cff45adfbc0f285db33322b0d41a37e1f968ea9b8d54a8b7ad4c6257c45c3710bd6c9f242f606cfe411b8a07a2d31f192b010f858d169c2049d4c80636c39eba71d190d9dc74a66de716467f67bf3aab1d5db997a608323a905d3dd23ab66d66dff005e455c2c0e173cb733aef9716ce358ad0cf932fa95c1c5fc8ad2a8e93081995ea7&id2=f255e70060d5a5a82d7ad44e&id3=",
+                "chatParams": {
+                  "subject": "Cancelamento",
+                  "dateNowFormatted": "2026-09-05 20:26:51",
+                  "chatExpirationDate": 1788651111937
+                }
+              }
+            },
+            "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=19999870213e8efad3070b14ca8c95ff13b33e4bee9cab0fe2b850af7a73dc5d47b3e2462ba542693479bfecb41c4a10beabfede8d9c214ed8d4c0577406371953efeb31be812060f55a1dda38f71da157c3d96e1694a9cd874e75e1325e959266ba9268f38f0bb4107a56f3809e95195684307c7ef778cc2f332e96ee948fa63420a194f53c90a4a664ce8909639e7d6c8b4c408485af26e1010fbd409fd22942eee4a882a40f432083a92e3a19a76186340ea118e1c96a9216fee44860a64b75ce4248e6b874df8d91b789951278869cc9a2246a212254538da8d648075d4b78ce9c9270029f775f8fd60b6cd9cdfb336aa97cc2319edd7486&id1=fb72b81b2ffcf9698df4394b70db179e9e3741165b216a5f31b20f008fb9ae8ea1cd93c1a8407a40d924c255bfbe8792f67557558e07899e3949636fc9702f8a3d041c73466b4247b3b1698efbc93644edc73b084957095cf3510f2b95e357d5b977b786801dfb411b554ae2b74278f3f0ef60fcf4664cff45adfbc0f285db33322b0d41a37e1f968ea9b8d54a8b7ad4c6257c45c3710bd6c9f242f606cfe411b8a07a2d31f192b010f858d169c2049d4c80636c39eba71d190d9dc74a66de716467f67bf3aab1d5db997a608323a905d3dd23ab66d66dff005e455c2c0e173cb733aef9716ce358ad0cf932fa95c1c5fc8ad2a8e93081995ea7&id2=f255e70060d5a5a82d7ad44e&id3="
+          }
+        ],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": []
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "1537722565",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 965549007,
+        "dddMobilePhone": 21
+      },
+      "customerId": "b55266d7e511d784693f3aafa98e158b",
+      "status": 1,
+      "productName": "PAY-TV + FIBRA 200 MB - P",
+      "name": "ZULEIDE",
+      "secondName": "FERREIRA DE ARAUJO",
+      "dna": "01000000000100000000000000000000000000000000000000000000000000000000000000000000000000100001000111110000000000000000000000000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110100000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Banda Larga",
+      "addressInstallation": {
+        "linePublic": "Rua Pedra Alva",
+        "line1": "Rua Pedra Alva, 97 - Vila Oito De Maio",
+        "line2": "Casa 2",
+        "number": "97",
+        "city": "Duque De Caxias",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "25086400",
+        "referencePoint": null,
+        "addressType": "Rua",
+        "resDdd": 21,
+        "resPhone": 965304237
+      },
+      "addressBilling": {
+        "linePublic": "Rua Pedra Alva",
+        "line1": "Rua Pedra Alva, 97 - Vila Oito De Maio",
+        "line2": "Casa",
+        "number": "97",
+        "city": "Duque De Caxias",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "25086400",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2024-07-18T00:00:00.000Z",
+      "email": "lvital1955@gmail.com",
+      "parentAccount": "1537722566",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [
+        {
+          "id": "1525840801",
+          "organizationType": 0,
+          "phones": {
+            "mobilePhone": 965549007,
+            "dddMobilePhone": 21
+          },
+          "customerId": "b55266d7e511d784693f3aafa98e158b",
+          "status": 2,
+          "productName": "SUPER HD 2024 - P",
+          "name": "ZULEIDE",
+          "secondName": "FERREIRA DE ARAUJO",
+          "dna": "00000100000100000000000000000000000000000000000000000000000000000000000000000000000000100011000111110000000000000000000000000001011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101001111111101111111111111110011111111111111111111111111111111111111111111111111111111110011111011111111111111",
+          "type": "Pós-Pago Antecipado",
+          "addressInstallation": {
+            "linePublic": "Null Pedra Alva",
+            "line1": "Null Pedra Alva, 97 - Vila Oito De Maio",
+            "line2": "Casa 2",
+            "number": "97",
+            "city": "Duque De Caxias",
+            "state": "RJ",
+            "country": "Brasil",
+            "postalCode": "25086400",
+            "referencePoint": "Arroz Em Frente Ao Portão Do Cemitério Nossa Senhora Das Graças",
+            "addressType": null
+          },
+          "addressBilling": {
+            "linePublic": "Rua Pedra Alva",
+            "line1": "Rua Pedra Alva, 97 - Vila Oito De Maio",
+            "line2": "Casa",
+            "number": "97",
+            "city": "Duque De Caxias",
+            "state": "RJ",
+            "country": "Brasil",
+            "postalCode": "25086400",
+            "referencePoint": null,
+            "addressType": "Rua"
+          },
+          "activation": "2021-02-24T00:00:00.000Z",
+          "email": "lvital1955@gmail.com",
+          "parentAccount": "1525840796",
+          "productStatus": "C",
+          "isPrimary": false,
+          "childrenSignatures": [],
+          "chargeStatus": 0,
+          "dunnLevel": null,
+          "equipments": [],
+          "permissions": {
+            "modalWinbackGatinho": true,
+            "modalWinbackCobranca": false,
+            "chatWinbackReativacao": false,
+            "chatWinbackWebview": false,
+            "chatWinbackCobranca": false,
+            "chatWinbackTelevendas": true,
+            "featureVerTelaCompras": true,
+            "featureSkyPlay": true,
+            "featureGuia": true,
+            "featureFatura": true,
+            "featureComprovantes": true,
+            "featureMeusDados": true,
+            "featureMinhasVisitas": true,
+            "featureAtendimento": true,
+            "featureAtendimentoChatReativacao": true,
+            "featureAssistenteVirtual": true,
+            "featureQuiz": true,
+            "featureControleRemoto": true,
+            "featureRealizarCompra": false,
+            "featureEnvioSinal": false,
+            "featureTurbinarPacote": false,
+            "additionalData": {
+              "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=19999870213e8efad3070b14ca8c95ff13b33e4bee9cab0fe2b850af7a73dc5d47b3e2462ba542693479bfecb41c4a10beabfede8d9c214ed8d4c0577406371953efeb31be812060f55a1dda38f71da157c3d96e1694a9cd874e75e1325e959266ba9268f38f0bb4107a56f3809e95195684307c7ef778cc2f332e96ee948fa63420a194f53c90a4a664ce8909639e7d6c8b4c408485af26e1010fbd409fd22942eee4a882a40f432083a92e3a19a76186340ea118e1c96a9216fee44860a64b75ce4248e6b874df8d91b789951278869cc9a2246a212254538da8d648075d4b78ce9c9270029f775f8fd60b6cd9cdfb336aa97cc2319edd7486&id1=fb72b81b2ffcf9698df4394b70db179e9e3741165b216a5f31b20f008fb9ae8ea1cd93c1a8407a40d924c255bfbe8792f67557558e07899e3949636fc9702f8a3d041c73466b4247b3b1698efbc93644edc73b084957095cf3510f2b95e357d5b977b786801dfb411b554ae2b74278f3f0ef60fcf4664cff45adfbc0f285db33322b0d41a37e1f968ea9b8d54a8b7ad4c6257c45c3710bd6c9f242f606cfe411b8a07a2d31f192b010f858d169c2049d4c80636c39eba71d190d9dc74a66de716467f67bf3aab1d5db997a608323a905d3dd23ab66d66dff005e455c2c0e173cb733aef9716ce358ad0cf932fa95c1c5fc8ad2a8e93081995ea7&id2=f255e70060d5a5a82d7ad44e&id3=",
+              "chatParams": {
+                "subject": "Cancelamento",
+                "dateNowFormatted": "2026-09-05 20:26:51",
+                "chatExpirationDate": 1788651111937
+              }
+            }
+          },
+          "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=19999870213e8efad3070b14ca8c95ff13b33e4bee9cab0fe2b850af7a73dc5d47b3e2462ba542693479bfecb41c4a10beabfede8d9c214ed8d4c0577406371953efeb31be812060f55a1dda38f71da157c3d96e1694a9cd874e75e1325e959266ba9268f38f0bb4107a56f3809e95195684307c7ef778cc2f332e96ee948fa63420a194f53c90a4a664ce8909639e7d6c8b4c408485af26e1010fbd409fd22942eee4a882a40f432083a92e3a19a76186340ea118e1c96a9216fee44860a64b75ce4248e6b874df8d91b789951278869cc9a2246a212254538da8d648075d4b78ce9c9270029f775f8fd60b6cd9cdfb336aa97cc2319edd7486&id1=fb72b81b2ffcf9698df4394b70db179e9e3741165b216a5f31b20f008fb9ae8ea1cd93c1a8407a40d924c255bfbe8792f67557558e07899e3949636fc9702f8a3d041c73466b4247b3b1698efbc93644edc73b084957095cf3510f2b95e357d5b977b786801dfb411b554ae2b74278f3f0ef60fcf4664cff45adfbc0f285db33322b0d41a37e1f968ea9b8d54a8b7ad4c6257c45c3710bd6c9f242f606cfe411b8a07a2d31f192b010f858d169c2049d4c80636c39eba71d190d9dc74a66de716467f67bf3aab1d5db997a608323a905d3dd23ab66d66dff005e455c2c0e173cb733aef9716ce358ad0cf932fa95c1c5fc8ad2a8e93081995ea7&id2=f255e70060d5a5a82d7ad44e&id3="
+        }
+      ],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": []
+    }
+  ],
+  "additionals_map": {
+    "1537722565": {
+      "included": [],
+      "additionals": []
+    }
+  }
+}

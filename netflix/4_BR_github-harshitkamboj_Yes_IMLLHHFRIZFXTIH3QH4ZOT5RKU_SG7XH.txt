@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: NET_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (4): Leandro, Luiza, bruno, Infantil
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1806354077	dsca	true
+.netflix.com	FALSE	/	TRUE	1803336024	NetflixId	v%3D3%26ct%3DBgjHlOvcAxL8AuBL4dmOJzv6UQ4QwVkAMkQICXDZHInhxpOzowgupttHh6ortYJpmVs4WdxqACKM29wEFN8O7NEAbUm2hUEI3RR78aQWCMKuBGIY7b8qkPJZWUO7J6vqO44dMX3XvOd8ghTvof5WkbXjjNYWCp3jhfWMO3Rzhn1_z4cYTGrdC-NQBqybS3tAj80CM7m8ozduwUbRzFxtKJ6EWU02eog-0pdHBQCliTyzJpoV2HagerupDBcMC88h6H4P79-6cL57vI_Sm95d2yrwPR2i4wKovCMEReglA5xgMXKlhQbn-NTsIp6jK5IWOKp1J_tp-0qrSEwPxu4oJl4BuNA9OrGqRUvKxUKiCVBiGRgIylgsCZEl90VK9f9SJETEe3mfpxdVePd7f-LCJCjBHkxnkHkUqB0G5-UG2uQrgoPdoeuqQmwbVGlrFnJbl-kYOy3dY-hp9yiRmFrcc6ymSH6gSMx-HmORgbqA5flVZLzBayyQSPBTatsNBnnWRdGPcIxEGAYiDgoMz1B3lpZ5qusJfi6X%26pg%3DIMLLHHFRIZFXTIH3QH4ZOT5RKU%26ch%3DAQEAEAABABRg_4wtP0qqwhAGC4hWr7y_E_aOFTQpt0U.
+.netflix.com	FALSE	/	FALSE	1803330075	nfvdid	BQFmAAEBEMchF9h8dNIZcrk2tElyTy5gHi_8s8EvXiy7GZcqfrISE3qZB-4JCiqX9VPpGgVMZP61tep4jBU-1xiRSWrPk5VdMBYqncwJ-hxXaTQMGpSts2Z7UDiFwpiocI_l6iZFLb6c6ZrR9cRH-TFZ6BiD2AHq
+.netflix.com	FALSE	/	FALSE	1803329982	OptanonAlertBoxClosed	2026-02-22T20:59:42.904Z
+.netflix.com	FALSE	/	FALSE	1803340453	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Feb+22+2026+23%3A54%3A13+GMT%2B0000+(Western+European+Standard+Time)&version=202601.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=af19e863-c543-4656-8677-0b7a882cb06c&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&intType=3&geolocation=PT%3B11&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1803336024	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTXDpo8WBE7HjM1p4_ou16q98z1QnyxhcY.%26dt%3D1771800024788

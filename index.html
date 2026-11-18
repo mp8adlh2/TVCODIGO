@@ -1,0 +1,3321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>VIP STREAM // Ativador Smart TV 4K</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    /* ======================================================== */
+    /* 🎬 ULTRA-PREMIUM STREAMING THEME (NETFLIX / APPLE TV / HBO) */
+    /* ======================================================== */
+    :root, body[data-service="netflix"] {
+      --accent-color: #E50914;
+      --accent-rgb: 229, 9, 20;
+      --accent-glow: rgba(229, 9, 20, 0.45);
+      --accent-glow-subtle: rgba(229, 9, 20, 0.14);
+      --accent-gradient: linear-gradient(135deg, #FF1E27 0%, #B20710 100%);
+      --accent-gradient-hover: linear-gradient(135deg, #FF3841 0%, #D40813 100%);
+      
+      --bg-base: #06080e;
+      --panel-bg: rgba(14, 20, 34, 0.72);
+      --panel-border: rgba(229, 9, 20, 0.28);
+      --panel-border-hover: rgba(229, 9, 20, 0.65);
+      --panel-border-glass: rgba(255, 255, 255, 0.08);
+      
+      --text-bright: #ffffff;
+      --text-dim: #94a3b8;
+      --text-dark: #475569;
+      --matrix-color: #e50914;
+      
+      --font-display: 'Outfit', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    body[data-service="hbo"] {
+      --accent-color: #9D4EDD;
+      --accent-rgb: 157, 78, 221;
+      --accent-glow: rgba(157, 78, 221, 0.45);
+      --accent-glow-subtle: rgba(157, 78, 221, 0.14);
+      --accent-gradient: linear-gradient(135deg, #A855F7 0%, #6B21A8 100%);
+      --accent-gradient-hover: linear-gradient(135deg, #C084FC 0%, #7E22CE 100%);
+      
+      --bg-base: #07060f;
+      --panel-bg: rgba(18, 14, 34, 0.72);
+      --panel-border: rgba(157, 78, 221, 0.28);
+      --panel-border-hover: rgba(157, 78, 221, 0.65);
+      --panel-border-glass: rgba(255, 255, 255, 0.08);
+      
+      --text-bright: #ffffff;
+      --text-dim: #cbd5e1;
+      --text-dark: #64748b;
+      --matrix-color: #9d4edd;
+    }
+
+    body[data-service="crunchyroll"] {
+      --accent-color: #FF7700;
+      --accent-rgb: 255, 119, 0;
+      --accent-glow: rgba(255, 119, 0, 0.45);
+      --accent-glow-subtle: rgba(255, 119, 0, 0.14);
+      --accent-gradient: linear-gradient(135deg, #FF8500 0%, #E85D04 100%);
+      --accent-gradient-hover: linear-gradient(135deg, #FFA200 0%, #FF6F00 100%);
+      
+      --bg-base: #0a0705;
+      --panel-bg: rgba(26, 17, 12, 0.72);
+      --panel-border: rgba(255, 119, 0, 0.28);
+      --panel-border-hover: rgba(255, 119, 0, 0.65);
+      --panel-border-glass: rgba(255, 255, 255, 0.08);
+      
+      --text-bright: #ffffff;
+      --text-dim: #fed7aa;
+      --text-dark: #78350f;
+      --matrix-color: #ff7700;
+    }
+
+    body[data-service="sky"] {
+      --accent-color: #00A6FB;
+      --accent-rgb: 0, 166, 251;
+      --accent-glow: rgba(0, 166, 251, 0.45);
+      --accent-glow-subtle: rgba(0, 166, 251, 0.14);
+      --accent-gradient: linear-gradient(135deg, #00A6FB 0%, #006494 100%);
+      --accent-gradient-hover: linear-gradient(135deg, #33B9FC 0%, #0582CA 100%);
+      
+      --bg-base: #040810;
+      --panel-bg: rgba(10, 19, 36, 0.72);
+      --panel-border: rgba(0, 166, 251, 0.28);
+      --panel-border-hover: rgba(0, 166, 251, 0.65);
+      --panel-border-glass: rgba(255, 255, 255, 0.08);
+      
+      --text-bright: #ffffff;
+      --text-dim: #bae6fd;
+      --text-dark: #0369a1;
+      --matrix-color: #00a6fb;
+    }
+
+    body[data-service="disney"] {
+      --accent-color: #00D4FF;
+      --accent-rgb: 0, 212, 255;
+      --accent-glow: rgba(0, 212, 255, 0.45);
+      --accent-glow-subtle: rgba(0, 212, 255, 0.15);
+      --accent-gradient: linear-gradient(135deg, #00D4FF 0%, #0077B6 100%);
+      --accent-gradient-hover: linear-gradient(135deg, #38E1FF 0%, #023E8A 100%);
+      
+      --bg-base: #040714;
+      --panel-bg: rgba(10, 18, 42, 0.75);
+      --panel-border: rgba(0, 212, 255, 0.28);
+      --panel-border-hover: rgba(0, 212, 255, 0.65);
+      --panel-border-glass: rgba(255, 255, 255, 0.10);
+      
+      --text-bright: #ffffff;
+      --text-dim: #bae6fd;
+      --text-dark: #0284c7;
+      --matrix-color: #00d4ff;
+    }
+
+    body[data-service="claro"] {
+      --accent-color: #EF233C;
+      --accent-rgb: 239, 35, 60;
+      --accent-glow: rgba(239, 35, 60, 0.45);
+      --accent-glow-subtle: rgba(239, 35, 60, 0.14);
+      --accent-gradient: linear-gradient(135deg, #EF233C 0%, #B91C1C 100%);
+      --accent-gradient-hover: linear-gradient(135deg, #FF4D6D 0%, #DC2626 100%);
+      
+      --bg-base: #090506;
+      --panel-bg: rgba(26, 12, 14, 0.75);
+      --panel-border: rgba(239, 35, 60, 0.28);
+      --panel-border-hover: rgba(239, 35, 60, 0.65);
+      --panel-border-glass: rgba(255, 255, 255, 0.08);
+      
+      --text-bright: #ffffff;
+      --text-dim: #fecdd3;
+      --text-dark: #be123c;
+      --matrix-color: #ef233c;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      user-select: none;
+    }
+
+    body {
+      background: var(--bg-base);
+      background-image: 
+        radial-gradient(ellipse 90% 70% at 50% 0%, var(--accent-glow-subtle) 0%, transparent 75%),
+        linear-gradient(rgba(255, 255, 255, 0.012) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.012) 1px, transparent 1px);
+      background-size: 100% 100%, 48px 48px, 48px 48px;
+      color: var(--text-bright);
+      font-family: var(--font-body);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 16px 60px;
+      overflow-x: hidden;
+      position: relative;
+      transition: background 0.6s ease;
+    }
+
+    /* Ambient Lighting Mesh */
+    .ambient-glow {
+      position: fixed;
+      border-radius: 50%;
+      pointer-events: none;
+      filter: blur(140px);
+      z-index: 0;
+      opacity: 0.6;
+      transition: background 0.7s ease, opacity 0.5s ease;
+    }
+
+    .orb-1 {
+      width: 650px;
+      height: 520px;
+      top: -140px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: radial-gradient(circle, var(--accent-glow) 0%, rgba(var(--accent-rgb), 0.12) 50%, transparent 75%);
+      animation: floatOrb 12s ease-in-out infinite alternate;
+    }
+
+    .orb-2 {
+      width: 520px;
+      height: 520px;
+      bottom: -100px;
+      right: -80px;
+      background: radial-gradient(circle, var(--accent-glow-subtle) 0%, transparent 70%);
+      animation: floatOrb2 16s ease-in-out infinite alternate;
+    }
+
+    @keyframes floatOrb {
+      0% { transform: translateX(-50%) translateY(0) scale(1); }
+      50% { transform: translateX(-47%) translateY(40px) scale(1.08); }
+      100% { transform: translateX(-53%) translateY(20px) scale(0.96); }
+    }
+
+    @keyframes floatOrb2 {
+      0% { transform: translateY(0) scale(1); }
+      100% { transform: translateY(-45px) scale(1.12); }
+    }
+
+    /* Matrix canvas is disabled to give clean high-end streaming feel */
+    #matrix-canvas {
+      display: none !important;
+    }
+
+    #confetti-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    .deck-container {
+      width: 100%;
+      max-width: 580px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      position: relative;
+      z-index: 2;
+      margin: 0 auto;
+    }
+
+    /* ======================================================== */
+    /* 👑 BRAND HEADER - SLEEK CINEMA CAPSULE                   */
+    /* ======================================================== */
+    .brand-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 0 6px;
+    }
+
+    .brand-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      padding: 12px 26px;
+      background: rgba(14, 20, 36, 0.72);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 50px;
+      backdrop-filter: blur(28px) saturate(180%);
+      -webkit-backdrop-filter: blur(28px) saturate(180%);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 0 30px var(--accent-glow-subtle);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .brand-badge:hover {
+      border-color: rgba(255, 255, 255, 0.22);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7), 0 0 35px var(--accent-glow);
+      transform: translateY(-2px);
+    }
+
+    .brand-icon-wrapper {
+      position: relative;
+      width: 44px;
+      height: 44px;
+      border-radius: 16px;
+      background: var(--accent-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 25px var(--accent-glow), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+      flex-shrink: 0;
+    }
+
+    .brand-icon-svg {
+      width: 22px;
+      height: 22px;
+      stroke: #ffffff;
+      fill: none;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    }
+
+    .brand-live-dot {
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #00ff88;
+      border: 2px solid #06080e;
+      box-shadow: 0 0 12px #00ff88;
+      animation: livePulse 2s infinite ease-in-out;
+    }
+
+    @keyframes livePulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.15); opacity: 0.8; }
+    }
+
+    .brand-info {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .brand-title {
+      font-family: var(--font-display);
+      font-size: 16.5px;
+      font-weight: 900;
+      letter-spacing: 0.8px;
+      color: #ffffff;
+      line-height: 1.25;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .brand-title-badge {
+      font-size: 10px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+      color: #0b0f19;
+      padding: 2px 8px;
+      border-radius: 20px;
+      letter-spacing: 0.6px;
+      box-shadow: 0 2px 10px rgba(255, 215, 0, 0.4);
+    }
+
+    .brand-subtitle {
+      font-size: 11.5px;
+      color: var(--text-dim);
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      margin-top: 2px;
+    }
+
+    /* ======================================================== */
+    /* 🛰️ TELEMETRY BAR - LUXURY GLASS CAPSULE                  */
+    /* ======================================================== */
+    .telemetry-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--panel-bg);
+      border: 1px solid var(--panel-border-glass);
+      border-radius: 50px;
+      padding: 10px 20px;
+      backdrop-filter: blur(28px) saturate(180%);
+      -webkit-backdrop-filter: blur(28px) saturate(180%);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      font-size: 11.5px;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      transition: all 0.3s ease;
+      width: 100%;
+      box-sizing: border-box;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .telemetry-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      flex: 1;
+      min-width: 220px;
+    }
+
+    .status-radar {
+      position: relative;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #00ff88;
+      box-shadow: 0 0 12px #00ff88;
+    }
+
+    .status-radar::after {
+      content: '';
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      right: -4px;
+      bottom: -4px;
+      border-radius: 50%;
+      border: 1.5px solid #00ff88;
+      animation: radarPing 2.2s infinite cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    @keyframes radarPing {
+      0% { transform: scale(0.6); opacity: 1; }
+      100% { transform: scale(2.4); opacity: 0; }
+    }
+
+    .telemetry-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .btn-icon {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--text-bright);
+      padding: 7px 14px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      backdrop-filter: blur(12px);
+    }
+
+    .btn-icon:hover {
+      background: var(--accent-gradient);
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 6px 20px var(--accent-glow);
+      transform: translateY(-1px);
+    }
+
+    .btn-icon:active {
+      transform: scale(0.96);
+    }
+
+    /* ======================================================== */
+    /* 🎛️ SERVICE SWITCHER - CINEMA FLOATING PILL DOCK          */
+    /* ======================================================== */
+    .service-switcher {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 6px;
+      background: rgba(10, 15, 28, 0.72);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 50px;
+      padding: 6px;
+      backdrop-filter: blur(28px) saturate(180%);
+      -webkit-backdrop-filter: blur(28px) saturate(180%);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), inset 0 2px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    .service-tab {
+      background: transparent;
+      border: 1px solid transparent;
+      padding: 12px 6px;
+      border-radius: 40px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      color: var(--text-dim);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      white-space: nowrap;
+      user-select: none;
+    }
+
+    .service-tab:hover {
+      color: var(--text-bright);
+      background: rgba(255, 255, 255, 0.06);
+      transform: translateY(-1px);
+    }
+
+    .service-tab.active-netflix,
+    .service-tab.active-hbo,
+    .service-tab.active-crunchyroll,
+    .service-tab.active-sky,
+    .service-tab.active-disney,
+    .service-tab.active-claro {
+      background: var(--accent-gradient);
+      border-color: rgba(255, 255, 255, 0.3);
+      color: #ffffff;
+      box-shadow: 0 8px 28px var(--accent-glow), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+      transform: scale(1.03);
+    }
+
+    .service-tab.tab-locked {
+      opacity: 0.45;
+      cursor: not-allowed !important;
+      border: 1px dashed rgba(255, 51, 68, 0.5) !important;
+      background: rgba(15, 15, 25, 0.5) !important;
+      box-shadow: none !important;
+      filter: grayscale(0.3);
+      position: relative;
+    }
+
+    .service-tab.tab-locked:hover {
+      opacity: 0.75;
+      border-color: #ff3344 !important;
+      transform: none !important;
+    }
+
+    .tab-lock-indicator {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      margin-left: 4px;
+      background: rgba(255, 51, 68, 0.25);
+      border: 1px solid rgba(255, 51, 68, 0.6);
+      border-radius: 6px;
+      padding: 1px 5px;
+      animation: lockPulse 2s infinite ease-in-out;
+    }
+
+    @keyframes lockPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.12); }
+    }
+
+    /* ======================================================== */
+    /* 💎 CYBER CARD - ULTRA FROSTED GLASS PANELS               */
+    /* ======================================================== */
+    .cyber-card {
+      background: var(--panel-bg);
+      border: 1px solid var(--panel-border-glass);
+      border-radius: 28px;
+      padding: 24px;
+      backdrop-filter: blur(32px) saturate(200%);
+      -webkit-backdrop-filter: blur(32px) saturate(200%);
+      box-shadow: 
+        0 24px 60px rgba(0, 0, 0, 0.65), 
+        inset 0 1px 0 rgba(255, 255, 255, 0.12), 
+        0 0 35px var(--accent-glow-subtle);
+      position: relative;
+      transition: border-color 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .card-title {
+      font-family: var(--font-display);
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: 0.6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s ease;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .card-title span {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .badge-signal {
+      font-size: 10.5px;
+      font-weight: 700;
+      color: #00ff88;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      letter-spacing: 0.5px;
+      background: rgba(0, 255, 136, 0.1);
+      border: 1px solid rgba(0, 255, 136, 0.3);
+      padding: 4px 12px;
+      border-radius: 20px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .payload-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 18px;
+      width: 100%;
+    }
+
+    .payload-box {
+      background: linear-gradient(160deg, rgba(16, 24, 42, 0.65) 0%, rgba(8, 12, 24, 0.88) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 20px;
+      padding: 15px 18px;
+      transition: all 0.3s ease;
+      box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.5), 0 4px 16px rgba(0, 0, 0, 0.25);
+      min-width: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 80px;
+    }
+
+    .payload-box:hover {
+      border-color: rgba(255, 255, 255, 0.18);
+      background: linear-gradient(160deg, rgba(22, 32, 56, 0.75) 0%, rgba(10, 16, 30, 0.95) 100%);
+      box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.5), 0 0 25px var(--accent-glow-subtle);
+    }
+
+    .payload-box-label {
+      font-size: 10px;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+
+    .payload-box-val {
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 700;
+      color: #fff;
+      min-width: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      line-height: 1.35;
+    }
+
+    #active-email-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      min-width: 0;
+      flex: 1;
+      font-family: var(--font-mono);
+      font-size: 12.5px;
+      letter-spacing: 0.2px;
+      color: #f1f5f9;
+    }
+
+    #active-account-plan {
+      white-space: normal !important;
+      word-break: break-word !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 7px !important;
+      padding: 5px 12px;
+      background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(218, 165, 32, 0.08) 100%);
+      border: 1px solid rgba(255, 215, 0, 0.45);
+      border-radius: 14px;
+      color: #ffd700 !important;
+      font-weight: 800;
+      font-size: 12px;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      box-shadow: 0 0 16px rgba(255, 215, 0, 0.2);
+    }
+
+    .badge-country {
+      background: var(--accent-gradient);
+      border: none;
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: 900;
+      padding: 3px 8px;
+      border-radius: 10px;
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px var(--accent-glow);
+    }
+
+    .payload-footer {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 14px;
+    }
+
+    .payload-cookie-tag {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-dim);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding: 5px 10px;
+      background: rgba(0, 0, 0, 0.35);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      display: inline-block;
+    }
+
+    #live-stock-badge {
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 800;
+      color: #34d399;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      padding: 4px 12px;
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 0 14px rgba(16, 185, 129, 0.15);
+    }
+
+    /* ======================================================== */
+    /* 📺 SMART TV PIN DISPLAY (SQUIRCLES & HIGH-END GLOW)       */
+    /* ======================================================== */
+    .pin-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      margin: 4px 0;
+    }
+
+    .pin-label-row {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .pin-title {
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      color: var(--text-bright);
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .pin-counter {
+      background: var(--accent-glow-subtle);
+      border: 1px solid var(--panel-border);
+      color: var(--accent-color);
+      padding: 5px 14px;
+      border-radius: 30px;
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      box-shadow: 0 2px 10px var(--accent-glow-subtle);
+    }
+
+    .pin-grid-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 530px;
+      margin: 8px 0;
+      cursor: text;
+    }
+
+    .pin-native-input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.001;
+      z-index: 10;
+      cursor: text;
+      font-size: 20px;
+      border: none;
+      background: transparent;
+      color: transparent;
+      caret-color: transparent;
+      -webkit-user-select: text;
+      user-select: text;
+      touch-action: manipulation;
+    }
+
+    .pin-grid {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 10px;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+
+    .pin-slot {
+      aspect-ratio: 1 / 1.15;
+      background: linear-gradient(180deg, rgba(20, 28, 48, 0.6) 0%, rgba(6, 10, 20, 0.85) 100%);
+      border: 1.6px solid rgba(255, 255, 255, 0.1);
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--accent-color);
+      text-shadow: 0 0 14px var(--accent-glow);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: text;
+      box-shadow: 
+        inset 0 2px 6px rgba(0, 0, 0, 0.6), 
+        inset 0 1px 0 rgba(255, 255, 255, 0.08), 
+        0 6px 18px rgba(0, 0, 0, 0.35);
+    }
+
+    .pin-slot:hover {
+      border-color: rgba(255, 255, 255, 0.25);
+      background: linear-gradient(180deg, rgba(26, 36, 62, 0.75) 0%, rgba(8, 14, 26, 0.95) 100%);
+    }
+
+    .pin-slot.active {
+      border-color: var(--accent-color);
+      box-shadow: 0 0 28px var(--accent-glow), inset 0 0 12px var(--accent-glow-subtle);
+      animation: pulseSlotBorder 1.4s infinite alternate ease-in-out;
+      background: linear-gradient(180deg, rgba(30, 42, 72, 0.8) 0%, rgba(10, 16, 32, 0.95) 100%);
+    }
+
+    .pin-slot.filled {
+      border-color: rgba(255, 255, 255, 0.35);
+      background: var(--accent-gradient);
+      box-shadow: 0 8px 30px var(--accent-glow), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+      transform: scale(1.05);
+      color: #ffffff;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+      animation: popSlot 0.22s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    @keyframes popSlot {
+      0% { transform: scale(0.85); }
+      70% { transform: scale(1.12); }
+      100% { transform: scale(1.05); }
+    }
+
+    @keyframes pulseSlotBorder {
+      from { border-color: var(--accent-color); box-shadow: 0 0 16px var(--accent-glow); }
+      to { border-color: #ffffff; box-shadow: 0 0 28px var(--accent-glow); }
+    }
+
+    .pin-hint {
+      font-size: 12px;
+      color: var(--text-dim);
+      letter-spacing: 0.3px;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .pin-actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .mobile-keypad {
+      display: none;
+      flex-direction: column;
+      gap: 8px;
+      width: 100%;
+      max-width: 330px;
+      margin: 8px auto 0;
+    }
+
+    .keypad-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .key-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 18px;
+      color: #fff;
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 800;
+      padding: 14px;
+      cursor: pointer;
+      transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+      touch-action: manipulation;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    }
+
+    .key-btn:active {
+      background: var(--accent-gradient);
+      border-color: rgba(255, 255, 255, 0.3);
+      color: #fff;
+      transform: scale(0.93);
+      box-shadow: 0 0 20px var(--accent-glow);
+    }
+
+    .key-action {
+      font-size: 14px;
+      color: var(--accent-color);
+      font-weight: 800;
+    }
+
+    @media (max-width: 768px) {
+      .mobile-keypad {
+        display: flex;
+      }
+    }
+
+    /* ======================================================== */
+    /* ⚡ MAIN CALL-TO-ACTION TRANSMIT BUTTON                    */
+    /* ======================================================== */
+    .btn-transmit {
+      width: 100%;
+      background: var(--accent-gradient);
+      border: none;
+      border-radius: 50px;
+      padding: 19px 28px;
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing: 0.9px;
+      color: #ffffff;
+      cursor: pointer;
+      box-shadow: 
+        0 12px 35px var(--accent-glow), 
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        0 0 20px rgba(0, 0, 0, 0.4);
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      position: relative;
+      overflow: hidden;
+      margin-top: 8px;
+    }
+
+    .btn-transmit::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -60%;
+      width: 35%;
+      height: 200%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+      transform: rotate(30deg);
+      animation: lightSweep 4s infinite ease-in-out;
+    }
+
+    @keyframes lightSweep {
+      0% { left: -70%; }
+      30%, 100% { left: 140%; }
+    }
+
+    .btn-transmit:hover:not(:disabled) {
+      transform: translateY(-2px);
+      background: var(--accent-gradient-hover);
+      box-shadow: 0 16px 45px var(--accent-glow), inset 0 1px 0 rgba(255, 255, 255, 0.65);
+    }
+
+    .btn-transmit:disabled {
+      opacity: 0.85;
+      cursor: wait;
+      box-shadow: 0 6px 20px var(--accent-glow-subtle);
+    }
+
+    .btn-transmit.loading {
+      animation: transmit-pulse 1.2s infinite ease-in-out;
+    }
+
+    @keyframes transmit-pulse {
+      0%, 100% { box-shadow: 0 6px 20px var(--accent-glow-subtle); }
+      50% { box-shadow: 0 12px 50px var(--accent-glow); }
+    }
+
+    .alert-banner {
+      display: none;
+      padding: 14px 20px;
+      border-radius: 18px;
+      font-size: 12.5px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .alert-error {
+      background: rgba(239, 35, 60, 0.15);
+      border: 1px solid #ef233c;
+      color: #fecdd3;
+    }
+
+    .alert-success {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid #10b981;
+      color: #a7f3d0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ======================================================== */
+    /* 📋 LOWER DECK: TABS & QUEUE                              */
+    /* ======================================================== */
+    .deck-tabs-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .window-dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .window-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+    }
+
+    .dot-red { background: #ff5f56; }
+    .dot-yellow { background: #ffbd2e; }
+    .dot-green { background: #27c93f; }
+
+    .deck-nav {
+      display: flex;
+      gap: 8px;
+    }
+
+    .deck-nav-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-dim);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-family: var(--font-body);
+      font-size: 11.5px;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: 0.3px;
+      transition: all 0.2s ease;
+    }
+
+    .deck-nav-btn.active {
+      background: var(--accent-glow-subtle);
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+    }
+
+    .cookie-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: 310px;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+
+    .cookie-list::-webkit-scrollbar {
+      width: 5px;
+    }
+    .cookie-list::-webkit-scrollbar-thumb {
+      background: var(--panel-border);
+      border-radius: 10px;
+    }
+
+    .cookie-row {
+      background: rgba(0, 0, 0, 0.45);
+      border: 1px solid var(--panel-border-glass);
+      border-radius: 16px;
+      padding: 11px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11.5px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .cookie-row:hover {
+      border-color: var(--accent-color);
+      background: var(--accent-glow-subtle);
+      transform: translateX(2px);
+    }
+
+    .cookie-row.selected {
+      border-color: var(--accent-color);
+      background: var(--accent-glow-subtle);
+      box-shadow: 0 0 14px var(--accent-glow-subtle);
+    }
+
+    .cookie-row-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      overflow: hidden;
+    }
+
+    .cookie-email {
+      color: #fff;
+      font-weight: 700;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .cookie-row-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .kernel-logs-box {
+      background: rgba(0, 0, 0, 0.78);
+      border: 1px solid var(--panel-border-glass);
+      border-radius: 16px;
+      padding: 14px;
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: #e2e8f0;
+      height: 220px;
+      overflow-y: auto;
+      line-height: 1.65;
+      display: none;
+      box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    .kernel-logs-box::-webkit-scrollbar {
+      width: 5px;
+    }
+    .kernel-logs-box::-webkit-scrollbar-thumb {
+      background: var(--panel-border);
+      border-radius: 10px;
+    }
+
+    .kernel-log-line {
+      margin-bottom: 5px;
+      word-break: break-word;
+    }
+
+    .kernel-log-time {
+      color: var(--text-dim);
+      margin-right: 6px;
+      font-weight: 600;
+    }
+
+    .kernel-log-line.error .kernel-log-msg {
+      color: #ff4d6d;
+      font-weight: 700;
+      text-shadow: 0 0 10px rgba(255, 77, 109, 0.4);
+    }
+
+    .kernel-log-line.success .kernel-log-msg {
+      color: #00ff88;
+      font-weight: 700;
+      text-shadow: 0 0 10px rgba(0, 255, 136, 0.4);
+    }
+
+    .kernel-log-line.warn .kernel-log-msg {
+      color: #ffd700;
+      font-weight: 600;
+      text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    }
+
+    /* ======================================================== */
+    /* 🔐 LOGIN OVERLAY - CINEMATIC GATEWAY                     */
+    /* ======================================================== */
+    #login-overlay {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      background: radial-gradient(ellipse at 50% 15%, rgba(15, 23, 42, 0.96) 0%, rgba(8, 12, 22, 0.98) 60%, #03060d 100%);
+      backdrop-filter: blur(40px);
+      -webkit-backdrop-filter: blur(40px);
+      z-index: 10000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    #login-overlay::before, #login-overlay::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(140px);
+      pointer-events: none;
+      opacity: 0.28;
+      animation: floatAuraSmooth 14s ease-in-out infinite alternate;
+    }
+
+    #login-overlay::before {
+      width: 520px;
+      height: 520px;
+      background: radial-gradient(circle, rgba(14, 165, 233, 0.3) 0%, rgba(99, 102, 241, 0.2) 50%, transparent 75%);
+      top: 5%;
+      left: 15%;
+    }
+
+    #login-overlay::after {
+      width: 480px;
+      height: 480px;
+      background: radial-gradient(circle, rgba(229, 9, 20, 0.25) 0%, rgba(249, 115, 22, 0.18) 50%, transparent 75%);
+      bottom: 5%;
+      right: 15%;
+      animation-delay: -7s;
+    }
+
+    @keyframes floatAuraSmooth {
+      0% { transform: translate(0px, 0px) scale(1); }
+      50% { transform: translate(30px, -25px) scale(1.08); }
+      100% { transform: translate(-25px, 25px) scale(0.96); }
+    }
+
+    .login-card {
+      width: 100%;
+      max-width: 450px;
+      background: linear-gradient(180deg, rgba(20, 27, 45, 0.88) 0%, rgba(10, 14, 25, 0.96) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 28px;
+      padding: 36px 30px 28px;
+      box-shadow: 
+        0 30px 80px -15px rgba(0, 0, 0, 0.95), 
+        0 0 50px rgba(56, 189, 248, 0.06), 
+        inset 0 1px 0 rgba(255, 255, 255, 0.18);
+      text-align: center;
+      position: relative;
+      animation: modalPremiumSlide 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      overflow: hidden;
+      z-index: 1;
+      backdrop-filter: blur(32px) saturate(180%);
+      -webkit-backdrop-filter: blur(32px) saturate(180%);
+    }
+
+    @keyframes modalPremiumSlide {
+      from { opacity: 0; transform: translateY(22px) scale(0.97); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .login-card-topline {
+      position: absolute;
+      top: 0;
+      left: 15%;
+      width: 70%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.9) 30%, rgba(168, 85, 247, 0.9) 70%, transparent);
+      box-shadow: 0 0 14px rgba(56, 189, 248, 0.5);
+    }
+
+    .login-brand-chips {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 22px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .login-chip {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      letter-spacing: 0.3px;
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #94a3b8;
+      user-select: none;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .login-chip-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .login-chip:hover {
+      transform: translateY(-1px);
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .login-chip.nf { border-color: rgba(229, 9, 20, 0.3); }
+    .login-chip.nf .login-chip-dot { background: #E50914; box-shadow: 0 0 7px #E50914; }
+    .login-chip.nf:hover { border-color: #E50914; box-shadow: 0 0 14px rgba(229, 9, 20, 0.25); color: #fff; }
+
+    .login-chip.hbo { border-color: rgba(168, 85, 247, 0.3); }
+    .login-chip.hbo .login-chip-dot { background: #A855F7; box-shadow: 0 0 7px #A855F7; }
+    .login-chip.hbo:hover { border-color: #A855F7; box-shadow: 0 0 14px rgba(168, 85, 247, 0.25); color: #fff; }
+
+    .login-chip.cr { border-color: rgba(244, 117, 33, 0.3); }
+    .login-chip.cr .login-chip-dot { background: #F47521; box-shadow: 0 0 7px #F47521; }
+    .login-chip.cr:hover { border-color: #F47521; box-shadow: 0 0 14px rgba(244, 117, 33, 0.25); color: #fff; }
+
+    .login-chip.sky { border-color: rgba(0, 160, 227, 0.3); }
+    .login-chip.sky .login-chip-dot { background: #00A0E3; box-shadow: 0 0 7px #00A0E3; }
+    .login-chip.sky:hover { border-color: #00A0E3; box-shadow: 0 0 14px rgba(0, 160, 227, 0.25); color: #fff; }
+
+    .login-chip.disney { border-color: rgba(0, 210, 255, 0.3); }
+    .login-chip.disney .login-chip-dot { background: #00d2ff; box-shadow: 0 0 7px #00d2ff; }
+    .login-chip.disney:hover { border-color: #00d2ff; box-shadow: 0 0 14px rgba(0, 210, 255, 0.25); color: #fff; }
+
+    .login-chip.claro { border-color: rgba(229, 29, 37, 0.3); }
+    .login-chip.claro .login-chip-dot { background: #e51d25; box-shadow: 0 0 7px #e51d25; }
+    .login-chip.claro:hover { border-color: #e51d25; box-shadow: 0 0 14px rgba(229, 29, 37, 0.25); color: #fff; }
+
+    /* Hero Emblem */
+    .login-orbital-wrap {
+      position: relative;
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-orbital-ring {
+      position: absolute;
+      inset: -5px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(56, 189, 248, 0.16) 0%, rgba(168, 85, 247, 0.08) 50%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .login-icon-box {
+      width: 60px;
+      height: 60px;
+      border-radius: 20px;
+      background: linear-gradient(145deg, rgba(30, 41, 59, 0.85) 0%, rgba(15, 23, 42, 0.98) 100%);
+      border: 1.5px solid rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 
+        0 10px 25px rgba(0, 0, 0, 0.5), 
+        inset 0 1px 0 rgba(255, 255, 255, 0.25),
+        0 0 22px rgba(56, 189, 248, 0.2);
+      position: relative;
+      z-index: 2;
+    }
+
+    .login-icon-svg {
+      width: 32px;
+      height: 32px;
+      fill: none;
+      stroke: url(#loginIconGrad);
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.5));
+    }
+
+    .login-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 0.3px;
+      margin-bottom: 4px;
+      position: relative;
+      z-index: 2;
+      background: linear-gradient(135deg, #ffffff 40%, #e2e8f0 75%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 2px 10px rgba(56, 189, 248, 0.2));
+    }
+
+    .login-sub {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 12px;
+      color: #94a3b8;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .login-status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      border-radius: 20px;
+      padding: 4px 13px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 10.5px;
+      font-weight: 700;
+      color: #34d399;
+      letter-spacing: 0.3px;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .login-pulse-dot {
+      width: 6.5px;
+      height: 6.5px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 8px #10b981;
+      position: relative;
+    }
+
+    .login-input-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1.5px solid rgba(255, 255, 255, 0.12);
+      border-radius: 16px;
+      padding: 4px 12px;
+      margin-bottom: 16px;
+      box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: all 0.25s ease;
+      z-index: 2;
+    }
+
+    .login-input-wrap:focus-within {
+      border-color: #38bdf8;
+      box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.4), 0 0 20px rgba(56, 189, 248, 0.25);
+      background: rgba(10, 16, 30, 0.95);
+    }
+
+    .login-input-icon {
+      color: #38bdf8;
+      pointer-events: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-right: 8px;
+    }
+
+    .login-input {
+      flex: 1;
+      min-width: 0;
+      background: transparent;
+      border: none;
+      padding: 12px 6px;
+      color: #ffffff;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13.5px;
+      letter-spacing: 1px;
+      outline: none;
+    }
+
+    .login-input::placeholder {
+      color: rgba(148, 163, 184, 0.55);
+      letter-spacing: 0.2px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 12.5px;
+      font-weight: 500;
+    }
+
+    .login-input-actions {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      flex-shrink: 0;
+    }
+
+    .btn-paste-login {
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      color: #38bdf8;
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 11px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-paste-login:hover {
+      background: rgba(56, 189, 248, 0.22);
+      border-color: #38bdf8;
+      color: #ffffff;
+    }
+
+    .btn-eye {
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      cursor: pointer;
+      padding: 6px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    .btn-eye:hover {
+      color: #38bdf8;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .login-options {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 18px;
+      z-index: 2;
+      position: relative;
+    }
+
+    .login-checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      color: #94a3b8;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    .login-checkbox-label:hover {
+      color: #f1f5f9;
+    }
+
+    .login-checkbox {
+      accent-color: #0284c7;
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .btn-unlock {
+      width: 100%;
+      background: linear-gradient(135deg, #0284c7 0%, #2563eb 50%, #4f46e5 100%);
+      color: #ffffff;
+      border: none;
+      border-radius: 16px;
+      padding: 16px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      cursor: pointer;
+      box-shadow: 
+        0 10px 25px -4px rgba(37, 99, 235, 0.5), 
+        inset 0 1px 0 rgba(255, 255, 255, 0.25);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      position: relative;
+      overflow: hidden;
+      z-index: 2;
+    }
+
+    .btn-unlock:hover {
+      transform: translateY(-2px);
+      box-shadow: 
+        0 14px 35px -4px rgba(37, 99, 235, 0.65), 
+        0 0 25px rgba(79, 70, 229, 0.35);
+      filter: brightness(1.05);
+    }
+
+    .btn-unlock:active {
+      transform: translateY(1px);
+    }
+
+    .login-badges-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 18px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .login-mini-badge {
+      background: rgba(255, 255, 255, 0.025);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 10px 4px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      color: #94a3b8;
+      letter-spacing: 0.2px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.2s ease;
+    }
+
+    .login-mini-badge .lmb-label {
+      font-size: 9.5px;
+      font-weight: 700;
+      color: #94a3b8;
+      letter-spacing: 0.3px;
+    }
+
+    .login-mini-badge .lmb-val {
+      font-size: 8.5px;
+      font-weight: 800;
+    }
+
+    .login-mini-badge:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(56, 189, 248, 0.3);
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    .login-error {
+      display: none;
+      color: #ff4d5a;
+      font-size: 12.5px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      margin-top: 14px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: rgba(255, 51, 68, 0.12);
+      border: 1px solid rgba(255, 51, 68, 0.4);
+      box-shadow: 0 0 20px rgba(255, 51, 68, 0.15);
+      z-index: 2;
+      position: relative;
+      animation: shakeLogin 0.4s ease-in-out;
+    }
+
+    @keyframes shakeLogin {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-6px); }
+      40%, 80% { transform: translateX(6px); }
+    }
+
+    /* 🏆 SUCCESS MODAL - VIP CELEBRATION */
+    #success-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(3, 7, 18, 0.92);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      z-index: 10001;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .success-card {
+      width: 100%;
+      max-width: 480px;
+      background: var(--panel-bg);
+      border: 2px solid var(--accent-color);
+      border-radius: 32px;
+      padding: 38px 32px;
+      text-align: center;
+      box-shadow: 0 15px 70px var(--accent-glow), inset 0 0 30px var(--accent-glow-subtle);
+      position: relative;
+      animation: modalSlide 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    @keyframes modalSlide {
+      from { transform: scale(0.85); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .success-badge-icon {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      background: var(--accent-glow-subtle);
+      border: 3px solid var(--accent-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      margin: 0 auto 20px;
+      box-shadow: 0 0 35px var(--accent-glow);
+    }
+
+    .success-title {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--accent-color);
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .success-subtitle {
+      font-size: 13px;
+      color: var(--text-dim);
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+
+    .success-data-box {
+      background: rgba(0, 0, 0, 0.55);
+      border: 1px solid var(--panel-border-glass);
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      text-align: left;
+    }
+
+    .success-data-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12.5px;
+    }
+
+    .success-data-key {
+      color: var(--text-dim);
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+    }
+
+    .success-data-val {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .btn-finish {
+      width: 100%;
+      background: var(--accent-gradient);
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      padding: 17px;
+      font-family: var(--font-display);
+      font-size: 15.5px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      cursor: pointer;
+      box-shadow: 0 8px 30px var(--accent-glow);
+      transition: all 0.25s ease;
+    }
+
+    .btn-finish:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px var(--accent-glow);
+    }
+
+    /* ======================================================== */
+    /* 📱 RESPONSIVE MOBILE TWEAKS                              */
+    /* ======================================================== */
+    @media (max-width: 600px) {
+      body {
+        padding: 16px 12px 60px;
+      }
+      .deck-container {
+        gap: 14px;
+        width: 100%;
+        max-width: 100%;
+      }
+      .brand-title {
+        font-size: 14.5px;
+      }
+      .telemetry-bar {
+        padding: 8px 12px;
+        border-radius: 30px;
+        gap: 6px;
+      }
+      .telemetry-left {
+        gap: 8px;
+        font-size: 10.5px;
+      }
+      #telemetry-ip {
+        display: none !important;
+      }
+      .telemetry-right {
+        gap: 5px;
+      }
+      .btn-icon {
+        padding: 6px 10px;
+        font-size: 10.5px;
+        border-radius: 20px;
+        gap: 4px;
+        white-space: nowrap;
+      }
+      .service-switcher {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+        border-radius: 24px;
+        padding: 6px;
+      }
+      .service-tab {
+        padding: 10px 8px;
+        font-size: 12px;
+        border-radius: 18px;
+      }
+      .cyber-card {
+        padding: 18px 16px;
+        border-radius: 22px;
+      }
+      .payload-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      .pin-grid {
+        gap: 6px;
+      }
+      .pin-slot {
+        font-size: 20px;
+        border-radius: 14px;
+      }
+      .btn-transmit {
+        padding: 17px 20px;
+        font-size: 15px;
+        border-radius: 40px;
+      }
+      .login-card {
+        padding: 28px 20px;
+        border-radius: 24px;
+      }
+    }
+</style>
+</head>
+<body data-service="netflix">
+
+  <div class="ambient-glow orb-1"></div>
+  <div class="ambient-glow orb-2"></div>
+
+  <canvas id="matrix-canvas"></canvas>
+  <canvas id="confetti-canvas"></canvas>
+
+  <div class="deck-container">
+
+    <header class="brand-header">
+      <div class="brand-badge">
+        <div class="brand-icon-wrapper">
+          <svg viewBox="0 0 24 24" class="brand-icon-svg">
+            <rect x="2" y="7" width="20" height="15" rx="3" ry="3"></rect>
+            <polyline points="17 2 12 7 7 2"></polyline>
+          </svg>
+          <span class="brand-live-dot"></span>
+        </div>
+        <div class="brand-info">
+          <h1 class="brand-title">STREAM ACTIVATOR <span class="brand-title-badge">👑 4K ULTRA HD</span></h1>
+          <p class="brand-subtitle">Central Oficial de Ativação Instantânea para Smart TVs</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="telemetry-bar">
+      <div class="telemetry-left">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <div class="status-radar"></div>
+          <span style="font-weight: 800; color: var(--accent-color);">ONLINE</span>
+        </div>
+        <span id="telemetry-ip" style="color: var(--text-dim);">IP: 127.0.0.1</span>
+        <span id="telemetry-ping" style="color: var(--accent-color); font-weight:700;">PING: 18ms</span>
+        <span id="telemetry-validity" style="display: none; align-items: center; gap: 5px; font-size: 10.5px; font-weight: 700; color: #00ff66; padding: 2px 8px; border-radius: 8px; background: rgba(0,255,102,0.1); border: 1px solid rgba(0,255,102,0.3);">
+          📅 <span id="telemetry-validity-text">Vitalício</span>
+        </span>
+      </div>
+      <div class="telemetry-right">
+        <button class="btn-icon" id="sound-toggle-btn" onclick="event.stopPropagation(); toggleSound();">
+          <span id="sound-icon">🔊</span> SOM
+        </button>
+        <button class="btn-icon" onclick="event.stopPropagation(); logoutAndSwitchAccount();" style="color: #00E5FF; border-color: rgba(0, 229, 255, 0.4);">
+          🔑 TROCAR SENHA
+        </button>
+      </div>
+    </div>
+
+    <div class="service-switcher">
+      <div class="service-tab active-netflix" id="tab-netflix" onclick="event.stopPropagation(); switchService('netflix');">
+        <span>🔴 NETFLIX</span>
+        <span class="tab-lock-indicator" id="lock-netflix" style="display:none;">🔒</span>
+      </div>
+      <div class="service-tab" id="tab-hbo" onclick="event.stopPropagation(); switchService('hbo');">
+        <span>🟣 HBO MAX</span>
+        <span class="tab-lock-indicator" id="lock-hbo" style="display:none;">🔒</span>
+      </div>
+      <div class="service-tab" id="tab-crunchyroll" onclick="event.stopPropagation(); switchService('crunchyroll');">
+        <span>🟠 CRUNCHYROLL</span>
+        <span class="tab-lock-indicator" id="lock-crunchyroll" style="display:none;">🔒</span>
+      </div>
+      <div class="service-tab" id="tab-sky" onclick="event.stopPropagation(); switchService('sky');">
+        <span>🔵 SKY+ TV</span>
+        <span class="tab-lock-indicator" id="lock-sky" style="display:none;">🔒</span>
+      </div>
+      <div class="service-tab" id="tab-disney" onclick="event.stopPropagation(); switchService('disney');">
+        <span>🏰 DISNEY+</span>
+        <span class="tab-lock-indicator" id="lock-disney" style="display:none;">🔒</span>
+      </div>
+      <div class="service-tab" id="tab-claro" onclick="event.stopPropagation(); switchService('claro');">
+        <span>⚡ CLARO TV+</span>
+        <span class="tab-lock-indicator" id="lock-claro" style="display:none;">🔒</span>
+      </div>
+    </div>
+
+    <div class="cyber-card">
+      <div class="card-header">
+        <div class="card-title" id="card-service-title">
+          <span>🔴 CONTA NETFLIX PRONTA PARA ATIVAÇÃO</span>
+        </div>
+        <div class="badge-signal">
+          <div class="status-radar" style="width:6px; height:6px;"></div>
+          <span>SINAL ONLINE</span>
+        </div>
+      </div>
+
+      <div class="payload-grid">
+        <div class="payload-box">
+          <div class="payload-box-label">
+            <span>👤</span> CONTA AUTORIZADA
+          </div>
+          <div class="payload-box-val" id="active-account-email">
+            <span class="badge-country" id="active-account-country">BR</span>
+            <span id="active-email-text" style="overflow:hidden; text-overflow:ellipsis;">Carregando...</span>
+          </div>
+        </div>
+        <div class="payload-box">
+          <div class="payload-box-label">
+            <span>⚡</span> PLANO EXCLUSIVO
+          </div>
+          <div class="payload-box-val" id="active-account-plan" style="color: #ffd700;">
+            👑 Premium VIP 4K
+          </div>
+        </div>
+      </div>
+
+      <div class="payload-footer">
+        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; gap: 8px;">
+          <div class="payload-cookie-tag" id="active-cookie-filename" style="max-width: 60%;">
+            COOKIE: carregando...
+          </div>
+          <div id="live-stock-badge" style="font-family: var(--font-mono); font-size: 11px; font-weight: 800; color: #00ff66; background: rgba(0,255,102,0.1); border: 1px solid rgba(0,255,102,0.3); padding: 3px 9px; border-radius: 8px; display: inline-flex; align-items: center; gap: 5px;">
+            <span>📦</span> <span id="live-stock-count">Verificando estoque...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cyber-card">
+      <div class="pin-section">
+        <div class="pin-label-row">
+          <div class="pin-title" id="hud-section-title">📺 CONECTAR SMART TV // NETFLIX</div>
+          <div class="pin-counter" id="digit-counter">0 / 8 DÍGITOS</div>
+        </div>
+
+        <div class="pin-grid-wrapper" onclick="focusPinInput(true)">
+          <input type="text" id="hidden-code-input" class="pin-native-input" name="tv_code_input_field" maxlength="8" autocomplete="new-password" autocorrect="off" autocapitalize="characters" spellcheck="false" inputmode="text" placeholder="" data-lpignore="true">
+          <div class="pin-grid" id="pin-grid">
+            <div class="pin-slot" id="slot-0"></div>
+            <div class="pin-slot" id="slot-1"></div>
+            <div class="pin-slot" id="slot-2"></div>
+            <div class="pin-slot" id="slot-3"></div>
+            <div class="pin-slot" id="slot-4"></div>
+            <div class="pin-slot" id="slot-5"></div>
+            <div class="pin-slot" id="slot-6"></div>
+            <div class="pin-slot" id="slot-7"></div>
+          </div>
+        </div>
+
+        <div class="pin-hint" id="pin-hint-text">💡 Digite o código exibido na tela da sua Smart TV ou clique em Colar</div>
+
+        <div class="pin-actions">
+          <button type="button" class="btn-icon" onclick="event.stopPropagation(); pasteCode();">
+            📋 COLAR CÓDIGO
+          </button>
+          <button type="button" class="btn-icon" onclick="event.stopPropagation(); clearCode();">
+            ✖ LIMPAR
+          </button>
+        </div>
+
+        <div class="mobile-keypad" id="mobile-keypad">
+          <div class="keypad-row">
+            <button type="button" class="key-btn" onclick="event.stopPropagation(); appendPinChar('1');">1</button>
+            <button type="button" class="key-btn" onclick="event.stopPropagation(); appendPinChar('2');">2</button>
+            <button type="button" class="key-btn" onclick="event.stopPropagation(); appendPinChar('3');">3</button>
+          </div>
+          <div class="keypad-row">
+            <button type="button" class="key-btn" onclick="event.stopPropagation(); appendPinChar('4');">4</button>
+            <button type="button" class="key-btn" onclick="event.stopPropagation(); appendPinChar('5');">5</button>
+            <button type="button" class="key-btn" onclick="event.stopPropagation(); appendPinChar('6');">6</button>
+          </div>
+          <div class="keypad-row">
+            <button type="button" class="key-btn" onclick="event.stopPropagation(); appendPinChar('7');">7</button>
+            <button type="button" class="key-btn" onclick="event.stopPropagation(); appendPinChar('8');">8</button>
+            <button type="button" class="key-btn" onclick="event.stopPropagation(); appendPinChar('9');">9</button>
+          </div>
+          <div class="keypad-row">
+            <button type="button" class="key-btn key-action" onclick="event.stopPropagation(); clearCode();">CLR</button>
+            <button type="button" class="key-btn" onclick="event.stopPropagation(); appendPinChar('0');">0</button>
+            <button type="button" class="key-btn key-action" onclick="event.stopPropagation(); deletePinChar();">⌫</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-transmit" id="btn-transmit" onclick="event.stopPropagation(); transmitActivation();">
+        <span id="transmit-btn-text">CONECTAR SMART TV AGORA ⚡</span>
+      </button>
+
+      <div class="alert-banner alert-error" id="alert-error" style="margin-top: 14px;">
+        <span id="alert-error-text">Erro ao autenticar.</span>
+      </div>
+      <div class="alert-banner alert-success" id="alert-success" style="margin-top: 14px;">
+        <span id="alert-success-text">Ativação realizada com sucesso!</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="login-overlay" onclick="event.stopPropagation();">
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" aria-hidden="true">
+      <defs>
+        <linearGradient id="loginIconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#38bdf8"/>
+          <stop offset="100%" stop-color="#a855f7"/>
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <div class="login-card">
+      <div class="login-card-topline"></div>
+      
+      <div class="login-brand-chips">
+        <span class="login-chip nf"><span class="login-chip-dot"></span>NETFLIX</span>
+        <span class="login-chip hbo"><span class="login-chip-dot"></span>HBO MAX</span>
+        <span class="login-chip cr"><span class="login-chip-dot"></span>CRUNCHYROLL</span>
+        <span class="login-chip sky"><span class="login-chip-dot"></span>SKY+</span>
+        <span class="login-chip disney"><span class="login-chip-dot"></span>DISNEY+</span>
+        <span class="login-chip claro"><span class="login-chip-dot"></span>CLARO TV+</span>
+      </div>
+
+      <div class="login-orbital-wrap">
+        <div class="login-orbital-ring"></div>
+        <div class="login-icon-box">
+          <svg class="login-icon-svg" viewBox="0 0 24 24">
+            <rect x="2" y="4" width="20" height="13" rx="3"></rect>
+            <path d="M8 21h8"></path>
+            <path d="M12 17v4"></path>
+            <polygon points="10 8.5 15 11 10 13.5 10 8.5" fill="url(#loginIconGrad)"></polygon>
+          </svg>
+        </div>
+      </div>
+
+      <div class="login-title">CENTRAL DE ATIVAÇÕES</div>
+      <div class="login-sub">Conexão Smart TV • Acesso Autorizado</div>
+
+      <div class="login-status-badge">
+        <span class="login-pulse-dot"></span>
+        <span>SISTEMA 100% OPERACIONAL • PROTEÇÃO ATIVA</span>
+      </div>
+
+      <div class="login-input-wrap">
+        <span class="login-input-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 2l-2 2m-1.5 1.5L14 9a5 5 0 1 0 3 3l5-5-2-2-2.5 2.5z"></path>
+          </svg>
+        </span>
+        <!-- 🛡️ Honeypot invisível anti-bot -->
+        <input type="text" id="bot-check-username" name="username" style="display:none !important; position:absolute; left:-9999px;" tabindex="-1" autocomplete="off">
+        <input type="password" id="login-password-input" class="login-input" placeholder="Digite ou cole sua senha de acesso..." onkeydown="if(event.key==='Enter') executeLogin();">
+        <div class="login-input-actions">
+          <button type="button" class="btn-paste-login" onclick="pasteIntoInput('login-password-input')" title="Colar Senha da Área de Transferência">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+            Colar
+          </button>
+          <button class="btn-eye" type="button" onclick="togglePasswordVisibility()" title="Mostrar/Ocultar Senha">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="login-options">
+        <label class="login-checkbox-label">
+          <input type="checkbox" id="remember-me" class="login-checkbox" checked>
+          <span>Lembrar meu acesso neste dispositivo</span>
+        </label>
+      </div>
+
+      <button class="btn-unlock" onclick="executeLogin()">
+        <span>ACESSAR CENTRAL DE ATIVAÇÕES</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </button>
+
+      <div class="login-error" id="login-error-msg"></div>
+
+      <div class="login-badges-row">
+        <div class="login-mini-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          <span class="lmb-label">CRIPTOGRAFIA</span>
+          <span class="lmb-val" style="color: #38bdf8;">256-BIT SSL</span>
+        </div>
+        <div class="login-mini-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          <span class="lmb-label">RESPOSTA</span>
+          <span class="lmb-val" style="color: #34d399;">ULTRA RÁPIDA</span>
+        </div>
+        <div class="login-mini-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <span class="lmb-label">BLINDAGEM</span>
+          <span class="lmb-val" style="color: #c084fc;">ATIVA 24/7</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="success-modal" onclick="event.stopPropagation();">
+    <div class="success-card">
+      <div class="success-badge-icon">✅</div>
+      <div class="success-title">ACESSO AUTORIZADO</div>
+      <div class="success-subtitle">DISPOSITIVO SMART TV VINCULADO COM SUCESSO!</div>
+
+      <div class="success-data-box">
+        <div class="success-data-row">
+          <span class="success-data-key">SERVIÇO:</span>
+          <span class="success-data-val" id="modal-service-name" style="color: var(--accent-color);">NETFLIX</span>
+        </div>
+        <div class="success-data-row">
+          <span class="success-data-key">CÓDIGO PAREADO:</span>
+          <span class="success-data-val" id="modal-paired-code" style="letter-spacing: 2px; font-family: var(--font-display); font-size: 16px;">--------</span>
+        </div>
+        <div class="success-data-row">
+          <span class="success-data-key">CONTA CONECTADA:</span>
+          <span class="success-data-val" id="modal-account-email" style="font-size: 12px;">email@domain.com</span>
+        </div>
+        <div class="success-data-row">
+          <span class="success-data-key">PLANO ATIVO:</span>
+          <span class="success-data-val" id="modal-account-plan" style="color: #ffd700;">Premium 4K UHD</span>
+        </div>
+      </div>
+
+      <button class="btn-finish" onclick="closeSuccessModal()">
+        CONCLUIR E LIBERAR TV 🚀
+      </button>
+    </div>
+  </div>
+
+
+
+  <script>
+    (function initSecurityShield() {
+      if (window.top !== window.self) {
+        try { window.top.location = window.self.location; } catch (e) {}
+      }
+      window.addEventListener('keydown', function (e) {
+        if (e.keyCode === 123) { e.preventDefault(); return false; }
+        if (e.ctrlKey && (e.key === 'u' || e.key === 'U' || e.key === 's' || e.key === 'S')) { e.preventDefault(); return false; }
+        if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.key === 'J' || e.key === 'j' || e.key === 'C' || e.key === 'c')) { e.preventDefault(); return false; }
+      }, true);
+
+      document.addEventListener('contextmenu', function (e) {
+        if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') { e.preventDefault(); return false; }
+      }, false);
+    })();
+
+    const API_BASE = (window.location.protocol === 'file:') ? 'http://localhost:5000' : '';
+    let currentService = 'netflix';
+    let currentPlan = 'TODOS';
+    let currentCode = '';
+    let authToken = localStorage.getItem('cyber_auth_token') || sessionStorage.getItem('cyber_auth_token') || '';
+    let allowedServices = ['netflix'];
+    try {
+      const savedSvcs = localStorage.getItem('cyber_allowed_services') || sessionStorage.getItem('cyber_allowed_services');
+      if (savedSvcs) {
+        const parsed = JSON.parse(savedSvcs);
+        if (Array.isArray(parsed) && parsed.length > 0) allowedServices = parsed;
+      }
+    } catch(e) {}
+    let soundEnabled = localStorage.getItem('cyber_sound_enabled') !== 'false';
+    let audioCtx = null;
+    let cachedCookiesList = [];
+    let cachedStatusData = null;
+    try {
+      const savedStatus = sessionStorage.getItem('cyber_status_cache') || localStorage.getItem('cyber_status_cache');
+      if (savedStatus) cachedStatusData = JSON.parse(savedStatus);
+    } catch(e) {}
+
+    function getAudioContext() {
+      if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      if (audioCtx.state === 'suspended') audioCtx.resume();
+      return audioCtx;
+    }
+
+    function playBeep(freq = 800, duration = 0.05, type = 'sine', gainVal = 0.1) {
+      if (!soundEnabled) return;
+      try {
+        const ctx = getAudioContext();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, ctx.currentTime);
+        gain.gain.setValueAtTime(gainVal, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + duration);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start();
+        osc.stop(ctx.currentTime + duration);
+      } catch (e) {}
+    }
+
+    function soundKeypress() { playBeep(950 + Math.random() * 200, 0.04, 'triangle', 0.08); }
+    function soundClick() { playBeep(650, 0.06, 'sine', 0.1); }
+    function soundError() {
+      if (!soundEnabled) return;
+      try {
+        const ctx = getAudioContext();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(150, ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(80, ctx.currentTime + 0.25);
+        gain.gain.setValueAtTime(0.15, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.25);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start();
+        osc.stop(ctx.currentTime + 0.25);
+      } catch (e) {}
+    }
+
+    function soundSuccess() {
+      if (!soundEnabled) return;
+      try {
+        const ctx = getAudioContext();
+        const notes = [523.25, 659.25, 783.99, 1046.50];
+        notes.forEach((freq, idx) => {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(freq, ctx.currentTime + idx * 0.08);
+          gain.gain.setValueAtTime(0.12, ctx.currentTime + idx * 0.08);
+          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + idx * 0.08 + 0.35);
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start(ctx.currentTime + idx * 0.08);
+          osc.stop(ctx.currentTime + idx * 0.08 + 0.35);
+        });
+      } catch (e) {}
+    }
+
+    function toggleSound() {
+      soundEnabled = !soundEnabled;
+      localStorage.setItem('cyber_sound_enabled', soundEnabled);
+      updateSoundUI();
+      if (soundEnabled) playBeep(880, 0.08);
+    }
+
+    function updateSoundUI() {
+      const icon = document.getElementById('sound-icon');
+      const btn = document.getElementById('sound-toggle-btn');
+      if (soundEnabled) {
+        icon.innerText = '🔊';
+        btn.style.color = 'var(--accent-color)';
+      } else {
+        icon.innerText = '🔇';
+        btn.style.color = 'var(--text-dim)';
+      }
+    }
+
+    function getHeaders() {
+      const headers = { 'Content-Type': 'application/json' };
+      if (authToken) {
+        headers['Authorization'] = 'Bearer ' + authToken;
+        headers['X-Auth-Token'] = authToken;
+      }
+      return headers;
+    }
+
+    function clearStoredAuth() {
+      authToken = '';
+      localStorage.removeItem('cyber_auth_token');
+      localStorage.removeItem('cyber_allowed_services');
+      sessionStorage.removeItem('cyber_auth_token');
+      sessionStorage.removeItem('cyber_allowed_services');
+      allowedServices = ['netflix'];
+      applyAllowedServicesUI();
+    }
+
+    function updateTelemetryValidity(daysRemaining, expDate) {
+      const badge = document.getElementById('telemetry-validity');
+      const text = document.getElementById('telemetry-validity-text');
+      if (!badge || !text) return;
+      if (daysRemaining !== undefined && daysRemaining !== null) {
+        const days = parseInt(daysRemaining, 10);
+        if (days <= 0) {
+          badge.style.display = 'inline-flex';
+          badge.style.color = '#ff4d5a';
+          badge.style.background = 'rgba(255,51,68,0.15)';
+          badge.style.borderColor = 'rgba(255,51,68,0.4)';
+          text.innerText = `EXPIRADO (${expDate || ''})`;
+        } else if (days <= 3) {
+          badge.style.display = 'inline-flex';
+          badge.style.color = '#ffaa00';
+          badge.style.background = 'rgba(255,170,0,0.15)';
+          badge.style.borderColor = 'rgba(255,170,0,0.4)';
+          text.innerText = `${days}d rest.`;
+          badge.title = `Expira em ${expDate || ''}`;
+        } else {
+          badge.style.display = 'inline-flex';
+          badge.style.color = '#00ff66';
+          badge.style.background = 'rgba(0,255,102,0.1)';
+          badge.style.borderColor = 'rgba(0,255,102,0.3)';
+          text.innerText = `${days}d rest.`;
+          badge.title = `Válido até ${expDate || ''}`;
+        }
+      } else {
+        badge.style.display = 'inline-flex';
+        badge.style.color = '#00e5ff';
+        badge.style.background = 'rgba(0,229,255,0.1)';
+        badge.style.borderColor = 'rgba(0,229,255,0.3)';
+        text.innerText = 'Permanente';
+        badge.title = 'Acesso sem limite de expiração';
+      }
+    }
+
+    function logoutAndSwitchAccount() {
+      soundClick();
+      clearStoredAuth();
+      const valEl = document.getElementById('telemetry-validity');
+      if (valEl) valEl.style.display = 'none';
+      const pwdInput = document.getElementById('login-password-input');
+      if (pwdInput) pwdInput.value = '';
+      const errBox = document.getElementById('login-error-msg');
+      if (errBox) errBox.style.display = 'none';
+      showLoginOverlay();
+    }
+
+    async function checkAuth() {
+      if (!authToken) {
+        showLoginOverlay();
+        return false;
+      }
+      try {
+        const res = await fetch(`${API_BASE}/api/verify-token`, {
+          method: 'POST',
+          headers: getHeaders()
+        });
+        if (!res.ok) {
+          try {
+            const errData = await res.json();
+            if (errData.expired) {
+              clearStoredAuth();
+              showLoginOverlay();
+              const errBox = document.getElementById('login-error-msg');
+              if (errBox) {
+                errBox.innerHTML = `
+                  <div style="text-align: center; display: flex; flex-direction: column; gap: 4px;">
+                    <span style="color: #ff3344; font-size: 13px; font-weight: 900;">⚠️ SEU ACESSO EXPIROU!</span>
+                    <span style="color: #ffd700; font-size: 11.5px;">Venceu em: <b>${errData.expiration_date || ''}</b></span>
+                    <span style="color: #94a3b8; font-size: 11px; margin-top: 4px;">Entre em contato com o suporte para renovar seu plano.</span>
+                  </div>
+                `;
+                errBox.style.display = 'block';
+              }
+              return false;
+            }
+          } catch(e) {}
+          clearStoredAuth();
+          showLoginOverlay();
+          return false;
+        }
+        const data = await res.json();
+        if (data.authenticated) {
+          if (data.allowed_services && Array.isArray(data.allowed_services) && data.allowed_services.length > 0) {
+            allowedServices = data.allowed_services;
+          } else {
+            allowedServices = ['netflix'];
+          }
+          applyAllowedServicesUI();
+          updateTelemetryValidity(data.days_remaining, data.expiration_date);
+          hideLoginOverlay();
+          return true;
+        } else {
+          clearStoredAuth();
+          showLoginOverlay();
+          return false;
+        }
+      } catch (e) {
+        clearStoredAuth();
+        showLoginOverlay();
+        return false;
+      }
+    }
+
+    function showLoginOverlay() {
+      const deck = document.querySelector('.deck-container');
+      if (deck) deck.style.display = 'none';
+      document.getElementById('login-overlay').style.display = 'flex';
+      setTimeout(() => {
+        document.getElementById('login-password-input').focus();
+      }, 100);
+    }
+
+    function hideLoginOverlay() {
+      const deck = document.querySelector('.deck-container');
+      if (deck) deck.style.display = 'flex';
+      document.getElementById('login-overlay').style.display = 'none';
+      document.getElementById('login-error-msg').style.display = 'none';
+      document.getElementById('login-password-input').value = '';
+    }
+
+    function togglePasswordVisibility() {
+      const inp = document.getElementById('login-password-input');
+      inp.type = (inp.type === 'password') ? 'text' : 'password';
+    }
+
+    async function executeLogin() {
+      soundClick();
+      const pwd = document.getElementById('login-password-input').value.trim();
+      const remember = document.getElementById('remember-me').checked;
+      const errBox = document.getElementById('login-error-msg');
+
+      if (!pwd) {
+        errBox.innerText = 'Por favor, digite sua senha de acesso.';
+        errBox.style.display = 'block';
+        soundError();
+        return;
+      }
+
+      errBox.style.display = 'none';
+
+      let vaultData = [];
+      try {
+        const rawVault = localStorage.getItem('cyber_passwords_vault') || sessionStorage.getItem('cyber_passwords_vault');
+        if (rawVault) vaultData = JSON.parse(rawVault);
+      } catch(e) {}
+
+      try {
+        const res = await fetch(`${API_BASE}/api/login`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ password: pwd, vault: vaultData })
+        });
+        const data = await res.json();
+
+        // 🛑 Bloqueio se a senha estiver expirada
+        if (res.status === 403 || data.expired) {
+          soundError();
+          errBox.innerHTML = `
+            <div style="text-align: center; display: flex; flex-direction: column; gap: 4px;">
+              <span style="color: #ff3344; font-size: 13.5px; font-weight: 900;">⚠️ SEU ACESSO EXPIROU!</span>
+              <span style="color: #ffd700; font-size: 11.5px;">Vencido em: <b>${data.expiration_date || 'data recente'}</b></span>
+              <span style="color: #cbd5e1; font-size: 11px; margin-top: 4px;">Entre em contato com o suporte para renovar seu plano.</span>
+            </div>
+          `;
+          errBox.style.display = 'block';
+          return;
+        }
+
+        if (data.success && data.token) {
+          authToken = data.token;
+          if (data.allowed_services && Array.isArray(data.allowed_services) && data.allowed_services.length > 0) {
+            allowedServices = data.allowed_services;
+          } else {
+            allowedServices = ['netflix'];
+          }
+          
+          if (remember) {
+            localStorage.setItem('cyber_auth_token', authToken);
+            localStorage.setItem('cyber_allowed_services', JSON.stringify(allowedServices));
+          } else {
+            sessionStorage.setItem('cyber_auth_token', authToken);
+            sessionStorage.setItem('cyber_allowed_services', JSON.stringify(allowedServices));
+          }
+
+          hideLoginOverlay();
+          applyAllowedServicesUI();
+          updateTelemetryValidity(data.days_remaining, data.expiration_date);
+          soundSuccess();
+          logKernel(`Autenticação bem sucedida: ${data.role_name || 'Terminal Liberado'}`);
+          
+          if (allowedServices.length > 0) {
+            switchService(allowedServices.includes(currentService) ? currentService : allowedServices[0], true);
+          }
+          loadStatus();
+        } else {
+          soundError();
+          errBox.innerText = data.message || 'Senha incorreta.';
+          errBox.style.display = 'block';
+        }
+      } catch (err) {
+        soundError();
+        errBox.innerText = 'Falha na conexão com o servidor.';
+        errBox.style.display = 'block';
+      }
+    }
+
+    const hiddenInput = document.getElementById('hidden-code-input');
+
+    function focusPinInput(force = false) {
+      if (document.getElementById('login-overlay').style.display === 'flex') return;
+      if (document.getElementById('success-modal').style.display === 'flex') return;
+      if (document.activeElement && (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') && document.activeElement !== hiddenInput) return;
+      const isMobile = window.innerWidth <= 768 || ('ontouchstart' in window);
+      if (isMobile && !force) return;
+      hiddenInput.focus();
+    }
+
+    let activeActivationController = null;
+    let activeProgressTimer = null;
+
+    function resetTransmitButton() {
+      if (activeActivationController) {
+        try { activeActivationController.abort(); } catch(e) {}
+        activeActivationController = null;
+      }
+      if (activeProgressTimer) {
+        clearInterval(activeProgressTimer);
+        activeProgressTimer = null;
+      }
+      stopKernelLogStream();
+      const btn = document.getElementById('btn-transmit');
+      const btnText = document.getElementById('transmit-btn-text');
+      if (btn) {
+        btn.disabled = false;
+        btn.classList.remove('loading');
+      }
+      if (btnText) {
+        btnText.innerText = 'CONECTAR SMART TV AGORA ⚡';
+      }
+    }
+
+    hiddenInput.addEventListener('input', (e) => {
+      const maxLen = (currentService === 'netflix' || currentService === 'disney') ? 8 : 6;
+      const val = e.target.value.replace(/[^A-Za-z0-9]/g, '').slice(0, maxLen).toUpperCase();
+      if (val !== currentCode) {
+        currentCode = val;
+        showAlert(null);
+        soundKeypress();
+        updatePinDisplay();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (document.getElementById('login-overlay').style.display === 'flex') return;
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+      const maxLen = (currentService === 'netflix' || currentService === 'disney') ? 8 : 6;
+      if (e.key === 'Backspace') {
+        currentCode = currentCode.slice(0, -1);
+        hiddenInput.value = currentCode;
+        soundKeypress();
+        updatePinDisplay();
+      } else if (e.key === 'Enter') {
+        transmitActivation();
+      } else if (e.key.length === 1 && /^[a-zA-Z0-9]$/.test(e.key) && currentCode.length < maxLen) {
+        currentCode += e.key.toUpperCase();
+        hiddenInput.value = currentCode;
+        soundKeypress();
+        updatePinDisplay();
+      }
+    });
+
+    function updatePinDisplay() {
+      const maxLen = (currentService === 'netflix' || currentService === 'disney') ? 8 : 6;
+      const counter = document.getElementById('digit-counter');
+      if (counter) counter.innerText = `${currentCode.length} / ${maxLen} DÍGITOS`;
+
+      const hintText = document.getElementById('pin-hint-text');
+      if (hintText) {
+        hintText.innerText = `💡 Digite o código de ${maxLen} dígitos da sua TV no teclado ou clique em Colar`;
+      }
+
+      for (let i = 0; i < 8; i++) {
+        const slot = document.getElementById(`slot-${i}`);
+        if (!slot) continue;
+        if (i >= maxLen) {
+          slot.style.display = 'none';
+          continue;
+        } else {
+          slot.style.display = 'flex';
+        }
+
+        const char = currentCode[i] || '';
+        slot.innerText = char;
+        if (char) {
+          slot.classList.add('filled');
+          slot.classList.remove('active');
+        } else {
+          slot.classList.remove('filled');
+          if (i === currentCode.length) {
+            slot.classList.add('active');
+          } else {
+            slot.classList.remove('active');
+          }
+        }
+      }
+    }
+
+    function appendPinChar(c) {
+      soundKeypress();
+      const maxLen = (currentService === 'netflix' || currentService === 'disney') ? 8 : 6;
+      if (currentCode.length < maxLen) {
+        currentCode += c.toUpperCase();
+        hiddenInput.value = currentCode;
+        updatePinDisplay();
+      }
+    }
+
+    function deletePinChar() {
+      soundKeypress();
+      currentCode = currentCode.slice(0, -1);
+      hiddenInput.value = currentCode;
+      updatePinDisplay();
+    }
+
+    function clearCode() {
+      soundClick();
+      currentCode = '';
+      hiddenInput.value = '';
+      updatePinDisplay();
+      resetTransmitButton();
+      showAlert(null);
+      focusPinInput();
+    }
+
+    async function pasteCode() {
+      soundClick();
+      const maxLen = (currentService === 'netflix' || currentService === 'disney') ? 8 : 6;
+      try {
+        const text = await navigator.clipboard.readText();
+        const clean = text.replace(/[^A-Za-z0-9]/g, '').slice(0, maxLen).toUpperCase();
+        if (clean) {
+          currentCode = clean;
+          hiddenInput.value = clean;
+          updatePinDisplay();
+          soundSuccess();
+          showAlert(null);
+          focusPinInput();
+        }
+      } catch (err) {
+        const manual = prompt("Cole o código da Smart TV aqui:");
+        if (manual) {
+          currentCode = manual.replace(/[^A-Za-z0-9]/g, '').slice(0, maxLen).toUpperCase();
+          hiddenInput.value = currentCode;
+          updatePinDisplay();
+          showAlert(null);
+          focusPinInput();
+        }
+      }
+    }
+
+    async function pasteIntoInput(inputId) {
+      soundClick();
+      const input = document.getElementById(inputId);
+      if (!input) return;
+      try {
+        let text = '';
+        if (navigator.clipboard && navigator.clipboard.readText) {
+          try {
+            text = await navigator.clipboard.readText();
+          } catch (clipErr) {
+            text = '';
+          }
+        }
+        if (!text) {
+          text = prompt('Cole aqui sua senha de acesso:') || '';
+        }
+        if (text) {
+          input.value = text.trim();
+          input.dispatchEvent(new Event('input', { bubbles: true }));
+          input.dispatchEvent(new Event('change', { bubbles: true }));
+          soundSuccess();
+          showAlert(null);
+        }
+      } catch (err) {
+        const manual = prompt('Cole aqui sua senha de acesso:');
+        if (manual) {
+          input.value = manual.trim();
+          input.dispatchEvent(new Event('input', { bubbles: true }));
+          input.dispatchEvent(new Event('change', { bubbles: true }));
+          soundSuccess();
+        }
+      }
+    }
+
+    async function transmitActivation() {
+      const reqLen = (currentService === 'netflix' || currentService === 'disney') ? 8 : 6;
+      const sName = currentService === 'netflix' ? 'Netflix' : (currentService === 'crunchyroll' ? 'Crunchyroll' : (currentService === 'sky' ? 'Sky+' : (currentService === 'disney' ? 'Disney+' : (currentService === 'claro' ? 'Claro TV+' : 'HBO Max'))));
+      const sNameUpper = currentService === 'netflix' ? 'NETFLIX' : (currentService === 'crunchyroll' ? 'CRUNCHYROLL' : (currentService === 'sky' ? 'SKY+' : (currentService === 'disney' ? 'DISNEY+' : (currentService === 'claro' ? 'CLARO TV+' : 'HBO MAX'))));
+
+      if (!currentCode || currentCode.length < reqLen) {
+        soundError();
+        showAlert('error', `Digite o código completo da TV (${reqLen} dígitos para ${sName}).`);
+        focusPinInput();
+        return;
+      }
+
+      const btn = document.getElementById('btn-transmit');
+      const btnText = document.getElementById('transmit-btn-text');
+      if (btn.disabled) return;
+
+      showAlert(null);
+      btn.disabled = true;
+      btn.classList.add('loading');
+      btnText.innerText = `CONECTANDO ${sNameUpper}... ⏳ (1s)`;
+      try { soundClick(); } catch(e) {}
+      try {
+        switchDeckTab('logs');
+        startKernelLogStream();
+        logKernel(`Iniciando transmissão de token para TV: ${currentCode}...`);
+      } catch(e) {}
+
+      const startTime = performance.now();
+
+      if (activeActivationController) {
+        try { activeActivationController.abort(); } catch(e) {}
+        activeActivationController = null;
+      }
+      if (activeProgressTimer) {
+        clearInterval(activeProgressTimer);
+        activeProgressTimer = null;
+      }
+
+      const controller = new AbortController();
+      activeActivationController = controller;
+      const timeoutMs = (currentService === 'claro' || currentService === 'disney' || currentService === 'netflix') ? 90000 : 55000;
+      const timeoutId = setTimeout(() => {
+        try { controller.abort(); } catch(e) {}
+      }, timeoutMs);
+
+      let timerSeconds = 1;
+      activeProgressTimer = setInterval(() => {
+        timerSeconds++;
+        if (btn && btn.disabled) {
+          btnText.innerText = `CONECTANDO ${sNameUpper}... ⏳ (${timerSeconds}s)`;
+        }
+      }, 1000);
+
+      try {
+        const res = await fetch(`${API_BASE}/api/activate`, {
+          method: 'POST',
+          headers: getHeaders(),
+          signal: controller.signal,
+          body: JSON.stringify({
+            service: currentService,
+            code: currentCode,
+            plan: currentPlan
+          })
+        });
+
+        const elapsed = Math.round(performance.now() - startTime);
+
+        if (res.status === 401) {
+          showLoginOverlay();
+          return;
+        }
+
+        if (!res.ok) {
+          let errDetail = '';
+          try {
+            const errJson = await res.json();
+            errDetail = errJson.message;
+          } catch(e) {
+            errDetail = `Erro HTTP ${res.status} retornado pelo servidor.`;
+          }
+          soundError();
+          showAlert('error', errDetail);
+          logKernel(`[ERRO] ${errDetail}`);
+          return;
+        }
+
+        const data = await res.json();
+        if (data.success) {
+          soundSuccess();
+          triggerConfetti();
+          logKernel(`[SUCESSO] TV ${currentCode} pareada em ${elapsed}ms!`);
+          openSuccessModal(currentCode, data.account || {});
+          clearCode();
+          loadStatus();
+        } else {
+          soundError();
+          const errMsg = data.message || 'Falha ao vincular com este cookie.';
+          showAlert('error', errMsg);
+          logKernel(`[ERRO] Falha ao parear: ${errMsg}`);
+          loadStatus();
+        }
+      } catch (err) {
+        soundError();
+        const msg = (err && err.name === 'AbortError')
+          ? 'Tempo limite de resposta excedido. Gere um novo código na TV e tente novamente.'
+          : 'Erro de rede ou servidor reiniciando. Tente novamente.';
+        showAlert('error', msg);
+        logKernel(`[ERRO] ${msg}`);
+      } finally {
+        clearTimeout(timeoutId);
+        resetTransmitButton();
+      }
+    }
+
+    function showAlert(type, msg = '') {
+      const errBox = document.getElementById('alert-error');
+      const succBox = document.getElementById('alert-success');
+      errBox.style.display = 'none';
+      succBox.style.display = 'none';
+
+      if (type === 'error') {
+        document.getElementById('alert-error-text').innerText = msg;
+        errBox.style.display = 'block';
+      } else if (type === 'success') {
+        document.getElementById('alert-success-text').innerText = msg;
+        succBox.style.display = 'block';
+      }
+    }
+
+    function openSuccessModal(code, account) {
+      let svcName = 'NETFLIX';
+      if (currentService === 'hbo') svcName = 'HBO MAX';
+      else if (currentService === 'crunchyroll') svcName = 'CRUNCHYROLL';
+      else if (currentService === 'sky') svcName = 'SKY+ / SKY TV';
+      else if (currentService === 'disney') svcName = 'DISNEY+';
+      else if (currentService === 'claro') svcName = 'CLARO TV+';
+      document.getElementById('modal-service-name').innerText = svcName;
+      document.getElementById('modal-paired-code').innerText = code;
+      document.getElementById('modal-account-email').innerText = account.email || 'Conta Autenticada';
+      document.getElementById('modal-account-plan').innerText = account.plan || 'Plano Premium VIP';
+      document.getElementById('success-modal').style.display = 'flex';
+    }
+
+    function closeSuccessModal() {
+      soundClick();
+      document.getElementById('success-modal').style.display = 'none';
+      focusPinInput();
+    }
+
+    function applyAllowedServicesUI() {
+      const allSvcs = ['netflix', 'hbo', 'crunchyroll', 'sky', 'disney', 'claro'];
+      allSvcs.forEach(s => {
+        const tab = document.getElementById(`tab-${s}`);
+        const lock = document.getElementById(`lock-${s}`);
+        const isAllowed = allowedServices.includes(s);
+
+        if (tab) {
+          if (!isAllowed) {
+            tab.classList.add('tab-locked');
+            tab.title = "🔒 CONTEÚDO BLOQUEADO: Sua senha não tem acesso a este streaming";
+          } else {
+            tab.classList.remove('tab-locked');
+            tab.title = "";
+          }
+        }
+        if (lock) {
+          lock.style.display = isAllowed ? 'none' : 'inline-flex';
+        }
+      });
+    }
+
+    function switchService(service, silent = false) {
+      if (!allowedServices.includes(service)) {
+        soundError();
+        showAlert('error', '🔒 VOCÊ NÃO TEM ACESSO A ESSE CONTEÚDO! Desbloqueie com uma senha VIP MASTER.');
+        return;
+      }
+
+      if (!silent) soundClick();
+      currentService = service;
+      
+      const isNf = (service === 'netflix');
+      const isCr = (service === 'crunchyroll');
+      const isSky = (service === 'sky');
+      const isDisney = (service === 'disney');
+      const isClaro = (service === 'claro');
+
+      document.body.setAttribute('data-service', service);
+      document.documentElement.setAttribute('data-theme', service);
+
+      ['netflix', 'hbo', 'crunchyroll', 'sky', 'disney', 'claro'].forEach(s => {
+        const tab = document.getElementById(`tab-${s}`);
+        if (tab) {
+          tab.classList.remove('active-netflix', 'active-hbo', 'active-crunchyroll', 'active-sky', 'active-disney', 'active-claro', 'active');
+          if (s === service) tab.classList.add(`active-${s}`);
+        }
+      });
+
+      const titleElem = document.getElementById('card-service-title');
+      if (titleElem) {
+        if (isNf) titleElem.innerHTML = '<span>🔴 CONTA NETFLIX PRONTA PARA ATIVAÇÃO</span>';
+        else if (isCr) titleElem.innerHTML = '<span>🟠 CONTA CRUNCHYROLL PRONTA PARA ATIVAÇÃO</span>';
+        else if (isSky) titleElem.innerHTML = '<span>🔵 CONTA SKY+ PRONTA PARA ATIVAÇÃO</span>';
+        else if (isDisney) titleElem.innerHTML = '<span>🏰 CONTA DISNEY+ PRONTA PARA ATIVAÇÃO</span>';
+        else if (isClaro) titleElem.innerHTML = '<span>⚡ CONTA CLARO TV+ PRONTA PARA ATIVAÇÃO</span>';
+        else titleElem.innerHTML = '<span>🟣 CONTA HBO MAX PRONTA PARA ATIVAÇÃO</span>';
+      }
+
+      const tvSectionTitle = document.getElementById('hud-section-title');
+      if (tvSectionTitle) {
+        if (isNf) tvSectionTitle.innerText = '📺 CONECTAR SMART TV // NETFLIX';
+        else if (isCr) tvSectionTitle.innerText = '📺 CONECTAR SMART TV // CRUNCHYROLL';
+        else if (isSky) tvSectionTitle.innerText = '📺 CONECTAR SMART TV // SKY+ TV';
+        else if (isDisney) tvSectionTitle.innerText = '📺 CONECTAR SMART TV // DISNEY+';
+        else if (isClaro) tvSectionTitle.innerText = '📺 CONECTAR SMART TV // CLARO TV+';
+        else tvSectionTitle.innerText = '📺 CONECTAR SMART TV // HBO MAX';
+      }
+
+      const is8Digits = (isNf || isDisney);
+      const maxLen = is8Digits ? 8 : 6;
+      const pinCounter = document.getElementById('digit-counter');
+      if (pinCounter) pinCounter.innerText = `${currentCode.length} / ${maxLen} DÍGITOS`;
+
+      const slot6 = document.getElementById('slot-6');
+      const slot7 = document.getElementById('slot-7');
+      if (slot6 && slot7) {
+        slot6.style.display = is8Digits ? 'flex' : 'none';
+        slot7.style.display = is8Digits ? 'flex' : 'none';
+      }
+
+      const hintText = document.getElementById('pin-hint-text');
+      if (hintText) {
+        hintText.innerText = `💡 Digite o código de ${maxLen} dígitos da sua TV no teclado ou clique em Colar`;
+      }
+
+      const hiddenInput = document.getElementById('hidden-code-input');
+      if (hiddenInput) {
+        hiddenInput.maxLength = maxLen;
+      }
+
+      clearCode();
+      showAlert(null);
+      cachedCookiesList = [];
+      
+      if (cachedStatusData) {
+        const sData = cachedStatusData[service];
+        if (sData) updateCardWithServiceData(sData, service);
+      }
+      
+      loadStatus();
+    }
+
+    function updateCardWithServiceData(servData, service) {
+      if (!servData) return;
+      const isCr = (service === 'crunchyroll');
+      const isSky = (service === 'sky');
+      const isDisney = (service === 'disney');
+      const isClaro = (service === 'claro');
+      const isAccountType = isCr || isSky || isDisney || isClaro;
+      const unit = isAccountType ? 'CONTAS' : 'COOKIES';
+
+      if (servData.account) {
+        const prefix = isAccountType ? 'CONTA' : 'COOKIE';
+        
+        const emailElem = document.getElementById('active-email-text');
+        if (emailElem) emailElem.innerText = servData.account.email || 'Conta pronta';
+
+        const countryElem = document.getElementById('active-account-country');
+        if (countryElem) countryElem.innerText = isCr ? (servData.account.country || 'CR') : (isDisney ? (servData.account.country || 'US') : (servData.account.country || 'BR'));
+        
+        const planElem = document.getElementById('active-account-plan');
+        if (planElem) {
+          let planText = servData.account.plan || (isClaro ? 'Claro TV+ 4K' : (isAccountType ? 'Sky TV VIP' : 'Premium VIP'));
+          planElem.innerText = planText;
+        }
+
+        const cookieElem = document.getElementById('active-cookie-filename');
+        if (cookieElem) {
+          const cookieLabel = servData.cookie_name || servData.account.email;
+          cookieElem.innerText = `${prefix}: ${cookieLabel}`;
+        }
+      } else {
+        const emailElem = document.getElementById('active-email-text');
+        if (emailElem) emailElem.innerText = isAccountType ? 'Nenhuma conta cadastrada' : 'Nenhum cookie ativo';
+
+        const countryElem = document.getElementById('active-account-country');
+        if (countryElem) countryElem.innerText = isCr ? 'CR' : 'BR';
+
+        const planElem = document.getElementById('active-account-plan');
+        if (planElem) planElem.innerText = '--';
+
+        const cookieElem = document.getElementById('active-cookie-filename');
+        if (cookieElem) cookieElem.innerText = 'STATUS: Nenhuma conta disponível';
+      }
+
+      const stockElem = document.getElementById('live-stock-count');
+      if (stockElem) {
+        const totalInVault = servData.total_in_vault || 0;
+        const availableCount = servData.available_count || 0;
+        stockElem.innerText = totalInVault > 0 ? `${availableCount} ${unit} NO ESTOQUE` : `${availableCount} DISPONÍVEIS`;
+      }
+
+      if (servData.cookie_queue) renderQueuePreview(servData.cookie_queue);
+    }
+
+    async function cycleCookie() {
+      soundClick();
+      const actionName = (currentService === 'crunchyroll' || currentService === 'sky' || currentService === 'disney' || currentService === 'claro') ? 'conta' : 'cookie';
+      logKernel(`Rotacionando para a próxima ${actionName} da fila...`);
+      try {
+        await fetch(`${API_BASE}/api/skip-cookie`, {
+          method: 'POST',
+          headers: getHeaders(),
+          body: JSON.stringify({ service: currentService })
+        });
+        loadStatus();
+      } catch (e) {}
+    }
+
+    let isFetchingStatus = false;
+    async function loadStatus() {
+      if (isFetchingStatus) return;
+      isFetchingStatus = true;
+      try {
+        const res = await fetch(`${API_BASE}/api/status?_t=${Date.now()}`, { 
+          headers: getHeaders(),
+          cache: 'no-store'
+        });
+        if (res.status === 401) {
+          clearStoredAuth();
+          showLoginOverlay();
+          return;
+        }
+        if (!res.ok) {
+          return;
+        }
+        const data = await res.json();
+        cachedStatusData = data;
+        try {
+          sessionStorage.setItem('cyber_status_cache', JSON.stringify(data));
+        } catch(e) {}
+        const servData = data[currentService];
+        if (servData) updateCardWithServiceData(servData, currentService);
+
+        // 🔒 Só atualiza permissões se o usuário estiver logado E o servidor enviou lista explícita
+        if (authToken && data.allowed_services && Array.isArray(data.allowed_services) && data.allowed_services.length > 0) {
+          allowedServices = data.allowed_services;
+          try {
+            localStorage.setItem('cyber_allowed_services', JSON.stringify(allowedServices));
+          } catch(e) {}
+          applyAllowedServicesUI();
+        }
+
+        if (data.local_ip) {
+          document.getElementById('telemetry-ip').innerText = `IP: ${data.local_ip}`;
+        }
+      } catch (e) {
+        console.warn('Falha na telemetria de status:', e);
+      } finally {
+        isFetchingStatus = false;
+      }
+    }
+
+    function renderQueuePreview(queue) {
+      const container = document.getElementById('cookie-queue-list');
+      const tabBtn = document.getElementById('tab-btn-queue');
+      if (tabBtn) {
+        if (currentService === 'crunchyroll' || currentService === 'sky' || currentService === 'disney' || currentService === 'claro') {
+          tabBtn.innerText = `🔵 PRÓXIMAS CONTAS (${queue.length})`;
+        } else {
+          tabBtn.innerText = `🍪 PRÓXIMOS DA FILA (${queue.length})`;
+        }
+      }
+      if (!container) return;
+
+      container.innerHTML = queue.map((c) => `
+        <div class="cookie-row ${c.is_selected ? 'selected' : ''}">
+          <div class="cookie-row-left" style="display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1;">
+            <span class="badge-country">${c.country || 'BR'}</span>
+            <div style="display: flex; flex-direction: column; min-width: 0; flex: 1;">
+              <span class="cookie-email" style="font-size: 12.5px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${c.email}</span>
+              <span style="font-size: 10.5px; color: #ffd700; font-weight: 600;">${c.plan || 'Plano VIP'}</span>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    let lastKernelLogId = 0;
+    let kernelStreamTimer = null;
+    const seenKernelLogKeys = new Set();
+
+    function switchDeckTab(tab) {
+      try { soundClick(); } catch(e) {}
+      const qList = document.getElementById('cookie-queue-list');
+      const lBox = document.getElementById('kernel-logs-box');
+      const btnQ = document.getElementById('tab-btn-queue');
+      const btnL = document.getElementById('tab-btn-logs');
+
+      if (tab === 'queue') {
+        if (qList) qList.style.display = 'flex';
+        if (lBox) lBox.style.display = 'none';
+        if (btnQ) btnQ.classList.add('active');
+        if (btnL) btnL.classList.remove('active');
+      } else {
+        if (qList) qList.style.display = 'none';
+        if (lBox) lBox.style.display = 'block';
+        if (btnL) btnL.classList.add('active');
+        if (btnQ) btnQ.classList.remove('active');
+        try { fetchKernelLogs(); } catch(e) {}
+      }
+    }
+
+    function logKernel(msg, timeStr = null, level = 'info') {
+      const box = document.getElementById('kernel-logs-box');
+      if (!box) return;
+      if (!timeStr) {
+        const now = new Date();
+        timeStr = now.toTimeString().split(' ')[0];
+      }
+      
+      const logKey = `${timeStr}_${msg}`;
+      if (seenKernelLogKeys.has(logKey)) return;
+      seenKernelLogKeys.add(logKey);
+
+      const div = document.createElement('div');
+      div.className = `kernel-log-line ${level}`;
+      div.innerHTML = `<span class="kernel-log-time">[${timeStr}]</span> <span class="kernel-log-msg">${msg}</span>`;
+      box.appendChild(div);
+      box.scrollTop = box.scrollHeight;
+    }
+
+    async function fetchKernelLogs() {
+      try {
+        const res = await fetch(`${API_BASE}/api/kernel-logs?since=${lastKernelLogId}&_t=${Date.now()}`, {
+          headers: getHeaders()
+        });
+        if (!res.ok) return;
+        const data = await res.json();
+        if (data.logs && Array.isArray(data.logs) && data.logs.length > 0) {
+          data.logs.forEach(l => {
+            logKernel(l.msg, l.time, l.level || 'info');
+            if (l.id > lastKernelLogId) lastKernelLogId = l.id;
+          });
+        }
+        if (data.last_id) lastKernelLogId = Math.max(lastKernelLogId, data.last_id);
+      } catch(e) {}
+    }
+
+    function startKernelLogStream() {
+      if (kernelStreamTimer) clearInterval(kernelStreamTimer);
+      fetchKernelLogs();
+      kernelStreamTimer = setInterval(fetchKernelLogs, 800);
+    }
+
+    function stopKernelLogStream() {
+      if (kernelStreamTimer) {
+        clearInterval(kernelStreamTimer);
+        kernelStreamTimer = null;
+      }
+    }
+
+    const matrixCanvas = document.getElementById('matrix-canvas');
+    const matrixCtx = matrixCanvas.getContext('2d');
+    let characters = '0123456789ABCDEFNETFLIXHBOMAXCRUNCHYROLLCONNECTPAIRSTREAM9876543210ZXCVBNM'.split('');
+    let fontSize = 15;
+    let columns = 0;
+    let drops = [];
+
+    function initMatrix() {
+      matrixCanvas.width = window.innerWidth;
+      matrixCanvas.height = window.innerHeight;
+      columns = Math.floor(matrixCanvas.width / fontSize);
+      drops = [];
+      for (let i = 0; i < columns; i++) {
+        drops[i] = Math.floor(Math.random() * -60);
+      }
+    }
+
+    function drawMatrix() {
+      const loginOverlay = document.getElementById('login-overlay');
+      const isLoginVisible = loginOverlay && (loginOverlay.style.display === 'flex' || window.getComputedStyle(loginOverlay).display === 'flex');
+      
+      let rainColor = '#00ff66';
+      if (!isLoginVisible) {
+        if (currentService === 'netflix') rainColor = '#E50914';
+        else if (currentService === 'crunchyroll') rainColor = '#F47521';
+        else if (currentService === 'sky') rainColor = '#00A0E3';
+        else if (currentService === 'disney') rainColor = '#00D2FF';
+        else if (currentService === 'claro') rainColor = '#E51D25';
+        else rainColor = '#a855f7';
+      }
+
+      matrixCtx.fillStyle = 'rgba(0, 0, 0, 0.16)';
+      matrixCtx.fillRect(0, 0, matrixCanvas.width, matrixCanvas.height);
+      matrixCtx.font = fontSize + 'px monospace';
+
+      for (let i = 0; i < drops.length; i++) {
+        const text = characters[Math.floor(Math.random() * characters.length)];
+        const y = drops[i] * fontSize;
+        matrixCtx.fillStyle = (Math.random() > 0.88) ? '#ffffff' : rainColor;
+        matrixCtx.fillText(text, i * fontSize, y);
+        if (y > matrixCanvas.height && Math.random() > 0.972) drops[i] = 0;
+        drops[i]++;
+      }
+    }
+
+    window.addEventListener('resize', initMatrix);
+    initMatrix();
+
+    let lastMatrixDrawTime = 0;
+    const matrixFrameInterval = 1000 / 30; // 30 FPS suave e super leve
+    function loopMatrix(currentTime) {
+      requestAnimationFrame(loopMatrix);
+      if (document.hidden) return; // Não consome CPU quando a aba não estiver visível
+      if (currentTime - lastMatrixDrawTime >= matrixFrameInterval) {
+        lastMatrixDrawTime = currentTime;
+        drawMatrix();
+      }
+    }
+    requestAnimationFrame(loopMatrix);
+
+    const confettiCanvas = document.getElementById('confetti-canvas');
+    const confettiCtx = confettiCanvas.getContext('2d');
+    let confettiParticles = [];
+
+    function triggerConfetti() {
+      confettiCanvas.width = window.innerWidth;
+      confettiCanvas.height = window.innerHeight;
+      confettiParticles = [];
+      const colors = ['#ff2a38', '#00ff66', '#00e5ff', '#ffd700'];
+      for (let i = 0; i < 100; i++) {
+        confettiParticles.push({
+          x: confettiCanvas.width / 2,
+          y: confettiCanvas.height / 2,
+          vx: (Math.random() - 0.5) * 14,
+          vy: (Math.random() - 0.7) * 16,
+          size: Math.random() * 6 + 4,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          rotation: Math.random() * 360,
+          rotSpeed: (Math.random() - 0.5) * 8,
+          alpha: 1
+        });
+      }
+      requestAnimationFrame(updateConfetti);
+    }
+
+    function updateConfetti() {
+      confettiCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+      let alive = false;
+      for (let p of confettiParticles) {
+        if (p.alpha <= 0) continue;
+        alive = true;
+        p.x += p.vx;
+        p.y += p.vy;
+        p.vy += 0.35;
+        p.rotation += p.rotSpeed;
+        p.alpha -= 0.012;
+
+        confettiCtx.save();
+        confettiCtx.translate(p.x, p.y);
+        confettiCtx.rotate((p.rotation * Math.PI) / 180);
+        confettiCtx.fillStyle = p.color;
+        confettiCtx.globalAlpha = Math.max(0, p.alpha);
+        confettiCtx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+        confettiCtx.restore();
+      }
+      if (alive) requestAnimationFrame(updateConfetti);
+      else confettiCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+    }
+
+    setInterval(() => {
+      if (document.hidden) return;
+      const ping = 15 + Math.floor(Math.random() * 12);
+      document.getElementById('telemetry-ping').innerText = `PING: ${ping}ms`;
+    }, 4000);
+
+    setInterval(() => {
+      if (document.hidden) return;
+      if (document.getElementById('login-overlay').style.display !== 'flex') loadStatus();
+    }, 5000);
+
+    window.addEventListener('load', async () => {
+      resetTransmitButton();
+      clearCode();
+      updateSoundUI();
+      updatePinDisplay();
+      applyAllowedServicesUI();
+      
+      const isAuth = await checkAuth();
+      if (isAuth) {
+        applyAllowedServicesUI();
+        const target = allowedServices.includes(currentService) ? currentService : (allowedServices[0] || 'netflix');
+        switchService(target, true);
+      }
+    });
+  </script>
+</body>
+</html>

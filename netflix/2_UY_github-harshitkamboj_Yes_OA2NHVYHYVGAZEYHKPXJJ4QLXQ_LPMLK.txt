@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: UY
+Plan: Standard
+Next Billing: November 19, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: US$ 16,99
+Extra Member: Yes
+Profiles (3): Rodrigo Landó, Jannet Bentancourt, UwU
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554947	flwssn	ce427e92-a765-44da-9c88-a04f8ec4b27e
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	05ad8b53-a6b6-44ec-82c6-f6fb8e9f4547
+.netflix.com	FALSE	/	TRUE	1796554947	NetflixId	ct%3DBgjHlOvcAxLwA0SZG9TwtbLthFKeX-MpardYS1Hs7hBEtvrZBVlRy8ewmntrlOwSEGicfgpHcxaU_xYSBGP47kQyjGmFJln9n3HxPlRyuAM8uZVgtY_TTFvhv2fz7lVS8Xw_IkB4UwzulUdY_kMneiHAVRAlmJD7uP8k6CN1MdTLwv9Vf37yDLvvcQ6kdgClP4ms7wYR_3cpie_jQTe6Mde58E_hsGp8RWs_wYlx0mUQY_2tdzS1ju4n_oSKg4lO-YMldcVbDlICxMiUI2ZJJcnZ-5SUNW0OPdR2pE8p4dqT0UPn5Lbd6p497qSdoiR-9seCudNcjohzv-4noOTLRV5SEJEMKzDzzLztqS11wDps4Q-KJAPIgft_0SKKee8i_yMen9TRtEJG5niK9WoW3JkHQGf-POwkY-quQBInEfoF76ESTWEAUB43aj5WrKJsocNeg7ah1E9mNPr5XdZ0r_5gVl-ovuhhFho7M4extDWWXv5dH54i7NJ6KARObu9CecO3-e9UbsHKUB0Z2qk4DvGcxUBOJIyuPNovz7kQMrZVY-dW4URO6VvXfOeuug9O7FjuckmNoqBH9eEApw8Ki-zUllfsENwu5qrVnhM22MWBuImm4XC5YE6nb1w-aUYnB31BjNv1A2-fBENhBSDZ9VOBPSQWCcMomm8YBiIOCgyOpDeiFqCx7rngpYo.%26ch%3DAQEAEAABABRb0ZzfHx8Ju45uaftblbol8jIh1Fus7x4.%26v%3D3%26pg%3DOA2NHVYHYVGAZEYHKPXJJ4QLXQ
+.netflix.com	FALSE	/	FALSE	1796554947	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554947	nfvdid	BQFmAAEBEHSGpOn_vv4fL5P2J7L0HjRgpwOQnyonxMndtV1alzbEEclpQwQWV0D0PG9kNdWQu2Fhd9QehK4gd3Z4Ceoa4_NnmTQgZkj8USK3vz2UPh1c5D5wvOXlIF-QyMM2aUeeLwBSIUGwcTk6hsvUASxqzNRX
+.netflix.com	FALSE	/	FALSE	1796554947	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Aug+19+2026+15%3A01%3A34+GMT-0300+(hora+est%C3%A1ndar+de+Uruguay)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=05ab6b7f-edec-4fe7-ad0f-a2c2faf25c74&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1796554947	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQ2XANvC4HxfDMEgjtHa9vj2stdtHCC4KU.%26dt%3D1787162497532

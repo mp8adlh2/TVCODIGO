@@ -1,0 +1,640 @@
+{
+  "accessibility": {
+    "captions": {
+      "headless_caption_enabled": false
+    }
+  },
+  "account_tracker_service_last_update": "13433694053372642",
+  "aim_eligibility_service": {
+    "aim_eligibility_response": "CAEQARgAIAAwATq8AgokCgEEEgIBAhoHCAQSAQEoASIICAEQCjABQAEiBggCEApAATgKIiUIARIRQWRpY2lvbmFyIGltYWdlbnMaCAgBEAowAUABIgIIXSgBIiQIAhISQWRpY2lvbmFyIGFycXVpdm9zGgYIAhAKQAEiAghcKAMqoAEIBBoNQ3JpYXIgaW1hZ2VucyIFQ3JpYXIqE0Rlc2NyZXZhIHN1YSBpbWFnZW0yBwgEEgEBKAE6CQoEaW1nbhIBMUoCCGRqIkNyaWUgaW1hZ2VucywgaWx1c3RyYcOnw7VlcyBlIGFydGVyNUNyaWFyIGltYWdlbnMgKGZlcnJhbWVudGEgYXRpdmEpLCBjbGlxdWUgcGFyYSByZW1vdmVyOg0KC0ZlcnJhbWVudGFzShVQZXJndW50ZSBvIHF1ZSBxdWlzZXJCDQoJCgN1ZG0SAjUwEAFIAVABWg53d3cuZ29vZ2xlLmNvbVoKZ29vZ2xlLmNvbWIHL3NlYXJjaGoSCgNkZWISC25vY29icm93c2UxaggKA25jYhIBMWoOCgNkZWISB21vYmlsZTFqCgoDZGViEgNtdDFwAXgB"
+  },
+  "apps": {
+    "shortcuts_arch": "",
+    "shortcuts_version": 1
+  },
+  "autocomplete": {
+    "retention_policy_last_version": 149
+  },
+  "autofill": {
+    "last_version_deduped": 149,
+    "metadata_upload_events": {
+      "3EA": 1
+    },
+    "secondary_form_signature_upload_events": {
+      "17D": 1
+    },
+    "upload_encoding_seed": "24E3D350F86EB7726AA656AEDFFBCDB8",
+    "upload_events": {
+      "3EA": 32
+    },
+    "upload_events_last_reset_timestamp": "13433694764780119",
+    "profile_enabled": false,
+    "credit_card_enabled": false
+  },
+  "bookmark": {
+    "storage_computation_last_update": "13433694053321727"
+  },
+  "browser": {
+    "window_placement": {
+      "bottom": 930,
+      "left": 10,
+      "maximized": false,
+      "right": 1306,
+      "top": 10,
+      "work_area_bottom": 860,
+      "work_area_left": 0,
+      "work_area_right": 1600,
+      "work_area_top": 0
+    }
+  },
+  "commerce_daily_metrics_last_update_time": "13433694053321257",
+  "countryid_at_install": 16978,
+  "domain_diversity": {
+    "last_reporting_timestamp": "13433694053685798",
+    "last_reporting_timestamp_v4": "13433694053685803"
+  },
+  "enterprise_profile_guid": "0be58adb-f696-47b5-9134-0bd63d2919b8",
+  "extensions": {
+    "alerts": {
+      "initialized": true
+    },
+    "chrome_url_overrides": {},
+    "last_chrome_version": "149.0.7827.55"
+  },
+  "gaia_cookie": {
+    "changed_time": 1789220454.032839,
+    "hash": "2jmj7l5rSw0yVb/vlWAYkK/YBwk=",
+    "last_list_accounts_binary_data": "",
+    "periodic_report_time_2": "13433694053152026"
+  },
+  "gcm": {
+    "product_category_for_subtypes": "com.googlechromefortesting.windows"
+  },
+  "google": {
+    "services": {
+      "signin_scoped_device_id": "48f340ec-e966-4ce9-908d-c75be572e106"
+    }
+  },
+  "https_upgrade_navigations": {
+    "2026-09-12": 20
+  },
+  "in_product_help": {
+    "recent_session_enabled_time": "13433694053187121",
+    "recent_session_start_times": [
+      "13433694053187121"
+    ],
+    "session_last_active_time": "13433694758998247",
+    "session_number": 2,
+    "session_start_time": "13433694053187121"
+  },
+  "intl": {
+    "selected_languages": "pt-BR,pt,en-US,en"
+  },
+  "invalidation": {
+    "per_sender_registered_for_invalidation": {
+      "1013309121859": {},
+      "947318989803": {}
+    }
+  },
+  "login_detection": {
+    "oauth_signed_in_origins": {
+      "https://skymais.com.br": "13433694512631228"
+    }
+  },
+  "media": {
+    "engagement": {
+      "schema_version": 5
+    }
+  },
+  "ntp": {
+    "num_personal_suggestions": 8
+  },
+  "password_manager": {
+    "account_store_backup_password_cleaning_last_timestamp": "13433694527594417",
+    "account_store_migrated_to_os_crypt_async": true,
+    "profile_store_backup_password_cleaning_last_timestamp": "13433694527594653",
+    "profile_store_migrated_to_os_crypt_async": true,
+    "leak_detection": false,
+    "leak_detection_enabled": false,
+    "enabled": false,
+    "profile_store_date_last_compromised_credentials_leak_checked": 0
+  },
+  "privacy_sandbox": {
+    "first_party_sets_data_access_allowed_initialized": true
+  },
+  "profile": {
+    "avatar_index": 26,
+    "background_password_check": {
+      "check_fri_weight": 9,
+      "check_interval": "2592000000000",
+      "check_mon_weight": 6,
+      "check_sat_weight": 6,
+      "check_sun_weight": 6,
+      "check_thu_weight": 9,
+      "check_tue_weight": 9,
+      "check_wed_weight": 9,
+      "next_check_time": "13434312063485047"
+    },
+    "content_settings": {
+      "exceptions": {
+        "abusive_notification_permissions": {},
+        "access_to_get_all_screens_media_in_session": {},
+        "anti_abuse": {},
+        "app_banner": {
+          "https://sm-sky-ui.vrioservices.com:443,*": {
+            "last_modified": "13433694475219675",
+            "setting": {
+              "https://sm-sky-ui.vrioservices.com/": {
+                "next_install_text_animation": {
+                  "delay": "86400000000",
+                  "last_shown": "13433694475218661"
+                }
+              },
+              "https://sm-sky-ui.vrioservices.com/?homescreen=1": {
+                "couldShowBannerEvents": 1.3433694475219656e+16
+              }
+            }
+          }
+        },
+        "ar": {},
+        "are_suspicious_notifications_allowlisted_by_user": {},
+        "auto_picture_in_picture": {},
+        "auto_select_certificate": {},
+        "automatic_downloads": {},
+        "automatic_fullscreen": {},
+        "autoplay": {},
+        "background_sync": {},
+        "bluetooth_chooser_data": {},
+        "bluetooth_guard": {},
+        "bluetooth_scanning": {},
+        "camera_pan_tilt_zoom": {},
+        "captured_surface_control": {},
+        "client_hints": {},
+        "clipboard": {},
+        "controlled_frame": {},
+        "cookie_controls_metadata": {
+          "https://[*.]adsrvr.org,*": {
+            "last_modified": "13433694529151742",
+            "setting": {}
+          },
+          "https://[*.]criteo.com,*": {
+            "last_modified": "13433694528746052",
+            "setting": {}
+          },
+          "https://[*.]doubleclick.net,*": {
+            "last_modified": "13433694528949644",
+            "setting": {}
+          },
+          "https://[*.]facebook.com,*": {
+            "last_modified": "13433694766114737",
+            "setting": {}
+          },
+          "https://[*.]google.com,*": {
+            "last_modified": "13433694528545704",
+            "setting": {}
+          },
+          "https://[*.]skymais.com.br,*": {
+            "last_modified": "13433694766084272",
+            "setting": {}
+          },
+          "https://[*.]vrioservices.com,*": {
+            "last_modified": "13433694529049559",
+            "setting": {}
+          }
+        },
+        "cookies": {},
+        "direct_sockets": {},
+        "direct_sockets_private_network_access": {},
+        "display_media_system_audio": {},
+        "disruptive_notification_permissions": {},
+        "durable_storage": {},
+        "fedcm_idp_registration": {},
+        "fedcm_idp_signin": {
+          "https://accounts.google.com:443,*": {
+            "last_modified": "13433694054033109",
+            "setting": {
+              "chosen-objects": [
+                {
+                  "idp-origin": "https://accounts.google.com",
+                  "idp-signin-status": false
+                }
+              ]
+            }
+          }
+        },
+        "fedcm_share": {},
+        "file_system_access_chooser_data": {},
+        "file_system_access_extended_permission": {},
+        "file_system_access_restore_permission": {},
+        "file_system_last_picked_directory": {},
+        "file_system_read_guard": {},
+        "file_system_write_guard": {},
+        "formfill_metadata": {},
+        "geolocation": {},
+        "geolocation_with_options": {},
+        "hand_tracking": {},
+        "has_migrated_local_network_access": true,
+        "hid_chooser_data": {},
+        "hid_guard": {},
+        "http_allowed": {},
+        "https_enforced": {},
+        "idle_detection": {},
+        "images": {},
+        "important_site_info": {},
+        "initialized_translations": {},
+        "intent_picker_auto_display": {},
+        "javascript": {},
+        "javascript_jit": {},
+        "javascript_optimizer": {},
+        "keyboard_lock": {},
+        "legacy_cookie_access": {},
+        "legacy_cookie_scope": {},
+        "local_fonts": {},
+        "local_network": {},
+        "local_network_access": {},
+        "loopback_network": {},
+        "media_engagement": {
+          "https://10996825.fls.doubleclick.net:443,*": {
+            "expiration": "13441470528746394",
+            "last_modified": "13433694528746397",
+            "lifetime": "7776000000000",
+            "setting": {
+              "hasHighScore": false,
+              "lastMediaPlaybackTime": 0.0,
+              "mediaPlaybacks": 0,
+              "visits": 2
+            }
+          },
+          "https://15978676.fls.doubleclick.net:443,*": {
+            "expiration": "13441470528448067",
+            "last_modified": "13433694528448070",
+            "lifetime": "7776000000000",
+            "setting": {
+              "hasHighScore": false,
+              "lastMediaPlaybackTime": 0.0,
+              "mediaPlaybacks": 0,
+              "visits": 2
+            }
+          },
+          "https://9330654.fls.doubleclick.net:443,*": {
+            "expiration": "13441470529049937",
+            "last_modified": "13433694529049940",
+            "lifetime": "7776000000000",
+            "setting": {
+              "hasHighScore": false,
+              "lastMediaPlaybackTime": 0.0,
+              "mediaPlaybacks": 0,
+              "visits": 2
+            }
+          },
+          "https://gum.criteo.com:443,*": {
+            "expiration": "13441470528844406",
+            "last_modified": "13433694528844409",
+            "lifetime": "7776000000000",
+            "setting": {
+              "hasHighScore": false,
+              "lastMediaPlaybackTime": 0.0,
+              "mediaPlaybacks": 0,
+              "visits": 2
+            }
+          },
+          "https://match.adsrvr.org:443,*": {
+            "expiration": "13441470529198883",
+            "last_modified": "13433694529198889",
+            "lifetime": "7776000000000",
+            "setting": {
+              "hasHighScore": false,
+              "lastMediaPlaybackTime": 0.0,
+              "mediaPlaybacks": 0,
+              "visits": 1
+            }
+          },
+          "https://sm-sky-ui.vrioservices.com:443,*": {
+            "expiration": "13441470529152072",
+            "last_modified": "13433694529152075",
+            "lifetime": "7776000000000",
+            "setting": {
+              "hasHighScore": false,
+              "lastMediaPlaybackTime": 0.0,
+              "mediaPlaybacks": 0,
+              "visits": 3
+            }
+          },
+          "https://sst.skymais.com.br:443,*": {
+            "expiration": "13441470766115058",
+            "last_modified": "13433694766115060",
+            "lifetime": "7776000000000",
+            "setting": {
+              "hasHighScore": false,
+              "lastMediaPlaybackTime": 0.0,
+              "mediaPlaybacks": 0,
+              "visits": 3
+            }
+          },
+          "https://www.facebook.com:443,*": {
+            "expiration": "13441470766145359",
+            "last_modified": "13433694766145364",
+            "lifetime": "7776000000000",
+            "setting": {
+              "hasHighScore": false,
+              "lastMediaPlaybackTime": 0.0,
+              "mediaPlaybacks": 0,
+              "visits": 3
+            }
+          },
+          "https://www.google.com:443,*": {
+            "expiration": "13441470528652139",
+            "last_modified": "13433694528652144",
+            "lifetime": "7776000000000",
+            "setting": {
+              "hasHighScore": false,
+              "lastMediaPlaybackTime": 0.0,
+              "mediaPlaybacks": 0,
+              "visits": 2
+            }
+          },
+          "https://www.skymais.com.br:443,*": {
+            "expiration": "13441470766172864",
+            "last_modified": "13433694766172867",
+            "lifetime": "7776000000000",
+            "setting": {
+              "hasHighScore": false,
+              "lastMediaPlaybackTime": 0.0,
+              "mediaPlaybacks": 0,
+              "visits": 4
+            }
+          }
+        },
+        "media_stream_camera": {},
+        "media_stream_mic": {},
+        "midi_sysex": {},
+        "mixed_script": {},
+        "nfc_devices": {},
+        "notification_interactions": {},
+        "notification_permission_review": {},
+        "notifications": {},
+        "ondevice_languages_downloaded": {},
+        "password_protection": {},
+        "payment_handler": {},
+        "permission_actions_history": {},
+        "permission_autoblocking_data": {},
+        "permission_autorevocation_data": {},
+        "pointer_lock": {},
+        "popups": {},
+        "protected_media_identifier": {},
+        "protocol_handler": {},
+        "reduced_accept_language": {},
+        "safe_browsing_url_check_data": {},
+        "sensors": {},
+        "serial_chooser_data": {},
+        "serial_guard": {},
+        "site_engagement": {
+          "https://10996825.fls.doubleclick.net:443,*": {
+            "last_modified": "13433694528652917",
+            "setting": {
+              "lastEngagementTime": 1.3433694528652904e+16,
+              "lastShortcutLaunchTime": 0.0,
+              "pointsAddedToday": 4.5,
+              "rawScore": 4.5
+            }
+          },
+          "https://15978676.fls.doubleclick.net:443,*": {
+            "last_modified": "13433694528340613",
+            "setting": {
+              "lastEngagementTime": 1.34336945283406e+16,
+              "lastShortcutLaunchTime": 0.0,
+              "pointsAddedToday": 4.5,
+              "rawScore": 4.5
+            }
+          },
+          "https://9330654.fls.doubleclick.net:443,*": {
+            "last_modified": "13433694528950400",
+            "setting": {
+              "lastEngagementTime": 1.3433694528950392e+16,
+              "lastShortcutLaunchTime": 0.0,
+              "pointsAddedToday": 4.5,
+              "rawScore": 4.5
+            }
+          },
+          "https://gum.criteo.com:443,*": {
+            "last_modified": "13433694528746827",
+            "setting": {
+              "lastEngagementTime": 1.3433694528746816e+16,
+              "lastShortcutLaunchTime": 0.0,
+              "pointsAddedToday": 4.5,
+              "rawScore": 4.5
+            }
+          },
+          "https://match.adsrvr.org:443,*": {
+            "last_modified": "13433694529152515",
+            "setting": {
+              "lastEngagementTime": 1.3433694529152512e+16,
+              "lastShortcutLaunchTime": 0.0,
+              "pointsAddedToday": 3.0,
+              "rawScore": 3.0
+            }
+          },
+          "https://sm-sky-ui.vrioservices.com:443,*": {
+            "last_modified": "13433694529050415",
+            "setting": {
+              "lastEngagementTime": 1.3433694529050396e+16,
+              "lastShortcutLaunchTime": 0.0,
+              "pointsAddedToday": 5.7,
+              "rawScore": 5.7
+            }
+          },
+          "https://sst.skymais.com.br:443,*": {
+            "last_modified": "13433694766084770",
+            "setting": {
+              "lastEngagementTime": 1.343369476608476e+16,
+              "lastShortcutLaunchTime": 0.0,
+              "pointsAddedToday": 6.0,
+              "rawScore": 6.0
+            }
+          },
+          "https://www.facebook.com:443,*": {
+            "last_modified": "13433694766115514",
+            "setting": {
+              "lastEngagementTime": 1.3433694766115504e+16,
+              "lastShortcutLaunchTime": 0.0,
+              "pointsAddedToday": 6.0,
+              "rawScore": 6.0
+            }
+          },
+          "https://www.google.com:443,*": {
+            "last_modified": "13433694528546563",
+            "setting": {
+              "lastEngagementTime": 1.3433694528546552e+16,
+              "lastShortcutLaunchTime": 0.0,
+              "pointsAddedToday": 4.5,
+              "rawScore": 4.5
+            }
+          },
+          "https://www.skymais.com.br:443,*": {
+            "last_modified": "13433694759736220",
+            "setting": {
+              "lastEngagementTime": 1.3433694759736206e+16,
+              "lastShortcutLaunchTime": 0.0,
+              "pointsAddedToday": 6.0,
+              "rawScore": 6.0
+            }
+          }
+        },
+        "sound": {},
+        "speaker_selection": {},
+        "ssl_cert_decisions": {},
+        "storage_access": {},
+        "storage_access_header_origin_trial": {},
+        "subresource_filter": {},
+        "subresource_filter_data": {},
+        "suspicious_notification_ids": {},
+        "suspicious_notification_show_original": {},
+        "top_level_storage_access": {},
+        "unused_site_permissions": {},
+        "usb_chooser_data": {},
+        "usb_guard": {},
+        "vr": {},
+        "web_app_installation": {},
+        "webid_api": {},
+        "webid_auto_reauthn": {},
+        "window_placement": {}
+      },
+      "pref_version": 1
+    },
+    "created_by_version": "149.0.7827.55",
+    "creation_time": "13433694053125674",
+    "default_content_setting_values": {
+      "has_migrated_local_network_access": true
+    },
+    "exit_type": "Normal",
+    "family_member_role": "not_in_family",
+    "last_engagement_time": "13433694766115504",
+    "last_time_obsolete_http_credentials_removed": 1789220927.594487,
+    "last_time_password_store_metrics_reported": 1789220897.59407,
+    "managed": {
+      "locally_parent_approved_extensions": {},
+      "locally_parent_approved_extensions_migration_state": 1
+    },
+    "managed_user_id": "",
+    "name": "Seu Chromium",
+    "password_hash_data_list": [],
+    "were_old_google_logins_removed": true,
+    "password_manager_enabled": false,
+    "password_manager_leak_detection": false,
+    "leak_detection_enabled": false
+  },
+  "safebrowsing": {
+    "event_timestamps": {},
+    "metrics_last_log_time": "13433694053",
+    "scout_reporting_enabled_when_deprecated": false
+  },
+  "safety_hub": {
+    "unused_site_permissions_revocation": {
+      "migration_completed": true
+    }
+  },
+  "saved_tab_groups": {
+    "did_enable_shared_tab_groups_in_last_session": false,
+    "specifics_to_data_migration": true
+  },
+  "segmentation_platform": {
+    "client_result_prefs": "ClIKDXNob3BwaW5nX3VzZXISQQo2DQAAAAAQ+PjH2Pu77hcaJAocChoNAAAAPxIMU2hvcHBpbmdVc2VyGgVPdGhlchIEEAIYBCADEKn5x9j7u+4X",
+    "device_switcher_util": {
+      "result": {
+        "labels": [
+          "NotSynced"
+        ]
+      }
+    },
+    "last_db_compaction_time": "13433558399000000",
+    "uma_in_sql_start_time": "13433694053154465"
+  },
+  "sessions": {
+    "event_log": [
+      {
+        "crashed": false,
+        "time": "13433694053153837",
+        "type": 0
+      },
+      {
+        "did_schedule_command": true,
+        "first_session_service": true,
+        "tab_count": 1,
+        "time": "13433694058302776",
+        "type": 2,
+        "window_count": 1
+      },
+      {
+        "crashed": false,
+        "time": "13433694467596295",
+        "type": 0
+      },
+      {
+        "did_schedule_command": true,
+        "first_session_service": true,
+        "tab_count": 1,
+        "time": "13433694529210999",
+        "type": 2,
+        "window_count": 1
+      },
+      {
+        "crashed": false,
+        "time": "13433694758993596",
+        "type": 0
+      },
+      {
+        "did_schedule_command": true,
+        "first_session_service": true,
+        "tab_count": 1,
+        "time": "13433694766166359",
+        "type": 2,
+        "window_count": 1
+      }
+    ],
+    "session_data_status": 5
+  },
+  "settings": {
+    "force_google_safesearch": false
+  },
+  "signin": {
+    "accounts_metadata_dict": {},
+    "allowed": true
+  },
+  "site_search_settings": {
+    "overridden_keywords": []
+  },
+  "spellcheck": {
+    "dictionaries": [
+      "pt-BR"
+    ]
+  },
+  "syncing_theme_prefs_migrated_to_non_syncing": true,
+  "tab_search": {
+    "pinned_to_tabstrip_migration_complete_2": true
+  },
+  "toolbar": {
+    "pinned_cast_migration_complete": true,
+    "pinned_chrome_labs_migration_complete": true
+  },
+  "total_passwords_available_for_account": 0,
+  "total_passwords_available_for_profile": 0,
+  "translate_ignored_count_for_language": {
+    "es": 2
+  },
+  "web_apps": {
+    "did_migrate_default_chrome_apps": [
+      "MigrateDefaultChromeAppToWebAppsGSuite",
+      "MigrateDefaultChromeAppToWebAppsNonGSuite"
+    ],
+    "last_preinstall_synchronize_version": "149"
+  },
+  "credentials_enable_service": false,
+  "translate": {
+    "enabled": false
+  },
+  "translate_blocked_languages": [
+    "es",
+    "en",
+    "pt"
+  ]
+}

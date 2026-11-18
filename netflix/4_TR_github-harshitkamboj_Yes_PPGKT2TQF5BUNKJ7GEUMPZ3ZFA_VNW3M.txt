@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: November 19, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379,99 TL
+Extra Member: Yes
+Profiles (4): Buse, Seyda, Joshua, GTÇocuk
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1824821792	dsca	true
+.netflix.com	FALSE	/	TRUE	1821972841	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKZA45dU25tmaXPRGimHDEU9igD0niAZ4QXun-SjyTZDXTgzhIbyu3zFa5_QIFz0HipdiXfI_bTRYS6VVWGo5LA5XDjgnQlv1Lx0nkubJ2FqHjqHjnrVJjFUZ2NCBmXzE6Tvny-MhAqWgktd2Nq1rC_z4qPdyofTLyHyyaxQlYGVBAOPze1hq-uc6ZWl1CqFnV-PTufPYo0e3Enk2W4-nspA0ejts9O7PtzM8ezxnjwd86l5DMqaKBMB16OkVySkjTJDgUXZrEjYMh7NjbbBoGcgSLPSTfSheSPQHm7JQTj5f6ddJLsL-6Ubutz-KROyYQtMudllgQb15uGZGv7foXVJbN5wPHyCDuNFJpHJLzkvtBnTagYFIIGYNxDICLv4NwRn6smOFuryfILOhevSg9U5JDQ4lby6HDyBJrTzVb_nQCp5u6Z2l48hInYOzL1Gg-AT_UuFuN7mzftI7nVzBdZNpv1Ggt-B7pWS1Kk2dHF_yHtuOLHcvRuZw7wB-XAyKiGjSI61saUVMT-PejL2EpUKMCgodriWIeJ23cYBiIOCgxuRih93SryTIKypZU.%26pg%3DPPGKT2TQF5BUNKJ7GEUMPZ3ZFA%26ch%3DAQEAEAABABQktM27c3U0vovhkQM7Ss9zZi-SBs4NvmQ.
+.netflix.com	FALSE	/	FALSE	1798213235	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798213235	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1821797790	nfvdid	BQFmAAEBEBnZIJtHH3B3S8K_qIssl8Ngr7ZZL1aRPrL3M0fV5bdqHlAP-S5naO42k8h2Ryk7btnwHtpN5A7zf9lvsFO5yDp2ghE6tiGZZaqGY3Z3t3jYQoXgKQgJb-7J6IpUjv3GQHY0OV5FdDGB6ivm7lmDn76J
+.netflix.com	FALSE	/	FALSE	1821797052	OptanonAlertBoxClosed	2026-09-24T14:44:12.808Z
+.netflix.com	FALSE	/	FALSE	1821973236	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+26+2026+18%3A40%3A36+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=632100dd-372c-4aeb-b0ff-03c51f2f53e2&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&fclco=&lastConsentTs=1790261052&intType=1&crTime=1790261053239&geolocation=TR%3B34
+.netflix.com	FALSE	/	TRUE	1821972841	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQ54btWebgGnBEK8FAGvE37bwEshHpCGN0.%26dt%3D1790436843524

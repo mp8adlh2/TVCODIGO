@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: UY
+Plan: Standard
+Next Billing: December 3, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: US$ 16,99
+Extra Member: Yes
+Profiles (4): Raúl, Atunn, Gloria, Nahiara😻
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1796554947	gsid	ca1f3273-0ae6-4254-ade9-e83768ff0044
+.netflix.com	TRUE	/	TRUE	1819992952	NetflixId	ct%3DBgjHlOvcAxLNA0zT79QRGT483G0EzKqR3eTByfi70UT91ua0d_QkIwkjnpmW6DKj__jEUF9AYFXLl07AVzBfEFS3_2xwiRWoJPREzEjxeEf8xq0mSdit1YSo7uLoybQxi3Zw4tmZLISr_KmX7gD3ywuH7LmJUTkGmaOKV61U09kjnBSkaSS-3J_VQcvBsPJHlIohYdAyHGChlK5jHyiFxFZTUet-oRM-TqGc55-ddxcF-FMBk59flErbPz0Ki74ope-DlChhNKgf_lTeRcrX-ynkZcAq3BsV87t3GVcSq3FXKMRm9fFxmWHUxXJdtjRgeaOUgjLicawEGXgJHAo7YctS9BmScKmj11lplsGa6aKK8gWa0qEngSRs3eOHyZ4vHeya0AgMyRHEwfMB6pykbvjjZ2bL32R0_7X_no11MKWvJb3tC2aEpY-0FIq3GOQWxM4Xo3oXGIInU5KbDU9tvYfQaZp55kO38Dd-OYQANYU-scnlE1I3ddOUFPtU127wS_JPE51B9sVNQXx-M5tXlYnoBpMwFVWPFRDkZpK_FV71CF4FV55u6BbhrUiJ9nPNUwsDvzBP0qJxG2wIso6J8adJr_1S6bstbrQ7x_xGu8YLc6DcixnfGAYiDgoMMi1U13aMGg6wSg59%26ch%3DAQEAEAABABQPsIgx0YSBxgHAn-nc95chy0sBVn_dh3Q.%26v%3D3%26pg%3DXL2I7BCWBZAB7FBK2ZO4L6TMNI
+.netflix.com	TRUE	/	FALSE	1796232954	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796232954	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796554947	nfvdid	BQFmAAEBEIHhueu_4o84BDIaQZIyY2pgtIZ7NzZO7ChP214MZK2iTwEGm7zROhplvaM8GO7FV_FTB3NH6y-TpU7a20pIWSHlY737CdmoNy6DiA0g55Nb992ZLvcox3BQG1kjR-MsdqjXYcR0l_l3zFo1vOq7OV8c
+.netflix.com	TRUE	/	FALSE	1819992962	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Sep+03+2026+14%3A36%3A02+GMT-0300+(hora+est%C3%A1ndar+de+Uruguay)&version=202607.1.0&isIABGlobal=false&hosts=&consentId=aef64ae9-a407-4026-9eaf-d67db4028fba&interactionCount=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&browserGpcFlag=0&isAnonUser=1&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	FALSE	1796232954	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	TRUE	/	TRUE	1819992952	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQLCnqNDJxd4ADFUbc0ifhpD4NrYZceZMo.%26dt%3D1788456952249

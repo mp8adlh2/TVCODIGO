@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: ZW
+Plan: Premium
+Next Billing: November 16, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: US$9.99
+Extra Member: Yes
+Profiles (5): Gideon, Darrin, Darrel, Daila, Kundai
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1820633426	NetflixId	ct%3DBgjHlOvcAxKyA2aIkltNd7XV1c76aFxUFnEMWIfN7qYDE0-1cpTOMF_j-WmwUnjDmzH8yCfuorZ7Uc59kynWHyS51Js6qhRvnA0Gdk34UgZw16_1f-v7WHqbdIdzH1dItAuw4M6OnYfR4yCl3aJEcapxFgS_-RsPR5kA5up5_9I_-5JKBN2sxM44uPHMGjE-ePt0LtUf41ribEeW4WCPznbKaeEdjjMuLXzVoTrqEViSeQrVIwd_2oypQUiSHn8oKGUUdHj2_yM-F3q_kCHuy67Rbs6t03Lo_pYKeVRBBLof8hu89AClRXUGv6mmjlHSxDnWz787EvKHe7n-tBWZJ5DawgUx4e24NU8_uhTPvxcTX9xeJX6G3SRVid6SpWTvKUhIvr8y19O5TBdMdW3OiuDu_ieubHUWDDAYbcp18dG2--Ka28HkZabHmxAB5CvjE4g_9uCkQ_V8Zh2ecBlVeejayZwVSdkEKy09W3WT5Tgjjze0ONTS7OCht8s_kg2tYuUdHIeWvjJ6VXPNPwu3J-41248UlBBSd0ySphLMnYLujA1Q8L0yvnBc20N1wbLKZWVUWcViD0hk8814GAYiDgoMtnkrWwO5weIuN2lj%26ch%3DAQEAEAABABT3UCIxGsq-f4xujE6M1AUnbxbexrF0My0.%26v%3D3%26pg%3DXJJVYNFSUJEXZLUDSJ2NF3DG6Q
+.netflix.com	TRUE	/	FALSE	1796873426	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796873426	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1814698918	nfvdid	BQFmAAEBEMmcybVMolVnnXb9epPbcHdg0RfxwLMpxNdEa5-tgglcJ65eLIVQbW_S4z61mIkGKdAr67ygQf9JyP6YKQi8_fAXrVTWnjXXMq7eFM4U32KeqCYp0_je69IZ0rl5thFnPfyS6cTPgHQBVD8INS3xZPEE
+.netflix.com	TRUE	/	FALSE	1820633429	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Sep+11+2026+05%3A30%3A29+GMT%2B0200+(Central+Africa+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=e1400522-0c98-4d77-877b-edbcb5036371&interactionCount=0&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1796873426	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	TRUE	1820633426	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQBUkTM0rYIR0AD6JdjtQEIeSeFXnjXolk.%26dt%3D1789097427063

@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: PK
+Plan: Premium
+Next Billing: November 18, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: PKR 1,100
+Extra Member: Yes
+Profiles (5): Saadat Mithani, Aquib Chandio, Mustafa, Rameez, Shayan
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1816943358	NetflixId	ct%3DBgjHlOvcAxKDBLpLZAntHXGOhF-MOEw0x-PyAJL78IzjRUV67t2QZkYyCQ0x2AN5uJCF0MznoIEiipFJhV0ogu3swklLtmpWgo6p1Z_zWyY67_6mIv8GdwBjhfjMLnSCyLMY1R1z9p67skh3n09tj8u-avrjmiwfg11YaON3UtF_qeJDvi5J9Lj6_LSw7rLvQAKkQ6Bak2xy2f1pUNCkAFP7gXMRPbpZHnLsnQpfMce_V6tis42bQZkDE5FPd7BmucnvyKWfY6-Gpokw_nxM5tu_Wb6AmWO53Z2YWaW08fZ0WEPeRNLg4uTpvsHjgDTb_GyoRrUZWPB2fia4y_8fqk-MD6ajN03K_ItN6aBzF9aMIPrr6TAOsVUmM1BxwjlvgnvgUd8-Gnp-Jva99X1m14jGqp4ZujRgHK5Nlq6vZK_ZCRmadeu1eiI_IUdZJzUbdC9CWWyG7rrJq3R6A4O_hduwW2vdmZACfLNNfqQj14EBbCafY5u5VSVju-VwxEYM4mVyPk7G33FjHxEO_xMKjblJPQRaJrp6TsRiSIcqUoJxDyUGru1dCcQigc8jiMUwCocGUUqN04SQm7SLRX_JuE1uvn3-C7kZNwDpDUuJaCrXsNvBacbU5_dw2Sqq0LoQzxjEm2X6EsCAFNj2Zn3_-0KVP5Hcwu3OOtK42yCokLEGHsggP-7wOttLyzqCGAYiDgoMjci2LpXJHnYCOSdC%26ch%3DAQEAEAABABRKw2DE94VR5ZdLMcJqWrF_YtBC5z_6pGs.%26v%3D3%26pg%3D77PYF2BJPBCYTE3YMMMII5OJTU
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1808324043	nfvdid	BQFmAAEBELG9Ic6d2FizjRyi9UEkbudgKOfIeqwd7P3VAUfKjjCBv921wEilB2tkgp0rjecJOHvIOFaNMC5tEkGqLn2Eg_YuYpW6lnZDD4yAuC_0kQsIPbTJ1yQvVKccDDKoUJDQPgo81pvndjf7YhVCjXI-cpkT
+.netflix.com	FALSE	/	FALSE	1816695280	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Jul+27+2026+18%3A34%3A40+GMT%2B0500+(Pakistan+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=078caff8-7114-454f-97b4-51c4c6ba40cc&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&crTime=1776718036218&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1796554946	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1816943358	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRY9Gz4ujbELFgU54rUQHeQ9GfcF43UdS4.%26dt%3D1785407358735

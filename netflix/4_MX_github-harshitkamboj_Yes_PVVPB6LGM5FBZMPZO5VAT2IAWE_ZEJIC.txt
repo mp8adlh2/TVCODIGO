@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: MX
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: TELMEX_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (4): Robisel Sánchez, Bobi, Gina, Niños
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1812043946	OptanonAlertBoxClosed	2026-06-03T17:32:26.128Z
+.netflix.com	FALSE	/	FALSE	1812043965	nfvdid	BQFmAAEBEGDFrO9Sz1B9C-D3q-H-GwtgTV3OcK91a-JeFnTskCZqdgaK8jZug3t0oTFnF3WVDW1oWVPnLYW8lt3iQxlLgqmm8A_Lj3Ia4Fn6cQhX9sWcUYIAOdUUuPfCqz_JpUJ8frVb5D9iv1aPB0jzZ-csrOZK
+.netflix.com	FALSE	/mx/title	TRUE	1815501915	dsca	true
+.netflix.com	FALSE	/	FALSE	1797780806	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797780806	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	TRUE	1821653922	NetflixId	ct%3DBgjHlOvcAxKFBOStnNEzfbEImwXb84JSTh3Kag9PdZFB2rrI_JXeO5mQT8p7ZKk-8YkDedaI2iuw_a2HuoaF2CexPKBqcPyITRjYzyN2SwsTjh3MJnbs-PULxUegAG9XazAnRjoKL4YhKgHNfZyPTvIrteGaq5xs2Zx6tMrE2ZB1OIlWx1EjSzzq-pDp8EdOuJ4DhP5Nn-RUnMZQsfo01u8EzS7Ule5HkBY54LWrPvgZoQRUf5eYxodnAHEOlppLZfBibQPOqlwmlwdKTwMstdpT1DAL9HGU5MabMDLqMcxPMMZ5zgXoUR1cPmzBDTZ_Jutn_aQJeXzsxVO0AY_DQ0iGaU_Z4ey0AQdhFPPONOaV3hvGC3vkHNVfSnZkfDflluv3BlqMN1DI5ShIUl9z3NZzdhm2Qt3K9S71B6t89kwurG3cOaig0Fc69wXcq06PxxTsaHVfmn1_Iq9PS4XZDkr58siTi_Oq078ve7cidTt0bdj3E8Zu2CKeboU54ioujUhmHqTNwuxwlrpZUZY4rjGZtyriOCan5VTcLgUThVEg0QJLe_pc7-75GuOFycS2d94AiJeMD5jE39EHz2lo82E__sF9ddsAaM7glubYGmOrV71C8KYzSKbvSKfXfmwXyyl25emY9m2ozhFf6TotAwCPJZDcpRopF-Ys5CX6wrolu5Ko962SLAoDIp-GpN8YBiIOCgyxYTYEUFPnPicaCUQ.%26ch%3DAQEAEAABABQ6WZtL2Ri4-zQ2sAbSHGFQ3XU4h2t-Coc.%26v%3D3%26pg%3DPVVPB6LGM5FBZMPZO5VAT2IAWE
+.netflix.com	FALSE	/	FALSE	1821653925	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+22+2026+16%3A58%3A45+GMT-0600+(hora+est%C3%A1ndar+central)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=d9d7e540-ace7-44e3-914f-c41f325c1001&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=3&crTime=1780507946419&geolocation=MX%3BCHP&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1821653922	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTd3Yzbk_qRhJqQF-4elIpe4sub8OVieKw.%26dt%3D1790117921341
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	2727c9bb-3983-47b3-9842-ad3a5ebeb25b
+.netflix.com	FALSE	/	TRUE	1824677924	nap	BgiJv-vcAxJJCMHxpUYKnSo0Td7HK16kXb32od5hhuUq7TWlRDjTy4Z97oL-lbgnncLii8_JIx5-ofRbuMtEu6E7-TZXkC4pURBI9dFMeimorhgGIg4KDJRCJ7ARfmebPBCrOQ..

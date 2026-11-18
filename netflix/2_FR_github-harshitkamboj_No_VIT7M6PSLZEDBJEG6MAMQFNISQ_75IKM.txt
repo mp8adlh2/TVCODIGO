@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Standard
+Next Billing: UNKNOWN
+Payment: SFR_BILLED
+Quality: HD
+Streams: 2
+Price: N/A
+Profiles (5): IZDINI, Madi, ARON, Daoud, Jeunesse
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554944	OptanonAlertBoxClosed	2025-10-27T14:39:19.617Z
+.netflix.com	FALSE	/	FALSE	1819231739	nfvdid	BQFmAAEBEOxuqd-MXuy20SkOwLfPcvxgpzswdjklSJ-8SjhTFwME9zYqHSLFAsp9h0cSduMnWPysPFNdufTDIrBI0iSMTaTFZzXrCZ3KYHMk6hccuEJrt4Q45PBCG6-uq86wvqBMRuE-4vpTtHuhf3OLU-J46E13
+.netflix.com	FALSE	/	TRUE	1824766071	dsca	true
+.netflix.com	FALSE	/	TRUE	1796554944	gsid	a2a4cecb-834c-400b-97ff-37526544cf3b
+.netflix.com	FALSE	/	TRUE	1821785869	NetflixId	ct%3DBgjHlOvcAxKGBBoBjdQg2_MoROqEsg9Sxplg3tA6g3rYhcwS2J8erqwbEimvsYjEhwDE0084VI0dmBAcYqlKmMwMsExnnj7NaMWplAGMSBeBU_wmsgza9FbWGUvSi56PhlSfloIHq5Nn-1ZqFt_-NMUj9pNtmD3nozDSRqijDnPkTG-PoICLULnbvkeo-V8XJMycSrg5NuH2gzqgD2G0kqnt5dms7ERh-nHRaRC9A5CRWy8Nmb6lI-Q0BibZQIKrfL-j5ePV_vnCnMO2IPiDK6DW0GVimDr4vlU0BuDbebxq26mjVjiOYRz3CUXEJnP2DbmyQz6cNXBA6lk64VlSpAUNYL-jWM76Vd1VQVnKnzdEjECtMo9UpE0RZMUGYTmK3sr4F5hjCx9ioJsk2PFIul3UMB7OkhaKWj0jGQF7MKS_piK-bpnVzVbix41mxTsC9oShZu-Voybj-_CO9QEBthvQ8kcYtKszUkLGOjdRUFv4VwtTh-R4oQEtDlQ3JKU9ydFs8_yPhXGkMI6SrBn5WJCK9Hvk_Q9smfSTfC_pPKqvh2AhmNFVn6IthBcwdHcURshMpDESk8T_TYRVzHRr4pchuaIVdM5FulQ9oku9KrLqVHgFqDja4rxp3viY3mH_RtYyLebfmBpshUyIazfEqM2BFmsqULOGQrvR2IQAzuEGjZtJDGHjVsYIHSHESJRjGAYiDgoMzpDQ2CqnvheiuzEU%26ch%3DAQEAEAABABSUT_QcWNIiUvoXA7ylKEv5WgVc22Qz3H8.%26v%3D3%26pg%3DVIT7M6PSLZEDBJEG6MAMQFNISQ
+.netflix.com	FALSE	/	FALSE	1821785872	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Sep+24+2026+13%3A37%3A52+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=49fc6fb1-c127-488b-9bf1-e5e9e2c4ab95&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&intType=2&isDntEnabled=0&geolocation=FR%3BGES&prevHadToken=0&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1821785869	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSAbeSwS_97AdqM_53l7WLt0dt3-khwaVM.%26dt%3D1790249870652
+.netflix.com	FALSE	/	FALSE	1798025871	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798025871	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798025871	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

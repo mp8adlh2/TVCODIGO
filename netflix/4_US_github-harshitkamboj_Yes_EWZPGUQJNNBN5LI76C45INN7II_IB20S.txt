@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: US
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: VERIZON_PI_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (5): Rita, Kaka:P, Kitood, Jake, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1806857678	nfvdid	BQFmAAEBEJT8N0HI_D8aa45O8FW80XBggIxQIE7tuOmaMU8bZ-U-d6UoDHhuS9tp_o9AhN7NPywn_GvTwBzKU6obxeETjQTxL8BIdrI7MdEyJGnVWQFd2meH7pod88hyeVViESGX62R6edbzl_jaGMkpsb2s8nUI
+.netflix.com	FALSE	/	TRUE	1821421490	NetflixId	ct%3DBgjHlOvcAxKEBFYXf1A8d59S4mZ1j4BtKllTxJ9O1suFTsv_X9slOfzWPKdmy-ZvkuVqChMKFyTwTarBPN-tzvn60_jYAn8dFbQnkX_zluf7UWM3J4G2Uyr4o8f5J2fTwtQvDjVnvAK7waRbC5xkVgTP1PGEjUjbbd-QmrCoRYg1bKwyb85UmTUGv739TPk9uS9Rn_v54zNPPFj2lP0dObuoagkD6_P-x6vRiZB_ObXi1e9jVJKp9P8HEBUN6s2NVVndUInEsvYSS17xOhqYJUosynuJmT6dw9-v3ebppd130Cq0EMEodh3o-W0W-JSNOxBZjhDdpbgy2QbUwyftVapZJPZowbkDbMo9Xrgs7hajNr-Ocw9cFyNx578A7wcnniSRiUQ-ktaHVDda-oyu3byyu-3gWbte811JBCvAsPkNZQfXCyhQRTQbRj-1SM02pj27VNi4E2XUp-vJiUaYdJiVpGcpJxJsfx4MRs_HLOndqN2bRsmbCOXXrCJky3qUGTLAq3P_SsJBg1WBoI9GVuBspRCSoF1EQmrp4ITHNEOdNENLYpKexu5V4WpYabJSnNx5kAhha_tVNIyLOIavpR0zgIbtgAwTdU8aJXP-7Rthoza0cnB5hKm8xYPE6ld_IWH9toPF08_3P7SIn3S0yDhFKa4nOC4O8yhlPszWInlT7N6XgaqeWAYXrFkpfxgGIg4KDObp6tE8tTagRfaZGw..%26ch%3DAQEAEAABABTRtxIt2qIOqUnYt22VhLgbLeyeXAQvz0o.%26v%3D3%26pg%3DEWZPGUQJNNBN5LI76C45INN7II
+.netflix.com	FALSE	/	TRUE	1821421490	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQ1CBjzFgV7Rh7B3BBkCRhEeP6fnXVCCWM.%26dt%3D1789885490678
+.netflix.com	FALSE	/	FALSE	1821429327	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+20+2026+15%3A35%3A27+GMT%2B0700+(Indochina+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=38cbb36b-b25a-41df-a1e0-c1684fbf045b&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1775321678356&AwaitingReconsent=false&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1797669327	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797669327	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797669327	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

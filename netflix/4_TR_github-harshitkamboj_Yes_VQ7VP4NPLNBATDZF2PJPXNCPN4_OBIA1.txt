@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: November 28, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379,99 TL
+Extra Member: Yes
+Profiles (5): luci, 🌸🩷Burcu, Derin, Can, Le R
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1798494204	OptanonAlertBoxClosed	2025-12-28T21:43:24.211Z
+.netflix.com	FALSE	/	FALSE	1798494216	nfvdid	BQFmAAEBEH2mbE-Lcjl9s02xjXxZrP1gtUrliZbJ2rvTwswOPuN8L7RMUktW-vSQv43jW_vM6DZDNRi6As7ePD7LiTSXaVgzGxtRCPYifxPR7SEcUHkTY73Zql_9fRooOD_8k2GnRiOOMkbAIdwANJAPEBfP-WZc
+.netflix.com	FALSE	/	FALSE	1821605733	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+22+2026+12%3A35%3A33+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=45d631a2-6df9-46a2-9651-ba3c5941878d&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&AwaitingReconsent=false&intType=3&geolocation=TR%3B33&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1797845733	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797845733	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	TRUE	1821778538	NetflixId	ct%3DBgjHlOvcAxKLBFm9yisrpXMYK3dA5g56271zRt2oLYItKWPpOMZ-H58Y1h3obkGUTKm5HqHTG2KpzE68MjZ37YGMt_ZZIhXJ3MC1XxBZEFCk3iShc4RO6fqi5MrqKhyLwvD0i0EAgp7HHUYcBAJWdy8uqAhoiwZtbQZShkm5-gyIwS1u6swEmiUrrqaDFs0G5-MFDolnIyGFHqdTPTSHECqwe-SzTG3Ky3i3s8mu2kVwAja2hNJ8nfnsLp6WpjLin3rZgRgMOKJfbEEs_Pb3Tl7fU375R1wrpJRjjDoDlvwvF0z8IkfkgHJnrt4TQVSI7_oiYQs_kaq1L8zHOxZp4tSBgNa5wRXUXPS07Mc8i9xC73d8e_jVTCXeCfiEZL5AKClw-m8uY6eglqzx45i3cdPLoKn3QP8DugDU2-gD_N8MrINDWsIulRxFBhe_kV6GyhVFhAKene1Q7fXhMXOZ5DRYhTaI-9QX1Ja609hQTY_PCsHkc7K8DhmM_HZytWGqv6NyY7T1uCbPYI9WjXB0kydfmbRlda2Y0aPjYZwo-DjtEsDfiHRJ6vnz7u5b1woX9LxoIF1R9m63jAZkfKrf6TvioXqVZWwMHI4QA6qCYS_h1MUqaik127TGmrITwgMWz_I3924hjFyKuyvVzY9KKNqzR-Z240KYsg3a-K6oDrDADxDFvJqKWelrGldgkaU9fMCyPXwYBiIOCgw847PMO37Ttelqr4k.%26ch%3DAQEAEAABABSdDZYzdTqphtF4b84iM0e0WIB-_buVTUY.%26v%3D3%26pg%3DVQ7VP4NPLNBATDZF2PJPXNCPN4
+.netflix.com	FALSE	/	TRUE	1821778538	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSh7ZVU2ibl7C58wUUQWzwNcSm6QXCPSxc.%26dt%3D1790242538702

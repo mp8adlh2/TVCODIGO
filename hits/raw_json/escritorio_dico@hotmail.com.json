@@ -1,0 +1,314 @@
+{
+  "email": "escritorio_dico@hotmail.com",
+  "password": "17Carol95",
+  "access_token": "911d03d1-2021-48ba-b8e0-1d3493b6a0d6",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiYWU1MzkwOTMtYTQwYi00MGRiLTgwMTAtMDM0ZTU4NWEwYzYyIiwiYXRfaGFzaCI6IkRWQ1M5OEFEc2h4VEtKRDlvN2V3anciLCJkZXZpY2VJZCI6ImY0ZGM3OGQ5Y2VjNjI3NTJjOTJmNjE3MTI1ZjNkM2QxOTA2ZTc2YjQiLCJhdWRpdFRyYWNraW5nSWQiOiIwOTI1LTUxM2ItNDUxZi04Yjc0LTI4MmQiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjc1MjYxNSwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiI3NDQ5MzkwNC1mZWRhLTRkZTktYWIxYi0wYjI1NmFiYmE0N2UiLCJzaWduYXR1cmVzIjpbIjQxMzI4MDgyIiwiMTUyMDIxODAyNiJdLCJjdXN0b21lcklkIjoiNzgzZGRiMDE5YWI2NTc4MmYwZTIxNjUyNGFlYWI0MzAiLCJyZWdpc3RyYXRpb25TaWduYXR1cmUiOiIxNTIwMjE4MDI2IiwiZ2l2ZW5fbmFtZSI6IlJJQ0FSRE8iLCJ1c2VybmFtZSI6ImVzY3JpdG9yaW9fZGljb0Bob3RtYWlsLmNvbSIsIm1haWwiOiJlc2NyaXRvcmlvX2RpY29AaG90bWFpbC5jb20iLCJyZWRlbXB0aW9uTGltaXQiOm51bGwsImlhdCI6MTc4ODMxMjc1MiwiZXhwIjoxNzg4Mzk5MTUyLCJpc3MiOiJzbS1za3kudnJpb3NlcnZpY2VzLmNvbSJ9.LHJWHCkAYIveE7M5TrtKlCxdlHg53O4PZRLrMi9CRVRzrq4UON6BiWcnqrxWa1vwCubHg9diHEsHhj4kikyOF3NW86So0fjJIrTRjCvV7fNpR0a7aEduQ-V87ArfGy1uIW0YcWAfaSt7ZSx3PFBI96zf9he6T-xMqxQMYM7DihQQNRJn67WIX-i08BgfjQTeWeKMI_UAdCUyNudB-LP0EddEdxbXP9c_JfT5k7dRo4NTszJl0ne2jm81Ug7UWt408pAdFkQSRzyafmcZlrQl898cagYwiHZzMU7arzRTCm8D2j3WfPQdsfI096deN4thhjuxfa_agR_u2LWpM1TYRg",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "911d03d1-2021-48ba-b8e0-1d3493b6a0d6",
+    "externalId": "9e16caaa-c8a0-5b91-9c29-c2e25c4470e4",
+    "username": "783ddb019ab65782f0e216524aeab430",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "1520218026",
+    "protocol": "2026-150197192591",
+    "customer": {
+      "email": "cacadarido@bol.com.br",
+      "billingProfileCode": "1-428D-1022",
+      "name": "RICARDO",
+      "secondName": "MARTINIANO DARIDO DA SILVA",
+      "birthday": "1973-12-23T00:00:00.000Z",
+      "ddd": 12,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5512997708538",
+      "id": "783ddb019ab65782f0e216524aeab430",
+      "cpf": "15021188828"
+    },
+    "signatures": [
+      {
+        "id": "41328082",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 997151048,
+          "dddMobilePhone": 12
+        },
+        "customerId": "783ddb019ab65782f0e216524aeab430",
+        "status": 1,
+        "productName": "SKY PRÉ PAGO FLEX",
+        "name": "RICARDO",
+        "secondName": "MARTINIANO DARIDO DA SILVA",
+        "dna": "01000000000100000000000000000000010000000000000000000000000000000000000000000000000000100000000111110000000000000000000000000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pré-Pago",
+        "addressInstallation": {
+          "linePublic": "Rua Joao Batista Rodrig De Andrade",
+          "line1": "Rua Joao Batista Rodrig De Andrade, 122 - Jd Paraiba",
+          "line2": ".",
+          "number": "122",
+          "city": "Aparecida",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "12575166",
+          "referencePoint": ".",
+          "addressType": "Rua"
+        },
+        "addressBilling": {
+          "linePublic": "Rua Joao Batista Rodrig De Andrade",
+          "line1": "Rua Joao Batista Rodrig De Andrade, 122 - Jd Paraiba",
+          "line2": ".",
+          "number": "122",
+          "city": "Aparecida",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "12570000",
+          "referencePoint": ".",
+          "addressType": "Rua"
+        },
+        "activation": "2009-03-14T00:00:00.000Z",
+        "email": "cacadarido@bol.com.br",
+        "parentAccount": "041328082",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000376675500",
+            "isRecordable": false,
+            "technology": "SD",
+            "subcategory": "PayTV",
+            "serialCode": "DSR3421",
+            "serialNumber": "CE0A4500956228130"
+          }
+        ]
+      },
+      {
+        "id": "1520218026",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 997708538,
+          "dddMobilePhone": 12
+        },
+        "customerId": "783ddb019ab65782f0e216524aeab430",
+        "status": 1,
+        "productName": "SUPER HD II EXCLUSIVO 2025 - P",
+        "name": "RICARDO",
+        "secondName": "MARTINIANO DARIDO DA SILVA",
+        "dna": "01000000000100010000000000100000100000000000000000000000000000000000010000000000000000100010000111110000000000000000000000000100011110000100000000000011111111111111111111111000000000000000000001100000000000111111111111100000000011111010111111110001000000000001101111111111111011101110001111111111111111111101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100101111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua João Batista Rodrigues De Andrade",
+          "line1": "Rua João Batista Rodrigues De Andrade, 122 - Jardim Paraiba",
+          "line2": "Marco 2 Fina Px Escola Natacao",
+          "number": "122",
+          "city": "Aparecida",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "12575166",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "addressBilling": {
+          "linePublic": "Rua João Batista Rodrigues De Andrade",
+          "line1": "Rua João Batista Rodrigues De Andrade, 122 - Jardim Paraiba",
+          "line2": "Marco 2fina Px Escola Natacao",
+          "number": "122",
+          "city": "Aparecida",
+          "state": "SP",
+          "country": null,
+          "postalCode": "12570000",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 12,
+          "resPhone": 997708538
+        },
+        "activation": "2020-01-06T00:00:00.000Z",
+        "email": "cacadarido@gmail.com",
+        "parentAccount": "1520218025",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000757451182",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2036151200559"
+          },
+          {
+            "smartcard": "000752241869",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "670A2036179792058"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "1520218026",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 997708538,
+        "dddMobilePhone": 12
+      },
+      "customerId": "783ddb019ab65782f0e216524aeab430",
+      "status": 1,
+      "productName": "SUPER HD II EXCLUSIVO 2025 - P",
+      "name": "RICARDO",
+      "secondName": "MARTINIANO DARIDO DA SILVA",
+      "dna": "01000000000100010000000000100000100000000000000000000000000000000000010000000000000000100010000111110000000000000000000000000100011110000100000000000011111111111111111111111000000000000000000001100000000000111111111111100000000011111010111111110001000000000001101111111111111011101110001111111111111111111101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100101111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua João Batista Rodrigues De Andrade",
+        "line1": "Rua João Batista Rodrigues De Andrade, 122 - Jardim Paraiba",
+        "line2": "Marco 2 Fina Px Escola Natacao",
+        "number": "122",
+        "city": "Aparecida",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "12575166",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "addressBilling": {
+        "linePublic": "Rua João Batista Rodrigues De Andrade",
+        "line1": "Rua João Batista Rodrigues De Andrade, 122 - Jardim Paraiba",
+        "line2": "Marco 2fina Px Escola Natacao",
+        "number": "122",
+        "city": "Aparecida",
+        "state": "SP",
+        "country": null,
+        "postalCode": "12570000",
+        "referencePoint": null,
+        "addressType": "Rua",
+        "resDdd": 12,
+        "resPhone": 997708538
+      },
+      "activation": "2020-01-06T00:00:00.000Z",
+      "email": "cacadarido@gmail.com",
+      "parentAccount": "1520218025",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000757451182",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2036151200559"
+        },
+        {
+          "smartcard": "000752241869",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "670A2036179792058"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "1520218026": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "ASSINATURAS DIGITAIS VII",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "28-08-2026",
+          "end_date": null,
+          "icon": "📺"
+        },
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "05-02-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "FATURA PROTEGIDA SKY",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "14-01-2026",
+          "end_date": "14-01-2031",
+          "icon": "📺"
+        },
+        {
+          "name": "AMAZON PRIME",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "14-01-2026",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-21E06AD",
+            "name": "ASSINATURAS DIGITAIS VII",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": null,
+            "price": "2.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "28-08-2026",
+            "startDate": "28-08-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "05-02-2026",
+            "startDate": "05-02-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-1VZOCH0",
+            "name": "FATURA PROTEGIDA SKY",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": null,
+            "price": "10.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "14-01-2026",
+            "startDate": "14-01-2026",
+            "endDate": "14-01-2031"
+          },
+          {
+            "id": "1-21ATHJR",
+            "name": "AMAZON PRIME",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Amazon%403x.png",
+            "urlDetail": "https://www.sky.com.br/amazon-prime",
+            "price": "5.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "14-01-2026",
+            "startDate": "14-01-2026",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

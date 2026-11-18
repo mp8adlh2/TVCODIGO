@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: UY
+Plan: Premium
+Next Billing: November 8, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: USD 21.99
+Extra Member: Yes
+Profiles (3): Elisa, Agustin, Dany
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554947	flwssn	43f1ec14-3d32-4ae0-b0b2-05b2acac7cc3
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	6e08e4b0-60b7-47f2-88af-2607dc2a6b69
+.netflix.com	FALSE	/	TRUE	1796554947	NetflixId	ct%3DBgjHlOvcAxKxAzcXH31rdKwMT0wZMTI0EHk2zlTYrx9uC11IE9EzrKOpTJ5W5iWDMaRMmwq0X3prAQ9i2WDvxND0BgZ-GNMmc5HcLGN08NrsSG_U3_lW-NBaFa8zmMZWk0PRlsuc0DdWc2TtIPgjH2R-bTKqGIS3R7znlMMs38gdqeUzAQmZeL-z4jsDkOins64_fdY6PI4VwNQkWrWEkHbBERm-HNWqYssLejJNK5CL_SoKDdjYcecjJCDgHzyXLWUYvZ6Ug4QFDJDfpwElBj7xUmPx5L3kYKqZiOufCw-EJA8vjDyI0tvHmEMZkuJe3KObGsnP9fVOuKwJa_gDez7ZmlhP9mRzyFQdOZjdN4XcM3x4h1paxdBDZ4Bg077tB4Z941CGa7oJdxMjQUqLJf02t6ejQ1sQjQ5InYZG6ncBOsN9c31CW8vrMb54AoxF69cDvxdeOvenQ4kokUA_PvJGsN67vmdCNthOLCkOTw_VDfAWuZENjVABVNznEGtuEbQIdwPyjTeSJi7syFFGuTHDenM8CmF0wRzmwsYxuVWecJFnlNydEIJeyL4JolWnYfvVf4Bzdv4ILb0YBiIOCgwlPwVqb3LyZpOOAtA.%26ch%3DAQEAEAABABRBNeS48buir5E7zX1hgpsFMvLLhSOWISo.%26v%3D3%26pg%3DZHORHO33T5GVXLSOJOAKT33GHI
+.netflix.com	FALSE	/	FALSE	1796554947	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554947	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554947	nfvdid	BQFmAAEBEA_gFWP4G68E-Mj4YvymFklgREEw7bieuAUdXnxyJ95pjBSjFSiWs0E2A6gt93DAK0LDuS_U1vUhqHv062aQ06EtB_HxVWDQE4SsCZkIW4nyaOnXjPMspEOktCHTgLWXFUtSoDR3yIP8mcYxXvdGMPEH
+.netflix.com	FALSE	/	FALSE	1796554947	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Aug+27+2026+17%3A29%3A52+GMT-0300+(hora+est%C3%A1ndar+de+Uruguay)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=d34c72cf-b864-44b1-b733-d6555857cd8f&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1786599128836&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1796554947	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQyml15WVIoBHeS9ZiuJw-0Sjw8WUXKeBU.%26dt%3D1787862591545

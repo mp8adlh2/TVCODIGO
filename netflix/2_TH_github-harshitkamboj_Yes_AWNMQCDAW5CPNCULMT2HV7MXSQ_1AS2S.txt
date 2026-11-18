@@ -1,0 +1,21 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Standard
+Next Billing: December 2, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 349 บาท
+Extra Member: Yes
+Profiles (3): Spark, Plawan, มุมเด็ก
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1802014972	NetflixId	ct%3DBgjHlOvcAxK1A98BY7nuqDC3TCJLIFSKzK8fVU4IafSKYyU7CN7fWOxDucDVlz43N2iEKWGygmV9qqmrEsSabDBFxINsCChzNyiACtg6RagWlAweHGuMgJ93qLh7is-wgIPqC8ZRuUW0oU7An3aavkncyn9RFKqLoXs4W0KsYXXk8kvQFchaEXxOH5XJA6ZBy2eseFV2Mqge4I7_ddE3qA0F2eCQj3LdsY_GdVqPlkva4iwYwsjxNkt3NzqH7tkhBlYL3jr33FvDcmXOWy1iBUDmtespwRQCjJSeqNyiSYNzNKy_PfoxhIk02Uh6-H4BTUIqSAbFVruGvP76aA5TVInCgCYOIz03Jdh67NOTQEos4LaHoRurrEQ5CdQfWBMUxp_TGBWHt6oFA3AbgMmiaW_Lpp_aWQc3Kl_89NVDM5imEuRp91-3eMLw-EUwLrA30keR4dClig0IpHXB1LmqyOo7SBfT8b3C4ClGT2_fgqVg4sUw2NEfOQcEwTLjToS9FpZKjQE1r3EDFo5wNvS8-5l62s9-sSsOFOQ7bh7tjLPVh_ZFP7mvt4OuOmYLugkOW6RS-Ki75QP7Vc5aEw3DGAYiDgoM6tWiL0YttZnuwlXB%26ch%3DAQEAEAABABTJbsjGj0Oq8dyPVSRStVvDzVRWi4EiPGE.%26v%3D3%26pg%3DAWNMQCDAW5CPNCULMT2HV7MXSQ
+.netflix.com	FALSE	/	FALSE	1796554947	nfvdid	BQFmAAEBEPNZjGvWHh8IOFDViwdSlK9gvoUH3Xzb7qc7K7t7jicU4ei70n8hPDUgKDqC9gvTrPRs3RgzxkkHwZwH3MaLWAiOKnc3Mc-0cBwXK9Gl46Jx8TvBlhw5Tfjul-yuvaf-hgM9yumX8A3h6b74CLhOEMrY
+.netflix.com	FALSE	/	FALSE	1802014973	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Feb+07+2026+22%3A42%3A53+GMT%2B0700+(Indochina+Time)&version=202512.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=60f61eed-c7c1-45c8-a7c5-0f18165fd4c8&interactionCount=0&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1802014972	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTQroqmW2hGTrVuhPag6TWoKff0WgPHbFU.%26dt%3D1770478976668

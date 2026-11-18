@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: November 18, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 499,99 TL
+Extra Member: Yes
+Profiles (4): 123, Mahmut, Çocuk, nisa
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1795873108	OptanonAlertBoxClosed	2025-11-28T13:38:28.338Z
+.netflix.com	TRUE	/	FALSE	1795873102	nfvdid	BQFmAAEBEEJasmmVFUau573hlDPalPtgOTeirAt46Ov33oy-rQ3KkdGyzBChkzl6LHYGZikt4j1slcA_3esixMWIEC7-8SCn3_eXbDuCKsVgW_0EGcpQ4B_rM6YqPwmMNYURtLSMLVZn08H-oXobffukHK6FU1sJ
+.netflix.com	TRUE	/	TRUE	1821133628	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKYA7isH2n_9qb5QeDiZgunPwxT72brRehq3EFb9Bz7Z3JfnehtZKlg84_kHQeZPBxcrB_DfDCW6aIKsmJq1sSoMURxBALVEr5yX4mkqe97NsDF9ls_7zVeiPqzoV73ZSTrFKYpPTnMxlhSAW1E-1TrL6hdaPxFtDxa4boNyoT8UZKap5ztHh086A05Qch26Dwd1b1AdSvEt6UWOrogQsTzRbr6YmNFzULCeVrN2v7vCkDo7vsYkVjN2QSDpXIF5UN-NQjradJyx29u9AHzg4QT7nTB0cWM4orJ4uE9b6L5UMvw-YatV4bs7KhPavWSpSiHjTnSIXzgil6SUIwQ21XjHFec7qvPC7wlD9PYp9bQb9qiFAA2d3qwwmL8FK2YzvQB8MeyAQ2tuw15uckWEVz8B_xPbv-gjHAnf9RIzmqXCJskv41B_0nexFHMv8Cj0Rp2-UH3elH45RjNMhZ0cNC3l0oeMiC9p3yUDSbE70ubORvPOuLl123mqQjqFdZcT3Zfpeli0yj8kTap6n4SxuSGXSF2omIdwbmuQxgGIg4KDED8d6OWmmo0WMmxKA..%26pg%3DOU4G2ZKEP5G5JBJ6MB5VYV4MEU%26ch%3DAQEAEAABABTGjcCFWIN51odUJz0z1b9SQ6X3ZvjlQtc.
+.netflix.com	TRUE	/	TRUE	1821133628	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRp7EjDfUqbeG8jqScVwDNIGOIqfKJ8Ktg.%26dt%3D1789639889936
+.netflix.com	TRUE	/	FALSE	1821153499	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Sep+17+2026+06%3A58%3A19+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&hosts=&isIABGlobal=false&consentId=ec598aeb-a6a5-4fe9-bba2-eab9992a7165&interactionCount=3&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1&geolocation=TR%3B06&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	FALSE	1797393496	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

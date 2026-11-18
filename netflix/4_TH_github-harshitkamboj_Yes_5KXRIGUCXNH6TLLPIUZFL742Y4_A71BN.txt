@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Premium
+Next Billing: November 16, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: THB 419
+Extra Member: Yes
+Profiles (5): TARA, อ้น, adams, ออม, YAK
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	18272b7a-704b-488c-85ac-8b4ff3fd7bce
+.netflix.com	FALSE	/	TRUE	1822260723	NetflixId	ct%3DBgjHlOvcAxKLBD_WltRYDn4FY1QjV1V4bR5JHW4SsaRaTw42i5liBuyfRhD-OZQmieLLU_U9-tdfXSd0oLoK4YrHQ_a0UMR2kceMgT_tzasd7cnqMwh0THcxPH-CqD6VBxgT4wPbQ2c5y5Sya3hNSo5GyCjX6n62uy_k-MlSflNTGUQaKJbfn37zCfLQVPiecc-thr4Zuho7U30Egy-PMIUzV-pv1jdedjfrdT54Ho1wi9w2vGnzGtFQTgiBhZS4b04coSyfyF7FqjNzxSoo057WxA4tf3TqN02q_YkbqN5MjfeOpAthXsWtfZHi9RRYzUKSqVZhQwRqfYCOYnWayx9KUsZK40maW3ODGv37trWu1FGc9aPHkReS-8b315dOLrd42TGYl7w5IB4xMI831vMdakzuS0xYskxBoIiyN-VDVgQ0ti56uIOquvGfrz0Z-lqldKjBsFkDTuszWQKzzpo2R7CO9LINIJrR1xKDb4311rLNugRth5qa994Qbn93ko1JTZzneiOSOrJjgUJnuStLUm3v3_r1c0tB-B9uOPyIczIqMRTAoM63PcGoqn7UG28uq_eTAfIv-zOAVtif6FoS_PMjtSQqQRwQxsap4k4oDOZ351ptTLrHnVOSIT2xuxqnUNbUWGfuXMrRHAd7WiwOgPiD2p_Jgub4iSXkK1ps4--Js-FzrMWyYksAWmHLOeWp3bgYBiIOCgwFeqUh0C1HOb6nMIs.%26ch%3DAQEAEAABABQqQo62UA_a8iXazaAu-VUZdvwJX6cF2TU.%26v%3D3%26pg%3D5KXRIGUCXNH6TLLPIUZFL742Y4
+.netflix.com	FALSE	/	FALSE	1798500725	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798500725	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1821457930	nfvdid	BQFmAAEBEAtDPIYrsgADQTrVk2LoCxZgkFZCEGSoQn_pBuvH8YQJ_SYJ1HptmAZc-NxDVBABF_RcoYi-ZAo5zzPUJCiVAvb1KT6ic4xZ1LEIPtk7tl0tWjOWP_qzOcmaZ18eLS2cBlFYinIPS7tVzLKJct7Mul4o
+.netflix.com	FALSE	/	FALSE	1822260727	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+30+2026+06%3A32%3A07+GMT%2B0700+(Indochina+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=d68c3b59-a664-49da-a4d0-36d1b229f0ae&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1789921930056&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1822260723	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABS_KF2Pyv3f4fFzrsS79NN3h1R74eUxkOg.%26dt%3D1790724861649

@@ -1,0 +1,258 @@
+{
+  "email": "william.tenor@gmail.com",
+  "password": "Rolandgr55@@",
+  "access_token": "e6190903-23dd-4b9f-a1af-0756f2bea1f2",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiMDViMDM0NTMtZjRjZi00YzYwLTk1MjctNWU5NmEzMjc4NjVkIiwiYXRfaGFzaCI6InZNVTZ1NkdINktKWm43RWpNWlJFcnciLCJkZXZpY2VJZCI6ImY4MGM3NDM4YzQ4OGNkYTA1YWZlZDE1ZTllOGIwOWE3NmFlYTBhMWEiLCJhdWRpdFRyYWNraW5nSWQiOiI4MGMxLTQ0OWItNDdmMi04ODFmLWUzNmEiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjc0MDIzNywidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJlMWU4MGQ1OC1hZGZkLTRiYzktODY4Mi04MzJkMWRkMjNmY2UiLCJzaWduYXR1cmVzIjpbIjcyNTUyOTA5Il0sImN1c3RvbWVySWQiOiIxMDg3MzFkNjNkYjA1NDRmNzkxY2FjNTE3MTIyM2UyZCIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjcyNTUyOTA5IiwiZ2l2ZW5fbmFtZSI6IkNMQVVESUEgTUFSSUEgREUgU09VWkEiLCJ1c2VybmFtZSI6IndpbGxpYW0udGVub3JAZ21haWwuY29tIiwibWFpbCI6IndpbGxpYW0udGVub3JAZ21haWwuY29tIiwicmVkZW1wdGlvbkxpbWl0IjpudWxsLCJpYXQiOjE3ODgzMTI3NDAsImV4cCI6MTc4ODM5OTE0MCwiaXNzIjoic20tc2t5LnZyaW9zZXJ2aWNlcy5jb20ifQ.lLM7REdA8ujJM-0RVS1epnLJzdIxlbBRrEh3zHjnUSQDoyJjn99q1c81iCrKOXtaqWpMhbfRvuwXc3-xZVo-MnMQhwNjCxhOGXv0xAFSIuom_9WysoBnajUZHx0VGcbhagQ-8ifmdW6b1MYKoQvK3wuAWQKgUu5CRnNsrG_dn1GIQxp3HbXLFT3JnmyJ-E-nMNi7mCIcAHs8vyX8iCgimOk2sWqp4FnJk7HWQqVkA2QtmvviiKBcSkmeZhhS8J2ubiWLMTd8cuq7NwERduMUIdHx6KH8D4IUuJU0v5F6zKxjuzMb39s1gG583AT_DYpZRNSa7seD_eK0E8r3PnWKOw",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "e6190903-23dd-4b9f-a1af-0756f2bea1f2",
+    "externalId": "ad35c0ad-3424-5c25-8136-bcf8903a63a7",
+    "username": "108731d63db0544f791cac5171223e2d",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "72552909",
+    "protocol": "2026-150197383552",
+    "customer": {
+      "email": "william.tenor@gmail.com",
+      "billingProfileCode": "1-3EAQ-604",
+      "name": "CLAUDIA",
+      "secondName": "MARIA DE SOUZA SANTOS",
+      "birthday": "1950-04-27T00:00:00.000Z",
+      "ddd": 71,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5571991194923",
+      "id": "108731d63db0544f791cac5171223e2d",
+      "cpf": "71615105549"
+    },
+    "signatures": [
+      {
+        "id": "72552909",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 991194923,
+          "dddMobilePhone": 71
+        },
+        "customerId": "108731d63db0544f791cac5171223e2d",
+        "status": 1,
+        "productName": "COMBO ADVANCED HBO HD 2018/2021 - P",
+        "name": "CLAUDIA",
+        "secondName": "MARIA DE SOUZA SANTOS",
+        "dna": "01000000000100000010001000000000010000000000000001000000001000000000000000000000000000100001000111110000000001000000000010000000011110000101000000010111111111111110011111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101011111111111001101110001111111111010011111111111111111111111111111111110011111111111110111111111101011111111111111111111111100111011100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011111011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Caminho Caminho 15 Setor C",
+          "line1": "Caminho Caminho 15 Setor C, 0 - Mussurunga I",
+          "line2": "Cs 2 A",
+          "number": "0",
+          "city": "Salvador",
+          "state": "BA",
+          "country": "Brasil",
+          "postalCode": "41490432",
+          "referencePoint": "_nansat_ Em Frente A Igreja Adventista\r\n71 991194923",
+          "addressType": "Caminho"
+        },
+        "addressBilling": {
+          "linePublic": "Caminho Caminho 15 Setor C",
+          "line1": "Caminho Caminho 15 Setor C, 0 - Mussurunga I",
+          "line2": "Cs 2 A",
+          "number": "0",
+          "city": "Salvador",
+          "state": "BA",
+          "country": "Brasil",
+          "postalCode": "41490432",
+          "referencePoint": "_nansat_ Em Frente A Igreja Adventista",
+          "addressType": "Caminho",
+          "resDdd": 71,
+          "resPhone": 33777684
+        },
+        "activation": "2011-06-07T00:00:00.000Z",
+        "email": "william.tenor@gmail.com",
+        "parentAccount": "072552909",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000561664657",
+            "isRecordable": false,
+            "technology": "SD",
+            "subcategory": "PayTV",
+            "serialCode": "DSR3421",
+            "serialNumber": "010A5403604950271"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "72552909",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 991194923,
+        "dddMobilePhone": 71
+      },
+      "customerId": "108731d63db0544f791cac5171223e2d",
+      "status": 1,
+      "productName": "COMBO ADVANCED HBO HD 2018/2021 - P",
+      "name": "CLAUDIA",
+      "secondName": "MARIA DE SOUZA SANTOS",
+      "dna": "01000000000100000010001000000000010000000000000001000000001000000000000000000000000000100001000111110000000001000000000010000000011110000101000000010111111111111110011111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101011111111111001101110001111111111010011111111111111111111111111111111110011111111111110111111111101011111111111111111111111100111011100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011111011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Caminho Caminho 15 Setor C",
+        "line1": "Caminho Caminho 15 Setor C, 0 - Mussurunga I",
+        "line2": "Cs 2 A",
+        "number": "0",
+        "city": "Salvador",
+        "state": "BA",
+        "country": "Brasil",
+        "postalCode": "41490432",
+        "referencePoint": "_nansat_ Em Frente A Igreja Adventista\r\n71 991194923",
+        "addressType": "Caminho"
+      },
+      "addressBilling": {
+        "linePublic": "Caminho Caminho 15 Setor C",
+        "line1": "Caminho Caminho 15 Setor C, 0 - Mussurunga I",
+        "line2": "Cs 2 A",
+        "number": "0",
+        "city": "Salvador",
+        "state": "BA",
+        "country": "Brasil",
+        "postalCode": "41490432",
+        "referencePoint": "_nansat_ Em Frente A Igreja Adventista",
+        "addressType": "Caminho",
+        "resDdd": 71,
+        "resPhone": 33777684
+      },
+      "activation": "2011-06-07T00:00:00.000Z",
+      "email": "william.tenor@gmail.com",
+      "parentAccount": "072552909",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000561664657",
+          "isRecordable": false,
+          "technology": "SD",
+          "subcategory": "PayTV",
+          "serialCode": "DSR3421",
+          "serialNumber": "010A5403604950271"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "72552909": {
+      "included": [
+        {
+          "name": "Sky HBO HD - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "19-12-2023",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "ASSISTENCIA PREMIUM MENSAL - P",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "19-12-2023",
+          "end_date": null,
+          "icon": "🛡️"
+        },
+        {
+          "name": "Sky HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "19-12-2023",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "DISNEY PLUS PREMIUM",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "07-07-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "07-07-2026",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": null,
+            "name": "Sky HBO HD - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "19-12-2023",
+            "startDate": "19-12-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "ASSISTENCIA PREMIUM MENSAL - P",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "19-12-2023",
+            "startDate": "19-12-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "19-12-2023",
+            "startDate": "19-12-2023",
+            "endDate": null
+          },
+          {
+            "id": "1-219IIMH",
+            "name": "DISNEY PLUS PREMIUM",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Disney%403x.png",
+            "price": "46.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "07-07-2026",
+            "startDate": "07-07-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "07-07-2026",
+            "startDate": "07-07-2026",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

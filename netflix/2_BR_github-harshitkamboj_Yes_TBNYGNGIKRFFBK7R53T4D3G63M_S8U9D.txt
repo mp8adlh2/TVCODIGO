@@ -1,0 +1,19 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Standard
+Next Billing: November 17, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: BRL 44.90
+Extra Member: Yes
+Profiles (5): Marcela, João, Jesus, Indonesia F, Luigy
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1812496862	NetflixId	ct%3DBgjHlOvcAxLNA06A2GweE_h9XCZVubCmkFBsumeFkm-KuIWfemBSn0o71QKb6sGobI9J4gftkIb1YV56UExCuDKhUe0h3Z99EUBps49rzMl2USOMBBJhvby6jb7bWx9SEjoSx1T_qMFA8PgZFPNuITF5Y6oXrZobW41jb08y5zlNj9y_nIq-QtT0OhcMKtdIK9an3BoqxGHAdx_uuOdRf9mDyAp5hpFOGHj6cP7s1HshBMZpDELwzwElHPF-jCpqhGyGonn0Ok9TQl_XJ_IxG5Ie1nZkg6VWIGJghXfn-uWsx2JrCbBZJq7j9-r_BJ2vhwLh4oip6IvMzG89CIxW5CFReVEzTfgC-WlyJOdwKbuxplriYrqhNNnimvJtp92OZK9MQStMz_elQfvpb2CEjdu14OAMAKH002q0PzjD7eNYrIHYDRjBE6tzKqPN5oH0wMjsp_n0TRfc2enQlKfrtKUsUH36mJCxiSkUE1FMoq3evVaLQwlmxBNX1Dpm6G0oQm4HEuV4c687ehAsBTKIBNTQtXKM9TRKIQIeA5AfFeALHG0MhER61TA-DehBu0s8VzGVnzipvK3wRHwWDdjm3pVUl8v8MFbto_GLUnPZd1J4SIy1hLioGAYiDgoMu_cDMAU5XLevFXAv%26ch%3DAQEAEAABABTSxbuWZZreHYTdviXC9BrlL6CttbG5O0M.%26v%3D3%26pg%3DTBNYGNGIKRFFBK7R53T4D3G63M
+.netflix.com	FALSE	/	TRUE	1812496862	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTRVvUOEwem2P2crnmNTAoDqg_wNU45N6k.%26dt%3D1780960863436

@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: MX
+Plan: Standard
+Next Billing: November 17, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: $269
+Extra Member: Yes
+Profiles (5): antonio, mildred, chely, Filippo, Toño
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1811972146	OptanonAlertBoxClosed	2026-06-02T21:35:46.058Z
+.netflix.com	FALSE	/	FALSE	1811972192	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Jun+02+2026+15%3A36%3A32+GMT-0600+(hora+est%C3%A1ndar+central)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=928033e1-64d5-406d-8ffb-941ad35ed4a7&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=3&crTime=1780436146611&geolocation=MX%3BCOL&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1814996191	dsca	true
+.netflix.com	FALSE	/	FALSE	1811972190	nfvdid	BQFmAAEBENOB2jAyjZfLqgfCODLjRJ5gWS-AbEWtjlh3s0BT6Gr3cIPgKfhbU7dPWYppIawwoatXzvMdqb5kqyFtGhro0M3RF7FaGi2J8jVNRJ3_Rk5LDywN4rrSU6qEar3QWFV6jnPEh2C-MdoREedk9GXHHaTO
+.netflix.com	FALSE	/	TRUE	1818907975	NetflixId	ct%3DBgjHlOvcAxLoA8q8woRfQeGslKZc48afODWpB5WvpBLlxW1gHIPwNoqhivaNCsG4WQgXnFBAdQvGSFyjZnuIWqO3BsBr8r-kS4xPcm5F9mTYNz_ngSYqTUpxk6G2vWF-92k3Sd6DSmhyjB-4qlXBPkP4xZlHNB_OUP-S37PAlXtMZHGu9MA3c3NHQEoXXghtlpDgy9c9lcSVdnpm-IY1FReK717IFfL5EVL5uuQt-pdGVpOzCYtNbqb5O2cpEao1YNksmoIf0W8dsZM7FFllX0LXHEK0XjpYAWVd55VP20Vkvs7IifsCGLJTHAVlRP-zhzvE017rKHYvOCoJIoPPjKgQuCbTVIPIzo7FJQoNbhCIaTtfncJpmp3niTZXqcxYa5IxToF4yAwQPjPQjli2c8BalMqcw6tQ6-ZX7WRUhv5E7DD0ky6fnPfajpSzoydhkX4Cmao7beFCXNy1BG8UX0YGtXPp8d1uskUr0RwpEWrDeThOwrv3N3rkF1r1LigoWsv0DOLiDi81s70ooHeJ3_SaveCUU-m-E2dO8V5MYn6WMHh6VLglxH3yDzvX5d-UhI51BCx3TdCDaI60LPsiN0b597xKpT40CM54nUjGmY3NYlVRB_m-MD9olYrWHKp3YwZbTkzcZtarbI8p2k8OQbluGAYiDgoMDfGRGdN0m1Tvq7Sg%26ch%3DAQEAEAABABRhNjF4gGswPmtzEHBM3mxM5Q-ctD9V2UY.%26v%3D3%26pg%3DS2AOGCDIUJEPRCU4R5PXHDJFOQ
+.netflix.com	FALSE	/	TRUE	1818907975	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABS33HOOOeYwNweJzKPkLJegIo_4NSzpfOg.%26dt%3D1787371951710

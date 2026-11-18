@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: November 22, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: BRL 71.90
+Extra Member: Yes
+Profiles (5): Zied, Xavi, M, 4, Mm
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1820960810	OptanonAlertBoxClosed	2026-09-14T22:26:50.968Z
+.netflix.com	FALSE	/	TRUE	1820960834	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKlAx2TcU8i1-2NyFRDEZguOou4W9pRL7ei-oTzV2cn0-OnSoR0rsgZmmEVytvXzcnKJp3Mg99KaKPm40Qh7bpUcluf9Dh6TzbIs273-3MzFpuzFnXnL9c0XfXg0DmYWBb0t8sKXJPg7U_oFI7cgm76FrDx1M-eCPty8VyHTqAy-dA2OMNZVq4FmPmSCpz4Bdezp4QIpvifiEqEBST9UaaHno26AaKR40Ch-uKdj8NSZ_xUpCwHzLeGf53HnwmR6477U_ga9Nqk-E66yLacwrRERkNVn2mTWrr5ED9Y2Z1cn1YK4pAfk4w8mEUPDA5dIlWQX0tJarkWAl-ZRhSb8ib-s8BJY4LrOLOgjP9hilY0e2jkjOLcLbbV5hTI7y1_419_6ttARgl1Tv-wptwWKCV_3WNMPCUSSuLeXY_GbEnWmtBFq8RTb6d8EvtGxQJ42h5ZnFdNrkS0hnqLDmaZQ4a1FUInPJd7Zn3D3DgP1pMDULsLon2c1p9meSOcBaa3wtf8v3zoK5HfMB2fJUpjAqrHFDo7ckSkjmbBx_trwj1sIHYSi9Rs1esYBiIOCgyk-HWBxxFCVzl4j7Q.%26pg%3DUJUSACQQDVE4HM5FM4IZ2BCOII%26ch%3DAQEAEAABABQoQKCnTWCb0uRNU6Yuq48YWMz6zMQ75AY.
+.netflix.com	FALSE	/	FALSE	1820960837	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Sep+14+2026+18%3A27%3A17+GMT-0400+(Hor%C3%A1rio+Padr%C3%A3o+do+Amazonas)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=024efbe4-92a5-40bd-9186-0986340df199&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&lastConsentTs=1789424810&intType=3&crTime=1789424811630&geolocation=BR%3BMT&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1820960834	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTk45J7nf3agx3xV-g56TTSMyN-GNsxxwA.%26dt%3D1789424843044
+.netflix.com	FALSE	/	FALSE	1797200837	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797200837	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1820960834	nfvdid	BQFmAAEBEOy_hxRiQQXgGBOZYZDlF-1g9mdVSCax5puurCAQBCwqiiJjLuNcR21TPp_nl2jwOoofgePzOKI2AH9mVQjF5jGuYVeq5vLOV9sFhE2J_ejo_SJbDprvwE6adznM2qhAePcYPkP667ujxZaGDw-LKTZq

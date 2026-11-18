@@ -1,0 +1,95 @@
+{
+  "email": "(16)98123-0190",
+  "password": "Dc170591",
+  "access_token": "9cf99a34-262c-454e-bc18-17d696c816a0",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiYTFmZjE3OWItZWI4Yy00MjYwLTk0YTgtNzQzMDA3OTY4NmIyIiwiYXRfaGFzaCI6InhzOU04eldKTFVDd1ZPblNwOENWc3ciLCJkZXZpY2VJZCI6IjJiYjExMjE0ZTc2NDk3Y2VlOGRhNjRmOWY2MTA3YTcwNjMwMTJmNzQiLCJhdWRpdFRyYWNraW5nSWQiOiIwN2U2LWZhOTktNGI1Ny04OTc1LTkwNzQiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4OTQzNzE4NjI0NiwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJmOTMzMzU5NC0wODFlLTQ3MjUtYjAzZC1iYzdmNmViNjFhOGEiLCJzaWduYXR1cmVzIjpbIjM4MzQyMzUzIl0sImN1c3RvbWVySWQiOiI0NzNjZjk5ZmVjZGY3ZWNjMTg0N2FjZWEyMjA5YWNjMCIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjM4MzQyMzUzIiwiZ2l2ZW5fbmFtZSI6IlBBVFJJQ0lBIERPIEFNQVJBTCIsInVzZXJuYW1lIjoiMTY5ODEyMzAxOTAiLCJ0ZWxlcGhvbmVOdW1iZXIiOiIxNjk4MTIzMDE5MCIsInNpZCI6IjJiYjExMjE0ZTc2NDk3Y2VlOGRhNjRmOWY2MTA3YTcwNjMwMTJmNzQiLCJzdWJuYW1lIjoiZjkzMzM1OTQtMDgxZS00NzI1LWIwM2QtYmM3ZjZlYjYxYThhIiwicmVkZW1wdGlvbkxpbWl0IjpudWxsLCJpYXQiOjE3ODk0MzcxODYsImV4cCI6MTc4OTUyMzU4NiwiaXNzIjoic20tc2t5LnZyaW9zZXJ2aWNlcy5jb20ifQ.CY6pbXV20ZzgiIkJH86FK-ar-37CovyZ_wE5iNBEA4B8Hh89rzYYxe7T6fkk77d3krxGQhGqr1mh6QZiihThZLmDT0nSj9rySv5u4aKZgY-47-vWjXF3tZpUtDWebmwpMLhIs4_qpnUcyfJsb0TF6jq8cSMVMupBHL9TLlZu_8DpnFzXSTebCnl-GBYtLASiAzmaSajQuaAiZ1x40CbKjSut3N-u9aya6h2Hr2wQHf5MZWidZ8Eg8dWIsZgBME7FNGi1egREwP6L7jCIZfMaoyMXAbBWFEm2IJuorwPYHScV_ftrYWUUJlhkrNGdLFBSwfu1sMvdbVYsDU9liIeyEw",
+  "raw_data": {
+    "accessToken": "9cf99a34-262c-454e-bc18-17d696c816a0",
+    "externalId": "1e1f6e26-d3fc-5209-a269-bb0e410bf916",
+    "username": "473cf99fecdf7ecc1847acea2209acc0",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "38342353",
+    "protocol": "2026-150412678735",
+    "customer": {
+      "email": "devolve.gerencia@gmail.com",
+      "billingProfileCode": "1-G3FJ-9862",
+      "name": "PATRICIA",
+      "secondName": "DO AMARAL MUNIZ BORGES",
+      "birthday": "1971-11-25T00:00:00.000Z",
+      "ddd": 16,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5516981230190",
+      "id": "473cf99fecdf7ecc1847acea2209acc0",
+      "cpf": "16391947899"
+    },
+    "signatures": [
+      {
+        "id": "38342353",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 981230190,
+          "dddMobilePhone": 16
+        },
+        "customerId": "473cf99fecdf7ecc1847acea2209acc0",
+        "status": 1,
+        "productName": "COMBO ADVANCED II CINEMA + MUNDO HD 2019/2021 - P",
+        "name": "PATRICIA",
+        "secondName": "DO AMARAL MUNIZ BORGES",
+        "dna": "01000000000100100000000100000000100000000000000000010000000001000000010000000000000000011011000111110000000000000000100001000000011110010000000000100111111111111110111111111000000000000000000100100000000010111111111111001000000011111010111111110001000000000001101111111111111011101110001111111111110111111101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Professora Dona Aruca",
+          "line1": "Rua Professora Dona Aruca, 195 - Padre Monicio",
+          "line2": "Anderson",
+          "number": "195",
+          "city": "Brodowski",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "14340000",
+          "referencePoint": "Rua Atras Do Supermercado 3j.",
+          "addressType": "Rua",
+          "resDdd": 16,
+          "resPhone": 36644489
+        },
+        "addressBilling": {
+          "linePublic": "Rua General Carneiro",
+          "line1": "Rua General Carneiro, 927 - Centro",
+          "line2": "Sala 1",
+          "number": "927",
+          "city": "Brodowski",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "14340000",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2008-09-26T00:00:00.000Z",
+        "email": "devolve.gerencia@gmail.com",
+        "parentAccount": "038342353",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001148418880",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A0120807438762"
+          },
+          {
+            "smartcard": "000771227972",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2036193558521"
+          }
+        ]
+      }
+    ]
+  }
+}

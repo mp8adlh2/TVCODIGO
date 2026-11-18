@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: December 1, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 499,99 TL
+Extra Member: Yes
+Profiles (5): 11-11, Weyn, Maxitio, TioMaxi, e
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1799172250	OptanonAlertBoxClosed	2026-01-05T18:04:10.269Z
+.netflix.com	TRUE	/	FALSE	1799172256	nfvdid	BQFmAAEBEGzOuwNi1i2p0r6mNXLLn_pgwFGznz6lwi8qbXD8Rlm_ptFLHAQC-pTMzMO1AuolIe0KqcvL4It57P4K6-711GTwILQC_PuqupC2On6MHabpTv6UrxbTcCA1b2HUJGCbTiKjxkAMfaaDGozo5ICym9cy
+.netflix.com	TRUE	/	TRUE	1813075723	NetflixId	ct%3DBgjHlOvcAxKyA2QC5POAQKqSD_nuwXvfKBANahY3y3HGukvVY1LXwF4V2oMgmIJL4x9zNqVxkX4KdzX2M893XO8UQVl9WI22q9PZsuoFqglQqY_nE-74aBxpym7bh3tT2wCZeBBiFWEwp95tSqz-eV-5FyTtN0h_zhiowuuxrv4PD0C2W-xecHjMcPT3AGqv9vJhevGqboXaeGpzI2bjIfofvTfg95EQWfN5SLssMHaFPa0Wx7e0BHXFcNVw-zQyMKnFxDBYvE0qgmODnDsxyYa51FjUU_CO3b5KDFKe9p_NX9_F0RWjLS8Kbx3m6_zvtWZbqgkq1WwSrC1n2nHaN608hkG5n9DwE3qR5uu_n_6SD95YTIF3xrzn_g-zj_EoRSTfmNHm8p5-KF_jRisYC1BNLHh-GRQv67Q2nAFzR-DttjlbVmvg21ZSRai3IYqIeS_Q6Wk_5NvtHwM_gX5E6m1w8GtPE4V-lsZkOtdlKKkjZ32s0xn-mWbm06Ymq8jiXYTeZ4wjCdQZZrUBsEnQBmHreqtU-3fH7i6HJHj9SC9VW5GpB18wUk6ND1yKJQFaKgqfBspZTckz2uvgGAYiDgoMQzVeEFOdo20s2D8S%26ch%3DAQEAEAABABSFLUK80cN5e_tats_3nMt8IkseS_x4BK0.%26v%3D3%26pg%3DC263X4GQAVBRPBFRIN5V2JN7IY
+.netflix.com	TRUE	/	FALSE	1813075727	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Jun+15+2026+19%3A08%3A47+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=1a9b6e6c-236b-40e0-bf46-0d9a8baa98b9&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=1&geolocation=TR%3B23&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1813075723	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRbhRrJrAsBg29TyfFnAjzvf0EwWtZtFwE.%26dt%3D1781539723097
+.netflix.com	TRUE	/	FALSE	1796554944	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796554944	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796554944	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: December 4, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 499,99 TL
+Extra Member: Yes
+Profiles (5): Ali. Dönmez, Zehra, Nesi, Doruk, Yağmur
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1817073613	OptanonAlertBoxClosed	2026-07-31T22:40:13.740Z
+.netflix.com	FALSE	/	FALSE	1817074093	nfvdid	BQFmAAEBEOji3OFKa6-ruktiRQlq5vpgJbixmJSpekeHtHb5T5_Wr8omKvffRS7QnQBYyB_MYKFuUcAHKmSnbo8dnv5sRwzoVvuBBstBXh_cJkkvSFrDKbpqkKTmHk7eLGVvEU_JtqfKWpAfw5F08g6Zv0dsonMB
+.netflix.com	FALSE	/	TRUE	1819466567	NetflixId	ct%3DBgjHlOvcAxKzA17mmkFzvVfOCLFlnOB5IzNHentM0ghY0fM28G6FBA-jx6ofcnbMhC6JRy2ksx5JklTjR0-hJB87yKkiShD_uik6vFBrkqnDpUgiqa5sbN0JgpL7uOdUrub4Sk5njXX44PKX4k-9eJiDMZ3DpoUrGeAq375M0lGt7AArLJusDRmS6zx6J-PdUKfufSESeNorXDf4tjUupVlkr8_hrNrTgTMeZGu53P_8LyVa410pffbQahvaAEGdTewL85G_jvAsHYGA3zUYIKIHfu4q5qZeWb4uwLoAVzQBgETNuAXunWBx0n-vEMAvveizQr3qyEgY0jmUioYTFE6m_ngTGZFcuZz1JXVDAn5UCERQvAi8LVerg9cr4xCt_AVVTnk-EEEHvW91elcl79CnGHqqA30QZhZ68H3yk4gKADhc_e1HrZTwHogrlEeJjIzIrU6KzwwFp-TkUBqBRVCbhu1CmFHwviuYF_gjE191kFVMDiOJg6hqkd_75L5AxEOKgl4S8OtgP97o83PgzSODw5sdI3XGdb7VIljWd93aQE-M7FIQnkrtcfrgERE2Hvv9D1s5V8-18RHd1xgGIg4KDIEcttvO405Xg2wviw..%26ch%3DAQEAEAABABSs-qi4SGuG2N2J-GFzUy_FFDw7F_keGX0.%26v%3D3%26pg%3DAIE6PUFASJB3PDVQKNRGTJMLBM
+.netflix.com	FALSE	/	FALSE	1819466565	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Aug+28+2026+18%3A22%3A45+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=b8970a1f-0662-49a7-9a4e-1300b0635c75&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&fclco=&intType=3&crTime=1785537614342&geolocation=TR%3B06&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1819466567	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTf9cYJz1gacCTspNSm1SGq7tH0n2HD8oI.%26dt%3D1787930588744
+.netflix.com	FALSE	/	FALSE	1796554947	flwssn	9cf9c89f-328b-4e9a-87ca-49ba821cf1e9
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	2fe9650e-6f7d-431e-bc82-d757719b4c4e
+.netflix.com	FALSE	/	FALSE	1795706561	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795706561	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0

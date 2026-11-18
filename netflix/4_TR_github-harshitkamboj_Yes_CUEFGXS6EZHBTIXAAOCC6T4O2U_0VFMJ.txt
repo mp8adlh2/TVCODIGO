@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: December 1, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379,99 TL
+Extra Member: Yes
+Profiles (5): Martim, Maut💦, Helin, Asaf Paşa, Kimse
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	4baa2e53-a51e-43ec-8416-f444dd09b761
+.netflix.com	FALSE	/	TRUE	1819212061	NetflixId	ct%3DBgjHlOvcAxKDBMqJZEznEJEgs5bWtKqyof8IZdJrQ0QVBePpSCvenG80zeAfBfbfIB63isXf2iSggDOoDz1WVOExFSHdjv_6PkRCTNT7QR0tMW3d06XXOgNaP7_9eN_PpruKFb-5EadLmTLHbxHKg4Yd-zp-OfAYfh8c3NOzCl8NRthmoJgjoO1Zee-bAlWKPQXnxmKGDV6dUiRaf7s92wRR_RlcveCXRBqrbZafhTy7j4SrOhYERLFYnK5ecyvB8xL1ACRq0wmYdMVxvh3QfXngyhCoofgrBo25NmrbW-1ZOhyCswZJxdNl7p4hVrod-zGNKS1Y63he2n5I07t7dBb79dMmqYTfrTou9vrsHHZbmz871sv3TPyv7q0mqmMUcgYESPE0jN9d4fLHkDLpG2rXZBOuM6oK4gg3iRVjqlQzE0Gk4soFQp24SAvyme-OUf4rPHaz6ND8MQ_3DJaKBlbfQHKnCqmjyAeGFbey1_GkgaRnJQ-PneckJQUkzgJSayTvBxed8e5Fka4PqQ64TCgZRfoQBX2F6STYF_52IJLyfkiGfcKYVOjPs9ivvzBjw9PHsP75ISZxpJte6fTwqHRo0eJiSTfn3z7dl075R656vrg0Kzm7w59usTbKBKZdgSZGbo5aST_bTvJDgGtx25JhCcdhplDyNoQgb3UsG1v0jVNczv9okV9Cx1qKGAYiDgoMoUoyQf-XjQ4cO8r0%26ch%3DAQEAEAABABQyeRJuI_GiUYFc_Kki_AIsMT0N4h6E31s.%26v%3D3%26pg%3DCUEFGXS6EZHBTIXAAOCC6T4O2U
+.netflix.com	FALSE	/	FALSE	1795452062	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795452062	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554947	nfvdid	BQFmAAEBEOClIqtiPfkWv_iTtUJcFg1ghmL48TXb38CFhDqgMJpDIyfB5wKo4XNyc1Z7tKn_D4LlXmjbOWnl54hSMwTdUOes3LGLR1A55gna4yk1-JC5xIovygYn0cYGlYWuCxwQpURPrvb3KsdmnzdCSaCZdWzZ
+.netflix.com	FALSE	/	FALSE	1796554947	OptanonAlertBoxClosed	2025-10-23T20:31:49.502Z
+.netflix.com	FALSE	/	FALSE	1796554947	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Oct+29+2025+21%3A41%3A48+GMT%2B0300+(GMT%2B03%3A00)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=c3a83959-42ae-42b7-817f-6547d223eccc&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&intType=3&geolocation=TR%3B21&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1795452062	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	TRUE	1819212061	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRoy9E4j4lw9MJWYAgcDAhZzYG2fTVNT0s.%26dt%3D1787676061363

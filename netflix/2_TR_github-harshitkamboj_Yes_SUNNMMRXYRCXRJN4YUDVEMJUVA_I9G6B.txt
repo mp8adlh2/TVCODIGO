@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Standard
+Next Billing: November 9, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 289,99 TL
+Extra Member: Yes
+Profiles (4): Behiye, Ben, Buss, Reyhan
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1820528756	OptanonAlertBoxClosed	2026-09-09T22:25:56.042Z
+.netflix.com	FALSE	/title	TRUE	1823553177	dsca	true
+.netflix.com	FALSE	/	FALSE	1820529176	nfvdid	BQFmAAEBEPNUVHCTg8DYV_INVVgFr8FgKNKwbBOARqUJZOCYmy7ynwVL-8K_w96GbclrgY9a1ySxmWR-w8IBdNz5bMpXN7on24YtapLZGvjjnsZwwSRJy2fqqhHj7GyJ58K_7BuG-5u-jJBkdS1oANePfiklWAxx
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	9ecf8c1e-1479-4bd7-9d34-e15fae5a1c2e
+.netflix.com	FALSE	/	TRUE	1821812689	NetflixId	ct%3DBgjHlOvcAxKBBK7BExMBYxQYdhZCRGAOxC9znykLsdlmLsy1lO0dplgPubO5A_WpH_ZTmE5V7v7KPO4QDvMM_3izbkX-s2tCn8iMSMJPlOA6VeNsaXTKg1NC_eL6aIc2xaes9HDxaQ7XyRrS-9____IyVgHe_8Xp2t_mjbpYusmkzUgPG_kszyrBlLOVP1FLYYZCnXJg5PRHiLzBgoKLBxQjXQx6n63vKiIKLpSs2UOs93gboeyzO7dhHOMzqi2NUuKKn1R23COcb2hamKm2zOBRb32PbJWRTasK-RBPJBYaW2MfYsF5kQ_JtNVS2fYupG1SmfQxGdfW5oVfwGdOv8MSCflRCaECpu7EWz0rRDocT2p2o-LUrx76uSQj6PXIvDk8Ms0ZKvsM9VFPvN4MOO4j2JjHuYyhvWyg-Fl0GAQxAQJ-bbHizgeYD9uY0D4uLAu83jTlfnvi90yCoB_vEtc8XsHT7PHoQFXlOZ5wcLAC98C2-FQFVkuWQqM03oawNAMkSmyNl5ysrJiN0Rn6tFaExmEb7V4RfOqa1GBpCq1hSOAdrrdViPwWKtDQ3QjEMPnBTMIS1GyZwrzoRTeB93MMErKFWN1_9h7E7wFh2jMy-4K6sVSS0K2XqvCWq73HGYddZUeR8jBRs-huvy6184diFZRTspAtx9_5IWJ5MoBRAdvq4oYfSM-wihgGIg4KDKsXtYgqQnUqxq0VEg..%26ch%3DAQEAEAABABTdHuSQE5iz8e5YZEh4O_jxxaxD8zBDmnY.%26v%3D3%26pg%3DSUNNMMRXYRCXRJN4YUDVEMJUVA
+.netflix.com	FALSE	/	FALSE	1821812691	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Sep+24+2026+22%3A04%3A51+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=64c77896-bb02-469e-b543-8261acc2ec18&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&fclco=&lastConsentTs=1788992756&intType=3&crTime=1788992756468&geolocation=TR%3B34&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1821812689	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABS4daEgaYTyRufasNBufLfcxjXc-RrBQgU.%26dt%3D1790276689216
+.netflix.com	FALSE	/	FALSE	1798052691	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798052691	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0

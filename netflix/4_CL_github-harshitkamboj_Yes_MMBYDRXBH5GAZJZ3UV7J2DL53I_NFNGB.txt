@@ -1,0 +1,21 @@
+NETFLIX HIT :👇
+
+Country: CL
+Plan: Premium
+Next Billing: December 5, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: CLP 12,990
+Extra Member: Yes
+Profiles (5): Kervin, Jorge, Invitados, Ghassen, Reflex
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1822875643	NetflixId	ct%3DBgjHlOvcAxKEBF7-rB6fXJUDTaK2dL5beyXu0cC6jm1SkbDk4_bwS1rURvDCWRMmzAiearq1V7lfWlLmBZqStIln2WYXUmmliQ9TDqZLUCMeoaqylgklku7s9nTo49xdjRGt08IRw8WM4RlSciwbwmynBjMtAphBEitJos4Ek6Q4Wc2wNOL_mOOFDgya7LzY4MKBzpj0gMnxwNfF4lRL5vvdq4jkx8MyWHBFBhhObbTQ5EQbKclkduYQE31Gt_UsCzDZDlkdDiK4Sadj08nS4AEiDNBBevorazfZZvhbT0I1XJ1tfM0B8l20vJDzzRgWxA4Ar54CHuhiNx-9bbUS6V6trDSg3CsntdM2a-yXv09cs4x9hkghjfca_AkRDSN6nzsImtXRI_E-wCT9OkgCXKASIfhU3s-VC2D8ONQVGzVZkYWA8j24991_cH-G05ftT6XIwunCeZ-Ur9M6ekwlVUOutTUXUBEeAAdvREVoU6Kucpcv6apogVfo4WePb3JulZI8NbyizjoZul1Tvc1M7MV9Ti5CeVT66uPuNK6RM4KczPZRNd9xGXNppcLm978r8AJJZzyBQFJEGnU--z2_bbClz0oH7sHqBC9aThRXTSfIGjP-nhilnFYNMrcpPfpbuoC4g263ORJDujWaoaLldhbSg3MAlj8ObWGRmelRLKJduSC8-pyrDLkWscs3RhgGIg4KDLCeBx7PA5gBYqMwRg..%26ch%3DAQEAEAABABRjb5_vLwUFDx937wKeWCvSVfbshS-2ss4.%26v%3D3%26pg%3DMMBYDRXBH5GAZJZ3UV7J2DL53I
+.netflix.com	TRUE	/	FALSE	1800293494	nfvdid	BQFmAAEBEO5ULIYSrEstG33zDWm3yMtg4PIxfgkwjTmH5OjC3pzdwb9RqCP7QbTx_2e7Dqv8-Eg2CSqGzYIsTAHlzG2h7S4wHmspeSjVSWG_Cym1S_DyTGaXjPkZtSEB2apfiia8RKYBheDSMq5oFnbjCHdhELtb
+.netflix.com	TRUE	/	FALSE	1822875646	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Oct+06+2026+23%3A20%3A46+GMT-0300+(hora+de+verano+de+Chile)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=384b381a-6540-497e-bee3-9f52ec52a25f&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&AwaitingReconsent=false&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	TRUE	1822875643	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABS-JWl1iC337GaFEGjQoKVupqxfsyUvThg.%26dt%3D1791339643717

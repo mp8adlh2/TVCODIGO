@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: ID
+Plan: Premium
+Next Billing: November 14, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: IDR 186,000
+Profiles (5): Farhan, njaa, PNY Gw, aku, Anak
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1821517876	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKRAzFmPlnQ72kq50S5mMu7xS7iIJGHHBvx8L8nt12eM2Jzfi9KD1bV8uV4ZlQvYJ6iF3ZHY42KHOgJEikgK6NRPnvJUzCDYtx_ssp0IFM4RquVCcPYC1iq4Z7WpRTcsA6fmdTwU7dv699tAFTcoaflDOdgsE5NgZbpNIleR7OUFngIJLXnR_zV_oREc5iXyhOhsvebuxpVasxg3wuwpkK5sR1aCElhVdM3D7Kmi8rqD7oAR5vMz-m42gqQtfbGgW4u0KUps-kADItLm0XqKe9_gjRmjoFKbEpfDjWM0N747MAje_SloFv3fAPqzv8yURhJkg5Erih-4f1vfWKbEq53QSWozVorA1damecz0YIC__0ahpkbCa7cfspjoPK2hITlA5XiJqT6SpEDJ9UmjreVZi7sHfm7Vx2jsHLg5o5yRK62V0gFQdGYceUjQbL1QZ02pbeEZ-GUYdoXDvwjaAxLxRxkZfnWbnGsF4ooejf7lOgneuE0B5u9vw-PKGpnBXZPu-UFQmqVwP5DCqEO1CpgKYY6GAYiDgoMRG_fzdv2aH2iZGZA%26pg%3DGCXHNVK6LNB7BJE2IVICPESTK4%26ch%3DAQEAEAABABSKYHyFqCzgo1pMqkCy8_xYzVfz94jkmIg.
+.netflix.com	FALSE	/	FALSE	1797757879	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797757879	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1819185656	nfvdid	BQFmAAEBEJ3-WVA73d1OiByXb2u83mJgFakNILqmEsnDDEML-nrEcRMDDmGjD5QsdCVdTI5UYluXkEwbuOw-H4mMVw3fIR1KZfCNZqjQXMDypvaQIa8-sQsaBSYokV-3nQ-nJ9lwjLhcmMQthCjtJgBqTsirYR06
+.netflix.com	FALSE	/	FALSE	1821517883	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Sep+21+2026+16%3A11%3A23+GMT%2B0700+(Indochina+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=6f366a51-778a-4f50-9d37-4b119f1ee70f&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	TRUE	1821517876	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABST3HKHcx4uK686J6UkbuFQiZMrQvvDV9A.%26dt%3D1789981877635

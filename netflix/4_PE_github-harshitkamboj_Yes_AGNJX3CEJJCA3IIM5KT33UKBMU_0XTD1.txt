@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: PE
+Plan: Premium
+Next Billing: November 27, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 58,90 PEN
+Extra Member: Yes
+Profiles (5): Laura, Lucho, Arantxa, dome, Nino
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1817505539	nfvdid	BQFmAAEBEH2tv9LrVJv99JVaz7I9hvdgy2vxbs_2zIzq4PI-3dnQVwncbvajd-J-0vtuEflmErZZeOpZSCkCGX_ioAiT4d74KKcq7JFonh-cHSjBQu7DWKvDDxCumD9t90tiQzvQrY5qho0WZDHczxtF2oV9P4ng
+.netflix.com	FALSE	/	TRUE	1818370478	NetflixId	ct%3DBgjHlOvcAxKDBGTpvvcIzXyKaqqu7Dr0uIrtjVfrCO5dHiOKr2abpMkjueK8vzGZcdatMGgGNOxQZNcztOZ-xNrhz7EH8xDAHTpK8T9B4J-Q2QpzKIS-GmF4fHE2SBsoTT94Ns1Kh39nEUjxgGHM4KY05Zg_8eho3zL2N_TqbgeoB8auV3BnPl6E01FCvsywbY6EbyrtEq0gxYaYt0AquNMI0kLA_uKSi771CsUljcEgEqXcDteYjV2YRZ_56cMmkHElvohyCDF0MhYxLrrQpEifL6nerJp6fTtw4Uqopo5_n7ECVd3FdFPYgH1Z2QtNYaHUjAN9rLRulkxiAG2Vb8hwN622OUe3VZHrEGDBhv87Ms_MGGQAKUNDwDVahY7FHqxhjNjBjDJAsJ1K1IXsO3pdo58YmfpPUQMmYeWOFVpa5Jh3i-sHthAm3hjTVg5ZYJyp8VNmG5QPhxrGDjGWaS8cXB1g_-NzWl29IFw8K5XA58bmXyojy7F6lTeiFS1ERo4CTE0eizyUL8BzvSiq48MB3VVmUTS6nsnM2uOBodaYEJfb_Z2PORrv9MqjX7BJEzCded2z3LZj5qebRGZnuTAQp6SiBVz5-uZuXiaMtEHSgvMGrgmvbqwzRAJ__9LEM4Tg3faECQg1un-r9P4ZRmNtY3XPZMqg6ai9APPJnn1Y9qZVhbWrLdlSAHUmGAYiDgoM4TsWvHZsEAjEzteK%26ch%3DAQEAEAABABSMwnSWwhcA37g8BJ_pvcQuERe_YgPsshs.%26v%3D3%26pg%3DAGNJX3CEJJCA3IIM5KT33UKBMU
+.netflix.com	FALSE	/	TRUE	1818370478	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABS5NBOEvEfSi46bYBXLjspd9e63uPf4Rc4.%26dt%3D1786834478255
+.netflix.com	FALSE	/	FALSE	1818370486	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Aug+15+2026+17%3A54%3A46+GMT-0500+(hora+est%C3%A1ndar+de+Per%C3%BA)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=b655a026-4914-4a61-91ad-541782dd53c4&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=1&geolocation=NL%3BZH&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1794618154	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794618154	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

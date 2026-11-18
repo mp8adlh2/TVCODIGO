@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: November 7, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 499,99 TL
+Extra Member: Yes
+Profiles (5): Fack off, JRB, Anish, sinan, Bn
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1798460154	OptanonAlertBoxClosed	2025-12-28T12:15:54.008Z
+.netflix.com	TRUE	/	TRUE	1801484198	dsca	true
+.netflix.com	TRUE	/	FALSE	1798460197	nfvdid	BQFmAAEBEJZM-_9GmS5Akv5JX_wSC2RgvkGcIxn_wGqy97rL77s78XSyQZyD9dPzi1jNR1Z2slh7LZjv6lWmxcH5GDJbtLxn8ijBzyvdgbulfV8PrsdaXAr9G3rbeZIK8LgRDYiAw4t1BbBg2iQwKJ2fCq6CdxRW
+.netflix.com	TRUE	/	TRUE	1812965808	NetflixId	ct%3DBgjHlOvcAxKyA0BzT0Z2ub1nGa_IYYpnbVrljBQ7YpfPiXqKLgsuQik_Vke2WpZ7pu8T1y1MYwJTd2x7QI66wp9Ok6eet1X824tMVx_urDmAOeqiBX4Zf6mF0mvAJne4nKxNR1F1dNt98eXbfnZD3cidDqOsesEpD1QufmCdgSX4Nd5kBqPrbnIegshZDE3NN6Upx0_OQXVLJ6E6bmFZW_NOH_FK4E4us532V9hBG4tKFkm93f9g4f6gR464rxzB06yoiqHBqZRQe8c9vF-swbp5FufL8V987QQicEvHeoh6ed4QohRea0dPxHb7AfAXeN_tyJYP9aNHCOrE1wkDxBU5FyfB8eNWa73AJzkOJMWAC0ZXXfKv8wUXFvyP6lR0CTNqtYV-cBaGysGFBpbAMghNeHxr_zzZ5XN8k1PKlKKHlkmkfs6gZph9sWSYQM-oecefH32CmKXqglr2xQNvNSpddinUlNXYk6nea_KPFVVq_cKrjOer_qJodgSxtmFU6yGHrSinJIAxR6XmiE3yl1ZL7iRhnq05VjkZZVFtXkDfICiE8KcN6Jo2yzzOxV_6sfajmHocu9uaBxsJGAYiDgoMpaOIBKGx5s34iYPW%26ch%3DAQEAEAABABSdj49LUANrWYpFf69hZhrWXP8zE-6ly8Y.%26v%3D3%26pg%3DF3AWUTEYWNBADM3I2VYJX2K5BE
+.netflix.com	TRUE	/	FALSE	1812965809	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Jun+14+2026+12%3A36%3A49+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=92449935-4638-485b-83e5-7d51215a068f&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&AwaitingReconsent=false&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&intType=3&geolocation=TR%3B34&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1812965808	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQxgDvBSqDpgTMQMTcGV_mrMdyoMv1UBY8.%26dt%3D1781429808690
+.netflix.com	TRUE	/	TRUE	1796554947	gsid	952a205d-51c1-4e4c-973d-a8304e644982
+.netflix.com	TRUE	/	FALSE	1796554947	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796554947	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796554947	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	TRUE	/	FALSE	1796554947	profilesNewSession	0

@@ -1,0 +1,237 @@
+{
+  "email": "adriboxone@yahoo.com.br",
+  "password": "A83A82oc",
+  "access_token": "6af10df7-9005-4018-8f16-ea8d8fffadef",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiYzFmNTExNDMtMjMxMS00ZDJlLTgwY2UtNjA1ZDY3OGE3MzVkIiwiYXRfaGFzaCI6ImxCRG9sRUN5Z3VMUlp2Z1FNeDFESHciLCJkZXZpY2VJZCI6IjQzMzVmMTcxYzliNzA1Nzg2NDczNTNkZmUyZjQwNDhiNmYxMzhlNDgiLCJhdWRpdFRyYWNraW5nSWQiOiJkYTk4LTAzYzktNDk1OC1iOTM2LTVmZjIiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODY1NTAxMTIzMSwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiIxMzg3ZmMxMy02MjhlLTQ2MDUtYTczZi1kZGJkYzU5MTJlOWUiLCJzaWduYXR1cmVzIjpbIjQ1MTIzMDA5Il0sImN1c3RvbWVySWQiOiI0YzBlOTMyZWI3Yjg0YmM3MGM1NjgxZGMwMWNlM2VjYSIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjQ1MTIzMDA5IiwiZ2l2ZW5fbmFtZSI6IkFEUklBTk8gT0xJVkVJUkEiLCJ1c2VybmFtZSI6ImFkcmlib3hvbmVAeWFob28uY29tLmJyIiwibWFpbCI6ImFkcmlib3hvbmVAeWFob28uY29tLmJyIiwicmVkZW1wdGlvbkxpbWl0IjpudWxsLCJpYXQiOjE3ODg2NTUwMTEsImV4cCI6MTc4ODc0MTQxMSwiaXNzIjoic20tc2t5LnZyaW9zZXJ2aWNlcy5jb20ifQ.hm4ch90uczF-Jd0_Ogy6V_bZLWfgKF4n8r4N6g0Ynn5QJsaygaZFCIjG5pmFFYzNf0-TqCZLzdNj9_-ZpfWDox7Jwlgc3cEozYSORGGyrZAfuQ8bcx5xlaIj_eVXKJqCLjFmfPl6JySSqt1JTZV5sFiGe70x5KnGo4jN3mjABBj-E7FFZ-xA0PmWO0J9xNBAStxm_FGH5ywgsXuowlDBXMQUjjKypKjmXY3Z3DMANCxbvfRM-KeosO4vjPgfCSXDaOkJpWvstKV2bk0wvX5tcXzwZHVUXGPdcscy39XqFRa1g6y_he2XHdQjLY9hQlgzSUlfhyA72URTokZo4-ySQw",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "6af10df7-9005-4018-8f16-ea8d8fffadef",
+    "externalId": "079ddac2-4906-57e9-9141-4e903058ce07",
+    "username": "4c0e932eb7b84bc70c5681dc01ce3eca",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "45123009",
+    "protocol": "2026-150265437012",
+    "customer": {
+      "email": "adriboxone@yahoo.com.br",
+      "billingProfileCode": "1-8MUD-26413",
+      "name": "ADRIANO",
+      "secondName": "OLIVEIRA DA CUNHA",
+      "birthday": "1983-06-09T00:00:00.000Z",
+      "ddd": 11,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5511974470709",
+      "id": "4c0e932eb7b84bc70c5681dc01ce3eca",
+      "cpf": "30477334814"
+    },
+    "signatures": [
+      {
+        "id": "45123009",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 974470709,
+          "dddMobilePhone": 11
+        },
+        "customerId": "4c0e932eb7b84bc70c5681dc01ce3eca",
+        "status": 1,
+        "productName": "SUPER HD II 2024 - P",
+        "name": "ADRIANO",
+        "secondName": "OLIVEIRA DA CUNHA",
+        "dna": "01000000000100001000001000000000100000000000000010000000001000000000010000000000000000100011000111110100000000100000000000001000011110000100010000010111111111111110011111111000000000000000000001100000000010111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111010011111101111111111111111111111111110111111111111110111111111101111111111111111111111111100111011100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100100111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Orion Viaro",
+          "line1": "Rua Orion Viaro, 916 - Jardim Vitoria",
+          "line2": "Casa C",
+          "number": "916",
+          "city": "Mairinque",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "18120000",
+          "referencePoint": ".",
+          "addressType": "Rua",
+          "resDdd": 11,
+          "resPhone": 974470709
+        },
+        "addressBilling": {
+          "linePublic": "Rua Orion Viaro",
+          "line1": "Rua Orion Viaro, 916 - Jardim Vitoria",
+          "line2": null,
+          "number": "916",
+          "city": "Mairinque",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "18120000",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2009-09-10T00:00:00.000Z",
+        "email": "adriboxone@yahoo.com.br",
+        "parentAccount": "045123009",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001156192856",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A012548360245F"
+          },
+          {
+            "smartcard": "000758500698",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2035385723775"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "45123009",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 974470709,
+        "dddMobilePhone": 11
+      },
+      "customerId": "4c0e932eb7b84bc70c5681dc01ce3eca",
+      "status": 1,
+      "productName": "SUPER HD II 2024 - P",
+      "name": "ADRIANO",
+      "secondName": "OLIVEIRA DA CUNHA",
+      "dna": "01000000000100001000001000000000100000000000000010000000001000000000010000000000000000100011000111110100000000100000000000001000011110000100010000010111111111111110011111111000000000000000000001100000000010111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111010011111101111111111111111111111111110111111111111110111111111101111111111111111111111111100111011100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100100111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Orion Viaro",
+        "line1": "Rua Orion Viaro, 916 - Jardim Vitoria",
+        "line2": "Casa C",
+        "number": "916",
+        "city": "Mairinque",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "18120000",
+        "referencePoint": ".",
+        "addressType": "Rua",
+        "resDdd": 11,
+        "resPhone": 974470709
+      },
+      "addressBilling": {
+        "linePublic": "Rua Orion Viaro",
+        "line1": "Rua Orion Viaro, 916 - Jardim Vitoria",
+        "line2": null,
+        "number": "916",
+        "city": "Mairinque",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "18120000",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2009-09-10T00:00:00.000Z",
+      "email": "adriboxone@yahoo.com.br",
+      "parentAccount": "045123009",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "001156192856",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "670A012548360245F"
+        },
+        {
+          "smartcard": "000758500698",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2035385723775"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "45123009": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "11-07-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "AMAZON PRIME PROMO 2",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "27-09-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "ASSINATURAS DIGITAIS IV",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "04-06-2024",
+          "end_date": null,
+          "icon": "📺"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "11-07-2026",
+            "startDate": "11-07-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-21BSJ1A",
+            "name": "AMAZON PRIME PROMO 2",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Amazon%403x.png",
+            "urlDetail": "https://www.sky.com.br/amazon-prime",
+            "price": "0.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "27-09-2025",
+            "startDate": "27-09-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-218ZAB1",
+            "name": "ASSINATURAS DIGITAIS IV",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": null,
+            "price": "9.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "04-06-2024",
+            "startDate": "04-06-2024",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,388 @@
+{
+  "email": "(16)98123-0190",
+  "password": "Dc170591",
+  "access_token": "b94991d1-d208-4ac6-b6c2-8db2a83400f3",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiYzRkZjUwYWQtOWJlMC00Yjc5LWExY2MtOWViNTQ2OTNmM2M4IiwiYXRfaGFzaCI6InhzOU04eldKTFVDd1ZPblNwOENWc3ciLCJkZXZpY2VJZCI6IjJiYjExMjE0ZTc2NDk3Y2VlOGRhNjRmOWY2MTA3YTcwNjMwMTJmNzQiLCJhdWRpdFRyYWNraW5nSWQiOiIzYTQyLTI5NmItNDc2ZC04ODk2LTljNmQiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODgxNTE2MDk5OSwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJmOTMzMzU5NC0wODFlLTQ3MjUtYjAzZC1iYzdmNmViNjFhOGEiLCJzaWduYXR1cmVzIjpbIjM4MzQyMzUzIl0sImN1c3RvbWVySWQiOiI0NzNjZjk5ZmVjZGY3ZWNjMTg0N2FjZWEyMjA5YWNjMCIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjM4MzQyMzUzIiwiZ2l2ZW5fbmFtZSI6IlBBVFJJQ0lBIERPIEFNQVJBTCIsInVzZXJuYW1lIjoiMTY5ODEyMzAxOTAiLCJ0ZWxlcGhvbmVOdW1iZXIiOiIxNjk4MTIzMDE5MCIsInNpZCI6IjJiYjExMjE0ZTc2NDk3Y2VlOGRhNjRmOWY2MTA3YTcwNjMwMTJmNzQiLCJzdWJuYW1lIjoiZjkzMzM1OTQtMDgxZS00NzI1LWIwM2QtYmM3ZjZlYjYxYThhIiwicmVkZW1wdGlvbkxpbWl0IjpudWxsLCJpYXQiOjE3ODg4MTUxNjEsImV4cCI6MTc4ODkwMTU2MSwiaXNzIjoic20tc2t5LnZyaW9zZXJ2aWNlcy5jb20ifQ.fI2MKbVGnnPCLWxP_PrAAPTEBLaLP2Flg39VW89ht2YiTI4UVIU83rqzgpww6mHv2seRIs0mi3Ig8CH3T_6SUgrJ9bwyyirkAjqo6KkHt6U8e90uhcNboK_faUI1Q-Me7dbdTcdhWAQglBrZQiUUREGiJpgOhz8krVIHTPROQhQS-QJ_0KQ1_ksFL0DbPFd0Xy4jIyg57dma03Tuk0kKYUZ0-NuQBo7DTr0eoGEgv_uujcS7nzVBzIrBPGblv_w6iuw2R42EIu94_MSr761kSc0FqmzA5FNSpLeN59RzK9GtVnfVZHMycqSHRx97wWDmLncGN7_9WTF5fgi3LdOuew",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "b94991d1-d208-4ac6-b6c2-8db2a83400f3",
+    "externalId": "1e1f6e26-d3fc-5209-a269-bb0e410bf916",
+    "username": "473cf99fecdf7ecc1847acea2209acc0",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "38342353",
+    "protocol": "2026-150293151574",
+    "customer": {
+      "email": "devolve.gerencia@gmail.com",
+      "billingProfileCode": "1-G3FJ-9862",
+      "name": "PATRICIA",
+      "secondName": "DO AMARAL MUNIZ BORGES",
+      "birthday": "1971-11-25T00:00:00.000Z",
+      "ddd": 16,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5516981230190",
+      "id": "473cf99fecdf7ecc1847acea2209acc0",
+      "cpf": "16391947899"
+    },
+    "signatures": [
+      {
+        "id": "38342353",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 981230190,
+          "dddMobilePhone": 16
+        },
+        "customerId": "473cf99fecdf7ecc1847acea2209acc0",
+        "status": 1,
+        "productName": "COMBO ADVANCED II CINEMA + MUNDO HD 2019/2021 - P",
+        "name": "PATRICIA",
+        "secondName": "DO AMARAL MUNIZ BORGES",
+        "dna": "01000000000100100000000100000000100000000000000000010000000001000000010000000000000000011011000111110000000000000000100001000000011110010000000000100111111111111111111111111000000000000000000100100000000010111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111110111111101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Professora Dona Aruca",
+          "line1": "Rua Professora Dona Aruca, 195 - Padre Monicio",
+          "line2": "Anderson",
+          "number": "195",
+          "city": "Brodowski",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "14340000",
+          "referencePoint": "Rua Atras Do Supermercado 3j.",
+          "addressType": "Rua",
+          "resDdd": 16,
+          "resPhone": 36644489
+        },
+        "addressBilling": {
+          "linePublic": "Rua General Carneiro",
+          "line1": "Rua General Carneiro, 927 - Centro",
+          "line2": "Sala 1",
+          "number": "927",
+          "city": "Brodowski",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "14340000",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2008-09-26T00:00:00.000Z",
+        "email": "devolve.gerencia@gmail.com",
+        "parentAccount": "038342353",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001148418880",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A0120807438762"
+          },
+          {
+            "smartcard": "000771227972",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2036193558521"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "38342353",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 981230190,
+        "dddMobilePhone": 16
+      },
+      "customerId": "473cf99fecdf7ecc1847acea2209acc0",
+      "status": 1,
+      "productName": "COMBO ADVANCED II CINEMA + MUNDO HD 2019/2021 - P",
+      "name": "PATRICIA",
+      "secondName": "DO AMARAL MUNIZ BORGES",
+      "dna": "01000000000100100000000100000000100000000000000000010000000001000000010000000000000000011011000111110000000000000000100001000000011110010000000000100111111111111111111111111000000000000000000100100000000010111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111110111111101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Professora Dona Aruca",
+        "line1": "Rua Professora Dona Aruca, 195 - Padre Monicio",
+        "line2": "Anderson",
+        "number": "195",
+        "city": "Brodowski",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "14340000",
+        "referencePoint": "Rua Atras Do Supermercado 3j.",
+        "addressType": "Rua",
+        "resDdd": 16,
+        "resPhone": 36644489
+      },
+      "addressBilling": {
+        "linePublic": "Rua General Carneiro",
+        "line1": "Rua General Carneiro, 927 - Centro",
+        "line2": "Sala 1",
+        "number": "927",
+        "city": "Brodowski",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "14340000",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2008-09-26T00:00:00.000Z",
+      "email": "devolve.gerencia@gmail.com",
+      "parentAccount": "038342353",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "001148418880",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "670A0120807438762"
+        },
+        {
+          "smartcard": "000771227972",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2036193558521"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "38342353": {
+      "included": [
+        {
+          "name": "Sky HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "06-09-2021",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "TAXA ASSISTENCIA PREMIUM - P",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "06-09-2021",
+          "end_date": null,
+          "icon": "🛡️"
+        },
+        {
+          "name": "Sky HBO HD - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "06-09-2021",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky Pacote Mundo",
+          "category": "A La Carte",
+          "subcategory": "Internacional",
+          "start_date": "06-09-2021",
+          "end_date": null,
+          "icon": "🌍"
+        },
+        {
+          "name": "TELECINE HD CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "09-05-2022",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "Sky Sex Prive HD - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "06-09-2021",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "Sky Sex Prive - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "06-09-2021",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "28-05-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO COM 3M DESC 50% - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "06-12-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "06-12-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PREMIUM R$ 19,90 POR 4M  - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "15-09-2025",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": null,
+            "name": "Sky HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "06-09-2021",
+            "startDate": "06-09-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive HD - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "06-09-2021",
+            "startDate": "06-09-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "06-09-2021",
+            "startDate": "06-09-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TAXA ASSISTENCIA PREMIUM - P",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "06-09-2021",
+            "startDate": "06-09-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky HBO HD - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "06-09-2021",
+            "startDate": "06-09-2021",
+            "endDate": null
+          },
+          {
+            "id": "1-2T0LGU",
+            "name": "Sky Pacote Mundo",
+            "category": "A La Carte",
+            "subcategory": "Internacional",
+            "logo": "https://skycms.s3.amazonaws.com/images/37907079/Europa.png",
+            "price": "39.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "06-09-2021",
+            "startDate": "06-09-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TELECINE HD CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "null",
+            "isPartOfMainPackage": true,
+            "activationDate": "09-05-2022",
+            "startDate": "09-05-2022",
+            "endDate": null
+          },
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "28-05-2026",
+            "startDate": "28-05-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO COM 3M DESC 50% - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "06-12-2025",
+            "startDate": "06-12-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "06-12-2025",
+            "startDate": "06-12-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "DISNEY PREMIUM R$ 19,90 POR 4M  - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "15-09-2025",
+            "startDate": "15-09-2025",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

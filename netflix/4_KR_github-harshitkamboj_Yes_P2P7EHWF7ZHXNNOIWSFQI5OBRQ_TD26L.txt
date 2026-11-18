@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: KR
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: NAVER_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (5): Paulo, ㄱㄷㅎ, 아라, Kj, 키﻿즈
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1820842618	NetflixId	ct%3DBgjHlOvcAxLRAxcZXnh1ySoAUWp1pj7MxIr6pUzAzIw_nynY2WLgShEw7rxrxxoXJWMsRo-upjumOA3IPdYEXx8SQfQMMs53B2y75cFyDcTf9gb8lUZFQESiaghihCn8NMFJe2a5cVAPKArJtWM_7f4_BtSIac2NJxlZ4wZeju3ct5Ex5g4KXDA7OttCCu3xIZoU3M4P6hgEUyfysH9s28wpF89PxE8JRDocNxtiN7DFajha2Io2KFIKWIJ2KivxO5py6Udn9awKWmGAwL71vr-OlZKGGRQa1uCRdyOn6cfcdpo7BaqhlasOmiW6uk5sd1sNeoWIemPcYhE_3LjsLgC_3Kc9HwC9BRwr7qvmyt6bikaPGPl3jbHasMIiMNzYlPzkGZNNPuLwRFdiO9NHjKmZ6Cr0JUCsOdmDVK29maU4RrIZjiloE5qzvyHlz25ocflhmGyip4eWghD7s4JWiqWaMX3tvb3Mz4CawJFXD-6cMI9dnZzbatTgcQeTPcGfa7djn01sHHR6J9E3lu-We7Vsm6dsi_cEBdUGX4Idm84gyOcrScjuNpdziHAPMk-SOVQ-G9UWdHH2q6AhnQYOoTCKetmP-1V6If54DfiH8_1TgIT7c39bcGXR4BgGIg4KDDXN-pKfAidKHEUfIg..%26ch%3DAQEAEAABABTVXaXLYsSVKJz70M7DmXkKwdSbTuKYXVM.%26v%3D3%26pg%3DP2P7EHWF7ZHXNNOIWSFQI5OBRQ
+.netflix.com	FALSE	/	FALSE	1797082613	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797082613	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1819552708	nfvdid	BQFmAAEBEMzgbeNvnlKcOg9eU1mfLlJgu9sdYYx56yTgYqvC8Y4WK1zJxJitu8qGoDyG07-FpruoLqJ7Gyf_qkyG1Id74RPWGODDdV8VVW3visJaZ-R0ymHRL_Dr7aOvoIdawt16uaZGrIRc3BfkI015b5HI5NAf
+.netflix.com	FALSE	/	FALSE	1820842616	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+13+2026+22%3A36%3A56+GMT%2B0900+(%ED%95%9C%EA%B5%AD+%ED%91%9C%EC%A4%80%EC%8B%9C)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=9bbe7690-c211-44bd-b707-c7a855bd5ae6&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1788016686936&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1820842618	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQlygOwANXnQ7piJpgctyT1GSP_yKxpftA.%26dt%3D1789306618483

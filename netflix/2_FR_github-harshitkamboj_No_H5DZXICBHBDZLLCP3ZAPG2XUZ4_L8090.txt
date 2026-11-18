@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Standard
+Next Billing: November 7, 2026
+Payment: BYTEL_TV
+Quality: HD
+Streams: 2
+Price: 14,99 €
+Profiles (2): amayl1984, Jeunesse
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554944	gsid	d79566d1-34a2-4220-90fc-e7a20750f6bf
+.netflix.com	FALSE	/	TRUE	1821112519	NetflixId	ct%3DBgjHlOvcAxK3A9y1J1pGoxujtbFAOd25Yr8jupNnuf1W1ktPGzIvPCJly7r1RCAmjJIcHTDhK3UffhaOQRdDQigZi5UnvPfX6TmLs8O0bpzolPy_b2jJ9VwUapY0hcj1c1EUhRS-7BHTdvF90OXSWw2orrFK0Zg21Za_Ce8trC6ufOUoSTBdp2Hd4QbhAp28IE62hUDAms5mpO-R8QoHoHIs5zGieqeNyYEb6-Ck_m_Mr0iUzNbNaNX13Z6y40mn14AYFDGl0wjzMaG1Y9eR41lt5sy9MzQ085yu_u50XeL015j-D_Aglh9OI5EIW13PABfbdDZguV5Xo9bbNO0uR1ybyZOV0si5yGP0LcNKpKrw7Agd4H0Ius1nogGLuZvCUdWhP9aFCfJEPEw-U33MCrOFwEGl5zwzs7LrPY6qilt2Gs20NvS5mJzrZ9MUF5mjHo_2YxGAIvyedomqDNqQfvtaV5ux4ZXRq1VOV0GcRw6KDZT90wQ1_iF7nqnNIEd-NIDoXw43rY4EoJ7RVejfudbKDa97x5qbjNz6_pne7z6H1QORSj5Q1UQkkMLWB7yt9tKYHXtzcVIs_hJPpqwLBYgYBiIOCgxlM0_ti0yLjYUi1iY.%26ch%3DAQEAEAABABRINM8NbHwxIa8kkM84HFBGiu83A78uBkI.%26v%3D3%26pg%3DH5DZXICBHBDZLLCP3ZAPG2XUZ4
+.netflix.com	FALSE	/	FALSE	1797352523	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797352523	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1817930111	nfvdid	BQFmAAEBEA2b8gv0slM660fOHkDX5_Vg3qo3JVUD6YWknlpIF8Sao4rNPuE3ku-yElqXNm1nedj-BlO4yHG3J50Pm95kN2Dl6gXX94okuLOMkGYOvGZl7l3gEx2pODfq53ENwGfT6kejHsKQXyoc3o-JQT_CCofS
+.netflix.com	FALSE	/	FALSE	1817759404	OptanonAlertBoxClosed	2026-08-08T21:10:04.820Z
+.netflix.com	FALSE	/	FALSE	1821112523	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+16+2026+18%3A35%3A23+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=09fa457b-22cd-48e5-b734-25256330116f&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&fclco=&intType=1&crTime=1786223405202&geolocation=FR%3BHDF
+.netflix.com	FALSE	/	FALSE	1796554944	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1821112519	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQTvnQXtmOTjXmbzjYCsJZ1PTontVkm1To.%26dt%3D1789576519933

@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: November 16, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379,99 TL
+Extra Member: Yes
+Profiles (5): burcu, ADA Minnoş🤣, Günay, gültekin 2, Nevzat-Berat
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1808211999	dsca	true
+.netflix.com	FALSE	/	TRUE	1820881963	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKgA_0j2Vyy7NBQCU5CsyVoDO_Bg6H4aNkDSblrwyjEopvDgl8ifwkvI4FNRgNWLxQwlpdQeaJQuq-In-re4q8-WpIE7SHhjREcwyJR4W1DTh8PlN7KrACYAfatbAs5x_jnagmatfeL2_do8FrMyTHiMh52hevvbLIeBk00ivEb1y4vZANnxDB-_4S2-uAyYIknXGD7aqRxDBTZL-novfQ87RcmIvgDccLx5kYcaBs7z84n9X_H9aJYMo6gZ-WF9Mmr2C1uk7LxPMTSIYQbfvZa8pxhEWPgHOmmfgKU8H_ncN296KfzpuEhhPqKmliUIJZEKsMCB51cTiwaQrMhSNN3fU7KyGJ36UIBm3vKC7haZVdXQWqvACJ7DmY2JZps_mG8UMShRI_7DYS-WoSGnVvkG2EIFbVdCH3ndMzQ0HMI4kqTe5nt_Jua-CJChS-u2LkDBhi4dq5RBcKJteeMFXxUCGF9JnBDaywdmFEMd05z4XCD3b_E9s5YYBS5kcNxHC8pXMJUxvvN4Uh5YExWfCQ885I0xJ1NmNJGV3P57XtpGxMoGAYiDgoM5Jbq6bftK63tBWrD%26pg%3DPHOLT6DQLNDLHC27CAR72D6LLQ%26ch%3DAQEAEAABABR3QB-DT3Vjr80kUuV_KuEnwm19dhmXWu4.
+.netflix.com	FALSE	/	FALSE	1797121970	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1803552524	nfvdid	BQFmAAEBEE8HfPmNC19WmaLOHyWvG7JgpKwMRE04KjlJ0rS6qfIB8ZSitaIBxMzVw2fYWHyEcjJy3C3kLqluPx7HCd0GVPrESw85mlyNdFbGbvIrKh-2uRyBtlqi-oHo7ZUJoSDdA08SAvr8uM70heO-GILUT7qB
+.netflix.com	FALSE	/	FALSE	1801432761	OptanonAlertBoxClosed	2026-01-31T21:59:21.112Z
+.netflix.com	FALSE	/	FALSE	1820881970	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Sep+14+2026+03%3A32%3A50+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=b06f1d04-7fc9-485c-8ae1-296f12b0f7a3&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&intType=3&crTime=1769896761656&geolocation=TR%3B06&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1797121970	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	TRUE	1820881963	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSq-AnO9bf_gvojjHaSz6b_37uIhB9nYcI.%26dt%3D1789345963889

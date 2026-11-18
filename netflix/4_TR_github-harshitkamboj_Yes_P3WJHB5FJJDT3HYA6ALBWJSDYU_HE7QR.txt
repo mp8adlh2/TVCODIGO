@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: December 3, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379,99 TL
+Extra Member: Yes
+Profiles (5): Özge, Sibel, Güray, SetoVic, Seray
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1796554947	gsid	bd6fd2d9-262f-450c-b2f1-fb76eb7838bf
+.netflix.com	TRUE	/	TRUE	1821440430	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKWA0rz5qYmrFlFUKeQTFMEjkOynP6K0HBARKkKdNvatwGfh1TzYHOxKV-LJpXumjfdyCc8EkwxPXUgofT2C9WHR5qp8-cRlTEbPdEFTLgiYN0VmQnzTXDx-zqCUCAUWsIZIYPowzqyf24_ySl_8gMNseZEvPc6xxaaUsWaV-EIptQED6eIvIi3L-rr2K8o0V4mUdzF0mpd73iqwDqcnQkdOYdgJPeLc6RnE_OJewuW2QETrRs2SJFkzlGAm7P2PQ5Yo4J4h3CeerCQygyL1SLE7Whg2e80PHi5qTKLkSMNibK585g5PUVUmDa-tVpxEmZRVgd9ifcjyXdiaq04fuVb1osnw16ZjBUthMCI2XGEgcr2uRw1KU-MbZjXbRL0tALB9L5lMaciEDr-n63U3v1EdM2hLlS5Q9x2GMaBiKS3cDvjwjsnSjkA-4V5t-yM9Pzuly7OsuMacoNRX5y0r8opbpCUT08IbLdKcqzYxj0X-QeNd6MRGUxPJ-EU9bRgfw_TOoaUnsRRQZlN8_qWsMHZAITxINvxKTEYBiIOCgz0X6l_9BhfkNsFCqo.%26pg%3DP3WJHB5FJJDT3HYA6ALBWJSDYU%26ch%3DAQEAEAABABRXeX8g087RYyZL159Ubgc-qSUOpWhzTFs.
+.netflix.com	TRUE	/	FALSE	1797680433	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1797680433	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1821384295	nfvdid	BQFmAAEBEKngpRZIPbYBkzvxnYGBTBdgKRLDvIPu19DQc1LQFYKRc3lAwgdJ8y-C2Xn1Xm81or9h1tpp6KvI9HH95n4QxEAjZcAVYWFOPVgCJTIZMiNo20ttYHYU60A6Jw-MIXHwfUgY1Q-2OWa839AxUhlrof_q
+.netflix.com	TRUE	/	FALSE	1821384245	OptanonAlertBoxClosed	2026-09-19T20:04:05.295Z
+.netflix.com	TRUE	/	FALSE	1821440433	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+20+2026+14%3A40%3A33+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=c9603269-d351-4b45-a748-8c73abfe20a4&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&fclco=&lastConsentTs=1789848245&intType=3&crTime=1789848245948&geolocation=TR%3B35&AwaitingReconsent=false
+.netflix.com	TRUE	/	FALSE	1797680449	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	TRUE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	TRUE	/	TRUE	1821440430	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQlr5wTK7TfzOQciY5Mhyj3FyZCAbrO8aw.%26dt%3D1789904430416

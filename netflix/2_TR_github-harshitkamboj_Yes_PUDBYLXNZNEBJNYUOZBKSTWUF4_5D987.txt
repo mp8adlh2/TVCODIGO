@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Standard
+Next Billing: November 11, 2026
+Payment: DCB
+Quality: HD
+Streams: 2
+Price: 289,99 TL
+Extra Member: Yes
+Profiles (4): Tuğçe, Tuğba, Mustafa Mert, Çocuk
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1823115723	dsca	customer
+.netflix.com	FALSE	/	TRUE	1820085618	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKgA4BdoBISEW7ciedDBE9q_Dbi5htmY0Zoq0QsecrTpy_k4IYLiEKSCaW1SLCT6HQQT_LsEwXaFQ9P-Bfr19BU4I_sUffEA0U2sptpgPfGOp5VlBJ-b7p9xj3YQilW1boBnP4X8IQ46Plc1Bmvk6RoJsg7frMZM_bAxLIO2XA2OHGtWw-dQCRlg0gN48-mlBTieRWQO0uYxDUlodkCupbXn3k1l4vA6YQnqYuiqJy8tA7mVUix81FIUma3HB_wiBgkfGUmQCFjrNo3he2UYBt7SagsbgjrwA4-aZAHi968bc5SwnydiTOqZRmDdUuM2iR_sg4W46h159BUemuFQPiP9QT9v7OwZsDytGC72GzdNk4vgLsXbix4w83xajGSWk0uCTwxy7i6JIcSHMqYM9vycz1qXUyGCpucCHRigcWXtw34-EP7Jmb7qdMmlTdXfyVGWrcbttNFAWB8QIea1zWsljSccamjOV6WKe_3qqZ3WXvVEqEUhGZeqTTt4Ur57ijl4xjEFbVyJF0UcRFOX_P2eb5ljqJu5vWikP4rg5-aL7bqGAYiDgoMPwTRnCnAsSm0TX84%26pg%3DPUDBYLXNZNEBJNYUOZBKSTWUF4%26ch%3DAQEAEAABABSgBNfYFyuSXofmfIejYbInNqiDLPc42Rc.
+.netflix.com	FALSE	/	FALSE	1796331726	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796331726	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1818528878	nfvdid	BQFmAAEBELKnbLc8ycRAU2rSG99NYyhgv0fPKCCG_SfaY-XhY-5sBQd1XIyExGl7EY13pi_UeWDPjGd-MI6WWSN-rFUjjyns_QZK0UzQ281Dx-QUY6dPICC8PlPk_ICJkWKambRkOpUH71mxb8k6kpKMsQQVzORK
+.netflix.com	FALSE	/	FALSE	1820085272	OptanonAlertBoxClosed	2026-09-04T19:14:32.334Z
+.netflix.com	FALSE	/	FALSE	1820091727	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+05+2026+00%3A02%3A07+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=2ea7e329-b329-4f28-bb63-4fefb2811ddd&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&lastConsentTs=1788549272&intType=1&crTime=1788549273059&geolocation=TR%3B38&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796331726	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1820085618	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRS671P-oNT9QERDJElTClOD0j75w17gNs.%26dt%3D1788549618029

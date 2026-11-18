@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: CL
+Plan: Premium
+Next Billing: November 26, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: ‏12,990 CLP
+Extra Member: Yes
+Profiles (5): ívonne, Mauri, Qays, cendoi, Niños
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554944	gsid	a29302d5-e79a-472a-b580-5fe9ca7084f4
+.netflix.com	FALSE	/	TRUE	1822396570	NetflixId	ct%3DBgjHlOvcAxL8AxNFIeXmzn8raAYLNRhMs9dFTS3u4ppjsvEugLn9XciN35_zrmSr4QypGmBKs7gvtWK6vJUtRIk33F35JRxJ0wrtHCeK-evwY6ERcTFB1eIpGg00jw9EIBtkxjuKNYjjpSMzu8bMTGFCoV41AxxrYUFp8aCCilM3LaR7DP0Id9tu-6qOcYFBHLaUEetxUKryvvOUqlhJt-TsaDjmn6uZCcejbSTte7i_CTrSRZxAtC5wMxeYndg5n-f05nH0cFS_GJOONOOtVV0L5Y9el9Exj4DbqlJ4MMBHS2ujlrUlMrI0hfW6LactZ_mlnjEvPuLLy0ZDR4P5KcvHEgrw7l-0X7wZS_4tsEQpymLHFKasoTEX4AzFDSbBWo3j-mPKpJZzUMkGeboUFOQHZEojyo_Mup-8K0ywKdqDXRQ6vCE4c7yNbjjbHFSAoa_NRUv-66K5LnfhNQiziBv9-_Ohkn5beXPDRiZJiaNXedNXbs6i4W0CGMy6NcCqV4rKbss3ivIncmllPFByBTrHXpPHCH9M-yY-6dYnZvws9sgPolLagiNoOAeg7t3RO6U5pYK0DMm3KBN8ktRiNGBEricoPN49xAguLdRzHMGvFYk8yID8OVGlZ39bJ2j7P7n48YmCq63worjAqiHlYFckmUVHwwK-HuxTrH4o1ooIyu1XnloYBiIOCgxGTsfn_G4He-2KHws.%26ch%3DAQEAEAABABRp_6srfHzCUMPb7SAHOD0_vE7wSNI0w_I.%26v%3D3%26pg%3DTV2ZTNO2NBA7HKNXUOJJCTC5DU
+.netflix.com	FALSE	/	FALSE	1798636572	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798636572	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1820112273	nfvdid	BQFmAAEBEH1X_otDioJJ-xPjonxf_-VgOPPJvbSbm8G5PwxPPmdHF7pTyiIJBYg6bEQI_LK3NYqAd9hZ8ip_rvPy838mX8R5wwWRfm6qCSd1LT6gBcx9B0i8mlxg1MdA15P5qdCaCRCcCnvwnricwTtWZnEFYzbW
+.netflix.com	FALSE	/	FALSE	1822396573	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Oct+01+2026+10%3A16%3A13+GMT-0300+(hora+de+verano+de+Chile)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=c8dadeac-f596-4d1d-a846-f2f62c5e7abe&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1788561582234&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554944	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1822396570	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTjIeiiDtzbqzN9LvitrFMGtPcnfCD0X2A.%26dt%3D1790860570527

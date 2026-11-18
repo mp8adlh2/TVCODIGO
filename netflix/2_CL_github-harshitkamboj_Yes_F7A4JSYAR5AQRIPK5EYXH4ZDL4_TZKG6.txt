@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: CL
+Plan: Standard
+Next Billing: November 18, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: CLP 9.990
+Extra Member: Yes
+Profiles (4): Karla, Mati, Caquito, Matita
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1820192339	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKiA5_0FLFihiuc8WwIx-0SrSOsLI2cj7VibIXaHVQGBQ35SNjM14yYk7wGH0I91dP7snM1ChAudaptqKDSSRbKi_bXp1s8Px6qcRdP4zM85A4dgckJo1v_QiXLT7QniBGJcE42VXUdgoXiY18leCZondQNk-DZSKIVH7gNbp5i_Bb8ZxlUBxljg84QfI4-UkDlLc_xKnxBsdbV-fWmeHH3JmkFS_bjvEKElmsDXSKMBgpXeM0qyMrzrVUaO1rLYy3g1_trE7xvSLIRpbJ3xRPOTK8mm4kXii2PzSBsrSI8_u1dEIsuDPlT7o_5ZbnGgP2wfjY3V4uXsH5NV5T12Tiqjihfa9zJQjPuveMaAB44VfMvkXYx85RbdzpjjmKvjmK_GpD-ILpQoKPerL_tgy-qd7N32J3TQ2USScWOHDaLNLXDrDZx-xj8W0zWaxHOM0OkSz23G1rLdtuy8oOlPdnWoOD_5BVZqt0DP1pxvm9Rmr4bfDKuJ53EI-XhpvrbB4r0Kg7Vh5qfZL7u_GtY6lT14Nqi3FzvKdT4NnFgRoik65Rt8X4YBiIOCgysrdPcdhFA4VcfG0I.%26pg%3DF7A4JSYAR5AQRIPK5EYXH4ZDL4%26ch%3DAQEAEAABABQ454eC5ZcWkSj1COnBClrCYUsiEXmPrQQ.
+.netflix.com	FALSE	/	FALSE	1820192343	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+05+2026+20%3A59%3A03+GMT-0400+(hora+est%C3%A1ndar+de+Chile)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=a10f92d5-7885-4dcc-9f6e-4682e58497da&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&AwaitingReconsent=false&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1788656280060
+.netflix.com	FALSE	/	TRUE	1820192339	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRG5CXeyef2scTTjSh_s1oOfQg32bLqxL8.%26dt%3D1788656340547
+.netflix.com	FALSE	/	FALSE	1796432342	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796432342	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1820192339	nfvdid	BQFmAAEBEF_OyOOwdIz72KQTVp7bUHhgK0ewz5J-6_agpv1oBWxbfHAb4EVd35fXBJopAm4r-XVqXjZGG5Clgc0kOghh5d14GTecxW1PILp-czcfFmgRIngBbyJawl58erHqd1Iyz3SR3JyrM1lV9XzO3Updr_Mq

@@ -1,0 +1,344 @@
+{
+  "email": "telefonia@arquidiocesebh.org.br",
+  "password": "Kl308616",
+  "access_token": "dbc753f9-17dd-496a-a1b0-bbb0c3b748ca",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiNjg0N2Q2YzAtY2I1OC00NjY3LWIyYWYtNjE5MzNhMzJlZjQ3IiwiYXRfaGFzaCI6IlNwUzUxU1FjSFVRYWRjOHdHVEZyVWciLCJkZXZpY2VJZCI6IjdhOTk1Mzk5MzU5MWM1NjBmZjczNDE2OTNmYzg4MjFmNzc3YWU5ZGYiLCJhdWRpdFRyYWNraW5nSWQiOiI2NjllLTczYjgtNDcxYy04YTZiLTA5MjkiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODY1NTI5MTQ3MiwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJyY2FqNHlkd3ZxazA1em9yQjlITWZnIiwic2lnbmF0dXJlcyI6WyIxOTQwMjM0MTIiLCIxNTM3NzcyNzk0Il0sImN1c3RvbWVySWQiOiIwN2E1MDQ5ZmIyYWU1NmVkZmE5NWNjZjhjMDJlOWZhYiIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjE1Mzc3NzI3OTQiLCJnaXZlbl9uYW1lIjoiTUlUUkEiLCJmYW1pbHlfbmFtZSI6InNreSIsInVzZXJuYW1lIjoidGVsZWZvbmlhQGFycXVpZGlvY2VzZWJoLm9yZy5iciIsIm1haWwiOiJ0ZWxlZm9uaWFAYXJxdWlkaW9jZXNlYmgub3JnLmJyIiwicmVkZW1wdGlvbkxpbWl0IjpudWxsLCJpYXQiOjE3ODg2NTUyOTEsImV4cCI6MTc4ODc0MTY5MSwiaXNzIjoic20tc2t5LnZyaW9zZXJ2aWNlcy5jb20ifQ.TujDhv869mSIcvDtcPlvB7YsfN100neT-bj-_uQi3aUYni-Gm_KMKMb9-ZHItMZzSxdZctXmUAqKXr167UItgZRyBnfaFjnio7sTScPDWR0v4yWhATuAT5PRkf7F_MWyAuQESGbwImOZKPmb_fpkorx_y5ZtKUhl6a56Xnq_lxeOr1gk7MqdnxEUv_SNL4QqcXc0TQEJpMpjO6zOxEgzWV_PfQTL847Sk7BSj6pyWsauzoNzZ6HoBR7bDLBHwfr_Vn_cEzixNNEFbBkCPqOPp6QE1swuL55O4dvZSgYPn6_ujDNrNH2cMvZmIYYJcvgFHwMEN-XZ0t4Iu8GqF7p-gA",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "dbc753f9-17dd-496a-a1b0-bbb0c3b748ca",
+    "externalId": "f2c17987-f125-5d70-817c-09ec782ee4e2",
+    "username": "07a5049fb2ae56edfa95ccf8c02e9fab",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "1537772794",
+    "protocol": "2026-150265116370",
+    "customer": {
+      "email": "telefonia@arquidiocesebh.org.br",
+      "billingProfileCode": "1-1QFD2BBO",
+      "name": "MITRA",
+      "secondName": "MITRA",
+      "ddd": 31,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5531998951531",
+      "id": "07a5049fb2ae56edfa95ccf8c02e9fab",
+      "cpf": "17505249000151"
+    },
+    "signatures": [
+      {
+        "id": "194023412",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 998951531,
+          "dddMobilePhone": 31
+        },
+        "customerId": "07a5049fb2ae56edfa95ccf8c02e9fab",
+        "status": 1,
+        "productName": "SKY PRÉ-PAGO 24 MESES",
+        "name": "MITRA",
+        "secondName": "MITRA",
+        "dna": "01000000000100000000000000000000010000000000000000000000000000000000000000000000000000100000010111110000000000000000000001000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111101111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pré-Pago",
+        "addressInstallation": {
+          "linePublic": "Rua Retiro Da Piedade",
+          "line1": "Rua Retiro Da Piedade, 0 - Serra Da Piedade",
+          "line2": "Mg435",
+          "number": "0",
+          "city": "Caete",
+          "state": "MG",
+          "country": "Brasil",
+          "postalCode": "34800000",
+          "referencePoint": ".",
+          "addressType": "Rua",
+          "resDdd": 31,
+          "resPhone": 32693100
+        },
+        "addressBilling": {
+          "linePublic": "Rua Retiro Da Piedade Mg435",
+          "line1": "Rua Retiro Da Piedade Mg435, 0 - Serra Da Piedade",
+          "line2": "Mg435",
+          "number": "0",
+          "city": "Caete",
+          "state": "MG",
+          "country": "Brasil",
+          "postalCode": "34800000",
+          "referencePoint": ".",
+          "addressType": "Rua",
+          "resDdd": 31,
+          "resPhone": 998951531
+        },
+        "activation": "2015-05-22T00:00:00.000Z",
+        "email": null,
+        "parentAccount": "0194023412",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000523521391",
+            "isRecordable": false,
+            "technology": "SD",
+            "subcategory": "PayTV",
+            "serialCode": "S14",
+            "serialNumber": "CE0A142258552686A"
+          }
+        ]
+      },
+      {
+        "id": "1537772794",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 980254759,
+          "dddMobilePhone": 31
+        },
+        "customerId": "07a5049fb2ae56edfa95ccf8c02e9fab",
+        "status": 1,
+        "productName": "TOP HD EXCLUSIVO 2025 - P",
+        "name": "MITRA",
+        "secondName": "MITRA",
+        "dna": "01000000000100000000000000000000010000000000000000000000000000000000000000000000000000100010000111110000000000000000000000000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001110000111100111101101111111111111111111111111110011111111111110111111111110011111111111111110111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Do Mosteiro Casa A 138 Casa A 138 Casa A",
+          "line1": "Rua Do Mosteiro Casa A 138 Casa A 138 Casa A, 138 - Vila Paris",
+          "line2": "Casa A",
+          "number": "138",
+          "city": "Belo Horizonte",
+          "state": "MG",
+          "country": "Brasil",
+          "postalCode": "30380780",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 31,
+          "resPhone": 980254759
+        },
+        "addressBilling": {
+          "linePublic": "Rua Do Mosteiro Casa A",
+          "line1": "Rua Do Mosteiro Casa A, 138 - Vila Paris",
+          "line2": "Recepção",
+          "number": "138",
+          "city": "Belo Horizonte",
+          "state": "MG",
+          "country": "Brasil",
+          "postalCode": "30380780",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 31,
+          "resPhone": 980254759
+        },
+        "activation": "2024-07-26T00:00:00.000Z",
+        "email": "telefonia@arquidiocesebh.org.br",
+        "parentAccount": "1537772793",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000751980954",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2036142611020"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "1537772794",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 980254759,
+        "dddMobilePhone": 31
+      },
+      "customerId": "07a5049fb2ae56edfa95ccf8c02e9fab",
+      "status": 1,
+      "productName": "TOP HD EXCLUSIVO 2025 - P",
+      "name": "MITRA",
+      "secondName": "MITRA",
+      "dna": "01000000000100000000000000000000010000000000000000000000000000000000000000000000000000100010000111110000000000000000000000000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001110000111100111101101111111111111111111111111110011111111111110111111111110011111111111111110111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Do Mosteiro Casa A 138 Casa A 138 Casa A",
+        "line1": "Rua Do Mosteiro Casa A 138 Casa A 138 Casa A, 138 - Vila Paris",
+        "line2": "Casa A",
+        "number": "138",
+        "city": "Belo Horizonte",
+        "state": "MG",
+        "country": "Brasil",
+        "postalCode": "30380780",
+        "referencePoint": null,
+        "addressType": "Rua",
+        "resDdd": 31,
+        "resPhone": 980254759
+      },
+      "addressBilling": {
+        "linePublic": "Rua Do Mosteiro Casa A",
+        "line1": "Rua Do Mosteiro Casa A, 138 - Vila Paris",
+        "line2": "Recepção",
+        "number": "138",
+        "city": "Belo Horizonte",
+        "state": "MG",
+        "country": "Brasil",
+        "postalCode": "30380780",
+        "referencePoint": null,
+        "addressType": "Rua",
+        "resDdd": 31,
+        "resPhone": 980254759
+      },
+      "activation": "2024-07-26T00:00:00.000Z",
+      "email": "telefonia@arquidiocesebh.org.br",
+      "parentAccount": "1537772793",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000751980954",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2036142611020"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "1537772794": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "TELECINE PESSOA JURIDICA",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "22-04-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO com 50% por 1 mês",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "22-04-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Premiere com Fidelidade",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "26-07-2024",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "ASSINATURAS DIGITAIS VIII",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "17-08-2026",
+          "end_date": null,
+          "icon": "📺"
+        },
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "13-07-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "14-05-2026",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-20XEJMQ",
+            "name": "TELECINE PESSOA JURIDICA",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/TLCine%403x.png",
+            "price": "37.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "22-04-2026",
+            "startDate": "22-04-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-21CU6HH",
+            "name": "HBO com 50% por 1 mês",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/HBO%403x_preto.png",
+            "price": "44.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "22-04-2026",
+            "startDate": "22-04-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-1XBHQMD",
+            "name": "Premiere com Fidelidade",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Premiere%403x.png",
+            "price": "49.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "26-07-2024",
+            "startDate": "26-07-2024",
+            "endDate": null
+          },
+          {
+            "id": "1-21E06GS",
+            "name": "ASSINATURAS DIGITAIS VIII",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": null,
+            "price": "2.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "17-08-2026",
+            "startDate": "17-08-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "13-07-2026",
+            "startDate": "13-07-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-219IIMH",
+            "name": "DISNEY PLUS PREMIUM",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Disney%403x.png",
+            "price": "46.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "14-05-2026",
+            "startDate": "14-05-2026",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

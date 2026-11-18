@@ -1,0 +1,464 @@
+{
+  "email": "(71)98114-7891",
+  "password": "Reino1914",
+  "access_token": "03cf1895-1131-4521-9c51-1f44c1cd00d3",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiODAzYzI2NTYtNjNmMi00OGEwLWFkZDgtZjEzYjA0ODY2Yjc3IiwiYXRfaGFzaCI6Im0wU3I1cGdmV3FwWVBLbS0xS3hoVXciLCJkZXZpY2VJZCI6ImRlY2VjYzNmOTkzZmNiYjcyMjNiMzBmZTAzYTFjOTVhZTc0OWI1YWEiLCJhdWRpdFRyYWNraW5nSWQiOiIxMzJkLThiNWEtNDFjYS1iOTQyLThlMzkiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODgxNTM0NjgxNiwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiIxYjE3OWY0NS0wMzgyLTQ5YWYtOTZhNC1kMzBkMjRmOGFmODgiLCJzaWduYXR1cmVzIjpbIjMyMDY1Njg0Il0sImN1c3RvbWVySWQiOiIxNTg4ZjQxZDZjZGU3OWNlY2JkYzRhZDA3NTkzNzZiNSIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjMyMDY1Njg0IiwiZ2l2ZW5fbmFtZSI6IkpPTkFTIiwidXNlcm5hbWUiOiI3MTk4MTE0Nzg5MSIsInRlbGVwaG9uZU51bWJlciI6IjcxOTgxMTQ3ODkxIiwic2lkIjoiZGVjZWNjM2Y5OTNmY2JiNzIyM2IzMGZlMDNhMWM5NWFlNzQ5YjVhYSIsInN1Ym5hbWUiOiIxYjE3OWY0NS0wMzgyLTQ5YWYtOTZhNC1kMzBkMjRmOGFmODgiLCJyZWRlbXB0aW9uTGltaXQiOm51bGwsImlhdCI6MTc4ODgxNTM0NiwiZXhwIjoxNzg4OTAxNzQ2LCJpc3MiOiJzbS1za3kudnJpb3NlcnZpY2VzLmNvbSJ9.fybXEnY-WT1bfu2y0QzyA98uNPslFLdpVJHhfuNJlUSpmEyde51ctO6VjThbgeTFvWR9vV0jnZqGxRbdm8NW7-kcJDqPL5G1ssKeTkOeNLBS1fVpmr0iMgjolPy550NqEay_Kb0MnfI5IFmZWrTbqtgSqL5Uqeo1mU3asKM6WTe0v8MI4BiI14jMw4cRaafqQcPqWL43TNv8wtzf_TAOLQIWuKhs4qwqLGWbfpHtHLCqPZJI5UmW-44obwJWGXHh1722Np2MMAh5254O03WOIO4MKJ86Sei60jTY24oOwMdU_6-ezc5fQJdEGGS4s6_wg3sK3eFWrFhVRIIM6sr1KA",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "03cf1895-1131-4521-9c51-1f44c1cd00d3",
+    "externalId": "87e5416f-e3dd-54f0-947b-542a866385cf",
+    "username": "1588f41d6cde79cecbdc4ad0759376b5",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "32065684",
+    "protocol": "2026-150292862718",
+    "customer": {
+      "email": "jonasnascimentosobral@gmail.com",
+      "billingProfileCode": "1-ENCX-5801",
+      "name": "JONAS",
+      "secondName": "DO NASCIMENTO SOBRAL",
+      "birthday": "1978-08-22T00:00:00.000Z",
+      "ddd": 71,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5571981147891",
+      "id": "1588f41d6cde79cecbdc4ad0759376b5",
+      "cpf": "78009480568"
+    },
+    "signatures": [
+      {
+        "id": "32065684",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 981147891,
+          "dddMobilePhone": 71,
+          "dddComPhone": 71,
+          "comPhone": 981147891
+        },
+        "customerId": "1588f41d6cde79cecbdc4ad0759376b5",
+        "status": 1,
+        "productName": "TOP HD PLUS III 2025 - P",
+        "name": "JONAS",
+        "secondName": "DO NASCIMENTO SOBRAL",
+        "dna": "01000000000100010000001000000000100000000000000000000000000000000000000001000000000000001010000111110000000000100000000010000000011110100000000000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111111111111101111111111111111111111111111111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111110111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100101111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Travessa 3ºtravessa Siri Siri",
+          "line1": "Travessa 3ºtravessa Siri Siri, 7 - Cosme De Farias",
+          "line2": "Casa 7",
+          "number": "7",
+          "city": "Salvador",
+          "state": "BA",
+          "country": "Brasil",
+          "postalCode": "40251300",
+          "referencePoint": "Referencia. Encima Da Venda De Dona Marlene//",
+          "addressType": "Travessa",
+          "resDdd": 71,
+          "resPhone": 81147891
+        },
+        "addressBilling": {
+          "linePublic": "Rua Siri Siri",
+          "line1": "Rua Siri Siri, 7 - Cosme De Farias",
+          "line2": ".",
+          "number": "7",
+          "city": "Salvador",
+          "state": "BA",
+          "country": "Brasil",
+          "postalCode": "40251300",
+          "referencePoint": ".",
+          "addressType": "Rua",
+          "resDdd": 71,
+          "resPhone": 34812974
+        },
+        "activation": "2007-12-13T00:00:00.000Z",
+        "email": "jonasnascimentosobral@gmail.com",
+        "parentAccount": "032065684",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001208022093",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR01",
+            "serialNumber": "CE0AD123810079194"
+          },
+          {
+            "smartcard": "001153946981",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A012082649828B"
+          },
+          {
+            "smartcard": "000580106128",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "010A2634127328793"
+          },
+          {
+            "smartcard": "000750734824",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "670A2035383140804"
+          },
+          {
+            "smartcard": "000750946816",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A203614142031C"
+          },
+          {
+            "smartcard": "000600553259",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH25",
+            "serialNumber": "CE0AA13533957094C"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "32065684",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 981147891,
+        "dddMobilePhone": 71,
+        "dddComPhone": 71,
+        "comPhone": 981147891
+      },
+      "customerId": "1588f41d6cde79cecbdc4ad0759376b5",
+      "status": 1,
+      "productName": "TOP HD PLUS III 2025 - P",
+      "name": "JONAS",
+      "secondName": "DO NASCIMENTO SOBRAL",
+      "dna": "01000000000100010000001000000000100000000000000000000000000000000000000001000000000000001010000111110000000000100000000010000000011110100000000000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111111111111101111111111111111111111111111111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111110111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100101111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Travessa 3ºtravessa Siri Siri",
+        "line1": "Travessa 3ºtravessa Siri Siri, 7 - Cosme De Farias",
+        "line2": "Casa 7",
+        "number": "7",
+        "city": "Salvador",
+        "state": "BA",
+        "country": "Brasil",
+        "postalCode": "40251300",
+        "referencePoint": "Referencia. Encima Da Venda De Dona Marlene//",
+        "addressType": "Travessa",
+        "resDdd": 71,
+        "resPhone": 81147891
+      },
+      "addressBilling": {
+        "linePublic": "Rua Siri Siri",
+        "line1": "Rua Siri Siri, 7 - Cosme De Farias",
+        "line2": ".",
+        "number": "7",
+        "city": "Salvador",
+        "state": "BA",
+        "country": "Brasil",
+        "postalCode": "40251300",
+        "referencePoint": ".",
+        "addressType": "Rua",
+        "resDdd": 71,
+        "resPhone": 34812974
+      },
+      "activation": "2007-12-13T00:00:00.000Z",
+      "email": "jonasnascimentosobral@gmail.com",
+      "parentAccount": "032065684",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "001208022093",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR01",
+          "serialNumber": "CE0AD123810079194"
+        },
+        {
+          "smartcard": "001153946981",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A012082649828B"
+        },
+        {
+          "smartcard": "000580106128",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "010A2634127328793"
+        },
+        {
+          "smartcard": "000750734824",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "670A2035383140804"
+        },
+        {
+          "smartcard": "000750946816",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A203614142031C"
+        },
+        {
+          "smartcard": "000600553259",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH25",
+          "serialNumber": "CE0AA13533957094C"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "32065684": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "DESCONTO SKY MOVEL 30GB - P",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "08-08-2026",
+          "end_date": null,
+          "icon": "📺"
+        },
+        {
+          "name": "ASSINATURAS DIGITAIS SKY MOVEL III",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "08-08-2026",
+          "end_date": null,
+          "icon": "📺"
+        },
+        {
+          "name": "DESCONTO 12 MESES COMBO DTH - P",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "08-08-2026",
+          "end_date": "08-08-2027",
+          "icon": "📺"
+        },
+        {
+          "name": "SKY MOVEL 30GB OFERTA",
+          "category": "A La Carte",
+          "subcategory": "Telefonia_Plano",
+          "start_date": "08-08-2026",
+          "end_date": null,
+          "icon": "📺"
+        },
+        {
+          "name": "PARAMOUNT PLUS CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "31-03-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "FATURA PROTEGIDA SKY 1200",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "01-09-2025",
+          "end_date": "01-09-2030",
+          "icon": "📺"
+        },
+        {
+          "name": "TELECINE HD",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "31-07-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "AMAZON PRIME",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "31-07-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "SexyHot",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "16-09-2024",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "Premiere",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "23-08-2022",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "23-08-2022",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": null,
+            "name": "DESCONTO SKY MOVEL 30GB - P",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "08-08-2026",
+            "startDate": "08-08-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "ASSINATURAS DIGITAIS SKY MOVEL III",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "08-08-2026",
+            "startDate": "08-08-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "DESCONTO 12 MESES COMBO DTH - P",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "08-08-2026",
+            "startDate": "08-08-2026",
+            "endDate": "08-08-2027"
+          },
+          {
+            "id": "1-21DWJ69",
+            "name": "SKY MOVEL 30GB OFERTA",
+            "category": "A La Carte",
+            "subcategory": "Telefonia_Plano",
+            "logo": null,
+            "price": "60.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "08-08-2026",
+            "startDate": "08-08-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "PARAMOUNT PLUS CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "null",
+            "isPartOfMainPackage": false,
+            "activationDate": "31-03-2026",
+            "startDate": "31-03-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-1VZY244",
+            "name": "FATURA PROTEGIDA SKY 1200",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": null,
+            "price": "15.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "01-09-2025",
+            "startDate": "01-09-2025",
+            "endDate": "01-09-2030"
+          },
+          {
+            "id": "1-20XEJQF",
+            "name": "TELECINE HD",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/TLCine%403x.png",
+            "price": "29.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "31-07-2025",
+            "startDate": "31-07-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-21ATHJR",
+            "name": "AMAZON PRIME",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Amazon%403x.png",
+            "urlDetail": "https://www.sky.com.br/amazon-prime",
+            "price": "5.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "31-07-2025",
+            "startDate": "31-07-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-1XRZM8Z",
+            "name": "SexyHot",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/8922233/SKY-Canais-Adicionais-SexyHot-Card+%282%29.png",
+            "price": "19.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "16-09-2024",
+            "startDate": "16-09-2024",
+            "endDate": null
+          },
+          {
+            "id": "1-1XBHQIX",
+            "name": "Premiere",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Premiere%403x.png",
+            "price": "59.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "23-08-2022",
+            "startDate": "23-08-2022",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "23-08-2022",
+            "startDate": "23-08-2022",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

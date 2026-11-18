@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Standard
+Next Billing: UNKNOWN
+Payment: TELEFONICA_B_PI_BILLED
+Quality: HD
+Streams: 2
+Price: N/A
+Extra Member: Yes
+Profiles (4): BILAL, Wme, Xxx, Super
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554946	flwssn	96cad096-5a28-4837-a3a4-1fe3fafc373e
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	904623d7-81e1-4b86-aca8-309ab26dacad
+.netflix.com	FALSE	/	TRUE	1796554946	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKAAwOXcoFbFquTAgFqUM8A84P2zVX6jmXH6zjccpAIo3bUpGPFu6TnlgcOTWBGJG1Gb7OmbD6oy6zcJEAzoBPCgEIGGFk0HXI3pnXjV9LUbNm3xukXRuNv3DhEL613wSJTslD2c6SzOPV44etSMBzuSCfFqE0eKd5nLSCUT94lmChAk5nHuaXYIBPq8O5INI1itVSHnRqWW3lyw1AaQ5DnhdmlhBLjD2ZDP_ylQOhma7hYVUJVXEzxxwppt6oAUD28znlOp2wYKPurF9fel34POI4AcFaaLB-kMvCDADNj0V2iIAVWiS5XbvE_P_qOz7c8miwr9t3qRkQBUCH_iUurrHR7gnwXeVlqDlYpY10Kb8pSQk8AYYTKr6ZFCaBYH8PlpXyiFaI0B6NAhA20VMNKH82tUX48RyudCG7KY5r1QWEOGfd90VLkHOekNtpnqV-pfGTn0NzD9LXWhgWRY-5YcciE8AHe2BkAESRPYRiHOZwD2Mx9zFub0g8TY4mCrZw9UhgGIg4KDFJq83cxght9Z04OfQ..%26pg%3DTOOLN6UUTJE53IK7B6NHH2SV4U%26ch%3DAQEAEAABABRfY7cg7X8ApUMzUw1Y_5vMWugawr99XIM.
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554946	nfvdid	BQFmAAEBEIXPYKvXtBy9NoJijrz2lIZgn2VXaI8u8o7lGAIZ0qf1AwUWDaABGil2BQEOskgFwKGH795oJeTvyKLFlRZqlreRiFaHKlHsPOE39V8lOG-BCViRQ4n3qnI-icQwJC3rfLyCYeywRsZZlbQ6GBQV8MaR
+.netflix.com	FALSE	/	FALSE	1796554946	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Jun+23+2025+22%3A20%3A19+GMT%2B0300+(hora+de+verano+de+Europa+oriental)&version=202411.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=9f36c073-e930-4e59-955c-55036857745a&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554946	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1796554946	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSitJ1T278OSne7rb78nIfpFyPOlRbn6RU.%26dt%3D1750706413086

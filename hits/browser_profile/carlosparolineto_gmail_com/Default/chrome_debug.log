@@ -1,0 +1,8 @@
+[0912/120734.894:INFO:CONSOLE:2] "%cSKY%c+ %cversion: %c<SITE_VERSION> font-family: Arial;font-size:14px;color:#ff2424 color:#ffffff;font-size:16px color:#ffff1a color:#ffa64d", source: https://cdn-cms74.hub.directvgo.com/o/sky-mais-theme/js/modules/dtvgoServices/dtvgoServices.js?v=1789018954968 (2)
+[0912/120738.171:INFO:CONSOLE:19] "Request sent successfully.", source: https://s3.glbimg.com/v1/AUTH_da787d4f4e8d46e3ad76d5fa568fe786/globo-pixel/prod/sendGloboPixelEvent.js (19)
+[0912/120738.806:INFO:CONSOLE:1] "Attempting to join ad interest group [object Object]", source: https://acdn.adnxs.com/dmp/up/pixie.js (1)
+[0912/120738.862:INFO:CONSOLE:275] "OverChat Widget v2.6.1", source: https://overchat.overlabs.com/overchat-widget.umd.js (275)
+[0912/120740.481:INFO:CONSOLE:1] "%c maze-snippet: Error fetching contextual prompts. color: red [object Object]", source: https://snippet.maze.co/static/e7564de4471b362beed8f021357e6f34351c2b41/contextualScaffold.js (1)
+[0912/120741.723:INFO:CONSOLE:77] "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold", source: https://html5.inthegame.io/v2-7/itg.umd.es5.js (77)
+[0912/120746.422:INFO:CONSOLE:3] "Uncaught TypeError: Cannot read properties of undefined (reading 'length')", source:  (3)
+[0912/120746.423:INFO:CONSOLE:1] "Uncaught TypeError: Cannot read properties of undefined (reading 'length')", source:  (1)

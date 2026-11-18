@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: JO
+Plan: Standard
+Next Billing: November 21, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: ‏7.99 US$
+Extra Member: Yes
+Profiles (5): saleh alqaisi, fadi, Tamer, toto, الأطفال
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1796554947	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKZA9gVynKB3WHFnMyUqBfDHXm9O8wTIkTaoLfld4PO0BfcvkUVyoVgQXo4Nkkt18pvvKMIlFklgH9wBFpGEqd_vh2coGYEdUntv8b0mRK1QlC6ochMWWd7Bbq8q2hshtL_CPfKWSexYQu87pv5irFRNBHQEidJdtCAma2xEYoaqvvXkf8Rz2TvRl9mANGi_fH3KP4L7sRHqLs43QoHFZuHS0P3EDt2MzU-hynVudkcVuMuGReIzYpRj41psNJcOyoR1czKuRfcSjug1lsm6iaCLBkR5sS1EmFAYaj2ELBKlgIm1gpxewSA6OqE8emGV3HSVrcx6iEHla3931qUEJgKyzQUrYRURmefQ2JkfBjkiV3HzdslPvk2u-JygsUvUu-sXgMzGA64L-_BaY8aejdEhSX_rpYXtqgzwe_UojkbxwDW3MB8TBr1C4Tb6A4Em5HA-8Op3QUupEnjLkRLXFKhSLwxh3ZcjxUA-eu7cHK64OiO4XqaTHI6KryCmiPyLxTnFFI3kbwsd-BeqVETnDRpLrkAvq_Q_kLs5ZgYBiIOCgz5uBck6QQaHxAaE3g.%26pg%3D75VMM6H2CBFETBJEROIZDVM3GU%26ch%3DAQEAEAABABSEZmOXKsFChOjob76gYSoneBCUt74Jq-E.
+.netflix.com	TRUE	/	FALSE	1796554947	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796554947	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796554947	nfvdid	BQFmAAEBEI2hpMzme8MGZQUV1WwY5XlgvQX4YgsR69nbi3EuIlqdiagOjkYoXrvX4ekMmbdW6DTD1tjgTwj5nEUwx3MdgvCZ-46xt-gucQvDQ8BmBHZso39p4rqj-OxF28pV7DNrel37MyJBaKB0mfjPyi6Nwf_n
+.netflix.com	TRUE	/	FALSE	1796554947	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Aug+22+2026+20%3A01%3A33+GMT%2B0300+(GMT%2B03%3A00)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=b2524a65-7786-40a0-99e4-f19f6532ce8c&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&crTime=1787417860701&AwaitingReconsent=false&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1
+.netflix.com	TRUE	/	TRUE	1796554947	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQTIrQ2e_BgVC4M3op_R_TzpeMWkH3U7jY.%26dt%3D1787417998264

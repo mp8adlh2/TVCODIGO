@@ -1,0 +1,458 @@
+{
+  "email": "henriquemastersul@outlook.com",
+  "password": "Mg967481",
+  "access_token": "b4def2cf-1d76-491f-855a-c80b581f83dc",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiOGE2NGNmZDMtMmM4MC00M2I2LTgxOTYtZGZiYjBmNDI1ZjcyIiwiYXRfaGFzaCI6Im1GdmRLLWtFQ3BRZHNmekhlUUJNeGciLCJkZXZpY2VJZCI6IjE2MDZjYjU1Yzc3N2ExZjRmMWMxMDUwYjRjN2E0M2Y2ZmU4YzU5ZGQiLCJhdWRpdFRyYWNraW5nSWQiOiJkYjJhLTUyNDgtNDYyMy05YTdhLTIyNjgiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODgxNjMwOTI5OCwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJkNWNlY2MwNy1iZjY4LTQyN2YtODIwYS1hMDZmNDdhNjhkMDUiLCJzaWduYXR1cmVzIjpbIjE1MTQ4MTAyMDQiXSwiY3VzdG9tZXJJZCI6IjExOTI1MjFhYzU0MTA5YzgwY2JkYzc5M2JhZDNlYzM0IiwicmVnaXN0cmF0aW9uU2lnbmF0dXJlIjoiMTUxNDgxMDIwNCIsImdpdmVuX25hbWUiOiJNQVJDSUEiLCJ1c2VybmFtZSI6ImhlbnJpcXVlbWFzdGVyc3VsQG91dGxvb2suY29tIiwibWFpbCI6ImhlbnJpcXVlbWFzdGVyc3VsQG91dGxvb2suY29tIiwicmVkZW1wdGlvbkxpbWl0IjpudWxsLCJpYXQiOjE3ODg4MTYzMDksImV4cCI6MTc4ODkwMjcwOSwiaXNzIjoic20tc2t5LnZyaW9zZXJ2aWNlcy5jb20ifQ.ZH7pjD7curlXbTP-8QcWXfL_buVTiwFB09Q0NShY0GnnW8NHAznDqw_pIUMUnHXg7ZqbgXcVqBgT-CI8DIIz1Ayk23l-jj1TAwatTZlvmrjTnAgQ85KM1gN3EpjhaiSUUXdt2RmZWEJSUbbsN14KZozpCz9UIJOgykSEbeqtoxkScNPF31rZMnCZrRHiYl_BHuWAOdc4zh4IDTjhrF3Mu-EE2Ev6EH5iERhhUpMmRRe7iQYtyZEqajisbNqf-qZADRIr1qsrQIVnhkhCIsBBE-un0-Ab8U6OUxswgwrhCZOggUo5LvZpSvIx-9a3u7c30beZ9Clkj3vXwNHPPmLnpQ",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "b4def2cf-1d76-491f-855a-c80b581f83dc",
+    "externalId": "23efb68e-1612-58a0-b736-5bc3aea4ecd4",
+    "username": "1192521ac54109c80cbdc793bad3ec34",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "1514810204",
+    "protocol": "2026-150293267403",
+    "customer": {
+      "email": "henriquemasterssul@outlook.com",
+      "billingProfileCode": "1-SFAXDX7",
+      "name": "MARCIA",
+      "secondName": "REJANE DA ROSA SILVEIRA",
+      "birthday": "1972-06-01T00:00:00.000Z",
+      "ddd": 51,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5551993090072",
+      "id": "1192521ac54109c80cbdc793bad3ec34",
+      "cpf": "59307560072"
+    },
+    "signatures": [
+      {
+        "id": "1514810204",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 993090072,
+          "dddMobilePhone": 51,
+          "dddComPhone": 51,
+          "comPhone": 999309007
+        },
+        "customerId": "1192521ac54109c80cbdc793bad3ec34",
+        "status": 1,
+        "productName": "PLUS TOTAL EXPERIENCE IV 2022 - P",
+        "name": "MARCIA",
+        "secondName": "REJANE DA ROSA SILVEIRA",
+        "dna": "11000000000100010000000100000000100000000000000000000000000000000000000001000000000000100011000111110000000000000001000001000000011110000100000000010111111111111111111111111000000000000000000000100000000010111111111111100000000011111010111111110001000000000001101111111111111011101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111101111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Lomba Grande Casa 2",
+          "line1": "Rua Lomba Grande Casa 2, 412 - Morretes",
+          "line2": "Casa 2",
+          "number": "412",
+          "city": "Nova Santa Rita",
+          "state": "RS",
+          "country": "Brasil",
+          "postalCode": "92480000",
+          "referencePoint": "Aprox. Santa De Esquina Melhor Telefone 51 993090072",
+          "addressType": "Rua",
+          "resDdd": 51,
+          "resPhone": 993090072
+        },
+        "addressBilling": {
+          "linePublic": "Rua Lomba Grande",
+          "line1": "Rua Lomba Grande, 412 - Morretes",
+          "line2": "Casa",
+          "number": "412",
+          "city": "Nova Santa Rita",
+          "state": "RS",
+          "country": "Brasil",
+          "postalCode": "92480000",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2018-10-23T00:00:00.000Z",
+        "email": "henriquemasterssul@outlook.com",
+        "parentAccount": "1514810115",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001156938167",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR01",
+            "serialNumber": "010AD123807155901"
+          },
+          {
+            "smartcard": "001129146252",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A012544314079A"
+          },
+          {
+            "smartcard": "001146250384",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A0120809961713"
+          },
+          {
+            "smartcard": "001150402699",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A0120808238183"
+          },
+          {
+            "smartcard": "001200384962",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A012549241214A"
+          },
+          {
+            "smartcard": "001138914872",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A012079129612A"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "1514810204",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 993090072,
+        "dddMobilePhone": 51,
+        "dddComPhone": 51,
+        "comPhone": 999309007
+      },
+      "customerId": "1192521ac54109c80cbdc793bad3ec34",
+      "status": 1,
+      "productName": "PLUS TOTAL EXPERIENCE IV 2022 - P",
+      "name": "MARCIA",
+      "secondName": "REJANE DA ROSA SILVEIRA",
+      "dna": "11000000000100010000000100000000100000000000000000000000000000000000000001000000000000100011000111110000000000000001000001000000011110000100000000010111111111111111111111111000000000000000000000100000000010111111111111100000000011111010111111110001000000000001101111111111111011101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111101111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Lomba Grande Casa 2",
+        "line1": "Rua Lomba Grande Casa 2, 412 - Morretes",
+        "line2": "Casa 2",
+        "number": "412",
+        "city": "Nova Santa Rita",
+        "state": "RS",
+        "country": "Brasil",
+        "postalCode": "92480000",
+        "referencePoint": "Aprox. Santa De Esquina Melhor Telefone 51 993090072",
+        "addressType": "Rua",
+        "resDdd": 51,
+        "resPhone": 993090072
+      },
+      "addressBilling": {
+        "linePublic": "Rua Lomba Grande",
+        "line1": "Rua Lomba Grande, 412 - Morretes",
+        "line2": "Casa",
+        "number": "412",
+        "city": "Nova Santa Rita",
+        "state": "RS",
+        "country": "Brasil",
+        "postalCode": "92480000",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2018-10-23T00:00:00.000Z",
+      "email": "henriquemasterssul@outlook.com",
+      "parentAccount": "1514810115",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "001156938167",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR01",
+          "serialNumber": "010AD123807155901"
+        },
+        {
+          "smartcard": "001129146252",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "670A012544314079A"
+        },
+        {
+          "smartcard": "001146250384",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A0120809961713"
+        },
+        {
+          "smartcard": "001150402699",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "670A0120808238183"
+        },
+        {
+          "smartcard": "001200384962",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "670A012549241214A"
+        },
+        {
+          "smartcard": "001138914872",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "670A012079129612A"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "1514810204": {
+      "included": [
+        {
+          "name": "SEGURO RESIDENCIAL PARA CASA DE ALVENARIA - BASICO",
+          "category": "A La Carte",
+          "subcategory": "Premium",
+          "start_date": "26-02-2023",
+          "end_date": "26-02-2028",
+          "icon": "🌍"
+        },
+        {
+          "name": "ESR HD CB",
+          "category": "A La Carte",
+          "subcategory": "Esportes",
+          "start_date": "26-02-2023",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "Premiere",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "26-02-2023",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "PARAMOUNT PLUS CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "26-02-2023",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "26-02-2023",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "ESPN 6 HD CB 2021",
+          "category": "A La Carte",
+          "subcategory": "Esportes",
+          "start_date": "26-02-2023",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "TELECINE HD CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "26-02-2023",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "Sky Sex Prive - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "26-02-2023",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "Sky Sex Prive HD - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "26-02-2023",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "ASSISTENCIA PREMIUM SEGURO RESIDENCIAL",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "26-02-2023",
+          "end_date": "26-02-2028",
+          "icon": "🛡️"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM 2024 CB 2 - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "14-12-2022",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": null,
+            "name": "Sky Sex Prive - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "26-02-2023",
+            "startDate": "26-02-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive HD - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "26-02-2023",
+            "startDate": "26-02-2023",
+            "endDate": null
+          },
+          {
+            "id": "1-2005PRI",
+            "name": "SEGURO RESIDENCIAL PARA CASA DE ALVENARIA - BASICO",
+            "category": "A La Carte",
+            "subcategory": "Premium",
+            "logo": null,
+            "price": "24.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "26-02-2023",
+            "startDate": "26-02-2023",
+            "endDate": "26-02-2028"
+          },
+          {
+            "id": "1-1QKJGWB",
+            "name": "ESR HD CB",
+            "category": "A La Carte",
+            "subcategory": "Esportes",
+            "logo": "https://skycms.s3.amazonaws.com/images/42693528/ESR_logo.jpg",
+            "price": "6.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "26-02-2023",
+            "startDate": "26-02-2023",
+            "endDate": null
+          },
+          {
+            "id": "1-1XBHQIX",
+            "name": "Premiere",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Premiere%403x.png",
+            "price": "59.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "26-02-2023",
+            "startDate": "26-02-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "PARAMOUNT PLUS CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "26-02-2023",
+            "startDate": "26-02-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "26-02-2023",
+            "startDate": "26-02-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "ASSISTENCIA PREMIUM SEGURO RESIDENCIAL",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "null",
+            "isPartOfMainPackage": false,
+            "activationDate": "26-02-2023",
+            "startDate": "26-02-2023",
+            "endDate": "26-02-2028"
+          },
+          {
+            "id": "1-1QKPR7G",
+            "name": "ESPN 6 HD CB 2021",
+            "category": "A La Carte",
+            "subcategory": "Esportes",
+            "logo": null,
+            "price": "9.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "26-02-2023",
+            "startDate": "26-02-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TELECINE HD CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "26-02-2023",
+            "startDate": "26-02-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "DISNEY PLUS PREMIUM 2024 CB 2 - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "14-12-2022",
+            "startDate": "14-12-2022",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

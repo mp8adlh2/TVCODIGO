@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Standard
+Next Billing: November 7, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 14,99 €
+Extra Member: Yes
+Profiles (2): Julie et Arnaud, Jeunesse
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1797013149	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKLA9lBO2WgeYwnCDbHEPlfpIJwNfQqmgIe5W0BQ4h9qd3jUsfCa-Su4TQTRd2PI4THDnun4DfiGE7OMxzhAzaVmmZWOVQPPrPLHKHlvUDuLH8gGlet4vbH-zXQxT7OaN3iGeCyCBQBtUI_naAvova8fVM8d1tNtALRei3nvjiaNp3pfXwRfJzEOVaLFXGlW8fKbXpvl1OfEX0ysib8Q870fDKKYNGCbgxS8uGjbRA6c3DWqXX0k48BxDqmbU5r2YcZ8NudBHO39v0AF5fnlsAu4XoupfER0Xkbfg8APdna4smQ1qzjfTnmfVqWgNFdyytcqc2RFr4XeMEgxU4XVUQNtAavS4Bc6pEniCb0_SVVnk9cAjuDd4aBop6blLfSM9JFeUvy97cYkqknwc-gNA8k2p_SqnKPmqFzwTr_j3oV5dOVGPcQ86L4VZCZOQWmA5xYXiVDBZuEA8yDU6dZn1VgaJcua3gNuB7OMyO1Vd7StQDDT57VUfXzCj4EFobxIZRWy2kRZjgt50bMO0fQGAYiDgoMGOkwHqimHrSZc4DT%26pg%3D2WJLWWPCMJHKDIOF3WFYOOYAAM%26ch%3DAQEAEAABABTEB1VYbZithjuMFqm8TUPj9SZR-5bDdW4.
+.netflix.com	FALSE	/	FALSE	1797013149	nfvdid	BQFmAAEBEOvKD2oaOBX-8BF12Mi0DsdghGZyzoSWpBy-qGPUQ0z1XoHTKM2XcRyUohhm3v0n6r2Ur5I-SHTQTtM538bjqFL5XoBPRhQXWXd8GvzoZYK1V1E-op7DrExjn5Geq5mu1bFm9dOcx-0sUgWo2a8HC5-c
+.netflix.com	FALSE	/	FALSE	1797013125	OptanonAlertBoxClosed	2025-12-11T18:18:45.670Z
+.netflix.com	FALSE	/	FALSE	1797013253	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Dec+11+2025+19%3A20%3A53+GMT%2B0100+(Central+European+Standard+Time)&version=202510.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=0f76eb51-a1fe-4a91-ace3-6b42a4df3541&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=1&geolocation=FR%3BNAQ
+.netflix.com	FALSE	/	TRUE	1797013149	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABS5yppZLnxP8JR5gSkZ7_xUgDtIp-MufIQ.%26dt%3D1765477149510

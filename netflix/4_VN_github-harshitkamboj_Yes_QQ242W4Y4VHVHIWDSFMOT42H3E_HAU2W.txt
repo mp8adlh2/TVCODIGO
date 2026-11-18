@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: VN
+Plan: Premium
+Next Billing: November 25, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 273.000 ₫
+Extra Member: Yes
+Profiles (4): Duy Oven, Thư, Kitty, Nam
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1820819199	NetflixId	ct%3DBgjHlOvcAxKBBCLbMKY9zssOJhPkmEQU87XsLdqpqiM0Du0n90kB5Bzb5tIp7-pBrYLBONqQMoLkis129w56uF7CJQtwKJ1DSDH4mRQff7Kb-wHqxpYKernBp5s6n0oe7iiOIc1SsF2XwqShOQSZSKm6itInyYXEQHl3NGfMBxoN2tt2YZsAl9FuQp01iOI5qplsdv8DmunV5YRUzmmkOQ8iyuxSfHvQ-_7CMhCLUvXXC-zSbpLx7xtBS_575FaFrxHcjWo2ojnLT6epeB11YCne0FuCweO2lo5r8LZjsqNv0PXAX7eFrZBN_vbVAw-O4osV8qUKmSBe2_DDl8ar8CmRhWkuIyXOCPKECKlO4s1EgqIAOJ1ewMZ2XdZeNU5_hnFIWtZ0srho-LLLBioSQZnZXZ5b3h-oVUJAggtkafph46si4AtJYX0kE6yizXQwNyg6topK_3yQl0vvH993hRmGm3MaPwHJNDoOv-loq7NRxZt72_Y4hhATRV3Hz1KqYqjeG90PTKW6olzARac7NisrUd19DTW4UlINGVu5l8JiP-TVjKkU921WThro2GIIzRdwaH-j6_koANS4RZutp-XtgG-WretGCnEx4qNOVALi3wrukzup5JWullwlFMen5jqCWMg4GU3EwYlU5VzxHEQ5vfT4uuRzEEip_3KF34aU94iYdFZXP-Hq6RgGIg4KDFHyT-SYJNH2WnGBBA..%26ch%3DAQEAEAABABQc2wRy_QUg7ywH-5huLV68YoXFoX_BXII.%26v%3D3%26pg%3DQQ242W4Y4VHVHIWDSFMOT42H3E
+.netflix.com	FALSE	/	FALSE	1796295275	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796295275	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1818393787	nfvdid	BQFmAAEBEKgxXUMQxOhVwZs-9B7ncVRgzXpdflG63ifW4EeygnAmenCog94y6kiLe5Dsu0D9o5tubehnjITaN0wCTGt-jVnkTsH04fGxZuvKlrgNeBqoEGiicwIiIj1oDThsaxbBMqIBYRd51ToHTAIWBH8dtXi1
+.netflix.com	FALSE	/	FALSE	1820055276	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Sep+04+2026+17%3A54%3A36+GMT%2B0700+(Indochina+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=8dfdaff0-1f0a-463d-838f-53ec573f19b2&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1786854391037&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1820819199	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTf2Edgl8GdR07ataPxSobRGMXHHNL7rvw.%26dt%3D1789283198008

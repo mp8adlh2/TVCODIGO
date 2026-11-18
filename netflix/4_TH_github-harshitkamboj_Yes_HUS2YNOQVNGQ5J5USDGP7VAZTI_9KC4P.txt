@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Premium
+Next Billing: November 30, 2026
+Payment: MOBILE_WALLET
+Quality: UHD
+Streams: 4
+Price: 419 บาท
+Extra Member: Yes
+Profiles (5): Surasing1996, กระต่าย, จริต, Dump, Ni
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1798472305	graphik-bold-1-loaded	true
+.netflix.com	FALSE	/	FALSE	1798472305	graphik-normal-1-loaded	true
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	77b32706-d342-4be7-947a-e60c8ce22f67
+.netflix.com	FALSE	/	TRUE	1822228670	NetflixId	ct%3DBgjHlOvcAxKIBNtrVx99exkogk6SR6p1Glr7SHy3XC2jhqC6GKVXK46c9FDZqF9Bb0n-RpyzmqhCgMaxITHkcIuji_NbEZuphTSzMrreXaTj9v53mkdGvDRFdFZVMS-1HfHJMKY-CNe8v6lPjtb6QTovAXX6H2J20kaA7E_SFup4znM_uB3zQi2EpGEkAtsi90FbGzAtRYd6KVmUBcw7W8LPx9_TmicG_6Bh9O4PiNOEMbUgoL_TAd5NBbUq3ioxQ7hDiGe6bySKRNDtxwUySH0mzDA1b6IU07Ou8OX9zN5C15DUv3Mfme86A5PWSiBCokcK4gJLevOAGR4a1-_HCDWGDMJO502m39kMNXkXkylarBMa7oYU0GgoHLbzkCt5qkGtEKIXzFNH78I-ROXOuCVd6vl2uevGnD_Kw1LWAR-V7iYQDaiUNubU_-sAB_ukJv3q265o7S4BQgF3CWJi1FLfaPjm-uu6SGzjFQZWwKpnbKsk_llhJzBf7PPcEMEhfltkMj1fUoeLug-KRLq8YY9LH2yiQcdhNdX5TYugsZCBNw6FGXT2ixB5mBL_9nm0LVGiCNcEfRgpM93ppCS921ObtvgGzGaVr1iG3dLxivlur3KKa4U6fWmAWXoizHd61q5KVFu7_Wd6ThXyr_e8-OTmZWKQKITjZSse-wr5kJFnF6_n3uo_21-CV--quWfiLRMYBiIOCgxxJmKGI8pHXYC0HyQ.%26ch%3DAQEAEAABABR5GEgcIgEjgk9d0BGor1IkdkouE242VQk.%26v%3D3%26pg%3DHUS2YNOQVNGQ5J5USDGP7VAZTI
+.netflix.com	FALSE	/	FALSE	1798472305	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798472305	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1816599372	nfvdid	BQFmAAEBEAdga25FolLFvURH9OX8NrRgyk2EgE_Tts-OtxTzTKM4TMxAUDxjp2HhHhKhDJnpRdESmkDV2dmsfdw-FejI4KohYYfOrt1DC5Kl07F3sztP3iHGaUsOXaYxWfeb8Sxd-A3HQrf1LJKAdkMtjvpXc3Ee
+.netflix.com	FALSE	/	FALSE	1822232309	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+29+2026+22%3A38%3A29+GMT%2B0700+(%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B9%82%E0%B8%94%E0%B8%88%E0%B8%B5%E0%B8%99)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=d06f163d-bbb1-45d3-8949-49d93820a418&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1785062923500&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1822228670	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQhxPMn2VKQwCe_s4yM_ly_7PN-WJd8j9E.%26dt%3D1790692939768

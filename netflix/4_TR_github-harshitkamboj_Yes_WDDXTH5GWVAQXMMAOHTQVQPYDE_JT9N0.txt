@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: December 1, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379,99 TL
+Extra Member: Yes
+Profiles (5): UĞUR CAN, Füsun, Zuhal, Selin, Çocuk
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1806749269	nfvdid	BQFmAAEBEF9uRxAlYc3bZKeP1uIlKYNgEEA6flLM7MpOi2uKjgYhrEGQAlJsczl4ZEDtUTJDySsYhCpmzQo9-bnbtX0dyiMeKc2zbZpABojY5tjhO-mPysff7W3XB-hJQLhS9idyvRMnS_st4VoI04kg2HClsfNU
+.netflix.com	FALSE	/	FALSE	1806749286	OptanonAlertBoxClosed	2026-04-03T10:48:06.404Z
+.netflix.com	FALSE	/	FALSE	1820447974	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+09+2026+02%3A59%3A34+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=e3584743-f9db-4dc6-8e3b-7230d481f0cf&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1&crTime=1775213287415&isDntEnabled=0&geolocation=TR%3B34&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1823471974	dsca	true
+.netflix.com	FALSE	/	TRUE	1821958206	NetflixId	ct%3DBgjHlOvcAxK6A9hkqoqz4aBOwdcfwXfje-NY5gk6sh6-5Y5kpo8i2KnbTL0xFBeMdDh2zSTj64hnGThszB6S-Di3oUwTOEwNryoUYOsfHEBmg6zDWsAVCEDmvpzqM0QBWISF9r6U86ROo7DoMKSbzjTfN4u0nVcM3r3Q4rSZVKlz_5aFmtRQ-8RvmxIQ-UZZE4TMXc1zEtEPaDU3rLyAP2e_Vfv6MaqGtgd04lJT1WGJEGqYraVI0Y7wOigC_qgBeTRoqfC0e9nBI_ZIuDXCfc1J9Ylx6hWQlAKHMR0BVqksnkVoxk96xfgRbuIi8xh-VBMhLufeAfL6DBvmga24dVsslt4WPhHWN3bu4-sk7jkyuNHR3Lq-gcRwH-ppnnsVhmOEJWn7uJHrex0GEfAohAZ2gbbkno5pTt2r0IxLr6W3AwYqb9ctoCDfwMl6MfVcgVOUys71lhYNzj8XYvKQT52wwtGUesCU7RvpOsImSZOuRaf1aVesJ10C44MlHBFERjBmS4UtQ2XkoSyJrUFdZ1OaMnPhgK3l431xYx6ttsEuBCPwdpcw5q5xMrxylWy2SJi0U4PiDC6bcjl5ycdwuyvbRiYYBiIOCgx_3_8-IpbDQit7Nuo.%26ch%3DAQEAEAABABRAyvwc0PRrqcDHmUVhLzH5XX8b5h88s74.%26v%3D3%26pg%3DWDDXTH5GWVAQXMMAOHTQVQPYDE
+.netflix.com	FALSE	/	TRUE	1821958206	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSfz2eThLdmRZx_Na3l6quoKnDuWfYtP5E.%26dt%3D1790422205937
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	a75e5598-f3db-42dc-b954-4c191f6757e3
+.netflix.com	FALSE	/	FALSE	1798198226	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798198226	netflix-sans-normal-3-loaded	true

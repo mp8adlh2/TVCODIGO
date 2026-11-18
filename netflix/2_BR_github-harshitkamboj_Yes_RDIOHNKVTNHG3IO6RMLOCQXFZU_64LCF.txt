@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Standard
+Next Billing: November 10, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: BRL 44,90
+Extra Member: Yes
+Profiles (5): HALIMOUS, ANNEPISTOLA, MAMÃE, kea, uh
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554944	gsid	9badf8dd-5839-4f5e-a2c3-6f7f14d9842e
+.netflix.com	FALSE	/	TRUE	1825359708	nap	BgimwOvcAxJJIQSw18ADYfvb5VfHQmmqBooqA5g5hsK9tFXFrteTwUKUl3NL3SEo_6iM_u0w05x61eiWH0EoKG0pZkxeRPro8h63wdEpgRZocxgGIg4KDAXGB-uni-DPTBaJzQ..
+.netflix.com	FALSE	/	TRUE	1822335707	NetflixId	ct%3DBgjHlOvcAxKHBKwztJSvi8JcE4PLuOzsepOVtMpTv-GqFr2w6RXGl8D3XLAlcXPeaOBzbtTanKL7H0S-R8z_o-7vFaXoStxe7tFTHd1qySbxAgCiNqu0ELMaIS9cFR3rw6COFjtLlEoebCG5mKIHA7-y0yjLDSUNVIH-JUhXZPToVMA072BpHo8ll-D2tlHOYoBFLbHtd17-4JLda7-jQKcUR2W1cRBK-0-M0TA4J9-GI8aYJM-ePhyjWToKwhlwP6C4h-GRhotxakkLS7pOAPnUk6oOIwUpGjy4y69yhv8lrOQTjuPt8QRuhvN-6OjODSTCLwWkymWB8nxtfDWeYttxMQi0OhnYzM7xQXxdtEjVqtQYvY99JL0VmaRcoYhiuWzlNu6LTMbQqxSYrIhG9dBW2yL3nOPT0s4ydNcwQw-XC4RpfReDCwHSG3ZMK7e9jn5HOEV2LpLTCBnYE_tciv6s7QOtxiGi12goImzX9huqmps4NyTmEbXXehv4dlurjt1cLluFb7kbnlDuV42iwuiKLqTY2ETddu5E74ei6DiPKkbzGUrMVtxcmP8Wcp-NU6suCfcNNPxroe1pbJms4fIX5a_jwl7E-jOU4EXD9axcPuaePHoUBbCJPS8WsuOQUZoM5Y63UXYBXxvrajh6LWr9n78iSbFGJQS1WH7-1bcgejThYlSK06z9SYsL8Bm-vRgGIg4KDOapLPOpF2_P5BedwA..%26ch%3DAQEAEAABABQQN5LmXxzfCEAe1XP1vcnCiczOVot99fA.%26v%3D3%26pg%3DRDIOHNKVTNHG3IO6RMLOCQXFZU
+.netflix.com	FALSE	/	FALSE	1798575708	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798575708	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1817481348	nfvdid	BQFmAAEBEMtj0PCklutvcps8f52zU85gtl46lkzAmWdP0uBPCJb57CkiqJJQMTNGLdPocKSZxUPp9uqS24eCZQzvWRah3QoypcRSxl_4If5vXYZC91qO1RfgqaJPiHT0GbFpRhTJYcIDVVHtgZTkOhPBiYqHOCTz
+.netflix.com	FALSE	/	FALSE	1817481344	OptanonAlertBoxClosed	2026-08-05T15:55:44.416Z
+.netflix.com	FALSE	/	FALSE	1822335709	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+30+2026+17%3A21%3A49+GMT-0300+(Hora+padr%C3%A3o+de+Bras%C3%ADlia)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=2304115d-e49e-4fbf-aa20-fa8bd89fa575&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=3&crTime=1785945344803&geolocation=BR%3BPE&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1822335707	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQBJ4yMPUneCSfY0VYjtLIYBytSrzI1G8U.%26dt%3D1790799706071

@@ -1,0 +1,332 @@
+{
+  "email": "mgambonis@gmail.com",
+  "password": "Bisung@040592",
+  "access_token": "cc9ed532-456f-47d6-85ec-1ff0725c2471",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiNjA2NTU2NTMtM2FhOS00ZTE1LTlmYWUtNzU3NTU4YjM5YTE2IiwiYXRfaGFzaCI6Im5CMEJZQl9Mb1V0dnhWZ0NBZUdkcVEiLCJkZXZpY2VJZCI6ImU0YmFlODJhMjFjOWNmMmUwNDI3N2JmOGM5OGVmMmVmYTg3YmNmMDAiLCJhdWRpdFRyYWNraW5nSWQiOiI4ODNmLWIxMDktNGYzNy04YWM3LTE2YzEiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjYyNzY5NSwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJlYmYyMGNiZC1jM2QyLTRjNTgtYWJkZS0zZGI1YTY0MDM4NjkiLCJzaWduYXR1cmVzIjpbIjM3NzM4NTM5Il0sImN1c3RvbWVySWQiOiI2NzdjMDNmZjc3ZjRiNmU5MjRhOGI5OTBmNzJhOTg1MSIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjM3NzM4NTM5IiwiZ2l2ZW5fbmFtZSI6Ik1BVVJJQ0lPIFBBQkxPIEdBTUJPTkkiLCJ1c2VybmFtZSI6Im1nYW1ib25pc0BnbWFpbC5jb20iLCJtYWlsIjoibWdhbWJvbmlzQGdtYWlsLmNvbSIsInJlZGVtcHRpb25MaW1pdCI6bnVsbCwiaWF0IjoxNzg4MzEyNjI3LCJleHAiOjE3ODgzOTkwMjcsImlzcyI6InNtLXNreS52cmlvc2VydmljZXMuY29tIn0.WOD6CMR_nQD0r1-GFyq4tbItR0Dhdbu2y6G1pek1W08BHXiwY_MqKK_98KcqQRWMWuTi93QmxtfpjWjWCiq1KRgWia-s3sT2JhUvTmEfR2FxtVDZ0hudbhxF0tiDXly1-_UaZRTAsw2pkqYTLDpj-uQwrT90_gJhzL8B_AYfXWHvQPPliZdJUem6tTXvB68rrORgoMX6ym_MKlptv6zmmWcan0drqLqVZ1GQnCoV5W6rESIt-LpBzDQ2pBZrHwdyhZK-4bvM7W99hBVC4tGqLWP2tKnK6YWJYuY_qAjii0zkM4E8NOyzq5Qa84M4uYx2M7Rp3sVvk6QBcuAadDNhyw",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "cc9ed532-456f-47d6-85ec-1ff0725c2471",
+    "externalId": "b3a8060a-b9a1-52b7-ac1b-8aa4f9a97863",
+    "username": "677c03ff77f4b6e924a8b990f72a9851",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "37738539",
+    "protocol": "2026-150197402265",
+    "customer": {
+      "email": "mgambonis@gmail.com",
+      "billingProfileCode": "1-9JPC-19120",
+      "name": "MAURICIO",
+      "secondName": "PABLO GAMBONI SILVA",
+      "birthday": "1961-06-21T00:00:00.000Z",
+      "ddd": 21,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5521987631114",
+      "id": "677c03ff77f4b6e924a8b990f72a9851",
+      "cpf": "67841627734"
+    },
+    "signatures": [
+      {
+        "id": "37738539",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 987631114,
+          "dddMobilePhone": 21
+        },
+        "customerId": "677c03ff77f4b6e924a8b990f72a9851",
+        "status": 1,
+        "productName": "COMBO FULL CINEMA HD 2019/2021 - P",
+        "name": "MAURICIO",
+        "secondName": "PABLO GAMBONI SILVA",
+        "dna": "01000000000100100000001000000000100000000000000001000000000100000000001000000000000000001011000111110100000000100000000100000000011110100000010000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101011111111111001101110001111111111110111111111111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001101111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Costa Rica",
+          "line1": "Rua Costa Rica, 76 - Serra Grande",
+          "line2": "Lt 19 Qd 89",
+          "number": "76",
+          "city": "Niteroi",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "24342738",
+          "referencePoint": "Proximo A Itapuã Madeiras",
+          "addressType": "Rua",
+          "resDdd": 21,
+          "resPhone": 26097660
+        },
+        "addressBilling": {
+          "linePublic": "Rua Costa Rica",
+          "line1": "Rua Costa Rica, 76 - Loteamento Soter",
+          "line2": "Lt 19 Cs 76 Qd 89",
+          "number": "76",
+          "city": "Niteroi",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "24342270",
+          "referencePoint": "Subindo Av Central A Em Direcao A Varzer Das Mocas Prox Ao Posto De Gasolina Ale 1 Rua A Esquerda",
+          "addressType": "Rua",
+          "resDdd": 21,
+          "resPhone": 26097660
+        },
+        "activation": "2008-08-23T00:00:00.000Z",
+        "email": "mgambonis@gmail.com",
+        "parentAccount": "037738539",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000903976405",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "010A263412588520A"
+          },
+          {
+            "smartcard": "001126012804",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A012538744105A"
+          },
+          {
+            "smartcard": "001126058187",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A0125433485956"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "37738539",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 987631114,
+        "dddMobilePhone": 21
+      },
+      "customerId": "677c03ff77f4b6e924a8b990f72a9851",
+      "status": 1,
+      "productName": "COMBO FULL CINEMA HD 2019/2021 - P",
+      "name": "MAURICIO",
+      "secondName": "PABLO GAMBONI SILVA",
+      "dna": "01000000000100100000001000000000100000000000000001000000000100000000001000000000000000001011000111110100000000100000000100000000011110100000010000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101011111111111001101110001111111111110111111111111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001101111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Costa Rica",
+        "line1": "Rua Costa Rica, 76 - Serra Grande",
+        "line2": "Lt 19 Qd 89",
+        "number": "76",
+        "city": "Niteroi",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "24342738",
+        "referencePoint": "Proximo A Itapuã Madeiras",
+        "addressType": "Rua",
+        "resDdd": 21,
+        "resPhone": 26097660
+      },
+      "addressBilling": {
+        "linePublic": "Rua Costa Rica",
+        "line1": "Rua Costa Rica, 76 - Loteamento Soter",
+        "line2": "Lt 19 Cs 76 Qd 89",
+        "number": "76",
+        "city": "Niteroi",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "24342270",
+        "referencePoint": "Subindo Av Central A Em Direcao A Varzer Das Mocas Prox Ao Posto De Gasolina Ale 1 Rua A Esquerda",
+        "addressType": "Rua",
+        "resDdd": 21,
+        "resPhone": 26097660
+      },
+      "activation": "2008-08-23T00:00:00.000Z",
+      "email": "mgambonis@gmail.com",
+      "parentAccount": "037738539",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000903976405",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "010A263412588520A"
+        },
+        {
+          "smartcard": "001126012804",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "670A012538744105A"
+        },
+        {
+          "smartcard": "001126058187",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "670A0125433485956"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "37738539": {
+      "included": [
+        {
+          "name": "HBO HD CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "30-08-2021",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "ESR HD",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "30-08-2021",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "TELECINE HD CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "30-08-2021",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "TAXA ASSISTENCIA PREMIUM - P",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "30-08-2021",
+          "end_date": null,
+          "icon": "🛡️"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "08-04-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM 2M 50% - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "31-10-2024",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky Sex Prive - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "31-08-2021",
+          "end_date": null,
+          "icon": "🔞"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "08-04-2026",
+            "startDate": "08-04-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "DISNEY PLUS PREMIUM 2M 50% - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "31-10-2024",
+            "startDate": "31-10-2024",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "null",
+            "isPartOfMainPackage": false,
+            "activationDate": "31-08-2021",
+            "startDate": "31-08-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO HD CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "27-12-2019",
+            "startDate": "30-08-2021",
+            "endDate": null
+          },
+          {
+            "id": "1-1LRKSTR",
+            "name": "ESR HD",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/8849176/SKY-Canais-Adicionais-ESR-Cards.png",
+            "price": "7.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "27-12-2019",
+            "startDate": "30-08-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TELECINE HD CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "27-12-2019",
+            "startDate": "30-08-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TAXA ASSISTENCIA PREMIUM - P",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "27-12-2019",
+            "startDate": "30-08-2021",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

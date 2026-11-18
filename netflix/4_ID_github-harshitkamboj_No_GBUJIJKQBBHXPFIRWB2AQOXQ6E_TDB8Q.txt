@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: ID
+Plan: Premium
+Next Billing: November 13, 2026
+Payment: MOBILE_WALLET
+Quality: UHD
+Streams: 4
+Price: IDR 186,000
+Profiles (3): Ayah, Ayudhia, Alesha
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1815459304561	nfvdid	BQFmAAEBEBO4ePcqnGCjUL5_OSgW3_lg7bh7loQu8cDld-BD-D0KNM9WdbUIj8y3N5bpiIIUSe8v1mr8XRYENWcNj5BnXbHgTR8dBGuSrGN5bParGAa9LNqHRZEovB-L_xaYQOmNdLObw-K4sqF9A0KMfgdCNL-y
+.netflix.com	FALSE	/	TRUE	1821248031716	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQOc1tiXwEOBAX8OM5zGweb-lY5gjnr8tw.%26dt%3D1789712029929
+.netflix.com	FALSE	/	TRUE	1821248031716	NetflixId	ct%3DBgjHlOvcAxKCBEDvjy1MKbfW8bxakzSZ3gJFEmI4qvhLXuk2wKcMMpZxxK3f-Xfu9h0Y5smGET0XLEvQTES5F_2EJr_PK_xSeaE_S0o-wBbrgthkWPaXZpLeIFDWQm3IldDLJNph2wJOZ0jU5ZbYAsanqpfed3kpmEA1ZqRagMdYHGphKWAelrsizL6YKOJ-s7R8rKrh1wniZ4dF5QGjo9sxmlrphTgxhlNko0_rE-vWCyniq3KwnCaZsBKsowHr9YMc3E4KzWowA3fK0tQ3e-keIXl0HRCddOWEeVawsJ76L-q-QdhsDtjbiI4RlzW0oiVFaMhuq98r9iAM0KjTN72PXCnY2awYwF7CA8ZMn0pzau3dvvUVnVHOxJ_btmdSzITYag73Z-ysJunCX6iO-kIJs4Gpdxbq3ECO-hVXYi2rdW7igoHpdFgwrzGU52z72dUZmdr49kOFNERzgIwUri2rcEoP1G1XMNb8NnWr6Aka-fzsE-RyfGDtzXjym39LJFBFkxqt8V7XmeMQQJxN2McKkioHcdXD9-SCtTEbQkXxbZjNGOPGp1Mc6RgNErjocKs6Kp48-qtp2xBaQCWcCOvdyNxeGRM411osNzKGpp0iXWkvIkVxrpGSj4RHL7FBiUC6dLKxRTkGEG3Eep8Ebtx4NKkZvCT41EKoh6ftbTY0tXa5LfbWDO9kEVoYBiIOCgyNdl8XKOdlqDABQxk.%26ch%3DAQEAEAABABSyyP6Pi3sF1sb5oqwsEki4e6DhyUuSGvg.%26v%3D3%26pg%3DGBUJIJKQBBHXPFIRWB2AQOXQ6E
+.netflix.com	FALSE	/	FALSE	1797488379070	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797488379070	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1821248379000	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Sep+18+2026+13%3A19%3A39+GMT%2B0700+(Waktu+Indonesia+Barat)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=3e542623-958f-4d9a-bca3-ccc3eb72b9c1&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1783923242478&AwaitingReconsent=false

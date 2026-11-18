@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: November 28, 2026
+Payment: DC
+Quality: UHD
+Streams: 4
+Price: R$ 59,90
+Extra Member: Yes
+Profiles (5): Peter, Lucineia, Gabriel, Sofia, Sam
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796520603	NetflixId	ct%3DBgjHlOvcAxKxAyj8kXFv0n3mwZ6oUNxQxuDmSj12NUQWtnSyNNvY39Lz3Foz-BeE5h6qdG55cp4roRxbq0EOhfq4soM7Sd6RIrMOtCXIw8SY8a_R6N6bEfNvDdXxfloaoxGzZLGfyqlowy8q0ZyNK7vcQybToGKyBv7fR4X4pKKbO1gWA1993DffbHpCwMfB5iNh20yFxhUhLdlY4kPJ3r_5FtcQs-0ESICIi5EFi32mzcVtzu_qiG2s3dOs-LX-b9Tk_aKW8m2iiS7xQ6Bj-lL9A36z36Iuz2Zkw9xw1_6io0dy_gJxJ87xKrDdC-JfAvc9eB24F_GGWppfzwgM9XYIdgWenH67xfNkMkD1x4PbTabxkiKF33SY3TfnrfWCL5C6BV9FJvh3N0Fhf0YK_M_w2Zyuhutx95BKP6Ybrftm2yyhCILarxOwQZ3jpfsZ-2_-Dp0F_Ygm8IXV_6eH9xd_eRrNunncMIInv4wiSrYKZno-DELWZmZbpdmCrJMDgt_pPmBLaQ7Fkekl_qUzGxn_cmDrg76BNpqIUU4b5hzrgjNRycXOieKz9VpPssi2sZKeVQ_2ADDSZCkYBiIOCgwwlotGqfLxX-ljXx8.%26ch%3DAQEAEAABABSyQAtTXQWg-Utx7oN6W9b7ZPYogkfkFBQ.%26v%3D3%26pg%3DUUROOSH6YZFR3JWJ367LZH5V6A
+.netflix.com	FALSE	/	FALSE	1796554944	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554944	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796329160	nfvdid	BQFmAAEBEJ7Nh_Jk-QxTfnx09Vye__xgeoB5eha8YL4-4ktphfQEmsdejH0mb6YqHQy_-ISJuv0OMJUmkJDdmDdksRRisiTxXl3cYKQ1e4lUnuhuxVDYrKBeIxar6AvDP4T3PdyLrWC2Vav_WW1bYaS3oautRBb_
+.netflix.com	FALSE	/	TRUE	1796520603	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTB-bdUHjwwxaRb7Rj20MCBLi8mMCsKScE.%26dt%3D1780968602837

@@ -1,0 +1,29 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Standard
+Next Billing: November 18, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: R$ 44,90
+Extra Member: Yes
+Profiles (4): Odair, Índia, Breno_todynho, Infantil
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554944	AMP_569d78c970	JTdCJTIyZGV2aWNlSWQlMjIlM0ElMjI3ZmM0ZTE5ZS1lZGMzLTQ4MzYtYjMxNS03MTNkODZiNTM2ZmQlMjIlMkMlMjJ1c2VySWQlMjIlM0ElMjJhNmE5NmI5My1iMTQ0LTRjNjUtOGRmMC00YTMzYmUzZmU0YzQlMjIlMkMlMjJzZXNzaW9uSWQlMjIlM0ExNzYwODE5ODQzODMyJTJDJTIyb3B0T3V0JTIyJTNBZmFsc2UlMkMlMjJsYXN0RXZlbnRUaW1lJTIyJTNBMTc2MDgxOTg0Mzg0NiUyQyUyMmxhc3RFdmVudElkJTIyJTNBMCU3RA==
+.netflix.com	FALSE	/	FALSE	1796554944	AMP_MKTG_569d78c970	JTdCJTIycmVmZXJyZXIlMjIlM0ElMjJodHRwcyUzQSUyRiUyRnd3dy5nb29nbGUuY29tJTJGJTIyJTJDJTIycmVmZXJyaW5nX2RvbWFpbiUyMiUzQSUyMnd3dy5nb29nbGUuY29tJTIyJTdE
+.netflix.com	FALSE	/	FALSE	1796554944	flwssn	f5ef83ec-aa0f-4108-b45b-42c62c80135e
+.netflix.com	FALSE	/	TRUE	1796554944	gsid	fdba874d-9191-4349-9931-74aabd8a663f
+.netflix.com	FALSE	/	TRUE	1796554944	NetflixId	ct%3DBgjHlOvcAxKQA49hJl7kkXWnKUi2-cw5ipK6LgV8vPKJ66YBn5sjXQZlv2MB0FVXE9NttvnDhMkyUmNSgCRRWPJsZQ5SukxCFW1eFpvVZJmK5n4oASSFGtItQ71NO9d5saHKDqjlX8m0jlw6CEyvtlV39rCXpkMGvDlDxVM4jX2uIivsiLpU01kHdLwduNKoD_wa7K9wl-MlPvd4ZzkpYv0j4l25DiZQU5a_mpSL8XKyh9Uo4pT7Oqm-KSkAx0TjtATwLoN9E50wuWgjQP6mBnkO9ZxHJSz8Nty7NC37a9Y6iWyo2AGMLaPq88Sxizm-i_iNIumkxkvtK2T0WTppT7ZSG83t_IEh7LUTq5EX023nBOaT2R_3xc1QOkC37EcqlVbUaUd1aS7G98rPmXrpKVSsRgrc0avfS-hLbokYYi-UdqE1rc0JO0aancd9WkzhBuwtnpvsn7VzgJc83DaEJCTUNXbXKRlQC46izDjz00iF4sE-lHr_LUsvQfa96FPIBKnGz77TcDhouuKAFV2n0xGKgYTZgNbcpRkYBiIOCgx2zN7d2rbYYCj1QOY.%26ch%3DAQEAEAABABRDoVJH86mTAScqR6YVoL9kP31kfNgwnI4.%26v%3D3%26pg%3DG5O5VDBDKZDXNPDMQES6D5PTWU
+.netflix.com	FALSE	/	FALSE	1796554944	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554944	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554944	nfvdid	BQFmAAEBEEC0QYSd6cLf96Kts3ltrUZgQeQUhDtclka53OyNbcfm2HjZUYYkN7ZRhtB9sKRMBtwt5R0T12FywNb_afHpMrUsqbvvQ6ksDBPvY9NjFDUrVg7uYHa6jeg--UBfJ-CkNuMGovp2eELx46Uc4S4p3yQB
+.netflix.com	FALSE	/	FALSE	1796554944	OptanonAlertBoxClosed	2025-03-05T15:36:18.629Z
+.netflix.com	FALSE	/	FALSE	1796554944	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Oct+18+2025+17%3A52%3A59+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=ded102e2-120f-4e58-8371-4c372d06d731&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=3&geolocation=BR%3BMG
+.netflix.com	FALSE	/	FALSE	1796554944	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1796554944	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTokC2OuWzpLTx0VfMe-HH6HSwxLlw7Su4.%26dt%3D1760819843199

@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: TW
+Plan: Premium
+Next Billing: December 2, 2026
+Payment: DCB
+Quality: UHD
+Streams: 4
+Price: $460
+Extra Member: Yes
+Profiles (4): 好貴, 舒冒, 嚕嚕, 義父
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1800842662	nfvdid	BQFmAAEBEP4pkOBuQ9dVBWK9TrjvbRhgvi7UwhcJwNhxmlIfQdRMvDOE90IPqBXLBHUKhi_QqzzSgtAeoeGrd_J2FNgXWITnfV6_Gz8pVA94NnfyFYO9CZh7h9P0NRJ3tr00F8FKhHhiScMgKJKKUKGfqfl4Trxc
+.netflix.com	FALSE	/	TRUE	1821930594	NetflixId	ct%3DBgjHlOvcAxKABGLgoqEza60Iu4NrNuuBWx5tEcaAz3j7IC3JFuk-gZzOjezdImnpS9R9QclEBe6JXMeqtlf1ouQ8TyQ9DDM7mfmXQQ4OVK38f-13p9KD7gLjo4o_4sWV4Kz6MIdQHB8-c1dvVodSzRJC6K0kZFBkMERXY27wTRQJFMEMpseBpHG6i3vHK7UJLGED0WUlJwfQSEu14GPiKlfOoTgCvnqbGP8MhJNAcEM1KZDwFPzuMoqxHO-7vzDyUA7gOAMa_jPlfYVIFcsKii-z_pM-UNSB8P8GwQ2J62nOs6oji40MYILGQqFQ5DzJkZhtAXQ_0EioMUEU7fdylJkqr1FC-Zz5zuuuvcbFPwETi3-VEQyz48pAslE_eCvEAS08UBEHFgDHdpZmPP4UqfiH57CQz_aXFz_3YdieCdqvMWzaI6ZIlPRaJszFF-aNKQzXvnhLWhxWP3_4dA3oY1dDG-iIh32Yrp1OiMgEse89DcJ99saSPhgsIhJVou-nSGpqhMp7yyAvdUZ9KzGtKJUYSajElEaZMZ00SSA2p4rTkpHnGL9jFg3BGuYnWH9QRUc7G6AdgME1Pdq6jcKQh08BwfEYzBCFYAPUh0Y-KwCjGue6mGkjk-QbWqYt3iFL4jFdI_FzET6MO0HWKxET81ZN5wlBZtLN6Pa7QUfVxTLme2YMkJjYUaqBGAYiDgoMJDg4e2s_cfQaqhf9%26ch%3DAQEAEAABABTMx0b1gXOdjaQBbwsr6I8FgV6TrZRalKY.%26v%3D3%26pg%3DRU7VXC7NJRHE7P7HERDSYDM4NU
+.netflix.com	FALSE	/	FALSE	1821930598	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+26+2026+11%3A49%3A58+GMT%2B0800+(%E5%8F%B0%E5%8C%97%E6%A8%99%E6%BA%96%E6%99%82%E9%96%93)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=7151cfb0-7120-4419-9cdf-0bf77c363f86&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1769306625798&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	TRUE	1821930594	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSgZJP1qSQAMcnB3CuSXE8maj35kMDsAKQ.%26dt%3D1790394594845
+.netflix.com	FALSE	/	FALSE	1798170598	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798170598	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798170598	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

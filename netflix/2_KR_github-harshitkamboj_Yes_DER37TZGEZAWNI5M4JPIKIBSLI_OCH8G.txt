@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: KR
+Plan: Standard
+Next Billing: November 17, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 13,500원
+Extra Member: Yes
+Profiles (5): 송하연, 은종, 바다, 민하, 키﻿즈
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554946	_ga	GA1.1.351193194.1749715955
+.netflix.com	FALSE	/	FALSE	1796554946	_ga_KMXMWTTLQR	GS2.1.s1756136832$o7$g1$t1756136842$j50$l0$h560390276
+.netflix.com	FALSE	/	FALSE	1796554946	_ga_KRT6H8RMFF	GS2.1.s1756136843$o5$g0$t1756136843$j60$l0$h0
+.netflix.com	FALSE	/	FALSE	1802185089	nfvdid	BQFmAAEBELTRlCrLCBzY1DjrJV2A1yxgN9Jih7cC-9RZrrd2hwwYBj7cdZJNTAXbIQvf4PuSgaGcKZx1ct9sd_JqW7PjkafKKlZBgAfprbPCWfBqA5wtuSxONmF8ndiJZfhAstDHwKDmpH-o0hes-JzgwuTNA4Zr
+.netflix.com	FALSE	/	TRUE	1806658231	NetflixId	ct%3DBgjHlOvcAxKABKuCH48WZL9oLEeCWlfDfDiKe-7llKhcLQuflfrtsLusvzNSOWu1IN0xrkUIQM6enH7TKv7cFjuoXk4CO5PxjhzU61Ms9QPUscSd_oUWX1mVbrk_VGTtCeJVdSLPbxzBk7WEke14Mh1wC-IeP2HhMWLQLySrlzx1zFRLLDfRViU4ZMucygFkqpgbrgjcU2gLBfyPRDTYCqzX9wwyUv92yDGWujymwrHR4pMAWA_sYg5sOyE2KJp-EXNlhmTsmQZN9B9UybtoRkpGF4t96jlMCf-fiKXMPzq1IB21tNggYgHiBhbq3d4AJNZYY75R_oTCfvElsqjN244G2HTatLFw3cTdW6EbUeuvwWCE66OYdSksuqc2AkqF-Xq-HrAqO9RRbX16oHv4ldNOzyMVma-p265esvX3rJre8nxgPKaFO0QHGtsOUh6Q6rKQtYvUNp5KeNOKgjivheWq74CTPZ6iH4XLiSh4EbVCX1ogvowPODFXkw-B5I2Kk6hlaJnH0i_Bl9IpVOP_LnZQgqrkzwh7d3C30Q_WWMYif95PTYoDtWoCg2BGPpF2CYqvLSDlrEqo-Iw6OlBABm82bJOf7I6fbzX-0vR0e3wp0APetoJ1lB6rMvqR8rhGbCV21i1sKFputREYoCx4T0n6yu0bXVuqyA-EhbLFag_tfHnqrYZs-0RsGAYiDgoM17hFjeDBYgRyKkaa%26ch%3DAQEAEAABABTE1BNcDjrAOSXxU32ZTXlxG_--kBoWHSg.%26v%3D3%26pg%3DDER37TZGEZAWNI5M4JPIKIBSLI
+.netflix.com	FALSE	/	FALSE	1806658231	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Apr+02+2026+18%3A30%3A31+GMT%2B0900+(%ED%95%9C%EA%B5%AD+%ED%91%9C%EC%A4%80%EC%8B%9C)&version=202602.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=d91f800f-8308-46f2-a68b-b4f7317f8949&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0
+.netflix.com	FALSE	/	TRUE	1806658231	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRYGZgqqVu56gs4hhByLpmysYK7dZ7cGp8.%26dt%3D1775122232156

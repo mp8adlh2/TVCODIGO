@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: JP
+Plan: Premium
+Next Billing: December 1, 2026
+Payment: DCB
+Quality: UHD
+Streams: 4
+Price: JPY 2,290
+Profiles (4): Stupid, Fuck You, Raza, P1
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1790090159622	nfvdid	BQFmAAEBEIMN_RXlAle8Cy1MHon1gJBgViM3A0ZV_AjQJKc2KXD2MqjDuSKUm-b7-GwtsVRaEQjmbyQmYx-TFZHIFBALOPCaeubTeDQs4elSqm3QErP8rS1hFbaZj1xrD3Cc8ZIjRK1epWD2y4BKRPbfNdgNrTwu
+.netflix.com	FALSE	/	TRUE	1760361643469	gsid	c98d34f2-dba7-4cbf-a5e4-db10891a1707
+.netflix.com	FALSE	/	FALSE	1760286047514	flwssn	a503d85d-6089-4ee7-b319-1bf6a54b6bec
+.netflix.com	FALSE	/	TRUE	1791811261764	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRFAEQjMfpzDANBFBOTIOWR6PJc75PUEkY.%26dt%3D1760275261720
+.netflix.com	FALSE	/	TRUE	1791811261764	NetflixId	v%3D3%26ct%3DBgjHlOvcAxLyAuSlm27AKG5NTMs0A9ehzrr8hXl5-cUWc3aL9oNIb53SaaKkLNB7CtB8ODdLEwBVq1Ql5iA-5dS0mS7liBDnNijQcNUbbA9WjfgFx0SkpqAtOTbfDvJRzJx-0H1c1Il1hVI1XDWoI-dbuh_VqYN4Sok5cGP63xsINP0_4oZmgcAko58f-I_k_dIllX__avFjRl8plnAxOXTWknmypKqyC4r0pWulukFJThbD3qojrfKaSxCXYNrKmbiHP5jGp2jLCDx37AEIZut7KwzVyTnnkp3cvyyF2sBLK3uzWfz3Rj35oTShnvSG1rJh_Mkh1SYHkp8rheebN0MGk4DHuUtFXg2lXIYkHMnIQbYgrYJ6V4UE_da8lrPxgV9zUGWabxbOvfS9dX94YdV8-GyPI_shrUq7qfaM_1gEH5fPjs3OKMLHnWQRkNBpjG1sqyzjdpXS7RcblaR-jCcTIWBB7qF-MoBl7-NMQ4ECw1sEQyuTCcloIgsYBiIOCgziwsbPIvVQ3VfScMc.%26pg%3D6SCNXA3BOVFRVMZZREZUWAWMBM%26ch%3DAQEAEAABABQq9fVTBcL3OZCs3im1bt49oX-_J1Hh3OA.
+.netflix.com	FALSE	/	FALSE	1768053775713	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1768053775713	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1791813776000	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Oct+12+2025+21%3A02%3A56+GMT%2B0700+(Waktu+Indonesia+Barat)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=be183d02-8682-429e-b459-28eb00c92dac&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1760279578343	profilesNewSession	0

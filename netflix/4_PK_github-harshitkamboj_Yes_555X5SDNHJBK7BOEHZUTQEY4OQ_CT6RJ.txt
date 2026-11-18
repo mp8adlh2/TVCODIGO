@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: PK
+Plan: Premium
+Next Billing: November 29, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: PKR 1,100
+Extra Member: Yes
+Profiles (5): SHUMAIL, shahtoz, talha, shaham, usman
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1820994942	NetflixId	ct%3DBgjHlOvcAxKBBKHbkqCk-bCjGsnY_s-I0tC0_xvekbGmr69rdYxhD75cLM-46MdDe6dcxKgAM7HNeHJVWXEOybttd4U9ihZJslw8OULgYNrqBkkcOAkYSWTmm6LzIFPHsZN9xE9J0rps4lxAcAMsXCz61W7Jf87yUBBSG3KmQ2d6S2hVKLNQDwW9SB3aZc4IXct6ZnE5ezc8TPbiaQDvp4Nw1qLNsFsaucYLgD5iGw33tbj2G-iYJD4Qu6SA14Uy1kYGPbtO5auBsEBYSIhTZ8a0uoD77dwVb3K1gsqHy2FjIb_LyQ8XvnS3HzQks8v5lh_C0wwjA48aFR5IbHvkrKit5B-4RfN0ZEGvO3MKx9MFDNLdYG_cIwSfmzrn0r08Z6SM7gmP8uBgn51pG-ENwob_--RCLuaT0XA0iIfVfxZyJiQrzOhmRzpkPqlwyv34HdX1PaRAr8o_z0f_CM6LLtNCc2A8kGuUjYJ59PWfUpXjh27MDuFsenKKYS50fQVB00Gr-R6XDIOmsw0_Z1CrJZH_-uKHa9S17oQVqsDv0QZZok32qsDIbnn785QzWGy7xHU1RKL0oV9G8U2wVbc88l6fMlVIuVTvMplyCCvK4Bperuw1TOMfxjIfYI913FQ-kPm499QCRJ2lmbI94DQ4lGsH6HXQ33jJ3fWKeVAVUbXLqPt9oqeU_4mFWhgGIg4KDCJjTeHERAQE7ztrRA..%26ch%3DAQEAEAABABQUHO4g2Y7LyWRvynYP2QtUVHi_M3jklvE.%26v%3D3%26pg%3D555X5SDNHJBK7BOEHZUTQEY4OQ
+.netflix.com	FALSE	/	FALSE	1797234942	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797234942	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1817500659	nfvdid	BQFmAAEBEC58a3FzVWrcDv958ZjSSXxgwiXTl2YrCOCM_ETDZejywgr2zcn5BCR0Of3kVIm3XcdxVLCm5XwTOa-nwZZzLpy1hFROFW0bdG_75gi0LY_qQ-sbVDLwric5mXXbr1LikP22kFmQm9k2x2Il8XrqS7r1
+.netflix.com	FALSE	/	FALSE	1820916754	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Sep+14+2026+15%3A12%3A34+GMT%2B0500+(Pakistan+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=be2380c1-580d-4840-9203-3d3a8b5eaa99&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1785964618311&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1797234942	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1820994942	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQRz3qAoKOisNOglmqq0-xn0JVLImqyT68.%26dt%3D1789458942059

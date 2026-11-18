@@ -1,0 +1,29 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Standard
+Next Billing: November 8, 2026
+Payment: MOBILE_WALLET
+Quality: HD
+Streams: 2
+Price: 349 บาท
+Extra Member: Yes
+Profiles (5): igtar3, Kim☺️, Topper, Xdddd, มุมเด็ก
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554947	flwssn	7e30a94e-a0b3-4b01-8207-ab59ef5f0142
+.netflix.com	FALSE	/	FALSE	1798305278	graphik-bold-1-loaded	true
+.netflix.com	FALSE	/	FALSE	1798305278	graphik-normal-1-loaded	true
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	6dddccac-035b-413d-8c12-2668871d4614
+.netflix.com	FALSE	/	TRUE	1822065279	NetflixId	ct%3DBgjHlOvcAxKABBfHcGHtWv0ZwNscH2f2AvDbLwjRVW-VasmkYEMwifHfrVmc4tWXrsROHzrenjNvCKH6uWtevCxq230-y_O8IbPvt_GNSCr9UbCLiw9WxxqoVDns3z3X05fSKnl1kq0oBggrVcbTC91TLxtUaD-a9K4La4G3nNO87n_K8TPFfIYZ16aEPaFz4cITp1qp9dX072hHjkp1TsACMAbrACRgaQezeYER7i_PqsuvBQ_r0kcl_Nfn7ZJ9EfKdru_PKhSdR3HF85_6bLKUwFeMQS5U0Y7kTiWy-vO1YtNNHaPR3s3lLvNmSxpCqVZ1JnC27noj-uiAb0Mxa8W5Ktx64xwE2GeK1zzQTOo2vYk0Jb6hY97ynOMGkUwSINnPstlPW0fJoSy7XMi7TNH0nUWXeuq-8yOYsep0tdLVmzedxm7NCfyiSKpHl6qWH0Avb0gvl29CsXuVaF4Of20nxVYBG4Epog0GDNuEwewdvx1Q_G6NEJ6skWDaNhCyjMwtqjUN7hxqB8xQ737JcshP-De0pfsq6rUofj3gXs7u_HfkdPxZEZbcQZ_AxKKr8bjsDcLAOYMfwWpPTM5CL81kHeWakBRCMGZZP0CaewWD7v_2QLe1JUXGujbghq5xb2R-HSYexYNhPy9FfY0wjomblt0gsZylZ2lmWJSuMJcAPwgUQ5YAAWe_GAYiDgoMDJdAUXR_2WsRgoCs%26ch%3DAQEAEAABABS-DxDxzirGzmvJXZAMYHMAw3QiPvnG26g.%26v%3D3%26pg%3DC7654W67JBF7NCT7UNKKJ532LA
+.netflix.com	FALSE	/	FALSE	1798305278	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798305278	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1805793200	nfvdid	BQFmAAEBEB-JxeM7hEA1CNoKPi5Lx3xgHjrkD5MsZKsrDzqbN6Cs2a5xuDINslLZ-3X5nmCGWVeaqwX1_tWWJeZ4KQuln077c5P4l_dw148WPLGnWZBe2thY98n442tgrRpUHzXAkeEPOibteXsnlYRlIOcSI62g
+.netflix.com	FALSE	/	FALSE	1822065279	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Sep+28+2026+00%3A14%3A39+GMT%2B0700+(%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B9%82%E0%B8%94%E0%B8%88%E0%B8%B5%E0%B8%99)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=2531248a-5e26-4720-9e9c-159b728b7baf&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1774257163360&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1798305278	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1822065279	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSYs6nodvlxhsQ-Saq_QH_Ct-R4eNWNhGQ.%26dt%3D1790529279002

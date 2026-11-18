@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: KR
+Plan: Premium
+Next Billing: November 13, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: KRW 17.000
+Extra Member: Yes
+Profiles (5): Andin, karen, tv, Handsome Hp, Niks
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1822958677	NetflixId	ct%3DBgjHlOvcAxKHBPXbM7G5tYNDwIVl_IoKO1KeS9_R_5mlaQvYuTCD1RO3OcR8ERxow7Dje5nFnvnQTtHPRHqBh3RR_4TRgDqFZev7IwcZgZqr1dfAQqiyjmzoGESm-o3BpaDivodLdY_MP6Esx3ZtRSzsBmlL2mxkns_9gD3JhiUxgVpCw9ONrcftmqz6H1YFUd8xOSdy2rJF6NTpvWabsXJCGcQipAyxGyWV8i7nvp-riY3Nu4LLVqtVZnOiMM2knmEp3t8rS49oXnYAITwo5JoDsmQ7QCqEzFDg0gDlYhD6tONNmd2BJXkqQxOs9xgyhaoY4jFLQl41tLMpazEmtZ-Lh7uFmHjxHqUvYixEhAGzJ9wBj3jPCsImaECuEMRDEBhKfBCT4KiNQwsBSY8UvzgQfPHyWE3oU_8WznCICw4WzGXV1ZnyaQ2DVG5jbwIOh9f-OwQS8FFT7QZMBzVNKvmCWUKmLneBsPl8hqaJCh-ELsnt69LKHy7K-ebEFR2DmBbDlN0Zz6uJC-oPzmkBenqvOlsvCMMU46IXaRmZzyMN1L2JBYrgDrBOaNl8FY_YJpEgn-MJdnlodETl2eGL3CHRFUzSpnMEJmyXtDoL0hcjCANDl8GBUeEEHpW1i8LgLh-8xOzyzjZjLMAkI-mE7pOphS5qpbHzIS2duOF7gt9hABeR9Pyx8vGx2yKvRv037hgGIg4KDFWAX7PgJQqtqOf4DA..%26ch%3DAQEAEAABABSIxEWfCS3gmvUgrAAuqhOkL5f_8J1tTC8.%26v%3D3%26pg%3DTAYUOQUWDJDZ7EEGCXH4HROHIE
+.netflix.com	FALSE	/	FALSE	1822958675	OptanonConsent	isIABGlobal=false&datestamp=Thu+Oct+08+2026+10%3A24%3A35+GMT%2B0900+(%ED%95%9C%EA%B5%AD+%ED%91%9C%EC%A4%80%EC%8B%9C)&version=202607.1.0&consentId=5fd8a73f-6675-4d3c-ab85-58cfd129c8b7&interactionCount=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&hosts=&AwaitingReconsent=false&geolocation=KR%3B47&isGpcEnabled=0&browserGpcFlag=0&isAnonUser=1&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	TRUE	1822958677	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABR54aL_KaylSgBX-B9gs1xNXzOEKyduxek.%26dt%3D1791422677935
+.netflix.com	FALSE	/	FALSE	1796554946	flwssn	b0c3b534-5a84-470c-a6af-24735b7b32f3
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	42beb3ca-f7aa-4256-b694-9cdc0ae23e27
+.netflix.com	FALSE	/	FALSE	1822958672	nfvdid	BQFmAAEBEBwSN8HQEzkLV0syf-kwBMZgQdtIooCSHYTE3-jvx-3glmlM2D2lCcI-F6w8LRYnd8T2aqkYwLNheuaHTvVXOnIwRkpvEImMoI-hTNsN8b169nx50asjtAYl54s-6RHIkRyLJbPlPrbvdUUQSUXvXqZw
+.netflix.com	FALSE	/	FALSE	1796554946	profilesNewSession	0

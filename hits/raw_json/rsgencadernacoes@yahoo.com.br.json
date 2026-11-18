@@ -1,0 +1,564 @@
+{
+  "email": "rsgencadernacoes@yahoo.com.br",
+  "password": "88Me02li",
+  "access_token": "97ed3a15-72ff-488d-8abc-5e74ecdd0731",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiNjI1ZmFjOTEtZTk2Zi00OTZhLWFmMzgtZGZiYWE4MTIzMDhhIiwiYXRfaGFzaCI6Ik9JYUl5SWdOUEgxQzU0US11bERmeGciLCJkZXZpY2VJZCI6IjE2NTc3ZDhlMzU3ZWQxNDBkZTE3MTMyNTQ0MTJlYWY0ZDczZmE1MmEiLCJhdWRpdFRyYWNraW5nSWQiOiJmNGY4LTAxZjktNDc3Yy1hYTY4LTNkYTYiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODcwOTIxMTM3MiwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJhOGFjZjA1OS03Njk1LTQwYTQtOGE3Zi0wYjBjN2ZiZDQyZTciLCJzaWduYXR1cmVzIjpbIjE1MzcxNjQwMzIiLCIxNTQwMDcwMDkzIiwiMTEyOTAxMTg0IiwiMTUzNzE2NDAzNCJdLCJjdXN0b21lcklkIjoiYWUyODZmNWFhNWUxNDg3NTkxMjQ1ZGQwY2ZkYjA4ZmEiLCJyZWdpc3RyYXRpb25TaWduYXR1cmUiOiIxMTI5MDExODQiLCJnaXZlbl9uYW1lIjoiUkVOQVRPIERBIFNJTFZBIiwidXNlcm5hbWUiOiJyc2dlbmNhZGVybmFjb2VzQHlhaG9vLmNvbS5iciIsIm1haWwiOiJyc2dlbmNhZGVybmFjb2VzQHlhaG9vLmNvbS5iciIsInJlZGVtcHRpb25MaW1pdCI6bnVsbCwiaWF0IjoxNzg4NzA5MjExLCJleHAiOjE3ODg3OTU2MTEsImlzcyI6InNtLXNreS52cmlvc2VydmljZXMuY29tIn0.m_fRAFxT_OaIwT4jgbfeQRGT_qe-HeI6cm4htvjqF6KQafiWwyimKzy2qYmdwAyOW5Z1ktpcEnoAg87oyh4o-qrJDhtyZvq6LRX1upUWkRV8zaZj3y_pL97Z6i4hzAP39XDw1qHk_zXjVZnTyCNmQ6mRLfZyxZ9n555Jaulf3ZAufZ2PC0V9ccNRN9xmlD2AHF89Rd2lT-izUw3SnGkWcbyzyHs0PKawot8EPxzPAdaNExftcxK_eOF47xK3mkQiCKwq26pvnDQAml9oA7p-azYmGTBjBREtRA3Y_DOzsrctTz1Ca4vL_fzFVPN7thX0S8Nh0se0ZyHGCaFvyODzwQ",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "97ed3a15-72ff-488d-8abc-5e74ecdd0731",
+    "externalId": "d1179182-8988-587d-b388-5f2813bd4fea",
+    "username": "ae286f5aa5e1487591245dd0cfdb08fa",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "112901184",
+    "protocol": "2026-150273783718",
+    "customer": {
+      "email": null,
+      "billingProfileCode": "1-1VVU48UQ",
+      "name": "RENATO",
+      "secondName": "DA SILVA",
+      "ddd": 21,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5521964682944",
+      "id": "ae286f5aa5e1487591245dd0cfdb08fa",
+      "cpf": "00649949706"
+    },
+    "signatures": [
+      {
+        "id": "1537164032",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 964682944,
+          "dddMobilePhone": 21,
+          "dddComPhone": 21,
+          "comPhone": 37156379
+        },
+        "customerId": "ae286f5aa5e1487591245dd0cfdb08fa",
+        "status": 1,
+        "productName": "PAY-TV + FIBRA 400 MB - P",
+        "name": "RENATO",
+        "secondName": "DA SILVA",
+        "dna": "01000000000100000000000000000000000000000000000000000000000000000000000000000000000000100001000111110000000000000000000000000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110100000000000001101111111111101001101110001111111111111111111111111111111111111111111111110011111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Banda Larga",
+        "addressInstallation": {
+          "linePublic": "Null Portinari Casa",
+          "line1": "Null Portinari Casa, 124 - Itapeba",
+          "line2": "Casa",
+          "number": "124",
+          "city": "Marica",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "24912325",
+          "referencePoint": "Rua",
+          "addressType": null,
+          "resDdd": 21,
+          "resPhone": 964682944
+        },
+        "addressBilling": {
+          "linePublic": "Avenida  Portinari",
+          "line1": "Avenida  Portinari, 124 - Itapeba",
+          "line2": ". Casa",
+          "number": "124",
+          "city": "Maricá",
+          "state": "RJ",
+          "country": null,
+          "postalCode": "24912325",
+          "referencePoint": null,
+          "addressType": "Avenida",
+          "resDdd": 21,
+          "resPhone": 37156481
+        },
+        "activation": "2024-04-18T00:00:00.000Z",
+        "email": "rent_o@hotmail.com",
+        "parentAccount": "1537164033",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [
+          {
+            "id": "112901184",
+            "organizationType": 0,
+            "phones": {
+              "mobilePhone": 964682944,
+              "dddMobilePhone": 21,
+              "dddComPhone": 21,
+              "comPhone": 37156379
+            },
+            "customerId": "ae286f5aa5e1487591245dd0cfdb08fa",
+            "status": 1,
+            "productName": "SUPER HD II 2025 - P",
+            "name": "RENATO",
+            "secondName": "DA SILVA",
+            "dna": "01000000000100100000000100000000100000000000000010000000000001000000010000000000000000001010000111110000000000000010000000000001011110100000010000010111111111111111111111111000000000000000000000100000000010111111111111010000000011111010111111110001000000000001101111111111111001101110001111111111111111111101111111111111111111111111111111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111101111111101101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100101111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+            "type": "Pós-Pago Antecipado",
+            "addressInstallation": {
+              "linePublic": "Null Portinari",
+              "line1": "Null Portinari, 124 - Itapeba",
+              "line2": "Casa",
+              "number": "124",
+              "city": "Marica",
+              "state": "RJ",
+              "country": "Brasil",
+              "postalCode": "24912325",
+              "referencePoint": "Rua",
+              "addressType": null
+            },
+            "addressBilling": {
+              "linePublic": "Avenida  Portinari",
+              "line1": "Avenida  Portinari, 124 - Itapeba",
+              "line2": ". Casa",
+              "number": "124",
+              "city": "Maricá",
+              "state": "RJ",
+              "country": null,
+              "postalCode": "24912325",
+              "referencePoint": null,
+              "addressType": "Avenida",
+              "resDdd": 21,
+              "resPhone": 37156481
+            },
+            "activation": "2012-08-27T00:00:00.000Z",
+            "email": "renatogre@gmail.com",
+            "parentAccount": "0112901184",
+            "productStatus": "A",
+            "isPrimary": false,
+            "childrenSignatures": [],
+            "chargeStatus": 0,
+            "dunnLevel": null,
+            "equipments": [
+              {
+                "smartcard": "000632903282",
+                "isRecordable": false,
+                "technology": "HD",
+                "subcategory": "PayTV",
+                "serialCode": "SH26",
+                "serialNumber": "670AA63531758555E"
+              },
+              {
+                "smartcard": "000698456332",
+                "isRecordable": false,
+                "technology": "HD",
+                "subcategory": "PayTV",
+                "serialCode": "SH26",
+                "serialNumber": "670AA636131266112"
+              }
+            ]
+          },
+          {
+            "id": "1537164034",
+            "organizationType": 0,
+            "phones": {
+              "mobilePhone": 964682944,
+              "dddMobilePhone": 21,
+              "dddComPhone": 21,
+              "comPhone": 37156379
+            },
+            "customerId": "ae286f5aa5e1487591245dd0cfdb08fa",
+            "status": 2,
+            "productName": "SKY BANDA LARGA FIBRA 400 MB PROMOCIONAL - P",
+            "name": "RENATO",
+            "secondName": "DA SILVA",
+            "dna": "00000100000100000000000000000000000000000000000000000000000000000000000000000000000000100001000111110000000000000000000000000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110100000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+            "type": "Banda Larga",
+            "addressInstallation": {
+              "linePublic": "Null Portinari",
+              "line1": "Null Portinari, 124 - Itapeba",
+              "line2": "Casa",
+              "number": "124",
+              "city": "Marica",
+              "state": "RJ",
+              "country": "Brasil",
+              "postalCode": "24912325",
+              "referencePoint": "Rua",
+              "addressType": null
+            },
+            "addressBilling": {
+              "linePublic": "Avenida  Portinari",
+              "line1": "Avenida  Portinari, 124 - Itapeba",
+              "line2": ". Casa",
+              "number": "124",
+              "city": "Maricá",
+              "state": "RJ",
+              "country": null,
+              "postalCode": "24912325",
+              "referencePoint": null,
+              "addressType": "Avenida",
+              "resDdd": 21,
+              "resPhone": 37156481
+            },
+            "activation": "2024-04-18T00:00:00.000Z",
+            "email": "mayre_gregorio@hotmail.com",
+            "parentAccount": "1537164035",
+            "productStatus": "C",
+            "isPrimary": false,
+            "childrenSignatures": [],
+            "chargeStatus": 0,
+            "dunnLevel": null,
+            "permissions": {
+              "modalWinbackGatinho": true,
+              "modalWinbackCobranca": false,
+              "chatWinbackReativacao": false,
+              "chatWinbackWebview": false,
+              "chatWinbackCobranca": false,
+              "chatWinbackTelevendas": true,
+              "featureVerTelaCompras": true,
+              "featureSkyPlay": true,
+              "featureGuia": true,
+              "featureFatura": true,
+              "featureComprovantes": true,
+              "featureMeusDados": true,
+              "featureMinhasVisitas": true,
+              "featureAtendimento": true,
+              "featureAtendimentoChatReativacao": true,
+              "featureAssistenteVirtual": true,
+              "featureQuiz": true,
+              "featureControleRemoto": true,
+              "featureRealizarCompra": false,
+              "featureEnvioSinal": false,
+              "featureTurbinarPacote": false,
+              "additionalData": {
+                "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=77e6ea0b18c0c090c63504128175e7a4fde368bed7079cff2e4bf0af433ea5dce382127a9cbb08273256209e4d9cf863a3955b02195b2d52ac8dd10e9763a40b8f3191996101653616be77d780afd8a614244ad3e97d484800316306aa5013f8baf4f2df122e6f8ef24aee5eb2d71b4ced37d1c97b3f7333148414bb289dcdc8a720d58c9b71600c60d8338f01e72590a9b83c333567cb260e812eea3bde98dddcd1415eacef17b7637c4632ee2028f712e50a2cac7f140e22d29a14cf5a5729493638d380c3903eef9559380c23ccef3b5127abf51a67fc8988f208df3e2c1f9b54a6de0cb13b2469b85c5c479b3bfa59720b954fbb0dd6c70b&id1=cb2609bbf2ffa0014705390e6f81ee567c373ea509b4c31f2491ac366d7e36c73eae98a9a4cd72062ba96ffe2a132bf8a5f4f20a3d9c7193a1eaa9293962d25e9d7b54cd9ceb290f0da13c9fa448bd8058ea7ad838552fe15233684df70a35177fe565c54bbddf2ff86b9684ce740dbcfa69e42f14716b918393c788edc820ee86d440c6a9ec621b8300d4353c65b084f0616c4bd291c1711649a259f11dba038c78aed8be41c59ce18a120ba4a4280c461d1926f2eff50c09efecd372c19565a7da77655799afb20b7b6c2d990441fde4bf18e7c176cb006df35a2905c1926bad056158a17e14bca74ab40051264995acee1143f740ca6d318e&id2=68334117b33e31850499ae3f&id3=",
+                "chatParams": {
+                  "subject": "Cancelamento",
+                  "dateNowFormatted": "2026-09-06 12:40:04",
+                  "chatExpirationDate": 1788709504707
+                }
+              }
+            },
+            "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=77e6ea0b18c0c090c63504128175e7a4fde368bed7079cff2e4bf0af433ea5dce382127a9cbb08273256209e4d9cf863a3955b02195b2d52ac8dd10e9763a40b8f3191996101653616be77d780afd8a614244ad3e97d484800316306aa5013f8baf4f2df122e6f8ef24aee5eb2d71b4ced37d1c97b3f7333148414bb289dcdc8a720d58c9b71600c60d8338f01e72590a9b83c333567cb260e812eea3bde98dddcd1415eacef17b7637c4632ee2028f712e50a2cac7f140e22d29a14cf5a5729493638d380c3903eef9559380c23ccef3b5127abf51a67fc8988f208df3e2c1f9b54a6de0cb13b2469b85c5c479b3bfa59720b954fbb0dd6c70b&id1=cb2609bbf2ffa0014705390e6f81ee567c373ea509b4c31f2491ac366d7e36c73eae98a9a4cd72062ba96ffe2a132bf8a5f4f20a3d9c7193a1eaa9293962d25e9d7b54cd9ceb290f0da13c9fa448bd8058ea7ad838552fe15233684df70a35177fe565c54bbddf2ff86b9684ce740dbcfa69e42f14716b918393c788edc820ee86d440c6a9ec621b8300d4353c65b084f0616c4bd291c1711649a259f11dba038c78aed8be41c59ce18a120ba4a4280c461d1926f2eff50c09efecd372c19565a7da77655799afb20b7b6c2d990441fde4bf18e7c176cb006df35a2905c1926bad056158a17e14bca74ab40051264995acee1143f740ca6d318e&id2=68334117b33e31850499ae3f&id3="
+          }
+        ],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000632903282",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "670AA63531758555E"
+          },
+          {
+            "smartcard": "000698456332",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "670AA636131266112"
+          }
+        ]
+      },
+      {
+        "id": "1540070093",
+        "phones": {
+          "mobilePhone": 996031601,
+          "dddMobilePhone": 22
+        },
+        "customerId": "ae286f5aa5e1487591245dd0cfdb08fa",
+        "status": 1,
+        "productName": "NOVA PARABOLICA",
+        "name": "RENATO",
+        "secondName": "DA SILVA",
+        "dna": "01000000100000000000000000000000010000000000000000000000000000000000000000000000000001100010000111110000000000000000000000000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pré-Pago Livre",
+        "addressInstallation": {
+          "linePublic": "Avenida Alcebíades Gonçalves Mataruna",
+          "line1": "Avenida Alcebíades Gonçalves Mataruna, 22 - Ubatiba",
+          "line2": "-",
+          "number": "22",
+          "city": "Maricá",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "24908765",
+          "referencePoint": null,
+          "addressType": "Avenida"
+        },
+        "addressBilling": {
+          "linePublic": "Avenida Alcebíades Gonçalves Mataruna",
+          "line1": "Avenida Alcebíades Gonçalves Mataruna, 22 - Ubatiba",
+          "line2": "-",
+          "number": "22",
+          "city": "Maricá",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "24908765",
+          "referencePoint": null,
+          "addressType": "Avenida"
+        },
+        "activation": "2026-03-24T00:00:00.000Z",
+        "email": null,
+        "parentAccount": "1540070139",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "T406115152190",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "TVRO",
+            "serialNumber": "V32476065994"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "1537164032",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 964682944,
+        "dddMobilePhone": 21,
+        "dddComPhone": 21,
+        "comPhone": 37156379
+      },
+      "customerId": "ae286f5aa5e1487591245dd0cfdb08fa",
+      "status": 1,
+      "productName": "PAY-TV + FIBRA 400 MB - P",
+      "name": "RENATO",
+      "secondName": "DA SILVA",
+      "dna": "01000000000100000000000000000000000000000000000000000000000000000000000000000000000000100001000111110000000000000000000000000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110100000000000001101111111111101001101110001111111111111111111111111111111111111111111111110011111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Banda Larga",
+      "addressInstallation": {
+        "linePublic": "Null Portinari Casa",
+        "line1": "Null Portinari Casa, 124 - Itapeba",
+        "line2": "Casa",
+        "number": "124",
+        "city": "Marica",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "24912325",
+        "referencePoint": "Rua",
+        "addressType": null,
+        "resDdd": 21,
+        "resPhone": 964682944
+      },
+      "addressBilling": {
+        "linePublic": "Avenida  Portinari",
+        "line1": "Avenida  Portinari, 124 - Itapeba",
+        "line2": ". Casa",
+        "number": "124",
+        "city": "Maricá",
+        "state": "RJ",
+        "country": null,
+        "postalCode": "24912325",
+        "referencePoint": null,
+        "addressType": "Avenida",
+        "resDdd": 21,
+        "resPhone": 37156481
+      },
+      "activation": "2024-04-18T00:00:00.000Z",
+      "email": "rent_o@hotmail.com",
+      "parentAccount": "1537164033",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [
+        {
+          "id": "112901184",
+          "organizationType": 0,
+          "phones": {
+            "mobilePhone": 964682944,
+            "dddMobilePhone": 21,
+            "dddComPhone": 21,
+            "comPhone": 37156379
+          },
+          "customerId": "ae286f5aa5e1487591245dd0cfdb08fa",
+          "status": 1,
+          "productName": "SUPER HD II 2025 - P",
+          "name": "RENATO",
+          "secondName": "DA SILVA",
+          "dna": "01000000000100100000000100000000100000000000000010000000000001000000010000000000000000001010000111110000000000000010000000000001011110100000010000010111111111111111111111111000000000000000000000100000000010111111111111010000000011111010111111110001000000000001101111111111111001101110001111111111111111111101111111111111111111111111111111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111101111111101101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100101111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+          "type": "Pós-Pago Antecipado",
+          "addressInstallation": {
+            "linePublic": "Null Portinari",
+            "line1": "Null Portinari, 124 - Itapeba",
+            "line2": "Casa",
+            "number": "124",
+            "city": "Marica",
+            "state": "RJ",
+            "country": "Brasil",
+            "postalCode": "24912325",
+            "referencePoint": "Rua",
+            "addressType": null
+          },
+          "addressBilling": {
+            "linePublic": "Avenida  Portinari",
+            "line1": "Avenida  Portinari, 124 - Itapeba",
+            "line2": ". Casa",
+            "number": "124",
+            "city": "Maricá",
+            "state": "RJ",
+            "country": null,
+            "postalCode": "24912325",
+            "referencePoint": null,
+            "addressType": "Avenida",
+            "resDdd": 21,
+            "resPhone": 37156481
+          },
+          "activation": "2012-08-27T00:00:00.000Z",
+          "email": "renatogre@gmail.com",
+          "parentAccount": "0112901184",
+          "productStatus": "A",
+          "isPrimary": false,
+          "childrenSignatures": [],
+          "chargeStatus": 0,
+          "dunnLevel": null,
+          "equipments": [
+            {
+              "smartcard": "000632903282",
+              "isRecordable": false,
+              "technology": "HD",
+              "subcategory": "PayTV",
+              "serialCode": "SH26",
+              "serialNumber": "670AA63531758555E"
+            },
+            {
+              "smartcard": "000698456332",
+              "isRecordable": false,
+              "technology": "HD",
+              "subcategory": "PayTV",
+              "serialCode": "SH26",
+              "serialNumber": "670AA636131266112"
+            }
+          ]
+        },
+        {
+          "id": "1537164034",
+          "organizationType": 0,
+          "phones": {
+            "mobilePhone": 964682944,
+            "dddMobilePhone": 21,
+            "dddComPhone": 21,
+            "comPhone": 37156379
+          },
+          "customerId": "ae286f5aa5e1487591245dd0cfdb08fa",
+          "status": 2,
+          "productName": "SKY BANDA LARGA FIBRA 400 MB PROMOCIONAL - P",
+          "name": "RENATO",
+          "secondName": "DA SILVA",
+          "dna": "00000100000100000000000000000000000000000000000000000000000000000000000000000000000000100001000111110000000000000000000000000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110100000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+          "type": "Banda Larga",
+          "addressInstallation": {
+            "linePublic": "Null Portinari",
+            "line1": "Null Portinari, 124 - Itapeba",
+            "line2": "Casa",
+            "number": "124",
+            "city": "Marica",
+            "state": "RJ",
+            "country": "Brasil",
+            "postalCode": "24912325",
+            "referencePoint": "Rua",
+            "addressType": null
+          },
+          "addressBilling": {
+            "linePublic": "Avenida  Portinari",
+            "line1": "Avenida  Portinari, 124 - Itapeba",
+            "line2": ". Casa",
+            "number": "124",
+            "city": "Maricá",
+            "state": "RJ",
+            "country": null,
+            "postalCode": "24912325",
+            "referencePoint": null,
+            "addressType": "Avenida",
+            "resDdd": 21,
+            "resPhone": 37156481
+          },
+          "activation": "2024-04-18T00:00:00.000Z",
+          "email": "mayre_gregorio@hotmail.com",
+          "parentAccount": "1537164035",
+          "productStatus": "C",
+          "isPrimary": false,
+          "childrenSignatures": [],
+          "chargeStatus": 0,
+          "dunnLevel": null,
+          "permissions": {
+            "modalWinbackGatinho": true,
+            "modalWinbackCobranca": false,
+            "chatWinbackReativacao": false,
+            "chatWinbackWebview": false,
+            "chatWinbackCobranca": false,
+            "chatWinbackTelevendas": true,
+            "featureVerTelaCompras": true,
+            "featureSkyPlay": true,
+            "featureGuia": true,
+            "featureFatura": true,
+            "featureComprovantes": true,
+            "featureMeusDados": true,
+            "featureMinhasVisitas": true,
+            "featureAtendimento": true,
+            "featureAtendimentoChatReativacao": true,
+            "featureAssistenteVirtual": true,
+            "featureQuiz": true,
+            "featureControleRemoto": true,
+            "featureRealizarCompra": false,
+            "featureEnvioSinal": false,
+            "featureTurbinarPacote": false,
+            "additionalData": {
+              "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=77e6ea0b18c0c090c63504128175e7a4fde368bed7079cff2e4bf0af433ea5dce382127a9cbb08273256209e4d9cf863a3955b02195b2d52ac8dd10e9763a40b8f3191996101653616be77d780afd8a614244ad3e97d484800316306aa5013f8baf4f2df122e6f8ef24aee5eb2d71b4ced37d1c97b3f7333148414bb289dcdc8a720d58c9b71600c60d8338f01e72590a9b83c333567cb260e812eea3bde98dddcd1415eacef17b7637c4632ee2028f712e50a2cac7f140e22d29a14cf5a5729493638d380c3903eef9559380c23ccef3b5127abf51a67fc8988f208df3e2c1f9b54a6de0cb13b2469b85c5c479b3bfa59720b954fbb0dd6c70b&id1=cb2609bbf2ffa0014705390e6f81ee567c373ea509b4c31f2491ac366d7e36c73eae98a9a4cd72062ba96ffe2a132bf8a5f4f20a3d9c7193a1eaa9293962d25e9d7b54cd9ceb290f0da13c9fa448bd8058ea7ad838552fe15233684df70a35177fe565c54bbddf2ff86b9684ce740dbcfa69e42f14716b918393c788edc820ee86d440c6a9ec621b8300d4353c65b084f0616c4bd291c1711649a259f11dba038c78aed8be41c59ce18a120ba4a4280c461d1926f2eff50c09efecd372c19565a7da77655799afb20b7b6c2d990441fde4bf18e7c176cb006df35a2905c1926bad056158a17e14bca74ab40051264995acee1143f740ca6d318e&id2=68334117b33e31850499ae3f&id3=",
+              "chatParams": {
+                "subject": "Cancelamento",
+                "dateNowFormatted": "2026-09-06 12:40:04",
+                "chatExpirationDate": 1788709504707
+              }
+            }
+          },
+          "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=77e6ea0b18c0c090c63504128175e7a4fde368bed7079cff2e4bf0af433ea5dce382127a9cbb08273256209e4d9cf863a3955b02195b2d52ac8dd10e9763a40b8f3191996101653616be77d780afd8a614244ad3e97d484800316306aa5013f8baf4f2df122e6f8ef24aee5eb2d71b4ced37d1c97b3f7333148414bb289dcdc8a720d58c9b71600c60d8338f01e72590a9b83c333567cb260e812eea3bde98dddcd1415eacef17b7637c4632ee2028f712e50a2cac7f140e22d29a14cf5a5729493638d380c3903eef9559380c23ccef3b5127abf51a67fc8988f208df3e2c1f9b54a6de0cb13b2469b85c5c479b3bfa59720b954fbb0dd6c70b&id1=cb2609bbf2ffa0014705390e6f81ee567c373ea509b4c31f2491ac366d7e36c73eae98a9a4cd72062ba96ffe2a132bf8a5f4f20a3d9c7193a1eaa9293962d25e9d7b54cd9ceb290f0da13c9fa448bd8058ea7ad838552fe15233684df70a35177fe565c54bbddf2ff86b9684ce740dbcfa69e42f14716b918393c788edc820ee86d440c6a9ec621b8300d4353c65b084f0616c4bd291c1711649a259f11dba038c78aed8be41c59ce18a120ba4a4280c461d1926f2eff50c09efecd372c19565a7da77655799afb20b7b6c2d990441fde4bf18e7c176cb006df35a2905c1926bad056158a17e14bca74ab40051264995acee1143f740ca6d318e&id2=68334117b33e31850499ae3f&id3="
+        }
+      ],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000632903282",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "670AA63531758555E"
+        },
+        {
+          "smartcard": "000698456332",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "670AA636131266112"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "1537164032": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "ASSISTENCIA PREMIUM MENSAL - P",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "08-05-2026",
+          "end_date": null,
+          "icon": "🛡️"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": null,
+            "name": "ASSISTENCIA PREMIUM MENSAL - P",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "08-05-2026",
+            "startDate": "08-05-2026",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

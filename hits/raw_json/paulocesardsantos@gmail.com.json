@@ -1,0 +1,227 @@
+{
+  "email": "paulocesardsantos@gmail.com",
+  "password": "Sky2022*",
+  "access_token": "ff2eae2d-52ec-4cc1-88d8-ff162d9cd345",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiMzIyOGMxNGMtYWI0OS00NTE5LWFmMzgtN2MzODEwMWI4MGYxIiwiYXRfaGFzaCI6IkRldVp4LVdyT0o0STJYMDdrU1FmVnciLCJkZXZpY2VJZCI6IjUzNGUxODJmNWRjYzFhOTNmYTliOWYxZDJjNzg0ODQyOWIyMjYyMTkiLCJhdWRpdFRyYWNraW5nSWQiOiI5MDBmLTI3YWEtNDRiZS1iYjQyLWU0ODEiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODgxNzE5NjMyOCwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiI5ZWI1NzI3MS0zZmEwLTQ5NTEtODkxMS05NWU3YmYwOTVkYTciLCJzaWduYXR1cmVzIjpbIjE1NTgxOTk1MCJdLCJjdXN0b21lcklkIjoiM2E3Nzg5NjI0MTAzMmRmNjc1YmFlMTUwMGU5OTRkMTAiLCJyZWdpc3RyYXRpb25TaWduYXR1cmUiOiIxNTU4MTk5NTAiLCJnaXZlbl9uYW1lIjoiQU5BIENBUk9MSU5BIENBUlZBTEhPIiwidXNlcm5hbWUiOiJwYXVsb2Nlc2FyZHNhbnRvc0BnbWFpbC5jb20iLCJtYWlsIjoicGF1bG9jZXNhcmRzYW50b3NAZ21haWwuY29tIiwicmVkZW1wdGlvbkxpbWl0IjpudWxsLCJpYXQiOjE3ODg4MTcxOTYsImV4cCI6MTc4ODkwMzU5NiwiaXNzIjoic20tc2t5LnZyaW9zZXJ2aWNlcy5jb20ifQ.QpdfKhmXfk8tSkRRoWICpFEm479qoPDQTMRClRrAphvvoRI-VZlHa0OIvTdKSdzyVszWBD9mCt9NBnjy6VuMYSptHTBxuYtPJg1WPUKjqV1f0NULT0espbhfzsTdvEJyBIY1B1-oyZXRW62MJCqDHB8IAwd9vyeEmc1NRtUI4ZgklboWUnLd4UEAKhA97pvzIYJZ5b8t8phhZ7w3Kf-6jLySRBo6d6K-1jqdFKVuHR92hyUniwIpf2ZpwhidVs-4DcNOj6V6QOvNWDsR66MjhVzw_XUQIc0AifaZaOUzhRHRDYFfK5VMTxFpDiXphHm1RYKbAQ0AXwpNXpl__1tfEg",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "ff2eae2d-52ec-4cc1-88d8-ff162d9cd345",
+    "externalId": "71ed61ee-dd02-51de-ae0d-f746851ab2e0",
+    "username": "3a77896241032df675bae1500e994d10",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "155819950",
+    "protocol": "2026-150293369712",
+    "customer": {
+      "email": "joaopedrobraga2003@gmail.com",
+      "billingProfileCode": "1-AJX7-11848",
+      "name": "ANA",
+      "secondName": "CAROLINA CARVALHO DOS SANTOS",
+      "birthday": "1987-09-21T00:00:00.000Z",
+      "ddd": 21,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5521976394410",
+      "id": "3a77896241032df675bae1500e994d10",
+      "cpf": "12465161792"
+    },
+    "signatures": [
+      {
+        "id": "155819950",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 976394410,
+          "dddMobilePhone": 21,
+          "dddComPhone": 21,
+          "comPhone": 981669060
+        },
+        "customerId": "3a77896241032df675bae1500e994d10",
+        "status": 1,
+        "productName": "SUPER HD EXCLUSIVO 2025 - P",
+        "name": "ANA",
+        "secondName": "CAROLINA CARVALHO DOS SANTOS",
+        "dna": "01000000000100100000000000010000010000000000000010000000000100000000000000000000000000001010000111110000000000000001000000000001011110100000010000010111111111111110011111111000000000000000000000100000000010111111111111100000000011111010111111110001000000000001101011111111110001101110001111111111110111111101111111111111111111111111110011111111111110111111111110011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Isidro Rocha",
+          "line1": "Rua Isidro Rocha, 135 - Vigario Geral",
+          "line2": "Apartamento 101  Fundos",
+          "number": "135",
+          "city": "Rio De Janeiro",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "21241180",
+          "referencePoint": "Tecnosat",
+          "addressType": "Rua",
+          "resDdd": 21,
+          "resPhone": 26739435
+        },
+        "addressBilling": {
+          "linePublic": "Rua Barbara Lais",
+          "line1": "Rua Barbara Lais, 292 - Vila Lais",
+          "line2": ".",
+          "number": "292",
+          "city": "Sao Joao De Meriti",
+          "state": "RJ",
+          "country": null,
+          "postalCode": "25581001",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 21,
+          "resPhone": 26739435
+        },
+        "activation": "2014-01-17T00:00:00.000Z",
+        "email": "joaopedrobraga2003@gmail.com",
+        "parentAccount": "0155819950",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000655955763",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "670AA63537609442B"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "155819950",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 976394410,
+        "dddMobilePhone": 21,
+        "dddComPhone": 21,
+        "comPhone": 981669060
+      },
+      "customerId": "3a77896241032df675bae1500e994d10",
+      "status": 1,
+      "productName": "SUPER HD EXCLUSIVO 2025 - P",
+      "name": "ANA",
+      "secondName": "CAROLINA CARVALHO DOS SANTOS",
+      "dna": "01000000000100100000000000010000010000000000000010000000000100000000000000000000000000001010000111110000000000000001000000000001011110100000010000010111111111111110011111111000000000000000000000100000000010111111111111100000000011111010111111110001000000000001101011111111110001101110001111111111110111111101111111111111111111111111110011111111111110111111111110011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Isidro Rocha",
+        "line1": "Rua Isidro Rocha, 135 - Vigario Geral",
+        "line2": "Apartamento 101  Fundos",
+        "number": "135",
+        "city": "Rio De Janeiro",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "21241180",
+        "referencePoint": "Tecnosat",
+        "addressType": "Rua",
+        "resDdd": 21,
+        "resPhone": 26739435
+      },
+      "addressBilling": {
+        "linePublic": "Rua Barbara Lais",
+        "line1": "Rua Barbara Lais, 292 - Vila Lais",
+        "line2": ".",
+        "number": "292",
+        "city": "Sao Joao De Meriti",
+        "state": "RJ",
+        "country": null,
+        "postalCode": "25581001",
+        "referencePoint": null,
+        "addressType": "Rua",
+        "resDdd": 21,
+        "resPhone": 26739435
+      },
+      "activation": "2014-01-17T00:00:00.000Z",
+      "email": "joaopedrobraga2003@gmail.com",
+      "parentAccount": "0155819950",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000655955763",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "670AA63537609442B"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "155819950": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "12-04-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PREMIUM R$ 9,90 POR 2M - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "09-04-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "ASSINATURAS DIGITAIS VI",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "18-08-2026",
+          "end_date": null,
+          "icon": "📺"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "12-04-2026",
+            "startDate": "12-04-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "DISNEY PREMIUM R$ 9,90 POR 2M - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "09-04-2026",
+            "startDate": "09-04-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-21E065E",
+            "name": "ASSINATURAS DIGITAIS VI",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": null,
+            "price": "2.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "18-08-2026",
+            "startDate": "18-08-2026",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

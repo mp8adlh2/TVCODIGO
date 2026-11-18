@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: NET_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (3): 515, 909, Shopee
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1801596910	dsca	true
+.netflix.com	FALSE	/	TRUE	1801596908	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKkA8ggENgaKRbbTF46VEe_dvPyuOUxgOltCQ8L5ND5GbGSLCNyaswngVCCN1j37kbDehae2Zrcpe2n8-1WD2_eGP_CQWwnUTMOAbmmjUJn1p6tRgkc2bjMcVRjjIQs6xpuNdnrn2n4MnIPZJCbFoOCjGUk9InQTPvz3rGQsCjhcOJrT48lL0MvfXAZjbN3A4IJfRgggUgjNhENt5ORC7kmUAZLYX-w6iL1e5-_fjCEgiMqzKcqvl_4M0IrLufpU2P6OYy_0FwlxcBlK78uggioj8aGSAKItwCsI-gT4uln-xRtyhIVk5jQBPxqKWFK6X5j7cZ9U70LW44VOyJhBhS4rs5NAPFdOtryPwpxu59AZF04hDIFg_2xJEHlFzqYjV9CgUCksIPVJWMu0Ycr6B7-g93yKgNpAnSwi9VAwWcYo7LJ8k00JPJUAfrA48nchbrNS7DUDh-B8WWUT3anXDpNHwiCFvhm5-vU-GpvDXTa1JJGK2g-LHYxYmj6gqo8sEsaPQvtG9G877UNmk2qamd3Ng-Oy4L3w-1ij9beFP8xZZiWs2UCcRgGIg4KDKy79R4jlWtTEa5CXQ..%26pg%3DSDPME3EPLVHJ5O5VM7AZQRGW4U%26ch%3DAQEAEAABABQiHYNR4ncWVgtTGhKQRzQJUFlYdx8rGHw.
+.netflix.com	FALSE	/	FALSE	1796554944	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554944	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1801596908	nfvdid	BQFmAAEBEJ3HbTkL0435ZsTv7V_rL5xgrtRgI6H_B2TbgSQX7G52o30eVhSuMXkBCgfQBNtD-sh0AbF2xPlR31Us2PKeJm_cTLdxCAw4y0_2y3O5G9Bc49dRzMIE0kHAZxBvffnaeoqFGvN0J2PV1ODPzLX9OR8X
+.netflix.com	FALSE	/	TRUE	1801596908	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQSFgKX2lJszhwy8jHPB8uIJG77PYD9rAU.%26dt%3D1786044950591

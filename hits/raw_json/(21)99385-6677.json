@@ -1,0 +1,420 @@
+{
+  "email": "(21)99385-6677",
+  "password": "Xereca8181",
+  "access_token": "10b8ff95-0a1c-494c-8b4a-1818482d180d",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiOGVmM2Y0MjUtNGU4Ny00MTYwLTlhMGItOTlmZDhkYTdhODBiIiwiYXRfaGFzaCI6IkNUUzVJd0N6X0dlYkxFemVwcW5FeVEiLCJkZXZpY2VJZCI6IjM3ZWY5ODY1MjFkMWQ4YTYxMWMxOTFiZjZkZjkxNDA3ZDlkYmU2ZjUiLCJhdWRpdFRyYWNraW5nSWQiOiI5YTcwLTAzNDgtNGU0ZS1hYmQxLWVjYzQiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODgxNTgxNDA3OSwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiIwZGVlYTljMy1lODE1LTQwYjYtOWI1Yi0zNzUwMjM1MWU5NmYiLCJzaWduYXR1cmVzIjpbIjE5NTc4OTI4NiIsIjE1MDU5Nzk5MjciLCIxNTI4MTQwMDc5IiwiMTU0MDczNDgzMSJdLCJjdXN0b21lcklkIjoiNWIyY2ViMGE1ZWM4ZGZhYzkzNGYyYTMyMzAyY2ViOGUiLCJyZWdpc3RyYXRpb25TaWduYXR1cmUiOiIxNTA1OTc5OTI3IiwiZ2l2ZW5fbmFtZSI6IkxFQU5EUk8gR09ORElNIiwidXNlcm5hbWUiOiIyMTk5Mzg1NjY3NyIsInRlbGVwaG9uZU51bWJlciI6IjIxOTkzODU2Njc3Iiwic2lkIjoiMzdlZjk4NjUyMWQxZDhhNjExYzE5MWJmNmRmOTE0MDdkOWRiZTZmNSIsInN1Ym5hbWUiOiIwZGVlYTljMy1lODE1LTQwYjYtOWI1Yi0zNzUwMjM1MWU5NmYiLCJyZWRlbXB0aW9uTGltaXQiOm51bGwsImlhdCI6MTc4ODgxNTgxNCwiZXhwIjoxNzg4OTAyMjE0LCJpc3MiOiJzbS1za3kudnJpb3NlcnZpY2VzLmNvbSJ9.QrTLivWJ3aI9w3OMyHe7SE3F-9gmKNoRCk-k1mP8cj0iRBPorwagxGHv-80BeEsmi0BGk4-4yI5dpTOC06Az6K5c-vpBJF_kxKXCJ2PzA2UmmiywQJelV7yF2ZmWzjvLfLYyKepM6oYmEKxXhUV9Qu8b4JkE3-vlFjabWkDzZBDwAv0Y27TB8pZBDYaaeWCvQZa2ZsTvnNQnps3qnLwhbdtngFU8-YYzsB5rJq-caMb3CZx7TcQvWJlpvFAApAjY3JuI-wWrDj0puyIaCKYHlr1W4UwB_V40PsbKIGBoNoe6vmf_By6DljTT7nkegT9_Gv8GuXVYxR2K32dkNJi2Bw",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "10b8ff95-0a1c-494c-8b4a-1818482d180d",
+    "externalId": "d15c6b9a-7e95-51de-88fd-8b6cc8e6fa28",
+    "username": "5b2ceb0a5ec8dfac934f2a32302ceb8e",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "1505979927",
+    "protocol": "2026-150293140544",
+    "customer": {
+      "email": "LEANDROPVS@GMAIL.COM",
+      "billingProfileCode": "1-FJ7K03Z",
+      "name": "LEANDRO",
+      "secondName": "GONDIM MONTEIRO",
+      "birthday": "1981-07-27T00:00:00.000Z",
+      "ddd": 21,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5521993856677",
+      "id": "5b2ceb0a5ec8dfac934f2a32302ceb8e",
+      "cpf": "08834337700"
+    },
+    "signatures": [
+      {
+        "id": "195789286",
+        "organizationType": 8,
+        "phones": {
+          "mobilePhone": 968460995,
+          "dddMobilePhone": 21,
+          "dddComPhone": 21,
+          "comPhone": 997320777
+        },
+        "customerId": "5b2ceb0a5ec8dfac934f2a32302ceb8e",
+        "status": 2,
+        "productName": "SKY LIGHT 11/21 OFERTA - P",
+        "name": "LEANDRO",
+        "secondName": "GONDIM MONTEIRO",
+        "dna": "00000100000100000010000000100000000000000000000000000000000000000000000000000000000000100010000111110000000000000000010000100000011110000100000000100111111111111111111111111000000000000000100000010000010010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Antonio Silva",
+          "line1": "Rua Antonio Silva, 68 - Fonseca",
+          "line2": null,
+          "number": "68",
+          "city": "Niteroi",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "24130175",
+          "referencePoint": "Próximo Ao Supermercado Princesa E Do Bar Botafogo.",
+          "addressType": "Rua"
+        },
+        "addressBilling": {
+          "linePublic": "Rua Antonio Silva",
+          "line1": "Rua Antonio Silva, 68 - Fonseca",
+          "line2": null,
+          "number": "68",
+          "city": "Niteroi",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "24130175",
+          "referencePoint": "Próximo Ao Supermercado Princesa E Do Bar Botafogo.",
+          "addressType": "Rua"
+        },
+        "activation": "2015-06-17T00:00:00.000Z",
+        "email": "LEANDROPVS@GMAIL.COM",
+        "parentAccount": "0195789286",
+        "productStatus": "C",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [],
+        "permissions": {
+          "modalWinbackGatinho": true,
+          "modalWinbackCobranca": false,
+          "chatWinbackReativacao": false,
+          "chatWinbackWebview": false,
+          "chatWinbackCobranca": false,
+          "chatWinbackTelevendas": true,
+          "featureVerTelaCompras": true,
+          "featureSkyPlay": true,
+          "featureGuia": true,
+          "featureFatura": true,
+          "featureComprovantes": true,
+          "featureMeusDados": true,
+          "featureMinhasVisitas": true,
+          "featureAtendimento": true,
+          "featureAtendimentoChatReativacao": true,
+          "featureAssistenteVirtual": true,
+          "featureQuiz": true,
+          "featureControleRemoto": true,
+          "featureRealizarCompra": false,
+          "featureEnvioSinal": false,
+          "featureTurbinarPacote": false,
+          "additionalData": {
+            "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=2b908d77478cd595feacc1045a7b1be48713a8d4ac6d147326d569a53497b1088f8f443226d027ddca3825f2cddac4c88c94e7a06ed640d4c1442f4f863f45199e5998090f450bb9f2d0bc6013da58ac5b2db3901ee603ca2f3cce64007f4d3e24221d1a491d29279c4c3edddcdd0cdf23e659eb0a9bb0893baf8ef898f248ad60fd410a6ef4d19d1a60c825543f43b6b214b23eb80297712b238d7871f60768fff96567d4bc0e634591f08df74282d4f5177af966b904a4d53255020e88455aaaf259dd5b8fd695cb8fe055f0665a62b5a8f630fd6416ea9d21edb7eba5e20a0c8ac8ddd6f2116821b4f18f210a7c5ea26dad4eaaef47a28bfc&id1=5990112cd12a4581f12f3948843eeebd730a091156f25a3fb67e6db3b0d29b7337b466439c63963ea9a3556a69428e325b6f3aee5b435c39dea3c6556f230b46e8993bd2c63d05356e82587c83f26444bdbd168927ed8fe8aaa73221c49479e3319fc9fbd7735c98e2b247515e9dda3889f0775989bf278690f3c28776d1de738fb3b31ada47070c8aacfd8d13adedcb6ce45aa337c0f9d0f1356f88acb42a52cd90f3cc62f8f3fbd7f8045a63fa1a07dffaa9fbcce7862aeb4cbe3a8236c0d6f2165b4899e7e88b942910dc0a50a0dcd64eb651de63368457a800b3d61b95e8fe0b3202c0af07b553c1f34a2cb473751c8fb7bc5456b0a4003b&id2=d402913086fb2ca673e0e26c&id3=",
+            "chatParams": {
+              "subject": "Cancelamento",
+              "dateNowFormatted": "2026-09-07 18:16:50",
+              "chatExpirationDate": 1788816110092
+            }
+          }
+        },
+        "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=2b908d77478cd595feacc1045a7b1be48713a8d4ac6d147326d569a53497b1088f8f443226d027ddca3825f2cddac4c88c94e7a06ed640d4c1442f4f863f45199e5998090f450bb9f2d0bc6013da58ac5b2db3901ee603ca2f3cce64007f4d3e24221d1a491d29279c4c3edddcdd0cdf23e659eb0a9bb0893baf8ef898f248ad60fd410a6ef4d19d1a60c825543f43b6b214b23eb80297712b238d7871f60768fff96567d4bc0e634591f08df74282d4f5177af966b904a4d53255020e88455aaaf259dd5b8fd695cb8fe055f0665a62b5a8f630fd6416ea9d21edb7eba5e20a0c8ac8ddd6f2116821b4f18f210a7c5ea26dad4eaaef47a28bfc&id1=5990112cd12a4581f12f3948843eeebd730a091156f25a3fb67e6db3b0d29b7337b466439c63963ea9a3556a69428e325b6f3aee5b435c39dea3c6556f230b46e8993bd2c63d05356e82587c83f26444bdbd168927ed8fe8aaa73221c49479e3319fc9fbd7735c98e2b247515e9dda3889f0775989bf278690f3c28776d1de738fb3b31ada47070c8aacfd8d13adedcb6ce45aa337c0f9d0f1356f88acb42a52cd90f3cc62f8f3fbd7f8045a63fa1a07dffaa9fbcce7862aeb4cbe3a8236c0d6f2165b4899e7e88b942910dc0a50a0dcd64eb651de63368457a800b3d61b95e8fe0b3202c0af07b553c1f34a2cb473751c8fb7bc5456b0a4003b&id2=d402913086fb2ca673e0e26c&id3="
+      },
+      {
+        "id": "1505979927",
+        "organizationType": 8,
+        "phones": {
+          "mobilePhone": 993856677,
+          "dddMobilePhone": 21
+        },
+        "customerId": "5b2ceb0a5ec8dfac934f2a32302ceb8e",
+        "status": 1,
+        "productName": "REC MASTER 30D - Oferta Migração",
+        "name": "LEANDRO",
+        "secondName": "GONDIM MONTEIRO",
+        "dna": "01000000000100000000000000000000010000000000000000000000000000000000000000000000000000100010000111110000000000000000000000000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pré-Pago",
+        "addressInstallation": {
+          "linePublic": "Rua Antonio Silva",
+          "line1": "Rua Antonio Silva, 68 - Fonseca",
+          "line2": null,
+          "number": "68",
+          "city": "Niteroi",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "24130175",
+          "referencePoint": "Próximo Ao Supermercado Princesa E Do Bar Botafogo.",
+          "addressType": "Rua"
+        },
+        "addressBilling": {
+          "linePublic": "Rua Antonio Silva",
+          "line1": "Rua Antonio Silva, 68 - Fonseca",
+          "line2": null,
+          "number": "68",
+          "city": "Niteroi",
+          "state": "RJ",
+          "country": null,
+          "postalCode": "24130175",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2017-03-31T00:00:00.000Z",
+        "email": "LEANDROPVS@GMAIL.COM",
+        "parentAccount": "1505979928",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000665590667",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "CE0AA63613719266B"
+          }
+        ]
+      },
+      {
+        "id": "1528140079",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 993856677,
+          "dddMobilePhone": 21
+        },
+        "customerId": "5b2ceb0a5ec8dfac934f2a32302ceb8e",
+        "status": 2,
+        "productName": "EASY SD 2021 - P",
+        "name": "LEANDRO",
+        "secondName": "GONDIM MONTEIRO",
+        "dna": "00000100000100000000000000000000000000000000000000000000000000000000000000000000000000100010000111110000000000000000000000100000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Antonio Silva",
+          "line1": "Rua Antonio Silva, 11 - Fonseca",
+          "line2": null,
+          "number": "11",
+          "city": "Niteroi",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "24130175",
+          "referencePoint": "Próx Super Mercado Princesa",
+          "addressType": "Rua",
+          "resDdd": 21,
+          "resPhone": 20827271
+        },
+        "addressBilling": {
+          "linePublic": "Travessa Renato Pacheco Marques",
+          "line1": "Travessa Renato Pacheco Marques, 79 - Fonseca",
+          "line2": null,
+          "number": "79",
+          "city": "Niterói",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "24120200",
+          "referencePoint": "Prox Ao Posto Br",
+          "addressType": "Travessa",
+          "resDdd": 21,
+          "resPhone": 20827271
+        },
+        "activation": "2021-11-27T00:00:00.000Z",
+        "email": "lenadropvs@gmail.com",
+        "parentAccount": "1528140076",
+        "productStatus": "C",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [],
+        "permissions": {
+          "modalWinbackGatinho": true,
+          "modalWinbackCobranca": false,
+          "chatWinbackReativacao": false,
+          "chatWinbackWebview": false,
+          "chatWinbackCobranca": false,
+          "chatWinbackTelevendas": true,
+          "featureVerTelaCompras": true,
+          "featureSkyPlay": true,
+          "featureGuia": true,
+          "featureFatura": true,
+          "featureComprovantes": true,
+          "featureMeusDados": true,
+          "featureMinhasVisitas": true,
+          "featureAtendimento": true,
+          "featureAtendimentoChatReativacao": true,
+          "featureAssistenteVirtual": true,
+          "featureQuiz": true,
+          "featureControleRemoto": true,
+          "featureRealizarCompra": false,
+          "featureEnvioSinal": false,
+          "featureTurbinarPacote": false,
+          "additionalData": {
+            "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=910623a48d0344ff6e49016e2f91d1a7bcdfba88e7761c4d2d034c0e037ed0c0142c8a129f0b956c625377b6252775c39ff83f166371793475c7022ac4d569afd7cf0bb73451a28df01886c112b6023ddb967d88891f7182e8edc4ad8c16418fd24af4183158a137a643ec90ed609b58bc47f8b037b7ab1fa5b056ba14f78c2e00493af80737fba6200e25effc5784c716f8f936d6dcc5b2a8fc7fd07d840a7aa2314363dd5bc34ce79b623aa42617cd90e2f93753824516ec39c37e8f5fdd9a84421c7cfc543bae19bf18f66b61814fadd8a45690ecd686c1bc334ccfa1b11dfba7dcfab1eb4077497f5efb7dde77dca5eab0652bf0abbe9389&id1=04d35a89c961e711efad565be51ce7deca25f5a7b83fe7a2195b84e1ab4d87c654ee97a4279d4c1e11c64e13dced33cde4ce286e1f29aba1ec694e18e1bfc6223f595b390bc9804e099b552245e3940ee57302bfd82a67afcd78be69db5a2fbb98c766f30bf1d578cdf1bb22867e1361628484d95ecfdc30fd508451c9d1800e8b9d91d2f1646a3ac08b9053a1937f999b1073aa12491662b6567563befb2e6413de27fd3fa9a2657e36257f9d45679419b74dc501c0137425d614618bccce110d12caf391e6d8c362c8e69db5ce13b09bc94f6e4c67b2a4d3018871e8c78c1e90f1fd1d5e750f616841bce3ba1992c46e1d3a843ada43747ea1&id2=a2fad6dbbc216448c9c6a9a5&id3=",
+            "chatParams": {
+              "subject": "Cancelamento",
+              "dateNowFormatted": "2026-09-07 18:16:50",
+              "chatExpirationDate": 1788816110099
+            }
+          }
+        },
+        "chatUrl": "https://contactmail.directtalk.com.br/clientes/sky/new/sky-faq.html?idd=null&segment=null&nome=sky&id0=910623a48d0344ff6e49016e2f91d1a7bcdfba88e7761c4d2d034c0e037ed0c0142c8a129f0b956c625377b6252775c39ff83f166371793475c7022ac4d569afd7cf0bb73451a28df01886c112b6023ddb967d88891f7182e8edc4ad8c16418fd24af4183158a137a643ec90ed609b58bc47f8b037b7ab1fa5b056ba14f78c2e00493af80737fba6200e25effc5784c716f8f936d6dcc5b2a8fc7fd07d840a7aa2314363dd5bc34ce79b623aa42617cd90e2f93753824516ec39c37e8f5fdd9a84421c7cfc543bae19bf18f66b61814fadd8a45690ecd686c1bc334ccfa1b11dfba7dcfab1eb4077497f5efb7dde77dca5eab0652bf0abbe9389&id1=04d35a89c961e711efad565be51ce7deca25f5a7b83fe7a2195b84e1ab4d87c654ee97a4279d4c1e11c64e13dced33cde4ce286e1f29aba1ec694e18e1bfc6223f595b390bc9804e099b552245e3940ee57302bfd82a67afcd78be69db5a2fbb98c766f30bf1d578cdf1bb22867e1361628484d95ecfdc30fd508451c9d1800e8b9d91d2f1646a3ac08b9053a1937f999b1073aa12491662b6567563befb2e6413de27fd3fa9a2657e36257f9d45679419b74dc501c0137425d614618bccce110d12caf391e6d8c362c8e69db5ce13b09bc94f6e4c67b2a4d3018871e8c78c1e90f1fd1d5e750f616841bce3ba1992c46e1d3a843ada43747ea1&id2=a2fad6dbbc216448c9c6a9a5&id3="
+      },
+      {
+        "id": "1540734831",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 993856677,
+          "dddMobilePhone": 21
+        },
+        "customerId": "5b2ceb0a5ec8dfac934f2a32302ceb8e",
+        "status": 1,
+        "productName": "SUPER HD 2026 - P",
+        "name": "LEANDRO",
+        "secondName": "GONDIM MONTEIRO",
+        "dna": "01000010000000000000000000000000010000000000000000000000000000000000000000000000000000100010000111110000000000000000000000000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Antônio Silva",
+          "line1": "Rua Antônio Silva, 11 - Fonseca",
+          "line2": "Antônio Silva",
+          "number": "11",
+          "city": "Niterói",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "24130175",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "addressBilling": {
+          "linePublic": "Rua Antônio Silva",
+          "line1": "Rua Antônio Silva, 11 - Fonseca",
+          "line2": "Antônio Silva",
+          "number": "11",
+          "city": "Niterói",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "24130175",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2026-08-14T00:00:00.000Z",
+        "email": "leandro10gondim@gmail.com",
+        "parentAccount": "1540734830",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001152170278",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A0120825247932"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "1540734831",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 993856677,
+        "dddMobilePhone": 21
+      },
+      "customerId": "5b2ceb0a5ec8dfac934f2a32302ceb8e",
+      "status": 1,
+      "productName": "SUPER HD 2026 - P",
+      "name": "LEANDRO",
+      "secondName": "GONDIM MONTEIRO",
+      "dna": "01000010000000000000000000000000010000000000000000000000000000000000000000000000000000100010000111110000000000000000000000000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Antônio Silva",
+        "line1": "Rua Antônio Silva, 11 - Fonseca",
+        "line2": "Antônio Silva",
+        "number": "11",
+        "city": "Niterói",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "24130175",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "addressBilling": {
+        "linePublic": "Rua Antônio Silva",
+        "line1": "Rua Antônio Silva, 11 - Fonseca",
+        "line2": "Antônio Silva",
+        "number": "11",
+        "city": "Niterói",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "24130175",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2026-08-14T00:00:00.000Z",
+      "email": "leandro10gondim@gmail.com",
+      "parentAccount": "1540734830",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "001152170278",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A0120825247932"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "1540734831": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "AMAZON PRIME",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "14-08-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "ASSINATURAS DIGITAIS VI",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "14-08-2026",
+          "end_date": null,
+          "icon": "📺"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-21ATHJR",
+            "name": "AMAZON PRIME",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Amazon%403x.png",
+            "urlDetail": "https://www.sky.com.br/amazon-prime",
+            "price": "5.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "14-08-2026",
+            "startDate": "14-08-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-21E065E",
+            "name": "ASSINATURAS DIGITAIS VI",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": null,
+            "price": "2.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "14-08-2026",
+            "startDate": "14-08-2026",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "email": "regiellylima08@gmail.com",
+  "password": "Maycom&23",
+  "access_token": "b0a6d120-455e-4ba3-811e-3962b4ae1147",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiMmVmOTlmNDEtYWU3Ny00MDU5LTgxNDYtY2YwOGUyMmQ3MGZiIiwiYXRfaGFzaCI6IjJNQmI4c3ZhbXQ1YW9hY0hqaXBCRWciLCJkZXZpY2VJZCI6IjVhMjBlMTE5NTgxYTAzYjhmOWEyN2Q4YWRiNGFlZDNmY2RlN2ZhZTEiLCJhdWRpdFRyYWNraW5nSWQiOiI4MTdjLWIzN2ItNGUwYy1iODUzLTQ1MzQiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjc1MDcxMSwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJkTU9zYzE4aUk0QlA1OXFlZ2JXTHF3Iiwic2lnbmF0dXJlcyI6WyIxNTM5OTA0Njk2Il0sImN1c3RvbWVySWQiOiJjMTlhZGEyYjBkMDRjMzMyZTdmZWZiYjc4MTk5ZGExMSIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjE1Mzk5MDQ2OTYiLCJnaXZlbl9uYW1lIjoiUkVHSUVMTFkiLCJmYW1pbHlfbmFtZSI6InNreSIsInVzZXJuYW1lIjoicmVnaWVsbHlsaW1hMDhAZ21haWwuY29tIiwibWFpbCI6InJlZ2llbGx5bGltYTA4QGdtYWlsLmNvbSIsInJlZGVtcHRpb25MaW1pdCI6bnVsbCwiaWF0IjoxNzg4MzEyNzUwLCJleHAiOjE3ODgzOTkxNTAsImlzcyI6InNtLXNreS52cmlvc2VydmljZXMuY29tIn0.iKIxlRR-ZZXvKXfLWlWDy_iB8ZfPpoPqYz797bsByl5A3jZPeLpyXRQah9avO-2tamV6oBHN3gGxC88pdiUGh7Nj8dLgjF53gJJj5TvnNrdLYgXbC2P1OjcWXEySgV-3zqgXyouL8NL3JOhI0-1BXoMZDqK9f7W1yueIhoRJdKgzfqmaE3onrqjQls2NIP0Wge8vwzJwGZuJp7GG_LzSjI59tBueMTYLO1x4-ppkID_ngCPJlPyB4sgApkkoF93T8_9avqTLZGJKHYOXD6Sd_sYeOEh-3WwRoW7HwrqbWQwlAs59bN85zVVLbBsXCOgadxXu1mTKycXN5TqH8wrueA",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "b0a6d120-455e-4ba3-811e-3962b4ae1147",
+    "externalId": "bcdfd3d3-6dcf-5d80-aa84-05c1983bf7a1",
+    "username": "c19ada2b0d04c332e7fefbb78199da11",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "1539904696",
+    "protocol": "2026-150197192589",
+    "customer": {
+      "email": "regiellylima08@gmail.com",
+      "billingProfileCode": "1-1VPZ6115",
+      "name": "REGIELLY",
+      "secondName": "DE SOUSA VIEIRA",
+      "birthday": "2007-03-25T00:00:00.000Z",
+      "ddd": 86,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5586998077548",
+      "id": "c19ada2b0d04c332e7fefbb78199da11",
+      "cpf": "10572722303"
+    },
+    "signatures": [
+      {
+        "id": "1539904696",
+        "organizationType": 14,
+        "phones": {
+          "mobilePhone": 998077548,
+          "dddMobilePhone": 86,
+          "dddComPhone": 86,
+          "comPhone": 998077548
+        },
+        "customerId": "c19ada2b0d04c332e7fefbb78199da11",
+        "status": 1,
+        "productName": "SKY MAIS SOU+SKY - A",
+        "name": "REGIELLY",
+        "secondName": "DE SOUSA VIEIRA",
+        "dna": "00000000100000000000000000000000000000000000000000000000000000000000000000000000000000100000000111110000000000000000000000000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110000000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110111111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Quadra 159",
+          "line1": "Quadra 159, 13 - Itararé",
+          "line2": "Não Tem",
+          "number": "13",
+          "city": "Teresina",
+          "state": "PI",
+          "country": "Brasil",
+          "postalCode": "64078026",
+          "referencePoint": "Não Tem",
+          "addressType": "Quadra",
+          "resDdd": 86,
+          "resPhone": 998077548
+        },
+        "addressBilling": {
+          "linePublic": "Quadra 159",
+          "line1": "Quadra 159, 13 - Itararé",
+          "line2": "Não Tem",
+          "number": "13",
+          "city": "Teresina",
+          "state": "PI",
+          "country": "Brasil",
+          "postalCode": "64078026",
+          "referencePoint": "Não Tem",
+          "addressType": "Quadra",
+          "resDdd": 86,
+          "resPhone": 998077548
+        },
+        "activation": "2026-03-02T00:00:00.000Z",
+        "email": "regiellylima08@gmail.com",
+        "parentAccount": "1539904695",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "1539904696",
+      "organizationType": 14,
+      "phones": {
+        "mobilePhone": 998077548,
+        "dddMobilePhone": 86,
+        "dddComPhone": 86,
+        "comPhone": 998077548
+      },
+      "customerId": "c19ada2b0d04c332e7fefbb78199da11",
+      "status": 1,
+      "productName": "SKY MAIS SOU+SKY - A",
+      "name": "REGIELLY",
+      "secondName": "DE SOUSA VIEIRA",
+      "dna": "00000000100000000000000000000000000000000000000000000000000000000000000000000000000000100000000111110000000000000000000000000000011110000100000000000011111111111111111111111000000000000000000000000000000000111111111111111000000011111010111111110000000000000001101111111111111001101110001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110111111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Quadra 159",
+        "line1": "Quadra 159, 13 - Itararé",
+        "line2": "Não Tem",
+        "number": "13",
+        "city": "Teresina",
+        "state": "PI",
+        "country": "Brasil",
+        "postalCode": "64078026",
+        "referencePoint": "Não Tem",
+        "addressType": "Quadra",
+        "resDdd": 86,
+        "resPhone": 998077548
+      },
+      "addressBilling": {
+        "linePublic": "Quadra 159",
+        "line1": "Quadra 159, 13 - Itararé",
+        "line2": "Não Tem",
+        "number": "13",
+        "city": "Teresina",
+        "state": "PI",
+        "country": "Brasil",
+        "postalCode": "64078026",
+        "referencePoint": "Não Tem",
+        "addressType": "Quadra",
+        "resDdd": 86,
+        "resPhone": 998077548
+      },
+      "activation": "2026-03-02T00:00:00.000Z",
+      "email": "regiellylima08@gmail.com",
+      "parentAccount": "1539904695",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null
+    }
+  ],
+  "additionals_map": {
+    "1539904696": {
+      "included": [],
+      "additionals": []
+    }
+  }
+}

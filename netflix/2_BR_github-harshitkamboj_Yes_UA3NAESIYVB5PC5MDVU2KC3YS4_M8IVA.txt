@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Standard
+Next Billing: UNKNOWN
+Payment: BRISANET_BILLED
+Quality: HD
+Streams: 2
+Price: N/A
+Extra Member: Yes
+Profiles (5): Neto, Vanessa, Mickael, Valeska, Infantil
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1821720134	OptanonAlertBoxClosed	2026-09-23T17:22:14.459Z
+.netflix.com	FALSE	/	FALSE	1796554944	flwssn	0c090fdd-d3f1-4f54-a2ab-be7b78c540ad
+.netflix.com	FALSE	/	TRUE	1796554944	gsid	63569ddb-0b27-4564-8f89-cf5b4a545f9d
+.netflix.com	FALSE	/	FALSE	1797960136	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797960136	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	TRUE	1821720188	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKdAzKF2yjrMaJtaRJHKgEZQdOsbBQNy1hYsy98HXtLy3yH55T6YRZWqdJiFAvlMmfM9zoNF4ihZUT1FIUsQ0gKCamVZR84gKPTKh8ATd-Kt9szAl3Druqsc-f0UEvdZXtf6uh9ZIbATG1LcnbbBkq4dVC0MCr01fOJCQ8kiMZt_q2Ymf38OOFBfvopTDb-7-yXDTD1OrUbWvuPRFMFV_b-MBQ_vyY5AakxDB-USHt-wHgI5x9HcEmnN9VswwCj87RpVolcySHIEQrIqtuIBJr0K12HWM0ESoA_PCIQrnQe4lzuJWq4GymNhxC6Gdx1nWcjy7ua9KjoQQYjc3BtF6aP4o5lkdWNoHr3f97GY6HldnYLaFyYgRu_FeeLE8FFLIn68PcL6CSjFakEQsIcHOfijsAFn6GxU8auEU-g79wsvJO-kafK8hN5PfyyoD6Ghee7pwpwCws0AgjOJabl5qJ_dzbFUQHjjYvX4m-GKHvaCXRRlU2m1MWf7kL4wULmr-KbJAg6qQ9qx6G2uB6KTtb8utvW3Ks1x8TTXqslO4h4GAYiDgoMV-JwwTIQb7pTW0Cq%26pg%3DUA3NAESIYVB5PC5MDVU2KC3YS4%26ch%3DAQEAEAABABTVU-7tykZn9Gw2Gi7nSMabfh_TXbVMTkE.
+.netflix.com	FALSE	/	FALSE	1821720191	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+23+2026+14%3A23%3A11+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=798469c1-0ffd-4842-8398-4857cb724cba&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&fclco=&lastConsentTs=1790184134&intType=3&crTime=1790184134913&geolocation=BR%3BCE
+.netflix.com	FALSE	/	TRUE	1821720188	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRWEfq67d9vBcr5iPkUieJJ6sH3g6WRg28.%26dt%3D1790184189171
+.netflix.com	FALSE	/	TRUE	1824744190	dsca	true
+.netflix.com	FALSE	/	FALSE	1821720188	nfvdid	BQFmAAEBEAMeMiSQcAYBDVaXO_WDngVgiwu7JUaxQW15jeBesoc3un5CETrgOH0c83hnGKIyD7wSDpFT49uc6Hk3xyD1aERu2StaUC3GBaQbou-ZgyErckEiDDyocgnAvO-efgg3bSGkyJwkGSWtSFC8qrT1TwrH
+.netflix.com	FALSE	/	FALSE	1796554944	profilesNewSession	0

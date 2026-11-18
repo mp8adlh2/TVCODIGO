@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: December 3, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: BRL 59.90
+Extra Member: Yes
+Profiles (5): Jayeshabchung, Maria Laura, Camilinha, Raya, Tamim Sam
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1822062595	NetflixId	ct%3DBgjHlOvcAxKFBKmTSaMCvG34sa9lgdNr0js81ozyeAaD3t5omtVs1EHmpsh-mgAKJraLpd1DB1X2zlxPSSvtrZQen8oaguYO_VzNsKC2yuICy17KX2kAi1sLUAk6zB5Ehmrls65dZJku3RW4zTJnh--8yibXXiNlk9JbBY6QHbd5ics5DuboXPxtXDdqFv51hMAEFVkpcKTlVwCmSHNprNG2EGtpTxzGEGVdKV8Y42nnpiYbfnq_ztjqHMyiBKRnyaMHS6IPJUMreA7l8TS_IIWFCi_q25Oavk180BEBOT81S_tLPxSIZQ7_BMuO_8LJ_JfKlcZPPiPUwVivAqlkT2fNQxCdgBho9be7TX3ln0sQByw5wX1liN9-9cdMgiD4-_mbVljxbwj8WwNosMyrVvAmGnrW5gRrs6LhWR2zshOcmNG0iT44HrTf8u87pcjUEiz81rT0ymzHW-_b6KGNpslfl80JBsXzzCHa16WuhzScXM_kelPR6vc9e85Td7Ui3pluEsZzOK4n2TjuY7VzHbk0KRdheqp_DtWom_zIYZsvle9oKsvtJaFrxYtL9HNev0GYOgAt4-aD38yXVgqVoQPxmdywHI-GlfgoizdoOGRfyIQM83HVjDCRxT683ThVGSlrJjNd9yrlNIqBgzoDPUzS6FTtzr3mYzEb2kAzMjuWyWGx75ioXUAQEtoJWCMYBiIOCgznr3BrAeIKtXIg264.%26ch%3DAQEAEAABABQ5fh3n1YdJdVmqjZ-y56Apt8xS4IpiTQM.%26v%3D3%26pg%3DLIEY66GUNJA67JDGI3D7JMQUW4
+.netflix.com	FALSE	/	FALSE	1798251098	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798251098	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1799172834	nfvdid	BQFmAAEBELEi-tjCNxSk9tjgAKeCGNFgsaRAsn2mWs3koPM0xJ0W-l6aKC1DXw_4bB_oJfxS5GAeHsvC5gL4kEacAudcB_gPXgCsXUS-qTJ9bxPFhZKTHrYvFR5tRh2Bep7PujO4r1ukNkOaymbg0DHQHLYZHZGt
+.netflix.com	FALSE	/	FALSE	1799172811	OptanonAlertBoxClosed	2026-01-05T18:13:31.181Z
+.netflix.com	FALSE	/	FALSE	1822011099	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+26+2026+23%3A11%3A39+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=4fedd280-c831-4332-a7ba-ad7b22c9cdc0&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=3&geolocation=BR%3BMG&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1798251098	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1822062595	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTvu9jVF2xtb-KIAVQrK24vVbT-PwipcsI.%26dt%3D1790526627112

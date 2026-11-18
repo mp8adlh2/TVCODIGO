@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: IT
+Plan: Standard
+Next Billing: November 18, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 13,99 €
+Extra Member: Yes
+Profiles (5): Ilaria?, GAMER, Terobin, Teroban, Bambini
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1695564858000	memclid	7c8e6ae4-2507-43f8-b462-49138667f5f0
+.netflix.com	FALSE	/	FALSE	1756585752000	nfvdid	BQFmAAEBEOSMkJ74pvp_QkdWHpAHjGNgj_ajODJSn5QW-j8_YN99BG4toSdNcoSQwgjPeVAzx6G1l6QNUBM-Rc4FUHtNhWnIg7UqvG5GPyg6lMuXUlfaJTYi1Sg22pQcdi1U2BBipc9eEeGjhP_PgPQgYou6hRVT
+.netflix.com	FALSE	/	FALSE	1731203196000	flwssn	fae403bc-c959-458f-b73f-69d7128c591a
+.netflix.com	FALSE	/	FALSE	1765752396000	dsca	customer
+.netflix.com	FALSE	/	FALSE	1739755027000	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	FALSE	1784491941000	OptanonAlertBoxClosed	2025-07-19T20:12:21.185Z
+.netflix.com	FALSE	/	FALSE	1786209938000	OptanonConsent	isIABGlobal=false&datestamp=Fri+Aug+08+2025+19%3A25%3A38+GMT%2B0200+(Ora+legale+dell%E2%80%99Europa+centrale)&version=202506.1.0&consentId=4f77ca8d-6bff-4458-9ba9-e13ba050c0ed&interactionCount=3&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A0&hosts=&AwaitingReconsent=false&geolocation=IT%3B34&isGpcEnabled=0&browserGpcFlag=0&isAnonUser=1&intType=3
+.netflix.com	FALSE	/	FALSE	1756551535000	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1788085754000	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRKns25sOcU3x3a8P73oppUbWZ_tnp66Bg.%26dt%3D1756549785013
+.netflix.com	FALSE	/	TRUE	1788085754000	NetflixId	ct%3DBgjHlOvcAxLhA0awOGjYjCHvgzZMTW9c6QhTGbNdqRb2pYYXlLUAFcTqNSJzFqz3takNfDKYuUlrjQDTxemODAZ-kDbfdzOxVL_m-CQxUk4dwnxX3ya_2ZZmakvIboDxMGngDape36bM_d-aDRga0YionXqUr0uWGKDUyRMm7fD6nN3n_6JNKw4MAZydyTbLd95AIp-VMKOJtYZlmOd-RbClvN4sAsGHxVhgVcPBi9DOKF0Aef1Jkzs7cPcEfNwt1VAb2afwNn9Oc0BkPm5NchbzOAhLrQJHmXu9KjxMh4cuYlOz-2GcfI9giQNZQ0W8HcuzULpNmTMeAgR3a6GPdHizTb8lCCNEJfH1nzKGFRxb-sORN8bRN2yBRqaFw7EyRIuBPNnXTto1sG3qCd-zTPe-b1Fr1Db7dROHI7XxMjKhG25hGepakE4eRkUbwXXYLhH09ZJFEhjKxjAnm6LobPhGY1SwbBteXK7UlHoGxJWuZ2equ_jp06dSyZefMHVmjDsOFFFnZfwmqM_MqrEbwlele_d_0rAqpvGEO7j1VQitwunNlKRB4YxgclBIfLeKcm_0t_N7SFetfoTMKZwZEoyqDY00Kl7U1rzw37Ho1fjXQBD-ukDLUjNUazQVtb_IJ46nqxCtlksOQZ0YBiIOCgwoaJHfB67Z8GHpRKA.%26ch%3DAQEAEAABABSTs3yGY6wr5QO_wJmz4R6hnFhXC7kQTlE.%26v%3D3%26pg%3DPVKTLRQVYJHTBHGHFZM7TRM7UA

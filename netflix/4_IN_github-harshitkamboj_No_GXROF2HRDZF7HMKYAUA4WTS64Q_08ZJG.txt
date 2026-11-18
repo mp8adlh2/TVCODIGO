@@ -1,0 +1,19 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: November 24, 2026
+Payment: UPI
+Quality: UHD
+Streams: 4
+Price: ₹649
+Profiles (5): manjariraj2011, ABC, zzi, Makaveli, Children
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1799167485	NetflixId	ct%3DBgjHlOvcAxK3AyH6peV0ZbTsn3eIRpdB7mckz-odLxu3Tz3SuMSRE-rxhJuUycnhNZE8utjmMHKXohfxtYhirJBLMQvka13_6cqUBTwXNLRNI3M-IgjVFZIS-ghPYemVYJJx5uhUCriT6PkBku4YoXqDRJEgpS5Sn0iri9wqq3R_AnukZL89HyV_KQpIR6JmRrXjOqBMYtJ3Lopb31_FghV5qQC7Z-evgUf0eU4BAKNOcKLQReOHkJRk8oOMgM5fNp1Ot3CN-6RCVW6WEOkBFinG_UZ3p4DCzs0ZLaY2djW8YPabHSru7MLw5lbJVf37k06W3l2_Cxiu9j78u6eeVOwuEFlBeUCqZDH8U__Nj9Vbp_FSk8Ggowx1amD7PrMOPHLhPA5CeNIBLYaX8ACXdLighHWptbQ-9SQmmyekPpG4Exq1WvbLhJ0YtFniMMRn-ZFlzgZpf_xtudXB5QIPYHmY8oHyJJXYKtOgGhOoc1ZW3mhzNsgspBqEcdBErRWprDm_RiFBJCqpfDeG2BJww4T5VdK6ISw2ESrbQqOYFyd9Jl1m1AEvPZS9ivwwvSLb60SJWpq13Q_u6yeDkdjW5k0YBiIOCgx7CwOfOwBnxcVnFFc.%26ch%3DAQEAEAABABR_UuNk2a4gex2kpYL70-ePROH-lhN0Yoc.%26v%3D3%26pg%3DGXROF2HRDZF7HMKYAUA4WTS64Q
+.netflix.com	FALSE	/	FALSE	1799167511	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Jan+05+2026+22%3A15%3A11+GMT%2B0530+(India+Standard+Time)&version=202510.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=263f4468-79f5-4e6f-9613-ad9fa96d413c&interactionCount=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isAnonUser=1
+.netflix.com	FALSE	/	TRUE	1799167485	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSSvXd09M7oP9VPj661qbkC6oKNzeRfgxg.%26dt%3D1767631485571

@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: VN
+Plan: Premium
+Next Billing: November 12, 2026
+Payment: MOBILE_WALLET
+Quality: UHD
+Streams: 4
+Price: 273.000 ₫
+Extra Member: Yes
+Profiles (5): ti, Việt bọt biển, Su Xinhhh, Dương Tử, NAT
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	d04a5c82-ee05-4290-88e0-c6ae9feb6cdd
+.netflix.com	FALSE	/	TRUE	1819196583	NetflixId	ct%3DBgjHlOvcAxKRBL_WNFMkxa17L0gK57y1imNcnePI8MB4kz2SwotibDWVveAwkX3e0bqHBaIYB-ZGThNJHl3CZi3CbAtXkLJ3R5gjDWT9OVAiB3s9JkRRkXXnv7qNRAgGVE1acPKfT_Oabe_fXqjS1aWn6YdsQ1RtT-Fl1XngTJmyAGgDT6MA-pjFeu0ZB01P_RuIffierjclkQ6D90GmkvIJg4rHeWj1edRcCGkZ4cfJDFwJcF13hVeN1k6ZStbXvWFb3Y1IE-yv_hD9_6dNZBlEHK28Judu3_ii2JWtgJThqjvnkxn4j4XcoH8fYmchYbPxZnMVRHjKm0-A_4jU-HO29P4lcMsMjoiNa665lgvmINqFotJQEtiCZaKwSHmLDv1NHm3AscWB4v0AofKBGKppYNqx5pO2S9iYjlEkxdJKbgomiOIIJldRSTe490WOACFH4Zx3jJmNMcu5OsyxIZzK5X8nxX5Wzy2wWTH53qSnV37OOoex_2M3LwzbBeLxyGsoQben15mXrSj5_OuWz7WmxLOtnSmew9J83sKAnfoEnmDG2FfHbNvVrmW5fCUppZZ3YPYWm81u0ysuUWA29r7JKiATSFx_pu5PTADikGguzV7x-JDgT_8dWr6S1I8uTSmQmvh-ynWV6zC6WEA3I608q1HGqhrey9l754vzSmV66mNpgaHom6Q6dTgKVFWLaiKVTtQipzCeBXMYBiIOCgyGpoqHgi44JOwjT_A.%26ch%3DAQEAEAABABSDl7DTQ4C7XRyVUaxsyrwau0wCSwSscrg.%26v%3D3%26pg%3DFSWDOJQBLZF6DM6W7OIGD7XWA4
+.netflix.com	FALSE	/	FALSE	1795436585	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1795436585	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1818335682	nfvdid	BQFmAAEBEBvTySRW6rPw3nUQQoKqGTpgMmYWisjX6Xwp5h58m8ZlGEnxUN0sjSVBiqqcvUI32SCriF5_NLomJKmdunOUtCtm_UkUSPZlJeuj-hBeIlBNOPd7-RLT71mAF0LAGgbgu3oSYRgS07jJKhFnYZqz3jBE
+.netflix.com	FALSE	/	FALSE	1819196587	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Aug+25+2026+19%3A23%3A07+GMT%2B0700+(Gi%E1%BB%9D+%C4%90%C3%B4ng+D%C6%B0%C6%A1ng)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=65e9ff21-8465-4c14-95d9-abbdaf360412&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1786799680054&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1819196583	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQg-MiGjgqrT7oLYhn04Q7UqK4nlqYoRFI.%26dt%3D1787660583677

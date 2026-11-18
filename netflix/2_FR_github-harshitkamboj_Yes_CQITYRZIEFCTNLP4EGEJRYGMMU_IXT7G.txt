@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Standard
+Next Billing: November 24, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 14,99 €
+Extra Member: Yes
+Profiles (3): Niko, leclère chantal, Jeunesse
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554944	dsca	customer
+.netflix.com	FALSE	/	TRUE	1818163138	NetflixId	ct%3DBgjHlOvcAxKXBBLYPUFarp8OePZ_Ab8AleFjAcV2hpNfQYMUzlH3mlvr5FRL6GPqPmQmYQacLY-CYJXtCRLsXsVmrvl0f_kd892uo1b9oljFDxIGev23wrYYg1F_-Rt66pTsHWo1fgUe0ynLp52WXLLNAdr0N4lK-UClo0uW2PVv39P6_k8iOa_A2w2Lfzvb7LuVg6HC6Lf4KiKhyBiJq9eGA2W4AVQGrPmisAU5ZyDVVIJ3ZuvbcoF4kGNNtwdIvVkhemHyBg3yTUjjUaadP1R7QXVb8ep16NPjsFmmDdU_FutzoEdQajfzbYrkNWXiq5eh_y4C-u3JSpWfAd5_he_8A41DbKX9qQj7A6SNuYTeoMsTZKQWvkpkv9YqJi45P3IUTqGntjSrJjhIRXgFy2pyvHZNC9DSPrQXDQ3AXIllv24XyuHHsiszxrs65SPLk2F-u7Ykj7mlt98eIfuHo7yjOUWsB0thVO156tMcnebuNj_QTxyG4lA8RqgitT1gmb0Uu7BAYTt9OFUjz-5UjFUUr8j8tKAva1scU-tSTXfh9OuY2nJmymCPeSf5lg2rnDqKl2Uiq6oSu7A2IMXCJ3Yv5LDgjjBku5AuWx_yLH7kavA7BdoJAEWkVQjTf2AVG6s-mpI0XnkThZ18uDGr0lSeNypBrtPlci7OyfThUogqmwm1yBSE9pEjSieDHz84r5rBPssrkbch5pZYMg0y-6oYBiIOCgzNfvxMuBZJFrg-_VI.%26ch%3DAQEAEAABABQkLsoxdKgKhOH6ejhjFgSYTJ6XNBu9Pow.%26v%3D3%26pg%3DCQITYRZIEFCTNLP4EGEJRYGMMU
+.netflix.com	FALSE	/	FALSE	1794403431	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794403431	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798419757	nfvdid	BQFmAAEBENTZjNLtnLixv9uLgpB9ttBgfvR192UnAUqCq9ikDBqKgBPNs9fVi8x7sQJIh02DmCkXPBAt8d8gY-nrZuSo0TjAJ4a_ZyhhkDmMaAhAR4oa3YnJd_OrXo9beBDfd_grzcm8jPZLugWEI3T3mFy_jjyu
+.netflix.com	FALSE	/	FALSE	1818163142	OptanonAlertBoxClosed	2026-08-13T13:19:02.775Z
+.netflix.com	FALSE	/	FALSE	1818163431	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Aug+13+2026+15%3A23%3A51+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=b811c5a9-9263-4ad4-b7a5-b6ae34424de0&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=1&geolocation=FR%3BNAQ&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1794403431	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	TRUE	1818163138	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTfs0IeAFKo5ivdBm01wz69d377qyYp6XU.%26dt%3D1786627138663

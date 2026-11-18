@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: TZ
+Plan: Premium
+Next Billing: November 23, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: US$9.99
+Extra Member: Yes
+Profiles (3): Godfrey Mzena, Gavin, Games
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1820179492	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKhAyJknA613KA5Ri8GptAMWM-lRMrYUujuA7xq9vGaPZlMfS32w1riq3aD_tR8Wn-mWJe6AyjXgs6eZait38SrXw2mvzh56qmUVaOC21vxmEX-UAZsk9GQC8ItEnobnHcyjDvpSDzx_bb4Ae8PlZX0GJE4FjszkkELXryQvK3PQ248qADyvTF-n_PMEInUHeZtbVzV6njwUkJhi_uxuP3Lpkszd4OeEycqcWq-T36ctg7eVM0uI6usxq7aargrYj8mo5XbxHpquYcSoMM4TeXDVLok8rUk9redVTBFVk75I746MAqPXVQL4CrG7ntJyJ9aZ-6kSrphVjhcBu-AAqH4wcEP-CDUAcsyZzXb4huzCcqCcActYx-pJsyDkDGuKPoqNTT5aaKeKS3zue167xsFEgOwOPqvINYHJWetzB_j928O0CSMB8uu23YyCx509pSPSEb31yNqSVwQ61yGEiK1YSGOg2vFlueib1RVWCYaxuW6cIsmhCyvNI7ch_88_lLGheJA-_vOvpXVjnRl6bduRd7hFfFmbLuOko3Laq3fW4-f5hgGIg4KDDKu6JmhDHdsC7kYxg..%26pg%3DNWRDZSD37REHDFGHCYK4JDMXSQ%26ch%3DAQEAEAABABQ9nlrEyOdpDFQpaIBOOb4cCj7X-wosYCI.
+.netflix.com	FALSE	/	FALSE	1796428914	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796428914	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554947	nfvdid	BQFmAAEBEKS3ztmc_6eb1cJCRg7fcGdgvFaUnRCqfvsCHjAQM2Oq1fdGn0mFkPPxtxaw6mPAY0Z-qkumVi3DHjkEWwAI0s8y45I1ndjDjWy-uaFI1ZJMYkDxllTLCzHZlyhO1c0Y0NZW7dRXjVYyBcl6wE5za2Vu
+.netflix.com	FALSE	/	FALSE	1820188914	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+06+2026+03%3A01%3A54+GMT%2B0300+(East+Africa+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=fba8396a-bc3f-4bff-b12b-144b91a0cc56&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1796428914	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1820179492	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTMGDP6uJOgvXjFqnyr6kWTc1nI1HORO7s.%26dt%3D1788643492370

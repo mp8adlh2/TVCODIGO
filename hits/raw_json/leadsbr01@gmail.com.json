@@ -1,0 +1,462 @@
+{
+  "email": "leadsbr01@gmail.com",
+  "password": "Si425511",
+  "access_token": "c0c9cf98-02db-4128-923d-d8fc29747f4a",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiMmU3M2E3NmQtMGMzYS00ZmYxLTg4ZjMtOWY4YzZmNzgxZmUxIiwiYXRfaGFzaCI6IjVXWjhUaGY4ZGdDRWgzbGQtT0g0OGciLCJkZXZpY2VJZCI6Ijg2ZWRmNzM0MGZlMjIxMTljMTg1ZTY2ZjFmYzZhYjc4MmM4MGM2YzQiLCJhdWRpdFRyYWNraW5nSWQiOiI3Mzk2LTY2YjktNGQyMS1iYjc0LTI2ZjAiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODcwODk1MTUwNiwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiIwNjkxOTYzOC01NWY5LTRiMTAtODBlYS01YWRlZWRlOTIyYWQiLCJzaWduYXR1cmVzIjpbIjI0MDY0ODExIl0sImN1c3RvbWVySWQiOiJmN2FhODYwM2I3ZTNiY2I4ZDY4YTQzNzViNmM0MjQ1OCIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjI0MDY0ODExIiwiZ2l2ZW5fbmFtZSI6IlJBSU1VTkRPIiwidXNlcm5hbWUiOiJsZWFkc2JyMDFAZ21haWwuY29tIiwibWFpbCI6ImxlYWRzYnIwMUBnbWFpbC5jb20iLCJyZWRlbXB0aW9uTGltaXQiOm51bGwsImlhdCI6MTc4ODcwODk1MSwiZXhwIjoxNzg4Nzk1MzUxLCJpc3MiOiJzbS1za3kudnJpb3NlcnZpY2VzLmNvbSJ9.Y5I_lxSfhCzfQZrB3ZAOGcV1hISyMTxqPVUM4SRwATb0wtmaxmRtRm-NUcSdAgcdKXA-SkKWR6mRkvMYSDNs4LGYpulr8HRhcAsazv5_qSO2zrglZd3LV17EN692cDDgI6hGJxmTC_U3HIdZE-s7rKoMgpkmpA7tCKZun_UdXvmonydbmedcqNvvnh_cqDwluBqYoKVhbnGcZ4GMmE2GRcCQ5RkMineov2HM9OioyrysqXFfStyE7Xhl_tWbD9rdNANJkkeOlT61ZLm7fUZP3JeWQsoSQXb9fszVIZt5_U_9kGe0gVhoeRFHB1GqpYEGdVso4FKpNDUikJGbc2G0Zg",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "c0c9cf98-02db-4128-923d-d8fc29747f4a",
+    "externalId": "856ffd93-77bd-5cb0-a25d-6271f33d6c85",
+    "username": "f7aa8603b7e3bcb8d68a4375b6c42458",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "24064811",
+    "protocol": "2026-150273641557",
+    "customer": {
+      "email": "JOGADORP395@GMAIL.COM",
+      "billingProfileCode": "1-9VQJ-19884",
+      "name": "RAIMUNDO",
+      "secondName": "NONATO OLIVEIRA",
+      "birthday": "1939-11-29T00:00:00.000Z",
+      "ddd": 31,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5531999634220",
+      "id": "f7aa8603b7e3bcb8d68a4375b6c42458",
+      "cpf": "07081413668"
+    },
+    "signatures": [
+      {
+        "id": "24064811",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 999634220,
+          "dddMobilePhone": 31,
+          "dddComPhone": 31,
+          "comPhone": 986114448
+        },
+        "customerId": "f7aa8603b7e3bcb8d68a4375b6c42458",
+        "status": 1,
+        "productName": "COMBO FULL TOP ESPECIAL 2022 - P",
+        "name": "RAIMUNDO",
+        "secondName": "NONATO OLIVEIRA",
+        "dna": "01000000000100010000001000000000100000000000000001000000000100000000000010000000000000001010000111110100000000100000000100000000011110100000010000010111111111111100011111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101011111111110001101110001111111111010011111111111111111111111111111111110011111111111110111111111101011111111111111111111111100111011100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Itabira",
+          "line1": "Rua Itabira, 103 - V Operaria",
+          "line2": ".",
+          "number": "103",
+          "city": "Nova Lima",
+          "state": "MG",
+          "country": "Brasil",
+          "postalCode": "34001320",
+          "referencePoint": "Ponto De Referencia >prox A Praca Do Coreto",
+          "addressType": "Rua",
+          "resDdd": 31,
+          "resPhone": 35410980
+        },
+        "addressBilling": {
+          "linePublic": "Rua Itabira",
+          "line1": "Rua Itabira, 103 - V Operaria",
+          "line2": ".",
+          "number": "103",
+          "city": "Nova Lima",
+          "state": "MG",
+          "country": "Brasil",
+          "postalCode": "34001320",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "1999-09-22T00:00:00.000Z",
+        "email": "JOGADORP395@GMAIL.COM",
+        "parentAccount": "024064811",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000802097345",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "670A263412061650E"
+          },
+          {
+            "smartcard": "000648350148",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "670AA63537630427B"
+          },
+          {
+            "smartcard": "000672266590",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "CE0AA636138669717"
+          },
+          {
+            "smartcard": "000697900348",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "CE0AA63538810816A"
+          },
+          {
+            "smartcard": "000654237999",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "670AA635376856946"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "24064811",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 999634220,
+        "dddMobilePhone": 31,
+        "dddComPhone": 31,
+        "comPhone": 986114448
+      },
+      "customerId": "f7aa8603b7e3bcb8d68a4375b6c42458",
+      "status": 1,
+      "productName": "COMBO FULL TOP ESPECIAL 2022 - P",
+      "name": "RAIMUNDO",
+      "secondName": "NONATO OLIVEIRA",
+      "dna": "01000000000100010000001000000000100000000000000001000000000100000000000010000000000000001010000111110100000000100000000100000000011110100000010000010111111111111100011111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101011111111110001101110001111111111010011111111111111111111111111111111110011111111111110111111111101011111111111111111111111100111011100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Itabira",
+        "line1": "Rua Itabira, 103 - V Operaria",
+        "line2": ".",
+        "number": "103",
+        "city": "Nova Lima",
+        "state": "MG",
+        "country": "Brasil",
+        "postalCode": "34001320",
+        "referencePoint": "Ponto De Referencia >prox A Praca Do Coreto",
+        "addressType": "Rua",
+        "resDdd": 31,
+        "resPhone": 35410980
+      },
+      "addressBilling": {
+        "linePublic": "Rua Itabira",
+        "line1": "Rua Itabira, 103 - V Operaria",
+        "line2": ".",
+        "number": "103",
+        "city": "Nova Lima",
+        "state": "MG",
+        "country": "Brasil",
+        "postalCode": "34001320",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "1999-09-22T00:00:00.000Z",
+      "email": "JOGADORP395@GMAIL.COM",
+      "parentAccount": "024064811",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000802097345",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "670A263412061650E"
+        },
+        {
+          "smartcard": "000648350148",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "670AA63537630427B"
+        },
+        {
+          "smartcard": "000672266590",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "CE0AA636138669717"
+        },
+        {
+          "smartcard": "000697900348",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "CE0AA63538810816A"
+        },
+        {
+          "smartcard": "000654237999",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "670AA635376856946"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "24064811": {
+      "included": [
+        {
+          "name": "TELECINE HD CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "29-03-2023",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "TAXA ASSISTENCIA PREMIUM - P",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "29-03-2023",
+          "end_date": null,
+          "icon": "🛡️"
+        },
+        {
+          "name": "Premiere",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "29-03-2023",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "HBO HD CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "29-03-2023",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "PARAMOUNT PLUS CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "29-12-2022",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky Sex Prive HD - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "29-03-2023",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "Sky Sex Prive - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "29-03-2023",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "SexyHot",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "14-06-2026",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "Playboy TV",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "14-06-2026",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "SPORTYNET 3M 50% - P",
+          "category": "A La Carte",
+          "subcategory": "Esportes",
+          "start_date": "26-05-2026",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "24-08-2024",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "ESPN 6 HD CB 2021",
+          "category": "A La Carte",
+          "subcategory": "Esportes",
+          "start_date": "08-12-2021",
+          "end_date": null,
+          "icon": "⚽"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": null,
+            "name": "PARAMOUNT PLUS CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "29-12-2022",
+            "startDate": "29-12-2022",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TELECINE HD CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "29-03-2023",
+            "startDate": "29-03-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TAXA ASSISTENCIA PREMIUM - P",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "29-03-2023",
+            "startDate": "29-03-2023",
+            "endDate": null
+          },
+          {
+            "id": "1-1XBHQIX",
+            "name": "Premiere",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Premiere%403x.png",
+            "price": "59.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "29-03-2023",
+            "startDate": "29-03-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO HD CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "29-03-2023",
+            "startDate": "29-03-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive HD - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "29-03-2023",
+            "startDate": "29-03-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "29-03-2023",
+            "startDate": "29-03-2023",
+            "endDate": null
+          },
+          {
+            "id": "1-1XRZM8Z",
+            "name": "SexyHot",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/8922233/SKY-Canais-Adicionais-SexyHot-Card+%282%29.png",
+            "price": "19.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "14-06-2026",
+            "startDate": "14-06-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-2T0LHP",
+            "name": "Playboy TV",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/8866790/SKY-Canais-Adicionais-Playboy-TV-Card.png",
+            "price": "19.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "14-06-2026",
+            "startDate": "14-06-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "SPORTYNET 3M 50% - P",
+            "category": "A La Carte",
+            "subcategory": "Esportes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "26-05-2026",
+            "startDate": "26-05-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-219IIMH",
+            "name": "DISNEY PLUS PREMIUM",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Disney%403x.png",
+            "price": "46.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "24-08-2024",
+            "startDate": "24-08-2024",
+            "endDate": null
+          },
+          {
+            "id": "1-1QKPR7G",
+            "name": "ESPN 6 HD CB 2021",
+            "category": "A La Carte",
+            "subcategory": "Esportes",
+            "logo": null,
+            "price": "9.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "08-12-2021",
+            "startDate": "08-12-2021",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

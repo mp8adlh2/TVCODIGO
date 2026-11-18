@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: TW
+Plan: Premium
+Next Billing: November 21, 2026
+Payment: DCB
+Quality: UHD
+Streams: 4
+Price: $460
+Extra Member: Yes
+Profiles (5): 小玥, LUN, 爸, 弟弟, 兒童專區
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1820757321	NetflixId	ct%3DBgjHlOvcAxLKA6_M47a2Nh69ORhIotHpf7DjGx8SOzRZrjgRVBsDKehHzn-mVIRzuKptqOlrRKF4CRDAHlc4Ab_TofCblD_1i3ViCXafaIqDDcfAUSv6WzDYlxiDlwZa9uwRWU4A6-zJ4EtWPSwFJ8d6StyMBkPgQPYE_Ik1HRoP1CcczL2u0c7GCB9xIFNl7rvCzBQ3YdbXem2Ou1rdGF8mCpxQvpDzH96RVv6UP5b98iU4m76y4wVptOtiSMEFHRUdlEuhmGvJm2d8KkK84pFy74r5MEMF0JRf3e9V6EW3OnmtAEQ2o0oVIcn3_bwTVPMakfYGYJcHEN2uwwPnGXpdBEJrRTp3_UlqFqIf3aX7GTj3H2i74kQr3SGIYDDtI1ANi05a17ukjad8OF1j-UtNoXGISbS-zFBQbou1ukTah6HORduvtgH-fLCZzFZalV13f87_x0Cpbt8dyHhWdrbI8HjSezPTZNK3KIgEbWVq6a6WpqWrekg8Q_qxtrwu6UHD3Hz1Ls5sBLxiBEcTSu1tB5IIe526-6xXjUqi5Z-Fck8tgwPHHdCPCnaBNF9hFNs08UVA-2Az_L3uYPUzeuacMFCcrOIqChgQp7v-h6gP0V3qGAYiDgoMkG0mluT7HJY6Uu6g%26ch%3DAQEAEAABABStAg99Z0vvW08sMY-_idefyXlXdU-IdrI.%26v%3D3%26pg%3DHE7QQKRIT5ER7OW3PJQXW4U4KQ
+.netflix.com	FALSE	/	FALSE	1796997323	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796997323	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1820318900	nfvdid	BQFmAAEBEL11z4RGRx4afKQcqkJkoQdg2sx7q3U-Or20fj2xUHKtj2cBmrGJCXsGesDGxLVRsdaklQ0EcEaa9OAsn3sn0MwTqonQQnncwXeztGW9RkItt5Rqq7-SE2DzFlfKEnngApSZXvkFKE3V_T6GV_7ZuixZ
+.netflix.com	FALSE	/	FALSE	1820757324	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+12+2026+21%3A55%3A24+GMT%2B0800+(%E5%8F%B0%E5%8C%97%E6%A8%99%E6%BA%96%E6%99%82%E9%96%93)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=2788d65a-61fd-4759-8211-4728898ec054&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1788782546330&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1820757321	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSLfmRVj_nJE2w8Z_hNq-4f7kYZgaRt7i4.%26dt%3D1789221321600

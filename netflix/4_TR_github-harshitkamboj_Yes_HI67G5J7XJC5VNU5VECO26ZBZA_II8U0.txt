@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: November 15, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379.99 TL
+Extra Member: Yes
+Profiles (5): Temuçin, İloş, Dero, ofis, Baba
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1815936778	NetflixId	ct%3DBgjHlOvcAxKGBDOjiNd-Fxf2GVuSSLoaze2ee-JtVTF7de5ST_Ef2igBTYXhd0binW1rBIFnu7Y9o60X_y0hppRzGKM7Y_O9OO_6X88xHpb50upOJhEgsuRQ2FRgO2HtGuLiRLIugBG6jpKkb-cw0jF-FWXpdHbL3ems1WU5-xUHK2VjWTeWT_dnEvnMT3C1weexl32qsFCmxokH2nj2duxyrce2Mxp66zzsEH2MrNF8Ye7p4ikcKdRLih-cRFhgBNlhCWHqt2X4UEpgmfErXcaLwlNci1UDDQFxRo46E6-UZz5icxYtKWagxTcB5uStoeZGPp7Yo6fGnTdlftk0OpnvWqY1EYp9hnnwxEzDGiHdv40uuUB7gS7YEAU1boluWPMK5L4C6_zk34WeVTh-oooIBnW04yOvDY0lji2RI0crsRXfdARVQEDCcH_eJvK_d8FGbKlArFiBULb98psbTa0zY9hQQptE6JETfoe813LK_xX8usX0GhE-muXwTIaULhWE6XUSruf8gDXe6pSV4sKcHcsdZPLtE504fnRgo3ruhFHq9RyHsbxR05-icBNaX3QL4dEmnOAhCLNuTzQGibtRMNO2XUrroRqRQxhIpRZRMvAfCMQk625tN8_PZ_pO78OqV-NXbbHwYNikmlh6TTknVT6QBDTC3qFotE87uWxT5GSUsHL6PURDLEvKeux7GAYiDgoM2q6818WbsIuC_Tb5%26ch%3DAQEAEAABABQtSaedDsq3qzygt2qwgZBer7T_2s3mwm0.%26v%3D3%26pg%3DHI67G5J7XJC5VNU5VECO26ZBZA
+.netflix.com	TRUE	/	FALSE	1803849800	nfvdid	BQFmAAEBEAW7cc029MHREAZkyg-Ut_hgKZOm7kACb7QHdoCLjtxcFZcpZ5B2XJpzSzOXNZB2Q8_3ueEgdT574euGWt4543pi9VV2lK3d2dByPJEiHpFbTJIciujX_Kslqi0EOEVoWpne7hzOut-0Tj-GJFCK4WCJ
+.netflix.com	TRUE	/	FALSE	1815936793	OptanonAlertBoxClosed	2026-07-18T18:53:13.017Z
+.netflix.com	TRUE	/	FALSE	1815936793	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Jul+18+2026+21%3A53%3A13+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202604.2.0&browserGpcFlag=1&isIABGlobal=false&hosts=&consentId=cbfe2dd7-3e4f-4a00-9b22-c2774285af9a&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=1&geolocation=TR%3B06&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	TRUE	1815936778	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABS8dp-SLYujT6fRHqf59yfQGqo4sl-ke2s.%26dt%3D1784400778949

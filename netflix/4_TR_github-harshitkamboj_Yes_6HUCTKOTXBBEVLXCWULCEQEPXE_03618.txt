@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: November 11, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379.99 TL
+Extra Member: Yes
+Profiles (5): Veysel, jax, Hani, Senkuu, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1813524134	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKhA4_ppZAELWEGu_uG9mQIBsc7yPFCaJQOV2V0vd-fynAVYePYuU5XLxc5UAN9C5MyrHfNfa5OCLD9MMvSomMHvdii7A3r6scZN0G1GGVfmroeU_mdlPQ0WlNeakQKrRk9xBEDnR0yZPtnvFkVQjn9EgkGs96O0b5XNF6SkBr5Ak5Of74O2CvIoy1r_Lj8IKgTC7AHORgXHlCvKovrqK9ewK9yojaOiw5PzpSuH8_tYsVjgKt7YochpGc0wyf0Yb6mXLj2AMyFmDlwB-_qnV4q2YXRAAMRB5ekBO-xnkihMDAVoJ0mqLJ6ekYMknzAc8GvSbMMVeQgPL2565kFq0X6fbvT3i8Obh4rfMiFSuv9-lVxxfhZC2Sl0USBpyt2FaLR3ub8Xj_1TAUyQl0df7Q3XcAPwJjHxnR1Cv-oEjrUEh5nfd0iPvOfd1gpx3C7TmsTb4fkhgVNGQpyAdRVSE6gYiUWLcWQhDZrpbIrsS92jSjRKF4lcpPoHpv-6A9SuTej6BSD5JHJVF-KfFmjZ3-gfG77zqlLjbo2ry81hLeZ3pNe0xgGIg4KDDowpD87n14zlaRbIw..%26pg%3D6HUCTKOTXBBEVLXCWULCEQEPXE%26ch%3DAQEAEAABABSMimkWiZbnljKQgjz7qWGbO716BIEDLag.
+.netflix.com	TRUE	/	FALSE	1813524111	OptanonAlertBoxClosed	2026-06-20T20:41:51.040Z
+.netflix.com	TRUE	/	FALSE	1813524134	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Jun+20+2026+23%3A42%3A14+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=d554640e-0364-4b35-a031-b0478d882eb6&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1781988111488&AwaitingReconsent=false&fclco=&intType=1&geolocation=TR%3B66
+.netflix.com	TRUE	/	TRUE	1813524134	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTXwWCfS4FhmXdCvrvI80Zz-Hid_XIN2Mw.%26dt%3D1781988133795
+.netflix.com	TRUE	/	TRUE	1816548134	dsca	true
+.netflix.com	TRUE	/	FALSE	1796554944	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796554944	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1813524134	nfvdid	BQFmAAEBEF14VC1IV0S6K-Oz1Y1lrG1gyP9SFvpuy9xUgM7MXoxDmHeKjNI6pJzgwkvV-1zXCSJEVbV_OCFftRgdmjUjWuL7rE8MMKU-hFbwlVbySXAWzffFEM8RC-3N97NK0h7cV2nMbsFVrTWiIu7pOxost63T

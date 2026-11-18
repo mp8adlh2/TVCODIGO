@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Standard
+Next Billing: December 5, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 389,99 TL
+Extra Member: Yes
+Profiles (3): burcin.kurtuldu, Bhen, Çocuk
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1812219059	OptanonAlertBoxClosed	2026-06-05T18:10:59.651Z
+.netflix.com	FALSE	/	FALSE	1812219124	nfvdid	BQFmAAEBEMQiC9vgtxZXdlh7HeMHAONgoZTJxB0cRgIoH-LBqwy_2zqvzyRHweM0Iy8SdwbKDJldy3MzxtSgP9hZv4PdmDRH4G0Ki9roo33Ev9hrI2YRouvZ6CkJYFZ_oye5zdzHmCApc554FH3lfHG8Tn4_2aok
+.netflix.com	FALSE	/	FALSE	1820438798	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+09+2026+00%3A26%3A38+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=40c09d6b-97aa-4223-a00f-90efcfc4c152&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1780683060056&AwaitingReconsent=false&fclco=&intType=1&geolocation=TR%3B34
+.netflix.com	FALSE	/	TRUE	1821638896	NetflixId	ct%3DBgjHlOvcAxL-AyOSmMliO5xUFacbwaaqTY7ljGYJq1eaQ9QLKnsRjD_bzlbaVAve7eEZwFoEW2fEa9aHEuGKGWVUmMhMp6NEPQO8xYGXrI88hbHxTgS5R7dGwGqiqB-UftvUQUlLcy-sK46pv2by50-pBRh38SQKglg8_i1J4M6tn6ms5ag3TR89nSNLxNWryeoBCIMcODTB5OJqldIIp4rzk5plb_ELXYeczGdby4m5RqICfgLlbpwWMT2_9sI9OMnee8eTb2wE1snAQMcEqU8l-i9Z91KwVvvqSlO7PpXqkDWH3bK6MRELkzH9FdpedE2HgrZbqi1DDcXmAfeLMez5fjuA4AYhssNSPV1OTsErZeUhL_mfbbzuOD46cN6Wjhu_zmHxJMujhqO1gaTvd2lDimxvN47j7j-Rgb4uYt2gpzBXkBj_ohWMIhsCNe0YObN-Gi0JWmxPSrk2J96_94iVvsUI_EToASTZggvpYY90cXosZ8Y4Vpce-oMa6GZ-KQPpBAD2sVT386V0jsiEsOPvrUFM-6TJfHfaTlLEQVCjvZPAD7SVRU5-IoQTF_ETIcPh_i8YuWJ7OKDhmoFdcaMsk51AC_nYHT2nwjjtVCCLikLQCbzoFOYhtQsQLxXbVHt4Sho1DibwkXI2YGCQlCNnoVxgWhajZ_1k3nnxiXpFdQ_vng0xaBgGIg4KDKzZwjcAd95rJvQuVw..%26ch%3DAQEAEAABABTOfKGUaylENiqVgiD0130c3XFKQeikgtA.%26v%3D3%26pg%3DQ42K4ZOJQJDSXP7UIO4BLIFIQY
+.netflix.com	FALSE	/	TRUE	1821638896	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABS8vFWpGnzBUpUOnDnPcagqUme-f7Dfxps.%26dt%3D1790102896848
+.netflix.com	FALSE	/	FALSE	1797878897	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797878897	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797878897	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

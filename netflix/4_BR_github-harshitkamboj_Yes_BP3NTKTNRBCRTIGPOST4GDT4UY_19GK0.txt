@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: November 19, 2026
+Payment: DC
+Quality: UHD
+Streams: 4
+Price: R$71.90
+Extra Member: Yes
+Profiles (5): Ju, Mamis, El Boss, L, Man
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1815850529	OptanonAlertBoxClosed	2026-07-17T18:55:29.304Z
+.netflix.com	FALSE	/	FALSE	1816490458	nfvdid	BQFmAAEBEPWhlbdO94k3G7hUA7gxZ5NgYlD4a2JaE5XsZftFaxWT590JR890d7c6T-cllFFh2_BCEFpR_qObC61XGtmLWxrpJx0aACV7UhLmhPU2tWXM3BfZvFwO-BHZRgGIcUi8Jh5DYEASK2_UPYdm6C3sJMcB
+.netflix.com	FALSE	/	TRUE	1822974708	NetflixId	ct%3DBgjHlOvcAxKHBDKMazX4I9XvsApr521eHt0vOkarQeGVXJPKO6WtN8Jrncjc4gapGg6WHrq-u_0qkdMTWBtr6rcYTEqvrMXe-VR__Gyn05lUB1VZljQ98CTvdFeGXZm1tkzrVkNB86DZK4Ndm5r6tQoPlmjKOG9OxerHF6gEfNZ7XYJc4h3yMmcjLZs6SH1lZz79ZnYGRQ_q8XYuKE8u2XFlXrvWsFUVZCP6VS2MEeeIjo7SUgt_a03aLhZzaXhcgMyUnFKu0xdjME-GiI_v69BvtRoo3GSIPX42lk7Bg1UWJMyvAmkHrY-1QhZnFp0mUlpjjh0-y7HJx_CDUDNXx0Gm_ruHX3Zi37oERFRQ3mHrbERFafYlmwday0L21Ommwp74mb8V3zKe4P5ZqaGFBvvNTNaMIlqXGYYGHFRU7SJjO4o-f5l0RtJHSTf-Ttyzk8f4yfMU9k93Z-IX0HHoNlppI2yELn6DMqusHtwl5Jt0fbhHtZJvhWbfvmtdNygXKcdBfAXkATd034kPgez81ZuhT7BnA3st9plau3DAnLPvU_djV144FobImnU5J9klsvCU9fJ0K9Z3MXQiR4j_mDIyO_Jo2_RJ0PjliSuP1j2GjFlCeDRybDdIulup0fCuQ3rRAd3AVYi3ufzQDt8U4ot1_dDcLqdmXJWB-vd5UUa90fDxMnG3rDYO2lOb6NRRuhgGIg4KDBi61Jr3AhqFkFDeQA..%26ch%3DAQEAEAABABRqjuiIITCw8El8wXWj4BeVK1lJjJZuVMI.%26v%3D3%26pg%3DBP3NTKTNRBCRTIGPOST4GDT4UY
+.netflix.com	FALSE	/	TRUE	1822974708	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSM0-Ax1-9co2RF9nxh7iSPZz1d1Q_QoDg.%26dt%3D1791438708153
+.netflix.com	FALSE	/	TRUE	1796554944	gsid	34783e9a-5318-411c-b161-e44c76462c92
+.netflix.com	FALSE	/	FALSE	1822977911	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Oct+08+2026+03%3A45%3A11+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=e9e004b0-5e68-43b5-87b5-0f969c7d94c2&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&fclco=&intType=3&crTime=1784314529730&geolocation=BR%3BSC
+.netflix.com	FALSE	/	FALSE	1799217911	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1799217911	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554944	profilesNewSession	0

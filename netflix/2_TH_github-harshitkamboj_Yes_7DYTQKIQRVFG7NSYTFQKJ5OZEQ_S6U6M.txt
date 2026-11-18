@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Standard
+Next Billing: November 11, 2026
+Payment: MOBILE_WALLET
+Quality: HD
+Streams: 2
+Price: 349 บาท
+Extra Member: Yes
+Profiles (4): เจ๊เปิ้ล, New, Not, มุมเด็ก
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1815483553	nfvdid	BQFmAAEBEBM5UQGSGSWw4EXmN1lN7ftgSoWuhHW70x-4mOQ_uk_ImConoyaQNlADO5r8Bg-1qnOW44ZWeXyqAZWloRFSEu-NROy5flw6zbZ_cGHfosNsiQTqnEqMDVut4QQc-woKNY0tra_hOO2V7UCF3557Wq8k
+.netflix.com	FALSE	/	FALSE	1822035755	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+27+2026+16%3A02%3A35+GMT%2B0700+(Indochina+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=b195342b-f3cb-4fab-bbb9-038ee4767029&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1783787309602&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1798358489	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798358489	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798358489	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1822143985	NetflixId	ct%3DBgjHlOvcAxKBBE_Mzh4nQwSq3SuRNryHvBuyOHUIImxdB8pg9h8sSYDgdp_AmhtUC4XX-B-iTwogkXmVY428A6LUNNNSUPGDsJDJss0yzb0XEWpsCzW2v1pBvqar1WPS3RU2LiKIXNAMH4fDuDelzDT7WojglkjDQX7windG-06XnF8z1--GVjF_mRhnRsTeCHUOMDVOOYtqGCHXOSHp1u4uWgwrO64Mi20Sft3WtmjsZc2LJ3s_w7kxcOJI4LOh22l2_pG3SSDfrCiCbvyujNv3xMrCpw92uDCADbtKp6vMUpjm9DSaLqnim8UqJPfs-L9_7bNa04bpDwgWfB_TCFyGfOz9Wve6ijLZYtcFjk5-cI37YTK8A9CoOUTojkBPUzyN_VyThC6WXuwptyrBpcLQhDrQ1nA2XuDzb_V_YJRva0a3y1G-dPpk-Do--6os0N8x17Rr3fECbkebdPv3NnzPOMZnZc3x0UlgMhyjCrr5tIiZ7nKhAr6ZNTOz7TLytZrh3HVx8C3B72o7MRLpXatLjvP7NxgdUG-xEwZQxqDAN-aNWuCokfFOTMZLD9bzt8jWHiDu3TegVruDrKhNFW2nzYhExo6qIU6ydxQDue4JpIl_NF1X6Jgz9AikzOlcRE9ql2HT3gJn2K5NozhT3ORctUIRqaacNgvV3H3EamJmxrcHvhYQDw9fxRgGIg4KDMLxMOQUF8MLko9Q-w..%26ch%3DAQEAEAABABRd7CjXRAeAizKuT9Q18SnO30vZD6tVcj4.%26v%3D3%26pg%3D7DYTQKIQRVFG7NSYTFQKJ5OZEQ
+.netflix.com	FALSE	/	TRUE	1822143985	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTseSIeTOHivqeZMW5FNpio6KAhIMpfcgg.%26dt%3D1790607985663
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0

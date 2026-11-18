@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: PK
+Plan: Premium
+Next Billing: November 30, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 1.100 PKR
+Extra Member: Yes
+Profiles (5): Syed Shan, Daniyal, Akhtar, Samra, Hamza
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1808076232	nfvdid	BQFmAAEBEHfgF8JyS1IB-ZjhWB_jxFFgyJRzzBNNvEHwVeOZiWfKSrn5_GoiGhCaY4xHawI4kOmU2mTXeIc0NxhoR-Bb6HP1EHmJ873IntUPUH5t4Z25qq_Ug9dqR1KvpINKOk1LEEY9gW9caDP3SKOzIDEoM9E7
+.netflix.com	FALSE	/	TRUE	1820960092	NetflixId	ct%3DBgjHlOvcAxLAAxVG_rESb9BgYDvtexHx8I7rhmLdUBkwKvMfKhdoJKG02j3CWhsSQx_nqehfMzxeeR0krCO7BIXM6LnOcgRhMAPOWNGfl-4xgWwbPGqwhkIolXRDg-mjJtiFEvKFGnNa7O8sruhldMyqIivypgtyIvzkyKN3XCoyf4nCtzIk4IqN4NygR5nHuUsc3wO5SuPuzmD9HremMo_i2Nh25gAlFE_tLJyZW68IuduAGMhYUlfvpCpDY6diOf_VMfahmk7P-zZeYQ3ljCaUNXYU6avlHsFK7q4V2T602QQjGkpJxF-_WKBRlmDuQEkiDdtuIychz3gg2ZCAE83qo0Rw8SpX5jOJJyEX7wuSkp8S40TavP8__UsZYiJDFjMU1Wt8b2Tl-K9LnG4DIfh9-vz1Rm_HHqr9m1iwwBjp0vRnnR-JDB0khk1EkjexZthXx3-3nTc5cTTB7ELC9RmhoLs4om6s4osMH0AzF7Rh9wt1Xdin3wGtfqmIjGDmcr-acGhmoc-aOrp7fzMvov1i45WXlHZ-vc1ZwakbhlTIHdYjgZGcTNWkMp4PgB-A3c_QMwa3q_3PxJyN2tQGHcR0W28K3NvextEYBiIOCgy38zriZFKP3v-V0lc.%26ch%3DAQEAEAABABT4qkRXTSX3Zeo6MQCR1AYC4lUhjAH4eqU.%26v%3D3%26pg%3DKQUKNMJA2VGV3PDR4YNCMJUZBQ
+.netflix.com	FALSE	/	FALSE	1820960096	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+15+2026+03%3A14%3A56+GMT%2B0500+(Pakistan+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=ae54ada4-7562-423a-a3e7-fe24470ca683&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1789240985004&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1820960092	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQ7i-Wjq5XCpc3jRj3riMKhWYdw9LmAHy4.%26dt%3D1789424093975
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	be77b32a-32ee-404b-a6b5-cd06c076799c
+.netflix.com	FALSE	/	FALSE	1797200095	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797200095	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0

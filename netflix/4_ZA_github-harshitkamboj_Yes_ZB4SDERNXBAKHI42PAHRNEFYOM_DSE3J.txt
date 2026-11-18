@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: ZA
+Plan: Premium
+Next Billing: November 19, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 229 ZAR
+Extra Member: Yes
+Profiles (6): The Zwane's, The Zwane\'s, Our TV, Main TV, Dv, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1816964361	nfvdid	BQFmAAEBENjW2DBZQyISIxcFeSWhp8FgQQgBqgUf7CW4dq_DhPxBMX6Wg3pa8JLormJAOl4nTh8AbyrnziIMeYFEV-_HhK_G8IKDGAziYQvZDQucMn_tX0fncfhJrc_Iaj-Ya4WbnK7ymknlksZ4l-eFAUxCS289
+.netflix.com	FALSE	/	TRUE	1818247164	NetflixId	ct%3DBgjHlOvcAxLtAxwhFFvfovH1GaX48VA7cISBXJxByGgW-U40WZ8fkS_g_OKdaR5uDVCEgrcz_nhbAElgkTP6-Vl-2Ep4ety9ZKFc5w1my3dYMe5yRhgLt_WjWK74gK-xvDQ4xPvb14i4hrYab3gxKIg3WLQIR3HPpd80suXnnJ5bGfsfIWPYr0LWIzHZWG6ZsswTDTsq-qoVstKjyNI1bMuGgLlP07gtDZ5HvcglFmoxAM2yjVrQssGwy5SPDsYvHuvNYUI4Y7ctpCg-GUt0DOzW1y_ckV9GmXgtEaWWRaaDnfAL5IbatDK0-9i0TVr5DWOZ-o0AyEIceaTKKn7nW7iAU0doxEdBrujPw4l7wZlRsyXSpLEZTd_OKzFCaEQrCKFJcQg2ODbEHNAX5J3nbxEzGkpgJgZifD7xQ-U6pVqMXIPd6CHqcnNSB8b5Vi_aeOdjMReU01L-sXOPYnLHZf3AoSozjHhKxVSUqKsoDb5LvmTbthue6Km3CmArEPdo3tPa_8-9au5ZHl87J56CltxYc1JOt8CzYkf9gI8L1trIzEfn3Ujp0JqqhMPgBEWCzCerGH9NsnSMZZ2Oo-dWTX8RR93kVslW1JGE4jjZ9vhTleGjLK8B9vkJf2ufWcFM7S2sI0fcgGlKUNu3IOx_3uB2pDMqLLQYBiIOCgz7m95wy83IWzPPPH4.%26ch%3DAQEAEAABABS96pjfWhOBwUZVk1I0WdI4cAXgSuG5rOQ.%26v%3D3%26pg%3DZB4SDERNXBAKHI42PAHRNEFYOM
+.netflix.com	FALSE	/	TRUE	1818247164	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTzuliwgFlnPRWh8nqRo6PUzkr-kqnUaCc.%26dt%3D1786711164754
+.netflix.com	FALSE	/	FALSE	1818247378	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Aug+14+2026+14%3A42%3A58+GMT%2B0200+(South+Africa+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=691568f8-9742-4951-ab61-89921ebbfa22&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&crTime=1785428309442&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1794487378	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794487378	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794487378	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Standard
+Next Billing: November 23, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 289,99 TL
+Extra Member: Yes
+Profiles (3): Pınar, Özgür, Doruk
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1820789476	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKZA7PyyWJYN1qvbgt_wBfo5-Dk50gskWKtxaHrsxV5vKQUazhY0iPQnnFbgrI92HfDN5kS5xCZk019iKbQxBqSt5FWTVx8By-sOYL3rudXERXAWms1TXOMxh4MxX1z2EQciKzceZo6LUnBvnBdC_56f3S8f0VcOVVRw24kuxBJYPJVvuiyrMHj0k8J2srPVl3nXeyEZL0P90gRNVtUZm4iBBSCWYFhbvkT8L-quwg_BAUpddCnjXVronp4hAKMsFqelEYzigage8L-eR0hB9uKs9RBoOHCFG1Tm6Nm4a72cNTKhIbk0zKPcEeVu7Wq3ciGG38Zps-WXSWWTM32c3iiMAzMzEHJhpbfpx9Lw4EbuLejTlyoV8LUMSbF-78W20R4cX9x1AeRr9F2_Ii12UbMK9YxIy-oRZFTgzXU7ptIJ3jc4LhcuoUK2zzbSkMDBAEBlBfcQYg87V987-hB7i2QDBJ4MZcbjpFUiDhiLlg5rA2sAquuGD6MTnSr39MhsGNKTXdvXdnY_23cFDYMYmoqiieZrxXIhupoLdkYBiIOCgwrPVv4RAMTx3TcJgw.%26pg%3DN3TINDHNVJHMJEM7VSBL3QST24%26ch%3DAQEAEAABABRnFcQlFhxS80vEQ3XHKv3iqo6zMIyr5cY.
+.netflix.com	FALSE	/	FALSE	1797029478	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797029478	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1817913248	nfvdid	BQFmAAEBEHSKS0lglsmxvK-CXAPgCuBgzpcRJFqY0RRc7YpA9WF4GvhL4B0ppheD8z7i7WuxZEbq0lugfSWZpFCRIkZomwYd3VYsse1rB44UDss5uDW3nJ8klX-PlvQ0M0AmAIwxmbLoDq-X9HF0EKTpWwRNlQm-
+.netflix.com	FALSE	/	FALSE	1817913140	OptanonAlertBoxClosed	2026-08-10T15:52:20.603Z
+.netflix.com	FALSE	/	FALSE	1820789478	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+13+2026+01%3A51%3A18+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=f51eb5d7-75ce-4975-a6c8-8a9246494ee6&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&AwaitingReconsent=false&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&fclco=&intType=3&crTime=1786377141221&geolocation=TR%3B16
+.netflix.com	FALSE	/	FALSE	1797029478	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1820789476	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTy22e1j35vlmvxC-TNtFbuBxNySeCpyd0.%26dt%3D1789253476387

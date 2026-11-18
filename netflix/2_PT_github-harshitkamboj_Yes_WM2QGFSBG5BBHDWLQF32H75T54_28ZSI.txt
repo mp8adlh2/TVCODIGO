@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: PT
+Plan: Standard
+Next Billing: November 18, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 12,99 €
+Extra Member: Yes
+Profiles (5): Licínio, Gabi, Sílvia, VascoConceição77, Crianças
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554947	flwssn	ddea7106-fc35-4da5-9447-7150dadce504
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	df35b2ec-fe64-43aa-be70-9a79ffba4804
+.netflix.com	FALSE	/	TRUE	1802127377	NetflixId	ct%3DBgjHlOvcAxLrAwVf85S4LR96jZP6J_5vNcfNnsXgExwVKOVTQhJIDZ5H3KcOPT2ImiFuUeXhp7giH81NvvVAdIS6pQmO6iJ34uaARKGzmXZApSLhu-LoQPiuJ73w93HaA53P5wYW4B4yN557PgB_B1knTOu28Qf7QnFCtHwrOW5RGfIbC6D5hUST-8FIkipxUUBodm0Mouq03M3VADHyvueRychYc6A22w-pWiSeso_JzRrPkKluMZCOo4gmD8Dndj2ZbefjjAagfzWcmqW9q_JSJVwkTprKnKbIC50RQrUkH9ULG7s7dHt6l68zaZUWb5LhVrrxUnMWQiAyIydJOQe_O2B98NzFEW5CUnMy5oPLxsSGuC4pqAuWYyoBFonMUq1gGNifLz_zagYe0DLKlLnqa9Sc0f2SZ9EfCxQ1S3tKcDiDO-ghA_wrBGIRQiD3UHySp2XYBnu6sJF6SU4ZESZGfMjMDmDG3nUnSxoA8OcRnU3anzcuqym-muZ8dk1SYW72MgnKRMr5LDqJUDicm6JftwI15dqP1x2lvFVTu_Fao14gLr22ZaMQFtoQfR4EQmN2-md0tEpdRNrBmG-KLMBKIeQpTBgW88a9zAEmhOG0g9l0utEGlTjADEoM1uWA3dNhtb5UWu3notGvV6jdMa5nvzU6GAYiDgoMr4C8Nle6srDqiP7k%26ch%3DAQEAEAABABRIJX3PKN8QlPa5mDWvrjdx4yKmuIu0F6s.%26v%3D3%26pg%3DWM2QGFSBG5BBHDWLQF32H75T54
+.netflix.com	FALSE	/	FALSE	1796554947	nfvdid	BQFmAAEBEBwroihwx5LyX_1u04hARItgoq8bsijbndfd4laeAGuns1ysMNt2iCMuwT_hM_MRNyH0--gd-FHFDLiZ0elDtigGBO5ptgVRKFBv-2r6H0UXk-6k_5IVMjV3eTzuirgtPr2Q7h24iRlT7yyuQmBsDbse
+.netflix.com	FALSE	/	FALSE	1796554947	OptanonAlertBoxClosed	2025-08-21T19:59:08.280Z
+.netflix.com	FALSE	/	FALSE	1802127375	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Feb+08+2026+22%3A56%3A15+GMT%2B0000+(Hora+padr%C3%A3o+da+Europa+Ocidental)&version=202512.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=eda0b2cb-1ba4-4ce7-902b-8125db2b342a&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=3&geolocation=MT%3B51&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1802127377	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTZuF8rGed9x_L6HPWNby8GPgRazAInR8g.%26dt%3D1770591377818

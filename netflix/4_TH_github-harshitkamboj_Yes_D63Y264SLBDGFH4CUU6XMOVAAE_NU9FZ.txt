@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Premium
+Next Billing: November 20, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 419 บาท
+Extra Member: Yes
+Profiles (5): THEERAWAT, ******, Panyasin, 🔥 🅟🅔🅜🅘🅚🅐, THEERACHUT
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	5cf3de29-ef0d-4a00-a6f6-de3e89c9008c
+.netflix.com	FALSE	/	TRUE	1822020607	NetflixId	ct%3DBgjHlOvcAxKHBM7HQCuvINck6kxb2tlxvnGc5hA6shyyQ1Sdjb45yUV0olJvra_aH9hMoGRhlhNP1P_umw0fN4pj3z3hLKTda1JRVGGpJT8R44wXtFOxwQ9TCSi1mTXEQkAfLmsYNcwcbQ-oTy-q1OVT9w3Ji8qzLsWZbrPPBzbhRbNC9BbKgsKFtUSIZl_J20xMoNgascWQ7W0Ygt8_96W06CvKTSqW5XVB7A2NBPT3uKySyzuLQ9EGtzE_ZzUM3FnaQTFUzwVfqja0ty0qDYXd6WMn_j-Ade91FD58mMLtxZtHnY7dkRp2mDqIYCiUYG5eY4v4l1BHa0jon8Fp-jCuBsvGc4xlDVO5lEDI3TNVuffBIN8aQPspCJlGDf3GtxOxdsWHYCyOe-DwVUTwq3T9vhkx48RHajDX4QNotl4QJ-7LQajgyQbHXgVJYYamAjr3cNbG4zZzgEqmJtTpmzXdxDzdgLDApAJKOPM1BmCivO6NVJc4h81T4rnBbqM8Yu-hsCTxiofLJj76A3_I-fc4TjWY34AjDjSVvx01IKdYSKdRbeZtp1-qhO0EByoyu0YBDy5kcgeDnM-xlhgZCAn03re_lwMNjOLmp9DACFYnGo-BGx5JQuj9iAJrv_ApvNL-edEsRxCiR6muuWyP9hYS6KG37Mouq2fA1EbuBN29B5Po_RF3a2xi8yEurRRsMRgGIg4KDGlx879Tu-2cBCH14w..%26ch%3DAQEAEAABABTFnASx9sRD7OPpHGxkM1_bbhEF4NUrFBw.%26v%3D3%26pg%3DD63Y264SLBDGFH4CUU6XMOVAAE
+.netflix.com	FALSE	/	FALSE	1798261157	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798261157	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1818503003	nfvdid	BQFmAAEBEJ3lIm7cKp4U4tL1b3tSfnlgkzbrsZuRKLOOqoiYgKu15CTtnJDJdRFUfr48-BTSRI-yH6MqByhI-dax_nFb2zYVHRSADJW2FgE507oGE3xB3bEDlb0VQs87TSsZdEW9CmQZkq3omREKlys9Kb35wWqV
+.netflix.com	FALSE	/	FALSE	1822021157	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+27+2026+11%3A59%3A17+GMT%2B0700+(Indochina+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=6e1800af-eb00-4049-8865-8f91fa717f77&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1786966996838&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1822020607	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTVmnFkN9acpV4-R0tOJ6KwT8ExxUrpNyA.%26dt%3D1790484609477

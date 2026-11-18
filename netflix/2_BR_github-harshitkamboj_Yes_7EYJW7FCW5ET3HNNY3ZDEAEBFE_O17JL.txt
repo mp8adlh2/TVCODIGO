@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Standard
+Next Billing: November 7, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: R$ 51,90
+Extra Member: Yes
+Profiles (5): lelinha ;), neninho, jumba :D, mahaim, InaYa
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1816300594	OptanonAlertBoxClosed	2026-07-22T23:56:34.145Z
+.netflix.com	FALSE	/	FALSE	1816300583	nfvdid	BQFmAAEBEGXKFkbsPB6TOxMkbRM_YepgFPkHPr4kNkiyODOTDmJ7whKF2lq-fXeJ81QSDSy_OpN-RrB5yj9MtJFFuO_Uda8b0NeYUFeaW1GXHSeMr7O9G9mCjavCdKx2Lunc80-8fH4JWcisyYDvGIAPt4n0MRLJ
+.netflix.com	FALSE	/	TRUE	1817699771	NetflixId	ct%3DBgjHlOvcAxKGBCtb1vQh5RRLH3coyMC6yXURabI3qfQGMblnUxKGsP-oPWq279__aGOn28aI2xE7UelWMoRaiKBuYc2cBe-wIy5X4g3kHb-mt3_-p6-kfzuLvlIV5a6sPxgKU5y7Az00w_JiORlTK03lfGnqE5fgF4hun2yjhwqKrs8LhQgKxwv0QZh2s5S9_ETCK-28TddoZnjnW1yMI2--lQo12YIRJvkpNHBz0vT1ZL-lnlGsk9JfMRNyvdmks8mKKEuavj1wInyWV6DBnsa0DlkT6dkkfbxNpf8xEbReq2PKQ0zQilbK3pSBYYMzIEwGPfO2zreV_9KHadyCLiUDXG5l5tPVKeelHnwlSQ4LFO-XpuzsM7TR1fAvBAvjBEO0DNRBgcoEVRCOenlKKQn6evBHSgsa3dvpZcJ0nRL6k2uaAt3A3jBZEFTAFW_-IV1kMuaeQsqWZqPpg_8Flci0Xl-RgS8aPoQWsYQ0V5sh5M2CBtr_2s_t20U6gttE1jAsi3ybvdDJlV2cR8c3R5S3xslwd38ygj40hk1PlzARsV6GYecVzIYB6WfSFlVuPcsA5SnvYbJ-ZRct6x6gWkoiE5GCRrRgshmlTNUVwGvtYUjKBCovm_ijNZaRg2MaQPPLSzUArznRFJXN8SkwWqI5LOLId4dJgpxajwTYkbc22tA6KubP35CemjnadjuOGAYiDgoMJWRwDkjDqNmtdmtt%26ch%3DAQEAEAABABQTR_C8CTDP5bEhoiZelRAaxEDeBekbDpI.%26v%3D3%26pg%3D7EYJW7FCW5ET3HNNY3ZDEAEBFE
+.netflix.com	FALSE	/	FALSE	1817699776	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Aug+08+2026+01%3A36%3A16+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=0600a2e5-7651-4219-98c5-5dcb7de69240&interactionCount=3&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=3&geolocation=BR%3BSP&isDntEnabled=0&prevHadToken=0&fclco=&crTime=1784764599034
+.netflix.com	FALSE	/	TRUE	1817699771	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRayahEDQxdVBzGCWPjmyQTgoxWv2_xaYU.%26dt%3D1786163781623
+.netflix.com	FALSE	/	TRUE	1820723773	nap	BgjvvevcAxJJysm5WjEZ2ZpPIAj9Yxf_L9xXTNcGabZVDSbu_dj68f42Hri450VKrcFmpi3Kzj3iOf65n67ggj3vn4hkvUmFG8-js4lkLxmgHxgGIg4KDAAXg-jlbgBvcXKyKQ..
+.netflix.com	FALSE	/	FALSE	1796554944	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554944	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554944	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

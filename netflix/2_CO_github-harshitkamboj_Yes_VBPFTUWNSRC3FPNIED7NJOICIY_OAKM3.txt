@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: CO
+Plan: Standard
+Next Billing: November 27, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: $ 29.900
+Extra Member: Yes
+Profiles (3): Efrén, Yadira, Gaby
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554944	gsid	c53436c0-741e-4c16-8e64-f62e3cdd9fb2
+.netflix.com	FALSE	/	TRUE	1820502388	NetflixId	ct%3DBgjHlOvcAxKCBJ4rXJhsTPHSBIkvIBYkKegFL9V_J2yiRKKjPOXVvGXBGDWdtytOG3U1nPvSUqAlVwvQUZNEPZORXWhJgEriChZoWqEicFgU98tXzBGpG5BiZsWM10g2IILW_UhU0Sp6KGyhXTKOvj02wCwJ9WjiMMuHUap7nDEqrXrVyAoQDekUDeGX-BLKPnXuaLW8DKW5bJPmUOwDrU3hvsQIgbXovxQ59m72ePWSUj5HQLS7tQjGbCf9_3_dtxZ-_q40Qcw4KLilaYvaQcG-bq82PK5crNabccRgy2CSKhMjlLxPrJ8jfTWRdM2zurdTtnviG3jhLMKLi6_4GVs5vdSlrD4AOfpMdaX0-qhjTfIxLtc_GgQJXi5VQt3zrUg20Fzvgsu-2kvOqXVijVmv75r4jr-59rAgLE9uV9NLWB6pKxELIaj_TyxCmrHQbSEWquWie3Rde29fOQau3BJU0vNeX7De7L75qsK0kZD_9zII0dRMSfssVX5Lkcw-ZBq17E7xlgQwQ1Br67X_yVywtO9YQ_lY-g_OdWeMxBL8zZ-xHhVOOBkgP7Kq9aFtEg20itjlO2-0hMLBc1KCHprEehND2V0KErmN65E1_nooan_YYvbvxQlaiBe2XRgS-i2PA8HhTDj0tCiOWU5GSf_tmvHfv98i8NbC3jzigIovge8bIbADVGLOtekYBiIOCgwn36rFxTFle2kyA6Q.%26ch%3DAQEAEAABABSOQxEmfnC1cSwiHVBEm--Q9Y3XUC7dFQA.%26v%3D3%26pg%3DVBPFTUWNSRC3FPNIED7NJOICIY
+.netflix.com	FALSE	/	FALSE	1817311849	nfvdid	BQFmAAEBELA_Pyo3H4_Z-EpAquM2Qk1gnUKsujppF8VxBziZy-6roYLcLs_X1PSQEKw_71QuWpylDCV_A98CchDPe5HJH_ILva65WPIGgFdOPGp1ltIWh1-0QCselbhOU2J5UK8b_rlRf80Pcu28cD4q29TEEfFm
+.netflix.com	FALSE	/	FALSE	1813176166	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Jun+16+2026+15%3A02%3A46+GMT-0500+(hora+est%C3%A1ndar+de+Colombia)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=c2ab7e99-b707-4158-8a77-2b313c405c21&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	FALSE	1796742436	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1820502388	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRDdzWcgS06aSvcm1FOx_Sa4nMiowIFvbY.%26dt%3D1788966384485

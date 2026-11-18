@@ -1,0 +1,463 @@
+{
+  "email": "gilbertogil54@gmail.com",
+  "password": "Heitor1954",
+  "access_token": "a3c3b99b-e6ba-41c2-81fc-ec1a0f5ae9e7",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiODRlMjQyMWYtYzhkZC00OWRkLTkwMWItNjBmYzdjNDIzODE0IiwiYXRfaGFzaCI6Img4SXhJakFCcS1GT01xZGZ2MWZ4U3ciLCJkZXZpY2VJZCI6ImY5N2I4MjRiOGZiYzlmMDQ2ZTQ1OTIwYTkyZWE4NWM3NjY5YTAyYzciLCJhdWRpdFRyYWNraW5nSWQiOiI4YTc3LTIzN2EtNDBkMC1iYTgxLTg1MWUiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjc4MDcwMCwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiIzMWJhZjAxOS01MjAwLTQxOWQtYjhhMy03NjU3NmU4MmM3N2QiLCJzaWduYXR1cmVzIjpbIjExMDQ2MDkwMCJdLCJjdXN0b21lcklkIjoiYTQyYmVhNmY1NDNkODYyODg5ZDNlYWYzYTVmMDQwM2QiLCJyZWdpc3RyYXRpb25TaWduYXR1cmUiOiIxMTA0NjA5MDAiLCJnaXZlbl9uYW1lIjoiR0lMQkVSVE8gSk9SR0UgT0xJVkVJUkEgR0lMIiwidXNlcm5hbWUiOiJnaWxiZXJ0b2dpbDU0QGdtYWlsLmNvbSIsIm1haWwiOiJnaWxiZXJ0b2dpbDU0QGdtYWlsLmNvbSIsInJlZGVtcHRpb25MaW1pdCI6bnVsbCwiaWF0IjoxNzg4MzEyNzgwLCJleHAiOjE3ODgzOTkxODAsImlzcyI6InNtLXNreS52cmlvc2VydmljZXMuY29tIn0.miOx_mTBq3jf-iGfxmvdShjZ68PHSUTrUUKo22oz5IQd_9favzti6NWg2AxEjEdnZrHNTT-N2IOhARCPyrYq3HNGuCg5dtixsSfFwat32XeX88EzrD_drOmUlGx3IQNHH3-_GiCHgSKhEDf_kbDPYgypTEMxiwS7l7Qrkbf-ddQTMM1Pjiuj8empL2HDzFxwEgt_MnOUhSCDtkOmrd27QElAp6vvM3gXoTSy4jEiLD3nQtf862HyqKofB72KIv38PCSMk-Gk2WNwT-O5_cXJP2qN-Zcg9RHFGBAPrTcizShRkwcBCTBlqudcMCvCJ15chEIeK94oI1Lp3YzrmPpvVA",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "a3c3b99b-e6ba-41c2-81fc-ec1a0f5ae9e7",
+    "externalId": "f0ab48da-a93e-5a09-a1b2-472ebf6e04b5",
+    "username": "a42bea6f543d862889d3eaf3a5f0403d",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "110460900",
+    "protocol": "2026-150197381609",
+    "customer": {
+      "email": "fernando.gerencia.ti@gmail.com",
+      "billingProfileCode": "1-A7AS-17927",
+      "name": "GILBERTO",
+      "secondName": "JORGE OLIVEIRA GIL FERREIRA",
+      "birthday": "1954-08-01T00:00:00.000Z",
+      "ddd": 21,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5521970382926",
+      "id": "a42bea6f543d862889d3eaf3a5f0403d",
+      "cpf": "31268846791"
+    },
+    "signatures": [
+      {
+        "id": "110460900",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 970382926,
+          "dddMobilePhone": 21,
+          "dddComPhone": 21,
+          "comPhone": 38428456
+        },
+        "customerId": "a42bea6f543d862889d3eaf3a5f0403d",
+        "status": 1,
+        "productName": "COMBO FULL ESPECIAL + DISNEY PLUS PREMIUM 2023 - P",
+        "name": "GILBERTO",
+        "secondName": "JORGE OLIVEIRA GIL FERREIRA",
+        "dna": "01000000000101000000000100000000100000000000000010000000000000100000000001000000000000001011000111110000000000100000000001000000011110100000010000010111111111111111111111111000000000000000000000100000000010111111111111010000000011111010111111110001000000000001101011111111111001101110001111111111110111111101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101001111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Alberto Torres",
+          "line1": "Rua Alberto Torres, 85 - Circular",
+          "line2": ".",
+          "number": "85",
+          "city": "Duque De Caxias",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "25070000",
+          "referencePoint": "Rua Do Colegio Cruzeiro Do Sul.\\\\ Tel: 21 26736034 Ou 21 989243622",
+          "addressType": "Rua",
+          "resDdd": 21,
+          "resPhone": 26736034
+        },
+        "addressBilling": {
+          "linePublic": "Rua Alberto Torres",
+          "line1": "Rua Alberto Torres, 85 - Circular",
+          "line2": ".",
+          "number": "85",
+          "city": "Duque De Caxias",
+          "state": "RJ",
+          "country": null,
+          "postalCode": "25070000",
+          "referencePoint": null,
+          "addressType": "Rua",
+          "resDdd": 21,
+          "resPhone": 988517308
+        },
+        "activation": "2012-07-31T00:00:00.000Z",
+        "email": "fernando.gerencia.ti@gmail.com",
+        "parentAccount": "0110460900",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000686233842",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "670A2634118281756"
+          },
+          {
+            "smartcard": "001133545895",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A0120773635026"
+          },
+          {
+            "smartcard": "001205483330",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A012549496040E"
+          },
+          {
+            "smartcard": "000666583554",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "CE0AA635379028203"
+          },
+          {
+            "smartcard": "000904719721",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "010A2634126682836"
+          },
+          {
+            "smartcard": "000615280294",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH25",
+            "serialNumber": "CE0AA135305535755"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "110460900",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 970382926,
+        "dddMobilePhone": 21,
+        "dddComPhone": 21,
+        "comPhone": 38428456
+      },
+      "customerId": "a42bea6f543d862889d3eaf3a5f0403d",
+      "status": 1,
+      "productName": "COMBO FULL ESPECIAL + DISNEY PLUS PREMIUM 2023 - P",
+      "name": "GILBERTO",
+      "secondName": "JORGE OLIVEIRA GIL FERREIRA",
+      "dna": "01000000000101000000000100000000100000000000000010000000000000100000000001000000000000001011000111110000000000100000000001000000011110100000010000010111111111111111111111111000000000000000000000100000000010111111111111010000000011111010111111110001000000000001101011111111111001101110001111111111110111111101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101001111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Alberto Torres",
+        "line1": "Rua Alberto Torres, 85 - Circular",
+        "line2": ".",
+        "number": "85",
+        "city": "Duque De Caxias",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "25070000",
+        "referencePoint": "Rua Do Colegio Cruzeiro Do Sul.\\\\ Tel: 21 26736034 Ou 21 989243622",
+        "addressType": "Rua",
+        "resDdd": 21,
+        "resPhone": 26736034
+      },
+      "addressBilling": {
+        "linePublic": "Rua Alberto Torres",
+        "line1": "Rua Alberto Torres, 85 - Circular",
+        "line2": ".",
+        "number": "85",
+        "city": "Duque De Caxias",
+        "state": "RJ",
+        "country": null,
+        "postalCode": "25070000",
+        "referencePoint": null,
+        "addressType": "Rua",
+        "resDdd": 21,
+        "resPhone": 988517308
+      },
+      "activation": "2012-07-31T00:00:00.000Z",
+      "email": "fernando.gerencia.ti@gmail.com",
+      "parentAccount": "0110460900",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000686233842",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "670A2634118281756"
+        },
+        {
+          "smartcard": "001133545895",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A0120773635026"
+        },
+        {
+          "smartcard": "001205483330",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "670A012549496040E"
+        },
+        {
+          "smartcard": "000666583554",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "CE0AA635379028203"
+        },
+        {
+          "smartcard": "000904719721",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "010A2634126682836"
+        },
+        {
+          "smartcard": "000615280294",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH25",
+          "serialNumber": "CE0AA135305535755"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "110460900": {
+      "included": [
+        {
+          "name": "ESR HD CB",
+          "category": "A La Carte",
+          "subcategory": "Esportes",
+          "start_date": "09-08-2023",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "TELECINE HD CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "09-08-2023",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "09-08-2023",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM 2024 CB",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "09-08-2023",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "SEGURO RESIDENCIAL PARA CASA DE ALVENARIA - BASICO",
+          "category": "A La Carte",
+          "subcategory": "Premium",
+          "start_date": "09-08-2023",
+          "end_date": "09-08-2028",
+          "icon": "🌍"
+        },
+        {
+          "name": "PREMIERE TOTAL HD CB - P",
+          "category": "A La Carte",
+          "subcategory": "Futebol",
+          "start_date": "09-08-2023",
+          "end_date": null,
+          "icon": "⚽"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "ASSISTENCIA PREMIUM SEGURO RESIDENCIAL",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "09-08-2023",
+          "end_date": "09-08-2028",
+          "icon": "🛡️"
+        },
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "16-07-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky Sex Prive - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "09-08-2023",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "Sky Sex Prive HD - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "09-08-2023",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "AMAZON PRIME PROMO 2",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "02-06-2026",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": null,
+            "name": "ASSISTENCIA PREMIUM SEGURO RESIDENCIAL",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "09-08-2023",
+            "startDate": "09-08-2023",
+            "endDate": "09-08-2028"
+          },
+          {
+            "id": "1-1QKJGWB",
+            "name": "ESR HD CB",
+            "category": "A La Carte",
+            "subcategory": "Esportes",
+            "logo": "https://skycms.s3.amazonaws.com/images/42693528/ESR_logo.jpg",
+            "price": "6.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "09-08-2023",
+            "startDate": "09-08-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TELECINE HD CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "09-08-2023",
+            "startDate": "09-08-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "09-08-2023",
+            "startDate": "09-08-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "DISNEY PLUS PREMIUM 2024 CB",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "09-08-2023",
+            "startDate": "09-08-2023",
+            "endDate": null
+          },
+          {
+            "id": "1-2005PRI",
+            "name": "SEGURO RESIDENCIAL PARA CASA DE ALVENARIA - BASICO",
+            "category": "A La Carte",
+            "subcategory": "Premium",
+            "logo": null,
+            "price": "24.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "09-08-2023",
+            "startDate": "09-08-2023",
+            "endDate": "09-08-2028"
+          },
+          {
+            "id": null,
+            "name": "PREMIERE TOTAL HD CB - P",
+            "category": "A La Carte",
+            "subcategory": "Futebol",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "09-08-2023",
+            "startDate": "09-08-2023",
+            "endDate": null
+          },
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "16-07-2025",
+            "startDate": "16-07-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "09-08-2023",
+            "startDate": "09-08-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive HD - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "09-08-2023",
+            "startDate": "09-08-2023",
+            "endDate": null
+          },
+          {
+            "id": "1-21BSJ1A",
+            "name": "AMAZON PRIME PROMO 2",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Amazon%403x.png",
+            "urlDetail": "https://www.sky.com.br/amazon-prime",
+            "price": "0.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "02-06-2026",
+            "startDate": "02-06-2026",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

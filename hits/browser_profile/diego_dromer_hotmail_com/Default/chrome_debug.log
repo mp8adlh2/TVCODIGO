@@ -1,0 +1,8 @@
+[0912/120627.179:INFO:CONSOLE:2] "%cSKY%c+ %cversion: %c<SITE_VERSION> font-family: Arial;font-size:14px;color:#ff2424 color:#ffffff;font-size:16px color:#ffff1a color:#ffa64d", source: https://cdn-cms74.hub.directvgo.com/o/sky-mais-theme/js/modules/dtvgoServices/dtvgoServices.js?v=1789018954968 (2)
+[0912/120628.956:INFO:CONSOLE:275] "OverChat Widget v2.6.1", source: https://overchat.overlabs.com/overchat-widget.umd.js (275)
+[0912/120631.699:INFO:CONSOLE:1] "Network or fetch error: TypeError: Failed to fetch", source: https://www.datadoghq-browser-agent.com/datadog-rum-v3.js (1)
+[0912/120633.106:INFO:CONSOLE:77] "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold", source: https://html5.inthegame.io/v2-7/itg.umd.es5.js (77)
+[0912/120637.161:INFO:CONSOLE:3] "Uncaught TypeError: Cannot read properties of undefined (reading 'length')", source:  (3)
+[0912/120637.166:INFO:CONSOLE:1] "Uncaught TypeError: Cannot read properties of undefined (reading 'length')", source:  (1)
+[0912/120637.620:INFO:CONSOLE:3] "Uncaught TypeError: Cannot read properties of undefined (reading 'length')", source:  (3)
+[0912/120637.621:INFO:CONSOLE:1] "Uncaught TypeError: Cannot read properties of undefined (reading 'length')", source:  (1)

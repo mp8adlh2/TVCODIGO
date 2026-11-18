@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: CP_FR_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Profiles (5): 1, 2, 3, 4, 🌊
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1825172752	dsca	true
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	f941b793-303d-4737-b11b-7abbfc8041a4
+.netflix.com	FALSE	/	TRUE	1822148749	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKgA-RQFHGSy0v6bRdhnSGCYZGLwcrlcVciMxJn92u7-O8rSGyIDGp1CRnT5kg5mb-_yQWgmy5VsEf9u_x035tnDtiNnAh7G-F1zIN1r0Hm01Jc5cafBnnmgU4mv4MpuW7YoxETZneBC5AHJOFVy_Go0WP5ROJ_cdzHov4vhI3D9iLHyDgL8R1zuUDDzrvX4WM7Tn16DawYA5Bgm2bhRNP9lTsITZ0G7VpJvbytbPWaY_eEtUcVvAO6nLuVDkyN-Vjz0RjeueNT5owFiLZeiCNl6sVvAl3D7XrF5ehDFH8QqjHUcdBrk9kgZEAuCCx8q2fDLoPg3lr_Fy1vS0HJbiwu-_QqSZGg4E9hD926UGnHcg4pnjZJL-xCKKqf2uDhkysfZlvm3p0cbm9nVLbISUMCe4TqhWCxggsPDSIxqVAagzCf8m2q_7jY3Q94XSBEopFRZD3ius0HBCAAzs9m0IKbopBe1dxq4o8aGXbo2qD920z1KpFOS8Odg-ogNSxLdJS93OIBbC194vwFXXmtSmjN4ByxF1WeEw5FdNb3IWsA-Eo-GAYiDgoMR9xxcCSi86kMuS7I%26pg%3D33XUQARCYNHY5OLZNIOYSNBP7Q%26ch%3DAQEAEAABABRR8DS-8RbDM1SoPZEvrM919g22fIJYWMA.
+.netflix.com	FALSE	/	FALSE	1798402086	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798402086	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1822148749	nfvdid	BQFmAAEBEAgV6zJ9K3Q93D71gCVJD1RgVmIT9LW2BGRvmV18Z6_pwMBVdFU-LJOls9zUdWpJ1OE1BZtttadUfL2JjlZrJzYoR3NfflPVKPpP24dqQRUtawg45zYTj4TnOym3uyo0f4KzU3PzJhNcb9GIo5S0zwab
+.netflix.com	FALSE	/	FALSE	1798402086	nkufi-bold-4-loaded	true
+.netflix.com	FALSE	/	FALSE	1798402086	nkufi-normal-4-loaded	true
+.netflix.com	FALSE	/	FALSE	1822162087	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Sep+28+2026+23%3A08%3A07+GMT%2B0300+(%D8%A7%D9%84%D8%AA%D9%88%D9%82%D9%8A%D8%AA+%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A+%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=0aa87efe-5454-49a0-bea1-2bc0dcb18826&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&crTime=1774160177590&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1798402086	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	TRUE	1822148749	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQn2vBU7G9E62NnhN6rBJx-rt3zhlGZJVk.%26dt%3D1790612734549

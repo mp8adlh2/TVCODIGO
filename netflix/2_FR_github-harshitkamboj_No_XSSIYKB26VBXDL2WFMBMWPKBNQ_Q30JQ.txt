@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: FR
+Plan: Standard
+Next Billing: UNKNOWN
+Payment: CP_FR_BILLED
+Quality: HD
+Streams: 2
+Price: N/A
+Profiles (3): Jay, Mom and Dad, Jeunesse
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1820646954	dsca	customer
+.netflix.com	FALSE	/	TRUE	1818833204	NetflixId	ct%3DBgjHlOvcAxLMA0CGRnrKoYrfOrdIiIAH7dpzSnPpbNcghqjLYcEwRWSqMxOxerfnkyJkvbmh4C23g9mfTpKB4yXIrIDnXIl1-G3Cw42Te1I2qMOKa_QB_n-GAyqIza9CL2UmkM7KDYcAtBPFKuFajlJtmnG3tsNIoW-HPIUPHS_ofj0ODwWFs9sudOlpFGUeL76sFNX0KQjdwFKjZNCliDJ5dn1Q7ClN7v_jBYrNcuRBU3cuv6zA6vu9Y01xOxcpCYALgOf4OySXtQWoO4d8CZ0XfY0aZTu-K7Y0rUpGSkXjpEs0YdJNHim-c3IoNonrZv_qESmEaeloi98VfJ3FJVI_nM-Dk0EEZb7lZ2ctSlb6Q2as2vl5SnzX-pieCDwVMI4msk0KgHp92YdgfsT1RoXtkbB3eTske684-66qO6FVwy-H2DPkmjAH_CRtQp0lxV9jogUUmhspBkg4O9N7lmAKF-PUFyQPd0C6d9dZNfLTT0hBt-WR8pavahjnbO5Ahr21-QE9unVa6MxtrJV8EpxmXVtEjsIE-cvKtT5Zel36z57jpT0_FLqnGLLLIY_jT9leTCP1dSCqIT_qHXFl3BfQ8hnt-KMiXahTgFz064mB-x1qQq4YBiIOCgx4Rc0_9B2FFNGO1UA.%26ch%3DAQEAEAABABSCpPPcLtu1-jcyhE3dx9bkbeUMhZPxmkQ.%26v%3D3%26pg%3DXSSIYKB26VBXDL2WFMBMWPKBNQ
+.netflix.com	FALSE	/	FALSE	1817622954	nfvdid	BQFmAAEBEDNup4luFeFhC48bKlA-agpg58K70qD3eDaP6vwHy48a5eFObIy2j0vo_ooq4XxAiEXfmf7DHbAOGLC2PP_iHZfysZgSBgabaCKNYSrlUVWPV-EfyMcPz8af0KIPJBzE-okUgRt2fKPhck-SgiRju56r
+.netflix.com	FALSE	/	FALSE	1817622961	OptanonAlertBoxClosed	2026-08-07T07:16:01.382Z
+.netflix.com	FALSE	/	FALSE	1817623014	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Aug+07+2026+09%3A16%3A54+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=265621ab-f423-4c83-bc0d-83f8dd12ae34&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=1&crTime=1786086961873&geolocation=FR%3BIDF&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1818833204	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSoS4GH9ROsgZUM6GQRCbwMO0E9_BpmYjQ.%26dt%3D1787297197507

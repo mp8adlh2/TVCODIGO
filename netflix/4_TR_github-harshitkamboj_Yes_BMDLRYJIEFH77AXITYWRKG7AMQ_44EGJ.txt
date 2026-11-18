@@ -1,0 +1,22 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: November 12, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 499.99 TL
+Extra Member: Yes
+Profiles (5): Rüzgar, Bartu, Yasemin, Arafat, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1796554944	OptanonAlertBoxClosed	2025-05-20T17:55:05.658Z
+.netflix.com	TRUE	/	FALSE	1796554944	nfvdid	BQFmAAEBEOfS5EwWnQBjkxKrRovx-XNggdO34rByFhaH4kwmGD7T6vuTYlKEYwqLKhHwldpf7XvMU4WVJd4krbRlWFE2EE7Rciss-Hxl5yVHmcvK4bd3PdTwZBvW2k7qTg0gMX2LBTclYhwjGm-72_jI-syDF8pD
+.netflix.com	TRUE	/	FALSE	1796554944	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Jul+28+2025+19%3A36%3A18+GMT%2B0300+(GMT%2B03%3A00)&version=202506.1.0&isIABGlobal=false&hosts=&consentId=3cc6ca49-5a4a-407e-8a37-dd4a611fafb0&interactionCount=3&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&browserGpcFlag=0&isAnonUser=1&geolocation=TR%3B06&intType=1
+.netflix.com	TRUE	/	TRUE	1796554944	NetflixId	ct%3DBgjHlOvcAxLmA-wS68HtoncARjZcJ6Ji2TiOZq2H7e3NBwJiPgx65XkVj0U_EbN9Q0ZHa6OxNTMvNKwY9GPbFkiFC4gsRoL0pZKj16BZrWNk-1jLbrYwEpvIi5-q_CqbK8vGHIEfxyS_tQZrnI9ggdkLTzTXgkOu5SYytEkdhJWrdZw-Tk6hC9bTFS2vkEgqJqYCin0mIi_CSmK_Mcht_NfUC0Urp0KCHjq5477gsa8bSgtZNTc3NnxUCc27b3IvdkdrT_U1MiONZ5pY64NH3ZL0KQKGMZemARyeMvYNpdHX-FLquopoPLG6Rc-Xafhi0Se01M7Ub3USSCmGoSHFAJpX-gUu2HHR3deSfCs0XSQsHsEpPTVkrG35Q2EDB-pRa2ZUNTnQcdj-espE85A66J_Nw7Zz1SS4FgZ_t3IGSw8uMjzAdrjijB7A5Za7zOdgLcBfG1NiLfnNsplCfp4JvMPfDdhPtO1Wb4_GnCJbZqxPJf-aHLNlPeucK33ud0eUFPX41ZO9eeKPJYYD6Mk30bfnXYLG9tMyAkfaVn6iI23P3Vijtm6mBeLAXeuT-s_qj3_3PkRvynYSG-3iAmioU9h1HziqOAqQw9SSkXle6ClJGnNRyVOv3iOgFeN_uBfCkmOfCBMhyhzm_IKLPbQ2ExgGIg4KDGG3xbB8haJogvLk5A..%26ch%3DAQEAEAABABRRJ8vh5RHHIw-3Vqr365aRbWD9X9nJOVU.%26v%3D3%26pg%3DBMDLRYJIEFH77AXITYWRKG7AMQ
+.netflix.com	TRUE	/	TRUE	1796554944	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSmwWu5C9Df8n0dA9i4fqN3IpQ2foaskZw.%26dt%3D1753816313982

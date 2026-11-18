@@ -1,0 +1,399 @@
+{
+  "email": "lala.pfeifer@gmail.com",
+  "password": "Eunice0607",
+  "access_token": "97f51521-ca60-45ec-8f9b-0569e47e7124",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiYmVjYTRlNzUtODMzYi00MDA2LThiN2EtNTM1NGIyN2FjZmM4IiwiYXRfaGFzaCI6IlcySUwxYVQwcjdneVJzb1lDdGhFTkEiLCJkZXZpY2VJZCI6IjQzYWJlNTIxYWZkODQ5ZDgwY2ZjOWNlZDEwMmQ0MTU1YjBmYWRmMDUiLCJhdWRpdFRyYWNraW5nSWQiOiIxMTUyLTY0MWEtNDJjNC04YjdjLTA1MjAiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjczNTA2NiwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiI0NWU5ZWRkZi1kMDUwLTQ5MGEtODczYS1hNTU3MWZhMTA2OWUiLCJzaWduYXR1cmVzIjpbIjgzOTMxMjU0Il0sImN1c3RvbWVySWQiOiI4Y2I1ZDE1ODRlZGY5MWQ2NjA5MWJjYTkwMjA0MDlmZCIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjgzOTMxMjU0IiwiZ2l2ZW5fbmFtZSI6IkVVTklDRSBQQUVTIiwidXNlcm5hbWUiOiJsYWxhLnBmZWlmZXJAZ21haWwuY29tIiwibWFpbCI6ImxhbGEucGZlaWZlckBnbWFpbC5jb20iLCJyZWRlbXB0aW9uTGltaXQiOm51bGwsImlhdCI6MTc4ODMxMjczNSwiZXhwIjoxNzg4Mzk5MTM1LCJpc3MiOiJzbS1za3kudnJpb3NlcnZpY2VzLmNvbSJ9.c18ynfDS8wN2G8_Cv351vPAfGb_IuiLWRQ_FvAwf6TOr_eXs5QYn6nCn2hEffMhlX3Pqofooay0_m1r_xoopBDjmVDix3kq2o-LErrTjocf3WfX0JYn4SCHEu35EBIPamrXYAXPnb7ymQ0NsbaLjLkMnewDcmsdY8lQeskzGb2_b8YJ0szTRMhhKXemVxb_YL24DMHNNNNC59vgf3qjaDKKtMDkFEYg5RnsL9_3ob11CXg4ZV1VVKaEkleULs2eN0Jy7fh8ZbNeXxss5zvrYSk9e-hPoOFGBdviEAS8HrC4CJttvzebsKxSbX2axeOzqLY2pz7u6AQwChnTWVR_DvA",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "97f51521-ca60-45ec-8f9b-0569e47e7124",
+    "externalId": "c810b862-ded2-5a5d-8223-30510dd51ce3",
+    "username": "8cb5d1584edf91d66091bca9020409fd",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "83931254",
+    "protocol": "2026-150197505014",
+    "customer": {
+      "email": "lala.pfeifer@gmail.com",
+      "billingProfileCode": "1-8GOT-20808",
+      "name": "EUNICE",
+      "secondName": "PAES PINTO",
+      "birthday": "1948-07-06T00:00:00.000Z",
+      "ddd": 66,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5566984259180",
+      "id": "8cb5d1584edf91d66091bca9020409fd",
+      "cpf": "13862618153"
+    },
+    "signatures": [
+      {
+        "id": "83931254",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 984259180,
+          "dddMobilePhone": 66,
+          "dddComPhone": 66,
+          "comPhone": 984327468
+        },
+        "customerId": "8cb5d1584edf91d66091bca9020409fd",
+        "status": 1,
+        "productName": "COMBO ESPECIAL MUNDO + DISNEY PLUS PREMIUM 2023 - P",
+        "name": "EUNICE",
+        "secondName": "PAES PINTO",
+        "dna": "01000000000100000100000100000000010000000000000010000000000000100000000000000000000000000111000111110000000000100000000001000000011110001000100000010111111111111111111111111000000000000000000000100000000010111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111010011111101111111111111111111111111110011111111111110111111111101011111111111111111111111100111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011111011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua São Paulo",
+          "line1": "Rua São Paulo, 158 - Jardim Saveco",
+          "line2": null,
+          "number": "158",
+          "city": "Araguaiana",
+          "state": "MT",
+          "country": "Brasil",
+          "postalCode": "78685000",
+          "referencePoint": "Atrás Do Parque De Rodeio.",
+          "addressType": "Rua",
+          "resDdd": 66,
+          "resPhone": 34018853
+        },
+        "addressBilling": {
+          "linePublic": "Rua Dos Garimpeiros",
+          "line1": "Rua Dos Garimpeiros, 1083 - Sao Benedito",
+          "line2": ".",
+          "number": "1083",
+          "city": "Barra Do Garcas",
+          "state": "MT",
+          "country": "Brasil",
+          "postalCode": "78600000",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2011-10-14T00:00:00.000Z",
+        "email": "lala.pfeifer@gmail.com",
+        "parentAccount": "083931254",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001150529103",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "670A0120805857096"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "83931254",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 984259180,
+        "dddMobilePhone": 66,
+        "dddComPhone": 66,
+        "comPhone": 984327468
+      },
+      "customerId": "8cb5d1584edf91d66091bca9020409fd",
+      "status": 1,
+      "productName": "COMBO ESPECIAL MUNDO + DISNEY PLUS PREMIUM 2023 - P",
+      "name": "EUNICE",
+      "secondName": "PAES PINTO",
+      "dna": "01000000000100000100000100000000010000000000000010000000000000100000000000000000000000000111000111110000000000100000000001000000011110001000100000010111111111111111111111111000000000000000000000100000000010111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111010011111101111111111111111111111111110011111111111110111111111101011111111111111111111111100111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011111011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua São Paulo",
+        "line1": "Rua São Paulo, 158 - Jardim Saveco",
+        "line2": null,
+        "number": "158",
+        "city": "Araguaiana",
+        "state": "MT",
+        "country": "Brasil",
+        "postalCode": "78685000",
+        "referencePoint": "Atrás Do Parque De Rodeio.",
+        "addressType": "Rua",
+        "resDdd": 66,
+        "resPhone": 34018853
+      },
+      "addressBilling": {
+        "linePublic": "Rua Dos Garimpeiros",
+        "line1": "Rua Dos Garimpeiros, 1083 - Sao Benedito",
+        "line2": ".",
+        "number": "1083",
+        "city": "Barra Do Garcas",
+        "state": "MT",
+        "country": "Brasil",
+        "postalCode": "78600000",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2011-10-14T00:00:00.000Z",
+      "email": "lala.pfeifer@gmail.com",
+      "parentAccount": "083931254",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "001150529103",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "670A0120805857096"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "83931254": {
+      "included": [
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "23-10-2023",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "TELECINE HD CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "23-10-2023",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky Pacote Mundo",
+          "category": "A La Carte",
+          "subcategory": "Internacional",
+          "start_date": "23-10-2023",
+          "end_date": null,
+          "icon": "🌍"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM 2024 CB",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "23-10-2023",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky Canal NHK",
+          "category": "A La Carte",
+          "subcategory": "Internacional",
+          "start_date": "23-10-2023",
+          "end_date": null,
+          "icon": "🌍"
+        },
+        {
+          "name": "ESR HD CB",
+          "category": "A La Carte",
+          "subcategory": "Esportes",
+          "start_date": "23-10-2023",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "SEGURO RESIDENCIAL PARA CASA DE ALVENARIA - BASICO",
+          "category": "A La Carte",
+          "subcategory": "Premium",
+          "start_date": "23-10-2023",
+          "end_date": "23-10-2028",
+          "icon": "🌍"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "ASSISTENCIA PREMIUM SEGURO RESIDENCIAL",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "23-10-2023",
+          "end_date": "23-10-2028",
+          "icon": "🛡️"
+        },
+        {
+          "name": "Sky Sex Prive - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "23-10-2023",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "Sky Sex Prive HD - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "23-10-2023",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "Premiere com Fidelidade",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "05-05-2026",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "19-03-2026",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": null,
+            "name": "ASSISTENCIA PREMIUM SEGURO RESIDENCIAL",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "23-10-2023",
+            "startDate": "23-10-2023",
+            "endDate": "23-10-2028"
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "23-10-2023",
+            "startDate": "23-10-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "23-10-2023",
+            "startDate": "23-10-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive HD - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "23-10-2023",
+            "startDate": "23-10-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TELECINE HD CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "23-10-2023",
+            "startDate": "23-10-2023",
+            "endDate": null
+          },
+          {
+            "id": "1-2T0LGU",
+            "name": "Sky Pacote Mundo",
+            "category": "A La Carte",
+            "subcategory": "Internacional",
+            "logo": "https://skycms.s3.amazonaws.com/images/37907079/Europa.png",
+            "price": "39.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "23-10-2023",
+            "startDate": "23-10-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "DISNEY PLUS PREMIUM 2024 CB",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "23-10-2023",
+            "startDate": "23-10-2023",
+            "endDate": null
+          },
+          {
+            "id": "1-2T0LA7",
+            "name": "Sky Canal NHK",
+            "category": "A La Carte",
+            "subcategory": "Internacional",
+            "logo": "https://skycms.s3.amazonaws.com/images/37907079/Logo.Internacionais.NHK.png",
+            "price": "25.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "23-10-2023",
+            "startDate": "23-10-2023",
+            "endDate": null
+          },
+          {
+            "id": "1-1QKJGWB",
+            "name": "ESR HD CB",
+            "category": "A La Carte",
+            "subcategory": "Esportes",
+            "logo": "https://skycms.s3.amazonaws.com/images/42693528/ESR_logo.jpg",
+            "price": "6.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "23-10-2023",
+            "startDate": "23-10-2023",
+            "endDate": null
+          },
+          {
+            "id": "1-2005PRI",
+            "name": "SEGURO RESIDENCIAL PARA CASA DE ALVENARIA - BASICO",
+            "category": "A La Carte",
+            "subcategory": "Premium",
+            "logo": null,
+            "price": "24.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "23-10-2023",
+            "startDate": "23-10-2023",
+            "endDate": "23-10-2028"
+          },
+          {
+            "id": "1-1XBHQMD",
+            "name": "Premiere com Fidelidade",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Premiere%403x.png",
+            "price": "49.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "05-05-2026",
+            "startDate": "05-05-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "19-03-2026",
+            "startDate": "19-03-2026",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

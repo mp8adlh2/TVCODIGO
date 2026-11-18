@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: VN
+Plan: Premium
+Next Billing: November 15, 2026
+Payment: MOBILE_WALLET
+Quality: UHD
+Streams: 4
+Price: 273.000 ₫
+Extra Member: Yes
+Profiles (5): TL, Muối, Chandler, Neil, Đạt!
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1814888095	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKfA0aIDWGc4XA_b-3NxQmOXYEbgB_2nyy-CavUlZ9GE5M_y9iXBqVvP7xAA8h0UdGLMLY_ew7dV_VIlMeJjRJnqhsztxofd2ctjc2Wt8tPrkc7Smamn7M7j6-ML6OPzsIQ0cpI1u9-I-6W73aaObMjS2fTFsR_f3rmf8UcXv-yqK8oqErUaxBO8Hhq1F2RWkalXsyHX-vEyb2TUYletM2BVjBDm4h1l0ZBx_6ZlLojgA0iConl39kY_fjTFFoOR5paq3jgpCahTfuEWwpgJpGorLZanLYYfxyBzAHXnAs-n9wh-EdQEgnc_37h-wEmKaLe9Vn2XIcWcBHz2IE8yXgWVo_jQngc0OZ98mEqwGEMQpbOrIHEOD3GdoshN7w7dR3r6uZC0Ue8NdeqvOe3H3NdKH7oJ6CjX1ZV9mikFumhk6RfaJCQTN2WX2_hpU429raf-_cyvyX2JoAApKQcJdQ9H9AdhfqznPV99pYGtEK4Bh4Dg62XVt0lDDjRjd_eDMtuEHXGrO5AqTcdg5DB0QTL2QrtOdoS0oA8WngGpxaFweEYBiIOCgwOyQrRQA7AsCHmhxM.%26pg%3DIPXGPN664ZBLXKUULHHSF3PDNQ%26ch%3DAQEAEAABABRBMm8Wjv83QjI3MO_kLBIfejlfwcoGZQc.
+.netflix.com	FALSE	/	FALSE	1796554947	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554947	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1814888095	nfvdid	BQFmAAEBEFwGOWpDglAyXwNvFgMLagVg7tNhlV2So61oEjd1N5CYJlvSfmRTwW5TTGWbDb-CWSkqGDpmeCh2BM3Tw_dezAyGYnBSV80tNgBRZ5L4yIM8EsE2Qna9OljbsMo0h-K8LCwPrdZ2FH3k24cxlMxhukuG
+.netflix.com	FALSE	/	FALSE	1814895942	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Jul+07+2026+00%3A45%3A42+GMT%2B0700+(Gi%E1%BB%9D+%C4%90%C3%B4ng+D%C6%B0%C6%A1ng)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=919c421c-ae76-4663-badb-70597dc1fdf3&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1783352095493&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554947	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	TRUE	1814888095	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSDDqhFC4bEEweNqpElCpC9FcZuDWSvlQE.%26dt%3D1783352093574

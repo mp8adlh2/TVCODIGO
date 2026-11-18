@@ -1,0 +1,467 @@
+{
+  "email": "(81)98874-3844",
+  "password": "02088284Ren",
+  "access_token": "f9c960c4-c1d2-4fdd-a7de-773a62d5c043",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiNjJiMWVkZTMtZDMwNS00NDU4LWE1YWYtMGRhNzNhZmNiMDliIiwiYXRfaGFzaCI6ImlpanZxQW9BUXJnZzV6SnVvMHVSRnciLCJkZXZpY2VJZCI6IjBhZjA5ZjIxNDcwNGVjOTNhNzAxMDMyYzJhMGRjZmNiYTEwODkxZDkiLCJhdWRpdFRyYWNraW5nSWQiOiJjY2FkLTQ2MjgtNGY2ZS1iODQwLTVmODMiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODgxNzEwMjM3MiwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiIxMTY4MzlmNC05ODQ5LTQ0ZTgtYjQ5ZC1hYTFmMTk4ZTQ2NjQiLCJzaWduYXR1cmVzIjpbIjEyNTU0NDM3NSJdLCJjdXN0b21lcklkIjoiNjM4Y2I5NTY4ZGZiOWMxYmFhNmM1NTVlNjkyYWIxOTQiLCJyZWdpc3RyYXRpb25TaWduYXR1cmUiOiIxMjU1NDQzNzUiLCJnaXZlbl9uYW1lIjoiUk9EUklHTyIsInVzZXJuYW1lIjoiODE5ODg3NDM4NDQiLCJ0ZWxlcGhvbmVOdW1iZXIiOiI4MTk4ODc0Mzg0NCIsInNpZCI6IjBhZjA5ZjIxNDcwNGVjOTNhNzAxMDMyYzJhMGRjZmNiYTEwODkxZDkiLCJzdWJuYW1lIjoiMTE2ODM5ZjQtOTg0OS00NGU4LWI0OWQtYWExZjE5OGU0NjY0IiwicmVkZW1wdGlvbkxpbWl0IjpudWxsLCJpYXQiOjE3ODg4MTcxMDIsImV4cCI6MTc4ODkwMzUwMiwiaXNzIjoic20tc2t5LnZyaW9zZXJ2aWNlcy5jb20ifQ.roG317r_49EuInM3yryadd1YxtojbnFFWlH0QN8wnyTtjSebtHk3maFqL6iyYH7t5EGG3Pls4ChukVeaE50FbF5RC_rqw9DIFQSJH0AbTyP3jWrNdmcdC0w2PDgekyVZ3ewGhG6En1V82UzH9K3uuhbBf8C1jVqH-_pwj2Yg6pC0xIbbesHdLcGEmljs8DM_Ewf8AglO9lW9Oso3_Fjw-jguCtWRRIyD33MTTkLuxcARVIYm0og8hbA7IEHdw6vcroxSHXgKRyqqjsZkmNc0F1pRVgMst73XjyuruTdQn0BBODkSFkjvub5juH2OcRKZdPzty7JwHkOINhLDU6OGxQ",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "f9c960c4-c1d2-4fdd-a7de-773a62d5c043",
+    "externalId": "81ae41f1-91ab-5cc5-872d-e21a046f8be0",
+    "username": "638cb9568dfb9c1baa6c555e692ab194",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "125544375",
+    "protocol": "2026-150293594052",
+    "customer": {
+      "email": "renatacsnascimento@hotmail.com",
+      "billingProfileCode": "1-9VOB-6182",
+      "name": "RODRIGO",
+      "secondName": "PEREIRA DO NASCIMENTO",
+      "birthday": "1984-01-02T00:00:00.000Z",
+      "ddd": 81,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5581988743844",
+      "id": "638cb9568dfb9c1baa6c555e692ab194",
+      "cpf": "04486892437"
+    },
+    "signatures": [
+      {
+        "id": "125544375",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 988743844,
+          "dddMobilePhone": 81
+        },
+        "customerId": "638cb9568dfb9c1baa6c555e692ab194",
+        "status": 1,
+        "productName": "SKY CONNECT TOTAL EXPERIENCE 2025 - P",
+        "name": "RODRIGO",
+        "secondName": "PEREIRA DO NASCIMENTO",
+        "dna": "01000000000100100000000000100000100000000000000010000000000000010000001000000000000000001010000111110000000000000000100001000000011110100000010000101011111111111111111111111000000000000000000100100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111110111111101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Maria Goretti",
+          "line1": "Rua Maria Goretti, 209 - Vasco Da Gama",
+          "line2": ".cs",
+          "number": "209",
+          "city": "Recife",
+          "state": "PE",
+          "country": "Brasil",
+          "postalCode": "52280640",
+          "referencePoint": ".ao Lado Da Igreja Assembleia De Deus.",
+          "addressType": "Rua",
+          "resDdd": 81,
+          "resPhone": 86123859
+        },
+        "addressBilling": {
+          "linePublic": "Rua Maria Goretti",
+          "line1": "Rua Maria Goretti, 209 - Vasco Da Gama",
+          "line2": "Casa",
+          "number": "209",
+          "city": "Recife",
+          "state": "PE",
+          "country": "Brasil",
+          "postalCode": "52280640",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2013-01-15T00:00:00.000Z",
+        "email": "renatacsnascimento@hotmail.com",
+        "parentAccount": "0125544375",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000647992080",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "CE0AA636132355586"
+          },
+          {
+            "smartcard": "000640585394",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "670AA636131236052"
+          },
+          {
+            "smartcard": "000901699033",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "010A2634123659516"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "125544375",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 988743844,
+        "dddMobilePhone": 81
+      },
+      "customerId": "638cb9568dfb9c1baa6c555e692ab194",
+      "status": 1,
+      "productName": "SKY CONNECT TOTAL EXPERIENCE 2025 - P",
+      "name": "RODRIGO",
+      "secondName": "PEREIRA DO NASCIMENTO",
+      "dna": "01000000000100100000000000100000100000000000000010000000000000010000001000000000000000001010000111110000000000000000100001000000011110100000010000101011111111111111111111111000000000000000000100100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111110111111101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Maria Goretti",
+        "line1": "Rua Maria Goretti, 209 - Vasco Da Gama",
+        "line2": ".cs",
+        "number": "209",
+        "city": "Recife",
+        "state": "PE",
+        "country": "Brasil",
+        "postalCode": "52280640",
+        "referencePoint": ".ao Lado Da Igreja Assembleia De Deus.",
+        "addressType": "Rua",
+        "resDdd": 81,
+        "resPhone": 86123859
+      },
+      "addressBilling": {
+        "linePublic": "Rua Maria Goretti",
+        "line1": "Rua Maria Goretti, 209 - Vasco Da Gama",
+        "line2": "Casa",
+        "number": "209",
+        "city": "Recife",
+        "state": "PE",
+        "country": "Brasil",
+        "postalCode": "52280640",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2013-01-15T00:00:00.000Z",
+      "email": "renatacsnascimento@hotmail.com",
+      "parentAccount": "0125544375",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000647992080",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "CE0AA636132355586"
+        },
+        {
+          "smartcard": "000640585394",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "670AA636131236052"
+        },
+        {
+          "smartcard": "000901699033",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "010A2634123659516"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "125544375": {
+      "included": [
+        {
+          "name": "Premiere",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "18-06-2026",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "ESPN 6 HD CB 2021",
+          "category": "A La Carte",
+          "subcategory": "Esportes",
+          "start_date": "18-06-2026",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "18-06-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "SEGURO RESIDENCIAL PARA CASA DE ALVENARIA - BASICO",
+          "category": "A La Carte",
+          "subcategory": "Premium",
+          "start_date": "18-06-2026",
+          "end_date": "18-06-2031",
+          "icon": "🌍"
+        },
+        {
+          "name": "TELECINE HD",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "18-06-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM - CB",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "18-06-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "ESR HD CB",
+          "category": "A La Carte",
+          "subcategory": "Esportes",
+          "start_date": "18-06-2026",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "PARAMOUNT CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "18-06-2026",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "ASSISTENCIA PREMIUM SEGURO RESIDENCIAL",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "18-06-2026",
+          "end_date": "18-06-2031",
+          "icon": "🛡️"
+        },
+        {
+          "name": "Sky Sex Prive - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "18-06-2026",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "ASSINATURAS DIGITAIS V",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "18-06-2026",
+          "end_date": null,
+          "icon": "📺"
+        },
+        {
+          "name": "AMAZON PRIME",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "18-06-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Sky Sex Prive HD - P",
+          "category": "A La Carte",
+          "subcategory": "Adultos",
+          "start_date": "18-06-2026",
+          "end_date": null,
+          "icon": "🔞"
+        },
+        {
+          "name": "DISNEY PREMIUM R$ 9,90 POR 2M - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "19-03-2026",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-1XBHQIX",
+            "name": "Premiere",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Premiere%403x.png",
+            "price": "59.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "18-06-2026",
+            "startDate": "18-06-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-1QKPR7G",
+            "name": "ESPN 6 HD CB 2021",
+            "category": "A La Carte",
+            "subcategory": "Esportes",
+            "logo": null,
+            "price": "9.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "18-06-2026",
+            "startDate": "18-06-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "18-06-2026",
+            "startDate": "18-06-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "ASSISTENCIA PREMIUM SEGURO RESIDENCIAL",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "null",
+            "isPartOfMainPackage": false,
+            "activationDate": "18-06-2026",
+            "startDate": "18-06-2026",
+            "endDate": "18-06-2031"
+          },
+          {
+            "id": "1-2005PRI",
+            "name": "SEGURO RESIDENCIAL PARA CASA DE ALVENARIA - BASICO",
+            "category": "A La Carte",
+            "subcategory": "Premium",
+            "logo": null,
+            "price": "24.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "18-06-2026",
+            "startDate": "18-06-2026",
+            "endDate": "18-06-2031"
+          },
+          {
+            "id": "1-20XEJQF",
+            "name": "TELECINE HD",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/TLCine%403x.png",
+            "price": "29.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "18-06-2026",
+            "startDate": "18-06-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "DISNEY PLUS PREMIUM - CB",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "null",
+            "isPartOfMainPackage": true,
+            "activationDate": "18-06-2026",
+            "startDate": "18-06-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-1QKJGWB",
+            "name": "ESR HD CB",
+            "category": "A La Carte",
+            "subcategory": "Esportes",
+            "logo": "https://skycms.s3.amazonaws.com/images/42693528/ESR_logo.jpg",
+            "price": "6.90",
+            "isPartOfMainPackage": true,
+            "activationDate": "18-06-2026",
+            "startDate": "18-06-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "PARAMOUNT CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "null",
+            "isPartOfMainPackage": true,
+            "activationDate": "18-06-2026",
+            "startDate": "18-06-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "18-06-2026",
+            "startDate": "18-06-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-218ZAE1",
+            "name": "ASSINATURAS DIGITAIS V",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": null,
+            "price": "22.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "18-06-2026",
+            "startDate": "18-06-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-21ATHJR",
+            "name": "AMAZON PRIME",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Amazon%403x.png",
+            "urlDetail": "https://www.sky.com.br/amazon-prime",
+            "price": "5.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "18-06-2026",
+            "startDate": "18-06-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "Sky Sex Prive HD - P",
+            "category": "A La Carte",
+            "subcategory": "Adultos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "18-06-2026",
+            "startDate": "18-06-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "DISNEY PREMIUM R$ 9,90 POR 2M - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "19-03-2026",
+            "startDate": "19-03-2026",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

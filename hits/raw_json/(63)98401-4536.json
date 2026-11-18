@@ -1,0 +1,336 @@
+{
+  "email": "(63)98401-4536",
+  "password": "Vilmaci0608",
+  "access_token": "6b3d8b18-96c4-49b4-8e53-22883cc09645",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiODY0ODNhNDktZjYwNS00NTc0LWE2MWQtMmNiZmJjZTRiZmJmIiwiYXRfaGFzaCI6IktNLTlKSG1GN3lneWR6XzVyOUxCZHciLCJkZXZpY2VJZCI6ImNjYzZjNDYyYTlhZGExMmY4NTA4NWZlY2NjMDI2YTAwMzk4MTg2OGUiLCJhdWRpdFRyYWNraW5nSWQiOiJjNjQxLWFjN2ItNGRjMC04OTQ0LWM3NDgiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODgxNjcxNTI3MCwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiItZVRSand6ZHJ5WUpHa09ZRWJFNkdBIiwic2lnbmF0dXJlcyI6WyIxNTM3NDU1NDQzIl0sImN1c3RvbWVySWQiOiJkZGU2YjNhMDYzNDI4ZWYwZmU5ZTBhYjY5OWM3NDQ5YiIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjE1Mzc0NTU0NDMiLCJnaXZlbl9uYW1lIjoiSk9BTyIsImZhbWlseV9uYW1lIjoic2t5IiwidXNlcm5hbWUiOiI2Mzk4NDAxNDUzNiIsInRlbGVwaG9uZU51bWJlciI6IjYzOTg0MDE0NTM2Iiwic2lkIjoiY2NjNmM0NjJhOWFkYTEyZjg1MDg1ZmVjY2MwMjZhMDAzOTgxODY4ZSIsInN1Ym5hbWUiOiItZVRSand6ZHJ5WUpHa09ZRWJFNkdBIiwicmVkZW1wdGlvbkxpbWl0IjpudWxsLCJpYXQiOjE3ODg4MTY3MTUsImV4cCI6MTc4ODkwMzExNSwiaXNzIjoic20tc2t5LnZyaW9zZXJ2aWNlcy5jb20ifQ.BuVUQvDf0HFHAmIoAWTgyBBAS4NzfA_r3eEjq8AW4F4ww4lwAxFTPuInGE2BFp34bBfBF87yixv4HjNuKaCsPbvbHcpu0D8XQa8uPC-IEqC3UdXOvN0vmdeyP7pPjIxpgISkEPIGcLrZi45XUTuQp0sQvY8XVtSobC8gAWolM-BFBoUPQ9_UhG2rzOoYeVyVwafWBSpKC2E5xTzm_6ZuC_DJxWVXdKfs6BM3ucEwrzutziFSk0Vw9TVsj7toUpYGWO1shjqNDk2hduerGgrLVGWNeP_L03GsIJA-Tz3BHQbgiul-bi9Vzf5b-yl62-iPS-C5bmQoukWogTik4PyHeg",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "6b3d8b18-96c4-49b4-8e53-22883cc09645",
+    "externalId": "d5db3c23-07e0-5869-a996-aca145b10442",
+    "username": "dde6b3a063428ef0fe9e0ab699c7449b",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "1537455443",
+    "protocol": "2026-150293323461",
+    "customer": {
+      "email": "jvittorreis@gmail.com",
+      "billingProfileCode": "1-1PYMX0FH",
+      "name": "JOAO",
+      "secondName": "VITTOR PEREIRA REIS",
+      "birthday": "1998-08-08T00:00:00.000Z",
+      "ddd": 63,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5563984014536",
+      "id": "dde6b3a063428ef0fe9e0ab699c7449b",
+      "cpf": "05483164148"
+    },
+    "signatures": [
+      {
+        "id": "1537455443",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 984014536,
+          "dddMobilePhone": 63,
+          "dddComPhone": 63,
+          "comPhone": 984908894
+        },
+        "customerId": "dde6b3a063428ef0fe9e0ab699c7449b",
+        "status": 1,
+        "productName": "TOP HD PLUS III EXCLUSIVO 2025 - P",
+        "name": "JOAO",
+        "secondName": "VITTOR PEREIRA REIS",
+        "dna": "01000000000100000000000000000000100000000000000000000000000000000000001000000000000000100010000111110000000000000000000100000000011110000100000000000011111111111000011111111000000000000000000001000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001110001111110111101101111111111111111111111111110011111111111110111111111110001111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100100111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Chacara 52 Lote 13 Quadra 47",
+          "line1": "Chacara 52 Lote 13 Quadra 47, 00 - Taquarucu",
+          "line2": "Lote 13 Quadra 47",
+          "number": "00",
+          "city": "Palmas",
+          "state": "TO",
+          "country": "Brasil",
+          "postalCode": "77260000",
+          "referencePoint": null,
+          "addressType": "Chacara",
+          "resDdd": 63,
+          "resPhone": 984014536
+        },
+        "addressBilling": {
+          "linePublic": "Chácara 52",
+          "line1": "Chácara 52, 00 - Taquaruçu",
+          "line2": "Lote 13 Quadra 47",
+          "number": "00",
+          "city": "Palmas",
+          "state": "TO",
+          "country": "Brasil",
+          "postalCode": "77260000",
+          "referencePoint": null,
+          "addressType": "Chácara"
+        },
+        "activation": "2024-06-11T00:00:00.000Z",
+        "email": "jvittorreis@gmail.com",
+        "parentAccount": "1537455442",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001133990513",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A0125447517272"
+          },
+          {
+            "smartcard": "000801012568",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "670A2634120644697"
+          },
+          {
+            "smartcard": "000696139179",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "670AA635387314586"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "1537455443",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 984014536,
+        "dddMobilePhone": 63,
+        "dddComPhone": 63,
+        "comPhone": 984908894
+      },
+      "customerId": "dde6b3a063428ef0fe9e0ab699c7449b",
+      "status": 1,
+      "productName": "TOP HD PLUS III EXCLUSIVO 2025 - P",
+      "name": "JOAO",
+      "secondName": "VITTOR PEREIRA REIS",
+      "dna": "01000000000100000000000000000000100000000000000000000000000000000000001000000000000000100010000111110000000000000000000100000000011110000100000000000011111111111000011111111000000000000000000001000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001110001111110111101101111111111111111111111111110011111111111110111111111110001111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111100100111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Chacara 52 Lote 13 Quadra 47",
+        "line1": "Chacara 52 Lote 13 Quadra 47, 00 - Taquarucu",
+        "line2": "Lote 13 Quadra 47",
+        "number": "00",
+        "city": "Palmas",
+        "state": "TO",
+        "country": "Brasil",
+        "postalCode": "77260000",
+        "referencePoint": null,
+        "addressType": "Chacara",
+        "resDdd": 63,
+        "resPhone": 984014536
+      },
+      "addressBilling": {
+        "linePublic": "Chácara 52",
+        "line1": "Chácara 52, 00 - Taquaruçu",
+        "line2": "Lote 13 Quadra 47",
+        "number": "00",
+        "city": "Palmas",
+        "state": "TO",
+        "country": "Brasil",
+        "postalCode": "77260000",
+        "referencePoint": null,
+        "addressType": "Chácara"
+      },
+      "activation": "2024-06-11T00:00:00.000Z",
+      "email": "jvittorreis@gmail.com",
+      "parentAccount": "1537455442",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "001133990513",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A0125447517272"
+        },
+        {
+          "smartcard": "000801012568",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "670A2634120644697"
+        },
+        {
+          "smartcard": "000696139179",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "670AA635387314586"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "1537455443": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "ASSINATURAS DIGITAIS X",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "06-09-2026",
+          "end_date": null,
+          "icon": "📺"
+        },
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "22-06-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO 6M 50% - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "22-06-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "TELECINE HD",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "22-06-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Premiere",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "22-06-2026",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "AMAZON PRIME PROMO 3",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "17-12-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "14-12-2025",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-21E06MY",
+            "name": "ASSINATURAS DIGITAIS X",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": null,
+            "price": "2.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "06-09-2026",
+            "startDate": "06-09-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "22-06-2026",
+            "startDate": "22-06-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO 6M 50% - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "22-06-2026",
+            "startDate": "22-06-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-20XEJQF",
+            "name": "TELECINE HD",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/TLCine%403x.png",
+            "price": "29.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "22-06-2026",
+            "startDate": "22-06-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-1XBHQIX",
+            "name": "Premiere",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Premiere%403x.png",
+            "price": "59.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "22-06-2026",
+            "startDate": "22-06-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-21BSJ4J",
+            "name": "AMAZON PRIME PROMO 3",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Amazon%403x.png",
+            "urlDetail": "https://www.sky.com.br/amazon-prime",
+            "price": "9.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "17-12-2025",
+            "startDate": "17-12-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-219IIMH",
+            "name": "DISNEY PLUS PREMIUM",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Disney%403x.png",
+            "price": "46.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "14-12-2025",
+            "startDate": "14-12-2025",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

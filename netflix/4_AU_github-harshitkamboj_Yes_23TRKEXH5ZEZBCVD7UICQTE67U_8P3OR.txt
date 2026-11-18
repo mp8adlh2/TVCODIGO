@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: AU
+Plan: Premium
+Next Billing: November 24, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: $28.99
+Extra Member: Yes
+Profiles (5): Dsuck, who me?, Love you, ?, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1796554947	gsid	d5f32552-75a4-4808-b249-637052bc492c
+.netflix.com	TRUE	/	TRUE	1823448126	NetflixId	ct%3DBgjHlOvcAxKzA2H8qVgw-mNzJY55uSSwImrQJQkyHw6IYJFqYCOqVHZ77b0lznN-HP9xESAdZCX-paP70rLUgLFfG0hUMtbMrYY56dMnwLJiv1YuoWKafhFiKU24CeUehu1mpOF7SSObzsMQXF5ce2fBiOVBgsNfNoTjG20X0K7q2f-sW3mP5egVgtj5kxY2cJPNS4_O1P_REX2p_NmIKg1U4FgkMRMoYNYU2XS36Rq9m_aZh7J-YxhDCNfwM1_VnhPJeHDwVQVray5W6omkG2ZQe3XcyJUCGr5iPHfEXES2mkpiQOkkVxwGxMTwqmg7GrvXrrt0E8ZkWNle7GXVNkRcS8H_qtGuG-QiRQEzCxcwYVq5yBDnbHlFkoh37aMys7vgWgAKz-kfbobEBKRT1Y9Pw-d13B9BKa0Ye6COAx-H_JcldOJAoID6qQln5XC1b6xvAbWRf90AmvCK0LM_xOgvIEPUARm0OWsgoRVOe-tTWTNIK6S7r6kWrQozK9zAuc7K4t1_7FHNNowVYcFOKGINwI_uiIbkfN_ybzzxx5q9eEHOBi8Ddq71DaBYS8_56T8UjPRw52C7BeAaDRgGIg4KDFluqb3MOmMmw-4jcw..%26ch%3DAQEAEAABABSPHBJytAyT6t2fbMWsYR-d4CtHiR2WLDI.%26v%3D3%26pg%3D23TRKEXH5ZEZBCVD7UICQTE67U
+.netflix.com	TRUE	/	FALSE	1799688127	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1799688127	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1823382028	nfvdid	BQFmAAEBEGArZNG_AkgpPb0HpAFIrkxgIiRgLk9ulEXPG8-GZl7jWsS16SmYvVSqhfaLDt-MpeL8x9SoKW9gIwJgithEu3ybxgG-Z8E6DMHUV8HuXTCvljhy6ACLgMBgm280hY5-tUfms_iStrzEynJfMh_zWVR3
+.netflix.com	TRUE	/	FALSE	1822855409	OptanonAlertBoxClosed	2026-10-06T20:43:29.957Z
+.netflix.com	TRUE	/	FALSE	1823382051	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Oct+12+2026+20%3A00%3A51+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=bec925b3-091d-4133-ae67-3fe381d0826f&interactionCount=3&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1791319409923&AwaitingReconsent=false&fclco=&lastConsentTs=1791319409&intType=3&geolocation=BR%3BRJ
+.netflix.com	TRUE	/	TRUE	1823448126	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSTzCSJdo7ZUYsu3yuzU4YpnBTQt9PFSoM.%26dt%3D1791912122895

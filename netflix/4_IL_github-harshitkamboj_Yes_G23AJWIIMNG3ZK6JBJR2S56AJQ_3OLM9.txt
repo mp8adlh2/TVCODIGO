@@ -1,0 +1,20 @@
+NETFLIX HIT :👇
+
+Country: IL
+Plan: Premium
+Next Billing: December 3, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: ‏69.90 ‏₪
+Extra Member: Yes
+Profiles (5): עידית, תום, מיקוש, Free Palestine, Default
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1801856877	NetflixId	ct%3DBgjHlOvcAxLnAz63sqg086fH7o5JrZdttbe1qP5MebaF7gNd-fdGgHaLSLrvAi6mpFY_iAPl5nJR5RslQnY5aHjNxE4j6g7mm6u49TiFlCia_tlRjAgscKWGA8qs0swJlg_tVUQqp6gT9GrIdvfRJXMX-Nj5LmHqs5GWotnBnK-I-REwUxUwDPHjyWmiroG6a65LkgMSG6zMcfeyDykCtOm8AF943duQAp3J4V2tzSnZpFJ4a7lcoR7GB9RKuod1BRQNW3GUsnlxgCzaEsx9P0J7yOt6kw-bJReOIUhyzzvcmMnR1lPIh1TESdAnx3CzGHL2CcHpIfr_oeEO7eBIwadYQBmTH2t7_R8RRMhFdHnrZGJfwEncyy_gt3lRhntV4ttNcwYlbDpAX-g0APDfU1Rd2X_Uj-Iwi9wdoji-3naspQZp0_MfD7-1Jc08kZlFNpXB_WsFsynGCO0RaJuahiWkmGoLbyNFcb6mlNFAI3x7mWmSloc1hW0MaT0Kgo6gmMdjpf-YHQbvfNdy4-kxC-jqaSOmX7YP8KF6TESXeRP895NRPStGyZ8tMU5P4vdXLGOMvT3rd7MBrY9xZnSZRAYyf_6DFGW2bOI9_U7XFrSndyUP_jrjykon5aZE_7A4PHHKKVEvZHF1ycNM90J_GIoYBiIOCgxiW7dkNDHC7rOyVeY.%26ch%3DAQEAEAABABQmN_0s7oMvzxNOhalhafJG6xVTyHCK6q8.%26v%3D3%26pg%3DG23AJWIIMNG3ZK6JBJR2S56AJQ
+.netflix.com	FALSE	/	FALSE	1801856879	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Feb+05+2026+21%3A47%3A59+GMT%2B0200+(Israel+Standard+Time)&version=202512.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=0638e32c-498a-4ea4-8217-4635dccfafe9&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1801856877	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQBp64Og0fGG6avAFXVYJ0bJc5sjTziWIk.%26dt%3D1770320876386

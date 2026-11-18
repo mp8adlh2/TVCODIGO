@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: PT
+Plan: Standard
+Next Billing: November 21, 2026
+Payment: PAYPAL
+Quality: HD
+Streams: 2
+Price: 12,99 €
+Extra Member: Yes
+Profiles (3): Hugo Silva, Joana Alves, Crianças
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1796554944	flwssn	379e4898-b717-49ba-a3e4-d4bf25666a0f
+.netflix.com	TRUE	/	TRUE	1796554944	gsid	1144b891-60b7-49ed-a2b1-bd3f81260ddc
+.netflix.com	TRUE	/	TRUE	1819469878	NetflixId	ct%3DBgjHlOvcAxK3A7h6DLejyMkjZiia8W_ZR9X2uIXg6Di_Xqr6h68DMi9glPyN_q_yfBf72HthKOZ35UNsMwK_7qXZoT1N8ztyOw-XMfVHdB487QE2g4jHqRwA7Ey9qax34v5RehtM7C1kBqzV-r7qVlcCV8gv7yJWQYQ0pOONSPamVGuuNy3K6xLHd08SV2en5FTEuNZYfu22SFpqcp-fY0nAeeRYAMLJjA1P6EEQSHGPPGug0kLaJvFdQBUzp7BBCb4dWs6Kznwh8H8eCzISIci3c63YevY9ADVb3T0WeesaWsTEMzAT_THF6OA3mA47xOhEVAhZyLPgpl-5r44L34q1s5rvyuBmC5GSX_GtoF8uanqj9JM1xCj25FBd7it2vVYAGX1cfUmj9Q2vTWuRzzNTwHuv_5lv4P4kBFotUcRhtJqIW7UE_eRVypDZWLHDYFj43VqjAP4Y4ce0KC-Xc_QwW4JjIIyXVI9yRNSMupshkSyPEAVLu8XrqsRFe7HT3X_YZ8WGr5F19Q1Ig56L0UVcVda9niDcKHrG3KVdbDByd9Irz9RINwXNn66pfJkDdOsaaefl7yS4UOis4MilUBYYBiIOCgyarwB0rPKikapbYE4.%26ch%3DAQEAEAABABTS0GBlTo24hOLnoCpko9ACN97VtcSmlVU.%26v%3D3%26pg%3DTFWGGXIHTRDOXNC7MVSSHR7XW4
+.netflix.com	TRUE	/	FALSE	1795709967	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1795709967	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1819394239	nfvdid	BQFmAAEBEEdq7hIcPLm0YL77hUI1PqRghK_T3Wn-c8ff7T6lszW3MVx7UrkVqoMj53R2sObLxl5SZAcc7REDD2ujiuWzY-TM0l90JXKouR8H6Y1kqBVYNCOpRHn9ORFRF035JoWdD-E6xTgatpRAwYalIdXw6QJB
+.netflix.com	TRUE	/	FALSE	1819394034	OptanonAlertBoxClosed	2026-08-27T19:13:54.316Z
+.netflix.com	TRUE	/	FALSE	1819469968	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Aug+28+2026+17%3A19%3A28+GMT%2B0100+(Hora+de+ver%C3%A3o+da+Europa+Ocidental)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=61863561-a734-4793-ba9d-f618a333cfb6&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1787858034760&AwaitingReconsent=false&fclco=&lastConsentTs=1787858034&intType=1&geolocation=PT%3B10
+.netflix.com	TRUE	/	FALSE	1795709967	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	TRUE	/	FALSE	1796554944	profilesNewSession	0
+.netflix.com	TRUE	/	TRUE	1819469878	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABR9b4L7FVmxR2J1tlaHUrwYYS83EXJ3w1Q.%26dt%3D1787933878359

@@ -1,0 +1,20 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Standard
+Next Billing: November 12, 2026
+Payment: UPI
+Quality: HD
+Streams: 2
+Price: ₹499
+Profiles (3): Ricky✨, Sunny, Children
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1795969231	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKIA1u1G0fTWIck_w0JjZM6LwoMtsMko2TYDb7BYjaAsSSd3wDusVyy4gJrR1Jj0SOOtkEOijv-9sx3d86mtz-YbqZxHindSimDZfoNnMUsBA8JlFmXw2T4UGXVm0fA7UkkEDfADyAPsOkVoT_gxrVIYbjf_PU9Ooyn6mEMql7UjA-4lR8S-pYTPA4i8PQt8gD5nJWjrB5R_jGv2a3YrnqMfa-y_e-2SlqjRFnLbcmWwA1lc5sFoAO-IaYk_QV7jTY4pcz1jHOZFA4PxI-jOR3reeN65eaVWVsjle3QSuZJRGVZgdyuRAgn_-I7kbO6u5N2Ln7WAr6aJ7ig7ToCGku0jwr4TQqETdqrsWoRdG5gS8KwUB5X8ooAveDcEmEUJ_VAQqabNPtE-y8Jhq8mu2_u6fCjysgCv9KeBlh92HpSHXcAvwO1_Nu3SWqAvZQV8XCzKW7SVzv2xaRmcCnvjW2Ikzf9k0JzoxZ5ddpW3kdOR_tX26Trt0v-XLJQVwvhhb5-AKp_2NGYu94LGAYiDgoMMHQ-2E7lTeE7wJq1%26pg%3DXK3DITBFWRH75JJV4J3I2MUPEI%26ch%3DAQEAEAABABTMRF-SaY--T1g98Hx30gZvAJmVqUz1ho8.
+.netflix.com	FALSE	/	FALSE	1795969231	nfvdid	BQFmAAEBELwYbiUtMCI_c4IiFD7GRv1g1bgAHg-iE8ID7ez8_PFoi68HUNk3V3eLUwGHzlYeUStOHfBjuGcez62dwFgO2QLO9_T3gK7NPcRcysP2PwBxs0KX-HgLUElXaaV78zkNAD9JO-rPgQQOp08joROEjdQu
+.netflix.com	FALSE	/	FALSE	1795969233	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Nov+29+2025+21%3A50%3A33+GMT%2B0530+(India+Standard+Time)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=b3362972-0737-4174-84ec-e648633398b8&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1795969231	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTUbC4R_uOENbGvyQze32QW4cTzmaOWyY4.%26dt%3D1764433231309

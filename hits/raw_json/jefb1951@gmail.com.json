@@ -1,0 +1,271 @@
+{
+  "email": "jefb1951@gmail.com",
+  "password": "Bl33415013",
+  "access_token": "fe51b558-b6e3-4d2d-897b-ce4c26678d2c",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiYjdlMGVmNGUtNTYxMi00M2RkLTkyZmEtOTlkZDllMDJkODAzIiwiYXRfaGFzaCI6IjRtVFg5VmRTV2N3SmZXck1TSkRxblEiLCJkZXZpY2VJZCI6IjhmZTc4YzgxZTU1NGRhNDIxOWNlNTVhZmYyNjMwYjcyODFkMTJiOWIiLCJhdWRpdFRyYWNraW5nSWQiOiIwZmFkLThlZTgtNDc4NS05YjQ3LTY1YTMiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjYyODg1OSwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiIyZjY2OGExNC05NzgxLTQ1YWItYWEwYy00ZGI0MWYxOTI2YjMiLCJzaWduYXR1cmVzIjpbIjE1MDkyNjI4MTkiXSwiY3VzdG9tZXJJZCI6ImY3NGI3ODU2ZjQyMWQwMzg1NTYwZjcyNjMxNWYwMGNhIiwicmVnaXN0cmF0aW9uU2lnbmF0dXJlIjoiMTUwOTI2MjgxOSIsImdpdmVuX25hbWUiOiJMSURJQSIsInVzZXJuYW1lIjoiamVmYjE5NTFAZ21haWwuY29tIiwibWFpbCI6ImplZmIxOTUxQGdtYWlsLmNvbSIsInJlZGVtcHRpb25MaW1pdCI6bnVsbCwiaWF0IjoxNzg4MzEyNjI4LCJleHAiOjE3ODgzOTkwMjgsImlzcyI6InNtLXNreS52cmlvc2VydmljZXMuY29tIn0.Uw2I_ksgm46fvu5yHcXYHwjlR2PwfmaKkAi4wXVvhFcJmWkzHko9-3TqSWtJaPeXOCgkEZcCwczFITl-avGscJ8eFN2jK619Nbkrd0ml4rbdmfHPdXuDJv2FulmXQT_fGhZwLOPnunRLhSB-KYEMq7BqQ0u4Z_8BeBVQDrodYmWmp3Wt3UPAb3TCzUGug-JZGgXXV1Mzs8LaBtYKSfjBmP7z1Oa-stU5bqFkVYYP0wjIxMuNYMhRNvr7p8alMIs6aFsH-2_c1LbrkjQyWBKNR6vohQfkV4r8-urXvCyt7PWVrT8agWc543lgpTYR035CDe6P-haZvQfU7zn2Da4P1w",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "fe51b558-b6e3-4d2d-897b-ce4c26678d2c",
+    "externalId": "9985e938-cece-5bb6-8535-518367304b8e",
+    "username": "f74b7856f421d0385560f726315f00ca",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "1509262819",
+    "protocol": "2026-150197406386",
+    "customer": {
+      "email": "jefb1951@gmail.com",
+      "billingProfileCode": "1-LNSOS3X",
+      "name": "LIDIA",
+      "secondName": "DIAS BEZERRA",
+      "birthday": "1950-03-08T00:00:00.000Z",
+      "ddd": 21,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5521996660990",
+      "id": "f74b7856f421d0385560f726315f00ca",
+      "cpf": "88990281768"
+    },
+    "signatures": [
+      {
+        "id": "1509262819",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 996660990,
+          "dddMobilePhone": 21
+        },
+        "customerId": "f74b7856f421d0385560f726315f00ca",
+        "status": 1,
+        "productName": "TOP HD III PLUS 2024 - P",
+        "name": "LIDIA",
+        "secondName": "DIAS BEZERRA",
+        "dna": "01000000000100100000001000000000100000000000000000000000000000000000001000000000000000100011000111110000000000100000000100000000011110000100000000010111111111111111111111111000000000000000000001100000000010111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111110111111111111111111111111111111111111111111111111110111111111110111111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Null Joaquim Leite Serrao",
+          "line1": "Null Joaquim Leite Serrao, 292 - Chacrinha",
+          "line2": null,
+          "number": "292",
+          "city": "Japeri",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "26440620",
+          "referencePoint": "Fica Ao Lado Do Bar Do Léo",
+          "addressType": null,
+          "resDdd": 21,
+          "resPhone": 996660990
+        },
+        "addressBilling": {
+          "linePublic": "Avenida Joaquim Leite Serrao",
+          "line1": "Avenida Joaquim Leite Serrao, 292 - Chacrinha",
+          "line2": "Casa",
+          "number": "292",
+          "city": "Japeri",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "26440620",
+          "referencePoint": null,
+          "addressType": "Avenida"
+        },
+        "activation": "2017-12-15T00:00:00.000Z",
+        "email": "jefb1951@gmail.com",
+        "parentAccount": "1509262814",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001115646331",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR01",
+            "serialNumber": "CE0AD123808804728"
+          },
+          {
+            "smartcard": "001139315285",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A012539311662A"
+          },
+          {
+            "smartcard": "000906189576",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "010A2634127817916"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "1509262819",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 996660990,
+        "dddMobilePhone": 21
+      },
+      "customerId": "f74b7856f421d0385560f726315f00ca",
+      "status": 1,
+      "productName": "TOP HD III PLUS 2024 - P",
+      "name": "LIDIA",
+      "secondName": "DIAS BEZERRA",
+      "dna": "01000000000100100000001000000000100000000000000000000000000000000000001000000000000000100011000111110000000000100000000100000000011110000100000000010111111111111111111111111000000000000000000001100000000010111111111111001000000011111010111111110001000000000001101111111111111001101110001111111111110111111111111111111111111111111111111111111111111110111111111110111111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Null Joaquim Leite Serrao",
+        "line1": "Null Joaquim Leite Serrao, 292 - Chacrinha",
+        "line2": null,
+        "number": "292",
+        "city": "Japeri",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "26440620",
+        "referencePoint": "Fica Ao Lado Do Bar Do Léo",
+        "addressType": null,
+        "resDdd": 21,
+        "resPhone": 996660990
+      },
+      "addressBilling": {
+        "linePublic": "Avenida Joaquim Leite Serrao",
+        "line1": "Avenida Joaquim Leite Serrao, 292 - Chacrinha",
+        "line2": "Casa",
+        "number": "292",
+        "city": "Japeri",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "26440620",
+        "referencePoint": null,
+        "addressType": "Avenida"
+      },
+      "activation": "2017-12-15T00:00:00.000Z",
+      "email": "jefb1951@gmail.com",
+      "parentAccount": "1509262814",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "001115646331",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR01",
+          "serialNumber": "CE0AD123808804728"
+        },
+        {
+          "smartcard": "001139315285",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A012539311662A"
+        },
+        {
+          "smartcard": "000906189576",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "010A2634127817916"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "1509262819": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "HBO com 50% por 1 mês",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "17-08-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "TELECINE HD",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "12-10-2024",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "PREMIERE HD TOTAL 2021 - P",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "12-10-2024",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "ASSINATURAS DIGITAIS V",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "12-10-2024",
+          "end_date": null,
+          "icon": "📺"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-21CU6HH",
+            "name": "HBO com 50% por 1 mês",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/HBO%403x_preto.png",
+            "price": "44.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "17-08-2026",
+            "startDate": "17-08-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-20XEJQF",
+            "name": "TELECINE HD",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/TLCine%403x.png",
+            "price": "29.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "12-10-2024",
+            "startDate": "12-10-2024",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "PREMIERE HD TOTAL 2021 - P",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "12-10-2024",
+            "startDate": "12-10-2024",
+            "endDate": null
+          },
+          {
+            "id": "1-218ZAE1",
+            "name": "ASSINATURAS DIGITAIS V",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": null,
+            "price": "22.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "12-10-2024",
+            "startDate": "12-10-2024",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

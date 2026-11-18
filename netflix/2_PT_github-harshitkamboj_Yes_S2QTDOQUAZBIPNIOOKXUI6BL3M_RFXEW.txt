@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: PT
+Plan: Standard
+Next Billing: November 13, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 12,99 €
+Extra Member: Yes
+Profiles (5): Su, Char, Carolina, Inês, Martim
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	8ff168f4-b77c-415d-8b3e-a8da64cd1ec4
+.netflix.com	FALSE	/	FALSE	1796554947	flwssn	43376305-fec4-4352-8653-061782299887
+.netflix.com	FALSE	/	TRUE	1806690036	dsca	true
+.netflix.com	FALSE	/	FALSE	1803666036	nfvdid	BQFmAAEBECt0bkt4Nh-dmo6lA88AHjpg0ZK6u5yafnHb43PUrqtZjFOn70FDSFQhyMbwV_iWxq1fAl5V-Wp9Ac-38BjzfgTbx779_5VqXrfmXUc6ecGTMuCp1fJBdQM3KNj-kjKwIe7lU_JuX6UaCioJcFpyShPn
+.netflix.com	FALSE	/	TRUE	1803666043	NetflixId	v%3D3%26ct%3DBgjHlOvcAxL_ArfaBkgIDC13F_Q1tCSpYrJ_R9_Hq9ZZUtFjWY_Ot9XX0ZtQmmnlHRXAlz59_8kjIXsPCGqmTtSoqJmDuk-ZlIXkP9kDvvdtydQknU6ASb14w_Q-rBGp13eo6NbaL1n0zc-S3qc4n7Gh0Kvkm-WzPlGxDaI3vkZLpRylL-vYht87GLmRDg31Ew-cEMPac7pWXB_q9d6J6YxHxZVYFnfCk7SQx8dz721YDDSYo6k4kKB9U4WvcUSheGPrFQkTZivql0y9SutfsO8t4HrMJ_tJ1wzPUkXutAu0-LjPHNJodHjyhfRDPoI9WVwCKjIM-qkhljUTxbS_vSJesMSZB8zpVfCQ2TrVIYPG451ZMOh2KuH_C8tfk8Q7pF-G4VqJyfwg5RITjfGnXu4UYWyjCZ-6mW-3wlaNKQf2Ou2ApC8RZR_aBMR5zGiF85a-9poaJ1VflgTKGDhmUNl3Kd047RTuY9YIrxLDk_MSuaaM2lG1JXUjR6k_1lRUXYrHUl7TfYtFGAYiDgoMiABMWTdhKbx_yOlX%26pg%3DS2QTDOQUAZBIPNIOOKXUI6BL3M%26ch%3DAQEAEAABABQTmWdydNg8BuTA1wgTzm406n3wqRGdCnc.
+.netflix.com	FALSE	/	FALSE	1803666043	OptanonAlertBoxClosed	2026-02-26T18:20:43.986Z
+.netflix.com	FALSE	/	FALSE	1803666046	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Feb+26+2026+18%3A20%3A46+GMT%2B0000+(Hora+padr%C3%A3o+da+Europa+Ocidental)&version=202601.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=dccbf9e5-546c-41df-ad3f-3ee27c6ec77e&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1772130044786&AwaitingReconsent=false&intType=1&geolocation=US%3BVA
+.netflix.com	FALSE	/	TRUE	1803666043	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABS9lTjLmU2_0TiRLrW8Hobvy6v3lufNhHY.%26dt%3D1772130043911
+.netflix.com	FALSE	/	FALSE	1796554947	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554947	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0

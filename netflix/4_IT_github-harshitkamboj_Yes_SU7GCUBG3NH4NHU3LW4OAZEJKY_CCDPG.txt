@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: IT
+Plan: Premium
+Next Billing: November 24, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: EUR 19.99
+Extra Member: Yes
+Profiles (5): Barbara, apayaa, NETFLIX, Yuhuuu, Samantha
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1820138544	dsca	true
+.netflix.com	FALSE	/	TRUE	1817112735	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKVA1UwyP1btwwnTl5CoCcLHaMeMj8JPPEC1Md4mq9G6Rfel0KknX22_baa12vGZN078AAj92nvtSaW7LSO6xqjnPHikrTnh_nP5TIvvfzioFdZwr_aKXZVy-kK6AzdnDiPE8LZ7ZjhhXAeFvTq4jfrt653LjrVjEBj4Ll97WHoI85_aft_AKEOMeltjlGruxGiEAXrW0MXtttsPS9J39M_4bjaBtmfNJRlVKI-dVtGXMLWHVmZytP9nLlaGfvOZ6cjFEYfKSKWTG1twzxkPqpMPSgkzz7YdqrWN5VrRm2KirkBgeLj5sF0jWiHQE_EhReEu06Xn0v88slsRQuN39M1fkf5mXJ5PyGWq5Q9suAqPV0C2B7htsbYRra_W6LpsS0i8dPicX85tPtwCYcX_3vHX6bKSTYJOB4ZCM5IguJiBf6HqffaJBnDfxhSQx8Dyzyvk3PNSzMRxtzilLqb9dePv2_7bSTj5JHAEZ3M4wm6sB6jR02PTPpM4PYKBENp3bnu9VX90KhVgDWsrjohbemRNiStuUrIqhgGIg4KDP9pF0-lmISGUX_Tug..%26pg%3DSU7GCUBG3NH4NHU3LW4OAZEJKY%26ch%3DAQEAEAABABS9ts-ZqG9z7d4zk4DefL9H9Apxl2cNC84.
+.netflix.com	FALSE	/	FALSE	1796554945	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554945	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1817112721	nfvdid	BQFmAAEBEHiFKEQxGhDl8_z0AsaYLRtgVDFnzHKlE0N8Sx5cK0-c387lnfyxy6HIrvPQfUd7L1cIDA101_AphP-sXDULhyIvo7pbR52UsxJD3GOonbxRnXJK6Y7QcAlrUFGsQ7ihiPMEPaTR3cGSaWhcUXDNs-no
+.netflix.com	FALSE	/	FALSE	1817112706	OptanonAlertBoxClosed	2026-08-01T09:31:46.951Z
+.netflix.com	FALSE	/	FALSE	1817114688	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Aug+01+2026+12%3A04%3A48+GMT%2B0200+(Ora+legale+dell%E2%80%99Europa+centrale)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=185e823c-674f-4378-af68-d6dbfc6c1d01&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&AwaitingReconsent=false&fclco=&intType=2&crTime=1785576707356&geolocation=IT%3B52
+.netflix.com	FALSE	/	FALSE	1796554945	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	TRUE	1817112735	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTerdutmLc4EDYa8eZvyVBQVTDs0Pnhnsw.%26dt%3D1785576734993

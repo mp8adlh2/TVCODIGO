@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: IT
+Plan: Standard
+Next Billing: November 25, 2026
+Payment: PAYPAL
+Quality: HD
+Streams: 2
+Price: 13,99 €
+Extra Member: Yes
+Profiles (5): sergio, RPGboom21, Nat, Mari, Fabri
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1809028788	OptanonAlertBoxClosed	2026-04-29T19:59:48.847Z
+.netflix.com	FALSE	/	FALSE	1809028792	nfvdid	BQFmAAEBEB6et67kgW1tm1re0ssr2Dhgdlg5RzN09CNgh9U8kqfwPtX4il6qgftbXCvy3DpfWGeelfggEACvJbYnjmzPhgJmCTSbKFErZc8FAFq0X0X_cjvqbJZSPBmhf1y02wKXvva3gdzuyLelWJFdB5pdge1p
+.netflix.com	FALSE	/	TRUE	1811284805	NetflixId	ct%3DBgjHlOvcAxK6Aw8XpvHpqdu48_Pdw0K5ehV8fwEVo_3BOlieAHsd9CtAlP5R7ekAWnyf2M2_TvNVtVgKJ-8GM1oF4bRA-Vznf1dI6XkUpMsycyjYRS_SeVMSdyAfThJvyHTITy5xMuD7wNBm77BXQSXrHpI_8GA5WGT-f01L3BQ79OEDNnWJG_4CKhvQaDXwe0W3d3Ed7i6rsmlZrehz7BljIJXUchah17YV6QWtelSfbnH6htF_0r0Oqf2Z76pQZa1ZvnBs6OuBD_OABF89xrH3RSroKt0Hal9zN0WwyuId5AKStAh2sxBwxaBUZAy2Bix-NJqaD8kBlZbqkxUuRYxPN0E539MpVOKsjBinbANmQNgnssdBQJmOo7LHljzW2iZO2sQB0WqksM8IvIT8QrU7m9Ga9XWgRs-dQ4ieLC7UzZn_gURq_EsUY_8koefpDuIuMB8p4f0bpml98TPZkXpODvgfNdfafDRqYJ0SmOF6L2nqMyev0YLrErFw4S4_NFpKIlKPUjvPTvk4f1LnsCSyfNRw7Eg5oqpgBTOgkjH7MtSaPc6pAVuO1RHiWIR3sXt_aMUADFjXgdbhS_UGnwnvzeEYBiIOCgwb_opknQuYJ_G1ad0.%26ch%3DAQEAEAABABTX9mlEKPKSZuHaGmzI4hmYArRWGMRv1-c.%26v%3D3%26pg%3D6QSLTLI7KFBFJBDLNY23V66NQ4
+.netflix.com	FALSE	/	FALSE	1811284807	OptanonConsent	isGpcEnabled=0&datestamp=Tue+May+26+2026+00%3A40%3A07+GMT%2B0200+(Ora+legale+dell%E2%80%99Europa+centrale)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=d4ecd778-4dec-4619-ae21-82d98f444ffb&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&intType=3&crTime=1777492789184&geolocation=IT%3B25&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1811284805	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQWaOLDbIL6B1TLHxtG7uzKpWFz_S505WQ.%26dt%3D1779748805913
+.netflix.com	FALSE	/	FALSE	1814308806	dsca	customer
+.netflix.com	FALSE	/	FALSE	1796554945	flwssn	adf6c317-b2eb-408c-9b87-5b8578d1575f
+.netflix.com	FALSE	/	TRUE	1796554945	gsid	aa6a6042-2da6-4f82-9e31-50ffe0ba24e5
+.netflix.com	FALSE	/	FALSE	1796554945	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554945	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554945	profilesNewSession	0

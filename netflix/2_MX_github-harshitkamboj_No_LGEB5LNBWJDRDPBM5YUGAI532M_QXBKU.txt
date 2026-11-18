@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: MX
+Plan: Standard
+Next Billing: December 6, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: $269
+Profiles (4): Veronika, Pígs, NINA, Invitado
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1817922421	dsca	true
+.netflix.com	FALSE	/	TRUE	1819596573	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKYA1XnN4Uucr35DhHEmCBbZb_R76f3azWS01z0yVkrC4SMuwicTDNG1Gyu8NN7UiY8hyZ5fqeJGimhzli5p-k4DumwltxN1u992nO4d3yhKiIC0PMN-syJlR8mbWCBtAcYzh-_d3tbEcjuH689fQke4gtKn81P_gNCOtgWSmmnQ1H5nFZ6x1BZjYhEqN37hUsqtVPOMeeKlxocTpCc0-XKv5hQIv7fGIwQf8nyqOH1U0eqSSSEm5q63bTJ-s43jIPC6RdzTXoMu8R4x9SHBm0oCBSCUjNCcbNe0J4e-rdrZ9QJeRe7sHyuQwppXZzVhwIlN1g_2mrD6bHPGqCsiKC5AT99OcNDbisIT5GD5mnJx31e5J3YYrcZ-k5u6G-jEAKsrwmMS7JBn5Xk20w0NT7Ptd2-iCLKLi7B3yUNG7-U5gQrXe295eOun48JlcLG-Umua9kbWPE4LBS5j5_wemUj87Mi_dyfgg8O8ZjhJOvigztHp45pr5nyLEf7IonVIijo9TwiF9nPiicHnfFMOXIEB--K8ByIhPwqERgGIg4KDBnr_hz0lX7VK4lCMg..%26pg%3DLGEB5LNBWJDRDPBM5YUGAI532M%26ch%3DAQEAEAABABQvbTDiznfryWZ6wsj39vFFthT73CIPExw.
+.netflix.com	FALSE	/	FALSE	1795836574	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1819596561	nfvdid	BQFmAAEBEK5QQlX5LSTcUT44vE78kDJgFG0kbinQ2vZBUZkgTksdfi_cP38mmNcR-qvWMJfwh1wBlnsANtmV5Xeecex4poeLsLnw3miW3iUKrRkms-XAzSexE1vSYBHxxa83TY3XW2dGyAistbpghWY67665i9js
+.netflix.com	FALSE	/	FALSE	1819596575	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Aug+29+2026+21%3A29%3A35+GMT-0600+(hora+est%C3%A1ndar+central)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=1644d95e-5fac-4851-84d3-9fd48ec2d1f9&interactionCount=3&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=3&geolocation=MX%3BCAM&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1795836574	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	TRUE	1819596573	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTw0BuHStkQw9RzenDXiUBhBvpxoiKBChs.%26dt%3D1788060574307

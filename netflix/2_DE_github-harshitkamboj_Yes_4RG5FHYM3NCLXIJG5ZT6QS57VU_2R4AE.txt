@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: DE
+Plan: Standard
+Next Billing: November 13, 2026
+Payment: EU_DIRECT_DEBIT
+Quality: HD
+Streams: 2
+Price: €15.99
+Extra Member: Yes
+Profiles (4): ??, Kids, Cool Guy, Badr
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1819734096	OptanonAlertBoxClosed	2026-08-31T17:41:36.378Z
+.netflix.com	FALSE	/	FALSE	1819734092	nfvdid	BQFmAAEBEDH5ux7BffQuRlqZxrtPb41g1rh7hxe6-xviPY_c4WDzg_6EjK47BR43jvIfEApj-VTklmawoMa1MjnOnRxh8WcJ5fgApeLAgVu6VN5rIIPqdIUVUqIxn3WOKnf7UHiAF-wloh12Wcnja0BBNO3ftIkP
+.netflix.com	FALSE	/	TRUE	1823968706	NetflixId	ct%3DBgjHlOvcAxKFBN075LWJ9NKghr2oe66QU7RIJ4ina6tC5hJf3E8wikw4QOjggd9F6YaLlzljY5vVXnIKbSgFcvr2Y7QaD8K1VlfoX10Tm9a7GSKGzoedjDNLvFNclard_OWLf8bFZEX3rwdZJpya8NH5ytoUWvO4BIZrUWN5ApweD4ewEQfA-rJUwrNNDjUfp2IxF_P62jCePnOk4yeLrr4PuM7jNrIdF_tQ_qcXNUmG8GPDuDjbwx9TmwEq0hQkdITLuNgOI6Akwfa-Ror3KgMxJhAxNqIgVZKxnc8MHBNnYUltj54xfSunmzfFrIGsZBd5IsLzjuVzjcGcVZ3-2lC7qiT6LRqDO1CgOl6RKCSUUDsLQUoLtFBdnE9nEcshAmCt-kLQvI5p3C5WIgXFSt4xKHc9qCOvOX5DVdVzYntS_7n6_YMXc_BB78P5ZfyxswjfvOZalVUjpojJ5oMZrSeBx_6J4jqOrKnL8guDeZnEjXQxHeXyH0xBGDr4LletgLNOO0iWlsTWvsYRVLuT_kW2jupYkAS_B_CxkuamgmClc5hbvs3YyY1sMERL7nb3Spafbrp8MMj7izLbiD32jd13lBVYNaKyV6F30kjL6og7OEFhUVoCKk2ls9Saj6MEdTMskUN85sQpI-2Tau0qnOW0itooNB4lhs-aMhSUlYvdsqb_Sw9kX7sH7z--6dAYBiIOCgx_S0Gs9aJ_qIpvPR4.%26ch%3DAQEAEAABABTDZOnw0rWn8DNgF4ife4uQm0l7rD8JtTM.%26v%3D3%26pg%3D4RG5FHYM3NCLXIJG5ZT6QS57VU
+.netflix.com	FALSE	/	FALSE	1823968709	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Oct+19+2026+19%3A58%3A29+GMT%2B0200+(Mitteleurop%C3%A4ische+Sommerzeit)&version=202609.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=aac4a927-dc2b-4ba5-b8c3-a25d8dce2c0b&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&fclco=&lastConsentTs=1788198096&intType=1&crTime=1788198096826&geolocation=DE%3BBW
+.netflix.com	FALSE	/	TRUE	1823968706	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQ6MNJCp2WTJGNk6JEYpYOuO4NB6xN3KDs.%26dt%3D1792432710830
+.netflix.com	FALSE	/	TRUE	1796554944	gsid	e7e0d3aa-f082-4edb-ac08-1f6645005d0e
+.netflix.com	FALSE	/	FALSE	1800208708	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1800208708	netflix-sans-normal-3-loaded	true

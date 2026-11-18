@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: JP
+Plan: Standard
+Next Billing: November 13, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: JPY 1.590
+Profiles (5): 徹, けいた, ぴか丸, oya, キッズ
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1811067526	nfvdid	BQFmAAEBEAxuzmDx3W52Y6Xf6bJ37LFgp5iGiqMf-g2O3EQgG5XveCIG-UQxP-z7ylzbRRFtzvRT3q1vZIpa0bOqGDZVD7l3lNoISoJzrUhS0NVr4Nszj3Vn5Q4toMbSlmELCDb-r4pY0koWq-rC1_pLraMNV31Z
+.netflix.com	TRUE	/	TRUE	1824197964	NetflixId	ct%3DBgjHlOvcAxLrA24yM0PDh10UfH2Byf2-52LTrrzSY1ZdfiqIRlfDZyfcR87X-u3CLVO8_RVqe6keazoxIuWdtvr8ccSREQEHWGWp_yBmTWpAST9zKzaomi4ef-kc7k4tJU8ExtxwHTX7bOzkefnriUs2J-fe-dCWHfW1Z0Fa5j5DcrNIqurIBlmgh6GXEWlCr--z4oJCwMXlTWqyeMf1qzloRQK0BAI2VxGfAHfKZtVsBzLPNPsD4nBJp4eL7phyVAcJsgqbLjvPEure0PSjBRuk8feZA-NoDW92PLL1whjxaxnthxUF6r0ZyE5vzMFd93f_62ay9QszcAavwlCVr2_ZQMd6aeN-NE-Ia45sheXzyZjcSPMN6VE7Wu-i9a2x49MFDYDVLQdn1DG2ZoK0k51X62aUVJhVVbSJ_fcMtqCW6Ui3p52jyKJgWx8qSrR2JtK7vnd96I2SE-xOxpXisYb2Ad8SxOHCXPlJSuN0_kPoUsfXainQ7rvuUUtkA7Gdro70qGuxRYk7UiRE4Qd6_4J8JPefA3_mWQQ5S-FnnzeSIcZGOa17awVcGUx_oozekSrtqdc-QgMpTYtJyNeB9s0wc4uDQhiSJmqgQB-lrVfVtPCHPxQqw9svFdVmDmrQySmriFNl4z1ltF5JmatLuJQJrx28GAYiDgoMNb3bMuqIZScup1CQ%26ch%3DAQEAEAABABS1_KAmW7eZtEBqsSG_TviC9Rojp0xw1dU.%26v%3D3%26pg%3D3AZSVAS7URAMJNNELEPNBZFYNU
+.netflix.com	TRUE	/	FALSE	1824197964	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Oct+22+2026+18%3A39%3A24+GMT%2B0900+(GMT%2B09%3A00)&version=202609.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=6dd6acae-8b78-400a-9a7c-9085060f2fb2&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	TRUE	1824197964	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQ5geUUultuwFJNRjQKagty_MGcg_vVn2I.%26dt%3D1792661964885
+.netflix.com	TRUE	/	TRUE	1796554982	gsid	93f76f89-394a-42e5-a412-36e8673bceca
+.netflix.com	TRUE	/	FALSE	1800437963	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1800437963	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1800437963	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

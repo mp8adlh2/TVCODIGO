@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: ZA
+Plan: Premium
+Next Billing: November 18, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: R 229
+Extra Member: Yes
+Profiles (5): Matlaila, Tshego, Eliza, Tshepiso, Karabo
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	2cf275b1-f2c5-4d91-9a6f-8dc2281e2676
+.netflix.com	FALSE	/	TRUE	1821551782	NetflixId	ct%3DBgjHlOvcAxKEBBAlqxURXF-HXqyM54p6n11yx5Rj8GkOIfcJbq26gEA-iT3CfP9vWYHx6X0OM4Ojlno9Zqp6ewBxm3TrgeWQ7x76jPws_sO2CrWUrLq06GK-yyiqa3Q9BxI7BvHmbOp0MNPSBUuNP8V2E-vm60rJnv1pXEvpJ7k28F3NdG0uLL-yEJZ83Y2mvfuzbPBy2W1-6hQBfsNl3KqH5B5IEVnY6T61U0yAdd2HkWa-XI9udGNVryg2JIwMAQvA2PJ3LNOx3Fsww5afu7Hu9CeJ-8-oF4LWfRJYqT0rROZnRBUbUPATa416zBC5EM8imfDo1Uf_6FwFtSaOXOLWvJsozyh7h713qP1_992_AR16oVI8WtJWo1dcdD94w3JOoANnwfIBcL5Ly444I0-85dahwaWmyGmWf87cuY_c0I96t7tgbFHVc0QVMjZLH_ZNWgEc1k8p_0siaJ8SZyPMUB3qgmvvjKi6xSWwo59G0B9uvcju95k_ylNfriiY0_ZDSrYK3v-NwRc4bNkIKs5SoRnXI2JgW6imNNuYTyiRBHMbXrfLvMXcUr4K6PitVE56hewdE8R03uk7CmYuicoMIiTgRZpcjrKPgK-h8n44ErtrU6R-0gcPmxbsP24PUk5nWVVplQbzIPQDaiFdllDqPusnX4GN3gLKL0znBRx_km4W4FDrnh36JY26UhgGIg4KDLE7JQAWRYttLu9Unw..%26ch%3DAQEAEAABABSJQhkvhcLCkfOvKMP6VuI2v0MDrq5YENo.%26v%3D3%26pg%3DSOJMU2RVSZHN5E5G3RZVPDIXPE
+.netflix.com	FALSE	/	FALSE	1797791783	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797791783	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1810719637	nfvdid	BQFmAAEBECvjKuRLmxa9et7INZ3faqlgNMpBBE55O-bEnYkAdXiQiUDWwhAeRuWJ3JxXZ1vWBGtlK8LWbIZpe0MZu9U8vArKCkVW19F8dpvF0-aP2yPZQYCXPp9U3FKWlUUlLbX1XPtZpfk7qJBYG93U4wv3Vn4L
+.netflix.com	FALSE	/	FALSE	1821551789	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Sep+21+2026+20%3A36%3A29+GMT%2B0200+(South+Africa+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=83ba7d0e-8f05-447a-b987-b690d246b488&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1797791783	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1821551782	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRDIa1T33u0HHKm3aiParcAweHAIWmDVrU.%26dt%3D1790015780210

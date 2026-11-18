@@ -1,0 +1,600 @@
+{
+    "cookies": [
+        {
+            "name": "taboola_session_id",
+            "value": "v2_24d8c8ff37dd3b2ec7e9782468a8641b_5c540565-1ce3-478b-ae47-89db5ab2fc28-tuct119ecd9d_1789216978_1789217312_CNawjgYQkt1jGLugpq2JNCACKAMwHzjb1AdA-YcQSLb04ANQ6tEEWABgAGj-iOrKkuvIpy9wAYABAIgBAJABAA",
+            "domain": ".taboola.com",
+            "path": "/mirum-skyplus-brl-sc/",
+            "expires": -1,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "_GRECAPTCHA",
+            "value": "09AKhCRwjZ-Ec1OgDoYjJpn9S6wgRcyum_yIDn28Y8V_6kvc-umcrLAAMDzXvaDe-RFv2OPW1KhRiBd8Zw3ovdcDE",
+            "domain": "www.google.com",
+            "path": "/recaptcha",
+            "expires": 1804769320.388429,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "A3",
+            "value": "d=AQABBB9IpWoCEGKtdACSZzd7LV7pxwmZhcUFEgEBAQGZpmqvah6exyMA_eMDAA&S=AQAAAiGXffEdkQ9EHlfPZVnhga4",
+            "domain": ".yahoo.com",
+            "path": "/",
+            "expires": 1820774914.114266,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "guest_id_marketing",
+            "value": "v1%3A178921679736762178",
+            "domain": ".twitter.com",
+            "path": "/",
+            "expires": 1823776797.403272,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "guest_id_ads",
+            "value": "v1%3A178921679736762178",
+            "domain": ".twitter.com",
+            "path": "/",
+            "expires": 1823776797.403353,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "personalization_id",
+            "value": "\"v1_mGRVz34lNzXM8UlQUgsSmw==\"",
+            "domain": ".twitter.com",
+            "path": "/",
+            "expires": 1823776797.403381,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "guest_id",
+            "value": "v1%3A178921679736762178",
+            "domain": ".twitter.com",
+            "path": "/",
+            "expires": 1823776797.403405,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "__cf_bm",
+            "value": "Aah96XsScCovYStzWuaugPYr.cUIFHsSICkv8MKcVnY-1789216797.2697864-1.0.1.1-wYig4p9maSP8K1JQTqNsLH8gKXhmZbnlIgn6aeCN0zI7JZLPjbI2ruxC2jmQ2r4eJ7hwgH27srMxLw7qZxXOeqiPz0EnTpNgd4VZkhqNL9mSOCtmqOgqkdixVwjtuIZ.",
+            "domain": ".twitter.com",
+            "path": "/",
+            "expires": 1789218597.403428,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "_ttp",
+            "value": "3JECN6bdKp8cSh3Y77skCdKYifU.1789216797127",
+            "domain": ".tiktok.com",
+            "path": "/",
+            "expires": 1822913311.917443,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "t_gid",
+            "value": "5c540565-1ce3-478b-ae47-89db5ab2fc28-tuct119ecd9d",
+            "domain": ".taboola.com",
+            "path": "/",
+            "expires": 1820753313.040877,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "t_pt_gid",
+            "value": "5c540565-1ce3-478b-ae47-89db5ab2fc28-tuct119ecd9d",
+            "domain": ".taboola.com",
+            "path": "/",
+            "expires": 1820753313.040969,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None",
+            "partitionKey": "https://skymais.com.br",
+            "_crHasCrossSiteAncestor": true
+        },
+        {
+            "name": "muc_ads",
+            "value": "7cdfdae0-f3fc-4488-abe4-77717f48b49c",
+            "domain": ".t.co",
+            "path": "/",
+            "expires": 1823776797.432539,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "__cf_bm",
+            "value": "RtSH6cLZBFUHkRPX5gf7hyOb8D11_ETjDYRXaJKORx0-1789216797.258554-1.0.1.1-sNiLnnWxJKj45eW8sXE1Xk1I9v2hhcFK8iHy68CAHkSO9CXqd2kJeBcu1zo1HrPVseUccY2_RrWq1zCnnTctDu_gazIdRBrbFPm_VZhVufMI.4R5hCXnZRPxPqBwS1yc",
+            "domain": ".t.co",
+            "path": "/",
+            "expires": 1789218597.432619,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "gbuuid",
+            "value": "0b809497-0e69-4b49-9df1-6a2ca04f61b2",
+            "domain": "www.skymais.com.br",
+            "path": "/",
+            "expires": 1823777311,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "__utmzz",
+            "value": "utmcsr=(direct)|utmcmd=(none)|utmccn=(not set)",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1804769311,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_gcl_au",
+            "value": "1.1.29229755.1789216797",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1796992796,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "GBID",
+            "value": "GBID.1789216796856.56e79976-c730-4524-a839-83ceb7a277cf",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1823776796.857934,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_twpid",
+            "value": "tw.1789216797051.467035001845811016",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1822912797.095445,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "Strict"
+        },
+        {
+            "name": "tfpsi",
+            "value": "db987102-187e-472e-b8b6-779083675b16",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1789219116.379855,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "_ga",
+            "value": "GA1.1.257615211.1789216798",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1823776797.728269,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "__spdt",
+            "value": "fddd0f85977642a8a25b705d339ac3a5",
+            "domain": "www.skymais.com.br",
+            "path": "/",
+            "expires": 1820752797,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Strict"
+        },
+        {
+            "name": "FPID",
+            "value": "FPID2.3.21JMkX5f8awAAG7DeUg%2Fm%2BiN%2BV3iU%2B0VIQLYm222bIA%3D.1789216798",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1823777316.421262,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "FPLC",
+            "value": "dKMP28RWbbkvi3L%2Bc9JNTHI9m3MsvlYdsu1qTqx3r0220Ws%2BOJzhjcueeVd4MThu6BN0VrMw89gQgjOjA3zndOHbQ36d4wZ5qdUWhQrkx4%2BFF7xcVvGNwDbAnjEAJw%3D%3D",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1789288798.169113,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_fbp",
+            "value": "fb.2.1789216798217.103203267167479834",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1796993315,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_clck",
+            "value": "10wo8ha%5E2%5Eg9e%5E0%5E2446",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1820752798,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_tt_enable_cookie",
+            "value": "1",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1822913313,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_ttp",
+            "value": "01M2AT3DNTC0492RXBJW544Z47_.tt.2.1789216798394",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1822913313,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "fr",
+            "value": "033b8dEBAXXLLQ73J..BqpUge...1.0.BqpUge.AWdx7j6DPQ5TcGxf_cfxm5gN7iA",
+            "domain": ".facebook.com",
+            "path": "/",
+            "expires": 1796992798.280592,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "IDE",
+            "value": "AHWqTUmyhfrfXC3uG3nlthBN6lBls_ymoi4g5_fLxQA4AT2HGZl4fEmsDhJvxX8ovwI",
+            "domain": ".doubleclick.net",
+            "path": "/",
+            "expires": 1823776798.414646,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "uid",
+            "value": "4d1b3d05-aacd-449b-8cc8-f1c65b45d5cc",
+            "domain": ".criteo.com",
+            "path": "/",
+            "expires": 1822913313.050712,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "CLID",
+            "value": "cce1b40e65be4b40816444e5cfd621ff.20260912.20270912",
+            "domain": "www.clarity.ms",
+            "path": "/",
+            "expires": 1820752797.007908,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "MUID",
+            "value": "159538265E22699009B52FF45F686862",
+            "domain": ".bing.com",
+            "path": "/",
+            "expires": 1822912799.443409,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "MR",
+            "value": "0",
+            "domain": ".bat.bing.com",
+            "path": "/",
+            "expires": 1789821599.443608,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "__utmzzses",
+            "value": "1",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": -1,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_twsid",
+            "value": "1789216797051-296329830.1.1789217313012",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1822913313.0131,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "Strict"
+        },
+        {
+            "name": "_uetsid",
+            "value": "106775f0aea711f195b05b9b9e61eb1d",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1789303713,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_uetvid",
+            "value": "10679ee0aea711f18a886bbe58a6e467",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1822913313,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_clsk",
+            "value": "g110j6%5E1789217313896%5E3%5E1%5Eb.clarity.ms%2Fcollect",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1789303713,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "LFR_SESSION_STATE_20105",
+            "value": "1789217313974",
+            "domain": "www.skymais.com.br",
+            "path": "/",
+            "expires": 1820753313.975064,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_dd_s",
+            "value": "rum=0&expire=1789218215339",
+            "domain": "www.skymais.com.br",
+            "path": "/",
+            "expires": 1789218215,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Strict"
+        },
+        {
+            "name": "ttcsid",
+            "value": "1789216798402::UDSegiIRsEjt6FugjOax.1.1789217315359.0::1.512386.515083::516939.3.530.634::0.0.0",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1822913315,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "ttcsid_C5AG1GVGE0M9N03H543G",
+            "value": "1789216798401::JcSBlcFiDVyRzqrH3LRf.1.1789217315359.0",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1822913315,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_ga_LB12F4LYKF",
+            "value": "GS2.1.s1789216797$o1$g1$t1789217315$j57$l0$h934837690",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1823777315.468776,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "cto_bundle",
+            "value": "j_WwZV80TVIyZHZreTlMaEh4bGJ3MThzQUVROXIxMFlJUE1FN1lad29uZTd1MjBBenMlMkZOR1VValBWQ29JZzBYNEcwSFVwSDloMXBiRUVOZSUyRnRMUEhCbk1mTEJsOWJnZWUzb3FlYXNnWHV6QVRZdjN3RFNXd2tVYXU1YlA5NllwNlM0VEEzZ1JPaVcwZ0RuUUh3VElBS29qYzF3JTNEJTNE",
+            "domain": ".criteo.com",
+            "path": "/",
+            "expires": 1822913316.055448,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None",
+            "partitionKey": "https://skymais.com.br",
+            "_crHasCrossSiteAncestor": true
+        },
+        {
+            "name": "cto_bundle",
+            "value": "Qlp_iF9kS1pRJTJGYTlva09vS2RXJTJCNlVTbkIlMkZLZnBYYUtXUGluenlVZ2ZQQ2VEeGVnckFmNUxHMEF2OGlsU2xIT3p3cjlvSEh1YzBFbmQ0eFJpNmZzSzRjUVdRJTJCUzd3azhVVjBpdHJqR1FvbDh0bmRodWtRdTZrR2FyVGs1SGZmWUNNamhXRE5oN09lTXN0aThGRHZRaWkzQ2ZqZyUzRCUzRA",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1823381316,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_ga_TVBY6168JB",
+            "value": "GS2.1.s1789216797$o1$g1$t1789217316$j56$l0$h1412158673",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1823777316.299921,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_ga_SW5Q0BW78N",
+            "value": "GS2.1.s1789216798$o1$g1$t1789217316$j56$l0$h0",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1823777316.344316,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_ga_XXXXXXXX",
+            "value": "GS2.1.s1789216797$o1$g1$t1789217316$j56$l0$h734076413",
+            "domain": ".skymais.com.br",
+            "path": "/",
+            "expires": 1823777316.361552,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        }
+    ],
+    "origins": [
+        {
+            "origin": "https://www.skymais.com.br",
+            "localStorage": [
+                {
+                    "name": "eng_mt",
+                    "value": "{\"ver\":36,\"sessionStartTime\":1789216978512,\"scrollDepth\":0,\"sessionDepth\":[\"-2088077074\"],\"timeOnSite\":8120,\"crossSessionsData\":{\"sessionsHistory\":[1789216978512]}}"
+                },
+                {
+                    "name": "_uetvid_exp",
+                    "value": "Thu, 07 Oct 2027 12:48:33 GMT"
+                },
+                {
+                    "name": "cto_bundle",
+                    "value": "Qlp_iF9kS1pRJTJGYTlva09vS2RXJTJCNlVTbkIlMkZLZnBYYUtXUGluenlVZ2ZQQ2VEeGVnckFmNUxHMEF2OGlsU2xIT3p3cjlvSEh1YzBFbmQ0eFJpNmZzSzRjUVdRJTJCUzd3azhVVjBpdHJqR1FvbDh0bmRodWtRdTZrR2FyVGs1SGZmWUNNamhXRE5oN09lTXN0aThGRHZRaWkzQ2ZqZyUzRCUzRA"
+                },
+                {
+                    "name": "ovc-device-id",
+                    "value": "e0c15179-ae98-4f85-bb0d-9d60be79e008"
+                },
+                {
+                    "name": "DATA_LAYER",
+                    "value": "{\"cart\":[],\"product\":[]}"
+                },
+                {
+                    "name": "_gcl_ls",
+                    "value": "{\"schema\":\"gcl\",\"version\":1,\"gsid_dc\":{\"value\":{\"joinId\":\"YIKHJDshlbUarWbfXuEDWrbKenWYMDFS2g\",\"lastJoinedTimeMs\":1789217311678},\"expires\":1789217611678},\"gcl_ctr\":{\"value\":{\"value\":0,\"timeouts\":0,\"errors\":0,\"eopCount\":0,\"creationTimeMs\":1789216978018},\"expires\":1796992978018}}"
+                },
+                {
+                    "name": "activateTv",
+                    "value": "true"
+                },
+                {
+                    "name": "gtmBrowserId",
+                    "value": "1789217871841"
+                },
+                {
+                    "name": "_uetsid",
+                    "value": "106775f0aea711f195b05b9b9e61eb1d"
+                },
+                {
+                    "name": "1633938:session-data",
+                    "value": "v2_24d8c8ff37dd3b2ec7e9782468a8641b_5c540565-1ce3-478b-ae47-89db5ab2fc28-tuct119ecd9d_1789216978_1789217312_CNawjgYQkt1jGLugpq2JNCACKAMwHzjb1AdA-YcQSLb04ANQ6tEEWABgAGj-iOrKkuvIpy9wAYABAIgBAJABAA"
+                },
+                {
+                    "name": "lastExternalReferrerTime",
+                    "value": "1789217313839"
+                },
+                {
+                    "name": "msoSelfcareUrl",
+                    "value": "https://www.sky.com.br/minha-sky/login"
+                },
+                {
+                    "name": "_uetsid_exp",
+                    "value": "Sun, 13 Sep 2026 12:48:33 GMT"
+                },
+                {
+                    "name": "isSky",
+                    "value": "true"
+                },
+                {
+                    "name": "_uetvid",
+                    "value": "10679ee0aea711f18a886bbe58a6e467"
+                },
+                {
+                    "name": "conversionLinker",
+                    "value": "enabled"
+                },
+                {
+                    "name": "deviceId",
+                    "value": "440f645bc82149fb76ce3e80ffcf4ee81e1499fa723d81e8a2f15a3bb5b7283e"
+                },
+                {
+                    "name": "lastExternalReferrer",
+                    "value": "empty"
+                },
+                {
+                    "name": "SL_L_23361dd035530_SID",
+                    "value": "{\"71f4259990beb3d26e9ca59e296072d725126a21\":{\"setupRetryAfter\":\"1789218780068\",\"setupRetryAfterReason\":\"{\\\"code\\\":\\\"recording_limit_reached\\\",\\\"message\\\":\\\"Monthly recording limit reached\\\"}\"}}"
+                },
+                {
+                    "name": "isMsoTbx",
+                    "value": "true"
+                },
+                {
+                    "name": "ovc-user-id",
+                    "value": "1302d738-e02c-4161-8f7e-27f5e4bf1cbe"
+                },
+                {
+                    "name": "taboola global:user-id",
+                    "value": "5c540565-1ce3-478b-ae47-89db5ab2fc28-tuct119ecd9d"
+                },
+                {
+                    "name": "gbFeaturesCache",
+                    "value": "[[\"https://cdn.growthbook.io||sdk-dMa8bMfBQEw2rTEu\",{\"data\":{\"status\":200,\"features\":{},\"experiments\":[{\"key\":\"sky-banner-home-sky-banner-kids\",\"changeId\":\"5050bb5c7991236524b722ad8dfe8368454acdf139a60baacf193ee0463b49a6\",\"status\":\"draft\",\"variations\":[{\"css\":\"\",\"js\":\"\",\"domMutations\":[]},{\"css\":\"\",\"js\":\"\",\"domMutations\":[]}],\"hashVersion\":2,\"hashAttribute\":\"\",\"fallbackAttribute\":\"\",\"urlPatterns\":[{\"include\":true,\"type\":\"simple\",\"pattern\":\"https://www.skymais.com.br/comprar/?utm_source=google&utm_medium=display&utm_campaign=OTT-GOOGLE-DISPLAY-ECOMM-CONV-PMAX&utm_content=BR-INT-PMAX_EDYE-PMAX-NA-NA-EDYE\"}],\"weights\":[0.5,0.5],\"meta\":[{\"key\":\"0\",\"name\":\"Control\"},{\"key\":\"2\",\"name\":\"Variation CSS\"}],\"filters\":[],\"seed\":\"d4a0b4f3-d945-4b7f-a60f-42fb4aeebdeb\",\"name\":\"SKY+ | Banner Home SKY+  (Banner Kids)\",\"phase\":\"0\",\"coverage\":1},{\"key\":\"sky-teste-banner-visual-editor\",\"changeId\":\"1f70b59317504c1cad259de3c0681a4da30ccde04d3ad730af4a4a54ba89b3ba\",\"status\":\"draft\",\"variations\":[{\"css\":\"\",\"js\":\"\",\"domMutations\":[]},{\"css\":\"\",\"js\":\"\",\"domMutations\":[]}],\"hashVersion\":2,\"hashAttribute\":\"id\",\"fallbackAttribute\":\"\",\"disableStickyBucketing\":false,\"bucketVersion\":1,\"minBucketVersion\":0,\"urlPatterns\":[{\"include\":true,\"type\":\"simple\",\"pattern\":\"https://www.skymais.com.br/comprar \"}],\"weights\":[0.5,0.5],\"meta\":[{\"key\":\"0\",\"name\":\"Control\"},{\"key\":\"1\",\"name\":\"Variation 1\"}],\"filters\":[],\"seed\":\"f0986ed3-8516-4fae-984c-5f5a4a5bd598\",\"name\":\"SKY+ | Teste Banner Visual Editor /comprar\",\"phase\":\"0\",\"coverage\":1}],\"dateUpdated\":\"2026-02-19T19:41:11.965Z\"},\"version\":\"2026-02-19T19:41:11.965Z\",\"staleAt\":\"2026-09-12T12:49:31.741Z\",\"sse\":true}]]"
+                }
+            ]
+        },
+        {
+            "origin": "https://www.google.com",
+            "localStorage": [
+                {
+                    "name": "rc::a",
+                    "value": "dzV2N2IwMTRrNGwyNg=="
+                },
+                {
+                    "name": "rc::f",
+                    "value": "0aAMs4f80jhxT90K3f_LE_LBzFDIeB8o-ioukuKjii2qgy7hXLXJzzf2vEN_1GZPUm14MfXBQ"
+                }
+            ]
+        }
+    ]
+}

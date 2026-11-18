@@ -1,0 +1,272 @@
+{
+  "email": "marloncavalcante56@gmail.com",
+  "password": "@msC2001",
+  "access_token": "1d9fa445-87f7-467c-ad11-5ffbdfd15e71",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiODkzYjgxMDYtYmI4Zi00MThkLWI4Y2MtYTlhZTlmMDEzZjdiIiwiYXRfaGFzaCI6Im5UQnI5SGN1SzBRSkJqQmRRb0dEcVEiLCJkZXZpY2VJZCI6IjU1NDY5ODZlZmZhMmNmYzgyMzM0NmI3NTc0ODVhZDc5NDM4ZmYxMTQiLCJhdWRpdFRyYWNraW5nSWQiOiI1ZTc4LWEyYTktNDFiNy05YTNhLWYwYmQiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjY4MDU5MiwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJFYU9OTWxLQlpCajdWMjNGWkEzaUdnIiwic2lnbmF0dXJlcyI6WyIxNTM5NzQyNjAwIl0sImN1c3RvbWVySWQiOiI1YjhlNTcwMmM0MmM4MTIyZDhkM2FkYzEwNjQ3MjQ1ZCIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjE1Mzk3NDI2MDAiLCJnaXZlbl9uYW1lIjoiQU5UT05JTyIsImZhbWlseV9uYW1lIjoic2t5IiwidXNlcm5hbWUiOiJtYXJsb25jYXZhbGNhbnRlNTZAZ21haWwuY29tIiwibWFpbCI6Im1hcmxvbmNhdmFsY2FudGU1NkBnbWFpbC5jb20iLCJyZWRlbXB0aW9uTGltaXQiOm51bGwsImlhdCI6MTc4ODMxMjY4MCwiZXhwIjoxNzg4Mzk5MDgwLCJpc3MiOiJzbS1za3kudnJpb3NlcnZpY2VzLmNvbSJ9.OvhJP8tESjig0dJ-Lmh_a4eAqs0sx5ta79vsgXNi2hA3r9PIoNAD77lifPsOHGonH11GbOlWo7BWSOrrunBQgl3gg9ABJJs1FHfl-t8iakU6UH3LpC_ioZ-AA1LTAYZUyZo1iFqaiEwAmQtX84xzL9mHvlLPvt6aOPAUks4Cen_aO8oncwQi9t9Rba4dWMgl6k-3mbMSmL9cI9K4RxxpDhudu2zNHCEWroAWdi_w4nD766RpxeKTg7kQg5-UOm4E9W-PrGUJUi30FWLOQOuSyhgeZIxp-C959_Zi7HJ5Uic_hXWSN1VDzPiKOaqIMhEbMIkFSBDnJpX9WuMF88ANHw",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "1d9fa445-87f7-467c-ad11-5ffbdfd15e71",
+    "externalId": "a65fea83-1be8-5655-8d8a-80746bb084af",
+    "username": "5b8e5702c42c8122d8d3adc10647245d",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "1539742600",
+    "protocol": "2026-150197090912",
+    "customer": {
+      "email": "marloncavalcante56@gmail.com",
+      "billingProfileCode": "1-1V3954J3",
+      "name": "ANTONIO",
+      "secondName": "MARLON SANTOS CAVALCANTE",
+      "birthday": "2001-09-25T00:00:00.000Z",
+      "ddd": 88,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5588998463142",
+      "id": "5b8e5702c42c8122d8d3adc10647245d",
+      "cpf": "61775741303"
+    },
+    "signatures": [
+      {
+        "id": "1539742600",
+        "phones": {
+          "mobilePhone": 998463142,
+          "dddMobilePhone": 88
+        },
+        "customerId": "5b8e5702c42c8122d8d3adc10647245d",
+        "status": 1,
+        "productName": "KIT TOP HD PLUS 2025 - DIR - P",
+        "name": "ANTONIO",
+        "secondName": "MARLON SANTOS CAVALCANTE",
+        "dna": "01000000010000000000000000000000010000000000000000000000000000000000000000000000000000100010010111110000000000000000000000100000011110000100000000000011111111111000011111111000000000000000000000000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001110000111110111101101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua R Professora Veronica Bezerra 633",
+          "line1": "Rua R Professora Veronica Bezerra 633, 633 - Centro",
+          "line2": "Casa",
+          "number": "633",
+          "city": "Jaguaribara",
+          "state": "CE",
+          "country": "Brasil",
+          "postalCode": "63490000",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "addressBilling": {
+          "linePublic": "Rua R Professora Veronica Bezerra 633",
+          "line1": "Rua R Professora Veronica Bezerra 633, 633 - Centro",
+          "line2": "Casa",
+          "number": "633",
+          "city": "Jaguaribara",
+          "state": "CE",
+          "country": "Brasil",
+          "postalCode": "63490000",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2025-12-09T00:00:00.000Z",
+        "email": "marloncavalcante56@gmail.com",
+        "parentAccount": "1539742599",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001204022212",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR01",
+            "serialNumber": "010AD12381031217C"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "1539742600",
+      "phones": {
+        "mobilePhone": 998463142,
+        "dddMobilePhone": 88
+      },
+      "customerId": "5b8e5702c42c8122d8d3adc10647245d",
+      "status": 1,
+      "productName": "KIT TOP HD PLUS 2025 - DIR - P",
+      "name": "ANTONIO",
+      "secondName": "MARLON SANTOS CAVALCANTE",
+      "dna": "01000000010000000000000000000000010000000000000000000000000000000000000000000000000000100010010111110000000000000000000000100000011110000100000000000011111111111000011111111000000000000000000000000000000000111111111111111000000011111010111111110001000000000001101111111111111001101110001110000111110111101101111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100001111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua R Professora Veronica Bezerra 633",
+        "line1": "Rua R Professora Veronica Bezerra 633, 633 - Centro",
+        "line2": "Casa",
+        "number": "633",
+        "city": "Jaguaribara",
+        "state": "CE",
+        "country": "Brasil",
+        "postalCode": "63490000",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "addressBilling": {
+        "linePublic": "Rua R Professora Veronica Bezerra 633",
+        "line1": "Rua R Professora Veronica Bezerra 633, 633 - Centro",
+        "line2": "Casa",
+        "number": "633",
+        "city": "Jaguaribara",
+        "state": "CE",
+        "country": "Brasil",
+        "postalCode": "63490000",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2025-12-09T00:00:00.000Z",
+      "email": "marloncavalcante56@gmail.com",
+      "parentAccount": "1539742599",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "001204022212",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR01",
+          "serialNumber": "010AD12381031217C"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "1539742600": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "07-07-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PREMIUM R$ 14,90 POR 2M - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "24-06-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "09-12-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "AMAZON PRIME",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "09-12-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "TELECINE HD",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "09-12-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO COM 12M DESC 100%",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "09-12-2025",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "07-07-2026",
+            "startDate": "07-07-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "DISNEY PREMIUM R$ 14,90 POR 2M - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "24-06-2026",
+            "startDate": "24-06-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "09-12-2025",
+            "startDate": "09-12-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-21ATHJR",
+            "name": "AMAZON PRIME",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Amazon%403x.png",
+            "urlDetail": "https://www.sky.com.br/amazon-prime",
+            "price": "5.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "09-12-2025",
+            "startDate": "09-12-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-20XEJQF",
+            "name": "TELECINE HD",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/TLCine%403x.png",
+            "price": "29.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "09-12-2025",
+            "startDate": "09-12-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO COM 12M DESC 100%",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "09-12-2025",
+            "startDate": "09-12-2025",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

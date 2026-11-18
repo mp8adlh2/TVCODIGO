@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: GB
+Plan: Standard
+Next Billing: November 8, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: £13.99
+Extra Member: Yes
+Profiles (3): Louise, Sean, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1810651268	dsca	true
+.netflix.com	FALSE	/	TRUE	1808040005	NetflixId	ct%3DBgjHlOvcAxKNBJ4W_9SWLS9VCdWAUifiZRPuCNyrRQmPjMG99XPYAbczpanjslhELGCfcZNR7PpKCTRoo2XCl3Zvl_R0ZXdUDsMR0cXGQy06LhAcETeifZ4AIUFXY3wTsgPFUSpMBZtUZUCScuL1TtwzJiR9bWnTghuNRtjYDahKTuUVlWC-J_p-totyP0J4YO_0V99HYPhnsjQnbt71hnw8BMOOOZGuCloLVwj5XqNQQBQkvCzN58Z8sRVAlLy6iiY83ryv-sRihftQIaAw8iT2xVcR1TRSC4DAut5PPiP8q-ZqlLwOHqra5SsWFXiVeom1HtYVnEXC8t8zcVeFrrm_td0K75BHPTTN67bxkgVQkwdRu0p0z9tcUqd3_cDJ4KAI9pL6ZPujlotrEphqMpN65D_JHTpCFfFoGvXOSdPw2MqaXHL9XQURhvdzVhpakyIIlWLZFnQ4DafUrIl78urTBF3lcM2v7aVbtsB8u0DdPb0AzTlBtPh6vLJsqBBqnDO34aV06jfJxcTN16aIkuXB2htOKl_HuSkvwBZJHqRhW3Kdjqt4UfiSfBUm6XNpenaYiEwa_fffmly5dpT6Fv-tm04x08VndUQqbPtQ6Sy9M3PfK_Z0fp0D0pS1b9DOF1u7_y3F1FjkG2Jzw0Nu0yALsN9tt9Ez-2mwzUQFTjTHgtXn22xCPrVxuaUSKT0L72bquv3_3RgGIg4KDPHLaTzFNUE759SjOw..%26ch%3DAQEAEAABABSOKBD_IesG4_XXJa4EkabDjg2I69mNtRs.%26v%3D3%26pg%3DEV6TFJJKHVCAHF6XUO4R4UKVOM
+.netflix.com	FALSE	/	FALSE	1807627268	nfvdid	BQFmAAEBEHGEQ-dcVpPKgXQf6G7df9Bg3t658J6EvR6rysl3MpT0I6ooDY_Z2nuuJhnhPl4Pfd4ffh7CY3gEhZXDmxC_ElGROUU47gdMuz1Um_oMV3GtOg9hq7OjWPvntoGYC7IzCxxO7xSwddV5f3OZhyI68ibS
+.netflix.com	FALSE	/	FALSE	1807627241	OptanonAlertBoxClosed	2026-04-13T14:40:41.198Z
+.netflix.com	FALSE	/	FALSE	1807791163	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Apr+15+2026+13%3A12%3A43+GMT%2B0100+(British+Summer+Time)&version=202602.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=8270ea7e-2561-4a0b-abbe-61ea102ef6cd&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&intType=2&crTime=1776091241830&geolocation=GB%3BENG&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1808040005	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSwS_QIBEuEpZHYHKqx9aKSSdoheo557_8.%26dt%3D1776504007152

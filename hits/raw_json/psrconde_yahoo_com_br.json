@@ -1,0 +1,108 @@
+{
+  "email": "psrconde@yahoo.com.br",
+  "password": "z12sp0r2TLMC",
+  "access_token": "e763717f-541e-4fe9-b06b-44a6e4a0190b",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiNzViZjk4OTQtMDg4OS00MDlmLTkyNjctOWFmNmI0ODJlYWE2IiwiYXRfaGFzaCI6ImlKZE51OWtZUGpYMy1WbjFQMUhtZ1EiLCJkZXZpY2VJZCI6ImNjYjMxYTI3Y2E1NDVjNTZiNTk3ZTc0MDY5MzVjODY0YzBhZWNhYjciLCJhdWRpdFRyYWNraW5nSWQiOiJmYTk5LTEyNTktNDRkNS1hYmI5LTc4ZmMiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc5NDk2MTA4OTEzMywidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJiMTg5MWMxYy03YTU0LTRjOGQtYmQ2Mi00ZmIzNjFjMjc3ODEiLCJzaWduYXR1cmVzIjpbIjU0NTAxNDkyIl0sImN1c3RvbWVySWQiOiI4YjY5NzljZDQxNWEzNTlhMTNhOGRhMTFhZDcwZTBlMSIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjU0NTAxNDkyIiwiZ2l2ZW5fbmFtZSI6IlBBVUxPIFNFUkdJTyIsInVzZXJuYW1lIjoicHNyY29uZGVAeWFob28uY29tLmJyIiwibWFpbCI6InBzcmNvbmRlQHlhaG9vLmNvbS5iciIsInJlZGVtcHRpb25MaW1pdCI6bnVsbCwiaWF0IjoxNzk0OTYxMDg5LCJleHAiOjE3OTUwNDc0ODksImlzcyI6InNtLXNreS52cmlvc2VydmljZXMuY29tIn0.FIKjz_4rYgHo1_fOEN3HPnF-d_ZDpiwuEoLZfegu2bHErAm4J9-4YCeHaFXTtTjjE8UrWkGqb8Ho9SdZhNMM_EDeF70fSZ2PFcI-rxEKP6Tvjf71miHablfnaFPdgJFVxYiXHgx_tv-7emksWwWgvzRFkLlgRee1E_wKWtt4alFAoBjp9Tl9qT_LkWbdu-GhrntaSBi2hda83bu0pUd-bW5dCpf8HdrFtfrFoeap9CL2aOLNwR5QIwvqIlcR9JJvEgLhzdS9DrZVtT4nabyz9ZQidQ1vLBiKPgcE_Vri5f8E3J4XAU6pZEBsiZCoc2U-SmbL6ojQtEcnjziHBzxhDA",
+  "raw_data": {
+    "accessToken": "e763717f-541e-4fe9-b06b-44a6e4a0190b",
+    "externalId": "3ff95f0e-270c-53ad-9c9d-ca47a8c0b3e4",
+    "username": "8b6979cd415a359a13a8da11ad70e0e1",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "54501492",
+    "protocol": "2026-151280214685",
+    "customer": {
+      "email": "uber99gdgx@gmail.com",
+      "billingProfileCode": "1-9MSW-26368",
+      "name": "PAULO",
+      "secondName": "SERGIO RISERIO CONDE",
+      "birthday": "1951-12-24T00:00:00.000Z",
+      "ddd": 71,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5571984731331",
+      "id": "8b6979cd415a359a13a8da11ad70e0e1",
+      "cpf": "07680902534"
+    },
+    "signatures": [
+      {
+        "id": "54501492",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 984731331,
+          "dddMobilePhone": 71
+        },
+        "customerId": "8b6979cd415a359a13a8da11ad70e0e1",
+        "status": 2,
+        "productName": "TOP HD III PLUS 2024 - P",
+        "name": "PAULO",
+        "secondName": "SERGIO RISERIO CONDE",
+        "dna": "00000100000100010000001000000000000000000000000000100000001000000000000000000000000000001011000111110000000001000000000100000000011110100000010000010111111111111000010011000000000000000000000001100000000010111111111111111000000011111010111111110001000000000001101111111111111001101110000000000100000000001100001111111111111111111111110011111111111111111111111000001110001100001110000000000000011100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111101100101001101111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Null Para",
+          "line1": "Null Para, 446 - Pituba",
+          "line2": "Ed Maison Lion",
+          "number": "446",
+          "city": "Salvador",
+          "state": "BA",
+          "country": "Brasil",
+          "postalCode": "41830070",
+          "referencePoint": "Academia Hummer",
+          "addressType": null
+        },
+        "addressBilling": {
+          "linePublic": "Rua Para",
+          "line1": "Rua Para, 446 - Pituba",
+          "line2": "Ed Maison Lion",
+          "number": "446",
+          "city": "Salvador",
+          "state": "BA",
+          "country": "Brasil",
+          "postalCode": "41830070",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2010-08-10T00:00:00.000Z",
+        "email": "uber99gdgx@gmail.com",
+        "parentAccount": "054501492",
+        "productStatus": "C",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 2,
+        "dunnLevel": "Serie de cobranca passo 2",
+        "equipments": [],
+        "permissions": {
+          "modalWinbackGatinho": true,
+          "modalWinbackCobranca": false,
+          "chatWinbackReativacao": true,
+          "chatWinbackWebview": false,
+          "chatWinbackCobranca": false,
+          "chatWinbackTelevendas": false,
+          "featureVerTelaCompras": true,
+          "featureSkyPlay": true,
+          "featureGuia": true,
+          "featureFatura": true,
+          "featureComprovantes": true,
+          "featureMeusDados": true,
+          "featureMinhasVisitas": true,
+          "featureAtendimento": true,
+          "featureAtendimentoChatReativacao": true,
+          "featureAssistenteVirtual": true,
+          "featureQuiz": true,
+          "featureControleRemoto": true,
+          "featureRealizarCompra": false,
+          "featureEnvioSinal": false,
+          "featureTurbinarPacote": false,
+          "additionalData": {
+            "chatUrl": "https://negocie.sky.com.br/app/reativacao/sinal/901e91af8194e6a79bc039e959ebd5c43d1c69d5e6f9337dde70a0aaa3ff16c0",
+            "chatParams": {
+              "subject": "Cancelamento",
+              "dateNowFormatted": "2026-11-17 10:07:31",
+              "chatExpirationDate": 1794921151840
+            }
+          }
+        },
+        "chatUrl": "https://negocie.sky.com.br/app/reativacao/sinal/901e91af8194e6a79bc039e959ebd5c43d1c69d5e6f9337dde70a0aaa3ff16c0"
+      }
+    ],
+    "_id_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiNzViZjk4OTQtMDg4OS00MDlmLTkyNjctOWFmNmI0ODJlYWE2IiwiYXRfaGFzaCI6ImlKZE51OWtZUGpYMy1WbjFQMUhtZ1EiLCJkZXZpY2VJZCI6ImNjYjMxYTI3Y2E1NDVjNTZiNTk3ZTc0MDY5MzVjODY0YzBhZWNhYjciLCJhdWRpdFRyYWNraW5nSWQiOiJmYTk5LTEyNTktNDRkNS1hYmI5LTc4ZmMiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc5NDk2MTA4OTEzMywidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJiMTg5MWMxYy03YTU0LTRjOGQtYmQ2Mi00ZmIzNjFjMjc3ODEiLCJzaWduYXR1cmVzIjpbIjU0NTAxNDkyIl0sImN1c3RvbWVySWQiOiI4YjY5NzljZDQxNWEzNTlhMTNhOGRhMTFhZDcwZTBlMSIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjU0NTAxNDkyIiwiZ2l2ZW5fbmFtZSI6IlBBVUxPIFNFUkdJTyIsInVzZXJuYW1lIjoicHNyY29uZGVAeWFob28uY29tLmJyIiwibWFpbCI6InBzcmNvbmRlQHlhaG9vLmNvbS5iciIsInJlZGVtcHRpb25MaW1pdCI6bnVsbCwiaWF0IjoxNzk0OTYxMDg5LCJleHAiOjE3OTUwNDc0ODksImlzcyI6InNtLXNreS52cmlvc2VydmljZXMuY29tIn0.FIKjz_4rYgHo1_fOEN3HPnF-d_ZDpiwuEoLZfegu2bHErAm4J9-4YCeHaFXTtTjjE8UrWkGqb8Ho9SdZhNMM_EDeF70fSZ2PFcI-rxEKP6Tvjf71miHablfnaFPdgJFVxYiXHgx_tv-7emksWwWgvzRFkLlgRee1E_wKWtt4alFAoBjp9Tl9qT_LkWbdu-GhrntaSBi2hda83bu0pUd-bW5dCpf8HdrFtfrFoeap9CL2aOLNwR5QIwvqIlcR9JJvEgLhzdS9DrZVtT4nabyz9ZQidQ1vLBiKPgcE_Vri5f8E3J4XAU6pZEBsiZCoc2U-SmbL6ojQtEcnjziHBzxhDA",
+    "_sess": 

@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: IT
+Plan: Standard
+Next Billing: UNKNOWN
+Payment: TELECOMITALIA_V2_BILLED
+Quality: HD
+Streams: 2
+Price: N/A
+Extra Member: Yes
+Profiles (4): avv.gagliano, Valerio, Raffo, Giuseppe
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554946	dsca	customer
+.netflix.com	FALSE	/	TRUE	1796554946	NetflixId	v%3D3%26ct%3DBgjHlOvcAxL0Ao5tA64J-s5guGSkNavB3drOqf9Wd335SnYOix4nrku1U_LIrue4bK0foCV9iy6i9Gz2vJJTNdnPD_oL4TFAXijbeHbZSsGg5PP2GlQHQ9u-0amDL5kMEkpz7PZ2YMb6zPYJEVYgIOiVQYFxld67GNaVJbSFFGvc7mCqm2qaKr69dE5loLgLEz0crYTzqjancjlslKy-2awZPi8SRfSM7ptNs9vdgy6MMBGvATgQWmMma7MIlUiDioAITqc1EnQ7SNMEsKo36NlUmzVP_-zabkZEViMzVYuE8dr8RcW2xw2n1Cc_f8t2Nif2uEarY0AbMLu2qDNzpF74FgIFTqRC9RKfGjRfCPqLr0STdR0wHDMHOPglfyt2l0smK38PdjgxGAmFwBfcQIT8aFRO2MLRQIuQ11unUjPjh0q_KwYXm2eeJPzfVPmB9AM8TuGi16CsBGg57gOAen0emBtxF6bXU2f9HJfLCIXHZijbM48eChYB-eCGPxgGIg4KDKmg7qF_At8z9kR3Wg..%26ch%3DAQEAEAABABSIiQRpyP3DOK6-40GbuncpwGlY2yqSkhc.
+.netflix.com	FALSE	/	FALSE	1796554946	nfvdid	BQFmAAEBEJgQMVDr9tzOJyp0BdJT-sNgNtIEOCMHK6Q5A0IK3Q893FNjIOKqQFoZSN6AQNRNJmOMihUTIY3d-BUBEIRJm814YVVe1N_t7Hxcc3y86auLHY7AdhhLTkX9xUexT3z4yAGwz86Wn1jXiGIqXVJxWguT
+.netflix.com	FALSE	/	FALSE	1796554946	OptanonAlertBoxClosed	2025-01-26T21:22:23.259Z
+.netflix.com	FALSE	/	FALSE	1796554946	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Jan+26+2025+22%3A23%3A11+GMT%2B0100+(Ora+standard+dell%E2%80%99Europa+centrale)&version=202411.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=d17dc12d-de35-4af7-875f-8fa58d837c55&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1&geolocation=IT%3B82&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554946	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	FALSE	1796554946	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1796554946	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABT4gQutY5PFggqO9uC9wqxNRG9i2wK7yh8.%26dt%3D1737926590383

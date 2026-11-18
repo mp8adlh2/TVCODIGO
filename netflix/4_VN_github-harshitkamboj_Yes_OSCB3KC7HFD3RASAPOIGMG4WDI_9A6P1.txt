@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: VN
+Plan: Premium
+Next Billing: December 4, 2026
+Payment: MOBILE_WALLET
+Quality: UHD
+Streams: 4
+Price: 273,000 ₫
+Extra Member: Yes
+Profiles (5): linhdanhotel12, Lầu 2, Lầu 1, Lầu 3, Raju
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	25822926-9bcc-4383-9355-2204fa5186dd
+.netflix.com	FALSE	/	TRUE	1820984373	NetflixId	ct%3DBgjHlOvcAxLSA6JxXfRKamkv-_fBgc-LYBXrJbtK2vDWhuB4SFwgrFhMEcyw9jQ97hpLQV26PTnK_f6Wi-vaQdMC6uPtWmpVIpKk9TnUOwCA1qi_Vu-WYnrLlT1QJcKKFxYCTGWP0pvoIfkMd4lN238NPL0-Ut84vqM2ybMeyMM6DMTDGd5UgyI0WRnyYSdADGmYfcLAe70tUoItb9TFAgE1qOoPdUAixehCxEfY4uW_7fDkPeBklOQQlWfMhbT6eL4SDlQbs9FEpt5Xrowc6Db_LpwIMEVrw_DyjifukPO4NdULU_xb4ZESMo4_zh-G0bjeCNws-DqzzieNinkNXXhnXwl00diGsWYyPaeQsF1SwZ_8EsCd92Yd3uiKYL2pS1KKhg7w1ZN2xHsJBo-yejT56J0fMOHs5Bp7xdmD-VRoEvDRY0IrLgWQOD3iNZAA9UncXkUvxmjFbQfNq_ewOoYsM6vjehVG7XKunBEfNKx1MdHKhGw2ExXnrjABEl8RluZMrreNbgQpvZFkj0MtXQ1kHRcNJcsCQyoYXT5brL2AqfN4TF-TvQ5DA5PevD058hOuK_TXW_cVT91MlHwlr09hToIG55EaVjaB8ZB3fn5JA6Ks1v957ZVdwb8YBiIOCgyQprQxpiQ3JyJ8bT8.%26ch%3DAQEAEAABABSd6olaCNcDkd_l9aGbws_rlzijb5tzZ2E.%26v%3D3%26pg%3DOSCB3KC7HFD3RASAPOIGMG4WDI
+.netflix.com	FALSE	/	FALSE	1797224376	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797224376	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1807028990	nfvdid	BQFmAAEBEPJifpABirKZwN0X_HUz5Vpg207zrpBwNzQup8ZOuhKoABo8lH-PAtU66pUaAfNlP08LJc6I4OZkpov4zUN6cSdoi-mt4GLJmGfqWk-S1I6fHWSD5JIBONRIPpOpdzIGo2_SVeWWnylSRBO_H1FV11Es
+.netflix.com	FALSE	/	FALSE	1820984378	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+15+2026+11%3A59%3A38+GMT%2B0700+(Gi%E1%BB%9D+%C4%90%C3%B4ng+D%C6%B0%C6%A1ng)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=18fae028-4cb4-4958-aae1-129fbb6a9f37&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1770792841580&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	FALSE	1797224376	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1820984373	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSVUV7be8eacwMfMtv-1aukBqMStYKQBHY.%26dt%3D1789448373762

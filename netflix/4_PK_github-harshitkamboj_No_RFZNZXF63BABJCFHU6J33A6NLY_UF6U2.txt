@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: PK
+Plan: Premium
+Next Billing: November 27, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: PKR 1,100
+Profiles (5): Kiran, Awais waqas and umair, Red panda, Hitler, Cutsie
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	05360e97-2540-40f7-ae2e-e06a8cc30961
+.netflix.com	FALSE	/	TRUE	1820390406	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKaA6DBJoAZ4I14IfajqKw5bnF_dph--rCGl2a--fg__fY-lag1tBfUo4jJusWxkSkERxOhdZ-5RMlqIjvlDpCvlprhjxz-ctOHANO5cYsRkWWITBLvJHSVK0W4aEsVGwHBfQeo-U2hUqH6d8JaAKAEeoyXH1aDk1B1iFDZKT8_8262QI7Bvz4eCVYodPMmwZjLKR2Xu5E7W-xOBtCOQ13xeelKyhz_9BuPkexmY94UL6tfNxpLLoEQCsX_Poy2pjJWAZrNcGTsbl2HAHb0-Xiytsrb5GYBJRvm8Y70DDy5AHC6nXKq0kI6Z5TIB7WRwXch6_AVNn5QG1eWefw0z_7pj5MNxPRsCOFwaiEGpo3alLMryyDAz31ZYNpN6a-2yjq_P4FSpx7Dyu-nbS2jIw-zhOhQIsp0zFA6qJ79Ez6_8DckoQtJs92rRo0f_ufU3KlXnmX84WXJeNa5GsoeBaMiIAUabktqL654m5-8VFIujCnRKRplNl0Xy57v7cMf4EPSwgcDk7Hg78iZGrDcN62K7HFX9j0FvE9ROV-sGAYiDgoM-p6OSAPdMrawcP7p%26pg%3DRFZNZXF63BABJCFHU6J33A6NLY%26ch%3DAQEAEAABABQiulsPflQq4qZnQCTozvUGF7AfPOSA6e8.
+.netflix.com	FALSE	/	FALSE	1796645533	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796645533	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1820318253	nfvdid	BQFmAAEBEH3IE4Zj65yPmtZiyc6eXo1g43cgfKIFVlmS5h3CugWYxHaRnig4vMaoZQcloUrWAZEp9sfV5IXQHv9DHVlxN74th8ey0lBlX5p14K80fWPgV5LCIeZB028WZUIdDRQmzGMfnX0iwrV4KTFUDQA6afoU
+.netflix.com	FALSE	/	FALSE	1820405534	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+08+2026+17%3A12%3A14+GMT%2B0500+(Pakistan+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=c9a516ea-19e9-467e-a769-1d8c798707af&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1785083710088&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1820390406	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRHAFpnyXeZhCC5h_IRPxRW-Ivi8mlfNWQ.%26dt%3D1788854405145

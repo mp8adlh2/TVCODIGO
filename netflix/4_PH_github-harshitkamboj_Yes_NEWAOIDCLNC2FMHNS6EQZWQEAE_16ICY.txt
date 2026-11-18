@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: PH
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: PLDT_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (5): Roxanne, Daniel, Ton, Dayana, Chandeng
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1796554947	flwssn	de47ce56-95f3-4101-af67-2e80a3e5b297
+.netflix.com	TRUE	/	TRUE	1796554947	gsid	e563c5ed-faaa-4ee9-a890-41665e033f87
+.netflix.com	TRUE	/	TRUE	1813719460	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKRA5uZZ3isadLwcWecCwu1X6x-53tfJt9Vhgt7YODpAOCrTtR50M1LaUs8jXiw9CmGFawMenhbnKOap4fNFkj3wNrrL0-JxNzoY8MUOylNEqGfSjnA39wj_XlFiUCc__Quu0iaueWV4Yp9hVug3gNRfNJa6UZa7hL5cPUJLybsxAQZfA_Rnp37YwvhnPjzDCDFIaJ7XLGu9kr-j9qFEf-JdEfyOX7gof__LuFnS-h56bJs_dSWfVl4-FfOdOXgbQKbIfDs3AvNo-IZa0v5579Ps7Y2AghtfC8YWksaNtVzZnEoQrMi9TKQnJaz16gUSj-KUGazo29FBkXnvJJ5H1avtZtPU11pyfEAybMxSEymRNwTUZJQEtdcQ_dt2yzpm1Bu62STJM-itiFSQLgcxvZUHBO6PIJU9clVE_WWo6QoLjlVMUuCtCoPryfef6MC76KniY64ajsNphpBrcjc5eG5Py3rlV94wOVcnaPv0aL5TEkPWP114fCz3gwGSJo8g-BquOfTMxgcLmk6sjX4d2xwJCevGAYiDgoMgNDLzXg0JJbHh5Fr%26pg%3DNEWAOIDCLNC2FMHNS6EQZWQEAE%26ch%3DAQEAEAABABQR5s5-fCuwIuYEuvqQUSQmbRy5nabRBlo.
+.netflix.com	TRUE	/	FALSE	1813719460	nfvdid	BQFmAAEBEGbY0hiLwV4RxiQCQU_EOG5gRZA_0nyQFOm6TM5SH1dCoMlOpLJKHJ4v7Mcu_IeNyxmuf3gzUukgipOL_qtU23Xri9BZsv2Xhj62mBelH9I7HwLf0W1j4KAKcgOo8hZfxXQoLZ3ZiDI8AFKbiRbIQfvj
+.netflix.com	TRUE	/	FALSE	1813719461	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Jun+23+2026+10%3A57%3A41+GMT%2B0800+(China+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=50ce4d2c-aece-4af1-91a8-38b1caf3339b&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	TRUE	/	TRUE	1813719460	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABR7m6Cg6iJLGhVTAkFbkymkx8uXWbhQcuA.%26dt%3D1782183460671

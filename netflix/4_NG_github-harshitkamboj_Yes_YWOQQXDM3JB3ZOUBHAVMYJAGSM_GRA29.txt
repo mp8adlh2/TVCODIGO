@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: NG
+Plan: Premium
+Next Billing: November 18, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: NGN 8,500
+Extra Member: Yes
+Profiles (5): Ayoade Adesakin, Frosh, HIM, FG, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1822058569	NetflixId	ct%3DBgjHlOvcAxKzAwSMfCvCXQDtQtL-tSjrtxzM-asIvi7G7x2cirhFQg9CMnRtLxo0yX5SbOOz9ER5o6m1zGbzoNqwJVuJkxLvUSSU5KeeQjeQ5DeypWN6kPvy6SSrryjiAuuzoFiSGYFU6Lyrje0aGdLQgRxUtv_zS6I6FBVyMsCfvGBF6cBJNID2LsQvUsEBill8F_XnS-hZpaKjI_OMYs6KPqhRfQmuGqaqSV7mdvYjMeqJNvvIb-pwGI-UviW458oJfQNGbz8xPVF4b0oCvNAoQXsC236mtZDVDjQJsgjXYXoiM30mt1l4rtIuHZUnV_xAHoftbApEdBICRuPpSGRwqC7RcsR9Zj7tUC-8VJZj0jQ2Ks5Tj3ZHeVoQpGXJm0W2QlvC4dVVM-j8sEFxqRWhK49EGvRk1qL0ywqasBu1ayfmTVw4hfJmm4Yn_daE1RbPxV7XHf25gbA6US0eN5IJ6HwAuUH1R_R1AJYL8DEQtlXKzCYg0s1y-Fr0G2wJLA1n7GWV7N0FRqBnTwG3ttj9FCoKErb-TqT5YUJqwZpHL30lWRejshI5VKwHe5JklKE0IBnl-hiMTS5zpRgGIg4KDCSEsl2tOP-Bh2iTjg..%26ch%3DAQEAEAABABTWj9roFgMQ8pIiN4lgtHFbMBcZGxFUaWM.%26v%3D3%26pg%3DYWOQQXDM3JB3ZOUBHAVMYJAGSM
+.netflix.com	FALSE	/	FALSE	1798298577	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798298577	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1806418075	nfvdid	BQFmAAEBEMtzCIFx-EMV7kBzGC03Gehg3Wg8Th_lvPkP83BfNGPZ5n73JaByK_hZ2jywAKdbjZqZIOHjS-fzeiWJqs_K70aoBtA_yTz3epJu1YrONDODPrsV-6Wb43aczUESLM5sQEZcUXXR4CpPSbre2Pg0-jtF
+.netflix.com	FALSE	/	FALSE	1813784019	OptanonAlertBoxClosed	2026-06-23T20:53:39.471Z
+.netflix.com	FALSE	/	FALSE	1822058577	OptanonConsent	isGpcEnabled=0&datestamp=Sun+Sep+27+2026+08%3A22%3A57+GMT-0700+(Pacific+Daylight+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=705e383c-63a3-4683-ac3a-8834646e8c1a&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1782248021211&AwaitingReconsent=false&isDntEnabled=0&fclco=&intType=3&geolocation=NG%3BLA
+.netflix.com	FALSE	/	FALSE	1798298577	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	TRUE	1822058569	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABT0E9YCHCcbIf_kgkJDYv1WZvAHcds0c_g.%26dt%3D1790511841168

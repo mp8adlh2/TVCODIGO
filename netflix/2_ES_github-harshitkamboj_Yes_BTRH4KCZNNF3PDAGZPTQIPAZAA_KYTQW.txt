@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: ES
+Plan: Standard
+Next Billing: December 3, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 14,99 €
+Extra Member: Yes
+Profiles (4): Davinia, Norber, Potro salvaje, Infantil
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554944	flwssn	99f27da2-6b9e-498d-a4ad-06d7f0494a00
+.netflix.com	FALSE	/	TRUE	1796554944	gsid	b473f6b8-5c7d-4bcc-9e3d-4dee0fccd41c
+.netflix.com	FALSE	/	TRUE	1796554944	NetflixId	ct%3DBgjHlOvcAxKEBGm3IY5FiXA61f0gRJJzsxMLPLEfSAo0oo78NyEqfm7OjPF9cLe3ZHUpHRbDNhEoV-thEfaseoyJfXFQrmSsOn3tDcc_YRXwHVPIGBda5XmJhO4csLDIAcq_F9K3xHJgi-S8czUbgip2ys3ht0O2tKrCBahqWdRDMoyTTdZ_W80bKd7LOHcFQd9uJV9jJYkLipc9unIORT-fz33eEHpcujfH88jo0cDvPImhGI5RJI36o3NczxzoBfBHg8Ew8RWG1MtsRZDk3oDuEZlHtbBT0rmlTNX4IIQbW1VnAxoUCnGL0CNbQvfmL4rDZzCVp3sGYpruz8fSVQknKgJ3Ixmwf95C1BqYPA49tqXzWAJ4FjkI2DOTYeH8qbCJhJbbUD4wGq-cnE3bMZtukU61RDR1bTTiZ1WjMGRQ_ualdauJljBA_OwXRibZ79Qk1wuwQh3tUrbhEVDxF94nQahiib2aDzdqpHpyq1aCjw_lAZD6d_gtxdKTb3XwYnRlF6rAfujs-CzFWWQx3tU5d_s1yQfDcNcviLRRymBawg3bGbD2W2B9cxtfrkd3Rx3Lm4VyGrlNrVYn1pgwOYORP0tlRXBY3yIfFZ8C2Dq-F7gALPVahzi2nml967VKyEKsL89lblB_rx5FK0SPRKGzd8Sxe4bb7yZQSI8wDizk6qKcKuUbhlrLS22FsxgGIg4KDMjHOiJheKnt-Taycg..%26ch%3DAQEAEAABABRAWftiE3d67b9uOfaNZ_muPnbs7tCXjQw.%26v%3D3%26pg%3DBTRH4KCZNNF3PDAGZPTQIPAZAA
+.netflix.com	FALSE	/	FALSE	1796554944	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554944	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554944	nfvdid	BQFmAAEBEI9TCePU7-H4KhRY8NWIZMVgki-Asoyt1kx6mX0Pa5T1tV1RebPT_m51_pZrV-YuvvgfRaZH7_4_ZdMXPxl2sfx6jIWdSzUgY78ELbtuhGm_LzOP0lNL-GJ_voM2-WWg7A__Ax_zjeCeSxgV7QcvWtI7
+.netflix.com	FALSE	/	FALSE	1796554944	OptanonAlertBoxClosed	2026-06-26T01:34:16.333Z
+.netflix.com	FALSE	/	FALSE	1796554944	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+22+2026+10%3A06%3A31+GMT%2B0200+(hora+de+verano+de+Europa+central)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=c1a8fa27-de8b-4605-b887-a22f6e74ece2&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=1&crTime=1782437656852&geolocation=ES%3BCT&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554944	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	TRUE	1796554944	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTuRBozwqdINSYsHQNn_PvcMnlnc_YnNNU.%26dt%3D1790064390734

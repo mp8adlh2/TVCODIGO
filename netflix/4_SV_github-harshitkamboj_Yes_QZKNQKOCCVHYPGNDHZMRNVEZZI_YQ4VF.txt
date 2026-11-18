@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: SV
+Plan: Premium
+Next Billing: November 29, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: $13.99
+Extra Member: Yes
+Profiles (5): ALVARO, Julito, Hijo, NORMA, Niños
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1817957141	NetflixId	ct%3DBgjHlOvcAxLOAxXQjeBt0zcIUWdIfqQtx7aR_OLmLlN9UcM0xDF9qIYAL8nz6C4AfBprtXQnuag3HU6uayDRuvTE--8KzuXyjHxEXM7lxHBV8Ji3nXHY-r9elT-ySaQNCR6JmajwLAQrYgSpTUTaxMFx-9Xd4DvL_zACOdCLPBgwgl7lbkprNNqAg38QcaYBrWHKgmdyjdk6nQCkRF4DLOtwGewKMeSGO0WUR6WXLRvfyWa1AhdvNfcaPw9kb8ZZC-nyLXudgfu59zsg2q2pWkIXKO26fkn9hHCYv4k1qfYqLswW7Klvw_zFz9gU6Yobr80gaYnqGcIYhOy7mnTVgsxCcDRJpxtjFP5DoXyl5JCNeLelmhrp0gu0iWbZ5igTom0E5OGmuZymMkN4KmCHIMUsVGeaxGeP9mgMHZGLfutcxzTNCyWH5YcT_cJiFNgIJpTS-TRRaHcYHdCFsogAMVw_o3QsrUAmxkDAIpBcAvBI9TNUfCmtyh-_xoykFxTKDMpSg7gzE3kYuOtFQtBtm4ng8L01PkiXLO1ZlJVDfgRC6JNxm_7vTaqBJGgissP_m_fS3ONMcX0mlUoE5ct9d801C0yE61N-IAO7W1U84GmNPeRmOxobYBgGIg4KDG-HEbre-Zmo14LcGw..%26ch%3DAQEAEAABABTL9BBZ44Q0YhvLiwXdAq_qYjjMkBHoFkk.%26v%3D3%26pg%3DQZKNQKOCCVHYPGNDHZMRNVEZZI
+.netflix.com	TRUE	/	FALSE	1794197145	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1794197145	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1804988920	nfvdid	BQFmAAEBEGJReUFdZkcCscom7idx0_9gJRg_sW-vRs9ion6yCIuCNmdCSz4alYpWcHrXTaZM3cUhss1UrV4bWHK6dM0gPgxizlwKKGjrj15pcDrnQ8yjdl_7rLvOv6XFjurWWCBoRdykdjBilWVvMiM9mvhyayP7
+.netflix.com	TRUE	/	FALSE	1817957145	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Aug+10+2026+22%3A05%3A45+GMT-0600+(hora+est%C3%A1ndar+central)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=e0e3840d-9d8e-40e9-87de-9e62a1575aef&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&AwaitingReconsent=false&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1773452790478&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	FALSE	1794197145	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	TRUE	1817957141	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTGzCs97-KDNsFI4HxDBy4hgp47HRpzp7M.%26dt%3D1786421142817

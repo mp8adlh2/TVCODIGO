@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: IT
+Plan: Standard
+Next Billing: UNKNOWN
+Payment: SKY_ITALY_PI_BILLED
+Quality: HD
+Streams: 2
+Price: N/A
+Profiles (5): lorettagiuliani74, Matilde, Anna, Reiciars, Lelly Kellogg\'s
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1808584934	dsca	customer
+.netflix.com	FALSE	/	TRUE	1805560936	NetflixId	ct%3DBgjHlOvcAxKHBFUEcUZA8iZClJBxLReq1iAYoPUkeMsICU7e0UtiShuwz9jQexWUYQZ64bdiwcLMJHBaQcOhYkt1-MsNBPP7GktpLj-gamImsXg25cjUS9lasWCrl6wCh8z_3gASq887vzoCyvyKcUyy09qBXKzusOBCQ2NwuBCBMU1g5aWITbjbIuVDmEAcTWs-1-UUjbnLcHItp1i9Y-qvXylwH_KLZ1HJ2TdBaBa-m8mVUXv36He2DOV4hEPbmF7ZlMmL51CWRJHfjVhm-O0YaFj3OIRFjey48satLj1QP5S_Gt3x2OcrzOST3_QmZdtOKzR2al5mh1GtsV0T_GYjk4Kbg2fSCEAz7dpGjSmbJpOQkuYksb4qMz4UjaAaO49JJu3UHucSWbOD7K0LcdMjj3hgZFJQfteCjtpApentqTs0yqh4532cOBDumdx1rwExCzwjMt7x9UGmC-7UIoVXv5vxd2_Sld3mtTSXDbFqKvmxm2irwRe_yD1n8gb8_Of5yk3GcrvxafPEWKZM5he-tvi2qXSjVE2M9Pzpr81n8fr-k1CRmVogWMbRfZGdDQgMW9f7y0ey6vLy3Xn8OmfIjVX5pyp4xIttWiv6hsSFxAqWNx0OuFvIMTJ_L3YNhhGJvtVpxpzVX9GGI2ZJE1kFJc4x75zPdvWIlrdoGNlKXX0nh3Wvj12MtMiIfbkT_hgGIg4KDM0URQQHxFhPYWYQtA..%26ch%3DAQEAEAABABQS1u0DN_4YKnAjf8HPtAxz-Du6t8IqcQc.%26v%3D3%26pg%3D6XLTSUKFXZGG3AAYK6KS24UWEA
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796948797	nfvdid	BQFmAAEBEHtcrnU48cGWeZZ_gEP7-7tgsRdLRUkP_JYqRn8bq00gbrSGag5sGe2W9wBTH3O_XQ6gWoxZ6jy9rqV20t68bck6UgVNNLPSGENN47BzecAbIiDphI7uyiPe2oGL-p7grvI_P1eU3njER5OxYfxZnmVR
+.netflix.com	FALSE	/	FALSE	1804857918	OptanonAlertBoxClosed	2026-03-12T13:25:18.878Z
+.netflix.com	FALSE	/	FALSE	1805560935	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Mar+20+2026+17%3A42%3A15+GMT%2B0100+(Ora+standard+dell%E2%80%99Europa+centrale)&version=202601.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=5d0a351c-da79-4184-90e1-9a5e95cce72d&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&intType=2&geolocation=IT%3B62&AwaitingReconsent=false&crTime=1773321919421
+.netflix.com	FALSE	/	TRUE	1805560936	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQbOpq8m3RV6DWow4P8YYDgx3F_1dx6KHQ.%26dt%3D1774024936364

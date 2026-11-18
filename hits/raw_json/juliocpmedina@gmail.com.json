@@ -1,0 +1,235 @@
+{
+  "email": "juliocpmedina@gmail.com",
+  "password": "Dora*001",
+  "access_token": "df51d732-d867-48fc-9e42-a0f656bc5735",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiMjRkMzQ2OGEtMWNiMy00YjllLTlmYTktMWQ3NmZjY2YxNmEzIiwiYXRfaGFzaCI6IlNqZkd0akYzTXBGbnU0ZGhacnNFbVEiLCJkZXZpY2VJZCI6IjJiYjVlZGUyYWFlMGI1YzFiZjM2ZDljY2ExMzliMWIwODE2YjVmZDUiLCJhdWRpdFRyYWNraW5nSWQiOiIyMjlmLWM5YmItNDA0OC1iOGU1LTZkYzQiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjYzMzUxNSwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJhZWM4ZDBhMy1jZmE1LTRlZDgtODcxMi1hYjdiY2E2YWRhZWMiLCJzaWduYXR1cmVzIjpbIjgwMzQ4Nzg1Il0sImN1c3RvbWVySWQiOiIxMDYxN2NjNjhiYmM2MjFmOTk4YmE0NWEyY2Q4NWQ5NiIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjgwMzQ4Nzg1IiwiZ2l2ZW5fbmFtZSI6IkpVTElPIiwidXNlcm5hbWUiOiJqdWxpb2NwbWVkaW5hQGdtYWlsLmNvbSIsIm1haWwiOiJqdWxpb2NwbWVkaW5hQGdtYWlsLmNvbSIsInJlZGVtcHRpb25MaW1pdCI6bnVsbCwiaWF0IjoxNzg4MzEyNjMzLCJleHAiOjE3ODgzOTkwMzMsImlzcyI6InNtLXNreS52cmlvc2VydmljZXMuY29tIn0.Sxr_m-EdLIXPr0WD1CRlVPw0wVjvaQXo6zGJw7hAM0g1HJNDrsd8VjOQM6k_T1nZg-fYxL4R4hbl2oR1q5TXtxLz2PpffEoeOB0zgFIR4EbSALrJADdRrNP9cCv8uq3nL_t8KzFBeZ-__gIq96bDt1_TtJSmRf78KZ_6_KGov__TEWWrKVHfRKR6P3L9AqoVVhBngfCpZrwAmJdlUL0w9_qdiYoi-4cILPYCzeokvAUm7Gi_74k34A3T8WuOaeHHN11wxQgr_HFP48SvClcUOZQVRgFBwYhjcfmWQzPAf7FoxYMtRIaN_mFfIy-jslQqvnlXVs-bpgEcZJpMHjO0lg",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "df51d732-d867-48fc-9e42-a0f656bc5735",
+    "externalId": "e1ebaf97-1909-50c7-96a2-39eff9fba2e9",
+    "username": "10617cc68bbc621f998ba45a2cd85d96",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "80348785",
+    "protocol": "2026-150197493070",
+    "customer": {
+      "email": "juliocpmedina@gmail.com",
+      "billingProfileCode": "1-9VO6-13741",
+      "name": "JULIO",
+      "secondName": "CEZAR PENA MEDINA",
+      "birthday": "1955-04-03T00:00:00.000Z",
+      "ddd": 31,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5531995364462",
+      "id": "10617cc68bbc621f998ba45a2cd85d96",
+      "cpf": "20233639691"
+    },
+    "signatures": [
+      {
+        "id": "80348785",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 995364462,
+          "dddMobilePhone": 31,
+          "dddComPhone": 31,
+          "comPhone": 33681635
+        },
+        "customerId": "10617cc68bbc621f998ba45a2cd85d96",
+        "status": 1,
+        "productName": "TOP HD III PLUS 2024 - P",
+        "name": "JULIO",
+        "secondName": "CEZAR PENA MEDINA",
+        "dna": "01000000000100010000001000000000100000000000000010000000001000000000001000000000000000001011000111110000000001000000000100000000011110100000010000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111110111111101111111111111111111111111110011111111111110111111111110011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100101111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Joaquim Silverio",
+          "line1": "Rua Joaquim Silverio, 242 - Coracao Eucaristico",
+          "line2": ".",
+          "number": "242",
+          "city": "Belo Horizonte",
+          "state": "MG",
+          "country": "Brasil",
+          "postalCode": "30535620",
+          "referencePoint": "Ao Lado Da Igreja - Telctt: 31 995364462",
+          "addressType": "Rua",
+          "resDdd": 31,
+          "resPhone": 30474069
+        },
+        "addressBilling": {
+          "linePublic": "Rua Joaquim Silverio",
+          "line1": "Rua Joaquim Silverio, 242 - Coracao Eucaristico",
+          "line2": "Apto 302",
+          "number": "242",
+          "city": "Belo Horizonte",
+          "state": "MG",
+          "country": "Brasil",
+          "postalCode": "30535620",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2011-09-12T00:00:00.000Z",
+        "email": "juliocpmedina@gmail.com",
+        "parentAccount": "080348785",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "001219787601",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A0125565356717"
+          },
+          {
+            "smartcard": "001215032481",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR01",
+            "serialNumber": "010AD125709195554"
+          },
+          {
+            "smartcard": "001210188643",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH01",
+            "serialNumber": "CE0A0125514291892"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "80348785",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 995364462,
+        "dddMobilePhone": 31,
+        "dddComPhone": 31,
+        "comPhone": 33681635
+      },
+      "customerId": "10617cc68bbc621f998ba45a2cd85d96",
+      "status": 1,
+      "productName": "TOP HD III PLUS 2024 - P",
+      "name": "JULIO",
+      "secondName": "CEZAR PENA MEDINA",
+      "dna": "01000000000100010000001000000000100000000000000010000000001000000000001000000000000000001011000111110000000001000000000100000000011110100000010000010111111111111111111111111000000000000000000001100000000010111111111111100000000011111010111111110001000000000001101111111111111001101110001111111111110111111101111111111111111111111111110011111111111110111111111110011111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111100101111111111111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Joaquim Silverio",
+        "line1": "Rua Joaquim Silverio, 242 - Coracao Eucaristico",
+        "line2": ".",
+        "number": "242",
+        "city": "Belo Horizonte",
+        "state": "MG",
+        "country": "Brasil",
+        "postalCode": "30535620",
+        "referencePoint": "Ao Lado Da Igreja - Telctt: 31 995364462",
+        "addressType": "Rua",
+        "resDdd": 31,
+        "resPhone": 30474069
+      },
+      "addressBilling": {
+        "linePublic": "Rua Joaquim Silverio",
+        "line1": "Rua Joaquim Silverio, 242 - Coracao Eucaristico",
+        "line2": "Apto 302",
+        "number": "242",
+        "city": "Belo Horizonte",
+        "state": "MG",
+        "country": "Brasil",
+        "postalCode": "30535620",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2011-09-12T00:00:00.000Z",
+      "email": "juliocpmedina@gmail.com",
+      "parentAccount": "080348785",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "001219787601",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A0125565356717"
+        },
+        {
+          "smartcard": "001215032481",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR01",
+          "serialNumber": "010AD125709195554"
+        },
+        {
+          "smartcard": "001210188643",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH01",
+          "serialNumber": "CE0A0125514291892"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "80348785": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "TELECINE HD",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "06-01-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "06-01-2025",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-20XEJQF",
+            "name": "TELECINE HD",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/TLCine%403x.png",
+            "price": "29.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "06-01-2025",
+            "startDate": "06-01-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "06-01-2025",
+            "startDate": "06-01-2025",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

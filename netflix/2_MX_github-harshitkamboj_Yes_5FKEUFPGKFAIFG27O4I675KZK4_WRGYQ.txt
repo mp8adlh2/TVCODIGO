@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: MX
+Plan: Standard
+Next Billing: November 19, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: $269
+Extra Member: Yes
+Profiles (5): THELMA, Vanesa, Julio César, Ale, Julio 2
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1816439703	dsca	customer
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	9915df48-2d4a-43ff-ba23-07208dacbfb2
+.netflix.com	FALSE	/	TRUE	1813415709	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKgA8eu5ut0S6s1-vCd-WHC-w1SRFXeXajulQcRVXsM6rmuJY-_BCNWmbgJiEXeO0JLmiJx1cIUvv2xVLU5Yii4yIJNbuTnElZszEBsgQTkMY56ej75T9oJ4UWbOO3knx9ZC7OElA6HLDy5UXD4nP1VqcRjgYAOI2t3A3cylJqLO3SBLYL4Z-LL5_Oc4HthP1otL9guKvFJaZfvCnh1oHI61IE4yef11Mt2ywzPaJtVuKCLPX9wgGXrazWmbIxVXLg0cv7VWM722JQgCepSYT-Bd37I3o8zMDX_CSkaYvdRd1lH7-djfYGNyKeHG_hsoYf9ImnoG-ayBwa0DECzyRqr1CBHB4BQJfknLeAZHWDvxkx-6tEjObTBr6vUfm0GpDq8EEz0HpBMtlqWqCU_DZUdTLTJG6z0EYhOpFilHOtty_h7qL2I0jjFIODQ57pPyg6yHQ6-0cXuWr3v1nj5hSWicYayMqRx85GOODFTFipg3xuUwc8_Xz-JWUEAcg1Ph0yUxPPwPYWaJnDMl0ZdI4R1hT-XjIAdfmfxt8Gj5FjSMYMUGAYiDgoMcyFxQfcELCRCjcNz%26pg%3D5FKEUFPGKFAIFG27O4I675KZK4%26ch%3DAQEAEAABABTvRTKO0Z6bpPgjsEuTc6gDCJciUPJSV_4.
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1809008725	nfvdid	BQFmAAEBEEL1YDwIZOkpHpZK1ctA7NBgeTk-WqTMEr7wo--QuIHS6TbMaSkUUoJNYHpv5yLy1URM_V-bAPl4415y0UUI1BcTGIc7mKFK53KMWLBzpdBKrSptl1JWSfR6SgajGvqhYb0qLkNHWiFrFfFw-cMNKJyB
+.netflix.com	FALSE	/	FALSE	1809008740	OptanonAlertBoxClosed	2026-04-29T14:25:40.429Z
+.netflix.com	FALSE	/	FALSE	1813415722	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Jun+19+2026+08%3A35%3A22+GMT-0600+(hora+est%C3%A1ndar+central)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=aa7ed604-fe47-4c83-a43e-8892cc141889&interactionCount=3&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=6&geolocation=MX%3BCHH&prevHadToken=0&isDntEnabled=0&crTime=1777472740880
+.netflix.com	FALSE	/	FALSE	1796554946	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1813415709	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTMqG_TC-CAYZimiDPLm-C1Bq1o0Gd0DLA.%26dt%3D1781879709556

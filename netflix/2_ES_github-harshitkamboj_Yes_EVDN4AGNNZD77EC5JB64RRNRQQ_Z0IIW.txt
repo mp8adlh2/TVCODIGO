@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: ES
+Plan: Standard
+Next Billing: December 2, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: 14,99 €
+Extra Member: Yes
+Profiles (5): Patri, Papas, tati, thalia, Rayan
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1804464765	OptanonAlertBoxClosed	2026-03-08T00:12:45.333Z
+.netflix.com	FALSE	/	FALSE	1804464792	nfvdid	BQFmAAEBEAvVxgxsw2GFJpV4I4sY2qxgAmLwgnSK2Qv_zbqqIinGwCRJxgpWr3i4Hdwzo9dXG6A945np-El0Fg985w70SMKJfdxD-ISwIBLmUEJBKsDRXICoYsDW8Ds4qo0fZic1vyT9-0nBq3nSeRDxwDXDDlVH
+.netflix.com	FALSE	/	TRUE	1815148782	dsca	true
+.netflix.com	FALSE	/	FALSE	1815658593	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Jul+15+2026+15%3A36%3A33+GMT%2B0200+(hora+de+verano+de+Europa+central)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=827a6709-e8df-4bb7-880b-9fab7984ae33&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1&crTime=1772928765758&geolocation=ES%3BMD&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	TRUE	1820148377	NetflixId	ct%3DBgjHlOvcAxKFBPEtEyeM-t2RndV1HRnfrTZfuabMJIV3C_RG2P6MPks4f077eudqMAbGX6yz624Zo_Lkm353PodUv7hpdYBqYvesgZ_3to7rD_Mcw7qSHzTDhRwQyqqV9J92EcQpLY48CF5ykFz-Sd_j4TCsgfCrCmJ3YfYgSCcE5kjO-W-4nXKvdmASEmwfJORyQh5gfGtkNIrVI4rHaJ06BO3NsuWP-6UQCkGbWIyQ0Eo6kc7xCTHAxg53oRmznPYSsx1vGGHh2jGmLKpMDc6qeXeGWlwLRBopVQ6wodlW-lSbZEoE3bfukjzc_1lFztp02jDZjtBoivahIeaZmnv6zYdLqibvTmtqzfdws6-UPOd_aCtzY_Go9d_RIxKXvuZTV8bzJ4A1e8_Crj_bOlpNH1v5dk5-8XC6y_wxzzG32HbmVpvyThulZt68up2oA9JbdK1aCGHT9p3NS19Igo9WvoOMfFOJRhS-hMagdBdejJ8-szB2o6RSpciOBaf4Qs-CrcvlcWSj5nwJ4E6bnNaaXh0U2q15G62PnSOeCdSWyEJQ48uEY7deh9v80FBBDNwGq2y0kUsDuR3rdLR4MXnQP3Gtb9cbXtJKTf03L7HZtdYzuuuHSCwmPl7iyMq-38S3Irrpup0b1gThied3rjCb7jS0ohNjVNPl2fVaoJPkPkabon78ndVAY7BOFqYYBiIOCgw1yLBLekznCo3_-nY.%26ch%3DAQEAEAABABRQlcSd_PohjuY7xRNQUsi_y4rwjQDRjPI.%26v%3D3%26pg%3DEVDN4AGNNZD77EC5JB64RRNRQQ
+.netflix.com	FALSE	/	TRUE	1820148377	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQUMeyhlD5RPv8WEA-rY7KQ-c8SdzfUdvY.%26dt%3D1788612379210
+.netflix.com	FALSE	/	FALSE	1796388378	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796388378	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796388378	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D

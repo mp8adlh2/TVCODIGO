@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: December 2, 2026
+Payment: UPI
+Quality: UHD
+Streams: 4
+Price: ₹649
+Profiles (2): Priyanka Malladi, 3114
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1796554982	gsid	6380475c-4b11-408b-ba2e-15a2be6b9ac3
+.netflix.com	TRUE	/	TRUE	1822242947	NetflixId	ct%3DBgjHlOvcAxKCBAOkt9AJsYeM9Xfd6mdc5EkAyVDURUNk4iRWwnlSkmMKYEmTVDe3KX9BqXmZwggvnSancq6awZGHmxJoCgyHuFAVFU4tbrCkGH-MP-t-SJARem7FtADP6hgKfyMBoXriCmu8AYv0JJK5ipIljwU-s241RwboT8zWR-4hQPYqj-MKWLkbbCeg5nj-EK1l7r_oLIqlts46zFv6A4ArHEB1n_mG9GuZNj_r1yA1EtPI7Kb9PpgHnY5FtJr5O-Eqi4vLyTnGA_FgqZDwNkKaxY7KRLB6zaxEP9QIocSU3R4kvYDj6czmZJG2H0QLdAANiqi_SmBHRnjIphc2MxIU8CQV_Fm8sdRYZ2Gc_3ZsGy0OmoYrILMdY0Izf496zpeiaDqgdGYLUlNvVaZaDiA02T9muT3B9sX_QSa35L0PXnEdP2HOF1oEGgawqoox-f_A70zu72jJS9zCrHl8fXQML0oZH1Hs1x1NLMgTHesG3TtuRwrydBm20IoxIUYIOBjLQguvxM4AAY5SEswd5dhWz4RVsCoSdg1IW5Dd-vckGYHuJWE8FKvNSpmL6fmtd999tlBcaNEJKQYDvpfO0xMA4uO7SDLxWkYBvUUiukU2h07gkodVP7rcQd2EYsEV-DkjJmkTpytEYq0VtJEzVnYEfBfjvW7m8WUxTSg3iWONHKSWnJi87FwYBiIOCgygModd_oD7zFOz_4c.%26ch%3DAQEAEAABABSzyoC0J845J0pvvtw3AZ80amUmQOeano8.%26v%3D3%26pg%3DR4DJJQRR5FDGPA7DWUMSMO3C7Y
+.netflix.com	TRUE	/	FALSE	1798476609	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1798476609	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796554982	nfvdid	BQFmAAEBEIHlKzEANFeqwTmprdq5CCJgdLxDfepArsCvkk7pdCWAzaxrlAtbRkuYxZ4tX5VrIm4kI2ZG_xM6dyAZFcni2IK2t_iBi_nl5bVcOe6zv9DpIvXjw6fbdfLggbbvRkl-CPephIaaAGdxBCE1pB3QlG1I
+.netflix.com	TRUE	/	FALSE	1794243754	OptanonAlertBoxClosed	2025-11-09T17:02:34.199Z
+.netflix.com	TRUE	/	FALSE	1822236610	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Sep+29+2026+22%3A20%3A10+GMT%2B0530+(India+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=c472f03a-bcb9-4b55-946b-b7b9d965097f&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&AwaitingReconsent=false&intType=2&geolocation=IN%3BAP&prevHadToken=0&isDntEnabled=0
+.netflix.com	TRUE	/	FALSE	1798476609	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	TRUE	/	TRUE	1822242947	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTpTSaZ5c-iO6OWYqXCorDtQ5RvdNkQmMA.%26dt%3D1790706947854

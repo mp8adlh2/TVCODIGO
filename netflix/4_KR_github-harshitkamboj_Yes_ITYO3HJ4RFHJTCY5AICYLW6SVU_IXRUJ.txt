@@ -1,0 +1,24 @@
+NETFLIX HIT :👇
+
+Country: KR
+Plan: Premium
+Next Billing: December 5, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: KRW 17,000
+Extra Member: Yes
+Profiles (5): Hyunju Lee, Max Cho, Henry Cho, Max Choo, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	f379d524-0c95-44e0-a3b3-69c43040c537
+.netflix.com	FALSE	/	TRUE	1809846818	NetflixId	ct%3DBgjHlOvcAxKDBDUOeIxpSzxocD9LQqoOjKfbdagr_AaGjoDAU99cCWca3T_nIRzQCG3XNfk8Xkx0yb19DM-Yf95GqOqkFmZRXVm7EGo5VXbytbdZGS91XYhs5W90byjOdCV7xQcSJmg5wTIlZriI-nLMN8R63bDfftxhl7WfUwn4Q5Q3hJ0D-C3k7UoK86WJEIDlaoSeShP8nd6pMWzmTxuzpXG8tqwvNxdZMaiwIGpnfnzos6akhHoM56o4-e6rk9UFwtCkHMd_oItA4TF7HUCB2TpZnigsKDL0BrNnNQUb5xfx58bcNvJHCSL6GQekBMmptEJA-eX44_3nfhjt81vpwm0mD28w_CvYWWlKxzi1GoXMdOiibBrYFBc7TanrMCnyOHV_3LK9ve4wuJ_mJTwoD0lNlNoLniMiIqms664AmUchv_4LyKO9IsPMGyMwthxiv90Cdc7BIf0Uo0d-i_jrTrHjgeSpOao5n2ps6hx8jkRAKK22ro1pop5UkS1hgs7TeBKJtOmO6C7FGCdBNzUbau_94_7SUccvhIkmrb-cKdzGtfJ6SFAs8BzXcIaXMerwEuvz9aVu3WRd4P2YYUGLn4Cw5rVhpj5umr52U_OsvrlP7loNPmPZtjoeuSeruK0MLrtlzYJwuL3wnjoSCB3sMh4LjopjEDGrgHKYHlFa6W6rimvUSkz_wy64GAYiDgoMmjst134lrWFvHNv3%26ch%3DAQEAEAABABT-g3T8ObTYWBmuH25yxGC_cFfzLhA43rU.%26v%3D3%26pg%3DITYO3HJ4RFHJTCY5AICYLW6SVU
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554946	nfvdid	BQFmAAEBEIBwfpVvMhSHVioOdM18V1RgKCAVFI7vlKuREGiQ8BrECYJGb4nn76OY0YQouOy0g4CrQ9sljOXEhytQGlH1jcbW6UASlywsxdUBDad_zubcbAvjoijQ6_92BmBiueCcTRvzZtmr2RURROG2uTRZFKoe
+.netflix.com	FALSE	/	FALSE	1795530039	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Nov+24+2025+23%3A20%3A39+GMT%2B0900+(%ED%95%9C%EA%B5%AD+%ED%91%9C%EC%A4%80%EC%8B%9C)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=7039c42c-5e25-4e23-8736-93515322c461&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1809846818	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTBgJe9C5wfpzRiAoX3mAm-0W4wHDpzPD4.%26dt%3D1778310815756

@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: PH
+Plan: Premium
+Next Billing: UNKNOWN
+Payment: PLDT_BILLED
+Quality: UHD
+Streams: 4
+Price: N/A
+Extra Member: Yes
+Profiles (5): Ella, Alaira, Shine Ganda, Tagalog, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554946	flwssn	192d74c6-6a02-49ad-ae9f-dd2c46a2e1b6
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	4dd24362-f0eb-4fd6-9b23-a85f035fbbda
+.netflix.com	FALSE	/	TRUE	1803621553	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKGAyrG0jnQGb1fPehKX1AMM9yZozxz1jjHsS5VeVhFeQE7uPlL8mxrz1T32vsAOtG5FLIoTpCDWPOZV0JbITWn466qMEzRvMIh5dgKXeNgsX5wPZRigcucATYYHV8bAsimIRh-bHdEPINyQE-XGjQUR_jEPtlB3eVBmBtYXE2rtj5KN_iG0euf-Vwsg9EUWI3QtL4X_wigp3YkCwOC2YrJncOCjDBGsIXpYVqse3pNS1DE8KFVgIq7kyT1iCuVjBxCaU0aPu_b0H7FGLiV3QTSXUGG-VC8dRVpIDWJ__QC5M1wU4bBZTseNBXD7muVuyWRg95L-yMdM22LgAhDLUp_D-wiysubLvhG5iopCRA2CCqo-oH5RONRYEKKXNPhXOspu268Y8G9zJAUYr0l0Vd1VOnzBpVR1xXWgQO5ii-IkUOur2DRJAport-kMeLFGb11PAAjGL-AO9prvdCi3Xixwmt1D2gr-3oIjrDQuNRbI0FOibhOjZA0A4WUf0KKHiL1DR3LD1xvpRgGIg4KDM6j4r73EGlvJr6MNA..%26pg%3DIZDDSQEJ2ZAEVCCCWXBLG3GV5Y%26ch%3DAQEAEAABABQZXSB5WOCOrLmMKo2YRr8TOYR-TngkUEM.
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1803621553	nfvdid	BQFmAAEBEIrw0KbYsc8Rb58urlml6GVgNx-2Ssabp5DQ5HtQc52tpwRdKCrhD_KwBwvcKK4NSSR8UuRT6A5HM7da-3n06jO5wc3KZpWj2qXLyM9KLduICV1m9eL_ZV3N-SNVOjHs3iU107r-2-YZbO4J-OjXBQZv
+.netflix.com	FALSE	/	FALSE	1803621553	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Feb+25+2026+22%3A59%3A13+GMT-0700+(Mountain+Standard+Time)&version=202601.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=6d704911-d837-4e99-a251-bd3efcf1daea&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1772085514009&AwaitingReconsent=false
+.netflix.com	FALSE	/	FALSE	1796554946	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1803621553	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTyoy0R51Q7f3kTHxbv0S4ltztkIQpRCMA.%26dt%3D1772085554374

@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: December 4, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 59,90 BRL
+Extra Member: Yes
+Profiles (6): Ailton, sofi, わさび, noemi, Davi, a
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	TRUE	1796554982	gsid	b68dcde5-d657-47a2-b034-3be5337fbddf
+.netflix.com	TRUE	/	TRUE	1806501494	NetflixId	ct%3DBgjHlOvcAxLzA5HGA6HhTCixOXPgSJ0uJ4zZ_cwNPpm9iZoMrWoO8RIMcQD1K-mO5hgUoet1-8nK-TgTKLp5Q3vZHGW0l3TJfmc2bF532xjJPJDt-BoNOkRpG7ihRcRpypJx4AWr-TrvHWVj31fQGIcZbpR7asj1vI-D1xbmrLhCjDlCJTaAKb0E-Zhub6AA8oogauuPNQYdt_5lq9fM8cTpS5e3f4GP5ZHKvLfjbR-t4p5uYTCQBoJPHTARagbR1NYWkIl_3RMFGWk3_ZkDFGxfGHFtkcMx3r3BtBZftdT23A5CFueHxksEmltV5gvRDC1OpK3q0Tv-ii9o8yrAMWNEH33AzFIa-uSLulay1D67iTVvjYuM-C7CXRs4TsXhzAem-9MyDyCOXJ9LIMNPiBkWgyz-qGtuEuPlm39NGzVHUodAG_m0fvJgAnuSB9F0mC-H-rLQS9yM_-stkbuhg9GNEKVzjLsL4NYag0tvmXHI4bUnRztH5qAlNAT3S3GMfNoV-qeTO18dSDJQFD743vZqsU9deOhqTrlXIkoEpIpY61H06Q2Swhu_Bc1H9MhnQQJibZkzgpG6sGiozM2P9fMrd6n3hwg8JfaGk8JaqtRFAtogr_KCJF-jSidBE5DRsXbVx_DYEWCT0_YQS5mtYdLa6kKj2cfvphT1_C8YBiIOCgxFzNZETrmGg6u7Rdo.%26ch%3DAQEAEAABABStNlqcyRwnhUQZQzZ2RY2ubfeRZiAYRTQ.%26v%3D3%26pg%3D3S7DACGGJJG3PNBVZ4I5KME5SI
+.netflix.com	TRUE	/	FALSE	1798747464	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1798747464	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1806250096	nfvdid	BQFmAAEBEOhn9dtdMrbf8FIFhBlNawVgmiC2N5eehx00VSOmR_jt5egu66Fe41Sck9eUhy6Zij3aKw-zzTdJokCsaqlqvDttmXsNOKQT9vkkSlN1x5DCLimERrgsgZYQN1jHKuFN-elbbB7Dk22FK8Rne76Jj5MK
+.netflix.com	TRUE	/	TRUE	1806501494	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRFIE1k6J10Uqh11f2sg_Tcc8lb54M6NR0.%26dt%3D1790949496724

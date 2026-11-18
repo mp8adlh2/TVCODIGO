@@ -1,0 +1,26 @@
+NETFLIX HIT :👇
+
+Country: PE
+Plan: Premium
+Next Billing: November 16, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: S/ 58.90
+Extra Member: Yes
+Profiles (5): SHADAY, SINNET, ELS, ADRN, Santypro
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554946	flwssn	5e2243a6-9ce5-4ed9-9051-2f9d218b6813
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	a1a4bab9-57c8-4b1f-98d5-50c6d9144cbd
+.netflix.com	FALSE	/	TRUE	1817725874	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKVAzkenRW3pweuZxJjAi27Tgr8p8UahhcD4nCKTr4JEla5InCRBMDgsMJBNptu7zLpJMvY1PVau_KkFb5pSuY0dLhrworEHhxQsd-EMGAYvOq4PEZPWW8RaaOATqvOtQes8sL3U6GAuA_OxcC598mMWTc48kMFqIdB0X7xZiXguHCfbWJ6cOowemC4uEACZumzLxMdCDSMeqqblfytZTpKwUbOL0R0BFrJDsww-PccqaqrU1r5CdhN2veuAnV8ERF3ve6lmObRXtS_dPrxkY9GC_tZp9qHw1SsAcuVVoszDmYOz3GB196MtkpzuUbRaxTghsHxC4Ozx9rCg1ls7uZVX6iOhW_tc3JiZo42cUL78e0XB8tbinomOQzuWWbQRpa4C_9g8uid3Y2C0Tfv3dFgYdRtXhWW7me7evqh4Wktjeps58M-0RQyp11arqL8MC9zebZr9SSFWVyx1-WAnwTYe8-TY_2IFqEhj-s-AZ3z-S6ih_vY6P0IIPW96PeuTChrcLtEH6sWVXeTGPSy9b4gl2g8c_fTCBgGIg4KDB6wVsPjIa5nDj7Hng..%26pg%3DGNSLD7C2LBF6BHHQLTKSSFVETU%26ch%3DAQEAEAABABRSz4lC3dcVaP_4UqtPQAj3PQ4WkwV_nCk.
+.netflix.com	FALSE	/	FALSE	1793965963	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1793965963	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798372351	nfvdid	BQFmAAEBEO0DMsiG1EHgljgAJjZiBpRgQCtzuh91v3JdoJHl98Ba4iyBXW5-HxPiiK4IgFpxn1Aph5EMM7Q5TW8NLZaFLCIM-SLK_C0f1M0QTA37enQ1Ux7B5b_VuDAqp4qegUgK2GWrWzp6x91gDHALmvlqZA-I
+.netflix.com	FALSE	/	FALSE	1817725965	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Aug+08+2026+06%3A52%3A45+GMT-0500+(hora+est%C3%A1ndar+de+Colombia)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=7bf69d86-345e-4419-b464-e92dcf48ecfd&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	FALSE	1793965963	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	TRUE	1817725874	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQN0Bl3nVf6TqceFRdKoJwuvZNDh7H9_6I.%26dt%3D1786189875379

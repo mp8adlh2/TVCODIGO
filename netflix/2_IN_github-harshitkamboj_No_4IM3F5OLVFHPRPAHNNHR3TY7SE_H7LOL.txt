@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Standard
+Next Billing: December 5, 2026
+Payment: UPI
+Quality: HD
+Streams: 2
+Price: ₹499
+Profiles (3): jitendranegi11, Karam, Children
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554945	gsid	b74f3d31-c67c-4942-b215-08e4bfe20f8c
+.netflix.com	FALSE	/	TRUE	1822381024	NetflixId	ct%3DBgjHlOvcAxKRBHhT84JMuHLiKuUpKs1jt4Ny_vMjDBPW4mS5TZk62BwJaLPaG9QLSQZQJ8S_IJ77c2qnGDaonAPzjhe9DrNNDJ6Bx_xKHkAR2bWwZp9hPk0_ZFpKfn0QN5HyLzhXNPf1e1O_TBZ0maCu7yHIH-WXcieap0Y6rbi_cKAjLoF_KLLnVua4yLuwswEbHvHwFTH8fo5HMTchAQ6x8cOm6VNf-X7zN1Hnm5b8ReK6qnU57d5ePGi4Er4StQNBm41wVwF4ZRB9aJy228cc44HlB9SH74boHMtLc3bMfbLX3jKZiK_nk0Q3PeWhpcYf_HU_k34WAzVOhDt04eLvaFYyxpZbqE17QUyzhAms2srWHtfvxIB8NVr46jnKhewzoYjK4S2Ci04CrcEHQo8pzIGiylibmyNQRQd5SeRj9xX0EFMQVjDBc629Sa6gEADizxhExpFnaYZ0Zx20fddVBr6Wb2kTJ_p_4T_frLBZ_tdPRvyDMWN1CiSi0YF5EoVq_y-lAj-T91GCvlliCTzfIhn18yghUJWc7z3-gru8diDtBHRQ8RHopeAA7M4jLkJB-BAKZTUcpIJbKLH9jqcz8-7pQbDfFL4_ucB8oxD20JL9Fl110zqg44uzJeaUFerfN778I9cGuVbIlxNrb__76pF2h3MhCnoeZ2AnUDepqxT3qqisJGVzmPXOIC3AjFcxgyNutV0hohgYBiIOCgwstz8yy89Ad5V5S8c.%26ch%3DAQEAEAABABQ_VLOcbrNST8F-xMG0wdgQUNOkldnUNxw.%26v%3D3%26pg%3D4IM3F5OLVFHPRPAHNNHR3TY7SE
+.netflix.com	FALSE	/	FALSE	1798621022	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798621022	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1822019574	nfvdid	BQFmAAEBEPRTuHZELVc5hVV8CcklsENgigaUe-i4TsJFrAO0TXHR2hlvVBTi9kS05yubh0qcciXHC4xb0shr2_9Fgo0ZDWbYhJFK7CAWV0OiCqjrahaVDZBIvYOIamK3vM81kQueoL-TyHlP6fFVSV3L3W0T-lMp
+.netflix.com	FALSE	/	FALSE	1821857755	OptanonAlertBoxClosed	2026-09-25T07:35:55.127Z
+.netflix.com	FALSE	/	FALSE	1822381023	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Oct+01+2026+14%3A27%3A03+GMT%2B0530+(India+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=da333aa4-de15-4201-862c-5d9c9420787c&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1790321756307&AwaitingReconsent=false&fclco=&lastConsentTs=1790321755&intType=1&geolocation=NL%3BNH
+.netflix.com	FALSE	/	FALSE	1796554945	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1822381024	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABStENUym3suC5wM3Ur6D-9mrFJy5kidTm4.%26dt%3D1790845025774

@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: November 25, 2026
+Payment: UPI
+Quality: UHD
+Streams: 4
+Price: 649 INR
+Profiles (4): Karthu minu, Viji Dharma, Aa, Children
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	TRUE	/	FALSE	1821892255	nfvdid	BQFmAAEBEM6f8pSisWXA0uW78KmaWrhgwDsT1O83cU-Ggca99RC7LzDY5blQFpDyDKPNzfSGBC9csmVeDHIgW1TR6-zeJ5vRzZAX8YpABgpasx_bwOvROtYAYIEALfX_KLojGuOuAue_DHH2UwGlstIx1tPW--nR
+.netflix.com	TRUE	/	FALSE	1821901301	OptanonAlertBoxClosed	2026-09-25T19:41:41.505Z
+.netflix.com	TRUE	/	TRUE	1822721536	NetflixId	ct%3DBgjHlOvcAxKSBA8i_X26wOjn2GabZvpGTGpY3YP7a64gbCPBBJBZ_1Qm8J_dkfXFIrAjXZ63Et4vKT46L7Ym7NVOIh3_k_Y6XSvcTN3dpIt17quAZfm-MPJ7pQTc0WhQQlXD9NoOTsnDPGWjUbmIEq_jcMscsd0sXSupt1Hr1DizhV3MEh3ufajO97jh8JQMOCvlLSxwDqvxAuJRf6b5_ISMuMaYd69SUpqSPcryJTZuCaZceC9Vxv617AQmcuLdTdxD0dU94BbG8LtW-shybyLQ04Wqdki2IlmhiTjlx573p_yT9ixu9ytCmTtUWwTdsOxBpga4FSKMRAJoc8E3lrz3ah8oRTS3MwQHR2mEANp9vI4qyDZygL0BHvKHipex3PrIaXW_X7eNmGQVmoE4cLkUswq6Gq_gB10qXdURUUkh1057_pW6fwar75fM79SF4uQAuyf03KzKnrrKguCiIF5oc7GJcudR95zON0C1UZjyV5BTUmxvr0dbBeWVOboBr-LkKbqTUY2Ux_k-HyUeqLTilyctdqepUugwQz9Ym5h7atU6qsyeB-ESH2P7kxZC7C_GLdEeLcWNUUBWdmhGqZ8i_7RDpfnmu6rN62X6MJjoqbUL4drB3kKt4ISvQTEX96F4qPox_u5JIAdKIVaT7z-FqE-T40p3_9Dn0LRuwYRgH_4mqbnXau-06PGHpF_lBDt6-MXdykumSmWlGAYiDgoMfcsWswNMR7hxOUz2%26ch%3DAQEAEAABABRPxl-5O_L-u6jEz-uUDUC9W9C1MSDsJpo.%26v%3D3%26pg%3DIBAFZTQHFBHKJFGE54BZPCFFIM
+.netflix.com	TRUE	/	FALSE	1822721535	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Oct+05+2026+13%3A02%3A15+GMT%2B0530+(India+Standard+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=bb75573d-d58f-43e0-9a87-64badc1859c8&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1790365302887&AwaitingReconsent=false&fclco=&lastConsentTs=1790365301&intType=3&geolocation=IN%3BTN
+.netflix.com	TRUE	/	TRUE	1822721536	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABQNa1omFc5QqGaL2JXfp-aPrwjLMkjf6XM.%26dt%3D1791185536788
+.netflix.com	TRUE	/	TRUE	1796554944	gsid	3f865160-8695-4791-82ae-8646185f5fa1
+.netflix.com	TRUE	/	FALSE	1798961533	netflix-sans-bold-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1798961533	netflix-sans-normal-3-loaded	true
+.netflix.com	TRUE	/	FALSE	1796554944	profilesNewSession	0

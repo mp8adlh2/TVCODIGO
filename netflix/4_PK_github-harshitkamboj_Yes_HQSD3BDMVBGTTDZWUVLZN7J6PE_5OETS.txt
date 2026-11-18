@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: PK
+Plan: Premium
+Next Billing: November 11, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: Rs 1,100
+Extra Member: Yes
+Profiles (5): Mystic, Hussnain Qamar, Ok, Umer, Fahad
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1796554946	flwssn	ad89b6b3-7c58-44c7-97c9-70563ad7f7c4
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	68d3e37d-2d3a-4e23-819d-b51128a3384b
+.netflix.com	FALSE	/	TRUE	1797711023	NetflixId	v%3D3%26ct%3DBgjHlOvcAxLzArpykOzdu1G605XOsjLEye6egHe7PRELpz_dIX1tOxyd7rB1NGU7qHgzQ0gGc_566ZSRLDm7TmRsxmCCdgAddDMbKnfzVqGm41_zTJWXYP0BlpWyEHhAtRiUYbrwiJ921KcS38uQnM960dIq3VoYCYVGvWDJz85r-0Uqm9YTr7VOUOQ-wdGRq4naP4_dwwuoVDdeDEAj2iE9J64i3JIUvzOZ4S8PjVADVpjaszFDrTbzrYOVdvHBlZ5v0SqCTMZpqw4PtDQf6lZSk656onxQzkrRKN0GUwPedpfnsBhxeHpJTi5cYvk-nmYC0vAM3WbR_ogVWtESP5sQztJX7wfEhsuT-Muh6944Ww8HempZ-w6mZQkfITqtTg30OwMIrWQFlPqVcbN9Io3T0mHHjNZBy5kATPKFekyUHVs9KlVvwmMShqLkycUdUZK9xho7DWeQ_vBQr1j6dCq65t4ObqfXWoUpv1S6rptIC1HKWDOK5CRzGzU6GAYiDgoMha1RJ9BoXA2lpnYc%26pg%3DHQSD3BDMVBGTTDZWUVLZN7J6PE%26ch%3DAQEAEAABABTy1YQ_CTWUrwikr4EJ5FB8G4goJyLPVA4.
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554946	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797522985	nfvdid	BQFmAAEBEC4FMTWZEzTENBbFolehiJ1gS2TIn4XYEHxcB9Cx0faUZrUxA0-s323VkgBSOClrk4WDvzs-ES8Pwqouxo2rpHqRlHlCKFiL-w-d7KYL-WSk-NOd6oix2DAkbKI-55mNPyf8AWaUcb9nT83scsOUourM
+.netflix.com	FALSE	/	FALSE	1797712903	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Dec+20+2025+01%3A41%3A43+GMT%2B0500+(Pakistan+Standard+Time)&version=202510.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=6b1008a1-101e-41ea-980d-378221d07428&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1797711023	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTKks_Ah_GI-p6kZ0oV9pxdG1eCaBHYbeQ.%26dt%3D1766175023485

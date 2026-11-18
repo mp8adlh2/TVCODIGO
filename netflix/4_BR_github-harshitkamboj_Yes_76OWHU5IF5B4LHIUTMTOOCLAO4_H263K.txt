@@ -1,0 +1,28 @@
+NETFLIX HIT :👇
+
+Country: BR
+Plan: Premium
+Next Billing: November 22, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: R$71,90
+Extra Member: Yes
+Profiles (5): Odalia, Jesue, Andréia, loly, Edward
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1795737152	OptanonAlertBoxClosed	2025-11-26T23:52:32.434Z
+.netflix.com	FALSE	/	FALSE	1810445322	nfvdid	BQFmAAEBEFaNBvVdT7tcsJo7oAsdWn1go0m6Wnq68P28_X-Mhf2rCmIsdeFtEHgQGT2TNXD6C2RIYDzVO93JzOEnDQjqo4qJFAcTzOlqtAHC1lCn7r9MVZPhoGcx1mfvUE2hPVb7JrUbDJQvlaRiP_JhMtCGCa0X
+.netflix.com	FALSE	/	TRUE	1818292404	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKcA0alSTeQr1H_cPz8GEUA1wP6s6TydvTf8DN3JMtsdxfLwUoJXwEePu8wVD77IfPx135SiTGoGEOAu9NpqtkX2WtzlENwkDLo3iQp_696WNI--OM-caCP1QF0xvBs9jsWM3PJzKoTqRf4tkH4BJ0ckqlyKH-EEnA5n1V9RN17OGKW0FnXLwVlT8T1bVUZZTtQLQ5zu58LQQWooEOBznFzC5mv5ujpGRK_MRUHRe20zQqASEEsYnjQ7APDXp0GuVDR9AdAxebsBu4RRHb6gOvxubHGRLzRr7TF6kEImMYyOBafBeBgZuAz1qBgnhBT3h0SrGzwfLVxfNzztUuDSM7Ns3DxzI70iBW8svCH4JYFOwwNp3uU1YolXGvpStuBr3yVuCtlYXG7wNH4lU6uIyG4s06J7DkTTT-nAsYZnRIV9WCWHODoIn8j59Z-KVJ9LdiNRHBH-CWiw8n4uF8bbd32Mq7XlDkum8gmpWcYtIiU_wP21Dwgvn_MEUHyWivmV7z1nbDMWLtsf-8YErKg04yxphaQ-ThtbO6gvoFAGVIYBiIOCgwz5q2idPNQzTbceG4.%26pg%3D76OWHU5IF5B4LHIUTMTOOCLAO4%26ch%3DAQEAEAABABTwWutPST1771-BzslpFsx_O6wDsCzrctQ.
+.netflix.com	FALSE	/	FALSE	1818292407	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Aug+14+2026+22%3A13%3A27+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=7dd2ec98-f673-4c1b-b41b-c1742eb665c4&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=3&geolocation=BR%3BGO&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	TRUE	1818292404	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSOCPkEODdIOfc07S9hNUeJXgU-M73ZsX0.%26dt%3D1786756404692
+.netflix.com	FALSE	/	TRUE	1821316402	dsca	true
+.netflix.com	FALSE	/	TRUE	1796554944	gsid	abd6929a-94e2-4d31-be94-6c2521e2c488
+.netflix.com	FALSE	/	FALSE	1794532407	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794532407	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1794532407	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	FALSE	1796554944	profilesNewSession	0

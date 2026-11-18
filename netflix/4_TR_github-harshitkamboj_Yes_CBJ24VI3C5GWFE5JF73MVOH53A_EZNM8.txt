@@ -1,0 +1,29 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: November 8, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379.99 TL
+Extra Member: Yes
+Profiles (5): ersen, mehmet, Zeynep, Aslaner, Yiğit kuzey zeynep nazlı ailesi
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/title	TRUE	1818747742	dsca	true
+.netflix.com	FALSE	/	FALSE	1796554947	flwssn	858e8525-f67b-4755-9175-fd33ad53e901
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	f50f7e66-8a40-43cf-9b04-7de2c550bb5f
+.netflix.com	FALSE	/	TRUE	1821344910	NetflixId	ct%3DBgjHlOvcAxKBBNAf8oh1QUVCQSnFjYTAlJ07FIt0fg7PV1QeRVnm6TC0GYzUScZmuYIFf5_PMhgx-SbylkA-ZQpzM0QaMEC0y8cpGLR4HYBPoRm0shBMIXh7SgEoYtZlhY19kpoTTlkv-HLrJvFDfSzbpH5cjTSwp__JxeCySosLJnLn8ukfkHR9bJUaE5Yw8s5VL16tW_tNa4ectgBlnUCoDbG7iUP6TlR9K8trD8hGu1zUunS8aAJlUTf0hADe-MjWGK8Gvvum8uTpLODyKKoq3qnEeT7zzl3xHAkFLBznVDIE0pFfTxoP9SiGDSm1-oYo1KHg-dqGBh64HHNApcregLwO4GECz3Ux45NkS1wWuBH--SabAMbNglDNVaME1KO5s7NrToqXZBWZKykyAsHy_0RGEu7nQM4pwTPUqy_JyPcqzIhVjDUXLeVcbPL2huTLRkjcRaY-T9qgL4Ng3pEgu0WEa86Ix5FCSGWtwy7_2ACgbso9HhUVlgyEcTAgTZ1DFPdYLxka_gjTG3BAIdSMGVPMCOryn-BZ24DgWzoG4lNKeAdy9eGjQnaW4wtUliWr9RGfRF67J3zXFNgrtSBEhItya-TvQ2glVBJsjxOqUR6YeCXe3bTgDvp4ZKPXsSvsyLnKt4l5DPke0tnH-OPRKj1EhFoDUASU1UWn5zGLw3OMarJiQEHk1xgGIg4KDHjcKev6Iyv-FhS_NA..%26ch%3DAQEAEAABABT9pC0CG8r_cWGSyMT0lw8sBM7j5bMfOAw.%26v%3D3%26pg%3DCBJ24VI3C5GWFE5JF73MVOH53A
+.netflix.com	FALSE	/	FALSE	1797584907	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797584907	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1819105060	nfvdid	BQFmAAEBEGPPVq0mBJIqG7jkR4ZW39ZgUVX1Dy8BK2Yxe3L0ClDpYBtzjRovyQNMPqtK099mAwoslb5_LZgj-Xi3fkU_HIjJteXgqbQH1ibH5RdIecjPgO83io5CY_JvX6u5Mhn3veXlb9AVb0Jnd1Z612MVyzm2
+.netflix.com	FALSE	/	FALSE	1819105068	OptanonAlertBoxClosed	2026-08-24T10:57:48.661Z
+.netflix.com	FALSE	/	FALSE	1821344909	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+19+2026+12%3A08%3A29+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202607.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=9c76ea63-ada1-4e22-92d6-74c2fc4ac9d4&interactionCount=4&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&intType=3&geolocation=TR%3B07&AwaitingReconsent=false&prevHadToken=0&isDntEnabled=0&fclco=&lastConsentTs=1787569068&crTime=1787569069610
+.netflix.com	FALSE	/	FALSE	1797584907	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D
+.netflix.com	FALSE	/	FALSE	1796554947	profilesNewSession	0
+.netflix.com	FALSE	/	TRUE	1821344910	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSwplmDIKyhbzSyPomsDnUo5WW0AQmp5Sw.%26dt%3D1789808910802

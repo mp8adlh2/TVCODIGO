@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: TR
+Plan: Premium
+Next Billing: November 18, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 379.99 TL
+Extra Member: Yes
+Profiles (4): Aleyna, Cemre, Zehra, Hakan
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1798926581	nfvdid	BQFmAAEBEC-CWkCiHLeSkT9zqfckxxhg7WsC49JyCq2hae48ttA-jLpbFhKfVfIqTekKeoQZ5bSaYnJk0A4QsH0YhSLf2FXInDNdmFaCTaC0WB0L94tTSnsgwNaAagrN7NBweda5r-QNHcoxxB6iEmB65YBmFPU8
+.netflix.com	FALSE	/	FALSE	1798926619	OptanonAlertBoxClosed	2026-01-02T21:50:19.333Z
+.netflix.com	FALSE	/	TRUE	1817384498	NetflixId	ct%3DBgjHlOvcAxKzAzg0hvAXhCAv23bfyTzqGLRpM5RREGJJUhuIVVdTvmiU-caYbKqFiWerYCLhLeYfL0zVoiFwyTDjaBDuNo3wfwlIoUMCHutQzsYFqxvezBFtrLdlA8nZOvXL2gJHyirdbd7xEJ6q0jQsW2l5Q5_bG3RZ4XG28TtxJnIZnESCbgOSh0mCTkd-sRn_Fj8LD8Hfl0Hb_8YaLdeMA9p2FCU0SZzBY0uOWNrS95cx7dtRyhXqATbRqwU-R_BncROPIOlNXX1NQOfQ-w9r3x1H6_DZl71A-xOvbN79KyXgiP6HxKV679NV-_KU6rwrftXy8KODtWCoCBRzC9KZnJHjATyrxIPJVTNEKS_bmEsRxzcyLGwhROZSjW3LhNKFFq3mfkj0EBmuBytnIxvFN2kTAQiJdhYjSPeRqFRq6XLjBMiQNxd6CCGLhIN8U8bMLbHzZZGS7c2qaaUf231ITKE5Yt_PoO-5ItQSRzZIy8OOzbifs1N3_vnobT5ls4A0kuPtSWnpT7RWdBNof_oW6gi0agd_hRvWfbzOFZgEiRr8rMZyPF0vEB6smHMjMVtoga5ddNiUvW58VBgGIg4KDCxGb1VtZ_OcK6xQPw..%26ch%3DAQEAEAABABRAlxMMZECGv7nL1WB5D6VakcY46fVlC8k.%26v%3D3%26pg%3DDH2UNI4RYJGXDK6PFVGGFNFR7M
+.netflix.com	FALSE	/	FALSE	1817384502	OptanonConsent	isGpcEnabled=0&datestamp=Tue+Aug+04+2026+16%3A01%3A42+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=50a39434-a5fc-482e-9e94-b791c1cbf734&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=1&geolocation=TR%3B42&prevHadToken=0&isDntEnabled=0
+.netflix.com	FALSE	/	TRUE	1817384498	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRtNoxdxSZBD8lKTIoXwj-PvqMU43ePra0.%26dt%3D1785848500936
+.netflix.com	FALSE	/	FALSE	1796554947	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554947	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554947	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

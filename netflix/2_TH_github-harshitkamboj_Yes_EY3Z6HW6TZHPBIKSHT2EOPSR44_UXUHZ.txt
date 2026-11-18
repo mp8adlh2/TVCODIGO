@@ -1,0 +1,21 @@
+NETFLIX HIT :👇
+
+Country: TH
+Plan: Standard
+Next Billing: November 16, 2026
+Payment: MOBILE_WALLET
+Quality: HD
+Streams: 2
+Price: 349 บาท
+Extra Member: Yes
+Profiles (3): Nutchanon, Nutwadee, ม้า
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1813035570	NetflixId	ct%3DBgjHlOvcAxLAA3AerhvQDCe6xCrswBDM8JtqMGnYarRYwzPK3x7x7LGeH2M-qYMJ3P6wKqWKY1Qs2MIT2v7c4v7eRjFYZ7s_namnLUUPJQ_GtwpmHhNl6EMAWK8D5HLYOtjTk5C273AauHUA0gCCSsS_W1REacEcpYfvAMR_dE6bh8blWRUWeRRImCKnTo3mAtCcIfjazwaCq_qD-VhpXbMwKOLR55VEpzxr8LPgWYWJ0MA5XdSa6Xc21q3CTTjvqg9pYO3DgQneWJiaPouEaFzKEZXmEGRRxw9NHq42IfGRvSBapJhKuaEfwtaQFkPUZdR2TmbZ7SY98zcapeAVHMVIOHaZpTYZwpAyMRoCmYPqTA4vZxLEZSAEdjp95MxyD4nDbsZD4bdK3X3tvXQe4C4UHDpoWOLBn37jbrx21j6N2efPWkl5mHJdyv_54xyN50PcsyNB5h2Zcol-cUwI93m6_jLF18g3fbtPHdFjmCKGrOUWfsxH5iW9rpYOcsDn8QsoDGYZduY9LcWYQsl-IcmZkLrkDzfK-lYYBWh80N5AauZKyN4f2NCvTBLDCWlSveX2N3dWfs9HBiE6eAxjvCuiJrHVoaqJHE4YBiIOCgx-J6zKNBioTY5ypJU.%26ch%3DAQEAEAABABQjS4BbRna5O7qw2NMOH29WbRTtFSJ5uds.%26v%3D3%26pg%3DEY3Z6HW6TZHPBIKSHT2EOPSR44
+.netflix.com	FALSE	/	FALSE	1812085891	nfvdid	BQFmAAEBEC_ZKqMjDFnZU1hErl-5BP1gEIPVi8PxI7gajraY5E-wRmgozqeAKrEAYNaOghMAAh4jS_Nen65ExPNDjoSLCcH73rTsvS4ONmKj_-NfFZXgTOwwesiWwRWtcN6J15zs0FjZ2Gd-I3xMIF4S__XSziuS
+.netflix.com	FALSE	/	FALSE	1813035572	OptanonConsent	isGpcEnabled=0&datestamp=Mon+Jun+15+2026+11%3A59%3A32+GMT%2B0700+(Indochina+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=2d032f30-a505-4add-acf4-88844609e989&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1768467229037&AwaitingReconsent=false&isDntEnabled=0&prevHadToken=0
+.netflix.com	FALSE	/	TRUE	1813035570	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTcih1tjaSg4dxaFbzQBcc9uCE29MwkY-c.%26dt%3D1781499570977

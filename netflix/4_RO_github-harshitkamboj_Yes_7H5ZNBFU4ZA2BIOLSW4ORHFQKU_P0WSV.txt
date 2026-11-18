@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: RO
+Plan: Premium
+Next Billing: November 29, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: EUR 13.99
+Extra Member: Yes
+Profiles (4): Guest, Simona, Robert, Kid
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1823196554	dsca	true
+.netflix.com	FALSE	/	TRUE	1820172552	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKfA_EWhgyP4rNOKTyDihjKbrK7kD75vfUjZYsLdTFjmj02qdDUeyM5OcYRbeT4IUauChLQwg7wxJuOYtWpbK98C-X9qQyACFQSYANZUd4oe-ayb6-YFGlheJaFFc2G7peiNgj3xO5z9WsJvRo4OU0uGBR1ihZhiK1aRDXG26AZIsZCMbL2S61RLD1AwgrTNYmD7xOgfJYm2CvFLZIRzJQAoUF3D3oYFjdMKmiWYrz_SlEP9HnuaQMUJNVIC6zqXl7Omav7jtS_h6Y5FeAHUoyawV7UzKDMo6DJ903B05XMkR6BdojnHLO4i6bbM-fN7dRbIdKQHKedilRz7BYPCeP-1ZF9O_dz60wllOrOLcBB0yKeP_lylnffdu2c1acwCVfMbnaT10y1iW_X_CMsYzcJYOlu0_9MTLl7JCN9W78DzKtTfzUVObO_cVW4mM7jVRNL69NAPHWboi5MHnujfk7bMEG-rShU-hpULFthvZhI_5PvYZ3_I66Ndc3vYADsyVuZgxVAUr0TouTUoYBe4QAfx82o2DclBHE4TYX1hszpqGYYBiIOCgz6S0quIY2tPwGinQc.%26pg%3D7H5ZNBFU4ZA2BIOLSW4ORHFQKU%26ch%3DAQEAEAABABSq_rdNZcpejC-NOlCG7Eoov8k7PGi8tPE.
+.netflix.com	FALSE	/	FALSE	1796412549	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796412549	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1820172469	nfvdid	BQFmAAEBEFKJostwXbdOYS_r7E4LH1tg-jkP3KeoZR177dLukXzWsDoYMDBU31QmTD0pM7tGIxgibj3rjDbu-6RkihBp0KgHF8OrqlKLF-3Azdkpcjkdc0lEL81cwX4AdsDuBbxR5V-SitvTt7xXeLk5RUWOY7yO
+.netflix.com	FALSE	/	FALSE	1820172415	OptanonAlertBoxClosed	2026-09-05T19:26:55.705Z
+.netflix.com	FALSE	/	FALSE	1820172554	OptanonConsent	isGpcEnabled=0&datestamp=Sat+Sep+05+2026+22%3A29%3A14+GMT%2B0300+(Eastern+European+Summer+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=e8f85fcc-ee1d-49fc-aae3-3e8a1cb21550&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A0%2CC0004%3A0&fclco=&lastConsentTs=1788636415&intType=3&crTime=1788636416082&geolocation=RO%3BTM&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1820172552	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABTD0vS2ovwZVRrljPdsjmtUA9auvnz20R4.%26dt%3D1788636552373

@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: BI
+Plan: Premium
+Next Billing: November 27, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 9,99 USD
+Extra Member: Yes
+Profiles (5): eFlix, Jojo, EloiD, Sercan, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554945	gsid	a6413dd8-6f39-4ecc-8681-dfc3d6c7b21e
+.netflix.com	FALSE	/	TRUE	1821075483	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKYAyUMKkAQDny4ioj31MyBVf99swq_IZ28Hppv0HL0khnOnFWXVJisSlEsCveAoFd_FNg1aCnuYOOeND8_Wrv0FQOhqKlXZraZSuiiGi-jb_L8RQuT98pHoigL4QacZE8ies8sbUBATev8loxiDfQvCE33fNhUsy8EZCD-GQAqZFKJpbiiGN6IQob5DGOvyPkQn5rDNcXIRDua4wdhb7RvGzkH9BsThqrLvyp9Ov4ZMbYE_nbhmZX-RnV5yTp_xbFwA1H8mFrDG3z7GgREAttU4u5WVMGZ4Yr_5fefQWTF2YDY2FdSwytL7KPb8_X6_JFgyFdoCRrvmSnlWAyuYHb6njwv1Q4Fvs2ZYIHLeuWWa69m5l0sh_eSID1rGa2evm7bmB43X-w_OmaMz8FMzEn3rFRGdywr8WX68qvfL4e4015maU4ykG5iZLZRE4Cgu-X1k1OLu27DmadPtyQV51En6VX9ZCqQjSMOhB5_59NIK6DMwj2dfD4TsT4xjzNNPk3hkMDtZjzrO8rzT7j3898bpquQOzTH2zjNshgGIg4KDGpfMqO5ni4-ta_IxQ..%26pg%3DWVCN4RP45VAM3FO3B4OA2EOJN4%26ch%3DAQEAEAABABSx7SCw8u542dYPkjumyDco8apWxQGlgfE.
+.netflix.com	FALSE	/	FALSE	1797342303	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797342303	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1821075471	nfvdid	BQFmAAEBECi9mveaNTd4ZHLwvi5FqRxgXt8gRy0XL5_--udqtChGfvjkBAQpLtUTw0l7vUrUPkSvX-WmTxo6P1iHOPO6wbCADNQykbmhcYr1WHRcojYbCfCsA8JF46GQEiNo98Rno74lu7ZQpVySS-9MhjcytTKg
+.netflix.com	FALSE	/	FALSE	1821075439	OptanonAlertBoxClosed	2026-09-16T06:17:19.747Z
+.netflix.com	FALSE	/	FALSE	1821102304	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+16+2026+15%3A45%3A04+GMT%2B0200+(Central+European+Summer+Time)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=7156eddf-5cea-46e1-8887-e9d133444914&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&lastConsentTs=1789539439&intType=1&crTime=1789539440636&geolocation=IT%3B25&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1821075483	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRNyv3U5o6OXxSBVceoEeLFQpIGsijv2wU.%26dt%3D1789485480609

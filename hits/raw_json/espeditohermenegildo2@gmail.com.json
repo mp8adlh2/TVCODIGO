@@ -1,0 +1,151 @@
+{
+  "email": "espeditohermenegildo2@gmail.com",
+  "password": "Esp53963569",
+  "access_token": "7baab287-f8f4-497a-913c-25f6fc42a98d",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiNWM4NGE2NzgtZTY4MS00YjEwLTkzYmYtMmUzMzRkYzZlMzcwIiwiYXRfaGFzaCI6IlZMSDRNODRPZUtfSTgtRkgwTEphVEEiLCJkZXZpY2VJZCI6IjliNzRkYzAxZTZjNmE0ODdiOWZhOWU5YzcyMzQzYTViMzg5ZTE5OGQiLCJhdWRpdFRyYWNraW5nSWQiOiIxY2Q5LWYxYjktNGI2ZC05ODUwLWIzNGUiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODcxMDUwMDEzOCwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiIzNDY5NmRmMi0wZjRiLTRhYWYtYTEzMC0wODYwM2JlMzAxZDYiLCJzaWduYXR1cmVzIjpbIjEzMDcxNjYwOCJdLCJjdXN0b21lcklkIjoiMWNiMmRiYmZiYjE0OGE0ZDRiZTQ1NGNkYzk2YmJjYWIiLCJyZWdpc3RyYXRpb25TaWduYXR1cmUiOiIxMzA3MTY2MDgiLCJnaXZlbl9uYW1lIjoiTUFSSUEiLCJ1c2VybmFtZSI6ImVzcGVkaXRvaGVybWVuZWdpbGRvMkBnbWFpbC5jb20iLCJtYWlsIjoiZXNwZWRpdG9oZXJtZW5lZ2lsZG8yQGdtYWlsLmNvbSIsInJlZGVtcHRpb25MaW1pdCI6bnVsbCwiaWF0IjoxNzg4NzEwNTAwLCJleHAiOjE3ODg3OTY5MDAsImlzcyI6InNtLXNreS52cmlvc2VydmljZXMuY29tIn0.gIeF8JVXc3rBDBg2h7ktYjQaNp9jXfYv4LE5bGzQNzcf5GvalEwBDCEw_dO75O3Jg5yFrlh3AWXxZHR4GbDi58y-5QE50Uf5tlmRtW2AMR1yffBjadC01g2ybknQOqwEa0DjfaMqqfq5zIeEVvjvDGIi9NQvRE9iQ9yeIYzcl47ziqgNtQ81sajDh2ZMOKMtCwPgtyVpIHArXearPYNYEy3MBloyDZqHe8l0R81K2I40lIyyYD29aw_O--nZI6EBO5Fw1eksx6ZI4odJmjZiPqBJIDPyCWLJUXFXYjNhPLJW_fhYebMyhIw1Ob33FKWqhFud34EtXG8zLQDYnsTO_Q",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "7baab287-f8f4-497a-913c-25f6fc42a98d",
+    "externalId": "71749373-dff3-571b-ab54-4a99d0dafa91",
+    "username": "1cb2dbbfbb148a4d4be454cdc96bbcab",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "130716608",
+    "protocol": "2026-150274085784",
+    "customer": {
+      "email": "espeditohermenegildo2@gmail.com",
+      "billingProfileCode": "1-FIQ6-5222",
+      "name": "MARIA",
+      "secondName": "DE LOURDES FERNANDES HERMENEGILDO",
+      "birthday": "1953-01-22T00:00:00.000Z",
+      "ddd": 21,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5521999035090",
+      "id": "1cb2dbbfbb148a4d4be454cdc96bbcab",
+      "cpf": "10454920784"
+    },
+    "signatures": [
+      {
+        "id": "130716608",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 999035090,
+          "dddMobilePhone": 21
+        },
+        "customerId": "1cb2dbbfbb148a4d4be454cdc96bbcab",
+        "status": 1,
+        "productName": "SKY DIGITAL 2013/2021 - P",
+        "name": "MARIA",
+        "secondName": "DE LOURDES FERNANDES HERMENEGILDO",
+        "dna": "01000000000100010000000100000000010000000000000001000000000001000000000000000000000000000110000111110000000000000010000000000001011110001000000000010111111111111111111111111000000000000000100000100000010010111111111111010000000011111010111111110001000000000001101111111111110001101110001111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011111011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Estrada Do Rio Seco",
+          "line1": "Estrada Do Rio Seco, Sn - Viçosa",
+          "line2": "Sitio",
+          "number": "SN",
+          "city": "Rio Bonito",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "28800000",
+          "referencePoint": "Região Dos Lagos",
+          "addressType": "Estrada"
+        },
+        "addressBilling": {
+          "linePublic": "Alameda Rua Capitão Juven Figueiredo",
+          "line1": "Alameda Rua Capitão Juven Figueiredo, 1488 - Colubande",
+          "line2": "Apartamento 103 Bloco B",
+          "number": "1488",
+          "city": "Sao Goncalo",
+          "state": "RJ",
+          "country": "Brasil",
+          "postalCode": "24744560",
+          "referencePoint": null,
+          "addressType": "Alameda"
+        },
+        "activation": "2013-03-11T00:00:00.000Z",
+        "email": "espeditohermenegildo2@gmail.com",
+        "parentAccount": "0130716608",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000680359395",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH26",
+            "serialNumber": "CE0AA63614898246B"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "130716608",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 999035090,
+        "dddMobilePhone": 21
+      },
+      "customerId": "1cb2dbbfbb148a4d4be454cdc96bbcab",
+      "status": 1,
+      "productName": "SKY DIGITAL 2013/2021 - P",
+      "name": "MARIA",
+      "secondName": "DE LOURDES FERNANDES HERMENEGILDO",
+      "dna": "01000000000100010000000100000000010000000000000001000000000001000000000000000000000000000110000111110000000000000010000000000001011110001000000000010111111111111111111111111000000000000000100000100000010010111111111111010000000011111010111111110001000000000001101111111111110001101110001111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011111011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Estrada Do Rio Seco",
+        "line1": "Estrada Do Rio Seco, Sn - Viçosa",
+        "line2": "Sitio",
+        "number": "SN",
+        "city": "Rio Bonito",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "28800000",
+        "referencePoint": "Região Dos Lagos",
+        "addressType": "Estrada"
+      },
+      "addressBilling": {
+        "linePublic": "Alameda Rua Capitão Juven Figueiredo",
+        "line1": "Alameda Rua Capitão Juven Figueiredo, 1488 - Colubande",
+        "line2": "Apartamento 103 Bloco B",
+        "number": "1488",
+        "city": "Sao Goncalo",
+        "state": "RJ",
+        "country": "Brasil",
+        "postalCode": "24744560",
+        "referencePoint": null,
+        "addressType": "Alameda"
+      },
+      "activation": "2013-03-11T00:00:00.000Z",
+      "email": "espeditohermenegildo2@gmail.com",
+      "parentAccount": "0130716608",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000680359395",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH26",
+          "serialNumber": "CE0AA63614898246B"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "130716608": {
+      "included": [],
+      "additionals": []
+    }
+  }
+}

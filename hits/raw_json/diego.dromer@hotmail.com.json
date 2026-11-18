@@ -1,0 +1,276 @@
+{
+  "email": "diego.dromer@hotmail.com",
+  "password": "123Algde10",
+  "access_token": "28925619-c146-4f9f-aedd-17de762de4b5",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiNWI0OGY4OTUtMmY3Ny00OTZmLWJjMDEtZWNlYWY1YjI3MzU4IiwiYXRfaGFzaCI6InhhLUJCeHBPSng3WjNvSGt3VVBvTFEiLCJkZXZpY2VJZCI6IjRiZmY4NWY3MjI2ZTdlYzdkZDM0NzMwZjZjNjNkNDVjNTEzNTdhNjgiLCJhdWRpdFRyYWNraW5nSWQiOiIyZWIyLWE0ZmEtNGQ2Mi05ODhjLTFkNmMiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODMxMjYxNzQxOSwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiI5NmNhNjM1MS1iOGEzLTQxNmItYjlkMi1jMTEyYzk4MWI4MDEiLCJzaWduYXR1cmVzIjpbIjU2NjU0MDMiXSwiY3VzdG9tZXJJZCI6IjdmNjE3NzRiODBjMTZjYTZlZTBiNjBmMTc0NDdmYWQ0IiwicmVnaXN0cmF0aW9uU2lnbmF0dXJlIjoiNTY2NTQwMyIsImdpdmVuX25hbWUiOiJFWFBFRElUTyBQRVJFSVJBIiwidXNlcm5hbWUiOiJkaWVnby5kcm9tZXJAaG90bWFpbC5jb20iLCJtYWlsIjoiZGllZ28uZHJvbWVyQGhvdG1haWwuY29tIiwicmVkZW1wdGlvbkxpbWl0IjpudWxsLCJpYXQiOjE3ODgzMTI2MTcsImV4cCI6MTc4ODM5OTAxNywiaXNzIjoic20tc2t5LnZyaW9zZXJ2aWNlcy5jb20ifQ.q3SFzyEwgtQfWV_UW4L_mw2q3_RK_9zRz21nb0Rmh55IjMnx7Lzmlbz6B-c7g21FeTzPXXGw1a_hlm6ly9iZFGx2v8bqCXUJj4wQawNFDjin5ZozWigbLpbNWFMG0HPTHM40Z5qUFP_suoM7vemRCaMahb24Htq7DUwi4qeZNcrnuPh2fmN4sjTE1qx2zoZz13Au_7xJD8DJ-NKcmTL9zUut1l7y2Mhdc1syJsSUkPI7NlORYgGynTEApZlq3t0gdYkWK1FzJIaux0175fnT6kCE2znS7bJKH4aX06OdI8q1quuxzMxc5RI_RROEFxesIQ_dymG3R3lYIzCb-ZodJQ",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "28925619-c146-4f9f-aedd-17de762de4b5",
+    "externalId": "de4853a9-b515-5370-86a3-ab4ec5ec9517",
+    "username": "7f61774b80c16ca6ee0b60f17447fad4",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "5665403",
+    "protocol": "2026-150197441200",
+    "customer": {
+      "email": "pnsaemilianopolis@gmail.com",
+      "billingProfileCode": "1-8M0O-50640",
+      "name": "EXPEDITO",
+      "secondName": "PEREIRA CAVALCANTE",
+      "birthday": "1947-09-11T00:00:00.000Z",
+      "ddd": 18,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5518996911243",
+      "id": "7f61774b80c16ca6ee0b60f17447fad4",
+      "cpf": "01773063863"
+    },
+    "signatures": [
+      {
+        "id": "5665403",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 996911243,
+          "dddMobilePhone": 18,
+          "dddComPhone": 18,
+          "comPhone": 999691124
+        },
+        "customerId": "7f61774b80c16ca6ee0b60f17447fad4",
+        "status": 1,
+        "productName": "MEGA PLUS HD II 2021 - P",
+        "name": "EXPEDITO",
+        "secondName": "PEREIRA CAVALCANTE",
+        "dna": "01000000000100100000000001000000100000000000000010000000000100000000010000000000000000010010000111110000000000100000000010000000011110001000100000010111111111111100111111111000000000000000000001100000000010111111111111010000000011111010111111110001000000000001101111111111101011101110001111111111111111111111111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101000111111101111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Praça Benedita Domingues Martins",
+          "line1": "Praça Benedita Domingues Martins, 362 - Centro",
+          "line2": ".",
+          "number": "362",
+          "city": "Emilianopolis",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "19350006",
+          "referencePoint": "Proximo A Praca Matriz",
+          "addressType": "Praça",
+          "resDdd": 18,
+          "resPhone": 39941283
+        },
+        "addressBilling": {
+          "linePublic": "Praça Benedita Domingues Martins",
+          "line1": "Praça Benedita Domingues Martins, 362 - Centro",
+          "line2": ".",
+          "number": "362",
+          "city": "Emilianopolis",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "19350000",
+          "referencePoint": null,
+          "addressType": "Praça"
+        },
+        "activation": "2000-02-12T00:00:00.000Z",
+        "email": "pnsaemilianopolis@gmail.com",
+        "parentAccount": "05665403",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000528466386",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "670A263411973449A"
+          },
+          {
+            "smartcard": "001118069911",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2035406009378"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "5665403",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 996911243,
+        "dddMobilePhone": 18,
+        "dddComPhone": 18,
+        "comPhone": 999691124
+      },
+      "customerId": "7f61774b80c16ca6ee0b60f17447fad4",
+      "status": 1,
+      "productName": "MEGA PLUS HD II 2021 - P",
+      "name": "EXPEDITO",
+      "secondName": "PEREIRA CAVALCANTE",
+      "dna": "01000000000100100000000001000000100000000000000010000000000100000000010000000000000000010010000111110000000000100000000010000000011110001000100000010111111111111100111111111000000000000000000001100000000010111111111111010000000011111010111111110001000000000001101111111111101011101110001111111111111111111111111111111111111111111111110011111111111110111111111111011111111111111111111111111111111100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101000111111101111111111111110011111111111011111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Praça Benedita Domingues Martins",
+        "line1": "Praça Benedita Domingues Martins, 362 - Centro",
+        "line2": ".",
+        "number": "362",
+        "city": "Emilianopolis",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "19350006",
+        "referencePoint": "Proximo A Praca Matriz",
+        "addressType": "Praça",
+        "resDdd": 18,
+        "resPhone": 39941283
+      },
+      "addressBilling": {
+        "linePublic": "Praça Benedita Domingues Martins",
+        "line1": "Praça Benedita Domingues Martins, 362 - Centro",
+        "line2": ".",
+        "number": "362",
+        "city": "Emilianopolis",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "19350000",
+        "referencePoint": null,
+        "addressType": "Praça"
+      },
+      "activation": "2000-02-12T00:00:00.000Z",
+      "email": "pnsaemilianopolis@gmail.com",
+      "parentAccount": "05665403",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000528466386",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "670A263411973449A"
+        },
+        {
+          "smartcard": "001118069911",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2035406009378"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "5665403": {
+      "included": [
+        {
+          "name": "TAXA ASSISTENCIA PREMIUM - P",
+          "category": "Serviços",
+          "subcategory": "Premium",
+          "start_date": "14-09-2021",
+          "end_date": null,
+          "icon": "🛡️"
+        }
+      ],
+      "additionals": [
+        {
+          "name": "PARAMOUNT PLUS CB - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "04-01-2023",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM 2024 CB 1 - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "03-01-2023",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "PREMIERE TOTAL HD 2020 - P",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "14-09-2021",
+          "end_date": null,
+          "icon": "⚽"
+        },
+        {
+          "name": "ASSINATURAS DIGITAIS III MIG - P",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "17-03-2025",
+          "end_date": null,
+          "icon": "📺"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": null,
+            "name": "PARAMOUNT PLUS CB - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "04-01-2023",
+            "startDate": "04-01-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "DISNEY PLUS PREMIUM 2024 CB 1 - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "03-01-2023",
+            "startDate": "03-01-2023",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TAXA ASSISTENCIA PREMIUM - P",
+            "category": "Serviços",
+            "subcategory": "Premium",
+            "price": "0",
+            "isPartOfMainPackage": true,
+            "activationDate": "04-06-2021",
+            "startDate": "14-09-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "PREMIERE TOTAL HD 2020 - P",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "04-06-2021",
+            "startDate": "14-09-2021",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "ASSINATURAS DIGITAIS III MIG - P",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "17-03-2025",
+            "startDate": "17-03-2025",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

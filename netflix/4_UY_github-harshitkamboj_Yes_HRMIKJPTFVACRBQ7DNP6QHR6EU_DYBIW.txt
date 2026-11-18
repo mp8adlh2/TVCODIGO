@@ -1,0 +1,25 @@
+NETFLIX HIT :👇
+
+Country: UY
+Plan: Premium
+Next Billing: November 9, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: $21.99
+Extra Member: Yes
+Profiles (5): Jonatan Alvez, Jonna, Dantez, FORJA, Perfil
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1818906721	nfvdid	BQFmAAEBEATj1XU5zFML-sbJGDcDMzBgI_91nGFLmunhQmU8c9kGqtlD3E3APTndcaSGHPOWiLCR8uKT6teA9qG_sjYy9hhy6xrTCe_VTho4-XsB2AsTUJ4ivV4T6XwoK0iUAQDWJArVYvK9LFT9q91WJg500Us3
+.netflix.com	FALSE	/	FALSE	1821748719	OptanonConsent	isGpcEnabled=0&datestamp=Wed+Sep+23+2026+22%3A18%3A39+GMT-0300+(hora+est%C3%A1ndar+de+Uruguay)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=3f235f8e-32d2-4da5-939d-dca92eea5002&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1787370721241&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1821901498	NetflixId	ct%3DBgjHlOvcAxKLBGhxirOc1Zn-7t4xQB8xGSV6cDv5iPESeWm1R9MkW1hxL8cJs5VXN4bNKj6EffVzbJZJ4U9odok8VDE_r8NlXlgiygFkqUiefagYY1eCYnN1w5e0RyviYiUsiHzSKRpEDmQZRWO-w-jmyB-fHwQdy84hpB9Sx13xcU5yEtdaF5aMab8qsLClvv_NXQVLuvR1JEHZ8O57OgFyCppiLh15x2jTicw2o8fFM37xu0vVSNQ5LcCV-H0YJy9pINyQ6yTMr8WciHgR-1ZzjWU9C-TFpJ_Mqfs7deZGSmZoVAnwqZUJPXsn4TOUWDIH37-_sVH2_lxqCQQ-3A5VViiXlH6yvW6SHHxyuclsyhi-CQW6TNZ1rQdk5xWyyEsmhFYGf7-6ZbFiN5MFbvePe3Mdpgoq8V1UyN71TUbpXCfBPbZc6zSoDCoLP1ElBMmc_VQ7-DSTkXKfm18K9TwM4hNwbGXHplS5j1iBk3EmhNrEtOsSK0a6371i8BbkeoBtbj9Fg7wFzyS3NHiSkCx6cS9-qtzzUWZj5RWd20ZUC6kkvO6Lik3O6KqmCIEBlyK0_j8Gv3olwB2efgAVRRcVBVFI7lH_9Wvexx7TSpyyUwicX_HdaA0RPnH50a17dKjXPlUC18Zmo1VIHyHjC0by2q7is6aTip0bBmfZJyIDdcqOnYfyinDRLDHOdQ24Oqptp54YBiIOCgxECOWqiaI0A-LHfIg.%26ch%3DAQEAEAABABSVkWIDoHeFsjILnIUK7iuA61Hd3Jx8PZY.%26v%3D3%26pg%3DHRMIKJPTFVACRBQ7DNP6QHR6EU
+.netflix.com	FALSE	/	TRUE	1821901498	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABT7j7Cj3LRavPbvXZ_ymJKas7y-tekotwQ.%26dt%3D1790365498500
+.netflix.com	FALSE	/	TRUE	1796554947	gsid	ce768684-7b1f-41b3-b7ef-a9cde0f44022
+.netflix.com	FALSE	/	FALSE	1798170425	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798170425	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1798170425	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Afalse%7D%7D

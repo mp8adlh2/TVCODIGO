@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: US
+Plan: Standard
+Next Billing: November 20, 2026
+Payment: CC
+Quality: HD
+Streams: 2
+Price: $19.99
+Extra Member: Yes
+Profiles (5): Edward, Home, Andrew, Jacob, Kids
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	13427416275741164	nfvdid	BQFmAAEBEJ2t_SdQnoTQsJkxbGETgkNg0fqeeB6UBvAD09GrYAwc8z4RTFW79MF7bIV6XUe6HcdqeYgkotOkknIcNdhby0FsGoMsEsiJzon5bZhk4rSdUtsZ2hgyxJsUoGhZOOL4Mp11cvDgll2r65QAiAvAhPoD
+.netflix.com	FALSE	/	TRUE	13443994149772872	NetflixId	ct%3DBgjHlOvcAxLdAyeMMcL4hxmLVpa6TTQhirc669dTADHvBthz7Gsh87avpA1vjEvve9N7e9RU2LZT7T-ZdxsQqAO5ASuNwAhR3utTmLgpcYVgMEVI13_pQ3ByX5cR5hcoAVucG5UVqvbXO64nIzwevHOS4usLYWxpS_2hfjPb7_bdRpLXRoBT7j0AqYaCW6mIBANtpfm1Tv4tx7wVVw54COmkYrpU-YhFSJg30fxnc5ls7gjkY7dr9mPZ_-u7lTwKVdijKwEcBFGU1hU0xYx6gL7J6kEhcFA9pUoEF_SAcCDuHN55c5hkF_LXDSVCWMk6fl64r4_qoO7MD3puiSKzRJdd5pCCpoVpVibC-_NJbotxZYzhL5O6GcFjgdv7jWQaxyGI4gsSV9NKjAW05qFxF7VVdUhRyqWJrhuq3n46wkdL2AI4BOZObN3UJ8FdD3yB3RofTkq9ULwUOH9TBeDLQn4Ew9d85Er6Ppe-3nen9wTlMRKm2lr0T3ZAJc-Ig5Q_4MCfblKi_ekRq2A59hklcchXcZUHTLEWPvuYL9EdTHtayZ0CWZx1acm3He10DE1Hb6sfdXELQsQaamsxmIyOSIe_D0FpRv2c7Uuw6frE2MnZgStkk1ZhG-TYqMNu4PTMFToanqe0aRgGIg4KDPTHUsmUAga6f-_6lQ..%26ch%3DAQEAEAABABQ12mIm5pvSi-RFaTlL1AldxqXoWt3aOLw.%26v%3D3%26pg%3DWD3WKO2VVRGB3KX4VN56LPKFLU
+.netflix.com	FALSE	/	FALSE	13443994151000000	OptanonConsent	isGpcEnabled=0&datestamp=Fri+Jan+09+2026+10%3A49%3A11+GMT-0800+(Pacific+Standard+Time)&version=202510.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=d2d7cc60-615d-4407-acfc-6b64e2194296&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	13443994149772812	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABSjtZoKMiIfBo6znuQSH3_dylv75HI_-Ik.%26dt%3D1767984549452
+.netflix.com	FALSE	/	FALSE	13420234149772736	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	13420234149772632	netflix-sans-normal-3-loaded	true

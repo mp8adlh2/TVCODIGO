@@ -1,0 +1,27 @@
+NETFLIX HIT :👇
+
+Country: RO
+Plan: Premium
+Next Billing: December 6, 2026
+Payment: CC
+Quality: UHD
+Streams: 4
+Price: 13,99 EUR
+Extra Member: Yes
+Profiles (5): Moșu bunu, Niki, Gabi, Paul, Giulia
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	FALSE	1820627876	OptanonAlertBoxClosed	2026-09-11T01:57:56.402Z
+.netflix.com	FALSE	/	FALSE	1796554946	flwssn	d079dffa-0ca5-4127-b4b4-49b596e0345e
+.netflix.com	FALSE	/	TRUE	1796554946	gsid	d0a55968-43b7-4dc8-9932-ed1dd73fbcf4
+.netflix.com	FALSE	/	TRUE	1821743424	NetflixId	v%3D3%26ct%3DBgjHlOvcAxKVA8hB2OwAZt8eCxDxzXKeImxUbRb3NALcDqV_rFW82EhTwv7VK4fSilUJcq0MJ8S--PeT43vTcuxxF_G2Hbz38aJTmMPDWMQIFc8-RM3TTd8qk8MwVrNoAmY94aRreQN4lAk1zuNClI9b8K2wkGac2Lmyr2R4e_NFPeXjxnmCVVYesavFC-tD-u-Bq_UwejZUUIoDfukr_r9kECaY1mnlifgGv7Kka2BxV_Q0VEkzrAZ2TOg8wQ1Wea0jvbcW8icJjRhw88X6vje2pDS0rjEGUmnjVM41IxBDoEEtYxONtdJRMaW2ABl7OOj2SEtG0pOKxzQ0Ah9tpcM3NLrhjVbFxkm3ROTqlZsFjSY69Pcrj83F9UEW3IgjSYX0aBCHfcZHn6RVnZwWCjon40ZQU3QgInFaXqvOGMPD_Yc2iAC7U804aQVfcOjmnSw8w0lTtB60BYKkAgihmq9uBXMEG755tgsiA4ou_SuFGAqRaauOLI6ncUg7OW7BFd8JOhxYWUas5ECxgan656EwKIhPpEe553zOvKkb5RgGIg4KDBZMT1blkMj4muPZ4A..%26pg%3DOJ2HZ3CE2JE27HOP4RIDLDX5HU%26ch%3DAQEAEAABABSiiSTWtBL6rx8w1q_G2hzlTchKkj7mOS0.
+.netflix.com	FALSE	/	FALSE	1821743427	OptanonConsent	isGpcEnabled=0&datestamp=Thu+Sep+24+2026+01%3A50%3A27+GMT%2B0200+(Ora+de+var%C4%83+a+Europei+Centrale)&version=202607.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=2b74259a-295b-448b-82f1-441f45305081&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&lastConsentTs=1789091876&intType=1&crTime=1789091876797&geolocation=RO%3BCS&AwaitingReconsent=false
+.netflix.com	FALSE	/	TRUE	1821743424	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABT8BAKBo4vv-_VQYOD--ur97uTnOeW0zXE.%26dt%3D1790207425504
+.netflix.com	FALSE	/	FALSE	1797983427	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1797983427	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1821743411	nfvdid	BQFmAAEBEOYOHyXqPgC6-VtDb495gztgG7X4ajV2FewvN4AOTwh8SzXEMTGeMqjJgMR2oKBW5mkz-029NBjaoRYrrtJLoJRpWFeHat1_Huw3ZU0XwoXMOG_2REjOynPYWF_zFDhqOSCe_pcqK_GH1Vi7gugmLz5b
+.netflix.com	FALSE	/	FALSE	1796554946	profilesNewSession	0

@@ -1,0 +1,196 @@
+{
+  "email": "mvsguimaraes26@gmail.com",
+  "password": "Guima2603@",
+  "access_token": "bfefec97-420c-498f-b7c7-1cbb7c99afea",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiMTYyMDM1NTMtMmMxYy00ZTdiLTkxZTAtZTFiZDZmNDkzNzhlIiwiYXRfaGFzaCI6IlRmYWw1X0diZ2cwcEM2ejJvY0ptNFEiLCJkZXZpY2VJZCI6IjNlZGU1OWVmYWU2ZmUzYWNkZDk3OGI5MjlkYzQ2OTRiYWZjMGYzYjgiLCJhdWRpdFRyYWNraW5nSWQiOiI2M2Y4LWYzZTgtNDJjYi1hOGQ4LWFlYmEiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODgxODE4MDI3MiwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJlZjU4NDAxZC1hNmQ3LTRlMDItYjliNC0yNTQ5YjNjZTYzMGEiLCJzaWduYXR1cmVzIjpbIjExODczMDEyOCJdLCJjdXN0b21lcklkIjoiZTJmOWQyMjBiZjczNGFhZjRjOGVhZjJhOGRlYTI2OTciLCJyZWdpc3RyYXRpb25TaWduYXR1cmUiOiIxMTg3MzAxMjgiLCJnaXZlbl9uYW1lIjoiTUlSSUFOIFZJUkdJTklBIERFIiwidXNlcm5hbWUiOiJtdnNndWltYXJhZXMyNkBnbWFpbC5jb20iLCJtYWlsIjoibXZzZ3VpbWFyYWVzMjZAZ21haWwuY29tIiwicmVkZW1wdGlvbkxpbWl0IjpudWxsLCJpYXQiOjE3ODg4MTgxODAsImV4cCI6MTc4ODkwNDU4MCwiaXNzIjoic20tc2t5LnZyaW9zZXJ2aWNlcy5jb20ifQ.OnYNfQJme4NZi_lnc8n3obB7BJYdmsIdvvaZgEQFALhorU66-nqo1n-OYDlinGHGUYG_3VIbfaDg5UXDccGIQffZ3evzwl3gzGoyG81PRfbzHgv3DP5hkvKBXm19cQiyYcHkkqEWVz5v_dM4BtVX0OmfFwZmuwl1nsWUMZoGk0be_aGCrxeyv-G5XjfJA64IpV9RpLBADs5GRdwug5xwnl_HC44_C2VXQ-ivkWtYjOivM7R9Dt2kXCPjneskW3dG1Rgyjp-Nkad46ZWD8VEITw2X0TkKeVCp6b8AKEMA3E05eOixPtPLK21cJK1nqEk7po1WofJ1J6_lqnw2p89s4Q",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "bfefec97-420c-498f-b7c7-1cbb7c99afea",
+    "externalId": "1107c7f5-f425-5280-9956-694d38941aab",
+    "username": "e2f9d220bf734aaf4c8eaf2a8dea2697",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "118730128",
+    "protocol": "2026-150293375746",
+    "customer": {
+      "email": "mvsguimaraes26@gmail.com",
+      "billingProfileCode": "1-64TI-3081",
+      "name": "MIRIAN",
+      "secondName": "VIRGINIA DE SOUZA GUIMARAES",
+      "birthday": "1967-09-10T00:00:00.000Z",
+      "ddd": 11,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5511997203844",
+      "id": "e2f9d220bf734aaf4c8eaf2a8dea2697",
+      "cpf": "07447244813"
+    },
+    "signatures": [
+      {
+        "id": "118730128",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 997203844,
+          "dddMobilePhone": 11
+        },
+        "customerId": "e2f9d220bf734aaf4c8eaf2a8dea2697",
+        "status": 1,
+        "productName": "TOP HD EXCLUSIVO 2025 - P",
+        "name": "MIRIAN",
+        "secondName": "VIRGINIA DE SOUZA GUIMARAES",
+        "dna": "01000000000100010000001000000000010000000000000001000000000100000000000000000000000000001010000111110010000000100000000000100000011110100000010000010111111111111110011111111000000000000000000000100000000010111111111111100000000011111010111111110001000000000001101111111111111011101110001111111111010011111101111111111111111111111111110011111111111110111111111100011111111111111111111111100111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Rua Asia",
+          "line1": "Rua Asia, 167 - Jardim Sao Jose",
+          "line2": "Cs 2",
+          "number": "167",
+          "city": "Barueri",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "06433170",
+          "referencePoint": "Próximo Ao Posto De Saúde",
+          "addressType": "Rua"
+        },
+        "addressBilling": {
+          "linePublic": "Rua Asia",
+          "line1": "Rua Asia, 167 - Jardim Sao Jose",
+          "line2": "Cs 2",
+          "number": "167",
+          "city": "Barueri",
+          "state": "SP",
+          "country": "Brasil",
+          "postalCode": "06433170",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2012-10-26T00:00:00.000Z",
+        "email": "mvsguimaraes26@gmail.com",
+        "parentAccount": "0118730128",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000643370208",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH25",
+            "serialNumber": "CE0AA135314594335"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "118730128",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 997203844,
+        "dddMobilePhone": 11
+      },
+      "customerId": "e2f9d220bf734aaf4c8eaf2a8dea2697",
+      "status": 1,
+      "productName": "TOP HD EXCLUSIVO 2025 - P",
+      "name": "MIRIAN",
+      "secondName": "VIRGINIA DE SOUZA GUIMARAES",
+      "dna": "01000000000100010000001000000000010000000000000001000000000100000000000000000000000000001010000111110010000000100000000000100000011110100000010000010111111111111110011111111000000000000000000000100000000010111111111111100000000011111010111111110001000000000001101111111111111011101110001111111111010011111101111111111111111111111111110011111111111110111111111100011111111111111111111111100111111100011111111111111111100011111111111111111111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111101111101111111111101000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Rua Asia",
+        "line1": "Rua Asia, 167 - Jardim Sao Jose",
+        "line2": "Cs 2",
+        "number": "167",
+        "city": "Barueri",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "06433170",
+        "referencePoint": "Próximo Ao Posto De Saúde",
+        "addressType": "Rua"
+      },
+      "addressBilling": {
+        "linePublic": "Rua Asia",
+        "line1": "Rua Asia, 167 - Jardim Sao Jose",
+        "line2": "Cs 2",
+        "number": "167",
+        "city": "Barueri",
+        "state": "SP",
+        "country": "Brasil",
+        "postalCode": "06433170",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2012-10-26T00:00:00.000Z",
+      "email": "mvsguimaraes26@gmail.com",
+      "parentAccount": "0118730128",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000643370208",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH25",
+          "serialNumber": "CE0AA135314594335"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "118730128": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "ASSINATURAS DIGITAIS VIII",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "03-09-2026",
+          "end_date": null,
+          "icon": "📺"
+        },
+        {
+          "name": "TELECINE HD",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "24-02-2026",
+          "end_date": null,
+          "icon": "🎬"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-21E06GS",
+            "name": "ASSINATURAS DIGITAIS VIII",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": null,
+            "price": "2.00",
+            "isPartOfMainPackage": false,
+            "activationDate": "03-09-2026",
+            "startDate": "03-09-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-20XEJQF",
+            "name": "TELECINE HD",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/TLCine%403x.png",
+            "price": "29.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "24-02-2026",
+            "startDate": "24-02-2026",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}

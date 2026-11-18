@@ -1,0 +1,23 @@
+NETFLIX HIT :👇
+
+Country: IN
+Plan: Premium
+Next Billing: November 18, 2026
+Payment: UPI
+Quality: UHD
+Streams: 4
+Price: ₹649
+Profiles (5): Ishaan, Balkirat, Dewansh, Yash, John
+
+--------------------------------------------------------------------------------------------------
+
+Checker By: github.com/harshitkamboj | Website: harshitkamboj.in
+Netflix COOKIE :👇
+
+.netflix.com	FALSE	/	TRUE	1796554945	gsid	63005e97-f10c-449f-97e8-85fcc7df3f7f
+.netflix.com	FALSE	/	TRUE	1797047216	NetflixId	ct%3DBgjHlOvcAxK0A5fsN_nEwEb3_UPjwYhRx56aMHMRMrpjQ7Bv4Zhw8UG7kFB5Friq1HylDTdPEmSLTJalgLqzKTDyhAuHhfPdx6-lmLzN5m2I_UwR0eDvOid_BWydOVWP1Wg1sZUkwXQsNu5hNo8wAz38gOJiY1bl1zQ3ZTvc00Ozs5bF8al5xR85lcdgaIva7BEw2n1KpmFUPL75hFz8sFRKrxZA1WziVf3Yl4sW2Vid2F1UABswUnWRz5oGdYAwOlK879_WQ0ig6dp_0oRjWuvDzFp6gyj-e1FnHhTdc4pSGncd3JzqLb7vmW5-v6S8FxcXYih16xRoyNOw9RoN900iZ2IdpzB8cJGKY1slBwcZIb9kEIFUdlk9x3hSP-p_6psmY3EXC4Kievd-jVdkgfWgyDguJnDKqVDYQ_t910QtJi1QwbCDYOuRGVzsZOnPDNOeAlZZmX6cPjDtaLjfwhSJS0z4Ix65_nE358WW1fsXX6EwWLAyMn1gH84fxA9s1eC4ipixnxgJ6vvkO9teR38PbzvDvQ_ubjJKMK9kBQIK4AoRIuRbLjI2_UFDbsVKEx8p6ELdYUsAhEcs7sAYBiIOCgynF4H8jcaXrsZTDe4.%26ch%3DAQEAEAABABQNMHRcMOKGcNr9_mpjb1pwWgzY1XwzaZU.%26v%3D3%26pg%3DTYRW6VJW2NFAVKQNKWZHA4YWKM
+.netflix.com	FALSE	/	FALSE	1796554945	netflix-sans-bold-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796554945	netflix-sans-normal-3-loaded	true
+.netflix.com	FALSE	/	FALSE	1796967792	nfvdid	BQFmAAEBEGCS0EaMmPSgRslf6Xhc79ZgnVNFllepTqn_2k0gEsvq5neEG_GDLalQvrULowHE8VmMgDUVSrGyy6Fb_xzlV5ondqYAMVuJnes7C54n9dKISfCoxHxCFZQggg3MDXVxDiMX1TDk0pZGDldahMgUnqcr
+.netflix.com	FALSE	/	FALSE	1796554945	pas	%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D
+.netflix.com	FALSE	/	TRUE	1797047216	SecureNetflixId	v%3D3%26mac%3DAQEAEQABABRgT8cTueDNVqy2vmcknia-t9z5yvWwwY0.%26dt%3D1781495216943

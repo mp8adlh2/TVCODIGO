@@ -1,0 +1,325 @@
+{
+  "email": "Psrconde@yahoo.com.br",
+  "password": "z12sp0r2TLMC",
+  "access_token": "4de6623f-c458-40e2-9ff7-53918badd3f5",
+  "jwt_token": "eyJhbGciOiJSUzI1NiJ9.eyJ1dWlkIjoiOWFmMTg5NjQtZWVhZS00ODhhLTlkMDQtOTMyMGZjNzM5NjFkIiwiYXRfaGFzaCI6ImlKZE51OWtZUGpYMy1WbjFQMUhtZ1EiLCJkZXZpY2VJZCI6ImNjYjMxYTI3Y2E1NDVjNTZiNTk3ZTc0MDY5MzVjODY0YzBhZWNhYjciLCJhdWRpdFRyYWNraW5nSWQiOiIyZGIyLThmMTgtNGViYi04OGM2LThhZGIiLCJ0b2tlbk5hbWUiOiJpZF90b2tlbiIsImF1ZCI6InNreV9iciIsImF6cCI6InNreV9iciIsImF1dGhfdGltZSI6MTc4ODgxNTE5Mjc1OCwidG9rZW5UeXBlIjoiSldUVG9rZW4iLCJyZWFsbSI6Ii8iLCJzdWIiOiJiMTg5MWMxYy03YTU0LTRjOGQtYmQ2Mi00ZmIzNjFjMjc3ODEiLCJzaWduYXR1cmVzIjpbIjU0NTAxNDkyIl0sImN1c3RvbWVySWQiOiI4YjY5NzljZDQxNWEzNTlhMTNhOGRhMTFhZDcwZTBlMSIsInJlZ2lzdHJhdGlvblNpZ25hdHVyZSI6IjU0NTAxNDkyIiwiZ2l2ZW5fbmFtZSI6IlBBVUxPIFNFUkdJTyIsInVzZXJuYW1lIjoicHNyY29uZGVAeWFob28uY29tLmJyIiwibWFpbCI6InBzcmNvbmRlQHlhaG9vLmNvbS5iciIsInJlZGVtcHRpb25MaW1pdCI6bnVsbCwiaWF0IjoxNzg4ODE1MTkyLCJleHAiOjE3ODg5MDE1OTIsImlzcyI6InNtLXNreS52cmlvc2VydmljZXMuY29tIn0.XJS2i3DWRJRZY5aa-OItAUlRvIHGVXQ4LblydHJQIjujRPWOZ-FvFdDIet8tglEPW1CxckVDllzkvumEa-vozalFEajxWe36TVAzcTC_3SAmqdWMQb91O_JX0WL_17KMfbZzogTmakYQ7hpOuTKhmJn6Kf9KB-rbv2qy8uy9d6z-rm-LSoOl6zujwMHnXvt8xlfyAK5FyDXC6hFtzACLyFBumkmn0wY7XGlLbZrMAj1i2XHcRgYEi-0sXBtbCjJywY8o6t-9V2CfCwn3gv4F5HwfOlfvhpQBdienOE6aUM0NjI99SKL19gnXTQiTHHMBHZfun1w8VVHXlmI_VyBrJQ",
+  "refresh_token": "",
+  "raw_data": {
+    "accessToken": "4de6623f-c458-40e2-9ff7-53918badd3f5",
+    "externalId": "3ff95f0e-270c-53ad-9c9d-ca47a8c0b3e4",
+    "username": "8b6979cd415a359a13a8da11ad70e0e1",
+    "flow": "CUSTOMER_SIGNATURES_SUCCESS",
+    "mainSignature": "54501492",
+    "protocol": "2026-150293162013",
+    "customer": {
+      "email": "uber99gdgx@gmail.com",
+      "billingProfileCode": "1-9MSW-26368",
+      "name": "PAULO",
+      "secondName": "SERGIO RISERIO CONDE",
+      "birthday": "1951-12-24T00:00:00.000Z",
+      "ddd": 71,
+      "isMobilePhoneVerified": false,
+      "mobilePhone": "+5571984731331",
+      "id": "8b6979cd415a359a13a8da11ad70e0e1",
+      "cpf": "07680902534"
+    },
+    "signatures": [
+      {
+        "id": "54501492",
+        "organizationType": 0,
+        "phones": {
+          "mobilePhone": 984731331,
+          "dddMobilePhone": 71
+        },
+        "customerId": "8b6979cd415a359a13a8da11ad70e0e1",
+        "status": 1,
+        "productName": "TOP HD III PLUS 2024 - P",
+        "name": "PAULO",
+        "secondName": "SERGIO RISERIO CONDE",
+        "dna": "01000000000100010000001000000000100000000000000000100000001000000000001000000000000000001011000111110000000001000000000100000000011110100000010000010111111111111100011111111000000000000000000001100000000010111111111111111000000011111010111111110001000000000001101111111111111001101110001111111111010011111101111111111111111111111111110011111111111110111111111100011111111111111111111111100111011100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+        "type": "Pós-Pago Antecipado",
+        "addressInstallation": {
+          "linePublic": "Null Para",
+          "line1": "Null Para, 446 - Pituba",
+          "line2": "Ed Maison Lion",
+          "number": "446",
+          "city": "Salvador",
+          "state": "BA",
+          "country": "Brasil",
+          "postalCode": "41830070",
+          "referencePoint": "Academia Hummer",
+          "addressType": null
+        },
+        "addressBilling": {
+          "linePublic": "Rua Para",
+          "line1": "Rua Para, 446 - Pituba",
+          "line2": "Ed Maison Lion",
+          "number": "446",
+          "city": "Salvador",
+          "state": "BA",
+          "country": "Brasil",
+          "postalCode": "41830070",
+          "referencePoint": null,
+          "addressType": "Rua"
+        },
+        "activation": "2010-08-10T00:00:00.000Z",
+        "email": "uber99gdgx@gmail.com",
+        "parentAccount": "054501492",
+        "productStatus": "A",
+        "isPrimary": true,
+        "childrenSignatures": [],
+        "chargeStatus": 0,
+        "dunnLevel": null,
+        "equipments": [
+          {
+            "smartcard": "000511621179",
+            "isRecordable": true,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SHR26",
+            "serialNumber": "670A263412636163E"
+          },
+          {
+            "smartcard": "000769969734",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A2035390497989"
+          },
+          {
+            "smartcard": "001157154426",
+            "isRecordable": false,
+            "technology": "HD",
+            "subcategory": "PayTV",
+            "serialCode": "SH20",
+            "serialNumber": "CE0A203620545541C"
+          }
+        ]
+      }
+    ]
+  },
+  "active_signatures": [
+    {
+      "id": "54501492",
+      "organizationType": 0,
+      "phones": {
+        "mobilePhone": 984731331,
+        "dddMobilePhone": 71
+      },
+      "customerId": "8b6979cd415a359a13a8da11ad70e0e1",
+      "status": 1,
+      "productName": "TOP HD III PLUS 2024 - P",
+      "name": "PAULO",
+      "secondName": "SERGIO RISERIO CONDE",
+      "dna": "01000000000100010000001000000000100000000000000000100000001000000000001000000000000000001011000111110000000001000000000100000000011110100000010000010111111111111100011111111000000000000000000001100000000010111111111111111000000011111010111111110001000000000001101111111111111001101110001111111111010011111101111111111111111111111111110011111111111110111111111100011111111111111111111111100111011100011111111111111111100011111111111111101111111101111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000001111111111111111111111111111111111111111111111111111111111111111111111111111101111111111101000111111111111111111111110011111111111111111111111111111111111111111111111111111111110011011011111111111111",
+      "type": "Pós-Pago Antecipado",
+      "addressInstallation": {
+        "linePublic": "Null Para",
+        "line1": "Null Para, 446 - Pituba",
+        "line2": "Ed Maison Lion",
+        "number": "446",
+        "city": "Salvador",
+        "state": "BA",
+        "country": "Brasil",
+        "postalCode": "41830070",
+        "referencePoint": "Academia Hummer",
+        "addressType": null
+      },
+      "addressBilling": {
+        "linePublic": "Rua Para",
+        "line1": "Rua Para, 446 - Pituba",
+        "line2": "Ed Maison Lion",
+        "number": "446",
+        "city": "Salvador",
+        "state": "BA",
+        "country": "Brasil",
+        "postalCode": "41830070",
+        "referencePoint": null,
+        "addressType": "Rua"
+      },
+      "activation": "2010-08-10T00:00:00.000Z",
+      "email": "uber99gdgx@gmail.com",
+      "parentAccount": "054501492",
+      "productStatus": "A",
+      "isPrimary": true,
+      "childrenSignatures": [],
+      "chargeStatus": 0,
+      "dunnLevel": null,
+      "equipments": [
+        {
+          "smartcard": "000511621179",
+          "isRecordable": true,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SHR26",
+          "serialNumber": "670A263412636163E"
+        },
+        {
+          "smartcard": "000769969734",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A2035390497989"
+        },
+        {
+          "smartcard": "001157154426",
+          "isRecordable": false,
+          "technology": "HD",
+          "subcategory": "PayTV",
+          "serialCode": "SH20",
+          "serialNumber": "CE0A203620545541C"
+        }
+      ]
+    }
+  ],
+  "additionals_map": {
+    "54501492": {
+      "included": [],
+      "additionals": [
+        {
+          "name": "SportyNet+",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "03-08-2026",
+          "end_date": null,
+          "icon": "📺"
+        },
+        {
+          "name": "HBO - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "02-01-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "HBO COM 3M DESC 50% - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "02-01-2026",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "DISNEY PLUS PREMIUM",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "28-12-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Paramount+",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "28-12-2025",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "TELECINE PROMO FIDELIDADE ANUAL - P",
+          "category": "A La Carte",
+          "subcategory": "Filmes",
+          "start_date": "19-09-2024",
+          "end_date": null,
+          "icon": "🎬"
+        },
+        {
+          "name": "Premiere",
+          "category": "A La Carte",
+          "subcategory": "Diversos",
+          "start_date": "20-07-2024",
+          "end_date": null,
+          "icon": "⚽"
+        }
+      ],
+      "raw": {
+        "opcional": [
+          {
+            "id": "1-218C62X",
+            "name": "SportyNet+",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9529460/SKY-Sportynet-Card.png",
+            "price": "29.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "03-08-2026",
+            "startDate": "03-08-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "02-01-2026",
+            "startDate": "02-01-2026",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "HBO COM 3M DESC 50% - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "0",
+            "isPartOfMainPackage": false,
+            "activationDate": "02-01-2026",
+            "startDate": "02-01-2026",
+            "endDate": null
+          },
+          {
+            "id": "1-219IIMH",
+            "name": "DISNEY PLUS PREMIUM",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Disney%403x.png",
+            "price": "46.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "28-12-2025",
+            "startDate": "28-12-2025",
+            "endDate": null
+          },
+          {
+            "id": "1-212ONZX",
+            "name": "Paramount+",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "logo": "https://cms74.hub.directvgo.com/documents/1961808/9565935/SKY-Paramount-Card.png",
+            "price": "34.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "28-12-2025",
+            "startDate": "28-12-2025",
+            "endDate": null
+          },
+          {
+            "id": null,
+            "name": "TELECINE PROMO FIDELIDADE ANUAL - P",
+            "category": "A La Carte",
+            "subcategory": "Filmes",
+            "price": "9.9",
+            "isPartOfMainPackage": false,
+            "activationDate": "19-09-2024",
+            "startDate": "19-09-2024",
+            "endDate": null
+          },
+          {
+            "id": "1-1XBHQIX",
+            "name": "Premiere",
+            "category": "A La Carte",
+            "subcategory": "Diversos",
+            "logo": "https://skycms.s3.amazonaws.com/images/35013491/Premiere%403x.png",
+            "price": "59.90",
+            "isPartOfMainPackage": false,
+            "activationDate": "20-07-2024",
+            "startDate": "20-07-2024",
+            "endDate": null
+          }
+        ]
+      }
+    }
+  }
+}
