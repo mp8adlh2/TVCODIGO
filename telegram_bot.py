@@ -674,40 +674,20 @@ async def handle_mensagem(update: "Update", context: "ContextTypes.DEFAULT_TYPE"
 # ══════════════════════════════════════════════════════════
 
 def run_bot_threaded():
-    """Inicia o bot do Telegram em uma thread separada sem bloquear o servidor web."""
-    if not TELEGRAM_OK:
-        print("[Telegram Bot] python-telegram-bot não instalado. Bot do Telegram não iniciado.", flush=True)
-        return
+    """Inicia o bot do Telegram em processo independente usando subprocess para evitar conflitos de thread/asyncio."""
     if not BOT_TOKEN or "COLOQUE_SEU_TOKEN" in BOT_TOKEN:
         print("[Telegram Bot] Token não configurado. Bot do Telegram não iniciado.", flush=True)
         return
 
-    def _worker():
-        try:
-            print("[Telegram Bot] 🚀 Iniciando polling do Telegram...", flush=True)
-            application = (
-                Application.builder()
-                .token(BOT_TOKEN)
-                .build()
-            )
-
-            application.add_handler(CommandHandler("start",   cmd_start))
-            application.add_handler(CommandHandler("hbo",     cmd_hbo))
-            application.add_handler(CommandHandler("netflix", cmd_netflix))
-            application.add_handler(CommandHandler("sky",     cmd_sky))
-            application.add_handler(CommandHandler("claro",   cmd_claro))
-            application.add_handler(CommandHandler("status",  cmd_status))
-            application.add_handler(CallbackQueryHandler(handle_botoes))
-            application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_mensagem))
-
-            print("[Telegram Bot] ✅ Bot do Telegram VIP conectado e pronto para receber mensagens na nuvem!", flush=True)
-            application.run_polling(allowed_updates=["message", "callback_query"], drop_pending_updates=True, stop_signals=None)
-        except Exception as e:
-            print(f"[Telegram Bot] ❌ Erro no bot do Telegram: {e}", flush=True)
-
-    t = threading.Thread(target=_worker, name="TelegramBotThread", daemon=True)
-    t.start()
-    return t
+    import subprocess
+    cmd = [sys.executable, os.path.join(BASE_DIR, "telegram_bot.py")]
+    print(f"[Telegram Bot] 🚀 Iniciando processo dedicado do Bot Telegram na nuvem: {' '.join(cmd)}", flush=True)
+    try:
+        proc = subprocess.Popen(cmd, cwd=BASE_DIR)
+        print(f"[Telegram Bot] ✅ Processo do Bot iniciado com sucesso (PID: {proc.pid})!", flush=True)
+        return proc
+    except Exception as e:
+        print(f"[Telegram Bot] ❌ Falha ao iniciar processo do Bot: {e}", flush=True)
 
 def main():
     if not TELEGRAM_OK:
