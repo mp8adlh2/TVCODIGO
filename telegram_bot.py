@@ -386,26 +386,35 @@ async def cmd_start(update: "Update", context: "ContextTypes.DEFAULT_TYPE"):
 
     nome = update.effective_user.first_name or "Cliente"
 
+    servicos_disponiveis = []
+    if "hbo" in MODULES:
+        servicos_disponiveis.append("🎬 HBO Max / Max")
+    if "netflix" in MODULES:
+        servicos_disponiveis.append("🔴 Netflix")
+    if "sky" in MODULES:
+        servicos_disponiveis.append("📡 SKY / DTV")
+    if "claro" in MODULES:
+        servicos_disponiveis.append("🔵 Claro TV+")
+
+    lista_str = "\n".join(servicos_disponiveis) if servicos_disponiveis else "Nenhum serviço disponível"
+
     texto = (
-        f"╔═══════════════════════════╗\n"
-        f"║   🎬  *ATIVADOR VIP*  🎬   ║\n"
-        f"╚═══════════════════════════╝\n\n"
-        f"👋 Olá, *{nome}*\\! Seja bem\\-vindo\\!\n\n"
-        f"━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-        f"📺 *SERVIÇOS DISPONÍVEIS*\n"
-        f"━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-        f"{'🎬 HBO Max / Max' if 'hbo' in MODULES else ''}\n"
-        f"{'🔴 Netflix' if 'netflix' in MODULES else ''}\n"
-        f"{'📡 SKY / DTV' if 'sky' in MODULES else ''}\n"
-        f"{'🔵 Claro TV\\+' if 'claro' in MODULES else ''}\n\n"
-        f"━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-        f"📋 *COMO USAR*\n"
-        f"━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-        f"*1\\)* Ligue a TV e abra o app\n"
-        f"*2\\)* Anote o código que aparece\n"
-        f"*3\\)* Toque no botão do serviço\n"
-        f"*4\\)* Envie o código → TV ativada\\! ✅\n\n"
-        f"⬇️ *Escolha o serviço abaixo:*"
+        "╔═══════════════════════════╗\n"
+        "║   🎬  *ATIVADOR VIP*  🎬   ║\n"
+        "╚═══════════════════════════╝\n\n"
+        f"👋 Olá, *{nome}*! Seja bem-vindo!\n\n"
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+        "📺 *SERVIÇOS DISPONÍVEIS*\n"
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+        f"{lista_str}\n\n"
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+        "📋 *COMO USAR*\n"
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+        "*1)* Ligue a TV e abra o app\n"
+        "*2)* Anote o código que aparece\n"
+        "*3)* Toque no botão do serviço abaixo\n"
+        "*4)* Envie o código → TV ativada! ✅\n\n"
+        "⬇️ *Escolha o serviço abaixo:*"
     )
 
     keyboard = []
@@ -418,7 +427,7 @@ async def cmd_start(update: "Update", context: "ContextTypes.DEFAULT_TYPE"):
     if row2: keyboard.append(row2)
 
     reply_markup = InlineKeyboardMarkup(keyboard) if keyboard else None
-    await update.message.reply_text(texto, parse_mode="MarkdownV2", reply_markup=reply_markup)
+    await update.message.reply_text(texto, parse_mode="Markdown", reply_markup=reply_markup)
 
 
 async def cmd_hbo(update: "Update", context: "ContextTypes.DEFAULT_TYPE"):
