@@ -127,10 +127,9 @@ def ativar_hbo(codigo: str) -> dict:
                 "sucesso": True,
                 "mensagem": (
                     f"╔═══════════════════════════╗\n"
-                    f"║  ✅  *HBO MAX ATIVADO!*  ✅  ║\n"
+                    f"║  ✨  *HBO MAX ATIVADO!*  ✨ ║\n"
                     f"╚═══════════════════════════╝\n\n"
-                    f"📺 *Código:* `{codigo}`\n"
-                    f"👤 *Conta:* `{email}`\n"
+                    f"📺 *Código Pareado:* `{codigo}`\n"
                     f"💎 *Plano:* {plan}\n"
                     f"🌍 *País:* {country}\n\n"
                     f"━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
@@ -151,62 +150,84 @@ def ativar_hbo(codigo: str) -> dict:
 
 
 def ativar_sky(codigo: str) -> dict:
-    """Ativa SKY/DTV na TV usando sky_service (mesmo motor do site)."""
+    """Ativa SKY/DTV na TV usando sky_service com rotação e tentativas automáticas até dar certo."""
     try:
         mod = MODULES.get("sky")
         if not mod:
             return {"sucesso": False, "mensagem": "❌ Módulo SKY não disponível no momento."}
 
-        # Busca conta válida (mesmo método do site)
         find_func = getattr(mod, "find_sky_valid_account", None)
-        if find_func is None:
-            return {"sucesso": False, "mensagem": "❌ Função de busca SKY não encontrada."}
-
-        account_data = find_func()
-        if not account_data:
-            return {"sucesso": False, "mensagem": "❌ Nenhuma conta SKY disponível.\nAdicione contas no painel e tente novamente."}
-
-        # Ativa a TV usando o mesmo motor do site: sky_service.activate_sky_tv()
         activate_func = getattr(mod, "activate_sky_tv", None)
-        if activate_func is None:
-            return {"sucesso": False, "mensagem": "❌ Função de ativação SKY não encontrada."}
+        if not find_func or not activate_func:
+            return {"sucesso": False, "mensagem": "❌ Funções de ativação SKY não encontradas."}
 
-        # Retorna Tuple[bool, str, Optional[dict]]
-        resultado = activate_func(tv_code=codigo, account_data=account_data, use_proxy=True)
+        # Tenta até 6 contas disponíveis no estoque até conseguir
+        max_tentativas = 6
+        ultimo_motivo = ""
 
-        if isinstance(resultado, tuple):
-            success = resultado[0]
-            msg     = resultado[1] if len(resultado) > 1 else ""
-            info    = resultado[2] if len(resultado) > 2 else {}
-        else:
-            success = bool(resultado)
-            msg     = ""
-            info    = {}
+        for tentativa in range(1, max_tentativas + 1):
+            account_data = find_func()
+            if not account_data:
+                break
 
-        email = account_data.get("email", "")
-        plano = ""
-        if isinstance(info, dict):
-            plano = info.get("plan", info.get("plano", ""))
+            email = account_data.get("email", "")
+            logger.info(f"[SKY] Tentando conta {tentativa}/{max_tentativas}: {email} para código {codigo}...")
 
-        if success:
-            linha_email = f"👤 *Conta:* `{email}`\n" if email else ""
-            linha_plano = f"💎 *Plano:* {plano}\n" if plano else ""
-            return {
-                "sucesso": True,
-                "mensagem": (
-                    f"╔═══════════════════════════╗\n"
-                    f"║  ✅  *SKY ATIVADO!*  ✅     ║\n"
-                    f"╚═══════════════════════════╝\n\n"
-                    f"📺 *Código:* `{codigo}`\n"
-                    f"{linha_email}"
-                    f"{linha_plano}\n"
-                    f"━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-                    f"📡 *Aproveite o SKY na TV!* 🍿"
-                )
-            }
-        else:
-            msg_amigavel = msg or "Falha na ativação"
-            return {"sucesso": False, "mensagem": f"❌ *Falha na ativação SKY*\n\n{msg_amigavel}\n\n💡 Tente novamente com /sky"}
+            resultado = activate_func(tv_code=codigo, account_data=account_data, use_proxy=True)
+
+            if isinstance(resultado, tuple):
+                success = resultado[0]
+                msg     = resultado[1] if len(resultado) > 1 else ""
+                info    = resultado[2] if len(resultado) > 2 else {}
+            else:
+                success = bool(resultado)
+                msg     = ""
+                info    = {}
+
+            # Se o código expirou na tela da TV, não adianta tentar outras contas
+            if any(k in msg.lower() for k in ["expirad", "inválid", "não encontrado", "user_code_expired", "dtv-oidc-013"]):
+                return {
+                    "sucesso": False,
+                    "mensagem": (
+                        f"⏳ *Código da TV Expirado ou Inválido!*\n\n"
+                        f"O código `{codigo}` não foi aceito pela SKY.\n"
+                        f"💡 Gere um novo código na sua TV e envie novamente com /sky"
+                    )
+                }
+
+            if success:
+                plano = ""
+                if isinstance(info, dict):
+                    plano = info.get("plan", info.get("plano", ""))
+
+                linha_plano = f"💎 Plano: {plano}\n" if plano else ""
+                return {
+                    "sucesso": True,
+                    "mensagem": (
+                        f"╔═══════════════════════════╗\n"
+                        f"║  ✅  *SKY / DTV ATIVADO!*  ║\n"
+                        f"╚═══════════════════════════╝\n\n"
+                        f"📺 *Código:* `{codigo}`\n"
+                        f"{linha_plano}"
+                        f"━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+                        f"📡 *Aproveite o SKY na sua TV!* 🍿"
+                    )
+                }
+            else:
+                ultimo_motivo = msg
+                # Continua o loop para a próxima conta do estoque
+
+        return {
+            "sucesso": False,
+            "mensagem": (
+                f"❌ *Não foi possível ativar na SKY no momento.*\n\n"
+                f"💡 Verifique se o código `{codigo}` ainda está na tela da sua TV e tente novamente em instantes."
+            )
+        }
+
+    except Exception as e:
+        logger.error(f"Erro ao ativar SKY: {e}")
+        return {"sucesso": False, "mensagem": f"❌ Ocorreu uma instabilidade temporária. Tente novamente em instantes."}
 
     except Exception as e:
         logger.error(f"Erro ao ativar SKY: {e}")
@@ -253,15 +274,13 @@ def ativar_netflix(codigo: str) -> dict:
             plano = info.get("plan", info.get("plano", "Netflix"))
 
         if success:
-            linha_email = f"👤 *Conta:* `{email}`\n" if email else ""
             return {
                 "sucesso": True,
                 "mensagem": (
                     f"╔═══════════════════════════╗\n"
-                    f"║  ✅  *NETFLIX ATIVADO!*  ✅  ║\n"
+                    f"║  ✨  *NETFLIX ATIVADO!*  ✨ ║\n"
                     f"╚═══════════════════════════╝\n\n"
-                    f"📺 *Código:* `{codigo}`\n"
-                    f"{linha_email}"
+                    f"📺 *Código Pareado:* `{codigo}`\n"
                     f"💎 *Plano:* {plano}\n\n"
                     f"━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
                     f"🔴 *Aproveite a Netflix na TV!* 🍿"
@@ -269,7 +288,7 @@ def ativar_netflix(codigo: str) -> dict:
             }
         else:
             msg_amigavel = msg or "Falha na ativação"
-            return {"sucesso": False, "mensagem": f"❌ *Falha na ativação Netflix*\n\n{msg_amigavel}\n\n💡 Tente novamente com /netflix"}
+            return {"sucesso": False, "mensagem": f"❌ *Falha na ativação Netflix*\n\nNão foi possível parear a TV com o código informado.\n\n💡 Tente novamente com /netflix"}
 
     except Exception as e:
         logger.error(f"Erro ao ativar Netflix: {e}")
@@ -306,23 +325,20 @@ def ativar_claro(codigo: str) -> dict:
             plano = info.get("plan", info.get("plano", "Claro TV+"))
 
         if success:
-            linha_email = f"👤 *Conta:* `{email}`\n" if email else ""
             return {
                 "sucesso": True,
                 "mensagem": (
                     f"╔═══════════════════════════╗\n"
-                    f"║  ✅  *CLARO TV+ ATIVADO!* ✅ ║\n"
+                    f"║  ✨  *CLARO TV+ ATIVADO!* ✨║\n"
                     f"╚═══════════════════════════╝\n\n"
-                    f"📺 *Código:* `{codigo}`\n"
-                    f"{linha_email}"
+                    f"📺 *Código Pareado:* `{codigo}`\n"
                     f"💎 *Plano:* {plano}\n\n"
                     f"━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
                     f"🔵 *Aproveite a Claro TV+ na sua TV!* 🍿"
                 )
             }
         else:
-            msg_amigavel = msg or "Falha na ativação"
-            return {"sucesso": False, "mensagem": f"❌ *Falha na ativação Claro TV+*\n\n{msg_amigavel}\n\n💡 Tente novamente com /claro"}
+            return {"sucesso": False, "mensagem": f"❌ *Falha na ativação Claro TV+*\n\nNão foi possível parear a TV com o código informado.\n\n💡 Tente novamente com /claro"}
 
     except Exception as e:
         logger.error(f"Erro ao ativar Claro: {e}")
@@ -400,21 +416,21 @@ async def cmd_start(update: "Update", context: "ContextTypes.DEFAULT_TYPE"):
 
     texto = (
         "╔═══════════════════════════╗\n"
-        "║   🎬  *ATIVADOR VIP*  🎬   ║\n"
+        "║  ✨  *SISTEMA ATIVADOR VIP* ✨  ║\n"
         "╚═══════════════════════════╝\n\n"
-        f"👋 Olá, *{nome}*! Seja bem-vindo!\n\n"
+        f"👋 Olá, *{nome}*! Seja bem-vindo ao ativador oficial!\n\n"
         "━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
         "📺 *SERVIÇOS DISPONÍVEIS*\n"
         "━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
         f"{lista_str}\n\n"
         "━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-        "📋 *COMO USAR*\n"
+        "📋 *PASSO A PASSO*\n"
         "━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-        "*1)* Ligue a TV e abra o app\n"
-        "*2)* Anote o código que aparece\n"
-        "*3)* Toque no botão do serviço abaixo\n"
-        "*4)* Envie o código → TV ativada! ✅\n\n"
-        "⬇️ *Escolha o serviço abaixo:*"
+        "1️⃣ Abra o aplicativo na sua Smart TV\n"
+        "2️⃣ Anote o código de ativação na tela\n"
+        "3️⃣ Clique no botão do serviço abaixo\n"
+        "4️⃣ Digite o código aqui no chat → Ativado! ✅\n\n"
+        "⚡ *Selecione o serviço para ativar agora:*"
     )
 
     keyboard = []
