@@ -379,24 +379,53 @@ except ImportError:
 
 
 def checar_permissao(update: "Update") -> bool:
-    """Verifica se o usuário/grupo tem permissão de usar o bot."""
-    chat_id = update.effective_chat.id
-    user_id = update.effective_user.id
+    """
+    Bloqueia uso no privado (PV).
+    O bot só pode ser usado dentro de grupos ou supergrupos.
+    Se ALLOWED_GROUP_IDS estiver configurado, só permite o grupo VIP específico.
+    """
+    chat = update.effective_chat
+    user = update.effective_user
+    if not chat or not user:
+        return False
 
-    # Se não há grupos configurados, permite todos
-    if not ALLOWED_GROUP_IDS:
-        return True
+    chat_type = chat.type  # 'private', 'group', 'supergroup', 'channel'
+    user_id = user.id
+    chat_id = chat.id
 
-    # Permite admins sempre
-    if user_id in ADMIN_IDS:
-        return True
+    # Se for mensagem no privado (PV)
+    if chat_type == "private":
+        # Se for administrador, libera para testes
+        if ADMIN_IDS and user_id in ADMIN_IDS:
+            return True
+        return False
 
-    # Permite apenas grupos configurados
-    return chat_id in ALLOWED_GROUP_IDS
+    # Se estiver em grupo/supergrupo:
+    # Se configurou IDs específicos de grupo, valida se é um deles
+    if ALLOWED_GROUP_IDS:
+        return chat_id in ALLOWED_GROUP_IDS
+
+    # Se ALLOWED_GROUP_IDS estiver vazio, permite qualquer grupo, mas BLOQUEIA privado
+    return True
 
 
 async def cmd_start(update: "Update", context: "ContextTypes.DEFAULT_TYPE"):
     """Comando /start"""
+    chat = update.effective_chat
+    user = update.effective_user
+    if not chat or not user:
+        return
+
+    # Se mandar /start no privado
+    if chat.type == "private" and (not ADMIN_IDS or user.id not in ADMIN_IDS):
+        await update.message.reply_text(
+            "🔒 *Acesso Exclusivo para o Grupo VIP!*\n\n"
+            "Olá! Este robô de ativação automática funciona exclusivamente dentro do nosso *Grupo VIP*.\n\n"
+            "👉 Por favor, envie os comandos e códigos diretamente lá no grupo!",
+            parse_mode="Markdown"
+        )
+        return
+
     if not checar_permissao(update):
         return
 
@@ -610,6 +639,21 @@ async def handle_botoes(update: "Update", context: "ContextTypes.DEFAULT_TYPE"):
 
 async def handle_mensagem(update: "Update", context: "ContextTypes.DEFAULT_TYPE"):
     """Recebe o código enviado pelo usuário e faz a ativação."""
+    chat = update.effective_chat
+    user = update.effective_user
+    if not chat or not user:
+        return
+
+    # Se alguém tentar mandar mensagem no PV/Privado do bot
+    if chat.type == "private" and (not ADMIN_IDS or user.id not in ADMIN_IDS):
+        await update.message.reply_text(
+            "⛔ *Acesso Restrito!*\n\n"
+            "Este bot não realiza ativações no privado.\n"
+            "👉 Utilize os comandos diretamente no nosso *Grupo VIP*!",
+            parse_mode="Markdown"
+        )
+        return
+
     if not checar_permissao(update):
         return
 
