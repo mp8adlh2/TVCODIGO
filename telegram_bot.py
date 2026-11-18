@@ -676,17 +676,23 @@ async def handle_mensagem(update: "Update", context: "ContextTypes.DEFAULT_TYPE"
 def run_bot_threaded():
     """Inicia o bot do Telegram em uma thread separada sem bloquear o servidor web."""
     if not TELEGRAM_OK:
-        print("[Telegram Bot] python-telegram-bot não instalado. Bot do Telegram não iniciado.")
+        print("[Telegram Bot] python-telegram-bot não instalado. Bot do Telegram não iniciado.", flush=True)
         return
     if not BOT_TOKEN or "COLOQUE_SEU_TOKEN" in BOT_TOKEN:
-        print("[Telegram Bot] Token não configurado. Bot do Telegram não iniciado.")
+        print("[Telegram Bot] Token não configurado. Bot do Telegram não iniciado.", flush=True)
         return
 
     def _worker():
         try:
+            print("[Telegram Bot] 🚀 Iniciando loop de polling do Telegram...", flush=True)
             loop = asyncio.new_event_loop()
             asyncio.set_event_loop(loop)
-            application = Application.builder().token(BOT_TOKEN).build()
+
+            application = (
+                Application.builder()
+                .token(BOT_TOKEN)
+                .build()
+            )
 
             application.add_handler(CommandHandler("start",   cmd_start))
             application.add_handler(CommandHandler("hbo",     cmd_hbo))
@@ -697,10 +703,18 @@ def run_bot_threaded():
             application.add_handler(CallbackQueryHandler(handle_botoes))
             application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_mensagem))
 
-            print("[Telegram Bot] ✅ Bot do Telegram VIP rodando em segundo plano junto com o servidor!")
-            application.run_polling(allowed_updates=["message", "callback_query"], close_loop=False)
+            print("[Telegram Bot] ✅ Bot do Telegram VIP conectado e pronto para receber mensagens na nuvem!", flush=True)
+
+            async def _run():
+                await application.initialize()
+                await application.start()
+                await application.updater.start_polling(allowed_updates=["message", "callback_query"], drop_pending_updates=True)
+                while True:
+                    await asyncio.sleep(10)
+
+            loop.run_until_complete(_run())
         except Exception as e:
-            print(f"[Telegram Bot] ⚠️ Erro ao executar bot em segundo plano: {e}")
+            print(f"[Telegram Bot] ❌ Erro crítico no bot do Telegram: {e}", flush=True)
 
     t = threading.Thread(target=_worker, name="TelegramBotThread", daemon=True)
     t.start()
