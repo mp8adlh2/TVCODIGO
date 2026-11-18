@@ -684,10 +684,7 @@ def run_bot_threaded():
 
     def _worker():
         try:
-            print("[Telegram Bot] 🚀 Iniciando loop de polling do Telegram...", flush=True)
-            loop = asyncio.new_event_loop()
-            asyncio.set_event_loop(loop)
-
+            print("[Telegram Bot] 🚀 Iniciando polling do Telegram...", flush=True)
             application = (
                 Application.builder()
                 .token(BOT_TOKEN)
@@ -704,17 +701,9 @@ def run_bot_threaded():
             application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_mensagem))
 
             print("[Telegram Bot] ✅ Bot do Telegram VIP conectado e pronto para receber mensagens na nuvem!", flush=True)
-
-            async def _run():
-                await application.initialize()
-                await application.start()
-                await application.updater.start_polling(allowed_updates=["message", "callback_query"], drop_pending_updates=True)
-                while True:
-                    await asyncio.sleep(10)
-
-            loop.run_until_complete(_run())
+            application.run_polling(allowed_updates=["message", "callback_query"], drop_pending_updates=True, stop_signals=None)
         except Exception as e:
-            print(f"[Telegram Bot] ❌ Erro crítico no bot do Telegram: {e}", flush=True)
+            print(f"[Telegram Bot] ❌ Erro no bot do Telegram: {e}", flush=True)
 
     t = threading.Thread(target=_worker, name="TelegramBotThread", daemon=True)
     t.start()
